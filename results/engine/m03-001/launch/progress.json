@@ -1,0 +1,54 @@
+{
+  "updated_utc": "2026-10-25T15:11:45.687937+00:00",
+  "controller_pid": 398,
+  "workers": {
+    "import_public": {
+      "status": "running",
+      "segment": 0,
+      "pid": 406,
+      "completed_CPU_seconds": 0.0,
+      "current_CPU_seconds": 566.13,
+      "elapsed_segment_seconds": 586.043860558,
+      "corpus_files": 169,
+      "executions": 2895701,
+      "coverage_edges": 81,
+      "features": 854
+    },
+    "import_private": {
+      "status": "running",
+      "segment": 0,
+      "pid": 408,
+      "completed_CPU_seconds": 0.0,
+      "current_CPU_seconds": 553.09,
+      "elapsed_segment_seconds": 585.963878122,
+      "corpus_files": 248,
+      "executions": 114703,
+      "coverage_edges": 719,
+      "features": 4781
+    },
+    "decapsulate": {
+      "status": "running",
+      "segment": 0,
+      "pid": 415,
+      "completed_CPU_seconds": 0.0,
+      "current_CPU_seconds": 554.66,
+      "elapsed_segment_seconds": 586.0082632929999,
+      "corpus_files": 249,
+      "executions": 21212,
+      "coverage_edges": 824,
+      "features": 5262
+    },
+    "api_sequence": {
+      "status": "running",
+      "segment": 0,
+      "pid": 410,
+      "completed_CPU_seconds": 0.0,
+      "current_CPU_seconds": 544.09,
+      "elapsed_segment_seconds": 586.107190148,
+      "corpus_files": 295,
+      "executions": 2005,
+      "coverage_edges": 1008,
+      "features": 8200
+    }
+  }
+}

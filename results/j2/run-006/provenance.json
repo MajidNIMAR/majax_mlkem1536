@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-10-24T16:08:54.612113+00:00",
+  "python": "3.13.7",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "input_sha256": {
+    "research/group_quantization.py": "da69309403a7402ea6f53eab794704bcb340ca6eb8e60a3c650ab261fd7bad9b",
+    "research/test_group_quantization.py": "cf53e81877755dd03d04600930a1a8c81a151e58d849c537592149c67be6f1d4",
+    "research/run_group_quantization.py": "5107931b4c5d495694f0b59cf5a871de2102d3dee8bda2fa73010facfc201393",
+    "research/verify_group_quantization_results.py": "fb1495e196b8723ac2a598ecd4e43b16e2afffce109c80f8b343e92491a1978d",
+    "research/noise_exact.py": "702d63dd736892cb1b273268087aecaadac06d5c5df4c3c093f909b98ede271e",
+    "research/witness_chernoff.py": "7d417339872601326faa80a3cd6911003cf092c29c0aeac967ebde42ee516434",
+    "research/mixed_precision.py": "a8f37b597cce159e346074e2f08745bbf23266effb8476bf7738e8e6b3afb4f5",
+    "results/j2/run-005/winner-certificate.json": "cb118e1b85373f05a53174c1d3e5b3d20ccec827906620675a7717c411526a5b",
+    "profiles/kem1536-p0.toml": "ec07497ccab9150a982ecc882b8d1890d8dda18c4150e22f86cff70735e22740"
+  },
+  "output_sha256": {
+    "toy-quantizers.json": "20af391529be4c75c92d5fbc90b375cb8e703f08eb77f39136f5c136888d28b6",
+    "cover.json": "9d1576ce128ca525fd5a7ad91eca97276c9ec83e400820f5d6de56f104f5571c",
+    "pair-study.json": "a3da33ac0808a22c8c246cb0fe61cd48f91d762e3d70aa922110c4d55039ceac",
+    "winner-certificate.json": "3f488102706967edd4160e4f7b658d35ca4df232d6a9a1977feea7f88f0834cd",
+    "screening.json": "e2acd01b0e4f0ad8fd064933670dacbc47517897b099606d8aef8fb52a534770"
+  }
+}

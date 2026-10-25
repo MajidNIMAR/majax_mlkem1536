@@ -1,0 +1,8 @@
+   Compiling crypto-common v0.2.2
+   Compiling getrandom v0.4.3
+error: dlltool could not create import library with C:\Users\majax\Documents\Codex\NIST\.tools\rustup\toolchains\1.91.1-x86_64-pc-windows-gnu\lib\rustlib\x86_64-pc-windows-gnu\bin\self-contained\dlltool.exe -d C:\Users\majax\AppData\Local\Temp\rustce3ryOg\bcryptprimitives.dll_imports.def -D bcryptprimitives.dll -l C:\Users\majax\AppData\Local\Temp\rustce3ryOg\bcryptprimitives.dll_imports.lib -m i386:x86-64 -f --64 --no-leading-underscore --temp-prefix C:\Users\majax\AppData\Local\Temp\rustce3ryOg\bcryptprimitives.dll:
+       
+       C:\Users\majax\Documents\Codex\NIST\.tools\rustup\toolchains\1.91.1-x86_64-pc-windows-gnu\lib\rustlib\x86_64-pc-windows-gnu\bin\self-contained\dlltool.exe: CreateProcess␍
+
+error: could not compile `getrandom` (lib) due to 1 previous error
+warning: build failed, waiting for other jobs to finish...

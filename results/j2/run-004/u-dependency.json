@@ -1,0 +1,540 @@
+{
+  "toys": [
+    {
+      "parameters": {
+        "q": 5,
+        "n": 2,
+        "k": 1,
+        "eta_y": 2,
+        "eta_e1": 1,
+        "du": 1
+      },
+      "y_vectors_checked": 25,
+      "conditional_images_and_cosets": "all exact checks passed",
+      "inactive_factor_probabilities": {
+        "0": {
+          "fraction": "47/64",
+          "decimal": 0.734375,
+          "log2": -0.4454111483223624
+        },
+        "1": {
+          "fraction": "1/8",
+          "decimal": 0.125,
+          "log2": -3.0
+        },
+        "2": {
+          "fraction": "9/64",
+          "decimal": 0.140625,
+          "log2": -2.830074998557688
+        }
+      },
+      "non_surjective_y_probability": {
+        "fraction": "17/64",
+        "decimal": 0.265625,
+        "log2": -1.912537158749661
+      },
+      "joint_rounding_e1_tv_from_independent_reference": {
+        "fraction": "117/1280",
+        "decimal": 0.09140625,
+        "log2": -3.451563375303957
+      },
+      "joint_tv_from_product_of_actual_marginals": {
+        "fraction": "45/512",
+        "decimal": 0.087890625,
+        "log2": -3.5081469036703252
+      },
+      "rounding_marginal_tv_from_uniform_input_reference": {
+        "fraction": "27/1280",
+        "decimal": 0.02109375,
+        "log2": -5.5670405927238935
+      },
+      "sum_e1_rounding_tv_from_independent_reference": {
+        "fraction": "117/1280",
+        "decimal": 0.09140625,
+        "log2": -3.451563375303957
+      },
+      "joint_tv_conditioned_on_full_ideal": {
+        "fraction": "0",
+        "decimal": 0.0,
+        "log2": null
+      },
+      "denominator": 102400,
+      "joint_counts": [
+        {
+          "rounding": -1,
+          "e1": -1,
+          "weight": 4400
+        },
+        {
+          "rounding": -1,
+          "e1": 0,
+          "weight": 8800
+        },
+        {
+          "rounding": -1,
+          "e1": 1,
+          "weight": 8000
+        },
+        {
+          "rounding": 0,
+          "e1": -1,
+          "weight": 8800
+        },
+        {
+          "rounding": 0,
+          "e1": 0,
+          "weight": 24800
+        },
+        {
+          "rounding": 0,
+          "e1": 1,
+          "weight": 8800
+        },
+        {
+          "rounding": 1,
+          "e1": -1,
+          "weight": 12400
+        },
+        {
+          "rounding": 1,
+          "e1": 0,
+          "weight": 17600
+        },
+        {
+          "rounding": 1,
+          "e1": 1,
+          "weight": 8800
+        }
+      ],
+      "scope": "exact small-ring counterexample, not rank-6 failure probability"
+    },
+    {
+      "parameters": {
+        "q": 5,
+        "n": 2,
+        "k": 2,
+        "eta_y": 2,
+        "eta_e1": 1,
+        "du": 1
+      },
+      "y_vectors_checked": 625,
+      "conditional_images_and_cosets": "all exact checks passed",
+      "inactive_factor_probabilities": {
+        "0": {
+          "fraction": "3839/4096",
+          "decimal": 0.937255859375,
+          "log2": -0.09348515515305067
+        },
+        "1": {
+          "fraction": "11/256",
+          "decimal": 0.04296875,
+          "log2": -4.540568381362703
+        },
+        "2": {
+          "fraction": "81/4096",
+          "decimal": 0.019775390625,
+          "log2": -5.660149997115376
+        }
+      },
+      "non_surjective_y_probability": {
+        "fraction": "257/4096",
+        "decimal": 0.062744140625,
+        "log2": -3.994375450806121
+      },
+      "joint_rounding_e1_tv_from_independent_reference": {
+        "fraction": "1053/81920",
+        "decimal": 0.01285400390625,
+        "log2": -6.281638373861645
+      },
+      "joint_tv_from_product_of_actual_marginals": {
+        "fraction": "405/32768",
+        "decimal": 0.012359619140625,
+        "log2": -6.338221902228012
+      },
+      "rounding_marginal_tv_from_uniform_input_reference": {
+        "fraction": "243/81920",
+        "decimal": 0.00296630859375,
+        "log2": -8.39711559128158
+      },
+      "sum_e1_rounding_tv_from_independent_reference": {
+        "fraction": "1053/81920",
+        "decimal": 0.01285400390625,
+        "log2": -6.281638373861645
+      },
+      "joint_tv_conditioned_on_full_ideal": {
+        "fraction": "0",
+        "decimal": 0.0,
+        "log2": null
+      },
+      "denominator": 655360000,
+      "joint_counts": [
+        {
+          "rounding": -1,
+          "e1": -1,
+          "weight": 32120000
+        },
+        {
+          "rounding": -1,
+          "e1": 0,
+          "weight": 64240000
+        },
+        {
+          "rounding": -1,
+          "e1": 1,
+          "weight": 35360000
+        },
+        {
+          "rounding": 0,
+          "e1": -1,
+          "weight": 64240000
+        },
+        {
+          "rounding": 0,
+          "e1": 0,
+          "weight": 134960000
+        },
+        {
+          "rounding": 0,
+          "e1": 1,
+          "weight": 64240000
+        },
+        {
+          "rounding": 1,
+          "e1": -1,
+          "weight": 67480000
+        },
+        {
+          "rounding": 1,
+          "e1": 0,
+          "weight": 128480000
+        },
+        {
+          "rounding": 1,
+          "e1": 1,
+          "weight": 64240000
+        }
+      ],
+      "scope": "exact small-ring counterexample, not rank-6 failure probability"
+    }
+  ],
+  "lossless_u_witnesses": [
+    {
+      "parameters": {
+        "n": 256,
+        "k": 6,
+        "q": 3329,
+        "eta1": 2,
+        "eta2": 2
+      },
+      "u_encoding": {
+        "mode": "exact raw coefficients",
+        "bits": 12,
+        "error": 0
+      },
+      "sampler_model": "independent ideal CBD primitives; no fixed-SHAKE equivalence claim",
+      "matrix_model": "arbitrary; cancellation removes it from intrinsic residual",
+      "no_rounding_independence_assumption": true,
+      "key_scope": "average over honestly sampled keys, any message fixed independently of keys",
+      "arithmetic": "exact integers and rational bounds; no Gaussian or tail truncation",
+      "intrinsic_variance": "3073",
+      "results": [
+        {
+          "dv": 5,
+          "v_error_range": [
+            -52,
+            52
+          ],
+          "bit0_lower": {
+            "decimal": "3.5776567337076131822314177256287580144432011269199803110156215714552668226786893E-56",
+            "log2": -184.18895834227078,
+            "numerator_bits": 21319,
+            "denominator_bits": 21504,
+            "ratio_sha256": "1742dbef36a08b3dc66f3c02bc692d5e2767be08e1e1c6b028e6ed98510cc13e"
+          },
+          "bit0_upper": {
+            "decimal": "2.5381884192074028650641742865703937708825853027336877083602966438685681732875149E-44",
+            "log2": -144.8210370052475,
+            "numerator_bits": 21359,
+            "denominator_bits": 21504,
+            "ratio_sha256": "131e05fb01293d2de14f09f955653cedba0af37e8daf3a5210fb9b612f0d582a"
+          },
+          "bit1_lower": {
+            "decimal": "4.1493480895050409905274202097074007061085362376584565446329630716722610869579781E-56",
+            "log2": -183.97508862347604,
+            "numerator_bits": 21320,
+            "denominator_bits": 21504,
+            "ratio_sha256": "8e859e021a5114f63363709e99e283db4420dc1f834bcf76e72f67ae6f41f82f"
+          },
+          "bit1_upper": {
+            "decimal": "2.8938234713304747264134035063240336429683305278458856645954607845265868357731662E-44",
+            "log2": -144.631859257599,
+            "numerator_bits": 21359,
+            "denominator_bits": 21504,
+            "ratio_sha256": "1f176e388e9417fe763e7da543b6d8c7429fc9e112e7485568058e9445f9a0b9"
+          },
+          "message_lower_any_fixed_message": {
+            "decimal": "3.5776567337076131822314177256287580144432011269199803110156215714552668226786893E-56",
+            "log2": -184.18895834227078,
+            "numerator_bits": 21319,
+            "denominator_bits": 21504,
+            "ratio_sha256": "1742dbef36a08b3dc66f3c02bc692d5e2767be08e1e1c6b028e6ed98510cc13e"
+          },
+          "message_union_upper_any_fixed_message": {
+            "decimal": "7.4081880866060152996183129761895261259989261512854673013643796083880622995793055E-42",
+            "log2": -136.631859257599,
+            "numerator_bits": 21359,
+            "denominator_bits": 21496,
+            "ratio_sha256": "93dfa779f69dba69665158f505f0437c1f80dc3d2ff1efb08a1be67fd4c93c82"
+          },
+          "message_union_upper_uniform_bits": {
+            "decimal": "6.9529752198884833170912995749048670897291722631418539173833695083457984115976719E-42",
+            "log2": -136.72334953743484,
+            "numerator_bits": 21359,
+            "denominator_bits": 21496,
+            "ratio_sha256": "f91df17d2d9f98b18862246ad522a9b9123e9b025442096263bea316fc4cebc5"
+          },
+          "c05_exact_upper_comparison": false,
+          "c05_exact_lower_exceeds_threshold": false,
+          "honest_2pow32_decaps_union_upper": {
+            "decimal": "3.1817925554589651348736295515426441408902963150890230419437386597356014853503672E-32",
+            "log2": -104.63185925759899,
+            "numerator_bits": 21359,
+            "denominator_bits": 21464,
+            "ratio_sha256": "3b0ec4dfb4f09b8a291107b7d77e7aaa10e8534d976447dcaaff731254db172c"
+          },
+          "ciphertext_bytes_same_logical_layout": 2464
+        },
+        {
+          "dv": 12,
+          "v_error_range": [
+            0,
+            0
+          ],
+          "bit0_lower": {
+            "decimal": "4.4670623575609146963924334136794225109509751040900834924058715895503518720177246E-50",
+            "log2": -163.93707835041278,
+            "numerator_bits": 21340,
+            "denominator_bits": 21504,
+            "ratio_sha256": "485eda1f20c4ae6bf7b9fa6f58320892b6f1286c9bd810b8d8658e50b99f77f0"
+          },
+          "bit0_upper": {
+            "decimal": "4.4670623575609146963924334136794225109509751040900834924058715895503518720177246E-50",
+            "log2": -163.93707835041278,
+            "numerator_bits": 21340,
+            "denominator_bits": 21504,
+            "ratio_sha256": "485eda1f20c4ae6bf7b9fa6f58320892b6f1286c9bd810b8d8658e50b99f77f0"
+          },
+          "bit1_lower": {
+            "decimal": "5.1368348491642935547904419364745841799191668812835818780890346870829423372976894E-50",
+            "log2": -163.73552505303087,
+            "numerator_bits": 21340,
+            "denominator_bits": 21504,
+            "ratio_sha256": "247aad4162b972dcbfd63e70ed22138ef73403fb131d7c361aabc68e4f181098"
+          },
+          "bit1_upper": {
+            "decimal": "5.1368348491642935547904419364745841799191668812835818780890346870829423372976894E-50",
+            "log2": -163.73552505303087,
+            "numerator_bits": 21340,
+            "denominator_bits": 21504,
+            "ratio_sha256": "247aad4162b972dcbfd63e70ed22138ef73403fb131d7c361aabc68e4f181098"
+          },
+          "message_lower_any_fixed_message": {
+            "decimal": "4.4670623575609146963924334136794225109509751040900834924058715895503518720177246E-50",
+            "log2": -163.93707835041278,
+            "numerator_bits": 21340,
+            "denominator_bits": 21504,
+            "ratio_sha256": "485eda1f20c4ae6bf7b9fa6f58320892b6f1286c9bd810b8d8658e50b99f77f0"
+          },
+          "message_union_upper_any_fixed_message": {
+            "decimal": "1.3150297213860591500263531357374935500593067216085969607907928798932332383482085E-47",
+            "log2": -155.73552505303087,
+            "numerator_bits": 21340,
+            "denominator_bits": 21496,
+            "ratio_sha256": "819e7b42b5bff29603ae60aca31892847692b5b16bd381ad7a24ecc64256558a"
+          },
+          "message_union_upper_uniform_bits": {
+            "decimal": "1.2292988424608266561514080448197128564313781741278291674233480034090616587923730E-47",
+            "log2": -155.8327847822984,
+            "numerator_bits": 21340,
+            "denominator_bits": 21496,
+            "ratio_sha256": "69d0f240f8895b531c3fd5ba1102fef68951953b31f7e3e059e5001db7d740be"
+          },
+          "c05_exact_upper_comparison": false,
+          "c05_exact_lower_exceeds_threshold": true,
+          "honest_2pow32_decaps_union_upper": {
+            "decimal": "5.6480096466211158396847442561395836385156612297419004590414497170510927304057285E-38",
+            "log2": -123.73552505303087,
+            "numerator_bits": 21340,
+            "denominator_bits": 21464,
+            "ratio_sha256": "4f77c15811b78e0c30fc7fe6944dfb15c528ac743136221584f0c9fbea93a396"
+          },
+          "ciphertext_bytes_same_logical_layout": 2688
+        }
+      ]
+    },
+    {
+      "parameters": {
+        "n": 256,
+        "k": 6,
+        "q": 7681,
+        "eta1": 3,
+        "eta2": 3
+      },
+      "u_encoding": {
+        "mode": "exact raw coefficients",
+        "bits": 13,
+        "error": 0
+      },
+      "sampler_model": "independent ideal CBD primitives; no fixed-SHAKE equivalence claim",
+      "matrix_model": "arbitrary; cancellation removes it from intrinsic residual",
+      "no_rounding_independence_assumption": true,
+      "key_scope": "average over honestly sampled keys, any message fixed independently of keys",
+      "arithmetic": "exact integers and rational bounds; no Gaussian or tail truncation",
+      "intrinsic_variance": "13827/2",
+      "results": [
+        {
+          "dv": 5,
+          "v_error_range": [
+            -120,
+            120
+          ],
+          "bit0_lower": {
+            "decimal": "1.0500612766120319648541737814018709798511133323308446356531555052442308620620955E-125",
+            "log2": -415.17053834170656,
+            "numerator_bits": 33376,
+            "denominator_bits": 33792,
+            "ratio_sha256": "e84bd5010a5b597fedb126d075bf6a9ea0dd710269e3c077279ad1471352476a"
+          },
+          "bit0_upper": {
+            "decimal": "2.0772814924920597798920184665354920614979855135828715679540607786763348180956977E-99",
+            "log2": -327.81618466476357,
+            "numerator_bits": 33464,
+            "denominator_bits": 33792,
+            "ratio_sha256": "42b13e880b1d041a81a6f2ad07a2e290043c468c70d2ce30342a2daf0859276b"
+          },
+          "bit1_lower": {
+            "decimal": "1.2095281762650197363345035238107341711708121297409838522961114121468851331245132E-125",
+            "log2": -414.96656748326495,
+            "numerator_bits": 33377,
+            "denominator_bits": 33792,
+            "ratio_sha256": "5a355ba86dd9a55617f44a89bbd74e348c2aea251e760934d6352247aae8bd90"
+          },
+          "bit1_upper": {
+            "decimal": "2.3576955946042431452499013095806652999320742717761423974984451216787418732066335E-99",
+            "log2": -327.63350393189467,
+            "numerator_bits": 33464,
+            "denominator_bits": 33792,
+            "ratio_sha256": "d15b51e8622997c87fae9fb8d6aa41460ce8b1e5f24df85dca1bbd352a2e034f"
+          },
+          "message_lower_any_fixed_message": {
+            "decimal": "1.0500612766120319648541737814018709798511133323308446356531555052442308620620955E-125",
+            "log2": -415.17053834170656,
+            "numerator_bits": 33376,
+            "denominator_bits": 33792,
+            "ratio_sha256": "e84bd5010a5b597fedb126d075bf6a9ea0dd710269e3c077279ad1471352476a"
+          },
+          "message_union_upper_any_fixed_message": {
+            "decimal": "6.0357007221868624518397473525265031678261101357469245375960195114975791954089817E-97",
+            "log2": -319.63350393189467,
+            "numerator_bits": 33464,
+            "denominator_bits": 33784,
+            "ratio_sha256": "d8d5e9182b7811b88679384e60a5a4e4d29424a80dbc66fbc7b7d9d9e233e6fe"
+          },
+          "message_union_upper_uniform_bits": {
+            "decimal": "5.6767706714832677441816573134286814226304765252595378757792075524544981648669839E-97",
+            "log2": -319.721954742854,
+            "numerator_bits": 33464,
+            "denominator_bits": 33784,
+            "ratio_sha256": "a6949429ecc1383520787129d6b644ed5c855bc220b6a2eeeb842086fd4ad27c"
+          },
+          "c05_exact_upper_comparison": true,
+          "c05_exact_lower_exceeds_threshold": false,
+          "honest_2pow32_decaps_union_upper": {
+            "decimal": "2.5923137210236155831502089912003914079053542447927161421554826261659998627451570E-87",
+            "log2": -287.63350393189467,
+            "numerator_bits": 33464,
+            "denominator_bits": 33752,
+            "ratio_sha256": "c6fa9d86fac52907368a33bbe287ddb72b9292f99febfb99104ceadbd676dd2c"
+          },
+          "ciphertext_bytes_same_logical_layout": 2656
+        },
+        {
+          "dv": 13,
+          "v_error_range": [
+            0,
+            0
+          ],
+          "bit0_lower": {
+            "decimal": "3.2433882480505117446373628055490584567624396520717250146712655438739032544630234E-112",
+            "log2": -370.35844489622104,
+            "numerator_bits": 33419,
+            "denominator_bits": 33790,
+            "ratio_sha256": "976627e258760ba9866f49fc341904e63c0d9c1e94bfee1f286f4a97a3ab871f"
+          },
+          "bit0_upper": {
+            "decimal": "3.2433882480505117446373628055490584567624396520717250146712655438739032544630234E-112",
+            "log2": -370.35844489622104,
+            "numerator_bits": 33419,
+            "denominator_bits": 33790,
+            "ratio_sha256": "976627e258760ba9866f49fc341904e63c0d9c1e94bfee1f286f4a97a3ab871f"
+          },
+          "bit1_lower": {
+            "decimal": "3.7087733143464742931452120608974868570147444117840157321491755047096873229427701E-112",
+            "log2": -370.1650045364804,
+            "numerator_bits": 33420,
+            "denominator_bits": 33791,
+            "ratio_sha256": "712fbc55d799c7714b95f4421eb045d0a3a8ede0d33eec8b12b4444ab9c4c248"
+          },
+          "bit1_upper": {
+            "decimal": "3.7087733143464742931452120608974868570147444117840157321491755047096873229427701E-112",
+            "log2": -370.1650045364804,
+            "numerator_bits": 33420,
+            "denominator_bits": 33791,
+            "ratio_sha256": "712fbc55d799c7714b95f4421eb045d0a3a8ede0d33eec8b12b4444ab9c4c248"
+          },
+          "message_lower_any_fixed_message": {
+            "decimal": "3.2433882480505117446373628055490584567624396520717250146712655438739032544630234E-112",
+            "log2": -370.35844489622104,
+            "numerator_bits": 33419,
+            "denominator_bits": 33790,
+            "ratio_sha256": "976627e258760ba9866f49fc341904e63c0d9c1e94bfee1f286f4a97a3ab871f"
+          },
+          "message_union_upper_any_fixed_message": {
+            "decimal": "9.4944596847269741904517428758975663539577456941670802743018892920567995467334914E-110",
+            "log2": -362.1650045364804,
+            "numerator_bits": 33420,
+            "denominator_bits": 33783,
+            "ratio_sha256": "059466bbc5e545b297869feac1ef19126a76b8fc1de0376e604bdba42ffaac1b"
+          },
+          "message_union_upper_uniform_bits": {
+            "decimal": "8.8987667998681421283616958290515780016347956017353481559301645421869959390794157E-110",
+            "log2": -362.25848501782457,
+            "numerator_bits": 33421,
+            "denominator_bits": 33784,
+            "ratio_sha256": "af09dca33dd80199189b24b7f0c8dbf365948fd965ee34f8792b69b6cb90ea83"
+          },
+          "c05_exact_upper_comparison": true,
+          "c05_exact_lower_exceeds_threshold": false,
+          "honest_2pow32_decaps_union_upper": {
+            "decimal": "4.0778393839092824837026311118181034136238477922332427737933323740396546627647969E-100",
+            "log2": -330.1650045364804,
+            "numerator_bits": 33420,
+            "denominator_bits": 33751,
+            "ratio_sha256": "61eb7a109e5afdad0d0776e45a654fd40e0056e28e4d9d84da9d0197513f8d99"
+          },
+          "ciphertext_bytes_same_logical_layout": 2912
+        }
+      ]
+    }
+  ],
+  "threshold": "2^(-874/5)",
+  "threshold_decision": "exact fifth-power integer comparison",
+  "profile_selection": "none",
+  "j2_closed": false,
+  "limits": [
+    "toy numerical results do not transfer to n=256,k=6",
+    "raw-u witnesses change ciphertext encoding; no new KEM is implemented",
+    "ideal CBD correctness is not fixed-SHAKE or worst-key correctness",
+    "modern attack coverage, memory, CCA and oracle analysis remain open"
+  ]
+}

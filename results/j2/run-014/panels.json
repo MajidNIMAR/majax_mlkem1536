@@ -1,0 +1,6146 @@
+[
+  {
+    "case": "q5-matrix0",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "82ea6bf84a85ed0de8e9d29d95af88000e35147573cce1c67370cdcf4c644130"
+  },
+  {
+    "case": "q5-matrix0",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "82ea6bf84a85ed0de8e9d29d95af88000e35147573cce1c67370cdcf4c644130"
+  },
+  {
+    "case": "q5-matrix0",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "82ea6bf84a85ed0de8e9d29d95af88000e35147573cce1c67370cdcf4c644130"
+  },
+  {
+    "case": "q5-matrix0",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "82ea6bf84a85ed0de8e9d29d95af88000e35147573cce1c67370cdcf4c644130"
+  },
+  {
+    "case": "q5-matrix0",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "bbe93ec4e10e32339f58759fc3ebfcbe452acaa0791b3eb89e5ae605f77a96b6"
+  },
+  {
+    "case": "q5-matrix0",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "bbe93ec4e10e32339f58759fc3ebfcbe452acaa0791b3eb89e5ae605f77a96b6"
+  },
+  {
+    "case": "q5-matrix0",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "bbe93ec4e10e32339f58759fc3ebfcbe452acaa0791b3eb89e5ae605f77a96b6"
+  },
+  {
+    "case": "q5-matrix0",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "bbe93ec4e10e32339f58759fc3ebfcbe452acaa0791b3eb89e5ae605f77a96b6"
+  },
+  {
+    "case": "q5-matrix0",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "1778d0b85767fec2d7f8fc715b8e0eb70773d72ca714f0190b7c4ae5086f7e38"
+  },
+  {
+    "case": "q5-matrix0",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "1778d0b85767fec2d7f8fc715b8e0eb70773d72ca714f0190b7c4ae5086f7e38"
+  },
+  {
+    "case": "q5-matrix0",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "1778d0b85767fec2d7f8fc715b8e0eb70773d72ca714f0190b7c4ae5086f7e38"
+  },
+  {
+    "case": "q5-matrix0",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "1778d0b85767fec2d7f8fc715b8e0eb70773d72ca714f0190b7c4ae5086f7e38"
+  },
+  {
+    "case": "q5-matrix0",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "82ea6bf84a85ed0de8e9d29d95af88000e35147573cce1c67370cdcf4c644130"
+  },
+  {
+    "case": "q5-matrix0",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "82ea6bf84a85ed0de8e9d29d95af88000e35147573cce1c67370cdcf4c644130"
+  },
+  {
+    "case": "q5-matrix0",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "82ea6bf84a85ed0de8e9d29d95af88000e35147573cce1c67370cdcf4c644130"
+  },
+  {
+    "case": "q5-matrix0",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "82ea6bf84a85ed0de8e9d29d95af88000e35147573cce1c67370cdcf4c644130"
+  },
+  {
+    "case": "q5-matrix0",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "bbe93ec4e10e32339f58759fc3ebfcbe452acaa0791b3eb89e5ae605f77a96b6"
+  },
+  {
+    "case": "q5-matrix0",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "bbe93ec4e10e32339f58759fc3ebfcbe452acaa0791b3eb89e5ae605f77a96b6"
+  },
+  {
+    "case": "q5-matrix0",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "bbe93ec4e10e32339f58759fc3ebfcbe452acaa0791b3eb89e5ae605f77a96b6"
+  },
+  {
+    "case": "q5-matrix0",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "bbe93ec4e10e32339f58759fc3ebfcbe452acaa0791b3eb89e5ae605f77a96b6"
+  },
+  {
+    "case": "q5-matrix0",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "1778d0b85767fec2d7f8fc715b8e0eb70773d72ca714f0190b7c4ae5086f7e38"
+  },
+  {
+    "case": "q5-matrix0",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "1778d0b85767fec2d7f8fc715b8e0eb70773d72ca714f0190b7c4ae5086f7e38"
+  },
+  {
+    "case": "q5-matrix0",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "1778d0b85767fec2d7f8fc715b8e0eb70773d72ca714f0190b7c4ae5086f7e38"
+  },
+  {
+    "case": "q5-matrix0",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "1778d0b85767fec2d7f8fc715b8e0eb70773d72ca714f0190b7c4ae5086f7e38"
+  },
+  {
+    "case": "q5-matrix1",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "69a92267a241aa256dfd5954bba5c2eeb915928dadead4195161e9470e29cb67"
+  },
+  {
+    "case": "q5-matrix1",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "69a92267a241aa256dfd5954bba5c2eeb915928dadead4195161e9470e29cb67"
+  },
+  {
+    "case": "q5-matrix1",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "69a92267a241aa256dfd5954bba5c2eeb915928dadead4195161e9470e29cb67"
+  },
+  {
+    "case": "q5-matrix1",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "69a92267a241aa256dfd5954bba5c2eeb915928dadead4195161e9470e29cb67"
+  },
+  {
+    "case": "q5-matrix1",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "98c9764ab7f239d1197b8612d3103403b4ea25054b4d4062636f5e9822209c80"
+  },
+  {
+    "case": "q5-matrix1",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "98c9764ab7f239d1197b8612d3103403b4ea25054b4d4062636f5e9822209c80"
+  },
+  {
+    "case": "q5-matrix1",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "98c9764ab7f239d1197b8612d3103403b4ea25054b4d4062636f5e9822209c80"
+  },
+  {
+    "case": "q5-matrix1",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "98c9764ab7f239d1197b8612d3103403b4ea25054b4d4062636f5e9822209c80"
+  },
+  {
+    "case": "q5-matrix1",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "bf81f4ad391235263b4f8b24387fe9cf3450cb2da98244cd37c88ecd1ff927ed"
+  },
+  {
+    "case": "q5-matrix1",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "bf81f4ad391235263b4f8b24387fe9cf3450cb2da98244cd37c88ecd1ff927ed"
+  },
+  {
+    "case": "q5-matrix1",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "bf81f4ad391235263b4f8b24387fe9cf3450cb2da98244cd37c88ecd1ff927ed"
+  },
+  {
+    "case": "q5-matrix1",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "bf81f4ad391235263b4f8b24387fe9cf3450cb2da98244cd37c88ecd1ff927ed"
+  },
+  {
+    "case": "q5-matrix1",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "69a92267a241aa256dfd5954bba5c2eeb915928dadead4195161e9470e29cb67"
+  },
+  {
+    "case": "q5-matrix1",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "69a92267a241aa256dfd5954bba5c2eeb915928dadead4195161e9470e29cb67"
+  },
+  {
+    "case": "q5-matrix1",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "69a92267a241aa256dfd5954bba5c2eeb915928dadead4195161e9470e29cb67"
+  },
+  {
+    "case": "q5-matrix1",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "69a92267a241aa256dfd5954bba5c2eeb915928dadead4195161e9470e29cb67"
+  },
+  {
+    "case": "q5-matrix1",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "98c9764ab7f239d1197b8612d3103403b4ea25054b4d4062636f5e9822209c80"
+  },
+  {
+    "case": "q5-matrix1",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "98c9764ab7f239d1197b8612d3103403b4ea25054b4d4062636f5e9822209c80"
+  },
+  {
+    "case": "q5-matrix1",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "98c9764ab7f239d1197b8612d3103403b4ea25054b4d4062636f5e9822209c80"
+  },
+  {
+    "case": "q5-matrix1",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "98c9764ab7f239d1197b8612d3103403b4ea25054b4d4062636f5e9822209c80"
+  },
+  {
+    "case": "q5-matrix1",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "bf81f4ad391235263b4f8b24387fe9cf3450cb2da98244cd37c88ecd1ff927ed"
+  },
+  {
+    "case": "q5-matrix1",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "bf81f4ad391235263b4f8b24387fe9cf3450cb2da98244cd37c88ecd1ff927ed"
+  },
+  {
+    "case": "q5-matrix1",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "bf81f4ad391235263b4f8b24387fe9cf3450cb2da98244cd37c88ecd1ff927ed"
+  },
+  {
+    "case": "q5-matrix1",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "bf81f4ad391235263b4f8b24387fe9cf3450cb2da98244cd37c88ecd1ff927ed"
+  },
+  {
+    "case": "q5-matrix2",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "d2eb1d4cb1d9dd797fb0303ce44e55619a98c70f8cc3178528ada30a249bec54"
+  },
+  {
+    "case": "q5-matrix2",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "12eb914936a48a6d2fbe043bcd7ca762d9eec54e29f593dae42df661d00def33"
+  },
+  {
+    "case": "q5-matrix2",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "d2eb1d4cb1d9dd797fb0303ce44e55619a98c70f8cc3178528ada30a249bec54"
+  },
+  {
+    "case": "q5-matrix2",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "12eb914936a48a6d2fbe043bcd7ca762d9eec54e29f593dae42df661d00def33"
+  },
+  {
+    "case": "q5-matrix2",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "2964cf1ad7526bed187849c0238a77c2e9d997780275eac15ed6c2bc1f075d76"
+  },
+  {
+    "case": "q5-matrix2",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "5b50064c2dcb3c4f4be3c257f2cef7d496e7b1b804c288fdf16f1bc96482e92b"
+  },
+  {
+    "case": "q5-matrix2",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "2964cf1ad7526bed187849c0238a77c2e9d997780275eac15ed6c2bc1f075d76"
+  },
+  {
+    "case": "q5-matrix2",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "5b50064c2dcb3c4f4be3c257f2cef7d496e7b1b804c288fdf16f1bc96482e92b"
+  },
+  {
+    "case": "q5-matrix2",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "6da315b3987ee87e04e24132fbcd5ece22ae5e031a983a0e33a0d97e291161ac"
+  },
+  {
+    "case": "q5-matrix2",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "34e1e501db207ab89276add12fc6b06b4f99cd591633fbe945af8689f98fca7d"
+  },
+  {
+    "case": "q5-matrix2",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "6da315b3987ee87e04e24132fbcd5ece22ae5e031a983a0e33a0d97e291161ac"
+  },
+  {
+    "case": "q5-matrix2",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "34e1e501db207ab89276add12fc6b06b4f99cd591633fbe945af8689f98fca7d"
+  },
+  {
+    "case": "q5-matrix2",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "d2eb1d4cb1d9dd797fb0303ce44e55619a98c70f8cc3178528ada30a249bec54"
+  },
+  {
+    "case": "q5-matrix2",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "12eb914936a48a6d2fbe043bcd7ca762d9eec54e29f593dae42df661d00def33"
+  },
+  {
+    "case": "q5-matrix2",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "d2eb1d4cb1d9dd797fb0303ce44e55619a98c70f8cc3178528ada30a249bec54"
+  },
+  {
+    "case": "q5-matrix2",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "12eb914936a48a6d2fbe043bcd7ca762d9eec54e29f593dae42df661d00def33"
+  },
+  {
+    "case": "q5-matrix2",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "2964cf1ad7526bed187849c0238a77c2e9d997780275eac15ed6c2bc1f075d76"
+  },
+  {
+    "case": "q5-matrix2",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "5b50064c2dcb3c4f4be3c257f2cef7d496e7b1b804c288fdf16f1bc96482e92b"
+  },
+  {
+    "case": "q5-matrix2",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "2964cf1ad7526bed187849c0238a77c2e9d997780275eac15ed6c2bc1f075d76"
+  },
+  {
+    "case": "q5-matrix2",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "5b50064c2dcb3c4f4be3c257f2cef7d496e7b1b804c288fdf16f1bc96482e92b"
+  },
+  {
+    "case": "q5-matrix2",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "6da315b3987ee87e04e24132fbcd5ece22ae5e031a983a0e33a0d97e291161ac"
+  },
+  {
+    "case": "q5-matrix2",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "34e1e501db207ab89276add12fc6b06b4f99cd591633fbe945af8689f98fca7d"
+  },
+  {
+    "case": "q5-matrix2",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "6da315b3987ee87e04e24132fbcd5ece22ae5e031a983a0e33a0d97e291161ac"
+  },
+  {
+    "case": "q5-matrix2",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "34e1e501db207ab89276add12fc6b06b4f99cd591633fbe945af8689f98fca7d"
+  },
+  {
+    "case": "q5-matrix3",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "9e144e146c406bda8601bfc6c44677691b1579f657f71a55dceb8427327b2c93"
+  },
+  {
+    "case": "q5-matrix3",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "9e144e146c406bda8601bfc6c44677691b1579f657f71a55dceb8427327b2c93"
+  },
+  {
+    "case": "q5-matrix3",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "9e144e146c406bda8601bfc6c44677691b1579f657f71a55dceb8427327b2c93"
+  },
+  {
+    "case": "q5-matrix3",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "9e144e146c406bda8601bfc6c44677691b1579f657f71a55dceb8427327b2c93"
+  },
+  {
+    "case": "q5-matrix3",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "1103b0a40d407cd9c939007e5fed10fe1467e2c283a4580f4421caa0dd0c61ec"
+  },
+  {
+    "case": "q5-matrix3",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "1103b0a40d407cd9c939007e5fed10fe1467e2c283a4580f4421caa0dd0c61ec"
+  },
+  {
+    "case": "q5-matrix3",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "1103b0a40d407cd9c939007e5fed10fe1467e2c283a4580f4421caa0dd0c61ec"
+  },
+  {
+    "case": "q5-matrix3",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "1103b0a40d407cd9c939007e5fed10fe1467e2c283a4580f4421caa0dd0c61ec"
+  },
+  {
+    "case": "q5-matrix3",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "0796e021500e64e3432af5f8ba5ab627deb81d5cb632d36711b23b7a977cdbfc"
+  },
+  {
+    "case": "q5-matrix3",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "0796e021500e64e3432af5f8ba5ab627deb81d5cb632d36711b23b7a977cdbfc"
+  },
+  {
+    "case": "q5-matrix3",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "0796e021500e64e3432af5f8ba5ab627deb81d5cb632d36711b23b7a977cdbfc"
+  },
+  {
+    "case": "q5-matrix3",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "0796e021500e64e3432af5f8ba5ab627deb81d5cb632d36711b23b7a977cdbfc"
+  },
+  {
+    "case": "q5-matrix3",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "9e144e146c406bda8601bfc6c44677691b1579f657f71a55dceb8427327b2c93"
+  },
+  {
+    "case": "q5-matrix3",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "9e144e146c406bda8601bfc6c44677691b1579f657f71a55dceb8427327b2c93"
+  },
+  {
+    "case": "q5-matrix3",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "9e144e146c406bda8601bfc6c44677691b1579f657f71a55dceb8427327b2c93"
+  },
+  {
+    "case": "q5-matrix3",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "9e144e146c406bda8601bfc6c44677691b1579f657f71a55dceb8427327b2c93"
+  },
+  {
+    "case": "q5-matrix3",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "1103b0a40d407cd9c939007e5fed10fe1467e2c283a4580f4421caa0dd0c61ec"
+  },
+  {
+    "case": "q5-matrix3",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "1103b0a40d407cd9c939007e5fed10fe1467e2c283a4580f4421caa0dd0c61ec"
+  },
+  {
+    "case": "q5-matrix3",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "1103b0a40d407cd9c939007e5fed10fe1467e2c283a4580f4421caa0dd0c61ec"
+  },
+  {
+    "case": "q5-matrix3",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "1103b0a40d407cd9c939007e5fed10fe1467e2c283a4580f4421caa0dd0c61ec"
+  },
+  {
+    "case": "q5-matrix3",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "0796e021500e64e3432af5f8ba5ab627deb81d5cb632d36711b23b7a977cdbfc"
+  },
+  {
+    "case": "q5-matrix3",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "0796e021500e64e3432af5f8ba5ab627deb81d5cb632d36711b23b7a977cdbfc"
+  },
+  {
+    "case": "q5-matrix3",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "0796e021500e64e3432af5f8ba5ab627deb81d5cb632d36711b23b7a977cdbfc"
+  },
+  {
+    "case": "q5-matrix3",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "0796e021500e64e3432af5f8ba5ab627deb81d5cb632d36711b23b7a977cdbfc"
+  },
+  {
+    "case": "q5-matrix4",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "b51f7f9547492f44627b4cccaf83f7268a3c41a4024cd6d440606b5608beb791"
+  },
+  {
+    "case": "q5-matrix4",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "b51f7f9547492f44627b4cccaf83f7268a3c41a4024cd6d440606b5608beb791"
+  },
+  {
+    "case": "q5-matrix4",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "b51f7f9547492f44627b4cccaf83f7268a3c41a4024cd6d440606b5608beb791"
+  },
+  {
+    "case": "q5-matrix4",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "b51f7f9547492f44627b4cccaf83f7268a3c41a4024cd6d440606b5608beb791"
+  },
+  {
+    "case": "q5-matrix4",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "ecd5e63af36050e984bab5c0dc8ba179919814f07d5916f746ff0e69940985d8"
+  },
+  {
+    "case": "q5-matrix4",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "ecd5e63af36050e984bab5c0dc8ba179919814f07d5916f746ff0e69940985d8"
+  },
+  {
+    "case": "q5-matrix4",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "ecd5e63af36050e984bab5c0dc8ba179919814f07d5916f746ff0e69940985d8"
+  },
+  {
+    "case": "q5-matrix4",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "ecd5e63af36050e984bab5c0dc8ba179919814f07d5916f746ff0e69940985d8"
+  },
+  {
+    "case": "q5-matrix4",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "fa4269442a11dd0e153788eb6abf3e46c6001c87d1c280d999b6a7c2364f3681"
+  },
+  {
+    "case": "q5-matrix4",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "fa4269442a11dd0e153788eb6abf3e46c6001c87d1c280d999b6a7c2364f3681"
+  },
+  {
+    "case": "q5-matrix4",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "fa4269442a11dd0e153788eb6abf3e46c6001c87d1c280d999b6a7c2364f3681"
+  },
+  {
+    "case": "q5-matrix4",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "fa4269442a11dd0e153788eb6abf3e46c6001c87d1c280d999b6a7c2364f3681"
+  },
+  {
+    "case": "q5-matrix4",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "b51f7f9547492f44627b4cccaf83f7268a3c41a4024cd6d440606b5608beb791"
+  },
+  {
+    "case": "q5-matrix4",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "b51f7f9547492f44627b4cccaf83f7268a3c41a4024cd6d440606b5608beb791"
+  },
+  {
+    "case": "q5-matrix4",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "b51f7f9547492f44627b4cccaf83f7268a3c41a4024cd6d440606b5608beb791"
+  },
+  {
+    "case": "q5-matrix4",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "b51f7f9547492f44627b4cccaf83f7268a3c41a4024cd6d440606b5608beb791"
+  },
+  {
+    "case": "q5-matrix4",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "ecd5e63af36050e984bab5c0dc8ba179919814f07d5916f746ff0e69940985d8"
+  },
+  {
+    "case": "q5-matrix4",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "ecd5e63af36050e984bab5c0dc8ba179919814f07d5916f746ff0e69940985d8"
+  },
+  {
+    "case": "q5-matrix4",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "ecd5e63af36050e984bab5c0dc8ba179919814f07d5916f746ff0e69940985d8"
+  },
+  {
+    "case": "q5-matrix4",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "ecd5e63af36050e984bab5c0dc8ba179919814f07d5916f746ff0e69940985d8"
+  },
+  {
+    "case": "q5-matrix4",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "fa4269442a11dd0e153788eb6abf3e46c6001c87d1c280d999b6a7c2364f3681"
+  },
+  {
+    "case": "q5-matrix4",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "fa4269442a11dd0e153788eb6abf3e46c6001c87d1c280d999b6a7c2364f3681"
+  },
+  {
+    "case": "q5-matrix4",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "fa4269442a11dd0e153788eb6abf3e46c6001c87d1c280d999b6a7c2364f3681"
+  },
+  {
+    "case": "q5-matrix4",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "fa4269442a11dd0e153788eb6abf3e46c6001c87d1c280d999b6a7c2364f3681"
+  },
+  {
+    "case": "q5-matrix5",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "13353775968a75af96a3950c28f10dbf43ff20f74eda73178882466f7cc7cff5"
+  },
+  {
+    "case": "q5-matrix5",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "f223b04fb31d7f19cbb7c10a7ba9164730ebd4f9e8241998cac06ead5f97d50b"
+  },
+  {
+    "case": "q5-matrix5",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "13353775968a75af96a3950c28f10dbf43ff20f74eda73178882466f7cc7cff5"
+  },
+  {
+    "case": "q5-matrix5",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "f223b04fb31d7f19cbb7c10a7ba9164730ebd4f9e8241998cac06ead5f97d50b"
+  },
+  {
+    "case": "q5-matrix5",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "1cb31bf9ded1d5d23f3caf9d8169d2d7f111185fd257954cb277ffecc682ab31"
+  },
+  {
+    "case": "q5-matrix5",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "590b1ff5c2de471425a915b7ea435502cc472721a60c82fd5ddc8e2019f0225d"
+  },
+  {
+    "case": "q5-matrix5",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "1cb31bf9ded1d5d23f3caf9d8169d2d7f111185fd257954cb277ffecc682ab31"
+  },
+  {
+    "case": "q5-matrix5",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "590b1ff5c2de471425a915b7ea435502cc472721a60c82fd5ddc8e2019f0225d"
+  },
+  {
+    "case": "q5-matrix5",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "ad947404e669f96cca3aae6f6d13fcb07967d4332ed0d441adbdcc423d90c720"
+  },
+  {
+    "case": "q5-matrix5",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "dcff70b5be99e680ff00218fe01975fda6773ee85369afb0ddcfd1f2d399f281"
+  },
+  {
+    "case": "q5-matrix5",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "ad947404e669f96cca3aae6f6d13fcb07967d4332ed0d441adbdcc423d90c720"
+  },
+  {
+    "case": "q5-matrix5",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "dcff70b5be99e680ff00218fe01975fda6773ee85369afb0ddcfd1f2d399f281"
+  },
+  {
+    "case": "q5-matrix5",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "13353775968a75af96a3950c28f10dbf43ff20f74eda73178882466f7cc7cff5"
+  },
+  {
+    "case": "q5-matrix5",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "f223b04fb31d7f19cbb7c10a7ba9164730ebd4f9e8241998cac06ead5f97d50b"
+  },
+  {
+    "case": "q5-matrix5",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "13353775968a75af96a3950c28f10dbf43ff20f74eda73178882466f7cc7cff5"
+  },
+  {
+    "case": "q5-matrix5",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "f223b04fb31d7f19cbb7c10a7ba9164730ebd4f9e8241998cac06ead5f97d50b"
+  },
+  {
+    "case": "q5-matrix5",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "1cb31bf9ded1d5d23f3caf9d8169d2d7f111185fd257954cb277ffecc682ab31"
+  },
+  {
+    "case": "q5-matrix5",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "590b1ff5c2de471425a915b7ea435502cc472721a60c82fd5ddc8e2019f0225d"
+  },
+  {
+    "case": "q5-matrix5",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "1cb31bf9ded1d5d23f3caf9d8169d2d7f111185fd257954cb277ffecc682ab31"
+  },
+  {
+    "case": "q5-matrix5",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "590b1ff5c2de471425a915b7ea435502cc472721a60c82fd5ddc8e2019f0225d"
+  },
+  {
+    "case": "q5-matrix5",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "ad947404e669f96cca3aae6f6d13fcb07967d4332ed0d441adbdcc423d90c720"
+  },
+  {
+    "case": "q5-matrix5",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "dcff70b5be99e680ff00218fe01975fda6773ee85369afb0ddcfd1f2d399f281"
+  },
+  {
+    "case": "q5-matrix5",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "ad947404e669f96cca3aae6f6d13fcb07967d4332ed0d441adbdcc423d90c720"
+  },
+  {
+    "case": "q5-matrix5",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "dcff70b5be99e680ff00218fe01975fda6773ee85369afb0ddcfd1f2d399f281"
+  },
+  {
+    "case": "q5-matrix6",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "8201e3d210ca6532f2ad2eed74dff5ce32be825d879da856dae7c90c1deed14a"
+  },
+  {
+    "case": "q5-matrix6",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "8201e3d210ca6532f2ad2eed74dff5ce32be825d879da856dae7c90c1deed14a"
+  },
+  {
+    "case": "q5-matrix6",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "8201e3d210ca6532f2ad2eed74dff5ce32be825d879da856dae7c90c1deed14a"
+  },
+  {
+    "case": "q5-matrix6",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "8201e3d210ca6532f2ad2eed74dff5ce32be825d879da856dae7c90c1deed14a"
+  },
+  {
+    "case": "q5-matrix6",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "33d0f7fba89a74417c5f01c40ab5a8812da79d762b5d2a4be06dbf5d027e4b6b"
+  },
+  {
+    "case": "q5-matrix6",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "33d0f7fba89a74417c5f01c40ab5a8812da79d762b5d2a4be06dbf5d027e4b6b"
+  },
+  {
+    "case": "q5-matrix6",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "33d0f7fba89a74417c5f01c40ab5a8812da79d762b5d2a4be06dbf5d027e4b6b"
+  },
+  {
+    "case": "q5-matrix6",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "33d0f7fba89a74417c5f01c40ab5a8812da79d762b5d2a4be06dbf5d027e4b6b"
+  },
+  {
+    "case": "q5-matrix6",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "bcfa76c8f19474a3461e12a586add11c8393c9d120e049345cd41d2042c487c6"
+  },
+  {
+    "case": "q5-matrix6",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "bcfa76c8f19474a3461e12a586add11c8393c9d120e049345cd41d2042c487c6"
+  },
+  {
+    "case": "q5-matrix6",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "bcfa76c8f19474a3461e12a586add11c8393c9d120e049345cd41d2042c487c6"
+  },
+  {
+    "case": "q5-matrix6",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "bcfa76c8f19474a3461e12a586add11c8393c9d120e049345cd41d2042c487c6"
+  },
+  {
+    "case": "q5-matrix6",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "8201e3d210ca6532f2ad2eed74dff5ce32be825d879da856dae7c90c1deed14a"
+  },
+  {
+    "case": "q5-matrix6",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "8201e3d210ca6532f2ad2eed74dff5ce32be825d879da856dae7c90c1deed14a"
+  },
+  {
+    "case": "q5-matrix6",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "8201e3d210ca6532f2ad2eed74dff5ce32be825d879da856dae7c90c1deed14a"
+  },
+  {
+    "case": "q5-matrix6",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "8201e3d210ca6532f2ad2eed74dff5ce32be825d879da856dae7c90c1deed14a"
+  },
+  {
+    "case": "q5-matrix6",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "33d0f7fba89a74417c5f01c40ab5a8812da79d762b5d2a4be06dbf5d027e4b6b"
+  },
+  {
+    "case": "q5-matrix6",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "33d0f7fba89a74417c5f01c40ab5a8812da79d762b5d2a4be06dbf5d027e4b6b"
+  },
+  {
+    "case": "q5-matrix6",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "33d0f7fba89a74417c5f01c40ab5a8812da79d762b5d2a4be06dbf5d027e4b6b"
+  },
+  {
+    "case": "q5-matrix6",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "33d0f7fba89a74417c5f01c40ab5a8812da79d762b5d2a4be06dbf5d027e4b6b"
+  },
+  {
+    "case": "q5-matrix6",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "bcfa76c8f19474a3461e12a586add11c8393c9d120e049345cd41d2042c487c6"
+  },
+  {
+    "case": "q5-matrix6",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "bcfa76c8f19474a3461e12a586add11c8393c9d120e049345cd41d2042c487c6"
+  },
+  {
+    "case": "q5-matrix6",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "bcfa76c8f19474a3461e12a586add11c8393c9d120e049345cd41d2042c487c6"
+  },
+  {
+    "case": "q5-matrix6",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "bcfa76c8f19474a3461e12a586add11c8393c9d120e049345cd41d2042c487c6"
+  },
+  {
+    "case": "q5-matrix7",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "54b90a36d81f3e9bc11754954bbcbb7ec60107cacee7fda897594da4500b2cf5"
+  },
+  {
+    "case": "q5-matrix7",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "54b90a36d81f3e9bc11754954bbcbb7ec60107cacee7fda897594da4500b2cf5"
+  },
+  {
+    "case": "q5-matrix7",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "54b90a36d81f3e9bc11754954bbcbb7ec60107cacee7fda897594da4500b2cf5"
+  },
+  {
+    "case": "q5-matrix7",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "54b90a36d81f3e9bc11754954bbcbb7ec60107cacee7fda897594da4500b2cf5"
+  },
+  {
+    "case": "q5-matrix7",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "0639328ddc104acf9cc039c674e2084ac8296f2e62d0ae3f97e4c522a7b63c8d"
+  },
+  {
+    "case": "q5-matrix7",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "0639328ddc104acf9cc039c674e2084ac8296f2e62d0ae3f97e4c522a7b63c8d"
+  },
+  {
+    "case": "q5-matrix7",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "0639328ddc104acf9cc039c674e2084ac8296f2e62d0ae3f97e4c522a7b63c8d"
+  },
+  {
+    "case": "q5-matrix7",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "0639328ddc104acf9cc039c674e2084ac8296f2e62d0ae3f97e4c522a7b63c8d"
+  },
+  {
+    "case": "q5-matrix7",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "3925040683733e617ac74c0a9759d6900aaf2bafb61065b21fa7e13e350c5af5"
+  },
+  {
+    "case": "q5-matrix7",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "3925040683733e617ac74c0a9759d6900aaf2bafb61065b21fa7e13e350c5af5"
+  },
+  {
+    "case": "q5-matrix7",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "3925040683733e617ac74c0a9759d6900aaf2bafb61065b21fa7e13e350c5af5"
+  },
+  {
+    "case": "q5-matrix7",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "3925040683733e617ac74c0a9759d6900aaf2bafb61065b21fa7e13e350c5af5"
+  },
+  {
+    "case": "q5-matrix7",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "54b90a36d81f3e9bc11754954bbcbb7ec60107cacee7fda897594da4500b2cf5"
+  },
+  {
+    "case": "q5-matrix7",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "54b90a36d81f3e9bc11754954bbcbb7ec60107cacee7fda897594da4500b2cf5"
+  },
+  {
+    "case": "q5-matrix7",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "54b90a36d81f3e9bc11754954bbcbb7ec60107cacee7fda897594da4500b2cf5"
+  },
+  {
+    "case": "q5-matrix7",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "54b90a36d81f3e9bc11754954bbcbb7ec60107cacee7fda897594da4500b2cf5"
+  },
+  {
+    "case": "q5-matrix7",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "0639328ddc104acf9cc039c674e2084ac8296f2e62d0ae3f97e4c522a7b63c8d"
+  },
+  {
+    "case": "q5-matrix7",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "0639328ddc104acf9cc039c674e2084ac8296f2e62d0ae3f97e4c522a7b63c8d"
+  },
+  {
+    "case": "q5-matrix7",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "0639328ddc104acf9cc039c674e2084ac8296f2e62d0ae3f97e4c522a7b63c8d"
+  },
+  {
+    "case": "q5-matrix7",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "0639328ddc104acf9cc039c674e2084ac8296f2e62d0ae3f97e4c522a7b63c8d"
+  },
+  {
+    "case": "q5-matrix7",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "3925040683733e617ac74c0a9759d6900aaf2bafb61065b21fa7e13e350c5af5"
+  },
+  {
+    "case": "q5-matrix7",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "3925040683733e617ac74c0a9759d6900aaf2bafb61065b21fa7e13e350c5af5"
+  },
+  {
+    "case": "q5-matrix7",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "3925040683733e617ac74c0a9759d6900aaf2bafb61065b21fa7e13e350c5af5"
+  },
+  {
+    "case": "q5-matrix7",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "3925040683733e617ac74c0a9759d6900aaf2bafb61065b21fa7e13e350c5af5"
+  },
+  {
+    "case": "q5-matrix8",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "5176a39ef1a18b1f89af8195cb2d4123d056df770e562b6ac40784fc20070c19"
+  },
+  {
+    "case": "q5-matrix8",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "5176a39ef1a18b1f89af8195cb2d4123d056df770e562b6ac40784fc20070c19"
+  },
+  {
+    "case": "q5-matrix8",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "5176a39ef1a18b1f89af8195cb2d4123d056df770e562b6ac40784fc20070c19"
+  },
+  {
+    "case": "q5-matrix8",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "5176a39ef1a18b1f89af8195cb2d4123d056df770e562b6ac40784fc20070c19"
+  },
+  {
+    "case": "q5-matrix8",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "22bcac07101c42ba4a1fad81e84154fcb4c073841ea797c3ae83cbab94f4e9b0"
+  },
+  {
+    "case": "q5-matrix8",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "22bcac07101c42ba4a1fad81e84154fcb4c073841ea797c3ae83cbab94f4e9b0"
+  },
+  {
+    "case": "q5-matrix8",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "22bcac07101c42ba4a1fad81e84154fcb4c073841ea797c3ae83cbab94f4e9b0"
+  },
+  {
+    "case": "q5-matrix8",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "22bcac07101c42ba4a1fad81e84154fcb4c073841ea797c3ae83cbab94f4e9b0"
+  },
+  {
+    "case": "q5-matrix8",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "42506308a050fc5006d55f1b67c33c81047ecd16cfa4a7003b59255b4dc0e033"
+  },
+  {
+    "case": "q5-matrix8",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "42506308a050fc5006d55f1b67c33c81047ecd16cfa4a7003b59255b4dc0e033"
+  },
+  {
+    "case": "q5-matrix8",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "42506308a050fc5006d55f1b67c33c81047ecd16cfa4a7003b59255b4dc0e033"
+  },
+  {
+    "case": "q5-matrix8",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "42506308a050fc5006d55f1b67c33c81047ecd16cfa4a7003b59255b4dc0e033"
+  },
+  {
+    "case": "q5-matrix8",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "5176a39ef1a18b1f89af8195cb2d4123d056df770e562b6ac40784fc20070c19"
+  },
+  {
+    "case": "q5-matrix8",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "5176a39ef1a18b1f89af8195cb2d4123d056df770e562b6ac40784fc20070c19"
+  },
+  {
+    "case": "q5-matrix8",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "5176a39ef1a18b1f89af8195cb2d4123d056df770e562b6ac40784fc20070c19"
+  },
+  {
+    "case": "q5-matrix8",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "5176a39ef1a18b1f89af8195cb2d4123d056df770e562b6ac40784fc20070c19"
+  },
+  {
+    "case": "q5-matrix8",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "22bcac07101c42ba4a1fad81e84154fcb4c073841ea797c3ae83cbab94f4e9b0"
+  },
+  {
+    "case": "q5-matrix8",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "22bcac07101c42ba4a1fad81e84154fcb4c073841ea797c3ae83cbab94f4e9b0"
+  },
+  {
+    "case": "q5-matrix8",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "22bcac07101c42ba4a1fad81e84154fcb4c073841ea797c3ae83cbab94f4e9b0"
+  },
+  {
+    "case": "q5-matrix8",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "22bcac07101c42ba4a1fad81e84154fcb4c073841ea797c3ae83cbab94f4e9b0"
+  },
+  {
+    "case": "q5-matrix8",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "42506308a050fc5006d55f1b67c33c81047ecd16cfa4a7003b59255b4dc0e033"
+  },
+  {
+    "case": "q5-matrix8",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "42506308a050fc5006d55f1b67c33c81047ecd16cfa4a7003b59255b4dc0e033"
+  },
+  {
+    "case": "q5-matrix8",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "42506308a050fc5006d55f1b67c33c81047ecd16cfa4a7003b59255b4dc0e033"
+  },
+  {
+    "case": "q5-matrix8",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "42506308a050fc5006d55f1b67c33c81047ecd16cfa4a7003b59255b4dc0e033"
+  },
+  {
+    "case": "q5-matrix9",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "d77e206f8e8677eb8a2ebdd732fc4402c8d049601e8834b0aea398d193815494"
+  },
+  {
+    "case": "q5-matrix9",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "d77e206f8e8677eb8a2ebdd732fc4402c8d049601e8834b0aea398d193815494"
+  },
+  {
+    "case": "q5-matrix9",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "d77e206f8e8677eb8a2ebdd732fc4402c8d049601e8834b0aea398d193815494"
+  },
+  {
+    "case": "q5-matrix9",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "d77e206f8e8677eb8a2ebdd732fc4402c8d049601e8834b0aea398d193815494"
+  },
+  {
+    "case": "q5-matrix9",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "ff47d080d1a2ce14af7760c708784e222085c620a10b0ac8cd93a057fbabb662"
+  },
+  {
+    "case": "q5-matrix9",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "fc23891c1665c7399036559e19e9e001eee3b53777f74ecdab51b108061f3800"
+  },
+  {
+    "case": "q5-matrix9",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "ff47d080d1a2ce14af7760c708784e222085c620a10b0ac8cd93a057fbabb662"
+  },
+  {
+    "case": "q5-matrix9",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "fc23891c1665c7399036559e19e9e001eee3b53777f74ecdab51b108061f3800"
+  },
+  {
+    "case": "q5-matrix9",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "de71b9d169152439e8d8949082a63a1e9724f0973589dfe014692a78b7af46b1"
+  },
+  {
+    "case": "q5-matrix9",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "a1a901a90c902a74f095bf5b6afc740cd7912678a952a676bf838c762340c57a"
+  },
+  {
+    "case": "q5-matrix9",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "de71b9d169152439e8d8949082a63a1e9724f0973589dfe014692a78b7af46b1"
+  },
+  {
+    "case": "q5-matrix9",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "a1a901a90c902a74f095bf5b6afc740cd7912678a952a676bf838c762340c57a"
+  },
+  {
+    "case": "q5-matrix9",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "d77e206f8e8677eb8a2ebdd732fc4402c8d049601e8834b0aea398d193815494"
+  },
+  {
+    "case": "q5-matrix9",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "d77e206f8e8677eb8a2ebdd732fc4402c8d049601e8834b0aea398d193815494"
+  },
+  {
+    "case": "q5-matrix9",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "d77e206f8e8677eb8a2ebdd732fc4402c8d049601e8834b0aea398d193815494"
+  },
+  {
+    "case": "q5-matrix9",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "d77e206f8e8677eb8a2ebdd732fc4402c8d049601e8834b0aea398d193815494"
+  },
+  {
+    "case": "q5-matrix9",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "ff47d080d1a2ce14af7760c708784e222085c620a10b0ac8cd93a057fbabb662"
+  },
+  {
+    "case": "q5-matrix9",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "fc23891c1665c7399036559e19e9e001eee3b53777f74ecdab51b108061f3800"
+  },
+  {
+    "case": "q5-matrix9",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "ff47d080d1a2ce14af7760c708784e222085c620a10b0ac8cd93a057fbabb662"
+  },
+  {
+    "case": "q5-matrix9",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "fc23891c1665c7399036559e19e9e001eee3b53777f74ecdab51b108061f3800"
+  },
+  {
+    "case": "q5-matrix9",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "de71b9d169152439e8d8949082a63a1e9724f0973589dfe014692a78b7af46b1"
+  },
+  {
+    "case": "q5-matrix9",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "a1a901a90c902a74f095bf5b6afc740cd7912678a952a676bf838c762340c57a"
+  },
+  {
+    "case": "q5-matrix9",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "de71b9d169152439e8d8949082a63a1e9724f0973589dfe014692a78b7af46b1"
+  },
+  {
+    "case": "q5-matrix9",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "a1a901a90c902a74f095bf5b6afc740cd7912678a952a676bf838c762340c57a"
+  },
+  {
+    "case": "q5-matrix10",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "3e1579714c7d725d8ea6d8978edf74670f1825f481cf3376a973ade30cd30b3c"
+  },
+  {
+    "case": "q5-matrix10",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "3e1579714c7d725d8ea6d8978edf74670f1825f481cf3376a973ade30cd30b3c"
+  },
+  {
+    "case": "q5-matrix10",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "3e1579714c7d725d8ea6d8978edf74670f1825f481cf3376a973ade30cd30b3c"
+  },
+  {
+    "case": "q5-matrix10",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "3e1579714c7d725d8ea6d8978edf74670f1825f481cf3376a973ade30cd30b3c"
+  },
+  {
+    "case": "q5-matrix10",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "b670285a8eedb423db0c800f96430c3de198fd89da51fd6c70d4b06103655caf"
+  },
+  {
+    "case": "q5-matrix10",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "b670285a8eedb423db0c800f96430c3de198fd89da51fd6c70d4b06103655caf"
+  },
+  {
+    "case": "q5-matrix10",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "b670285a8eedb423db0c800f96430c3de198fd89da51fd6c70d4b06103655caf"
+  },
+  {
+    "case": "q5-matrix10",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "b670285a8eedb423db0c800f96430c3de198fd89da51fd6c70d4b06103655caf"
+  },
+  {
+    "case": "q5-matrix10",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "1464dabc530b6f8e09447c68d67757516194b4656965ca54e7303219e3597e9c"
+  },
+  {
+    "case": "q5-matrix10",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "1464dabc530b6f8e09447c68d67757516194b4656965ca54e7303219e3597e9c"
+  },
+  {
+    "case": "q5-matrix10",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "1464dabc530b6f8e09447c68d67757516194b4656965ca54e7303219e3597e9c"
+  },
+  {
+    "case": "q5-matrix10",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "1464dabc530b6f8e09447c68d67757516194b4656965ca54e7303219e3597e9c"
+  },
+  {
+    "case": "q5-matrix10",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "3e1579714c7d725d8ea6d8978edf74670f1825f481cf3376a973ade30cd30b3c"
+  },
+  {
+    "case": "q5-matrix10",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "3e1579714c7d725d8ea6d8978edf74670f1825f481cf3376a973ade30cd30b3c"
+  },
+  {
+    "case": "q5-matrix10",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "3e1579714c7d725d8ea6d8978edf74670f1825f481cf3376a973ade30cd30b3c"
+  },
+  {
+    "case": "q5-matrix10",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "3e1579714c7d725d8ea6d8978edf74670f1825f481cf3376a973ade30cd30b3c"
+  },
+  {
+    "case": "q5-matrix10",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "b670285a8eedb423db0c800f96430c3de198fd89da51fd6c70d4b06103655caf"
+  },
+  {
+    "case": "q5-matrix10",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "b670285a8eedb423db0c800f96430c3de198fd89da51fd6c70d4b06103655caf"
+  },
+  {
+    "case": "q5-matrix10",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "b670285a8eedb423db0c800f96430c3de198fd89da51fd6c70d4b06103655caf"
+  },
+  {
+    "case": "q5-matrix10",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "b670285a8eedb423db0c800f96430c3de198fd89da51fd6c70d4b06103655caf"
+  },
+  {
+    "case": "q5-matrix10",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "1464dabc530b6f8e09447c68d67757516194b4656965ca54e7303219e3597e9c"
+  },
+  {
+    "case": "q5-matrix10",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "1464dabc530b6f8e09447c68d67757516194b4656965ca54e7303219e3597e9c"
+  },
+  {
+    "case": "q5-matrix10",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "1464dabc530b6f8e09447c68d67757516194b4656965ca54e7303219e3597e9c"
+  },
+  {
+    "case": "q5-matrix10",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "1464dabc530b6f8e09447c68d67757516194b4656965ca54e7303219e3597e9c"
+  },
+  {
+    "case": "q5-matrix11",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "289c8cbb02f9fcc2a920a94bb78105648fac3e60e67087ad2800b172b81683ef"
+  },
+  {
+    "case": "q5-matrix11",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "289c8cbb02f9fcc2a920a94bb78105648fac3e60e67087ad2800b172b81683ef"
+  },
+  {
+    "case": "q5-matrix11",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "289c8cbb02f9fcc2a920a94bb78105648fac3e60e67087ad2800b172b81683ef"
+  },
+  {
+    "case": "q5-matrix11",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "289c8cbb02f9fcc2a920a94bb78105648fac3e60e67087ad2800b172b81683ef"
+  },
+  {
+    "case": "q5-matrix11",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "7da9bb31233fe289497e7f2722bd3a46cbe48bd4f03c1a29d30303d02816b766"
+  },
+  {
+    "case": "q5-matrix11",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "7da9bb31233fe289497e7f2722bd3a46cbe48bd4f03c1a29d30303d02816b766"
+  },
+  {
+    "case": "q5-matrix11",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "7da9bb31233fe289497e7f2722bd3a46cbe48bd4f03c1a29d30303d02816b766"
+  },
+  {
+    "case": "q5-matrix11",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "7da9bb31233fe289497e7f2722bd3a46cbe48bd4f03c1a29d30303d02816b766"
+  },
+  {
+    "case": "q5-matrix11",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "fe8d58253042a95f3a688a1b6e395dc8b51da670c46adc0160e54fffc504bf5f"
+  },
+  {
+    "case": "q5-matrix11",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "fe8d58253042a95f3a688a1b6e395dc8b51da670c46adc0160e54fffc504bf5f"
+  },
+  {
+    "case": "q5-matrix11",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "fe8d58253042a95f3a688a1b6e395dc8b51da670c46adc0160e54fffc504bf5f"
+  },
+  {
+    "case": "q5-matrix11",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "fe8d58253042a95f3a688a1b6e395dc8b51da670c46adc0160e54fffc504bf5f"
+  },
+  {
+    "case": "q5-matrix11",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "289c8cbb02f9fcc2a920a94bb78105648fac3e60e67087ad2800b172b81683ef"
+  },
+  {
+    "case": "q5-matrix11",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "289c8cbb02f9fcc2a920a94bb78105648fac3e60e67087ad2800b172b81683ef"
+  },
+  {
+    "case": "q5-matrix11",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "289c8cbb02f9fcc2a920a94bb78105648fac3e60e67087ad2800b172b81683ef"
+  },
+  {
+    "case": "q5-matrix11",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "289c8cbb02f9fcc2a920a94bb78105648fac3e60e67087ad2800b172b81683ef"
+  },
+  {
+    "case": "q5-matrix11",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "7da9bb31233fe289497e7f2722bd3a46cbe48bd4f03c1a29d30303d02816b766"
+  },
+  {
+    "case": "q5-matrix11",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "7da9bb31233fe289497e7f2722bd3a46cbe48bd4f03c1a29d30303d02816b766"
+  },
+  {
+    "case": "q5-matrix11",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "7da9bb31233fe289497e7f2722bd3a46cbe48bd4f03c1a29d30303d02816b766"
+  },
+  {
+    "case": "q5-matrix11",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "7da9bb31233fe289497e7f2722bd3a46cbe48bd4f03c1a29d30303d02816b766"
+  },
+  {
+    "case": "q5-matrix11",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "fe8d58253042a95f3a688a1b6e395dc8b51da670c46adc0160e54fffc504bf5f"
+  },
+  {
+    "case": "q5-matrix11",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "fe8d58253042a95f3a688a1b6e395dc8b51da670c46adc0160e54fffc504bf5f"
+  },
+  {
+    "case": "q5-matrix11",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "fe8d58253042a95f3a688a1b6e395dc8b51da670c46adc0160e54fffc504bf5f"
+  },
+  {
+    "case": "q5-matrix11",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "fe8d58253042a95f3a688a1b6e395dc8b51da670c46adc0160e54fffc504bf5f"
+  },
+  {
+    "case": "q5-matrix12",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "4fdd09258cf7f4b4460ad76846fbd591c96c3f42ec30c482dedb84c6284f01d6"
+  },
+  {
+    "case": "q5-matrix12",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "4fdd09258cf7f4b4460ad76846fbd591c96c3f42ec30c482dedb84c6284f01d6"
+  },
+  {
+    "case": "q5-matrix12",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "4fdd09258cf7f4b4460ad76846fbd591c96c3f42ec30c482dedb84c6284f01d6"
+  },
+  {
+    "case": "q5-matrix12",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "4fdd09258cf7f4b4460ad76846fbd591c96c3f42ec30c482dedb84c6284f01d6"
+  },
+  {
+    "case": "q5-matrix12",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "6a23a20720e55fe3c1be4b7f9d97749687ad3cd37662dacc96638b0d0c8d5949"
+  },
+  {
+    "case": "q5-matrix12",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "6a23a20720e55fe3c1be4b7f9d97749687ad3cd37662dacc96638b0d0c8d5949"
+  },
+  {
+    "case": "q5-matrix12",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "6a23a20720e55fe3c1be4b7f9d97749687ad3cd37662dacc96638b0d0c8d5949"
+  },
+  {
+    "case": "q5-matrix12",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "6a23a20720e55fe3c1be4b7f9d97749687ad3cd37662dacc96638b0d0c8d5949"
+  },
+  {
+    "case": "q5-matrix12",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "7ef9e0358cea04b5a41c862a95f70e0f4ddf90f854360e58087c91baed6a4ba6"
+  },
+  {
+    "case": "q5-matrix12",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "7ef9e0358cea04b5a41c862a95f70e0f4ddf90f854360e58087c91baed6a4ba6"
+  },
+  {
+    "case": "q5-matrix12",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "7ef9e0358cea04b5a41c862a95f70e0f4ddf90f854360e58087c91baed6a4ba6"
+  },
+  {
+    "case": "q5-matrix12",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "7ef9e0358cea04b5a41c862a95f70e0f4ddf90f854360e58087c91baed6a4ba6"
+  },
+  {
+    "case": "q5-matrix12",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "4fdd09258cf7f4b4460ad76846fbd591c96c3f42ec30c482dedb84c6284f01d6"
+  },
+  {
+    "case": "q5-matrix12",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "4fdd09258cf7f4b4460ad76846fbd591c96c3f42ec30c482dedb84c6284f01d6"
+  },
+  {
+    "case": "q5-matrix12",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "4fdd09258cf7f4b4460ad76846fbd591c96c3f42ec30c482dedb84c6284f01d6"
+  },
+  {
+    "case": "q5-matrix12",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "4fdd09258cf7f4b4460ad76846fbd591c96c3f42ec30c482dedb84c6284f01d6"
+  },
+  {
+    "case": "q5-matrix12",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "6a23a20720e55fe3c1be4b7f9d97749687ad3cd37662dacc96638b0d0c8d5949"
+  },
+  {
+    "case": "q5-matrix12",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "6a23a20720e55fe3c1be4b7f9d97749687ad3cd37662dacc96638b0d0c8d5949"
+  },
+  {
+    "case": "q5-matrix12",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "6a23a20720e55fe3c1be4b7f9d97749687ad3cd37662dacc96638b0d0c8d5949"
+  },
+  {
+    "case": "q5-matrix12",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "6a23a20720e55fe3c1be4b7f9d97749687ad3cd37662dacc96638b0d0c8d5949"
+  },
+  {
+    "case": "q5-matrix12",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "7ef9e0358cea04b5a41c862a95f70e0f4ddf90f854360e58087c91baed6a4ba6"
+  },
+  {
+    "case": "q5-matrix12",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "7ef9e0358cea04b5a41c862a95f70e0f4ddf90f854360e58087c91baed6a4ba6"
+  },
+  {
+    "case": "q5-matrix12",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "7ef9e0358cea04b5a41c862a95f70e0f4ddf90f854360e58087c91baed6a4ba6"
+  },
+  {
+    "case": "q5-matrix12",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "7ef9e0358cea04b5a41c862a95f70e0f4ddf90f854360e58087c91baed6a4ba6"
+  },
+  {
+    "case": "q5-matrix13",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "d5ae1635b4f90c9a37721223f499ff6c54c8bf81cd862a0cebe60c034b379f98"
+  },
+  {
+    "case": "q5-matrix13",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "d5ae1635b4f90c9a37721223f499ff6c54c8bf81cd862a0cebe60c034b379f98"
+  },
+  {
+    "case": "q5-matrix13",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "d5ae1635b4f90c9a37721223f499ff6c54c8bf81cd862a0cebe60c034b379f98"
+  },
+  {
+    "case": "q5-matrix13",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "d5ae1635b4f90c9a37721223f499ff6c54c8bf81cd862a0cebe60c034b379f98"
+  },
+  {
+    "case": "q5-matrix13",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "845d7626e894be6235d902ce24544c92bd820815393f0125080abba601ba2798"
+  },
+  {
+    "case": "q5-matrix13",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "845d7626e894be6235d902ce24544c92bd820815393f0125080abba601ba2798"
+  },
+  {
+    "case": "q5-matrix13",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "845d7626e894be6235d902ce24544c92bd820815393f0125080abba601ba2798"
+  },
+  {
+    "case": "q5-matrix13",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "845d7626e894be6235d902ce24544c92bd820815393f0125080abba601ba2798"
+  },
+  {
+    "case": "q5-matrix13",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "3442809698778bcffb4658c68c2446088e05eb3205a6651c90ea615b1631b877"
+  },
+  {
+    "case": "q5-matrix13",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "3442809698778bcffb4658c68c2446088e05eb3205a6651c90ea615b1631b877"
+  },
+  {
+    "case": "q5-matrix13",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "3442809698778bcffb4658c68c2446088e05eb3205a6651c90ea615b1631b877"
+  },
+  {
+    "case": "q5-matrix13",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "3442809698778bcffb4658c68c2446088e05eb3205a6651c90ea615b1631b877"
+  },
+  {
+    "case": "q5-matrix13",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "d5ae1635b4f90c9a37721223f499ff6c54c8bf81cd862a0cebe60c034b379f98"
+  },
+  {
+    "case": "q5-matrix13",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "d5ae1635b4f90c9a37721223f499ff6c54c8bf81cd862a0cebe60c034b379f98"
+  },
+  {
+    "case": "q5-matrix13",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "d5ae1635b4f90c9a37721223f499ff6c54c8bf81cd862a0cebe60c034b379f98"
+  },
+  {
+    "case": "q5-matrix13",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "d5ae1635b4f90c9a37721223f499ff6c54c8bf81cd862a0cebe60c034b379f98"
+  },
+  {
+    "case": "q5-matrix13",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "845d7626e894be6235d902ce24544c92bd820815393f0125080abba601ba2798"
+  },
+  {
+    "case": "q5-matrix13",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "845d7626e894be6235d902ce24544c92bd820815393f0125080abba601ba2798"
+  },
+  {
+    "case": "q5-matrix13",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "845d7626e894be6235d902ce24544c92bd820815393f0125080abba601ba2798"
+  },
+  {
+    "case": "q5-matrix13",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "845d7626e894be6235d902ce24544c92bd820815393f0125080abba601ba2798"
+  },
+  {
+    "case": "q5-matrix13",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "3442809698778bcffb4658c68c2446088e05eb3205a6651c90ea615b1631b877"
+  },
+  {
+    "case": "q5-matrix13",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "3442809698778bcffb4658c68c2446088e05eb3205a6651c90ea615b1631b877"
+  },
+  {
+    "case": "q5-matrix13",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "3442809698778bcffb4658c68c2446088e05eb3205a6651c90ea615b1631b877"
+  },
+  {
+    "case": "q5-matrix13",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "3442809698778bcffb4658c68c2446088e05eb3205a6651c90ea615b1631b877"
+  },
+  {
+    "case": "q5-matrix14",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "a38110e4b9bdf4ae899d23b2de3883d45ca2f29f7fd29af16e9b328332cb5d64"
+  },
+  {
+    "case": "q5-matrix14",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "a38110e4b9bdf4ae899d23b2de3883d45ca2f29f7fd29af16e9b328332cb5d64"
+  },
+  {
+    "case": "q5-matrix14",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "a38110e4b9bdf4ae899d23b2de3883d45ca2f29f7fd29af16e9b328332cb5d64"
+  },
+  {
+    "case": "q5-matrix14",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "a38110e4b9bdf4ae899d23b2de3883d45ca2f29f7fd29af16e9b328332cb5d64"
+  },
+  {
+    "case": "q5-matrix14",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "2d0bb8b302909e0b4939bc04286a0d53dcfba9b5ad7ff9156c969cb245ee7012"
+  },
+  {
+    "case": "q5-matrix14",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "ac6541021c7c6766cea7859c1f56b164f004d42a443f938616c985bfb1e2316c"
+  },
+  {
+    "case": "q5-matrix14",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "2d0bb8b302909e0b4939bc04286a0d53dcfba9b5ad7ff9156c969cb245ee7012"
+  },
+  {
+    "case": "q5-matrix14",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "ac6541021c7c6766cea7859c1f56b164f004d42a443f938616c985bfb1e2316c"
+  },
+  {
+    "case": "q5-matrix14",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "ecffe54c4c33099dff2a1f86e6d91b8e4b7da4d3076b1774a26e9f795f711872"
+  },
+  {
+    "case": "q5-matrix14",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "482ff738197b628a694c7197714cbf306169207747c4c7220d3bc4350f2b359b"
+  },
+  {
+    "case": "q5-matrix14",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "ecffe54c4c33099dff2a1f86e6d91b8e4b7da4d3076b1774a26e9f795f711872"
+  },
+  {
+    "case": "q5-matrix14",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "482ff738197b628a694c7197714cbf306169207747c4c7220d3bc4350f2b359b"
+  },
+  {
+    "case": "q5-matrix14",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "a38110e4b9bdf4ae899d23b2de3883d45ca2f29f7fd29af16e9b328332cb5d64"
+  },
+  {
+    "case": "q5-matrix14",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "a38110e4b9bdf4ae899d23b2de3883d45ca2f29f7fd29af16e9b328332cb5d64"
+  },
+  {
+    "case": "q5-matrix14",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "a38110e4b9bdf4ae899d23b2de3883d45ca2f29f7fd29af16e9b328332cb5d64"
+  },
+  {
+    "case": "q5-matrix14",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "a38110e4b9bdf4ae899d23b2de3883d45ca2f29f7fd29af16e9b328332cb5d64"
+  },
+  {
+    "case": "q5-matrix14",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "2d0bb8b302909e0b4939bc04286a0d53dcfba9b5ad7ff9156c969cb245ee7012"
+  },
+  {
+    "case": "q5-matrix14",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "ac6541021c7c6766cea7859c1f56b164f004d42a443f938616c985bfb1e2316c"
+  },
+  {
+    "case": "q5-matrix14",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "2d0bb8b302909e0b4939bc04286a0d53dcfba9b5ad7ff9156c969cb245ee7012"
+  },
+  {
+    "case": "q5-matrix14",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "ac6541021c7c6766cea7859c1f56b164f004d42a443f938616c985bfb1e2316c"
+  },
+  {
+    "case": "q5-matrix14",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "ecffe54c4c33099dff2a1f86e6d91b8e4b7da4d3076b1774a26e9f795f711872"
+  },
+  {
+    "case": "q5-matrix14",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "482ff738197b628a694c7197714cbf306169207747c4c7220d3bc4350f2b359b"
+  },
+  {
+    "case": "q5-matrix14",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "ecffe54c4c33099dff2a1f86e6d91b8e4b7da4d3076b1774a26e9f795f711872"
+  },
+  {
+    "case": "q5-matrix14",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "482ff738197b628a694c7197714cbf306169207747c4c7220d3bc4350f2b359b"
+  },
+  {
+    "case": "q5-matrix15",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "77444893263d97876afb51fd7279a188a4454a94eb85b1ae0d1a8d8b9c102b27"
+  },
+  {
+    "case": "q5-matrix15",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "77444893263d97876afb51fd7279a188a4454a94eb85b1ae0d1a8d8b9c102b27"
+  },
+  {
+    "case": "q5-matrix15",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "77444893263d97876afb51fd7279a188a4454a94eb85b1ae0d1a8d8b9c102b27"
+  },
+  {
+    "case": "q5-matrix15",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "77444893263d97876afb51fd7279a188a4454a94eb85b1ae0d1a8d8b9c102b27"
+  },
+  {
+    "case": "q5-matrix15",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "931f48ad0bcc47a3469898b1d94b20c10acabcd24c8668f2f387aaad628cb800"
+  },
+  {
+    "case": "q5-matrix15",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "931f48ad0bcc47a3469898b1d94b20c10acabcd24c8668f2f387aaad628cb800"
+  },
+  {
+    "case": "q5-matrix15",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "931f48ad0bcc47a3469898b1d94b20c10acabcd24c8668f2f387aaad628cb800"
+  },
+  {
+    "case": "q5-matrix15",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "931f48ad0bcc47a3469898b1d94b20c10acabcd24c8668f2f387aaad628cb800"
+  },
+  {
+    "case": "q5-matrix15",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "d3363dfe164f4e7df9af772e568cb6435c9278405ce519bb65e02d8ef96396d3"
+  },
+  {
+    "case": "q5-matrix15",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "d3363dfe164f4e7df9af772e568cb6435c9278405ce519bb65e02d8ef96396d3"
+  },
+  {
+    "case": "q5-matrix15",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "d3363dfe164f4e7df9af772e568cb6435c9278405ce519bb65e02d8ef96396d3"
+  },
+  {
+    "case": "q5-matrix15",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "d3363dfe164f4e7df9af772e568cb6435c9278405ce519bb65e02d8ef96396d3"
+  },
+  {
+    "case": "q5-matrix15",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "77444893263d97876afb51fd7279a188a4454a94eb85b1ae0d1a8d8b9c102b27"
+  },
+  {
+    "case": "q5-matrix15",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "77444893263d97876afb51fd7279a188a4454a94eb85b1ae0d1a8d8b9c102b27"
+  },
+  {
+    "case": "q5-matrix15",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "77444893263d97876afb51fd7279a188a4454a94eb85b1ae0d1a8d8b9c102b27"
+  },
+  {
+    "case": "q5-matrix15",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "77444893263d97876afb51fd7279a188a4454a94eb85b1ae0d1a8d8b9c102b27"
+  },
+  {
+    "case": "q5-matrix15",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "931f48ad0bcc47a3469898b1d94b20c10acabcd24c8668f2f387aaad628cb800"
+  },
+  {
+    "case": "q5-matrix15",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "931f48ad0bcc47a3469898b1d94b20c10acabcd24c8668f2f387aaad628cb800"
+  },
+  {
+    "case": "q5-matrix15",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "931f48ad0bcc47a3469898b1d94b20c10acabcd24c8668f2f387aaad628cb800"
+  },
+  {
+    "case": "q5-matrix15",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "931f48ad0bcc47a3469898b1d94b20c10acabcd24c8668f2f387aaad628cb800"
+  },
+  {
+    "case": "q5-matrix15",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "d3363dfe164f4e7df9af772e568cb6435c9278405ce519bb65e02d8ef96396d3"
+  },
+  {
+    "case": "q5-matrix15",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "d3363dfe164f4e7df9af772e568cb6435c9278405ce519bb65e02d8ef96396d3"
+  },
+  {
+    "case": "q5-matrix15",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "d3363dfe164f4e7df9af772e568cb6435c9278405ce519bb65e02d8ef96396d3"
+  },
+  {
+    "case": "q5-matrix15",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "d3363dfe164f4e7df9af772e568cb6435c9278405ce519bb65e02d8ef96396d3"
+  },
+  {
+    "case": "q17-matrix0",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "3fe3d2039f2436224b97aeb32faecfbf38bffb142fb7f6feb75a729c156fa99f"
+  },
+  {
+    "case": "q17-matrix0",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "31be7e28ed6725632ba75b277d0f0a5fc94791bb3fc58b11a2361e1f642e7063"
+  },
+  {
+    "case": "q17-matrix0",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "699e6a2e350473a1ec4fe00d44d1882c0203e9e25f38e8cc1c43473b7efae056"
+  },
+  {
+    "case": "q17-matrix0",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "699e6a2e350473a1ec4fe00d44d1882c0203e9e25f38e8cc1c43473b7efae056"
+  },
+  {
+    "case": "q17-matrix0",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "576576c1440833ab87ab1f859e370ee53805dd28620093c8d8f0f1d92058e6c0"
+  },
+  {
+    "case": "q17-matrix0",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "fb0a53c39929b9079283507b38c0490c10762143faca96832b9cc5e1e8580115"
+  },
+  {
+    "case": "q17-matrix0",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "5db036f54f3b26c891cf8bc98ab70ee796019953e2a24d8583c9580a032378d6"
+  },
+  {
+    "case": "q17-matrix0",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "f6de71651129a9d71c8d1790fdb41c2836382169275e7f883f0a6a609c4a9ac7"
+  },
+  {
+    "case": "q17-matrix0",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "6edb45d1bac3feaa4df32da0e20fbccf005d09faa361c4b168cc1de626552102"
+  },
+  {
+    "case": "q17-matrix0",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "5fe8e8cf87789d580b45e02566ac8aee3ad9145ea9c3b6cf0cbb48609fbce0d3"
+  },
+  {
+    "case": "q17-matrix0",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "8c4dc11dca6585ffd8b0c38df52f1de5af2356da3e1ae1de05d056f5147492a6"
+  },
+  {
+    "case": "q17-matrix0",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "47400d3ca2d9df35ce83fc15ebb0a19c9a33dca876557c0f974cd703fafcc79c"
+  },
+  {
+    "case": "q17-matrix0",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "3fe3d2039f2436224b97aeb32faecfbf38bffb142fb7f6feb75a729c156fa99f"
+  },
+  {
+    "case": "q17-matrix0",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "31be7e28ed6725632ba75b277d0f0a5fc94791bb3fc58b11a2361e1f642e7063"
+  },
+  {
+    "case": "q17-matrix0",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "699e6a2e350473a1ec4fe00d44d1882c0203e9e25f38e8cc1c43473b7efae056"
+  },
+  {
+    "case": "q17-matrix0",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "699e6a2e350473a1ec4fe00d44d1882c0203e9e25f38e8cc1c43473b7efae056"
+  },
+  {
+    "case": "q17-matrix0",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "576576c1440833ab87ab1f859e370ee53805dd28620093c8d8f0f1d92058e6c0"
+  },
+  {
+    "case": "q17-matrix0",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "fb0a53c39929b9079283507b38c0490c10762143faca96832b9cc5e1e8580115"
+  },
+  {
+    "case": "q17-matrix0",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "5db036f54f3b26c891cf8bc98ab70ee796019953e2a24d8583c9580a032378d6"
+  },
+  {
+    "case": "q17-matrix0",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "f6de71651129a9d71c8d1790fdb41c2836382169275e7f883f0a6a609c4a9ac7"
+  },
+  {
+    "case": "q17-matrix0",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "3fd47a0c13b909b0a401157173954dab3fa23c95c7c67ab8c8618f65cfbaebf4"
+  },
+  {
+    "case": "q17-matrix0",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "4818384e5cdc664a2623f34481afc729bed48ae9ebc8c48f815ffc53bd0fd334"
+  },
+  {
+    "case": "q17-matrix0",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "a14f60d5c9051a7ebac2d265eb3b5ff4d481159f7dc1181cea0bd63101136498"
+  },
+  {
+    "case": "q17-matrix0",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "886b06fd394d88988126a1a0a4b6075b273eec5917b462ba340599f7229eefea"
+  },
+  {
+    "case": "q17-matrix1",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "92c506e437277e63f6c21f704648c81633193aa6f3afc0c3f97ffe818e65b409"
+  },
+  {
+    "case": "q17-matrix1",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "57c8da4514d6623af1db227051e1d64722472463f767af12cfeee311bc45340d"
+  },
+  {
+    "case": "q17-matrix1",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "9e762002d0bde0ceac2ce4dcfb13b736cdcba3c0b76b6c527d6da14e1ba00e98"
+  },
+  {
+    "case": "q17-matrix1",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "9e762002d0bde0ceac2ce4dcfb13b736cdcba3c0b76b6c527d6da14e1ba00e98"
+  },
+  {
+    "case": "q17-matrix1",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "5ea6ae90e53dfa1b75260912f53900bfee5130c546660c7125ebccadf61454b0"
+  },
+  {
+    "case": "q17-matrix1",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "e8b71d3ffb79be90a68d2d94aea40364e02f059e70a17370417c47544667c440"
+  },
+  {
+    "case": "q17-matrix1",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "0f4b82b915944b9a47afe1dcc46caadcb0c10bbb369606a74af5f763836886c6"
+  },
+  {
+    "case": "q17-matrix1",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "0f4b82b915944b9a47afe1dcc46caadcb0c10bbb369606a74af5f763836886c6"
+  },
+  {
+    "case": "q17-matrix1",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "046864b19df9452fcd54e3bca026123a5495eaa0302fb9b4ac2928790106edd8"
+  },
+  {
+    "case": "q17-matrix1",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "9ceb538ff3de0e044bd9e0f020ee155a22cfe4a015340001faf76995b3ff0491"
+  },
+  {
+    "case": "q17-matrix1",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "f59fc71ae2c6973c831210c6b14516c71746344c2334d5ad251696dab4f15394"
+  },
+  {
+    "case": "q17-matrix1",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "f59fc71ae2c6973c831210c6b14516c71746344c2334d5ad251696dab4f15394"
+  },
+  {
+    "case": "q17-matrix1",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "92c506e437277e63f6c21f704648c81633193aa6f3afc0c3f97ffe818e65b409"
+  },
+  {
+    "case": "q17-matrix1",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "57c8da4514d6623af1db227051e1d64722472463f767af12cfeee311bc45340d"
+  },
+  {
+    "case": "q17-matrix1",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "9e762002d0bde0ceac2ce4dcfb13b736cdcba3c0b76b6c527d6da14e1ba00e98"
+  },
+  {
+    "case": "q17-matrix1",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "9e762002d0bde0ceac2ce4dcfb13b736cdcba3c0b76b6c527d6da14e1ba00e98"
+  },
+  {
+    "case": "q17-matrix1",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "5ea6ae90e53dfa1b75260912f53900bfee5130c546660c7125ebccadf61454b0"
+  },
+  {
+    "case": "q17-matrix1",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "e8b71d3ffb79be90a68d2d94aea40364e02f059e70a17370417c47544667c440"
+  },
+  {
+    "case": "q17-matrix1",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "0f4b82b915944b9a47afe1dcc46caadcb0c10bbb369606a74af5f763836886c6"
+  },
+  {
+    "case": "q17-matrix1",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "0f4b82b915944b9a47afe1dcc46caadcb0c10bbb369606a74af5f763836886c6"
+  },
+  {
+    "case": "q17-matrix1",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "046864b19df9452fcd54e3bca026123a5495eaa0302fb9b4ac2928790106edd8"
+  },
+  {
+    "case": "q17-matrix1",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "9ceb538ff3de0e044bd9e0f020ee155a22cfe4a015340001faf76995b3ff0491"
+  },
+  {
+    "case": "q17-matrix1",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "f59fc71ae2c6973c831210c6b14516c71746344c2334d5ad251696dab4f15394"
+  },
+  {
+    "case": "q17-matrix1",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "f59fc71ae2c6973c831210c6b14516c71746344c2334d5ad251696dab4f15394"
+  },
+  {
+    "case": "q17-matrix2",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "3a2ddfb0c10f710702a79d1335581f6148c0e5912422df460557e52c8fb007e9"
+  },
+  {
+    "case": "q17-matrix2",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "3ab69aefae39291b0207e30b6357d06dae53c646ceae604b7a79ae44198f4fa5"
+  },
+  {
+    "case": "q17-matrix2",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "559fd9f3550147592c6a3542f86d719880362283d60d0b643042b0372bd3639c"
+  },
+  {
+    "case": "q17-matrix2",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "559fd9f3550147592c6a3542f86d719880362283d60d0b643042b0372bd3639c"
+  },
+  {
+    "case": "q17-matrix2",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "0cd7631674e3d45b58956cdb1e101d52ecd7cedc977444172149327b401388da"
+  },
+  {
+    "case": "q17-matrix2",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "fa5b546f6472a65894a2ddbb27cfecc3fda4aef12e285e6d432c357990b7a799"
+  },
+  {
+    "case": "q17-matrix2",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "df51934f2d4e51005b92f255084e9bc9bda3e27db23129f35188b0126cae9f40"
+  },
+  {
+    "case": "q17-matrix2",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "df51934f2d4e51005b92f255084e9bc9bda3e27db23129f35188b0126cae9f40"
+  },
+  {
+    "case": "q17-matrix2",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "bbf856e37baaaba477cb8348544759a8438d2e56344d6e1114a62d1ed9b7dbb6"
+  },
+  {
+    "case": "q17-matrix2",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "e0b583c5ad568ad25fbbe3cf5116024f4eac7fd655f06b6606e1f1730a6b2507"
+  },
+  {
+    "case": "q17-matrix2",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "4ff20eab7cf3b3ed8144ce48aaf564cfd8ee0082c360185d523b7fa05dc26dbc"
+  },
+  {
+    "case": "q17-matrix2",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "4ff20eab7cf3b3ed8144ce48aaf564cfd8ee0082c360185d523b7fa05dc26dbc"
+  },
+  {
+    "case": "q17-matrix2",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "4b4929fdcb4596fa5bdd2e4f42ba9229c16cd2e65e1ac65fa457b2b993de9a19"
+  },
+  {
+    "case": "q17-matrix2",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "2483ca337b2243b65005e6d8ab3a4054e3c2b9c3e978c4be2dcac76556f4f24b"
+  },
+  {
+    "case": "q17-matrix2",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "221fb8e81158bf9a6e374c09fd8e305ab0cdf906e7f52ddccd89f8eea75cba55"
+  },
+  {
+    "case": "q17-matrix2",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "221fb8e81158bf9a6e374c09fd8e305ab0cdf906e7f52ddccd89f8eea75cba55"
+  },
+  {
+    "case": "q17-matrix2",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "ef48d2acc426f5badb184f6040e26c73e564fd52d3185a5403a627e68d1a2939"
+  },
+  {
+    "case": "q17-matrix2",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "e79a2b042eb5cee180002eaff2269f8ce94884f96c8ef173b64c0c25065d5086"
+  },
+  {
+    "case": "q17-matrix2",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "590bdf7bc9f25e4dc9d4cc15826777ab4930ae0d4b901d04b4744c76ac6e22a1"
+  },
+  {
+    "case": "q17-matrix2",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "590bdf7bc9f25e4dc9d4cc15826777ab4930ae0d4b901d04b4744c76ac6e22a1"
+  },
+  {
+    "case": "q17-matrix2",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "3bf39df22519868cdb4720d5cd7cafac547980652bb13fee896255b5107f0f0d"
+  },
+  {
+    "case": "q17-matrix2",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "70493bc377da9bff9ebf2683bb0f8cef38b09bfc7366d1b621a82c5be0cc2776"
+  },
+  {
+    "case": "q17-matrix2",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "8db95c82ab99f702a34345e2fcdc055389ca29529cb17787e35e998acec984b4"
+  },
+  {
+    "case": "q17-matrix2",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "8db95c82ab99f702a34345e2fcdc055389ca29529cb17787e35e998acec984b4"
+  },
+  {
+    "case": "q17-matrix3",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "5f1768f09aae13fcc548d701a4fe7028ea0c7899200e161bdeb731316406b608"
+  },
+  {
+    "case": "q17-matrix3",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "f1c2fe374f63efac08b39638dbe0b3736a5fc94c9444260ba94728f58548dbb1"
+  },
+  {
+    "case": "q17-matrix3",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "647688dcb431b9096addfa557e4903457a8fd526ae6d92e585fe08b042b59ffd"
+  },
+  {
+    "case": "q17-matrix3",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "647688dcb431b9096addfa557e4903457a8fd526ae6d92e585fe08b042b59ffd"
+  },
+  {
+    "case": "q17-matrix3",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "01ff3a8d2c8235f63e994102c6f8cadb7f190460b148516fda089d777f521215"
+  },
+  {
+    "case": "q17-matrix3",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "088b6e022495b904d3cd7c1544976c335403c2825b946d3233b55174e5959ceb"
+  },
+  {
+    "case": "q17-matrix3",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "736f3c3b43bb90861545c9f10c024c151076ba190c2d02d60ee8f0013ba9c084"
+  },
+  {
+    "case": "q17-matrix3",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "736f3c3b43bb90861545c9f10c024c151076ba190c2d02d60ee8f0013ba9c084"
+  },
+  {
+    "case": "q17-matrix3",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "e45db6b78d4addc304216f28d2d76312f022e9fcdc3ef80a78d120a5ef58d006"
+  },
+  {
+    "case": "q17-matrix3",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "4cc5da97e61d2db2ced7adfd6ec7ac3081f0481f7841fdbc8769e1416f5f4a80"
+  },
+  {
+    "case": "q17-matrix3",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "27328992808b7576dae6c742c7769b2e6cec1d0d81d6cd1143ce5551e1d83792"
+  },
+  {
+    "case": "q17-matrix3",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "27328992808b7576dae6c742c7769b2e6cec1d0d81d6cd1143ce5551e1d83792"
+  },
+  {
+    "case": "q17-matrix3",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "5f1768f09aae13fcc548d701a4fe7028ea0c7899200e161bdeb731316406b608"
+  },
+  {
+    "case": "q17-matrix3",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "f1c2fe374f63efac08b39638dbe0b3736a5fc94c9444260ba94728f58548dbb1"
+  },
+  {
+    "case": "q17-matrix3",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "647688dcb431b9096addfa557e4903457a8fd526ae6d92e585fe08b042b59ffd"
+  },
+  {
+    "case": "q17-matrix3",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "647688dcb431b9096addfa557e4903457a8fd526ae6d92e585fe08b042b59ffd"
+  },
+  {
+    "case": "q17-matrix3",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "01ff3a8d2c8235f63e994102c6f8cadb7f190460b148516fda089d777f521215"
+  },
+  {
+    "case": "q17-matrix3",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "088b6e022495b904d3cd7c1544976c335403c2825b946d3233b55174e5959ceb"
+  },
+  {
+    "case": "q17-matrix3",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "736f3c3b43bb90861545c9f10c024c151076ba190c2d02d60ee8f0013ba9c084"
+  },
+  {
+    "case": "q17-matrix3",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "736f3c3b43bb90861545c9f10c024c151076ba190c2d02d60ee8f0013ba9c084"
+  },
+  {
+    "case": "q17-matrix3",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "e45db6b78d4addc304216f28d2d76312f022e9fcdc3ef80a78d120a5ef58d006"
+  },
+  {
+    "case": "q17-matrix3",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "4cc5da97e61d2db2ced7adfd6ec7ac3081f0481f7841fdbc8769e1416f5f4a80"
+  },
+  {
+    "case": "q17-matrix3",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "27328992808b7576dae6c742c7769b2e6cec1d0d81d6cd1143ce5551e1d83792"
+  },
+  {
+    "case": "q17-matrix3",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "27328992808b7576dae6c742c7769b2e6cec1d0d81d6cd1143ce5551e1d83792"
+  },
+  {
+    "case": "q17-matrix4",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "12766a2afe1e573659b9eac4d9f94cf39c0574f0a3344d92cae1838ea820e026"
+  },
+  {
+    "case": "q17-matrix4",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "12766a2afe1e573659b9eac4d9f94cf39c0574f0a3344d92cae1838ea820e026"
+  },
+  {
+    "case": "q17-matrix4",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "4911fa81f56b66472fdd632199cbb35e09c1e86ad45224f8ef642079ad9d2f08"
+  },
+  {
+    "case": "q17-matrix4",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "4911fa81f56b66472fdd632199cbb35e09c1e86ad45224f8ef642079ad9d2f08"
+  },
+  {
+    "case": "q17-matrix4",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "0fe8d952488ea9d653abcbaad26134bcb7a79faefe2160b4557e061699727432"
+  },
+  {
+    "case": "q17-matrix4",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "78205a09faab8f6e71d83d48cd5d05585056d4e3316f1ff50350a7a3a47f2260"
+  },
+  {
+    "case": "q17-matrix4",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "e72d5c3dae0996fca127c071ee3ee4fd26117515b9fe3f91571937f543d08e00"
+  },
+  {
+    "case": "q17-matrix4",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "e72d5c3dae0996fca127c071ee3ee4fd26117515b9fe3f91571937f543d08e00"
+  },
+  {
+    "case": "q17-matrix4",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "4431aba3c1946204ac52fb4b6f5ccf063803b31f7fa46dc8e108710fd03e03de"
+  },
+  {
+    "case": "q17-matrix4",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "9e7167ecefb5219f4ca0e5fbbeee5290ce63cbb026c192ea0e7f2453d99ba7bb"
+  },
+  {
+    "case": "q17-matrix4",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "155346873b9ea6f4d9ebbda6e713cd592419ac43aae27f074d119d597dc346bb"
+  },
+  {
+    "case": "q17-matrix4",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "155346873b9ea6f4d9ebbda6e713cd592419ac43aae27f074d119d597dc346bb"
+  },
+  {
+    "case": "q17-matrix4",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "12766a2afe1e573659b9eac4d9f94cf39c0574f0a3344d92cae1838ea820e026"
+  },
+  {
+    "case": "q17-matrix4",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "12766a2afe1e573659b9eac4d9f94cf39c0574f0a3344d92cae1838ea820e026"
+  },
+  {
+    "case": "q17-matrix4",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "4911fa81f56b66472fdd632199cbb35e09c1e86ad45224f8ef642079ad9d2f08"
+  },
+  {
+    "case": "q17-matrix4",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "4911fa81f56b66472fdd632199cbb35e09c1e86ad45224f8ef642079ad9d2f08"
+  },
+  {
+    "case": "q17-matrix4",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "0fe8d952488ea9d653abcbaad26134bcb7a79faefe2160b4557e061699727432"
+  },
+  {
+    "case": "q17-matrix4",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "78205a09faab8f6e71d83d48cd5d05585056d4e3316f1ff50350a7a3a47f2260"
+  },
+  {
+    "case": "q17-matrix4",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "e72d5c3dae0996fca127c071ee3ee4fd26117515b9fe3f91571937f543d08e00"
+  },
+  {
+    "case": "q17-matrix4",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "e72d5c3dae0996fca127c071ee3ee4fd26117515b9fe3f91571937f543d08e00"
+  },
+  {
+    "case": "q17-matrix4",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "16a5a29ab16ad50a20b417d6996c92b0d02dd78edc353b799cf5f250f3ae30de"
+  },
+  {
+    "case": "q17-matrix4",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "c758a98b1c4d4681d5f3e93e3a316725d186bfaa1eec6337059231280859d0a8"
+  },
+  {
+    "case": "q17-matrix4",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "aec42e4db0cbafaa935145df6bf03acaab701dd6d86c387f198f3f717319d46c"
+  },
+  {
+    "case": "q17-matrix4",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "aec42e4db0cbafaa935145df6bf03acaab701dd6d86c387f198f3f717319d46c"
+  },
+  {
+    "case": "q17-matrix5",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "caf78494072b21127193e916d0e67e679ee7f59d02b1b9ea13a2d90a79ba1ec4"
+  },
+  {
+    "case": "q17-matrix5",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "caf78494072b21127193e916d0e67e679ee7f59d02b1b9ea13a2d90a79ba1ec4"
+  },
+  {
+    "case": "q17-matrix5",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "85d547bda3f643547ca76bfce2f529b36faec4b9aaec6468ae263199c4fffa6c"
+  },
+  {
+    "case": "q17-matrix5",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "85d547bda3f643547ca76bfce2f529b36faec4b9aaec6468ae263199c4fffa6c"
+  },
+  {
+    "case": "q17-matrix5",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "038cc2ee48e29eaf8c4127d7ad0374736e63199222e8ef3b1ce8a3a8a60e3f30"
+  },
+  {
+    "case": "q17-matrix5",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "038cc2ee48e29eaf8c4127d7ad0374736e63199222e8ef3b1ce8a3a8a60e3f30"
+  },
+  {
+    "case": "q17-matrix5",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "671f6517eda64bf14996bf27d9c2af772ca9940431931f8e830b61adc26c8f0e"
+  },
+  {
+    "case": "q17-matrix5",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "671f6517eda64bf14996bf27d9c2af772ca9940431931f8e830b61adc26c8f0e"
+  },
+  {
+    "case": "q17-matrix5",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "b26b3ef689179b757ffea0466dafb02032df3689c59a30b149fdc4c8989a8034"
+  },
+  {
+    "case": "q17-matrix5",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "b26b3ef689179b757ffea0466dafb02032df3689c59a30b149fdc4c8989a8034"
+  },
+  {
+    "case": "q17-matrix5",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "7f777207249705883e2961e1750f5ab2e79f8daf1635e7eb48a60f377fcfebc2"
+  },
+  {
+    "case": "q17-matrix5",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "7f777207249705883e2961e1750f5ab2e79f8daf1635e7eb48a60f377fcfebc2"
+  },
+  {
+    "case": "q17-matrix5",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "caf78494072b21127193e916d0e67e679ee7f59d02b1b9ea13a2d90a79ba1ec4"
+  },
+  {
+    "case": "q17-matrix5",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "caf78494072b21127193e916d0e67e679ee7f59d02b1b9ea13a2d90a79ba1ec4"
+  },
+  {
+    "case": "q17-matrix5",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "85d547bda3f643547ca76bfce2f529b36faec4b9aaec6468ae263199c4fffa6c"
+  },
+  {
+    "case": "q17-matrix5",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "85d547bda3f643547ca76bfce2f529b36faec4b9aaec6468ae263199c4fffa6c"
+  },
+  {
+    "case": "q17-matrix5",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "038cc2ee48e29eaf8c4127d7ad0374736e63199222e8ef3b1ce8a3a8a60e3f30"
+  },
+  {
+    "case": "q17-matrix5",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "038cc2ee48e29eaf8c4127d7ad0374736e63199222e8ef3b1ce8a3a8a60e3f30"
+  },
+  {
+    "case": "q17-matrix5",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "671f6517eda64bf14996bf27d9c2af772ca9940431931f8e830b61adc26c8f0e"
+  },
+  {
+    "case": "q17-matrix5",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "671f6517eda64bf14996bf27d9c2af772ca9940431931f8e830b61adc26c8f0e"
+  },
+  {
+    "case": "q17-matrix5",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "b26b3ef689179b757ffea0466dafb02032df3689c59a30b149fdc4c8989a8034"
+  },
+  {
+    "case": "q17-matrix5",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "b26b3ef689179b757ffea0466dafb02032df3689c59a30b149fdc4c8989a8034"
+  },
+  {
+    "case": "q17-matrix5",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "7f777207249705883e2961e1750f5ab2e79f8daf1635e7eb48a60f377fcfebc2"
+  },
+  {
+    "case": "q17-matrix5",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "7f777207249705883e2961e1750f5ab2e79f8daf1635e7eb48a60f377fcfebc2"
+  },
+  {
+    "case": "q17-matrix6",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "55fa93072cb5455f5182f4385f93bb6bdffc52115891fd69ca458850e009ec18"
+  },
+  {
+    "case": "q17-matrix6",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "55fa93072cb5455f5182f4385f93bb6bdffc52115891fd69ca458850e009ec18"
+  },
+  {
+    "case": "q17-matrix6",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "d4d0ca4a472727c8a53adbf6be2077290d9f4af8c5ddda3481c5fef870d21f59"
+  },
+  {
+    "case": "q17-matrix6",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "d4d0ca4a472727c8a53adbf6be2077290d9f4af8c5ddda3481c5fef870d21f59"
+  },
+  {
+    "case": "q17-matrix6",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "5c2535d11f3842dd6b94efb14ea11dacaf07295944392352f909965355143aee"
+  },
+  {
+    "case": "q17-matrix6",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "5c2535d11f3842dd6b94efb14ea11dacaf07295944392352f909965355143aee"
+  },
+  {
+    "case": "q17-matrix6",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "da29a0638f31ce624409c96c0b44d5d8b8e17cae0357aaaddc2aca634f924d62"
+  },
+  {
+    "case": "q17-matrix6",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "da29a0638f31ce624409c96c0b44d5d8b8e17cae0357aaaddc2aca634f924d62"
+  },
+  {
+    "case": "q17-matrix6",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "47f527d570390efcc3f00283a6acc8a9d99fea339e73ea2e29c388b4946ca71a"
+  },
+  {
+    "case": "q17-matrix6",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "622f15ec99c9d0f34621202f433346c89fa8a06d21f0700483abc7185d564e59"
+  },
+  {
+    "case": "q17-matrix6",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "4067cbb86086c286dac0a36f7b6c6381f13d23248ea77931a0afea6ad057790c"
+  },
+  {
+    "case": "q17-matrix6",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "4067cbb86086c286dac0a36f7b6c6381f13d23248ea77931a0afea6ad057790c"
+  },
+  {
+    "case": "q17-matrix6",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "55fa93072cb5455f5182f4385f93bb6bdffc52115891fd69ca458850e009ec18"
+  },
+  {
+    "case": "q17-matrix6",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "55fa93072cb5455f5182f4385f93bb6bdffc52115891fd69ca458850e009ec18"
+  },
+  {
+    "case": "q17-matrix6",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "d4d0ca4a472727c8a53adbf6be2077290d9f4af8c5ddda3481c5fef870d21f59"
+  },
+  {
+    "case": "q17-matrix6",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "d4d0ca4a472727c8a53adbf6be2077290d9f4af8c5ddda3481c5fef870d21f59"
+  },
+  {
+    "case": "q17-matrix6",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "13ebf663f9390ad8168cff1814e922c270a24016e8244aa20a0b3ca5987d3001"
+  },
+  {
+    "case": "q17-matrix6",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "cd540e5a96bc33d60dddbbec4783f2d5833d8888b362f91b69b547cd1e81c7ca"
+  },
+  {
+    "case": "q17-matrix6",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "7c6400faa67404b92e56ee4f07c8668e402f1eb9017e6a09f2a4275b628a4634"
+  },
+  {
+    "case": "q17-matrix6",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "7c6400faa67404b92e56ee4f07c8668e402f1eb9017e6a09f2a4275b628a4634"
+  },
+  {
+    "case": "q17-matrix6",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "82d99197140e791ebb425df27a077bfb3f01dace0e6587c4713389f2616819ff"
+  },
+  {
+    "case": "q17-matrix6",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "911ca931c331a2ee596772120fee96c11ea9c8b20eb29836977c68b0ae56d48a"
+  },
+  {
+    "case": "q17-matrix6",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "4cd6ed811c74ff016bf574b8d88b246053d0aeabaef052a068acc47ae37660a8"
+  },
+  {
+    "case": "q17-matrix6",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "4cd6ed811c74ff016bf574b8d88b246053d0aeabaef052a068acc47ae37660a8"
+  },
+  {
+    "case": "q17-matrix7",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "c2f34292efd5dd9d94e5a5a8a8d4b408f418f57f629709a3b11daa644ad4a0a3"
+  },
+  {
+    "case": "q17-matrix7",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "c2f34292efd5dd9d94e5a5a8a8d4b408f418f57f629709a3b11daa644ad4a0a3"
+  },
+  {
+    "case": "q17-matrix7",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "730eea5dbf8e5a79cd49a16e15671ef425c1d7ac45dfeb4fa4aa388fc782f12f"
+  },
+  {
+    "case": "q17-matrix7",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "730eea5dbf8e5a79cd49a16e15671ef425c1d7ac45dfeb4fa4aa388fc782f12f"
+  },
+  {
+    "case": "q17-matrix7",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "3f6d95fd0b5404bb2841574b174d7e70aec1a6db4dea836cc40dd7f7832750c7"
+  },
+  {
+    "case": "q17-matrix7",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "ec6b314e53d52303e23fc1df4ee3cca9029bba83fcba1ede8f146b9c0cb70ec1"
+  },
+  {
+    "case": "q17-matrix7",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "10d8261c241ccb4dc3d150cbbeeaf4cf45d1dce0328fb52bbf695c2af88fc8cd"
+  },
+  {
+    "case": "q17-matrix7",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "10d8261c241ccb4dc3d150cbbeeaf4cf45d1dce0328fb52bbf695c2af88fc8cd"
+  },
+  {
+    "case": "q17-matrix7",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "ebdb0db3561ddc5ef133eb5853359a6371a517f798da88bf86f245d232cc3296"
+  },
+  {
+    "case": "q17-matrix7",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "5ece78c7b5200cb6908eb985e8d91842381a6cfaba1af2738f60dfc05bf8681c"
+  },
+  {
+    "case": "q17-matrix7",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "f4d5778d18aa0abb849defc4dacb9ba079b50fdabec2918420563d83d392f27f"
+  },
+  {
+    "case": "q17-matrix7",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "f4d5778d18aa0abb849defc4dacb9ba079b50fdabec2918420563d83d392f27f"
+  },
+  {
+    "case": "q17-matrix7",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "c2f34292efd5dd9d94e5a5a8a8d4b408f418f57f629709a3b11daa644ad4a0a3"
+  },
+  {
+    "case": "q17-matrix7",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "c2f34292efd5dd9d94e5a5a8a8d4b408f418f57f629709a3b11daa644ad4a0a3"
+  },
+  {
+    "case": "q17-matrix7",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "730eea5dbf8e5a79cd49a16e15671ef425c1d7ac45dfeb4fa4aa388fc782f12f"
+  },
+  {
+    "case": "q17-matrix7",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "730eea5dbf8e5a79cd49a16e15671ef425c1d7ac45dfeb4fa4aa388fc782f12f"
+  },
+  {
+    "case": "q17-matrix7",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "3f6d95fd0b5404bb2841574b174d7e70aec1a6db4dea836cc40dd7f7832750c7"
+  },
+  {
+    "case": "q17-matrix7",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "ec6b314e53d52303e23fc1df4ee3cca9029bba83fcba1ede8f146b9c0cb70ec1"
+  },
+  {
+    "case": "q17-matrix7",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "10d8261c241ccb4dc3d150cbbeeaf4cf45d1dce0328fb52bbf695c2af88fc8cd"
+  },
+  {
+    "case": "q17-matrix7",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "10d8261c241ccb4dc3d150cbbeeaf4cf45d1dce0328fb52bbf695c2af88fc8cd"
+  },
+  {
+    "case": "q17-matrix7",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "ebdb0db3561ddc5ef133eb5853359a6371a517f798da88bf86f245d232cc3296"
+  },
+  {
+    "case": "q17-matrix7",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "5ece78c7b5200cb6908eb985e8d91842381a6cfaba1af2738f60dfc05bf8681c"
+  },
+  {
+    "case": "q17-matrix7",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "f4d5778d18aa0abb849defc4dacb9ba079b50fdabec2918420563d83d392f27f"
+  },
+  {
+    "case": "q17-matrix7",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "f4d5778d18aa0abb849defc4dacb9ba079b50fdabec2918420563d83d392f27f"
+  },
+  {
+    "case": "q17-matrix8",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "ca88931177e34c0cce634592a11a1adb7d8ba79914f9ebf1a52f6e0d964c50ad"
+  },
+  {
+    "case": "q17-matrix8",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "0498f5bc5bc1dbff47147ab40e543102050d3f3868fabab2d530914f5d2652ca"
+  },
+  {
+    "case": "q17-matrix8",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "169623d942035b3bb14074af6cf6740f95b3dfbc69409d6f46ccd8b77cf469e7"
+  },
+  {
+    "case": "q17-matrix8",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "169623d942035b3bb14074af6cf6740f95b3dfbc69409d6f46ccd8b77cf469e7"
+  },
+  {
+    "case": "q17-matrix8",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "b4f82d33d2781b816714a403175cd757f4f3f043af0015b56945a3f3aaea2157"
+  },
+  {
+    "case": "q17-matrix8",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "d12673ec6ebf41a263392a96ae6914893979e4a755c8035e71ef3399c27dedbc"
+  },
+  {
+    "case": "q17-matrix8",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "5d4248699499764cfa73661e9741a156a2fb11eaf43094a9a2e02484fc920c5f"
+  },
+  {
+    "case": "q17-matrix8",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "5d4248699499764cfa73661e9741a156a2fb11eaf43094a9a2e02484fc920c5f"
+  },
+  {
+    "case": "q17-matrix8",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "4bcef918b3992269b4a0680c88a30a54b2c30a2e1e66a6669de89454247df829"
+  },
+  {
+    "case": "q17-matrix8",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "f47f608f874d349b66d376ac3df7a341660da7ae9e9468d37f33125bb9cab3a1"
+  },
+  {
+    "case": "q17-matrix8",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "794d998a1cc5c30b4f5e18ea7dcc2365929f0c47ee69ca5718426e944d48fa8b"
+  },
+  {
+    "case": "q17-matrix8",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "794d998a1cc5c30b4f5e18ea7dcc2365929f0c47ee69ca5718426e944d48fa8b"
+  },
+  {
+    "case": "q17-matrix8",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "ca88931177e34c0cce634592a11a1adb7d8ba79914f9ebf1a52f6e0d964c50ad"
+  },
+  {
+    "case": "q17-matrix8",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "0498f5bc5bc1dbff47147ab40e543102050d3f3868fabab2d530914f5d2652ca"
+  },
+  {
+    "case": "q17-matrix8",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "169623d942035b3bb14074af6cf6740f95b3dfbc69409d6f46ccd8b77cf469e7"
+  },
+  {
+    "case": "q17-matrix8",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "169623d942035b3bb14074af6cf6740f95b3dfbc69409d6f46ccd8b77cf469e7"
+  },
+  {
+    "case": "q17-matrix8",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "b4f82d33d2781b816714a403175cd757f4f3f043af0015b56945a3f3aaea2157"
+  },
+  {
+    "case": "q17-matrix8",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "d12673ec6ebf41a263392a96ae6914893979e4a755c8035e71ef3399c27dedbc"
+  },
+  {
+    "case": "q17-matrix8",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "5d4248699499764cfa73661e9741a156a2fb11eaf43094a9a2e02484fc920c5f"
+  },
+  {
+    "case": "q17-matrix8",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "5d4248699499764cfa73661e9741a156a2fb11eaf43094a9a2e02484fc920c5f"
+  },
+  {
+    "case": "q17-matrix8",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "4bcef918b3992269b4a0680c88a30a54b2c30a2e1e66a6669de89454247df829"
+  },
+  {
+    "case": "q17-matrix8",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "f47f608f874d349b66d376ac3df7a341660da7ae9e9468d37f33125bb9cab3a1"
+  },
+  {
+    "case": "q17-matrix8",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "794d998a1cc5c30b4f5e18ea7dcc2365929f0c47ee69ca5718426e944d48fa8b"
+  },
+  {
+    "case": "q17-matrix8",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "794d998a1cc5c30b4f5e18ea7dcc2365929f0c47ee69ca5718426e944d48fa8b"
+  },
+  {
+    "case": "q17-matrix9",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "913272fb3e1c8ebb9bd16a29428c664f9bf650bd479a64cffd1975a97ce693fe"
+  },
+  {
+    "case": "q17-matrix9",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "913272fb3e1c8ebb9bd16a29428c664f9bf650bd479a64cffd1975a97ce693fe"
+  },
+  {
+    "case": "q17-matrix9",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "408d1876c9effef9cccbbae9184d2292d9870e68278c24fa44ecd04d4129036b"
+  },
+  {
+    "case": "q17-matrix9",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "408d1876c9effef9cccbbae9184d2292d9870e68278c24fa44ecd04d4129036b"
+  },
+  {
+    "case": "q17-matrix9",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "4cad44c01702602b75feb1887522731baadf56a2967fcac9849fc62591af6294"
+  },
+  {
+    "case": "q17-matrix9",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "4cad44c01702602b75feb1887522731baadf56a2967fcac9849fc62591af6294"
+  },
+  {
+    "case": "q17-matrix9",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "afd9ac5fb6869077d7b8c4ea309342c957351f8d57e075d289a2d0c1ee5543bc"
+  },
+  {
+    "case": "q17-matrix9",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "afd9ac5fb6869077d7b8c4ea309342c957351f8d57e075d289a2d0c1ee5543bc"
+  },
+  {
+    "case": "q17-matrix9",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "4c7fd522ddcbfd9b4be631a66cc0a3109483c723263e61264cccf5f6cfcfc620"
+  },
+  {
+    "case": "q17-matrix9",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "87fdac5d31c53b769da727a84d4966fd876e53d4ada80b3f013b73d1f3682f7b"
+  },
+  {
+    "case": "q17-matrix9",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "ab109fdabdae4dbe3550772241081ad777a2a8a3e4659f2119a93e271e1714ee"
+  },
+  {
+    "case": "q17-matrix9",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "ab109fdabdae4dbe3550772241081ad777a2a8a3e4659f2119a93e271e1714ee"
+  },
+  {
+    "case": "q17-matrix9",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "913272fb3e1c8ebb9bd16a29428c664f9bf650bd479a64cffd1975a97ce693fe"
+  },
+  {
+    "case": "q17-matrix9",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "913272fb3e1c8ebb9bd16a29428c664f9bf650bd479a64cffd1975a97ce693fe"
+  },
+  {
+    "case": "q17-matrix9",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "408d1876c9effef9cccbbae9184d2292d9870e68278c24fa44ecd04d4129036b"
+  },
+  {
+    "case": "q17-matrix9",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "408d1876c9effef9cccbbae9184d2292d9870e68278c24fa44ecd04d4129036b"
+  },
+  {
+    "case": "q17-matrix9",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "4cad44c01702602b75feb1887522731baadf56a2967fcac9849fc62591af6294"
+  },
+  {
+    "case": "q17-matrix9",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "4cad44c01702602b75feb1887522731baadf56a2967fcac9849fc62591af6294"
+  },
+  {
+    "case": "q17-matrix9",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "afd9ac5fb6869077d7b8c4ea309342c957351f8d57e075d289a2d0c1ee5543bc"
+  },
+  {
+    "case": "q17-matrix9",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "afd9ac5fb6869077d7b8c4ea309342c957351f8d57e075d289a2d0c1ee5543bc"
+  },
+  {
+    "case": "q17-matrix9",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "4c7fd522ddcbfd9b4be631a66cc0a3109483c723263e61264cccf5f6cfcfc620"
+  },
+  {
+    "case": "q17-matrix9",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "87fdac5d31c53b769da727a84d4966fd876e53d4ada80b3f013b73d1f3682f7b"
+  },
+  {
+    "case": "q17-matrix9",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "ab109fdabdae4dbe3550772241081ad777a2a8a3e4659f2119a93e271e1714ee"
+  },
+  {
+    "case": "q17-matrix9",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "ab109fdabdae4dbe3550772241081ad777a2a8a3e4659f2119a93e271e1714ee"
+  },
+  {
+    "case": "q17-matrix10",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "195baf84c52b5cf53b4487008b3d4d6620b9d3ed92cdfabcd2da27bb84449db0"
+  },
+  {
+    "case": "q17-matrix10",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "195baf84c52b5cf53b4487008b3d4d6620b9d3ed92cdfabcd2da27bb84449db0"
+  },
+  {
+    "case": "q17-matrix10",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "4420521d2166423aee3683e0ec8d80b6a58e813da2ecef1ada612c8298f610ad"
+  },
+  {
+    "case": "q17-matrix10",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "4420521d2166423aee3683e0ec8d80b6a58e813da2ecef1ada612c8298f610ad"
+  },
+  {
+    "case": "q17-matrix10",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "01f63b5c9eca15056896bec2379f222e9cf324f71442c522ed061d262873a23c"
+  },
+  {
+    "case": "q17-matrix10",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "01f63b5c9eca15056896bec2379f222e9cf324f71442c522ed061d262873a23c"
+  },
+  {
+    "case": "q17-matrix10",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "71e9f4e13af79d8ea03284626f2871e47f65536c096aca2e0c1764a38f8795e9"
+  },
+  {
+    "case": "q17-matrix10",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "71e9f4e13af79d8ea03284626f2871e47f65536c096aca2e0c1764a38f8795e9"
+  },
+  {
+    "case": "q17-matrix10",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "928922b43021ccbea60903cb4eef4f9e530a7ca68f0e7b38b02a06706be27938"
+  },
+  {
+    "case": "q17-matrix10",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "928922b43021ccbea60903cb4eef4f9e530a7ca68f0e7b38b02a06706be27938"
+  },
+  {
+    "case": "q17-matrix10",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "35899eeff26051af03a9ab57dd8e426092cbe3578a1b23476adaff8fc210cdcf"
+  },
+  {
+    "case": "q17-matrix10",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "35899eeff26051af03a9ab57dd8e426092cbe3578a1b23476adaff8fc210cdcf"
+  },
+  {
+    "case": "q17-matrix10",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "195baf84c52b5cf53b4487008b3d4d6620b9d3ed92cdfabcd2da27bb84449db0"
+  },
+  {
+    "case": "q17-matrix10",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "195baf84c52b5cf53b4487008b3d4d6620b9d3ed92cdfabcd2da27bb84449db0"
+  },
+  {
+    "case": "q17-matrix10",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "4420521d2166423aee3683e0ec8d80b6a58e813da2ecef1ada612c8298f610ad"
+  },
+  {
+    "case": "q17-matrix10",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "4420521d2166423aee3683e0ec8d80b6a58e813da2ecef1ada612c8298f610ad"
+  },
+  {
+    "case": "q17-matrix10",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "01f63b5c9eca15056896bec2379f222e9cf324f71442c522ed061d262873a23c"
+  },
+  {
+    "case": "q17-matrix10",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "01f63b5c9eca15056896bec2379f222e9cf324f71442c522ed061d262873a23c"
+  },
+  {
+    "case": "q17-matrix10",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "71e9f4e13af79d8ea03284626f2871e47f65536c096aca2e0c1764a38f8795e9"
+  },
+  {
+    "case": "q17-matrix10",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "71e9f4e13af79d8ea03284626f2871e47f65536c096aca2e0c1764a38f8795e9"
+  },
+  {
+    "case": "q17-matrix10",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "fbaddabce6042d6e48d9a9922dd3eab982aacf0407e1643372c21c56b84719e5"
+  },
+  {
+    "case": "q17-matrix10",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "fbaddabce6042d6e48d9a9922dd3eab982aacf0407e1643372c21c56b84719e5"
+  },
+  {
+    "case": "q17-matrix10",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "029a517e6332eada455f41450e8a14e1598b497ecfe331f0e8aac9d73dd11cf3"
+  },
+  {
+    "case": "q17-matrix10",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "029a517e6332eada455f41450e8a14e1598b497ecfe331f0e8aac9d73dd11cf3"
+  },
+  {
+    "case": "q17-matrix11",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "2660143c8b479bc512b66e6088f4e90d1751ca74b0340e37d5d82f004ba53a43"
+  },
+  {
+    "case": "q17-matrix11",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "20062b3abc3bd9a0fb35cf988e75eb285fcee1de89ddfef1eda59cade9342d2a"
+  },
+  {
+    "case": "q17-matrix11",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "a2b109f9931ba3bae022829aae116bb7bfa6e04d2c4386084500fe892371291f"
+  },
+  {
+    "case": "q17-matrix11",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "a2b109f9931ba3bae022829aae116bb7bfa6e04d2c4386084500fe892371291f"
+  },
+  {
+    "case": "q17-matrix11",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "3661684f2108fe8253e1e920db8ce1a1d5cf3d4a614475720b766a5702047b4f"
+  },
+  {
+    "case": "q17-matrix11",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "4e4ba3c4ab89b90764549499fa0e3585ebf7d64cb24ae681d47d47d47e1c9a0d"
+  },
+  {
+    "case": "q17-matrix11",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "663c1827127d61feee0377d73e4fa1577c95049c048f9ab93a5f184afa35ef27"
+  },
+  {
+    "case": "q17-matrix11",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "663c1827127d61feee0377d73e4fa1577c95049c048f9ab93a5f184afa35ef27"
+  },
+  {
+    "case": "q17-matrix11",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "eff011bc12c22fb5b91d63e06e76afb36408d5d16122e5674d6922d679cc820d"
+  },
+  {
+    "case": "q17-matrix11",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "e933dea155ba1816de8a58c4d6eab2385855071e40e893138bd158c0ecb737fc"
+  },
+  {
+    "case": "q17-matrix11",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "6895b3e279d212f2857ba099baf95033b3a32d89f892b92c1ccc9672fe09ff1d"
+  },
+  {
+    "case": "q17-matrix11",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "6895b3e279d212f2857ba099baf95033b3a32d89f892b92c1ccc9672fe09ff1d"
+  },
+  {
+    "case": "q17-matrix11",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "2660143c8b479bc512b66e6088f4e90d1751ca74b0340e37d5d82f004ba53a43"
+  },
+  {
+    "case": "q17-matrix11",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "20062b3abc3bd9a0fb35cf988e75eb285fcee1de89ddfef1eda59cade9342d2a"
+  },
+  {
+    "case": "q17-matrix11",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "a2b109f9931ba3bae022829aae116bb7bfa6e04d2c4386084500fe892371291f"
+  },
+  {
+    "case": "q17-matrix11",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "a2b109f9931ba3bae022829aae116bb7bfa6e04d2c4386084500fe892371291f"
+  },
+  {
+    "case": "q17-matrix11",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "3661684f2108fe8253e1e920db8ce1a1d5cf3d4a614475720b766a5702047b4f"
+  },
+  {
+    "case": "q17-matrix11",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "4e4ba3c4ab89b90764549499fa0e3585ebf7d64cb24ae681d47d47d47e1c9a0d"
+  },
+  {
+    "case": "q17-matrix11",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "663c1827127d61feee0377d73e4fa1577c95049c048f9ab93a5f184afa35ef27"
+  },
+  {
+    "case": "q17-matrix11",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "663c1827127d61feee0377d73e4fa1577c95049c048f9ab93a5f184afa35ef27"
+  },
+  {
+    "case": "q17-matrix11",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "eff011bc12c22fb5b91d63e06e76afb36408d5d16122e5674d6922d679cc820d"
+  },
+  {
+    "case": "q17-matrix11",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "e933dea155ba1816de8a58c4d6eab2385855071e40e893138bd158c0ecb737fc"
+  },
+  {
+    "case": "q17-matrix11",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "6895b3e279d212f2857ba099baf95033b3a32d89f892b92c1ccc9672fe09ff1d"
+  },
+  {
+    "case": "q17-matrix11",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "6895b3e279d212f2857ba099baf95033b3a32d89f892b92c1ccc9672fe09ff1d"
+  },
+  {
+    "case": "q17-matrix12",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "e5f3b5265c019437d12454756f3e7785507cb95dd8df303838b280213ad8933b"
+  },
+  {
+    "case": "q17-matrix12",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "c0927937e24e1e22fd340c885af77949ec77b75cbfb33e455dd06a28e0b175cc"
+  },
+  {
+    "case": "q17-matrix12",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "ffeeb64cefea4b12fb0efce841aa00533e94bd10a9e4554b6b396ccfb17ca814"
+  },
+  {
+    "case": "q17-matrix12",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "ffeeb64cefea4b12fb0efce841aa00533e94bd10a9e4554b6b396ccfb17ca814"
+  },
+  {
+    "case": "q17-matrix12",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "077e54a9b7ce7bab0f4e709d7324b22952e701a12c6d20af9ba7a8ab866364b2"
+  },
+  {
+    "case": "q17-matrix12",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "a69e08f86888bbcd7b2f0367beab9cc22791e32d97f1a21aedef8853eb3cfc36"
+  },
+  {
+    "case": "q17-matrix12",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "8ea5b19352eef8682971718240695af226abb2f862351b0fc28bbc5fc729d312"
+  },
+  {
+    "case": "q17-matrix12",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "8ea5b19352eef8682971718240695af226abb2f862351b0fc28bbc5fc729d312"
+  },
+  {
+    "case": "q17-matrix12",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "6824d9323b87b93f19fc2d20bbb62d697de2b53a272dad9aa5698da81a2ae701"
+  },
+  {
+    "case": "q17-matrix12",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "3c6703de81e0266e4478611fc80e6e13f5dcad030a21b909693739e1e0d7fcab"
+  },
+  {
+    "case": "q17-matrix12",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "e95eac6b2eb2c0c3a6e99dd9060acc7375f443ecb0ea57756e30fb163f13e912"
+  },
+  {
+    "case": "q17-matrix12",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "e95eac6b2eb2c0c3a6e99dd9060acc7375f443ecb0ea57756e30fb163f13e912"
+  },
+  {
+    "case": "q17-matrix12",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "e5f3b5265c019437d12454756f3e7785507cb95dd8df303838b280213ad8933b"
+  },
+  {
+    "case": "q17-matrix12",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "c0927937e24e1e22fd340c885af77949ec77b75cbfb33e455dd06a28e0b175cc"
+  },
+  {
+    "case": "q17-matrix12",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "ffeeb64cefea4b12fb0efce841aa00533e94bd10a9e4554b6b396ccfb17ca814"
+  },
+  {
+    "case": "q17-matrix12",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "ffeeb64cefea4b12fb0efce841aa00533e94bd10a9e4554b6b396ccfb17ca814"
+  },
+  {
+    "case": "q17-matrix12",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "53d97ee9f2662f7407548f53cc7f68a191f6fdf9babd0d5300380c79d7484a0e"
+  },
+  {
+    "case": "q17-matrix12",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "0a381f746ac33d5d2769b4cb9303d3727d4a2ec6f122bdc1ada7283a63a59d40"
+  },
+  {
+    "case": "q17-matrix12",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "5fc4534742b9231bc00a4493f06747861e6a6639a3b567b7286096c64fe3f560"
+  },
+  {
+    "case": "q17-matrix12",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "5fc4534742b9231bc00a4493f06747861e6a6639a3b567b7286096c64fe3f560"
+  },
+  {
+    "case": "q17-matrix12",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "c3dd37e39c9e2067282d5d4d7e36c3c10dd2213900cb4f77baac4af317cc795c"
+  },
+  {
+    "case": "q17-matrix12",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "7b4b82402915af3df9d8034f45325a68af8063a27c12aca671ffe398bf96243a"
+  },
+  {
+    "case": "q17-matrix12",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "d0d053d802e7728b10c0e45e4ea7e7ce749eddacd0fa78bf865fd4ccb0eba8a7"
+  },
+  {
+    "case": "q17-matrix12",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "d0d053d802e7728b10c0e45e4ea7e7ce749eddacd0fa78bf865fd4ccb0eba8a7"
+  },
+  {
+    "case": "q17-matrix13",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "a2698f4f18ca3ea6696c0a990a13bb46fe723d58dc95ed6bf529206606b1a943"
+  },
+  {
+    "case": "q17-matrix13",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "ea43c28c007262e740e418170db7e653f7813ef6e7fb46e3c554c658e001daa5"
+  },
+  {
+    "case": "q17-matrix13",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "5afff730f3bb67c14fdf5c132b86fad4f33ca2237950ff01902cee83f0df70d0"
+  },
+  {
+    "case": "q17-matrix13",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "5afff730f3bb67c14fdf5c132b86fad4f33ca2237950ff01902cee83f0df70d0"
+  },
+  {
+    "case": "q17-matrix13",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "d545a3ad4930fb71bee4357219af93334e2912f3b715e663ef6eb60b92ef024d"
+  },
+  {
+    "case": "q17-matrix13",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "ba7677d7d2e6471ed4f1fed916e7b9f65ffe4b666cf0a7d72c974bd8226b440f"
+  },
+  {
+    "case": "q17-matrix13",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "903b8dae10f9264e1efca1115bc0b6a619888aa30714fc45527cbf5a13e89981"
+  },
+  {
+    "case": "q17-matrix13",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "903b8dae10f9264e1efca1115bc0b6a619888aa30714fc45527cbf5a13e89981"
+  },
+  {
+    "case": "q17-matrix13",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "8f05b7f25aa5b4910aada675c668331db4f02c9374b2b6a4dfbff6650d6fd7d5"
+  },
+  {
+    "case": "q17-matrix13",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "97f66fedac4803338cc0ccd700d8beb4e83f646f6438110d095cac8c842c9323"
+  },
+  {
+    "case": "q17-matrix13",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "14e4201330d7e8d23ee39e56b2a3ec91cc242b5dc03905c70cebf7199ee14530"
+  },
+  {
+    "case": "q17-matrix13",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "14e4201330d7e8d23ee39e56b2a3ec91cc242b5dc03905c70cebf7199ee14530"
+  },
+  {
+    "case": "q17-matrix13",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "a2698f4f18ca3ea6696c0a990a13bb46fe723d58dc95ed6bf529206606b1a943"
+  },
+  {
+    "case": "q17-matrix13",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "ea43c28c007262e740e418170db7e653f7813ef6e7fb46e3c554c658e001daa5"
+  },
+  {
+    "case": "q17-matrix13",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "5afff730f3bb67c14fdf5c132b86fad4f33ca2237950ff01902cee83f0df70d0"
+  },
+  {
+    "case": "q17-matrix13",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "5afff730f3bb67c14fdf5c132b86fad4f33ca2237950ff01902cee83f0df70d0"
+  },
+  {
+    "case": "q17-matrix13",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "d545a3ad4930fb71bee4357219af93334e2912f3b715e663ef6eb60b92ef024d"
+  },
+  {
+    "case": "q17-matrix13",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "ba7677d7d2e6471ed4f1fed916e7b9f65ffe4b666cf0a7d72c974bd8226b440f"
+  },
+  {
+    "case": "q17-matrix13",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "903b8dae10f9264e1efca1115bc0b6a619888aa30714fc45527cbf5a13e89981"
+  },
+  {
+    "case": "q17-matrix13",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "903b8dae10f9264e1efca1115bc0b6a619888aa30714fc45527cbf5a13e89981"
+  },
+  {
+    "case": "q17-matrix13",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "25ad6dfd3c9e88a3df66272b70ac3d4133ab479bb5d8440aa21769c4b255c933"
+  },
+  {
+    "case": "q17-matrix13",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "c0c8c6b630e1dc17b359dfa284383ea0268b65186012a07286d9b691b9f96e46"
+  },
+  {
+    "case": "q17-matrix13",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "aaf1ebb76faa0f4139426d5a606258c4c35338f19c10d0e0bd34fe34ce531f99"
+  },
+  {
+    "case": "q17-matrix13",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "aaf1ebb76faa0f4139426d5a606258c4c35338f19c10d0e0bd34fe34ce531f99"
+  },
+  {
+    "case": "q17-matrix14",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "4af42249e4e23fc651528fe682f03db35f8b8d93cb6caa726775c05ebdc600c6"
+  },
+  {
+    "case": "q17-matrix14",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "4af42249e4e23fc651528fe682f03db35f8b8d93cb6caa726775c05ebdc600c6"
+  },
+  {
+    "case": "q17-matrix14",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "e69382bfd15fe620aeedd21853ae39332d09b12e1b44b5db07170b4a97ee2acd"
+  },
+  {
+    "case": "q17-matrix14",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "e69382bfd15fe620aeedd21853ae39332d09b12e1b44b5db07170b4a97ee2acd"
+  },
+  {
+    "case": "q17-matrix14",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "c3a68ac89ae97ac75264951dbc19720f803b5209d032162fdecab5a004059677"
+  },
+  {
+    "case": "q17-matrix14",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "c3a68ac89ae97ac75264951dbc19720f803b5209d032162fdecab5a004059677"
+  },
+  {
+    "case": "q17-matrix14",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "22939e8407772dcb0d1f66d2eabc02125642c4bfede7edfc1ffcc2cbe900b84f"
+  },
+  {
+    "case": "q17-matrix14",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "22939e8407772dcb0d1f66d2eabc02125642c4bfede7edfc1ffcc2cbe900b84f"
+  },
+  {
+    "case": "q17-matrix14",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "67c164e8e5f530c77dcb56a3d5b7cae2665b6998a8360c278edc4d3e9f7a3810"
+  },
+  {
+    "case": "q17-matrix14",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "67c164e8e5f530c77dcb56a3d5b7cae2665b6998a8360c278edc4d3e9f7a3810"
+  },
+  {
+    "case": "q17-matrix14",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "f88b1e6e9be1932e7b1bcd1fc92cd414f982da9ef719e3fc8d5ff4a0924d774b"
+  },
+  {
+    "case": "q17-matrix14",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "f88b1e6e9be1932e7b1bcd1fc92cd414f982da9ef719e3fc8d5ff4a0924d774b"
+  },
+  {
+    "case": "q17-matrix14",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "4af42249e4e23fc651528fe682f03db35f8b8d93cb6caa726775c05ebdc600c6"
+  },
+  {
+    "case": "q17-matrix14",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "4af42249e4e23fc651528fe682f03db35f8b8d93cb6caa726775c05ebdc600c6"
+  },
+  {
+    "case": "q17-matrix14",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "e69382bfd15fe620aeedd21853ae39332d09b12e1b44b5db07170b4a97ee2acd"
+  },
+  {
+    "case": "q17-matrix14",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "e69382bfd15fe620aeedd21853ae39332d09b12e1b44b5db07170b4a97ee2acd"
+  },
+  {
+    "case": "q17-matrix14",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "c3a68ac89ae97ac75264951dbc19720f803b5209d032162fdecab5a004059677"
+  },
+  {
+    "case": "q17-matrix14",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "c3a68ac89ae97ac75264951dbc19720f803b5209d032162fdecab5a004059677"
+  },
+  {
+    "case": "q17-matrix14",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "22939e8407772dcb0d1f66d2eabc02125642c4bfede7edfc1ffcc2cbe900b84f"
+  },
+  {
+    "case": "q17-matrix14",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "22939e8407772dcb0d1f66d2eabc02125642c4bfede7edfc1ffcc2cbe900b84f"
+  },
+  {
+    "case": "q17-matrix14",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "67c164e8e5f530c77dcb56a3d5b7cae2665b6998a8360c278edc4d3e9f7a3810"
+  },
+  {
+    "case": "q17-matrix14",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "67c164e8e5f530c77dcb56a3d5b7cae2665b6998a8360c278edc4d3e9f7a3810"
+  },
+  {
+    "case": "q17-matrix14",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "f88b1e6e9be1932e7b1bcd1fc92cd414f982da9ef719e3fc8d5ff4a0924d774b"
+  },
+  {
+    "case": "q17-matrix14",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "f88b1e6e9be1932e7b1bcd1fc92cd414f982da9ef719e3fc8d5ff4a0924d774b"
+  },
+  {
+    "case": "q17-matrix15",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "7bd79460fb17e4ce530f3fa987fb08f674999e7d1f79860e9851053072777036"
+  },
+  {
+    "case": "q17-matrix15",
+    "source": "reference",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "7143c5c7c100a770a0ee643ce634443be3783b67b9fe54cea4c401ec51082ff2"
+  },
+  {
+    "case": "q17-matrix15",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "da521fc751706974ce225ab9b99f01846dadcaf0a3f976a60df1aa172fd943a3"
+  },
+  {
+    "case": "q17-matrix15",
+    "source": "reference",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "da521fc751706974ce225ab9b99f01846dadcaf0a3f976a60df1aa172fd943a3"
+  },
+  {
+    "case": "q17-matrix15",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "f13bcebefec249a0a4ef31751a60b9dce370e7d01f87a7622252a65d7ef59592"
+  },
+  {
+    "case": "q17-matrix15",
+    "source": "reference",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "b761f5149eed23df4e9d061d529115edf81a0c99b9ffb9168bef423b1441e240"
+  },
+  {
+    "case": "q17-matrix15",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "1a214d11e37442acd6c0100ce090dd76c5b1cbdcd4b3450acb6851b8665220a7"
+  },
+  {
+    "case": "q17-matrix15",
+    "source": "reference",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "fe38058e3068cc73feeebb860d898af884b4e300abe1b5f99502aece94db39ca"
+  },
+  {
+    "case": "q17-matrix15",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "9b34ad552c1da99cbf3453f136c7b4b30a4e46f8ca86aa41a9818bb59e4809bd"
+  },
+  {
+    "case": "q17-matrix15",
+    "source": "reference",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "cd795a7793f704aa116595f31cedbdea70bc89fad235f2abfe877c464d3fa4ce"
+  },
+  {
+    "case": "q17-matrix15",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "66f0b85babccc5def8700a85399f10e1e3e55d685bb1396931981e8fd8ecefff"
+  },
+  {
+    "case": "q17-matrix15",
+    "source": "reference",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "1a4e6a1fa5ee6119a2e0f6c0f5f9e314ece910a66b9c67045956a02f69b9e9fc"
+  },
+  {
+    "case": "q17-matrix15",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "7bd79460fb17e4ce530f3fa987fb08f674999e7d1f79860e9851053072777036"
+  },
+  {
+    "case": "q17-matrix15",
+    "source": "lll_box",
+    "N": 4,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "7143c5c7c100a770a0ee643ce634443be3783b67b9fe54cea4c401ec51082ff2"
+  },
+  {
+    "case": "q17-matrix15",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "da521fc751706974ce225ab9b99f01846dadcaf0a3f976a60df1aa172fd943a3"
+  },
+  {
+    "case": "q17-matrix15",
+    "source": "lll_box",
+    "N": 4,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "da521fc751706974ce225ab9b99f01846dadcaf0a3f976a60df1aa172fd943a3"
+  },
+  {
+    "case": "q17-matrix15",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "f13bcebefec249a0a4ef31751a60b9dce370e7d01f87a7622252a65d7ef59592"
+  },
+  {
+    "case": "q17-matrix15",
+    "source": "lll_box",
+    "N": 8,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "b761f5149eed23df4e9d061d529115edf81a0c99b9ffb9168bef423b1441e240"
+  },
+  {
+    "case": "q17-matrix15",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "1a214d11e37442acd6c0100ce090dd76c5b1cbdcd4b3450acb6851b8665220a7"
+  },
+  {
+    "case": "q17-matrix15",
+    "source": "lll_box",
+    "N": 8,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "fe38058e3068cc73feeebb860d898af884b4e300abe1b5f99502aece94db39ca"
+  },
+  {
+    "case": "q17-matrix15",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "euclidean",
+    "bank_id": "9b34ad552c1da99cbf3453f136c7b4b30a4e46f8ca86aa41a9818bb59e4809bd"
+  },
+  {
+    "case": "q17-matrix15",
+    "source": "lll_box",
+    "N": 12,
+    "family": "repeated",
+    "metric": "cbd",
+    "bank_id": "cd795a7793f704aa116595f31cedbdea70bc89fad235f2abfe877c464d3fa4ce"
+  },
+  {
+    "case": "q17-matrix15",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "euclidean",
+    "bank_id": "66f0b85babccc5def8700a85399f10e1e3e55d685bb1396931981e8fd8ecefff"
+  },
+  {
+    "case": "q17-matrix15",
+    "source": "lll_box",
+    "N": 12,
+    "family": "radix",
+    "metric": "cbd",
+    "bank_id": "1a4e6a1fa5ee6119a2e0f6c0f5f9e314ece910a66b9c67045956a02f69b9e9fc"
+  }
+]

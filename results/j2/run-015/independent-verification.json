@@ -1,0 +1,13 @@
+{
+  "project_arithmetic_imported": false,
+  "matrices": 16,
+  "LLL_certificates": 16,
+  "panels": 1152,
+  "exact_laws_verified": 96,
+  "maximum_Bernoulli_layers": 54,
+  "total_Bernoulli_layers": 3072,
+  "distinct_score_banks": 155,
+  "complete_guess_scores": 5949643,
+  "exact_hashes_and_events_matched": true,
+  "maximum_absolute_moment_delta": 2.4320823133194835e-15
+}

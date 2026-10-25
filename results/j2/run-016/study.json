@@ -1,0 +1,577 @@
+{
+  "protocol_commit": "a0b9fab",
+  "points": [
+    {
+      "parent_index": 1078,
+      "inputs": {
+        "n": 1024,
+        "degree": 256,
+        "q": 3329,
+        "eta": 2,
+        "samples": 790,
+        "nenu": 28,
+        "nfft": 114,
+        "kfft": 16,
+        "mlwe": false
+      },
+      "lattice_dimension": 1672,
+      "log2_list_size": 163.52477471586442,
+      "log2_threshold": -78.0756947012712,
+      "log2_candidate_budget": 236.31536811795058,
+      "log2_ideal_code_factor": -20.49133161141848,
+      "log2_inferred_network_factor": -57.58436308985272,
+      "normal_sensitivity": [
+        {
+          "variance_inflation": 1.0,
+          "log2_union_budget": -8.414341283049225
+        },
+        {
+          "variance_inflation": 1.01,
+          "log2_union_budget": -6.038761441313795
+        },
+        {
+          "variance_inflation": 1.1,
+          "log2_union_budget": 13.40061403209532
+        },
+        {
+          "variance_inflation": 2.0,
+          "log2_union_budget": 111.68787866332634
+        }
+      ],
+      "normal_budget_variance_limit": {
+        "maximum_inflation": 1.0173522225357101,
+        "relative_excess": 0.017352222535710116,
+        "log2_max_mean_off_diagonal_covariance": -170.37351044537786
+      },
+      "covariance_tolerances": [
+        {
+          "relative_variance_excess": 0.01,
+          "log2_max_mean_off_diagonal_covariance": -171.16863090563916
+        },
+        {
+          "relative_variance_excess": 0.1,
+          "log2_max_mean_off_diagonal_covariance": -167.8467028107518
+        },
+        {
+          "relative_variance_excess": 1.0,
+          "log2_max_mean_off_diagonal_covariance": -164.52477471586442
+        }
+      ],
+      "moment_only_diagnostic": {
+        "assumed_wrong_mean": 0,
+        "assumed_wrong_variance": "1/(2N)",
+        "log2_unclipped_union_bound": 227.93763889874268,
+        "clipped_union_bound": 1.0,
+        "log2_sufficient_N_at_fixed_mu": 395.78868561538036,
+        "additional_list_bits": 232.26391089951593,
+        "full_wrong_candidate_moments_validated": false
+      },
+      "storage_models": [
+        {
+          "representation": "dense_mod_q_packed",
+          "bytes_per_vector": 2508,
+          "log2_list_bytes": 174.81709634866647,
+          "illustrative_caps": [
+            {
+              "log2_bytes": 40,
+              "log2_max_vectors": 28.707678365681147,
+              "list_excess_bits": 134.81709635018328
+            },
+            {
+              "log2_bytes": 60,
+              "log2_max_vectors": 48.70767836719796,
+              "list_excess_bits": 114.81709634866647
+            },
+            {
+              "log2_bytes": 80,
+              "log2_max_vectors": 68.70767836719796,
+              "list_excess_bits": 94.81709634866647
+            }
+          ]
+        },
+        {
+          "representation": "dense_64_bit_coordinates",
+          "bytes_per_vector": 13376,
+          "log2_list_bytes": 177.2321338479453,
+          "illustrative_caps": [
+            {
+              "log2_bytes": 40,
+              "log2_max_vectors": 26.292640867499237,
+              "list_excess_bits": 137.23213384836518
+            },
+            {
+              "log2_bytes": 60,
+              "log2_max_vectors": 46.29264086791911,
+              "list_excess_bits": 117.2321338479453
+            },
+            {
+              "log2_bytes": 80,
+              "log2_max_vectors": 66.29264086791912,
+              "list_excess_bits": 97.2321338479453
+            }
+          ]
+        }
+      ],
+      "concrete_sample_diagnostics": [
+        {
+          "experiment": "panel-0-repeated",
+          "count": 256,
+          "log2_mean_CBD": -140.0885784651689,
+          "log2_mean_Gaussian_upper": -121.22795081828293,
+          "effective_weighted_sample_count": 1.0000024307218724,
+          "largest_sample_share": 0.9999987846410431,
+          "log2_mean_over_ideal_code": -119.59724685375042,
+          "log2_diagnostic_full_threshold": -197.67294155502162,
+          "log2_diagnostic_normal_budget": 235.31536811795058,
+          "certified_population_mean": false,
+          "attack_cost_updated": false
+        },
+        {
+          "experiment": "panel-0-radix",
+          "count": 256,
+          "log2_mean_CBD": -25.929522624937402,
+          "log2_mean_Gaussian_upper": -25.238250370957466,
+          "effective_weighted_sample_count": 30.149708065231856,
+          "largest_sample_share": 0.12005267505175644,
+          "log2_mean_over_ideal_code": -5.438191013518921,
+          "log2_diagnostic_full_threshold": -83.51388571479012,
+          "log2_diagnostic_normal_budget": 234.747208969928,
+          "certified_population_mean": false,
+          "attack_cost_updated": false
+        }
+      ]
+    },
+    {
+      "parent_index": 1256,
+      "inputs": {
+        "n": 1024,
+        "degree": 256,
+        "q": 3329,
+        "eta": 2,
+        "samples": 797,
+        "nenu": 33,
+        "nfft": 111,
+        "kfft": 16,
+        "mlwe": true
+      },
+      "lattice_dimension": 1677,
+      "log2_list_size": 162.4871809676673,
+      "log2_threshold": -77.57222017433595,
+      "log2_candidate_budget": 235.18168135518505,
+      "log2_ideal_code_factor": -18.78533533557615,
+      "log2_inferred_network_factor": -58.7868848387598,
+      "normal_sensitivity": [
+        {
+          "variance_inflation": 1.0,
+          "log2_union_budget": -4.505193032723071
+        },
+        {
+          "variance_inflation": 1.01,
+          "log2_union_budget": -2.1793923613653305
+        },
+        {
+          "variance_inflation": 1.1,
+          "log2_union_budget": 16.852698261215153
+        },
+        {
+          "variance_inflation": 2.0,
+          "log2_union_budget": 113.08313523862172
+        }
+      ],
+      "normal_budget_variance_limit": {
+        "maximum_inflation": 1.0007807833214621,
+        "relative_excess": 0.0007807833214621418,
+        "log2_max_mean_off_diagonal_covariance": -173.80997111181193
+      },
+      "covariance_tolerances": [
+        {
+          "relative_variance_excess": 0.01,
+          "log2_max_mean_off_diagonal_covariance": -170.13103715744205
+        },
+        {
+          "relative_variance_excess": 0.1,
+          "log2_max_mean_off_diagonal_covariance": -166.80910906255468
+        },
+        {
+          "relative_variance_excess": 1.0,
+          "log2_max_mean_off_diagonal_covariance": -163.4871809676673
+        }
+      ],
+      "moment_only_diagnostic": {
+        "assumed_wrong_mean": 0,
+        "assumed_wrong_variance": "1/(2N)",
+        "log2_unclipped_union_bound": 226.83450371648487,
+        "clipped_union_bound": 1.0,
+        "log2_sufficient_N_at_fixed_mu": 393.6480497987443,
+        "additional_list_bits": 231.16086883107698,
+        "full_wrong_candidate_moments_validated": false
+      },
+      "storage_models": [
+        {
+          "representation": "dense_mod_q_packed",
+          "bytes_per_vector": 2516,
+          "log2_list_bytes": 173.78409717454662,
+          "illustrative_caps": [
+            {
+              "log2_bytes": 40,
+              "log2_max_vectors": 28.703083792517134,
+              "list_excess_bits": 133.78409717515018
+            },
+            {
+              "log2_bytes": 60,
+              "log2_max_vectors": 48.70308379312071,
+              "list_excess_bits": 113.7840971745466
+            },
+            {
+              "log2_bytes": 80,
+              "log2_max_vectors": 68.70308379312071,
+              "list_excess_bits": 93.7840971745466
+            }
+          ]
+        },
+        {
+          "representation": "dense_64_bit_coordinates",
+          "bytes_per_vector": 13416,
+          "log2_list_bytes": 176.19884794123166,
+          "illustrative_caps": [
+            {
+              "log2_bytes": 40,
+              "log2_max_vectors": 26.288333016998862,
+              "list_excess_bits": 136.19884795066844
+            },
+            {
+              "log2_bytes": 60,
+              "log2_max_vectors": 46.28833302643564,
+              "list_excess_bits": 116.19884794123168
+            },
+            {
+              "log2_bytes": 80,
+              "log2_max_vectors": 66.28833302643565,
+              "list_excess_bits": 96.19884794123166
+            }
+          ]
+        }
+      ],
+      "concrete_sample_diagnostics": [
+        {
+          "experiment": "panel-1-repeated",
+          "count": 256,
+          "log2_mean_CBD": -147.86432165229866,
+          "log2_mean_Gaussian_upper": -123.32388406595092,
+          "effective_weighted_sample_count": 2.6010029920281394,
+          "largest_sample_share": 0.5171171620346584,
+          "log2_mean_over_ideal_code": -129.0789863167225,
+          "log2_diagnostic_full_threshold": -206.65120649105847,
+          "log2_diagnostic_normal_budget": 234.18168135518505,
+          "certified_population_mean": false,
+          "attack_cost_updated": false
+        },
+        {
+          "experiment": "panel-1-radix",
+          "count": 256,
+          "log2_mean_CBD": -24.349909667000468,
+          "log2_mean_Gaussian_upper": -23.720273705885702,
+          "effective_weighted_sample_count": 78.62127775459217,
+          "largest_sample_share": 0.044515072580921064,
+          "log2_mean_over_ideal_code": -5.564574331424318,
+          "log2_diagnostic_full_threshold": -83.13679450576026,
+          "log2_diagnostic_normal_budget": 233.67412373633053,
+          "certified_population_mean": false,
+          "attack_cost_updated": false
+        }
+      ]
+    },
+    {
+      "parent_index": 1378,
+      "inputs": {
+        "n": 1536,
+        "degree": 256,
+        "q": 7681,
+        "eta": 3,
+        "samples": 1236,
+        "nenu": 35,
+        "nfft": 152,
+        "kfft": 22,
+        "mlwe": false
+      },
+      "lattice_dimension": 2585,
+      "log2_list_size": 250.0600933155033,
+      "log2_threshold": -121.04497352334984,
+      "log2_candidate_budget": 358.2078194327458,
+      "log2_ideal_code_factor": -29.646504215264063,
+      "log2_inferred_network_factor": -91.39846930808578,
+      "normal_sensitivity": [
+        {
+          "variance_inflation": 1.0,
+          "log2_union_budget": -9.371770720893267
+        },
+        {
+          "variance_inflation": 1.01,
+          "log2_union_budget": -5.782780898979468
+        },
+        {
+          "variance_inflation": 1.1,
+          "log2_union_budget": 23.58450601831396
+        },
+        {
+          "variance_inflation": 2.0,
+          "log2_union_budget": 172.00834789945512
+        }
+      ],
+      "normal_budget_variance_limit": {
+        "maximum_inflation": 1.0141278210417028,
+        "relative_excess": 0.014127821041702848,
+        "log2_max_mean_off_diagonal_covariance": -257.20541053180267
+      },
+      "covariance_tolerances": [
+        {
+          "relative_variance_excess": 0.01,
+          "log2_max_mean_off_diagonal_covariance": -257.70394950527805
+        },
+        {
+          "relative_variance_excess": 0.1,
+          "log2_max_mean_off_diagonal_covariance": -254.38202141039068
+        },
+        {
+          "relative_variance_excess": 1.0,
+          "log2_max_mean_off_diagonal_covariance": -251.0600933155033
+        }
+      ],
+      "moment_only_diagnostic": {
+        "assumed_wrong_mean": 0,
+        "assumed_wrong_variance": "1/(2N)",
+        "log2_unclipped_union_bound": 349.23479934884153,
+        "clipped_union_bound": 1.0,
+        "log2_sufficient_N_at_fixed_mu": 603.6196945743328,
+        "additional_list_bits": 353.5596012588295,
+        "full_wrong_candidate_moments_validated": false
+      },
+      "storage_models": [
+        {
+          "representation": "dense_mod_q_packed",
+          "bytes_per_vector": 4201,
+          "log2_list_bytes": 262.09661038598983,
+          "illustrative_caps": [
+            {
+              "log2_bytes": 40,
+              "log2_max_vectors": 27.963482929239248,
+              "list_excess_bits": 222.09661038626405
+            },
+            {
+              "log2_bytes": 60,
+              "log2_max_vectors": 47.96348292951348,
+              "list_excess_bits": 202.09661038598983
+            },
+            {
+              "log2_bytes": 80,
+              "log2_max_vectors": 67.96348292951349,
+              "list_excess_bits": 182.09661038598983
+            }
+          ]
+        },
+        {
+          "representation": "dense_64_bit_coordinates",
+          "bytes_per_vector": 20680,
+          "log2_list_bytes": 264.3960418807056,
+          "illustrative_caps": [
+            {
+              "log2_bytes": 40,
+              "log2_max_vectors": 25.664051416249524,
+              "list_excess_bits": 224.3960418992538
+            },
+            {
+              "log2_bytes": 60,
+              "log2_max_vectors": 45.66405143479769,
+              "list_excess_bits": 204.3960418807056
+            },
+            {
+              "log2_bytes": 80,
+              "log2_max_vectors": 65.6640514347977,
+              "list_excess_bits": 184.3960418807056
+            }
+          ]
+        }
+      ],
+      "concrete_sample_diagnostics": [
+        {
+          "experiment": "panel-2-repeated",
+          "count": 256,
+          "log2_mean_CBD": -281.25843018311184,
+          "log2_mean_Gaussian_upper": -237.9957835678125,
+          "effective_weighted_sample_count": 1.0000000000346727,
+          "largest_sample_share": 0.9999999999826636,
+          "log2_mean_over_ideal_code": -251.61192596784778,
+          "log2_diagnostic_full_threshold": -372.65689949119763,
+          "log2_diagnostic_normal_budget": 357.2078194327458,
+          "certified_population_mean": false,
+          "attack_cost_updated": false
+        },
+        {
+          "experiment": "panel-2-radix",
+          "count": 256,
+          "log2_mean_CBD": -38.86416837779675,
+          "log2_mean_Gaussian_upper": -38.00995334082618,
+          "effective_weighted_sample_count": 39.598063966712154,
+          "largest_sample_share": 0.0759599537885657,
+          "log2_mean_over_ideal_code": -9.217664162532689,
+          "log2_diagnostic_full_threshold": -130.26263768588254,
+          "log2_diagnostic_normal_budget": 357.16386945249087,
+          "certified_population_mean": false,
+          "attack_cost_updated": false
+        }
+      ]
+    },
+    {
+      "parent_index": 1698,
+      "inputs": {
+        "n": 1536,
+        "degree": 256,
+        "q": 7681,
+        "eta": 3,
+        "samples": 1230,
+        "nenu": 50,
+        "nfft": 140,
+        "kfft": 21,
+        "mlwe": true
+      },
+      "lattice_dimension": 2576,
+      "log2_list_size": 247.9849058191091,
+      "log2_threshold": -120.01721503280646,
+      "log2_candidate_budget": 357.73074629061523,
+      "log2_ideal_code_factor": -24.925654465554775,
+      "log2_inferred_network_factor": -95.09156056725169,
+      "normal_sensitivity": [
+        {
+          "variance_inflation": 1.0,
+          "log2_union_budget": -4.940002009048101
+        },
+        {
+          "variance_inflation": 1.01,
+          "log2_union_budget": -1.3995179771850417
+        },
+        {
+          "variance_inflation": 1.1,
+          "log2_union_budget": 27.570903071825512
+        },
+        {
+          "variance_inflation": 2.0,
+          "log2_union_budget": 173.99055542179752
+        }
+      ],
+      "normal_budget_variance_limit": {
+        "maximum_inflation": 1.001731455327823,
+        "relative_excess": 0.0017314553278229283,
+        "log2_max_mean_off_diagonal_covariance": -258.15870493781256
+      },
+      "covariance_tolerances": [
+        {
+          "relative_variance_excess": 0.01,
+          "log2_max_mean_off_diagonal_covariance": -255.62876200888383
+        },
+        {
+          "relative_variance_excess": 0.1,
+          "log2_max_mean_off_diagonal_covariance": -252.30683391399646
+        },
+        {
+          "relative_variance_excess": 1.0,
+          "log2_max_mean_off_diagonal_covariance": -248.9849058191091
+        }
+      ],
+      "moment_only_diagnostic": {
+        "assumed_wrong_mean": 0,
+        "assumed_wrong_variance": "1/(2N)",
+        "log2_unclipped_union_bound": 348.777357310272,
+        "clipped_union_bound": 1.0,
+        "log2_sufficient_N_at_fixed_mu": 601.0871044511155,
+        "additional_list_bits": 353.1021986320064,
+        "full_wrong_candidate_moments_validated": false
+      },
+      "storage_models": [
+        {
+          "representation": "dense_mod_q_packed",
+          "bytes_per_vector": 4186,
+          "log2_list_bytes": 260.0162624153648,
+          "illustrative_caps": [
+            {
+              "log2_bytes": 40,
+              "log2_max_vectors": 27.968643400618813,
+              "list_excess_bits": 220.01626241849027
+            },
+            {
+              "log2_bytes": 60,
+              "log2_max_vectors": 47.96864340374429,
+              "list_excess_bits": 200.0162624153648
+            },
+            {
+              "log2_bytes": 80,
+              "log2_max_vectors": 67.9686434037443,
+              "list_excess_bits": 180.0162624153648
+            }
+          ]
+        },
+        {
+          "representation": "dense_64_bit_coordinates",
+          "bytes_per_vector": 20608,
+          "log2_list_bytes": 262.3158226972237,
+          "illustrative_caps": [
+            {
+              "log2_bytes": 40,
+              "log2_max_vectors": 25.66908312171743,
+              "list_excess_bits": 222.31582269739167
+            },
+            {
+              "log2_bytes": 60,
+              "log2_max_vectors": 45.66908312188536,
+              "list_excess_bits": 202.31582269722372
+            },
+            {
+              "log2_bytes": 80,
+              "log2_max_vectors": 65.66908312188538,
+              "list_excess_bits": 182.31582269722372
+            }
+          ]
+        }
+      ],
+      "concrete_sample_diagnostics": [
+        {
+          "experiment": "panel-3-repeated",
+          "count": 256,
+          "log2_mean_CBD": -279.84539720168056,
+          "log2_mean_Gaussian_upper": -230.83862130379913,
+          "effective_weighted_sample_count": 1.246264333461893,
+          "largest_sample_share": 0.8924168540602694,
+          "log2_mean_over_ideal_code": -254.91974273612578,
+          "log2_diagnostic_full_threshold": -374.93695776893225,
+          "log2_diagnostic_normal_budget": 356.73074629061523,
+          "certified_population_mean": false,
+          "attack_cost_updated": false
+        },
+        {
+          "experiment": "panel-3-radix",
+          "count": 256,
+          "log2_mean_CBD": -33.38094650389954,
+          "log2_mean_Gaussian_upper": -32.687033634047644,
+          "effective_weighted_sample_count": 39.97892362085794,
+          "largest_sample_share": 0.0849197003284727,
+          "log2_mean_over_ideal_code": -8.455292038344762,
+          "log2_diagnostic_full_threshold": -128.47250707115123,
+          "log2_diagnostic_normal_budget": 356.65594335579294,
+          "certified_population_mean": false,
+          "attack_cost_updated": false
+        }
+      ]
+    }
+  ],
+  "attack_costs_updated": false,
+  "profile_selected": false,
+  "j2_closed": false,
+  "scope": "fixed-point sensitivity, conditional moments, explicit storage representations",
+  "limits": [
+    "no actual full dual list at q=7681",
+    "no certified population bias of concrete codes",
+    "no proved normal tail or full wrong-candidate moments",
+    "Cantelli sufficiency is not a necessary list size or attack cost",
+    "dense storage estimates are not universal memory lower bounds",
+    "no reoptimization or transfer of finite-q tail ratios"
+  ]
+}

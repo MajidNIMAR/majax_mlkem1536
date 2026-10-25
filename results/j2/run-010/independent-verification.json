@@ -1,0 +1,9 @@
+{
+  "method": "complete toy codebooks plus full actual-modulus block alphabets",
+  "project_arithmetic_imported": false,
+  "toy_cases": 6,
+  "classified_targets": 6302,
+  "actual_modulus_blocks": 64,
+  "actual_modulus_candidate_symbols": 352320,
+  "all_matched": true
+}

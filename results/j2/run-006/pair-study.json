@@ -1,0 +1,553 @@
+{
+  "parameters": {
+    "q": 7681,
+    "n": 256,
+    "k": 6,
+    "eta1": 3,
+    "eta2": 3
+  },
+  "tilt_grid": {
+    "points": 500,
+    "first": "1001/1000",
+    "last": "3/2"
+  },
+  "results": [
+    {
+      "quantized_pairs": 0,
+      "exact_coefficients": 1536,
+      "quantized_pairs_per_polynomial": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dv": 2,
+      "z": "229/200",
+      "tail_threshold": 960,
+      "v_error_range": [
+        -960,
+        960
+      ],
+      "ciphertext_bits": 20480,
+      "ciphertext_bytes": 2560,
+      "message_upper": {
+        "decimal": "1.4915111337083496324390174451076988560836976489266513479570727202230611105929312E-26",
+        "log2": -85.79335572005948,
+        "numerator_bits": 462013,
+        "denominator_bits": 462099,
+        "ratio_sha256": "86fb7299fd25ac37f2924d7e5251b6cf148c2eb0f2c0ad456544245056afa7b5"
+      },
+      "uncapped_log2": -85.79335572005948,
+      "c05_exact_comparison": false,
+      "status": "not_certified_by_this_bound",
+      "id": "staggered-dv2-pairs0",
+      "role": "screening_boundary"
+    },
+    {
+      "quantized_pairs": 4,
+      "exact_coefficients": 1528,
+      "quantized_pairs_per_polynomial": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "dv": 2,
+      "z": "143/125",
+      "tail_threshold": 960,
+      "v_error_range": [
+        -960,
+        960
+      ],
+      "ciphertext_bits": 20472,
+      "ciphertext_bytes": 2559,
+      "message_upper": {
+        "decimal": "3.1977189776485376362660964180660528258309869285665192176318676033637998944619120E-26",
+        "log2": -84.69308730983175,
+        "numerator_bits": 393757,
+        "denominator_bits": 393842,
+        "ratio_sha256": "faf1b66ef8438e596d0427f86a2a284c487da179962e62c66d49785c0ff11230"
+      },
+      "uncapped_log2": -84.69308730983175,
+      "c05_exact_comparison": false,
+      "status": "not_certified_by_this_bound",
+      "id": "staggered-dv2-pairs4",
+      "role": "next_byte_step"
+    },
+    {
+      "quantized_pairs": 64,
+      "exact_coefficients": 1408,
+      "quantized_pairs_per_polynomial": [
+        10,
+        11,
+        11,
+        10,
+        11,
+        11
+      ],
+      "dv": 3,
+      "z": "1201/1000",
+      "tail_threshold": 1440,
+      "v_error_range": [
+        -480,
+        480
+      ],
+      "ciphertext_bits": 20608,
+      "ciphertext_bytes": 2576,
+      "message_upper": {
+        "decimal": "1.8030500545345306061469897125125195700708637445377295524163354839955554156109086E-53",
+        "log2": -175.2117495809216,
+        "numerator_bits": 592378,
+        "denominator_bits": 592553,
+        "ratio_sha256": "e5c5c8342de20476dc053ebcb701bfec86d5ec0dbd3af2b23f88aeb4ee15fad0"
+      },
+      "uncapped_log2": -175.2117495809216,
+      "c05_exact_comparison": true,
+      "status": "certified_in_ideal_CBD_model",
+      "id": "staggered-dv3-pairs64",
+      "role": "screening_boundary"
+    },
+    {
+      "quantized_pairs": 68,
+      "exact_coefficients": 1400,
+      "quantized_pairs_per_polynomial": [
+        11,
+        11,
+        12,
+        11,
+        11,
+        12
+      ],
+      "dv": 3,
+      "z": "1201/1000",
+      "tail_threshold": 1440,
+      "v_error_range": [
+        -480,
+        480
+      ],
+      "ciphertext_bits": 20600,
+      "ciphertext_bytes": 2575,
+      "message_upper": {
+        "decimal": "5.2305747670370562911859238887976859258932075159246582131538276399812506846415348E-53",
+        "log2": -173.67521954188123,
+        "numerator_bits": 592377,
+        "denominator_bits": 592550,
+        "ratio_sha256": "c5a31155f4c88b827221e0ce7d171e62c7ebb3c989d21c67fe5a4c054223d206"
+      },
+      "uncapped_log2": -173.67521954188123,
+      "c05_exact_comparison": false,
+      "status": "not_certified_by_this_bound",
+      "id": "staggered-dv3-pairs68",
+      "role": "next_byte_step"
+    },
+    {
+      "quantized_pairs": 228,
+      "exact_coefficients": 1080,
+      "quantized_pairs_per_polynomial": [
+        38,
+        38,
+        38,
+        38,
+        38,
+        38
+      ],
+      "dv": 4,
+      "z": "599/500",
+      "tail_threshold": 1680,
+      "v_error_range": [
+        -240,
+        240
+      ],
+      "ciphertext_bits": 20536,
+      "ciphertext_bytes": 2567,
+      "message_upper": {
+        "decimal": "1.3163917296177235859911656905128884993270473966730629560694156544279704415777099E-53",
+        "log2": -175.66560016130097,
+        "numerator_bits": 536906,
+        "denominator_bits": 537082,
+        "ratio_sha256": "af2d8ff859c90a1081c48e0cf397e845e874f89062a69ef81290dd25eddd3db1"
+      },
+      "uncapped_log2": -175.66560016130097,
+      "c05_exact_comparison": true,
+      "status": "certified_in_ideal_CBD_model",
+      "id": "staggered-dv4-pairs228",
+      "role": "screening_boundary"
+    },
+    {
+      "quantized_pairs": 232,
+      "exact_coefficients": 1072,
+      "quantized_pairs_per_polynomial": [
+        38,
+        39,
+        39,
+        38,
+        39,
+        39
+      ],
+      "dv": 4,
+      "z": "1197/1000",
+      "tail_threshold": 1680,
+      "v_error_range": [
+        -240,
+        240
+      ],
+      "ciphertext_bits": 20528,
+      "ciphertext_bytes": 2566,
+      "message_upper": {
+        "decimal": "3.7522125076278354619822288938187679716512518614569716962821240114851202996583008E-53",
+        "log2": -174.15444749151357,
+        "numerator_bits": 592172,
+        "denominator_bits": 592346,
+        "ratio_sha256": "091378c855d34d5a2ea435134c1d2b0d3d12081e1066bd1b83bcb92b09f746b2"
+      },
+      "uncapped_log2": -174.15444749151357,
+      "c05_exact_comparison": false,
+      "status": "not_certified_by_this_bound",
+      "id": "staggered-dv4-pairs232",
+      "role": "next_byte_step"
+    },
+    {
+      "quantized_pairs": 312,
+      "exact_coefficients": 912,
+      "quantized_pairs_per_polynomial": [
+        52,
+        52,
+        52,
+        52,
+        52,
+        52
+      ],
+      "dv": 5,
+      "z": "299/250",
+      "tail_threshold": 1800,
+      "v_error_range": [
+        -120,
+        120
+      ],
+      "ciphertext_bits": 20624,
+      "ciphertext_bytes": 2578,
+      "message_upper": {
+        "decimal": "1.8487151249261685285651753309725287323853834561480085632148205961975026410833872E-53",
+        "log2": -175.17566609714413,
+        "numerator_bits": 481501,
+        "denominator_bits": 481676,
+        "ratio_sha256": "68b5eb4be1a6fa7129b3f59471ef01ac02d56c5a82d7107ff3345aee0e32935b"
+      },
+      "uncapped_log2": -175.17566609714413,
+      "c05_exact_comparison": true,
+      "status": "certified_in_ideal_CBD_model",
+      "id": "staggered-dv5-pairs312",
+      "role": "screening_boundary"
+    },
+    {
+      "quantized_pairs": 316,
+      "exact_coefficients": 904,
+      "quantized_pairs_per_polynomial": [
+        52,
+        53,
+        53,
+        52,
+        53,
+        53
+      ],
+      "dv": 5,
+      "z": "239/200",
+      "tail_threshold": 1800,
+      "v_error_range": [
+        -120,
+        120
+      ],
+      "ciphertext_bits": 20616,
+      "ciphertext_bytes": 2577,
+      "message_upper": {
+        "decimal": "5.2135984059616310137714177085983463234331816426394102091503735119540426714262292E-53",
+        "log2": -173.67990957008442,
+        "numerator_bits": 463662,
+        "denominator_bits": 463836,
+        "ratio_sha256": "d794453f564a57028e23c3ddbc528c5d5e1c49d45639f2b1df44154c04de7a7e"
+      },
+      "uncapped_log2": -173.67990957008442,
+      "c05_exact_comparison": false,
+      "status": "not_certified_by_this_bound",
+      "id": "staggered-dv5-pairs316",
+      "role": "next_byte_step"
+    },
+    {
+      "quantized_pairs": 352,
+      "exact_coefficients": 832,
+      "quantized_pairs_per_polynomial": [
+        58,
+        59,
+        59,
+        58,
+        59,
+        59
+      ],
+      "dv": 6,
+      "z": "299/250",
+      "tail_threshold": 1860,
+      "v_error_range": [
+        -60,
+        60
+      ],
+      "ciphertext_bits": 20800,
+      "ciphertext_bytes": 2600,
+      "message_upper": {
+        "decimal": "1.2947921715714870397786367335000767431892547283761050297845182241658408164899293E-53",
+        "log2": -175.68946848099586,
+        "numerator_bits": 481485,
+        "denominator_bits": 481661,
+        "ratio_sha256": "26311a36bcd619aae22735f80bbe630770b8c92b3bb6934625e4df3e9e43dba3"
+      },
+      "uncapped_log2": -175.68946848099586,
+      "c05_exact_comparison": true,
+      "status": "certified_in_ideal_CBD_model",
+      "id": "staggered-dv6-pairs352",
+      "role": "screening_boundary"
+    },
+    {
+      "quantized_pairs": 356,
+      "exact_coefficients": 824,
+      "quantized_pairs_per_polynomial": [
+        59,
+        59,
+        60,
+        59,
+        59,
+        60
+      ],
+      "dv": 6,
+      "z": "239/200",
+      "tail_threshold": 1860,
+      "v_error_range": [
+        -60,
+        60
+      ],
+      "ciphertext_bits": 20792,
+      "ciphertext_bytes": 2599,
+      "message_upper": {
+        "decimal": "3.6395410039477348975531952545743896525414001456424652185162861517669581479496889E-53",
+        "log2": -174.1984325107769,
+        "numerator_bits": 463646,
+        "denominator_bits": 463820,
+        "ratio_sha256": "2f33ca16f07dbdd884f30fcc96b71b54dfd9c00782c93ef83b13bf60ac0bd840"
+      },
+      "uncapped_log2": -174.1984325107769,
+      "c05_exact_comparison": false,
+      "status": "not_certified_by_this_bound",
+      "id": "staggered-dv6-pairs356",
+      "role": "next_byte_step"
+    },
+    {
+      "quantized_pairs": 372,
+      "exact_coefficients": 792,
+      "quantized_pairs_per_polynomial": [
+        62,
+        62,
+        62,
+        62,
+        62,
+        62
+      ],
+      "dv": 7,
+      "z": "239/200",
+      "tail_threshold": 1890,
+      "v_error_range": [
+        -30,
+        30
+      ],
+      "ciphertext_bits": 21016,
+      "ciphertext_bytes": 2627,
+      "message_upper": {
+        "decimal": "1.0824374299767390276447567992149400160389714488975143394322553752514000649798900E-53",
+        "log2": -175.94790539628593,
+        "numerator_bits": 463640,
+        "denominator_bits": 463816,
+        "ratio_sha256": "96cdb6d8a7f3f49177450e01e57054fcf3eb0457a9803fe3c3abc17f3a59e665"
+      },
+      "uncapped_log2": -175.94790539628593,
+      "c05_exact_comparison": true,
+      "status": "certified_in_ideal_CBD_model",
+      "id": "staggered-dv7-pairs372",
+      "role": "screening_boundary"
+    },
+    {
+      "quantized_pairs": 376,
+      "exact_coefficients": 784,
+      "quantized_pairs_per_polynomial": [
+        62,
+        63,
+        63,
+        62,
+        63,
+        63
+      ],
+      "dv": 7,
+      "z": "597/500",
+      "tail_threshold": 1890,
+      "v_error_range": [
+        -30,
+        30
+      ],
+      "ciphertext_bits": 21008,
+      "ciphertext_bytes": 2626,
+      "message_upper": {
+        "decimal": "3.0402024463471898901585034794981985528037986488681984321329626089345437532628594E-53",
+        "log2": -174.45802163344342,
+        "numerator_bits": 536709,
+        "denominator_bits": 536883,
+        "ratio_sha256": "b94a89be34463f8cfe2805ea2ba66ac3cf2c599b8c71d98288f4fba5bde22d4a"
+      },
+      "uncapped_log2": -174.45802163344342,
+      "c05_exact_comparison": false,
+      "status": "not_certified_by_this_bound",
+      "id": "staggered-dv7-pairs376",
+      "role": "next_byte_step"
+    },
+    {
+      "quantized_pairs": 384,
+      "exact_coefficients": 768,
+      "quantized_pairs_per_polynomial": [
+        64,
+        64,
+        64,
+        64,
+        64,
+        64
+      ],
+      "dv": 8,
+      "z": "239/200",
+      "tail_threshold": 1905,
+      "v_error_range": [
+        -15,
+        15
+      ],
+      "ciphertext_bits": 21248,
+      "ciphertext_bytes": 2656,
+      "message_upper": {
+        "decimal": "1.6583615877634093141153872800643096579122947381622438488365636544929335024647605E-53",
+        "log2": -175.33243042387767,
+        "numerator_bits": 463635,
+        "denominator_bits": 463810,
+        "ratio_sha256": "e778ffdc823985b2b41c8387e8e234f722f0a5765fec3ce847564f1d212ec137"
+      },
+      "uncapped_log2": -175.33243042387767,
+      "c05_exact_comparison": true,
+      "status": "certified_in_ideal_CBD_model",
+      "id": "staggered-dv8-pairs384",
+      "role": "screening_boundary"
+    },
+    {
+      "quantized_pairs": 388,
+      "exact_coefficients": 760,
+      "quantized_pairs_per_polynomial": [
+        64,
+        65,
+        65,
+        64,
+        65,
+        65
+      ],
+      "dv": 8,
+      "z": "597/500",
+      "tail_threshold": 1905,
+      "v_error_range": [
+        -15,
+        15
+      ],
+      "ciphertext_bits": 21240,
+      "ciphertext_bytes": 2655,
+      "message_upper": {
+        "decimal": "4.6416230233258563971571766925240176865925528994949488048665613138892836523972831E-53",
+        "log2": -173.84755967231467,
+        "numerator_bits": 536704,
+        "denominator_bits": 536878,
+        "ratio_sha256": "d8b2977832dd7b11bb3f23ce063788fa62bbd44ab5a7a70c1a6172a2481ebcec"
+      },
+      "uncapped_log2": -173.84755967231467,
+      "c05_exact_comparison": false,
+      "status": "not_certified_by_this_bound",
+      "id": "staggered-dv8-pairs388",
+      "role": "next_byte_step"
+    },
+    {
+      "quantized_pairs": 392,
+      "exact_coefficients": 752,
+      "quantized_pairs_per_polynomial": [
+        65,
+        65,
+        66,
+        65,
+        65,
+        66
+      ],
+      "dv": 13,
+      "z": "239/200",
+      "tail_threshold": 1920,
+      "v_error_range": [
+        0,
+        0
+      ],
+      "ciphertext_bits": 22512,
+      "ciphertext_bytes": 2814,
+      "message_upper": {
+        "decimal": "9.0439327055714795644540689627358980107929426939623445641809068703237186547946787E-54",
+        "log2": -176.20716686663218,
+        "numerator_bits": 463632,
+        "denominator_bits": 463808,
+        "ratio_sha256": "dd8b5ceaccf92ac3b05ea75689ab4bdf18ef47493c30543e8aac6b02ff42765e"
+      },
+      "uncapped_log2": -176.20716686663218,
+      "c05_exact_comparison": true,
+      "status": "certified_in_ideal_CBD_model",
+      "id": "staggered-dv13-pairs392",
+      "role": "screening_boundary"
+    },
+    {
+      "quantized_pairs": 396,
+      "exact_coefficients": 744,
+      "quantized_pairs_per_polynomial": [
+        66,
+        66,
+        66,
+        66,
+        66,
+        66
+      ],
+      "dv": 13,
+      "z": "597/500",
+      "tail_threshold": 1920,
+      "v_error_range": [
+        0,
+        0
+      ],
+      "ciphertext_bits": 22504,
+      "ciphertext_bytes": 2813,
+      "message_upper": {
+        "decimal": "2.5360616457194976173069766585666606524369118893967602458361494704191521356868915E-53",
+        "log2": -174.7195992146153,
+        "numerator_bits": 536701,
+        "denominator_bits": 536876,
+        "ratio_sha256": "0b3f7ea8e03243256eca6773d1b8d18187af75d0b9462404ce1455770ed07a0f"
+      },
+      "uncapped_log2": -174.7195992146153,
+      "c05_exact_comparison": false,
+      "status": "not_certified_by_this_bound",
+      "id": "staggered-dv13-pairs396",
+      "role": "next_byte_step"
+    }
+  ],
+  "best_found_id": "staggered-dv4-pairs228",
+  "profile_selected": false,
+  "j2_closed": false,
+  "limits": [
+    "ideal independent CBD primitives; no rounding independence",
+    "fixed public adjacent-coefficient pair mask; no adaptive key/message choice",
+    "best found in explored grid; non-certification is not actual failure",
+    "no rank-6 KEM, new attack estimate, timing or fixed-SHAKE proof"
+  ]
+}

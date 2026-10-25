@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-10-24T15:14:03.019256+00:00",
+  "python": "3.13.7",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "input_sha256": {
+    "research/u_dependency.py": "0e4e8c6e8d4413ac0196aecac48524759f0cb54623b98b163126b17987e48710",
+    "research/test_u_dependency.py": "0d532147236695b6c28ef76ff39b082b8c1166216c726fb5075cef0f86c81f2a",
+    "research/run_u_dependency.py": "ac2b142879aa6fbc9c757d341e7f4fc87a7428a008802039375a9c753f85f997",
+    "research/verify_u_dependency_results.py": "07c1b487b39c5a33316e64d6c98c2f615eea869261891b91e10efbdcd5d2b5a5",
+    "research/noise_exact.py": "702d63dd736892cb1b273268087aecaadac06d5c5df4c3c093f909b98ede271e",
+    "research/decapsulation_diagnostic.py": "8b3c09606c58c2829ce8ee19e85bb1f54996708232938b38625f52a02d14c402",
+    "profiles/kem1536-p0.toml": "ec07497ccab9150a982ecc882b8d1890d8dda18c4150e22f86cff70735e22740",
+    "results/j2/run-003/decapsulation.json": "bccfb24fdbf591928a7f07db5c5c102b0d446df1943f1ba1b3dc209ecc01edbf",
+    "references/correctness-2026/manifest.json": "3157bc4ccbc9cd6800447dc75916851e7bbf13dba91e4c96652bf420c051ea69"
+  },
+  "profile_selection": "none",
+  "j2_closed": false,
+  "output_sha256": {
+    "u-dependency.json": "c75da1c163253b7c3d71ba7e3209c0c20dd617ce344e6e65bb3b756e222d5ab8"
+  }
+}

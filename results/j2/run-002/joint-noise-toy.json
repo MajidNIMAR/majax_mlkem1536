@@ -1,0 +1,17 @@
+{
+  "scope": "toy CBD(1) product modulo X^4+1; not a rank-six DFR estimate",
+  "n": 4,
+  "threshold": 2,
+  "elementary_outcomes_weighted": 65536,
+  "mean_c0": "0",
+  "covariance_c0_c1": "0",
+  "covariance_squared_coefficients": "1/2",
+  "p0": "245/2048",
+  "p1": "245/2048",
+  "joint": "35/1024",
+  "independence_prediction_joint": "60025/4194304",
+  "actual_union": "105/512",
+  "independence_prediction_union": "943495/4194304",
+  "union_bound": "245/1024",
+  "lesson": "marginal union bound needs no independence between output coefficients"
+}

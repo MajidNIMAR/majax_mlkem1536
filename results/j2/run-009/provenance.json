@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-10-24T17:06:11.106166+00:00",
+  "python": "3.12.15",
+  "sage": "10.7",
+  "seconds": 9.122337012999651,
+  "input_sha256": {
+    "research/refine_coded_dual.py": "18bb38df3eb5d583675f465906cf014047bea1fa385ff2aa1fbbb308ee23eedf",
+    "research/test_coded_dual_refinement.py": "0caf44832d16b71aa5f8cfea188a8fd95ed8cad6a9032461db44906c5c31cdaf",
+    "research/verify_coded_dual_refinement.py": "0496cf3c891bdb872aa41428c83a1be96b8bac9393fb802df0ae5b250fb2d5db",
+    "research/coded_dual_model.py": "190cb27983d02eab74409390cb0cdf3f1351ebc321fd95d572259b2d4384a2a7",
+    "research/run_coded_dual.py": "69e376e07151a9594ee70e9392efc466ddc8e08ef4dae4b1f635cb349ca5a124",
+    "research/verify_coded_dual_numeric.py": "ba22779942458ec5cb206b793fcc8b678b7a0a49c4bf1bdcae02179ab09b7518",
+    "scripts/coded-dual-refine.sh": "3b233055445b44d5f44af6761d444b32b6ad69924c61fb4672f312ce4c3568b5",
+    "results/j2/run-008/study.json": "84ee4419cde7be0214adb82d4fe3a159318bf7a960129c1d332cd5af3fafa545",
+    "results/j2/run-008/evaluations.jsonl": "b0715e03d98b5b0e297141de7941bf0dc1bc07afdf8a07f80f008cd448b6ab8f",
+    "results/j2/run-008/provenance.json": "dbe3f4f02afb3c9a3ba9877d8b85c40adc9c990a3b0289b2338c766e1aea15af",
+    "results/j2/run-008/numeric-provenance.json": "63fd0099f6548fa9457d7bb856c58d96e22bae8c5d5833fe2530ce022b67ce76"
+  },
+  "output_sha256": {
+    "study.json": "c1368a2d48c33b76f5972f8db31f656f87889884b69472f0b6a1e2d063d5e6c2",
+    "evaluations.jsonl": "2064c908d1903ba570521903f4119ad507eaf98c6d8999fa3e7df76194a78531"
+  }
+}

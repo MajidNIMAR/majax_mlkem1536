@@ -1,0 +1,661 @@
+{
+  "threshold_log2": -174.8,
+  "results": [
+    {
+      "id": "baseline-1024",
+      "parameters": {
+        "n": 256,
+        "k": 4,
+        "q": 3329,
+        "eta1": 2,
+        "eta2": 2,
+        "du": 11,
+        "dv": 5
+      },
+      "rounding": "FIPS integer half-up",
+      "arithmetic": "exact integer distributions, no truncation, no FFT",
+      "model": "independent CBD variables; independent uniform pre-compression coefficients",
+      "coefficient_mean": "52/3329",
+      "coefficient_variance": "37070945665/11082241",
+      "coefficient_standard_deviation": 57.83663766139927,
+      "rounding_u_counts": {
+        "-1": 640,
+        "0": 2048,
+        "1": 641
+      },
+      "rounding_u_denominator": 3329,
+      "bit0_failure": {
+        "decimal": "7.1201482197332407742718236779872463877331028881327066698816555186071583198509975E-56",
+        "log2": -183.19606603968714,
+        "numerator_bits": 27167,
+        "denominator_bits": 27350,
+        "ratio_sha256": "7f1dcb6be3a27b321b8733cb87d785309e94b12d1bf17439d892f7557dfaf668"
+      },
+      "bit1_failure": {
+        "decimal": "8.3790577932847350442898856520939122396142862348482408416745843045582425790505310E-56",
+        "log2": -182.96118528855004,
+        "numerator_bits": 27163,
+        "denominator_bits": 27346,
+        "ratio_sha256": "a96c2cb90f2b7850f9c28f8cf38169aa4e5fdb48145401b41480b61db5b676a0"
+      },
+      "message_lower_bound_single_coefficient": {
+        "decimal": "7.7496030065089879092808546650405793136736945614904737557781199115827004494507642E-56",
+        "log2": -183.07385090720345,
+        "numerator_bits": 27168,
+        "denominator_bits": 27351,
+        "ratio_sha256": "c00dc836193e9ea57f819e0388cbd66b42e7385e8e94b3aa7142ffb41d79174b"
+      },
+      "message_union_bound_uniform_bits": {
+        "decimal": "1.9838983696663009047758987942503883043004658077415612814791986973651713150593956E-53",
+        "log2": -175.07385090720345,
+        "numerator_bits": 27168,
+        "denominator_bits": 27343,
+        "ratio_sha256": "575c46b1a9ff7226872321445df72f345e2983367f3edff00fcbfa18565e9382"
+      },
+      "message_union_bound_worst_bit": {
+        "decimal": "2.1450387950808921713382107269360415333412572761211496554686935819669101002369359E-53",
+        "log2": -174.96118528855004,
+        "numerator_bits": 27163,
+        "denominator_bits": 27338,
+        "ratio_sha256": "25f95c1cf68c0d1547cf83a178b10413e6b6d2088174706cfcb1f07f43de5fbb"
+      },
+      "historical_two_sided_union": {
+        "decimal": "1.8227579442517096382135868615647350752596743393619729074897038127634325298818554E-53",
+        "log2": -175.19606603968714,
+        "numerator_bits": 27169,
+        "denominator_bits": 27344,
+        "ratio_sha256": "97e44be4f293b7553e1c90b56386b19317b4dc4dfe9c1b59474720e5a421a646"
+      },
+      "integer_mass_check": "passed",
+      "second_moment_check": "passed",
+      "coefficient_support": [
+        -10294,
+        10294
+      ],
+      "elapsed_seconds": 0.6804371000034735,
+      "crosscheck": {
+        "log2_historical_two_sided_union": -175.196066039723,
+        "numpy_version": "2.3.5",
+        "cutoff_log2": -600,
+        "method": "authors' separate convolution powers; direct NumPy positive convolution",
+        "rounding": "upstream Python round",
+        "distribution_mass": 0.9999999999734902
+      },
+      "crosscheck_log2_absolute_difference": 3.586819730116986e-11
+    },
+    {
+      "id": "p0-1536",
+      "parameters": {
+        "n": 256,
+        "k": 6,
+        "q": 3329,
+        "eta1": 2,
+        "eta2": 2,
+        "du": 11,
+        "dv": 5
+      },
+      "rounding": "FIPS integer half-up",
+      "arithmetic": "exact integer distributions, no truncation, no FFT",
+      "model": "independent CBD variables; independent uniform pre-compression coefficients",
+      "coefficient_mean": "52/3329",
+      "coefficient_variance": "50602558337/11082241",
+      "coefficient_standard_deviation": 67.57288197950373,
+      "rounding_u_counts": {
+        "-1": 640,
+        "0": 2048,
+        "1": 641
+      },
+      "rounding_u_denominator": 3329,
+      "bit0_failure": {
+        "decimal": "8.1857909512980932025060404503906582440307267001845641254500455439252660127782007E-39",
+        "log2": -126.5220738768985,
+        "numerator_bits": 40893,
+        "denominator_bits": 41020,
+        "ratio_sha256": "024942155596d60c0b3aaa25926d0408dccc683680a211a3376a6f38b29b3c94"
+      },
+      "bit1_failure": {
+        "decimal": "9.1393649310181886923582483861364653303253550819343565996710177836799957738612289E-39",
+        "log2": -126.36310178069107,
+        "numerator_bits": 40893,
+        "denominator_bits": 41020,
+        "ratio_sha256": "e844df97cc414e120dac13c21a080c32fd586f1dac22291bdac8954714654b32"
+      },
+      "message_lower_bound_single_coefficient": {
+        "decimal": "8.6625779411581409474321444182635617871780408910594603625605316638026308933197148E-39",
+        "log2": -126.44039927270933,
+        "numerator_bits": 40890,
+        "denominator_bits": 41017,
+        "ratio_sha256": "2650bd23ca654d25dfa82303827b496a681fb94ab05096b8ad775395232e2a8e"
+      },
+      "message_union_bound_uniform_bits": {
+        "decimal": "2.2176199529364840825426289710754718175175784681112218528154961059334735086898470E-36",
+        "log2": -118.44039927270933,
+        "numerator_bits": 40890,
+        "denominator_bits": 41009,
+        "ratio_sha256": "1d4dcf8f04653463b60b38061bd68540580936a7251dc209187ca18b3621d555"
+      },
+      "message_union_bound_worst_bit": {
+        "decimal": "2.3396774223406563052437115868509351245632909009751952895157805526220789181084746E-36",
+        "log2": -118.36310178069107,
+        "numerator_bits": 40893,
+        "denominator_bits": 41012,
+        "ratio_sha256": "0bfecbff6a39ce3ea22b55d4b2b2eba2f2418cc195c83252a4588d0e02d23f80"
+      },
+      "historical_two_sided_union": {
+        "decimal": "2.0955624835323118598415463553000085104718660352472484161152116592448680992712194E-36",
+        "log2": -118.5220738768985,
+        "numerator_bits": 40894,
+        "denominator_bits": 41013,
+        "ratio_sha256": "07492d0ec75cfccb1d3b0628580a0e2cccecfbdc3122d5916a9e9822b8bc8b52"
+      },
+      "integer_mass_check": "passed",
+      "second_moment_check": "passed",
+      "coefficient_support": [
+        -15414,
+        15414
+      ],
+      "elapsed_seconds": 1.4170276000077138,
+      "crosscheck": {
+        "log2_historical_two_sided_union": -118.5220738769541,
+        "numpy_version": "2.3.5",
+        "cutoff_log2": -600,
+        "method": "authors' separate convolution powers; direct NumPy positive convolution",
+        "rounding": "upstream Python round",
+        "distribution_mass": 0.9999999999602541
+      },
+      "crosscheck_log2_absolute_difference": 5.559286364587024e-11
+    },
+    {
+      "id": "q3329-dv6",
+      "parameters": {
+        "n": 256,
+        "k": 6,
+        "q": 3329,
+        "eta1": 2,
+        "eta2": 2,
+        "du": 11,
+        "dv": 6
+      },
+      "rounding": "FIPS integer half-up",
+      "arithmetic": "exact integer distributions, no truncation, no FFT",
+      "model": "independent CBD variables; independent uniform pre-compression coefficients",
+      "coefficient_mean": "26/3329",
+      "coefficient_variance": "43106464641/11082241",
+      "coefficient_standard_deviation": 62.367366739706625,
+      "rounding_u_counts": {
+        "-1": 640,
+        "0": 2048,
+        "1": 641
+      },
+      "rounding_u_denominator": 3329,
+      "bit0_failure": {
+        "decimal": "6.5751741958754062500818695870821053771591845077879893074282543210371213469201052E-41",
+        "log2": -133.48202277419477,
+        "numerator_bits": 40889,
+        "denominator_bits": 41023,
+        "ratio_sha256": "472143bb7baa00005dea424e74c8a1336b9e3b4dfdd478dd5a0d16e91536cd0f"
+      },
+      "bit1_failure": {
+        "decimal": "7.3659078658407368614170223968016706248921605531076127022625084668203944438833227E-41",
+        "log2": -133.31818853852747,
+        "numerator_bits": 40889,
+        "denominator_bits": 41023,
+        "ratio_sha256": "18c7e0e93ed7999e0e96bd96ff15a6ba20c3f24c3bd372740288ebf4bbafab7d"
+      },
+      "message_lower_bound_single_coefficient": {
+        "decimal": "6.9705410308580715557494459919418880010256725304478010048453813939287578954017140E-41",
+        "log2": -133.39778125261364,
+        "numerator_bits": 40888,
+        "denominator_bits": 41022,
+        "ratio_sha256": "855511d85f408ff3d7d0fdb61239790b526ebb7b38d69880036a4bb4444b06ec"
+      },
+      "message_union_bound_uniform_bits": {
+        "decimal": "1.7844585038996663182718581739371233282625721677946370572404176368457620212228388E-38",
+        "log2": -125.39778125261364,
+        "numerator_bits": 40888,
+        "denominator_bits": 41014,
+        "ratio_sha256": "595696b99a22fa66658f7f4578581beea4dbd7bf127c367e6b4477a330d3c237"
+      },
+      "message_union_bound_worst_bit": {
+        "decimal": "1.8856724136552286365227577335812276799723931015955488517792021675060209776341306E-38",
+        "log2": -125.31818853852747,
+        "numerator_bits": 40889,
+        "denominator_bits": 41015,
+        "ratio_sha256": "d13c565e544e9120c7176918c45cbc6db25c43ef8f36428608ec1d6470296547"
+      },
+      "historical_two_sided_union": {
+        "decimal": "1.6832445941441040000209586142930189765527512339937252627016331061855030648115469E-38",
+        "log2": -125.48202277419477,
+        "numerator_bits": 40887,
+        "denominator_bits": 41013,
+        "ratio_sha256": "b375c51bc901f373c322ad239b3defc0a3b014b23e851510659f37b6703fc0cb"
+      },
+      "integer_mass_check": "passed",
+      "second_moment_check": "passed",
+      "coefficient_support": [
+        -15388,
+        15388
+      ],
+      "elapsed_seconds": 1.4026821000006748,
+      "crosscheck": {
+        "log2_historical_two_sided_union": -125.48202277425526,
+        "numpy_version": "2.3.5",
+        "cutoff_log2": -600,
+        "method": "authors' separate convolution powers; direct NumPy positive convolution",
+        "rounding": "upstream Python round",
+        "distribution_mass": 0.9999999999602542
+      },
+      "crosscheck_log2_absolute_difference": 6.048139766789973e-11
+    },
+    {
+      "id": "q3329-du12",
+      "parameters": {
+        "n": 256,
+        "k": 6,
+        "q": 3329,
+        "eta1": 2,
+        "eta2": 2,
+        "du": 12,
+        "dv": 5
+      },
+      "rounding": "FIPS integer half-up",
+      "arithmetic": "exact integer distributions, no truncation, no FFT",
+      "model": "independent CBD variables; independent uniform pre-compression coefficients",
+      "coefficient_mean": "52/3329",
+      "coefficient_variance": "44052364673/11082241",
+      "coefficient_standard_deviation": 63.04792787947979,
+      "rounding_u_counts": {
+        "0": 1
+      },
+      "rounding_u_denominator": 1,
+      "bit0_failure": {
+        "decimal": "9.9119491620779126526810854747216264482537923032712931741240387110149161876260265E-46",
+        "log2": -149.4995235768365,
+        "numerator_bits": 21366,
+        "denominator_bits": 21515,
+        "ratio_sha256": "a5ebc105db0d62e149c5d3a5fe76d366d48de06dbcfd4bd64fbc511910dfaf35"
+      },
+      "bit1_failure": {
+        "decimal": "1.1313475464070831784989033947689176446338013248280263796231578554462476434718533E-45",
+        "log2": -149.30872208113578,
+        "numerator_bits": 21366,
+        "denominator_bits": 21515,
+        "ratio_sha256": "d25396e529cf033998c32aa73e711be2947e1eae374bcb4531752fabf230b6ad"
+      },
+      "message_lower_bound_single_coefficient": {
+        "decimal": "1.0612712313074372218835059711205401447295902775775778485177808632738696311172280E-45",
+        "log2": -149.400970853967,
+        "numerator_bits": 21366,
+        "denominator_bits": 21515,
+        "ratio_sha256": "56e385460ee4fedd0f94ef69fca2075ac526b3bb3004a157ce15f5c110f4de14"
+      },
+      "message_union_bound_uniform_bits": {
+        "decimal": "2.7168543521470392880217752860685827705077511105985992922055190099811062556601037E-43",
+        "log2": -141.400970853967,
+        "numerator_bits": 21366,
+        "denominator_bits": 21507,
+        "ratio_sha256": "f8813294538c6c175fa536937a6559246609a66d7cd815f6e05e5e43124444d8"
+      },
+      "message_union_bound_worst_bit": {
+        "decimal": "2.8962497188021329369571926906084291702625313915597475318352841099423939672879446E-43",
+        "log2": -141.30872208113578,
+        "numerator_bits": 21366,
+        "denominator_bits": 21507,
+        "ratio_sha256": "ba5da4d0a83b190dd855b6f84496a173b3b1b52fe8780971d91d545c6b3566b6"
+      },
+      "historical_two_sided_union": {
+        "decimal": "2.5374589854919456390863578815287363707529708296374510525757539100198185440322628E-43",
+        "log2": -141.4995235768365,
+        "numerator_bits": 21365,
+        "denominator_bits": 21506,
+        "ratio_sha256": "8398ec2d3ff7e327065bff285383bd7050a5564b3f1cd859db098c3fbb1c1be4"
+      },
+      "integer_mass_check": "passed",
+      "second_moment_check": "passed",
+      "coefficient_support": [
+        -12342,
+        12342
+      ],
+      "elapsed_seconds": 0.4282610999944154,
+      "crosscheck": {
+        "log2_historical_two_sided_union": -141.4995235768986,
+        "numpy_version": "2.3.5",
+        "cutoff_log2": -600,
+        "method": "authors' separate convolution powers; direct NumPy positive convolution",
+        "rounding": "upstream Python round",
+        "distribution_mass": 0.9999999999568387
+      },
+      "crosscheck_log2_absolute_difference": 6.210143510543276e-11
+    },
+    {
+      "id": "q3329-lossless",
+      "parameters": {
+        "n": 256,
+        "k": 6,
+        "q": 3329,
+        "eta1": 2,
+        "eta2": 2,
+        "du": 12,
+        "dv": 12
+      },
+      "rounding": "FIPS integer half-up",
+      "arithmetic": "exact integer distributions, no truncation, no FFT",
+      "model": "independent CBD variables; independent uniform pre-compression coefficients",
+      "coefficient_mean": "0",
+      "coefficient_variance": "3073",
+      "coefficient_standard_deviation": 55.4346462061408,
+      "rounding_u_counts": {
+        "0": 1
+      },
+      "rounding_u_denominator": 1,
+      "bit0_failure": {
+        "decimal": "4.4670623575609146963924334136794225109509751040900834924058715895503518720177246E-50",
+        "log2": -163.93707835041278,
+        "numerator_bits": 21340,
+        "denominator_bits": 21504,
+        "ratio_sha256": "485eda1f20c4ae6bf7b9fa6f58320892b6f1286c9bd810b8d8658e50b99f77f0"
+      },
+      "bit1_failure": {
+        "decimal": "5.1368348491642935547904419364745841799191668812835818780890346870829423372976894E-50",
+        "log2": -163.73552505303087,
+        "numerator_bits": 21340,
+        "denominator_bits": 21504,
+        "ratio_sha256": "247aad4162b972dcbfd63e70ed22138ef73403fb131d7c361aabc68e4f181098"
+      },
+      "message_lower_bound_single_coefficient": {
+        "decimal": "4.8019486033626041255914376750770033454350709926868326852474531383166471046577070E-50",
+        "log2": -163.8327847822984,
+        "numerator_bits": 21340,
+        "denominator_bits": 21504,
+        "ratio_sha256": "1d485559f949a5fbf70f42bb4c27cc2e6f560cc971e47e0cb37afd05a3257250"
+      },
+      "message_union_bound_uniform_bits": {
+        "decimal": "1.2292988424608266561514080448197128564313781741278291674233480034090616587923730E-47",
+        "log2": -155.8327847822984,
+        "numerator_bits": 21340,
+        "denominator_bits": 21496,
+        "ratio_sha256": "69d0f240f8895b531c3fd5ba1102fef68951953b31f7e3e059e5001db7d740be"
+      },
+      "message_union_bound_worst_bit": {
+        "decimal": "1.3150297213860591500263531357374935500593067216085969607907928798932332383482085E-47",
+        "log2": -155.73552505303087,
+        "numerator_bits": 21340,
+        "denominator_bits": 21496,
+        "ratio_sha256": "819e7b42b5bff29603ae60aca31892847692b5b16bd381ad7a24ecc64256558a"
+      },
+      "historical_two_sided_union": {
+        "decimal": "1.1435679635355941622764629539019321628034496266470613740559031269248900792365375E-47",
+        "log2": -155.93707835041278,
+        "numerator_bits": 21339,
+        "denominator_bits": 21495,
+        "ratio_sha256": "ff472e857e554a6e1a4720a55b9b56de56541bb949253bb7a347738a83ee73dc"
+      },
+      "integer_mass_check": "passed",
+      "second_moment_check": "passed",
+      "coefficient_support": [
+        -12290,
+        12290
+      ],
+      "elapsed_seconds": 0.4247190000023693,
+      "crosscheck": {
+        "log2_historical_two_sided_union": -155.93707835047516,
+        "numpy_version": "2.3.5",
+        "cutoff_log2": -600,
+        "method": "authors' separate convolution powers; direct NumPy positive convolution",
+        "rounding": "upstream Python round",
+        "distribution_mass": 0.9999999999568246
+      },
+      "crosscheck_log2_absolute_difference": 6.23856521997368e-11
+    },
+    {
+      "id": "q7681-eta2",
+      "parameters": {
+        "n": 256,
+        "k": 6,
+        "q": 7681,
+        "eta1": 2,
+        "eta2": 2,
+        "du": 11,
+        "dv": 5
+      },
+      "rounding": "FIPS integer half-up",
+      "arithmetic": "exact integer distributions, no truncation, no FFT",
+      "model": "independent CBD variables; independent uniform pre-compression coefficients",
+      "coefficient_mean": "120/7681",
+      "coefficient_variance": "585431803137/58997761",
+      "coefficient_standard_deviation": 99.6140025400533,
+      "rounding_u_counts": {
+        "-2": 768,
+        "-1": 2048,
+        "0": 2048,
+        "1": 2048,
+        "2": 769
+      },
+      "rounding_u_denominator": 7681,
+      "bit0_failure": {
+        "decimal": "9.9652624604852598680296154343625322939821289087668578140721481767636176233810679E-134",
+        "log2": -441.82145691230835,
+        "numerator_bits": 42436,
+        "denominator_bits": 42878,
+        "ratio_sha256": "60d5151e365483d8f43b2a0b8919731263c064c425414de5d7e77422136337e2"
+      },
+      "bit1_failure": {
+        "decimal": "1.1824403255392875879597823303020165274071115025361474280301962215112733081999606E-133",
+        "log2": -441.57466924341134,
+        "numerator_bits": 42436,
+        "denominator_bits": 42878,
+        "ratio_sha256": "204d7f134b42079a6dcccb666e6a4fbb7793ff1f8ab641fde5ae091a96eb7015"
+      },
+      "message_lower_bound_single_coefficient": {
+        "decimal": "1.0894832857939067873813719368691348784026621967064166047187055195938175352690337E-133",
+        "log2": -441.692792556365,
+        "numerator_bits": 42436,
+        "denominator_bits": 42878,
+        "ratio_sha256": "437150c7936494d0f4c55b33dfdba68cf7adaa136a9285fccf4d5ed5acf5bcd1"
+      },
+      "message_union_bound_uniform_bits": {
+        "decimal": "2.7890772116324013756963121583849852887108152235684265080798861301601728902887262E-131",
+        "log2": -433.692792556365,
+        "numerator_bits": 42436,
+        "denominator_bits": 42870,
+        "ratio_sha256": "bf301c14d36f946bf2d58b7c5c353d14fe4488093d850cf3cb9db5fa512e2205"
+      },
+      "message_union_bound_worst_bit": {
+        "decimal": "3.0270472333805762251770427655731623101622054464925374157573023270688596689918990E-131",
+        "log2": -433.57466924341134,
+        "numerator_bits": 42436,
+        "denominator_bits": 42870,
+        "ratio_sha256": "a13331e5892c932a01c29516734f73544ef0ad78e05a8bd61fc623df6c99b904"
+      },
+      "historical_two_sided_union": {
+        "decimal": "2.5511071898842265262155815511968082672594250006443156004024699332514861115855534E-131",
+        "log2": -433.82145691230835,
+        "numerator_bits": 42435,
+        "denominator_bits": 42869,
+        "ratio_sha256": "ae02d00f8a9f1fde443cf611bbd89f97c26027b684e660a2bb7f3f257e067556"
+      },
+      "integer_mass_check": "passed",
+      "second_moment_check": "passed",
+      "coefficient_support": [
+        -18554,
+        18554
+      ],
+      "elapsed_seconds": 2.0634241000079783,
+      "crosscheck": {
+        "log2_historical_two_sided_union": -433.8214569124931,
+        "numpy_version": "2.3.5",
+        "cutoff_log2": -600,
+        "method": "authors' separate convolution powers; direct NumPy positive convolution",
+        "rounding": "upstream Python round",
+        "distribution_mass": 0.9999999998698421
+      },
+      "crosscheck_log2_absolute_difference": 1.8474111129762605e-10
+    },
+    {
+      "id": "q7681-eta3",
+      "parameters": {
+        "n": 256,
+        "k": 6,
+        "q": 7681,
+        "eta1": 3,
+        "eta2": 3,
+        "du": 11,
+        "dv": 5
+      },
+      "rounding": "FIPS integer half-up",
+      "arithmetic": "exact integer distributions, no truncation, no FFT",
+      "model": "independent CBD variables; independent uniform pre-compression coefficients",
+      "coefficient_mean": "120/7681",
+      "coefficient_variance": "1744884284419/117995522",
+      "coefficient_standard_deviation": 121.60475374753536,
+      "rounding_u_counts": {
+        "-2": 768,
+        "-1": 2048,
+        "0": 2048,
+        "1": 2048,
+        "2": 769
+      },
+      "rounding_u_denominator": 7681,
+      "bit0_failure": {
+        "decimal": "1.1979951786460391532705525396272372629573944573449698343418075357649936176461192E-71",
+        "log2": -235.59627263501898,
+        "numerator_bits": 54930,
+        "denominator_bits": 55166,
+        "ratio_sha256": "bc40da790dd7113b547bed6d153575c29c004a2afadeba15667f27c0b48eb936"
+      },
+      "bit1_failure": {
+        "decimal": "1.3085440570721016600607474034939121389864448607376271426905346234056787753404470E-71",
+        "log2": -235.46893223802908,
+        "numerator_bits": 54933,
+        "denominator_bits": 55169,
+        "ratio_sha256": "e642a7040bc21830c7cb438ba4aa2805e5d3ff6a5e4777ff925772ce6b52eea7"
+      },
+      "message_lower_bound_single_coefficient": {
+        "decimal": "1.2532696178590704066656499715605747009719196590412984885161710795853361964932831E-71",
+        "log2": -235.53119791970676,
+        "numerator_bits": 54934,
+        "denominator_bits": 55170,
+        "ratio_sha256": "edf97271a124dc7669d45323a05ad6fdc3221538bf85e2f56d5ab4f6b0ac76e0"
+      },
+      "message_union_bound_uniform_bits": {
+        "decimal": "3.2083702217192202410640639271950712344881143271457241306013979637384606630228048E-69",
+        "log2": -227.53119791970676,
+        "numerator_bits": 54934,
+        "denominator_bits": 55162,
+        "ratio_sha256": "0294f52d01e9eaab3922d195ef3b271bd87750f873d1b8312e975616c80953db"
+      },
+      "message_union_bound_worst_bit": {
+        "decimal": "3.3498727861045802497555133529444150758052988434883254852877686359185376648715444E-69",
+        "log2": -227.46893223802908,
+        "numerator_bits": 54933,
+        "denominator_bits": 55161,
+        "ratio_sha256": "0c62dd07ff30ccd8deff11d5548a92ac4b22731ff1b5884b22db8b344c9aa790"
+      },
+      "historical_two_sided_union": {
+        "decimal": "3.0668676573338602323726145014457273931709298108031227759150272915583836611740653E-69",
+        "log2": -227.59627263501898,
+        "numerator_bits": 54928,
+        "denominator_bits": 55156,
+        "ratio_sha256": "9e1ffe22ab518657888daba2bf4643b054566bd9fe8d3277e97e728b3e6ed946"
+      },
+      "integer_mass_check": "passed",
+      "second_moment_check": "passed",
+      "coefficient_support": [
+        -36987,
+        36987
+      ],
+      "elapsed_seconds": 8.500184400007129,
+      "crosscheck": {
+        "log2_historical_two_sided_union": -227.59627263520562,
+        "numpy_version": "2.3.5",
+        "cutoff_log2": -600,
+        "method": "authors' separate convolution powers; direct NumPy positive convolution",
+        "rounding": "upstream Python round",
+        "distribution_mass": 0.9999999998695315
+      },
+      "crosscheck_log2_absolute_difference": 1.8664536582946312e-10
+    },
+    {
+      "id": "q7681-eta3-du12",
+      "parameters": {
+        "n": 256,
+        "k": 6,
+        "q": 7681,
+        "eta1": 3,
+        "eta2": 3,
+        "du": 12,
+        "dv": 5
+      },
+      "rounding": "FIPS integer half-up",
+      "arithmetic": "exact integer distributions, no truncation, no FFT",
+      "model": "independent CBD variables; independent uniform pre-compression coefficients",
+      "coefficient_mean": "120/7681",
+      "coefficient_variance": "1509195318787/117995522",
+      "coefficient_standard_deviation": 113.094103371136,
+      "rounding_u_counts": {
+        "-1": 1792,
+        "0": 4096,
+        "1": 1793
+      },
+      "rounding_u_denominator": 7681,
+      "bit0_failure": {
+        "decimal": "2.8357114737195883128898429475225958685511366450404804547532382135213131238030157E-88",
+        "log2": -290.82596160051617,
+        "numerator_bits": 54875,
+        "denominator_bits": 55166,
+        "ratio_sha256": "fc8c51260e2844961250362348dadd4b455e0dfa9890d1ee3438840b4593fcf3"
+      },
+      "bit1_failure": {
+        "decimal": "3.1657283156739659552287835901609971090882867797533111072098244948951693542022976E-88",
+        "log2": -290.6671349020835,
+        "numerator_bits": 54875,
+        "denominator_bits": 55166,
+        "ratio_sha256": "d4ed26eff202dff9d46c72e583da905ead694265221aa797c267df8fbb5798a9"
+      },
+      "message_lower_bound_single_coefficient": {
+        "decimal": "3.0007198946967771340593132688417964888197117123968957809815313542082412390026566E-88",
+        "log2": -290.74436369472824,
+        "numerator_bits": 54875,
+        "denominator_bits": 55166,
+        "ratio_sha256": "a4abf731e4c9e3b22d09fb703ee5ff5efd31a3a8e6fdefc8c7919b0d04622d5c"
+      },
+      "message_union_bound_uniform_bits": {
+        "decimal": "7.6818429304237494631918419682349990113784619837360531993127202667730975718468009E-86",
+        "log2": -282.74436369472824,
+        "numerator_bits": 54875,
+        "denominator_bits": 55158,
+        "ratio_sha256": "ce8cbb928581bb069c34f9e1428d1a391ad0bf91b7d031736015b163856a34f2"
+      },
+      "message_union_bound_worst_bit": {
+        "decimal": "8.1042644881253528453856859908121525992660141561684764344571507069316335467578817E-86",
+        "log2": -282.6671349020835,
+        "numerator_bits": 54875,
+        "denominator_bits": 55158,
+        "ratio_sha256": "31a3d8149306065b1b18bcbe737f696af938bb909628254581c346bf76a10a8d"
+      },
+      "historical_two_sided_union": {
+        "decimal": "7.2594213727221460809979979456578454234909098113036299641682898266145615969357202E-86",
+        "log2": -282.82596160051617,
+        "numerator_bits": 54875,
+        "denominator_bits": 55158,
+        "ratio_sha256": "e785968146fe01d9cc559a08a7290e2a0c6bf22b61db456bbc3b944bcb001adc"
+      },
+      "integer_mass_check": "passed",
+      "second_moment_check": "passed",
+      "coefficient_support": [
+        -32379,
+        32379
+      ],
+      "elapsed_seconds": 6.856447800004389,
+      "crosscheck": {
+        "log2_historical_two_sided_union": -282.82596160064,
+        "numpy_version": "2.3.5",
+        "cutoff_log2": -600,
+        "method": "authors' separate convolution powers; direct NumPy positive convolution",
+        "rounding": "upstream Python round",
+        "distribution_mass": 0.9999999999165784
+      },
+      "crosscheck_log2_absolute_difference": 1.2386180969770066e-10
+    }
+  ]
+}

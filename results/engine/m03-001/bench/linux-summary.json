@@ -1,0 +1,374 @@
+{
+  "observations": 30000,
+  "warmup_per_series_and_function": 100,
+  "series_per_function": 5,
+  "measurements_per_series": 1000,
+  "percentile": "nearest rank ceil(0.95*N)",
+  "outliers_removed": 0,
+  "output_drop_in_timed_region": false,
+  "system_randomness_in_keygen_and_encaps": true,
+  "panels": [
+    {
+      "engine": "R1",
+      "operation": "keygen",
+      "series": [
+        {
+          "series": 0,
+          "count": 1000,
+          "median_ns": 2021961.0,
+          "p95_ns": 2230442,
+          "minimum_ns": 1917977,
+          "maximum_ns": 3496827,
+          "mean_ns": 2061310.609
+        },
+        {
+          "series": 1,
+          "count": 1000,
+          "median_ns": 2044489.5,
+          "p95_ns": 2901156,
+          "minimum_ns": 1808622,
+          "maximum_ns": 4101017,
+          "mean_ns": 2155962.425
+        },
+        {
+          "series": 2,
+          "count": 1000,
+          "median_ns": 2032686.0,
+          "p95_ns": 2230938,
+          "minimum_ns": 1911380,
+          "maximum_ns": 3939024,
+          "mean_ns": 2062881.706
+        },
+        {
+          "series": 3,
+          "count": 1000,
+          "median_ns": 2031429.5,
+          "p95_ns": 3241488,
+          "minimum_ns": 1922311,
+          "maximum_ns": 7003738,
+          "mean_ns": 2145567.09
+        },
+        {
+          "series": 4,
+          "count": 1000,
+          "median_ns": 2040061.5,
+          "p95_ns": 2293372,
+          "minimum_ns": 1930036,
+          "maximum_ns": 3712533,
+          "mean_ns": 2093615.646
+        }
+      ],
+      "aggregate": {
+        "count": 5000,
+        "median_ns": 2033402.0,
+        "p95_ns": 2425789,
+        "minimum_ns": 1808622,
+        "maximum_ns": 7003738,
+        "mean_ns": 2103867.4952
+      }
+    },
+    {
+      "engine": "R1",
+      "operation": "encaps",
+      "series": [
+        {
+          "series": 0,
+          "count": 1000,
+          "median_ns": 2409007.0,
+          "p95_ns": 2791599,
+          "minimum_ns": 2270443,
+          "maximum_ns": 4321273,
+          "mean_ns": 2456065.806
+        },
+        {
+          "series": 1,
+          "count": 1000,
+          "median_ns": 2405707.0,
+          "p95_ns": 2928340,
+          "minimum_ns": 2243747,
+          "maximum_ns": 4596723,
+          "mean_ns": 2507984.774
+        },
+        {
+          "series": 2,
+          "count": 1000,
+          "median_ns": 2406560.5,
+          "p95_ns": 2802200,
+          "minimum_ns": 2262819,
+          "maximum_ns": 5005229,
+          "mean_ns": 2462319.696
+        },
+        {
+          "series": 3,
+          "count": 1000,
+          "median_ns": 2385693.0,
+          "p95_ns": 2771507,
+          "minimum_ns": 2255686,
+          "maximum_ns": 7370630,
+          "mean_ns": 2435115.945
+        },
+        {
+          "series": 4,
+          "count": 1000,
+          "median_ns": 2402999.0,
+          "p95_ns": 3965092,
+          "minimum_ns": 2250117,
+          "maximum_ns": 12509209,
+          "mean_ns": 2580456.89
+        }
+      ],
+      "aggregate": {
+        "count": 5000,
+        "median_ns": 2401785.5,
+        "p95_ns": 2849590,
+        "minimum_ns": 2243747,
+        "maximum_ns": 12509209,
+        "mean_ns": 2488388.6222
+      }
+    },
+    {
+      "engine": "R1",
+      "operation": "decaps",
+      "series": [
+        {
+          "series": 0,
+          "count": 1000,
+          "median_ns": 2782017.5,
+          "p95_ns": 3166197,
+          "minimum_ns": 2643313,
+          "maximum_ns": 5171011,
+          "mean_ns": 2832221.168
+        },
+        {
+          "series": 1,
+          "count": 1000,
+          "median_ns": 2799883.5,
+          "p95_ns": 3306545,
+          "minimum_ns": 2626513,
+          "maximum_ns": 5637262,
+          "mean_ns": 2911264.877
+        },
+        {
+          "series": 2,
+          "count": 1000,
+          "median_ns": 2755498.5,
+          "p95_ns": 3183691,
+          "minimum_ns": 2589000,
+          "maximum_ns": 3531616,
+          "mean_ns": 2801196.193
+        },
+        {
+          "series": 3,
+          "count": 1000,
+          "median_ns": 2756278.0,
+          "p95_ns": 3124675,
+          "minimum_ns": 2606580,
+          "maximum_ns": 7725694,
+          "mean_ns": 2811709.507
+        },
+        {
+          "series": 4,
+          "count": 1000,
+          "median_ns": 2763062.0,
+          "p95_ns": 3002549,
+          "minimum_ns": 2596494,
+          "maximum_ns": 5406590,
+          "mean_ns": 2807406.981
+        }
+      ],
+      "aggregate": {
+        "count": 5000,
+        "median_ns": 2772427.0,
+        "p95_ns": 3199554,
+        "minimum_ns": 2589000,
+        "maximum_ns": 7725694,
+        "mean_ns": 2832759.7452
+      }
+    },
+    {
+      "engine": "ML-KEM-1024",
+      "operation": "keygen",
+      "series": [
+        {
+          "series": 0,
+          "count": 1000,
+          "median_ns": 82791.0,
+          "p95_ns": 101897,
+          "minimum_ns": 78166,
+          "maximum_ns": 134615,
+          "mean_ns": 86146.62
+        },
+        {
+          "series": 1,
+          "count": 1000,
+          "median_ns": 82383.5,
+          "p95_ns": 100407,
+          "minimum_ns": 78529,
+          "maximum_ns": 665659,
+          "mean_ns": 85613.755
+        },
+        {
+          "series": 2,
+          "count": 1000,
+          "median_ns": 81376.5,
+          "p95_ns": 100283,
+          "minimum_ns": 77884,
+          "maximum_ns": 192018,
+          "mean_ns": 83891.656
+        },
+        {
+          "series": 3,
+          "count": 1000,
+          "median_ns": 81406.0,
+          "p95_ns": 103261,
+          "minimum_ns": 77803,
+          "maximum_ns": 257538,
+          "mean_ns": 84361.211
+        },
+        {
+          "series": 4,
+          "count": 1000,
+          "median_ns": 82465.0,
+          "p95_ns": 124077,
+          "minimum_ns": 78738,
+          "maximum_ns": 183721,
+          "mean_ns": 87329.15
+        }
+      ],
+      "aggregate": {
+        "count": 5000,
+        "median_ns": 82051.0,
+        "p95_ns": 103266,
+        "minimum_ns": 77803,
+        "maximum_ns": 665659,
+        "mean_ns": 85468.4784
+      }
+    },
+    {
+      "engine": "ML-KEM-1024",
+      "operation": "encaps",
+      "series": [
+        {
+          "series": 0,
+          "count": 1000,
+          "median_ns": 78348.0,
+          "p95_ns": 103306,
+          "minimum_ns": 77402,
+          "maximum_ns": 225060,
+          "mean_ns": 82808.736
+        },
+        {
+          "series": 1,
+          "count": 1000,
+          "median_ns": 78515.0,
+          "p95_ns": 95111,
+          "minimum_ns": 77137,
+          "maximum_ns": 139247,
+          "mean_ns": 80274.05
+        },
+        {
+          "series": 2,
+          "count": 1000,
+          "median_ns": 78032.0,
+          "p95_ns": 97157,
+          "minimum_ns": 76583,
+          "maximum_ns": 201613,
+          "mean_ns": 80913.059
+        },
+        {
+          "series": 3,
+          "count": 1000,
+          "median_ns": 79164.0,
+          "p95_ns": 103896,
+          "minimum_ns": 77744,
+          "maximum_ns": 214532,
+          "mean_ns": 83646.1
+        },
+        {
+          "series": 4,
+          "count": 1000,
+          "median_ns": 79180.5,
+          "p95_ns": 104390,
+          "minimum_ns": 78185,
+          "maximum_ns": 221769,
+          "mean_ns": 84040.684
+        }
+      ],
+      "aggregate": {
+        "count": 5000,
+        "median_ns": 78887.0,
+        "p95_ns": 100056,
+        "minimum_ns": 76583,
+        "maximum_ns": 225060,
+        "mean_ns": 82336.5258
+      }
+    },
+    {
+      "engine": "ML-KEM-1024",
+      "operation": "decaps",
+      "series": [
+        {
+          "series": 0,
+          "count": 1000,
+          "median_ns": 92155.0,
+          "p95_ns": 113159,
+          "minimum_ns": 90505,
+          "maximum_ns": 247287,
+          "mean_ns": 95931.727
+        },
+        {
+          "series": 1,
+          "count": 1000,
+          "median_ns": 91691.0,
+          "p95_ns": 108499,
+          "minimum_ns": 90042,
+          "maximum_ns": 342525,
+          "mean_ns": 93986.022
+        },
+        {
+          "series": 2,
+          "count": 1000,
+          "median_ns": 91788.0,
+          "p95_ns": 122179,
+          "minimum_ns": 91371,
+          "maximum_ns": 213317,
+          "mean_ns": 97987.131
+        },
+        {
+          "series": 3,
+          "count": 1000,
+          "median_ns": 93630.0,
+          "p95_ns": 122898,
+          "minimum_ns": 91218,
+          "maximum_ns": 279678,
+          "mean_ns": 100658.147
+        },
+        {
+          "series": 4,
+          "count": 1000,
+          "median_ns": 92863.0,
+          "p95_ns": 137375,
+          "minimum_ns": 91893,
+          "maximum_ns": 632213,
+          "mean_ns": 104304.024
+        }
+      ],
+      "aggregate": {
+        "count": 5000,
+        "median_ns": 92604.5,
+        "p95_ns": 119278,
+        "minimum_ns": 90042,
+        "maximum_ns": 632213,
+        "mean_ns": 98573.4102
+      }
+    }
+  ],
+  "comparable_optimization": false,
+  "optimization_note": "R1 schoolbook; RustCrypto ML-KEM-1024 NTT",
+  "started_utc": "2026-10-25T14:46:24.913391+00:00",
+  "finished_utc": "2026-10-25T14:47:59.761932+00:00",
+  "binary_sha256": "e0c60618db4e8bb5487982d6727a94ee90a759d0e4905c4ec388478c5079167d",
+  "affinity_mask": 1,
+  "exit_code": 0,
+  "affinity_note": "Windows logical CPU 0 or WSL virtual CPU 0; physical mapping between OSes not proven"
+}

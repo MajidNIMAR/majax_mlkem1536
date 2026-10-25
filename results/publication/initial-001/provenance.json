@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "recorded_utc": "2026-10-25T16:06:03.748194+00:00",
+  "repository": "https://github.com/MajidNIMAR/majax_mlkem1536",
+  "tested_local_source_commit": "e2e9bc9040bee97ddc8306c4631add48678e9d48",
+  "self_test_exit_code": 0,
+  "full_check_exit_code": 0,
+  "fresh_exchanges": 16,
+  "implicit_rejections": 16,
+  "python_tests": 91,
+  "scope": "Exported Git sources, new target directory, existing local Rust/Python tools and dependency caches reused through an ignored junction. External reference copies fetched and hash-verified. Not a fresh-machine installation or byte-identical build proof.",
+  "code_scripts_profiles_workflow_unchanged": true,
+  "remote_CI_at_recording": "not_run_yet",
+  "output_sha256": {
+    "check.log": "5eb92084ba3aa2731155171348d19da807466c52dff7fb8d34bfc197b2d069be",
+    "self-test.log": "7fa8ad54e0359eb782173886c6b8323f659fda6838c259b61aa0ecbf42abbf60",
+    "tested-export.json": "76a666c965f155ba339f67f3b79a6479d000ec808ca5e95a59d3ce462d2b9030"
+  }
+}

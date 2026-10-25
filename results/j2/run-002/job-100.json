@@ -1,0 +1,45 @@
+{
+  "job": {
+    "scenario": "baseline-1024",
+    "parameters": {
+      "n": 256,
+      "k": 4,
+      "q": 3329,
+      "eta": 2
+    },
+    "sample_budget": "key",
+    "samples": 1024,
+    "targets": 1,
+    "oracle": "none",
+    "shape_model": "GSA",
+    "memory_cap": "none; exponential memory allowed",
+    "tool": "community",
+    "cost_model": "BCSS23-quantum-asymptotic",
+    "algorithm": "bdd_mitm_hybrid"
+  },
+  "status": "ok",
+  "applicability": "heuristic LWE estimator model",
+  "cost": {
+    "rop": "1.91816223101566e149",
+    "red": "9.03434038932032e116",
+    "svp": "1.91816223101566e149",
+    "beta": "875",
+    "eta": "2",
+    "zeta": "307",
+    "|S|": "7087195502562733994730430082162600788135767256688668347019866062180272973246827487745838860217946293635675746587799619983088291689353108724215186611833616961097296533603503674128257691325",
+    "d": "1606",
+    "prob": "1.64849880778128e-49",
+    "repetitions": "27935538468397223213461438555949574648781204747002",
+    "tag": "hybrid",
+    "problem": "LWEParameters(n=1024, q=3329, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=1024, tag='baseline-1024')"
+  },
+  "log2_cost": {
+    "rop": 495.90701088150524,
+    "red": 388.5190782785502,
+    "svp": 495.90701088150524,
+    "prob": -162.05332380585048,
+    "repetitions": 164.2565782785502
+  },
+  "estimator_messages": "",
+  "elapsed_seconds": 64.76030381099963
+}

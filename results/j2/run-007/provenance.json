@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-10-24T16:25:23.166355+00:00",
+  "input_sha256": {
+    "research/compare_compression.py": "02fadbc24e30393f09295a8e451589535c8a159e11c029b840ce44027da56ce1",
+    "research/test_compare_compression.py": "c5005afd9e9a989268318c077a1903f0edbac15878fb685fdfce117d03e5950f",
+    "research/group_quantization.py": "da69309403a7402ea6f53eab794704bcb340ca6eb8e60a3c650ab261fd7bad9b",
+    "research/mixed_precision.py": "a8f37b597cce159e346074e2f08745bbf23266effb8476bf7738e8e6b3afb4f5",
+    "research/noise_exact.py": "702d63dd736892cb1b273268087aecaadac06d5c5df4c3c093f909b98ede271e",
+    "research/witness_chernoff.py": "7d417339872601326faa80a3cd6911003cf092c29c0aeac967ebde42ee516434",
+    "research/modern_worker.py": "8cdbdf1674cb55aa63ae62aa1f66f496dc055252d29c511defab4a3c30860648",
+    "results/j2/run-002/modern-attacks.json": "4941557560f1104da1aba3865c810f83374f2474cd54b5346682f83dbf1297a5",
+    "results/j2/run-005/winner-certificate.json": "cb118e1b85373f05a53174c1d3e5b3d20ccec827906620675a7717c411526a5b",
+    "results/j2/run-006/winner-certificate.json": "3f488102706967edd4160e4f7b658d35ca4df232d6a9a1977feea7f88f0834cd",
+    "references/coded-dual-audit/optimizer_naive.py.txt": "7ce311855f9178378c0c9eb6d832f72ea229961d9e3a29afbc430e185322c1b7",
+    "references/coded-dual-audit/rot_utilitaries.py.txt": "51368ebd08039166ab1c50e3d9e9f575391b40c73c9247e680f160f9bd9c97b1",
+    "references/coded-dual-audit/sources.json": "a8403590c4a02ed91e579effcee4d56f0b661c0aebb1c80d8f84f4d735dc2feb",
+    "references/coded-dual-audit/utilitaries.py.txt": "e115cc99e0c688ac6cb4fed847be1678e013c3a48b3028ed86a19f8ef425c49d"
+  },
+  "output_sha256": {
+    "comparison.json": "05bbd3fe819a790ae48a9ae294a88ffa550aaa6f86b50524ace6796dcfcd0107"
+  }
+}

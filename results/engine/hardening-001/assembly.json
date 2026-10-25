@@ -1,0 +1,92 @@
+{
+  "windows": {
+    "reduce_probe": {
+      "assembly": "_ZN7kem15367dev_kem9hardening12reduce_probe17hf3178bdd7d3c2811E:\n.seh_proc _ZN7kem15367dev_kem9hardening12reduce_probe17hf3178bdd7d3c2811E\n\tpushq\t%rax\n\t.seh_stackalloc 8\n\t.seh_endprologue\n\tmovq\t%rcx, (%rsp)\n\tmovq\t%rsp, %rax\n\t#APP\n\t#NO_APP\n\tmovq\t(%rsp), %rcx\n\tmovabsq\t$2401607092007492, %rdx\n\tmovq\t%rcx, %rax\n\tmulq\t%rdx\n\timulq\t$-7681, %rdx, %rax\n\tleaq\t(%rax,%rcx), %rdx\n\taddq\t%rcx, %rax\n\taddq\t$-7681, %rax\n\ttestq\t%rax, %rax\n\tcmovsl\t%edx, %eax\n\t.seh_startepilogue\n\tpopq\t%rcx\n\t.seh_endepilogue\n\tretq\n\t.seh_endproc",
+      "instructions": [
+        "pushq",
+        "movq",
+        "movq",
+        "movq",
+        "movabsq",
+        "movq",
+        "mulq",
+        "imulq",
+        "leaq",
+        "addq",
+        "addq",
+        "testq",
+        "cmovsl",
+        "popq",
+        "retq"
+      ],
+      "conditional_branches": [],
+      "divisions": [],
+      "scope": "two scalar probes only"
+    },
+    "quotient_probe": {
+      "assembly": "_ZN7kem15367dev_kem9hardening14quotient_probe17hd3a62e3d50df8c7dE:\n.seh_proc _ZN7kem15367dev_kem9hardening14quotient_probe17hd3a62e3d50df8c7dE\n\tpushq\t%rax\n\t.seh_stackalloc 8\n\t.seh_endprologue\n\tmovl\t%ecx, 4(%rsp)\n\tleaq\t4(%rsp), %rax\n\t#APP\n\t#NO_APP\n\tmovl\t4(%rsp), %eax\n\timulq\t$559167, %rax, %rcx\n\tshrq\t$32, %rcx\n\timull\t$-7681, %ecx, %edx\n\taddl\t%edx, %eax\n\taddl\t$-7681, %eax\n\tsarl\t$31, %eax\n\taddl\t%ecx, %eax\n\tincl\t%eax\n\t.seh_startepilogue\n\tpopq\t%rcx\n\t.seh_endepilogue\n\tretq\n\t.seh_endproc",
+      "instructions": [
+        "pushq",
+        "movl",
+        "leaq",
+        "movl",
+        "imulq",
+        "shrq",
+        "imull",
+        "addl",
+        "addl",
+        "sarl",
+        "addl",
+        "incl",
+        "popq",
+        "retq"
+      ],
+      "conditional_branches": [],
+      "divisions": [],
+      "scope": "two scalar probes only"
+    }
+  },
+  "linux": {
+    "reduce_probe": {
+      "assembly": "_ZN7kem15367dev_kem9hardening12reduce_probe17h4273fc6940e13020E:\n\t.cfi_startproc\n\tmovq\t%rdi, -8(%rsp)\n\tleaq\t-8(%rsp), %rax\n\t#APP\n\t#NO_APP\n\tmovq\t-8(%rsp), %rcx\n\tmovabsq\t$2401607092007492, %rdx\n\tmovq\t%rcx, %rax\n\tmulq\t%rdx\n\timulq\t$-7681, %rdx, %rax\n\tleaq\t(%rax,%rcx), %rdx\n\taddq\t%rcx, %rax\n\taddq\t$-7681, %rax\n\ttestq\t%rax, %rax\n\tcmovsl\t%edx, %eax\n\tretq\n.Lfunc_end153:",
+      "instructions": [
+        "movq",
+        "leaq",
+        "movq",
+        "movabsq",
+        "movq",
+        "mulq",
+        "imulq",
+        "leaq",
+        "addq",
+        "addq",
+        "testq",
+        "cmovsl",
+        "retq"
+      ],
+      "conditional_branches": [],
+      "divisions": [],
+      "scope": "two scalar probes only"
+    },
+    "quotient_probe": {
+      "assembly": "_ZN7kem15367dev_kem9hardening14quotient_probe17h1650590b4a0c41ccE:\n\t.cfi_startproc\n\tmovl\t%edi, -4(%rsp)\n\tleaq\t-4(%rsp), %rax\n\t#APP\n\t#NO_APP\n\tmovl\t-4(%rsp), %eax\n\timulq\t$559167, %rax, %rcx\n\tshrq\t$32, %rcx\n\timull\t$-7681, %ecx, %edx\n\taddl\t%edx, %eax\n\taddl\t$-7681, %eax\n\tsarl\t$31, %eax\n\taddl\t%ecx, %eax\n\tincl\t%eax\n\tretq\n.Lfunc_end155:",
+      "instructions": [
+        "movl",
+        "leaq",
+        "movl",
+        "imulq",
+        "shrq",
+        "imull",
+        "addl",
+        "addl",
+        "sarl",
+        "addl",
+        "incl",
+        "retq"
+      ],
+      "conditional_branches": [],
+      "divisions": [],
+      "scope": "two scalar probes only"
+    }
+  }
+}

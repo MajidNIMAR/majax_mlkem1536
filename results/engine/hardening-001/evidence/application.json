@@ -1,0 +1,52 @@
+{
+  "binary_sha256": "dc15ba07d79dbf9d9fe89d7b2413677d80987a5f80ab1d2be38e60ae4379f870",
+  "build": "release application without research-vectors",
+  "research_commands_unavailable": [
+    {
+      "command": [
+        "dev-vectors",
+        "1"
+      ],
+      "exit_code": 1,
+      "stdout_bytes": 0
+    },
+    {
+      "command": [
+        "dev-rejection-vectors"
+      ],
+      "exit_code": 1,
+      "stdout_bytes": 0
+    },
+    {
+      "command": [
+        "dev-mutations"
+      ],
+      "exit_code": 1,
+      "stdout_bytes": 0
+    },
+    {
+      "command": [
+        "dev-hardening"
+      ],
+      "exit_code": 1,
+      "stdout_bytes": 0
+    },
+    {
+      "command": [
+        "dev-timing"
+      ],
+      "exit_code": 1,
+      "stdout_bytes": 0
+    }
+  ],
+  "self_test": {
+    "elapsed_seconds": 0.150432,
+    "fresh_round_trips": 16,
+    "implicit_rejections_checked": 16,
+    "profile": "KEM1536-DEV-Q7681-R1",
+    "secrets_printed": false,
+    "security_validation": "pending"
+  },
+  "build_exit_code": 0,
+  "self_test_exit_code": 0
+}

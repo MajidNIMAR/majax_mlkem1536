@@ -1,0 +1,44 @@
+[package]
+name = "kem1536-fuzz"
+version = "0.0.0"
+publish = false
+edition = "2021"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+libfuzzer-sys = "=0.4.13"
+kem1536 = { path = "../crates/kem1536" }
+shake = { version = "=0.1.0", features = ["zeroize"] }
+
+[workspace]
+members = ["."]
+
+[[bin]]
+name = "import_public"
+path = "fuzz_targets/import_public.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "import_private"
+path = "fuzz_targets/import_private.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "decapsulate"
+path = "fuzz_targets/decapsulate.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "api_sequence"
+path = "fuzz_targets/api_sequence.rs"
+test = false
+doc = false
+bench = false

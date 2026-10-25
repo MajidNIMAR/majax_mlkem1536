@@ -1,0 +1,45 @@
+{
+  "job": {
+    "scenario": "baseline-1024",
+    "parameters": {
+      "n": 256,
+      "k": 4,
+      "q": 3329,
+      "eta": 2
+    },
+    "sample_budget": "key",
+    "samples": 1024,
+    "targets": 1,
+    "oracle": "none",
+    "shape_model": "GSA",
+    "memory_cap": "none; exponential memory allowed",
+    "tool": "ring-2026",
+    "cost_model": "MATZOV-classical",
+    "algorithm": "rot_bdd_mitm_hybrid"
+  },
+  "status": "ok",
+  "applicability": "exploratory dense-CBD use of sparse-secret rotation estimator",
+  "cost": {
+    "rop": "1.21186233092392e148",
+    "red": "1.60975452867456e129",
+    "svp": "1.21186233092392e148",
+    "beta": "875",
+    "eta": "2",
+    "zeta": "309",
+    "|S|": "28967864836337532008188341178938345787952049646488068206498600378239912107226894057077048332331918389493614508022880279667030383689709596283642388050619807698419438513569219508003038018172160",
+    "d": "1603",
+    "prob": "1.66194897328394e-46",
+    "repetitions": "27709455946102141859975226674771138291990619277",
+    "tag": "hybrid",
+    "problem": "LWEParameters(n=1024, q=3329, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=1024, tag='baseline-1024')"
+  },
+  "log2_cost": {
+    "rop": 491.9225838594884,
+    "red": 429.2155649491426,
+    "svp": 491.9225838594884,
+    "prob": -152.07581627700662,
+    "repetitions": 154.27907074970636
+  },
+  "estimator_messages": "",
+  "elapsed_seconds": 47.46712184500029
+}

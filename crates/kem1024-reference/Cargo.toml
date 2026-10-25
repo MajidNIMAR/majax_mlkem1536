@@ -1,0 +1,19 @@
+[package]
+name = "kem1024-reference"
+description = "Offline NIST ACVP checks for a pinned ML-KEM-1024 reference implementation"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[dependencies]
+ml-kem.workspace = true
+hex.workspace = true
+sha2.workspace = true
+shake.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+
+[lints]
+workspace = true
+

@@ -1,0 +1,737 @@
+{
+  "mpmath_decimal_digits": 160,
+  "checks": [
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-0-repeated",
+      "index": 0,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-0-repeated",
+      "index": 1,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-0-repeated",
+      "index": 2,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-0-repeated",
+      "index": 3,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-0-repeated",
+      "index": 63,
+      "delta_log2": -2.842170943040401e-14
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-0-repeated",
+      "index": 127,
+      "delta_log2": -2.842170943040401e-14
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-0-repeated",
+      "index": 191,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-0-repeated",
+      "index": 255,
+      "delta_log2": -2.842170943040401e-14
+    },
+    {
+      "kind": "score_covariance",
+      "experiment": "panel-0-repeated",
+      "i": 0,
+      "j": 0,
+      "sign_matched": true,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "score_covariance",
+      "experiment": "panel-0-repeated",
+      "i": 0,
+      "j": 1,
+      "sign_matched": true,
+      "delta_log2": -5.684341886080802e-14
+    },
+    {
+      "kind": "score_covariance",
+      "experiment": "panel-0-repeated",
+      "i": 0,
+      "j": 31,
+      "sign_matched": true,
+      "delta_log2": -5.684341886080802e-14
+    },
+    {
+      "kind": "score_covariance",
+      "experiment": "panel-0-repeated",
+      "i": 15,
+      "j": 31,
+      "sign_matched": true,
+      "delta_log2": -5.684341886080802e-14
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-0-radix",
+      "index": 0,
+      "delta_log2": -3.552713678800501e-15
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-0-radix",
+      "index": 1,
+      "delta_log2": 3.552713678800501e-15
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-0-radix",
+      "index": 2,
+      "delta_log2": -3.552713678800501e-15
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-0-radix",
+      "index": 3,
+      "delta_log2": -3.552713678800501e-15
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-0-radix",
+      "index": 63,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-0-radix",
+      "index": 127,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-0-radix",
+      "index": 191,
+      "delta_log2": -3.552713678800501e-15
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-0-radix",
+      "index": 255,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "score_covariance",
+      "experiment": "panel-0-radix",
+      "i": 0,
+      "j": 0,
+      "sign_matched": true,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "score_covariance",
+      "experiment": "panel-0-radix",
+      "i": 0,
+      "j": 1,
+      "sign_matched": true,
+      "delta_log2": -7.105427357601002e-15
+    },
+    {
+      "kind": "score_covariance",
+      "experiment": "panel-0-radix",
+      "i": 0,
+      "j": 31,
+      "sign_matched": true,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "score_covariance",
+      "experiment": "panel-0-radix",
+      "i": 15,
+      "j": 31,
+      "sign_matched": true,
+      "delta_log2": -1.4210854715202004e-14
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-1-repeated",
+      "index": 0,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-1-repeated",
+      "index": 1,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-1-repeated",
+      "index": 2,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-1-repeated",
+      "index": 3,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-1-repeated",
+      "index": 63,
+      "delta_log2": -2.842170943040401e-14
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-1-repeated",
+      "index": 127,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-1-repeated",
+      "index": 191,
+      "delta_log2": -2.842170943040401e-14
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-1-repeated",
+      "index": 255,
+      "delta_log2": -2.842170943040401e-14
+    },
+    {
+      "kind": "score_covariance",
+      "experiment": "panel-1-repeated",
+      "i": 0,
+      "j": 0,
+      "sign_matched": true,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "score_covariance",
+      "experiment": "panel-1-repeated",
+      "i": 0,
+      "j": 1,
+      "sign_matched": true,
+      "delta_log2": -5.684341886080802e-14
+    },
+    {
+      "kind": "score_covariance",
+      "experiment": "panel-1-repeated",
+      "i": 0,
+      "j": 31,
+      "sign_matched": true,
+      "delta_log2": -1.1368683772161603e-13
+    },
+    {
+      "kind": "score_covariance",
+      "experiment": "panel-1-repeated",
+      "i": 15,
+      "j": 31,
+      "sign_matched": true,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-1-radix",
+      "index": 0,
+      "delta_log2": -3.552713678800501e-15
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-1-radix",
+      "index": 1,
+      "delta_log2": -3.552713678800501e-15
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-1-radix",
+      "index": 2,
+      "delta_log2": -3.552713678800501e-15
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-1-radix",
+      "index": 3,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-1-radix",
+      "index": 63,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-1-radix",
+      "index": 127,
+      "delta_log2": -3.552713678800501e-15
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-1-radix",
+      "index": 191,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-1-radix",
+      "index": 255,
+      "delta_log2": 3.552713678800501e-15
+    },
+    {
+      "kind": "score_covariance",
+      "experiment": "panel-1-radix",
+      "i": 0,
+      "j": 0,
+      "sign_matched": true,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "score_covariance",
+      "experiment": "panel-1-radix",
+      "i": 0,
+      "j": 1,
+      "sign_matched": true,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "score_covariance",
+      "experiment": "panel-1-radix",
+      "i": 0,
+      "j": 31,
+      "sign_matched": true,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "score_covariance",
+      "experiment": "panel-1-radix",
+      "i": 15,
+      "j": 31,
+      "sign_matched": true,
+      "delta_log2": -1.4210854715202004e-14
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-2-repeated",
+      "index": 0,
+      "delta_log2": -5.684341886080802e-14
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-2-repeated",
+      "index": 1,
+      "delta_log2": -5.684341886080802e-14
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-2-repeated",
+      "index": 2,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-2-repeated",
+      "index": 3,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-2-repeated",
+      "index": 63,
+      "delta_log2": -5.684341886080802e-14
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-2-repeated",
+      "index": 127,
+      "delta_log2": -1.1368683772161603e-13
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-2-repeated",
+      "index": 191,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-2-repeated",
+      "index": 255,
+      "delta_log2": 5.684341886080802e-14
+    },
+    {
+      "kind": "score_covariance",
+      "experiment": "panel-2-repeated",
+      "i": 0,
+      "j": 0,
+      "sign_matched": true,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "score_covariance",
+      "experiment": "panel-2-repeated",
+      "i": 0,
+      "j": 1,
+      "sign_matched": true,
+      "delta_log2": -2.2737367544323206e-13
+    },
+    {
+      "kind": "score_covariance",
+      "experiment": "panel-2-repeated",
+      "i": 0,
+      "j": 31,
+      "sign_matched": true,
+      "delta_log2": -1.1368683772161603e-13
+    },
+    {
+      "kind": "score_covariance",
+      "experiment": "panel-2-repeated",
+      "i": 15,
+      "j": 31,
+      "sign_matched": true,
+      "delta_log2": -3.410605131648481e-13
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-2-radix",
+      "index": 0,
+      "delta_log2": 7.105427357601002e-15
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-2-radix",
+      "index": 1,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-2-radix",
+      "index": 2,
+      "delta_log2": -7.105427357601002e-15
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-2-radix",
+      "index": 3,
+      "delta_log2": 7.105427357601002e-15
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-2-radix",
+      "index": 63,
+      "delta_log2": -7.105427357601002e-15
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-2-radix",
+      "index": 127,
+      "delta_log2": -7.105427357601002e-15
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-2-radix",
+      "index": 191,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-2-radix",
+      "index": 255,
+      "delta_log2": -7.105427357601002e-15
+    },
+    {
+      "kind": "score_covariance",
+      "experiment": "panel-2-radix",
+      "i": 0,
+      "j": 0,
+      "sign_matched": true,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "score_covariance",
+      "experiment": "panel-2-radix",
+      "i": 0,
+      "j": 1,
+      "sign_matched": true,
+      "delta_log2": -4.263256414560601e-14
+    },
+    {
+      "kind": "score_covariance",
+      "experiment": "panel-2-radix",
+      "i": 0,
+      "j": 31,
+      "sign_matched": true,
+      "delta_log2": -1.4210854715202004e-13
+    },
+    {
+      "kind": "score_covariance",
+      "experiment": "panel-2-radix",
+      "i": 15,
+      "j": 31,
+      "sign_matched": true,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-3-repeated",
+      "index": 0,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-3-repeated",
+      "index": 1,
+      "delta_log2": -5.684341886080802e-14
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-3-repeated",
+      "index": 2,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-3-repeated",
+      "index": 3,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-3-repeated",
+      "index": 63,
+      "delta_log2": -5.684341886080802e-14
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-3-repeated",
+      "index": 127,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-3-repeated",
+      "index": 191,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-3-repeated",
+      "index": 255,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "score_covariance",
+      "experiment": "panel-3-repeated",
+      "i": 0,
+      "j": 0,
+      "sign_matched": true,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "score_covariance",
+      "experiment": "panel-3-repeated",
+      "i": 0,
+      "j": 1,
+      "sign_matched": true,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "score_covariance",
+      "experiment": "panel-3-repeated",
+      "i": 0,
+      "j": 31,
+      "sign_matched": true,
+      "delta_log2": -1.1368683772161603e-13
+    },
+    {
+      "kind": "score_covariance",
+      "experiment": "panel-3-repeated",
+      "i": 15,
+      "j": 31,
+      "sign_matched": true,
+      "delta_log2": -1.1368683772161603e-13
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-3-radix",
+      "index": 0,
+      "delta_log2": 7.105427357601002e-15
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-3-radix",
+      "index": 1,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-3-radix",
+      "index": 2,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-3-radix",
+      "index": 3,
+      "delta_log2": -7.105427357601002e-15
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-3-radix",
+      "index": 63,
+      "delta_log2": -7.105427357601002e-15
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-3-radix",
+      "index": 127,
+      "delta_log2": -7.105427357601002e-15
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-3-radix",
+      "index": 191,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "residual_bias",
+      "experiment": "panel-3-radix",
+      "index": 255,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "score_covariance",
+      "experiment": "panel-3-radix",
+      "i": 0,
+      "j": 0,
+      "sign_matched": true,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "score_covariance",
+      "experiment": "panel-3-radix",
+      "i": 0,
+      "j": 1,
+      "sign_matched": true,
+      "delta_log2": 2.1316282072803006e-14
+    },
+    {
+      "kind": "score_covariance",
+      "experiment": "panel-3-radix",
+      "i": 0,
+      "j": 31,
+      "sign_matched": true,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "score_covariance",
+      "experiment": "panel-3-radix",
+      "i": 15,
+      "j": 31,
+      "sign_matched": true,
+      "delta_log2": -7.105427357601002e-15
+    },
+    {
+      "kind": "equal_norm_bias",
+      "index": 0,
+      "delta_log2": -1.3877787807814457e-16
+    },
+    {
+      "kind": "equal_norm_bias",
+      "index": 1,
+      "delta_log2": 1.942890293094024e-16
+    },
+    {
+      "kind": "equal_norm_bias",
+      "index": 2,
+      "delta_log2": -7.771561172376096e-15
+    },
+    {
+      "kind": "equal_norm_bias",
+      "index": 3,
+      "delta_log2": -6.661338147750939e-16
+    },
+    {
+      "kind": "equal_norm_bias",
+      "index": 4,
+      "delta_log2": -4.440892098500626e-16
+    },
+    {
+      "kind": "equal_norm_bias",
+      "index": 5,
+      "delta_log2": 5.10702591327572e-15
+    },
+    {
+      "kind": "equal_norm_bias",
+      "index": 6,
+      "delta_log2": -5.329070518200751e-15
+    },
+    {
+      "kind": "equal_norm_bias",
+      "index": 7,
+      "delta_log2": 0.0
+    },
+    {
+      "kind": "equal_norm_bias",
+      "index": 8,
+      "delta_log2": -2.6645352591003757e-15
+    },
+    {
+      "kind": "equal_norm_bias",
+      "index": 9,
+      "delta_log2": -4.440892098500626e-16
+    },
+    {
+      "kind": "equal_norm_bias",
+      "index": 10,
+      "delta_log2": 1.6653345369377348e-16
+    },
+    {
+      "kind": "equal_norm_bias",
+      "index": 11,
+      "delta_log2": -6.716849298982197e-15
+    },
+    {
+      "kind": "equal_norm_bias",
+      "index": 12,
+      "delta_log2": 6.661338147750939e-16
+    },
+    {
+      "kind": "equal_norm_bias",
+      "index": 13,
+      "delta_log2": 2.220446049250313e-16
+    },
+    {
+      "kind": "equal_norm_bias",
+      "index": 14,
+      "delta_log2": 6.217248937900877e-15
+    },
+    {
+      "kind": "equal_norm_bias",
+      "index": 15,
+      "delta_log2": 1.7763568394002505e-15
+    },
+    {
+      "kind": "equal_norm_bias",
+      "index": 16,
+      "delta_log2": -8.881784197001252e-16
+    },
+    {
+      "kind": "equal_norm_bias",
+      "index": 17,
+      "delta_log2": -1.0658141036401503e-14
+    }
+  ],
+  "all_passed": true,
+  "maximum_absolute_log2_delta": 3.410605131648481e-13
+}

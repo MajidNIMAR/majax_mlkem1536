@@ -1,0 +1,45 @@
+{
+  "job": {
+    "scenario": "q7681-eta2",
+    "parameters": {
+      "n": 256,
+      "k": 6,
+      "q": 7681,
+      "eta": 2
+    },
+    "sample_budget": "extended",
+    "samples": 1792,
+    "targets": 1,
+    "oracle": "none",
+    "shape_model": "GSA",
+    "memory_cap": "none; exponential memory allowed",
+    "tool": "community",
+    "cost_model": "BCSS23-quantum-asymptotic",
+    "algorithm": "bdd_mitm_hybrid"
+  },
+  "status": "ok",
+  "applicability": "heuristic LWE estimator model",
+  "cost": {
+    "rop": "5.21344071869251e214",
+    "red": "1.54521087807602e164",
+    "svp": "5.21344071869251e214",
+    "beta": "1265",
+    "eta": "2",
+    "zeta": "464",
+    "|S|": "5693823297260131593332082802887400052726890516182259423818837873320689722279124877679767020643561288457561124062813146435464902958678189309415866875861221234243380059733361988164592864553755885570853460478690588364752760313030241116268818791088644831967848657464309096442157278431425",
+    "d": "2372",
+    "prob": "1.18591239065412e-66",
+    "repetitions": "3883229673861492412028666595500909945561152083731936575324236678015",
+    "tag": "hybrid",
+    "problem": "LWEParameters(n=1536, q=7681, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=1792, tag='q7681-eta2')"
+  },
+  "log2_cost": {
+    "rop": 713.2748481293431,
+    "red": 545.424011300624,
+    "svp": 713.2748481293431,
+    "prob": -219.00125682792432,
+    "repetitions": 221.20451130062403
+  },
+  "estimator_messages": "",
+  "elapsed_seconds": 108.92380399299964
+}

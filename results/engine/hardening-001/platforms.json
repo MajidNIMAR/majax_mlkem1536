@@ -1,0 +1,40 @@
+{
+  "windows": {
+    "binary_sha256": "083d802933b0d7160db571b47e4902fd5812dddde9beed6f0eda1e950ef1e495",
+    "compared_to_frozen_M01": {
+      "dev-vectors": 1000,
+      "dev-rejection-vectors": 10000
+    },
+    "all_fields_equal": true,
+    "formats": {
+      "inputs": 20000,
+      "public_key_imports": 6667,
+      "private_key_imports": 6667,
+      "ciphertext_imports": 6666,
+      "wrong_lengths_rejected": 17010,
+      "exact_length_inputs": 2990,
+      "accepted_imports": 993,
+      "seed": 5562000709837083213,
+      "panics_observed": 0
+    }
+  },
+  "linux": {
+    "binary_sha256": "baf11e38672e3146644164220abc881e0c0057d1ac81a5f7cacc51f3d9be9523",
+    "compared_to_frozen_M01": {
+      "dev-vectors": 1000,
+      "dev-rejection-vectors": 10000
+    },
+    "all_fields_equal": true,
+    "formats": {
+      "inputs": 20000,
+      "public_key_imports": 6667,
+      "private_key_imports": 6667,
+      "ciphertext_imports": 6666,
+      "wrong_lengths_rejected": 17010,
+      "exact_length_inputs": 2990,
+      "accepted_imports": 993,
+      "seed": 5562000709837083213,
+      "panics_observed": 0
+    }
+  }
+}

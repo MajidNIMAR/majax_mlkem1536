@@ -1,0 +1,7 @@
+{
+  "archive": "results/engine/m03-fuzz-001",
+  "source_commit": "8ef4ceb",
+  "output": "artifacts/generated/m03-long-001",
+  "started_utc": "2026-10-25T15:01:37.3417866Z",
+  "windows_pid": 22272
+}

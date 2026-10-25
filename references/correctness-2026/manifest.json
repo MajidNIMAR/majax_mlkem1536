@@ -1,0 +1,21 @@
+{
+  "access_date": "2026-10-24",
+  "purpose": "Primary-source context for J2 rounding dependence; no numerical claim transferred to rank 6",
+  "sources": [
+    {
+      "title": "Dependency-Aware ROM/CBD Correctness Bounds for ML-KEM-768 at the Heuristic Failure Scale",
+      "authors": ["Aurélie Duriez", "Christophe Tommasini"],
+      "version": "arXiv:2609.09983v1",
+      "submitted": "2026-09-09",
+      "url": "https://arxiv.org/html/2609.09983v1",
+      "doi": "10.48550/arXiv.2609.09983",
+      "file": "arxiv-2609.09983v1.html",
+      "sha256": "02e647361a4e0c909e80933efdf3dc792007a259245db8ae39e44e2b234c17da",
+      "bytes": 425748,
+      "license": "CC BY 4.0, as indicated by arXiv HTML",
+      "status": "preprint; text consulted, full artifact/proof chain not independently reproduced",
+      "scope": "ML-KEM-768 ROM/CBD abstraction; not our rank-6/q7681 candidate",
+      "local_use": "Context and attribution for conditional ideal/coset analysis; own toy checks and lossless-u witnesses are separate"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "project_arithmetic_imported": false,
+  "numpy": "2.3.5",
+  "coordinate_table_decimal_digits": 80,
+  "distinct_geometries_verified": 32,
+  "CBD_banks_verified": 64,
+  "population_moment_records_verified": 1024,
+  "cosine_sign_evaluations": 1824768,
+  "replayed_phase_identities": 4194304,
+  "all_multiplicities_and_sample_events_matched": true,
+  "maximum_absolute_numeric_delta": 8.377298854611581e-12,
+  "maximum_correction_error_over_absolute_mass": 2.3636648194269583e-13
+}

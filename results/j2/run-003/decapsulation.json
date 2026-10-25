@@ -1,0 +1,1112 @@
+{
+  "threshold_log2": -174.8,
+  "results": [
+    {
+      "id": "baseline-1024",
+      "parameters": {
+        "n": 256,
+        "k": 4,
+        "q": 3329,
+        "eta1": 2,
+        "eta2": 2,
+        "du": 11,
+        "dv": 5
+      },
+      "independent_rounding_result": {
+        "parameters": {
+          "n": 256,
+          "k": 4,
+          "q": 3329,
+          "eta1": 2,
+          "eta2": 2,
+          "du": 11,
+          "dv": 5
+        },
+        "rounding": "FIPS integer half-up",
+        "arithmetic": "exact integer distributions, no truncation, no FFT",
+        "model": "independent CBD variables; independent uniform pre-compression coefficients",
+        "coefficient_mean": "52/3329",
+        "coefficient_variance": "37070945665/11082241",
+        "coefficient_standard_deviation": 57.83663766139927,
+        "rounding_u_counts": {
+          "-1": 640,
+          "0": 2048,
+          "1": 641
+        },
+        "rounding_u_denominator": 3329,
+        "bit0_failure": {
+          "decimal": "7.1201482197332407742718236779872463877331028881327066698816555186071583198509975E-56",
+          "log2": -183.19606603968714,
+          "numerator_bits": 27167,
+          "denominator_bits": 27350,
+          "ratio_sha256": "7f1dcb6be3a27b321b8733cb87d785309e94b12d1bf17439d892f7557dfaf668"
+        },
+        "bit1_failure": {
+          "decimal": "8.3790577932847350442898856520939122396142862348482408416745843045582425790505310E-56",
+          "log2": -182.96118528855004,
+          "numerator_bits": 27163,
+          "denominator_bits": 27346,
+          "ratio_sha256": "a96c2cb90f2b7850f9c28f8cf38169aa4e5fdb48145401b41480b61db5b676a0"
+        },
+        "message_lower_bound_single_coefficient": {
+          "decimal": "7.7496030065089879092808546650405793136736945614904737557781199115827004494507642E-56",
+          "log2": -183.07385090720345,
+          "numerator_bits": 27168,
+          "denominator_bits": 27351,
+          "ratio_sha256": "c00dc836193e9ea57f819e0388cbd66b42e7385e8e94b3aa7142ffb41d79174b"
+        },
+        "message_union_bound_uniform_bits": {
+          "decimal": "1.9838983696663009047758987942503883043004658077415612814791986973651713150593956E-53",
+          "log2": -175.07385090720345,
+          "numerator_bits": 27168,
+          "denominator_bits": 27343,
+          "ratio_sha256": "575c46b1a9ff7226872321445df72f345e2983367f3edff00fcbfa18565e9382"
+        },
+        "message_union_bound_worst_bit": {
+          "decimal": "2.1450387950808921713382107269360415333412572761211496554686935819669101002369359E-53",
+          "log2": -174.96118528855004,
+          "numerator_bits": 27163,
+          "denominator_bits": 27338,
+          "ratio_sha256": "25f95c1cf68c0d1547cf83a178b10413e6b6d2088174706cfcb1f07f43de5fbb"
+        },
+        "historical_two_sided_union": {
+          "decimal": "1.8227579442517096382135868615647350752596743393619729074897038127634325298818554E-53",
+          "log2": -175.19606603968714,
+          "numerator_bits": 27169,
+          "denominator_bits": 27344,
+          "ratio_sha256": "97e44be4f293b7553e1c90b56386b19317b4dc4dfe9c1b59474720e5a421a646"
+        },
+        "integer_mass_check": "passed",
+        "second_moment_check": "passed",
+        "coefficient_support": [
+          -10294,
+          10294
+        ],
+        "elapsed_seconds": 0.6820956000010483
+      },
+      "variance_decomposition": {
+        "terms": {
+          "e_times_y": {
+            "exact": "1024",
+            "decimal": 1024.0,
+            "percent_of_variance": 30.6121534814642
+          },
+          "s_times_e1": {
+            "exact": "1024",
+            "decimal": 1024.0,
+            "percent_of_variance": 30.6121534814642
+          },
+          "s_times_rounding_u": {
+            "exact": "1311744/3329",
+            "decimal": 394.03544607990386,
+            "percent_of_variance": 11.779564016147685
+          },
+          "e2": {
+            "exact": "1",
+            "decimal": 1.0,
+            "percent_of_variance": 0.029894681134242384
+          },
+          "rounding_v": {
+            "exact": "9996638080/11082241",
+            "decimal": 902.0412098960851,
+            "percent_of_variance": 26.96623433978967
+          }
+        },
+        "intrinsic_variance": "2049",
+        "total_variance": "37070945665/11082241",
+        "standard_deviation": 57.83663766139927,
+        "rounding_u_mean": "1/3329",
+        "rounding_u_second_moment": "1281/3329",
+        "interpretation": "variance shares do not measure contributions to rare-event tails"
+      },
+      "arbitrary_bounded_v": {
+        "error_range": [
+          -52,
+          52
+        ],
+        "remaining_assumptions": "independent CBD; independent uniform pre-compression u",
+        "removed_assumption": "no independence or uniformity needed for rounding_v",
+        "bit0_lower": {
+          "decimal": "9.5885661569835555028301345525984396647103673841918040052842658373359368702999434E-69",
+          "log2": -225.95172345178435,
+          "numerator_bits": 27112,
+          "denominator_bits": 27338,
+          "ratio_sha256": "42d7cb5730a9b365235f6caa40f30f934013d8ce128da16a33bc26134b680d8e"
+        },
+        "bit0_upper": {
+          "decimal": "2.2081448907467775969037576117813590576585570855719624957926317165178339697689299E-54",
+          "log2": -178.24128228409245,
+          "numerator_bits": 27160,
+          "denominator_bits": 27338,
+          "ratio_sha256": "e2752ce7e9ebf7d5389877d158088da0d2557c333c9fc0bb8734c65b25731c08"
+        },
+        "bit1_lower": {
+          "decimal": "1.1495837843298062725639148161682332706990990839328106119066134367492220735226791E-68",
+          "log2": -225.68999883549623,
+          "numerator_bits": 27113,
+          "denominator_bits": 27338,
+          "ratio_sha256": "dda5086b525a042c5f098ced5891f87bb1ea3445137a3ef8456fc87374e1b1fb"
+        },
+        "bit1_upper": {
+          "decimal": "2.5951320349574238693653254999291691466561022126503180547430976617957255303924282E-54",
+          "log2": -178.00830918212523,
+          "numerator_bits": 27156,
+          "denominator_bits": 27334,
+          "ratio_sha256": "bb22790d7a2cd7a728217af262819b03a442457ca073be9705d7bf01885d0e5e"
+        },
+        "message_lower_uniform_bits": {
+          "decimal": "1.0542202000140809114234641357140386185850679111759955062175200102414078802763367E-68",
+          "log2": -225.81493421128107,
+          "numerator_bits": 27110,
+          "denominator_bits": 27336,
+          "ratio_sha256": "8ce65117420115c39cc557a3fe1c628dc1d12113aa038ff74a32d4da2bcf6ca0"
+        },
+        "message_lower_any_fixed_message": {
+          "decimal": "9.5885661569835555028301345525984396647103673841918040052842658373359368702999434E-69",
+          "log2": -225.95172345178435,
+          "numerator_bits": 27112,
+          "denominator_bits": 27338,
+          "ratio_sha256": "42d7cb5730a9b365235f6caa40f30f934013d8ce128da16a33bc26134b680d8e"
+        },
+        "message_union_upper_uniform_bits": {
+          "decimal": "6.1481944649013778768244263829894761015227639017245191046857336042413561602065383E-52",
+          "log2": -170.12009813653276,
+          "numerator_bits": 27161,
+          "denominator_bits": 27331,
+          "ratio_sha256": "f35c97549b5f908af97c58dbf1c00488da8d1a19d2b4ea3fc1cb557e46dc97a2"
+        },
+        "message_union_upper_any_message": {
+          "decimal": "6.6435380094910051055752332798186730154396216643848142201423300141970573578046161E-52",
+          "log2": -170.00830918212523,
+          "numerator_bits": 27156,
+          "denominator_bits": 27326,
+          "ratio_sha256": "629741e756fe7be92c9bf85aad7edbfaae2630d1fe897de82a4fd55f5b02ee99"
+        },
+        "crosscheck_independent_marginals": "exact rational agreement"
+      }
+    },
+    {
+      "id": "rank5-diagnostic",
+      "parameters": {
+        "n": 256,
+        "k": 5,
+        "q": 3329,
+        "eta1": 2,
+        "eta2": 2,
+        "du": 11,
+        "dv": 5
+      },
+      "independent_rounding_result": {
+        "parameters": {
+          "n": 256,
+          "k": 5,
+          "q": 3329,
+          "eta1": 2,
+          "eta2": 2,
+          "du": 11,
+          "dv": 5
+        },
+        "rounding": "FIPS integer half-up",
+        "arithmetic": "exact integer distributions, no truncation, no FFT",
+        "model": "independent CBD variables; independent uniform pre-compression coefficients",
+        "coefficient_mean": "52/3329",
+        "coefficient_variance": "43836752001/11082241",
+        "coefficient_standard_deviation": 62.89344574354282,
+        "rounding_u_counts": {
+          "-1": 640,
+          "0": 2048,
+          "1": 641
+        },
+        "rounding_u_denominator": 3329,
+        "bit0_failure": {
+          "decimal": "9.3944010694069535401402329498645046308901895840975309737813184295055017535220064E-46",
+          "log2": -149.5768911778141,
+          "numerator_bits": 34035,
+          "denominator_bits": 34184,
+          "ratio_sha256": "547a086e1d8149deccf390e7c1c0d8657d06b809d408373ff5fc880e8377456f"
+        },
+        "bit1_failure": {
+          "decimal": "1.0715434464505195504001884230991206260952845726526980452724240886616798494275399E-45",
+          "log2": -149.38707392369543,
+          "numerator_bits": 34036,
+          "denominator_bits": 34185,
+          "ratio_sha256": "75220a5f21f2989f8ddd093f525ad7972304a1d4d1fd21c03f3ae1fe7b3cb35d"
+        },
+        "message_lower_bound_single_coefficient": {
+          "decimal": "1.0054917766956074522071058590427855445921517655312255713252779658061150123898703E-45",
+          "log2": -149.47886298716912,
+          "numerator_bits": 34037,
+          "denominator_bits": 34186,
+          "ratio_sha256": "5ff3edf253f006387a147e6afac53f3bfc19f3339975b2460f94e0cc98cf5fcd"
+        },
+        "message_union_bound_uniform_bits": {
+          "decimal": "2.5740589483407550776501909991495309941559085197599374625927115924636544317180679E-43",
+          "log2": -141.47886298716912,
+          "numerator_bits": 34037,
+          "denominator_bits": 34178,
+          "ratio_sha256": "dc15a9f189eeb56ee683fae9aa2d3fab8fdbef0b7aefd25e57524cb9d68da4a1"
+        },
+        "message_union_bound_worst_bit": {
+          "decimal": "2.7431512229133300490244823631337488028039285059909069958974056669739004145345021E-43",
+          "log2": -141.38707392369543,
+          "numerator_bits": 34036,
+          "denominator_bits": 34177,
+          "ratio_sha256": "e1fc43921d7c959abd6fc6eaa1b601114637cb085140bb62ce9ff90cca6d22ef"
+        },
+        "historical_two_sided_union": {
+          "decimal": "2.4049666737681801062758996351653131855078885335289679292880175179534084489016336E-43",
+          "log2": -141.5768911778141,
+          "numerator_bits": 34035,
+          "denominator_bits": 34176,
+          "ratio_sha256": "b975b8b4afce49e44f8821e2a4816f0e0e7e3d1b136bff6b106c986e4485ff3b"
+        },
+        "integer_mass_check": "passed",
+        "second_moment_check": "passed",
+        "coefficient_support": [
+          -12854,
+          12854
+        ],
+        "elapsed_seconds": 1.06693259999156
+      },
+      "variance_decomposition": {
+        "terms": {
+          "e_times_y": {
+            "exact": "1280",
+            "decimal": 1280.0,
+            "percent_of_variance": 32.359305451454084
+          },
+          "s_times_e1": {
+            "exact": "1280",
+            "decimal": 1280.0,
+            "percent_of_variance": 32.359305451454084
+          },
+          "s_times_rounding_u": {
+            "exact": "1639680/3329",
+            "decimal": 492.54430759987986,
+            "percent_of_variance": 12.451868514062085
+          },
+          "e2": {
+            "exact": "1",
+            "decimal": 1.0,
+            "percent_of_variance": 0.0252807073839485
+          },
+          "rounding_v": {
+            "exact": "9996638080/11082241",
+            "decimal": 902.0412098960851,
+            "percent_of_variance": 22.8042398756458
+          }
+        },
+        "intrinsic_variance": "2561",
+        "total_variance": "43836752001/11082241",
+        "standard_deviation": 62.89344574354282,
+        "rounding_u_mean": "1/3329",
+        "rounding_u_second_moment": "1281/3329",
+        "interpretation": "variance shares do not measure contributions to rare-event tails"
+      },
+      "arbitrary_bounded_v": {
+        "error_range": [
+          -52,
+          52
+        ],
+        "remaining_assumptions": "independent CBD; independent uniform pre-compression u",
+        "removed_assumption": "no independence or uniformity needed for rounding_v",
+        "bit0_lower": {
+          "decimal": "3.9909834278014530138100597009947259039580442573258210116959344553706339306744321E-56",
+          "log2": -184.03122902548785,
+          "numerator_bits": 33992,
+          "denominator_bits": 34176,
+          "ratio_sha256": "96127faa94711cd8342a5aafde0a6106d7ddb0655166dc388ca434f3d6ba1ac7"
+        },
+        "bit0_upper": {
+          "decimal": "2.3940890915266755392897325998780259250752852235658905514271090711863623144807698E-44",
+          "log2": -144.9053593345743,
+          "numerator_bits": 34031,
+          "denominator_bits": 34176,
+          "ratio_sha256": "a6c2ead064402dca919307e9c482b199d3e7ac377589db5ca8356f4e288e0343"
+        },
+        "bit1_lower": {
+          "decimal": "4.6232817198285120820337691503160347044251030627787197440767528598773666003339841E-56",
+          "log2": -183.8190560377625,
+          "numerator_bits": 33992,
+          "denominator_bits": 34176,
+          "ratio_sha256": "8898d16a20d7c89c8a2760d284783f57d1290e6c989a5ae1fd182c0a53e0e835"
+        },
+        "bit1_upper": {
+          "decimal": "2.7277229890835954719859623495234390291921273388419450208494974814309799329364258E-44",
+          "log2": -144.71713903455384,
+          "numerator_bits": 34031,
+          "denominator_bits": 34176,
+          "ratio_sha256": "459a87445a34e74d4e6689999580de93f561a7597c7cf18ac7eb2add578edfdd"
+        },
+        "message_lower_uniform_bits": {
+          "decimal": "4.3071325738149825479219144256553803041915736600522703778863436576240002655042081E-56",
+          "log2": -183.92124558318028,
+          "numerator_bits": 33987,
+          "denominator_bits": 34171,
+          "ratio_sha256": "1803468bdf39605d187673b0c1dbfb0f2d66ddf5e4268ff744c0b926c1ee70e6"
+        },
+        "message_lower_any_fixed_message": {
+          "decimal": "3.9909834278014530138100597009947259039580442573258210116959344553706339306744321E-56",
+          "log2": -184.03122902548785,
+          "numerator_bits": 33992,
+          "denominator_bits": 34176,
+          "ratio_sha256": "96127faa94711cd8342a5aafde0a6106d7ddb0655166dc388ca434f3d6ba1ac7"
+        },
+        "message_union_upper_uniform_bits": {
+          "decimal": "6.5559194631811468944328895352338751414622880798820295325140563873501980766940103E-42",
+          "log2": -136.80818185364478,
+          "numerator_bits": 34031,
+          "denominator_bits": 34168,
+          "ratio_sha256": "0a754f0277e9e3d17b20e8b7d7c2136abd87783451c44c7085f662811509ed8b"
+        },
+        "message_union_upper_any_message": {
+          "decimal": "6.9829708520540044082840636147800039147318459874353792533747135524633086283172500E-42",
+          "log2": -136.71713903455384,
+          "numerator_bits": 34031,
+          "denominator_bits": 34168,
+          "ratio_sha256": "c727a747e3ab39e905919c1160dc5203f3082fbd89c4d9300058bbb5f17c8a26"
+        },
+        "crosscheck_independent_marginals": "exact rational agreement"
+      }
+    },
+    {
+      "id": "p0-1536",
+      "parameters": {
+        "n": 256,
+        "k": 6,
+        "q": 3329,
+        "eta1": 2,
+        "eta2": 2,
+        "du": 11,
+        "dv": 5
+      },
+      "independent_rounding_result": {
+        "parameters": {
+          "n": 256,
+          "k": 6,
+          "q": 3329,
+          "eta1": 2,
+          "eta2": 2,
+          "du": 11,
+          "dv": 5
+        },
+        "rounding": "FIPS integer half-up",
+        "arithmetic": "exact integer distributions, no truncation, no FFT",
+        "model": "independent CBD variables; independent uniform pre-compression coefficients",
+        "coefficient_mean": "52/3329",
+        "coefficient_variance": "50602558337/11082241",
+        "coefficient_standard_deviation": 67.57288197950373,
+        "rounding_u_counts": {
+          "-1": 640,
+          "0": 2048,
+          "1": 641
+        },
+        "rounding_u_denominator": 3329,
+        "bit0_failure": {
+          "decimal": "8.1857909512980932025060404503906582440307267001845641254500455439252660127782007E-39",
+          "log2": -126.5220738768985,
+          "numerator_bits": 40893,
+          "denominator_bits": 41020,
+          "ratio_sha256": "024942155596d60c0b3aaa25926d0408dccc683680a211a3376a6f38b29b3c94"
+        },
+        "bit1_failure": {
+          "decimal": "9.1393649310181886923582483861364653303253550819343565996710177836799957738612289E-39",
+          "log2": -126.36310178069107,
+          "numerator_bits": 40893,
+          "denominator_bits": 41020,
+          "ratio_sha256": "e844df97cc414e120dac13c21a080c32fd586f1dac22291bdac8954714654b32"
+        },
+        "message_lower_bound_single_coefficient": {
+          "decimal": "8.6625779411581409474321444182635617871780408910594603625605316638026308933197148E-39",
+          "log2": -126.44039927270933,
+          "numerator_bits": 40890,
+          "denominator_bits": 41017,
+          "ratio_sha256": "2650bd23ca654d25dfa82303827b496a681fb94ab05096b8ad775395232e2a8e"
+        },
+        "message_union_bound_uniform_bits": {
+          "decimal": "2.2176199529364840825426289710754718175175784681112218528154961059334735086898470E-36",
+          "log2": -118.44039927270933,
+          "numerator_bits": 40890,
+          "denominator_bits": 41009,
+          "ratio_sha256": "1d4dcf8f04653463b60b38061bd68540580936a7251dc209187ca18b3621d555"
+        },
+        "message_union_bound_worst_bit": {
+          "decimal": "2.3396774223406563052437115868509351245632909009751952895157805526220789181084746E-36",
+          "log2": -118.36310178069107,
+          "numerator_bits": 40893,
+          "denominator_bits": 41012,
+          "ratio_sha256": "0bfecbff6a39ce3ea22b55d4b2b2eba2f2418cc195c83252a4588d0e02d23f80"
+        },
+        "historical_two_sided_union": {
+          "decimal": "2.0955624835323118598415463553000085104718660352472484161152116592448680992712194E-36",
+          "log2": -118.5220738768985,
+          "numerator_bits": 40894,
+          "denominator_bits": 41013,
+          "ratio_sha256": "07492d0ec75cfccb1d3b0628580a0e2cccecfbdc3122d5916a9e9822b8bc8b52"
+        },
+        "integer_mass_check": "passed",
+        "second_moment_check": "passed",
+        "coefficient_support": [
+          -15414,
+          15414
+        ],
+        "elapsed_seconds": 1.5247350999852642
+      },
+      "variance_decomposition": {
+        "terms": {
+          "e_times_y": {
+            "exact": "1536",
+            "decimal": 1536.0,
+            "percent_of_variance": 33.63925211574427
+          },
+          "s_times_e1": {
+            "exact": "1536",
+            "decimal": 1536.0,
+            "percent_of_variance": 33.63925211574427
+          },
+          "s_times_rounding_u": {
+            "exact": "1967616/3329",
+            "decimal": 591.0531691198559,
+            "percent_of_variance": 12.94439229806801
+          },
+          "e2": {
+            "exact": "1",
+            "decimal": 1.0,
+            "percent_of_variance": 0.02190055476285434
+          },
+          "rounding_v": {
+            "exact": "9996638080/11082241",
+            "decimal": 902.0412098960851,
+            "percent_of_variance": 19.7552029156806
+          }
+        },
+        "intrinsic_variance": "3073",
+        "total_variance": "50602558337/11082241",
+        "standard_deviation": 67.57288197950373,
+        "rounding_u_mean": "1/3329",
+        "rounding_u_second_moment": "1281/3329",
+        "interpretation": "variance shares do not measure contributions to rare-event tails"
+      },
+      "arbitrary_bounded_v": {
+        "error_range": [
+          -52,
+          52
+        ],
+        "remaining_assumptions": "independent CBD; independent uniform pre-compression u",
+        "removed_assumption": "no independence or uniformity needed for rounding_v",
+        "bit0_lower": {
+          "decimal": "1.9277558560196864366244981049626035334426983136478665411640168730193699029577729E-47",
+          "log2": -155.18369810918375,
+          "numerator_bits": 40854,
+          "denominator_bits": 41009,
+          "ratio_sha256": "a097ad0bb88e65557ba3494fa7cffbcb1b334c7e191ee5b32657a71112417bb9"
+        },
+        "bit0_upper": {
+          "decimal": "1.7673334685538062339137480616301177072494542489377900721518782330827446247218623E-37",
+          "log2": -122.08976523096499,
+          "numerator_bits": 40887,
+          "denominator_bits": 41009,
+          "ratio_sha256": "7f2644ad6cdd9bba65f113de87f9fd8dd8c1d4c862dc78e357f44a9eb12f629d"
+        },
+        "bit1_lower": {
+          "decimal": "2.1808197568055545786661737158022974703146998024822126303697086610342376279731959E-47",
+          "log2": -155.00574992251495,
+          "numerator_bits": 40855,
+          "denominator_bits": 41010,
+          "ratio_sha256": "26838bdd78204ce2cb20b9dcbe46f27863ea91756030635e13349dab8a746c80"
+        },
+        "bit1_upper": {
+          "decimal": "1.9712830151132409824695669157925831503106652370524647778199755472417195428723911E-37",
+          "log2": -121.93220459330769,
+          "numerator_bits": 40887,
+          "denominator_bits": 41009,
+          "ratio_sha256": "4be68f2bdab1b65a5e67ccfa245413eb8effeed2d88041da2bb87f52458dbfc2"
+        },
+        "message_lower_uniform_bits": {
+          "decimal": "2.0542878064126205076453359103824505018786990580650395857668627670268037654654844E-47",
+          "log2": -155.09198214182834,
+          "numerator_bits": 40856,
+          "denominator_bits": 41011,
+          "ratio_sha256": "dc41484c384715999ee08f489066180798244d0302ab8bcc2946d8b378739400"
+        },
+        "message_lower_any_fixed_message": {
+          "decimal": "1.9277558560196864366244981049626035334426983136478665411640168730193699029577729E-47",
+          "log2": -155.18369810918375,
+          "numerator_bits": 40854,
+          "denominator_bits": 41009,
+          "ratio_sha256": "a097ad0bb88e65557ba3494fa7cffbcb1b334c7e191ee5b32657a71112417bb9"
+        },
+        "message_union_upper_uniform_bits": {
+          "decimal": "4.7854290990938204369706431711010570976769529420675262079639728388153141345206443E-35",
+          "log2": -114.00883502719807,
+          "numerator_bits": 40887,
+          "denominator_bits": 41001,
+          "ratio_sha256": "cdf475cf7e6ef06d9bc43305605bdfa4e80b833c77810a9176ef5625d305210d"
+        },
+        "message_union_upper_any_message": {
+          "decimal": "5.0464845186898969151220913044290128647953030068543098312191374009388020297533212E-35",
+          "log2": -113.93220459330769,
+          "numerator_bits": 40887,
+          "denominator_bits": 41001,
+          "ratio_sha256": "90ffeec34376528827c2619f521cbcdbe40fbec715ae316a4d72f3d38d842d39"
+        },
+        "crosscheck_independent_marginals": "exact rational agreement"
+      }
+    },
+    {
+      "id": "p0-lossless-u",
+      "parameters": {
+        "n": 256,
+        "k": 6,
+        "q": 3329,
+        "eta1": 2,
+        "eta2": 2,
+        "du": 12,
+        "dv": 5
+      },
+      "independent_rounding_result": {
+        "parameters": {
+          "n": 256,
+          "k": 6,
+          "q": 3329,
+          "eta1": 2,
+          "eta2": 2,
+          "du": 12,
+          "dv": 5
+        },
+        "rounding": "FIPS integer half-up",
+        "arithmetic": "exact integer distributions, no truncation, no FFT",
+        "model": "independent CBD variables; independent uniform pre-compression coefficients",
+        "coefficient_mean": "52/3329",
+        "coefficient_variance": "44052364673/11082241",
+        "coefficient_standard_deviation": 63.04792787947979,
+        "rounding_u_counts": {
+          "0": 1
+        },
+        "rounding_u_denominator": 1,
+        "bit0_failure": {
+          "decimal": "9.9119491620779126526810854747216264482537923032712931741240387110149161876260265E-46",
+          "log2": -149.4995235768365,
+          "numerator_bits": 21366,
+          "denominator_bits": 21515,
+          "ratio_sha256": "a5ebc105db0d62e149c5d3a5fe76d366d48de06dbcfd4bd64fbc511910dfaf35"
+        },
+        "bit1_failure": {
+          "decimal": "1.1313475464070831784989033947689176446338013248280263796231578554462476434718533E-45",
+          "log2": -149.30872208113578,
+          "numerator_bits": 21366,
+          "denominator_bits": 21515,
+          "ratio_sha256": "d25396e529cf033998c32aa73e711be2947e1eae374bcb4531752fabf230b6ad"
+        },
+        "message_lower_bound_single_coefficient": {
+          "decimal": "1.0612712313074372218835059711205401447295902775775778485177808632738696311172280E-45",
+          "log2": -149.400970853967,
+          "numerator_bits": 21366,
+          "denominator_bits": 21515,
+          "ratio_sha256": "56e385460ee4fedd0f94ef69fca2075ac526b3bb3004a157ce15f5c110f4de14"
+        },
+        "message_union_bound_uniform_bits": {
+          "decimal": "2.7168543521470392880217752860685827705077511105985992922055190099811062556601037E-43",
+          "log2": -141.400970853967,
+          "numerator_bits": 21366,
+          "denominator_bits": 21507,
+          "ratio_sha256": "f8813294538c6c175fa536937a6559246609a66d7cd815f6e05e5e43124444d8"
+        },
+        "message_union_bound_worst_bit": {
+          "decimal": "2.8962497188021329369571926906084291702625313915597475318352841099423939672879446E-43",
+          "log2": -141.30872208113578,
+          "numerator_bits": 21366,
+          "denominator_bits": 21507,
+          "ratio_sha256": "ba5da4d0a83b190dd855b6f84496a173b3b1b52fe8780971d91d545c6b3566b6"
+        },
+        "historical_two_sided_union": {
+          "decimal": "2.5374589854919456390863578815287363707529708296374510525757539100198185440322628E-43",
+          "log2": -141.4995235768365,
+          "numerator_bits": 21365,
+          "denominator_bits": 21506,
+          "ratio_sha256": "8398ec2d3ff7e327065bff285383bd7050a5564b3f1cd859db098c3fbb1c1be4"
+        },
+        "integer_mass_check": "passed",
+        "second_moment_check": "passed",
+        "coefficient_support": [
+          -12342,
+          12342
+        ],
+        "elapsed_seconds": 0.4334926000155974
+      },
+      "variance_decomposition": {
+        "terms": {
+          "e_times_y": {
+            "exact": "1536",
+            "decimal": 1536.0,
+            "percent_of_variance": 38.641108831174954
+          },
+          "s_times_e1": {
+            "exact": "1536",
+            "decimal": 1536.0,
+            "percent_of_variance": 38.641108831174954
+          },
+          "s_times_rounding_u": {
+            "exact": "0",
+            "decimal": 0.0,
+            "percent_of_variance": 0.0
+          },
+          "e2": {
+            "exact": "1",
+            "decimal": 1.0,
+            "percent_of_variance": 0.025156971895296195
+          },
+          "rounding_v": {
+            "exact": "9996638080/11082241",
+            "decimal": 902.0412098960851,
+            "percent_of_variance": 22.69262536575479
+          }
+        },
+        "intrinsic_variance": "3073",
+        "total_variance": "44052364673/11082241",
+        "standard_deviation": 63.04792787947979,
+        "rounding_u_mean": "0",
+        "rounding_u_second_moment": "0",
+        "interpretation": "variance shares do not measure contributions to rare-event tails"
+      },
+      "arbitrary_bounded_v": {
+        "error_range": [
+          -52,
+          52
+        ],
+        "remaining_assumptions": "independent CBD; independent uniform pre-compression u",
+        "removed_assumption": "no independence or uniformity needed for rounding_v",
+        "bit0_lower": {
+          "decimal": "3.5776567337076131822314177256287580144432011269199803110156215714552668226786893E-56",
+          "log2": -184.18895834227078,
+          "numerator_bits": 21319,
+          "denominator_bits": 21504,
+          "ratio_sha256": "1742dbef36a08b3dc66f3c02bc692d5e2767be08e1e1c6b028e6ed98510cc13e"
+        },
+        "bit0_upper": {
+          "decimal": "2.5381884192074028650641742865703937708825853027336877083602966438685681732875149E-44",
+          "log2": -144.8210370052475,
+          "numerator_bits": 21359,
+          "denominator_bits": 21504,
+          "ratio_sha256": "131e05fb01293d2de14f09f955653cedba0af37e8daf3a5210fb9b612f0d582a"
+        },
+        "bit1_lower": {
+          "decimal": "4.1493480895050409905274202097074007061085362376584565446329630716722610869579781E-56",
+          "log2": -183.97508862347604,
+          "numerator_bits": 21320,
+          "denominator_bits": 21504,
+          "ratio_sha256": "8e859e021a5114f63363709e99e283db4420dc1f834bcf76e72f67ae6f41f82f"
+        },
+        "bit1_upper": {
+          "decimal": "2.8938234713304747264134035063240336429683305278458856645954607845265868357731662E-44",
+          "log2": -144.631859257599,
+          "numerator_bits": 21359,
+          "denominator_bits": 21504,
+          "ratio_sha256": "1f176e388e9417fe763e7da543b6d8c7429fc9e112e7485568058e9445f9a0b9"
+        },
+        "message_lower_uniform_bits": {
+          "decimal": "3.8635024116063270863794189676680793602758686822892184278242923215637639548183337E-56",
+          "log2": -184.0780640152043,
+          "numerator_bits": 21319,
+          "denominator_bits": 21504,
+          "ratio_sha256": "741b019a0f89da6e0296f4f302bc53a07527f6f6d4b7238e27d664f64b4df070"
+        },
+        "message_lower_any_fixed_message": {
+          "decimal": "3.5776567337076131822314177256287580144432011269199803110156215714552668226786893E-56",
+          "log2": -184.18895834227078,
+          "numerator_bits": 21319,
+          "denominator_bits": 21504,
+          "ratio_sha256": "1742dbef36a08b3dc66f3c02bc692d5e2767be08e1e1c6b028e6ed98510cc13e"
+        },
+        "message_union_upper_uniform_bits": {
+          "decimal": "6.9529752198884833170912995749048670897291722631418539173833695083457984115976719E-42",
+          "log2": -136.72334953743484,
+          "numerator_bits": 21359,
+          "denominator_bits": 21496,
+          "ratio_sha256": "f91df17d2d9f98b18862246ad522a9b9123e9b025442096263bea316fc4cebc5"
+        },
+        "message_union_upper_any_message": {
+          "decimal": "7.4081880866060152996183129761895261259989261512854673013643796083880622995793055E-42",
+          "log2": -136.631859257599,
+          "numerator_bits": 21359,
+          "denominator_bits": 21496,
+          "ratio_sha256": "93dfa779f69dba69665158f505f0437c1f80dc3d2ff1efb08a1be67fd4c93c82"
+        },
+        "crosscheck_independent_marginals": "exact rational agreement"
+      }
+    },
+    {
+      "id": "p0-lossless-v",
+      "parameters": {
+        "n": 256,
+        "k": 6,
+        "q": 3329,
+        "eta1": 2,
+        "eta2": 2,
+        "du": 11,
+        "dv": 12
+      },
+      "independent_rounding_result": {
+        "parameters": {
+          "n": 256,
+          "k": 6,
+          "q": 3329,
+          "eta1": 2,
+          "eta2": 2,
+          "du": 11,
+          "dv": 12
+        },
+        "rounding": "FIPS integer half-up",
+        "arithmetic": "exact integer distributions, no truncation, no FFT",
+        "model": "independent CBD variables; independent uniform pre-compression coefficients",
+        "coefficient_mean": "0",
+        "coefficient_variance": "12197633/3329",
+        "coefficient_standard_deviation": 60.53142298938507,
+        "rounding_u_counts": {
+          "-1": 640,
+          "0": 2048,
+          "1": 641
+        },
+        "rounding_u_denominator": 3329,
+        "bit0_failure": {
+          "decimal": "2.5701777910790771338658923856690869494923461409515894914622569243840693887000512E-42",
+          "log2": -138.15911182451237,
+          "numerator_bits": 40869,
+          "denominator_bits": 41007,
+          "ratio_sha256": "b87acf608761b07634b8ae138d8b416a1a013a9aebfbd2b818da174787162f21"
+        },
+        "bit1_failure": {
+          "decimal": "2.8871578514203540327302657532845141931778425873862462384062219692245218351733835E-42",
+          "log2": -137.9913299981563,
+          "numerator_bits": 40874,
+          "denominator_bits": 41012,
+          "ratio_sha256": "5fcbbbf71499794a3b92c389c90b3bdd55500faa4a5ebd13476da1a4894685b0"
+        },
+        "message_lower_bound_single_coefficient": {
+          "decimal": "2.7286678212497155832980790694768005713350943641689178649342394468042956119367174E-42",
+          "log2": -138.07278320875776,
+          "numerator_bits": 40875,
+          "denominator_bits": 41013,
+          "ratio_sha256": "0d7b20530f116056b7a6396e75def272baed43b51fd59eaed3fb7cd3d3ded51d"
+        },
+        "message_union_bound_uniform_bits": {
+          "decimal": "6.9853896223992718932430824178606094626178415722724297342316529838189967665579964E-40",
+          "log2": -130.07278320875776,
+          "numerator_bits": 40875,
+          "denominator_bits": 41005,
+          "ratio_sha256": "10914afdd88f5e095d2be335517ec78dd16d28b65355a82b20e51de6390a0313"
+        },
+        "message_union_bound_worst_bit": {
+          "decimal": "7.3911240996361063237894803284083563345352770237087903703199282412147758980438619E-40",
+          "log2": -129.9913299981563,
+          "numerator_bits": 40874,
+          "denominator_bits": 41004,
+          "ratio_sha256": "a9d00d829eee5a715214aa163868abc749cd2a94d047ee50e3d2981fab0110d7"
+        },
+        "historical_two_sided_union": {
+          "decimal": "6.5796551451624374626966845073128625907004061208360690981433777264232176350721310E-40",
+          "log2": -130.15911182451237,
+          "numerator_bits": 40871,
+          "denominator_bits": 41001,
+          "ratio_sha256": "e602981d33a4b15d35d6a7b1ddbd52a8dd1faccce237447382918b8123520c71"
+        },
+        "integer_mass_check": "passed",
+        "second_moment_check": "passed",
+        "coefficient_support": [
+          -15362,
+          15362
+        ],
+        "elapsed_seconds": 1.426573400007328
+      },
+      "variance_decomposition": {
+        "terms": {
+          "e_times_y": {
+            "exact": "1536",
+            "decimal": 1536.0,
+            "percent_of_variance": 41.920789058008225
+          },
+          "s_times_e1": {
+            "exact": "1536",
+            "decimal": 1536.0,
+            "percent_of_variance": 41.920789058008225
+          },
+          "s_times_rounding_u": {
+            "exact": "1967616/3329",
+            "decimal": 591.0531691198559,
+            "percent_of_variance": 16.13112970360725
+          },
+          "e2": {
+            "exact": "1",
+            "decimal": 1.0,
+            "percent_of_variance": 0.027292180376307436
+          },
+          "rounding_v": {
+            "exact": "0",
+            "decimal": 0.0,
+            "percent_of_variance": 0.0
+          }
+        },
+        "intrinsic_variance": "3073",
+        "total_variance": "12197633/3329",
+        "standard_deviation": 60.53142298938507,
+        "rounding_u_mean": "1/3329",
+        "rounding_u_second_moment": "1281/3329",
+        "interpretation": "variance shares do not measure contributions to rare-event tails"
+      },
+      "arbitrary_bounded_v": {
+        "error_range": [
+          0,
+          0
+        ],
+        "remaining_assumptions": "independent CBD; independent uniform pre-compression u",
+        "removed_assumption": "no independence or uniformity needed for rounding_v",
+        "bit0_lower": {
+          "decimal": "2.5701777910790771338658923856690869494923461409515894914622569243840693887000512E-42",
+          "log2": -138.15911182451237,
+          "numerator_bits": 40869,
+          "denominator_bits": 41007,
+          "ratio_sha256": "b87acf608761b07634b8ae138d8b416a1a013a9aebfbd2b818da174787162f21"
+        },
+        "bit0_upper": {
+          "decimal": "2.5701777910790771338658923856690869494923461409515894914622569243840693887000512E-42",
+          "log2": -138.15911182451237,
+          "numerator_bits": 40869,
+          "denominator_bits": 41007,
+          "ratio_sha256": "b87acf608761b07634b8ae138d8b416a1a013a9aebfbd2b818da174787162f21"
+        },
+        "bit1_lower": {
+          "decimal": "2.8871578514203540327302657532845141931778425873862462384062219692245218351733835E-42",
+          "log2": -137.9913299981563,
+          "numerator_bits": 40874,
+          "denominator_bits": 41012,
+          "ratio_sha256": "5fcbbbf71499794a3b92c389c90b3bdd55500faa4a5ebd13476da1a4894685b0"
+        },
+        "bit1_upper": {
+          "decimal": "2.8871578514203540327302657532845141931778425873862462384062219692245218351733835E-42",
+          "log2": -137.9913299981563,
+          "numerator_bits": 40874,
+          "denominator_bits": 41012,
+          "ratio_sha256": "5fcbbbf71499794a3b92c389c90b3bdd55500faa4a5ebd13476da1a4894685b0"
+        },
+        "message_lower_uniform_bits": {
+          "decimal": "2.7286678212497155832980790694768005713350943641689178649342394468042956119367174E-42",
+          "log2": -138.07278320875776,
+          "numerator_bits": 40875,
+          "denominator_bits": 41013,
+          "ratio_sha256": "0d7b20530f116056b7a6396e75def272baed43b51fd59eaed3fb7cd3d3ded51d"
+        },
+        "message_lower_any_fixed_message": {
+          "decimal": "2.5701777910790771338658923856690869494923461409515894914622569243840693887000512E-42",
+          "log2": -138.15911182451237,
+          "numerator_bits": 40869,
+          "denominator_bits": 41007,
+          "ratio_sha256": "b87acf608761b07634b8ae138d8b416a1a013a9aebfbd2b818da174787162f21"
+        },
+        "message_union_upper_uniform_bits": {
+          "decimal": "6.9853896223992718932430824178606094626178415722724297342316529838189967665579964E-40",
+          "log2": -130.07278320875776,
+          "numerator_bits": 40875,
+          "denominator_bits": 41005,
+          "ratio_sha256": "10914afdd88f5e095d2be335517ec78dd16d28b65355a82b20e51de6390a0313"
+        },
+        "message_union_upper_any_message": {
+          "decimal": "7.3911240996361063237894803284083563345352770237087903703199282412147758980438619E-40",
+          "log2": -129.9913299981563,
+          "numerator_bits": 40874,
+          "denominator_bits": 41004,
+          "ratio_sha256": "a9d00d829eee5a715214aa163868abc749cd2a94d047ee50e3d2981fab0110d7"
+        },
+        "crosscheck_independent_marginals": "exact rational agreement"
+      }
+    },
+    {
+      "id": "p0-lossless-both",
+      "parameters": {
+        "n": 256,
+        "k": 6,
+        "q": 3329,
+        "eta1": 2,
+        "eta2": 2,
+        "du": 12,
+        "dv": 12
+      },
+      "independent_rounding_result": {
+        "parameters": {
+          "n": 256,
+          "k": 6,
+          "q": 3329,
+          "eta1": 2,
+          "eta2": 2,
+          "du": 12,
+          "dv": 12
+        },
+        "rounding": "FIPS integer half-up",
+        "arithmetic": "exact integer distributions, no truncation, no FFT",
+        "model": "independent CBD variables; independent uniform pre-compression coefficients",
+        "coefficient_mean": "0",
+        "coefficient_variance": "3073",
+        "coefficient_standard_deviation": 55.4346462061408,
+        "rounding_u_counts": {
+          "0": 1
+        },
+        "rounding_u_denominator": 1,
+        "bit0_failure": {
+          "decimal": "4.4670623575609146963924334136794225109509751040900834924058715895503518720177246E-50",
+          "log2": -163.93707835041278,
+          "numerator_bits": 21340,
+          "denominator_bits": 21504,
+          "ratio_sha256": "485eda1f20c4ae6bf7b9fa6f58320892b6f1286c9bd810b8d8658e50b99f77f0"
+        },
+        "bit1_failure": {
+          "decimal": "5.1368348491642935547904419364745841799191668812835818780890346870829423372976894E-50",
+          "log2": -163.73552505303087,
+          "numerator_bits": 21340,
+          "denominator_bits": 21504,
+          "ratio_sha256": "247aad4162b972dcbfd63e70ed22138ef73403fb131d7c361aabc68e4f181098"
+        },
+        "message_lower_bound_single_coefficient": {
+          "decimal": "4.8019486033626041255914376750770033454350709926868326852474531383166471046577070E-50",
+          "log2": -163.8327847822984,
+          "numerator_bits": 21340,
+          "denominator_bits": 21504,
+          "ratio_sha256": "1d485559f949a5fbf70f42bb4c27cc2e6f560cc971e47e0cb37afd05a3257250"
+        },
+        "message_union_bound_uniform_bits": {
+          "decimal": "1.2292988424608266561514080448197128564313781741278291674233480034090616587923730E-47",
+          "log2": -155.8327847822984,
+          "numerator_bits": 21340,
+          "denominator_bits": 21496,
+          "ratio_sha256": "69d0f240f8895b531c3fd5ba1102fef68951953b31f7e3e059e5001db7d740be"
+        },
+        "message_union_bound_worst_bit": {
+          "decimal": "1.3150297213860591500263531357374935500593067216085969607907928798932332383482085E-47",
+          "log2": -155.73552505303087,
+          "numerator_bits": 21340,
+          "denominator_bits": 21496,
+          "ratio_sha256": "819e7b42b5bff29603ae60aca31892847692b5b16bd381ad7a24ecc64256558a"
+        },
+        "historical_two_sided_union": {
+          "decimal": "1.1435679635355941622764629539019321628034496266470613740559031269248900792365375E-47",
+          "log2": -155.93707835041278,
+          "numerator_bits": 21339,
+          "denominator_bits": 21495,
+          "ratio_sha256": "ff472e857e554a6e1a4720a55b9b56de56541bb949253bb7a347738a83ee73dc"
+        },
+        "integer_mass_check": "passed",
+        "second_moment_check": "passed",
+        "coefficient_support": [
+          -12290,
+          12290
+        ],
+        "elapsed_seconds": 0.42122280001058243
+      },
+      "variance_decomposition": {
+        "terms": {
+          "e_times_y": {
+            "exact": "1536",
+            "decimal": 1536.0,
+            "percent_of_variance": 49.98372925479987
+          },
+          "s_times_e1": {
+            "exact": "1536",
+            "decimal": 1536.0,
+            "percent_of_variance": 49.98372925479987
+          },
+          "s_times_rounding_u": {
+            "exact": "0",
+            "decimal": 0.0,
+            "percent_of_variance": 0.0
+          },
+          "e2": {
+            "exact": "1",
+            "decimal": 1.0,
+            "percent_of_variance": 0.03254149040026033
+          },
+          "rounding_v": {
+            "exact": "0",
+            "decimal": 0.0,
+            "percent_of_variance": 0.0
+          }
+        },
+        "intrinsic_variance": "3073",
+        "total_variance": "3073",
+        "standard_deviation": 55.4346462061408,
+        "rounding_u_mean": "0",
+        "rounding_u_second_moment": "0",
+        "interpretation": "variance shares do not measure contributions to rare-event tails"
+      },
+      "arbitrary_bounded_v": {
+        "error_range": [
+          0,
+          0
+        ],
+        "remaining_assumptions": "independent CBD; independent uniform pre-compression u",
+        "removed_assumption": "no independence or uniformity needed for rounding_v",
+        "bit0_lower": {
+          "decimal": "4.4670623575609146963924334136794225109509751040900834924058715895503518720177246E-50",
+          "log2": -163.93707835041278,
+          "numerator_bits": 21340,
+          "denominator_bits": 21504,
+          "ratio_sha256": "485eda1f20c4ae6bf7b9fa6f58320892b6f1286c9bd810b8d8658e50b99f77f0"
+        },
+        "bit0_upper": {
+          "decimal": "4.4670623575609146963924334136794225109509751040900834924058715895503518720177246E-50",
+          "log2": -163.93707835041278,
+          "numerator_bits": 21340,
+          "denominator_bits": 21504,
+          "ratio_sha256": "485eda1f20c4ae6bf7b9fa6f58320892b6f1286c9bd810b8d8658e50b99f77f0"
+        },
+        "bit1_lower": {
+          "decimal": "5.1368348491642935547904419364745841799191668812835818780890346870829423372976894E-50",
+          "log2": -163.73552505303087,
+          "numerator_bits": 21340,
+          "denominator_bits": 21504,
+          "ratio_sha256": "247aad4162b972dcbfd63e70ed22138ef73403fb131d7c361aabc68e4f181098"
+        },
+        "bit1_upper": {
+          "decimal": "5.1368348491642935547904419364745841799191668812835818780890346870829423372976894E-50",
+          "log2": -163.73552505303087,
+          "numerator_bits": 21340,
+          "denominator_bits": 21504,
+          "ratio_sha256": "247aad4162b972dcbfd63e70ed22138ef73403fb131d7c361aabc68e4f181098"
+        },
+        "message_lower_uniform_bits": {
+          "decimal": "4.8019486033626041255914376750770033454350709926868326852474531383166471046577070E-50",
+          "log2": -163.8327847822984,
+          "numerator_bits": 21340,
+          "denominator_bits": 21504,
+          "ratio_sha256": "1d485559f949a5fbf70f42bb4c27cc2e6f560cc971e47e0cb37afd05a3257250"
+        },
+        "message_lower_any_fixed_message": {
+          "decimal": "4.4670623575609146963924334136794225109509751040900834924058715895503518720177246E-50",
+          "log2": -163.93707835041278,
+          "numerator_bits": 21340,
+          "denominator_bits": 21504,
+          "ratio_sha256": "485eda1f20c4ae6bf7b9fa6f58320892b6f1286c9bd810b8d8658e50b99f77f0"
+        },
+        "message_union_upper_uniform_bits": {
+          "decimal": "1.2292988424608266561514080448197128564313781741278291674233480034090616587923730E-47",
+          "log2": -155.8327847822984,
+          "numerator_bits": 21340,
+          "denominator_bits": 21496,
+          "ratio_sha256": "69d0f240f8895b531c3fd5ba1102fef68951953b31f7e3e059e5001db7d740be"
+        },
+        "message_union_upper_any_message": {
+          "decimal": "1.3150297213860591500263531357374935500593067216085969607907928798932332383482085E-47",
+          "log2": -155.73552505303087,
+          "numerator_bits": 21340,
+          "denominator_bits": 21496,
+          "ratio_sha256": "819e7b42b5bff29603ae60aca31892847692b5b16bd381ad7a24ecc64256558a"
+        },
+        "crosscheck_independent_marginals": "exact rational agreement"
+      }
+    }
+  ],
+  "selection": "none; feasibility remains open",
+  "limitations": [
+    "CBD and uniform independent u marginals remain assumptions",
+    "bounded-v result is not a proof for the implemented KEM",
+    "no independence of output coefficients required by union bound",
+    "no malicious ciphertexts, weak-key tail or new attack estimates"
+  ]
+}

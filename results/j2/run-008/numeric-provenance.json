@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-10-24T16:43:04.245366+00:00",
+  "input_sha256": {
+    "research/verify_coded_dual_numeric.py": "ba22779942458ec5cb206b793fcc8b678b7a0a49c4bf1bdcae02179ab09b7518",
+    "research/run_coded_dual.py": "69e376e07151a9594ee70e9392efc466ddc8e08ef4dae4b1f635cb349ca5a124",
+    "references/coded-dual-audit/utilitaries.py.txt": "e115cc99e0c688ac6cb4fed847be1678e013c3a48b3028ed86a19f8ef425c49d",
+    "results/j2/run-008/study.json": "84ee4419cde7be0214adb82d4fe3a159318bf7a960129c1d332cd5af3fafa545"
+  },
+  "output_sha256": {
+    "numeric-verification.json": "eea25d4e23928bc5d015e6aa436358939fcbf6b3288d0cd26d88a99813039c72"
+  }
+}

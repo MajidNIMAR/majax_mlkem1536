@@ -1,0 +1,308 @@
+{
+  "scope": "historical primal/dual Core-SVP heuristic; not total KEM security",
+  "source": "pq-crystals/security-estimates@75c26949a902ca297b181375bfb7cfaf22cce784",
+  "scalar_acceleration_validation": {
+    "cases": 180,
+    "max_relative_error": 4.289901767151605e-13,
+    "tolerance": 1e-10,
+    "upstream_sample_step": 1
+  },
+  "cost_log2_per_beta": {
+    "classical": 0.292481250360578,
+    "quantum": 0.2652573583493899,
+    "optimistic_quantum": 0.20751874963942182
+  },
+  "missing": [
+    "modern primal and dual hybrid attacks",
+    "algebraic/module-specific attacks",
+    "failure-oracle attacks",
+    "complete CCA reduction and symmetric limits",
+    "side channels and implementation analysis"
+  ],
+  "results": [
+    {
+      "id": "baseline-1024",
+      "parameters": {
+        "n": 256,
+        "k": 4,
+        "q": 3329,
+        "eta1": 2,
+        "eta2": 2,
+        "du": 11,
+        "dv": 5
+      },
+      "lwe_dimension": 1024,
+      "max_samples": 1280,
+      "sigma": 1.0,
+      "attacks": [
+        {
+          "family": "primal",
+          "cost_model": "classical",
+          "samples": 860,
+          "beta": 878,
+          "log2_core_svp_cost": 256.7985378165875,
+          "original_cost_recheck": 256.7985378165875,
+          "elapsed_seconds": 2.080786699996679
+        },
+        {
+          "family": "primal",
+          "cost_model": "quantum",
+          "samples": 860,
+          "beta": 878,
+          "log2_core_svp_cost": 232.8959606307644,
+          "original_cost_recheck": 232.8959606307644,
+          "elapsed_seconds": 0.008965899993199855
+        },
+        {
+          "family": "primal",
+          "cost_model": "optimistic_quantum",
+          "samples": 860,
+          "beta": 878,
+          "log2_core_svp_cost": 182.20146218341236,
+          "original_cost_recheck": 182.20146218341236,
+          "elapsed_seconds": 0.00847690000955481
+        },
+        {
+          "family": "dual",
+          "cost_model": "classical",
+          "samples": 838,
+          "beta": 868,
+          "log2_core_svp_cost": 253.8737253129817,
+          "original_cost_recheck": 253.8737253129817,
+          "elapsed_seconds": 0.1555852000019513
+        },
+        {
+          "family": "dual",
+          "cost_model": "quantum",
+          "samples": 838,
+          "beta": 868,
+          "log2_core_svp_cost": 230.24338704727046,
+          "original_cost_recheck": 230.24338704727046,
+          "elapsed_seconds": 0.06885389999661129
+        },
+        {
+          "family": "dual",
+          "cost_model": "optimistic_quantum",
+          "samples": 838,
+          "beta": 868,
+          "log2_core_svp_cost": 180.12627468701814,
+          "original_cost_recheck": 180.12627468701814,
+          "elapsed_seconds": 0.0700933000043733
+        }
+      ]
+    },
+    {
+      "id": "p0-1536",
+      "parameters": {
+        "n": 256,
+        "k": 6,
+        "q": 3329,
+        "eta1": 2,
+        "eta2": 2,
+        "du": 11,
+        "dv": 5
+      },
+      "lwe_dimension": 1536,
+      "max_samples": 1792,
+      "sigma": 1.0,
+      "attacks": [
+        {
+          "family": "primal",
+          "cost_model": "classical",
+          "samples": 1224,
+          "beta": 1401,
+          "log2_core_svp_cost": 409.76623175516977,
+          "original_cost_recheck": 409.76623175516977,
+          "elapsed_seconds": 4.687763299996732
+        },
+        {
+          "family": "primal",
+          "cost_model": "quantum",
+          "samples": 1224,
+          "beta": 1401,
+          "log2_core_svp_cost": 371.6255590474953,
+          "original_cost_recheck": 371.6255590474953,
+          "elapsed_seconds": 0.013699400005862117
+        },
+        {
+          "family": "primal",
+          "cost_model": "optimistic_quantum",
+          "samples": 1224,
+          "beta": 1401,
+          "log2_core_svp_cost": 290.73376824483,
+          "original_cost_recheck": 290.73376824483,
+          "elapsed_seconds": 0.013693199987756088
+        },
+        {
+          "family": "dual",
+          "cost_model": "classical",
+          "samples": 1256,
+          "beta": 1378,
+          "log2_core_svp_cost": 403.2288910876696,
+          "original_cost_recheck": 403.2288910877042,
+          "elapsed_seconds": 0.19498830000520684
+        },
+        {
+          "family": "dual",
+          "cost_model": "quantum",
+          "samples": 1256,
+          "beta": 1378,
+          "log2_core_svp_cost": 365.7143678962525,
+          "original_cost_recheck": 365.7143678962871,
+          "elapsed_seconds": 0.09002849999524187
+        },
+        {
+          "family": "dual",
+          "cost_model": "optimistic_quantum",
+          "samples": 1256,
+          "beta": 1378,
+          "log2_core_svp_cost": 286.1505650939164,
+          "original_cost_recheck": 286.150565093951,
+          "elapsed_seconds": 0.09597490000305697
+        }
+      ]
+    },
+    {
+      "id": "q7681-eta2",
+      "parameters": {
+        "n": 256,
+        "k": 6,
+        "q": 7681,
+        "eta1": 2,
+        "eta2": 2,
+        "du": 11,
+        "dv": 5
+      },
+      "lwe_dimension": 1536,
+      "max_samples": 1792,
+      "sigma": 1.0,
+      "attacks": [
+        {
+          "family": "primal",
+          "cost_model": "classical",
+          "samples": 1283,
+          "beta": 1273,
+          "log2_core_svp_cost": 372.3286317090157,
+          "original_cost_recheck": 372.3286317090157,
+          "elapsed_seconds": 3.0753853999922285
+        },
+        {
+          "family": "primal",
+          "cost_model": "quantum",
+          "samples": 1283,
+          "beta": 1273,
+          "log2_core_svp_cost": 337.6726171787734,
+          "original_cost_recheck": 337.6726171787734,
+          "elapsed_seconds": 0.00941709999460727
+        },
+        {
+          "family": "primal",
+          "cost_model": "optimistic_quantum",
+          "samples": 1283,
+          "beta": 1273,
+          "log2_core_svp_cost": 264.171368290984,
+          "original_cost_recheck": 264.171368290984,
+          "elapsed_seconds": 0.008819700000458397
+        },
+        {
+          "family": "dual",
+          "cost_model": "classical",
+          "samples": 1294,
+          "beta": 1256,
+          "log2_core_svp_cost": 367.5019920970932,
+          "original_cost_recheck": 367.50199209710433,
+          "elapsed_seconds": 0.22884169999451842
+        },
+        {
+          "family": "dual",
+          "cost_model": "quantum",
+          "samples": 1294,
+          "beta": 1256,
+          "log2_core_svp_cost": 333.308783731041,
+          "original_cost_recheck": 333.30878373105213,
+          "elapsed_seconds": 0.09774850000394508
+        },
+        {
+          "family": "dual",
+          "cost_model": "optimistic_quantum",
+          "samples": 1294,
+          "beta": 1256,
+          "log2_core_svp_cost": 260.78909119132106,
+          "original_cost_recheck": 260.7890911913322,
+          "elapsed_seconds": 0.09532279999984894
+        }
+      ]
+    },
+    {
+      "id": "q7681-eta3",
+      "parameters": {
+        "n": 256,
+        "k": 6,
+        "q": 7681,
+        "eta1": 3,
+        "eta2": 3,
+        "du": 11,
+        "dv": 5
+      },
+      "lwe_dimension": 1536,
+      "max_samples": 1792,
+      "sigma": 1.224744871391589,
+      "attacks": [
+        {
+          "family": "primal",
+          "cost_model": "classical",
+          "samples": 1296,
+          "beta": 1333,
+          "log2_core_svp_cost": 389.8775067306505,
+          "original_cost_recheck": 389.8775067306505,
+          "elapsed_seconds": 2.080791300002602
+        },
+        {
+          "family": "primal",
+          "cost_model": "quantum",
+          "samples": 1296,
+          "beta": 1333,
+          "log2_core_svp_cost": 353.5880586797368,
+          "original_cost_recheck": 353.5880586797368,
+          "elapsed_seconds": 0.012599499998032115
+        },
+        {
+          "family": "primal",
+          "cost_model": "optimistic_quantum",
+          "samples": 1296,
+          "beta": 1333,
+          "log2_core_svp_cost": 276.62249326934926,
+          "original_cost_recheck": 276.62249326934926,
+          "elapsed_seconds": 0.012647700001252815
+        },
+        {
+          "family": "dual",
+          "cost_model": "classical",
+          "samples": 1347,
+          "beta": 1318,
+          "log2_core_svp_cost": 385.6514052070287,
+          "original_cost_recheck": 385.65140520722707,
+          "elapsed_seconds": 0.15897039999254048
+        },
+        {
+          "family": "dual",
+          "cost_model": "quantum",
+          "samples": 1347,
+          "beta": 1318,
+          "log2_core_svp_cost": 349.77031553628285,
+          "original_cost_recheck": 349.77031553648123,
+          "elapsed_seconds": 0.08919759999844246
+        },
+        {
+          "family": "dual",
+          "cost_model": "optimistic_quantum",
+          "samples": 1347,
+          "beta": 1318,
+          "log2_core_svp_cost": 273.6708292565449,
+          "original_cost_recheck": 273.6708292567433,
+          "elapsed_seconds": 0.08898239998961799
+        }
+      ]
+    }
+  ]
+}

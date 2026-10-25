@@ -1,0 +1,2034 @@
+[
+  {
+    "experiment": "panel-0-repeated",
+    "index": 0,
+    "block_index": 0,
+    "q": 3329,
+    "values": [
+      1897,
+      2335,
+      1658,
+      3229,
+      186,
+      3284,
+      3250,
+      1545
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "euclidean_label": 2589,
+    "cbd_label": 2565,
+    "certificate": {
+      "integer_cost": 5226426598374,
+      "second_symbol_integer_gap": 9620253,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-0-repeated",
+    "index": 1,
+    "block_index": 2,
+    "q": 3329,
+    "values": [
+      3138,
+      915,
+      2967,
+      2260,
+      2799,
+      1889,
+      281
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "euclidean_label": 2987,
+    "cbd_label": 3023,
+    "certificate": {
+      "integer_cost": 4643209750523,
+      "second_symbol_integer_gap": 9465101,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-0-repeated",
+    "index": 2,
+    "block_index": 4,
+    "q": 3329,
+    "values": [
+      1435,
+      1644,
+      2390,
+      622,
+      694,
+      103,
+      2442
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "euclidean_label": 1333,
+    "cbd_label": 1327,
+    "certificate": {
+      "integer_cost": 5959159129513,
+      "second_symbol_integer_gap": 16345258,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-0-repeated",
+    "index": 3,
+    "block_index": 6,
+    "q": 3329,
+    "values": [
+      2681,
+      2789,
+      287,
+      1722,
+      1600,
+      791,
+      830
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "euclidean_label": 577,
+    "cbd_label": 549,
+    "certificate": {
+      "integer_cost": 6621714710766,
+      "second_symbol_integer_gap": 7356557,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-0-repeated",
+    "index": 4,
+    "block_index": 8,
+    "q": 3329,
+    "values": [
+      2885,
+      1854,
+      2734,
+      1398,
+      2733,
+      132,
+      1980
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "euclidean_label": 2435,
+    "cbd_label": 2429,
+    "certificate": {
+      "integer_cost": 3469732747211,
+      "second_symbol_integer_gap": 9989274,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-0-repeated",
+    "index": 5,
+    "block_index": 10,
+    "q": 3329,
+    "values": [
+      1201,
+      1164,
+      144,
+      2569,
+      163,
+      290,
+      2828
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "euclidean_label": 243,
+    "cbd_label": 251,
+    "certificate": {
+      "integer_cost": 3811099286927,
+      "second_symbol_integer_gap": 10964363,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-0-repeated",
+    "index": 6,
+    "block_index": 12,
+    "q": 3329,
+    "values": [
+      2003,
+      716,
+      167,
+      1256,
+      804,
+      1625,
+      2829
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "euclidean_label": 867,
+    "cbd_label": 802,
+    "certificate": {
+      "integer_cost": 5670502947019,
+      "second_symbol_integer_gap": 5753475,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-0-repeated",
+    "index": 7,
+    "block_index": 15,
+    "q": 3329,
+    "values": [
+      1232,
+      2341,
+      1133,
+      380,
+      435,
+      2436,
+      2116
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "euclidean_label": 1439,
+    "cbd_label": 1426,
+    "certificate": {
+      "integer_cost": 5231833081286,
+      "second_symbol_integer_gap": 12979637,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-0-radix",
+    "index": 0,
+    "block_index": 0,
+    "q": 3329,
+    "values": [
+      1897,
+      2335,
+      1658,
+      3229,
+      186,
+      3284,
+      3250,
+      1545
+    ],
+    "generator": [
+      1,
+      3,
+      9,
+      27,
+      81,
+      243,
+      729,
+      2187
+    ],
+    "euclidean_label": 1972,
+    "cbd_label": 1972,
+    "certificate": {
+      "integer_cost": 710224396182,
+      "second_symbol_integer_gap": 599553335681,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-0-radix",
+    "index": 1,
+    "block_index": 2,
+    "q": 3329,
+    "values": [
+      3138,
+      915,
+      2967,
+      2260,
+      2799,
+      1889,
+      281
+    ],
+    "generator": [
+      1,
+      3,
+      9,
+      27,
+      81,
+      243,
+      729
+    ],
+    "euclidean_label": 324,
+    "cbd_label": 324,
+    "certificate": {
+      "integer_cost": 598996901455,
+      "second_symbol_integer_gap": 27388792688,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-0-radix",
+    "index": 2,
+    "block_index": 4,
+    "q": 3329,
+    "values": [
+      1435,
+      1644,
+      2390,
+      622,
+      694,
+      103,
+      2442
+    ],
+    "generator": [
+      1,
+      3,
+      9,
+      27,
+      81,
+      243,
+      729
+    ],
+    "euclidean_label": 1739,
+    "cbd_label": 1739,
+    "certificate": {
+      "integer_cost": 515000948748,
+      "second_symbol_integer_gap": 325080951079,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-0-radix",
+    "index": 3,
+    "block_index": 6,
+    "q": 3329,
+    "values": [
+      2681,
+      2789,
+      287,
+      1722,
+      1600,
+      791,
+      830
+    ],
+    "generator": [
+      1,
+      3,
+      9,
+      27,
+      81,
+      243,
+      729
+    ],
+    "euclidean_label": 3019,
+    "cbd_label": 3019,
+    "certificate": {
+      "integer_cost": 749294439560,
+      "second_symbol_integer_gap": 60952412411,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-0-radix",
+    "index": 4,
+    "block_index": 8,
+    "q": 3329,
+    "values": [
+      2885,
+      1854,
+      2734,
+      1398,
+      2733,
+      132,
+      1980
+    ],
+    "generator": [
+      1,
+      3,
+      9,
+      27,
+      81,
+      243,
+      729
+    ],
+    "euclidean_label": 2907,
+    "cbd_label": 2907,
+    "certificate": {
+      "integer_cost": 704318901979,
+      "second_symbol_integer_gap": 16761391692,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-0-radix",
+    "index": 5,
+    "block_index": 10,
+    "q": 3329,
+    "values": [
+      1201,
+      1164,
+      144,
+      2569,
+      163,
+      290,
+      2828
+    ],
+    "generator": [
+      1,
+      3,
+      9,
+      27,
+      81,
+      243,
+      729
+    ],
+    "euclidean_label": 1438,
+    "cbd_label": 1438,
+    "certificate": {
+      "integer_cost": 720333281786,
+      "second_symbol_integer_gap": 74468273553,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-0-radix",
+    "index": 6,
+    "block_index": 12,
+    "q": 3329,
+    "values": [
+      2003,
+      716,
+      167,
+      1256,
+      804,
+      1625,
+      2829
+    ],
+    "generator": [
+      1,
+      3,
+      9,
+      27,
+      81,
+      243,
+      729
+    ],
+    "euclidean_label": 2269,
+    "cbd_label": 2269,
+    "certificate": {
+      "integer_cost": 716507171897,
+      "second_symbol_integer_gap": 79543473998,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-0-radix",
+    "index": 7,
+    "block_index": 15,
+    "q": 3329,
+    "values": [
+      1232,
+      2341,
+      1133,
+      380,
+      435,
+      2436,
+      2116
+    ],
+    "generator": [
+      1,
+      3,
+      9,
+      27,
+      81,
+      243,
+      729
+    ],
+    "euclidean_label": 871,
+    "cbd_label": 871,
+    "certificate": {
+      "integer_cost": 650586279383,
+      "second_symbol_integer_gap": 77546393073,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-1-repeated",
+    "index": 0,
+    "block_index": 0,
+    "q": 3329,
+    "values": [
+      101,
+      947,
+      3055,
+      3177,
+      1806,
+      1708,
+      2393
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "euclidean_label": 2359,
+    "cbd_label": 2273,
+    "certificate": {
+      "integer_cost": 6398469033621,
+      "second_symbol_integer_gap": 2662535,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-1-repeated",
+    "index": 1,
+    "block_index": 2,
+    "q": 3329,
+    "values": [
+      2529,
+      3088,
+      2544,
+      1209,
+      2851,
+      1222,
+      3315
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "euclidean_label": 2394,
+    "cbd_label": 2306,
+    "certificate": {
+      "integer_cost": 5184398858426,
+      "second_symbol_integer_gap": 9481939,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-1-repeated",
+    "index": 2,
+    "block_index": 4,
+    "q": 3329,
+    "values": [
+      2624,
+      911,
+      2837,
+      1163,
+      1454,
+      220,
+      1088
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "euclidean_label": 520,
+    "cbd_label": 448,
+    "certificate": {
+      "integer_cost": 5127785032121,
+      "second_symbol_integer_gap": 14199912,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-1-repeated",
+    "index": 3,
+    "block_index": 6,
+    "q": 3329,
+    "values": [
+      487,
+      3119,
+      730,
+      1404,
+      999,
+      224,
+      378
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "euclidean_label": 573,
+    "cbd_label": 579,
+    "certificate": {
+      "integer_cost": 1796855600422,
+      "second_symbol_integer_gap": 8340904,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-1-repeated",
+    "index": 4,
+    "block_index": 8,
+    "q": 3329,
+    "values": [
+      1376,
+      608,
+      2438,
+      1224,
+      1836,
+      2211,
+      479
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "euclidean_label": 1453,
+    "cbd_label": 1450,
+    "certificate": {
+      "integer_cost": 3841195829425,
+      "second_symbol_integer_gap": 284027,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-1-repeated",
+    "index": 5,
+    "block_index": 10,
+    "q": 3329,
+    "values": [
+      1034,
+      1635,
+      1209,
+      3062,
+      2001,
+      2689,
+      746
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "euclidean_label": 1768,
+    "cbd_label": 1836,
+    "certificate": {
+      "integer_cost": 5441921027833,
+      "second_symbol_integer_gap": 6007943,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-1-repeated",
+    "index": 6,
+    "block_index": 12,
+    "q": 3329,
+    "values": [
+      2961,
+      2065,
+      2135,
+      2025,
+      123,
+      976,
+      3315
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "euclidean_label": 2894,
+    "cbd_label": 2998,
+    "certificate": {
+      "integer_cost": 5658088622479,
+      "second_symbol_integer_gap": 15379096,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-1-repeated",
+    "index": 7,
+    "block_index": 15,
+    "q": 3329,
+    "values": [
+      1148,
+      235,
+      1026,
+      392,
+      1559,
+      2997
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "euclidean_label": 671,
+    "cbd_label": 655,
+    "certificate": {
+      "integer_cost": 2687729066379,
+      "second_symbol_integer_gap": 887541,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-1-radix",
+    "index": 0,
+    "block_index": 0,
+    "q": 3329,
+    "values": [
+      101,
+      947,
+      3055,
+      3177,
+      1806,
+      1708,
+      2393
+    ],
+    "generator": [
+      1,
+      3,
+      9,
+      27,
+      81,
+      243,
+      729
+    ],
+    "euclidean_label": 350,
+    "cbd_label": 350,
+    "certificate": {
+      "integer_cost": 310297261699,
+      "second_symbol_integer_gap": 266339225059,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-1-radix",
+    "index": 1,
+    "block_index": 2,
+    "q": 3329,
+    "values": [
+      2529,
+      3088,
+      2544,
+      1209,
+      2851,
+      1222,
+      3315
+    ],
+    "generator": [
+      1,
+      3,
+      9,
+      27,
+      81,
+      243,
+      729
+    ],
+    "euclidean_label": 2128,
+    "cbd_label": 2128,
+    "certificate": {
+      "integer_cost": 363723080301,
+      "second_symbol_integer_gap": 405405276060,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-1-radix",
+    "index": 2,
+    "block_index": 4,
+    "q": 3329,
+    "values": [
+      2624,
+      911,
+      2837,
+      1163,
+      1454,
+      220,
+      1088
+    ],
+    "generator": [
+      1,
+      3,
+      9,
+      27,
+      81,
+      243,
+      729
+    ],
+    "euclidean_label": 2522,
+    "cbd_label": 2522,
+    "certificate": {
+      "integer_cost": 235497967251,
+      "second_symbol_integer_gap": 399702976322,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-1-radix",
+    "index": 3,
+    "block_index": 6,
+    "q": 3329,
+    "values": [
+      487,
+      3119,
+      730,
+      1404,
+      999,
+      224,
+      378
+    ],
+    "generator": [
+      1,
+      3,
+      9,
+      27,
+      81,
+      243,
+      729
+    ],
+    "euclidean_label": 55,
+    "cbd_label": 55,
+    "certificate": {
+      "integer_cost": 488298577724,
+      "second_symbol_integer_gap": 203189981149,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-1-radix",
+    "index": 4,
+    "block_index": 8,
+    "q": 3329,
+    "values": [
+      1376,
+      608,
+      2438,
+      1224,
+      1836,
+      2211,
+      479
+    ],
+    "generator": [
+      1,
+      3,
+      9,
+      27,
+      81,
+      243,
+      729
+    ],
+    "euclidean_label": 1380,
+    "cbd_label": 1380,
+    "certificate": {
+      "integer_cost": 483876935809,
+      "second_symbol_integer_gap": 96440382734,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-1-radix",
+    "index": 5,
+    "block_index": 10,
+    "q": 3329,
+    "values": [
+      1034,
+      1635,
+      1209,
+      3062,
+      2001,
+      2689,
+      746
+    ],
+    "generator": [
+      1,
+      3,
+      9,
+      27,
+      81,
+      243,
+      729
+    ],
+    "euclidean_label": 476,
+    "cbd_label": 476,
+    "certificate": {
+      "integer_cost": 512324105270,
+      "second_symbol_integer_gap": 36924350244,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-1-radix",
+    "index": 6,
+    "block_index": 12,
+    "q": 3329,
+    "values": [
+      2961,
+      2065,
+      2135,
+      2025,
+      123,
+      976,
+      3315
+    ],
+    "generator": [
+      1,
+      3,
+      9,
+      27,
+      81,
+      243,
+      729
+    ],
+    "euclidean_label": 2799,
+    "cbd_label": 2799,
+    "certificate": {
+      "integer_cost": 377251746201,
+      "second_symbol_integer_gap": 403043333447,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-1-radix",
+    "index": 7,
+    "block_index": 15,
+    "q": 3329,
+    "values": [
+      1148,
+      235,
+      1026,
+      392,
+      1559,
+      2997
+    ],
+    "generator": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024
+    ],
+    "euclidean_label": 890,
+    "cbd_label": 890,
+    "certificate": {
+      "integer_cost": 293107684948,
+      "second_symbol_integer_gap": 142502262612,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-2-repeated",
+    "index": 0,
+    "block_index": 0,
+    "q": 7681,
+    "values": [
+      5496,
+      2283,
+      5642,
+      3516,
+      6584,
+      573,
+      5831
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "euclidean_label": 5372,
+    "cbd_label": 5290,
+    "certificate": {
+      "integer_cost": 5759029064486,
+      "second_symbol_integer_gap": 2122304,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-2-repeated",
+    "index": 1,
+    "block_index": 3,
+    "q": 7681,
+    "values": [
+      109,
+      4759,
+      6974,
+      2349,
+      7148,
+      1155,
+      2917
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "euclidean_label": 338,
+    "cbd_label": 1706,
+    "certificate": {
+      "integer_cost": 5850702867962,
+      "second_symbol_integer_gap": 413925,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-2-repeated",
+    "index": 2,
+    "block_index": 6,
+    "q": 7681,
+    "values": [
+      2402,
+      6375,
+      4513,
+      4578,
+      7566,
+      2364,
+      5306
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "euclidean_label": 4729,
+    "cbd_label": 4777,
+    "certificate": {
+      "integer_cost": 5071767351228,
+      "second_symbol_integer_gap": 1870801,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-2-repeated",
+    "index": 3,
+    "block_index": 9,
+    "q": 7681,
+    "values": [
+      2229,
+      6220,
+      5803,
+      4868,
+      7114,
+      2379,
+      2788
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "euclidean_label": 4486,
+    "cbd_label": 4509,
+    "certificate": {
+      "integer_cost": 5235377416551,
+      "second_symbol_integer_gap": 240241,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-2-repeated",
+    "index": 4,
+    "block_index": 12,
+    "q": 7681,
+    "values": [
+      6986,
+      3464,
+      1984,
+      3730,
+      5903,
+      470,
+      5234
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "euclidean_label": 5065,
+    "cbd_label": 5071,
+    "certificate": {
+      "integer_cost": 6981588785113,
+      "second_symbol_integer_gap": 2617644,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-2-repeated",
+    "index": 5,
+    "block_index": 15,
+    "q": 7681,
+    "values": [
+      3360,
+      5566,
+      7657,
+      6954,
+      2077,
+      2754,
+      7295
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "euclidean_label": 706,
+    "cbd_label": 696,
+    "certificate": {
+      "integer_cost": 5641073080920,
+      "second_symbol_integer_gap": 2980821,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-2-repeated",
+    "index": 6,
+    "block_index": 18,
+    "q": 7681,
+    "values": [
+      7303,
+      4672,
+      669,
+      3964,
+      7458,
+      4902,
+      942
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "euclidean_label": 6467,
+    "cbd_label": 6410,
+    "certificate": {
+      "integer_cost": 4611398898161,
+      "second_symbol_integer_gap": 2318347,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-2-repeated",
+    "index": 7,
+    "block_index": 21,
+    "q": 7681,
+    "values": [
+      946,
+      1491,
+      6731,
+      6236,
+      4973,
+      3321
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "euclidean_label": 6510,
+    "cbd_label": 6370,
+    "certificate": {
+      "integer_cost": 5987041979230,
+      "second_symbol_integer_gap": 946447,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-2-radix",
+    "index": 0,
+    "block_index": 0,
+    "q": 7681,
+    "values": [
+      5496,
+      2283,
+      5642,
+      3516,
+      6584,
+      573,
+      5831
+    ],
+    "generator": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024,
+      4096
+    ],
+    "euclidean_label": 6173,
+    "cbd_label": 6173,
+    "certificate": {
+      "integer_cost": 705707545577,
+      "second_symbol_integer_gap": 147016824597,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-2-radix",
+    "index": 1,
+    "block_index": 3,
+    "q": 7681,
+    "values": [
+      109,
+      4759,
+      6974,
+      2349,
+      7148,
+      1155,
+      2917
+    ],
+    "generator": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024,
+      4096
+    ],
+    "euclidean_label": 1351,
+    "cbd_label": 1351,
+    "certificate": {
+      "integer_cost": 657387287493,
+      "second_symbol_integer_gap": 101506254359,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-2-radix",
+    "index": 2,
+    "block_index": 6,
+    "q": 7681,
+    "values": [
+      2402,
+      6375,
+      4513,
+      4578,
+      7566,
+      2364,
+      5306
+    ],
+    "generator": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024,
+      4096
+    ],
+    "euclidean_label": 1736,
+    "cbd_label": 1736,
+    "certificate": {
+      "integer_cost": 739172989134,
+      "second_symbol_integer_gap": 58905378154,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-2-radix",
+    "index": 3,
+    "block_index": 9,
+    "q": 7681,
+    "values": [
+      2229,
+      6220,
+      5803,
+      4868,
+      7114,
+      2379,
+      2788
+    ],
+    "generator": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024,
+      4096
+    ],
+    "euclidean_label": 1765,
+    "cbd_label": 1765,
+    "certificate": {
+      "integer_cost": 671880159886,
+      "second_symbol_integer_gap": 108701618074,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-2-radix",
+    "index": 4,
+    "block_index": 12,
+    "q": 7681,
+    "values": [
+      6986,
+      3464,
+      1984,
+      3730,
+      5903,
+      470,
+      5234
+    ],
+    "generator": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024,
+      4096
+    ],
+    "euclidean_label": 6893,
+    "cbd_label": 6893,
+    "certificate": {
+      "integer_cost": 638233379980,
+      "second_symbol_integer_gap": 11671930732,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-2-radix",
+    "index": 5,
+    "block_index": 15,
+    "q": 7681,
+    "values": [
+      3360,
+      5566,
+      7657,
+      6954,
+      2077,
+      2754,
+      7295
+    ],
+    "generator": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024,
+      4096
+    ],
+    "euclidean_label": 3340,
+    "cbd_label": 3340,
+    "certificate": {
+      "integer_cost": 443265989124,
+      "second_symbol_integer_gap": 175530892047,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-2-radix",
+    "index": 6,
+    "block_index": 18,
+    "q": 7681,
+    "values": [
+      7303,
+      4672,
+      669,
+      3964,
+      7458,
+      4902,
+      942
+    ],
+    "generator": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024,
+      4096
+    ],
+    "euclidean_label": 6779,
+    "cbd_label": 6779,
+    "certificate": {
+      "integer_cost": 468369491859,
+      "second_symbol_integer_gap": 130454513508,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-2-radix",
+    "index": 7,
+    "block_index": 21,
+    "q": 7681,
+    "values": [
+      946,
+      1491,
+      6731,
+      6236,
+      4973,
+      3321
+    ],
+    "generator": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024
+    ],
+    "euclidean_label": 468,
+    "cbd_label": 468,
+    "certificate": {
+      "integer_cost": 305127304896,
+      "second_symbol_integer_gap": 75307212719,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-3-repeated",
+    "index": 0,
+    "block_index": 0,
+    "q": 7681,
+    "values": [
+      2011,
+      1670,
+      2470,
+      5085,
+      433,
+      550,
+      2441
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "euclidean_label": 2094,
+    "cbd_label": 2316,
+    "certificate": {
+      "integer_cost": 3347940168926,
+      "second_symbol_integer_gap": 1599872,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-3-repeated",
+    "index": 1,
+    "block_index": 2,
+    "q": 7681,
+    "values": [
+      1014,
+      1334,
+      6886,
+      4144,
+      7394,
+      2643,
+      1619
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "euclidean_label": 1382,
+    "cbd_label": 1482,
+    "certificate": {
+      "integer_cost": 3765808173846,
+      "second_symbol_integer_gap": 1861518,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-3-repeated",
+    "index": 2,
+    "block_index": 5,
+    "q": 7681,
+    "values": [
+      747,
+      935,
+      2851,
+      4298,
+      1589,
+      89,
+      7225
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "euclidean_label": 1436,
+    "cbd_label": 1613,
+    "certificate": {
+      "integer_cost": 3614681129029,
+      "second_symbol_integer_gap": 282631,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-3-repeated",
+    "index": 3,
+    "block_index": 8,
+    "q": 7681,
+    "values": [
+      4115,
+      3652,
+      2809,
+      3770,
+      2350,
+      3466,
+      4211
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "euclidean_label": 3482,
+    "cbd_label": 3473,
+    "certificate": {
+      "integer_cost": 523335141090,
+      "second_symbol_integer_gap": 1066782,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-3-repeated",
+    "index": 4,
+    "block_index": 11,
+    "q": 7681,
+    "values": [
+      669,
+      561,
+      2736,
+      3560,
+      297,
+      7013,
+      2195
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "euclidean_label": 1336,
+    "cbd_label": 1374,
+    "certificate": {
+      "integer_cost": 2830588603532,
+      "second_symbol_integer_gap": 716741,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-3-repeated",
+    "index": 5,
+    "block_index": 14,
+    "q": 7681,
+    "values": [
+      5943,
+      6841,
+      4184,
+      4915,
+      3521,
+      5376
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "euclidean_label": 5130,
+    "cbd_label": 5136,
+    "certificate": {
+      "integer_cost": 1416692552324,
+      "second_symbol_integer_gap": 574073,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-3-repeated",
+    "index": 6,
+    "block_index": 17,
+    "q": 7681,
+    "values": [
+      3607,
+      1956,
+      2952,
+      2996,
+      5377,
+      622
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "euclidean_label": 2918,
+    "cbd_label": 2948,
+    "certificate": {
+      "integer_cost": 2794765216742,
+      "second_symbol_integer_gap": 1164095,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-3-repeated",
+    "index": 7,
+    "block_index": 20,
+    "q": 7681,
+    "values": [
+      826,
+      4562,
+      4742,
+      22,
+      4503,
+      1025
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "euclidean_label": 6454,
+    "cbd_label": 6484,
+    "certificate": {
+      "integer_cost": 4408958420327,
+      "second_symbol_integer_gap": 1493197,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-3-radix",
+    "index": 0,
+    "block_index": 0,
+    "q": 7681,
+    "values": [
+      2011,
+      1670,
+      2470,
+      5085,
+      433,
+      550,
+      2441
+    ],
+    "generator": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024,
+      4096
+    ],
+    "euclidean_label": 2491,
+    "cbd_label": 2491,
+    "certificate": {
+      "integer_cost": 441683244875,
+      "second_symbol_integer_gap": 7622480469,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-3-radix",
+    "index": 1,
+    "block_index": 2,
+    "q": 7681,
+    "values": [
+      1014,
+      1334,
+      6886,
+      4144,
+      7394,
+      2643,
+      1619
+    ],
+    "generator": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024,
+      4096
+    ],
+    "euclidean_label": 415,
+    "cbd_label": 415,
+    "certificate": {
+      "integer_cost": 462851210396,
+      "second_symbol_integer_gap": 172714086248,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-3-radix",
+    "index": 2,
+    "block_index": 5,
+    "q": 7681,
+    "values": [
+      747,
+      935,
+      2851,
+      4298,
+      1589,
+      89,
+      7225
+    ],
+    "generator": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024,
+      4096
+    ],
+    "euclidean_label": 180,
+    "cbd_label": 180,
+    "certificate": {
+      "integer_cost": 639052106924,
+      "second_symbol_integer_gap": 84193544684,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-3-radix",
+    "index": 3,
+    "block_index": 8,
+    "q": 7681,
+    "values": [
+      4115,
+      3652,
+      2809,
+      3770,
+      2350,
+      3466,
+      4211
+    ],
+    "generator": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024,
+      4096
+    ],
+    "euclidean_label": 4511,
+    "cbd_label": 4511,
+    "certificate": {
+      "integer_cost": 380573925495,
+      "second_symbol_integer_gap": 125435078104,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-3-radix",
+    "index": 4,
+    "block_index": 11,
+    "q": 7681,
+    "values": [
+      669,
+      561,
+      2736,
+      3560,
+      297,
+      7013,
+      2195
+    ],
+    "generator": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024,
+      4096
+    ],
+    "euclidean_label": 179,
+    "cbd_label": 179,
+    "certificate": {
+      "integer_cost": 468603939084,
+      "second_symbol_integer_gap": 106508954141,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-3-radix",
+    "index": 5,
+    "block_index": 14,
+    "q": 7681,
+    "values": [
+      5943,
+      6841,
+      4184,
+      4915,
+      3521,
+      5376
+    ],
+    "generator": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024
+    ],
+    "euclidean_label": 5594,
+    "cbd_label": 5594,
+    "certificate": {
+      "integer_cost": 222077312331,
+      "second_symbol_integer_gap": 15878211478,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-3-radix",
+    "index": 6,
+    "block_index": 17,
+    "q": 7681,
+    "values": [
+      3607,
+      1956,
+      2952,
+      2996,
+      5377,
+      622
+    ],
+    "generator": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024
+    ],
+    "euclidean_label": 4494,
+    "cbd_label": 4494,
+    "certificate": {
+      "integer_cost": 356778452400,
+      "second_symbol_integer_gap": 19141792734,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  },
+  {
+    "experiment": "panel-3-radix",
+    "index": 7,
+    "block_index": 20,
+    "q": 7681,
+    "values": [
+      826,
+      4562,
+      4742,
+      22,
+      4503,
+      1025
+    ],
+    "generator": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024
+    ],
+    "euclidean_label": 1216,
+    "cbd_label": 1216,
+    "certificate": {
+      "integer_cost": 351119292749,
+      "second_symbol_integer_gap": 96412968993,
+      "interval_contenders": 1,
+      "real_optimum_certified": true
+    }
+  }
+]

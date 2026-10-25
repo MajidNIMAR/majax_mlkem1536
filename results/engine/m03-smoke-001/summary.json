@@ -1,0 +1,83 @@
+{
+  "finished_utc": "2026-10-25T14:59:22.748948+00:00",
+  "workers": {
+    "import_public": {
+      "status": "complete",
+      "CPU_seconds": 20.48,
+      "segments": 2,
+      "executions": 167667,
+      "corpus_files": 206,
+      "budget_CPU_seconds": 15
+    },
+    "import_private": {
+      "status": "complete",
+      "CPU_seconds": 23.53,
+      "segments": 2,
+      "executions": 5768,
+      "corpus_files": 143,
+      "budget_CPU_seconds": 15
+    },
+    "decapsulate": {
+      "status": "complete",
+      "CPU_seconds": 25.240000000000002,
+      "segments": 2,
+      "executions": 454,
+      "corpus_files": 110,
+      "budget_CPU_seconds": 15
+    },
+    "api_sequence": {
+      "status": "complete",
+      "CPU_seconds": 15.76,
+      "segments": 1,
+      "executions": 52,
+      "corpus_files": 48,
+      "budget_CPU_seconds": 15
+    }
+  },
+  "total_CPU_seconds": 85.01,
+  "all_budgets_reached": true,
+  "defects_resolved": null,
+  "T07_duration_reached": false,
+  "T07_validated": false,
+  "reason": "Human/agent review of final coverage and corpus evidence required before validation",
+  "automatic_postprocessing": {
+    "coverage_exported": true,
+    "independent_corpus_replayed": true
+  },
+  "source_sha256": {
+    "Cargo.lock": "ad9f28bdd7332407c054eed738e782a81e60f0c5180022e8b173fb2987f70cb3",
+    "Cargo.toml": "ff13a1ad6016fdb1e11376f304b4c3ea7670d1442d8f12cdbf02ebd01577de42",
+    "crates/kem1024-reference/Cargo.toml": "8e8e6f877d8c07f5379c88bdd3d175aea8a5c4d9b3b45cdd9e13548fe885f4de",
+    "crates/kem1024-reference/src/lib.rs": "33bf92b4bee59b28a2fe499f592068ffe3468ff1593d8d3bce18f0875f3cbb52",
+    "crates/kem1536/Cargo.toml": "201a6e832bbc6cec754a6de609f0b503cc1c98c7458f676ad2077a2a73823e47",
+    "crates/kem1536/src/dev_hardening.rs": "8bbfac92e9af19b6955f4fa033ab7026371fd1d89d07b972553434174f132d06",
+    "crates/kem1536/src/dev_kem.rs": "a21bb340bd5af3c4983f1f76b59ef542aea67edf4c62ad7ff23e8205612cb564",
+    "crates/kem1536/src/engine_poly.rs": "e16599a7d711f045ece773216a508c573907e37217906082e3a8e61192dba8d9",
+    "crates/kem1536/src/lib.rs": "76f654cc20fa27475c7cd66fdace8913878ba6d9c034cbcd59b59c6c4d5ec033",
+    "crates/kem1536/src/reference_ring.rs": "f94a48f7a35d74487fcdf50937f48c3f7502c6053418e941201bf1014cce125b",
+    "crates/kem1536/src/secret_box.rs": "08d6ba7accadb46dc66b780a396dc418950641b29a91d365e12537001c40d28e",
+    "crates/kem1536-bench/Cargo.toml": "3a8e568fb1b93b97c478ad58dc82b3feaecdd7fc3746793c385cfda5530c40d5",
+    "crates/kem1536-bench/src/bin/m03-replay.rs": "8215b138b87462cd58267256eb6b2fefa43c1d67879efbfc62044a1c575fc86f",
+    "crates/kem1536-bench/src/main.rs": "00ca24ef04bc69ad937c060fc4592ba2b8d587a01f2a1ec2a5f594dc3a37e9b7",
+    "crates/kem1536-cli/Cargo.toml": "ef96cbb2a121d68b061677ec628515eaa9bbff1658534d8933595a08d8009df6",
+    "crates/kem1536-cli/src/main.rs": "41420995cc9b4ebbca8ab55d594a4eefd0b29740cc96b78e9b856079c2086bd1",
+    "crates/kem1536-cli/tests/commands.rs": "02483131e88c5fb97badc6e2fd686094d3771769f8c5ba9464ef12f4b9534905",
+    "docs/PROTOCOLE_M03.md": "115a32108044229f119858b36e3e3eb719b5f882c811297759e3d279c09c14e2",
+    "fuzz/Cargo.lock": "1198c22f429923398fec31b0ff2e023dc2f60a07704b16d7da2f25cc420ecb70",
+    "fuzz/Cargo.toml": "2a0460083c834d2d81001c4b59b0e1414154ca89ebdd6f07feaeb615575b8a8b",
+    "fuzz/README.md": "e7324a7977aec0ea2d2502ef2291e4018b02c97b50b88e2644b708d1c544a985",
+    "fuzz/fixtures/cases.bin": "7ae0746c2a6edad67917a722aacd50731cf9db73a7d75d6c7743c3d2cc67f92f",
+    "fuzz/fuzz_targets/api_sequence.rs": "12dc92925d3bb27295d21517371eab27aa873482d5caf72f4bcca0b32bbaa8df",
+    "fuzz/fuzz_targets/decapsulate.rs": "e483c09919d24b45f255f577585bd49e372db7f8175902a25dd51233bca558e4",
+    "fuzz/fuzz_targets/import_private.rs": "f5f74b8bcd454242edc4bf3f22764930ac1ce3300e70222edae3b30c7bd895a5",
+    "fuzz/fuzz_targets/import_public.rs": "889bbeb4d6156219f5acca0ebe89d2ab197c9f17648dcd216d71ee88d474db40",
+    "fuzz/src/lib.rs": "23c45a8a336bca6b0ee00f0c86dfe5d08e564d40660b0e0b6267f5bb7fb7b7cc",
+    "oracle/kem_r1_reference.py": "41b754345d86f30115ccb6f1f1615ccbc4107496dc9fedd5ddf23dd9921f881d",
+    "profiles/kem1536-p0.toml": "ec07497ccab9150a982ecc882b8d1890d8dda18c4150e22f86cff70735e22740",
+    "research/prepare_m03_fuzz.py": "2973d2d364e28910bf05f3fd99747601a2689e1cc2e943702299a91d893e0054",
+    "research/replay_m03_fuzz_corpus.py": "ce799c9fb2f74bd37e1d37cebefdea3c044746e23af4e90f747702f49e56b671",
+    "research/run_m03_fuzz.py": "ccffbb7f1cea13a53987eebfe7c1234d1003afe5ee272b8bf9fdb972e8c42eb3",
+    "rust-toolchain.toml": "b729462cbfa06a5d7efd33810fa271fe918b2db1ce61d99e57ec1c866659c270",
+    "scripts/m03-linux.sh": "bf17a6a90bdd49ffffbac27e41052df83782703472ba21228bc1591f1b427e76"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "created_utc": "2026-10-24T16:41:49.763132+00:00",
+  "python": "3.12.15",
+  "sage": "10.7",
+  "seconds": 43.91206112100008,
+  "input_sha256": {
+    "research/coded_dual_model.py": "190cb27983d02eab74409390cb0cdf3f1351ebc321fd95d572259b2d4384a2a7",
+    "research/test_coded_dual_model.py": "6aab497ecc47f151a99c37bf3c08d37fe5e638bd17760db50847aa72d7f6fb66",
+    "research/run_coded_dual.py": "69e376e07151a9594ee70e9392efc466ddc8e08ef4dae4b1f635cb349ca5a124",
+    "research/verify_coded_dual_results.py": "5513f0b04a630cb44634702b2c6c4701ea41afe4d2fa43f8bd454e3aeecc0ed7",
+    "research/verify_coded_dual_numeric.py": "ba22779942458ec5cb206b793fcc8b678b7a0a49c4bf1bdcae02179ab09b7518",
+    "scripts/coded-dual.sh": "12f9842c1ddf8f4d5fbc63c4cf3fd9721189157115695ca78960fa08432ef880",
+    "references/coded-dual-audit/utilitaries.py.txt": "e115cc99e0c688ac6cb4fed847be1678e013c3a48b3028ed86a19f8ef425c49d",
+    "references/coded-dual-evaluation/calibration-cases.json": "192f7ae7282908b3ce16fbd034d5384b249065ca1a888d8b70128783f274f0bf",
+    "references/coded-dual-evaluation/lwe_results_full.txt": "cb44e88519e468a62cb092fc796037fd64947365136e60727db1dab0b7dc307e",
+    "references/coded-dual-evaluation/manifest.json": "40241b82086f0528ee408014d09b927c51887fc45d700f374e9452b2095efce7",
+    "references/coded-dual-evaluation/mlwe_results_full.txt": "e1160851a7b1d285b2ce14ec06eeba77c627c8d4709af8e8fa327da15077203b"
+  },
+  "output_sha256": {
+    "study.json": "84ee4419cde7be0214adb82d4fe3a159318bf7a960129c1d332cd5af3fafa545",
+    "calibration.json": "551acbc2d8e90f95dbc8a6b0d7dc0dabc85816fed83f22271935daf445101b5f",
+    "evaluations.jsonl": "b0715e03d98b5b0e297141de7941bf0dc1bc07afdf8a07f80f008cd448b6ab8f"
+  }
+}

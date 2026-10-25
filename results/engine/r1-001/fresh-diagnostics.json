@@ -1,0 +1,8 @@
+{
+  "profile": "KEM1536-DEV-Q7681-R1",
+  "fresh_round_trips": 10000,
+  "implicit_rejections_checked": 10000,
+  "elapsed_seconds": 111.8521794,
+  "security_validation": "pending",
+  "secrets_printed": false
+}

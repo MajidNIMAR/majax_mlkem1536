@@ -1,0 +1,11 @@
+{
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python": "3.13.7",
+  "numpy": "2.3.5",
+  "linux_runtime": "Ubuntu-22.04 under WSL2",
+  "compiler_pin": "[toolchain]\nchannel = \"1.91.1\"\nprofile = \"minimal\"\ncomponents = [\"rustfmt\", \"clippy\"]\n\n",
+  "binary_sha256": {
+    "windows": "083d802933b0d7160db571b47e4902fd5812dddde9beed6f0eda1e950ef1e495",
+    "linux": "baf11e38672e3146644164220abc881e0c0057d1ac81a5f7cacc51f3d9be9523"
+  }
+}

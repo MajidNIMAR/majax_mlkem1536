@@ -1,0 +1,20 @@
+{
+  "created_utc": "2026-10-25T01:09:19.521901+00:00",
+  "input_sha256": {
+    "research/verify_additive_score_independent.py": "d95a2f72ae253009906ea3eeb41d86ea7d011642efe127bd289b4c25ad4f4556",
+    "docs/PROTOCOLE_H11.md": "722acce14c4e8ddd6efc41c7f420ac19f4590aaef63caefefcf38023dd81e30b",
+    "research/requirements-cbd-dimensions.txt": "a3315a771dfccf635c0341eddf2b41e4239d0a50b879cd1a8fcf91e6f76dd875",
+    "results/j2/run-017/cases.json": "609895797e6bc0eefe2a7c1b3b90ca3aac60875de56c1e0a43c661bc1e92039d",
+    "results/j2/run-017/banks.json": "2dac7fff74c2808d0fde98617fcaee6a85c43de6a7e8d6e401f1e529291b957d",
+    "results/j2/run-017/offsets.json": "cbf92668e2f3253b753bc94dd2e73eeda936857a985e7ed5419c621c6c03cda4",
+    "results/j2/run-018/orders.json": "61dfccc1830c1c8fa00544efeabc66df750bdbbc7c878d721d9dcedf6bf0bf17",
+    "results/j2/run-018/panels.json": "54b797d3f3464700b1e78174c12dc34ada72c3ce0084a3f3043a28b66b06b9c7",
+    "results/j2/run-018/geometries.json": "452a294401fa4c99ef32d12dd32e7a3502518b84e326a58073f227abe3470519",
+    "results/j2/run-018/banks.json": "a9643c6c62198f83dc37c8f293b6388af54bb3c34878859bee05e0d9c8273043",
+    "results/j2/run-018/pools.json": "e9841634efd30fc65f37ecb8b9c992cd5bdf26baca1208557cf3f3ae159df8fa",
+    "results/j2/run-018/summary.json": "4b60c6f08b21aebbc09a720f097d1f26f2dd3e30812e07c4d4f7b6124f27b30a"
+  },
+  "output_sha256": {
+    "independent-verification.json": "61552fa6ff7790a2da4a9fad54bcb7d7d1f3fc9a40448692b1849281a8cd892a"
+  }
+}

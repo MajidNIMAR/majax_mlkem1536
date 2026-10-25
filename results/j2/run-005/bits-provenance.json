@@ -1,0 +1,10 @@
+{
+  "purpose": "independent replay added before first Git freeze; original run files unchanged",
+  "input_sha256": {
+    "research/verify_mixed_certificate_bits.py": "2c5e31c4393e68470b405d73570ad5fc41c30dbd7000125436910c3c0aff989c",
+    "results/j2/run-005/winner-certificate.json": "cb118e1b85373f05a53174c1d3e5b3d20ccec827906620675a7717c411526a5b"
+  },
+  "output_sha256": {
+    "bits-verification.json": "5e8ba05d8695f67a997b1a64bf03873dbc3d0f6410afc0b9a77d2bf43fc27c99"
+  }
+}

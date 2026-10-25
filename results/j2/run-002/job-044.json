@@ -1,0 +1,38 @@
+{
+  "job": {
+    "scenario": "baseline-1024",
+    "parameters": {
+      "n": 256,
+      "k": 4,
+      "q": 3329,
+      "eta": 2
+    },
+    "sample_budget": "key",
+    "samples": 1024,
+    "targets": 1,
+    "oracle": "none",
+    "shape_model": "GSA",
+    "memory_cap": "none; exponential memory allowed",
+    "tool": "community",
+    "cost_model": "MATZOV-classical",
+    "algorithm": "dual"
+  },
+  "status": "ok",
+  "applicability": "heuristic LWE estimator model",
+  "cost": {
+    "rop": "7.15967860939892e86",
+    "mem": "62240665190998271882533549695924700452435488068912162193512",
+    "m": "930",
+    "beta": "918",
+    "d": "1954",
+    "repetitions": "1",
+    "tag": "dual"
+  },
+  "log2_cost": {
+    "rop": 288.5257109881612,
+    "mem": 195.3096869825351,
+    "repetitions": 0.0
+  },
+  "estimator_messages": "",
+  "elapsed_seconds": 6.239179917999991
+}

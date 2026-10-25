@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-10-24T17:39:08.988595+00:00",
+  "python": "3.12.15",
+  "input_sha256": {
+    "research/block_decoder.py": "afa6e53d16e339d6d0b0be6145f5221d12ef52685e5de9c7745b89389740e912",
+    "research/block_decoder_numpy.py": "c357a2523dc82f14ef8fc86fd371648a1f02d2e66105fbe70f8afa547bb54e91",
+    "research/run_block_decoder.py": "e4d3ba51a63e852a989a195a7ddc0238456244c0746c54c8fe4789eb2322917b",
+    "research/test_block_decoder.py": "dc9aaac513932cad4b56071cb647208ab3b3a40e5666ef39f8fee5eacbab457e",
+    "research/verify_block_decoder_results.py": "24dbcc1ad264913c8c04e17d6adfe7f99759a7c177a470ca956d3cd2ac990b70",
+    "research/verify_block_decoder_independent.py": "a0f2f40936c968d1f60d3b2e9308b16400cf8e9e1bb10ebc0f7753280196a269",
+    "scripts/block-decoder.sh": "ea6c86a729f34da2893949d60a1284c7f833ed72756a0d3e4f3490b31d7158af",
+    "results/j2/run-009/study.json": "c1368a2d48c33b76f5972f8db31f656f87889884b69472f0b6a1e2d063d5e6c2",
+    "results/j2/run-009/provenance.json": "88ec18bdc3de52dee16998dc9f1925a66f0e7b49033c969ecc761b05210bb917",
+    "results/j2/run-009/numeric-provenance.json": "0bbf457c71fc106ca646840fb79ab015fd2e1c463b194db35c5e7c1251395fd7"
+  },
+  "output_sha256": {
+    "toy-enumeration.json": "461f4f9a8ea070c46008ea915b235828f85edbc3100ad11f3b66679e49884f67",
+    "observations.jsonl": "8da7db82d08c2ce975d3811f022141d9f1e49246466f339734efab617e932cc0",
+    "oracle-cases.json": "28f37ac04841a764d459db40add07c7b8cd61613c683615a0c9c917c1b925eda",
+    "timings.json": "916ca8d55627d452a64c0f859bc7572b324d147da496da4b9b980fec20259fc1",
+    "study.json": "e53d6b31bd2977252f45d274c204b4de353015d3e429847d0dcab15611fc5bf0"
+  }
+}

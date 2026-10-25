@@ -1,0 +1,672 @@
+{
+  "source_integrity": "passed",
+  "frozen_files": 8,
+  "reference_crate": "ml-kem 0.3.3",
+  "acvp_source_commit": "975de31eb83d87039ec88934fdc47d8c312b892d",
+  "selected_parameter_set": "ML-KEM-1024",
+  "coverage": {
+    "keyGen": 25,
+    "encapsulation": 50,
+    "decapsulation": 30,
+    "decapsulationKeyCheck": 20,
+    "encapsulationKeyCheck": 20
+  },
+  "total_selected_cases": 145,
+  "implicit_rejection_cases": 15
+}
+    Checking kem1024-reference v0.1.0 (C:\Users\majax\Documents\Codex\NIST\crates\kem1024-reference)
+    Checking kem1536 v0.1.0 (C:\Users\majax\Documents\Codex\NIST\crates\kem1536)
+    Checking kem1536-bench v0.1.0 (C:\Users\majax\Documents\Codex\NIST\crates\kem1536-bench)
+    Checking kem1536-cli v0.1.0 (C:\Users\majax\Documents\Codex\NIST\crates\kem1536-cli)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.50s
+   Compiling kem1536-bench v0.1.0 (C:\Users\majax\Documents\Codex\NIST\crates\kem1536-bench)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.08s
+     Running unittests src\lib.rs (target\debug\deps\kem1024_reference-d157f2f812c6ba74.exe)
+
+running 5 tests
+test tests::truncated_key_encodings_are_rejected ... ok
+test tests::a_corrupted_private_key_hash_is_rejected ... ok
+test tests::noncanonical_public_coefficients_are_rejected ... ok
+test tests::a_modified_expected_answer_is_detected ... ok
+test tests::official_vectors_and_fresh_round_trips_pass ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.50s
+
+     Running unittests src\lib.rs (target\debug\deps\kem1536-3e4affb5bfa97584.exe)
+
+running 18 tests
+test dev_kem::tests::entropy_failure_is_propagated ... ok
+test reference_ring::tests::rejects_invalid_moduli_and_noncanonical_inputs ... ok
+test secret_box::tests::wipe_keeps_storage_and_clears_every_owned_byte ... ok
+test tests::changed_noise_requires_a_new_profile ... ok
+test tests::a_rank_four_profile_cannot_masquerade_as_p0 ... ok
+test tests::a_profile_for_another_version_is_rejected ... ok
+test tests::inconsistent_declared_sizes_are_rejected ... ok
+test tests::unknown_configuration_fields_are_not_silently_ignored ... ok
+test tests::published_profile_has_the_required_dimensions_and_sizes ... ok
+test reference_ring::tests::quotient_sign_and_multiplicative_identity ... ok
+test engine_poly::tests::reciprocal_reduction_and_quotient_boundaries ... ok
+test engine_poly::tests::arithmetic_agrees_with_separate_generic_oracle ... ok
+test reference_ring::tests::independent_convolution_and_ring_laws_at_both_moduli ... ok
+test dev_kem::tests::canonical_boundaries_and_private_hash_validation ... ok
+test dev_kem::tests::operating_system_randomness_roundtrip ... ok
+test dev_kem::tests::full_deterministic_roundtrip_and_rejection ... ok
+test dev_kem::tests::canonical_bad_ciphertext_and_last_noncanonical_coefficient_reject ... ok
+test dev_kem::tests::packing_and_rounding_exhaustive ... ok
+
+test result: ok. 18 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.75s
+
+     Running unittests src\main.rs (target\debug\deps\kem1536_bench-2261d7249689545e.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\bin\m03-replay.rs (target\debug\deps\m03_replay-0aaa2ed0d58cf393.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\main.rs (target\debug\deps\kem1536-a2d23ea172c7ae7b.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\commands.rs (target\debug\deps\commands-c583148984dcf7bd.exe)
+
+running 5 tests
+test deterministic_vectors_are_absent_from_default_application ... ok
+test profile_output_is_machine_readable ... ok
+test unavailable_crypto_commands_fail_instead_of_simulating_success ... ok
+test development_profile_and_status_are_explicit ... ok
+test invalid_stress_counts_fail_without_output ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.11s
+
+   Doc-tests kem1024_reference
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests kem1536
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Compiling kem1536-bench v0.1.0 (C:\Users\majax\Documents\Codex\NIST\crates\kem1536-bench)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.86s
+     Running unittests src\lib.rs (target\debug\deps\kem1024_reference-d157f2f812c6ba74.exe)
+
+running 5 tests
+test tests::truncated_key_encodings_are_rejected ... ok
+test tests::a_corrupted_private_key_hash_is_rejected ... ok
+test tests::noncanonical_public_coefficients_are_rejected ... ok
+test tests::a_modified_expected_answer_is_detected ... ok
+test tests::official_vectors_and_fresh_round_trips_pass ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.81s
+
+     Running unittests src\lib.rs (target\debug\deps\kem1536-b12f722ae3c4628f.exe)
+
+running 19 tests
+test dev_kem::tests::entropy_failure_is_propagated ... ok
+test reference_ring::tests::rejects_invalid_moduli_and_noncanonical_inputs ... ok
+test secret_box::tests::wipe_keeps_storage_and_clears_every_owned_byte ... ok
+test tests::changed_noise_requires_a_new_profile ... ok
+test tests::a_rank_four_profile_cannot_masquerade_as_p0 ... ok
+test tests::a_profile_for_another_version_is_rejected ... ok
+test tests::inconsistent_declared_sizes_are_rejected ... ok
+test reference_ring::tests::quotient_sign_and_multiplicative_identity ... ok
+test tests::published_profile_has_the_required_dimensions_and_sizes ... ok
+test tests::unknown_configuration_fields_are_not_silently_ignored ... ok
+test engine_poly::tests::reciprocal_reduction_and_quotient_boundaries ... ok
+test engine_poly::tests::arithmetic_agrees_with_separate_generic_oracle ... ok
+test reference_ring::tests::independent_convolution_and_ring_laws_at_both_moduli ... ok
+test dev_kem::tests::canonical_boundaries_and_private_hash_validation ... ok
+test dev_kem::tests::operating_system_randomness_roundtrip ... ok
+test dev_kem::tests::current_engine_matches_independently_verified_case0 ... ok
+test dev_kem::tests::canonical_bad_ciphertext_and_last_noncanonical_coefficient_reject ... ok
+test dev_kem::tests::full_deterministic_roundtrip_and_rejection ... ok
+test dev_kem::tests::packing_and_rounding_exhaustive ... ok
+
+test result: ok. 19 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.13s
+
+     Running unittests src\main.rs (target\debug\deps\kem1536_bench-84613bf9d06a4ca1.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\bin\m03-replay.rs (target\debug\deps\m03_replay-589f5cca2bb2678a.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\main.rs (target\debug\deps\kem1536-f3a04a4c500d635c.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\commands.rs (target\debug\deps\commands-7b005d43ada930a6.exe)
+
+running 4 tests
+test unavailable_crypto_commands_fail_instead_of_simulating_success ... ok
+test profile_output_is_machine_readable ... ok
+test development_profile_and_status_are_explicit ... ok
+test invalid_stress_counts_fail_without_output ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.14s
+
+   Doc-tests kem1024_reference
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests kem1536
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+{
+  "profile_id": "KEM1536-EXP-P0",
+  "configuration_check": "passed",
+  "coefficient_count": 1536,
+  "sizes_bytes": {
+    "vector_bytes": 2304,
+    "encapsulation_key_bytes": 2336,
+    "decapsulation_key_bytes": 4704,
+    "c1_bytes": 2112,
+    "c2_bytes": 160,
+    "ciphertext_bytes": 2272,
+    "shared_secret_bytes": 32
+  },
+  "cryptographic_validation": "pending"
+}
+...........................................................................................
+----------------------------------------------------------------------
+Ran 91 tests in 7.480s
+
+OK
+{
+  "snapshot": "run-001",
+  "input_files": 13,
+  "output_files": 2,
+  "noise_scenarios": 8,
+  "attack_estimates": 24,
+  "checksums": "passed"
+}
+{
+  "snapshot": "run-002",
+  "checksums": "passed",
+  "attempted": 120,
+  "export_retries_preserved": 8,
+  "statuses": {
+    "ok": 118,
+    "error": 2
+  },
+  "coverage": "incomplete; failures retained, do not infer a global minimum"
+}
+{
+  "snapshot": "run-003",
+  "checksums": "passed",
+  "scenarios": 6,
+  "run001_probability_matches": 4,
+  "replacement_profile_selected": false
+}
+{
+  "snapshot": "run-004",
+  "checksums": "passed",
+  "toy_ranks": 2,
+  "lossless_u_scenarios": 4,
+  "prior_marginal_matches": 8,
+  "rounding_independence_needed_for_witness": false,
+  "profile_selected": false,
+  "j2_closed": false
+}
+{
+  "snapshot": "run-004",
+  "certificate": "rational Chernoff replay passed",
+  "full_noise_recurrence_used": false,
+  "c05_exact_comparison": true,
+  "log2_upper_display": -310.08596919852425
+}
+{
+  "snapshot": "run-005",
+  "checksums": "passed",
+  "reported_bounds": 240,
+  "best_found": "interleaved-dv3-m12-88",
+  "bytes": 2581,
+  "certificate_replay": "exact",
+  "profile_selected": false,
+  "j2_closed": false
+}
+{
+  "snapshot": "run-005",
+  "method": "independent enumeration of CBD3 bit strings",
+  "CBD_bit_strings": 64,
+  "pair_outcomes": 4096,
+  "project_arithmetic_imported": false,
+  "full_fraction_matches": true,
+  "c05_exact_comparison": true,
+  "candidate_id": "interleaved-dv3-m12-88"
+}
+{
+  "snapshot": "run-006",
+  "checksums": "passed",
+  "toy_tori": 5,
+  "actual_modulus_cover": "certified",
+  "rational_certificate": "replayed",
+  "best_found": "staggered-dv4-pairs228",
+  "bytes": 2567,
+  "profile_selected": false,
+  "j2_closed": false
+}
+{
+  "snapshot": "run-006",
+  "project_arithmetic_imported": false,
+  "cover_for_all_q_squared_pairs": true,
+  "CBD_bit_strings": 64,
+  "pair_outcomes": 4096,
+  "full_fraction_matches": true,
+  "c05_exact_comparison": true,
+  "candidate_id": "staggered-dv4-pairs228"
+}
+{
+  "snapshot": "run-007",
+  "rational_results_replayed": 9,
+  "mapped_prior_attacks": 30,
+  "new_attack_costs": 0,
+  "profile_selected": false,
+  "j2_closed": false
+}
+{
+  "snapshot": "run-008",
+  "integrity": "passed",
+  "published_calibrations": 6,
+  "preserved_evaluations": 1043,
+  "statuses": {
+    "conditional_model_cost": 969,
+    "zero_guess_target_unreachable_within_2^100": 74
+  },
+  "high_precision_replays": 4,
+  "verification": "integrity and numerical consistency; not full Sage recomputation",
+  "applicability": "conditional GV/score/zero-guess heuristics",
+  "profile_selected": false,
+  "j2_closed": false
+}
+{
+  "snapshot": "run-009",
+  "inherited": 1043,
+  "new": 1187,
+  "statuses": {
+    "conditional_model_cost": 1187
+  },
+  "verified_trajectories": 44,
+  "locally_stable_points": 4,
+  "unit_and_two_coordinate_neighbors_per_point": 32,
+  "high_precision_replays": 4,
+  "global_optimality_claimed": false,
+  "profile_selected": false,
+  "j2_closed": false
+}
+{
+  "snapshot": "run-010",
+  "experiments": 8,
+  "reconstructed_observations": 2048,
+  "actual_modulus_oracles": 64,
+  "independent_toy_targets": 6302,
+  "attack_costs_updated": false,
+  "profile_selected": false,
+  "j2_closed": false
+}
+{
+  "method": "complete toy codebooks plus full actual-modulus block alphabets",
+  "project_arithmetic_imported": false,
+  "toy_cases": 6,
+  "classified_targets": 6302,
+  "actual_modulus_blocks": 64,
+  "actual_modulus_candidate_symbols": 352320,
+  "all_matched": true
+}
+{
+  "snapshot": "run-011",
+  "residuals_reconstructed": 2048,
+  "exact_integer_moment_matrices": 8,
+  "score_banks": 8,
+  "terms_per_bank": 32,
+  "equal_norm_controls": 18,
+  "exact_toy_targets": 6302,
+  "high_precision_checks": 114,
+  "attack_costs_updated": false,
+  "profile_selected": false,
+  "j2_closed": false
+}
+{
+  "toy_cases": 6,
+  "complete_targets": 6302,
+  "literal_secret_bit_strings": 1152,
+  "project_arithmetic_imported": false,
+  "joint_phase_laws_matched": true,
+  "exact_block_factorizations_matched": true,
+  "coordinate_factorization_failures": 6,
+  "shared_secret_moments_matched": true
+}
+{
+  "snapshot": "run-012",
+  "paired_targets": 2048,
+  "toy_targets": 6302,
+  "weight_intervals": 5513,
+  "decoded_blocks": 38400,
+  "real_optimum_certified_blocks": 38400,
+  "independent_actual_blocks": 64,
+  "attack_costs_updated": false,
+  "profile_selected": false,
+  "j2_closed": false
+}
+{
+  "project_arithmetic_imported": false,
+  "complete_codebooks": 6,
+  "classified_targets": 6302,
+  "actual_modulus_blocks": 64,
+  "symbol_candidates_per_metric": 352320,
+  "all_matched": true
+}
+{
+  "snapshot": "run-013",
+  "panels": 32,
+  "complete_guess_scores": 80608,
+  "phase_identities_checked": 419904,
+  "literal_CBD_bit_strings": 65536,
+  "transcendental_entries_verified": 24,
+  "attack_costs_updated": false,
+  "profile_selected": false,
+  "j2_closed": false
+}
+{
+  "project_arithmetic_imported": false,
+  "matrices": 4,
+  "literal_CBD_bit_strings": 65536,
+  "panels": 32,
+  "complete_guess_scores": 80608,
+  "all_exact_laws_and_events_matched": true,
+  "maximum_absolute_moment_delta": 1.6930901125533637e-15
+}
+{
+  "snapshot": "run-014",
+  "matrices": 32,
+  "LLL_certificates": 32,
+  "panels": 768,
+  "distinct_score_banks": 224,
+  "complete_guess_scores": 822808,
+  "literal_CBD_bit_strings": 524288,
+  "attack_costs_updated": false,
+  "profile_selected": false,
+  "j2_closed": false
+}
+{
+  "project_arithmetic_imported": false,
+  "matrices": 32,
+  "LLL_certificates": 32,
+  "panels": 768,
+  "literal_CBD_bit_strings": 524288,
+  "distinct_score_banks": 224,
+  "complete_guess_scores": 822808,
+  "exact_laws_events_and_hashes_matched": true,
+  "maximum_absolute_moment_delta": 3.164135620181696e-15
+}
+{
+  "snapshot": "run-015",
+  "matrices": 16,
+  "LLL_certificates": 16,
+  "panels": 1152,
+  "exact_CBD_laws": 96,
+  "distinct_score_banks": 155,
+  "complete_guess_scores": 5949643,
+  "H07_exact_calibrations": 192,
+  "maximum_bit_denominator": 18014398509481984,
+  "attack_costs_updated": false,
+  "profile_selected": false,
+  "j2_closed": false
+}
+{
+  "project_arithmetic_imported": false,
+  "matrices": 16,
+  "LLL_certificates": 16,
+  "panels": 1152,
+  "exact_laws_verified": 96,
+  "maximum_Bernoulli_layers": 54,
+  "total_Bernoulli_layers": 3072,
+  "distinct_score_banks": 155,
+  "complete_guess_scores": 5949643,
+  "exact_hashes_and_events_matched": true,
+  "maximum_absolute_moment_delta": 2.4320823133194835e-15
+}
+{
+  "snapshot": "run-016",
+  "points": 4,
+  "concrete_sample_panels": 8,
+  "residuals": 2048,
+  "independent_decimal_digits": 90,
+  "attack_costs_updated": false,
+  "profile_selected": false,
+  "j2_closed": false
+}
+{
+  "project_arithmetic_imported": false,
+  "decimal_digits": 90,
+  "points_verified": 4,
+  "residuals_verified": 2048,
+  "numeric_fields_verified": 192,
+  "maximum_absolute_delta": 9.298973104991545e-12,
+  "normal_tail_method": "Mills brackets and integrated Taylor series",
+  "code_integral_method": "alternating exponential series"
+}
+{
+  "snapshot": "run-017",
+  "matrices": 4,
+  "LLL_certificates": 4,
+  "banks": 8,
+  "panels": 24,
+  "moment_records": 648,
+  "phase_identities": 4194304,
+  "synthetic_CBD_states": 16384,
+  "all_q21_candidates_tested": false,
+  "attack_costs_updated": false,
+  "profile_selected": false,
+  "j2_closed": false
+}
+{
+  "project_arithmetic_imported": false,
+  "numpy": "2.3.5",
+  "decimal_digits": 80,
+  "matrices_verified": 4,
+  "LLL_certificates_verified": 4,
+  "complete_banks_verified": 8,
+  "moment_records_verified": 648,
+  "phase_identities_verified": 4194304,
+  "exhaustive_decoder_coordinate_terms": 1101148160,
+  "high_precision_characters": 64,
+  "all_sample_events_and_integer_hashes_matched": true,
+  "maximum_absolute_numeric_delta": 8.981260180007666e-12
+}
+matrix 0: 7 distinct geometries, 8256 greedy costs
+matrix 1: 7 distinct geometries, 8256 greedy costs
+matrix 2: 7 distinct geometries, 8256 greedy costs
+matrix 3: 7 distinct geometries, 8256 greedy costs
+{
+  "snapshot": "run-018",
+  "selection_panels": 36,
+  "distinct_uniform_laws": 28,
+  "distinct_LWE_panels": 56,
+  "phase_identities": 4194304,
+  "H10_uniform_calibrations": 12,
+  "H10_CBD_calibrations": 96,
+  "exact_CBD_fourth_moment_computed": false,
+  "attack_costs_updated": false,
+  "profile_selected": false,
+  "j2_closed": false
+}
+{
+  "project_arithmetic_imported": false,
+  "numpy": "2.3.5",
+  "matrices": 4,
+  "greedy_costs_verified": 33024,
+  "exact_uniform_laws_verified": 28,
+  "LWE_panels_verified": 56,
+  "numerical_CBD_moments_verified": 224,
+  "unique_phase_identities_verified": 4194304,
+  "H10_uniform_calibrations": 12,
+  "H10_CBD_calibrations": 96,
+  "all_selected_sample_events_and_hashes_matched": true,
+  "maximum_absolute_numeric_delta": 5.684341886080802e-14,
+  "maximum_mean_error_over_true_bias_scale": 2.840764309695734e-14
+}
+matrix 0 repeated: 8 complete CBD expansions
+matrix 0 radix: 8 complete CBD expansions
+matrix 1 repeated: 8 complete CBD expansions
+matrix 1 radix: 8 complete CBD expansions
+matrix 2 repeated: 8 complete CBD expansions
+matrix 2 radix: 8 complete CBD expansions
+matrix 3 repeated: 8 complete CBD expansions
+matrix 3 radix: 8 complete CBD expansions
+{
+  "snapshot": "run-019",
+  "selection_panels": 36,
+  "CBD_banks": 64,
+  "population_moment_records": 1024,
+  "character_evaluation": "numeric",
+  "rare_tail_certified": false,
+  "attack_costs_updated": false,
+  "profile_selected": false,
+  "j2_closed": false
+}
+{
+  "project_arithmetic_imported": false,
+  "numpy": "2.3.5",
+  "coordinate_table_decimal_digits": 80,
+  "distinct_geometries_verified": 32,
+  "CBD_banks_verified": 64,
+  "population_moment_records_verified": 1024,
+  "cosine_sign_evaluations": 1824768,
+  "replayed_phase_identities": 4194304,
+  "all_multiplicities_and_sample_events_matched": true,
+  "maximum_absolute_numeric_delta": 8.377298854611581e-12,
+  "maximum_correction_error_over_absolute_mass": 2.3636648194269583e-13
+}
+matrix 0: six N32 certificates
+matrix 1: six N32 certificates
+matrix 2: six N32 certificates
+matrix 3: six N32 certificates
+{
+  "snapshot": "run-020",
+  "exact_rational_replay": true,
+  "protocol_commit": "5fc45d1",
+  "N": 32,
+  "CBD_banks": 24,
+  "H12_calibration_banks": 64,
+  "H12_numeric_raw_moments_enclosed": 1024,
+  "uniform_in_all_offsets": true,
+  "rational_moment_bounds": true,
+  "full_probability_law_enumerated": false,
+  "rare_tail_certified": false,
+  "attack_costs_updated": false,
+  "profile_selected": false,
+  "j2_closed": false,
+  "groups": [
+    {
+      "method": "norm",
+      "family": "repeated",
+      "all_variances_positive": true,
+      "maximum_kurtosis_absolute_error": 1.3121868950786495e-35,
+      "maximum_kurtosis_error_log2": -115.87551010308316
+    },
+    {
+      "method": "norm",
+      "family": "radix",
+      "all_variances_positive": true,
+      "maximum_kurtosis_absolute_error": 1.210932532904534e-13,
+      "maximum_kurtosis_error_log2": -42.908946746005945
+    },
+    {
+      "method": "hash",
+      "family": "repeated",
+      "all_variances_positive": true,
+      "maximum_kurtosis_absolute_error": 1.3121868950786495e-35,
+      "maximum_kurtosis_error_log2": -115.87551010308316
+    },
+    {
+      "method": "hash",
+      "family": "radix",
+      "all_variances_positive": true,
+      "maximum_kurtosis_absolute_error": 2.9815243043791345e-13,
+      "maximum_kurtosis_error_log2": -41.609015136362984
+    },
+    {
+      "method": "energy",
+      "family": "repeated",
+      "all_variances_positive": true,
+      "maximum_kurtosis_absolute_error": 1.3121868950786495e-35,
+      "maximum_kurtosis_error_log2": -115.87551010308316
+    },
+    {
+      "method": "energy",
+      "family": "radix",
+      "all_variances_positive": true,
+      "maximum_kurtosis_absolute_error": 6.757272572741464e-14,
+      "maximum_kurtosis_error_log2": -43.750552277149524
+    }
+  ]
+}
+{
+  "project_arithmetic_imported": false,
+  "full_coordinates_used": true,
+  "N32_banks_verified": 24,
+  "H12_banks_verified": 64,
+  "cosine_sign_evaluations": 23132160,
+  "histograms_and_rational_bounds_matched": true,
+  "rare_tail_certified": false
+}
+{
+  "profile": "KEM1536-DEV-Q7681-R1",
+  "vectors_verified": 16,
+  "total_frozen_vectors": 1000,
+  "full_rejection_corpus_replayed": false,
+  "all_hashes_verified": true,
+  "security_validation": "pending",
+  "j2_closed": false,
+  "j3_validated": false
+}
+{
+  "paired_rejections_replayed": 16,
+  "total_frozen_rejections": 10000,
+  "all_hashes_verified": true,
+  "all_replacement_secrets_equal": true,
+  "security_validation": "pending"
+}
+{
+  "mutation_cases_replayed": 16,
+  "full_hashes_verified": true,
+  "timing_statistics_replayed": true,
+  "constant_time_proven": false
+}
+{
+  "elapsed_seconds": 5.3477599,
+  "fresh_round_trips": 16,
+  "implicit_rejections_checked": 16,
+  "profile": "KEM1536-DEV-Q7681-R1",
+  "secrets_printed": false,
+  "security_validation": "pending"
+}
+{
+  "configuration_check": "passed",
+  "implementation_status": "experimental-r1-reference",
+  "scope": "public parameters and object sizes only"
+}

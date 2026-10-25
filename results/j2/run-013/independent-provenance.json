@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-10-24T20:58:32.036005+00:00",
+  "input_sha256": {
+    "research/verify_full_dual_toy_independent.py": "650bb1cb4553b5e4823bcf7c0fb6fa4a3959f689e359977c2658390daa510c6c",
+    "results/j2/run-013/study.json": "c698656a121ff1bb4a13f5026fd4ad846e9b4ee7adcaebfe95a342ec628d214c",
+    "results/j2/run-013/score-tables.jsonl": "c3f03c63131bf613505daec4022eccf3c00b89a51a53b5b0bc0bdf9378341031",
+    "results/j2/run-013/transcendental-tables.json": "32f168e89bc11b42d8e8e2df3a1e5f287118357b64ca9675767855c09c8c1aeb"
+  },
+  "output_sha256": {
+    "independent-verification.json": "060e8a43ea1054bcd26f8b0cacca2ed6d9e32e64b0e55f162a96c8bfb1231cec"
+  }
+}

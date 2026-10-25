@@ -1,0 +1,33 @@
+{
+  "created_utc": "2026-10-25T12:35:08.439775+00:00",
+  "windows_full_check_exit_code": 0,
+  "rustfmt": "passed",
+  "clippy_all_features": "passed",
+  "windows_rust_tests_default": 28,
+  "windows_rust_tests_research": 28,
+  "rust_tests_distinct": 29,
+  "python_tests": 89,
+  "preserved_j2_snapshots": 20,
+  "linux_rust_tests_default": 28,
+  "linux_rust_tests_research": 28,
+  "linux_asan_rust_tests": 28,
+  "asan_format_cases": 20000,
+  "asan_mutation_cases": 10000,
+  "asan_stderr_empty": true,
+  "frozen_corpus_smoke": {
+    "M01_vectors": 16,
+    "M01_paired_rejections": 16,
+    "M02_mutations": 16,
+    "complete_provenance_hashes": true,
+    "all_6000_timing_statistics_recomputed": true
+  },
+  "fresh_R1_exchanges_in_check": 16,
+  "fresh_R1_rejection_checks_in_check": 16,
+  "complete_campaigns_recorded_separately": true,
+  "constant_time_proven": false,
+  "complete_memory_erasure_proven": false,
+  "external_audit": false,
+  "j2_closed": false,
+  "j3_validated": false,
+  "j4_validated": false
+}

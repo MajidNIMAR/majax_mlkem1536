@@ -1,0 +1,12 @@
+{
+  "machin_pi_lower": {
+    "numerator": 1231847548,
+    "denominator": 392109375
+  },
+  "exp_point_seven_lower": {
+    "numerator": 12013,
+    "denominator": 6000
+  },
+  "gaussian_dyadic_factor": 42,
+  "eta": 3
+}

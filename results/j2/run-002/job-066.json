@@ -1,0 +1,42 @@
+{
+  "job": {
+    "scenario": "q7681-eta2",
+    "parameters": {
+      "n": 256,
+      "k": 6,
+      "q": 7681,
+      "eta": 2
+    },
+    "sample_budget": "extended",
+    "samples": 1792,
+    "targets": 1,
+    "oracle": "none",
+    "shape_model": "GSA",
+    "memory_cap": "none; exponential memory allowed",
+    "tool": "community",
+    "cost_model": "MATZOV-classical",
+    "algorithm": "bkw"
+  },
+  "status": "ok",
+  "applicability": "heuristic LWE estimator model",
+  "cost": {
+    "rop": "2.1670057640977847e+133",
+    "m": "1.5722075455649178e+129",
+    "mem": "3144414929500700546463723682040918151568021075421978123583107058174107202284555074922530752983188333146434958310152546457804700179",
+    "b": "33",
+    "t1": "0",
+    "t2": "19",
+    "ell": "32",
+    "#cod": "1353",
+    "#top": "0",
+    "#test": "192",
+    "tag": "coded-bkw",
+    "problem": "LWEParameters(n=1536, q=7681, Xs=D(\u03c3=1.00), Xe=D(\u03c3=7.75), m=1572207545564917765653615779401206366775496877755814467998244281634719452672177665033847278769935610970547159913343277538203402240, tag='q7681-eta2')"
+  },
+  "log2_cost": {
+    "rop": 442.9321396109331,
+    "mem": 430.18151584522764
+  },
+  "estimator_messages": "",
+  "elapsed_seconds": 19.033689098000195
+}

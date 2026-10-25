@@ -1,0 +1,221 @@
+{
+  "protocol_commit": "8354d10",
+  "q": 7681,
+  "eta": 3,
+  "matrices": 4,
+  "selection_panels": 36,
+  "distinct_geometries": 32,
+  "distinct_CBD_banks": 64,
+  "offsets_per_bank": 4,
+  "population_moment_records": 1024,
+  "CBD_population_moments_through_order4": true,
+  "covariance_calibrations": 256,
+  "reused_CBD_states": 16384,
+  "replayed_full_phase_identities": 4194304,
+  "numerical_character_evaluation": true,
+  "full_probability_law_enumerated": false,
+  "rare_tail_certified": false,
+  "groups": [
+    {
+      "method": "norm",
+      "N": 4,
+      "mean_uniform_kurtosis": 2.625,
+      "independent_cosine_kurtosis": 2.625,
+      "CBD": [
+        {
+          "family": "repeated",
+          "mean_true_kurtosis": 2.625,
+          "mean_true_log2_bias": -315.0878200756408,
+          "maximum_absolute_kurtosis_delta": 1.0147152997301034e-162,
+          "mean_empirical_true_kurtosis": 2.6108593893907144
+        },
+        {
+          "family": "radix",
+          "mean_true_kurtosis": 2.625,
+          "mean_true_log2_bias": -33.43098634618926,
+          "maximum_absolute_kurtosis_delta": 5.774613178889215e-16,
+          "mean_empirical_true_kurtosis": 2.623867226901557
+        }
+      ]
+    },
+    {
+      "method": "norm",
+      "N": 8,
+      "mean_uniform_kurtosis": 3.84375,
+      "independent_cosine_kurtosis": 2.8125,
+      "CBD": [
+        {
+          "family": "repeated",
+          "mean_true_kurtosis": 2.8125,
+          "mean_true_log2_bias": -312.74031867210874,
+          "maximum_absolute_kurtosis_delta": 1.1262502161877251e-99,
+          "mean_empirical_true_kurtosis": 2.782724516880478
+        },
+        {
+          "family": "radix",
+          "mean_true_kurtosis": 2.8125,
+          "mean_true_log2_bias": -33.094588672845276,
+          "maximum_absolute_kurtosis_delta": 1.4494647769262155e-16,
+          "mean_empirical_true_kurtosis": 2.8314554124754974
+        }
+      ]
+    },
+    {
+      "method": "norm",
+      "N": 16,
+      "mean_uniform_kurtosis": 6.3515625,
+      "independent_cosine_kurtosis": 2.90625,
+      "CBD": [
+        {
+          "family": "repeated",
+          "mean_true_kurtosis": 2.90625,
+          "mean_true_log2_bias": -304.0065672939421,
+          "maximum_absolute_kurtosis_delta": 2.715655050412291e-94,
+          "mean_empirical_true_kurtosis": 2.8914499789875387
+        },
+        {
+          "family": "radix",
+          "mean_true_kurtosis": 2.90625,
+          "mean_true_log2_bias": -32.53683635671802,
+          "maximum_absolute_kurtosis_delta": 4.110053923190591e-16,
+          "mean_empirical_true_kurtosis": 2.9245270652374753
+        }
+      ]
+    },
+    {
+      "method": "hash",
+      "N": 4,
+      "mean_uniform_kurtosis": 2.625,
+      "independent_cosine_kurtosis": 2.625,
+      "CBD": [
+        {
+          "family": "repeated",
+          "mean_true_kurtosis": 2.625,
+          "mean_true_log2_bias": -301.3666757661458,
+          "maximum_absolute_kurtosis_delta": 4.716480892782279e-159,
+          "mean_empirical_true_kurtosis": 2.615867953606623
+        },
+        {
+          "family": "radix",
+          "mean_true_kurtosis": 2.625,
+          "mean_true_log2_bias": -34.4300276815883,
+          "maximum_absolute_kurtosis_delta": 2.8777823518027656e-18,
+          "mean_empirical_true_kurtosis": 2.6233857851327516
+        }
+      ]
+    },
+    {
+      "method": "hash",
+      "N": 8,
+      "mean_uniform_kurtosis": 2.8828125,
+      "independent_cosine_kurtosis": 2.8125,
+      "CBD": [
+        {
+          "family": "repeated",
+          "mean_true_kurtosis": 2.8125,
+          "mean_true_log2_bias": -297.7489280236317,
+          "maximum_absolute_kurtosis_delta": 1.0684549444699915e-150,
+          "mean_empirical_true_kurtosis": 2.8139683448565793
+        },
+        {
+          "family": "radix",
+          "mean_true_kurtosis": 2.8125,
+          "mean_true_log2_bias": -34.077188875365344,
+          "maximum_absolute_kurtosis_delta": 8.971745617127855e-19,
+          "mean_empirical_true_kurtosis": 2.8161599126558814
+        }
+      ]
+    },
+    {
+      "method": "hash",
+      "N": 16,
+      "mean_uniform_kurtosis": 3.52734375,
+      "independent_cosine_kurtosis": 2.90625,
+      "CBD": [
+        {
+          "family": "repeated",
+          "mean_true_kurtosis": 2.90625,
+          "mean_true_log2_bias": -296.26488542819334,
+          "maximum_absolute_kurtosis_delta": 6.842449039307731e-87,
+          "mean_empirical_true_kurtosis": 2.863006195276447
+        },
+        {
+          "family": "radix",
+          "mean_true_kurtosis": 2.90625,
+          "mean_true_log2_bias": -33.71139700020354,
+          "maximum_absolute_kurtosis_delta": 7.0453127723631e-18,
+          "mean_empirical_true_kurtosis": 2.9864060706827824
+        }
+      ]
+    },
+    {
+      "method": "energy",
+      "N": 4,
+      "mean_uniform_kurtosis": 2.625,
+      "independent_cosine_kurtosis": 2.625,
+      "CBD": [
+        {
+          "family": "repeated",
+          "mean_true_kurtosis": 2.625,
+          "mean_true_log2_bias": -315.0878200756408,
+          "maximum_absolute_kurtosis_delta": 1.0147152997301034e-162,
+          "mean_empirical_true_kurtosis": 2.6108593893907144
+        },
+        {
+          "family": "radix",
+          "mean_true_kurtosis": 2.625,
+          "mean_true_log2_bias": -33.43098634618926,
+          "maximum_absolute_kurtosis_delta": 5.774613178889215e-16,
+          "mean_empirical_true_kurtosis": 2.623867226901557
+        }
+      ]
+    },
+    {
+      "method": "energy",
+      "N": 8,
+      "mean_uniform_kurtosis": 2.8125,
+      "independent_cosine_kurtosis": 2.8125,
+      "CBD": [
+        {
+          "family": "repeated",
+          "mean_true_kurtosis": 2.8125,
+          "mean_true_log2_bias": -301.87456202150497,
+          "maximum_absolute_kurtosis_delta": 6.942590874973857e-156,
+          "mean_empirical_true_kurtosis": 2.7741859103124877
+        },
+        {
+          "family": "radix",
+          "mean_true_kurtosis": 2.8125,
+          "mean_true_log2_bias": -33.61454019737579,
+          "maximum_absolute_kurtosis_delta": 1.4539996240104407e-16,
+          "mean_empirical_true_kurtosis": 2.8004231992846695
+        }
+      ]
+    },
+    {
+      "method": "energy",
+      "N": 16,
+      "mean_uniform_kurtosis": 3.146484375,
+      "independent_cosine_kurtosis": 2.90625,
+      "CBD": [
+        {
+          "family": "repeated",
+          "mean_true_kurtosis": 2.90625,
+          "mean_true_log2_bias": -300.0693240272202,
+          "maximum_absolute_kurtosis_delta": 2.314465631118125e-136,
+          "mean_empirical_true_kurtosis": 2.8956994385082613
+        },
+        {
+          "family": "radix",
+          "mean_true_kurtosis": 2.90625,
+          "mean_true_log2_bias": -33.77294659225168,
+          "maximum_absolute_kurtosis_delta": 3.895758255581622e-17,
+          "mean_empirical_true_kurtosis": 2.9118336403380676
+        }
+      ]
+    }
+  ],
+  "attack_costs_updated": false,
+  "profile_selected": false,
+  "j2_closed": false
+}

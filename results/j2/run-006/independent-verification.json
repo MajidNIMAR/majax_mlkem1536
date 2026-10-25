@@ -1,0 +1,10 @@
+{
+  "snapshot": "run-006",
+  "project_arithmetic_imported": false,
+  "cover_for_all_q_squared_pairs": true,
+  "CBD_bit_strings": 64,
+  "pair_outcomes": 4096,
+  "full_fraction_matches": true,
+  "c05_exact_comparison": true,
+  "candidate_id": "staggered-dv4-pairs228"
+}

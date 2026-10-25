@@ -1,0 +1,1781 @@
+{
+  "experiments": [
+    {
+      "experiment": "panel-0-repeated",
+      "code": {
+        "q": 3329,
+        "n": 114,
+        "k": 16,
+        "family": "repeated",
+        "generators": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        "codewords": "227520599039802010277863415110924237928901673836881694721",
+        "block_sizes": [
+          8,
+          8,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7
+        ],
+        "tie_rule": "lexicographically smallest field-symbol vector",
+        "metric": "sum of squared centered modular coordinate errors"
+      },
+      "candidates_per_decode": 53264,
+      "coordinate_terms_per_decode": 379506,
+      "samples": 256,
+      "q": 3329,
+      "eta": 2,
+      "dimension": 114,
+      "changed_vectors": 256,
+      "changed_blocks": 4065,
+      "mean_log2_bias_gain": 2.748357411622755,
+      "minimum_log2_bias_gain": 0.3338641140444736,
+      "maximum_log2_bias_gain": 8.50534292322402,
+      "log2_ratio_mean_bias": 1.0734612899126148,
+      "mean_norm_euclidean": 7752.643923979643,
+      "mean_norm_cbd": 7783.44054652146,
+      "mean_squared_norm_increase": 479821.671875,
+      "maximum_squared_norm_increase": 1191256,
+      "blocks": 4096,
+      "real_optimum_certified_blocks": 4096,
+      "maximum_log2_regret_bound": 2.9916415707947057e-10
+    },
+    {
+      "experiment": "panel-0-radix",
+      "code": {
+        "q": 3329,
+        "n": 114,
+        "k": 16,
+        "family": "radix",
+        "generators": [
+          [
+            1,
+            3,
+            9,
+            27,
+            81,
+            243,
+            729,
+            2187
+          ],
+          [
+            1,
+            3,
+            9,
+            27,
+            81,
+            243,
+            729,
+            2187
+          ],
+          [
+            1,
+            3,
+            9,
+            27,
+            81,
+            243,
+            729
+          ],
+          [
+            1,
+            3,
+            9,
+            27,
+            81,
+            243,
+            729
+          ],
+          [
+            1,
+            3,
+            9,
+            27,
+            81,
+            243,
+            729
+          ],
+          [
+            1,
+            3,
+            9,
+            27,
+            81,
+            243,
+            729
+          ],
+          [
+            1,
+            3,
+            9,
+            27,
+            81,
+            243,
+            729
+          ],
+          [
+            1,
+            3,
+            9,
+            27,
+            81,
+            243,
+            729
+          ],
+          [
+            1,
+            3,
+            9,
+            27,
+            81,
+            243,
+            729
+          ],
+          [
+            1,
+            3,
+            9,
+            27,
+            81,
+            243,
+            729
+          ],
+          [
+            1,
+            3,
+            9,
+            27,
+            81,
+            243,
+            729
+          ],
+          [
+            1,
+            3,
+            9,
+            27,
+            81,
+            243,
+            729
+          ],
+          [
+            1,
+            3,
+            9,
+            27,
+            81,
+            243,
+            729
+          ],
+          [
+            1,
+            3,
+            9,
+            27,
+            81,
+            243,
+            729
+          ],
+          [
+            1,
+            3,
+            9,
+            27,
+            81,
+            243,
+            729
+          ],
+          [
+            1,
+            3,
+            9,
+            27,
+            81,
+            243,
+            729
+          ]
+        ],
+        "codewords": "227520599039802010277863415110924237928901673836881694721",
+        "block_sizes": [
+          8,
+          8,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7
+        ],
+        "tie_rule": "lexicographically smallest field-symbol vector",
+        "metric": "sum of squared centered modular coordinate errors"
+      },
+      "candidates_per_decode": 53264,
+      "coordinate_terms_per_decode": 379506,
+      "samples": 256,
+      "q": 3329,
+      "eta": 2,
+      "dimension": 114,
+      "changed_vectors": 73,
+      "changed_blocks": 83,
+      "mean_log2_bias_gain": 0.006932211933520907,
+      "minimum_log2_bias_gain": 0.0,
+      "maximum_log2_bias_gain": 0.1185031903808742,
+      "log2_ratio_mean_bias": 0.009587257200735166,
+      "mean_norm_euclidean": 3236.3300203111075,
+      "mean_norm_cbd": 3236.6347392952807,
+      "mean_squared_norm_increase": 1996.6796875,
+      "maximum_squared_norm_increase": 43905,
+      "blocks": 4096,
+      "real_optimum_certified_blocks": 4096,
+      "maximum_log2_regret_bound": 2.9916415707947057e-10
+    },
+    {
+      "experiment": "panel-1-repeated",
+      "code": {
+        "q": 3329,
+        "n": 111,
+        "k": 16,
+        "family": "repeated",
+        "generators": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        "codewords": "227520599039802010277863415110924237928901673836881694721",
+        "block_sizes": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          6
+        ],
+        "tie_rule": "lexicographically smallest field-symbol vector",
+        "metric": "sum of squared centered modular coordinate errors"
+      },
+      "candidates_per_decode": 53264,
+      "coordinate_terms_per_decode": 369519,
+      "samples": 256,
+      "q": 3329,
+      "eta": 2,
+      "dimension": 111,
+      "changed_vectors": 256,
+      "changed_blocks": 4044,
+      "mean_log2_bias_gain": 2.5605761457910505,
+      "minimum_log2_bias_gain": 0.48753941856534766,
+      "maximum_log2_bias_gain": 5.886771958651593,
+      "log2_ratio_mean_bias": 1.468659595965505,
+      "mean_norm_euclidean": 7619.16847173537,
+      "mean_norm_cbd": 7647.8377077936675,
+      "mean_squared_norm_increase": 438022.61328125,
+      "maximum_squared_norm_increase": 1147124,
+      "blocks": 4096,
+      "real_optimum_certified_blocks": 4096,
+      "maximum_log2_regret_bound": 2.912914161036951e-10
+    },
+    {
+      "experiment": "panel-1-radix",
+      "code": {
+        "q": 3329,
+        "n": 111,
+        "k": 16,
+        "family": "radix",
+        "generators": [
+          [
+            1,
+            3,
+            9,
+            27,
+            81,
+            243,
+            729
+          ],
+          [
+            1,
+            3,
+            9,
+            27,
+            81,
+            243,
+            729
+          ],
+          [
+            1,
+            3,
+            9,
+            27,
+            81,
+            243,
+            729
+          ],
+          [
+            1,
+            3,
+            9,
+            27,
+            81,
+            243,
+            729
+          ],
+          [
+            1,
+            3,
+            9,
+            27,
+            81,
+            243,
+            729
+          ],
+          [
+            1,
+            3,
+            9,
+            27,
+            81,
+            243,
+            729
+          ],
+          [
+            1,
+            3,
+            9,
+            27,
+            81,
+            243,
+            729
+          ],
+          [
+            1,
+            3,
+            9,
+            27,
+            81,
+            243,
+            729
+          ],
+          [
+            1,
+            3,
+            9,
+            27,
+            81,
+            243,
+            729
+          ],
+          [
+            1,
+            3,
+            9,
+            27,
+            81,
+            243,
+            729
+          ],
+          [
+            1,
+            3,
+            9,
+            27,
+            81,
+            243,
+            729
+          ],
+          [
+            1,
+            3,
+            9,
+            27,
+            81,
+            243,
+            729
+          ],
+          [
+            1,
+            3,
+            9,
+            27,
+            81,
+            243,
+            729
+          ],
+          [
+            1,
+            3,
+            9,
+            27,
+            81,
+            243,
+            729
+          ],
+          [
+            1,
+            3,
+            9,
+            27,
+            81,
+            243,
+            729
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024
+          ]
+        ],
+        "codewords": "227520599039802010277863415110924237928901673836881694721",
+        "block_sizes": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          6
+        ],
+        "tie_rule": "lexicographically smallest field-symbol vector",
+        "metric": "sum of squared centered modular coordinate errors"
+      },
+      "candidates_per_decode": 53264,
+      "coordinate_terms_per_decode": 369519,
+      "samples": 256,
+      "q": 3329,
+      "eta": 2,
+      "dimension": 111,
+      "changed_vectors": 56,
+      "changed_blocks": 63,
+      "mean_log2_bias_gain": 0.0038892521344139758,
+      "minimum_log2_bias_gain": 0.0,
+      "maximum_log2_bias_gain": 0.07936319183956186,
+      "log2_ratio_mean_bias": 0.0026711611296121873,
+      "mean_norm_euclidean": 3104.941968505472,
+      "mean_norm_cbd": 3105.1659406050476,
+      "mean_squared_norm_increase": 1403.5703125,
+      "maximum_squared_norm_increase": 20763,
+      "blocks": 4096,
+      "real_optimum_certified_blocks": 4096,
+      "maximum_log2_regret_bound": 2.912914161036951e-10
+    },
+    {
+      "experiment": "panel-2-repeated",
+      "code": {
+        "q": 7681,
+        "n": 152,
+        "k": 22,
+        "family": "repeated",
+        "generators": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        "codewords": "30143302538524432924653229405008726875983007371381869552052781221052275913279923983361",
+        "block_sizes": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          6,
+          6
+        ],
+        "tie_rule": "lexicographically smallest field-symbol vector",
+        "metric": "sum of squared centered modular coordinate errors"
+      },
+      "candidates_per_decode": 168982,
+      "coordinate_terms_per_decode": 1167512,
+      "samples": 256,
+      "q": 7681,
+      "eta": 3,
+      "dimension": 152,
+      "changed_vectors": 256,
+      "changed_blocks": 5617,
+      "mean_log2_bias_gain": 5.23572548652708,
+      "minimum_log2_bias_gain": 1.8181374802591108,
+      "maximum_log2_bias_gain": 12.462813170608285,
+      "log2_ratio_mean_bias": 2.5919824294811065,
+      "mean_norm_euclidean": 20570.99220653332,
+      "mean_norm_cbd": 20649.544412240448,
+      "mean_squared_norm_increase": 3244147.2265625,
+      "maximum_squared_norm_increase": 9856329,
+      "blocks": 5632,
+      "real_optimum_certified_blocks": 5632,
+      "maximum_log2_regret_bound": 5.983283141589411e-10
+    },
+    {
+      "experiment": "panel-2-radix",
+      "code": {
+        "q": 7681,
+        "n": 152,
+        "k": 22,
+        "family": "radix",
+        "generators": [
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024,
+            4096
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024,
+            4096
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024,
+            4096
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024,
+            4096
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024,
+            4096
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024,
+            4096
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024,
+            4096
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024,
+            4096
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024,
+            4096
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024,
+            4096
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024,
+            4096
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024,
+            4096
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024,
+            4096
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024,
+            4096
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024,
+            4096
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024,
+            4096
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024,
+            4096
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024,
+            4096
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024,
+            4096
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024,
+            4096
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024
+          ]
+        ],
+        "codewords": "30143302538524432924653229405008726875983007371381869552052781221052275913279923983361",
+        "block_sizes": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          6,
+          6
+        ],
+        "tie_rule": "lexicographically smallest field-symbol vector",
+        "metric": "sum of squared centered modular coordinate errors"
+      },
+      "candidates_per_decode": 168982,
+      "coordinate_terms_per_decode": 1167512,
+      "samples": 256,
+      "q": 7681,
+      "eta": 3,
+      "dimension": 152,
+      "changed_vectors": 63,
+      "changed_blocks": 71,
+      "mean_log2_bias_gain": 0.00779825067150966,
+      "minimum_log2_bias_gain": 0.0,
+      "maximum_log2_bias_gain": 0.18120927280167365,
+      "log2_ratio_mean_bias": 0.00496093044132806,
+      "mean_norm_euclidean": 7462.884424633483,
+      "mean_norm_cbd": 7463.369993417456,
+      "mean_squared_norm_increase": 7359.69140625,
+      "maximum_squared_norm_increase": 236045,
+      "blocks": 5632,
+      "real_optimum_certified_blocks": 5632,
+      "maximum_log2_regret_bound": 5.983283141589411e-10
+    },
+    {
+      "experiment": "panel-3-repeated",
+      "code": {
+        "q": 7681,
+        "n": 140,
+        "k": 21,
+        "family": "repeated",
+        "generators": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        "codewords": "3924398195355348642709703086187830604866945367970559764620854214432010924785825281",
+        "block_sizes": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ],
+        "tie_rule": "lexicographically smallest field-symbol vector",
+        "metric": "sum of squared centered modular coordinate errors"
+      },
+      "candidates_per_decode": 161301,
+      "coordinate_terms_per_decode": 1075340,
+      "samples": 256,
+      "q": 7681,
+      "eta": 3,
+      "dimension": 140,
+      "changed_vectors": 256,
+      "changed_blocks": 5344,
+      "mean_log2_bias_gain": 4.700849024143409,
+      "minimum_log2_bias_gain": 0.8344071617278246,
+      "maximum_log2_bias_gain": 11.701597230150298,
+      "log2_ratio_mean_bias": 1.6998799571989593,
+      "mean_norm_euclidean": 19573.679558695174,
+      "mean_norm_cbd": 19647.210607991754,
+      "mean_squared_norm_increase": 2890734.22265625,
+      "maximum_squared_norm_increase": 7067607,
+      "blocks": 5376,
+      "real_optimum_certified_blocks": 5376,
+      "maximum_log2_regret_bound": 5.51091868304288e-10
+    },
+    {
+      "experiment": "panel-3-radix",
+      "code": {
+        "q": 7681,
+        "n": 140,
+        "k": 21,
+        "family": "radix",
+        "generators": [
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024,
+            4096
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024,
+            4096
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024,
+            4096
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024,
+            4096
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024,
+            4096
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024,
+            4096
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024,
+            4096
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024,
+            4096
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024,
+            4096
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024,
+            4096
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024,
+            4096
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024,
+            4096
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024,
+            4096
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024,
+            4096
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024
+          ],
+          [
+            1,
+            4,
+            16,
+            64,
+            256,
+            1024
+          ]
+        ],
+        "codewords": "3924398195355348642709703086187830604866945367970559764620854214432010924785825281",
+        "block_sizes": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ],
+        "tie_rule": "lexicographically smallest field-symbol vector",
+        "metric": "sum of squared centered modular coordinate errors"
+      },
+      "candidates_per_decode": 161301,
+      "coordinate_terms_per_decode": 1075340,
+      "samples": 256,
+      "q": 7681,
+      "eta": 3,
+      "dimension": 140,
+      "changed_vectors": 67,
+      "changed_blocks": 75,
+      "mean_log2_bias_gain": 0.006075764633872716,
+      "minimum_log2_bias_gain": 0.0,
+      "maximum_log2_bias_gain": 0.16860104956780475,
+      "log2_ratio_mean_bias": 0.006154971388930619,
+      "mean_norm_euclidean": 6918.48751588947,
+      "mean_norm_cbd": 6919.001701801169,
+      "mean_squared_norm_increase": 7107.69921875,
+      "maximum_squared_norm_increase": 172265,
+      "blocks": 5376,
+      "real_optimum_certified_blocks": 5376,
+      "maximum_log2_regret_bound": 5.51091868304288e-10
+    }
+  ],
+  "scale": 1099511627776,
+  "protocol_commit": "17f30d3",
+  "attack_costs_updated": false,
+  "profile_selected": false,
+  "j2_closed": false,
+  "model": "code-only ideal independent iid-CBD secret; fixed same codes and targets as run-010",
+  "limits": [
+    "CBD integer minimizer is within eta*n/(S*ln2) log2 bias of the real optimum",
+    "real optimum only claimed for blocks with interval/histogram certificates",
+    "same full-alphabet candidate budget; certificate work differs",
+    "256 synthetic paired targets per experiment, not population or tail certification",
+    "no dual-lattice vectors, FFT score, attack success probability or security update"
+  ]
+}

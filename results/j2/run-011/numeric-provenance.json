@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-10-24T18:23:55.967060+00:00",
+  "input_sha256": {
+    "research/verify_decoder_score_numeric.py": "15377c19b813670d1b1157679d2647e8bd02a5f0e3ec4b628938b0c093dd1431",
+    "results/j2/run-011/residuals.jsonl": "dc57dc5f29f0818adceb1efa8b4ee1b0df5edfde34289fb8b1b0820e96d86cf5",
+    "results/j2/run-011/score-banks.json": "fe0db009684349fb1579b2404ae4fdabd53bf43077d5c8e1899bdbee8b68f474",
+    "results/j2/run-011/equal-norm-controls.json": "0ca77fd16aa20b46d18118abdde1b39ca74a51f323e4fcf61717fe10056c6c38",
+    "results/j2/run-011/study.json": "9de388725877e727435f9707ff6c6daf26cd84f50dd18aadc348bf3e503a3f85"
+  },
+  "output_sha256": {
+    "numeric-verification.json": "cea8a40d7f259108366370e780a83bddba6258afee056906dd937ee1eb3cc9ee"
+  }
+}

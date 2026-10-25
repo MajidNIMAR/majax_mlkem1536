@@ -1,0 +1,34 @@
+{
+  "created_utc": "2026-10-25T01:05:10.897003+00:00",
+  "protocol_commit": "cfc924c",
+  "python": "3.13.7",
+  "numpy": "2.3.5",
+  "input_sha256": {
+    "docs/PROTOCOLE_H11.md": "722acce14c4e8ddd6efc41c7f420ac19f4590aaef63caefefcf38023dd81e30b",
+    "research/additive_score.py": "7b997ede80b3712a7dd5a0c41637956c926969fe4030a0f179a0dec998b4f332",
+    "research/run_additive_score.py": "b1a3cf4a75f2c30dfbbc80521bd7a321f1cae29ee9c069f70672efda80c2a962",
+    "research/test_additive_score.py": "283326b9a5673982dee98e2a0accfc0ad580604841483571ec351b1212e396fa",
+    "research/verify_additive_score.py": "ef2e96b80fd81679706fac0b894829e4af4b6fe24e2b5ed6a04e558ea45996e2",
+    "research/verify_additive_score_independent.py": "d95a2f72ae253009906ea3eeb41d86ea7d011642efe127bd289b4c25ad4f4556",
+    "research/real_dual.py": "ae3d7bf4fe19228556367f1d6f0b87ead48a8cef4d5406ba1af9f61f4456a671",
+    "research/block_decoder.py": "afa6e53d16e339d6d0b0be6145f5221d12ef52685e5de9c7745b89389740e912",
+    "research/block_decoder_numpy.py": "c357a2523dc82f14ef8fc86fd371648a1f02d2e66105fbe70f8afa547bb54e91",
+    "research/lll_dimensions.py": "397e080dc9501b8e9f5aede9f41744991215ea42d2aecb778c0f89fcd89b8afc",
+    "research/exact_lll.py": "5e916b13ee90bfa9be4f5520fc50c0b7b4c4315e1c2640f551c4cf0380b0180c",
+    "research/run_block_decoder.py": "e4d3ba51a63e852a989a195a7ddc0238456244c0746c54c8fe4789eb2322917b",
+    "research/requirements-cbd-dimensions.txt": "a3315a771dfccf635c0341eddf2b41e4239d0a50b879cd1a8fcf91e6f76dd875",
+    "results/j2/run-017/cases.json": "609895797e6bc0eefe2a7c1b3b90ca3aac60875de56c1e0a43c661bc1e92039d",
+    "results/j2/run-017/banks.json": "2dac7fff74c2808d0fde98617fcaee6a85c43de6a7e8d6e401f1e529291b957d",
+    "results/j2/run-017/offsets.json": "cbf92668e2f3253b753bc94dd2e73eeda936857a985e7ed5419c621c6c03cda4",
+    "results/j2/run-017/provenance.json": "b0b165c0e564ebb5ce0e9ff6cc027bd88cb1513c2c6a5bc15ed2a7b4391282cf"
+  },
+  "output_sha256": {
+    "orders.json": "61dfccc1830c1c8fa00544efeabc66df750bdbbc7c878d721d9dcedf6bf0bf17",
+    "panels.json": "54b797d3f3464700b1e78174c12dc34ada72c3ce0084a3f3043a28b66b06b9c7",
+    "geometries.json": "452a294401fa4c99ef32d12dd32e7a3502518b84e326a58073f227abe3470519",
+    "banks.json": "a9643c6c62198f83dc37c8f293b6388af54bb3c34878859bee05e0d9c8273043",
+    "pools.json": "e9841634efd30fc65f37ecb8b9c992cd5bdf26baca1208557cf3f3ae159df8fa",
+    "timings.json": "df03e2cf4073c4bbb8401f4035a7886b8b045ccc85fdd23aa491f8e3baccf4c5",
+    "summary.json": "4b60c6f08b21aebbc09a720f097d1f26f2dd3e30812e07c4d4f7b6124f27b30a"
+  }
+}

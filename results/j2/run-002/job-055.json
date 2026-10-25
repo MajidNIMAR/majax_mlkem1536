@@ -1,0 +1,39 @@
+{
+  "job": {
+    "scenario": "q7681-eta3",
+    "parameters": {
+      "n": 256,
+      "k": 6,
+      "q": 7681,
+      "eta": 3
+    },
+    "sample_budget": "key",
+    "samples": 1536,
+    "targets": 1,
+    "oracle": "none",
+    "shape_model": "GSA",
+    "memory_cap": "none; exponential memory allowed",
+    "tool": "community",
+    "cost_model": "BCSS23-quantum-asymptotic",
+    "algorithm": "bdd"
+  },
+  "status": "ok",
+  "applicability": "heuristic LWE estimator model",
+  "cost": {
+    "rop": "4.86732158225261e102",
+    "red": "1.41866536016690e102",
+    "svp": "3.44865622208571e102",
+    "beta": "1324",
+    "eta": "1328",
+    "d": "2888",
+    "tag": "bdd",
+    "problem": "LWEParameters(n=1536, q=7681, Xs=D(\u03c3=1.22), Xe=D(\u03c3=1.22), m=1536, tag='q7681-eta3')"
+  },
+  "log2_cost": {
+    "rop": 341.1197937746384,
+    "red": 339.34119999999996,
+    "svp": 340.62269999999995
+  },
+  "estimator_messages": "",
+  "elapsed_seconds": 8.096014865000143
+}

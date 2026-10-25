@@ -1,0 +1,20 @@
+{
+  "cases": 10000,
+  "class_counts": [
+    2000,
+    2000,
+    2000,
+    2000,
+    2000
+  ],
+  "accepted_counts": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "distinct_ciphertexts": 5351,
+  "ciphertext_and_secret_sha256": "512c32699c9933e45f170df59b9bf0140e316562fa8429c5e7cbbb85450ae1c7",
+  "independent_decrypt_and_reencrypt": true
+}

@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "checked_at": "2026-10-24",
+  "archives": [
+    {
+      "id": "lattice-estimator",
+      "repository": "https://github.com/malb/lattice-estimator",
+      "commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "url": "https://codeload.github.com/malb/lattice-estimator/zip/f31b86fe490ab11abb4a69efa13007583791e10a",
+      "sha256": "7c2fe5d17ae25d61360897c386861f202e6237240a23c2ac47e4468858a2b68e",
+      "cache_archive": ".tools/downloads/lattice-estimator-f31b86f.zip",
+      "cache_directory": ".tools/upstream/lattice-estimator-f31b86fe490ab11abb4a69efa13007583791e10a"
+    },
+    {
+      "id": "mlwe-hybrids",
+      "repository": "https://github.com/TabOg/mlwe-hybrids",
+      "commit": "a92f335665eef69927d2d8f49832bd595a6dac32",
+      "url": "https://codeload.github.com/TabOg/mlwe-hybrids/zip/a92f335665eef69927d2d8f49832bd595a6dac32",
+      "sha256": "162d396144e3b6eb338f8fe4721b55bcc367d0c0a7aa41efefea99700a05025e",
+      "cache_archive": ".tools/downloads/mlwe-hybrids-a92f335.zip",
+      "cache_directory": ".tools/upstream/mlwe-hybrids-a92f335665eef69927d2d8f49832bd595a6dac32"
+    },
+    {
+      "id": "paper-estimator",
+      "repository": "https://github.com/malb/lattice-estimator",
+      "commit": "6019056011d10d7e9c30a0d5da2d2f729fbc2eec",
+      "url": "https://codeload.github.com/malb/lattice-estimator/zip/6019056011d10d7e9c30a0d5da2d2f729fbc2eec",
+      "sha256": "a7bbbff7802cadb937edb96b257fb3c365fc8419bda7137dcf5d50b270bfd90c",
+      "cache_archive": ".tools/downloads/lattice-estimator-6019056.zip",
+      "cache_directory": ".tools/upstream/mlwe-hybrids-a92f335665eef69927d2d8f49832bd595a6dac32/PrimalHybrid/lattice_estimator"
+    }
+  ]
+}

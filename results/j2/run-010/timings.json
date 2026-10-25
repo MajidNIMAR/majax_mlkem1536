@@ -1,0 +1,133 @@
+{
+  "environment": {
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "processor": "AMD Ryzen 7 2700 Eight-Core Processor",
+    "machine": "x86_64",
+    "python": "3.12.15",
+    "numpy": "2.5.4",
+    "timer_resolution_seconds": 1e-09
+  },
+  "measurements": [
+    {
+      "experiment": "panel-0-repeated",
+      "batch_size": 8,
+      "batches_ns": [
+        3010930,
+        3127871,
+        2975734,
+        2945777,
+        2987356,
+        2927533,
+        4311249
+      ],
+      "median_ns_per_decode": 373419.5,
+      "includes": "Python call, validation, decoding; warm tables; no generation or I/O"
+    },
+    {
+      "experiment": "panel-0-radix",
+      "batch_size": 8,
+      "batches_ns": [
+        19643712,
+        19122622,
+        18847873,
+        18832441,
+        19293001,
+        19081679,
+        18833583
+      ],
+      "median_ns_per_decode": 2385209.875,
+      "includes": "Python call, validation, decoding; warm tables; no generation or I/O"
+    },
+    {
+      "experiment": "panel-1-repeated",
+      "batch_size": 8,
+      "batches_ns": [
+        2993016,
+        2944324,
+        2932993,
+        2917794,
+        2851269,
+        3217390,
+        3400723
+      ],
+      "median_ns_per_decode": 368040.5,
+      "includes": "Python call, validation, decoding; warm tables; no generation or I/O"
+    },
+    {
+      "experiment": "panel-1-radix",
+      "batch_size": 8,
+      "batches_ns": [
+        19469851,
+        19167299,
+        19181934,
+        18819165,
+        19180623,
+        19727633,
+        19921326
+      ],
+      "median_ns_per_decode": 2397741.75,
+      "includes": "Python call, validation, decoding; warm tables; no generation or I/O"
+    },
+    {
+      "experiment": "panel-2-repeated",
+      "batch_size": 8,
+      "batches_ns": [
+        4043754,
+        3948173,
+        3830121,
+        3876439,
+        3916484,
+        3901405,
+        3882479
+      ],
+      "median_ns_per_decode": 487675.625,
+      "includes": "Python call, validation, decoding; warm tables; no generation or I/O"
+    },
+    {
+      "experiment": "panel-2-radix",
+      "batch_size": 8,
+      "batches_ns": [
+        56010100,
+        57158173,
+        57972765,
+        55380585,
+        56235483,
+        56486599,
+        56538344
+      ],
+      "median_ns_per_decode": 7060824.875,
+      "includes": "Python call, validation, decoding; warm tables; no generation or I/O"
+    },
+    {
+      "experiment": "panel-3-repeated",
+      "batch_size": 8,
+      "batches_ns": [
+        3601550,
+        3650802,
+        3702399,
+        3695226,
+        3658156,
+        3650863,
+        3672332
+      ],
+      "median_ns_per_decode": 457269.5,
+      "includes": "Python call, validation, decoding; warm tables; no generation or I/O"
+    },
+    {
+      "experiment": "panel-3-radix",
+      "batch_size": 8,
+      "batches_ns": [
+        54850879,
+        55108660,
+        52377527,
+        54017684,
+        52812560,
+        54184118,
+        53825843
+      ],
+      "median_ns_per_decode": 6752210.5,
+      "includes": "Python call, validation, decoding; warm tables; no generation or I/O"
+    }
+  ],
+  "limits": "local warm-cache Python prototype measurements; not estimator rop units or production performance"
+}

@@ -1,0 +1,10 @@
+{
+  "purpose": "independent replay before first Git freeze; prior run files unchanged",
+  "input_sha256": {
+    "research/verify_group_certificate_bits.py": "a9415c5e1dffeef836c5a7c85ccae0bdbf9fa5f232b55ae82f86b81c0b2d33ba",
+    "results/j2/run-006/winner-certificate.json": "3f488102706967edd4160e4f7b658d35ca4df232d6a9a1977feea7f88f0834cd"
+  },
+  "output_sha256": {
+    "independent-verification.json": "3339f94bbd6a3672e425460cb15c9f75fb2f23ee59bb31406015b4b7641c0f37"
+  }
+}

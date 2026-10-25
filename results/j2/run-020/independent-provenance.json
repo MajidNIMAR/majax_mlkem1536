@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-10-25T10:10:12.000007+00:00",
+  "input_sha256": {
+    "docs/PROTOCOLE_H13.md": "a891a9d3fca756daf91a974495ec53edde274175bf99c446580f7123581f0457",
+    "research/verify_bounded_moments_independent.py": "77b2b83995d28553cf7d8b8217ebdcf363637c9937503d70a4efd06e32b19026",
+    "research/requirements-cbd-dimensions.txt": "a3315a771dfccf635c0341eddf2b41e4239d0a50b879cd1a8fcf91e6f76dd875",
+    "results/j2/run-017/banks.json": "2dac7fff74c2808d0fde98617fcaee6a85c43de6a7e8d6e401f1e529291b957d",
+    "results/j2/run-018/orders.json": "61dfccc1830c1c8fa00544efeabc66df750bdbbc7c878d721d9dcedf6bf0bf17",
+    "results/j2/run-019/geometries.json": "b15c8024a238a6611195690c9b0cc74c38d20ebdb632cc532e1d1a1e453a6e15",
+    "results/j2/run-019/banks.json": "d1de249c008144e80c0ff7c5f14f1374fbea5f42031b4c82c9f94be81e049c08",
+    "results/j2/run-020/constants.json": "3b9db35bc54837003d59e6842152515efbe569da90f4e90f784bda7f54a24096",
+    "results/j2/run-020/banks.json": "2a92176796c975bff103fabc6f7e2699feaf2fd0c5679390086bf0c2f223456c",
+    "results/j2/run-020/calibrations.json": "0b753c382ba0579f1f6c4dbbb591d0e943367808eb8635579733b6f3d0f63882"
+  },
+  "output_sha256": {
+    "independent-verification.json": "c2ec96f135237c181252dd001e79715c26f769e70c26f5e0324a5de199a4910d"
+  }
+}

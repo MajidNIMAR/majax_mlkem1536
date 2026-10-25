@@ -1,0 +1,25 @@
+{
+  "created_utc": "2026-10-24T10:25:36.140479+00:00",
+  "python": "3.13.7",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "part": "all",
+  "input_sha256": {
+    "research/attack_models.py": "44976b189e25b8966b6463abbceec13a444e28ccac24c2223bf6b21be8e5356a",
+    "research/check_profile.py": "9c6c08c31526064dc6df30a1dd2719c1407d6b7a786323bc3193e4ca030c5e20",
+    "research/noise_crosscheck.py": "853ca7723c6dd9fa244291b9919c1c9ce345f4bbba8e1a75d4e6f372873734c9",
+    "research/noise_exact.py": "702d63dd736892cb1b273268087aecaadac06d5c5df4c3c093f909b98ede271e",
+    "research/run_j2.py": "73601e9ebee9e4ff837ffe291b8437aebdd8984cd87060fdc4ab4bb3543aa7ac",
+    "research/test_research.py": "c0375de8d0b56d7364749f2424c15417c2103d0ab3b3d57d889b8a3bc4663b66",
+    "research/upstream_tools.py": "1be35faf0eb1b5f66e08638185f341960ae2f8002d4141e485ea0e47b1597b8f",
+    "research/verify_results.py": "5c9c1746745854cbf6c5baa157043601520dcc4be79fab26e057681c326376df",
+    "research/verify_sources.py": "3007d11865d4feed2e6e45c91f286b92793c2919d5c04624c04eb6f27ae95a62",
+    "research/requirements-research.txt": "40fa8cb7a763c2112be769325b36b4e415021a61e85422b452d7034c8679fc85",
+    "research/tools-manifest.json": "255101f11096062ba0faf520f7152ec92b24be41d7490190f8bc046ea001b01b",
+    "profiles/kem1536-p0.toml": "ec07497ccab9150a982ecc882b8d1890d8dda18c4150e22f86cff70735e22740",
+    "references/manifest.json": "b1501e7ce59501223bd2d509ffdb9c0fc4e8904ae34aafc231b98d9abf2513ee"
+  },
+  "output_sha256": {
+    "attacks.json": "e21a56717f4346e792f83fc8be8e450625be957acfd21fe1e7e2bb7578cee75f",
+    "noise.json": "2f6d23816074f1ab112d3aae7090cf980552f5c92301e8d92059f36ad420965a"
+  }
+}

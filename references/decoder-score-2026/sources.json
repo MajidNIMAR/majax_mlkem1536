@@ -1,0 +1,19 @@
+{
+  "consulted_date": "2026-10-24",
+  "scope": "Bibliographic context only; no complete reproduction of either attack analysis. Formulae in this study are derived for its finite ideal-CBD auxiliary model.",
+  "sources": [
+    {
+      "title": "Unified Dual Attack Analyses: Covariance-Based Score Distribution Prediction for LWE",
+      "authors": ["Yechen Li", "Qunxiong Zheng"],
+      "url": "https://eprint.iacr.org/2026/1048",
+      "revision_date": "2026-10-14",
+      "consultation": "Primary notice and abstract; full PDF not reproduced"
+    },
+    {
+      "title": "Accurate Score Prediction for Dual-Sieve Attacks",
+      "authors": ["Léo Ducas", "Ludo N. Pulles"],
+      "url": "https://link.springer.com/article/10.1007/s00145-025-09560-7",
+      "consultation": "Primary publisher full text, introduction and stated scope of the heuristics"
+    }
+  ]
+}

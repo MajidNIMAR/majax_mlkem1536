@@ -1,0 +1,14 @@
+{
+  "project_arithmetic_imported": false,
+  "numpy": "2.3.5",
+  "decimal_digits": 80,
+  "matrices_verified": 4,
+  "LLL_certificates_verified": 4,
+  "complete_banks_verified": 8,
+  "moment_records_verified": 648,
+  "phase_identities_verified": 4194304,
+  "exhaustive_decoder_coordinate_terms": 1101148160,
+  "high_precision_characters": 64,
+  "all_sample_events_and_integer_hashes_matched": true,
+  "maximum_absolute_numeric_delta": 8.981260180007666e-12
+}

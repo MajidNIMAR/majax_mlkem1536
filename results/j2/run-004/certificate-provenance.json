@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-10-24T15:16:46.633319+00:00",
+  "purpose": "additional independent certificate; prior run-004 files unchanged",
+  "input_sha256": {
+    "research/witness_chernoff.py": "7d417339872601326faa80a3cd6911003cf092c29c0aeac967ebde42ee516434",
+    "research/test_witness_chernoff.py": "a45209ca3d2379d90f73737d7f37bb1db061eede3ec1c96c797deb4dd34e0a74",
+    "research/verify_witness_certificate.py": "35528b2cd1975297e20a73831e098272e9dd337bd60f646d1247eb457929a683",
+    "results/j2/run-004/u-dependency.json": "c75da1c163253b7c3d71ba7e3209c0c20dd617ce344e6e65bb3b756e222d5ab8"
+  },
+  "output_sha256": {
+    "correctness-certificate.json": "52b005bd7575b56326730f44ccaeae689e5552c1068f4df201d97e0d16969e06"
+  }
+}

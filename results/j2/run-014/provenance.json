@@ -1,0 +1,26 @@
+{
+  "created_utc": "2026-10-24T21:51:39.760947+00:00",
+  "protocol_commit": "9dfeefa",
+  "input_sha256": {
+    "research/exact_lll.py": "5e916b13ee90bfa9be4f5520fc50c0b7b4c4315e1c2640f551c4cf0380b0180c",
+    "research/dual_expansion.py": "ad9b9e7aaff99e80def518f7eb295e86fce2fb4ba17670ac63a754ab5ed0661d",
+    "research/test_dual_expansion.py": "c5be92502d607b4a28e4c1b263251934ac7be754d78a45676efc56eb20b57cdc",
+    "research/verify_dual_expansion_results.py": "8ea0874ce1bc47f98962fd905da4a76b07e561741621f99b433a3e2dda6d726d",
+    "research/verify_dual_expansion_independent.py": "dc06c83c66053b53aac72d5afc03295771e322d9e18732eeda4967d61b5477c7",
+    "docs/PROTOCOLE_H07.md": "fe4185b355654b724726ad5886a372d613845f43551e28ca14f3fce72b451873",
+    "research/full_dual_toy.py": "e52e0927dfb212074ebdab364a15f82d2486923ada235d6dee368480112f0abb",
+    "research/block_decoder.py": "afa6e53d16e339d6d0b0be6145f5221d12ef52685e5de9c7745b89389740e912",
+    "research/cbd_decoder.py": "b4be2f4b2c8be98e7c673de528f70e5519ff61af898536849aaef853c14153d2",
+    "research/run_block_decoder.py": "e4d3ba51a63e852a989a195a7ddc0238456244c0746c54c8fe4789eb2322917b",
+    "results/j2/run-013/transcendental-tables.json": "32f168e89bc11b42d8e8e2df3a1e5f287118357b64ca9675767855c09c8c1aeb",
+    "research/verify_full_dual_toy_results.py": "6f6bc759e2a64ed0daeaaac1dbfea1b2c28b1fa715ac7772eace456c9523f709",
+    "results/j2/run-013/provenance.json": "cc69e219d0758fae4c703535c0605cfd00128a863dbc9727cae01cd4032cacf1",
+    "results/j2/run-013/interval-provenance.json": "c0a84dd6ce618980684628842d57697931b98e051950a9bace7a2dc35f6f9597"
+  },
+  "output_sha256": {
+    "cases.json": "15cc38e1ea886dd883fa48cf319c21127c7295c4d04725e455acb8857617790e",
+    "banks.jsonl": "c3771eb58477944b91d2ca4d2fd9518941527ca0986fa30dc211c2f72bb22ab3",
+    "panels.json": "732a213ed92f49b9d2bbd51a70ce0ddef1bc32502ad8854c4908b6f941fa013f",
+    "summary.json": "239be5a639563c6bf3657545bf46a9dc7216a10df93d7d7e5ab0b21544d7c81f"
+  }
+}

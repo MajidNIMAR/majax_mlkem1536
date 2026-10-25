@@ -1,0 +1,27 @@
+# Profil de recherche : paramètres proposés, sans validation cryptographique.
+schema_version = 1
+
+[profile]
+id = "KEM1536-EXP-P0"
+version = "0.1"
+
+[parameters]
+n = 256
+k = 6
+q = 3329
+eta1 = 2
+eta2 = 2
+du = 11
+dv = 5
+seed_bytes = 32
+shared_secret_bytes = 32
+
+[expected_sizes]
+vector_bytes = 2304
+encapsulation_key_bytes = 2336
+decapsulation_key_bytes = 4704
+c1_bytes = 2112
+c2_bytes = 160
+ciphertext_bytes = 2272
+shared_secret_bytes = 32
+

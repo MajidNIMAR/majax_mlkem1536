@@ -1,0 +1,90 @@
+[
+  {
+    "identifier": 0,
+    "step": "all_public_orders",
+    "seconds": 3.0532898000092246
+  },
+  {
+    "identifier": 0,
+    "step": "exact_uniform_moments_and_new_samples",
+    "seconds": 0.28011290001450107
+  },
+  {
+    "identifier": 0,
+    "family": "repeated",
+    "step": "full_phases_moments_and_CBD_samples",
+    "seconds": 0.33761829999275506
+  },
+  {
+    "identifier": 0,
+    "family": "radix",
+    "step": "full_phases_moments_and_CBD_samples",
+    "seconds": 0.3171944000059739
+  },
+  {
+    "identifier": 1,
+    "step": "all_public_orders",
+    "seconds": 3.138689399987925
+  },
+  {
+    "identifier": 1,
+    "step": "exact_uniform_moments_and_new_samples",
+    "seconds": 0.28482279999298044
+  },
+  {
+    "identifier": 1,
+    "family": "repeated",
+    "step": "full_phases_moments_and_CBD_samples",
+    "seconds": 0.31471410000813194
+  },
+  {
+    "identifier": 1,
+    "family": "radix",
+    "step": "full_phases_moments_and_CBD_samples",
+    "seconds": 0.3133146000036504
+  },
+  {
+    "identifier": 2,
+    "step": "all_public_orders",
+    "seconds": 3.1502563999965787
+  },
+  {
+    "identifier": 2,
+    "step": "exact_uniform_moments_and_new_samples",
+    "seconds": 0.2925985000038054
+  },
+  {
+    "identifier": 2,
+    "family": "repeated",
+    "step": "full_phases_moments_and_CBD_samples",
+    "seconds": 0.3270020000054501
+  },
+  {
+    "identifier": 2,
+    "family": "radix",
+    "step": "full_phases_moments_and_CBD_samples",
+    "seconds": 0.3135187999869231
+  },
+  {
+    "identifier": 3,
+    "step": "all_public_orders",
+    "seconds": 3.1204212000011466
+  },
+  {
+    "identifier": 3,
+    "step": "exact_uniform_moments_and_new_samples",
+    "seconds": 0.28079370001796633
+  },
+  {
+    "identifier": 3,
+    "family": "repeated",
+    "step": "full_phases_moments_and_CBD_samples",
+    "seconds": 0.32129409999470226
+  },
+  {
+    "identifier": 3,
+    "family": "radix",
+    "step": "full_phases_moments_and_CBD_samples",
+    "seconds": 0.312477300001774
+  }
+]

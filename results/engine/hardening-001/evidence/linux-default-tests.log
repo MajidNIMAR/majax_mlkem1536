@@ -1,0 +1,97 @@
+rustc 1.91.1 (ed61e7d7e 2025-11-07)
+binary: rustc
+commit-hash: ed61e7d7e242494fb7057f2657300d9e77bb4fcb
+commit-date: 2025-11-07
+host: x86_64-unknown-linux-gnu
+release: 1.91.1
+LLVM version: 21.1.2
+   Compiling libc v0.2.191
+   Compiling serde_core v1.0.228
+   Compiling generic-array v0.14.7
+   Compiling num-traits v0.2.19
+   Compiling serde_json v1.0.145
+   Compiling crypto-common v0.1.7
+   Compiling block-buffer v0.10.4
+   Compiling digest v0.10.7
+   Compiling module-lattice v0.2.3
+   Compiling sha2 v0.10.9
+   Compiling serde v1.0.228
+   Compiling getrandom v0.4.3
+   Compiling crypto-common v0.2.2
+   Compiling toml_datetime v0.6.11
+   Compiling serde_spanned v0.6.9
+   Compiling toml_edit v0.22.27
+   Compiling digest v0.11.3
+   Compiling kem v0.3.0
+   Compiling shake v0.1.0
+   Compiling sha3 v0.12.0
+   Compiling ml-kem v0.3.3
+   Compiling kem1024-reference v0.1.0 (/mnt/c/Users/majax/Documents/Codex/NIST/crates/kem1024-reference)
+   Compiling toml v0.8.23
+   Compiling kem1536 v0.1.0 (/mnt/c/Users/majax/Documents/Codex/NIST/crates/kem1536)
+   Compiling kem1536-cli v0.1.0 (/mnt/c/Users/majax/Documents/Codex/NIST/crates/kem1536-cli)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 28.14s
+     Running unittests src/lib.rs (target/linux/debug/deps/kem1024_reference-dcedc7b95da975ab)
+
+running 5 tests
+test tests::truncated_key_encodings_are_rejected ... ok
+test tests::noncanonical_public_coefficients_are_rejected ... ok
+test tests::a_corrupted_private_key_hash_is_rejected ... ok
+test tests::a_modified_expected_answer_is_detected ... ok
+test tests::official_vectors_and_fresh_round_trips_pass ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.62s
+
+     Running unittests src/lib.rs (target/linux/debug/deps/kem1536-006146020aa3271f)
+
+running 18 tests
+test dev_kem::tests::entropy_failure_is_propagated ... ok
+test reference_ring::tests::rejects_invalid_moduli_and_noncanonical_inputs ... ok
+test secret_box::tests::wipe_keeps_storage_and_clears_every_owned_byte ... ok
+test reference_ring::tests::quotient_sign_and_multiplicative_identity ... ok
+test tests::changed_noise_requires_a_new_profile ... ok
+test tests::published_profile_has_the_required_dimensions_and_sizes ... ok
+test tests::a_profile_for_another_version_is_rejected ... ok
+test tests::unknown_configuration_fields_are_not_silently_ignored ... ok
+test tests::inconsistent_declared_sizes_are_rejected ... ok
+test tests::a_rank_four_profile_cannot_masquerade_as_p0 ... ok
+test engine_poly::tests::reciprocal_reduction_and_quotient_boundaries ... ok
+test engine_poly::tests::arithmetic_agrees_with_separate_generic_oracle ... ok
+test reference_ring::tests::independent_convolution_and_ring_laws_at_both_moduli ... ok
+test dev_kem::tests::canonical_boundaries_and_private_hash_validation ... ok
+test dev_kem::tests::operating_system_randomness_roundtrip ... ok
+test dev_kem::tests::full_deterministic_roundtrip_and_rejection ... ok
+test dev_kem::tests::canonical_bad_ciphertext_and_last_noncanonical_coefficient_reject ... ok
+test dev_kem::tests::packing_and_rounding_exhaustive ... ok
+
+test result: ok. 18 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.83s
+
+     Running unittests src/main.rs (target/linux/debug/deps/kem1536-39abab5a39e97819)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/commands.rs (target/linux/debug/deps/commands-6f164dbe81f8d7ca)
+
+running 5 tests
+test deterministic_vectors_are_absent_from_default_application ... ok
+test unavailable_crypto_commands_fail_instead_of_simulating_success ... ok
+test profile_output_is_machine_readable ... ok
+test development_profile_and_status_are_explicit ... ok
+test invalid_stress_counts_fail_without_output ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.27s
+
+   Doc-tests kem1024_reference
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests kem1536
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

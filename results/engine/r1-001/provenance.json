@@ -1,0 +1,35 @@
+{
+  "created_utc": "2026-10-25T11:05:53.126288+00:00",
+  "specification_commit": "e325f50",
+  "source_layout": "frozen copies permit subsequent engine development",
+  "research_binary_sha256": "e116dfe93f025023fe0f1b91d1a444515416b0314a5f43b36b6ec160f4d360ef",
+  "input_sha256": {
+    "results/engine/r1-001/sources/docs/SPECIFICATION_DEV_Q7681_R1.md": "f9174d6daa5fc8e06513579c366279970c775d79cf85d9d8ed2e6b16cb89d47a",
+    "results/engine/r1-001/sources/docs/BILAN_J2_ET_DECISION_PROTOTYPE.md": "c2ff6c40869cbfc18cad979b207507d6df5799dcbbe5a13344013c3a2595adf9",
+    "results/engine/r1-001/sources/Cargo.toml": "8a2c81c1642d8a25603f605fa6d16c66462b5fc84d367c4154406553ef14f49b",
+    "results/engine/r1-001/sources/Cargo.lock": "221f9cf6e81c988e78725a530957cac264553c9679c1804e89df0d094b9d8b72",
+    "results/engine/r1-001/sources/crates/kem1536/Cargo.toml": "201a6e832bbc6cec754a6de609f0b503cc1c98c7458f676ad2077a2a73823e47",
+    "results/engine/r1-001/sources/crates/kem1536-cli/Cargo.toml": "ef96cbb2a121d68b061677ec628515eaa9bbff1658534d8933595a08d8009df6",
+    "results/engine/r1-001/sources/crates/kem1536/src/lib.rs": "1d78c59f5c8ce36dcafcfb0e637e443f0d87edea3e69dd7022cc8963725acb60",
+    "results/engine/r1-001/sources/crates/kem1536/src/dev_kem.rs": "3fbb18c9e62f31b844d4169d8690cebed72a762bfd044800ea139eb98fc2edde",
+    "results/engine/r1-001/sources/crates/kem1536/src/reference_ring.rs": "f94a48f7a35d74487fcdf50937f48c3f7502c6053418e941201bf1014cce125b",
+    "results/engine/r1-001/sources/crates/kem1536-cli/src/main.rs": "f7d3de8c4127902b5e4b4bb34e37584aa658d6ae4a8840e2286a23ff74c76f87",
+    "results/engine/r1-001/sources/crates/kem1536-cli/tests/commands.rs": "02483131e88c5fb97badc6e2fd686094d3771769f8c5ba9464ef12f4b9534905",
+    "results/engine/r1-001/sources/research/kem_r1_reference.py": "41b754345d86f30115ccb6f1f1615ccbc4107496dc9fedd5ddf23dd9921f881d",
+    "results/engine/r1-001/sources/research/validate_engine_r1.py": "68dd79e0d1484d4da4dc0280a990776614ee726da0ba586e9c0b0a033cf20cae",
+    "results/engine/r1-001/sources/research/test_kem_r1_reference.py": "519f847338df50bbb05ae6553407f34d100d2e081002e9eebd676ef0675e14a7",
+    "results/engine/r1-001/sources/research/requirements-cbd-dimensions.txt": "a3315a771dfccf635c0341eddf2b41e4239d0a50b879cd1a8fcf91e6f76dd875"
+  },
+  "output_sha256": {
+    "vectors.jsonl.gz": "134b11b059cf124998d2b288d35b86234def684980f95198baa66b7d7e0ee5ec",
+    "validation.json": "4583d895f00498215827912a5438987980315114536d1b5532929bf8f9ed34c9",
+    "fresh-diagnostics.json": "2200e802b9c496adefeefe3080cc05b45f72a47f8571edc1ba223eca6e5b7ff8"
+  },
+  "research_binary_build_artifact": "target/release/deps/kem1536-901935e879516ad0.exe",
+  "diagnostics_binary_sha256": "bfc2880a0af4a7b6297cb2c105b235b9d8df96a42f71eeb6b5e2658eae55d76f",
+  "diagnostics_command": [
+    "kem1536",
+    "dev-stress",
+    "10000"
+  ]
+}

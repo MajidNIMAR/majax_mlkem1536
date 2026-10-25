@@ -1,0 +1,58 @@
+{
+  "protocol_commit": "5fc45d1",
+  "N": 32,
+  "CBD_banks": 24,
+  "H12_calibration_banks": 64,
+  "H12_numeric_raw_moments_enclosed": 1024,
+  "uniform_in_all_offsets": true,
+  "rational_moment_bounds": true,
+  "full_probability_law_enumerated": false,
+  "rare_tail_certified": false,
+  "attack_costs_updated": false,
+  "profile_selected": false,
+  "j2_closed": false,
+  "groups": [
+    {
+      "method": "norm",
+      "family": "repeated",
+      "all_variances_positive": true,
+      "maximum_kurtosis_absolute_error": 1.3121868950786495e-35,
+      "maximum_kurtosis_error_log2": -115.87551010308316
+    },
+    {
+      "method": "norm",
+      "family": "radix",
+      "all_variances_positive": true,
+      "maximum_kurtosis_absolute_error": 1.210932532904534e-13,
+      "maximum_kurtosis_error_log2": -42.908946746005945
+    },
+    {
+      "method": "hash",
+      "family": "repeated",
+      "all_variances_positive": true,
+      "maximum_kurtosis_absolute_error": 1.3121868950786495e-35,
+      "maximum_kurtosis_error_log2": -115.87551010308316
+    },
+    {
+      "method": "hash",
+      "family": "radix",
+      "all_variances_positive": true,
+      "maximum_kurtosis_absolute_error": 2.9815243043791345e-13,
+      "maximum_kurtosis_error_log2": -41.609015136362984
+    },
+    {
+      "method": "energy",
+      "family": "repeated",
+      "all_variances_positive": true,
+      "maximum_kurtosis_absolute_error": 1.3121868950786495e-35,
+      "maximum_kurtosis_error_log2": -115.87551010308316
+    },
+    {
+      "method": "energy",
+      "family": "radix",
+      "all_variances_positive": true,
+      "maximum_kurtosis_absolute_error": 6.757272572741464e-14,
+      "maximum_kurtosis_error_log2": -43.750552277149524
+    }
+  ]
+}

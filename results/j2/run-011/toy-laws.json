@@ -1,0 +1,9728 @@
+[
+  {
+    "code": {
+      "q": 5,
+      "n": 3,
+      "k": 1,
+      "family": "repeated",
+      "generators": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "codewords": "5",
+      "block_sizes": [
+        3
+      ],
+      "tie_rule": "lexicographically smallest field-symbol vector",
+      "metric": "sum of squared centered modular coordinate errors"
+    },
+    "eta": 1,
+    "uniform_targets": 125,
+    "residual_histogram": [
+      {
+        "residual": [
+          -2,
+          0,
+          1
+        ],
+        "count": 4
+      },
+      {
+        "residual": [
+          -2,
+          1,
+          0
+        ],
+        "count": 4
+      },
+      {
+        "residual": [
+          -1,
+          -1,
+          1
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          -1,
+          0,
+          0
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          -1,
+          0,
+          1
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          -1,
+          0,
+          2
+        ],
+        "count": 1
+      },
+      {
+        "residual": [
+          -1,
+          1,
+          -1
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          -1,
+          1,
+          0
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          -1,
+          1,
+          1
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          -1,
+          2,
+          0
+        ],
+        "count": 1
+      },
+      {
+        "residual": [
+          0,
+          -2,
+          1
+        ],
+        "count": 4
+      },
+      {
+        "residual": [
+          0,
+          -1,
+          0
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          0,
+          -1,
+          1
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          0,
+          -1,
+          2
+        ],
+        "count": 1
+      },
+      {
+        "residual": [
+          0,
+          0,
+          -1
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          0,
+          0,
+          0
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          0,
+          0,
+          1
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          0,
+          1,
+          -2
+        ],
+        "count": 4
+      },
+      {
+        "residual": [
+          0,
+          1,
+          -1
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          0,
+          1,
+          0
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          0,
+          2,
+          -1
+        ],
+        "count": 1
+      },
+      {
+        "residual": [
+          1,
+          -2,
+          0
+        ],
+        "count": 4
+      },
+      {
+        "residual": [
+          1,
+          -1,
+          -1
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          1,
+          -1,
+          0
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          1,
+          -1,
+          1
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          1,
+          0,
+          -2
+        ],
+        "count": 4
+      },
+      {
+        "residual": [
+          1,
+          0,
+          -1
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          1,
+          0,
+          0
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          1,
+          1,
+          -1
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          2,
+          -1,
+          0
+        ],
+        "count": 1
+      },
+      {
+        "residual": [
+          2,
+          0,
+          -1
+        ],
+        "count": 1
+      }
+    ],
+    "phase_weights": [
+      3080,
+      1770,
+      690,
+      690,
+      1770
+    ],
+    "phase_denominator": 8000,
+    "coordinate_product_phase_weights": [
+      49840000,
+      27025000,
+      10555000,
+      10555000,
+      27025000
+    ],
+    "coordinate_product_denominator": 125000000,
+    "block_product_phase_weights": [
+      3080,
+      1770,
+      690,
+      690,
+      1770
+    ],
+    "block_product_denominator": 8000,
+    "coordinate_law_matches_joint": false,
+    "block_law_matches_joint": true,
+    "secret_rows": [
+      {
+        "secret": [
+          -1,
+          -1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          35,
+          54,
+          0,
+          0,
+          36
+        ],
+        "score": 0.5024922359499622
+      },
+      {
+        "secret": [
+          -1,
+          -1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          45,
+          30,
+          13,
+          7,
+          30
+        ],
+        "score": 0.3788854381999831
+      },
+      {
+        "secret": [
+          -1,
+          -1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          15,
+          33,
+          25,
+          25,
+          27
+        ],
+        "score": -0.05527864045000422
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          45,
+          30,
+          13,
+          7,
+          30
+        ],
+        "score": 0.3788854381999831
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          45,
+          32,
+          8,
+          2,
+          38
+        ],
+        "score": 0.4683281572999747
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          25,
+          25,
+          25,
+          25,
+          25
+        ],
+        "score": 0.0
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          15,
+          33,
+          25,
+          25,
+          27
+        ],
+        "score": -0.05527864045000422
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          25,
+          25,
+          25,
+          25,
+          25
+        ],
+        "score": 0.0
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          15,
+          27,
+          25,
+          25,
+          33
+        ],
+        "score": -0.05527864045000422
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          45,
+          30,
+          13,
+          7,
+          30
+        ],
+        "score": 0.3788854381999831
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          45,
+          32,
+          8,
+          2,
+          38
+        ],
+        "score": 0.4683281572999747
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          25,
+          25,
+          25,
+          25,
+          25
+        ],
+        "score": 0.0
+      },
+      {
+        "secret": [
+          0,
+          0,
+          -1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          45,
+          32,
+          8,
+          2,
+          38
+        ],
+        "score": 0.4683281572999747
+      },
+      {
+        "secret": [
+          0,
+          0,
+          0
+        ],
+        "bit_weight": 8,
+        "target_phase_counts": [
+          125,
+          0,
+          0,
+          0,
+          0
+        ],
+        "score": 1.0
+      },
+      {
+        "secret": [
+          0,
+          0,
+          1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          45,
+          38,
+          2,
+          8,
+          32
+        ],
+        "score": 0.46832815729997473
+      },
+      {
+        "secret": [
+          0,
+          1,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          25,
+          25,
+          25,
+          25,
+          25
+        ],
+        "score": 0.0
+      },
+      {
+        "secret": [
+          0,
+          1,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          45,
+          38,
+          2,
+          8,
+          32
+        ],
+        "score": 0.46832815729997473
+      },
+      {
+        "secret": [
+          0,
+          1,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          45,
+          30,
+          7,
+          13,
+          30
+        ],
+        "score": 0.3788854381999831
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          15,
+          33,
+          25,
+          25,
+          27
+        ],
+        "score": -0.05527864045000422
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          25,
+          25,
+          25,
+          25,
+          25
+        ],
+        "score": 0.0
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          15,
+          27,
+          25,
+          25,
+          33
+        ],
+        "score": -0.05527864045000422
+      },
+      {
+        "secret": [
+          1,
+          0,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          25,
+          25,
+          25,
+          25,
+          25
+        ],
+        "score": 0.0
+      },
+      {
+        "secret": [
+          1,
+          0,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          45,
+          38,
+          2,
+          8,
+          32
+        ],
+        "score": 0.46832815729997473
+      },
+      {
+        "secret": [
+          1,
+          0,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          45,
+          30,
+          7,
+          13,
+          30
+        ],
+        "score": 0.3788854381999831
+      },
+      {
+        "secret": [
+          1,
+          1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          15,
+          27,
+          25,
+          25,
+          33
+        ],
+        "score": -0.05527864045000422
+      },
+      {
+        "secret": [
+          1,
+          1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          45,
+          30,
+          7,
+          13,
+          30
+        ],
+        "score": 0.3788854381999831
+      },
+      {
+        "secret": [
+          1,
+          1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          35,
+          36,
+          0,
+          0,
+          54
+        ],
+        "score": 0.5024922359499621
+      }
+    ],
+    "shared_secret_score_mean": 0.38218458848123577,
+    "shared_secret_score_variance": 0.09627762277054822,
+    "independent_score_variance": 0.002667993012656368,
+    "scope": "complete finite synthetic code contribution; repeated residuals in the bank, no dual-lattice part"
+  },
+  {
+    "code": {
+      "q": 5,
+      "n": 3,
+      "k": 1,
+      "family": "radix",
+      "generators": [
+        [
+          1,
+          2,
+          4
+        ]
+      ],
+      "codewords": "5",
+      "block_sizes": [
+        3
+      ],
+      "tie_rule": "lexicographically smallest field-symbol vector",
+      "metric": "sum of squared centered modular coordinate errors"
+    },
+    "eta": 1,
+    "uniform_targets": 125,
+    "residual_histogram": [
+      {
+        "residual": [
+          -2,
+          0,
+          0
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          -1,
+          -1,
+          -1
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          -1,
+          -1,
+          0
+        ],
+        "count": 1
+      },
+      {
+        "residual": [
+          -1,
+          0,
+          -1
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          -1,
+          0,
+          0
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          -1,
+          0,
+          1
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          -1,
+          1,
+          -1
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          -1,
+          1,
+          0
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          0,
+          -1,
+          -1
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          0,
+          -1,
+          0
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          0,
+          -1,
+          1
+        ],
+        "count": 1
+      },
+      {
+        "residual": [
+          0,
+          0,
+          -2
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          0,
+          0,
+          -1
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          0,
+          0,
+          0
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          0,
+          0,
+          1
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          0,
+          0,
+          2
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          0,
+          1,
+          -1
+        ],
+        "count": 4
+      },
+      {
+        "residual": [
+          0,
+          1,
+          0
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          0,
+          1,
+          1
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          1,
+          -1,
+          0
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          1,
+          -1,
+          1
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          1,
+          0,
+          -1
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          1,
+          0,
+          0
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          1,
+          0,
+          1
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          1,
+          1,
+          0
+        ],
+        "count": 4
+      },
+      {
+        "residual": [
+          1,
+          1,
+          1
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          2,
+          0,
+          0
+        ],
+        "count": 5
+      }
+    ],
+    "phase_weights": [
+      3520,
+      1580,
+      660,
+      660,
+      1580
+    ],
+    "phase_denominator": 8000,
+    "coordinate_product_phase_weights": [
+      55465000,
+      26442500,
+      8325000,
+      8325000,
+      26442500
+    ],
+    "coordinate_product_denominator": 125000000,
+    "block_product_phase_weights": [
+      3520,
+      1580,
+      660,
+      660,
+      1580
+    ],
+    "block_product_denominator": 8000,
+    "coordinate_law_matches_joint": false,
+    "block_law_matches_joint": true,
+    "secret_rows": [
+      {
+        "secret": [
+          -1,
+          -1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          30,
+          20,
+          26,
+          29,
+          20
+        ],
+        "score": -0.01708203932499371
+      },
+      {
+        "secret": [
+          -1,
+          -1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          45,
+          26,
+          11,
+          14,
+          29
+        ],
+        "score": 0.3341640786499874
+      },
+      {
+        "secret": [
+          -1,
+          -1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          35,
+          25,
+          17,
+          23,
+          25
+        ],
+        "score": 0.1447213595499958
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          25,
+          25,
+          25,
+          25,
+          25
+        ],
+        "score": 0.0
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          50,
+          31,
+          5,
+          5,
+          34
+        ],
+        "score": 0.49596747752497683
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          45,
+          22,
+          15,
+          15,
+          28
+        ],
+        "score": 0.2894427190999916
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          30,
+          20,
+          29,
+          26,
+          20
+        ],
+        "score": -0.01708203932499368
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          40,
+          29,
+          15,
+          15,
+          26
+        ],
+        "score": 0.26180339887498943
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          25,
+          25,
+          25,
+          25,
+          25
+        ],
+        "score": 0.0
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          40,
+          26,
+          15,
+          15,
+          29
+        ],
+        "score": 0.26180339887498943
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          65,
+          27,
+          0,
+          0,
+          33
+        ],
+        "score": 0.6683281572999747
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          45,
+          26,
+          11,
+          14,
+          29
+        ],
+        "score": 0.3341640786499874
+      },
+      {
+        "secret": [
+          0,
+          0,
+          -1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          50,
+          34,
+          5,
+          5,
+          31
+        ],
+        "score": 0.49596747752497683
+      },
+      {
+        "secret": [
+          0,
+          0,
+          0
+        ],
+        "bit_weight": 8,
+        "target_phase_counts": [
+          125,
+          0,
+          0,
+          0,
+          0
+        ],
+        "score": 1.0
+      },
+      {
+        "secret": [
+          0,
+          0,
+          1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          50,
+          31,
+          5,
+          5,
+          34
+        ],
+        "score": 0.49596747752497683
+      },
+      {
+        "secret": [
+          0,
+          1,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          45,
+          29,
+          14,
+          11,
+          26
+        ],
+        "score": 0.3341640786499874
+      },
+      {
+        "secret": [
+          0,
+          1,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          65,
+          33,
+          0,
+          0,
+          27
+        ],
+        "score": 0.6683281572999747
+      },
+      {
+        "secret": [
+          0,
+          1,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          40,
+          29,
+          15,
+          15,
+          26
+        ],
+        "score": 0.26180339887498943
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          25,
+          25,
+          25,
+          25,
+          25
+        ],
+        "score": 0.0
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          40,
+          26,
+          15,
+          15,
+          29
+        ],
+        "score": 0.26180339887498943
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          30,
+          20,
+          26,
+          29,
+          20
+        ],
+        "score": -0.01708203932499371
+      },
+      {
+        "secret": [
+          1,
+          0,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          45,
+          28,
+          15,
+          15,
+          22
+        ],
+        "score": 0.2894427190999916
+      },
+      {
+        "secret": [
+          1,
+          0,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          50,
+          34,
+          5,
+          5,
+          31
+        ],
+        "score": 0.49596747752497683
+      },
+      {
+        "secret": [
+          1,
+          0,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          25,
+          25,
+          25,
+          25,
+          25
+        ],
+        "score": 0.0
+      },
+      {
+        "secret": [
+          1,
+          1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          35,
+          25,
+          23,
+          17,
+          25
+        ],
+        "score": 0.1447213595499958
+      },
+      {
+        "secret": [
+          1,
+          1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          45,
+          29,
+          14,
+          11,
+          26
+        ],
+        "score": 0.3341640786499874
+      },
+      {
+        "secret": [
+          1,
+          1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          30,
+          20,
+          29,
+          26,
+          20
+        ],
+        "score": -0.01708203932499368
+      }
+    ],
+    "shared_secret_score_mean": 0.4285739087062379,
+    "shared_secret_score_variance": 0.08708780031609437,
+    "independent_score_variance": 0.0028436823349844683,
+    "scope": "complete finite synthetic code contribution; repeated residuals in the bank, no dual-lattice part"
+  },
+  {
+    "code": {
+      "q": 5,
+      "n": 4,
+      "k": 2,
+      "family": "repeated",
+      "generators": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "codewords": "25",
+      "block_sizes": [
+        2,
+        2
+      ],
+      "tie_rule": "lexicographically smallest field-symbol vector",
+      "metric": "sum of squared centered modular coordinate errors"
+    },
+    "eta": 1,
+    "uniform_targets": 625,
+    "residual_histogram": [
+      {
+        "residual": [
+          -1,
+          0,
+          -1,
+          0
+        ],
+        "count": 1
+      },
+      {
+        "residual": [
+          -1,
+          0,
+          -1,
+          1
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          -1,
+          0,
+          0,
+          -1
+        ],
+        "count": 1
+      },
+      {
+        "residual": [
+          -1,
+          0,
+          0,
+          0
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          -1,
+          0,
+          0,
+          1
+        ],
+        "count": 4
+      },
+      {
+        "residual": [
+          -1,
+          0,
+          1,
+          -1
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          -1,
+          0,
+          1,
+          0
+        ],
+        "count": 4
+      },
+      {
+        "residual": [
+          -1,
+          1,
+          -1,
+          0
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          -1,
+          1,
+          -1,
+          1
+        ],
+        "count": 25
+      },
+      {
+        "residual": [
+          -1,
+          1,
+          0,
+          -1
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          -1,
+          1,
+          0,
+          0
+        ],
+        "count": 25
+      },
+      {
+        "residual": [
+          -1,
+          1,
+          0,
+          1
+        ],
+        "count": 20
+      },
+      {
+        "residual": [
+          -1,
+          1,
+          1,
+          -1
+        ],
+        "count": 25
+      },
+      {
+        "residual": [
+          -1,
+          1,
+          1,
+          0
+        ],
+        "count": 20
+      },
+      {
+        "residual": [
+          0,
+          -1,
+          -1,
+          0
+        ],
+        "count": 1
+      },
+      {
+        "residual": [
+          0,
+          -1,
+          -1,
+          1
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          0,
+          -1,
+          0,
+          -1
+        ],
+        "count": 1
+      },
+      {
+        "residual": [
+          0,
+          -1,
+          0,
+          0
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          0,
+          -1,
+          0,
+          1
+        ],
+        "count": 4
+      },
+      {
+        "residual": [
+          0,
+          -1,
+          1,
+          -1
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          0,
+          -1,
+          1,
+          0
+        ],
+        "count": 4
+      },
+      {
+        "residual": [
+          0,
+          0,
+          -1,
+          0
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          0,
+          0,
+          -1,
+          1
+        ],
+        "count": 25
+      },
+      {
+        "residual": [
+          0,
+          0,
+          0,
+          -1
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "count": 25
+      },
+      {
+        "residual": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "count": 20
+      },
+      {
+        "residual": [
+          0,
+          0,
+          1,
+          -1
+        ],
+        "count": 25
+      },
+      {
+        "residual": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "count": 20
+      },
+      {
+        "residual": [
+          0,
+          1,
+          -1,
+          0
+        ],
+        "count": 4
+      },
+      {
+        "residual": [
+          0,
+          1,
+          -1,
+          1
+        ],
+        "count": 20
+      },
+      {
+        "residual": [
+          0,
+          1,
+          0,
+          -1
+        ],
+        "count": 4
+      },
+      {
+        "residual": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "count": 20
+      },
+      {
+        "residual": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "count": 16
+      },
+      {
+        "residual": [
+          0,
+          1,
+          1,
+          -1
+        ],
+        "count": 20
+      },
+      {
+        "residual": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "count": 16
+      },
+      {
+        "residual": [
+          1,
+          -1,
+          -1,
+          0
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          1,
+          -1,
+          -1,
+          1
+        ],
+        "count": 25
+      },
+      {
+        "residual": [
+          1,
+          -1,
+          0,
+          -1
+        ],
+        "count": 5
+      },
+      {
+        "residual": [
+          1,
+          -1,
+          0,
+          0
+        ],
+        "count": 25
+      },
+      {
+        "residual": [
+          1,
+          -1,
+          0,
+          1
+        ],
+        "count": 20
+      },
+      {
+        "residual": [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "count": 25
+      },
+      {
+        "residual": [
+          1,
+          -1,
+          1,
+          0
+        ],
+        "count": 20
+      },
+      {
+        "residual": [
+          1,
+          0,
+          -1,
+          0
+        ],
+        "count": 4
+      },
+      {
+        "residual": [
+          1,
+          0,
+          -1,
+          1
+        ],
+        "count": 20
+      },
+      {
+        "residual": [
+          1,
+          0,
+          0,
+          -1
+        ],
+        "count": 4
+      },
+      {
+        "residual": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "count": 20
+      },
+      {
+        "residual": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "count": 16
+      },
+      {
+        "residual": [
+          1,
+          0,
+          1,
+          -1
+        ],
+        "count": 20
+      },
+      {
+        "residual": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "count": 16
+      }
+    ],
+    "phase_weights": [
+      61400,
+      36900,
+      12400,
+      12400,
+      36900
+    ],
+    "phase_denominator": 160000,
+    "coordinate_product_phase_weights": [
+      14665527343750,
+      9166259765625,
+      3032226562500,
+      3032226562500,
+      9166259765625
+    ],
+    "coordinate_product_denominator": 39062500000000,
+    "block_product_phase_weights": [
+      61400,
+      36900,
+      12400,
+      12400,
+      36900
+    ],
+    "block_product_denominator": 160000,
+    "coordinate_law_matches_joint": false,
+    "block_law_matches_joint": true,
+    "secret_rows": [
+      {
+        "secret": [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          257,
+          60,
+          4,
+          64,
+          240
+        ],
+        "score": 0.4715071083119804
+      },
+      {
+        "secret": [
+          -1,
+          -1,
+          -1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          216,
+          110,
+          12,
+          72,
+          215
+        ],
+        "score": 0.3975569530309797
+      },
+      {
+        "secret": [
+          -1,
+          -1,
+          -1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "score": -2.2737367544323207e-17
+      },
+      {
+        "secret": [
+          -1,
+          -1,
+          0,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          216,
+          110,
+          12,
+          72,
+          215
+        ],
+        "score": 0.3975569530309797
+      },
+      {
+        "secret": [
+          -1,
+          -1,
+          0,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          375,
+          50,
+          0,
+          0,
+          200
+        ],
+        "score": 0.7236067977499789
+      },
+      {
+        "secret": [
+          -1,
+          -1,
+          0,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          234,
+          155,
+          18,
+          48,
+          170
+        ],
+        "score": 0.44965664246897813
+      },
+      {
+        "secret": [
+          -1,
+          -1,
+          1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "score": -2.2737367544323207e-17
+      },
+      {
+        "secret": [
+          -1,
+          -1,
+          1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          234,
+          155,
+          18,
+          48,
+          170
+        ],
+        "score": 0.44965664246897813
+      },
+      {
+        "secret": [
+          -1,
+          -1,
+          1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          293,
+          150,
+          16,
+          16,
+          150
+        ],
+        "score": 0.5757064871879773
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          -1,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          216,
+          110,
+          12,
+          72,
+          215
+        ],
+        "score": 0.3975569530309797
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          -1,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          208,
+          120,
+          36,
+          81,
+          180
+        ],
+        "score": 0.32968017595298454
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          -1,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "score": -2.2737367544323207e-17
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          0,
+          -1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          208,
+          120,
+          36,
+          81,
+          180
+        ],
+        "score": 0.32968017595298454
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          0,
+          0
+        ],
+        "bit_weight": 8,
+        "target_phase_counts": [
+          250,
+          150,
+          0,
+          0,
+          225
+        ],
+        "score": 0.5854101966249684
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          0,
+          1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          217,
+          150,
+          54,
+          54,
+          150
+        ],
+        "score": 0.35573002067198384
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          1,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "score": -2.2737367544323207e-17
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          1,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          217,
+          150,
+          54,
+          54,
+          150
+        ],
+        "score": 0.35573002067198384
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          1,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          234,
+          170,
+          48,
+          18,
+          155
+        ],
+        "score": 0.44965664246897813
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          -1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "score": -2.2737367544323207e-17
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          -1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "score": -2.2737367544323207e-17
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          -1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "score": -2.2737367544323207e-17
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          0,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "score": -2.2737367544323207e-17
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          0,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "score": -2.2737367544323207e-17
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          0,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "score": -2.2737367544323207e-17
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "score": -2.2737367544323207e-17
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "score": -2.2737367544323207e-17
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "score": -2.2737367544323207e-17
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          -1,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          216,
+          110,
+          12,
+          72,
+          215
+        ],
+        "score": 0.3975569530309797
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          -1,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          208,
+          120,
+          36,
+          81,
+          180
+        ],
+        "score": 0.32968017595298454
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          -1,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "score": -2.2737367544323207e-17
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          0,
+          -1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          208,
+          120,
+          36,
+          81,
+          180
+        ],
+        "score": 0.32968017595298454
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          0,
+          0
+        ],
+        "bit_weight": 8,
+        "target_phase_counts": [
+          250,
+          150,
+          0,
+          0,
+          225
+        ],
+        "score": 0.5854101966249684
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          0,
+          1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          217,
+          150,
+          54,
+          54,
+          150
+        ],
+        "score": 0.35573002067198384
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          1,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "score": -2.2737367544323207e-17
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          1,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          217,
+          150,
+          54,
+          54,
+          150
+        ],
+        "score": 0.35573002067198384
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          1,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          234,
+          170,
+          48,
+          18,
+          155
+        ],
+        "score": 0.44965664246897813
+      },
+      {
+        "secret": [
+          0,
+          0,
+          -1,
+          -1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          375,
+          50,
+          0,
+          0,
+          200
+        ],
+        "score": 0.7236067977499789
+      },
+      {
+        "secret": [
+          0,
+          0,
+          -1,
+          0
+        ],
+        "bit_weight": 8,
+        "target_phase_counts": [
+          250,
+          150,
+          0,
+          0,
+          225
+        ],
+        "score": 0.5854101966249684
+      },
+      {
+        "secret": [
+          0,
+          0,
+          -1,
+          1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "score": -2.2737367544323207e-17
+      },
+      {
+        "secret": [
+          0,
+          0,
+          0,
+          -1
+        ],
+        "bit_weight": 8,
+        "target_phase_counts": [
+          250,
+          150,
+          0,
+          0,
+          225
+        ],
+        "score": 0.5854101966249684
+      },
+      {
+        "secret": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "bit_weight": 16,
+        "target_phase_counts": [
+          625,
+          0,
+          0,
+          0,
+          0
+        ],
+        "score": 1.0
+      },
+      {
+        "secret": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "bit_weight": 8,
+        "target_phase_counts": [
+          250,
+          225,
+          0,
+          0,
+          150
+        ],
+        "score": 0.5854101966249684
+      },
+      {
+        "secret": [
+          0,
+          0,
+          1,
+          -1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "score": -2.2737367544323207e-17
+      },
+      {
+        "secret": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "bit_weight": 8,
+        "target_phase_counts": [
+          250,
+          225,
+          0,
+          0,
+          150
+        ],
+        "score": 0.5854101966249684
+      },
+      {
+        "secret": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          375,
+          200,
+          0,
+          0,
+          50
+        ],
+        "score": 0.7236067977499789
+      },
+      {
+        "secret": [
+          0,
+          1,
+          -1,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          234,
+          155,
+          18,
+          48,
+          170
+        ],
+        "score": 0.44965664246897813
+      },
+      {
+        "secret": [
+          0,
+          1,
+          -1,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          217,
+          150,
+          54,
+          54,
+          150
+        ],
+        "score": 0.35573002067198384
+      },
+      {
+        "secret": [
+          0,
+          1,
+          -1,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "score": -2.2737367544323207e-17
+      },
+      {
+        "secret": [
+          0,
+          1,
+          0,
+          -1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          217,
+          150,
+          54,
+          54,
+          150
+        ],
+        "score": 0.35573002067198384
+      },
+      {
+        "secret": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "bit_weight": 8,
+        "target_phase_counts": [
+          250,
+          225,
+          0,
+          0,
+          150
+        ],
+        "score": 0.5854101966249684
+      },
+      {
+        "secret": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          208,
+          180,
+          81,
+          36,
+          120
+        ],
+        "score": 0.32968017595298454
+      },
+      {
+        "secret": [
+          0,
+          1,
+          1,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "score": -2.2737367544323207e-17
+      },
+      {
+        "secret": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          208,
+          180,
+          81,
+          36,
+          120
+        ],
+        "score": 0.32968017595298454
+      },
+      {
+        "secret": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          216,
+          215,
+          72,
+          12,
+          110
+        ],
+        "score": 0.3975569530309797
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          -1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "score": -2.2737367544323207e-17
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          -1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "score": -2.2737367544323207e-17
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          -1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "score": -2.2737367544323207e-17
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          0,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "score": -2.2737367544323207e-17
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          0,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "score": -2.2737367544323207e-17
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          0,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "score": -2.2737367544323207e-17
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "score": -2.2737367544323207e-17
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "score": -2.2737367544323207e-17
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "score": -2.2737367544323207e-17
+      },
+      {
+        "secret": [
+          1,
+          0,
+          -1,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          234,
+          155,
+          18,
+          48,
+          170
+        ],
+        "score": 0.44965664246897813
+      },
+      {
+        "secret": [
+          1,
+          0,
+          -1,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          217,
+          150,
+          54,
+          54,
+          150
+        ],
+        "score": 0.35573002067198384
+      },
+      {
+        "secret": [
+          1,
+          0,
+          -1,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "score": -2.2737367544323207e-17
+      },
+      {
+        "secret": [
+          1,
+          0,
+          0,
+          -1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          217,
+          150,
+          54,
+          54,
+          150
+        ],
+        "score": 0.35573002067198384
+      },
+      {
+        "secret": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "bit_weight": 8,
+        "target_phase_counts": [
+          250,
+          225,
+          0,
+          0,
+          150
+        ],
+        "score": 0.5854101966249684
+      },
+      {
+        "secret": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          208,
+          180,
+          81,
+          36,
+          120
+        ],
+        "score": 0.32968017595298454
+      },
+      {
+        "secret": [
+          1,
+          0,
+          1,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "score": -2.2737367544323207e-17
+      },
+      {
+        "secret": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          208,
+          180,
+          81,
+          36,
+          120
+        ],
+        "score": 0.32968017595298454
+      },
+      {
+        "secret": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          216,
+          215,
+          72,
+          12,
+          110
+        ],
+        "score": 0.3975569530309797
+      },
+      {
+        "secret": [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          293,
+          150,
+          16,
+          16,
+          150
+        ],
+        "score": 0.5757064871879773
+      },
+      {
+        "secret": [
+          1,
+          1,
+          -1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          234,
+          170,
+          48,
+          18,
+          155
+        ],
+        "score": 0.44965664246897813
+      },
+      {
+        "secret": [
+          1,
+          1,
+          -1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "score": -2.2737367544323207e-17
+      },
+      {
+        "secret": [
+          1,
+          1,
+          0,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          234,
+          170,
+          48,
+          18,
+          155
+        ],
+        "score": 0.44965664246897813
+      },
+      {
+        "secret": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          375,
+          200,
+          0,
+          0,
+          50
+        ],
+        "score": 0.7236067977499789
+      },
+      {
+        "secret": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          216,
+          215,
+          72,
+          12,
+          110
+        ],
+        "score": 0.3975569530309797
+      },
+      {
+        "secret": [
+          1,
+          1,
+          1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          125,
+          125,
+          125,
+          125,
+          125
+        ],
+        "score": -2.2737367544323207e-17
+      },
+      {
+        "secret": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          216,
+          215,
+          72,
+          12,
+          110
+        ],
+        "score": 0.3975569530309797
+      },
+      {
+        "secret": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          257,
+          240,
+          64,
+          4,
+          60
+        ],
+        "score": 0.4715071083119805
+      }
+    ],
+    "shared_secret_score_mean": 0.40088645452732763,
+    "shared_secret_score_variance": 0.07643724833522196,
+    "independent_score_variance": 0.0005302970736130861,
+    "scope": "complete finite synthetic code contribution; repeated residuals in the bank, no dual-lattice part"
+  },
+  {
+    "code": {
+      "q": 5,
+      "n": 4,
+      "k": 2,
+      "family": "radix",
+      "generators": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "codewords": "25",
+      "block_sizes": [
+        2,
+        2
+      ],
+      "tie_rule": "lexicographically smallest field-symbol vector",
+      "metric": "sum of squared centered modular coordinate errors"
+    },
+    "eta": 1,
+    "uniform_targets": 625,
+    "residual_histogram": [
+      {
+        "residual": [
+          -1,
+          0,
+          -1,
+          0
+        ],
+        "count": 25
+      },
+      {
+        "residual": [
+          -1,
+          0,
+          0,
+          -1
+        ],
+        "count": 25
+      },
+      {
+        "residual": [
+          -1,
+          0,
+          0,
+          0
+        ],
+        "count": 25
+      },
+      {
+        "residual": [
+          -1,
+          0,
+          0,
+          1
+        ],
+        "count": 25
+      },
+      {
+        "residual": [
+          -1,
+          0,
+          1,
+          0
+        ],
+        "count": 25
+      },
+      {
+        "residual": [
+          0,
+          -1,
+          -1,
+          0
+        ],
+        "count": 25
+      },
+      {
+        "residual": [
+          0,
+          -1,
+          0,
+          -1
+        ],
+        "count": 25
+      },
+      {
+        "residual": [
+          0,
+          -1,
+          0,
+          0
+        ],
+        "count": 25
+      },
+      {
+        "residual": [
+          0,
+          -1,
+          0,
+          1
+        ],
+        "count": 25
+      },
+      {
+        "residual": [
+          0,
+          -1,
+          1,
+          0
+        ],
+        "count": 25
+      },
+      {
+        "residual": [
+          0,
+          0,
+          -1,
+          0
+        ],
+        "count": 25
+      },
+      {
+        "residual": [
+          0,
+          0,
+          0,
+          -1
+        ],
+        "count": 25
+      },
+      {
+        "residual": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "count": 25
+      },
+      {
+        "residual": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "count": 25
+      },
+      {
+        "residual": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "count": 25
+      },
+      {
+        "residual": [
+          0,
+          1,
+          -1,
+          0
+        ],
+        "count": 25
+      },
+      {
+        "residual": [
+          0,
+          1,
+          0,
+          -1
+        ],
+        "count": 25
+      },
+      {
+        "residual": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "count": 25
+      },
+      {
+        "residual": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "count": 25
+      },
+      {
+        "residual": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "count": 25
+      },
+      {
+        "residual": [
+          1,
+          0,
+          -1,
+          0
+        ],
+        "count": 25
+      },
+      {
+        "residual": [
+          1,
+          0,
+          0,
+          -1
+        ],
+        "count": 25
+      },
+      {
+        "residual": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "count": 25
+      },
+      {
+        "residual": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "count": 25
+      },
+      {
+        "residual": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "count": 25
+      }
+    ],
+    "phase_weights": [
+      70400,
+      38400,
+      6400,
+      6400,
+      38400
+    ],
+    "phase_denominator": 160000,
+    "coordinate_product_phase_weights": [
+      19023437500000,
+      8378906250000,
+      1640625000000,
+      1640625000000,
+      8378906250000
+    ],
+    "coordinate_product_denominator": 39062500000000,
+    "block_product_phase_weights": [
+      70400,
+      38400,
+      6400,
+      6400,
+      38400
+    ],
+    "block_product_denominator": 160000,
+    "coordinate_law_matches_joint": false,
+    "block_law_matches_joint": true,
+    "secret_rows": [
+      {
+        "secret": [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          225,
+          100,
+          100,
+          100,
+          100
+        ],
+        "score": 0.2
+      },
+      {
+        "secret": [
+          -1,
+          -1,
+          -1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          175,
+          175,
+          50,
+          50,
+          175
+        ],
+        "score": 0.3236067977499789
+      },
+      {
+        "secret": [
+          -1,
+          -1,
+          -1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          225,
+          100,
+          100,
+          100,
+          100
+        ],
+        "score": 0.2
+      },
+      {
+        "secret": [
+          -1,
+          -1,
+          0,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          175,
+          175,
+          50,
+          50,
+          175
+        ],
+        "score": 0.3236067977499789
+      },
+      {
+        "secret": [
+          -1,
+          -1,
+          0,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          125,
+          250,
+          0,
+          0,
+          250
+        ],
+        "score": 0.44721359549995787
+      },
+      {
+        "secret": [
+          -1,
+          -1,
+          0,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          175,
+          175,
+          50,
+          50,
+          175
+        ],
+        "score": 0.3236067977499789
+      },
+      {
+        "secret": [
+          -1,
+          -1,
+          1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          225,
+          100,
+          100,
+          100,
+          100
+        ],
+        "score": 0.2
+      },
+      {
+        "secret": [
+          -1,
+          -1,
+          1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          175,
+          175,
+          50,
+          50,
+          175
+        ],
+        "score": 0.3236067977499789
+      },
+      {
+        "secret": [
+          -1,
+          -1,
+          1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          225,
+          100,
+          100,
+          100,
+          100
+        ],
+        "score": 0.2
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          -1,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          175,
+          175,
+          50,
+          50,
+          175
+        ],
+        "score": 0.3236067977499789
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          -1,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          275,
+          150,
+          25,
+          25,
+          150
+        ],
+        "score": 0.523606797749979
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          -1,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          175,
+          175,
+          50,
+          50,
+          175
+        ],
+        "score": 0.3236067977499789
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          0,
+          -1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          275,
+          150,
+          25,
+          25,
+          150
+        ],
+        "score": 0.523606797749979
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          0,
+          0
+        ],
+        "bit_weight": 8,
+        "target_phase_counts": [
+          375,
+          125,
+          0,
+          0,
+          125
+        ],
+        "score": 0.7236067977499789
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          0,
+          1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          275,
+          150,
+          25,
+          25,
+          150
+        ],
+        "score": 0.523606797749979
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          1,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          175,
+          175,
+          50,
+          50,
+          175
+        ],
+        "score": 0.3236067977499789
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          1,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          275,
+          150,
+          25,
+          25,
+          150
+        ],
+        "score": 0.523606797749979
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          1,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          175,
+          175,
+          50,
+          50,
+          175
+        ],
+        "score": 0.3236067977499789
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          -1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          225,
+          100,
+          100,
+          100,
+          100
+        ],
+        "score": 0.2
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          -1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          175,
+          175,
+          50,
+          50,
+          175
+        ],
+        "score": 0.3236067977499789
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          -1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          225,
+          100,
+          100,
+          100,
+          100
+        ],
+        "score": 0.2
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          0,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          175,
+          175,
+          50,
+          50,
+          175
+        ],
+        "score": 0.3236067977499789
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          0,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          125,
+          250,
+          0,
+          0,
+          250
+        ],
+        "score": 0.44721359549995787
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          0,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          175,
+          175,
+          50,
+          50,
+          175
+        ],
+        "score": 0.3236067977499789
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          225,
+          100,
+          100,
+          100,
+          100
+        ],
+        "score": 0.2
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          175,
+          175,
+          50,
+          50,
+          175
+        ],
+        "score": 0.3236067977499789
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          225,
+          100,
+          100,
+          100,
+          100
+        ],
+        "score": 0.2
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          -1,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          175,
+          175,
+          50,
+          50,
+          175
+        ],
+        "score": 0.3236067977499789
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          -1,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          275,
+          150,
+          25,
+          25,
+          150
+        ],
+        "score": 0.523606797749979
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          -1,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          175,
+          175,
+          50,
+          50,
+          175
+        ],
+        "score": 0.3236067977499789
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          0,
+          -1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          275,
+          150,
+          25,
+          25,
+          150
+        ],
+        "score": 0.523606797749979
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          0,
+          0
+        ],
+        "bit_weight": 8,
+        "target_phase_counts": [
+          375,
+          125,
+          0,
+          0,
+          125
+        ],
+        "score": 0.7236067977499789
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          0,
+          1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          275,
+          150,
+          25,
+          25,
+          150
+        ],
+        "score": 0.523606797749979
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          1,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          175,
+          175,
+          50,
+          50,
+          175
+        ],
+        "score": 0.3236067977499789
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          1,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          275,
+          150,
+          25,
+          25,
+          150
+        ],
+        "score": 0.523606797749979
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          1,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          175,
+          175,
+          50,
+          50,
+          175
+        ],
+        "score": 0.3236067977499789
+      },
+      {
+        "secret": [
+          0,
+          0,
+          -1,
+          -1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          125,
+          250,
+          0,
+          0,
+          250
+        ],
+        "score": 0.44721359549995787
+      },
+      {
+        "secret": [
+          0,
+          0,
+          -1,
+          0
+        ],
+        "bit_weight": 8,
+        "target_phase_counts": [
+          375,
+          125,
+          0,
+          0,
+          125
+        ],
+        "score": 0.7236067977499789
+      },
+      {
+        "secret": [
+          0,
+          0,
+          -1,
+          1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          125,
+          250,
+          0,
+          0,
+          250
+        ],
+        "score": 0.44721359549995787
+      },
+      {
+        "secret": [
+          0,
+          0,
+          0,
+          -1
+        ],
+        "bit_weight": 8,
+        "target_phase_counts": [
+          375,
+          125,
+          0,
+          0,
+          125
+        ],
+        "score": 0.7236067977499789
+      },
+      {
+        "secret": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "bit_weight": 16,
+        "target_phase_counts": [
+          625,
+          0,
+          0,
+          0,
+          0
+        ],
+        "score": 1.0
+      },
+      {
+        "secret": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "bit_weight": 8,
+        "target_phase_counts": [
+          375,
+          125,
+          0,
+          0,
+          125
+        ],
+        "score": 0.7236067977499789
+      },
+      {
+        "secret": [
+          0,
+          0,
+          1,
+          -1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          125,
+          250,
+          0,
+          0,
+          250
+        ],
+        "score": 0.44721359549995787
+      },
+      {
+        "secret": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "bit_weight": 8,
+        "target_phase_counts": [
+          375,
+          125,
+          0,
+          0,
+          125
+        ],
+        "score": 0.7236067977499789
+      },
+      {
+        "secret": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          125,
+          250,
+          0,
+          0,
+          250
+        ],
+        "score": 0.44721359549995787
+      },
+      {
+        "secret": [
+          0,
+          1,
+          -1,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          175,
+          175,
+          50,
+          50,
+          175
+        ],
+        "score": 0.3236067977499789
+      },
+      {
+        "secret": [
+          0,
+          1,
+          -1,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          275,
+          150,
+          25,
+          25,
+          150
+        ],
+        "score": 0.523606797749979
+      },
+      {
+        "secret": [
+          0,
+          1,
+          -1,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          175,
+          175,
+          50,
+          50,
+          175
+        ],
+        "score": 0.3236067977499789
+      },
+      {
+        "secret": [
+          0,
+          1,
+          0,
+          -1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          275,
+          150,
+          25,
+          25,
+          150
+        ],
+        "score": 0.523606797749979
+      },
+      {
+        "secret": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "bit_weight": 8,
+        "target_phase_counts": [
+          375,
+          125,
+          0,
+          0,
+          125
+        ],
+        "score": 0.7236067977499789
+      },
+      {
+        "secret": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          275,
+          150,
+          25,
+          25,
+          150
+        ],
+        "score": 0.523606797749979
+      },
+      {
+        "secret": [
+          0,
+          1,
+          1,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          175,
+          175,
+          50,
+          50,
+          175
+        ],
+        "score": 0.3236067977499789
+      },
+      {
+        "secret": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          275,
+          150,
+          25,
+          25,
+          150
+        ],
+        "score": 0.523606797749979
+      },
+      {
+        "secret": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          175,
+          175,
+          50,
+          50,
+          175
+        ],
+        "score": 0.3236067977499789
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          -1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          225,
+          100,
+          100,
+          100,
+          100
+        ],
+        "score": 0.2
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          -1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          175,
+          175,
+          50,
+          50,
+          175
+        ],
+        "score": 0.3236067977499789
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          -1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          225,
+          100,
+          100,
+          100,
+          100
+        ],
+        "score": 0.2
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          0,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          175,
+          175,
+          50,
+          50,
+          175
+        ],
+        "score": 0.3236067977499789
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          0,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          125,
+          250,
+          0,
+          0,
+          250
+        ],
+        "score": 0.44721359549995787
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          0,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          175,
+          175,
+          50,
+          50,
+          175
+        ],
+        "score": 0.3236067977499789
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          225,
+          100,
+          100,
+          100,
+          100
+        ],
+        "score": 0.2
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          175,
+          175,
+          50,
+          50,
+          175
+        ],
+        "score": 0.3236067977499789
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          225,
+          100,
+          100,
+          100,
+          100
+        ],
+        "score": 0.2
+      },
+      {
+        "secret": [
+          1,
+          0,
+          -1,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          175,
+          175,
+          50,
+          50,
+          175
+        ],
+        "score": 0.3236067977499789
+      },
+      {
+        "secret": [
+          1,
+          0,
+          -1,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          275,
+          150,
+          25,
+          25,
+          150
+        ],
+        "score": 0.523606797749979
+      },
+      {
+        "secret": [
+          1,
+          0,
+          -1,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          175,
+          175,
+          50,
+          50,
+          175
+        ],
+        "score": 0.3236067977499789
+      },
+      {
+        "secret": [
+          1,
+          0,
+          0,
+          -1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          275,
+          150,
+          25,
+          25,
+          150
+        ],
+        "score": 0.523606797749979
+      },
+      {
+        "secret": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "bit_weight": 8,
+        "target_phase_counts": [
+          375,
+          125,
+          0,
+          0,
+          125
+        ],
+        "score": 0.7236067977499789
+      },
+      {
+        "secret": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          275,
+          150,
+          25,
+          25,
+          150
+        ],
+        "score": 0.523606797749979
+      },
+      {
+        "secret": [
+          1,
+          0,
+          1,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          175,
+          175,
+          50,
+          50,
+          175
+        ],
+        "score": 0.3236067977499789
+      },
+      {
+        "secret": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          275,
+          150,
+          25,
+          25,
+          150
+        ],
+        "score": 0.523606797749979
+      },
+      {
+        "secret": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          175,
+          175,
+          50,
+          50,
+          175
+        ],
+        "score": 0.3236067977499789
+      },
+      {
+        "secret": [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          225,
+          100,
+          100,
+          100,
+          100
+        ],
+        "score": 0.2
+      },
+      {
+        "secret": [
+          1,
+          1,
+          -1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          175,
+          175,
+          50,
+          50,
+          175
+        ],
+        "score": 0.3236067977499789
+      },
+      {
+        "secret": [
+          1,
+          1,
+          -1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          225,
+          100,
+          100,
+          100,
+          100
+        ],
+        "score": 0.2
+      },
+      {
+        "secret": [
+          1,
+          1,
+          0,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          175,
+          175,
+          50,
+          50,
+          175
+        ],
+        "score": 0.3236067977499789
+      },
+      {
+        "secret": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          125,
+          250,
+          0,
+          0,
+          250
+        ],
+        "score": 0.44721359549995787
+      },
+      {
+        "secret": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          175,
+          175,
+          50,
+          50,
+          175
+        ],
+        "score": 0.3236067977499789
+      },
+      {
+        "secret": [
+          1,
+          1,
+          1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          225,
+          100,
+          100,
+          100,
+          100
+        ],
+        "score": 0.2
+      },
+      {
+        "secret": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          175,
+          175,
+          50,
+          50,
+          175
+        ],
+        "score": 0.3236067977499789
+      },
+      {
+        "secret": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          225,
+          100,
+          100,
+          100,
+          100
+        ],
+        "score": 0.2
+      }
+    ],
+    "shared_secret_score_mean": 0.523606797749979,
+    "shared_secret_score_variance": 0.04145898033750316,
+    "independent_score_variance": 0.0003898684438250357,
+    "scope": "complete finite synthetic code contribution; repeated residuals in the bank, no dual-lattice part"
+  },
+  {
+    "code": {
+      "q": 7,
+      "n": 4,
+      "k": 2,
+      "family": "repeated",
+      "generators": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "codewords": "49",
+      "block_sizes": [
+        2,
+        2
+      ],
+      "tie_rule": "lexicographically smallest field-symbol vector",
+      "metric": "sum of squared centered modular coordinate errors"
+    },
+    "eta": 1,
+    "uniform_targets": 2401,
+    "residual_histogram": [
+      {
+        "residual": [
+          -2,
+          1,
+          -2,
+          1
+        ],
+        "count": 1
+      },
+      {
+        "residual": [
+          -2,
+          1,
+          -1,
+          0
+        ],
+        "count": 1
+      },
+      {
+        "residual": [
+          -2,
+          1,
+          -1,
+          1
+        ],
+        "count": 7
+      },
+      {
+        "residual": [
+          -2,
+          1,
+          -1,
+          2
+        ],
+        "count": 6
+      },
+      {
+        "residual": [
+          -2,
+          1,
+          0,
+          -1
+        ],
+        "count": 1
+      },
+      {
+        "residual": [
+          -2,
+          1,
+          0,
+          0
+        ],
+        "count": 7
+      },
+      {
+        "residual": [
+          -2,
+          1,
+          0,
+          1
+        ],
+        "count": 6
+      },
+      {
+        "residual": [
+          -2,
+          1,
+          1,
+          -2
+        ],
+        "count": 1
+      },
+      {
+        "residual": [
+          -2,
+          1,
+          1,
+          -1
+        ],
+        "count": 7
+      },
+      {
+        "residual": [
+          -2,
+          1,
+          1,
+          0
+        ],
+        "count": 6
+      },
+      {
+        "residual": [
+          -2,
+          1,
+          2,
+          -1
+        ],
+        "count": 6
+      },
+      {
+        "residual": [
+          -1,
+          0,
+          -2,
+          1
+        ],
+        "count": 1
+      },
+      {
+        "residual": [
+          -1,
+          0,
+          -1,
+          0
+        ],
+        "count": 1
+      },
+      {
+        "residual": [
+          -1,
+          0,
+          -1,
+          1
+        ],
+        "count": 7
+      },
+      {
+        "residual": [
+          -1,
+          0,
+          -1,
+          2
+        ],
+        "count": 6
+      },
+      {
+        "residual": [
+          -1,
+          0,
+          0,
+          -1
+        ],
+        "count": 1
+      },
+      {
+        "residual": [
+          -1,
+          0,
+          0,
+          0
+        ],
+        "count": 7
+      },
+      {
+        "residual": [
+          -1,
+          0,
+          0,
+          1
+        ],
+        "count": 6
+      },
+      {
+        "residual": [
+          -1,
+          0,
+          1,
+          -2
+        ],
+        "count": 1
+      },
+      {
+        "residual": [
+          -1,
+          0,
+          1,
+          -1
+        ],
+        "count": 7
+      },
+      {
+        "residual": [
+          -1,
+          0,
+          1,
+          0
+        ],
+        "count": 6
+      },
+      {
+        "residual": [
+          -1,
+          0,
+          2,
+          -1
+        ],
+        "count": 6
+      },
+      {
+        "residual": [
+          -1,
+          1,
+          -2,
+          1
+        ],
+        "count": 7
+      },
+      {
+        "residual": [
+          -1,
+          1,
+          -1,
+          0
+        ],
+        "count": 7
+      },
+      {
+        "residual": [
+          -1,
+          1,
+          -1,
+          1
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          -1,
+          1,
+          -1,
+          2
+        ],
+        "count": 42
+      },
+      {
+        "residual": [
+          -1,
+          1,
+          0,
+          -1
+        ],
+        "count": 7
+      },
+      {
+        "residual": [
+          -1,
+          1,
+          0,
+          0
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          -1,
+          1,
+          0,
+          1
+        ],
+        "count": 42
+      },
+      {
+        "residual": [
+          -1,
+          1,
+          1,
+          -2
+        ],
+        "count": 7
+      },
+      {
+        "residual": [
+          -1,
+          1,
+          1,
+          -1
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          -1,
+          1,
+          1,
+          0
+        ],
+        "count": 42
+      },
+      {
+        "residual": [
+          -1,
+          1,
+          2,
+          -1
+        ],
+        "count": 42
+      },
+      {
+        "residual": [
+          -1,
+          2,
+          -2,
+          1
+        ],
+        "count": 6
+      },
+      {
+        "residual": [
+          -1,
+          2,
+          -1,
+          0
+        ],
+        "count": 6
+      },
+      {
+        "residual": [
+          -1,
+          2,
+          -1,
+          1
+        ],
+        "count": 42
+      },
+      {
+        "residual": [
+          -1,
+          2,
+          -1,
+          2
+        ],
+        "count": 36
+      },
+      {
+        "residual": [
+          -1,
+          2,
+          0,
+          -1
+        ],
+        "count": 6
+      },
+      {
+        "residual": [
+          -1,
+          2,
+          0,
+          0
+        ],
+        "count": 42
+      },
+      {
+        "residual": [
+          -1,
+          2,
+          0,
+          1
+        ],
+        "count": 36
+      },
+      {
+        "residual": [
+          -1,
+          2,
+          1,
+          -2
+        ],
+        "count": 6
+      },
+      {
+        "residual": [
+          -1,
+          2,
+          1,
+          -1
+        ],
+        "count": 42
+      },
+      {
+        "residual": [
+          -1,
+          2,
+          1,
+          0
+        ],
+        "count": 36
+      },
+      {
+        "residual": [
+          -1,
+          2,
+          2,
+          -1
+        ],
+        "count": 36
+      },
+      {
+        "residual": [
+          0,
+          -1,
+          -2,
+          1
+        ],
+        "count": 1
+      },
+      {
+        "residual": [
+          0,
+          -1,
+          -1,
+          0
+        ],
+        "count": 1
+      },
+      {
+        "residual": [
+          0,
+          -1,
+          -1,
+          1
+        ],
+        "count": 7
+      },
+      {
+        "residual": [
+          0,
+          -1,
+          -1,
+          2
+        ],
+        "count": 6
+      },
+      {
+        "residual": [
+          0,
+          -1,
+          0,
+          -1
+        ],
+        "count": 1
+      },
+      {
+        "residual": [
+          0,
+          -1,
+          0,
+          0
+        ],
+        "count": 7
+      },
+      {
+        "residual": [
+          0,
+          -1,
+          0,
+          1
+        ],
+        "count": 6
+      },
+      {
+        "residual": [
+          0,
+          -1,
+          1,
+          -2
+        ],
+        "count": 1
+      },
+      {
+        "residual": [
+          0,
+          -1,
+          1,
+          -1
+        ],
+        "count": 7
+      },
+      {
+        "residual": [
+          0,
+          -1,
+          1,
+          0
+        ],
+        "count": 6
+      },
+      {
+        "residual": [
+          0,
+          -1,
+          2,
+          -1
+        ],
+        "count": 6
+      },
+      {
+        "residual": [
+          0,
+          0,
+          -2,
+          1
+        ],
+        "count": 7
+      },
+      {
+        "residual": [
+          0,
+          0,
+          -1,
+          0
+        ],
+        "count": 7
+      },
+      {
+        "residual": [
+          0,
+          0,
+          -1,
+          1
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          0,
+          0,
+          -1,
+          2
+        ],
+        "count": 42
+      },
+      {
+        "residual": [
+          0,
+          0,
+          0,
+          -1
+        ],
+        "count": 7
+      },
+      {
+        "residual": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "count": 42
+      },
+      {
+        "residual": [
+          0,
+          0,
+          1,
+          -2
+        ],
+        "count": 7
+      },
+      {
+        "residual": [
+          0,
+          0,
+          1,
+          -1
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "count": 42
+      },
+      {
+        "residual": [
+          0,
+          0,
+          2,
+          -1
+        ],
+        "count": 42
+      },
+      {
+        "residual": [
+          0,
+          1,
+          -2,
+          1
+        ],
+        "count": 6
+      },
+      {
+        "residual": [
+          0,
+          1,
+          -1,
+          0
+        ],
+        "count": 6
+      },
+      {
+        "residual": [
+          0,
+          1,
+          -1,
+          1
+        ],
+        "count": 42
+      },
+      {
+        "residual": [
+          0,
+          1,
+          -1,
+          2
+        ],
+        "count": 36
+      },
+      {
+        "residual": [
+          0,
+          1,
+          0,
+          -1
+        ],
+        "count": 6
+      },
+      {
+        "residual": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "count": 42
+      },
+      {
+        "residual": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "count": 36
+      },
+      {
+        "residual": [
+          0,
+          1,
+          1,
+          -2
+        ],
+        "count": 6
+      },
+      {
+        "residual": [
+          0,
+          1,
+          1,
+          -1
+        ],
+        "count": 42
+      },
+      {
+        "residual": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "count": 36
+      },
+      {
+        "residual": [
+          0,
+          1,
+          2,
+          -1
+        ],
+        "count": 36
+      },
+      {
+        "residual": [
+          1,
+          -2,
+          -2,
+          1
+        ],
+        "count": 1
+      },
+      {
+        "residual": [
+          1,
+          -2,
+          -1,
+          0
+        ],
+        "count": 1
+      },
+      {
+        "residual": [
+          1,
+          -2,
+          -1,
+          1
+        ],
+        "count": 7
+      },
+      {
+        "residual": [
+          1,
+          -2,
+          -1,
+          2
+        ],
+        "count": 6
+      },
+      {
+        "residual": [
+          1,
+          -2,
+          0,
+          -1
+        ],
+        "count": 1
+      },
+      {
+        "residual": [
+          1,
+          -2,
+          0,
+          0
+        ],
+        "count": 7
+      },
+      {
+        "residual": [
+          1,
+          -2,
+          0,
+          1
+        ],
+        "count": 6
+      },
+      {
+        "residual": [
+          1,
+          -2,
+          1,
+          -2
+        ],
+        "count": 1
+      },
+      {
+        "residual": [
+          1,
+          -2,
+          1,
+          -1
+        ],
+        "count": 7
+      },
+      {
+        "residual": [
+          1,
+          -2,
+          1,
+          0
+        ],
+        "count": 6
+      },
+      {
+        "residual": [
+          1,
+          -2,
+          2,
+          -1
+        ],
+        "count": 6
+      },
+      {
+        "residual": [
+          1,
+          -1,
+          -2,
+          1
+        ],
+        "count": 7
+      },
+      {
+        "residual": [
+          1,
+          -1,
+          -1,
+          0
+        ],
+        "count": 7
+      },
+      {
+        "residual": [
+          1,
+          -1,
+          -1,
+          1
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          1,
+          -1,
+          -1,
+          2
+        ],
+        "count": 42
+      },
+      {
+        "residual": [
+          1,
+          -1,
+          0,
+          -1
+        ],
+        "count": 7
+      },
+      {
+        "residual": [
+          1,
+          -1,
+          0,
+          0
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          1,
+          -1,
+          0,
+          1
+        ],
+        "count": 42
+      },
+      {
+        "residual": [
+          1,
+          -1,
+          1,
+          -2
+        ],
+        "count": 7
+      },
+      {
+        "residual": [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          1,
+          -1,
+          1,
+          0
+        ],
+        "count": 42
+      },
+      {
+        "residual": [
+          1,
+          -1,
+          2,
+          -1
+        ],
+        "count": 42
+      },
+      {
+        "residual": [
+          1,
+          0,
+          -2,
+          1
+        ],
+        "count": 6
+      },
+      {
+        "residual": [
+          1,
+          0,
+          -1,
+          0
+        ],
+        "count": 6
+      },
+      {
+        "residual": [
+          1,
+          0,
+          -1,
+          1
+        ],
+        "count": 42
+      },
+      {
+        "residual": [
+          1,
+          0,
+          -1,
+          2
+        ],
+        "count": 36
+      },
+      {
+        "residual": [
+          1,
+          0,
+          0,
+          -1
+        ],
+        "count": 6
+      },
+      {
+        "residual": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "count": 42
+      },
+      {
+        "residual": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "count": 36
+      },
+      {
+        "residual": [
+          1,
+          0,
+          1,
+          -2
+        ],
+        "count": 6
+      },
+      {
+        "residual": [
+          1,
+          0,
+          1,
+          -1
+        ],
+        "count": 42
+      },
+      {
+        "residual": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "count": 36
+      },
+      {
+        "residual": [
+          1,
+          0,
+          2,
+          -1
+        ],
+        "count": 36
+      },
+      {
+        "residual": [
+          2,
+          -1,
+          -2,
+          1
+        ],
+        "count": 6
+      },
+      {
+        "residual": [
+          2,
+          -1,
+          -1,
+          0
+        ],
+        "count": 6
+      },
+      {
+        "residual": [
+          2,
+          -1,
+          -1,
+          1
+        ],
+        "count": 42
+      },
+      {
+        "residual": [
+          2,
+          -1,
+          -1,
+          2
+        ],
+        "count": 36
+      },
+      {
+        "residual": [
+          2,
+          -1,
+          0,
+          -1
+        ],
+        "count": 6
+      },
+      {
+        "residual": [
+          2,
+          -1,
+          0,
+          0
+        ],
+        "count": 42
+      },
+      {
+        "residual": [
+          2,
+          -1,
+          0,
+          1
+        ],
+        "count": 36
+      },
+      {
+        "residual": [
+          2,
+          -1,
+          1,
+          -2
+        ],
+        "count": 6
+      },
+      {
+        "residual": [
+          2,
+          -1,
+          1,
+          -1
+        ],
+        "count": 42
+      },
+      {
+        "residual": [
+          2,
+          -1,
+          1,
+          0
+        ],
+        "count": 36
+      },
+      {
+        "residual": [
+          2,
+          -1,
+          2,
+          -1
+        ],
+        "count": 36
+      }
+    ],
+    "phase_weights": [
+      183848,
+      126420,
+      59780,
+      29204,
+      29204,
+      59780,
+      126420
+    ],
+    "phase_denominator": 614656,
+    "coordinate_product_phase_weights": [
+      2490628901522342,
+      1739254625816057,
+      885953111161608,
+      383292925170092,
+      383292925170092,
+      885953111161608,
+      1739254625816057
+    ],
+    "coordinate_product_denominator": 8507630225817856,
+    "block_product_phase_weights": [
+      183848,
+      126420,
+      59780,
+      29204,
+      29204,
+      59780,
+      126420
+    ],
+    "block_product_denominator": 614656,
+    "coordinate_law_matches_joint": false,
+    "block_law_matches_joint": true,
+    "secret_rows": [
+      {
+        "secret": [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          633,
+          168,
+          16,
+          0,
+          0,
+          576,
+          1008
+        ],
+        "score": 0.5141572736708588
+      },
+      {
+        "secret": [
+          -1,
+          -1,
+          -1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          686,
+          374,
+          77,
+          4,
+          144,
+          462,
+          654
+        ],
+        "score": 0.44717423592618344
+      },
+      {
+        "secret": [
+          -1,
+          -1,
+          -1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          343,
+          343,
+          343,
+          343,
+          343,
+          343,
+          343
+        ],
+        "score": -2.3674893319786763e-17
+      },
+      {
+        "secret": [
+          -1,
+          -1,
+          0,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          686,
+          374,
+          77,
+          4,
+          144,
+          462,
+          654
+        ],
+        "score": 0.44717423592618344
+      },
+      {
+        "secret": [
+          -1,
+          -1,
+          0,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          1029,
+          196,
+          0,
+          0,
+          0,
+          0,
+          1176
+        ],
+        "score": 0.7848513153478477
+      },
+      {
+        "secret": [
+          -1,
+          -1,
+          0,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          686,
+          494,
+          182,
+          24,
+          24,
+          357,
+          634
+        ],
+        "score": 0.510666891892912
+      },
+      {
+        "secret": [
+          -1,
+          -1,
+          1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          343,
+          343,
+          343,
+          343,
+          343,
+          343,
+          343
+        ],
+        "score": -2.3674893319786763e-17
+      },
+      {
+        "secret": [
+          -1,
+          -1,
+          1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          686,
+          494,
+          182,
+          24,
+          24,
+          357,
+          634
+        ],
+        "score": 0.510666891892912
+      },
+      {
+        "secret": [
+          -1,
+          -1,
+          1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          1033,
+          588,
+          96,
+          0,
+          0,
+          96,
+          588
+        ],
+        "score": 0.7178259007356345
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          -1,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          686,
+          374,
+          77,
+          4,
+          144,
+          462,
+          654
+        ],
+        "score": 0.44717423592618344
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          -1,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          600,
+          420,
+          224,
+          64,
+          169,
+          364,
+          560
+        ],
+        "score": 0.3624539568654653
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          -1,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          343,
+          343,
+          343,
+          343,
+          343,
+          343,
+          343
+        ],
+        "score": -2.3674893319786763e-17
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          0,
+          -1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          600,
+          420,
+          224,
+          64,
+          169,
+          364,
+          560
+        ],
+        "score": 0.3624539568654653
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          0,
+          0
+        ],
+        "bit_weight": 8,
+        "target_phase_counts": [
+          686,
+          686,
+          49,
+          0,
+          0,
+          294,
+          686
+        ],
+        "score": 0.6102054676398028
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          0,
+          1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          625,
+          490,
+          294,
+          104,
+          104,
+          294,
+          490
+        ],
+        "score": 0.3822474686095555
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          1,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          343,
+          343,
+          343,
+          343,
+          343,
+          343,
+          343
+        ],
+        "score": -2.3674893319786763e-17
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          1,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          625,
+          490,
+          294,
+          104,
+          104,
+          294,
+          490
+        ],
+        "score": 0.3822474686095555
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          1,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          686,
+          634,
+          357,
+          24,
+          24,
+          182,
+          494
+        ],
+        "score": 0.510666891892912
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          -1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          343,
+          343,
+          343,
+          343,
+          343,
+          343,
+          343
+        ],
+        "score": -2.3674893319786763e-17
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          -1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          343,
+          343,
+          343,
+          343,
+          343,
+          343,
+          343
+        ],
+        "score": -2.3674893319786763e-17
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          -1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          343,
+          343,
+          343,
+          343,
+          343,
+          343,
+          343
+        ],
+        "score": -2.3674893319786763e-17
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          0,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          343,
+          343,
+          343,
+          343,
+          343,
+          343,
+          343
+        ],
+        "score": -2.3674893319786763e-17
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          0,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          343,
+          343,
+          343,
+          343,
+          343,
+          343,
+          343
+        ],
+        "score": -2.3674893319786763e-17
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          0,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          343,
+          343,
+          343,
+          343,
+          343,
+          343,
+          343
+        ],
+        "score": -2.3674893319786763e-17
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          343,
+          343,
+          343,
+          343,
+          343,
+          343,
+          343
+        ],
+        "score": -2.3674893319786763e-17
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          343,
+          343,
+          343,
+          343,
+          343,
+          343,
+          343
+        ],
+        "score": -2.3674893319786763e-17
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          343,
+          343,
+          343,
+          343,
+          343,
+          343,
+          343
+        ],
+        "score": -2.3674893319786763e-17
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          -1,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          686,
+          374,
+          77,
+          4,
+          144,
+          462,
+          654
+        ],
+        "score": 0.44717423592618344
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          -1,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          600,
+          420,
+          224,
+          64,
+          169,
+          364,
+          560
+        ],
+        "score": 0.3624539568654653
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          -1,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          343,
+          343,
+          343,
+          343,
+          343,
+          343,
+          343
+        ],
+        "score": -2.3674893319786763e-17
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          0,
+          -1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          600,
+          420,
+          224,
+          64,
+          169,
+          364,
+          560
+        ],
+        "score": 0.3624539568654653
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          0,
+          0
+        ],
+        "bit_weight": 8,
+        "target_phase_counts": [
+          686,
+          686,
+          49,
+          0,
+          0,
+          294,
+          686
+        ],
+        "score": 0.6102054676398028
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          0,
+          1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          625,
+          490,
+          294,
+          104,
+          104,
+          294,
+          490
+        ],
+        "score": 0.3822474686095555
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          1,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          343,
+          343,
+          343,
+          343,
+          343,
+          343,
+          343
+        ],
+        "score": -2.3674893319786763e-17
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          1,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          625,
+          490,
+          294,
+          104,
+          104,
+          294,
+          490
+        ],
+        "score": 0.3822474686095555
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          1,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          686,
+          634,
+          357,
+          24,
+          24,
+          182,
+          494
+        ],
+        "score": 0.510666891892912
+      },
+      {
+        "secret": [
+          0,
+          0,
+          -1,
+          -1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          1029,
+          196,
+          0,
+          0,
+          0,
+          0,
+          1176
+        ],
+        "score": 0.7848513153478477
+      },
+      {
+        "secret": [
+          0,
+          0,
+          -1,
+          0
+        ],
+        "bit_weight": 8,
+        "target_phase_counts": [
+          686,
+          686,
+          49,
+          0,
+          0,
+          294,
+          686
+        ],
+        "score": 0.6102054676398028
+      },
+      {
+        "secret": [
+          0,
+          0,
+          -1,
+          1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          343,
+          343,
+          343,
+          343,
+          343,
+          343,
+          343
+        ],
+        "score": -2.3674893319786763e-17
+      },
+      {
+        "secret": [
+          0,
+          0,
+          0,
+          -1
+        ],
+        "bit_weight": 8,
+        "target_phase_counts": [
+          686,
+          686,
+          49,
+          0,
+          0,
+          294,
+          686
+        ],
+        "score": 0.6102054676398028
+      },
+      {
+        "secret": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "bit_weight": 16,
+        "target_phase_counts": [
+          2401,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "score": 1.0
+      },
+      {
+        "secret": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "bit_weight": 8,
+        "target_phase_counts": [
+          686,
+          686,
+          294,
+          0,
+          0,
+          49,
+          686
+        ],
+        "score": 0.6102054676398029
+      },
+      {
+        "secret": [
+          0,
+          0,
+          1,
+          -1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          343,
+          343,
+          343,
+          343,
+          343,
+          343,
+          343
+        ],
+        "score": -2.3674893319786763e-17
+      },
+      {
+        "secret": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "bit_weight": 8,
+        "target_phase_counts": [
+          686,
+          686,
+          294,
+          0,
+          0,
+          49,
+          686
+        ],
+        "score": 0.6102054676398029
+      },
+      {
+        "secret": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          1029,
+          1176,
+          0,
+          0,
+          0,
+          0,
+          196
+        ],
+        "score": 0.7848513153478478
+      },
+      {
+        "secret": [
+          0,
+          1,
+          -1,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          686,
+          494,
+          182,
+          24,
+          24,
+          357,
+          634
+        ],
+        "score": 0.510666891892912
+      },
+      {
+        "secret": [
+          0,
+          1,
+          -1,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          625,
+          490,
+          294,
+          104,
+          104,
+          294,
+          490
+        ],
+        "score": 0.3822474686095555
+      },
+      {
+        "secret": [
+          0,
+          1,
+          -1,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          343,
+          343,
+          343,
+          343,
+          343,
+          343,
+          343
+        ],
+        "score": -2.3674893319786763e-17
+      },
+      {
+        "secret": [
+          0,
+          1,
+          0,
+          -1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          625,
+          490,
+          294,
+          104,
+          104,
+          294,
+          490
+        ],
+        "score": 0.3822474686095555
+      },
+      {
+        "secret": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "bit_weight": 8,
+        "target_phase_counts": [
+          686,
+          686,
+          294,
+          0,
+          0,
+          49,
+          686
+        ],
+        "score": 0.6102054676398029
+      },
+      {
+        "secret": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          600,
+          560,
+          364,
+          169,
+          64,
+          224,
+          420
+        ],
+        "score": 0.36245395686546533
+      },
+      {
+        "secret": [
+          0,
+          1,
+          1,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          343,
+          343,
+          343,
+          343,
+          343,
+          343,
+          343
+        ],
+        "score": -2.3674893319786763e-17
+      },
+      {
+        "secret": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          600,
+          560,
+          364,
+          169,
+          64,
+          224,
+          420
+        ],
+        "score": 0.36245395686546533
+      },
+      {
+        "secret": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          686,
+          654,
+          462,
+          144,
+          4,
+          77,
+          374
+        ],
+        "score": 0.44717423592618355
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          -1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          343,
+          343,
+          343,
+          343,
+          343,
+          343,
+          343
+        ],
+        "score": -2.3674893319786763e-17
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          -1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          343,
+          343,
+          343,
+          343,
+          343,
+          343,
+          343
+        ],
+        "score": -2.3674893319786763e-17
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          -1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          343,
+          343,
+          343,
+          343,
+          343,
+          343,
+          343
+        ],
+        "score": -2.3674893319786763e-17
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          0,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          343,
+          343,
+          343,
+          343,
+          343,
+          343,
+          343
+        ],
+        "score": -2.3674893319786763e-17
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          0,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          343,
+          343,
+          343,
+          343,
+          343,
+          343,
+          343
+        ],
+        "score": -2.3674893319786763e-17
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          0,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          343,
+          343,
+          343,
+          343,
+          343,
+          343,
+          343
+        ],
+        "score": -2.3674893319786763e-17
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          343,
+          343,
+          343,
+          343,
+          343,
+          343,
+          343
+        ],
+        "score": -2.3674893319786763e-17
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          343,
+          343,
+          343,
+          343,
+          343,
+          343,
+          343
+        ],
+        "score": -2.3674893319786763e-17
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          343,
+          343,
+          343,
+          343,
+          343,
+          343,
+          343
+        ],
+        "score": -2.3674893319786763e-17
+      },
+      {
+        "secret": [
+          1,
+          0,
+          -1,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          686,
+          494,
+          182,
+          24,
+          24,
+          357,
+          634
+        ],
+        "score": 0.510666891892912
+      },
+      {
+        "secret": [
+          1,
+          0,
+          -1,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          625,
+          490,
+          294,
+          104,
+          104,
+          294,
+          490
+        ],
+        "score": 0.3822474686095555
+      },
+      {
+        "secret": [
+          1,
+          0,
+          -1,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          343,
+          343,
+          343,
+          343,
+          343,
+          343,
+          343
+        ],
+        "score": -2.3674893319786763e-17
+      },
+      {
+        "secret": [
+          1,
+          0,
+          0,
+          -1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          625,
+          490,
+          294,
+          104,
+          104,
+          294,
+          490
+        ],
+        "score": 0.3822474686095555
+      },
+      {
+        "secret": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "bit_weight": 8,
+        "target_phase_counts": [
+          686,
+          686,
+          294,
+          0,
+          0,
+          49,
+          686
+        ],
+        "score": 0.6102054676398029
+      },
+      {
+        "secret": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          600,
+          560,
+          364,
+          169,
+          64,
+          224,
+          420
+        ],
+        "score": 0.36245395686546533
+      },
+      {
+        "secret": [
+          1,
+          0,
+          1,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          343,
+          343,
+          343,
+          343,
+          343,
+          343,
+          343
+        ],
+        "score": -2.3674893319786763e-17
+      },
+      {
+        "secret": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          600,
+          560,
+          364,
+          169,
+          64,
+          224,
+          420
+        ],
+        "score": 0.36245395686546533
+      },
+      {
+        "secret": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          686,
+          654,
+          462,
+          144,
+          4,
+          77,
+          374
+        ],
+        "score": 0.44717423592618355
+      },
+      {
+        "secret": [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          1033,
+          588,
+          96,
+          0,
+          0,
+          96,
+          588
+        ],
+        "score": 0.7178259007356345
+      },
+      {
+        "secret": [
+          1,
+          1,
+          -1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          686,
+          634,
+          357,
+          24,
+          24,
+          182,
+          494
+        ],
+        "score": 0.510666891892912
+      },
+      {
+        "secret": [
+          1,
+          1,
+          -1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          343,
+          343,
+          343,
+          343,
+          343,
+          343,
+          343
+        ],
+        "score": -2.3674893319786763e-17
+      },
+      {
+        "secret": [
+          1,
+          1,
+          0,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          686,
+          634,
+          357,
+          24,
+          24,
+          182,
+          494
+        ],
+        "score": 0.510666891892912
+      },
+      {
+        "secret": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          1029,
+          1176,
+          0,
+          0,
+          0,
+          0,
+          196
+        ],
+        "score": 0.7848513153478478
+      },
+      {
+        "secret": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          686,
+          654,
+          462,
+          144,
+          4,
+          77,
+          374
+        ],
+        "score": 0.44717423592618355
+      },
+      {
+        "secret": [
+          1,
+          1,
+          1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          343,
+          343,
+          343,
+          343,
+          343,
+          343,
+          343
+        ],
+        "score": -2.3674893319786763e-17
+      },
+      {
+        "secret": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          686,
+          654,
+          462,
+          144,
+          4,
+          77,
+          374
+        ],
+        "score": 0.44717423592618355
+      },
+      {
+        "secret": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          633,
+          1008,
+          576,
+          0,
+          0,
+          16,
+          168
+        ],
+        "score": 0.5141572736708591
+      }
+    ],
+    "shared_secret_score_mean": 0.426682191342313,
+    "shared_secret_score_variance": 0.08160267458170681,
+    "independent_score_variance": 0.0001298995536552353,
+    "scope": "complete finite synthetic code contribution; repeated residuals in the bank, no dual-lattice part"
+  },
+  {
+    "code": {
+      "q": 7,
+      "n": 4,
+      "k": 2,
+      "family": "radix",
+      "generators": [
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "codewords": "49",
+      "block_sizes": [
+        2,
+        2
+      ],
+      "tie_rule": "lexicographically smallest field-symbol vector",
+      "metric": "sum of squared centered modular coordinate errors"
+    },
+    "eta": 1,
+    "uniform_targets": 2401,
+    "residual_histogram": [
+      {
+        "residual": [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          -1,
+          -1,
+          -1,
+          0
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          -1,
+          -1,
+          0,
+          -1
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          -1,
+          -1,
+          0,
+          0
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          -1,
+          -1,
+          0,
+          1
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          -1,
+          -1,
+          1,
+          0
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          -1,
+          -1,
+          1,
+          1
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          -1,
+          0,
+          -1,
+          -1
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          -1,
+          0,
+          -1,
+          0
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          -1,
+          0,
+          0,
+          -1
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          -1,
+          0,
+          0,
+          0
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          -1,
+          0,
+          0,
+          1
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          -1,
+          0,
+          1,
+          0
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          -1,
+          0,
+          1,
+          1
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          0,
+          -1,
+          -1,
+          -1
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          0,
+          -1,
+          -1,
+          0
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          0,
+          -1,
+          0,
+          -1
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          0,
+          -1,
+          0,
+          0
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          0,
+          -1,
+          0,
+          1
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          0,
+          -1,
+          1,
+          0
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          0,
+          -1,
+          1,
+          1
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          0,
+          0,
+          -1,
+          -1
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          0,
+          0,
+          -1,
+          0
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          0,
+          0,
+          0,
+          -1
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          0,
+          1,
+          -1,
+          -1
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          0,
+          1,
+          -1,
+          0
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          0,
+          1,
+          0,
+          -1
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          1,
+          0,
+          -1,
+          -1
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          1,
+          0,
+          -1,
+          0
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          1,
+          0,
+          0,
+          -1
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          1,
+          1,
+          -1,
+          0
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          1,
+          1,
+          0,
+          -1
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "count": 49
+      },
+      {
+        "residual": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "count": 49
+      }
+    ],
+    "phase_weights": [
+      233240,
+      145824,
+      39984,
+      4900,
+      4900,
+      39984,
+      145824
+    ],
+    "phase_denominator": 614656,
+    "coordinate_product_phase_weights": [
+      3298877026337536,
+      1984286933135360,
+      545678906612224,
+      74410759992576,
+      74410759992576,
+      545678906612224,
+      1984286933135360
+    ],
+    "coordinate_product_denominator": 8507630225817856,
+    "block_product_phase_weights": [
+      233240,
+      145824,
+      39984,
+      4900,
+      4900,
+      39984,
+      145824
+    ],
+    "block_product_denominator": 614656,
+    "coordinate_law_matches_joint": false,
+    "block_law_matches_joint": true,
+    "secret_rows": [
+      {
+        "secret": [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          539,
+          392,
+          294,
+          245,
+          245,
+          294,
+          392
+        ],
+        "score": 0.1897121825150974
+      },
+      {
+        "secret": [
+          -1,
+          -1,
+          -1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          539,
+          490,
+          343,
+          98,
+          98,
+          343,
+          490
+        ],
+        "score": 0.3418495406158488
+      },
+      {
+        "secret": [
+          -1,
+          -1,
+          -1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          539,
+          490,
+          343,
+          98,
+          98,
+          343,
+          490
+        ],
+        "score": 0.3418495406158488
+      },
+      {
+        "secret": [
+          -1,
+          -1,
+          0,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          539,
+          490,
+          343,
+          98,
+          98,
+          343,
+          490
+        ],
+        "score": 0.3418495406158488
+      },
+      {
+        "secret": [
+          -1,
+          -1,
+          0,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          343,
+          686,
+          343,
+          0,
+          0,
+          343,
+          686
+        ],
+        "score": 0.43555961993175785
+      },
+      {
+        "secret": [
+          -1,
+          -1,
+          0,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          539,
+          490,
+          343,
+          98,
+          98,
+          343,
+          490
+        ],
+        "score": 0.3418495406158488
+      },
+      {
+        "secret": [
+          -1,
+          -1,
+          1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          539,
+          490,
+          343,
+          98,
+          98,
+          343,
+          490
+        ],
+        "score": 0.3418495406158488
+      },
+      {
+        "secret": [
+          -1,
+          -1,
+          1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          539,
+          490,
+          343,
+          98,
+          98,
+          343,
+          490
+        ],
+        "score": 0.3418495406158488
+      },
+      {
+        "secret": [
+          -1,
+          -1,
+          1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          539,
+          392,
+          294,
+          245,
+          245,
+          294,
+          392
+        ],
+        "score": 0.1897121825150974
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          -1,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          539,
+          490,
+          343,
+          98,
+          98,
+          343,
+          490
+        ],
+        "score": 0.3418495406158488
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          -1,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          833,
+          588,
+          196,
+          0,
+          0,
+          196,
+          588
+        ],
+        "score": 0.6159915872032466
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          -1,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          833,
+          588,
+          196,
+          0,
+          0,
+          196,
+          588
+        ],
+        "score": 0.6159915872032466
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          0,
+          -1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          833,
+          588,
+          196,
+          0,
+          0,
+          196,
+          588
+        ],
+        "score": 0.6159915872032466
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          0,
+          0
+        ],
+        "bit_weight": 8,
+        "target_phase_counts": [
+          1029,
+          686,
+          0,
+          0,
+          0,
+          0,
+          686
+        ],
+        "score": 0.7848513153478478
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          0,
+          1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          833,
+          588,
+          196,
+          0,
+          0,
+          196,
+          588
+        ],
+        "score": 0.6159915872032466
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          1,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          833,
+          588,
+          196,
+          0,
+          0,
+          196,
+          588
+        ],
+        "score": 0.6159915872032466
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          1,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          833,
+          588,
+          196,
+          0,
+          0,
+          196,
+          588
+        ],
+        "score": 0.6159915872032466
+      },
+      {
+        "secret": [
+          -1,
+          0,
+          1,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          539,
+          490,
+          343,
+          98,
+          98,
+          343,
+          490
+        ],
+        "score": 0.3418495406158488
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          -1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          539,
+          490,
+          343,
+          98,
+          98,
+          343,
+          490
+        ],
+        "score": 0.3418495406158488
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          -1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          833,
+          588,
+          196,
+          0,
+          0,
+          196,
+          588
+        ],
+        "score": 0.6159915872032466
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          -1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          833,
+          588,
+          196,
+          0,
+          0,
+          196,
+          588
+        ],
+        "score": 0.6159915872032466
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          0,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          833,
+          588,
+          196,
+          0,
+          0,
+          196,
+          588
+        ],
+        "score": 0.6159915872032466
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          0,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          1029,
+          686,
+          0,
+          0,
+          0,
+          0,
+          686
+        ],
+        "score": 0.7848513153478478
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          0,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          833,
+          588,
+          196,
+          0,
+          0,
+          196,
+          588
+        ],
+        "score": 0.6159915872032466
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          833,
+          588,
+          196,
+          0,
+          0,
+          196,
+          588
+        ],
+        "score": 0.6159915872032466
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          833,
+          588,
+          196,
+          0,
+          0,
+          196,
+          588
+        ],
+        "score": 0.6159915872032466
+      },
+      {
+        "secret": [
+          -1,
+          1,
+          1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          539,
+          490,
+          343,
+          98,
+          98,
+          343,
+          490
+        ],
+        "score": 0.3418495406158488
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          -1,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          539,
+          490,
+          343,
+          98,
+          98,
+          343,
+          490
+        ],
+        "score": 0.3418495406158488
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          -1,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          833,
+          588,
+          196,
+          0,
+          0,
+          196,
+          588
+        ],
+        "score": 0.6159915872032466
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          -1,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          833,
+          588,
+          196,
+          0,
+          0,
+          196,
+          588
+        ],
+        "score": 0.6159915872032466
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          0,
+          -1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          833,
+          588,
+          196,
+          0,
+          0,
+          196,
+          588
+        ],
+        "score": 0.6159915872032466
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          0,
+          0
+        ],
+        "bit_weight": 8,
+        "target_phase_counts": [
+          1029,
+          686,
+          0,
+          0,
+          0,
+          0,
+          686
+        ],
+        "score": 0.7848513153478478
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          0,
+          1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          833,
+          588,
+          196,
+          0,
+          0,
+          196,
+          588
+        ],
+        "score": 0.6159915872032466
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          1,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          833,
+          588,
+          196,
+          0,
+          0,
+          196,
+          588
+        ],
+        "score": 0.6159915872032466
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          1,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          833,
+          588,
+          196,
+          0,
+          0,
+          196,
+          588
+        ],
+        "score": 0.6159915872032466
+      },
+      {
+        "secret": [
+          0,
+          -1,
+          1,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          539,
+          490,
+          343,
+          98,
+          98,
+          343,
+          490
+        ],
+        "score": 0.3418495406158488
+      },
+      {
+        "secret": [
+          0,
+          0,
+          -1,
+          -1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          343,
+          686,
+          343,
+          0,
+          0,
+          343,
+          686
+        ],
+        "score": 0.43555961993175785
+      },
+      {
+        "secret": [
+          0,
+          0,
+          -1,
+          0
+        ],
+        "bit_weight": 8,
+        "target_phase_counts": [
+          1029,
+          686,
+          0,
+          0,
+          0,
+          0,
+          686
+        ],
+        "score": 0.7848513153478478
+      },
+      {
+        "secret": [
+          0,
+          0,
+          -1,
+          1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          1029,
+          686,
+          0,
+          0,
+          0,
+          0,
+          686
+        ],
+        "score": 0.7848513153478478
+      },
+      {
+        "secret": [
+          0,
+          0,
+          0,
+          -1
+        ],
+        "bit_weight": 8,
+        "target_phase_counts": [
+          1029,
+          686,
+          0,
+          0,
+          0,
+          0,
+          686
+        ],
+        "score": 0.7848513153478478
+      },
+      {
+        "secret": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "bit_weight": 16,
+        "target_phase_counts": [
+          2401,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "score": 1.0
+      },
+      {
+        "secret": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "bit_weight": 8,
+        "target_phase_counts": [
+          1029,
+          686,
+          0,
+          0,
+          0,
+          0,
+          686
+        ],
+        "score": 0.7848513153478478
+      },
+      {
+        "secret": [
+          0,
+          0,
+          1,
+          -1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          1029,
+          686,
+          0,
+          0,
+          0,
+          0,
+          686
+        ],
+        "score": 0.7848513153478478
+      },
+      {
+        "secret": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "bit_weight": 8,
+        "target_phase_counts": [
+          1029,
+          686,
+          0,
+          0,
+          0,
+          0,
+          686
+        ],
+        "score": 0.7848513153478478
+      },
+      {
+        "secret": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          343,
+          686,
+          343,
+          0,
+          0,
+          343,
+          686
+        ],
+        "score": 0.43555961993175785
+      },
+      {
+        "secret": [
+          0,
+          1,
+          -1,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          539,
+          490,
+          343,
+          98,
+          98,
+          343,
+          490
+        ],
+        "score": 0.3418495406158488
+      },
+      {
+        "secret": [
+          0,
+          1,
+          -1,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          833,
+          588,
+          196,
+          0,
+          0,
+          196,
+          588
+        ],
+        "score": 0.6159915872032466
+      },
+      {
+        "secret": [
+          0,
+          1,
+          -1,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          833,
+          588,
+          196,
+          0,
+          0,
+          196,
+          588
+        ],
+        "score": 0.6159915872032466
+      },
+      {
+        "secret": [
+          0,
+          1,
+          0,
+          -1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          833,
+          588,
+          196,
+          0,
+          0,
+          196,
+          588
+        ],
+        "score": 0.6159915872032466
+      },
+      {
+        "secret": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "bit_weight": 8,
+        "target_phase_counts": [
+          1029,
+          686,
+          0,
+          0,
+          0,
+          0,
+          686
+        ],
+        "score": 0.7848513153478478
+      },
+      {
+        "secret": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          833,
+          588,
+          196,
+          0,
+          0,
+          196,
+          588
+        ],
+        "score": 0.6159915872032466
+      },
+      {
+        "secret": [
+          0,
+          1,
+          1,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          833,
+          588,
+          196,
+          0,
+          0,
+          196,
+          588
+        ],
+        "score": 0.6159915872032466
+      },
+      {
+        "secret": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          833,
+          588,
+          196,
+          0,
+          0,
+          196,
+          588
+        ],
+        "score": 0.6159915872032466
+      },
+      {
+        "secret": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          539,
+          490,
+          343,
+          98,
+          98,
+          343,
+          490
+        ],
+        "score": 0.3418495406158488
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          -1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          539,
+          490,
+          343,
+          98,
+          98,
+          343,
+          490
+        ],
+        "score": 0.3418495406158488
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          -1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          833,
+          588,
+          196,
+          0,
+          0,
+          196,
+          588
+        ],
+        "score": 0.6159915872032466
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          -1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          833,
+          588,
+          196,
+          0,
+          0,
+          196,
+          588
+        ],
+        "score": 0.6159915872032466
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          0,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          833,
+          588,
+          196,
+          0,
+          0,
+          196,
+          588
+        ],
+        "score": 0.6159915872032466
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          0,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          1029,
+          686,
+          0,
+          0,
+          0,
+          0,
+          686
+        ],
+        "score": 0.7848513153478478
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          0,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          833,
+          588,
+          196,
+          0,
+          0,
+          196,
+          588
+        ],
+        "score": 0.6159915872032466
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          833,
+          588,
+          196,
+          0,
+          0,
+          196,
+          588
+        ],
+        "score": 0.6159915872032466
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          833,
+          588,
+          196,
+          0,
+          0,
+          196,
+          588
+        ],
+        "score": 0.6159915872032466
+      },
+      {
+        "secret": [
+          1,
+          -1,
+          1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          539,
+          490,
+          343,
+          98,
+          98,
+          343,
+          490
+        ],
+        "score": 0.3418495406158488
+      },
+      {
+        "secret": [
+          1,
+          0,
+          -1,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          539,
+          490,
+          343,
+          98,
+          98,
+          343,
+          490
+        ],
+        "score": 0.3418495406158488
+      },
+      {
+        "secret": [
+          1,
+          0,
+          -1,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          833,
+          588,
+          196,
+          0,
+          0,
+          196,
+          588
+        ],
+        "score": 0.6159915872032466
+      },
+      {
+        "secret": [
+          1,
+          0,
+          -1,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          833,
+          588,
+          196,
+          0,
+          0,
+          196,
+          588
+        ],
+        "score": 0.6159915872032466
+      },
+      {
+        "secret": [
+          1,
+          0,
+          0,
+          -1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          833,
+          588,
+          196,
+          0,
+          0,
+          196,
+          588
+        ],
+        "score": 0.6159915872032466
+      },
+      {
+        "secret": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "bit_weight": 8,
+        "target_phase_counts": [
+          1029,
+          686,
+          0,
+          0,
+          0,
+          0,
+          686
+        ],
+        "score": 0.7848513153478478
+      },
+      {
+        "secret": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          833,
+          588,
+          196,
+          0,
+          0,
+          196,
+          588
+        ],
+        "score": 0.6159915872032466
+      },
+      {
+        "secret": [
+          1,
+          0,
+          1,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          833,
+          588,
+          196,
+          0,
+          0,
+          196,
+          588
+        ],
+        "score": 0.6159915872032466
+      },
+      {
+        "secret": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          833,
+          588,
+          196,
+          0,
+          0,
+          196,
+          588
+        ],
+        "score": 0.6159915872032466
+      },
+      {
+        "secret": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          539,
+          490,
+          343,
+          98,
+          98,
+          343,
+          490
+        ],
+        "score": 0.3418495406158488
+      },
+      {
+        "secret": [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          539,
+          392,
+          294,
+          245,
+          245,
+          294,
+          392
+        ],
+        "score": 0.1897121825150974
+      },
+      {
+        "secret": [
+          1,
+          1,
+          -1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          539,
+          490,
+          343,
+          98,
+          98,
+          343,
+          490
+        ],
+        "score": 0.3418495406158488
+      },
+      {
+        "secret": [
+          1,
+          1,
+          -1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          539,
+          490,
+          343,
+          98,
+          98,
+          343,
+          490
+        ],
+        "score": 0.3418495406158488
+      },
+      {
+        "secret": [
+          1,
+          1,
+          0,
+          -1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          539,
+          490,
+          343,
+          98,
+          98,
+          343,
+          490
+        ],
+        "score": 0.3418495406158488
+      },
+      {
+        "secret": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "bit_weight": 4,
+        "target_phase_counts": [
+          343,
+          686,
+          343,
+          0,
+          0,
+          343,
+          686
+        ],
+        "score": 0.43555961993175785
+      },
+      {
+        "secret": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          539,
+          490,
+          343,
+          98,
+          98,
+          343,
+          490
+        ],
+        "score": 0.3418495406158488
+      },
+      {
+        "secret": [
+          1,
+          1,
+          1,
+          -1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          539,
+          490,
+          343,
+          98,
+          98,
+          343,
+          490
+        ],
+        "score": 0.3418495406158488
+      },
+      {
+        "secret": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "bit_weight": 2,
+        "target_phase_counts": [
+          539,
+          490,
+          343,
+          98,
+          98,
+          343,
+          490
+        ],
+        "score": 0.3418495406158488
+      },
+      {
+        "secret": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "bit_weight": 1,
+        "target_phase_counts": [
+          539,
+          392,
+          294,
+          245,
+          245,
+          294,
+          392
+        ],
+        "score": 0.1897121825150974
+      }
+    ],
+    "shared_secret_score_mean": 0.6319884696162303,
+    "shared_secret_score_variance": 0.03448781111810408,
+    "independent_score_variance": 7.050548906562614e-05,
+    "scope": "complete finite synthetic code contribution; repeated residuals in the bank, no dual-lattice part"
+  }
+]

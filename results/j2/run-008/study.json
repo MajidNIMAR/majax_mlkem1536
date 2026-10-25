@@ -1,0 +1,377 @@
+{
+  "scenarios": [
+    {
+      "n": 1024,
+      "degree": 256,
+      "q": 3329,
+      "eta": 2
+    },
+    {
+      "n": 1536,
+      "degree": 256,
+      "q": 7681,
+      "eta": 3
+    }
+  ],
+  "reduction_model": "author-bundled MATZOV list_decoding-classical",
+  "code_model": "GV-radius ratio 1; no experimental q7681 decoder statistics",
+  "memory_cap": null,
+  "targets": 1,
+  "oracle": "none",
+  "sample_budget": "key only; subsets m<=n",
+  "zero_guess_model": "author conditional-binomial heuristic; not an exact finite-rotation probability",
+  "guessed_zero_success_target": 0.6,
+  "false_candidate_normal_model_budget": 0.05,
+  "calibration_passed": true,
+  "evaluations": 1043,
+  "statuses": {
+    "conditional_model_cost": 969,
+    "zero_guess_target_unreachable_within_2^100": 74
+  },
+  "minima": [
+    {
+      "inputs": {
+        "n": 1024,
+        "degree": 256,
+        "q": 3329,
+        "eta": 2,
+        "samples": 798,
+        "nenu": 28,
+        "nfft": 113,
+        "kfft": 16,
+        "mlwe": false
+      },
+      "status": "conditional_model_cost",
+      "beta0": 807,
+      "beta1": 788,
+      "beta_cap": 1681,
+      "lattice_dimension": 1681,
+      "log2_rop": 258.4821140316049,
+      "log2_sample_cost": 258.19863905086066,
+      "log2_repetitions": 49.1957359454616,
+      "log2_decode_all": 202.1450288343486,
+      "log2_fft": 206.74103402280937,
+      "log2_list_size": 163.52477471586442,
+      "log2_relative_threshold": -77.90340123324879,
+      "log2_epsilon": -73.02801770976079,
+      "zero_guess_success": 0.6000000000000001,
+      "beta_predecessor_fails": true,
+      "beta_coarse_monotonicity": true,
+      "beta_hits_cap": false,
+      "reduction_table_extrapolated": false,
+      "decoder_model": "ideal_GV_radius_ratio_1",
+      "applicability": "conditional heuristic; no actual attack or global security level",
+      "index": 146,
+      "phase": "local_refinement"
+    },
+    {
+      "inputs": {
+        "n": 1024,
+        "degree": 256,
+        "q": 3329,
+        "eta": 2,
+        "samples": 798,
+        "nenu": 33,
+        "nfft": 111,
+        "kfft": 16,
+        "mlwe": true
+      },
+      "status": "conditional_model_cost",
+      "beta0": 801,
+      "beta1": 783,
+      "beta_cap": 1678,
+      "lattice_dimension": 1678,
+      "log2_rop": 256.96953085575433,
+      "log2_sample_cost": 256.6242207865229,
+      "log2_repetitions": 47.967710872940856,
+      "log2_decode_all": 201.1074350861515,
+      "log2_fft": 206.74103402280937,
+      "log2_list_size": 162.4871809676673,
+      "log2_relative_threshold": -77.55750349816572,
+      "log2_epsilon": -9.34665792238388,
+      "zero_guess_success": 0.6000000000000009,
+      "beta_predecessor_fails": true,
+      "beta_coarse_monotonicity": true,
+      "beta_hits_cap": false,
+      "reduction_table_extrapolated": false,
+      "decoder_model": "ideal_GV_radius_ratio_1",
+      "applicability": "conditional heuristic; no actual attack or global security level",
+      "index": 390,
+      "phase": "local_refinement"
+    },
+    {
+      "inputs": {
+        "n": 1536,
+        "degree": 256,
+        "q": 7681,
+        "eta": 3,
+        "samples": 1245,
+        "nenu": 36,
+        "nfft": 152,
+        "kfft": 22,
+        "mlwe": false
+      },
+      "status": "conditional_model_cost",
+      "beta0": 1244,
+      "beta1": 1204,
+      "beta_cap": 2593,
+      "lattice_dimension": 2593,
+      "log2_rop": 381.75577974862216,
+      "log2_sample_cost": 381.37225282836835,
+      "log2_repetitions": 76.92071224585827,
+      "log2_decode_all": 289.6654737622905,
+      "log2_fft": 302.73601543456897,
+      "log2_list_size": 249.8525745658639,
+      "log2_relative_threshold": -120.81764517739065,
+      "log2_epsilon": -74.42233060062284,
+      "zero_guess_success": 0.6,
+      "beta_predecessor_fails": true,
+      "beta_coarse_monotonicity": true,
+      "beta_hits_cap": false,
+      "reduction_table_extrapolated": true,
+      "decoder_model": "ideal_GV_radius_ratio_1",
+      "applicability": "conditional heuristic; no actual attack or global security level",
+      "index": 603,
+      "phase": "local_refinement"
+    },
+    {
+      "inputs": {
+        "n": 1536,
+        "degree": 256,
+        "q": 7681,
+        "eta": 3,
+        "samples": 1267,
+        "nenu": 52,
+        "nfft": 136,
+        "kfft": 20,
+        "mlwe": true
+      },
+      "status": "conditional_model_cost",
+      "beta0": 1237,
+      "beta1": 1197,
+      "beta_cap": 2615,
+      "lattice_dimension": 2615,
+      "log2_rop": 379.9986956778945,
+      "log2_sample_cost": 379.36909877748604,
+      "log2_repetitions": 90.28569549308871,
+      "log2_decode_all": 288.21284251481455,
+      "log2_fft": 276.784355042226,
+      "log2_list_size": 248.39994331838795,
+      "log2_relative_threshold": -120.19501888203366,
+      "log2_epsilon": -29.280699520655325,
+      "zero_guess_success": 0.6000000000000005,
+      "beta_predecessor_fails": true,
+      "beta_coarse_monotonicity": true,
+      "beta_hits_cap": false,
+      "reduction_table_extrapolated": true,
+      "decoder_model": "ideal_GV_radius_ratio_1",
+      "applicability": "conditional heuristic; no actual attack or global security level",
+      "index": 1009,
+      "phase": "local_refinement"
+    }
+  ],
+  "cap_diagnostics": [
+    {
+      "winner_index": 146,
+      "cap_1000": {
+        "inputs": {
+          "n": 1024,
+          "degree": 256,
+          "q": 3329,
+          "eta": 2,
+          "samples": 798,
+          "nenu": 28,
+          "nfft": 113,
+          "kfft": 16,
+          "mlwe": false
+        },
+        "status": "conditional_model_cost",
+        "beta0": 807,
+        "beta1": 788,
+        "beta_cap": 1000,
+        "lattice_dimension": 1681,
+        "log2_rop": 258.4821140316049,
+        "log2_sample_cost": 258.19863905086066,
+        "log2_repetitions": 49.1957359454616,
+        "log2_decode_all": 202.1450288343486,
+        "log2_fft": 206.74103402280937,
+        "log2_list_size": 163.52477471586442,
+        "log2_relative_threshold": -77.90340123324879,
+        "log2_epsilon": -73.02801770976079,
+        "zero_guess_success": 0.6000000000000001,
+        "beta_predecessor_fails": true,
+        "beta_coarse_monotonicity": true,
+        "beta_hits_cap": false,
+        "reduction_table_extrapolated": false,
+        "decoder_model": "ideal_GV_radius_ratio_1",
+        "applicability": "conditional heuristic; no actual attack or global security level"
+      },
+      "refinement_trails": [
+        {
+          "seed_index": 144,
+          "best_index": 146,
+          "sweeps": 2,
+          "refinement_limit_reached": false
+        },
+        {
+          "seed_index": 59,
+          "best_index": 163,
+          "sweeps": 3,
+          "refinement_limit_reached": false
+        },
+        {
+          "seed_index": 107,
+          "best_index": 235,
+          "sweeps": 11,
+          "refinement_limit_reached": false
+        }
+      ]
+    },
+    {
+      "winner_index": 390,
+      "cap_1000": {
+        "inputs": {
+          "n": 1024,
+          "degree": 256,
+          "q": 3329,
+          "eta": 2,
+          "samples": 798,
+          "nenu": 33,
+          "nfft": 111,
+          "kfft": 16,
+          "mlwe": true
+        },
+        "status": "conditional_model_cost",
+        "beta0": 801,
+        "beta1": 783,
+        "beta_cap": 1000,
+        "lattice_dimension": 1678,
+        "log2_rop": 256.96953085575433,
+        "log2_sample_cost": 256.6242207865229,
+        "log2_repetitions": 47.967710872940856,
+        "log2_decode_all": 201.1074350861515,
+        "log2_fft": 206.74103402280937,
+        "log2_list_size": 162.4871809676673,
+        "log2_relative_threshold": -77.55750349816572,
+        "log2_epsilon": -9.34665792238388,
+        "zero_guess_success": 0.6000000000000009,
+        "beta_predecessor_fails": true,
+        "beta_coarse_monotonicity": true,
+        "beta_hits_cap": false,
+        "reduction_table_extrapolated": false,
+        "decoder_model": "ideal_GV_radius_ratio_1",
+        "applicability": "conditional heuristic; no actual attack or global security level"
+      },
+      "refinement_trails": [
+        {
+          "seed_index": 388,
+          "best_index": 390,
+          "sweeps": 2,
+          "refinement_limit_reached": false
+        },
+        {
+          "seed_index": 321,
+          "best_index": 415,
+          "sweeps": 4,
+          "refinement_limit_reached": false
+        },
+        {
+          "seed_index": 325,
+          "best_index": 415,
+          "sweeps": 3,
+          "refinement_limit_reached": false
+        }
+      ]
+    },
+    {
+      "winner_index": 603,
+      "cap_1000": {
+        "inputs": {
+          "n": 1536,
+          "degree": 256,
+          "q": 7681,
+          "eta": 3,
+          "samples": 1245,
+          "nenu": 36,
+          "nfft": 152,
+          "kfft": 22,
+          "mlwe": false
+        },
+        "status": "no_feasible_beta_within_cap",
+        "beta_cap": 1000,
+        "log2_epsilon_at_cap": 359.876437800381
+      },
+      "refinement_trails": [
+        {
+          "seed_index": 516,
+          "best_index": 603,
+          "sweeps": 5,
+          "refinement_limit_reached": false
+        },
+        {
+          "seed_index": 564,
+          "best_index": 692,
+          "sweeps": 12,
+          "refinement_limit_reached": true
+        },
+        {
+          "seed_index": 512,
+          "best_index": 603,
+          "sweeps": 11,
+          "refinement_limit_reached": false
+        }
+      ]
+    },
+    {
+      "winner_index": 1009,
+      "cap_1000": {
+        "inputs": {
+          "n": 1536,
+          "degree": 256,
+          "q": 7681,
+          "eta": 3,
+          "samples": 1267,
+          "nenu": 52,
+          "nfft": 136,
+          "kfft": 20,
+          "mlwe": true
+        },
+        "status": "no_feasible_beta_within_cap",
+        "beta_cap": 1000,
+        "log2_epsilon_at_cap": 347.42726417901844
+      },
+      "refinement_trails": [
+        {
+          "seed_index": 862,
+          "best_index": 921,
+          "sweeps": 3,
+          "refinement_limit_reached": false
+        },
+        {
+          "seed_index": 910,
+          "best_index": 1009,
+          "sweeps": 12,
+          "refinement_limit_reached": true
+        },
+        {
+          "seed_index": 858,
+          "best_index": 1036,
+          "sweeps": 4,
+          "refinement_limit_reached": false
+        }
+      ]
+    }
+  ],
+  "profile_selected": false,
+  "j2_closed": false,
+  "limits": [
+    "best found in bounded search, not global optimum",
+    "conditional heuristic costs, not executed attacks or global KEM security",
+    "normal wrong-score assumption only; revised covariance and full score tails remain open",
+    "published statistics calibrate only the six reference points",
+    "no extrapolation of q3329 polar-code statistics to q7681",
+    "MLWE heuristic population=n; no factor 1536 rotations or blanket one-bit subtraction",
+    "MATZOV finite-size coefficients documented up to beta 1024; rank-six extrapolation is flagged",
+    "format-specific H01/H02 distributions and CCA remain open"
+  ]
+}

@@ -1,0 +1,134 @@
+[
+  {
+    "identifier": 0,
+    "kind": "uniform",
+    "seed_ascii": "nist-j2-additive-v1:uniform:0",
+    "states_sha256": "532b7756077aae890239c45cc103762831932b43e0e560d96756463b2eb1bbaa",
+    "phases_sha256": "ef871b07ace5ef2972de3a83847a25b44b71632b1fd68daebf28e9791657e320",
+    "states_bytes": 196608,
+    "phases_bytes": 8388608
+  },
+  {
+    "identifier": 0,
+    "kind": "repeated",
+    "seed_ascii": "nist-j2-additive-v1:CBD:0",
+    "states_sha256": "4e83f3f4c0cfc22b44311d59ecaef9213b19030e5a150b5da43aabb82859bafa",
+    "phases_sha256": "3abb1c07757a86ffa70f721db6e67fa2552ce08442c52a472296287be90ac97f",
+    "public_sha256": "6b9f4ba2229948df3ccf17dab2f2f35d6fbaaee34c9804a048c94df3ef330fe7",
+    "truth_sha256": "5b9fe8074dd7c948a02e529296ac7d9a556e88c16b0e92bbc162e360de3fe56e",
+    "states_bytes": 4751360,
+    "phases_bytes": 4194304,
+    "unique_phase_identities": 524288
+  },
+  {
+    "identifier": 0,
+    "kind": "radix",
+    "seed_ascii": "nist-j2-additive-v1:CBD:0",
+    "states_sha256": "4e83f3f4c0cfc22b44311d59ecaef9213b19030e5a150b5da43aabb82859bafa",
+    "phases_sha256": "84af875d21ad2da5bc65e3ba1614bb2999c398150ae692aee6edc7d173a8186c",
+    "public_sha256": "6b9f4ba2229948df3ccf17dab2f2f35d6fbaaee34c9804a048c94df3ef330fe7",
+    "truth_sha256": "f4687f1ad4a1876d0abe6304809e3af8b9bd793b22cac3a33bcf4eaa7bfdec5b",
+    "states_bytes": 4751360,
+    "phases_bytes": 4194304,
+    "unique_phase_identities": 524288
+  },
+  {
+    "identifier": 1,
+    "kind": "uniform",
+    "seed_ascii": "nist-j2-additive-v1:uniform:1",
+    "states_sha256": "22c25f2e6843391d65952b0dd8ac5052477f9855a76f2750c7ed2f07d11d63b2",
+    "phases_sha256": "6d5b2c4ceef83cfa103529e9cf2a70059551b952ee40278b65ad4561e5166629",
+    "states_bytes": 196608,
+    "phases_bytes": 8388608
+  },
+  {
+    "identifier": 1,
+    "kind": "repeated",
+    "seed_ascii": "nist-j2-additive-v1:CBD:1",
+    "states_sha256": "983c627e60d873eb9ccf04f326f9e5f1fa546824d690efe62df854f90b2c3bc7",
+    "phases_sha256": "aea17e0da24a1130e88d5c9e64467b61c36dc6cb13bec900ed48c0c236d3d3cb",
+    "public_sha256": "24285df6fb651bae561719a61de741b0400b063e87f0f76a6b20b4754a2f9fda",
+    "truth_sha256": "5789285c69545599743440f4edebfcb9b82a704790a92466dbc36f930a888ab0",
+    "states_bytes": 4751360,
+    "phases_bytes": 4194304,
+    "unique_phase_identities": 524288
+  },
+  {
+    "identifier": 1,
+    "kind": "radix",
+    "seed_ascii": "nist-j2-additive-v1:CBD:1",
+    "states_sha256": "983c627e60d873eb9ccf04f326f9e5f1fa546824d690efe62df854f90b2c3bc7",
+    "phases_sha256": "d153cd11372895145fbfd6dbefd578392836ad865698559c4907094d72417733",
+    "public_sha256": "24285df6fb651bae561719a61de741b0400b063e87f0f76a6b20b4754a2f9fda",
+    "truth_sha256": "3a3d07ae2dc8a256fb20183ae9da254ed552d8f5292b941c06ced6e659fcfcd8",
+    "states_bytes": 4751360,
+    "phases_bytes": 4194304,
+    "unique_phase_identities": 524288
+  },
+  {
+    "identifier": 2,
+    "kind": "uniform",
+    "seed_ascii": "nist-j2-additive-v1:uniform:2",
+    "states_sha256": "7c0d692f5df4eed34cfeec228a7d0e21dbd1e244c11961fa79b3b854af2d569d",
+    "phases_sha256": "35edce0025fd9ce3ded830e8968c50b49bdf6683b346a14de8189ae35bdd5d06",
+    "states_bytes": 196608,
+    "phases_bytes": 8388608
+  },
+  {
+    "identifier": 2,
+    "kind": "repeated",
+    "seed_ascii": "nist-j2-additive-v1:CBD:2",
+    "states_sha256": "901b383a58d5b3938b12d8c9c6b8f6a2cd0ddb05d43ddbae713ef1f2bb3e1a92",
+    "phases_sha256": "d54f197be6f5e040d90c3202342e294a4eacbba83440a68060d0dae254cc7588",
+    "public_sha256": "8c23bcbf20f258a978b69e478b9be943543d4c0a39703e26ceaad0b900cff823",
+    "truth_sha256": "633f1326bc726400a561db37ca1924bf6aab95e638471560eef4148be0a8e742",
+    "states_bytes": 4751360,
+    "phases_bytes": 4194304,
+    "unique_phase_identities": 524288
+  },
+  {
+    "identifier": 2,
+    "kind": "radix",
+    "seed_ascii": "nist-j2-additive-v1:CBD:2",
+    "states_sha256": "901b383a58d5b3938b12d8c9c6b8f6a2cd0ddb05d43ddbae713ef1f2bb3e1a92",
+    "phases_sha256": "f4a2896863e87c040ff715afa5bf860ad49c41ed3b502efba5d67f308186ed28",
+    "public_sha256": "8c23bcbf20f258a978b69e478b9be943543d4c0a39703e26ceaad0b900cff823",
+    "truth_sha256": "c23fee36e2a38f496ace941ee624ce9999da86f803e4fb7fe9d0ea743d6a5dd5",
+    "states_bytes": 4751360,
+    "phases_bytes": 4194304,
+    "unique_phase_identities": 524288
+  },
+  {
+    "identifier": 3,
+    "kind": "uniform",
+    "seed_ascii": "nist-j2-additive-v1:uniform:3",
+    "states_sha256": "542d694a36b9b5774ed551eb87819b324abed28ab5407693f6bf4061f6601af0",
+    "phases_sha256": "5a1ea402ee155d693acb108651feeda5e3c2f790fa4627e11108e79023c1bfb7",
+    "states_bytes": 196608,
+    "phases_bytes": 8388608
+  },
+  {
+    "identifier": 3,
+    "kind": "repeated",
+    "seed_ascii": "nist-j2-additive-v1:CBD:3",
+    "states_sha256": "c3a03383e6989591cca798ebf68e459b4dca8d792ba126cab1887c6d4b805a73",
+    "phases_sha256": "122234bb56b9238d2ecb3f1dcd3773fa565d22fa2a5440307aacb95e05331546",
+    "public_sha256": "c941479e8d0daf76b6a19a87a26aadb16060fd0312feb2c6ff278127362be6ab",
+    "truth_sha256": "5aa58fddeb58decc6ebabd1747444d47dff43e7fb367647f3c0b006c27cdd6ce",
+    "states_bytes": 4751360,
+    "phases_bytes": 4194304,
+    "unique_phase_identities": 524288
+  },
+  {
+    "identifier": 3,
+    "kind": "radix",
+    "seed_ascii": "nist-j2-additive-v1:CBD:3",
+    "states_sha256": "c3a03383e6989591cca798ebf68e459b4dca8d792ba126cab1887c6d4b805a73",
+    "phases_sha256": "c2c04ec73441b863d5f66572c3e4f05f55f89667ef0e04690aac164dff306602",
+    "public_sha256": "c941479e8d0daf76b6a19a87a26aadb16060fd0312feb2c6ff278127362be6ab",
+    "truth_sha256": "01711083ef30f9ceeba4cdee6bee92dcaf74abfdae725bbd25265da9ba2b2308",
+    "states_bytes": 4751360,
+    "phases_bytes": 4194304,
+    "unique_phase_identities": 524288
+  }
+]

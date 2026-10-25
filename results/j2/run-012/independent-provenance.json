@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-10-24T19:26:59.798719+00:00",
+  "input_sha256": {
+    "research/verify_cbd_decoder_independent.py": "33de2d58ddb3fa31976e02afdb4e6c35b65858644e0334e2790f8111582b0b9a",
+    "results/j2/run-012/weight-tables.json": "05f458147387e366e3ce5e2f3e277f18192f94fea6f905538ba67e2c6ed53c00",
+    "results/j2/run-012/toy-comparison.json": "4e48d67d2da451efcdcf0fadbd5c3fa670d22245deca4f36e39c1ea0683edf84",
+    "results/j2/run-012/oracle-cases.json": "d8c032c78b676d4c3b115c6d54f9d7125d4b6c7441bfe9c7d685f5db2c8665ef"
+  },
+  "output_sha256": {
+    "independent-verification.json": "689b54ed5fb711920bb37dca891ece2c1913eb77d0c5976fd691f9c3ff211fcf"
+  }
+}

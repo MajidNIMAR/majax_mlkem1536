@@ -1,0 +1,38 @@
+{
+  "job": {
+    "scenario": "baseline-1024",
+    "parameters": {
+      "n": 256,
+      "k": 4,
+      "q": 3329,
+      "eta": 2
+    },
+    "sample_budget": "extended",
+    "samples": 1280,
+    "targets": 1,
+    "oracle": "none",
+    "shape_model": "GSA",
+    "memory_cap": "none; exponential memory allowed",
+    "tool": "community",
+    "cost_model": "BCSS23-quantum-asymptotic",
+    "algorithm": "dual"
+  },
+  "status": "ok",
+  "applicability": "heuristic LWE estimator model",
+  "cost": {
+    "rop": "5.58733937701488e69",
+    "mem": "265334606360084654800721396418389483173631114174673419327988",
+    "m": "918",
+    "beta": "904",
+    "d": "1942",
+    "repetitions": "1",
+    "tag": "dual"
+  },
+  "log2_cost": {
+    "rop": 231.69520000000003,
+    "mem": 197.40157045020482,
+    "repetitions": 0.0
+  },
+  "estimator_messages": "",
+  "elapsed_seconds": 8.198075158999927
+}

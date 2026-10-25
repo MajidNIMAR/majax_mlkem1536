@@ -1,0 +1,28 @@
+{
+  "created_utc": "2026-10-25T15:22:25.030772+00:00",
+  "command": "scripts/dev.ps1 check",
+  "exit_code": 0,
+  "rustfmt": "passed",
+  "clippy_all_targets_all_features": "passed",
+  "Rust_tests_default": 28,
+  "Rust_tests_research": 28,
+  "Rust_tests_distinct": 29,
+  "Python_tests": 91,
+  "preserved_J2_snapshots": 20,
+  "M03_benchmark_observations_recomputed": 60000,
+  "M03_binary_inventories_recomputed": 2,
+  "M03_smoke_independent_requests_previously_verified": 511,
+  "long_campaign_source_commit": "8ef4ceb",
+  "long_campaign_controller_pid": 398,
+  "long_campaign_observed_utc": "2026-10-25T15:22:16.820784+00:00",
+  "long_campaign_worker_status": {
+    "import_public": "running",
+    "import_private": "running",
+    "decapsulate": "running",
+    "api_sequence": "running"
+  },
+  "long_campaign_finished": false,
+  "M03_A01_resolved": false,
+  "constant_time_proven": false,
+  "verification_scope": "Complete current task check; final metadata checksums verified separately after adding this record"
+}

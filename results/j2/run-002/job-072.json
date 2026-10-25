@@ -1,0 +1,66 @@
+{
+  "job": {
+    "scenario": "baseline-1024",
+    "parameters": {
+      "n": 256,
+      "k": 4,
+      "q": 3329,
+      "eta": 2
+    },
+    "sample_budget": "extended",
+    "samples": 1280,
+    "targets": 1,
+    "oracle": "none",
+    "shape_model": "GSA",
+    "memory_cap": "none; exponential memory allowed",
+    "tool": "community",
+    "cost_model": "MATZOV-classical",
+    "algorithm": "arora-gb"
+  },
+  "status": "ok",
+  "applicability": "heuristic LWE estimator model",
+  "cost": {
+    "rop": "8012312732044345258405776094214961680470028682792786518087976297202140448739754592238855598255058492256410643856411599886537934501836117450011685786551726752203125718584835356788674916736654125844969044241076465915259632492889874077233438503328156070359207538751025333569050523395817406306149183212251233827332083529655136496214788700280531384074294558418512871670843281342447930188962083280228659908722804848046740062199290703528169200719638997470225558641736930921314666178267068470955288475131870412627344436035831643903295787802335645260782615371093254178513517422260598351913578748588209720180676440198751485189805822692018251598403669895257243649921386293612538270504694971891794783144606142966482401372685048970392161145441547667142802715609405418328247743157261926381251666139975478181436239199880550872186101341863376921006087712663897631479777593572554179005471433519544395078869571687621285372615423552563840354255383890377239768700799154887359087557196119570380352092452257960781700625",
+    "dreg": "686",
+    "mem": "8012312732044345258405776094214961680470028682792786518087976297202140448739754592238855598255058492256410643856411599886537934501836117450011685786551726752203125718584835356788674916736654125844969044241076465915259632492889874077233438503328156070359207538751025333569050523395817406306149183212251233827332083529655136496214788700280531384074294558418512871670843281342447930188962083280228659908722804848046740062199290703528169200719638997470225558641736930921314666178267068470955288475131870412627344436035831643903295787802335645260782615371093254178513517422260598351913578748588209720180676440198751485189805822692018251598403669895257243649921386293612538270504694971891794783144606142966482401372685048970392161145441547667142802715609405418328247743157261926381251666139975478181436239199880550872186101341863376921006087712663897631479777593572554179005471433519544395078869571687621285372615423552563840354255383890377239768700799154887359087557196119570380352092452257960781700625",
+    "t": "2",
+    "m": "1280",
+    "tag": "arora-gb",
+    "problem": "LWEParameters(n=1024, q=3329, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=1280, tag='baseline-1024')"
+  },
+  "log2_cost": {
+    "rop": 3311.642601240517,
+    "mem": 3311.642601240517
+  },
+  "estimator_messages": "",
+  "decimal_log_recomputed_fields": [
+    "rop",
+    "mem"
+  ],
+  "elapsed_seconds": 5.1082533429998875,
+  "exporter": "modern_worker_json.py",
+  "calculation_core": "modern_worker.estimate",
+  "prior_export_attempt": {
+    "job": {
+      "scenario": "baseline-1024",
+      "parameters": {
+        "n": 256,
+        "k": 4,
+        "q": 3329,
+        "eta": 2
+      },
+      "sample_budget": "extended",
+      "samples": 1280,
+      "targets": 1,
+      "oracle": "none",
+      "shape_model": "GSA",
+      "memory_cap": "none; exponential memory allowed",
+      "tool": "community",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "arora-gb"
+    },
+    "status": "process_error",
+    "exit_code": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/mnt/c/Users/majax/Documents/Codex/NIST/research/modern_worker.py\", line 94, in <module>\n    args.output.write_text(json.dumps(result, indent=2, allow_nan=False)+\"\\n\", encoding=\"utf-8\")\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/c/Users/majax/Documents/Codex/NIST/.tools/sage-ram/env/lib/python3.12/json/__init__.py\", line 238, in dumps\n    **kw).encode(obj)\n          ^^^^^^^^^^^\n  File \"/mnt/c/Users/majax/Documents/Codex/NIST/.tools/sage-ram/env/lib/python3.12/json/encoder.py\", line 202, in encode\n    chunks = list(chunks)\n             ^^^^^^^^^^^^\n  File \"/mnt/c/Users/majax/Documents/Codex/NIST/.tools/sage-ram/env/lib/python3.12/json/encoder.py\", line 432, in _iterencode\n    yield from _iterencode_dict(o, _current_indent_level)\n  File \"/mnt/c/Users/majax/Documents/Codex/NIST/.tools/sage-ram/env/lib/python3.12/json/encoder.py\", line 406, in _iterencode_dict\n    yield from chunks\n  File \"/mnt/c/Users/majax/Documents/Codex/NIST/.tools/sage-ram/env/lib/python3.12/json/encoder.py\", line 398, in _iterencode_dict\n    yield _floatstr(value)\n          ^^^^^^^^^^^^^^^^\n  File \"/mnt/c/Users/majax/Documents/Codex/NIST/.tools/sage-ram/env/lib/python3.12/json/encoder.py\", line 240, in floatstr\n    raise ValueError(\nValueError: Out of range float values are not JSON compliant: inf\n"
+  }
+}

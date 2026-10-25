@@ -1,0 +1,10 @@
+{
+  "snapshot": "run-005",
+  "method": "independent enumeration of CBD3 bit strings",
+  "CBD_bit_strings": 64,
+  "pair_outcomes": 4096,
+  "project_arithmetic_imported": false,
+  "full_fraction_matches": true,
+  "c05_exact_comparison": true,
+  "candidate_id": "interleaved-dv3-m12-88"
+}

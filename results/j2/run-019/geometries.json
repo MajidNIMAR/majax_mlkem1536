@@ -1,0 +1,1762 @@
+[
+  {
+    "geometry_id": "6fc5d34b41ff635f4e6469abe52da2b99d175a5aac844ff6b0db443332a26f9a",
+    "identifier": 0,
+    "N": 4,
+    "indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "uniform": {
+      "N": 4,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 8
+      },
+      "third": {
+        "numerator": 3,
+        "denominator": 128
+      },
+      "fourth": {
+        "numerator": 21,
+        "denominator": 512
+      },
+      "ordered_signed_triples": 12,
+      "ordered_signed_quadruples": 168,
+      "independent_quadruples": 168,
+      "extra_quadruples": 0,
+      "pair_support": 33,
+      "pair_spectrum_sha256": "9eba0bc16de9599b4e17bfcc6da3b03080cdc52037d1dccec04ce68a2beabd02",
+      "skewness": 0.5303300858899106,
+      "kurtosis": {
+        "numerator": 21,
+        "denominator": 8
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 21,
+        "denominator": 8
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 7,
+        "denominator": 216
+      }
+    }
+  },
+  {
+    "geometry_id": "c2bce63b410067d4a573a0c512c89c84b84dbe17a7d6b2347b998a2d91b1d6e1",
+    "identifier": 0,
+    "N": 8,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "uniform": {
+      "N": 8,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 16
+      },
+      "third": {
+        "numerator": 15,
+        "denominator": 1024
+      },
+      "fourth": {
+        "numerator": 63,
+        "denominator": 4096
+      },
+      "ordered_signed_triples": 60,
+      "ordered_signed_quadruples": 1008,
+      "independent_quadruples": 720,
+      "extra_quadruples": 288,
+      "pair_support": 97,
+      "pair_spectrum_sha256": "522d093647323447649e639dd892261eaf5b5de153e6320a4e7e82d32d7abac2",
+      "skewness": 0.9375,
+      "kurtosis": {
+        "numerator": 63,
+        "denominator": 16
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 45,
+        "denominator": 16
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 7,
+        "denominator": 144
+      }
+    }
+  },
+  {
+    "geometry_id": "7b2848b888dd92825a8eb0cda9e8b236b1647a4f01562190a2882d94a6d821dd",
+    "identifier": 0,
+    "N": 16,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "uniform": {
+      "N": 16,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 32
+      },
+      "third": {
+        "numerator": 153,
+        "denominator": 16384
+      },
+      "fourth": {
+        "numerator": 111,
+        "denominator": 16384
+      },
+      "ordered_signed_triples": 306,
+      "ordered_signed_quadruples": 7104,
+      "independent_quadruples": 2976,
+      "extra_quadruples": 4128,
+      "pair_support": 249,
+      "pair_spectrum_sha256": "de5fe975721c9869d0cdfbdceb5bbacb397f9360d0b796f346cb7be23268defd",
+      "skewness": 1.69042714877409,
+      "kurtosis": {
+        "numerator": 111,
+        "denominator": 16
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 93,
+        "denominator": 32
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 37,
+        "denominator": 432
+      }
+    }
+  },
+  {
+    "geometry_id": "ca24c7639d3667f7eee37cb95fbafcea0b2623559fc454019d8e6b9476125340",
+    "identifier": 0,
+    "N": 4,
+    "indices": [
+      11,
+      16,
+      80,
+      85
+    ],
+    "uniform": {
+      "N": 4,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 8
+      },
+      "third": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "fourth": {
+        "numerator": 21,
+        "denominator": 512
+      },
+      "ordered_signed_triples": 0,
+      "ordered_signed_quadruples": 168,
+      "independent_quadruples": 168,
+      "extra_quadruples": 0,
+      "pair_support": 33,
+      "pair_spectrum_sha256": "69c9b9dcc4143c49ec07a9d2cdd5263a5a1528dd492d6dab05513b868eca54d9",
+      "skewness": 0.0,
+      "kurtosis": {
+        "numerator": 21,
+        "denominator": 8
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 21,
+        "denominator": 8
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 7,
+        "denominator": 216
+      }
+    }
+  },
+  {
+    "geometry_id": "1de68c410a6163857ae92a5bb18406165adccd4e6533f1b4da818704561d15aa",
+    "identifier": 0,
+    "N": 8,
+    "indices": [
+      9,
+      11,
+      16,
+      67,
+      80,
+      85,
+      105,
+      108
+    ],
+    "uniform": {
+      "N": 8,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 16
+      },
+      "third": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "fourth": {
+        "numerator": 3,
+        "denominator": 256
+      },
+      "ordered_signed_triples": 0,
+      "ordered_signed_quadruples": 768,
+      "independent_quadruples": 720,
+      "extra_quadruples": 48,
+      "pair_support": 123,
+      "pair_spectrum_sha256": "3bad48a002c5552d8188c01673b2b97366bda1fa28ae94a5b00d98e32d83b8e6",
+      "skewness": 0.0,
+      "kurtosis": {
+        "numerator": 3,
+        "denominator": 1
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 45,
+        "denominator": 16
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 1,
+        "denominator": 27
+      }
+    }
+  },
+  {
+    "geometry_id": "57942846bcec4ce298a7ce8b8f9b04a234e54ec4f9e6f3fdc50cb89971f8b2da",
+    "identifier": 0,
+    "N": 16,
+    "indices": [
+      2,
+      4,
+      9,
+      11,
+      15,
+      16,
+      24,
+      40,
+      67,
+      73,
+      77,
+      80,
+      85,
+      100,
+      105,
+      108
+    ],
+    "uniform": {
+      "N": 16,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 32
+      },
+      "third": {
+        "numerator": 39,
+        "denominator": 16384
+      },
+      "fourth": {
+        "numerator": 249,
+        "denominator": 65536
+      },
+      "ordered_signed_triples": 78,
+      "ordered_signed_quadruples": 3984,
+      "independent_quadruples": 2976,
+      "extra_quadruples": 1008,
+      "pair_support": 407,
+      "pair_spectrum_sha256": "24b9a2c2aa724791d501fa7949e4395a1724fff1a163e48166b23e276f0834f6",
+      "skewness": 0.4308931947855524,
+      "kurtosis": {
+        "numerator": 249,
+        "denominator": 64
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 93,
+        "denominator": 32
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 83,
+        "denominator": 1728
+      }
+    }
+  },
+  {
+    "geometry_id": "03073c5982b752b234c600b6d26d053df1fab098bc832ebc399d2ba4cd21f4fa",
+    "identifier": 0,
+    "N": 8,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      6,
+      13,
+      45,
+      58
+    ],
+    "uniform": {
+      "N": 8,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 16
+      },
+      "third": {
+        "numerator": 3,
+        "denominator": 512
+      },
+      "fourth": {
+        "numerator": 45,
+        "denominator": 4096
+      },
+      "ordered_signed_triples": 24,
+      "ordered_signed_quadruples": 720,
+      "independent_quadruples": 720,
+      "extra_quadruples": 0,
+      "pair_support": 129,
+      "pair_spectrum_sha256": "d498f69a01d90769963447b4a7ec5e557dfa6f05aeb576d2fadf4a11218b5cb4",
+      "skewness": 0.375,
+      "kurtosis": {
+        "numerator": 45,
+        "denominator": 16
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 45,
+        "denominator": 16
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 5,
+        "denominator": 144
+      }
+    }
+  },
+  {
+    "geometry_id": "4dacd38f2f8de6f3fb9d44e68eb0eaae093cb00641ce68289953474fd248cbba",
+    "identifier": 0,
+    "N": 16,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      6,
+      13,
+      45,
+      58,
+      59,
+      61,
+      63,
+      89,
+      97,
+      102,
+      112,
+      119
+    ],
+    "uniform": {
+      "N": 16,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 32
+      },
+      "third": {
+        "numerator": 3,
+        "denominator": 2048
+      },
+      "fourth": {
+        "numerator": 201,
+        "denominator": 65536
+      },
+      "ordered_signed_triples": 48,
+      "ordered_signed_quadruples": 3216,
+      "independent_quadruples": 2976,
+      "extra_quadruples": 240,
+      "pair_support": 479,
+      "pair_spectrum_sha256": "c33ae688b93c1946379ad3a9e65a0c3d37eabc463258d00085a2000ae6b3e23c",
+      "skewness": 0.2651650429449553,
+      "kurtosis": {
+        "numerator": 201,
+        "denominator": 64
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 93,
+        "denominator": 32
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 67,
+        "denominator": 1728
+      }
+    }
+  },
+  {
+    "geometry_id": "a945407e8f14dd28aefea30134f8319cb61d630001e64b241c2ac44c45f5be5a",
+    "identifier": 1,
+    "N": 4,
+    "indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "uniform": {
+      "N": 4,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 8
+      },
+      "third": {
+        "numerator": 3,
+        "denominator": 128
+      },
+      "fourth": {
+        "numerator": 21,
+        "denominator": 512
+      },
+      "ordered_signed_triples": 12,
+      "ordered_signed_quadruples": 168,
+      "independent_quadruples": 168,
+      "extra_quadruples": 0,
+      "pair_support": 33,
+      "pair_spectrum_sha256": "5598a5670d5873ea782d946ce41c9dc18ceb3b6c863b4dbbb53aa530a1d9d13a",
+      "skewness": 0.5303300858899106,
+      "kurtosis": {
+        "numerator": 21,
+        "denominator": 8
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 21,
+        "denominator": 8
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 7,
+        "denominator": 216
+      }
+    }
+  },
+  {
+    "geometry_id": "da0588bf7176fecf20bfb00f9e3aea6fcbdaa8d9bb5523389493bc41f167c52d",
+    "identifier": 1,
+    "N": 8,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "uniform": {
+      "N": 8,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 16
+      },
+      "third": {
+        "numerator": 15,
+        "denominator": 1024
+      },
+      "fourth": {
+        "numerator": 63,
+        "denominator": 4096
+      },
+      "ordered_signed_triples": 60,
+      "ordered_signed_quadruples": 1008,
+      "independent_quadruples": 720,
+      "extra_quadruples": 288,
+      "pair_support": 97,
+      "pair_spectrum_sha256": "691401705d2a09c51ad9acdcc26db04360e49c9998d9351083a017637f931c00",
+      "skewness": 0.9375,
+      "kurtosis": {
+        "numerator": 63,
+        "denominator": 16
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 45,
+        "denominator": 16
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 7,
+        "denominator": 144
+      }
+    }
+  },
+  {
+    "geometry_id": "fc9d2c90495d65d85a7af11fefda2ec18ba2bf9d9582f1de688d58b982899869",
+    "identifier": 1,
+    "N": 16,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "uniform": {
+      "N": 16,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 32
+      },
+      "third": {
+        "numerator": 57,
+        "denominator": 8192
+      },
+      "fourth": {
+        "numerator": 177,
+        "denominator": 32768
+      },
+      "ordered_signed_triples": 228,
+      "ordered_signed_quadruples": 5664,
+      "independent_quadruples": 2976,
+      "extra_quadruples": 2688,
+      "pair_support": 305,
+      "pair_spectrum_sha256": "0068ca3a838a3bb95c485fc9a19d044be2f6ecea3fa63df40f9aa840d43e6343",
+      "skewness": 1.2595339539885377,
+      "kurtosis": {
+        "numerator": 177,
+        "denominator": 32
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 93,
+        "denominator": 32
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 59,
+        "denominator": 864
+      }
+    }
+  },
+  {
+    "geometry_id": "d35420151393b4e6a8dcc31cacb6505a2c18ea097edc1b3e9b4583b4a1247b52",
+    "identifier": 1,
+    "N": 4,
+    "indices": [
+      56,
+      111,
+      120,
+      122
+    ],
+    "uniform": {
+      "N": 4,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 8
+      },
+      "third": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "fourth": {
+        "numerator": 21,
+        "denominator": 512
+      },
+      "ordered_signed_triples": 0,
+      "ordered_signed_quadruples": 168,
+      "independent_quadruples": 168,
+      "extra_quadruples": 0,
+      "pair_support": 33,
+      "pair_spectrum_sha256": "69652dd73956a5803f89cd2a25196b113a2d85461445973c3e9d648f1bc7ef20",
+      "skewness": 0.0,
+      "kurtosis": {
+        "numerator": 21,
+        "denominator": 8
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 21,
+        "denominator": 8
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 7,
+        "denominator": 216
+      }
+    }
+  },
+  {
+    "geometry_id": "7e9d576cef6761a6a07f1b4c882ecfc5575ccbdc8e3550c6e7be90ec6ad87c2a",
+    "identifier": 1,
+    "N": 8,
+    "indices": [
+      8,
+      43,
+      56,
+      70,
+      107,
+      111,
+      120,
+      122
+    ],
+    "uniform": {
+      "N": 8,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 16
+      },
+      "third": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "fourth": {
+        "numerator": 93,
+        "denominator": 8192
+      },
+      "ordered_signed_triples": 0,
+      "ordered_signed_quadruples": 744,
+      "independent_quadruples": 720,
+      "extra_quadruples": 24,
+      "pair_support": 125,
+      "pair_spectrum_sha256": "141e502236d4b22a514ff604d394575cf024fea3b7475f6aff9ad356d0a04efa",
+      "skewness": 0.0,
+      "kurtosis": {
+        "numerator": 93,
+        "denominator": 32
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 45,
+        "denominator": 16
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 31,
+        "denominator": 864
+      }
+    }
+  },
+  {
+    "geometry_id": "b201052737c9de4cd14b7c7b99038a95e4280fca8521caa287b9b0252759c4ce",
+    "identifier": 1,
+    "N": 16,
+    "indices": [
+      8,
+      11,
+      19,
+      43,
+      52,
+      56,
+      70,
+      72,
+      77,
+      82,
+      85,
+      107,
+      111,
+      118,
+      120,
+      122
+    ],
+    "uniform": {
+      "N": 16,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 32
+      },
+      "third": {
+        "numerator": 15,
+        "denominator": 8192
+      },
+      "fourth": {
+        "numerator": 231,
+        "denominator": 65536
+      },
+      "ordered_signed_triples": 60,
+      "ordered_signed_quadruples": 3696,
+      "independent_quadruples": 2976,
+      "extra_quadruples": 720,
+      "pair_support": 443,
+      "pair_spectrum_sha256": "5b8f95ed332165eacd49a3b6b4105342c5054b7e7775bd633e787f847d28af8f",
+      "skewness": 0.3314563036811941,
+      "kurtosis": {
+        "numerator": 231,
+        "denominator": 64
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 93,
+        "denominator": 32
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 77,
+        "denominator": 1728
+      }
+    }
+  },
+  {
+    "geometry_id": "67b2ff90d66c7c2c362eff27f1c2c6600794471f144cf785b9d606f580e14c4f",
+    "identifier": 1,
+    "N": 8,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      8,
+      11,
+      39
+    ],
+    "uniform": {
+      "N": 8,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 16
+      },
+      "third": {
+        "numerator": 3,
+        "denominator": 512
+      },
+      "fourth": {
+        "numerator": 45,
+        "denominator": 4096
+      },
+      "ordered_signed_triples": 24,
+      "ordered_signed_quadruples": 720,
+      "independent_quadruples": 720,
+      "extra_quadruples": 0,
+      "pair_support": 129,
+      "pair_spectrum_sha256": "8e425f48d537c8ebd3641ef50b13f0705ca115420e90b91153be05f18fdbc309",
+      "skewness": 0.375,
+      "kurtosis": {
+        "numerator": 45,
+        "denominator": 16
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 45,
+        "denominator": 16
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 5,
+        "denominator": 144
+      }
+    }
+  },
+  {
+    "geometry_id": "846b5f5647771998bc3f7a0bc43955288a7dfcdce25e13a707ee664532a1f8c4",
+    "identifier": 1,
+    "N": 16,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      8,
+      11,
+      29,
+      39,
+      51,
+      67,
+      75,
+      85,
+      89,
+      100,
+      108
+    ],
+    "uniform": {
+      "N": 16,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 32
+      },
+      "third": {
+        "numerator": 9,
+        "denominator": 4096
+      },
+      "fourth": {
+        "numerator": 207,
+        "denominator": 65536
+      },
+      "ordered_signed_triples": 72,
+      "ordered_signed_quadruples": 3312,
+      "independent_quadruples": 2976,
+      "extra_quadruples": 336,
+      "pair_support": 471,
+      "pair_spectrum_sha256": "4e7617cf5542c9ed127b0893f9a535e426f50e9d75e1f22b5898389df217334e",
+      "skewness": 0.397747564417433,
+      "kurtosis": {
+        "numerator": 207,
+        "denominator": 64
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 93,
+        "denominator": 32
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 23,
+        "denominator": 576
+      }
+    }
+  },
+  {
+    "geometry_id": "c2b87e472272ded7dccf9014e59244b89091d383a812e66ae096d8d46a4cf991",
+    "identifier": 2,
+    "N": 4,
+    "indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "uniform": {
+      "N": 4,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 8
+      },
+      "third": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "fourth": {
+        "numerator": 21,
+        "denominator": 512
+      },
+      "ordered_signed_triples": 0,
+      "ordered_signed_quadruples": 168,
+      "independent_quadruples": 168,
+      "extra_quadruples": 0,
+      "pair_support": 33,
+      "pair_spectrum_sha256": "f7e232ad41b477712d8973084e0ded53c99a0a3398009aaa56e1a01feadade94",
+      "skewness": 0.0,
+      "kurtosis": {
+        "numerator": 21,
+        "denominator": 8
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 21,
+        "denominator": 8
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 7,
+        "denominator": 216
+      }
+    }
+  },
+  {
+    "geometry_id": "0e1447f0c5c268839754a74948e05e8c31a7437a1ad046d940d2a465e2f39b7f",
+    "identifier": 2,
+    "N": 8,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "uniform": {
+      "N": 8,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 16
+      },
+      "third": {
+        "numerator": 9,
+        "denominator": 1024
+      },
+      "fourth": {
+        "numerator": 27,
+        "denominator": 2048
+      },
+      "ordered_signed_triples": 36,
+      "ordered_signed_quadruples": 864,
+      "independent_quadruples": 720,
+      "extra_quadruples": 144,
+      "pair_support": 113,
+      "pair_spectrum_sha256": "7268d0ea4e6530b71a0d1eae796d5f638336a708987627dbbdab901e1472cfe8",
+      "skewness": 0.5625,
+      "kurtosis": {
+        "numerator": 27,
+        "denominator": 8
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 45,
+        "denominator": 16
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 1,
+        "denominator": 24
+      }
+    }
+  },
+  {
+    "geometry_id": "4adec3cc581c6370d390fa6b0086a503bc85b1d97032b67f6a05f2dba957bf5a",
+    "identifier": 2,
+    "N": 16,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "uniform": {
+      "N": 16,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 32
+      },
+      "third": {
+        "numerator": 15,
+        "denominator": 2048
+      },
+      "fourth": {
+        "numerator": 357,
+        "denominator": 65536
+      },
+      "ordered_signed_triples": 240,
+      "ordered_signed_quadruples": 5712,
+      "independent_quadruples": 2976,
+      "extra_quadruples": 2736,
+      "pair_support": 309,
+      "pair_spectrum_sha256": "cdccc053bbd5ed95baf34805d8cd064a6775e345c8dbc78bdf5a8225c4b925f5",
+      "skewness": 1.3258252147247764,
+      "kurtosis": {
+        "numerator": 357,
+        "denominator": 64
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 93,
+        "denominator": 32
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 119,
+        "denominator": 1728
+      }
+    }
+  },
+  {
+    "geometry_id": "2b9429fbf8cda87d16aecd1401026edfc14e246cf61275d0209518613445b8dd",
+    "identifier": 2,
+    "N": 4,
+    "indices": [
+      43,
+      60,
+      81,
+      115
+    ],
+    "uniform": {
+      "N": 4,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 8
+      },
+      "third": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "fourth": {
+        "numerator": 21,
+        "denominator": 512
+      },
+      "ordered_signed_triples": 0,
+      "ordered_signed_quadruples": 168,
+      "independent_quadruples": 168,
+      "extra_quadruples": 0,
+      "pair_support": 33,
+      "pair_spectrum_sha256": "6c75a5c0d1d887eaedbee63ee4e9b1f5d65b6c62f5711ca6184f4ae13186d6de",
+      "skewness": 0.0,
+      "kurtosis": {
+        "numerator": 21,
+        "denominator": 8
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 21,
+        "denominator": 8
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 7,
+        "denominator": 216
+      }
+    }
+  },
+  {
+    "geometry_id": "002ebec32ad18fe11acbabf6a7e01d1015f8fdb3f77bc8f903f92cb136492494",
+    "identifier": 2,
+    "N": 8,
+    "indices": [
+      43,
+      60,
+      66,
+      68,
+      74,
+      81,
+      88,
+      115
+    ],
+    "uniform": {
+      "N": 8,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 16
+      },
+      "third": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "fourth": {
+        "numerator": 45,
+        "denominator": 4096
+      },
+      "ordered_signed_triples": 0,
+      "ordered_signed_quadruples": 720,
+      "independent_quadruples": 720,
+      "extra_quadruples": 0,
+      "pair_support": 129,
+      "pair_spectrum_sha256": "e407d79febc921938d48e3efb8ab4437de30f8ced8926ed46c2ed10ae6e64538",
+      "skewness": 0.0,
+      "kurtosis": {
+        "numerator": 45,
+        "denominator": 16
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 45,
+        "denominator": 16
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 5,
+        "denominator": 144
+      }
+    }
+  },
+  {
+    "geometry_id": "b8c566370d3882cf361304953f8f7ddcb63fe4f86e8a34ebfe0f80d210cfd4dd",
+    "identifier": 2,
+    "N": 16,
+    "indices": [
+      0,
+      43,
+      45,
+      47,
+      48,
+      57,
+      60,
+      66,
+      68,
+      74,
+      80,
+      81,
+      88,
+      115,
+      116,
+      117
+    ],
+    "uniform": {
+      "N": 16,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 32
+      },
+      "third": {
+        "numerator": 3,
+        "denominator": 2048
+      },
+      "fourth": {
+        "numerator": 207,
+        "denominator": 65536
+      },
+      "ordered_signed_triples": 48,
+      "ordered_signed_quadruples": 3312,
+      "independent_quadruples": 2976,
+      "extra_quadruples": 336,
+      "pair_support": 475,
+      "pair_spectrum_sha256": "32a79d1ffc57dd96dd0435ae5d7dc7cda1953c65f8f8b1665d6ab32917c2742c",
+      "skewness": 0.2651650429449553,
+      "kurtosis": {
+        "numerator": 207,
+        "denominator": 64
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 93,
+        "denominator": 32
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 23,
+        "denominator": 576
+      }
+    }
+  },
+  {
+    "geometry_id": "66fbadabc8a4745ea31cdc21808e67aab8b92c0be524cb2bdf3a1235efadf577",
+    "identifier": 2,
+    "N": 8,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      15,
+      20
+    ],
+    "uniform": {
+      "N": 8,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 16
+      },
+      "third": {
+        "numerator": 3,
+        "denominator": 512
+      },
+      "fourth": {
+        "numerator": 45,
+        "denominator": 4096
+      },
+      "ordered_signed_triples": 24,
+      "ordered_signed_quadruples": 720,
+      "independent_quadruples": 720,
+      "extra_quadruples": 0,
+      "pair_support": 129,
+      "pair_spectrum_sha256": "47aa4bb92ef64a888e5394e822f08328ae6174c3dbe4578f5949ff849486e516",
+      "skewness": 0.375,
+      "kurtosis": {
+        "numerator": 45,
+        "denominator": 16
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 45,
+        "denominator": 16
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 5,
+        "denominator": 144
+      }
+    }
+  },
+  {
+    "geometry_id": "2bb3aa175df2598482b9344428b227778b5cd3f57a014a71fece2162acee2eaf",
+    "identifier": 2,
+    "N": 16,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      15,
+      20,
+      56,
+      61,
+      90,
+      91,
+      104,
+      108,
+      114,
+      127
+    ],
+    "uniform": {
+      "N": 16,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 32
+      },
+      "third": {
+        "numerator": 3,
+        "denominator": 2048
+      },
+      "fourth": {
+        "numerator": 399,
+        "denominator": 131072
+      },
+      "ordered_signed_triples": 48,
+      "ordered_signed_quadruples": 3192,
+      "independent_quadruples": 2976,
+      "extra_quadruples": 216,
+      "pair_support": 485,
+      "pair_spectrum_sha256": "b46464e56ac90c97218f5408843a2af9507370da15181ab2f2380e027e6fde7a",
+      "skewness": 0.2651650429449553,
+      "kurtosis": {
+        "numerator": 399,
+        "denominator": 128
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 93,
+        "denominator": 32
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 133,
+        "denominator": 3456
+      }
+    }
+  },
+  {
+    "geometry_id": "312db433b59aefe5663e37e0ecd2830db42d21e2fea9e3782b70c7828424ecb3",
+    "identifier": 3,
+    "N": 4,
+    "indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "uniform": {
+      "N": 4,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 8
+      },
+      "third": {
+        "numerator": 3,
+        "denominator": 128
+      },
+      "fourth": {
+        "numerator": 21,
+        "denominator": 512
+      },
+      "ordered_signed_triples": 12,
+      "ordered_signed_quadruples": 168,
+      "independent_quadruples": 168,
+      "extra_quadruples": 0,
+      "pair_support": 33,
+      "pair_spectrum_sha256": "5466d7146e8a75fa264501560dd35e8ee9630014173d1a905e373e8bfd2ff049",
+      "skewness": 0.5303300858899106,
+      "kurtosis": {
+        "numerator": 21,
+        "denominator": 8
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 21,
+        "denominator": 8
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 7,
+        "denominator": 216
+      }
+    }
+  },
+  {
+    "geometry_id": "c602069cae7e5095766064de4bb2aa62aaccc9fc07949c5a1cb6a0d1dd00fbd7",
+    "identifier": 3,
+    "N": 8,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "uniform": {
+      "N": 8,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 16
+      },
+      "third": {
+        "numerator": 9,
+        "denominator": 512
+      },
+      "fourth": {
+        "numerator": 33,
+        "denominator": 2048
+      },
+      "ordered_signed_triples": 72,
+      "ordered_signed_quadruples": 1056,
+      "independent_quadruples": 720,
+      "extra_quadruples": 336,
+      "pair_support": 95,
+      "pair_spectrum_sha256": "1855b4eef71dabc7af08bc67a22e004882b2dc2bbf34c51d1bb2696533aa5428",
+      "skewness": 1.125,
+      "kurtosis": {
+        "numerator": 33,
+        "denominator": 8
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 45,
+        "denominator": 16
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 11,
+        "denominator": 216
+      }
+    }
+  },
+  {
+    "geometry_id": "83550ebdb81378173857fadc11c37a6ce8bc5c6228e0dd163da1db15bc8cd34c",
+    "identifier": 3,
+    "N": 16,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "uniform": {
+      "N": 16,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 32
+      },
+      "third": {
+        "numerator": 39,
+        "denominator": 4096
+      },
+      "fourth": {
+        "numerator": 471,
+        "denominator": 65536
+      },
+      "ordered_signed_triples": 312,
+      "ordered_signed_quadruples": 7536,
+      "independent_quadruples": 2976,
+      "extra_quadruples": 4560,
+      "pair_support": 235,
+      "pair_spectrum_sha256": "ac756ad39375f3cca58a949e52e5e53e78a47dc0a4186839ef210744a643921f",
+      "skewness": 1.7235727791422095,
+      "kurtosis": {
+        "numerator": 471,
+        "denominator": 64
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 93,
+        "denominator": 32
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 157,
+        "denominator": 1728
+      }
+    }
+  },
+  {
+    "geometry_id": "2edc0e980cbd6b26d92a4cf89f9b96c03d2b7007cd969e35c04916fa924b8955",
+    "identifier": 3,
+    "N": 4,
+    "indices": [
+      30,
+      43,
+      111,
+      121
+    ],
+    "uniform": {
+      "N": 4,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 8
+      },
+      "third": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "fourth": {
+        "numerator": 21,
+        "denominator": 512
+      },
+      "ordered_signed_triples": 0,
+      "ordered_signed_quadruples": 168,
+      "independent_quadruples": 168,
+      "extra_quadruples": 0,
+      "pair_support": 33,
+      "pair_spectrum_sha256": "9531755f7fcd13c16da3f799de3bf1ce6330cf33042b8cc549e97a7dc23acab8",
+      "skewness": 0.0,
+      "kurtosis": {
+        "numerator": 21,
+        "denominator": 8
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 21,
+        "denominator": 8
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 7,
+        "denominator": 216
+      }
+    }
+  },
+  {
+    "geometry_id": "f846f7fa5df36df88a6ed476c809b85a0dca814e7b0d8e87b2adba4eacd5e6af",
+    "identifier": 3,
+    "N": 8,
+    "indices": [
+      26,
+      30,
+      43,
+      81,
+      88,
+      101,
+      111,
+      121
+    ],
+    "uniform": {
+      "N": 8,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 16
+      },
+      "third": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "fourth": {
+        "numerator": 45,
+        "denominator": 4096
+      },
+      "ordered_signed_triples": 0,
+      "ordered_signed_quadruples": 720,
+      "independent_quadruples": 720,
+      "extra_quadruples": 0,
+      "pair_support": 129,
+      "pair_spectrum_sha256": "4a6497eeacba5bdbb4dc1e123ce72a507b226456648c15a0fd15a0f532385b26",
+      "skewness": 0.0,
+      "kurtosis": {
+        "numerator": 45,
+        "denominator": 16
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 45,
+        "denominator": 16
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 5,
+        "denominator": 144
+      }
+    }
+  },
+  {
+    "geometry_id": "b4ba663435a8d8f338f7b053a2204ae735ee961924b4a6755a7228bcd538814b",
+    "identifier": 3,
+    "N": 16,
+    "indices": [
+      9,
+      23,
+      26,
+      30,
+      43,
+      51,
+      61,
+      81,
+      87,
+      88,
+      100,
+      101,
+      104,
+      111,
+      121,
+      127
+    ],
+    "uniform": {
+      "N": 16,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 32
+      },
+      "third": {
+        "numerator": 3,
+        "denominator": 4096
+      },
+      "fourth": {
+        "numerator": 27,
+        "denominator": 8192
+      },
+      "ordered_signed_triples": 24,
+      "ordered_signed_quadruples": 3456,
+      "independent_quadruples": 2976,
+      "extra_quadruples": 480,
+      "pair_support": 461,
+      "pair_spectrum_sha256": "9c79777ccbafce2cb53840de120b75229a943024f0b645f040eb44c7ff837257",
+      "skewness": 0.13258252147247765,
+      "kurtosis": {
+        "numerator": 27,
+        "denominator": 8
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 93,
+        "denominator": 32
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 1,
+        "denominator": 24
+      }
+    }
+  },
+  {
+    "geometry_id": "b68afc68fd8358efc3aff5d9b9b1a2dc5e787c850a2c9ce9559ffb0584e2ffab",
+    "identifier": 3,
+    "N": 8,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      7,
+      11,
+      24,
+      46
+    ],
+    "uniform": {
+      "N": 8,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 16
+      },
+      "third": {
+        "numerator": 3,
+        "denominator": 512
+      },
+      "fourth": {
+        "numerator": 45,
+        "denominator": 4096
+      },
+      "ordered_signed_triples": 24,
+      "ordered_signed_quadruples": 720,
+      "independent_quadruples": 720,
+      "extra_quadruples": 0,
+      "pair_support": 129,
+      "pair_spectrum_sha256": "7009127362cc9be0cb64c368d2a0fd460d207919a3063598e54830741360dc50",
+      "skewness": 0.375,
+      "kurtosis": {
+        "numerator": 45,
+        "denominator": 16
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 45,
+        "denominator": 16
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 5,
+        "denominator": 144
+      }
+    }
+  },
+  {
+    "geometry_id": "008a84c6e0aedb6304295bc9445359c579fec952b10ba74c0bc80e7d5b98a5f0",
+    "identifier": 3,
+    "N": 16,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      7,
+      11,
+      24,
+      46,
+      66,
+      69,
+      73,
+      76,
+      91,
+      112,
+      120,
+      126
+    ],
+    "uniform": {
+      "N": 16,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 32
+      },
+      "third": {
+        "numerator": 15,
+        "denominator": 8192
+      },
+      "fourth": {
+        "numerator": 99,
+        "denominator": 32768
+      },
+      "ordered_signed_triples": 60,
+      "ordered_signed_quadruples": 3168,
+      "independent_quadruples": 2976,
+      "extra_quadruples": 192,
+      "pair_support": 485,
+      "pair_spectrum_sha256": "448708b4e3d099ccf00e914fe35d76cf821e2305067bf3fc2bd584724b638c1b",
+      "skewness": 0.3314563036811941,
+      "kurtosis": {
+        "numerator": 99,
+        "denominator": 32
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 93,
+        "denominator": 32
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 11,
+        "denominator": 288
+      }
+    }
+  }
+]

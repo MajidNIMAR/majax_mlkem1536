@@ -1,0 +1,4214 @@
+[
+  {
+    "geometry_id": "ada594d842e49767759485b7508a8fe680a1b8cf5366f497387d8ba956e66432",
+    "identifier": 0,
+    "N": 32,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "exact": {
+      "N": 32,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 64
+      },
+      "third": {
+        "numerator": 45,
+        "denominator": 8192
+      },
+      "fourth": {
+        "numerator": 3741,
+        "denominator": 1048576
+      },
+      "ordered_signed_triples": 1440,
+      "ordered_signed_quadruples": 59856,
+      "independent_quadruples": 12096,
+      "extra_quadruples": 47760,
+      "pair_support": 569,
+      "pair_spectrum_sha256": "ca8e05bf05899013fdc186f0c0e222fb07cfc95e2da6fd320c03326d8046446a",
+      "skewness": 2.8125,
+      "kurtosis": {
+        "numerator": 3741,
+        "denominator": 256
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 189,
+        "denominator": 64
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 1247,
+        "denominator": 6912
+      }
+    },
+    "empirical_uniform": {
+      "samples": 8192,
+      "mean": 0.002032295663105952,
+      "variance": 0.016799414319105564,
+      "tails": [
+        {
+          "threshold": 0.25,
+          "hits_above_margin": 374,
+          "ambiguous": 0,
+          "fraction": 0.045654296875,
+          "wilson95_approx_iid": [
+            0.04134320983365131,
+            0.050391295109893215
+          ],
+          "normal_zero_mean_baseline_tail": 0.022750131948179198
+        },
+        {
+          "threshold": 0.375,
+          "hits_above_margin": 228,
+          "ambiguous": 0,
+          "fraction": 0.02783203125,
+          "wilson95_approx_iid": [
+            0.02448528624346799,
+            0.031621394337303155
+          ],
+          "normal_zero_mean_baseline_tail": 0.001349898031630093
+        },
+        {
+          "threshold": 0.5,
+          "hits_above_margin": 127,
+          "ambiguous": 0,
+          "fraction": 0.0155029296875,
+          "wilson95_approx_iid": [
+            0.013045753937915183,
+            0.01841428102203329
+          ],
+          "normal_zero_mean_baseline_tail": 3.167124183311989e-05
+        }
+      ],
+      "raw_third": 0.006373036783233064,
+      "raw_fourth": 0.004256782222968651,
+      "skewness": 2.8798388183812915,
+      "kurtosis": 14.901092113022122
+    },
+    "mean_lattice_squared_norm": 2159.1875,
+    "maximum_lattice_squared_norm": 2903
+  },
+  {
+    "geometry_id": "37c291c763a8b01f5762db44a1a6fef3afc0adca0ef685b3153f04ec61c38701",
+    "identifier": 0,
+    "N": 64,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63
+    ],
+    "exact": {
+      "N": 64,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 128
+      },
+      "third": {
+        "numerator": 93,
+        "denominator": 32768
+      },
+      "fourth": {
+        "numerator": 30207,
+        "denominator": 16777216
+      },
+      "ordered_signed_triples": 5952,
+      "ordered_signed_quadruples": 483312,
+      "independent_quadruples": 48768,
+      "extra_quadruples": 434544,
+      "pair_support": 1245,
+      "pair_spectrum_sha256": "7c74751e8dbec876c86e601e5cbf143746207c5c46e6443e92b079f997339270",
+      "skewness": 4.110058165646807,
+      "kurtosis": {
+        "numerator": 30207,
+        "denominator": 1024
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 381,
+        "denominator": 128
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 10069,
+        "denominator": 27648
+      }
+    },
+    "empirical_uniform": {
+      "samples": 8192,
+      "mean": 0.0011949419977362982,
+      "variance": 0.008628803333591981,
+      "tails": [
+        {
+          "threshold": 0.17677669529663687,
+          "hits_above_margin": 275,
+          "ambiguous": 0,
+          "fraction": 0.0335693359375,
+          "wilson95_approx_iid": [
+            0.02988234026588799,
+            0.037693571445365004
+          ],
+          "normal_zero_mean_baseline_tail": 0.022750131948179216
+        },
+        {
+          "threshold": 0.2651650429449553,
+          "hits_above_margin": 190,
+          "ambiguous": 0,
+          "fraction": 0.023193359375,
+          "wilson95_approx_iid": [
+            0.02015054019856128,
+            0.026683145000118168
+          ],
+          "normal_zero_mean_baseline_tail": 0.0013498980316300959
+        },
+        {
+          "threshold": 0.5,
+          "hits_above_margin": 65,
+          "ambiguous": 0,
+          "fraction": 0.0079345703125,
+          "wilson95_approx_iid": [
+            0.006230604004949901,
+            0.010099806910533166
+          ],
+          "normal_zero_mean_baseline_tail": 7.708628950140008e-09
+        }
+      ],
+      "raw_third": 0.0034007918062988847,
+      "raw_fourth": 0.0022524024980318342,
+      "skewness": 4.204222187975022,
+      "kurtosis": 30.034033745214284
+    },
+    "mean_lattice_squared_norm": 3029.4375,
+    "maximum_lattice_squared_norm": 4501
+  },
+  {
+    "geometry_id": "3bb0163f51eb5f938050d3e195362d31c3643894c5e0d0c927ee65c91d7530d1",
+    "identifier": 0,
+    "N": 128,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127
+    ],
+    "exact": {
+      "N": 128,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 256
+      },
+      "third": {
+        "numerator": 10995,
+        "denominator": 8388608
+      },
+      "fourth": {
+        "numerator": 106101,
+        "denominator": 134217728
+      },
+      "ordered_signed_triples": 21990,
+      "ordered_signed_quadruples": 3395232,
+      "independent_quadruples": 195840,
+      "extra_quadruples": 3199392,
+      "pair_support": 3631,
+      "pair_spectrum_sha256": "0d742a6223649aa5e141515c6a6ea6b10b070cc53f2c1e1005d253062f663f22",
+      "skewness": 5.36865234375,
+      "kurtosis": {
+        "numerator": 106101,
+        "denominator": 2048
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 765,
+        "denominator": 256
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 11789,
+        "denominator": 18432
+      }
+    },
+    "empirical_uniform": {
+      "samples": 8192,
+      "mean": 0.0010219890277930416,
+      "variance": 0.004600283767787462,
+      "tails": [
+        {
+          "threshold": 0.125,
+          "hits_above_margin": 188,
+          "ambiguous": 0,
+          "fraction": 0.02294921875,
+          "wilson95_approx_iid": [
+            0.01992325767690832,
+            0.026422375133239986
+          ],
+          "normal_zero_mean_baseline_tail": 0.022750131948179198
+        },
+        {
+          "threshold": 0.1875,
+          "hits_above_margin": 142,
+          "ambiguous": 0,
+          "fraction": 0.017333984375,
+          "wilson95_approx_iid": [
+            0.014725618625600241,
+            0.0203948092483318
+          ],
+          "normal_zero_mean_baseline_tail": 0.001349898031630093
+        },
+        {
+          "threshold": 0.5,
+          "hits_above_margin": 36,
+          "ambiguous": 0,
+          "fraction": 0.00439453125,
+          "wilson95_approx_iid": [
+            0.0031760802277086475,
+            0.0060775710540728585
+          ],
+          "normal_zero_mean_baseline_tail": 6.220960574271755e-16
+        }
+      ],
+      "raw_third": 0.0017791494954090454,
+      "raw_fourth": 0.0011371487743694828,
+      "skewness": 5.656901676465849,
+      "kurtosis": 53.39154677873535
+    },
+    "mean_lattice_squared_norm": 4337.7109375,
+    "maximum_lattice_squared_norm": 6614
+  },
+  {
+    "geometry_id": "f280fd96b29e19e2751409f9c0027cf083aad1f3cda07390f12c50e753b19b42",
+    "identifier": 0,
+    "N": 32,
+    "indices": [
+      2,
+      3,
+      4,
+      6,
+      9,
+      11,
+      15,
+      16,
+      24,
+      28,
+      40,
+      45,
+      51,
+      55,
+      56,
+      57,
+      60,
+      66,
+      67,
+      73,
+      77,
+      80,
+      85,
+      100,
+      102,
+      105,
+      106,
+      108,
+      113,
+      120,
+      121,
+      127
+    ],
+    "exact": {
+      "N": 32,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 64
+      },
+      "third": {
+        "numerator": 183,
+        "denominator": 131072
+      },
+      "fourth": {
+        "numerator": 2955,
+        "denominator": 2097152
+      },
+      "ordered_signed_triples": 366,
+      "ordered_signed_quadruples": 23640,
+      "independent_quadruples": 12096,
+      "extra_quadruples": 11544,
+      "pair_support": 1245,
+      "pair_spectrum_sha256": "49daad63dad084f471525fa61a42795168dfe6ef0e6680a812e90dc850bca4fa",
+      "skewness": 0.71484375,
+      "kurtosis": {
+        "numerator": 2955,
+        "denominator": 512
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 189,
+        "denominator": 64
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 985,
+        "denominator": 13824
+      }
+    },
+    "empirical_uniform": {
+      "samples": 8192,
+      "mean": -0.00038226095397192244,
+      "variance": 0.016302652488813334,
+      "tails": [
+        {
+          "threshold": 0.25,
+          "hits_above_margin": 247,
+          "ambiguous": 0,
+          "fraction": 0.0301513671875,
+          "wilson95_approx_iid": [
+            0.026662871246022648,
+            0.03408030702579436
+          ],
+          "normal_zero_mean_baseline_tail": 0.022750131948179198
+        },
+        {
+          "threshold": 0.375,
+          "hits_above_margin": 84,
+          "ambiguous": 0,
+          "fraction": 0.01025390625,
+          "wilson95_approx_iid": [
+            0.00829039663192769,
+            0.012676511974601228
+          ],
+          "normal_zero_mean_baseline_tail": 0.001349898031630093
+        },
+        {
+          "threshold": 0.5,
+          "hits_above_margin": 48,
+          "ambiguous": 0,
+          "fraction": 0.005859375,
+          "wilson95_approx_iid": [
+            0.004422484085990226,
+            0.007759481526978133
+          ],
+          "normal_zero_mean_baseline_tail": 3.167124183311989e-05
+        }
+      ],
+      "raw_third": 0.001876192086956277,
+      "raw_fourth": 0.001801852098976133,
+      "skewness": 0.9103241838110966,
+      "kurtosis": 6.79042473798077
+    },
+    "mean_lattice_squared_norm": 4175.09375,
+    "maximum_lattice_squared_norm": 6614
+  },
+  {
+    "geometry_id": "81327b00c476cab7cf96f2d0c9ace84adff22e2b8d1b1466c9ee49259c8d7b1e",
+    "identifier": 0,
+    "N": 64,
+    "indices": [
+      0,
+      2,
+      3,
+      4,
+      6,
+      8,
+      9,
+      11,
+      13,
+      15,
+      16,
+      20,
+      24,
+      28,
+      30,
+      33,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      45,
+      47,
+      50,
+      51,
+      52,
+      55,
+      56,
+      57,
+      59,
+      60,
+      63,
+      66,
+      67,
+      72,
+      73,
+      75,
+      77,
+      78,
+      80,
+      81,
+      83,
+      84,
+      85,
+      94,
+      96,
+      98,
+      99,
+      100,
+      102,
+      103,
+      105,
+      106,
+      108,
+      113,
+      115,
+      118,
+      119,
+      120,
+      121,
+      122,
+      126,
+      127
+    ],
+    "exact": {
+      "N": 64,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 128
+      },
+      "third": {
+        "numerator": 159,
+        "denominator": 131072
+      },
+      "fourth": {
+        "numerator": 29733,
+        "denominator": 33554432
+      },
+      "ordered_signed_triples": 2544,
+      "ordered_signed_quadruples": 237864,
+      "independent_quadruples": 48768,
+      "extra_quadruples": 189096,
+      "pair_support": 2487,
+      "pair_spectrum_sha256": "b4cbf784008c32dc71f9eb7d5a08b1d3b14bc1c6a55ed4e52e35d833c1ae113d",
+      "skewness": 1.756718409510329,
+      "kurtosis": {
+        "numerator": 29733,
+        "denominator": 2048
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 381,
+        "denominator": 128
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 9911,
+        "denominator": 55296
+      }
+    },
+    "empirical_uniform": {
+      "samples": 8192,
+      "mean": -0.0003198665665312815,
+      "variance": 0.008523329057159034,
+      "tails": [
+        {
+          "threshold": 0.17677669529663687,
+          "hits_above_margin": 183,
+          "ambiguous": 0,
+          "fraction": 0.0223388671875,
+          "wilson95_approx_iid": [
+            0.01935547185794355,
+            0.0257700299808769
+          ],
+          "normal_zero_mean_baseline_tail": 0.022750131948179216
+        },
+        {
+          "threshold": 0.2651650429449553,
+          "hits_above_margin": 106,
+          "ambiguous": 0,
+          "fraction": 0.012939453125,
+          "wilson95_approx_iid": [
+            0.01071041271738109,
+            0.015625072162990392
+          ],
+          "normal_zero_mean_baseline_tail": 0.0013498980316300959
+        },
+        {
+          "threshold": 0.5,
+          "hits_above_margin": 35,
+          "ambiguous": 0,
+          "fraction": 0.0042724609375,
+          "wilson95_approx_iid": [
+            0.0030737397445313,
+            0.005935885342984636
+          ],
+          "normal_zero_mean_baseline_tail": 7.708628950140008e-09
+        }
+      ],
+      "raw_third": 0.0016517648240827782,
+      "raw_fourth": 0.0012208953647326343,
+      "skewness": 2.109499914502122,
+      "kurtosis": 16.834991777052988
+    },
+    "mean_lattice_squared_norm": 4335.4375,
+    "maximum_lattice_squared_norm": 6614
+  },
+  {
+    "geometry_id": "c8e93e4a55bcf6b128535f1542460b29582af0b9442a35c0745ad73bf7c83e0b",
+    "identifier": 0,
+    "N": 32,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      6,
+      13,
+      45,
+      58,
+      59,
+      61,
+      63,
+      64,
+      66,
+      78,
+      80,
+      83,
+      89,
+      94,
+      97,
+      99,
+      102,
+      106,
+      112,
+      113,
+      115,
+      116,
+      117,
+      119,
+      120,
+      122,
+      123,
+      125
+    ],
+    "exact": {
+      "N": 32,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 64
+      },
+      "third": {
+        "numerator": 75,
+        "denominator": 65536
+      },
+      "fourth": {
+        "numerator": 135,
+        "denominator": 131072
+      },
+      "ordered_signed_triples": 300,
+      "ordered_signed_quadruples": 17280,
+      "independent_quadruples": 12096,
+      "extra_quadruples": 5184,
+      "pair_support": 1537,
+      "pair_spectrum_sha256": "c57df7620e43dd7ba87919d34d825f9683764355eddf7ca799006d14d8cb5272",
+      "skewness": 0.5859375,
+      "kurtosis": {
+        "numerator": 135,
+        "denominator": 32
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 189,
+        "denominator": 64
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 5,
+        "denominator": 96
+      }
+    },
+    "empirical_uniform": {
+      "samples": 8192,
+      "mean": 0.0006814846685669869,
+      "variance": 0.01641011521255433,
+      "tails": [
+        {
+          "threshold": 0.25,
+          "hits_above_margin": 222,
+          "ambiguous": 0,
+          "fraction": 0.027099609375,
+          "wilson95_approx_iid": [
+            0.02379894327400508,
+            0.030843580141172645
+          ],
+          "normal_zero_mean_baseline_tail": 0.022750131948179198
+        },
+        {
+          "threshold": 0.375,
+          "hits_above_margin": 51,
+          "ambiguous": 0,
+          "fraction": 0.0062255859375,
+          "wilson95_approx_iid": [
+            0.00473848194245755,
+            0.008175562253307523
+          ],
+          "normal_zero_mean_baseline_tail": 0.001349898031630093
+        },
+        {
+          "threshold": 0.5,
+          "hits_above_margin": 26,
+          "ambiguous": 0,
+          "fraction": 0.003173828125,
+          "wilson95_approx_iid": [
+            0.0021668942864890416,
+            0.004646495052636754
+          ],
+          "normal_zero_mean_baseline_tail": 3.167124183311989e-05
+        }
+      ],
+      "raw_third": 0.0015646452742465581,
+      "raw_fourth": 0.0013236461914855552,
+      "skewness": 0.7283410011848221,
+      "kurtosis": 4.899615933456426
+    },
+    "mean_lattice_squared_norm": 4741.75,
+    "maximum_lattice_squared_norm": 6522
+  },
+  {
+    "geometry_id": "2d08faa659f205057b58ed482c13256f12c864ec2fb040ae130f0639534df449",
+    "identifier": 0,
+    "N": 64,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      6,
+      13,
+      45,
+      49,
+      56,
+      58,
+      59,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      69,
+      71,
+      73,
+      75,
+      78,
+      80,
+      82,
+      83,
+      85,
+      86,
+      88,
+      89,
+      90,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      99,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127
+    ],
+    "exact": {
+      "N": 64,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 128
+      },
+      "third": {
+        "numerator": 831,
+        "denominator": 1048576
+      },
+      "fourth": {
+        "numerator": 19173,
+        "denominator": 33554432
+      },
+      "ordered_signed_triples": 1662,
+      "ordered_signed_quadruples": 153384,
+      "independent_quadruples": 48768,
+      "extra_quadruples": 104616,
+      "pair_support": 3311,
+      "pair_spectrum_sha256": "b8b440f4483991826bab7b7b97a1fcb717b3469102f25497057acb629a88fcd7",
+      "skewness": 1.1476674514961347,
+      "kurtosis": {
+        "numerator": 19173,
+        "denominator": 2048
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 381,
+        "denominator": 128
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 6391,
+        "denominator": 55296
+      }
+    },
+    "empirical_uniform": {
+      "samples": 8192,
+      "mean": 0.0001726482024795909,
+      "variance": 0.008385938636960015,
+      "tails": [
+        {
+          "threshold": 0.17677669529663687,
+          "hits_above_margin": 177,
+          "ambiguous": 0,
+          "fraction": 0.0216064453125,
+          "wilson95_approx_iid": [
+            0.018674949489005263,
+            0.024986395184221764
+          ],
+          "normal_zero_mean_baseline_tail": 0.022750131948179216
+        },
+        {
+          "threshold": 0.2651650429449553,
+          "hits_above_margin": 70,
+          "ambiguous": 0,
+          "fraction": 0.008544921875,
+          "wilson95_approx_iid": [
+            0.0067693015170867425,
+            0.01078124036972418
+          ],
+          "normal_zero_mean_baseline_tail": 0.0013498980316300959
+        },
+        {
+          "threshold": 0.5,
+          "hits_above_margin": 24,
+          "ambiguous": 0,
+          "fraction": 0.0029296875,
+          "wilson95_approx_iid": [
+            0.0019695942980180875,
+            0.004355742652576567
+          ],
+          "normal_zero_mean_baseline_tail": 7.708628950140008e-09
+        }
+      ],
+      "raw_third": 0.0011694853605629901,
+      "raw_fourth": 0.000837159116335961,
+      "skewness": 1.5172295810217924,
+      "kurtosis": 11.892858377035067
+    },
+    "mean_lattice_squared_norm": 5170.46875,
+    "maximum_lattice_squared_norm": 6614
+  },
+  {
+    "geometry_id": "f67074e904bda2776c003a20b4b1587d7c1331e31deeed6a36b6ec6dd665e2b1",
+    "identifier": 1,
+    "N": 32,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "exact": {
+      "N": 32,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 64
+      },
+      "third": {
+        "numerator": 285,
+        "denominator": 65536
+      },
+      "fourth": {
+        "numerator": 1389,
+        "denominator": 524288
+      },
+      "ordered_signed_triples": 1140,
+      "ordered_signed_quadruples": 44448,
+      "independent_quadruples": 12096,
+      "extra_quadruples": 32352,
+      "pair_support": 763,
+      "pair_spectrum_sha256": "fcb7ba6fd90dbf1fd9a5fef1b8f54d68cf368b3a32f375e58147a7ead6e0fb90",
+      "skewness": 2.2265625,
+      "kurtosis": {
+        "numerator": 1389,
+        "denominator": 128
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 189,
+        "denominator": 64
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 463,
+        "denominator": 3456
+      }
+    },
+    "empirical_uniform": {
+      "samples": 8192,
+      "mean": -0.00237636225384758,
+      "variance": 0.015479035326754688,
+      "tails": [
+        {
+          "threshold": 0.25,
+          "hits_above_margin": 367,
+          "ambiguous": 0,
+          "fraction": 0.0447998046875,
+          "wilson95_approx_iid": [
+            0.04052954032233852,
+            0.049496781261347
+          ],
+          "normal_zero_mean_baseline_tail": 0.022750131948179198
+        },
+        {
+          "threshold": 0.375,
+          "hits_above_margin": 181,
+          "ambiguous": 0,
+          "fraction": 0.0220947265625,
+          "wilson95_approx_iid": [
+            0.01912852973676011,
+            0.0255089197135292
+          ],
+          "normal_zero_mean_baseline_tail": 0.001349898031630093
+        },
+        {
+          "threshold": 0.5,
+          "hits_above_margin": 92,
+          "ambiguous": 0,
+          "fraction": 0.01123046875,
+          "wilson95_approx_iid": [
+            0.00916670473105452,
+            0.013752413429598966
+          ],
+          "normal_zero_mean_baseline_tail": 3.167124183311989e-05
+        }
+      ],
+      "raw_third": 0.004143624108735369,
+      "raw_fourth": 0.002507826904271087,
+      "skewness": 2.2089226920889966,
+      "kurtosis": 10.633275427098011
+    },
+    "mean_lattice_squared_norm": 2569.46875,
+    "maximum_lattice_squared_norm": 3502
+  },
+  {
+    "geometry_id": "4d96f125d80636dba8b787b1b0df8789970515ed35626071ba0350e700645ca0",
+    "identifier": 1,
+    "N": 64,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63
+    ],
+    "exact": {
+      "N": 64,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 128
+      },
+      "third": {
+        "numerator": 1209,
+        "denominator": 524288
+      },
+      "fourth": {
+        "numerator": 22167,
+        "denominator": 16777216
+      },
+      "ordered_signed_triples": 4836,
+      "ordered_signed_quadruples": 354672,
+      "independent_quadruples": 48768,
+      "extra_quadruples": 305904,
+      "pair_support": 1817,
+      "pair_spectrum_sha256": "6f8df8c6b352b02124817488071d970025fd9f08111d3cfcff00bbe7e1184263",
+      "skewness": 3.339422259588031,
+      "kurtosis": {
+        "numerator": 22167,
+        "denominator": 1024
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 381,
+        "denominator": 128
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 821,
+        "denominator": 3072
+      }
+    },
+    "empirical_uniform": {
+      "samples": 8192,
+      "mean": -0.00046224830354588527,
+      "variance": 0.007784865256763111,
+      "tails": [
+        {
+          "threshold": 0.17677669529663687,
+          "hits_above_margin": 291,
+          "ambiguous": 0,
+          "fraction": 0.0355224609375,
+          "wilson95_approx_iid": [
+            0.031726983408096876,
+            0.03975334741140525
+          ],
+          "normal_zero_mean_baseline_tail": 0.022750131948179216
+        },
+        {
+          "threshold": 0.2651650429449553,
+          "hits_above_margin": 181,
+          "ambiguous": 0,
+          "fraction": 0.0220947265625,
+          "wilson95_approx_iid": [
+            0.01912852973676011,
+            0.0255089197135292
+          ],
+          "normal_zero_mean_baseline_tail": 0.0013498980316300959
+        },
+        {
+          "threshold": 0.5,
+          "hits_above_margin": 40,
+          "ambiguous": 0,
+          "fraction": 0.0048828125,
+          "wilson95_approx_iid": [
+            0.0035880203994787378,
+            0.006641735659365053
+          ],
+          "normal_zero_mean_baseline_tail": 7.708628950140008e-09
+        }
+      ],
+      "raw_third": 0.0022128393761859733,
+      "raw_fourth": 0.0012248632268765515,
+      "skewness": 3.237329241884976,
+      "kurtosis": 20.278565041994757
+    },
+    "mean_lattice_squared_norm": 3308.3125,
+    "maximum_lattice_squared_norm": 4573
+  },
+  {
+    "geometry_id": "62c35435205d31c01d6c7520083daafd42138fa801444be9a575607b59dc22df",
+    "identifier": 1,
+    "N": 128,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127
+    ],
+    "exact": {
+      "N": 128,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 256
+      },
+      "third": {
+        "numerator": 9945,
+        "denominator": 8388608
+      },
+      "fourth": {
+        "numerator": 43959,
+        "denominator": 67108864
+      },
+      "ordered_signed_triples": 19890,
+      "ordered_signed_quadruples": 2813376,
+      "independent_quadruples": 195840,
+      "extra_quadruples": 2617536,
+      "pair_support": 4323,
+      "pair_spectrum_sha256": "57698a0421396f7d172f619fb4fb401832834db97c3071ac7548f3b57c1c3186",
+      "skewness": 4.85595703125,
+      "kurtosis": {
+        "numerator": 43959,
+        "denominator": 1024
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 765,
+        "denominator": 256
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 14653,
+        "denominator": 27648
+      }
+    },
+    "empirical_uniform": {
+      "samples": 8192,
+      "mean": -3.5519898163054316e-05,
+      "variance": 0.0038485278188848497,
+      "tails": [
+        {
+          "threshold": 0.125,
+          "hits_above_margin": 205,
+          "ambiguous": 0,
+          "fraction": 0.0250244140625,
+          "wilson95_approx_iid": [
+            0.02185805734294577,
+            0.028636020769717246
+          ],
+          "normal_zero_mean_baseline_tail": 0.022750131948179198
+        },
+        {
+          "threshold": 0.1875,
+          "hits_above_margin": 150,
+          "ambiguous": 0,
+          "fraction": 0.018310546875,
+          "wilson95_approx_iid": [
+            0.015624939091587036,
+            0.021447698336469576
+          ],
+          "normal_zero_mean_baseline_tail": 0.001349898031630093
+        },
+        {
+          "threshold": 0.5,
+          "hits_above_margin": 17,
+          "ambiguous": 0,
+          "fraction": 0.0020751953125,
+          "wilson95_approx_iid": [
+            0.0012960997846953846,
+            0.003321053806040272
+          ],
+          "normal_zero_mean_baseline_tail": 6.220960574271755e-16
+        }
+      ],
+      "raw_third": 0.0011009537551634027,
+      "raw_fourth": 0.0005646832654230864,
+      "skewness": 4.613057559186585,
+      "kurtosis": 38.136072703725546
+    },
+    "mean_lattice_squared_norm": 4346.375,
+    "maximum_lattice_squared_norm": 6018
+  },
+  {
+    "geometry_id": "9703a09abd0bec87d29c08f84a94fab79622bbe93e305078628a6ad7afcbfb60",
+    "identifier": 1,
+    "N": 32,
+    "indices": [
+      8,
+      10,
+      11,
+      16,
+      19,
+      21,
+      29,
+      33,
+      43,
+      44,
+      52,
+      56,
+      57,
+      67,
+      70,
+      72,
+      77,
+      82,
+      83,
+      84,
+      85,
+      87,
+      89,
+      101,
+      106,
+      107,
+      111,
+      112,
+      118,
+      120,
+      121,
+      122
+    ],
+    "exact": {
+      "N": 32,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 64
+      },
+      "third": {
+        "numerator": 9,
+        "denominator": 8192
+      },
+      "fourth": {
+        "numerator": 1251,
+        "denominator": 1048576
+      },
+      "ordered_signed_triples": 288,
+      "ordered_signed_quadruples": 20016,
+      "independent_quadruples": 12096,
+      "extra_quadruples": 7920,
+      "pair_support": 1389,
+      "pair_spectrum_sha256": "8e48174047cc15e2572d2fd19a26ef8442ea5663772daa93d132fd6670b12c80",
+      "skewness": 0.5625,
+      "kurtosis": {
+        "numerator": 1251,
+        "denominator": 256
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 189,
+        "denominator": 64
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 139,
+        "denominator": 2304
+      }
+    },
+    "empirical_uniform": {
+      "samples": 8192,
+      "mean": -0.00171888019665197,
+      "variance": 0.015493018996805136,
+      "tails": [
+        {
+          "threshold": 0.25,
+          "hits_above_margin": 217,
+          "ambiguous": 0,
+          "fraction": 0.0264892578125,
+          "wilson95_approx_iid": [
+            0.02322750453836546,
+            0.030194887905484406
+          ],
+          "normal_zero_mean_baseline_tail": 0.022750131948179198
+        },
+        {
+          "threshold": 0.375,
+          "hits_above_margin": 51,
+          "ambiguous": 0,
+          "fraction": 0.0062255859375,
+          "wilson95_approx_iid": [
+            0.00473848194245755,
+            0.008175562253307523
+          ],
+          "normal_zero_mean_baseline_tail": 0.001349898031630093
+        },
+        {
+          "threshold": 0.5,
+          "hits_above_margin": 22,
+          "ambiguous": 0,
+          "fraction": 0.002685546875,
+          "wilson95_approx_iid": [
+            0.0017742248978547396,
+            0.004063059664208772
+          ],
+          "normal_zero_mean_baseline_tail": 3.167124183311989e-05
+        }
+      ],
+      "raw_third": 0.0008213450506104226,
+      "raw_fourth": 0.0010402987615184256,
+      "skewness": 0.4673447532797968,
+      "kurtosis": 4.358641656629396
+    },
+    "mean_lattice_squared_norm": 4552.71875,
+    "maximum_lattice_squared_norm": 5895
+  },
+  {
+    "geometry_id": "55d619584993247b54fc7f312ce0c9c4757c713c0a7541af7561703c217ce5dd",
+    "identifier": 1,
+    "N": 64,
+    "indices": [
+      1,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      16,
+      19,
+      21,
+      23,
+      24,
+      29,
+      32,
+      33,
+      34,
+      38,
+      39,
+      43,
+      44,
+      45,
+      46,
+      48,
+      52,
+      56,
+      57,
+      63,
+      64,
+      65,
+      66,
+      67,
+      70,
+      71,
+      72,
+      73,
+      76,
+      77,
+      80,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      94,
+      96,
+      97,
+      99,
+      101,
+      106,
+      107,
+      109,
+      111,
+      112,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      127
+    ],
+    "exact": {
+      "N": 64,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 128
+      },
+      "third": {
+        "numerator": 579,
+        "denominator": 524288
+      },
+      "fourth": {
+        "numerator": 24861,
+        "denominator": 33554432
+      },
+      "ordered_signed_triples": 2316,
+      "ordered_signed_quadruples": 198888,
+      "independent_quadruples": 48768,
+      "extra_quadruples": 150120,
+      "pair_support": 2835,
+      "pair_spectrum_sha256": "fcbb2e14286befca7f56a587363db5a7153d438eebcbfd5c2d4264197ba5d708",
+      "skewness": 1.5992766652617616,
+      "kurtosis": {
+        "numerator": 24861,
+        "denominator": 2048
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 381,
+        "denominator": 128
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 8287,
+        "denominator": 55296
+      }
+    },
+    "empirical_uniform": {
+      "samples": 8192,
+      "mean": -0.000447317217058845,
+      "variance": 0.0077593037017243465,
+      "tails": [
+        {
+          "threshold": 0.17677669529663687,
+          "hits_above_margin": 179,
+          "ambiguous": 0,
+          "fraction": 0.0218505859375,
+          "wilson95_approx_iid": [
+            0.018901688398290168,
+            0.025247708663468
+          ],
+          "normal_zero_mean_baseline_tail": 0.022750131948179216
+        },
+        {
+          "threshold": 0.2651650429449553,
+          "hits_above_margin": 93,
+          "ambiguous": 0,
+          "fraction": 0.0113525390625,
+          "wilson95_approx_iid": [
+            0.009276560653105458,
+            0.013886583701813598
+          ],
+          "normal_zero_mean_baseline_tail": 0.0013498980316300959
+        },
+        {
+          "threshold": 0.5,
+          "hits_above_margin": 18,
+          "ambiguous": 0,
+          "fraction": 0.002197265625,
+          "wilson95_approx_iid": [
+            0.0013903716888566179,
+            0.0034708080961446093
+          ],
+          "normal_zero_mean_baseline_tail": 7.708628950140008e-09
+        }
+      ],
+      "raw_third": 0.0009935300742604021,
+      "raw_fourth": 0.0006469127225121297,
+      "skewness": 1.4688411547489526,
+      "kurtosis": 10.774527061473325
+    },
+    "mean_lattice_squared_norm": 4461.375,
+    "maximum_lattice_squared_norm": 6018
+  },
+  {
+    "geometry_id": "c44c02925365a95845e67f20b75348825da41bc42e0097a4d9c5ee3de264a7a1",
+    "identifier": 1,
+    "N": 32,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      8,
+      11,
+      29,
+      39,
+      51,
+      61,
+      67,
+      75,
+      84,
+      85,
+      89,
+      92,
+      93,
+      97,
+      98,
+      100,
+      102,
+      104,
+      106,
+      108,
+      109,
+      118,
+      119,
+      121,
+      124,
+      125,
+      126
+    ],
+    "exact": {
+      "N": 32,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 64
+      },
+      "third": {
+        "numerator": 33,
+        "denominator": 32768
+      },
+      "fourth": {
+        "numerator": 1137,
+        "denominator": 1048576
+      },
+      "ordered_signed_triples": 264,
+      "ordered_signed_quadruples": 18192,
+      "independent_quadruples": 12096,
+      "extra_quadruples": 6096,
+      "pair_support": 1469,
+      "pair_spectrum_sha256": "3dfade126e1e0d90961d435be0fc80855d29df1eb3c0e3dbc2ccd4ca6baa7eca",
+      "skewness": 0.515625,
+      "kurtosis": {
+        "numerator": 1137,
+        "denominator": 256
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 189,
+        "denominator": 64
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 379,
+        "denominator": 6912
+      }
+    },
+    "empirical_uniform": {
+      "samples": 8192,
+      "mean": 0.0009395112150491627,
+      "variance": 0.01529547789400167,
+      "tails": [
+        {
+          "threshold": 0.25,
+          "hits_above_margin": 170,
+          "ambiguous": 0,
+          "fraction": 0.020751953125,
+          "wilson95_approx_iid": [
+            0.01788219481304531,
+            0.02407096650032272
+          ],
+          "normal_zero_mean_baseline_tail": 0.022750131948179198
+        },
+        {
+          "threshold": 0.375,
+          "hits_above_margin": 49,
+          "ambiguous": 0,
+          "fraction": 0.0059814453125,
+          "wilson95_approx_iid": [
+            0.0045276474616488555,
+            0.007898344345585074
+          ],
+          "normal_zero_mean_baseline_tail": 0.001349898031630093
+        },
+        {
+          "threshold": 0.5,
+          "hits_above_margin": 19,
+          "ambiguous": 0,
+          "fraction": 0.0023193359375,
+          "wilson95_approx_iid": [
+            0.0014853709796205058,
+            0.0036198349996462926
+          ],
+          "normal_zero_mean_baseline_tail": 3.167124183311989e-05
+        }
+      ],
+      "raw_third": 0.0008836621766218127,
+      "raw_fourth": 0.0009834205786118776,
+      "skewness": 0.4443439275211988,
+      "kurtosis": 4.189672396657999
+    },
+    "mean_lattice_squared_norm": 4481.46875,
+    "maximum_lattice_squared_norm": 5978
+  },
+  {
+    "geometry_id": "c4832f484a1fd31a7300c41694d8de0249daf456c732161294b53c5185812cdf",
+    "identifier": 1,
+    "N": 64,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      8,
+      11,
+      29,
+      39,
+      51,
+      58,
+      61,
+      62,
+      64,
+      67,
+      70,
+      75,
+      76,
+      77,
+      78,
+      80,
+      81,
+      83,
+      84,
+      85,
+      86,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127
+    ],
+    "exact": {
+      "N": 64,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 128
+      },
+      "third": {
+        "numerator": 207,
+        "denominator": 262144
+      },
+      "fourth": {
+        "numerator": 19071,
+        "denominator": 33554432
+      },
+      "ordered_signed_triples": 1656,
+      "ordered_signed_quadruples": 152568,
+      "independent_quadruples": 48768,
+      "extra_quadruples": 103800,
+      "pair_support": 3413,
+      "pair_spectrum_sha256": "9b001aae7d67aadf6013f92bf09b628a94eaaf205163df7b2809f2e3540eb409",
+      "skewness": 1.1435242477001197,
+      "kurtosis": {
+        "numerator": 19071,
+        "denominator": 2048
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 381,
+        "denominator": 128
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 2119,
+        "denominator": 18432
+      }
+    },
+    "empirical_uniform": {
+      "samples": 8192,
+      "mean": -0.00010927708957347111,
+      "variance": 0.007660885007834224,
+      "tails": [
+        {
+          "threshold": 0.17677669529663687,
+          "hits_above_margin": 163,
+          "ambiguous": 0,
+          "fraction": 0.0198974609375,
+          "wilson95_approx_iid": [
+            0.017090793631351374,
+            0.023154184322157656
+          ],
+          "normal_zero_mean_baseline_tail": 0.022750131948179216
+        },
+        {
+          "threshold": 0.2651650429449553,
+          "hits_above_margin": 73,
+          "ambiguous": 0,
+          "fraction": 0.0089111328125,
+          "wilson95_approx_iid": [
+            0.007093754587292658,
+            0.011188865882314979
+          ],
+          "normal_zero_mean_baseline_tail": 0.0013498980316300959
+        },
+        {
+          "threshold": 0.5,
+          "hits_above_margin": 14,
+          "ambiguous": 0,
+          "fraction": 0.001708984375,
+          "wilson95_approx_iid": [
+            0.0010183117292293835,
+            0.0028667632787095594
+          ],
+          "normal_zero_mean_baseline_tail": 7.708628950140008e-09
+        }
+      ],
+      "raw_third": 0.0007078684779381007,
+      "raw_fourth": 0.00048456621992650894,
+      "skewness": 1.059430042685283,
+      "kurtosis": 8.261767444921976
+    },
+    "mean_lattice_squared_norm": 4949.640625,
+    "maximum_lattice_squared_norm": 6018
+  },
+  {
+    "geometry_id": "abe21f11d35bc57ff97b190acccf91fe84364b64fb95826a0d8b68a30bc4590c",
+    "identifier": 2,
+    "N": 32,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "exact": {
+      "N": 32,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 64
+      },
+      "third": {
+        "numerator": 297,
+        "denominator": 65536
+      },
+      "fourth": {
+        "numerator": 2895,
+        "denominator": 1048576
+      },
+      "ordered_signed_triples": 1188,
+      "ordered_signed_quadruples": 46320,
+      "independent_quadruples": 12096,
+      "extra_quadruples": 34224,
+      "pair_support": 743,
+      "pair_spectrum_sha256": "252eb888c4eeda2c086feb84b52f077dbed415477a63c852ae327663a0a260b9",
+      "skewness": 2.3203125,
+      "kurtosis": {
+        "numerator": 2895,
+        "denominator": 256
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 189,
+        "denominator": 64
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 965,
+        "denominator": 6912
+      }
+    },
+    "empirical_uniform": {
+      "samples": 8192,
+      "mean": 0.000862309321521107,
+      "variance": 0.01569741008281348,
+      "tails": [
+        {
+          "threshold": 0.25,
+          "hits_above_margin": 381,
+          "ambiguous": 0,
+          "fraction": 0.0465087890625,
+          "wilson95_approx_iid": [
+            0.04215731227975478,
+            0.05128537602364874
+          ],
+          "normal_zero_mean_baseline_tail": 0.022750131948179198
+        },
+        {
+          "threshold": 0.375,
+          "hits_above_margin": 185,
+          "ambiguous": 0,
+          "fraction": 0.0225830078125,
+          "wilson95_approx_iid": [
+            0.019582513159819355,
+            0.02603104106753224
+          ],
+          "normal_zero_mean_baseline_tail": 0.001349898031630093
+        },
+        {
+          "threshold": 0.5,
+          "hits_above_margin": 99,
+          "ambiguous": 0,
+          "fraction": 0.0120849609375,
+          "wilson95_approx_iid": [
+            0.009937063440808126,
+            0.014690238079704359
+          ],
+          "normal_zero_mean_baseline_tail": 3.167124183311989e-05
+        }
+      ],
+      "raw_third": 0.0046703247497410835,
+      "raw_fourth": 0.002862828495443284,
+      "skewness": 2.354031926322406,
+      "kurtosis": 11.553121562325797
+    },
+    "mean_lattice_squared_norm": 2489.75,
+    "maximum_lattice_squared_norm": 3386
+  },
+  {
+    "geometry_id": "c8bfcda13468f435253315a1e6f6c575268675577817682d1addc202faf3f22e",
+    "identifier": 2,
+    "N": 64,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63
+    ],
+    "exact": {
+      "N": 64,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 128
+      },
+      "third": {
+        "numerator": 2445,
+        "denominator": 1048576
+      },
+      "fourth": {
+        "numerator": 2775,
+        "denominator": 2097152
+      },
+      "ordered_signed_triples": 4890,
+      "ordered_signed_quadruples": 355200,
+      "independent_quadruples": 48768,
+      "extra_quadruples": 306432,
+      "pair_support": 1873,
+      "pair_spectrum_sha256": "673815ade75ede890246c057f7ee7dbf0bea7880d30813d46ab6a3c5883c9876",
+      "skewness": 3.3767110937521654,
+      "kurtosis": {
+        "numerator": 2775,
+        "denominator": 128
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 381,
+        "denominator": 128
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 925,
+        "denominator": 3456
+      }
+    },
+    "empirical_uniform": {
+      "samples": 8192,
+      "mean": 0.0008583249946981584,
+      "variance": 0.00796846883180186,
+      "tails": [
+        {
+          "threshold": 0.17677669529663687,
+          "hits_above_margin": 315,
+          "ambiguous": 0,
+          "fraction": 0.0384521484375,
+          "wilson95_approx_iid": [
+            0.034499952067934055,
+            0.04283700741394177
+          ],
+          "normal_zero_mean_baseline_tail": 0.022750131948179216
+        },
+        {
+          "threshold": 0.2651650429449553,
+          "hits_above_margin": 177,
+          "ambiguous": 0,
+          "fraction": 0.0216064453125,
+          "wilson95_approx_iid": [
+            0.018674949489005263,
+            0.024986395184221764
+          ],
+          "normal_zero_mean_baseline_tail": 0.0013498980316300959
+        },
+        {
+          "threshold": 0.5,
+          "hits_above_margin": 42,
+          "ambiguous": 0,
+          "fraction": 0.005126953125,
+          "wilson95_approx_iid": [
+            0.0037954060836344933,
+            0.00692240236374044
+          ],
+          "normal_zero_mean_baseline_tail": 7.708628950140008e-09
+        }
+      ],
+      "raw_third": 0.0024475032628630817,
+      "raw_fourth": 0.0014007432586461287,
+      "skewness": 3.4119652543301053,
+      "kurtosis": 21.928382962944614
+    },
+    "mean_lattice_squared_norm": 3295.328125,
+    "maximum_lattice_squared_norm": 4671
+  },
+  {
+    "geometry_id": "3e1df2780fdd9e879ffe32481208a4d2464fbabfdeeff65da1ba0d649925391f",
+    "identifier": 2,
+    "N": 128,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127
+    ],
+    "exact": {
+      "N": 128,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 256
+      },
+      "third": {
+        "numerator": 9843,
+        "denominator": 8388608
+      },
+      "fourth": {
+        "numerator": 21723,
+        "denominator": 33554432
+      },
+      "ordered_signed_triples": 19686,
+      "ordered_signed_quadruples": 2780544,
+      "independent_quadruples": 195840,
+      "extra_quadruples": 2584704,
+      "pair_support": 4519,
+      "pair_spectrum_sha256": "583200ac25a69c92f007732ba7afbe6ba05270d10f1519daa02028184b2fb25e",
+      "skewness": 4.80615234375,
+      "kurtosis": {
+        "numerator": 21723,
+        "denominator": 512
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 765,
+        "denominator": 256
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 7241,
+        "denominator": 13824
+      }
+    },
+    "empirical_uniform": {
+      "samples": 8192,
+      "mean": 0.0001484998281264348,
+      "variance": 0.00405681315493355,
+      "tails": [
+        {
+          "threshold": 0.125,
+          "hits_above_margin": 214,
+          "ambiguous": 0,
+          "fraction": 0.026123046875,
+          "wilson95_approx_iid": [
+            0.02288487246813854,
+            0.029805441392914616
+          ],
+          "normal_zero_mean_baseline_tail": 0.022750131948179198
+        },
+        {
+          "threshold": 0.1875,
+          "hits_above_margin": 144,
+          "ambiguous": 0,
+          "fraction": 0.017578125,
+          "wilson95_approx_iid": [
+            0.014950240388205305,
+            0.020658239874257876
+          ],
+          "normal_zero_mean_baseline_tail": 0.001349898031630093
+        },
+        {
+          "threshold": 0.5,
+          "hits_above_margin": 26,
+          "ambiguous": 0,
+          "fraction": 0.003173828125,
+          "wilson95_approx_iid": [
+            0.0021668942864890416,
+            0.004646495052636754
+          ],
+          "normal_zero_mean_baseline_tail": 6.220960574271755e-16
+        }
+      ],
+      "raw_third": 0.0012649962767891073,
+      "raw_fourth": 0.0007027994416150183,
+      "skewness": 4.888671040367408,
+      "kurtosis": 42.65767178109881
+    },
+    "mean_lattice_squared_norm": 4383.3984375,
+    "maximum_lattice_squared_norm": 5974
+  },
+  {
+    "geometry_id": "c1ecba771f9db1ba02bc29f94d2b7143a91a7a40a94b9bba3362f77743d6d3cb",
+    "identifier": 2,
+    "N": 32,
+    "indices": [
+      0,
+      11,
+      13,
+      23,
+      27,
+      36,
+      39,
+      43,
+      45,
+      47,
+      48,
+      56,
+      57,
+      60,
+      62,
+      66,
+      68,
+      73,
+      74,
+      75,
+      80,
+      81,
+      84,
+      88,
+      94,
+      98,
+      105,
+      112,
+      115,
+      116,
+      117,
+      124
+    ],
+    "exact": {
+      "N": 32,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 64
+      },
+      "third": {
+        "numerator": 21,
+        "denominator": 16384
+      },
+      "fourth": {
+        "numerator": 2631,
+        "denominator": 2097152
+      },
+      "ordered_signed_triples": 336,
+      "ordered_signed_quadruples": 21048,
+      "independent_quadruples": 12096,
+      "extra_quadruples": 8952,
+      "pair_support": 1359,
+      "pair_spectrum_sha256": "8e555886095181733c837c536736060560386631375f93d339bd2ef3d3c762ac",
+      "skewness": 0.65625,
+      "kurtosis": {
+        "numerator": 2631,
+        "denominator": 512
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 189,
+        "denominator": 64
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 877,
+        "denominator": 13824
+      }
+    },
+    "empirical_uniform": {
+      "samples": 8192,
+      "mean": -0.0015179800882975198,
+      "variance": 0.01589964579743288,
+      "tails": [
+        {
+          "threshold": 0.25,
+          "hits_above_margin": 256,
+          "ambiguous": 0,
+          "fraction": 0.03125,
+          "wilson95_approx_iid": [
+            0.027696421672433292,
+            0.03524299234777385
+          ],
+          "normal_zero_mean_baseline_tail": 0.022750131948179198
+        },
+        {
+          "threshold": 0.375,
+          "hits_above_margin": 66,
+          "ambiguous": 0,
+          "fraction": 0.008056640625,
+          "wilson95_approx_iid": [
+            0.006338127275104048,
+            0.01023630983464459
+          ],
+          "normal_zero_mean_baseline_tail": 0.001349898031630093
+        },
+        {
+          "threshold": 0.5,
+          "hits_above_margin": 25,
+          "ambiguous": 0,
+          "fraction": 0.0030517578125,
+          "wilson95_approx_iid": [
+            0.0020680170861379936,
+            0.004501346058722231
+          ],
+          "normal_zero_mean_baseline_tail": 3.167124183311989e-05
+        }
+      ],
+      "raw_third": 0.0013171006576869577,
+      "raw_fourth": 0.0012812693497294778,
+      "skewness": 0.693075525070904,
+      "kurtosis": 5.100842416105002
+    },
+    "mean_lattice_squared_norm": 4542.71875,
+    "maximum_lattice_squared_norm": 5945
+  },
+  {
+    "geometry_id": "4a2903a7a9c7fa93ce32afce72d3cfc0ceee407e75fa8ddc3103300e5862c6fa",
+    "identifier": 2,
+    "N": 64,
+    "indices": [
+      0,
+      7,
+      9,
+      11,
+      13,
+      15,
+      17,
+      19,
+      23,
+      25,
+      26,
+      27,
+      28,
+      33,
+      34,
+      35,
+      36,
+      38,
+      39,
+      40,
+      43,
+      44,
+      45,
+      47,
+      48,
+      49,
+      56,
+      57,
+      58,
+      60,
+      62,
+      66,
+      68,
+      73,
+      74,
+      75,
+      78,
+      80,
+      81,
+      84,
+      85,
+      87,
+      88,
+      90,
+      93,
+      94,
+      95,
+      98,
+      101,
+      105,
+      106,
+      109,
+      110,
+      112,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      124,
+      127
+    ],
+    "exact": {
+      "N": 64,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 128
+      },
+      "third": {
+        "numerator": 1101,
+        "denominator": 1048576
+      },
+      "fourth": {
+        "numerator": 5943,
+        "denominator": 8388608
+      },
+      "ordered_signed_triples": 2202,
+      "ordered_signed_quadruples": 190176,
+      "independent_quadruples": 48768,
+      "extra_quadruples": 141408,
+      "pair_support": 2917,
+      "pair_spectrum_sha256": "eea0242fa89b25ab9d9605d8b8cde8c7e49becc591b133200e16501cb9734250",
+      "skewness": 1.520555793137478,
+      "kurtosis": {
+        "numerator": 5943,
+        "denominator": 512
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 381,
+        "denominator": 128
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 1981,
+        "denominator": 13824
+      }
+    },
+    "empirical_uniform": {
+      "samples": 8192,
+      "mean": -0.0004025526625163166,
+      "variance": 0.007906426725842568,
+      "tails": [
+        {
+          "threshold": 0.17677669529663687,
+          "hits_above_margin": 189,
+          "ambiguous": 0,
+          "fraction": 0.0230712890625,
+          "wilson95_approx_iid": [
+            0.02003688710990025,
+            0.02655277189451363
+          ],
+          "normal_zero_mean_baseline_tail": 0.022750131948179216
+        },
+        {
+          "threshold": 0.2651650429449553,
+          "hits_above_margin": 88,
+          "ambiguous": 0,
+          "fraction": 0.0107421875,
+          "wilson95_approx_iid": [
+            0.008727970820725267,
+            0.013215042562865934
+          ],
+          "normal_zero_mean_baseline_tail": 0.0013498980316300959
+        },
+        {
+          "threshold": 0.5,
+          "hits_above_margin": 23,
+          "ambiguous": 0,
+          "fraction": 0.0028076171875,
+          "wilson95_approx_iid": [
+            0.0018716534317468763,
+            0.004209657324582207
+          ],
+          "normal_zero_mean_baseline_tail": 7.708628950140008e-09
+        }
+      ],
+      "raw_third": 0.0011062005529072342,
+      "raw_fourth": 0.0007440700868242278,
+      "skewness": 1.5870700023983269,
+      "kurtosis": 11.93153248662054
+    },
+    "mean_lattice_squared_norm": 4491.4375,
+    "maximum_lattice_squared_norm": 5974
+  },
+  {
+    "geometry_id": "974d848ece04f8147dd9acb1cccc1ac1c0b587987ab9e39dbf56b73466a57a69",
+    "identifier": 2,
+    "N": 32,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      15,
+      20,
+      56,
+      61,
+      68,
+      70,
+      71,
+      79,
+      87,
+      88,
+      90,
+      91,
+      96,
+      98,
+      99,
+      102,
+      104,
+      107,
+      108,
+      109,
+      111,
+      114,
+      118,
+      123,
+      126,
+      127
+    ],
+    "exact": {
+      "N": 32,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 64
+      },
+      "third": {
+        "numerator": 33,
+        "denominator": 32768
+      },
+      "fourth": {
+        "numerator": 2217,
+        "denominator": 2097152
+      },
+      "ordered_signed_triples": 264,
+      "ordered_signed_quadruples": 17736,
+      "independent_quadruples": 12096,
+      "extra_quadruples": 5640,
+      "pair_support": 1505,
+      "pair_spectrum_sha256": "842878455ef1d2ecdb12c0c2cc01d33dd2e8b507267cd577600f9ac079693475",
+      "skewness": 0.515625,
+      "kurtosis": {
+        "numerator": 2217,
+        "denominator": 512
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 189,
+        "denominator": 64
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 739,
+        "denominator": 13824
+      }
+    },
+    "empirical_uniform": {
+      "samples": 8192,
+      "mean": 0.00027039194839527733,
+      "variance": 0.015832706580643632,
+      "tails": [
+        {
+          "threshold": 0.25,
+          "hits_above_margin": 179,
+          "ambiguous": 0,
+          "fraction": 0.0218505859375,
+          "wilson95_approx_iid": [
+            0.018901688398290168,
+            0.025247708663468
+          ],
+          "normal_zero_mean_baseline_tail": 0.022750131948179198
+        },
+        {
+          "threshold": 0.375,
+          "hits_above_margin": 51,
+          "ambiguous": 0,
+          "fraction": 0.0062255859375,
+          "wilson95_approx_iid": [
+            0.00473848194245755,
+            0.008175562253307523
+          ],
+          "normal_zero_mean_baseline_tail": 0.001349898031630093
+        },
+        {
+          "threshold": 0.5,
+          "hits_above_margin": 24,
+          "ambiguous": 0,
+          "fraction": 0.0029296875,
+          "wilson95_approx_iid": [
+            0.0019695942980180875,
+            0.004355742652576567
+          ],
+          "normal_zero_mean_baseline_tail": 3.167124183311989e-05
+        }
+      ],
+      "raw_third": 0.0011034553928806253,
+      "raw_fourth": 0.0011061666560343384,
+      "skewness": 0.5474413930290734,
+      "kurtosis": 4.408025982124131
+    },
+    "mean_lattice_squared_norm": 4576.0,
+    "maximum_lattice_squared_norm": 5974
+  },
+  {
+    "geometry_id": "9aa4cf55f7587e2b787d36540d8287edd86826ddb05c7724f525ced630f375fa",
+    "identifier": 2,
+    "N": 64,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      15,
+      20,
+      53,
+      56,
+      61,
+      67,
+      68,
+      70,
+      71,
+      73,
+      75,
+      76,
+      78,
+      79,
+      80,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      101,
+      102,
+      103,
+      104,
+      105,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127
+    ],
+    "exact": {
+      "N": 64,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 128
+      },
+      "third": {
+        "numerator": 189,
+        "denominator": 262144
+      },
+      "fourth": {
+        "numerator": 4665,
+        "denominator": 8388608
+      },
+      "ordered_signed_triples": 1512,
+      "ordered_signed_quadruples": 149280,
+      "independent_quadruples": 48768,
+      "extra_quadruples": 100512,
+      "pair_support": 3505,
+      "pair_spectrum_sha256": "0733460bdfa34a6fd769014017bee5564cf8713e92994a4aaeb6373e960c09e7",
+      "skewness": 1.0440873565957616,
+      "kurtosis": {
+        "numerator": 4665,
+        "denominator": 512
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 381,
+        "denominator": 128
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 1555,
+        "denominator": 13824
+      }
+    },
+    "empirical_uniform": {
+      "samples": 8192,
+      "mean": -0.00029836184167393023,
+      "variance": 0.007912232384986305,
+      "tails": [
+        {
+          "threshold": 0.17677669529663687,
+          "hits_above_margin": 159,
+          "ambiguous": 0,
+          "fraction": 0.0194091796875,
+          "wilson95_approx_iid": [
+            0.016639204706237733,
+            0.022629668470209016
+          ],
+          "normal_zero_mean_baseline_tail": 0.022750131948179216
+        },
+        {
+          "threshold": 0.2651650429449553,
+          "hits_above_margin": 64,
+          "ambiguous": 0,
+          "fraction": 0.0078125,
+          "wilson95_approx_iid": [
+            0.0061231937191086674,
+            0.00996319100210883
+          ],
+          "normal_zero_mean_baseline_tail": 0.0013498980316300959
+        },
+        {
+          "threshold": 0.5,
+          "hits_above_margin": 19,
+          "ambiguous": 0,
+          "fraction": 0.0023193359375,
+          "wilson95_approx_iid": [
+            0.0014853709796205058,
+            0.0036198349996462926
+          ],
+          "normal_zero_mean_baseline_tail": 7.708628950140008e-09
+        }
+      ],
+      "raw_third": 0.0007928232017817675,
+      "raw_fourth": 0.0005966034012266591,
+      "skewness": 1.1365539401374085,
+      "kurtosis": 9.545066508218119
+    },
+    "mean_lattice_squared_norm": 5033.765625,
+    "maximum_lattice_squared_norm": 5974
+  },
+  {
+    "geometry_id": "33e315a1f838fa192f95c6bdf44b6fe3e66751c0e755b81c052f1c612d3c2829",
+    "identifier": 3,
+    "N": 32,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "exact": {
+      "N": 32,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 64
+      },
+      "third": {
+        "numerator": 591,
+        "denominator": 131072
+      },
+      "fourth": {
+        "numerator": 1521,
+        "denominator": 524288
+      },
+      "ordered_signed_triples": 1182,
+      "ordered_signed_quadruples": 48672,
+      "independent_quadruples": 12096,
+      "extra_quadruples": 36576,
+      "pair_support": 727,
+      "pair_spectrum_sha256": "408b1e37c255d8b4c66399e768b4cf9927cdcb755dbf7b3533cc1a89049ed858",
+      "skewness": 2.30859375,
+      "kurtosis": {
+        "numerator": 1521,
+        "denominator": 128
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 189,
+        "denominator": 64
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 169,
+        "denominator": 1152
+      }
+    },
+    "empirical_uniform": {
+      "samples": 8192,
+      "mean": 0.002746663156725505,
+      "variance": 0.01625785374894005,
+      "tails": [
+        {
+          "threshold": 0.25,
+          "hits_above_margin": 380,
+          "ambiguous": 0,
+          "fraction": 0.04638671875,
+          "wilson95_approx_iid": [
+            0.04204098585728147,
+            0.05115767625185648
+          ],
+          "normal_zero_mean_baseline_tail": 0.022750131948179198
+        },
+        {
+          "threshold": 0.375,
+          "hits_above_margin": 212,
+          "ambiguous": 0,
+          "fraction": 0.02587890625,
+          "wilson95_approx_iid": [
+            0.022656549587060003,
+            0.02954571188546201
+          ],
+          "normal_zero_mean_baseline_tail": 0.001349898031630093
+        },
+        {
+          "threshold": 0.5,
+          "hits_above_margin": 112,
+          "ambiguous": 0,
+          "fraction": 0.013671875,
+          "wilson95_approx_iid": [
+            0.011375445954501715,
+            0.01642419609146319
+          ],
+          "normal_zero_mean_baseline_tail": 3.167124183311989e-05
+        }
+      ],
+      "raw_third": 0.005106270175863193,
+      "raw_fourth": 0.0032605183066487225,
+      "skewness": 2.398618544341408,
+      "kurtosis": 12.126135539737957
+    },
+    "mean_lattice_squared_norm": 2555.09375,
+    "maximum_lattice_squared_norm": 3648
+  },
+  {
+    "geometry_id": "010367471ebc1d3cb7906fbdd78cad55ccbd7b5caa1d1cb7e42386b9bce5a617",
+    "identifier": 3,
+    "N": 64,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63
+    ],
+    "exact": {
+      "N": 64,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 128
+      },
+      "third": {
+        "numerator": 2367,
+        "denominator": 1048576
+      },
+      "fourth": {
+        "numerator": 22629,
+        "denominator": 16777216
+      },
+      "ordered_signed_triples": 4734,
+      "ordered_signed_quadruples": 362064,
+      "independent_quadruples": 48768,
+      "extra_quadruples": 313296,
+      "pair_support": 1723,
+      "pair_spectrum_sha256": "b2c49fd641aa077335930716c525005f2fb2325d874f13b9a35811c0c1b21545",
+      "skewness": 3.2689877950557773,
+      "kurtosis": {
+        "numerator": 22629,
+        "denominator": 1024
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 381,
+        "denominator": 128
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 7543,
+        "denominator": 27648
+      }
+    },
+    "empirical_uniform": {
+      "samples": 8192,
+      "mean": 0.0015253735557140538,
+      "variance": 0.008246107054546066,
+      "tails": [
+        {
+          "threshold": 0.17677669529663687,
+          "hits_above_margin": 293,
+          "ambiguous": 0,
+          "fraction": 0.0357666015625,
+          "wilson95_approx_iid": [
+            0.03195779705777796,
+            0.04001058615025531
+          ],
+          "normal_zero_mean_baseline_tail": 0.022750131948179216
+        },
+        {
+          "threshold": 0.2651650429449553,
+          "hits_above_margin": 190,
+          "ambiguous": 0,
+          "fraction": 0.023193359375,
+          "wilson95_approx_iid": [
+            0.02015054019856128,
+            0.026683145000118168
+          ],
+          "normal_zero_mean_baseline_tail": 0.0013498980316300959
+        },
+        {
+          "threshold": 0.5,
+          "hits_above_margin": 54,
+          "ambiguous": 0,
+          "fraction": 0.006591796875,
+          "wilson95_approx_iid": [
+            0.005055931826149915,
+            0.00859019095241187
+          ],
+          "normal_zero_mean_baseline_tail": 7.708628950140008e-09
+        }
+      ],
+      "raw_third": 0.0025741251079275567,
+      "raw_fourth": 0.0015403185339538232,
+      "skewness": 3.387208722200778,
+      "kurtosis": 22.423032264139394
+    },
+    "mean_lattice_squared_norm": 3364.875,
+    "maximum_lattice_squared_norm": 4588
+  },
+  {
+    "geometry_id": "44fa9c4174b54b6a4eb2c5b9db0c006afa18da06b131f529939e4c81282af8e9",
+    "identifier": 3,
+    "N": 128,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127
+    ],
+    "exact": {
+      "N": 128,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 256
+      },
+      "third": {
+        "numerator": 9645,
+        "denominator": 8388608
+      },
+      "fourth": {
+        "numerator": 43095,
+        "denominator": 67108864
+      },
+      "ordered_signed_triples": 19290,
+      "ordered_signed_quadruples": 2758080,
+      "independent_quadruples": 195840,
+      "extra_quadruples": 2562240,
+      "pair_support": 4267,
+      "pair_spectrum_sha256": "3ec0255e2cfbb8d416131f4ff4c2c1cd921feb4c6c07ce7facdc9114453d1b4a",
+      "skewness": 4.70947265625,
+      "kurtosis": {
+        "numerator": 43095,
+        "denominator": 1024
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 765,
+        "denominator": 256
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 14365,
+        "denominator": 27648
+      }
+    },
+    "empirical_uniform": {
+      "samples": 8192,
+      "mean": 0.0009016896927643172,
+      "variance": 0.004322807233618411,
+      "tails": [
+        {
+          "threshold": 0.125,
+          "hits_above_margin": 217,
+          "ambiguous": 0,
+          "fraction": 0.0264892578125,
+          "wilson95_approx_iid": [
+            0.02322750453836546,
+            0.030194887905484406
+          ],
+          "normal_zero_mean_baseline_tail": 0.022750131948179198
+        },
+        {
+          "threshold": 0.1875,
+          "hits_above_margin": 153,
+          "ambiguous": 0,
+          "fraction": 0.0186767578125,
+          "wilson95_approx_iid": [
+            0.015962740478485428,
+            0.021841975532367892
+          ],
+          "normal_zero_mean_baseline_tail": 0.001349898031630093
+        },
+        {
+          "threshold": 0.5,
+          "hits_above_margin": 25,
+          "ambiguous": 0,
+          "fraction": 0.0030517578125,
+          "wilson95_approx_iid": [
+            0.0020680170861379936,
+            0.004501346058722231
+          ],
+          "normal_zero_mean_baseline_tail": 6.220960574271755e-16
+        }
+      ],
+      "raw_third": 0.001405326159283466,
+      "raw_fourth": 0.0007975872768937785,
+      "skewness": 4.903422155233612,
+      "kurtosis": 42.41205187707036
+    },
+    "mean_lattice_squared_norm": 4412.703125,
+    "maximum_lattice_squared_norm": 6198
+  },
+  {
+    "geometry_id": "0fcde847e8519dfebd172709ddd45b198a49abea3635806fca0146cfec6ff00d",
+    "identifier": 3,
+    "N": 32,
+    "indices": [
+      8,
+      9,
+      23,
+      26,
+      30,
+      37,
+      39,
+      43,
+      45,
+      47,
+      51,
+      53,
+      57,
+      59,
+      61,
+      68,
+      72,
+      76,
+      81,
+      87,
+      88,
+      90,
+      95,
+      96,
+      100,
+      101,
+      104,
+      107,
+      111,
+      121,
+      125,
+      127
+    ],
+    "exact": {
+      "N": 32,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 64
+      },
+      "third": {
+        "numerator": 3,
+        "denominator": 4096
+      },
+      "fourth": {
+        "numerator": 627,
+        "denominator": 524288
+      },
+      "ordered_signed_triples": 192,
+      "ordered_signed_quadruples": 20064,
+      "independent_quadruples": 12096,
+      "extra_quadruples": 7968,
+      "pair_support": 1387,
+      "pair_spectrum_sha256": "09e35e28c263dce935ad73bfff924e1b404bd3b1c09b7dfbd019abba9874bd49",
+      "skewness": 0.375,
+      "kurtosis": {
+        "numerator": 627,
+        "denominator": 128
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 189,
+        "denominator": 64
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 209,
+        "denominator": 3456
+      }
+    },
+    "empirical_uniform": {
+      "samples": 8192,
+      "mean": 3.1378340066148076e-06,
+      "variance": 0.015853243092499573,
+      "tails": [
+        {
+          "threshold": 0.25,
+          "hits_above_margin": 165,
+          "ambiguous": 0,
+          "fraction": 0.0201416015625,
+          "wilson95_approx_iid": [
+            0.01731676530991884,
+            0.023416265032121332
+          ],
+          "normal_zero_mean_baseline_tail": 0.022750131948179198
+        },
+        {
+          "threshold": 0.375,
+          "hits_above_margin": 59,
+          "ambiguous": 0,
+          "fraction": 0.0072021484375,
+          "wilson95_approx_iid": [
+            0.005587931664748687,
+            0.009278322085140954
+          ],
+          "normal_zero_mean_baseline_tail": 0.001349898031630093
+        },
+        {
+          "threshold": 0.5,
+          "hits_above_margin": 31,
+          "ambiguous": 0,
+          "fraction": 0.0037841796875,
+          "wilson95_approx_iid": [
+            0.0026672942803439388,
+            0.0053662260301097124
+          ],
+          "normal_zero_mean_baseline_tail": 3.167124183311989e-05
+        }
+      ],
+      "raw_third": 0.0010428473816495414,
+      "raw_fourth": 0.0013566158528447415,
+      "skewness": 0.5223738440625983,
+      "kurtosis": 5.397795905626981
+    },
+    "mean_lattice_squared_norm": 4687.5,
+    "maximum_lattice_squared_norm": 6198
+  },
+  {
+    "geometry_id": "bca770bfc2daa097608d06301804be82de6e6965ca2df319185b624254a76f3f",
+    "identifier": 3,
+    "N": 64,
+    "indices": [
+      2,
+      4,
+      5,
+      7,
+      8,
+      9,
+      12,
+      13,
+      14,
+      16,
+      19,
+      20,
+      21,
+      23,
+      26,
+      29,
+      30,
+      31,
+      37,
+      39,
+      43,
+      45,
+      46,
+      47,
+      48,
+      49,
+      51,
+      53,
+      55,
+      57,
+      58,
+      59,
+      61,
+      63,
+      67,
+      68,
+      70,
+      71,
+      72,
+      74,
+      76,
+      81,
+      83,
+      85,
+      87,
+      88,
+      90,
+      95,
+      96,
+      100,
+      101,
+      103,
+      104,
+      107,
+      110,
+      111,
+      112,
+      117,
+      118,
+      121,
+      122,
+      123,
+      125,
+      127
+    ],
+    "exact": {
+      "N": 64,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 128
+      },
+      "third": {
+        "numerator": 1191,
+        "denominator": 1048576
+      },
+      "fourth": {
+        "numerator": 25761,
+        "denominator": 33554432
+      },
+      "ordered_signed_triples": 2382,
+      "ordered_signed_quadruples": 206088,
+      "independent_quadruples": 48768,
+      "extra_quadruples": 157320,
+      "pair_support": 2771,
+      "pair_spectrum_sha256": "fd2ee1a7e68d92b6f2bc5f41576cb20b5146489e88aa6dce086854581842c08a",
+      "skewness": 1.644851907017926,
+      "kurtosis": {
+        "numerator": 25761,
+        "denominator": 2048
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 381,
+        "denominator": 128
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 8587,
+        "denominator": 55296
+      }
+    },
+    "empirical_uniform": {
+      "samples": 8192,
+      "mean": 0.001024994329325925,
+      "variance": 0.008185904475873996,
+      "tails": [
+        {
+          "threshold": 0.17677669529663687,
+          "hits_above_margin": 206,
+          "ambiguous": 0,
+          "fraction": 0.025146484375,
+          "wilson95_approx_iid": [
+            0.021972065782777495,
+            0.02876603852415109
+          ],
+          "normal_zero_mean_baseline_tail": 0.022750131948179216
+        },
+        {
+          "threshold": 0.2651650429449553,
+          "hits_above_margin": 106,
+          "ambiguous": 0,
+          "fraction": 0.012939453125,
+          "wilson95_approx_iid": [
+            0.01071041271738109,
+            0.015625072162990392
+          ],
+          "normal_zero_mean_baseline_tail": 0.0013498980316300959
+        },
+        {
+          "threshold": 0.5,
+          "hits_above_margin": 30,
+          "ambiguous": 0,
+          "fraction": 0.003662109375,
+          "wilson95_approx_iid": [
+            0.0025664792236384307,
+            0.005223014892549649
+          ],
+          "normal_zero_mean_baseline_tail": 7.708628950140008e-09
+        }
+      ],
+      "raw_third": 0.0014093667579146612,
+      "raw_fourth": 0.0009293605348961903,
+      "skewness": 1.8689470839661235,
+      "kurtosis": 13.78372047782918
+    },
+    "mean_lattice_squared_norm": 4379.265625,
+    "maximum_lattice_squared_norm": 6198
+  },
+  {
+    "geometry_id": "487b1b5891f4e59e13661b58f2067c568a71f6b63dad59c1aa62a7304a95a2e7",
+    "identifier": 3,
+    "N": 32,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      7,
+      11,
+      24,
+      46,
+      66,
+      69,
+      73,
+      74,
+      76,
+      78,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      106,
+      110,
+      112,
+      114,
+      117,
+      118,
+      119,
+      120,
+      122,
+      124,
+      125,
+      126
+    ],
+    "exact": {
+      "N": 32,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 64
+      },
+      "third": {
+        "numerator": 63,
+        "denominator": 65536
+      },
+      "fourth": {
+        "numerator": 1089,
+        "denominator": 1048576
+      },
+      "ordered_signed_triples": 252,
+      "ordered_signed_quadruples": 17424,
+      "independent_quadruples": 12096,
+      "extra_quadruples": 5328,
+      "pair_support": 1523,
+      "pair_spectrum_sha256": "0e2da476c8f77a7ea63d46c33fa113230bdee0a2c780d854eeb794b65604b83a",
+      "skewness": 0.4921875,
+      "kurtosis": {
+        "numerator": 1089,
+        "denominator": 256
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 189,
+        "denominator": 64
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 121,
+        "denominator": 2304
+      }
+    },
+    "empirical_uniform": {
+      "samples": 8192,
+      "mean": 0.0001630663756450471,
+      "variance": 0.016182298469259535,
+      "tails": [
+        {
+          "threshold": 0.25,
+          "hits_above_margin": 212,
+          "ambiguous": 0,
+          "fraction": 0.02587890625,
+          "wilson95_approx_iid": [
+            0.022656549587060003,
+            0.02954571188546201
+          ],
+          "normal_zero_mean_baseline_tail": 0.022750131948179198
+        },
+        {
+          "threshold": 0.375,
+          "hits_above_margin": 58,
+          "ambiguous": 0,
+          "fraction": 0.007080078125,
+          "wilson95_approx_iid": [
+            0.005481257610333418,
+            0.00914096994529065
+          ],
+          "normal_zero_mean_baseline_tail": 0.001349898031630093
+        },
+        {
+          "threshold": 0.5,
+          "hits_above_margin": 24,
+          "ambiguous": 0,
+          "fraction": 0.0029296875,
+          "wilson95_approx_iid": [
+            0.0019695942980180875,
+            0.004355742652576567
+          ],
+          "normal_zero_mean_baseline_tail": 3.167124183311989e-05
+        }
+      ],
+      "raw_third": 0.0012797040017117052,
+      "raw_fourth": 0.0012085591740287089,
+      "skewness": 0.6178090790534667,
+      "kurtosis": 4.6119902331890135
+    },
+    "mean_lattice_squared_norm": 4671.625,
+    "maximum_lattice_squared_norm": 6156
+  },
+  {
+    "geometry_id": "6bd4daa73a6980c1d9e015a2f32d289bbb89aef6fd694a438dc1258665fd08a7",
+    "identifier": 3,
+    "N": 64,
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      7,
+      11,
+      24,
+      46,
+      47,
+      52,
+      56,
+      57,
+      58,
+      61,
+      65,
+      66,
+      69,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      82,
+      84,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      110,
+      111,
+      112,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127
+    ],
+    "exact": {
+      "N": 64,
+      "mean": {
+        "numerator": 0,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 1,
+        "denominator": 128
+      },
+      "third": {
+        "numerator": 825,
+        "denominator": 1048576
+      },
+      "fourth": {
+        "numerator": 18717,
+        "denominator": 33554432
+      },
+      "ordered_signed_triples": 1650,
+      "ordered_signed_quadruples": 149736,
+      "independent_quadruples": 48768,
+      "extra_quadruples": 100968,
+      "pair_support": 3421,
+      "pair_spectrum_sha256": "c977b89e42e3aabae99660fe26d280ae26fc40078a4a0be1ceb17cfb5ba49f03",
+      "skewness": 1.1393810439041048,
+      "kurtosis": {
+        "numerator": 18717,
+        "denominator": 2048
+      },
+      "independent_cosine_kurtosis": {
+        "numerator": 381,
+        "denominator": 128
+      },
+      "fourth_moment_three_sigma_upper": {
+        "numerator": 6239,
+        "denominator": 55296
+      }
+    },
+    "empirical_uniform": {
+      "samples": 8192,
+      "mean": -0.000138121195785601,
+      "variance": 0.00821169861012216,
+      "tails": [
+        {
+          "threshold": 0.17677669529663687,
+          "hits_above_margin": 188,
+          "ambiguous": 0,
+          "fraction": 0.02294921875,
+          "wilson95_approx_iid": [
+            0.01992325767690832,
+            0.026422375133239986
+          ],
+          "normal_zero_mean_baseline_tail": 0.022750131948179216
+        },
+        {
+          "threshold": 0.2651650429449553,
+          "hits_above_margin": 77,
+          "ambiguous": 0,
+          "fraction": 0.0093994140625,
+          "wilson95_approx_iid": [
+            0.007527684790090537,
+            0.01173104045657938
+          ],
+          "normal_zero_mean_baseline_tail": 0.0013498980316300959
+        },
+        {
+          "threshold": 0.5,
+          "hits_above_margin": 19,
+          "ambiguous": 0,
+          "fraction": 0.0023193359375,
+          "wilson95_approx_iid": [
+            0.0014853709796205058,
+            0.0036198349996462926
+          ],
+          "normal_zero_mean_baseline_tail": 7.708628950140008e-09
+        }
+      ],
+      "raw_third": 0.0009977197368166444,
+      "raw_fourth": 0.0006851017740163531,
+      "skewness": 1.3453573728195074,
+      "kurtosis": 10.168080426254756
+    },
+    "mean_lattice_squared_norm": 5007.234375,
+    "maximum_lattice_squared_norm": 6198
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-10-25T00:14:26.937535+00:00",
+  "input_sha256": {
+    "research/verify_real_dual_independent.py": "38e72ef4d1911956991e4fbb98eb19a964c08e4825922f9b629b4027f9d1200a",
+    "docs/PROTOCOLE_H10.md": "6b36c5eb6d67fc1a56a04e19949af3d7bad7b531f7f26f5e04483e51cbf08d19",
+    "research/requirements-cbd-dimensions.txt": "a3315a771dfccf635c0341eddf2b41e4239d0a50b879cd1a8fcf91e6f76dd875",
+    "results/j2/run-017/cases.json": "609895797e6bc0eefe2a7c1b3b90ca3aac60875de56c1e0a43c661bc1e92039d",
+    "results/j2/run-017/offsets.json": "cbf92668e2f3253b753bc94dd2e73eeda936857a985e7ed5419c621c6c03cda4",
+    "results/j2/run-017/banks.json": "2dac7fff74c2808d0fde98617fcaee6a85c43de6a7e8d6e401f1e529291b957d",
+    "results/j2/run-017/summary.json": "30bf7c38709b26e602c24856cf2b3133e17ce740641caebfa330e17cb6aec27f"
+  },
+  "output_sha256": {
+    "independent-verification.json": "60b7aa8076da7d63fc79245a6c7c3bce438ca594f113c011800fe177e5e23ff1"
+  }
+}

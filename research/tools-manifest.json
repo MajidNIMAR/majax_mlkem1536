@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "repository": "https://github.com/pq-crystals/security-estimates",
+  "commit": "75c26949a902ca297b181375bfb7cfaf22cce784",
+  "redistribution": "No explicit license found at snapshot; sources fetched to ignored local cache, not vendored",
+  "files": [
+    {
+      "name": "Kyber.py",
+      "bytes": 2868,
+      "sha256": "82c0f891aad51c044777e75e411a7ed56f18b73a14c8c3b45331fe5f3078d546",
+      "url": "https://raw.githubusercontent.com/pq-crystals/security-estimates/75c26949a902ca297b181375bfb7cfaf22cce784/Kyber.py"
+    },
+    {
+      "name": "Kyber_failure.py",
+      "bytes": 1550,
+      "sha256": "7a68ce4c81ef1c829af58ae18df014e95b3789f4ad78482876aa00dc8543517a",
+      "url": "https://raw.githubusercontent.com/pq-crystals/security-estimates/75c26949a902ca297b181375bfb7cfaf22cce784/Kyber_failure.py"
+    },
+    {
+      "name": "MLWE_security.py",
+      "bytes": 4714,
+      "sha256": "5973a51a9f33ee5729c65a4adb8282688b57e571e18c3d242c674e9e356b8091",
+      "url": "https://raw.githubusercontent.com/pq-crystals/security-estimates/75c26949a902ca297b181375bfb7cfaf22cce784/MLWE_security.py"
+    },
+    {
+      "name": "model_BKZ.py",
+      "bytes": 4286,
+      "sha256": "363caf95800cec5a0753c2fac02b1ae1c232ad728ddda43ba5f53a13e7751d94",
+      "url": "https://raw.githubusercontent.com/pq-crystals/security-estimates/75c26949a902ca297b181375bfb7cfaf22cce784/model_BKZ.py"
+    },
+    {
+      "name": "proba_util.py",
+      "bytes": 3958,
+      "sha256": "1489c43427c637ff427e648cb03865fd39ec9574b73466375277787db2d72423",
+      "url": "https://raw.githubusercontent.com/pq-crystals/security-estimates/75c26949a902ca297b181375bfb7cfaf22cce784/proba_util.py"
+    },
+    {
+      "name": "README.md",
+      "bytes": 21,
+      "sha256": "5abd331d53389f061e3fc87de2988969830e13211c0ed3d3c9b128179536c29c",
+      "url": "https://raw.githubusercontent.com/pq-crystals/security-estimates/75c26949a902ca297b181375bfb7cfaf22cce784/README.md"
+    }
+  ]
+}

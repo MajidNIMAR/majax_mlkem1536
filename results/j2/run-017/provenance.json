@@ -1,0 +1,28 @@
+{
+  "created_utc": "2026-10-25T00:08:53.874005+00:00",
+  "protocol_commit": "6827a5a",
+  "python": "3.13.7",
+  "numpy": "2.3.5",
+  "input_sha256": {
+    "docs/PROTOCOLE_H10.md": "6b36c5eb6d67fc1a56a04e19949af3d7bad7b531f7f26f5e04483e51cbf08d19",
+    "research/real_dual.py": "ae3d7bf4fe19228556367f1d6f0b87ead48a8cef4d5406ba1af9f61f4456a671",
+    "research/run_real_dual.py": "2a3266490e9a663d0625f120b4451eb71c017e9067e5e6dda6c2c1f2eb629ad7",
+    "research/test_real_dual.py": "e68804e281b81efa93f0578359991cf89fefc8b4fbd382cacad6952feb1ddca3",
+    "research/verify_real_dual.py": "9a80c059c17422bea0ad5eb8e47f8aca26b0059bfcb894bbc7450a3f22a826df",
+    "research/verify_real_dual_independent.py": "38e72ef4d1911956991e4fbb98eb19a964c08e4825922f9b629b4027f9d1200a",
+    "research/block_decoder.py": "afa6e53d16e339d6d0b0be6145f5221d12ef52685e5de9c7745b89389740e912",
+    "research/block_decoder_numpy.py": "c357a2523dc82f14ef8fc86fd371648a1f02d2e66105fbe70f8afa547bb54e91",
+    "research/lll_dimensions.py": "397e080dc9501b8e9f5aede9f41744991215ea42d2aecb778c0f89fcd89b8afc",
+    "research/exact_lll.py": "5e916b13ee90bfa9be4f5520fc50c0b7b4c4315e1c2640f551c4cf0380b0180c",
+    "research/run_block_decoder.py": "e4d3ba51a63e852a989a195a7ddc0238456244c0746c54c8fe4789eb2322917b",
+    "research/requirements-cbd-dimensions.txt": "a3315a771dfccf635c0341eddf2b41e4239d0a50b879cd1a8fcf91e6f76dd875",
+    "results/j2/run-016/study.json": "382f987a7a942ef28d2720d10946ad38e8a435fcb6425ae361eb2c0d4055b0be"
+  },
+  "output_sha256": {
+    "cases.json": "609895797e6bc0eefe2a7c1b3b90ca3aac60875de56c1e0a43c661bc1e92039d",
+    "offsets.json": "cbf92668e2f3253b753bc94dd2e73eeda936857a985e7ed5419c621c6c03cda4",
+    "banks.json": "2dac7fff74c2808d0fde98617fcaee6a85c43de6a7e8d6e401f1e529291b957d",
+    "summary.json": "30bf7c38709b26e602c24856cf2b3133e17ce740641caebfa330e17cb6aec27f",
+    "resources.json": "e80f288f33b878f8e2f042cf6ceb1217a0406c27a3b52a7d32351f8a9a24de40"
+  }
+}

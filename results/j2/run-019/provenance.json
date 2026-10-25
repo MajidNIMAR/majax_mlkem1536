@@ -1,0 +1,35 @@
+{
+  "created_utc": "2026-10-25T02:26:47.847255+00:00",
+  "protocol_commit": "8354d10",
+  "python": "3.13.7",
+  "numpy": "2.3.5",
+  "input_sha256": {
+    "docs/PROTOCOLE_H12.md": "815dab3cb122606fbedf21037f26490dd3a410506da54813cac1a1927b8f941c",
+    "research/cbd_fourth.py": "009f61a02ffc7fd099c59ca7e5e1ea96964c495b778cdb93b60e3dd814ceec9d",
+    "research/run_cbd_fourth.py": "561007aea8889b9082c0676b11ee10efbe0ff16e1ce6f10129506965fef7a0d9",
+    "research/test_cbd_fourth.py": "37a3c396c7c2bbbe6e36e019f3a8c869c9a4ba266e32b09ba5d54c6ef723c375",
+    "research/verify_cbd_fourth.py": "30b8bdbe0f0121500454741bf3f604f35a8c3aa3075ca08604b39c76ad513f82",
+    "research/verify_cbd_fourth_independent.py": "b5a181bee40fe66383be9ec2cd25d067db2894007228d282c9a75c755f1119f7",
+    "research/additive_score.py": "7b997ede80b3712a7dd5a0c41637956c926969fe4030a0f179a0dec998b4f332",
+    "research/real_dual.py": "ae3d7bf4fe19228556367f1d6f0b87ead48a8cef4d5406ba1af9f61f4456a671",
+    "research/run_block_decoder.py": "e4d3ba51a63e852a989a195a7ddc0238456244c0746c54c8fe4789eb2322917b",
+    "research/block_decoder.py": "afa6e53d16e339d6d0b0be6145f5221d12ef52685e5de9c7745b89389740e912",
+    "research/block_decoder_numpy.py": "c357a2523dc82f14ef8fc86fd371648a1f02d2e66105fbe70f8afa547bb54e91",
+    "research/lll_dimensions.py": "397e080dc9501b8e9f5aede9f41744991215ea42d2aecb778c0f89fcd89b8afc",
+    "research/exact_lll.py": "5e916b13ee90bfa9be4f5520fc50c0b7b4c4315e1c2640f551c4cf0380b0180c",
+    "research/requirements-cbd-dimensions.txt": "a3315a771dfccf635c0341eddf2b41e4239d0a50b879cd1a8fcf91e6f76dd875",
+    "results/j2/run-017/banks.json": "2dac7fff74c2808d0fde98617fcaee6a85c43de6a7e8d6e401f1e529291b957d",
+    "results/j2/run-017/offsets.json": "cbf92668e2f3253b753bc94dd2e73eeda936857a985e7ed5419c621c6c03cda4",
+    "results/j2/run-018/orders.json": "61dfccc1830c1c8fa00544efeabc66df750bdbbc7c878d721d9dcedf6bf0bf17",
+    "results/j2/run-018/pools.json": "e9841634efd30fc65f37ecb8b9c992cd5bdf26baca1208557cf3f3ae159df8fa",
+    "results/j2/run-018/provenance.json": "49b8683ceb0c23d5057c192a6023862bc91051a82bd425232577a7e7cdea6026"
+  },
+  "output_sha256": {
+    "panels.json": "285730706c6785c7323f6a41a3f2b35cd2b94c5e0785fd4c0ec903e11b1ceed2",
+    "geometries.json": "b15c8024a238a6611195690c9b0cc74c38d20ebdb632cc532e1d1a1e453a6e15",
+    "banks.json": "d1de249c008144e80c0ff7c5f14f1374fbea5f42031b4c82c9f94be81e049c08",
+    "pools.json": "2766906ce767cd1b63be2e7ada0db47bd8d75dc08439dcce5b1a3b53d721d04e",
+    "timings.json": "82ef731283c0eb6069d227153e182ba515ed1118950b055d4cdd9a2d1b766018",
+    "summary.json": "6c7594c2b01a4d7b5e8e292f66bedb69c0739a9b461c9f6688cad6f01cb73ec2"
+  }
+}

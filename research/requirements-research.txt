@@ -1,0 +1,2 @@
+# Used only for the independent floating-point convolution cross-check.
+numpy==2.3.5

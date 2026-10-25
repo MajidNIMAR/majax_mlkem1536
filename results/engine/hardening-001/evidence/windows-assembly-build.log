@@ -1,0 +1,6 @@
+   Compiling getrandom v0.4.3
+   Compiling digest v0.11.3
+   Compiling sha3 v0.12.0
+   Compiling shake v0.1.0
+   Compiling kem1536 v0.1.0 (C:\Users\majax\Documents\Codex\NIST\crates\kem1536)
+    Finished `release` profile [optimized] target(s) in 7.74s

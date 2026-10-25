@@ -1,0 +1,976 @@
+{
+  "results": [
+    {
+      "q": 5,
+      "bits": 2,
+      "cover": {
+        "q": 5,
+        "bits_per_coordinate_label": 2,
+        "levels": 4,
+        "distinct_rows_and_columns": true,
+        "maximum_circular_gap": 2,
+        "row_gap_counts": {
+          "1": 3,
+          "2": 1
+        },
+        "adjacent_row_phases_alternate_including_wrap": true,
+        "two_column_phases_cover_all_residues": true,
+        "certified_L1_error_at_most_one": true,
+        "unique_codewords": 16,
+        "fixed_pair_bits": 4,
+        "proof": "on a row, a column is within one; between rows at distance two, their column phases cover every x"
+      },
+      "results": [
+        {
+          "mode": "scalar_fips",
+          "states": 25,
+          "unique_codewords": 16,
+          "fixed_pair_bits": 4,
+          "mean_squared_error_uniform_input": "2/5",
+          "mean_local_MGF_uniform_input": "504764621300116321/494265241600000000",
+          "maximum_L1_error": 2,
+          "group_domination_MGF_z13over10": "829746623219065026283783852350722440405261351277/429378391625145836896256000000000000000000000000",
+          "error_histogram": [
+            {
+              "error": [
+                0,
+                0
+              ],
+              "count": 16
+            },
+            {
+              "error": [
+                0,
+                1
+              ],
+              "count": 4
+            },
+            {
+              "error": [
+                1,
+                0
+              ],
+              "count": 4
+            },
+            {
+              "error": [
+                1,
+                1
+              ],
+              "count": 1
+            }
+          ]
+        },
+        {
+          "mode": "staggered_nearest_L2",
+          "states": 25,
+          "unique_codewords": 16,
+          "fixed_pair_bits": 4,
+          "mean_squared_error_uniform_input": "9/25",
+          "mean_local_MGF_uniform_input": "3582051001/3515200000",
+          "maximum_L1_error": 1,
+          "group_domination_MGF_z13over10": "377908322060217461788683449516331025362482641/214689195812572918448128000000000000000000000",
+          "error_histogram": [
+            {
+              "error": [
+                -1,
+                0
+              ],
+              "count": 2
+            },
+            {
+              "error": [
+                0,
+                -1
+              ],
+              "count": 5
+            },
+            {
+              "error": [
+                0,
+                0
+              ],
+              "count": 16
+            },
+            {
+              "error": [
+                0,
+                1
+              ],
+              "count": 2
+            }
+          ]
+        },
+        {
+          "mode": "staggered_local_MGF",
+          "states": 25,
+          "unique_codewords": 16,
+          "fixed_pair_bits": 4,
+          "mean_squared_error_uniform_input": "9/25",
+          "mean_local_MGF_uniform_input": "3582051001/3515200000",
+          "maximum_L1_error": 1,
+          "group_domination_MGF_z13over10": "377908322060217461788683449516331025362482641/214689195812572918448128000000000000000000000",
+          "error_histogram": [
+            {
+              "error": [
+                -1,
+                0
+              ],
+              "count": 2
+            },
+            {
+              "error": [
+                0,
+                -1
+              ],
+              "count": 5
+            },
+            {
+              "error": [
+                0,
+                0
+              ],
+              "count": 16
+            },
+            {
+              "error": [
+                0,
+                1
+              ],
+              "count": 2
+            }
+          ]
+        }
+      ],
+      "scope": "exact uniform small-torus distortion, not rank-6 decryption failure"
+    },
+    {
+      "q": 7,
+      "bits": 2,
+      "cover": {
+        "q": 7,
+        "bits_per_coordinate_label": 2,
+        "levels": 4,
+        "distinct_rows_and_columns": true,
+        "maximum_circular_gap": 2,
+        "row_gap_counts": {
+          "1": 1,
+          "2": 3
+        },
+        "adjacent_row_phases_alternate_including_wrap": true,
+        "two_column_phases_cover_all_residues": true,
+        "certified_L1_error_at_most_one": true,
+        "unique_codewords": 16,
+        "fixed_pair_bits": 4,
+        "proof": "on a row, a column is within one; between rows at distance two, their column phases cover every x"
+      },
+      "results": [
+        {
+          "mode": "scalar_fips",
+          "states": 49,
+          "unique_codewords": 16,
+          "fixed_pair_bits": 4,
+          "mean_squared_error_uniform_input": "6/7",
+          "mean_local_MGF_uniform_input": "20675961249887161/19770609664000000",
+          "maximum_L1_error": 2,
+          "group_domination_MGF_z13over10": "205661493472393065314110333561398004115966641/97719251621562548224000000000000000000000000",
+          "error_histogram": [
+            {
+              "error": [
+                -1,
+                -1
+              ],
+              "count": 1
+            },
+            {
+              "error": [
+                -1,
+                0
+              ],
+              "count": 4
+            },
+            {
+              "error": [
+                -1,
+                1
+              ],
+              "count": 2
+            },
+            {
+              "error": [
+                0,
+                -1
+              ],
+              "count": 4
+            },
+            {
+              "error": [
+                0,
+                0
+              ],
+              "count": 16
+            },
+            {
+              "error": [
+                0,
+                1
+              ],
+              "count": 8
+            },
+            {
+              "error": [
+                1,
+                -1
+              ],
+              "count": 2
+            },
+            {
+              "error": [
+                1,
+                0
+              ],
+              "count": 8
+            },
+            {
+              "error": [
+                1,
+                1
+              ],
+              "count": 4
+            }
+          ]
+        },
+        {
+          "mode": "staggered_nearest_L2",
+          "states": 49,
+          "unique_codewords": 16,
+          "fixed_pair_bits": 4,
+          "mean_squared_error_uniform_input": "33/49",
+          "mean_local_MGF_uniform_input": "1019273191/984256000",
+          "maximum_L1_error": 1,
+          "group_domination_MGF_z13over10": "377908322060217461788683449516331025362482641/214689195812572918448128000000000000000000000",
+          "error_histogram": [
+            {
+              "error": [
+                -1,
+                0
+              ],
+              "count": 6
+            },
+            {
+              "error": [
+                0,
+                -1
+              ],
+              "count": 14
+            },
+            {
+              "error": [
+                0,
+                0
+              ],
+              "count": 16
+            },
+            {
+              "error": [
+                0,
+                1
+              ],
+              "count": 10
+            },
+            {
+              "error": [
+                1,
+                0
+              ],
+              "count": 3
+            }
+          ]
+        },
+        {
+          "mode": "staggered_local_MGF",
+          "states": 49,
+          "unique_codewords": 16,
+          "fixed_pair_bits": 4,
+          "mean_squared_error_uniform_input": "33/49",
+          "mean_local_MGF_uniform_input": "1019273191/984256000",
+          "maximum_L1_error": 1,
+          "group_domination_MGF_z13over10": "377908322060217461788683449516331025362482641/214689195812572918448128000000000000000000000",
+          "error_histogram": [
+            {
+              "error": [
+                -1,
+                0
+              ],
+              "count": 6
+            },
+            {
+              "error": [
+                0,
+                -1
+              ],
+              "count": 14
+            },
+            {
+              "error": [
+                0,
+                0
+              ],
+              "count": 16
+            },
+            {
+              "error": [
+                0,
+                1
+              ],
+              "count": 10
+            },
+            {
+              "error": [
+                1,
+                0
+              ],
+              "count": 3
+            }
+          ]
+        }
+      ],
+      "scope": "exact uniform small-torus distortion, not rank-6 decryption failure"
+    },
+    {
+      "q": 13,
+      "bits": 3,
+      "cover": {
+        "q": 13,
+        "bits_per_coordinate_label": 3,
+        "levels": 8,
+        "distinct_rows_and_columns": true,
+        "maximum_circular_gap": 2,
+        "row_gap_counts": {
+          "1": 3,
+          "2": 5
+        },
+        "adjacent_row_phases_alternate_including_wrap": true,
+        "two_column_phases_cover_all_residues": true,
+        "certified_L1_error_at_most_one": true,
+        "unique_codewords": 64,
+        "fixed_pair_bits": 6,
+        "proof": "on a row, a column is within one; between rows at distance two, their column phases cover every x"
+      },
+      "results": [
+        {
+          "mode": "scalar_fips",
+          "states": 169,
+          "unique_codewords": 64,
+          "fixed_pair_bits": 6,
+          "mean_squared_error_uniform_input": "10/13",
+          "mean_local_MGF_uniform_input": "139135482069498721/133649321328640000",
+          "maximum_L1_error": 2,
+          "group_domination_MGF_z13over10": "205661493472393065314110333561398004115966641/97719251621562548224000000000000000000000000",
+          "error_histogram": [
+            {
+              "error": [
+                -1,
+                -1
+              ],
+              "count": 4
+            },
+            {
+              "error": [
+                -1,
+                0
+              ],
+              "count": 16
+            },
+            {
+              "error": [
+                -1,
+                1
+              ],
+              "count": 6
+            },
+            {
+              "error": [
+                0,
+                -1
+              ],
+              "count": 16
+            },
+            {
+              "error": [
+                0,
+                0
+              ],
+              "count": 64
+            },
+            {
+              "error": [
+                0,
+                1
+              ],
+              "count": 24
+            },
+            {
+              "error": [
+                1,
+                -1
+              ],
+              "count": 6
+            },
+            {
+              "error": [
+                1,
+                0
+              ],
+              "count": 24
+            },
+            {
+              "error": [
+                1,
+                1
+              ],
+              "count": 9
+            }
+          ]
+        },
+        {
+          "mode": "staggered_nearest_L2",
+          "states": 169,
+          "unique_codewords": 64,
+          "fixed_pair_bits": 6,
+          "mean_squared_error_uniform_input": "105/169",
+          "mean_local_MGF_uniform_input": "4908536069/4752550400",
+          "maximum_L1_error": 1,
+          "group_domination_MGF_z13over10": "377908322060217461788683449516331025362482641/214689195812572918448128000000000000000000000",
+          "error_histogram": [
+            {
+              "error": [
+                -1,
+                0
+              ],
+              "count": 20
+            },
+            {
+              "error": [
+                0,
+                -1
+              ],
+              "count": 52
+            },
+            {
+              "error": [
+                0,
+                0
+              ],
+              "count": 64
+            },
+            {
+              "error": [
+                0,
+                1
+              ],
+              "count": 28
+            },
+            {
+              "error": [
+                1,
+                0
+              ],
+              "count": 5
+            }
+          ]
+        },
+        {
+          "mode": "staggered_local_MGF",
+          "states": 169,
+          "unique_codewords": 64,
+          "fixed_pair_bits": 6,
+          "mean_squared_error_uniform_input": "105/169",
+          "mean_local_MGF_uniform_input": "4908536069/4752550400",
+          "maximum_L1_error": 1,
+          "group_domination_MGF_z13over10": "377908322060217461788683449516331025362482641/214689195812572918448128000000000000000000000",
+          "error_histogram": [
+            {
+              "error": [
+                -1,
+                0
+              ],
+              "count": 20
+            },
+            {
+              "error": [
+                0,
+                -1
+              ],
+              "count": 52
+            },
+            {
+              "error": [
+                0,
+                0
+              ],
+              "count": 64
+            },
+            {
+              "error": [
+                0,
+                1
+              ],
+              "count": 28
+            },
+            {
+              "error": [
+                1,
+                0
+              ],
+              "count": 5
+            }
+          ]
+        }
+      ],
+      "scope": "exact uniform small-torus distortion, not rank-6 decryption failure"
+    },
+    {
+      "q": 17,
+      "bits": 3,
+      "cover": {
+        "q": 17,
+        "bits_per_coordinate_label": 3,
+        "levels": 8,
+        "distinct_rows_and_columns": true,
+        "maximum_circular_gap": 3,
+        "row_gap_counts": {
+          "2": 7,
+          "3": 1
+        },
+        "adjacent_row_phases_alternate_including_wrap": true,
+        "two_column_phases_cover_all_residues": false,
+        "certified_L1_error_at_most_one": false,
+        "unique_codewords": 64,
+        "fixed_pair_bits": 6,
+        "proof": "on a row, a column is within one; between rows at distance two, their column phases cover every x"
+      },
+      "results": [
+        {
+          "mode": "scalar_fips",
+          "states": 289,
+          "unique_codewords": 64,
+          "fixed_pair_bits": 6,
+          "mean_squared_error_uniform_input": "18/17",
+          "mean_local_MGF_uniform_input": "6037767957883374001/5713706192896000000",
+          "maximum_L1_error": 2,
+          "group_domination_MGF_z13over10": "205661493472393065314110333561398004115966641/97719251621562548224000000000000000000000000",
+          "error_histogram": [
+            {
+              "error": [
+                -1,
+                -1
+              ],
+              "count": 16
+            },
+            {
+              "error": [
+                -1,
+                0
+              ],
+              "count": 32
+            },
+            {
+              "error": [
+                -1,
+                1
+              ],
+              "count": 20
+            },
+            {
+              "error": [
+                0,
+                -1
+              ],
+              "count": 32
+            },
+            {
+              "error": [
+                0,
+                0
+              ],
+              "count": 64
+            },
+            {
+              "error": [
+                0,
+                1
+              ],
+              "count": 40
+            },
+            {
+              "error": [
+                1,
+                -1
+              ],
+              "count": 20
+            },
+            {
+              "error": [
+                1,
+                0
+              ],
+              "count": 40
+            },
+            {
+              "error": [
+                1,
+                1
+              ],
+              "count": 25
+            }
+          ]
+        },
+        {
+          "mode": "staggered_nearest_L2",
+          "states": 289,
+          "unique_codewords": 64,
+          "fixed_pair_bits": 6,
+          "mean_squared_error_uniform_input": "250/289",
+          "mean_local_MGF_uniform_input": "239047627415956321/228548247715840000",
+          "maximum_L1_error": 2,
+          "group_domination_MGF_z13over10": "205661493472393065314110333561398004115966641/97719251621562548224000000000000000000000000",
+          "error_histogram": [
+            {
+              "error": [
+                -1,
+                -1
+              ],
+              "count": 9
+            },
+            {
+              "error": [
+                -1,
+                0
+              ],
+              "count": 56
+            },
+            {
+              "error": [
+                -1,
+                1
+              ],
+              "count": 7
+            },
+            {
+              "error": [
+                0,
+                -1
+              ],
+              "count": 64
+            },
+            {
+              "error": [
+                0,
+                0
+              ],
+              "count": 64
+            },
+            {
+              "error": [
+                0,
+                1
+              ],
+              "count": 64
+            },
+            {
+              "error": [
+                1,
+                -1
+              ],
+              "count": 6
+            },
+            {
+              "error": [
+                1,
+                0
+              ],
+              "count": 16
+            },
+            {
+              "error": [
+                1,
+                1
+              ],
+              "count": 3
+            }
+          ]
+        },
+        {
+          "mode": "staggered_local_MGF",
+          "states": 289,
+          "unique_codewords": 64,
+          "fixed_pair_bits": 6,
+          "mean_squared_error_uniform_input": "250/289",
+          "mean_local_MGF_uniform_input": "239047627415956321/228548247715840000",
+          "maximum_L1_error": 2,
+          "group_domination_MGF_z13over10": "205661493472393065314110333561398004115966641/97719251621562548224000000000000000000000000",
+          "error_histogram": [
+            {
+              "error": [
+                -1,
+                -1
+              ],
+              "count": 9
+            },
+            {
+              "error": [
+                -1,
+                0
+              ],
+              "count": 56
+            },
+            {
+              "error": [
+                -1,
+                1
+              ],
+              "count": 7
+            },
+            {
+              "error": [
+                0,
+                -1
+              ],
+              "count": 64
+            },
+            {
+              "error": [
+                0,
+                0
+              ],
+              "count": 64
+            },
+            {
+              "error": [
+                0,
+                1
+              ],
+              "count": 64
+            },
+            {
+              "error": [
+                1,
+                -1
+              ],
+              "count": 6
+            },
+            {
+              "error": [
+                1,
+                0
+              ],
+              "count": 16
+            },
+            {
+              "error": [
+                1,
+                1
+              ],
+              "count": 3
+            }
+          ]
+        }
+      ],
+      "scope": "exact uniform small-torus distortion, not rank-6 decryption failure"
+    },
+    {
+      "q": 31,
+      "bits": 4,
+      "cover": {
+        "q": 31,
+        "bits_per_coordinate_label": 4,
+        "levels": 16,
+        "distinct_rows_and_columns": true,
+        "maximum_circular_gap": 2,
+        "row_gap_counts": {
+          "1": 1,
+          "2": 15
+        },
+        "adjacent_row_phases_alternate_including_wrap": true,
+        "two_column_phases_cover_all_residues": true,
+        "certified_L1_error_at_most_one": true,
+        "unique_codewords": 256,
+        "fixed_pair_bits": 8,
+        "proof": "on a row, a column is within one; between rows at distance two, their column phases cover every x"
+      },
+      "results": [
+        {
+          "mode": "scalar_fips",
+          "states": 961,
+          "unique_codewords": 256,
+          "fixed_pair_bits": 8,
+          "mean_squared_error_uniform_input": "30/31",
+          "mean_local_MGF_uniform_input": "799331244233373289/759982235484160000",
+          "maximum_L1_error": 2,
+          "group_domination_MGF_z13over10": "205661493472393065314110333561398004115966641/97719251621562548224000000000000000000000000",
+          "error_histogram": [
+            {
+              "error": [
+                -1,
+                -1
+              ],
+              "count": 49
+            },
+            {
+              "error": [
+                -1,
+                0
+              ],
+              "count": 112
+            },
+            {
+              "error": [
+                -1,
+                1
+              ],
+              "count": 56
+            },
+            {
+              "error": [
+                0,
+                -1
+              ],
+              "count": 112
+            },
+            {
+              "error": [
+                0,
+                0
+              ],
+              "count": 256
+            },
+            {
+              "error": [
+                0,
+                1
+              ],
+              "count": 128
+            },
+            {
+              "error": [
+                1,
+                -1
+              ],
+              "count": 56
+            },
+            {
+              "error": [
+                1,
+                0
+              ],
+              "count": 128
+            },
+            {
+              "error": [
+                1,
+                1
+              ],
+              "count": 64
+            }
+          ]
+        },
+        {
+          "mode": "staggered_nearest_L2",
+          "states": 961,
+          "unique_codewords": 256,
+          "fixed_pair_bits": 8,
+          "mean_squared_error_uniform_input": "705/961",
+          "mean_local_MGF_uniform_input": "28072189949/27024857600",
+          "maximum_L1_error": 1,
+          "group_domination_MGF_z13over10": "377908322060217461788683449516331025362482641/214689195812572918448128000000000000000000000",
+          "error_histogram": [
+            {
+              "error": [
+                -1,
+                0
+              ],
+              "count": 210
+            },
+            {
+              "error": [
+                0,
+                -1
+              ],
+              "count": 254
+            },
+            {
+              "error": [
+                0,
+                0
+              ],
+              "count": 256
+            },
+            {
+              "error": [
+                0,
+                1
+              ],
+              "count": 226
+            },
+            {
+              "error": [
+                1,
+                0
+              ],
+              "count": 15
+            }
+          ]
+        },
+        {
+          "mode": "staggered_local_MGF",
+          "states": 961,
+          "unique_codewords": 256,
+          "fixed_pair_bits": 8,
+          "mean_squared_error_uniform_input": "705/961",
+          "mean_local_MGF_uniform_input": "28072189949/27024857600",
+          "maximum_L1_error": 1,
+          "group_domination_MGF_z13over10": "377908322060217461788683449516331025362482641/214689195812572918448128000000000000000000000",
+          "error_histogram": [
+            {
+              "error": [
+                -1,
+                0
+              ],
+              "count": 210
+            },
+            {
+              "error": [
+                0,
+                -1
+              ],
+              "count": 254
+            },
+            {
+              "error": [
+                0,
+                0
+              ],
+              "count": 256
+            },
+            {
+              "error": [
+                0,
+                1
+              ],
+              "count": 226
+            },
+            {
+              "error": [
+                1,
+                0
+              ],
+              "count": 15
+            }
+          ]
+        }
+      ],
+      "scope": "exact uniform small-torus distortion, not rank-6 decryption failure"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "project_arithmetic_imported": false,
+  "matrices": 32,
+  "LLL_certificates": 32,
+  "panels": 768,
+  "literal_CBD_bit_strings": 524288,
+  "distinct_score_banks": 224,
+  "complete_guess_scores": 822808,
+  "exact_laws_events_and_hashes_matched": true,
+  "maximum_absolute_moment_delta": 3.164135620181696e-15
+}

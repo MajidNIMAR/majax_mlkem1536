@@ -1,0 +1,20 @@
+/.tools/
+/target/
+/fuzz/target/
+/fuzz/corpus/
+/fuzz/artifacts/
+/fuzz/coverage/
+/.venv/
+/artifacts/generated/
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+.env
+.env.*
+*.pem
+*.key
+
+# Research-only external sources fetched by setup in the public distribution.
+/references/coded-dual-audit/*.py.txt
+

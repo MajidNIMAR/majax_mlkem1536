@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "milestones": {
+    "J0": "completed for initial experimental contract",
+    "J1": "passed on Windows x86_64"
+  },
+  "checks": {
+    "source_integrity": "passed",
+    "rustfmt": "passed",
+    "clippy_warnings_denied": "passed",
+    "rust_tests_passed": 13,
+    "rust_tests_failed": 0,
+    "official_cases_passed": 145,
+    "implicit_rejection_cases": 15,
+    "fresh_round_trips": 32,
+    "script_syntax": "passed"
+  },
+  "rank_six_implementation": "not started",
+  "rank_six_security_analysis": "pending",
+  "linux_execution": "not performed",
+  "github_actions_execution": "not performed",
+  "source_manifest_sha256": "b1501e7ce59501223bd2d509ffdb9c0fc4e8904ae34aafc231b98d9abf2513ee",
+  "cargo_lock_sha256": "dd93e30b0d38f2d8ee6952fbe07d56d14d2cca88f16c7d0291b7a5a7ad7026fc"
+}

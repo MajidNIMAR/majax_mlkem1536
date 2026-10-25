@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "micromamba": {
+    "version": "2.9.0",
+    "build": "0",
+    "url": "https://micro.mamba.pm/api/micromamba/linux-64/2.9.0",
+    "sha256": "8761c382127e6363bd9e0a2451aa3ef90d071a79133f736e2f759a3bf13040dd"
+  },
+  "environment": {
+    "sage": "10.7",
+    "explicit_file": "research/sage-linux-explicit.txt",
+    "packages": 158,
+    "sha256": "bbd6254045283cb46bef5207bfe7768ba70eb023c7be83636b633def8ee663ef",
+    "package_manifest": "research/sage-linux-packages.json",
+    "package_manifest_sha256": "bc9c31845bd038ecd54cd647fc589b8b906452e59f2569089e5506c78212e2f1"
+  }
+}

@@ -1,0 +1,17 @@
+* text=auto eol=lf whitespace=-blank-at-eof
+*.ps1 text eol=crlf
+*.png binary
+*.pdf binary
+*.xlsx binary
+/vectors/nist-acvp/** -text whitespace=cr-at-eol,-blank-at-eof,-blank-at-eol
+/references/** -text whitespace=cr-at-eol,-blank-at-eof
+/references/correctness-2026/*.html -text whitespace=cr-at-eol,-blank-at-eof,-blank-at-eol
+/references/coded-dual-audit/*.txt -text whitespace=cr-at-eol,-blank-at-eof,-blank-at-eol
+/references/coded-dual-evaluation/*.txt -text whitespace=cr-at-eol,-blank-at-eof,-blank-at-eol
+/research/tools-manifest.json -text whitespace=cr-at-eol
+/results/** -text whitespace=cr-at-eol
+/results/engine/**/sources/** -text whitespace=cr-at-eol,-blank-at-eof
+/results/engine/**/evidence/*.log -text whitespace=cr-at-eol,-blank-at-eof,-blank-at-eol
+/fuzz/fixtures/*.bin binary
+/results/engine/**/audit/**/*.txt -text whitespace=cr-at-eol,-blank-at-eof,-blank-at-eol
+

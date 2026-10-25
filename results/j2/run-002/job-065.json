@@ -1,0 +1,25 @@
+{
+  "job": {
+    "scenario": "p0-1536",
+    "parameters": {
+      "n": 256,
+      "k": 6,
+      "q": 3329,
+      "eta": 2
+    },
+    "sample_budget": "extended",
+    "samples": 1792,
+    "targets": 1,
+    "oracle": "none",
+    "shape_model": "GSA",
+    "memory_cap": "none; exponential memory allowed",
+    "tool": "community",
+    "cost_model": "MATZOV-classical",
+    "algorithm": "bkw"
+  },
+  "status": "error",
+  "error_type": "ValueError",
+  "error": "Calling ceil() on infinity or NaN",
+  "traceback": "Traceback (most recent call last):\n  File \"/mnt/c/Users/majax/Documents/Codex/NIST/.tools/upstream/lattice-estimator-f31b86fe490ab11abb4a69efa13007583791e10a/estimator/lwe_bkw.py\", line 301, in __call__\n    return self.b(params_, ntest=ntest, log_level=log_level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/c/Users/majax/Documents/Codex/NIST/.tools/upstream/lattice-estimator-f31b86fe490ab11abb4a69efa13007583791e10a/estimator/lwe_bkw.py\", line 241, in b\n    raise InsufficientSamplesError(\nestimator.errors.InsufficientSamplesError: ('Got m\u22482^590.0 samples, but require \u22482^inf.', +Infinity)\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/mnt/c/Users/majax/Documents/Codex/NIST/research/modern_worker.py\", line 89, in <module>\n    result = estimate(job)\n             ^^^^^^^^^^^^^\n  File \"/mnt/c/Users/majax/Documents/Codex/NIST/research/modern_worker.py\", line 62, in estimate\n    cost = functions[job[\"algorithm\"]](params, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/c/Users/majax/Documents/Codex/NIST/.tools/upstream/lattice-estimator-f31b86fe490ab11abb4a69efa13007583791e10a/estimator/lwe_bkw.py\", line 304, in __call__\n    params_ = params.amplify_m(m)\n              ^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/c/Users/majax/Documents/Codex/NIST/.tools/upstream/lattice-estimator-f31b86fe490ab11abb4a69efa13007583791e10a/estimator/lwe_parameters.py\", line 120, in amplify_m\n    for k in range(ceil(log(m, 2.0))):\n                   ^^^^^^^^^^^^^^^^^\n  File \"/mnt/c/Users/majax/Documents/Codex/NIST/.tools/sage-ram/env/lib/python3.12/site-packages/sage/functions/other.py\", line 433, in __call__\n    return _eval_floor_ceil(self, x, \"ceil\", **kwds)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/mnt/c/Users/majax/Documents/Codex/NIST/.tools/sage-ram/env/lib/python3.12/site-packages/sage/functions/other.py\", line 276, in _eval_floor_ceil\n    a = getattr(y_interval.lower(), method)()\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"sage/rings/real_mpfr.pyx\", line 3108, in sage.rings.real_mpfr.RealNumber.ceil (build/cythonized/sage/rings/real_mpfr.c:37589)\n    raise ValueError('Calling ceil() on infinity or NaN')\nValueError: Calling ceil() on infinity or NaN\n",
+  "elapsed_seconds": 17.477871553000114
+}

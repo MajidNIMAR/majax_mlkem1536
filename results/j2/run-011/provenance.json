@@ -1,0 +1,27 @@
+{
+  "created_utc": "2026-10-24T18:22:50.405437+00:00",
+  "python": "3.13.7",
+  "input_sha256": {
+    "research/decoder_score.py": "845d7a0c6838640399e454eea3f1c58954282f1450b3cb8d625b8c02d30f4871",
+    "research/test_decoder_score.py": "9ab22d7149737980d6f198a535d762d396825d22bbbc4ad87caa63eed462afed",
+    "research/run_decoder_score.py": "b3930a383254e39432550ec47f8acedc53afdd6823975b1a898e8b890f71383b",
+    "research/verify_decoder_score_results.py": "3490bc37c9f36b55dfcea0574a1000313d6ba783762622fd0bad4a48799154d4",
+    "research/verify_decoder_score_independent.py": "31ff043668a0c820c3ab6f4c39fd04a3e64148c1206ccca06bfa6cd20c15f7b9",
+    "research/verify_decoder_score_numeric.py": "15377c19b813670d1b1157679d2647e8bd02a5f0e3ec4b628938b0c093dd1431",
+    "research/block_decoder.py": "afa6e53d16e339d6d0b0be6145f5221d12ef52685e5de9c7745b89389740e912",
+    "research/run_block_decoder.py": "e4d3ba51a63e852a989a195a7ddc0238456244c0746c54c8fe4789eb2322917b",
+    "results/j2/run-010/study.json": "e53d6b31bd2977252f45d274c204b4de353015d3e429847d0dcab15611fc5bf0",
+    "results/j2/run-010/observations.jsonl": "8da7db82d08c2ce975d3811f022141d9f1e49246466f339734efab617e932cc0",
+    "results/j2/run-010/provenance.json": "dd149649993cc97eac4d4bc6af80f01789b36af31cbf43642ebb6a3d253087c4",
+    "results/j2/run-010/independent-provenance.json": "0d82a4de646532cbe27c14fb8ee317f1214e249ba3c6cdf42e73ddeb5f6e2e64",
+    "references/decoder-score-2026/sources.json": "f685b88667fc413759cefd50abab858ad9dcfeda3fd29d7c095a388dc4ed87f8"
+  },
+  "output_sha256": {
+    "residuals.jsonl": "dc57dc5f29f0818adceb1efa8b4ee1b0df5edfde34289fb8b1b0820e96d86cf5",
+    "toy-laws.json": "fb3672b0e065601c2578742aa96476e368a871a4dc381cca1ba6fd57f3007b1b",
+    "coordinate-moments.json": "fc83303422ab18be2a8908f59d16258dc9fa5f0be07e78ac83df9b57cf41173e",
+    "score-banks.json": "fe0db009684349fb1579b2404ae4fdabd53bf43077d5c8e1899bdbee8b68f474",
+    "equal-norm-controls.json": "0ca77fd16aa20b46d18118abdde1b39ca74a51f323e4fcf61717fe10056c6c38",
+    "study.json": "9de388725877e727435f9707ff6c6daf26cd84f50dd18aadc348bf3e503a3f85"
+  }
+}

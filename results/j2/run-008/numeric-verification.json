@@ -1,0 +1,93 @@
+{
+  "precision": {
+    "sage_bits": 2048,
+    "mpmath_decimal_digits": 160
+  },
+  "results": [
+    {
+      "index": 146,
+      "inputs": {
+        "n": 1024,
+        "degree": 256,
+        "q": 3329,
+        "eta": 2,
+        "samples": 798,
+        "nenu": 28,
+        "nfft": 113,
+        "kfft": 16,
+        "mlwe": false
+      },
+      "native_beta0": 807,
+      "native_beta1": 788,
+      "native_log2_rop": 258.4821140316051,
+      "delta_log2_rop": 1.7053025658242404e-13,
+      "delta_log2_repetitions": 7.247535904753022e-13,
+      "delta_log2_threshold": -1.1368683772161603e-13,
+      "passed": true
+    },
+    {
+      "index": 390,
+      "inputs": {
+        "n": 1024,
+        "degree": 256,
+        "q": 3329,
+        "eta": 2,
+        "samples": 798,
+        "nenu": 33,
+        "nfft": 111,
+        "kfft": 16,
+        "mlwe": true
+      },
+      "native_beta0": 801,
+      "native_beta1": 783,
+      "native_log2_rop": 256.9695308557548,
+      "delta_log2_rop": 4.547473508864641e-13,
+      "delta_log2_repetitions": 2.0179413695586845e-12,
+      "delta_log2_threshold": -5.684341886080802e-14,
+      "passed": true
+    },
+    {
+      "index": 603,
+      "inputs": {
+        "n": 1536,
+        "degree": 256,
+        "q": 7681,
+        "eta": 3,
+        "samples": 1245,
+        "nenu": 36,
+        "nfft": 152,
+        "kfft": 22,
+        "mlwe": false
+      },
+      "native_beta0": 1244,
+      "native_beta1": 1204,
+      "native_log2_rop": 381.75577974862193,
+      "delta_log2_rop": -2.2737367544323206e-13,
+      "delta_log2_repetitions": -1.1652900866465643e-12,
+      "delta_log2_threshold": 2.5579538487363607e-13,
+      "passed": true
+    },
+    {
+      "index": 1009,
+      "inputs": {
+        "n": 1536,
+        "degree": 256,
+        "q": 7681,
+        "eta": 3,
+        "samples": 1267,
+        "nenu": 52,
+        "nfft": 136,
+        "kfft": 20,
+        "mlwe": true
+      },
+      "native_beta0": 1237,
+      "native_beta1": 1197,
+      "native_log2_rop": 379.9986956778933,
+      "delta_log2_rop": -1.1937117960769683e-12,
+      "delta_log2_repetitions": -3.538502824085299e-12,
+      "delta_log2_threshold": 1.4210854715202004e-14,
+      "passed": true
+    }
+  ],
+  "limitations": "numerical cross-check of the same conditional model; no attack-model proof"
+}

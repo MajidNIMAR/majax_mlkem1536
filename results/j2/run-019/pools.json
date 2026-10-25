@@ -1,0 +1,90 @@
+[
+  {
+    "identifier": 0,
+    "family": "repeated",
+    "seed_ascii": "nist-j2-additive-v1:CBD:0",
+    "states_sha256": "4e83f3f4c0cfc22b44311d59ecaef9213b19030e5a150b5da43aabb82859bafa",
+    "phases_sha256": "3abb1c07757a86ffa70f721db6e67fa2552ce08442c52a472296287be90ac97f",
+    "reused_from_run018": true,
+    "phase_identities": 524288,
+    "states_bytes": 4751360,
+    "phases_bytes": 4194304
+  },
+  {
+    "identifier": 0,
+    "family": "radix",
+    "seed_ascii": "nist-j2-additive-v1:CBD:0",
+    "states_sha256": "4e83f3f4c0cfc22b44311d59ecaef9213b19030e5a150b5da43aabb82859bafa",
+    "phases_sha256": "84af875d21ad2da5bc65e3ba1614bb2999c398150ae692aee6edc7d173a8186c",
+    "reused_from_run018": true,
+    "phase_identities": 524288,
+    "states_bytes": 4751360,
+    "phases_bytes": 4194304
+  },
+  {
+    "identifier": 1,
+    "family": "repeated",
+    "seed_ascii": "nist-j2-additive-v1:CBD:1",
+    "states_sha256": "983c627e60d873eb9ccf04f326f9e5f1fa546824d690efe62df854f90b2c3bc7",
+    "phases_sha256": "aea17e0da24a1130e88d5c9e64467b61c36dc6cb13bec900ed48c0c236d3d3cb",
+    "reused_from_run018": true,
+    "phase_identities": 524288,
+    "states_bytes": 4751360,
+    "phases_bytes": 4194304
+  },
+  {
+    "identifier": 1,
+    "family": "radix",
+    "seed_ascii": "nist-j2-additive-v1:CBD:1",
+    "states_sha256": "983c627e60d873eb9ccf04f326f9e5f1fa546824d690efe62df854f90b2c3bc7",
+    "phases_sha256": "d153cd11372895145fbfd6dbefd578392836ad865698559c4907094d72417733",
+    "reused_from_run018": true,
+    "phase_identities": 524288,
+    "states_bytes": 4751360,
+    "phases_bytes": 4194304
+  },
+  {
+    "identifier": 2,
+    "family": "repeated",
+    "seed_ascii": "nist-j2-additive-v1:CBD:2",
+    "states_sha256": "901b383a58d5b3938b12d8c9c6b8f6a2cd0ddb05d43ddbae713ef1f2bb3e1a92",
+    "phases_sha256": "d54f197be6f5e040d90c3202342e294a4eacbba83440a68060d0dae254cc7588",
+    "reused_from_run018": true,
+    "phase_identities": 524288,
+    "states_bytes": 4751360,
+    "phases_bytes": 4194304
+  },
+  {
+    "identifier": 2,
+    "family": "radix",
+    "seed_ascii": "nist-j2-additive-v1:CBD:2",
+    "states_sha256": "901b383a58d5b3938b12d8c9c6b8f6a2cd0ddb05d43ddbae713ef1f2bb3e1a92",
+    "phases_sha256": "f4a2896863e87c040ff715afa5bf860ad49c41ed3b502efba5d67f308186ed28",
+    "reused_from_run018": true,
+    "phase_identities": 524288,
+    "states_bytes": 4751360,
+    "phases_bytes": 4194304
+  },
+  {
+    "identifier": 3,
+    "family": "repeated",
+    "seed_ascii": "nist-j2-additive-v1:CBD:3",
+    "states_sha256": "c3a03383e6989591cca798ebf68e459b4dca8d792ba126cab1887c6d4b805a73",
+    "phases_sha256": "122234bb56b9238d2ecb3f1dcd3773fa565d22fa2a5440307aacb95e05331546",
+    "reused_from_run018": true,
+    "phase_identities": 524288,
+    "states_bytes": 4751360,
+    "phases_bytes": 4194304
+  },
+  {
+    "identifier": 3,
+    "family": "radix",
+    "seed_ascii": "nist-j2-additive-v1:CBD:3",
+    "states_sha256": "c3a03383e6989591cca798ebf68e459b4dca8d792ba126cab1887c6d4b805a73",
+    "phases_sha256": "c2c04ec73441b863d5f66572c3e4f05f55f89667ef0e04690aac164dff306602",
+    "reused_from_run018": true,
+    "phase_identities": 524288,
+    "states_bytes": 4751360,
+    "phases_bytes": 4194304
+  }
+]

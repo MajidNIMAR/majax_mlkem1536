@@ -1,0 +1,20 @@
+{
+  "profile": "KEM1536-DEV-Q7681-R1",
+  "synthetic_public_test_data": true,
+  "vectors_verified": 1000,
+  "fields_per_vector": 12,
+  "independent_arithmetic": "NumPy integer convolution",
+  "full_byte_agreement": true,
+  "rejection_corpus": {
+    "cases": 10000,
+    "oracle": "Python decrypt/derive/re-encrypt comparison",
+    "canonical_failure_established": true,
+    "ciphertext_and_replacement_sha256": "43b202c5974c37186c1c4650ae1cd6782fe44772c8cdaee190938186e2e20fc0"
+  },
+  "python": "3.13.7",
+  "numpy": "2.3.5",
+  "generation_and_independent_validation_seconds": 132.43049579998478,
+  "security_validation": "pending",
+  "j2_closed": false,
+  "j3_validated": false
+}

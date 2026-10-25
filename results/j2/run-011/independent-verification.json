@@ -1,0 +1,10 @@
+{
+  "toy_cases": 6,
+  "complete_targets": 6302,
+  "literal_secret_bit_strings": 1152,
+  "project_arithmetic_imported": false,
+  "joint_phase_laws_matched": true,
+  "exact_block_factorizations_matched": true,
+  "coordinate_factorization_failures": 6,
+  "shared_secret_moments_matched": true
+}

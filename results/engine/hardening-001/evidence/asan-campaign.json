@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-10-25T12:27:48.179398+00:00",
+  "instrumentation": "Rust AddressSanitizer + leak detection",
+  "target": "x86_64-unknown-linux-gnu under WSL2",
+  "rust_bootstrap_for_sanitizer": true,
+  "prebuilt_standard_library_instrumented": false,
+  "format_inputs": 20000,
+  "mutation_cases": 10000,
+  "all_outputs_match_independently_verified_corpus": true,
+  "process_exit_codes": [
+    0,
+    0
+  ],
+  "binary_sha256": "35facbb671871ffc87f3eebf89d5ff217bdbd133be242aa1a1f4bf5d004fef4c",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "raw_output_sha256": "1d5c54bd61d05a959b983052d7c2425c5269eca3cb2cd53e9368b40cdc564f9e",
+  "input_sha256": {
+    "results/engine/hardening-001/platforms.json": "6e2af821493e840670309cec20bb94b241be78424c1b88a65759121a79acb6f5",
+    "results/engine/hardening-001/mutations.jsonl.gz": "a5c5a023d9b06d397a82d5afd192d257ad67390c8383d3bb0a6d40a1e3bfdb56",
+    "research/run_m02_asan.py": "99cb2fc83d89b14d1b4542f4fcd6c6dd07b4a693e8b51813863f1a1f38c53a47"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "project_arithmetic_imported": false,
+  "full_coordinates_used": true,
+  "N32_banks_verified": 24,
+  "H12_banks_verified": 64,
+  "cosine_sign_evaluations": 23132160,
+  "histograms_and_rational_bounds_matched": true,
+  "rare_tail_certified": false
+}

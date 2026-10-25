@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-10-24T23:40:16.240631+00:00",
+  "input_sha256": {
+    "research/verify_score_transfer_independent.py": "650d0d1e25da4d8d58239b2c3c2ddaf4e15c0e400601dfe8e28f4555b71767a3",
+    "docs/PROTOCOLE_H09.md": "455d217a4a318e957e01d49edc39a6166955148e3648c1640eee166134796878",
+    "results/j2/run-009/study.json": "c1368a2d48c33b76f5972f8db31f656f87889884b69472f0b6a1e2d063d5e6c2",
+    "results/j2/run-011/residuals.jsonl": "dc57dc5f29f0818adceb1efa8b4ee1b0df5edfde34289fb8b1b0820e96d86cf5",
+    "results/j2/run-016/study.json": "382f987a7a942ef28d2720d10946ad38e8a435fcb6425ae361eb2c0d4055b0be"
+  },
+  "output_sha256": {
+    "independent-verification.json": "e351e885edb9247b135be61a0d03864a4aa4abc8b68c0d37b75641dec7e1488b"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "method": "mpmath.iv at 160 decimals, without Sage or project arithmetic imports",
+  "weights_verified": 24,
+  "decimal_digits": 160,
+  "all_passed": true
+}

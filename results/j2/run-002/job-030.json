@@ -1,0 +1,43 @@
+{
+  "job": {
+    "scenario": "q7681-eta2",
+    "parameters": {
+      "n": 256,
+      "k": 6,
+      "q": 7681,
+      "eta": 2
+    },
+    "sample_budget": "key",
+    "samples": 1536,
+    "targets": 1,
+    "oracle": "none",
+    "shape_model": "GSA",
+    "memory_cap": "none; exponential memory allowed",
+    "tool": "community",
+    "cost_model": "MATZOV-classical",
+    "algorithm": "dual_hybrid"
+  },
+  "status": "ok",
+  "applicability": "heuristic LWE estimator model",
+  "cost": {
+    "rop": "5.2946759e111*e^(-5) + 1.61794566816566e110",
+    "problem": "LWEParameters(n=1536, q=7681, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=1536, tag='q7681-eta2')",
+    "red": "1.61794566816566e110",
+    "guess": "5.2946759e111*e^(-5)",
+    "beta": "1192",
+    "p": "4",
+    "zeta": "10",
+    "t": "160",
+    "beta_": "1156",
+    "N": "6.44426177421977e71",
+    "m": "1536"
+  },
+  "log2_cost": {
+    "rop": 366.39372255772025,
+    "red": 366.1062535994049,
+    "guess": 363.9250856905029,
+    "N": 238.5449098363697
+  },
+  "estimator_messages": "",
+  "elapsed_seconds": 78.25786323800003
+}

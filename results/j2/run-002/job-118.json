@@ -1,0 +1,45 @@
+{
+  "job": {
+    "scenario": "q7681-eta2",
+    "parameters": {
+      "n": 256,
+      "k": 6,
+      "q": 7681,
+      "eta": 2
+    },
+    "sample_budget": "key",
+    "samples": 1536,
+    "targets": 1,
+    "oracle": "none",
+    "shape_model": "GSA",
+    "memory_cap": "none; exponential memory allowed",
+    "tool": "ring-2026",
+    "cost_model": "MATZOV-classical",
+    "algorithm": "rot_bdd_mitm_hybrid"
+  },
+  "status": "ok",
+  "applicability": "exploratory dense-CBD use of sparse-secret rotation estimator",
+  "cost": {
+    "rop": "3.55332367560354e213",
+    "red": "1.95254377031024e178",
+    "svp": "3.55332367560354e213",
+    "beta": "1265",
+    "eta": "2",
+    "zeta": "470",
+    "|S|": "5951385127687413560715188840918968497953093609703273128266537649939855330071013720864398255385617651804544171035359097909846175549780950994650185030104561313543154944706045499019549621478513072619238604265345220954563794466036115075247059015453926885576237901320738638618387141100850366720",
+    "d": "2365",
+    "prob": "1.76840702961302e-62",
+    "repetitions": "260413474323036810946216385692301928446374254863837526931153034",
+    "tag": "hybrid",
+    "problem": "LWEParameters(n=1536, q=7681, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=1536, tag='q7681-eta2')"
+  },
+  "log2_cost": {
+    "rop": 709.3998533221145,
+    "red": 592.2685557796759,
+    "svp": 709.3998533221145,
+    "prob": -205.1370915087285,
+    "repetitions": 207.34034598142821
+  },
+  "estimator_messages": "",
+  "elapsed_seconds": 76.26372355500007
+}

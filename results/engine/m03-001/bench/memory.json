@@ -1,0 +1,30 @@
+{
+  "observations": [
+    {
+      "engine": "R1",
+      "peak_working_set_bytes": 5496832,
+      "peak_pagefile_usage_bytes": 954368,
+      "scope": "OS process peak after 1000 full round trips, before exit"
+    },
+    {
+      "engine": "ML-KEM-1024",
+      "peak_working_set_bytes": 5496832,
+      "peak_pagefile_usage_bytes": 970752,
+      "scope": "OS process peak after 1000 full round trips, before exit"
+    },
+    {
+      "engine": "R1",
+      "platform": "linux",
+      "peak_RSS_KiB": 2048,
+      "scope": "GNU time process peak, 1000 full round trips"
+    },
+    {
+      "engine": "ML-KEM-1024",
+      "platform": "linux",
+      "peak_RSS_KiB": 2048,
+      "scope": "GNU time process peak, 1000 full round trips"
+    }
+  ],
+  "algorithm_only_memory_measured": false,
+  "caveat": "RSS/working set includes executable, runtime, allocator and harness; definitions differ across OSes"
+}

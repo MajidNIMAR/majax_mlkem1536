@@ -1,0 +1,78 @@
+{
+  "protocol_commit": "63fd895",
+  "engine_source_commit": "6dae419",
+  "profile": "KEM1536-DEV-Q7681-R1",
+  "windows_and_linux_regression_equal": true,
+  "vectors_per_platform": 1000,
+  "rejections_per_platform": 10000,
+  "format_inputs_per_platform": 20000,
+  "mutations_per_platform": 10000,
+  "independently_verified_mutations": 10000,
+  "timing": {
+    "warmup": 100,
+    "observations_per_class": 2000,
+    "groups": [
+      {
+        "label": 0,
+        "count": 2000,
+        "mean_ns": 2676578.25,
+        "variance_ns": 144349759931.90344,
+        "median_ns": 2573700.0,
+        "minimum_ns": 2508500,
+        "maximum_ns": 6420700
+      },
+      {
+        "label": 1,
+        "count": 2000,
+        "mean_ns": 2648155.65,
+        "variance_ns": 74736095625.89044,
+        "median_ns": 2573950.0,
+        "minimum_ns": 2508600,
+        "maximum_ns": 5820300
+      },
+      {
+        "label": 2,
+        "count": 2000,
+        "mean_ns": 2644957.25,
+        "variance_ns": 73929220887.88144,
+        "median_ns": 2571750.0,
+        "minimum_ns": 2487700,
+        "maximum_ns": 6102200
+      }
+    ],
+    "pairs": [
+      {
+        "classes": [
+          0,
+          1
+        ],
+        "welch_t": 2.7156364610801775,
+        "threshold": 4.5,
+        "signal": false
+      },
+      {
+        "classes": [
+          0,
+          2
+        ],
+        "welch_t": 3.026806370493423,
+        "threshold": 4.5,
+        "signal": false
+      },
+      {
+        "classes": [
+          1,
+          2
+        ],
+        "welch_t": 0.3709735488790344,
+        "threshold": 4.5,
+        "signal": false
+      }
+    ],
+    "signal_detected": false,
+    "constant_time_proven": false
+  },
+  "elapsed_seconds": 285.6163929000031,
+  "security_validation": "pending",
+  "constant_time_proven": false
+}

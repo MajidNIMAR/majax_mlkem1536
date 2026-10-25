@@ -1,0 +1,450 @@
+[
+  {
+    "identifier": 0,
+    "family": "repeated",
+    "geometry_id": "6fc5d34b41ff635f4e6469abe52da2b99d175a5aac844ff6b0db443332a26f9a",
+    "N": 4,
+    "seconds": 0.02369110001018271
+  },
+  {
+    "identifier": 0,
+    "family": "repeated",
+    "geometry_id": "c2bce63b410067d4a573a0c512c89c84b84dbe17a7d6b2347b998a2d91b1d6e1",
+    "N": 8,
+    "seconds": 0.07918749999953434
+  },
+  {
+    "identifier": 0,
+    "family": "repeated",
+    "geometry_id": "7b2848b888dd92825a8eb0cda9e8b236b1647a4f01562190a2882d94a6d821dd",
+    "N": 16,
+    "seconds": 0.782463400013512
+  },
+  {
+    "identifier": 0,
+    "family": "repeated",
+    "geometry_id": "ca24c7639d3667f7eee37cb95fbafcea0b2623559fc454019d8e6b9476125340",
+    "N": 4,
+    "seconds": 0.02120160000049509
+  },
+  {
+    "identifier": 0,
+    "family": "repeated",
+    "geometry_id": "1de68c410a6163857ae92a5bb18406165adccd4e6533f1b4da818704561d15aa",
+    "N": 8,
+    "seconds": 0.07256460000644438
+  },
+  {
+    "identifier": 0,
+    "family": "repeated",
+    "geometry_id": "57942846bcec4ce298a7ce8b8f9b04a234e54ec4f9e6f3fdc50cb89971f8b2da",
+    "N": 16,
+    "seconds": 0.750941000005696
+  },
+  {
+    "identifier": 0,
+    "family": "repeated",
+    "geometry_id": "03073c5982b752b234c600b6d26d053df1fab098bc832ebc399d2ba4cd21f4fa",
+    "N": 8,
+    "seconds": 0.07792009998229332
+  },
+  {
+    "identifier": 0,
+    "family": "repeated",
+    "geometry_id": "4dacd38f2f8de6f3fb9d44e68eb0eaae093cb00641ce68289953474fd248cbba",
+    "N": 16,
+    "seconds": 0.7133815999841318
+  },
+  {
+    "identifier": 0,
+    "family": "radix",
+    "geometry_id": "6fc5d34b41ff635f4e6469abe52da2b99d175a5aac844ff6b0db443332a26f9a",
+    "N": 4,
+    "seconds": 0.021065800014184788
+  },
+  {
+    "identifier": 0,
+    "family": "radix",
+    "geometry_id": "c2bce63b410067d4a573a0c512c89c84b84dbe17a7d6b2347b998a2d91b1d6e1",
+    "N": 8,
+    "seconds": 0.07153610000386834
+  },
+  {
+    "identifier": 0,
+    "family": "radix",
+    "geometry_id": "7b2848b888dd92825a8eb0cda9e8b236b1647a4f01562190a2882d94a6d821dd",
+    "N": 16,
+    "seconds": 0.7438170000095852
+  },
+  {
+    "identifier": 0,
+    "family": "radix",
+    "geometry_id": "ca24c7639d3667f7eee37cb95fbafcea0b2623559fc454019d8e6b9476125340",
+    "N": 4,
+    "seconds": 0.021187599981203675
+  },
+  {
+    "identifier": 0,
+    "family": "radix",
+    "geometry_id": "1de68c410a6163857ae92a5bb18406165adccd4e6533f1b4da818704561d15aa",
+    "N": 8,
+    "seconds": 0.07708439999260008
+  },
+  {
+    "identifier": 0,
+    "family": "radix",
+    "geometry_id": "57942846bcec4ce298a7ce8b8f9b04a234e54ec4f9e6f3fdc50cb89971f8b2da",
+    "N": 16,
+    "seconds": 0.7356774999934714
+  },
+  {
+    "identifier": 0,
+    "family": "radix",
+    "geometry_id": "03073c5982b752b234c600b6d26d053df1fab098bc832ebc399d2ba4cd21f4fa",
+    "N": 8,
+    "seconds": 0.07096320000709966
+  },
+  {
+    "identifier": 0,
+    "family": "radix",
+    "geometry_id": "4dacd38f2f8de6f3fb9d44e68eb0eaae093cb00641ce68289953474fd248cbba",
+    "N": 16,
+    "seconds": 0.722461099998327
+  },
+  {
+    "identifier": 1,
+    "family": "repeated",
+    "geometry_id": "a945407e8f14dd28aefea30134f8319cb61d630001e64b241c2ac44c45f5be5a",
+    "N": 4,
+    "seconds": 0.02322430000640452
+  },
+  {
+    "identifier": 1,
+    "family": "repeated",
+    "geometry_id": "da0588bf7176fecf20bfb00f9e3aea6fcbdaa8d9bb5523389493bc41f167c52d",
+    "N": 8,
+    "seconds": 0.0714610000140965
+  },
+  {
+    "identifier": 1,
+    "family": "repeated",
+    "geometry_id": "fc9d2c90495d65d85a7af11fefda2ec18ba2bf9d9582f1de688d58b982899869",
+    "N": 16,
+    "seconds": 0.7160436999984086
+  },
+  {
+    "identifier": 1,
+    "family": "repeated",
+    "geometry_id": "d35420151393b4e6a8dcc31cacb6505a2c18ea097edc1b3e9b4583b4a1247b52",
+    "N": 4,
+    "seconds": 0.023488099977839738
+  },
+  {
+    "identifier": 1,
+    "family": "repeated",
+    "geometry_id": "7e9d576cef6761a6a07f1b4c882ecfc5575ccbdc8e3550c6e7be90ec6ad87c2a",
+    "N": 8,
+    "seconds": 0.07234019998577423
+  },
+  {
+    "identifier": 1,
+    "family": "repeated",
+    "geometry_id": "b201052737c9de4cd14b7c7b99038a95e4280fca8521caa287b9b0252759c4ce",
+    "N": 16,
+    "seconds": 0.7078438000171445
+  },
+  {
+    "identifier": 1,
+    "family": "repeated",
+    "geometry_id": "67b2ff90d66c7c2c362eff27f1c2c6600794471f144cf785b9d606f580e14c4f",
+    "N": 8,
+    "seconds": 0.07175599999027327
+  },
+  {
+    "identifier": 1,
+    "family": "repeated",
+    "geometry_id": "846b5f5647771998bc3f7a0bc43955288a7dfcdce25e13a707ee664532a1f8c4",
+    "N": 16,
+    "seconds": 0.7171722000057343
+  },
+  {
+    "identifier": 1,
+    "family": "radix",
+    "geometry_id": "a945407e8f14dd28aefea30134f8319cb61d630001e64b241c2ac44c45f5be5a",
+    "N": 4,
+    "seconds": 0.021313799981726333
+  },
+  {
+    "identifier": 1,
+    "family": "radix",
+    "geometry_id": "da0588bf7176fecf20bfb00f9e3aea6fcbdaa8d9bb5523389493bc41f167c52d",
+    "N": 8,
+    "seconds": 0.07236160000320524
+  },
+  {
+    "identifier": 1,
+    "family": "radix",
+    "geometry_id": "fc9d2c90495d65d85a7af11fefda2ec18ba2bf9d9582f1de688d58b982899869",
+    "N": 16,
+    "seconds": 0.699991500005126
+  },
+  {
+    "identifier": 1,
+    "family": "radix",
+    "geometry_id": "d35420151393b4e6a8dcc31cacb6505a2c18ea097edc1b3e9b4583b4a1247b52",
+    "N": 4,
+    "seconds": 0.021135399991180748
+  },
+  {
+    "identifier": 1,
+    "family": "radix",
+    "geometry_id": "7e9d576cef6761a6a07f1b4c882ecfc5575ccbdc8e3550c6e7be90ec6ad87c2a",
+    "N": 8,
+    "seconds": 0.08189150001271628
+  },
+  {
+    "identifier": 1,
+    "family": "radix",
+    "geometry_id": "b201052737c9de4cd14b7c7b99038a95e4280fca8521caa287b9b0252759c4ce",
+    "N": 16,
+    "seconds": 0.734194499993464
+  },
+  {
+    "identifier": 1,
+    "family": "radix",
+    "geometry_id": "67b2ff90d66c7c2c362eff27f1c2c6600794471f144cf785b9d606f580e14c4f",
+    "N": 8,
+    "seconds": 0.0738087999925483
+  },
+  {
+    "identifier": 1,
+    "family": "radix",
+    "geometry_id": "846b5f5647771998bc3f7a0bc43955288a7dfcdce25e13a707ee664532a1f8c4",
+    "N": 16,
+    "seconds": 0.7336656000115909
+  },
+  {
+    "identifier": 2,
+    "family": "repeated",
+    "geometry_id": "c2b87e472272ded7dccf9014e59244b89091d383a812e66ae096d8d46a4cf991",
+    "N": 4,
+    "seconds": 0.02118680000421591
+  },
+  {
+    "identifier": 2,
+    "family": "repeated",
+    "geometry_id": "0e1447f0c5c268839754a74948e05e8c31a7437a1ad046d940d2a465e2f39b7f",
+    "N": 8,
+    "seconds": 0.07106519999797456
+  },
+  {
+    "identifier": 2,
+    "family": "repeated",
+    "geometry_id": "4adec3cc581c6370d390fa6b0086a503bc85b1d97032b67f6a05f2dba957bf5a",
+    "N": 16,
+    "seconds": 0.720962600025814
+  },
+  {
+    "identifier": 2,
+    "family": "repeated",
+    "geometry_id": "2b9429fbf8cda87d16aecd1401026edfc14e246cf61275d0209518613445b8dd",
+    "N": 4,
+    "seconds": 0.021703100006561726
+  },
+  {
+    "identifier": 2,
+    "family": "repeated",
+    "geometry_id": "002ebec32ad18fe11acbabf6a7e01d1015f8fdb3f77bc8f903f92cb136492494",
+    "N": 8,
+    "seconds": 0.07175399997504428
+  },
+  {
+    "identifier": 2,
+    "family": "repeated",
+    "geometry_id": "b8c566370d3882cf361304953f8f7ddcb63fe4f86e8a34ebfe0f80d210cfd4dd",
+    "N": 16,
+    "seconds": 0.695866299996851
+  },
+  {
+    "identifier": 2,
+    "family": "repeated",
+    "geometry_id": "66fbadabc8a4745ea31cdc21808e67aab8b92c0be524cb2bdf3a1235efadf577",
+    "N": 8,
+    "seconds": 0.07178560001193546
+  },
+  {
+    "identifier": 2,
+    "family": "repeated",
+    "geometry_id": "2bb3aa175df2598482b9344428b227778b5cd3f57a014a71fece2162acee2eaf",
+    "N": 16,
+    "seconds": 0.7087898000027053
+  },
+  {
+    "identifier": 2,
+    "family": "radix",
+    "geometry_id": "c2b87e472272ded7dccf9014e59244b89091d383a812e66ae096d8d46a4cf991",
+    "N": 4,
+    "seconds": 0.02085629999055527
+  },
+  {
+    "identifier": 2,
+    "family": "radix",
+    "geometry_id": "0e1447f0c5c268839754a74948e05e8c31a7437a1ad046d940d2a465e2f39b7f",
+    "N": 8,
+    "seconds": 0.07574869997915812
+  },
+  {
+    "identifier": 2,
+    "family": "radix",
+    "geometry_id": "4adec3cc581c6370d390fa6b0086a503bc85b1d97032b67f6a05f2dba957bf5a",
+    "N": 16,
+    "seconds": 0.7319377000094391
+  },
+  {
+    "identifier": 2,
+    "family": "radix",
+    "geometry_id": "2b9429fbf8cda87d16aecd1401026edfc14e246cf61275d0209518613445b8dd",
+    "N": 4,
+    "seconds": 0.021040599996922538
+  },
+  {
+    "identifier": 2,
+    "family": "radix",
+    "geometry_id": "002ebec32ad18fe11acbabf6a7e01d1015f8fdb3f77bc8f903f92cb136492494",
+    "N": 8,
+    "seconds": 0.07247529999585822
+  },
+  {
+    "identifier": 2,
+    "family": "radix",
+    "geometry_id": "b8c566370d3882cf361304953f8f7ddcb63fe4f86e8a34ebfe0f80d210cfd4dd",
+    "N": 16,
+    "seconds": 0.6944784999941476
+  },
+  {
+    "identifier": 2,
+    "family": "radix",
+    "geometry_id": "66fbadabc8a4745ea31cdc21808e67aab8b92c0be524cb2bdf3a1235efadf577",
+    "N": 8,
+    "seconds": 0.07641800001147203
+  },
+  {
+    "identifier": 2,
+    "family": "radix",
+    "geometry_id": "2bb3aa175df2598482b9344428b227778b5cd3f57a014a71fece2162acee2eaf",
+    "N": 16,
+    "seconds": 0.7234174000041094
+  },
+  {
+    "identifier": 3,
+    "family": "repeated",
+    "geometry_id": "312db433b59aefe5663e37e0ecd2830db42d21e2fea9e3782b70c7828424ecb3",
+    "N": 4,
+    "seconds": 0.022138700005598366
+  },
+  {
+    "identifier": 3,
+    "family": "repeated",
+    "geometry_id": "c602069cae7e5095766064de4bb2aa62aaccc9fc07949c5a1cb6a0d1dd00fbd7",
+    "N": 8,
+    "seconds": 0.07600949998595752
+  },
+  {
+    "identifier": 3,
+    "family": "repeated",
+    "geometry_id": "83550ebdb81378173857fadc11c37a6ce8bc5c6228e0dd163da1db15bc8cd34c",
+    "N": 16,
+    "seconds": 0.7504221000126563
+  },
+  {
+    "identifier": 3,
+    "family": "repeated",
+    "geometry_id": "2edc0e980cbd6b26d92a4cf89f9b96c03d2b7007cd969e35c04916fa924b8955",
+    "N": 4,
+    "seconds": 0.02284040002268739
+  },
+  {
+    "identifier": 3,
+    "family": "repeated",
+    "geometry_id": "f846f7fa5df36df88a6ed476c809b85a0dca814e7b0d8e87b2adba4eacd5e6af",
+    "N": 8,
+    "seconds": 0.07212510000681505
+  },
+  {
+    "identifier": 3,
+    "family": "repeated",
+    "geometry_id": "b4ba663435a8d8f338f7b053a2204ae735ee961924b4a6755a7228bcd538814b",
+    "N": 16,
+    "seconds": 0.7281881000089925
+  },
+  {
+    "identifier": 3,
+    "family": "repeated",
+    "geometry_id": "b68afc68fd8358efc3aff5d9b9b1a2dc5e787c850a2c9ce9559ffb0584e2ffab",
+    "N": 8,
+    "seconds": 0.07294569999794476
+  },
+  {
+    "identifier": 3,
+    "family": "repeated",
+    "geometry_id": "008a84c6e0aedb6304295bc9445359c579fec952b10ba74c0bc80e7d5b98a5f0",
+    "N": 16,
+    "seconds": 0.725904500024626
+  },
+  {
+    "identifier": 3,
+    "family": "radix",
+    "geometry_id": "312db433b59aefe5663e37e0ecd2830db42d21e2fea9e3782b70c7828424ecb3",
+    "N": 4,
+    "seconds": 0.021486899990122765
+  },
+  {
+    "identifier": 3,
+    "family": "radix",
+    "geometry_id": "c602069cae7e5095766064de4bb2aa62aaccc9fc07949c5a1cb6a0d1dd00fbd7",
+    "N": 8,
+    "seconds": 0.0696847999934107
+  },
+  {
+    "identifier": 3,
+    "family": "radix",
+    "geometry_id": "83550ebdb81378173857fadc11c37a6ce8bc5c6228e0dd163da1db15bc8cd34c",
+    "N": 16,
+    "seconds": 0.7195344000065234
+  },
+  {
+    "identifier": 3,
+    "family": "radix",
+    "geometry_id": "2edc0e980cbd6b26d92a4cf89f9b96c03d2b7007cd969e35c04916fa924b8955",
+    "N": 4,
+    "seconds": 0.020780699996976182
+  },
+  {
+    "identifier": 3,
+    "family": "radix",
+    "geometry_id": "f846f7fa5df36df88a6ed476c809b85a0dca814e7b0d8e87b2adba4eacd5e6af",
+    "N": 8,
+    "seconds": 0.07434770002146251
+  },
+  {
+    "identifier": 3,
+    "family": "radix",
+    "geometry_id": "b4ba663435a8d8f338f7b053a2204ae735ee961924b4a6755a7228bcd538814b",
+    "N": 16,
+    "seconds": 0.7165157000126783
+  },
+  {
+    "identifier": 3,
+    "family": "radix",
+    "geometry_id": "b68afc68fd8358efc3aff5d9b9b1a2dc5e787c850a2c9ce9559ffb0584e2ffab",
+    "N": 8,
+    "seconds": 0.08048790000611916
+  },
+  {
+    "identifier": 3,
+    "family": "radix",
+    "geometry_id": "008a84c6e0aedb6304295bc9445359c579fec952b10ba74c0bc80e7d5b98a5f0",
+    "N": 16,
+    "seconds": 0.7260112999938428
+  }
+]

@@ -1,0 +1,1522 @@
+[
+  {
+    "experiment": "panel-0-repeated",
+    "q": 3329,
+    "values": [
+      1897,
+      2335,
+      1658,
+      3229,
+      186,
+      3284,
+      3250,
+      1545
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "label": 2589,
+    "squared_norm": 4687099
+  },
+  {
+    "experiment": "panel-0-repeated",
+    "q": 3329,
+    "values": [
+      3138,
+      915,
+      2967,
+      2260,
+      2799,
+      1889,
+      281
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "label": 2987,
+    "squared_norm": 3760856
+  },
+  {
+    "experiment": "panel-0-repeated",
+    "q": 3329,
+    "values": [
+      1435,
+      1644,
+      2390,
+      622,
+      694,
+      103,
+      2442
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "label": 1333,
+    "squared_norm": 4880997
+  },
+  {
+    "experiment": "panel-0-repeated",
+    "q": 3329,
+    "values": [
+      2681,
+      2789,
+      287,
+      1722,
+      1600,
+      791,
+      830
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "label": 577,
+    "squared_norm": 5299773
+  },
+  {
+    "experiment": "panel-0-repeated",
+    "q": 3329,
+    "values": [
+      2885,
+      1854,
+      2734,
+      1398,
+      2733,
+      132,
+      1980
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "label": 2435,
+    "squared_norm": 3053336
+  },
+  {
+    "experiment": "panel-0-repeated",
+    "q": 3329,
+    "values": [
+      1201,
+      1164,
+      144,
+      2569,
+      163,
+      290,
+      2828
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "label": 243,
+    "squared_norm": 3343960
+  },
+  {
+    "experiment": "panel-0-repeated",
+    "q": 3329,
+    "values": [
+      2003,
+      716,
+      167,
+      1256,
+      804,
+      1625,
+      2829
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "label": 867,
+    "squared_norm": 4401840
+  },
+  {
+    "experiment": "panel-0-repeated",
+    "q": 3329,
+    "values": [
+      1232,
+      2341,
+      1133,
+      380,
+      435,
+      2436,
+      2116
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "label": 1439,
+    "squared_norm": 4531924
+  },
+  {
+    "experiment": "panel-0-radix",
+    "q": 3329,
+    "values": [
+      1897,
+      2335,
+      1658,
+      3229,
+      186,
+      3284,
+      3250,
+      1545
+    ],
+    "generator": [
+      1,
+      3,
+      9,
+      27,
+      81,
+      243,
+      729,
+      2187
+    ],
+    "label": 1972,
+    "squared_norm": 701712
+  },
+  {
+    "experiment": "panel-0-radix",
+    "q": 3329,
+    "values": [
+      3138,
+      915,
+      2967,
+      2260,
+      2799,
+      1889,
+      281
+    ],
+    "generator": [
+      1,
+      3,
+      9,
+      27,
+      81,
+      243,
+      729
+    ],
+    "label": 324,
+    "squared_norm": 593451
+  },
+  {
+    "experiment": "panel-0-radix",
+    "q": 3329,
+    "values": [
+      1435,
+      1644,
+      2390,
+      622,
+      694,
+      103,
+      2442
+    ],
+    "generator": [
+      1,
+      3,
+      9,
+      27,
+      81,
+      243,
+      729
+    ],
+    "label": 1739,
+    "squared_norm": 518853
+  },
+  {
+    "experiment": "panel-0-radix",
+    "q": 3329,
+    "values": [
+      2681,
+      2789,
+      287,
+      1722,
+      1600,
+      791,
+      830
+    ],
+    "generator": [
+      1,
+      3,
+      9,
+      27,
+      81,
+      243,
+      729
+    ],
+    "label": 3019,
+    "squared_norm": 746577
+  },
+  {
+    "experiment": "panel-0-radix",
+    "q": 3329,
+    "values": [
+      2885,
+      1854,
+      2734,
+      1398,
+      2733,
+      132,
+      1980
+    ],
+    "generator": [
+      1,
+      3,
+      9,
+      27,
+      81,
+      243,
+      729
+    ],
+    "label": 2907,
+    "squared_norm": 694115
+  },
+  {
+    "experiment": "panel-0-radix",
+    "q": 3329,
+    "values": [
+      1201,
+      1164,
+      144,
+      2569,
+      163,
+      290,
+      2828
+    ],
+    "generator": [
+      1,
+      3,
+      9,
+      27,
+      81,
+      243,
+      729
+    ],
+    "label": 1438,
+    "squared_norm": 716603
+  },
+  {
+    "experiment": "panel-0-radix",
+    "q": 3329,
+    "values": [
+      2003,
+      716,
+      167,
+      1256,
+      804,
+      1625,
+      2829
+    ],
+    "generator": [
+      1,
+      3,
+      9,
+      27,
+      81,
+      243,
+      729
+    ],
+    "label": 2269,
+    "squared_norm": 706563
+  },
+  {
+    "experiment": "panel-0-radix",
+    "q": 3329,
+    "values": [
+      1232,
+      2341,
+      1133,
+      380,
+      435,
+      2436,
+      2116
+    ],
+    "generator": [
+      1,
+      3,
+      9,
+      27,
+      81,
+      243,
+      729
+    ],
+    "label": 871,
+    "squared_norm": 648003
+  },
+  {
+    "experiment": "panel-1-repeated",
+    "q": 3329,
+    "values": [
+      101,
+      947,
+      3055,
+      3177,
+      1806,
+      1708,
+      2393
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "label": 2359,
+    "squared_norm": 5025091
+  },
+  {
+    "experiment": "panel-1-repeated",
+    "q": 3329,
+    "values": [
+      2529,
+      3088,
+      2544,
+      1209,
+      2851,
+      1222,
+      3315
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "label": 2394,
+    "squared_norm": 4357260
+  },
+  {
+    "experiment": "panel-1-repeated",
+    "q": 3329,
+    "values": [
+      2624,
+      911,
+      2837,
+      1163,
+      1454,
+      220,
+      1088
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "label": 520,
+    "squared_norm": 4376079
+  },
+  {
+    "experiment": "panel-1-repeated",
+    "q": 3329,
+    "values": [
+      487,
+      3119,
+      730,
+      1404,
+      999,
+      224,
+      378
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "label": 573,
+    "squared_norm": 1676997
+  },
+  {
+    "experiment": "panel-1-repeated",
+    "q": 3329,
+    "values": [
+      1376,
+      608,
+      2438,
+      1224,
+      1836,
+      2211,
+      479
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "label": 1453,
+    "squared_norm": 3412549
+  },
+  {
+    "experiment": "panel-1-repeated",
+    "q": 3329,
+    "values": [
+      1034,
+      1635,
+      1209,
+      3062,
+      2001,
+      2689,
+      746
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "label": 1768,
+    "squared_norm": 4490376
+  },
+  {
+    "experiment": "panel-1-repeated",
+    "q": 3329,
+    "values": [
+      2961,
+      2065,
+      2135,
+      2025,
+      123,
+      976,
+      3315
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "label": 2894,
+    "squared_norm": 4502498
+  },
+  {
+    "experiment": "panel-1-repeated",
+    "q": 3329,
+    "values": [
+      1148,
+      235,
+      1026,
+      392,
+      1559,
+      2997
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "label": 671,
+    "squared_norm": 2416044
+  },
+  {
+    "experiment": "panel-1-radix",
+    "q": 3329,
+    "values": [
+      101,
+      947,
+      3055,
+      3177,
+      1806,
+      1708,
+      2393
+    ],
+    "generator": [
+      1,
+      3,
+      9,
+      27,
+      81,
+      243,
+      729
+    ],
+    "label": 350,
+    "squared_norm": 312302
+  },
+  {
+    "experiment": "panel-1-radix",
+    "q": 3329,
+    "values": [
+      2529,
+      3088,
+      2544,
+      1209,
+      2851,
+      1222,
+      3315
+    ],
+    "generator": [
+      1,
+      3,
+      9,
+      27,
+      81,
+      243,
+      729
+    ],
+    "label": 2128,
+    "squared_norm": 364532
+  },
+  {
+    "experiment": "panel-1-radix",
+    "q": 3329,
+    "values": [
+      2624,
+      911,
+      2837,
+      1163,
+      1454,
+      220,
+      1088
+    ],
+    "generator": [
+      1,
+      3,
+      9,
+      27,
+      81,
+      243,
+      729
+    ],
+    "label": 2522,
+    "squared_norm": 237528
+  },
+  {
+    "experiment": "panel-1-radix",
+    "q": 3329,
+    "values": [
+      487,
+      3119,
+      730,
+      1404,
+      999,
+      224,
+      378
+    ],
+    "generator": [
+      1,
+      3,
+      9,
+      27,
+      81,
+      243,
+      729
+    ],
+    "label": 55,
+    "squared_norm": 489150
+  },
+  {
+    "experiment": "panel-1-radix",
+    "q": 3329,
+    "values": [
+      1376,
+      608,
+      2438,
+      1224,
+      1836,
+      2211,
+      479
+    ],
+    "generator": [
+      1,
+      3,
+      9,
+      27,
+      81,
+      243,
+      729
+    ],
+    "label": 1380,
+    "squared_norm": 474638
+  },
+  {
+    "experiment": "panel-1-radix",
+    "q": 3329,
+    "values": [
+      1034,
+      1635,
+      1209,
+      3062,
+      2001,
+      2689,
+      746
+    ],
+    "generator": [
+      1,
+      3,
+      9,
+      27,
+      81,
+      243,
+      729
+    ],
+    "label": 476,
+    "squared_norm": 506247
+  },
+  {
+    "experiment": "panel-1-radix",
+    "q": 3329,
+    "values": [
+      2961,
+      2065,
+      2135,
+      2025,
+      123,
+      976,
+      3315
+    ],
+    "generator": [
+      1,
+      3,
+      9,
+      27,
+      81,
+      243,
+      729
+    ],
+    "label": 2799,
+    "squared_norm": 380894
+  },
+  {
+    "experiment": "panel-1-radix",
+    "q": 3329,
+    "values": [
+      1148,
+      235,
+      1026,
+      392,
+      1559,
+      2997
+    ],
+    "generator": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024
+    ],
+    "label": 890,
+    "squared_norm": 292006
+  },
+  {
+    "experiment": "panel-2-repeated",
+    "q": 7681,
+    "values": [
+      5496,
+      2283,
+      5642,
+      3516,
+      6584,
+      573,
+      5831
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "label": 5372,
+    "squared_norm": 23060482
+  },
+  {
+    "experiment": "panel-2-repeated",
+    "q": 7681,
+    "values": [
+      109,
+      4759,
+      6974,
+      2349,
+      7148,
+      1155,
+      2917
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "label": 338,
+    "squared_norm": 23893558
+  },
+  {
+    "experiment": "panel-2-repeated",
+    "q": 7681,
+    "values": [
+      2402,
+      6375,
+      4513,
+      4578,
+      7566,
+      2364,
+      5306
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "label": 4729,
+    "squared_norm": 22168425
+  },
+  {
+    "experiment": "panel-2-repeated",
+    "q": 7681,
+    "values": [
+      2229,
+      6220,
+      5803,
+      4868,
+      7114,
+      2379,
+      2788
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "label": 4486,
+    "squared_norm": 24210255
+  },
+  {
+    "experiment": "panel-2-repeated",
+    "q": 7681,
+    "values": [
+      6986,
+      3464,
+      1984,
+      3730,
+      5903,
+      470,
+      5234
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "label": 5065,
+    "squared_norm": 27782429
+  },
+  {
+    "experiment": "panel-2-repeated",
+    "q": 7681,
+    "values": [
+      3360,
+      5566,
+      7657,
+      6954,
+      2077,
+      2754,
+      7295
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "label": 706,
+    "squared_norm": 24854555
+  },
+  {
+    "experiment": "panel-2-repeated",
+    "q": 7681,
+    "values": [
+      7303,
+      4672,
+      669,
+      3964,
+      7458,
+      4902,
+      942
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "label": 6467,
+    "squared_norm": 21811261
+  },
+  {
+    "experiment": "panel-2-repeated",
+    "q": 7681,
+    "values": [
+      946,
+      1491,
+      6731,
+      6236,
+      4973,
+      3321
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "label": 6510,
+    "squared_norm": 24223940
+  },
+  {
+    "experiment": "panel-2-radix",
+    "q": 7681,
+    "values": [
+      5496,
+      2283,
+      5642,
+      3516,
+      6584,
+      573,
+      5831
+    ],
+    "generator": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024,
+      4096
+    ],
+    "label": 6173,
+    "squared_norm": 3761519
+  },
+  {
+    "experiment": "panel-2-radix",
+    "q": 7681,
+    "values": [
+      109,
+      4759,
+      6974,
+      2349,
+      7148,
+      1155,
+      2917
+    ],
+    "generator": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024,
+      4096
+    ],
+    "label": 1351,
+    "squared_norm": 3479303
+  },
+  {
+    "experiment": "panel-2-radix",
+    "q": 7681,
+    "values": [
+      2402,
+      6375,
+      4513,
+      4578,
+      7566,
+      2364,
+      5306
+    ],
+    "generator": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024,
+      4096
+    ],
+    "label": 1736,
+    "squared_norm": 3925616
+  },
+  {
+    "experiment": "panel-2-radix",
+    "q": 7681,
+    "values": [
+      2229,
+      6220,
+      5803,
+      4868,
+      7114,
+      2379,
+      2788
+    ],
+    "generator": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024,
+      4096
+    ],
+    "label": 1765,
+    "squared_norm": 3564957
+  },
+  {
+    "experiment": "panel-2-radix",
+    "q": 7681,
+    "values": [
+      6986,
+      3464,
+      1984,
+      3730,
+      5903,
+      470,
+      5234
+    ],
+    "generator": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024,
+      4096
+    ],
+    "label": 6893,
+    "squared_norm": 3391225
+  },
+  {
+    "experiment": "panel-2-radix",
+    "q": 7681,
+    "values": [
+      3360,
+      5566,
+      7657,
+      6954,
+      2077,
+      2754,
+      7295
+    ],
+    "generator": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024,
+      4096
+    ],
+    "label": 3340,
+    "squared_norm": 2346469
+  },
+  {
+    "experiment": "panel-2-radix",
+    "q": 7681,
+    "values": [
+      7303,
+      4672,
+      669,
+      3964,
+      7458,
+      4902,
+      942
+    ],
+    "generator": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024,
+      4096
+    ],
+    "label": 6779,
+    "squared_norm": 2499045
+  },
+  {
+    "experiment": "panel-2-radix",
+    "q": 7681,
+    "values": [
+      946,
+      1491,
+      6731,
+      6236,
+      4973,
+      3321
+    ],
+    "generator": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024
+    ],
+    "label": 468,
+    "squared_norm": 1640744
+  },
+  {
+    "experiment": "panel-3-repeated",
+    "q": 7681,
+    "values": [
+      2011,
+      1670,
+      2470,
+      5085,
+      433,
+      550,
+      2441
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "label": 2094,
+    "squared_norm": 14537388
+  },
+  {
+    "experiment": "panel-3-repeated",
+    "q": 7681,
+    "values": [
+      1014,
+      1334,
+      6886,
+      4144,
+      7394,
+      2643,
+      1619
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "label": 1382,
+    "squared_norm": 16937552
+  },
+  {
+    "experiment": "panel-3-repeated",
+    "q": 7681,
+    "values": [
+      747,
+      935,
+      2851,
+      4298,
+      1589,
+      89,
+      7225
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "label": 1436,
+    "squared_norm": 16336473
+  },
+  {
+    "experiment": "panel-3-repeated",
+    "q": 7681,
+    "values": [
+      4115,
+      3652,
+      2809,
+      3770,
+      2350,
+      3466,
+      4211
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "label": 3482,
+    "squared_norm": 2778583
+  },
+  {
+    "experiment": "panel-3-repeated",
+    "q": 7681,
+    "values": [
+      669,
+      561,
+      2736,
+      3560,
+      297,
+      7013,
+      2195
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "label": 1336,
+    "squared_norm": 13785108
+  },
+  {
+    "experiment": "panel-3-repeated",
+    "q": 7681,
+    "values": [
+      5943,
+      6841,
+      4184,
+      4915,
+      3521,
+      5376
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "label": 5130,
+    "squared_norm": 7179028
+  },
+  {
+    "experiment": "panel-3-repeated",
+    "q": 7681,
+    "values": [
+      3607,
+      1956,
+      2952,
+      2996,
+      5377,
+      622
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "label": 2918,
+    "squared_norm": 12725702
+  },
+  {
+    "experiment": "panel-3-repeated",
+    "q": 7681,
+    "values": [
+      826,
+      4562,
+      4742,
+      22,
+      4503,
+      1025
+    ],
+    "generator": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "label": 6454,
+    "squared_norm": 21163323
+  },
+  {
+    "experiment": "panel-3-radix",
+    "q": 7681,
+    "values": [
+      2011,
+      1670,
+      2470,
+      5085,
+      433,
+      550,
+      2441
+    ],
+    "generator": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024,
+      4096
+    ],
+    "label": 2491,
+    "squared_norm": 2356184
+  },
+  {
+    "experiment": "panel-3-radix",
+    "q": 7681,
+    "values": [
+      1014,
+      1334,
+      6886,
+      4144,
+      7394,
+      2643,
+      1619
+    ],
+    "generator": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024,
+      4096
+    ],
+    "label": 415,
+    "squared_norm": 2470215
+  },
+  {
+    "experiment": "panel-3-radix",
+    "q": 7681,
+    "values": [
+      747,
+      935,
+      2851,
+      4298,
+      1589,
+      89,
+      7225
+    ],
+    "generator": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024,
+      4096
+    ],
+    "label": 180,
+    "squared_norm": 3265630
+  },
+  {
+    "experiment": "panel-3-radix",
+    "q": 7681,
+    "values": [
+      4115,
+      3652,
+      2809,
+      3770,
+      2350,
+      3466,
+      4211
+    ],
+    "generator": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024,
+      4096
+    ],
+    "label": 4511,
+    "squared_norm": 2032274
+  },
+  {
+    "experiment": "panel-3-radix",
+    "q": 7681,
+    "values": [
+      669,
+      561,
+      2736,
+      3560,
+      297,
+      7013,
+      2195
+    ],
+    "generator": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024,
+      4096
+    ],
+    "label": 179,
+    "squared_norm": 2458051
+  },
+  {
+    "experiment": "panel-3-radix",
+    "q": 7681,
+    "values": [
+      5943,
+      6841,
+      4184,
+      4915,
+      3521,
+      5376
+    ],
+    "generator": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024
+    ],
+    "label": 5594,
+    "squared_norm": 1190950
+  },
+  {
+    "experiment": "panel-3-radix",
+    "q": 7681,
+    "values": [
+      3607,
+      1956,
+      2952,
+      2996,
+      5377,
+      622
+    ],
+    "generator": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024
+    ],
+    "label": 4494,
+    "squared_norm": 1911140
+  },
+  {
+    "experiment": "panel-3-radix",
+    "q": 7681,
+    "values": [
+      826,
+      4562,
+      4742,
+      22,
+      4503,
+      1025
+    ],
+    "generator": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024
+    ],
+    "label": 1216,
+    "squared_norm": 1873650
+  }
+]

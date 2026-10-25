@@ -1,0 +1,45 @@
+{
+  "job": {
+    "scenario": "q7681-eta3",
+    "parameters": {
+      "n": 256,
+      "k": 6,
+      "q": 7681,
+      "eta": 3
+    },
+    "sample_budget": "extended",
+    "samples": 1792,
+    "targets": 1,
+    "oracle": "none",
+    "shape_model": "GSA",
+    "memory_cap": "none; exponential memory allowed",
+    "tool": "community",
+    "cost_model": "MATZOV-classical",
+    "algorithm": "bdd_hybrid"
+  },
+  "status": "ok",
+  "applicability": "heuristic LWE estimator model",
+  "cost": {
+    "rop": "7.80594260452424e119",
+    "red": "3.81441904908155e119",
+    "svp": "3.99152355544269e119",
+    "beta": "1307",
+    "eta": "1344",
+    "zeta": "0",
+    "|S|": "1",
+    "d": "2875",
+    "prob": "1.0",
+    "repetitions": "1",
+    "tag": "hybrid",
+    "problem": "LWEParameters(n=1536, q=7681, Xs=D(\u03c3=1.22), Xe=D(\u03c3=1.22), m=1792, tag='q7681-eta3')"
+  },
+  "log2_cost": {
+    "rop": 398.2740161465748,
+    "red": 397.24090663729777,
+    "svp": 397.30638281657446,
+    "prob": 0.0,
+    "repetitions": 0.0
+  },
+  "estimator_messages": "",
+  "elapsed_seconds": 72.46820842600027
+}

@@ -1,0 +1,9 @@
+{
+  "project_arithmetic_imported": false,
+  "matrices": 4,
+  "literal_CBD_bit_strings": 65536,
+  "panels": 32,
+  "complete_guess_scores": 80608,
+  "all_exact_laws_and_events_matched": true,
+  "maximum_absolute_moment_delta": 1.6930901125533637e-15
+}

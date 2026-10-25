@@ -1,0 +1,24 @@
+{
+  "retrieved_date": "2026-10-24",
+  "scope": "static source inspection only; no binary, pickle or external code executed",
+  "sources": [
+    {
+      "file": "rot_utilitaries.py.txt",
+      "url": "https://raw.githubusercontent.com/TabOg/CodedDualAttack/7b7e8000071b5379048af92e5b49a84881f7e8f8/OptimizeCodedDualAttack/rot_utilitaries.py",
+      "commit": "7b7e8000071b5379048af92e5b49a84881f7e8f8",
+      "sha256": "51368ebd08039166ab1c50e3d9e9f575391b40c73c9247e680f160f9bd9c97b1"
+    },
+    {
+      "file": "optimizer_naive.py.txt",
+      "url": "https://github.com/TabOg/CodedDualAttack/blob/e2104ca50a293ed09b8fcec703cd2b143d21bee8/OptimizeCodedDualAttack/optimizer_naive.py",
+      "commit": "e2104ca50a293ed09b8fcec703cd2b143d21bee8",
+      "sha256": "7ce311855f9178378c0c9eb6d832f72ea229961d9e3a29afbc430e185322c1b7"
+    },
+    {
+      "file": "utilitaries.py.txt",
+      "url": "https://github.com/TabOg/CodedDualAttack/blob/e2104ca50a293ed09b8fcec703cd2b143d21bee8/OptimizeCodedDualAttack/utilitaries.py",
+      "commit": "e2104ca50a293ed09b8fcec703cd2b143d21bee8",
+      "sha256": "e115cc99e0c688ac6cb4fed847be1678e013c3a48b3028ed86a19f8ef425c49d"
+    }
+  ]
+}

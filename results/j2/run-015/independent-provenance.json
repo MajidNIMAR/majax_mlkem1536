@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-10-24T22:44:56.014643+00:00",
+  "input_sha256": {
+    "research/verify_higher_cbd_independent.py": "04fe8851ffca0aeedf543298b06db4f2c77627db6e80d5ff594341c5db00b8ab",
+    "research/requirements-cbd-dimensions.txt": "a3315a771dfccf635c0341eddf2b41e4239d0a50b879cd1a8fcf91e6f76dd875",
+    "results/j2/run-013/transcendental-tables.json": "32f168e89bc11b42d8e8e2df3a1e5f287118357b64ca9675767855c09c8c1aeb",
+    "results/j2/run-015/cases.json": "746678a9cbebf05ceee7c6ddbc75619d8107bb8be1c5ecc30ce547d6982e66f4",
+    "results/j2/run-015/panels.json": "ec38d1861dffd1dbc257b4100d9eb5740ccbdc255c7db5f1f8d6968cafd3b902",
+    "results/j2/run-015/laws.json": "df08e1a5c1e23c63a6bc01471e0ef05009a94afb557f58164f3cc538317fecce",
+    "results/j2/run-015/banks.jsonl": "45f1e34beabf652074c735234d933bf6e8418eeb32c616c1d4bac7610bd665b9"
+  },
+  "output_sha256": {
+    "independent-verification.json": "e1993f0e67a1ca684ad530cc0c4c505fe160b2bc6f2d9b2e8905043b0ea1bdb6"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "method": "mpmath.iv outward interval arithmetic; no Sage or project arithmetic import",
+  "decimal_digits": 160,
+  "tables": 4,
+  "weights_verified": 5513,
+  "all_passed": true
+}

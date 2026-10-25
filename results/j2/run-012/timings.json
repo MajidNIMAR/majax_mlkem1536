@@ -1,0 +1,243 @@
+{
+  "environment": {
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "python": "3.12.15",
+    "numpy": "2.5.4",
+    "processor": "x86_64"
+  },
+  "measurements": [
+    {
+      "experiment": "panel-0-repeated",
+      "batch_size": 8,
+      "batches_ns": {
+        "euclidean": [
+          20698631,
+          20050171,
+          19601810,
+          20960611,
+          20028100,
+          20212375,
+          20204182
+        ],
+        "cbd": [
+          27872458,
+          28004514,
+          27006428,
+          29209306,
+          29061566,
+          28765704,
+          28503130
+        ]
+      },
+      "median_ns_per_decode": {
+        "euclidean": 2525522.75,
+        "cbd": 3562891.25
+      },
+      "includes": "validation, lookup, full symbol enumeration, selection; CBD certificate bookkeeping; warm tables"
+    },
+    {
+      "experiment": "panel-0-radix",
+      "batch_size": 8,
+      "batches_ns": {
+        "euclidean": [
+          19496679,
+          20009775,
+          20864268,
+          19141410,
+          19173716,
+          19686661,
+          20056276
+        ],
+        "cbd": [
+          26204192,
+          26887677,
+          26143837,
+          26200729,
+          26642307,
+          26940481,
+          26775596
+        ]
+      },
+      "median_ns_per_decode": {
+        "euclidean": 2460832.625,
+        "cbd": 3330288.375
+      },
+      "includes": "validation, lookup, full symbol enumeration, selection; CBD certificate bookkeeping; warm tables"
+    },
+    {
+      "experiment": "panel-1-repeated",
+      "batch_size": 8,
+      "batches_ns": {
+        "euclidean": [
+          19784070,
+          19600984,
+          19526337,
+          19354474,
+          19158742,
+          19168086,
+          20558045
+        ],
+        "cbd": [
+          26734194,
+          26583281,
+          26357612,
+          25816107,
+          25754158,
+          26376662,
+          26384050
+        ]
+      },
+      "median_ns_per_decode": {
+        "euclidean": 2440792.125,
+        "cbd": 3297082.75
+      },
+      "includes": "validation, lookup, full symbol enumeration, selection; CBD certificate bookkeeping; warm tables"
+    },
+    {
+      "experiment": "panel-1-radix",
+      "batch_size": 8,
+      "batches_ns": {
+        "euclidean": [
+          20143724,
+          19442613,
+          19737460,
+          19355855,
+          19140228,
+          19451425,
+          19399512
+        ],
+        "cbd": [
+          26990375,
+          26274348,
+          28429624,
+          28806248,
+          26251765,
+          25921728,
+          26268240
+        ]
+      },
+      "median_ns_per_decode": {
+        "euclidean": 2430326.625,
+        "cbd": 3284293.5
+      },
+      "includes": "validation, lookup, full symbol enumeration, selection; CBD certificate bookkeeping; warm tables"
+    },
+    {
+      "experiment": "panel-2-repeated",
+      "batch_size": 8,
+      "batches_ns": {
+        "euclidean": [
+          60000201,
+          58669995,
+          60489327,
+          58558706,
+          57509083,
+          58548055,
+          57921373
+        ],
+        "cbd": [
+          71653794,
+          71619196,
+          74906478,
+          75293442,
+          70608942,
+          76019929,
+          70211739
+        ]
+      },
+      "median_ns_per_decode": {
+        "euclidean": 7319838.25,
+        "cbd": 8956724.25
+      },
+      "includes": "validation, lookup, full symbol enumeration, selection; CBD certificate bookkeeping; warm tables"
+    },
+    {
+      "experiment": "panel-2-radix",
+      "batch_size": 8,
+      "batches_ns": {
+        "euclidean": [
+          59031513,
+          56398571,
+          57377638,
+          55840108,
+          56139449,
+          58795267,
+          60683894
+        ],
+        "cbd": [
+          69999803,
+          70135032,
+          72575053,
+          71311801,
+          72731879,
+          77022293,
+          75615490
+        ]
+      },
+      "median_ns_per_decode": {
+        "euclidean": 7172204.75,
+        "cbd": 9071881.625
+      },
+      "includes": "validation, lookup, full symbol enumeration, selection; CBD certificate bookkeeping; warm tables"
+    },
+    {
+      "experiment": "panel-3-repeated",
+      "batch_size": 8,
+      "batches_ns": {
+        "euclidean": [
+          58783416,
+          56284584,
+          53844466,
+          53529447,
+          52688153,
+          54497989,
+          53361334
+        ],
+        "cbd": [
+          71526743,
+          70612980,
+          67976100,
+          71365635,
+          66303923,
+          66639080,
+          67642425
+        ]
+      },
+      "median_ns_per_decode": {
+        "euclidean": 6730558.25,
+        "cbd": 8497012.5
+      },
+      "includes": "validation, lookup, full symbol enumeration, selection; CBD certificate bookkeeping; warm tables"
+    },
+    {
+      "experiment": "panel-3-radix",
+      "batch_size": 8,
+      "batches_ns": {
+        "euclidean": [
+          54462281,
+          52828542,
+          53269800,
+          57125074,
+          53182937,
+          54717385,
+          54600028
+        ],
+        "cbd": [
+          67856877,
+          66312303,
+          66039440,
+          68229277,
+          67997767,
+          72502490,
+          70506057
+        ]
+      },
+      "median_ns_per_decode": {
+        "euclidean": 6807785.125,
+        "cbd": 8499720.875
+      },
+      "includes": "validation, lookup, full symbol enumeration, selection; CBD certificate bookkeeping; warm tables"
+    }
+  ],
+  "limits": "local paired warm-cache timings, not rop or complete attack costs"
+}

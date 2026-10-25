@@ -1,0 +1,20 @@
+{
+  "created_utc": "2026-10-24T15:44:49.645136+00:00",
+  "python": "3.13.7",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "input_sha256": {
+    "research/mixed_precision.py": "a8f37b597cce159e346074e2f08745bbf23266effb8476bf7738e8e6b3afb4f5",
+    "research/test_mixed_precision.py": "ca2b7b1685d5f9a676ceee9437a445cc1adbb66f10862d40a12d94fc6021a16a",
+    "research/run_mixed_precision.py": "00807ed60f0efeb7cec229955974ce9172c7dfbece71a13b3cd588a14c462357",
+    "research/verify_mixed_precision_results.py": "817751aa71816aea5c0f1844f3e7e825894153e468d3f46ae8378dfcf1d921bb",
+    "research/witness_chernoff.py": "7d417339872601326faa80a3cd6911003cf092c29c0aeac967ebde42ee516434",
+    "research/noise_exact.py": "702d63dd736892cb1b273268087aecaadac06d5c5df4c3c093f909b98ede271e",
+    "profiles/kem1536-p0.toml": "ec07497ccab9150a982ecc882b8d1890d8dda18c4150e22f86cff70735e22740",
+    "results/j2/run-004/correctness-certificate.json": "52b005bd7575b56326730f44ccaeae689e5552c1068f4df201d97e0d16969e06"
+  },
+  "output_sha256": {
+    "mixed-precision.json": "0f24a88cb75ebc5bb34807c9bd621eb96c83d6e0ed8f2a57433bc1578bf674ca",
+    "winner-certificate.json": "cb118e1b85373f05a53174c1d3e5b3d20ccec827906620675a7717c411526a5b",
+    "screening.json": "e6e42eff17df040785408527b6285d4f738d9a0e1488188d55a7051cc4555f31"
+  }
+}

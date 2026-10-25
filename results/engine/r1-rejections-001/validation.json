@@ -1,0 +1,11 @@
+{
+  "profile": "KEM1536-DEV-Q7681-R1",
+  "paired_rejections": 10000,
+  "accepted_in_independent_reference": 0,
+  "all_replacement_secrets_equal": true,
+  "ciphertext_and_replacement_sha256": "43b202c5974c37186c1c4650ae1cd6782fe44772c8cdaee190938186e2e20fc0",
+  "synthetic_case0_key_only": true,
+  "elapsed_seconds": 84.5028081999917,
+  "security_validation": "pending",
+  "j3_validated": false
+}

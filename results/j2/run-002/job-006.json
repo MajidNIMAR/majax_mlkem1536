@@ -1,0 +1,37 @@
+{
+  "job": {
+    "scenario": "q7681-eta2",
+    "parameters": {
+      "n": 256,
+      "k": 6,
+      "q": 7681,
+      "eta": 2
+    },
+    "sample_budget": "key",
+    "samples": 1536,
+    "targets": 1,
+    "oracle": "none",
+    "shape_model": "GSA",
+    "memory_cap": "none; exponential memory allowed",
+    "tool": "community",
+    "cost_model": "BCSS23-quantum-asymptotic",
+    "algorithm": "usvp"
+  },
+  "status": "ok",
+  "applicability": "heuristic LWE estimator model",
+  "cost": {
+    "rop": "3.97919002441970e97",
+    "red": "3.97919002441970e97",
+    "delta": "1.00170695430606",
+    "beta": "1265",
+    "d": "2772",
+    "tag": "usvp",
+    "problem": "LWEParameters(n=1536, q=7681, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=1536, tag='q7681-eta2')"
+  },
+  "log2_cost": {
+    "rop": 324.2195,
+    "red": 324.2195
+  },
+  "estimator_messages": "",
+  "elapsed_seconds": 5.839173190999645
+}

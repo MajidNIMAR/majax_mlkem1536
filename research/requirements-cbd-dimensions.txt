@@ -1,0 +1,2 @@
+# Exact finite-group laws and vectorized full-score verification for H08.
+numpy==2.3.5

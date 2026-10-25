@@ -1,0 +1,15 @@
+{
+  "project_arithmetic_imported": false,
+  "numpy": "2.3.5",
+  "matrices": 4,
+  "greedy_costs_verified": 33024,
+  "exact_uniform_laws_verified": 28,
+  "LWE_panels_verified": 56,
+  "numerical_CBD_moments_verified": 224,
+  "unique_phase_identities_verified": 4194304,
+  "H10_uniform_calibrations": 12,
+  "H10_CBD_calibrations": 96,
+  "all_selected_sample_events_and_hashes_matched": true,
+  "maximum_absolute_numeric_delta": 5.684341886080802e-14,
+  "maximum_mean_error_over_true_bias_scale": 2.840764309695734e-14
+}

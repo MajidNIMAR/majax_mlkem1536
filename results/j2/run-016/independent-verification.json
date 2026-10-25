@@ -1,0 +1,10 @@
+{
+  "project_arithmetic_imported": false,
+  "decimal_digits": 90,
+  "points_verified": 4,
+  "residuals_verified": 2048,
+  "numeric_fields_verified": 192,
+  "maximum_absolute_delta": 9.298973104991545e-12,
+  "normal_tail_method": "Mills brackets and integrated Taylor series",
+  "code_integral_method": "alternating exponential series"
+}

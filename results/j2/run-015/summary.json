@@ -1,0 +1,2800 @@
+{
+  "matrices": 16,
+  "panels": 1152,
+  "distinct_score_banks": 155,
+  "law_groups": 96,
+  "comparisons": [
+    {
+      "dimension": 3,
+      "source": "reference",
+      "N": 4,
+      "family": "repeated",
+      "eta": 1,
+      "matrices": 8,
+      "CBD_wins": 2,
+      "CBD_losses": 2,
+      "identical_successes": 4,
+      "mean_improves_ranking_degrades": 2,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 9839,
+          "denominator": 65536,
+          "value": 0.1501312255859375
+        },
+        "cbd": {
+          "numerator": 9571,
+          "denominator": 65536,
+          "value": 0.1460418701171875
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 1239,
+          "denominator": 8192,
+          "value": 0.1512451171875
+        },
+        "cbd": {
+          "numerator": 19409,
+          "denominator": 131072,
+          "value": 0.14807891845703125
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "source": "reference",
+      "N": 4,
+      "family": "repeated",
+      "eta": 2,
+      "matrices": 8,
+      "CBD_wins": 2,
+      "CBD_losses": 2,
+      "identical_successes": 4,
+      "mean_improves_ranking_degrades": 2,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 90888563,
+          "denominator": 1073741824,
+          "value": 0.08464657049626112
+        },
+        "cbd": {
+          "numerator": 88996115,
+          "denominator": 1073741824,
+          "value": 0.0828840909525752
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 45822951,
+          "denominator": 536870912,
+          "value": 0.08535189740359783
+        },
+        "cbd": {
+          "numerator": 90208375,
+          "denominator": 1073741824,
+          "value": 0.08401309605687857
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "source": "reference",
+      "N": 4,
+      "family": "repeated",
+      "eta": 3,
+      "matrices": 8,
+      "CBD_wins": 2,
+      "CBD_losses": 2,
+      "identical_successes": 4,
+      "mean_improves_ranking_degrades": 2,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 611030734853,
+          "denominator": 8796093022208,
+          "value": 0.0694661519961528
+        },
+        "cbd": {
+          "numerator": 1200291932913,
+          "denominator": 17592186044416,
+          "value": 0.06822869709782253
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 2465274141789,
+          "denominator": 35184372088832,
+          "value": 0.07006730532421557
+        },
+        "cbd": {
+          "numerator": 1215678197333,
+          "denominator": 17592186044416,
+          "value": 0.06910330497095174
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "source": "reference",
+      "N": 4,
+      "family": "radix",
+      "eta": 1,
+      "matrices": 8,
+      "CBD_wins": 0,
+      "CBD_losses": 0,
+      "identical_successes": 8,
+      "mean_improves_ranking_degrades": 0,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 7801,
+          "denominator": 32768,
+          "value": 0.238067626953125
+        },
+        "cbd": {
+          "numerator": 7801,
+          "denominator": 32768,
+          "value": 0.238067626953125
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 15703,
+          "denominator": 65536,
+          "value": 0.2396087646484375
+        },
+        "cbd": {
+          "numerator": 15703,
+          "denominator": 65536,
+          "value": 0.2396087646484375
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "source": "reference",
+      "N": 4,
+      "family": "radix",
+      "eta": 2,
+      "matrices": 8,
+      "CBD_wins": 0,
+      "CBD_losses": 0,
+      "identical_successes": 8,
+      "mean_improves_ranking_degrades": 0,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 125853731,
+          "denominator": 1073741824,
+          "value": 0.11721042077988386
+        },
+        "cbd": {
+          "numerator": 125853731,
+          "denominator": 1073741824,
+          "value": 0.11721042077988386
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 126809289,
+          "denominator": 1073741824,
+          "value": 0.11810035351663828
+        },
+        "cbd": {
+          "numerator": 126809289,
+          "denominator": 1073741824,
+          "value": 0.11810035351663828
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "source": "reference",
+      "N": 4,
+      "family": "radix",
+      "eta": 3,
+      "matrices": 8,
+      "CBD_wins": 0,
+      "CBD_losses": 0,
+      "identical_successes": 8,
+      "mean_improves_ranking_degrades": 0,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 1440582720229,
+          "denominator": 17592186044416,
+          "value": 0.08188764696961925
+        },
+        "cbd": {
+          "numerator": 1440582720229,
+          "denominator": 17592186044416,
+          "value": 0.08188764696961925
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 2905117406333,
+          "denominator": 35184372088832,
+          "value": 0.08256840278400546
+        },
+        "cbd": {
+          "numerator": 2905117406333,
+          "denominator": 35184372088832,
+          "value": 0.08256840278400546
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "source": "reference",
+      "N": 8,
+      "family": "repeated",
+      "eta": 1,
+      "matrices": 8,
+      "CBD_wins": 2,
+      "CBD_losses": 4,
+      "identical_successes": 2,
+      "mean_improves_ranking_degrades": 4,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 1569,
+          "denominator": 8192,
+          "value": 0.1915283203125
+        },
+        "cbd": {
+          "numerator": 12311,
+          "denominator": 65536,
+          "value": 0.1878509521484375
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 1571,
+          "denominator": 8192,
+          "value": 0.1917724609375
+        },
+        "cbd": {
+          "numerator": 12311,
+          "denominator": 65536,
+          "value": 0.1878509521484375
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "source": "reference",
+      "N": 8,
+      "family": "repeated",
+      "eta": 2,
+      "matrices": 8,
+      "CBD_wins": 3,
+      "CBD_losses": 3,
+      "identical_successes": 2,
+      "mean_improves_ranking_degrades": 3,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 13198647,
+          "denominator": 134217728,
+          "value": 0.0983375832438469
+        },
+        "cbd": {
+          "numerator": 101050925,
+          "denominator": 1073741824,
+          "value": 0.09411100763827562
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 26431277,
+          "denominator": 268435456,
+          "value": 0.09846417978405952
+        },
+        "cbd": {
+          "numerator": 101050925,
+          "denominator": 1073741824,
+          "value": 0.09411100763827562
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "source": "reference",
+      "N": 8,
+      "family": "repeated",
+      "eta": 3,
+      "matrices": 8,
+      "CBD_wins": 3,
+      "CBD_losses": 3,
+      "identical_successes": 2,
+      "mean_improves_ranking_degrades": 3,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 668390613515,
+          "denominator": 8796093022208,
+          "value": 0.07598721521333118
+        },
+        "cbd": {
+          "numerator": 1283311560037,
+          "denominator": 17592186044416,
+          "value": 0.07294781653610016
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 334597569031,
+          "denominator": 4398046511104,
+          "value": 0.07607867906494903
+        },
+        "cbd": {
+          "numerator": 1283311560037,
+          "denominator": 17592186044416,
+          "value": 0.07294781653610016
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "source": "reference",
+      "N": 8,
+      "family": "radix",
+      "eta": 1,
+      "matrices": 8,
+      "CBD_wins": 0,
+      "CBD_losses": 1,
+      "identical_successes": 7,
+      "mean_improves_ranking_degrades": 1,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 10229,
+          "denominator": 32768,
+          "value": 0.312164306640625
+        },
+        "cbd": {
+          "numerator": 20151,
+          "denominator": 65536,
+          "value": 0.3074798583984375
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 5123,
+          "denominator": 16384,
+          "value": 0.31268310546875
+        },
+        "cbd": {
+          "numerator": 20185,
+          "denominator": 65536,
+          "value": 0.3079986572265625
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "source": "reference",
+      "N": 8,
+      "family": "radix",
+      "eta": 2,
+      "matrices": 8,
+      "CBD_wins": 0,
+      "CBD_losses": 1,
+      "identical_successes": 7,
+      "mean_improves_ranking_degrades": 1,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 141625909,
+          "denominator": 1073741824,
+          "value": 0.13189940620213747
+        },
+        "cbd": {
+          "numerator": 70402205,
+          "denominator": 536870912,
+          "value": 0.13113432563841343
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 141875029,
+          "denominator": 1073741824,
+          "value": 0.13213141728192568
+        },
+        "cbd": {
+          "numerator": 70526765,
+          "denominator": 536870912,
+          "value": 0.13136633671820164
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "source": "reference",
+      "N": 8,
+      "family": "radix",
+      "eta": 3,
+      "matrices": 8,
+      "CBD_wins": 0,
+      "CBD_losses": 1,
+      "identical_successes": 7,
+      "mean_improves_ranking_degrades": 1,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 751548147093,
+          "denominator": 8796093022208,
+          "value": 0.0854411322385431
+        },
+        "cbd": {
+          "numerator": 93847089453,
+          "denominator": 1099511627776,
+          "value": 0.08535343063431355
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 3011535916833,
+          "denominator": 35184372088832,
+          "value": 0.08559299876745285
+        },
+        "cbd": {
+          "numerator": 3008450190957,
+          "denominator": 35184372088832,
+          "value": 0.0855052971632233
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "source": "reference",
+      "N": 12,
+      "family": "repeated",
+      "eta": 1,
+      "matrices": 8,
+      "CBD_wins": 4,
+      "CBD_losses": 3,
+      "identical_successes": 1,
+      "mean_improves_ranking_degrades": 3,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 14067,
+          "denominator": 65536,
+          "value": 0.2146453857421875
+        },
+        "cbd": {
+          "numerator": 3709,
+          "denominator": 16384,
+          "value": 0.22637939453125
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 14067,
+          "denominator": 65536,
+          "value": 0.2146453857421875
+        },
+        "cbd": {
+          "numerator": 3709,
+          "denominator": 16384,
+          "value": 0.22637939453125
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "source": "reference",
+      "N": 12,
+      "family": "repeated",
+      "eta": 2,
+      "matrices": 8,
+      "CBD_wins": 4,
+      "CBD_losses": 3,
+      "identical_successes": 1,
+      "mean_improves_ranking_degrades": 3,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 56228079,
+          "denominator": 536870912,
+          "value": 0.10473295859992504
+        },
+        "cbd": {
+          "numerator": 59014079,
+          "denominator": 536870912,
+          "value": 0.10992228798568249
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 56228079,
+          "denominator": 536870912,
+          "value": 0.10473295859992504
+        },
+        "cbd": {
+          "numerator": 59014079,
+          "denominator": 536870912,
+          "value": 0.10992228798568249
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "source": "reference",
+      "N": 12,
+      "family": "repeated",
+      "eta": 3,
+      "matrices": 8,
+      "CBD_wins": 4,
+      "CBD_losses": 3,
+      "identical_successes": 1,
+      "mean_improves_ranking_degrades": 3,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 694639302985,
+          "denominator": 8796093022208,
+          "value": 0.07897134571351216
+        },
+        "cbd": {
+          "numerator": 90443604373,
+          "denominator": 1099511627776,
+          "value": 0.08225797898649034
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 694639302985,
+          "denominator": 8796093022208,
+          "value": 0.07897134571351216
+        },
+        "cbd": {
+          "numerator": 90443604373,
+          "denominator": 1099511627776,
+          "value": 0.08225797898649034
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "source": "reference",
+      "N": 12,
+      "family": "radix",
+      "eta": 1,
+      "matrices": 8,
+      "CBD_wins": 0,
+      "CBD_losses": 1,
+      "identical_successes": 7,
+      "mean_improves_ranking_degrades": 1,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 22279,
+          "denominator": 65536,
+          "value": 0.3399505615234375
+        },
+        "cbd": {
+          "numerator": 22099,
+          "denominator": 65536,
+          "value": 0.3372039794921875
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 22279,
+          "denominator": 65536,
+          "value": 0.3399505615234375
+        },
+        "cbd": {
+          "numerator": 22099,
+          "denominator": 65536,
+          "value": 0.3372039794921875
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "source": "reference",
+      "N": 12,
+      "family": "radix",
+      "eta": 2,
+      "matrices": 8,
+      "CBD_wins": 0,
+      "CBD_losses": 1,
+      "identical_successes": 7,
+      "mean_improves_ranking_degrades": 1,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 2294047,
+          "denominator": 16777216,
+          "value": 0.13673585653305054
+        },
+        "cbd": {
+          "numerator": 18347133,
+          "denominator": 134217728,
+          "value": 0.13669679313898087
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 2294047,
+          "denominator": 16777216,
+          "value": 0.13673585653305054
+        },
+        "cbd": {
+          "numerator": 18347133,
+          "denominator": 134217728,
+          "value": 0.13669679313898087
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "source": "reference",
+      "N": 12,
+      "family": "radix",
+      "eta": 3,
+      "matrices": 8,
+      "CBD_wins": 1,
+      "CBD_losses": 0,
+      "identical_successes": 7,
+      "mean_improves_ranking_degrades": 0,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 1517810600093,
+          "denominator": 17592186044416,
+          "value": 0.08627754369246077
+        },
+        "cbd": {
+          "numerator": 380107207373,
+          "denominator": 4398046511104,
+          "value": 0.0864263728028618
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 1517810600093,
+          "denominator": 17592186044416,
+          "value": 0.08627754369246077
+        },
+        "cbd": {
+          "numerator": 380107207373,
+          "denominator": 4398046511104,
+          "value": 0.0864263728028618
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "source": "lll_box",
+      "N": 4,
+      "family": "repeated",
+      "eta": 1,
+      "matrices": 8,
+      "CBD_wins": 2,
+      "CBD_losses": 2,
+      "identical_successes": 4,
+      "mean_improves_ranking_degrades": 2,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 9471,
+          "denominator": 65536,
+          "value": 0.1445159912109375
+        },
+        "cbd": {
+          "numerator": 9227,
+          "denominator": 65536,
+          "value": 0.1407928466796875
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 1193,
+          "denominator": 8192,
+          "value": 0.1456298828125
+        },
+        "cbd": {
+          "numerator": 18641,
+          "denominator": 131072,
+          "value": 0.14221954345703125
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "source": "lll_box",
+      "N": 4,
+      "family": "repeated",
+      "eta": 2,
+      "matrices": 8,
+      "CBD_wins": 2,
+      "CBD_losses": 2,
+      "identical_successes": 4,
+      "mean_improves_ranking_degrades": 2,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 90313151,
+          "denominator": 1073741824,
+          "value": 0.08411067631095648
+        },
+        "cbd": {
+          "numerator": 86869163,
+          "denominator": 1073741824,
+          "value": 0.08090321253985167
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 45535245,
+          "denominator": 536870912,
+          "value": 0.08481600321829319
+        },
+        "cbd": {
+          "numerator": 87733269,
+          "denominator": 1073741824,
+          "value": 0.08170797396451235
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "source": "lll_box",
+      "N": 4,
+      "family": "repeated",
+      "eta": 3,
+      "matrices": 8,
+      "CBD_wins": 2,
+      "CBD_losses": 2,
+      "identical_successes": 4,
+      "mean_improves_ranking_degrades": 2,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 1231582288187,
+          "denominator": 17592186044416,
+          "value": 0.07000734786896601
+        },
+        "cbd": {
+          "numerator": 9267347447,
+          "denominator": 137438953472,
+          "value": 0.06742882722028298
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 2484315778751,
+          "denominator": 35184372088832,
+          "value": 0.07060850119702877
+        },
+        "cbd": {
+          "numerator": 598720214169,
+          "denominator": 8796093022208,
+          "value": 0.0680666078288823
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "source": "lll_box",
+      "N": 4,
+      "family": "radix",
+      "eta": 1,
+      "matrices": 8,
+      "CBD_wins": 0,
+      "CBD_losses": 0,
+      "identical_successes": 8,
+      "mean_improves_ranking_degrades": 0,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 3879,
+          "denominator": 16384,
+          "value": 0.23675537109375
+        },
+        "cbd": {
+          "numerator": 3879,
+          "denominator": 16384,
+          "value": 0.23675537109375
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 15641,
+          "denominator": 65536,
+          "value": 0.2386627197265625
+        },
+        "cbd": {
+          "numerator": 15641,
+          "denominator": 65536,
+          "value": 0.2386627197265625
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "source": "lll_box",
+      "N": 4,
+      "family": "radix",
+      "eta": 2,
+      "matrices": 8,
+      "CBD_wins": 0,
+      "CBD_losses": 0,
+      "identical_successes": 8,
+      "mean_improves_ranking_degrades": 0,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 126532139,
+          "denominator": 1073741824,
+          "value": 0.1178422374650836
+        },
+        "cbd": {
+          "numerator": 126532139,
+          "denominator": 1073741824,
+          "value": 0.1178422374650836
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 127530679,
+          "denominator": 1073741824,
+          "value": 0.11877220030874014
+        },
+        "cbd": {
+          "numerator": 127530679,
+          "denominator": 1073741824,
+          "value": 0.11877220030874014
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "source": "lll_box",
+      "N": 4,
+      "family": "radix",
+      "eta": 3,
+      "matrices": 8,
+      "CBD_wins": 0,
+      "CBD_losses": 0,
+      "identical_successes": 8,
+      "mean_improves_ranking_degrades": 0,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 723916348037,
+          "denominator": 8796093022208,
+          "value": 0.08229976038330733
+        },
+        "cbd": {
+          "numerator": 723916348037,
+          "denominator": 8796093022208,
+          "value": 0.08229976038330733
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 2919799372635,
+          "denominator": 35184372088832,
+          "value": 0.08298568936410788
+        },
+        "cbd": {
+          "numerator": 2919799372635,
+          "denominator": 35184372088832,
+          "value": 0.08298568936410788
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "source": "lll_box",
+      "N": 8,
+      "family": "repeated",
+      "eta": 1,
+      "matrices": 8,
+      "CBD_wins": 3,
+      "CBD_losses": 4,
+      "identical_successes": 1,
+      "mean_improves_ranking_degrades": 4,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 775,
+          "denominator": 4096,
+          "value": 0.189208984375
+        },
+        "cbd": {
+          "numerator": 12327,
+          "denominator": 65536,
+          "value": 0.1880950927734375
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 12425,
+          "denominator": 65536,
+          "value": 0.1895904541015625
+        },
+        "cbd": {
+          "numerator": 12327,
+          "denominator": 65536,
+          "value": 0.1880950927734375
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "source": "lll_box",
+      "N": 8,
+      "family": "repeated",
+      "eta": 2,
+      "matrices": 8,
+      "CBD_wins": 3,
+      "CBD_losses": 4,
+      "identical_successes": 1,
+      "mean_improves_ranking_degrades": 4,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 104611067,
+          "denominator": 1073741824,
+          "value": 0.09742664825171232
+        },
+        "cbd": {
+          "numerator": 102243393,
+          "denominator": 1073741824,
+          "value": 0.0952215800061822
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 52448261,
+          "denominator": 536870912,
+          "value": 0.09769249893724918
+        },
+        "cbd": {
+          "numerator": 102291865,
+          "denominator": 1073741824,
+          "value": 0.09526672307401896
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "source": "lll_box",
+      "N": 8,
+      "family": "repeated",
+      "eta": 3,
+      "matrices": 8,
+      "CBD_wins": 3,
+      "CBD_losses": 4,
+      "identical_successes": 1,
+      "mean_improves_ranking_degrades": 4,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 332715488121,
+          "denominator": 4398046511104,
+          "value": 0.07565074341096079
+        },
+        "cbd": {
+          "numerator": 162546902969,
+          "denominator": 2199023255552,
+          "value": 0.07391777351995188
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 1334659266723,
+          "denominator": 17592186044416,
+          "value": 0.07586659573479437
+        },
+        "cbd": {
+          "numerator": 325355082023,
+          "denominator": 4398046511104,
+          "value": 0.07397718082370375
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "source": "lll_box",
+      "N": 8,
+      "family": "radix",
+      "eta": 1,
+      "matrices": 8,
+      "CBD_wins": 0,
+      "CBD_losses": 1,
+      "identical_successes": 7,
+      "mean_improves_ranking_degrades": 1,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 20479,
+          "denominator": 65536,
+          "value": 0.3124847412109375
+        },
+        "cbd": {
+          "numerator": 5043,
+          "denominator": 16384,
+          "value": 0.30780029296875
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 20495,
+          "denominator": 65536,
+          "value": 0.3127288818359375
+        },
+        "cbd": {
+          "numerator": 5047,
+          "denominator": 16384,
+          "value": 0.30804443359375
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "source": "lll_box",
+      "N": 8,
+      "family": "radix",
+      "eta": 2,
+      "matrices": 8,
+      "CBD_wins": 0,
+      "CBD_losses": 1,
+      "identical_successes": 7,
+      "mean_improves_ranking_degrades": 1,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 142213727,
+          "denominator": 1073741824,
+          "value": 0.1324468543753028
+        },
+        "cbd": {
+          "numerator": 35348057,
+          "denominator": 268435456,
+          "value": 0.13168177381157875
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 142341679,
+          "denominator": 1073741824,
+          "value": 0.13256601896137
+        },
+        "cbd": {
+          "numerator": 35380045,
+          "denominator": 268435456,
+          "value": 0.13180093839764595
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "source": "lll_box",
+      "N": 8,
+      "family": "radix",
+      "eta": 3,
+      "matrices": 8,
+      "CBD_wins": 0,
+      "CBD_losses": 1,
+      "identical_successes": 7,
+      "mean_improves_ranking_degrades": 1,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 754045218185,
+          "denominator": 8796093022208,
+          "value": 0.08572501635455865
+        },
+        "cbd": {
+          "numerator": 188318446679,
+          "denominator": 2199023255552,
+          "value": 0.0856373147503291
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 3018944126971,
+          "denominator": 35184372088832,
+          "value": 0.08580355276339446
+        },
+        "cbd": {
+          "numerator": 3015858401095,
+          "denominator": 35184372088832,
+          "value": 0.08571585115916491
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "source": "lll_box",
+      "N": 12,
+      "family": "repeated",
+      "eta": 1,
+      "matrices": 8,
+      "CBD_wins": 2,
+      "CBD_losses": 5,
+      "identical_successes": 1,
+      "mean_improves_ranking_degrades": 5,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 3301,
+          "denominator": 16384,
+          "value": 0.20147705078125
+        },
+        "cbd": {
+          "numerator": 6543,
+          "denominator": 32768,
+          "value": 0.199676513671875
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 13231,
+          "denominator": 65536,
+          "value": 0.2018890380859375
+        },
+        "cbd": {
+          "numerator": 6543,
+          "denominator": 32768,
+          "value": 0.199676513671875
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "source": "lll_box",
+      "N": 12,
+      "family": "repeated",
+      "eta": 2,
+      "matrices": 8,
+      "CBD_wins": 3,
+      "CBD_losses": 4,
+      "identical_successes": 1,
+      "mean_improves_ranking_degrades": 4,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 52644179,
+          "denominator": 536870912,
+          "value": 0.09805742464959621
+        },
+        "cbd": {
+          "numerator": 104440177,
+          "denominator": 1073741824,
+          "value": 0.09726749453693628
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 52724971,
+          "denominator": 536870912,
+          "value": 0.09820791147649288
+        },
+        "cbd": {
+          "numerator": 104440177,
+          "denominator": 1073741824,
+          "value": 0.09726749453693628
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "source": "lll_box",
+      "N": 12,
+      "family": "repeated",
+      "eta": 3,
+      "matrices": 8,
+      "CBD_wins": 3,
+      "CBD_losses": 4,
+      "identical_successes": 1,
+      "mean_improves_ranking_degrades": 4,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 661072333673,
+          "denominator": 8796093022208,
+          "value": 0.07515522312053236
+        },
+        "cbd": {
+          "numerator": 1311657417919,
+          "denominator": 17592186044416,
+          "value": 0.07455909200865563
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 1323802696401,
+          "denominator": 17592186044416,
+          "value": 0.07524947116058911
+        },
+        "cbd": {
+          "numerator": 1311657417919,
+          "denominator": 17592186044416,
+          "value": 0.07455909200865563
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "source": "lll_box",
+      "N": 12,
+      "family": "radix",
+      "eta": 1,
+      "matrices": 8,
+      "CBD_wins": 0,
+      "CBD_losses": 1,
+      "identical_successes": 7,
+      "mean_improves_ranking_degrades": 1,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 11085,
+          "denominator": 32768,
+          "value": 0.338287353515625
+        },
+        "cbd": {
+          "numerator": 5519,
+          "denominator": 16384,
+          "value": 0.33685302734375
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 11085,
+          "denominator": 32768,
+          "value": 0.338287353515625
+        },
+        "cbd": {
+          "numerator": 5519,
+          "denominator": 16384,
+          "value": 0.33685302734375
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "source": "lll_box",
+      "N": 12,
+      "family": "radix",
+      "eta": 2,
+      "matrices": 8,
+      "CBD_wins": 0,
+      "CBD_losses": 1,
+      "identical_successes": 7,
+      "mean_improves_ranking_degrades": 1,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 145054505,
+          "denominator": 1073741824,
+          "value": 0.1350925350561738
+        },
+        "cbd": {
+          "numerator": 144623453,
+          "denominator": 1073741824,
+          "value": 0.13469108659774065
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 145054505,
+          "denominator": 1073741824,
+          "value": 0.1350925350561738
+        },
+        "cbd": {
+          "numerator": 144623453,
+          "denominator": 1073741824,
+          "value": 0.13469108659774065
+        }
+      }
+    },
+    {
+      "dimension": 3,
+      "source": "lll_box",
+      "N": 12,
+      "family": "radix",
+      "eta": 3,
+      "matrices": 8,
+      "CBD_wins": 0,
+      "CBD_losses": 1,
+      "identical_successes": 7,
+      "mean_improves_ranking_degrades": 1,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 1500801915549,
+          "denominator": 17592186044416,
+          "value": 0.08531071191265482
+        },
+        "cbd": {
+          "numerator": 1498150017331,
+          "denominator": 17592186044416,
+          "value": 0.08515996895147282
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 1500801915549,
+          "denominator": 17592186044416,
+          "value": 0.08531071191265482
+        },
+        "cbd": {
+          "numerator": 1498150017331,
+          "denominator": 17592186044416,
+          "value": 0.08515996895147282
+        }
+      }
+    },
+    {
+      "dimension": 5,
+      "source": "reference",
+      "N": 4,
+      "family": "repeated",
+      "eta": 1,
+      "matrices": 8,
+      "CBD_wins": 1,
+      "CBD_losses": 1,
+      "identical_successes": 6,
+      "mean_improves_ranking_degrades": 1,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 7467,
+          "denominator": 65536,
+          "value": 0.1139373779296875
+        },
+        "cbd": {
+          "numerator": 120443,
+          "denominator": 1048576,
+          "value": 0.11486339569091797
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 512745,
+          "denominator": 4194304,
+          "value": 0.12224793434143066
+        },
+        "cbd": {
+          "numerator": 257249,
+          "denominator": 2097152,
+          "value": 0.1226658821105957
+        }
+      }
+    },
+    {
+      "dimension": 5,
+      "source": "reference",
+      "N": 4,
+      "family": "repeated",
+      "eta": 2,
+      "matrices": 8,
+      "CBD_wins": 1,
+      "CBD_losses": 1,
+      "identical_successes": 6,
+      "mean_improves_ranking_degrades": 1,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 9341068423,
+          "denominator": 137438953472,
+          "value": 0.06796521791693522
+        },
+        "cbd": {
+          "numerator": 18838043747,
+          "denominator": 274877906944,
+          "value": 0.06853240391865256
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 20224886155,
+          "denominator": 274877906944,
+          "value": 0.0735777072077326
+        },
+        "cbd": {
+          "numerator": 5071184539,
+          "denominator": 68719476736,
+          "value": 0.07379544751893263
+        }
+      }
+    },
+    {
+      "dimension": 5,
+      "source": "reference",
+      "N": 4,
+      "family": "repeated",
+      "eta": 3,
+      "matrices": 8,
+      "CBD_wins": 1,
+      "CBD_losses": 1,
+      "identical_successes": 6,
+      "mean_improves_ranking_degrades": 1,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 1054734720286185,
+          "denominator": 18014398509481984,
+          "value": 0.05854953856666484
+        },
+        "cbd": {
+          "numerator": 2126281595499719,
+          "denominator": 36028797018963968,
+          "value": 0.05901616960401254
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 1140011381596945,
+          "denominator": 18014398509481984,
+          "value": 0.06328334420918319
+        },
+        "cbd": {
+          "numerator": 9145542900062717,
+          "denominator": 144115188075855872,
+          "value": 0.06345995187716721
+        }
+      }
+    },
+    {
+      "dimension": 5,
+      "source": "reference",
+      "N": 4,
+      "family": "radix",
+      "eta": 1,
+      "matrices": 8,
+      "CBD_wins": 0,
+      "CBD_losses": 0,
+      "identical_successes": 8,
+      "mean_improves_ranking_degrades": 0,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 100395,
+          "denominator": 524288,
+          "value": 0.19148826599121094
+        },
+        "cbd": {
+          "numerator": 100395,
+          "denominator": 524288,
+          "value": 0.19148826599121094
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 407545,
+          "denominator": 2097152,
+          "value": 0.19433259963989258
+        },
+        "cbd": {
+          "numerator": 407545,
+          "denominator": 2097152,
+          "value": 0.19433259963989258
+        }
+      }
+    },
+    {
+      "dimension": 5,
+      "source": "reference",
+      "N": 4,
+      "family": "radix",
+      "eta": 2,
+      "matrices": 8,
+      "CBD_wins": 0,
+      "CBD_losses": 0,
+      "identical_successes": 8,
+      "mean_improves_ranking_degrades": 0,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 27193390705,
+          "denominator": 274877906944,
+          "value": 0.09892897907775478
+        },
+        "cbd": {
+          "numerator": 27193390705,
+          "denominator": 274877906944,
+          "value": 0.09892897907775478
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 55379366119,
+          "denominator": 549755813888,
+          "value": 0.10073448014554742
+        },
+        "cbd": {
+          "numerator": 55379366119,
+          "denominator": 549755813888,
+          "value": 0.10073448014554742
+        }
+      }
+    },
+    {
+      "dimension": 5,
+      "source": "reference",
+      "N": 4,
+      "family": "radix",
+      "eta": 3,
+      "matrices": 8,
+      "CBD_wins": 0,
+      "CBD_losses": 0,
+      "identical_successes": 8,
+      "mean_improves_ranking_degrades": 0,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 5272614162394141,
+          "denominator": 72057594037927936,
+          "value": 0.07317222053818324
+        },
+        "cbd": {
+          "numerator": 5272614162394141,
+          "denominator": 72057594037927936,
+          "value": 0.07317222053818324
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 10755678937426143,
+          "denominator": 144115188075855872,
+          "value": 0.07463251501128965
+        },
+        "cbd": {
+          "numerator": 10755678937426143,
+          "denominator": 144115188075855872,
+          "value": 0.07463251501128965
+        }
+      }
+    },
+    {
+      "dimension": 5,
+      "source": "reference",
+      "N": 8,
+      "family": "repeated",
+      "eta": 1,
+      "matrices": 8,
+      "CBD_wins": 3,
+      "CBD_losses": 2,
+      "identical_successes": 3,
+      "mean_improves_ranking_degrades": 2,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 188783,
+          "denominator": 1048576,
+          "value": 0.1800374984741211
+        },
+        "cbd": {
+          "numerator": 95405,
+          "denominator": 524288,
+          "value": 0.18197059631347656
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 94421,
+          "denominator": 524288,
+          "value": 0.18009376525878906
+        },
+        "cbd": {
+          "numerator": 190885,
+          "denominator": 1048576,
+          "value": 0.18204212188720703
+        }
+      }
+    },
+    {
+      "dimension": 5,
+      "source": "reference",
+      "N": 8,
+      "family": "repeated",
+      "eta": 2,
+      "matrices": 8,
+      "CBD_wins": 2,
+      "CBD_losses": 3,
+      "identical_successes": 3,
+      "mean_improves_ranking_degrades": 3,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 23826353889,
+          "denominator": 274877906944,
+          "value": 0.08667977049844922
+        },
+        "cbd": {
+          "numerator": 754957163,
+          "denominator": 8589934592,
+          "value": 0.08788858109619468
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 47683363789,
+          "denominator": 549755813888,
+          "value": 0.0867355334576132
+        },
+        "cbd": {
+          "numerator": 48352376183,
+          "denominator": 549755813888,
+          "value": 0.08795245991314005
+        }
+      }
+    },
+    {
+      "dimension": 5,
+      "source": "reference",
+      "N": 8,
+      "family": "repeated",
+      "eta": 3,
+      "matrices": 8,
+      "CBD_wins": 2,
+      "CBD_losses": 3,
+      "identical_successes": 3,
+      "mean_improves_ranking_degrades": 3,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 2441085528357259,
+          "denominator": 36028797018963968,
+          "value": 0.06775373396653736
+        },
+        "cbd": {
+          "numerator": 4935129637062225,
+          "denominator": 72057594037927936,
+          "value": 0.06848868190720593
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 9771936650941577,
+          "denominator": 144115188075855872,
+          "value": 0.06780643165658612
+        },
+        "cbd": {
+          "numerator": 617397947785323,
+          "denominator": 9007199254740992,
+          "value": 0.06854494169875858
+        }
+      }
+    },
+    {
+      "dimension": 5,
+      "source": "reference",
+      "N": 8,
+      "family": "radix",
+      "eta": 1,
+      "matrices": 8,
+      "CBD_wins": 0,
+      "CBD_losses": 0,
+      "identical_successes": 8,
+      "mean_improves_ranking_degrades": 0,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 305221,
+          "denominator": 1048576,
+          "value": 0.29108142852783203
+        },
+        "cbd": {
+          "numerator": 305221,
+          "denominator": 1048576,
+          "value": 0.29108142852783203
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 305691,
+          "denominator": 1048576,
+          "value": 0.29152965545654297
+        },
+        "cbd": {
+          "numerator": 305691,
+          "denominator": 1048576,
+          "value": 0.29152965545654297
+        }
+      }
+    },
+    {
+      "dimension": 5,
+      "source": "reference",
+      "N": 8,
+      "family": "radix",
+      "eta": 2,
+      "matrices": 8,
+      "CBD_wins": 0,
+      "CBD_losses": 0,
+      "identical_successes": 8,
+      "mean_improves_ranking_degrades": 0,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 8393897059,
+          "denominator": 68719476736,
+          "value": 0.12214727843820583
+        },
+        "cbd": {
+          "numerator": 8393897059,
+          "denominator": 68719476736,
+          "value": 0.12214727843820583
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 16815690741,
+          "denominator": 137438953472,
+          "value": 0.12235025308473269
+        },
+        "cbd": {
+          "numerator": 16815690741,
+          "denominator": 137438953472,
+          "value": 0.12235025308473269
+        }
+      }
+    },
+    {
+      "dimension": 5,
+      "source": "reference",
+      "N": 8,
+      "family": "radix",
+      "eta": 3,
+      "matrices": 8,
+      "CBD_wins": 0,
+      "CBD_losses": 0,
+      "identical_successes": 8,
+      "mean_improves_ranking_degrades": 0,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 2902405462256511,
+          "denominator": 36028797018963968,
+          "value": 0.08055793427487498
+        },
+        "cbd": {
+          "numerator": 2902405462256511,
+          "denominator": 36028797018963968,
+          "value": 0.08055793427487498
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 5814838321089463,
+          "denominator": 72057594037927936,
+          "value": 0.08069709235682763
+        },
+        "cbd": {
+          "numerator": 5814838321089463,
+          "denominator": 72057594037927936,
+          "value": 0.08069709235682763
+        }
+      }
+    },
+    {
+      "dimension": 5,
+      "source": "reference",
+      "N": 12,
+      "family": "repeated",
+      "eta": 1,
+      "matrices": 8,
+      "CBD_wins": 7,
+      "CBD_losses": 1,
+      "identical_successes": 0,
+      "mean_improves_ranking_degrades": 1,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 208333,
+          "denominator": 1048576,
+          "value": 0.19868183135986328
+        },
+        "cbd": {
+          "numerator": 214033,
+          "denominator": 1048576,
+          "value": 0.2041177749633789
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 13025,
+          "denominator": 65536,
+          "value": 0.1987457275390625
+        },
+        "cbd": {
+          "numerator": 214049,
+          "denominator": 1048576,
+          "value": 0.2041330337524414
+        }
+      }
+    },
+    {
+      "dimension": 5,
+      "source": "reference",
+      "N": 12,
+      "family": "repeated",
+      "eta": 2,
+      "matrices": 8,
+      "CBD_wins": 4,
+      "CBD_losses": 4,
+      "identical_successes": 0,
+      "mean_improves_ranking_degrades": 4,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 25176638471,
+          "denominator": 274877906944,
+          "value": 0.09159207719130791
+        },
+        "cbd": {
+          "numerator": 6409175141,
+          "denominator": 68719476736,
+          "value": 0.09326577333558816
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 12592267171,
+          "denominator": 137438953472,
+          "value": 0.09162080220266944
+        },
+        "cbd": {
+          "numerator": 801188747,
+          "denominator": 8589934592,
+          "value": 0.09327064582612365
+        }
+      }
+    },
+    {
+      "dimension": 5,
+      "source": "reference",
+      "N": 12,
+      "family": "repeated",
+      "eta": 3,
+      "matrices": 8,
+      "CBD_wins": 4,
+      "CBD_losses": 4,
+      "identical_successes": 0,
+      "mean_improves_ranking_degrades": 4,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 5029326786732239,
+          "denominator": 72057594037927936,
+          "value": 0.06979592996242732
+        },
+        "cbd": {
+          "numerator": 5087248034638409,
+          "denominator": 72057594037927936,
+          "value": 0.07059974875043297
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 10061659462405135,
+          "denominator": 144115188075855872,
+          "value": 0.06981678750687348
+        },
+        "cbd": {
+          "numerator": 2543727710820405,
+          "denominator": 36028797018963968,
+          "value": 0.07060262682324639
+        }
+      }
+    },
+    {
+      "dimension": 5,
+      "source": "reference",
+      "N": 12,
+      "family": "radix",
+      "eta": 1,
+      "matrices": 8,
+      "CBD_wins": 1,
+      "CBD_losses": 2,
+      "identical_successes": 5,
+      "mean_improves_ranking_degrades": 2,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 364467,
+          "denominator": 1048576,
+          "value": 0.3475828170776367
+        },
+        "cbd": {
+          "numerator": 90917,
+          "denominator": 262144,
+          "value": 0.3468208312988281
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 364543,
+          "denominator": 1048576,
+          "value": 0.3476552963256836
+        },
+        "cbd": {
+          "numerator": 90917,
+          "denominator": 262144,
+          "value": 0.3468208312988281
+        }
+      }
+    },
+    {
+      "dimension": 5,
+      "source": "reference",
+      "N": 12,
+      "family": "radix",
+      "eta": 2,
+      "matrices": 8,
+      "CBD_wins": 0,
+      "CBD_losses": 3,
+      "identical_successes": 5,
+      "mean_improves_ranking_degrades": 3,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 36471997799,
+          "denominator": 274877906944,
+          "value": 0.1326843550450576
+        },
+        "cbd": {
+          "numerator": 36302387683,
+          "denominator": 274877906944,
+          "value": 0.13206731703758123
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 36477768571,
+          "denominator": 274877906944,
+          "value": 0.13270534899129416
+        },
+        "cbd": {
+          "numerator": 36302387683,
+          "denominator": 274877906944,
+          "value": 0.13206731703758123
+        }
+      }
+    },
+    {
+      "dimension": 5,
+      "source": "reference",
+      "N": 12,
+      "family": "radix",
+      "eta": 3,
+      "matrices": 8,
+      "CBD_wins": 0,
+      "CBD_losses": 3,
+      "identical_successes": 5,
+      "mean_improves_ranking_degrades": 3,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 5968259922401777,
+          "denominator": 72057594037927936,
+          "value": 0.08282624478497504
+        },
+        "cbd": {
+          "numerator": 371815671875933,
+          "denominator": 4503599627370496,
+          "value": 0.08255966396662662
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 11938247334649559,
+          "denominator": 144115188075855872,
+          "value": 0.08283823165373655
+        },
+        "cbd": {
+          "numerator": 371815671875933,
+          "denominator": 4503599627370496,
+          "value": 0.08255966396662662
+        }
+      }
+    },
+    {
+      "dimension": 5,
+      "source": "lll_box",
+      "N": 4,
+      "family": "repeated",
+      "eta": 1,
+      "matrices": 8,
+      "CBD_wins": 1,
+      "CBD_losses": 1,
+      "identical_successes": 6,
+      "mean_improves_ranking_degrades": 1,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 7467,
+          "denominator": 65536,
+          "value": 0.1139373779296875
+        },
+        "cbd": {
+          "numerator": 120443,
+          "denominator": 1048576,
+          "value": 0.11486339569091797
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 512745,
+          "denominator": 4194304,
+          "value": 0.12224793434143066
+        },
+        "cbd": {
+          "numerator": 257249,
+          "denominator": 2097152,
+          "value": 0.1226658821105957
+        }
+      }
+    },
+    {
+      "dimension": 5,
+      "source": "lll_box",
+      "N": 4,
+      "family": "repeated",
+      "eta": 2,
+      "matrices": 8,
+      "CBD_wins": 1,
+      "CBD_losses": 1,
+      "identical_successes": 6,
+      "mean_improves_ranking_degrades": 1,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 9341068423,
+          "denominator": 137438953472,
+          "value": 0.06796521791693522
+        },
+        "cbd": {
+          "numerator": 18838043747,
+          "denominator": 274877906944,
+          "value": 0.06853240391865256
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 20224886155,
+          "denominator": 274877906944,
+          "value": 0.0735777072077326
+        },
+        "cbd": {
+          "numerator": 5071184539,
+          "denominator": 68719476736,
+          "value": 0.07379544751893263
+        }
+      }
+    },
+    {
+      "dimension": 5,
+      "source": "lll_box",
+      "N": 4,
+      "family": "repeated",
+      "eta": 3,
+      "matrices": 8,
+      "CBD_wins": 1,
+      "CBD_losses": 1,
+      "identical_successes": 6,
+      "mean_improves_ranking_degrades": 1,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 1054734720286185,
+          "denominator": 18014398509481984,
+          "value": 0.05854953856666484
+        },
+        "cbd": {
+          "numerator": 2126281595499719,
+          "denominator": 36028797018963968,
+          "value": 0.05901616960401254
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 1140011381596945,
+          "denominator": 18014398509481984,
+          "value": 0.06328334420918319
+        },
+        "cbd": {
+          "numerator": 9145542900062717,
+          "denominator": 144115188075855872,
+          "value": 0.06345995187716721
+        }
+      }
+    },
+    {
+      "dimension": 5,
+      "source": "lll_box",
+      "N": 4,
+      "family": "radix",
+      "eta": 1,
+      "matrices": 8,
+      "CBD_wins": 0,
+      "CBD_losses": 0,
+      "identical_successes": 8,
+      "mean_improves_ranking_degrades": 0,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 100395,
+          "denominator": 524288,
+          "value": 0.19148826599121094
+        },
+        "cbd": {
+          "numerator": 100395,
+          "denominator": 524288,
+          "value": 0.19148826599121094
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 407545,
+          "denominator": 2097152,
+          "value": 0.19433259963989258
+        },
+        "cbd": {
+          "numerator": 407545,
+          "denominator": 2097152,
+          "value": 0.19433259963989258
+        }
+      }
+    },
+    {
+      "dimension": 5,
+      "source": "lll_box",
+      "N": 4,
+      "family": "radix",
+      "eta": 2,
+      "matrices": 8,
+      "CBD_wins": 0,
+      "CBD_losses": 0,
+      "identical_successes": 8,
+      "mean_improves_ranking_degrades": 0,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 27193390705,
+          "denominator": 274877906944,
+          "value": 0.09892897907775478
+        },
+        "cbd": {
+          "numerator": 27193390705,
+          "denominator": 274877906944,
+          "value": 0.09892897907775478
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 55379366119,
+          "denominator": 549755813888,
+          "value": 0.10073448014554742
+        },
+        "cbd": {
+          "numerator": 55379366119,
+          "denominator": 549755813888,
+          "value": 0.10073448014554742
+        }
+      }
+    },
+    {
+      "dimension": 5,
+      "source": "lll_box",
+      "N": 4,
+      "family": "radix",
+      "eta": 3,
+      "matrices": 8,
+      "CBD_wins": 0,
+      "CBD_losses": 0,
+      "identical_successes": 8,
+      "mean_improves_ranking_degrades": 0,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 5272614162394141,
+          "denominator": 72057594037927936,
+          "value": 0.07317222053818324
+        },
+        "cbd": {
+          "numerator": 5272614162394141,
+          "denominator": 72057594037927936,
+          "value": 0.07317222053818324
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 10755678937426143,
+          "denominator": 144115188075855872,
+          "value": 0.07463251501128965
+        },
+        "cbd": {
+          "numerator": 10755678937426143,
+          "denominator": 144115188075855872,
+          "value": 0.07463251501128965
+        }
+      }
+    },
+    {
+      "dimension": 5,
+      "source": "lll_box",
+      "N": 8,
+      "family": "repeated",
+      "eta": 1,
+      "matrices": 8,
+      "CBD_wins": 3,
+      "CBD_losses": 2,
+      "identical_successes": 3,
+      "mean_improves_ranking_degrades": 2,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 188783,
+          "denominator": 1048576,
+          "value": 0.1800374984741211
+        },
+        "cbd": {
+          "numerator": 95405,
+          "denominator": 524288,
+          "value": 0.18197059631347656
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 94421,
+          "denominator": 524288,
+          "value": 0.18009376525878906
+        },
+        "cbd": {
+          "numerator": 190885,
+          "denominator": 1048576,
+          "value": 0.18204212188720703
+        }
+      }
+    },
+    {
+      "dimension": 5,
+      "source": "lll_box",
+      "N": 8,
+      "family": "repeated",
+      "eta": 2,
+      "matrices": 8,
+      "CBD_wins": 2,
+      "CBD_losses": 3,
+      "identical_successes": 3,
+      "mean_improves_ranking_degrades": 3,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 23826353889,
+          "denominator": 274877906944,
+          "value": 0.08667977049844922
+        },
+        "cbd": {
+          "numerator": 754957163,
+          "denominator": 8589934592,
+          "value": 0.08788858109619468
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 47683363789,
+          "denominator": 549755813888,
+          "value": 0.0867355334576132
+        },
+        "cbd": {
+          "numerator": 48352376183,
+          "denominator": 549755813888,
+          "value": 0.08795245991314005
+        }
+      }
+    },
+    {
+      "dimension": 5,
+      "source": "lll_box",
+      "N": 8,
+      "family": "repeated",
+      "eta": 3,
+      "matrices": 8,
+      "CBD_wins": 2,
+      "CBD_losses": 3,
+      "identical_successes": 3,
+      "mean_improves_ranking_degrades": 3,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 2441085528357259,
+          "denominator": 36028797018963968,
+          "value": 0.06775373396653736
+        },
+        "cbd": {
+          "numerator": 4935129637062225,
+          "denominator": 72057594037927936,
+          "value": 0.06848868190720593
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 9771936650941577,
+          "denominator": 144115188075855872,
+          "value": 0.06780643165658612
+        },
+        "cbd": {
+          "numerator": 617397947785323,
+          "denominator": 9007199254740992,
+          "value": 0.06854494169875858
+        }
+      }
+    },
+    {
+      "dimension": 5,
+      "source": "lll_box",
+      "N": 8,
+      "family": "radix",
+      "eta": 1,
+      "matrices": 8,
+      "CBD_wins": 0,
+      "CBD_losses": 0,
+      "identical_successes": 8,
+      "mean_improves_ranking_degrades": 0,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 305221,
+          "denominator": 1048576,
+          "value": 0.29108142852783203
+        },
+        "cbd": {
+          "numerator": 305221,
+          "denominator": 1048576,
+          "value": 0.29108142852783203
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 305691,
+          "denominator": 1048576,
+          "value": 0.29152965545654297
+        },
+        "cbd": {
+          "numerator": 305691,
+          "denominator": 1048576,
+          "value": 0.29152965545654297
+        }
+      }
+    },
+    {
+      "dimension": 5,
+      "source": "lll_box",
+      "N": 8,
+      "family": "radix",
+      "eta": 2,
+      "matrices": 8,
+      "CBD_wins": 0,
+      "CBD_losses": 0,
+      "identical_successes": 8,
+      "mean_improves_ranking_degrades": 0,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 8393897059,
+          "denominator": 68719476736,
+          "value": 0.12214727843820583
+        },
+        "cbd": {
+          "numerator": 8393897059,
+          "denominator": 68719476736,
+          "value": 0.12214727843820583
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 16815690741,
+          "denominator": 137438953472,
+          "value": 0.12235025308473269
+        },
+        "cbd": {
+          "numerator": 16815690741,
+          "denominator": 137438953472,
+          "value": 0.12235025308473269
+        }
+      }
+    },
+    {
+      "dimension": 5,
+      "source": "lll_box",
+      "N": 8,
+      "family": "radix",
+      "eta": 3,
+      "matrices": 8,
+      "CBD_wins": 0,
+      "CBD_losses": 0,
+      "identical_successes": 8,
+      "mean_improves_ranking_degrades": 0,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 2902405462256511,
+          "denominator": 36028797018963968,
+          "value": 0.08055793427487498
+        },
+        "cbd": {
+          "numerator": 2902405462256511,
+          "denominator": 36028797018963968,
+          "value": 0.08055793427487498
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 5814838321089463,
+          "denominator": 72057594037927936,
+          "value": 0.08069709235682763
+        },
+        "cbd": {
+          "numerator": 5814838321089463,
+          "denominator": 72057594037927936,
+          "value": 0.08069709235682763
+        }
+      }
+    },
+    {
+      "dimension": 5,
+      "source": "lll_box",
+      "N": 12,
+      "family": "repeated",
+      "eta": 1,
+      "matrices": 8,
+      "CBD_wins": 7,
+      "CBD_losses": 1,
+      "identical_successes": 0,
+      "mean_improves_ranking_degrades": 1,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 208333,
+          "denominator": 1048576,
+          "value": 0.19868183135986328
+        },
+        "cbd": {
+          "numerator": 214033,
+          "denominator": 1048576,
+          "value": 0.2041177749633789
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 13025,
+          "denominator": 65536,
+          "value": 0.1987457275390625
+        },
+        "cbd": {
+          "numerator": 214049,
+          "denominator": 1048576,
+          "value": 0.2041330337524414
+        }
+      }
+    },
+    {
+      "dimension": 5,
+      "source": "lll_box",
+      "N": 12,
+      "family": "repeated",
+      "eta": 2,
+      "matrices": 8,
+      "CBD_wins": 4,
+      "CBD_losses": 4,
+      "identical_successes": 0,
+      "mean_improves_ranking_degrades": 4,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 25176638471,
+          "denominator": 274877906944,
+          "value": 0.09159207719130791
+        },
+        "cbd": {
+          "numerator": 6409175141,
+          "denominator": 68719476736,
+          "value": 0.09326577333558816
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 12592267171,
+          "denominator": 137438953472,
+          "value": 0.09162080220266944
+        },
+        "cbd": {
+          "numerator": 801188747,
+          "denominator": 8589934592,
+          "value": 0.09327064582612365
+        }
+      }
+    },
+    {
+      "dimension": 5,
+      "source": "lll_box",
+      "N": 12,
+      "family": "repeated",
+      "eta": 3,
+      "matrices": 8,
+      "CBD_wins": 4,
+      "CBD_losses": 4,
+      "identical_successes": 0,
+      "mean_improves_ranking_degrades": 4,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 5029326786732239,
+          "denominator": 72057594037927936,
+          "value": 0.06979592996242732
+        },
+        "cbd": {
+          "numerator": 5087248034638409,
+          "denominator": 72057594037927936,
+          "value": 0.07059974875043297
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 10061659462405135,
+          "denominator": 144115188075855872,
+          "value": 0.06981678750687348
+        },
+        "cbd": {
+          "numerator": 2543727710820405,
+          "denominator": 36028797018963968,
+          "value": 0.07060262682324639
+        }
+      }
+    },
+    {
+      "dimension": 5,
+      "source": "lll_box",
+      "N": 12,
+      "family": "radix",
+      "eta": 1,
+      "matrices": 8,
+      "CBD_wins": 1,
+      "CBD_losses": 2,
+      "identical_successes": 5,
+      "mean_improves_ranking_degrades": 2,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 364467,
+          "denominator": 1048576,
+          "value": 0.3475828170776367
+        },
+        "cbd": {
+          "numerator": 90917,
+          "denominator": 262144,
+          "value": 0.3468208312988281
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 364543,
+          "denominator": 1048576,
+          "value": 0.3476552963256836
+        },
+        "cbd": {
+          "numerator": 90917,
+          "denominator": 262144,
+          "value": 0.3468208312988281
+        }
+      }
+    },
+    {
+      "dimension": 5,
+      "source": "lll_box",
+      "N": 12,
+      "family": "radix",
+      "eta": 2,
+      "matrices": 8,
+      "CBD_wins": 0,
+      "CBD_losses": 3,
+      "identical_successes": 5,
+      "mean_improves_ranking_degrades": 3,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 36471997799,
+          "denominator": 274877906944,
+          "value": 0.1326843550450576
+        },
+        "cbd": {
+          "numerator": 36302387683,
+          "denominator": 274877906944,
+          "value": 0.13206731703758123
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 36477768571,
+          "denominator": 274877906944,
+          "value": 0.13270534899129416
+        },
+        "cbd": {
+          "numerator": 36302387683,
+          "denominator": 274877906944,
+          "value": 0.13206731703758123
+        }
+      }
+    },
+    {
+      "dimension": 5,
+      "source": "lll_box",
+      "N": 12,
+      "family": "radix",
+      "eta": 3,
+      "matrices": 8,
+      "CBD_wins": 0,
+      "CBD_losses": 3,
+      "identical_successes": 5,
+      "mean_improves_ranking_degrades": 3,
+      "mean_strict_success": {
+        "euclidean": {
+          "numerator": 5968259922401777,
+          "denominator": 72057594037927936,
+          "value": 0.08282624478497504
+        },
+        "cbd": {
+          "numerator": 371815671875933,
+          "denominator": 4503599627370496,
+          "value": 0.08255966396662662
+        }
+      },
+      "mean_uniform_tie_success": {
+        "euclidean": {
+          "numerator": 11938247334649559,
+          "denominator": 144115188075855872,
+          "value": 0.08283823165373655
+        },
+        "cbd": {
+          "numerator": 371815671875933,
+          "denominator": 4503599627370496,
+          "value": 0.08255966396662662
+        }
+      }
+    }
+  ],
+  "list_comparisons": [
+    {
+      "dimension": 3,
+      "N": 4,
+      "matrices": 8,
+      "identical_prefixes": 7,
+      "squared_norm_excess": 5
+    },
+    {
+      "dimension": 3,
+      "N": 8,
+      "matrices": 8,
+      "identical_prefixes": 6,
+      "squared_norm_excess": 18
+    },
+    {
+      "dimension": 3,
+      "N": 12,
+      "matrices": 8,
+      "identical_prefixes": 4,
+      "squared_norm_excess": 61
+    },
+    {
+      "dimension": 5,
+      "N": 4,
+      "matrices": 8,
+      "identical_prefixes": 8,
+      "squared_norm_excess": 0
+    },
+    {
+      "dimension": 5,
+      "N": 8,
+      "matrices": 8,
+      "identical_prefixes": 8,
+      "squared_norm_excess": 0
+    },
+    {
+      "dimension": 5,
+      "N": 12,
+      "matrices": 8,
+      "identical_prefixes": 8,
+      "squared_norm_excess": 0
+    }
+  ],
+  "uniform_null_tails": [
+    {
+      "dimension": 3,
+      "source": "reference",
+      "N": 4,
+      "mean_exact_tail": {
+        "numerator": 133,
+        "denominator": 1156,
+        "value": 0.11505190311418685
+      },
+      "Gaussian_tail": 0.07864960352514255,
+      "mean_tail_over_Gaussian": 1.4628414887992065
+    },
+    {
+      "dimension": 3,
+      "source": "reference",
+      "N": 8,
+      "mean_exact_tail": {
+        "numerator": 37,
+        "denominator": 578,
+        "value": 0.06401384083044982
+      },
+      "Gaussian_tail": 0.022750131948179198,
+      "mean_tail_over_Gaussian": 2.8137788816461415
+    },
+    {
+      "dimension": 3,
+      "source": "reference",
+      "N": 12,
+      "mean_exact_tail": {
+        "numerator": 49,
+        "denominator": 1156,
+        "value": 0.04238754325259515
+      },
+      "Gaussian_tail": 0.007152939217714822,
+      "mean_tail_over_Gaussian": 5.925891715620766
+    },
+    {
+      "dimension": 3,
+      "source": "lll_box",
+      "N": 4,
+      "mean_exact_tail": {
+        "numerator": 133,
+        "denominator": 1156,
+        "value": 0.11505190311418685
+      },
+      "Gaussian_tail": 0.07864960352514255,
+      "mean_tail_over_Gaussian": 1.4628414887992065
+    },
+    {
+      "dimension": 3,
+      "source": "lll_box",
+      "N": 8,
+      "mean_exact_tail": {
+        "numerator": 37,
+        "denominator": 578,
+        "value": 0.06401384083044982
+      },
+      "Gaussian_tail": 0.022750131948179198,
+      "mean_tail_over_Gaussian": 2.8137788816461415
+    },
+    {
+      "dimension": 3,
+      "source": "lll_box",
+      "N": 12,
+      "mean_exact_tail": {
+        "numerator": 11,
+        "denominator": 289,
+        "value": 0.03806228373702422
+      },
+      "Gaussian_tail": 0.007152939217714822,
+      "mean_tail_over_Gaussian": 5.321208887496199
+    },
+    {
+      "dimension": 5,
+      "source": "reference",
+      "N": 4,
+      "mean_exact_tail": {
+        "numerator": 521,
+        "denominator": 4913,
+        "value": 0.1060451862405862
+      },
+      "Gaussian_tail": 0.07864960352514255,
+      "mean_tail_over_Gaussian": 1.3483244859166503
+    },
+    {
+      "dimension": 5,
+      "source": "reference",
+      "N": 8,
+      "mean_exact_tail": {
+        "numerator": 925,
+        "denominator": 19652,
+        "value": 0.04706900061062487
+      },
+      "Gaussian_tail": 0.022750131948179198,
+      "mean_tail_over_Gaussian": 2.068955060033928
+    },
+    {
+      "dimension": 5,
+      "source": "reference",
+      "N": 12,
+      "mean_exact_tail": {
+        "numerator": 309,
+        "denominator": 9826,
+        "value": 0.03144718094850397
+      },
+      "Gaussian_tail": 0.007152939217714822,
+      "mean_tail_over_Gaussian": 4.39639985624686
+    },
+    {
+      "dimension": 5,
+      "source": "lll_box",
+      "N": 4,
+      "mean_exact_tail": {
+        "numerator": 521,
+        "denominator": 4913,
+        "value": 0.1060451862405862
+      },
+      "Gaussian_tail": 0.07864960352514255,
+      "mean_tail_over_Gaussian": 1.3483244859166503
+    },
+    {
+      "dimension": 5,
+      "source": "lll_box",
+      "N": 8,
+      "mean_exact_tail": {
+        "numerator": 925,
+        "denominator": 19652,
+        "value": 0.04706900061062487
+      },
+      "Gaussian_tail": 0.022750131948179198,
+      "mean_tail_over_Gaussian": 2.068955060033928
+    },
+    {
+      "dimension": 5,
+      "source": "lll_box",
+      "N": 12,
+      "mean_exact_tail": {
+        "numerator": 309,
+        "denominator": 9826,
+        "value": 0.03144718094850397
+      },
+      "Gaussian_tail": 0.007152939217714822,
+      "mean_tail_over_Gaussian": 4.39639985624686
+    }
+  ],
+  "attack_costs_updated": false,
+  "profile_selected": false,
+  "j2_closed": false,
+  "limits": [
+    "q=17 and dimensions 3/5; no real-parameter cost, BKZ, MLWE rotations or CCA result",
+    "finite exact group convolutions, not literal enumeration of up to 2^54 bit strings",
+    "NumPy integer masses checked below 2^63; moments and DFT comparisons are numerical",
+    "fixed matrices and repeated banks do not give independent replications or confidence intervals"
+  ],
+  "control_CBD1_calibrations": 192
+}

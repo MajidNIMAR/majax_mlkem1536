@@ -1,0 +1,37 @@
+{
+  "job": {
+    "scenario": "p0-1536",
+    "parameters": {
+      "n": 256,
+      "k": 6,
+      "q": 3329,
+      "eta": 2
+    },
+    "sample_budget": "extended",
+    "samples": 1792,
+    "targets": 1,
+    "oracle": "none",
+    "shape_model": "GSA",
+    "memory_cap": "none; exponential memory allowed",
+    "tool": "community",
+    "cost_model": "MATZOV-classical",
+    "algorithm": "usvp"
+  },
+  "status": "ok",
+  "applicability": "heuristic LWE estimator model",
+  "cost": {
+    "rop": "2.39041962539362e126",
+    "red": "2.39041962539362e126",
+    "delta": "1.00158878052786",
+    "beta": "1388",
+    "d": "2763",
+    "tag": "usvp",
+    "problem": "LWEParameters(n=1536, q=3329, Xs=D(\u03c3=1.00), Xe=D(\u03c3=1.00), m=1792, tag='p0-1536')"
+  },
+  "log2_cost": {
+    "rop": 419.8202038536516,
+    "red": 419.8202038536516
+  },
+  "estimator_messages": "",
+  "elapsed_seconds": 5.194937354000103
+}

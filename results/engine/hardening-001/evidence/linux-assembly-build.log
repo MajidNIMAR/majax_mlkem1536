@@ -1,0 +1,25 @@
+rustc 1.91.1 (ed61e7d7e 2025-11-07)
+binary: rustc
+commit-hash: ed61e7d7e242494fb7057f2657300d9e77bb4fcb
+commit-date: 2025-11-07
+host: x86_64-unknown-linux-gnu
+release: 1.91.1
+LLVM version: 21.1.2
+   Compiling proc-macro2 v1.0.107
+   Compiling getrandom v0.4.3
+   Compiling quote v1.0.47
+   Compiling serde_core v1.0.228
+   Compiling serde v1.0.228
+   Compiling hybrid-array v0.4.15
+   Compiling crypto-common v0.2.2
+   Compiling syn v2.0.119
+   Compiling digest v0.11.3
+   Compiling shake v0.1.0
+   Compiling sha3 v0.12.0
+   Compiling serde_derive v1.0.228
+   Compiling serde_spanned v0.6.9
+   Compiling toml_datetime v0.6.11
+   Compiling toml_edit v0.22.27
+   Compiling toml v0.8.23
+   Compiling kem1536 v0.1.0 (/mnt/c/Users/majax/Documents/Codex/NIST/crates/kem1536)
+    Finished `release` profile [optimized] target(s) in 26.22s

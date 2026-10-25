@@ -1,0 +1,311 @@
+{
+  "timings": [
+    {
+      "identifier": 0,
+      "step": "matrix_LLL_box",
+      "seconds": 0.11933859999408014
+    },
+    {
+      "identifier": 0,
+      "family": "repeated",
+      "step": "warm_tables_and_decode_128",
+      "seconds": 0.13295739999739453
+    },
+    {
+      "identifier": 0,
+      "family": "repeated",
+      "step": "kernels_and_moments",
+      "seconds": 0.07399579999037087
+    },
+    {
+      "identifier": 0,
+      "family": "repeated",
+      "step": "LWE_and_uniform_observations",
+      "seconds": 0.3534833999874536
+    },
+    {
+      "identifier": 0,
+      "family": "radix",
+      "step": "warm_tables_and_decode_128",
+      "seconds": 1.0874984000110999
+    },
+    {
+      "identifier": 0,
+      "family": "radix",
+      "step": "kernels_and_moments",
+      "seconds": 0.07251399999950081
+    },
+    {
+      "identifier": 0,
+      "family": "radix",
+      "step": "LWE_and_uniform_observations",
+      "seconds": 0.3466269999917131
+    },
+    {
+      "identifier": 1,
+      "step": "matrix_LLL_box",
+      "seconds": 0.11623100002179854
+    },
+    {
+      "identifier": 1,
+      "family": "repeated",
+      "step": "warm_tables_and_decode_128",
+      "seconds": 0.1315003999916371
+    },
+    {
+      "identifier": 1,
+      "family": "repeated",
+      "step": "kernels_and_moments",
+      "seconds": 0.07229879999067634
+    },
+    {
+      "identifier": 1,
+      "family": "repeated",
+      "step": "LWE_and_uniform_observations",
+      "seconds": 0.3478899000037927
+    },
+    {
+      "identifier": 1,
+      "family": "radix",
+      "step": "warm_tables_and_decode_128",
+      "seconds": 1.0633200999873225
+    },
+    {
+      "identifier": 1,
+      "family": "radix",
+      "step": "kernels_and_moments",
+      "seconds": 0.07431349999387749
+    },
+    {
+      "identifier": 1,
+      "family": "radix",
+      "step": "LWE_and_uniform_observations",
+      "seconds": 0.3499115000013262
+    },
+    {
+      "identifier": 2,
+      "step": "matrix_LLL_box",
+      "seconds": 0.132580900011817
+    },
+    {
+      "identifier": 2,
+      "family": "repeated",
+      "step": "warm_tables_and_decode_128",
+      "seconds": 0.12981199999921955
+    },
+    {
+      "identifier": 2,
+      "family": "repeated",
+      "step": "kernels_and_moments",
+      "seconds": 0.07281010001315735
+    },
+    {
+      "identifier": 2,
+      "family": "repeated",
+      "step": "LWE_and_uniform_observations",
+      "seconds": 0.3445567000017036
+    },
+    {
+      "identifier": 2,
+      "family": "radix",
+      "step": "warm_tables_and_decode_128",
+      "seconds": 1.1371682999888435
+    },
+    {
+      "identifier": 2,
+      "family": "radix",
+      "step": "kernels_and_moments",
+      "seconds": 0.07380169999669306
+    },
+    {
+      "identifier": 2,
+      "family": "radix",
+      "step": "LWE_and_uniform_observations",
+      "seconds": 0.34227770002325997
+    },
+    {
+      "identifier": 3,
+      "step": "matrix_LLL_box",
+      "seconds": 0.12018649998935871
+    },
+    {
+      "identifier": 3,
+      "family": "repeated",
+      "step": "warm_tables_and_decode_128",
+      "seconds": 0.13401800001156516
+    },
+    {
+      "identifier": 3,
+      "family": "repeated",
+      "step": "kernels_and_moments",
+      "seconds": 0.07285600001341663
+    },
+    {
+      "identifier": 3,
+      "family": "repeated",
+      "step": "LWE_and_uniform_observations",
+      "seconds": 0.36608340000384487
+    },
+    {
+      "identifier": 3,
+      "family": "radix",
+      "step": "warm_tables_and_decode_128",
+      "seconds": 1.1173352000187151
+    },
+    {
+      "identifier": 3,
+      "family": "radix",
+      "step": "kernels_and_moments",
+      "seconds": 0.07625959999859333
+    },
+    {
+      "identifier": 3,
+      "family": "radix",
+      "step": "LWE_and_uniform_observations",
+      "seconds": 0.35301809999509715
+    }
+  ],
+  "arrays": [
+    {
+      "identifier": 0,
+      "family": "repeated",
+      "listed_array_bytes": {
+        "states": 4751360,
+        "public_b": 98304,
+        "true_symbols": 688128,
+        "public_phases": 4194304,
+        "direct_phases": 4194304,
+        "uniform_b": 98304,
+        "uniform_phases": 4194304,
+        "coefficients": 148480,
+        "code_labels": 21504
+      },
+      "largest_listed_array_bytes": 4751360,
+      "sum_listed_array_bytes": 18388992
+    },
+    {
+      "identifier": 0,
+      "family": "radix",
+      "listed_array_bytes": {
+        "states": 4751360,
+        "public_b": 98304,
+        "true_symbols": 688128,
+        "public_phases": 4194304,
+        "direct_phases": 4194304,
+        "uniform_b": 98304,
+        "uniform_phases": 4194304,
+        "coefficients": 148480,
+        "code_labels": 21504
+      },
+      "largest_listed_array_bytes": 4751360,
+      "sum_listed_array_bytes": 18388992
+    },
+    {
+      "identifier": 1,
+      "family": "repeated",
+      "listed_array_bytes": {
+        "states": 4751360,
+        "public_b": 98304,
+        "true_symbols": 688128,
+        "public_phases": 4194304,
+        "direct_phases": 4194304,
+        "uniform_b": 98304,
+        "uniform_phases": 4194304,
+        "coefficients": 148480,
+        "code_labels": 21504
+      },
+      "largest_listed_array_bytes": 4751360,
+      "sum_listed_array_bytes": 18388992
+    },
+    {
+      "identifier": 1,
+      "family": "radix",
+      "listed_array_bytes": {
+        "states": 4751360,
+        "public_b": 98304,
+        "true_symbols": 688128,
+        "public_phases": 4194304,
+        "direct_phases": 4194304,
+        "uniform_b": 98304,
+        "uniform_phases": 4194304,
+        "coefficients": 148480,
+        "code_labels": 21504
+      },
+      "largest_listed_array_bytes": 4751360,
+      "sum_listed_array_bytes": 18388992
+    },
+    {
+      "identifier": 2,
+      "family": "repeated",
+      "listed_array_bytes": {
+        "states": 4751360,
+        "public_b": 98304,
+        "true_symbols": 688128,
+        "public_phases": 4194304,
+        "direct_phases": 4194304,
+        "uniform_b": 98304,
+        "uniform_phases": 4194304,
+        "coefficients": 148480,
+        "code_labels": 21504
+      },
+      "largest_listed_array_bytes": 4751360,
+      "sum_listed_array_bytes": 18388992
+    },
+    {
+      "identifier": 2,
+      "family": "radix",
+      "listed_array_bytes": {
+        "states": 4751360,
+        "public_b": 98304,
+        "true_symbols": 688128,
+        "public_phases": 4194304,
+        "direct_phases": 4194304,
+        "uniform_b": 98304,
+        "uniform_phases": 4194304,
+        "coefficients": 148480,
+        "code_labels": 21504
+      },
+      "largest_listed_array_bytes": 4751360,
+      "sum_listed_array_bytes": 18388992
+    },
+    {
+      "identifier": 3,
+      "family": "repeated",
+      "listed_array_bytes": {
+        "states": 4751360,
+        "public_b": 98304,
+        "true_symbols": 688128,
+        "public_phases": 4194304,
+        "direct_phases": 4194304,
+        "uniform_b": 98304,
+        "uniform_phases": 4194304,
+        "coefficients": 148480,
+        "code_labels": 21504
+      },
+      "largest_listed_array_bytes": 4751360,
+      "sum_listed_array_bytes": 18388992
+    },
+    {
+      "identifier": 3,
+      "family": "radix",
+      "listed_array_bytes": {
+        "states": 4751360,
+        "public_b": 98304,
+        "true_symbols": 688128,
+        "public_phases": 4194304,
+        "direct_phases": 4194304,
+        "uniform_b": 98304,
+        "uniform_phases": 4194304,
+        "coefficients": 148480,
+        "code_labels": 21504
+      },
+      "largest_listed_array_bytes": 4751360,
+      "sum_listed_array_bytes": 18388992
+    }
+  ],
+  "limits": [
+    "listed dense arrays only, not OS RSS or total allocator peak",
+    "timings include Python/NumPy on this host; not rop or large-list extrapolation",
+    "decoder timing includes table construction when not already cached"
+  ]
+}

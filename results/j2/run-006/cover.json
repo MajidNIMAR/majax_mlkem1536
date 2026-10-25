@@ -1,0 +1,17 @@
+{
+  "q": 7681,
+  "bits_per_coordinate_label": 12,
+  "levels": 4096,
+  "distinct_rows_and_columns": true,
+  "maximum_circular_gap": 2,
+  "row_gap_counts": {
+    "1": 511,
+    "2": 3585
+  },
+  "adjacent_row_phases_alternate_including_wrap": true,
+  "two_column_phases_cover_all_residues": true,
+  "certified_L1_error_at_most_one": true,
+  "unique_codewords": 16777216,
+  "fixed_pair_bits": 24,
+  "proof": "on a row, a column is within one; between rows at distance two, their column phases cover every x"
+}

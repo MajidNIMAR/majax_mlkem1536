@@ -1,0 +1,146 @@
+[
+  {
+    "identifier": 0,
+    "method": "norm",
+    "family": "repeated",
+    "seconds": 2.1765459000016563
+  },
+  {
+    "identifier": 0,
+    "method": "norm",
+    "family": "radix",
+    "seconds": 3.507914499990875
+  },
+  {
+    "identifier": 0,
+    "method": "hash",
+    "family": "repeated",
+    "seconds": 1.8622604999982286
+  },
+  {
+    "identifier": 0,
+    "method": "hash",
+    "family": "radix",
+    "seconds": 3.4501990000135265
+  },
+  {
+    "identifier": 0,
+    "method": "energy",
+    "family": "repeated",
+    "seconds": 1.8841768999991473
+  },
+  {
+    "identifier": 0,
+    "method": "energy",
+    "family": "radix",
+    "seconds": 3.4526120999944396
+  },
+  {
+    "identifier": 1,
+    "method": "norm",
+    "family": "repeated",
+    "seconds": 2.1255454000202008
+  },
+  {
+    "identifier": 1,
+    "method": "norm",
+    "family": "radix",
+    "seconds": 3.75689930000226
+  },
+  {
+    "identifier": 1,
+    "method": "hash",
+    "family": "repeated",
+    "seconds": 2.02400029997807
+  },
+  {
+    "identifier": 1,
+    "method": "hash",
+    "family": "radix",
+    "seconds": 3.4438710999966133
+  },
+  {
+    "identifier": 1,
+    "method": "energy",
+    "family": "repeated",
+    "seconds": 1.8788731999811716
+  },
+  {
+    "identifier": 1,
+    "method": "energy",
+    "family": "radix",
+    "seconds": 3.414671200007433
+  },
+  {
+    "identifier": 2,
+    "method": "norm",
+    "family": "repeated",
+    "seconds": 1.896505500015337
+  },
+  {
+    "identifier": 2,
+    "method": "norm",
+    "family": "radix",
+    "seconds": 3.4777094000019133
+  },
+  {
+    "identifier": 2,
+    "method": "hash",
+    "family": "repeated",
+    "seconds": 1.9294292999838945
+  },
+  {
+    "identifier": 2,
+    "method": "hash",
+    "family": "radix",
+    "seconds": 3.4433886999904644
+  },
+  {
+    "identifier": 2,
+    "method": "energy",
+    "family": "repeated",
+    "seconds": 1.8745874000014737
+  },
+  {
+    "identifier": 2,
+    "method": "energy",
+    "family": "radix",
+    "seconds": 3.4443500000052154
+  },
+  {
+    "identifier": 3,
+    "method": "norm",
+    "family": "repeated",
+    "seconds": 1.8779642999870703
+  },
+  {
+    "identifier": 3,
+    "method": "norm",
+    "family": "radix",
+    "seconds": 3.4346412000013515
+  },
+  {
+    "identifier": 3,
+    "method": "hash",
+    "family": "repeated",
+    "seconds": 1.8789380000089295
+  },
+  {
+    "identifier": 3,
+    "method": "hash",
+    "family": "radix",
+    "seconds": 3.457833099993877
+  },
+  {
+    "identifier": 3,
+    "method": "energy",
+    "family": "repeated",
+    "seconds": 1.8965301999996882
+  },
+  {
+    "identifier": 3,
+    "method": "energy",
+    "family": "radix",
+    "seconds": 3.497875099972589
+  }
+]

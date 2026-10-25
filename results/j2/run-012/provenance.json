@@ -1,0 +1,33 @@
+{
+  "created_utc": "2026-10-24T19:26:28.984203+00:00",
+  "input_sha256": {
+    "research/cbd_decoder.py": "b4be2f4b2c8be98e7c673de528f70e5519ff61af898536849aaef853c14153d2",
+    "research/cbd_decoder_numpy.py": "503a2e61f21d078e0e46e62ee6009b8e3e3595d00930019a826ff409c9e0f886",
+    "research/run_cbd_decoder.py": "cd57b49901adfd06515b1eb5732d04d188c1a1a06b57926770d22bf82743d468",
+    "research/test_cbd_decoder.py": "8083b931bca083a827d6b6b1800f94e12b45a0e5d7323878422d349a140a5079",
+    "research/verify_cbd_decoder_results.py": "66fc417fb869497e2e04b5062408ab5be84ce632c6061909fb11670e5ebfff8b",
+    "research/verify_cbd_decoder_independent.py": "33de2d58ddb3fa31976e02afdb4e6c35b65858644e0334e2790f8111582b0b9a",
+    "research/verify_cbd_decoder_intervals.py": "a7efabdce9c61331b230c068de65ac39bb4458011bfe84ed201304b1278454e9",
+    "docs/PROTOCOLE_H05.md": "0aed0bfc2ea68ca50b11dc7fc515eb846deb9361dc71d0c006cf3d542780f6a4",
+    "research/block_decoder.py": "afa6e53d16e339d6d0b0be6145f5221d12ef52685e5de9c7745b89389740e912",
+    "research/block_decoder_numpy.py": "c357a2523dc82f14ef8fc86fd371648a1f02d2e66105fbe70f8afa547bb54e91",
+    "research/run_block_decoder.py": "e4d3ba51a63e852a989a195a7ddc0238456244c0746c54c8fe4789eb2322917b",
+    "research/decoder_score.py": "845d7a0c6838640399e454eea3f1c58954282f1450b3cb8d625b8c02d30f4871",
+    "results/j2/run-010/study.json": "e53d6b31bd2977252f45d274c204b4de353015d3e429847d0dcab15611fc5bf0",
+    "results/j2/run-010/observations.jsonl": "8da7db82d08c2ce975d3811f022141d9f1e49246466f339734efab617e932cc0",
+    "results/j2/run-010/provenance.json": "dd149649993cc97eac4d4bc6af80f01789b36af31cbf43642ebb6a3d253087c4",
+    "results/j2/run-011/provenance.json": "3763c993ece805481b49cc7b175f1d2a4c040391c9b0a0931914f8f5eb1e66af",
+    "results/j2/run-011/study.json": "9de388725877e727435f9707ff6c6daf26cd84f50dd18aadc348bf3e503a3f85",
+    "research/sage-bootstrap-manifest.json": "f003d8fb743e697b740da0d91ad062e91ca777d9e632af5adfb513d9b5a48e4e",
+    "research/sage-linux-explicit.txt": "bbd6254045283cb46bef5207bfe7768ba70eb023c7be83636b633def8ee663ef",
+    "research/sage-linux-packages.json": "bc9c31845bd038ecd54cd647fc589b8b906452e59f2569089e5506c78212e2f1"
+  },
+  "output_sha256": {
+    "weight-tables.json": "05f458147387e366e3ce5e2f3e277f18192f94fea6f905538ba67e2c6ed53c00",
+    "toy-comparison.json": "4e48d67d2da451efcdcf0fadbd5c3fa670d22245deca4f36e39c1ea0683edf84",
+    "observations.jsonl": "2297b6c6c01dbf7ecdb0e7b9bef5629ccd76604226f93e0fd8a9892dde6fca3a",
+    "oracle-cases.json": "d8c032c78b676d4c3b115c6d54f9d7125d4b6c7441bfe9c7d685f5db2c8665ef",
+    "timings.json": "8bcc14b6073343923d6f1a79ee075ef3c37c563c7d36270f11f189f57c9727f9",
+    "study.json": "4e385fe5b615140d3a7cf6c4b4acfd54edda4618098ac9b8a21e4dc1c7a023b0"
+  }
+}

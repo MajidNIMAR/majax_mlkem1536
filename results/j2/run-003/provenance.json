@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-10-24T14:26:27.355512+00:00",
+  "python": "3.13.7",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "scope": "P0 diagnosis only; no replacement profile or security selection",
+  "input_sha256": {
+    "research/decapsulation_diagnostic.py": "8b3c09606c58c2829ce8ee19e85bb1f54996708232938b38625f52a02d14c402",
+    "research/run_decapsulation.py": "8f3e9b22559bae531b461ea8870d929a151d2e246bb1ea4536a992140abb7f12",
+    "research/test_decapsulation_diagnostic.py": "bc7ec76f8196a64021011b55e1dd30a4195a0a15e34be780f9cbbd3a097fdbf3",
+    "research/verify_decapsulation_results.py": "2a87429083d6342f03219f8258dcd14a8103ecfb84551c40a9c0c9d950b09252",
+    "research/noise_exact.py": "702d63dd736892cb1b273268087aecaadac06d5c5df4c3c093f909b98ede271e",
+    "profiles/kem1536-p0.toml": "ec07497ccab9150a982ecc882b8d1890d8dda18c4150e22f86cff70735e22740",
+    "results/j2/run-001/noise.json": "2f6d23816074f1ab112d3aae7090cf980552f5c92301e8d92059f36ad420965a",
+    "results/j2/run-001/provenance.json": "f19c49a5403d776ced48a15a2e8a5be4ebd5907dff34a32914c78222f8fdf092"
+  },
+  "output_sha256": {
+    "decapsulation.json": "bccfb24fdbf591928a7f07db5c5c102b0d446df1943f1ba1b3dc209ecc01edbf"
+  }
+}
