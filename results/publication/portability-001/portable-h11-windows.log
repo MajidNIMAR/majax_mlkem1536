@@ -1,0 +1,17 @@
+matrix 0: 7 distinct geometries, 8256 greedy costs
+matrix 1: 7 distinct geometries, 8256 greedy costs
+matrix 2: 7 distinct geometries, 8256 greedy costs
+matrix 3: 7 distinct geometries, 8256 greedy costs
+{
+  "snapshot": "run-018",
+  "selection_panels": 36,
+  "distinct_uniform_laws": 28,
+  "distinct_LWE_panels": 56,
+  "phase_identities": 4194304,
+  "H10_uniform_calibrations": 12,
+  "H10_CBD_calibrations": 96,
+  "exact_CBD_fourth_moment_computed": false,
+  "attack_costs_updated": false,
+  "profile_selected": false,
+  "j2_closed": false
+}

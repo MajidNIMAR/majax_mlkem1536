@@ -13,5 +13,6 @@
 /results/engine/**/sources/** -text whitespace=cr-at-eol,-blank-at-eof
 /results/engine/**/evidence/*.log -text whitespace=cr-at-eol,-blank-at-eof,-blank-at-eol
 /fuzz/fixtures/*.bin binary
+/results/publication/**/*.log -text whitespace=cr-at-eol,-blank-at-eof,-blank-at-eol
 /results/engine/**/audit/**/*.txt -text whitespace=cr-at-eol,-blank-at-eof,-blank-at-eol
 

@@ -1138,3 +1138,21 @@ relative 1e-13 et absolue 1e-30. Quatre tests couvrent l'écart observé et
 le rejet de compteurs, probabilités ou structures incorrects. Le rejeu
 complet portable H11 passe sous Windows ; dev check utilise le nouveau
 vérificateur sur les deux plateformes. La CI complète est relancée.
+
+## 25 octobre 2026 — Première publication validée sur Windows et Ubuntu
+
+La CI 40210986511 termine avec succès sur ses deux plateformes au commit
+public 75c26f668a99cf0676a01494bc33a7c99a193803. Les exécutants GitHub
+reconstruisent depuis le dépôt public et passent dev check : 95 tests
+Python par plateforme, tests Rust, vingt instantanés J2 et preuves moteur.
+Les journaux distants, le contrôle local après correction de liaison,
+le rejeu portable H11 et le diagnostic Linux sont conservés dans
+results/publication/portability-001, avec leurs SHA-256 et les empreintes
+des entrées canoniques Git du commit public testé.
+
+Les deux problèmes de portabilité rencontrés et leurs corrections restent
+tracés. Les sources historiques et les anciens instantanés sont inchangés.
+Le dernier commit de publication ne contient que documents et preuves ;
+le code demeure celui de la CI verte. La campagne longue M03 reste active
+et distincte. Aucune clôture de J2/J3/J4 ou validation de sécurité n'est
+déduite de la réussite de publication.

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "recorded_utc": "2026-10-25T16:29:08.099068+00:00",
+  "public_repository": "https://github.com/MajidNIMAR/majax_mlkem1536",
+  "tested_public_commit": "75c26f668a99cf0676a01494bc33a7c99a193803",
+  "CI_url": "https://github.com/MajidNIMAR/majax_mlkem1536/actions/runs/40210986511",
+  "CI_result": {
+    "run": 40210986511,
+    "commit": "75c26f668a99cf0676a01494bc33a7c99a193803",
+    "status": "success",
+    "jobs": [
+      {
+        "id": 121221959434,
+        "name": "check (ubuntu-24.04)",
+        "conclusion": "success"
+      },
+      {
+        "id": 121221959662,
+        "name": "check (windows-latest)",
+        "conclusion": "success"
+      }
+    ]
+  },
+  "python_tests_per_CI_platform": 95,
+  "scope": "Complete dev check on fresh GitHub-hosted Windows and Ubuntu runners. Local linker check and portable H11 replay are retained separately. Historical J2/engine sources and results were not rewritten. No constant-time, global erasure, security level or long-fuzz completion claim.",
+  "input_sha256_encoding": "Canonical Git blobs at tested_public_commit",
+  "input_sha256": {
+    ".cargo/config.toml": "6abf4f853edb1217e7b182d65dd5eba16c347eb7bf1826f54377e966451d593b",
+    "scripts/dev.ps1": "661d0a96e21efb86a82bb0a7c353a0e63aadf007dc63b9c572a0ce164fcbe585",
+    "scripts/dev.sh": "27bc4dc406ff0108fe6ec350af25daf53c0501a2cf7e51b22b89c52607af097f",
+    "research/portable_calibration.py": "262828d50b447b761cd965043954acbc58b499df0696ff38e30c353ee111320b",
+    "research/replay_additive_portable.py": "40838b62d869bac288abd6b90277ef6ecf9105a4f9e5a8af90a19cd6b1e1c00b",
+    "research/verify_additive_portable.py": "93b3c25b56bb49c8c52c7c0f2d11a3963fa3579b34b58bcf952410c260273c1a",
+    "research/test_portable_calibration.py": "8a5c3742b6300bff3c54f593aef7eafeb22ec49b1e5deffe21472f46b66c2833",
+    "research/run_additive_score.py": "b1a3cf4a75f2c30dfbbc80521bd7a321f1cae29ee9c069f70672efda80c2a962",
+    "research/verify_additive_score.py": "ef2e96b80fd81679706fac0b894829e4af4b6fe24e2b5ed6a04e558ea45996e2",
+    "Cargo.toml": "ff13a1ad6016fdb1e11376f304b4c3ea7670d1442d8f12cdbf02ebd01577de42",
+    "Cargo.lock": "ad9f28bdd7332407c054eed738e782a81e60f0c5180022e8b173fb2987f70cb3",
+    "rust-toolchain.toml": "b729462cbfa06a5d7efd33810fa271fe918b2db1ce61d99e57ec1c866659c270"
+  },
+  "output_sha256": {
+    "ci-ubuntu.log": "bfff036bcb9f0ba5a1eb39f8c5425d19826cc9d4e4a01bb4f5751ade371a6240",
+    "ci-windows.log": "d7cf63e30f48a22a5cb9916f5c38539cede5447fcd6be374f5160ae6b5c92ace",
+    "libm-diagnostic-linux.json": "3a26fd81c04b3ed139eaa73f172ffb1f6fe11b63043c0fd05e7cae3c9bff6e23",
+    "local-windows-linker-check.log": "ea6bf93c572e1a62480d83c53d00bb8f9f6513fce3b31e7fe8b3e5deb2b501c4",
+    "local-windows-self-test.log": "17e50a798822d86ccaec01cb35a4b1ac63e55d88557cc317220d39cd63de5924",
+    "portable-h11-windows.log": "2c8e1b6862896e244a01f92a2f18df426b4552bdc68d11d63bd1ce097fbb9ed9"
+  }
+}

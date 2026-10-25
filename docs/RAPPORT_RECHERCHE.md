@@ -15,7 +15,8 @@ vingt études J2 et preuves du moteur. Les outils et caches locaux ont été
 réutilisés ; ce n'est pas une installation à neuf ou une preuve de binaires
 identiques. Les [journaux et leur portée](../results/publication/initial-001/)
 sont conservés. La CI prépare désormais Python/NumPy et les références
-avant les contrôles Windows/Ubuntu ; sa réussite distante reste à constater.
+avant les contrôles Windows/Ubuntu ; les deux contrôles distants réussissent
+désormais sur le commit public `75c26f6`, avec 95 tests Python par plateforme.
 La campagne longue M03 continue séparément, sans résultat final anticipé.
 Voir [la procédure de publication](PUBLICATION_GITHUB.md).
 
@@ -28,8 +29,8 @@ pendant Clippy parce que la détection de MinGW n'emploie pas les objets et
 bibliothèques livrés avec Rust. Les préparations Rust/Python réussissent.
 Le correctif `.cargo/config.toml` impose `link-self-contained=yes` pour la
 cible Windows GNU. L'auto-test release réussit ensuite : 16 échanges et
-16 rejets. Le contrôle complet et la CI sont relancés ; leur réussite
-reste à constater. Aucun changement du moteur ou de ses formats.
+16 rejets. Le contrôle complet local et la CI Windows réussissent ensuite.
+Aucun changement du moteur ou de ses formats.
 
 **Portabilité numérique du contrôle H11.** La première CI Ubuntu passe
 les tests et H10, puis relève une égalité stricte inadaptée sur des champs
@@ -38,8 +39,16 @@ flottants de calibration H11. Le diagnostic Linux isole notamment un
 les compteurs exacts et toutes les empreintes historiques, avec tolérance
 relative 10^-13/absolue 10^-30 limitée aux champs flottants de calibration.
 Les sources et résultats figés restent inchangés. Quatre nouveaux tests
-et le rejeu complet H11 passent sous Windows ; le contrôle distant est
-relancé. Voir [le détail du correctif](PUBLICATION_GITHUB.md).
+et le rejeu complet H11 passent sous Windows ; la CI complète réussit
+ensuite sur Windows et Ubuntu. Voir [le détail du correctif](PUBLICATION_GITHUB.md).
+
+**Validation publique confirmée.** Le [run 40210986511](https://github.com/MajidNIMAR/majax_mlkem1536/actions/runs/40210986511)
+termine avec succès pour les deux plateformes sur `75c26f6` : 95 tests
+Python, les tests Rust, les vingt instantanés J2 et les contrôles moteur.
+Les [journaux complets et leur provenance](../results/publication/portability-001/)
+sont conservés. Cette validation depuis le dépôt public complète le
+contrôle local avec caches réutilisés ; elle ne démontre pas des binaires
+identiques, un niveau de sécurité ou la fin de la campagne longue M03.
 
 
 **Actualisation bibliographique.** La [revue des attaques au 24 octobre 2026](VEILLE_ATTAQUES_2026.md) complète maintenant l'étude initiale : variantes duales avec codes, hybrides avec rotations, critiques des modèles de score, corrélations du bruit, progrès quantiques et oracles d'échec. Le tableau Core-SVP historique ci-dessous reste celui de `run-001` ; il ne doit pas être présenté comme une synthèse des meilleures attaques connues à cette date.

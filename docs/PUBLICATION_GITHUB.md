@@ -71,7 +71,7 @@ etc.). Le démarrage et la préparation Python avaient réussi ; Clippy
 `.cargo/config.toml` impose désormais `-C link-self-contained=yes` pour
 `x86_64-pc-windows-gnu`, afin d'utiliser les objets et bibliothèques fournis
 par la version Rust épinglée. L'auto-test release local réussit après ce
-changement. Le contrôle complet est relancé, ainsi que la CI publique.
+changement. Le contrôle complet local puis la CI Windows réussissent.
 Le moteur, ses formats et paramètres ne changent pas. Les preuves initiales
 restent celles du premier instantané ; `PUBLICATION_PROVENANCE.json`
 décrit cet import initial, les commits ultérieurs conservent les évolutions.
@@ -96,4 +96,20 @@ du rejeu. Les scripts `dev check` l'utilisent désormais.
 Quatre tests de régression couvrent l'écart Linux observé, une modification
 d'un seul compteur, une modification significative de probabilité et des
 valeurs non finies ou une structure altérée. Le rejeu complet H11 portable
-réussit sous Windows ; la CI doit encore confirmer les deux plateformes.
+réussit sous Windows. La CI complète confirme désormais Windows et Ubuntu,
+avec 95 tests Python par plateforme et toutes les vérifications ordinaires.
+
+## Validation publique finale
+
+La [CI 40210986511](https://github.com/MajidNIMAR/majax_mlkem1536/actions/runs/40210986511)
+réussit sur ses deux exécutants pour le commit public
+`75c26f668a99cf0676a01494bc33a7c99a193803`. Les
+[journaux et empreintes](../results/publication/portability-001/) conservent
+le contrôle complet distant, le contrôle local après correction de liaison,
+le rejeu H11 portable et le diagnostic `erfc` Linux. Le manifeste lie les
+entrées aux octets canoniques des fichiers Git du commit testé.
+
+Le commit de clôture ajoute seulement les preuves et actualise les
+documents ; le code demeure celui de la CI réussie. Les vingt instantanés
+J2 et les anciennes preuves moteur restent inchangés. La campagne longue
+M03 continue séparément ; sa fin n'est pas anticipée.

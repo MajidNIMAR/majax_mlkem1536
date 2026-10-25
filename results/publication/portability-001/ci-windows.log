@@ -1,0 +1,1063 @@
+﻿2026-10-25T16:17:47.3108991Z Current runner version: '2.338.0'
+2026-10-25T16:17:47.3365807Z ##[group]Runner Image Provisioner
+2026-10-25T16:17:47.3366624Z Hosted Compute Agent
+2026-10-25T16:17:47.3367226Z Version: 20261021.618
+2026-10-25T16:17:47.3367849Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+2026-10-25T16:17:47.3368539Z Build Date: 2026-10-21T00:45:21Z
+2026-10-25T16:17:47.3369183Z Worker ID: {26cb84f9-156c-4bdc-adb0-29c5619905ef}
+2026-10-25T16:17:47.3369830Z Region: westcentralus
+2026-10-25T16:17:47.3370377Z Cloud: Azure
+2026-10-25T16:17:47.3370868Z ##[endgroup]
+2026-10-25T16:17:47.3372216Z ##[group]Operating System
+2026-10-25T16:17:47.3372824Z Microsoft Windows Server 2025
+2026-10-25T16:17:47.3373394Z 10.0.26100
+2026-10-25T16:17:47.3373880Z Datacenter
+2026-10-25T16:17:47.3374717Z ##[endgroup]
+2026-10-25T16:17:47.3375222Z ##[group]Runner Image
+2026-10-25T16:17:47.3375859Z Image: windows-2025-vs2026
+2026-10-25T16:17:47.3376567Z Version: 20261021.278.1
+2026-10-25T16:17:47.3378096Z Included Software: https://github.com/actions/runner-images/blob/win25-vs2026/20261021.278/images/windows/Windows2025-VS2026-Readme.md
+2026-10-25T16:17:47.3379716Z Image Release: https://github.com/actions/runner-images/releases/tag/win25-vs2026%2F20261021.278
+2026-10-25T16:17:47.3380667Z ##[endgroup]
+2026-10-25T16:17:47.3381724Z ##[group]GITHUB_TOKEN Permissions
+2026-10-25T16:17:47.3383582Z Contents: read
+2026-10-25T16:17:47.3384126Z Metadata: read
+2026-10-25T16:17:47.3384684Z ##[endgroup]
+2026-10-25T16:17:47.3386851Z Secret source: Actions
+2026-10-25T16:17:47.3387749Z Cache mode: write
+2026-10-25T16:17:47.3388399Z Prepare workflow directory
+2026-10-25T16:17:47.4290824Z Prepare all required actions
+2026-10-25T16:17:47.4339775Z Getting action download info
+2026-10-25T16:17:47.6999804Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-10-25T16:17:47.8535604Z Download action repository 'actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c' (SHA:e797f83bcb11b83ae66e0230d6156d7c80228e7c)
+2026-10-25T16:17:48.3452308Z Complete job name: check (windows-latest)
+2026-10-25T16:17:48.9568674Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+2026-10-25T16:17:48.9570107Z with:
+2026-10-25T16:17:48.9570551Z   repository: MajidNIMAR/majax_mlkem1536
+2026-10-25T16:17:48.9575342Z   token: ***
+2026-10-25T16:17:48.9575749Z   ssh-strict: true
+2026-10-25T16:17:48.9576169Z   ssh-user: git
+2026-10-25T16:17:48.9576593Z   persist-credentials: true
+2026-10-25T16:17:48.9577083Z   clean: true
+2026-10-25T16:17:48.9577774Z   sparse-checkout-cone-mode: true
+2026-10-25T16:17:48.9578305Z   fetch-depth: 1
+2026-10-25T16:17:48.9578786Z   fetch-tags: false
+2026-10-25T16:17:48.9579339Z   show-progress: true
+2026-10-25T16:17:48.9579780Z   lfs: false
+2026-10-25T16:17:48.9580195Z   submodules: false
+2026-10-25T16:17:48.9580644Z   set-safe-directory: true
+2026-10-25T16:17:48.9581148Z   allow-unsafe-pr-checkout: false
+2026-10-25T16:17:48.9581951Z ##[endgroup]
+2026-10-25T16:17:49.1375433Z Syncing repository: MajidNIMAR/majax_mlkem1536
+2026-10-25T16:17:49.1377472Z ##[group]Getting Git version info
+2026-10-25T16:17:49.1378220Z Working directory is 'D:\a\majax_mlkem1536\majax_mlkem1536'
+2026-10-25T16:17:49.2072608Z [command]"C:\Program Files\Git\bin\git.exe" version
+2026-10-25T16:17:49.4740004Z git version 2.56.0.windows.2
+2026-10-25T16:17:49.4800487Z ##[endgroup]
+2026-10-25T16:17:49.4833356Z Temporarily overriding HOME='D:\a\_temp\994865e6-a5c0-40b4-9947-be6a3d5b22ea' before making global git config changes
+2026-10-25T16:17:49.4835931Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-25T16:17:49.4838509Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\majax_mlkem1536\majax_mlkem1536
+2026-10-25T16:17:49.5429504Z Deleting the contents of 'D:\a\majax_mlkem1536\majax_mlkem1536'
+2026-10-25T16:17:49.5434522Z ##[group]Determining repository object format
+2026-10-25T16:17:49.5484179Z ##[endgroup]
+2026-10-25T16:17:49.5484926Z ##[group]Initializing the repository
+2026-10-25T16:17:49.5485851Z [command]"C:\Program Files\Git\bin\git.exe" init D:\a\majax_mlkem1536\majax_mlkem1536
+2026-10-25T16:17:49.6309623Z Initialized empty Git repository in D:/a/majax_mlkem1536/majax_mlkem1536/.git/
+2026-10-25T16:17:49.6360855Z [command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/MajidNIMAR/majax_mlkem1536
+2026-10-25T16:17:49.6972977Z ##[endgroup]
+2026-10-25T16:17:49.6973788Z ##[group]Disabling automatic garbage collection
+2026-10-25T16:17:49.6981709Z [command]"C:\Program Files\Git\bin\git.exe" config --local gc.auto 0
+2026-10-25T16:17:49.7352769Z ##[endgroup]
+2026-10-25T16:17:49.7353897Z ##[group]Setting up auth
+2026-10-25T16:17:49.7354744Z Removing SSH command configuration
+2026-10-25T16:17:49.7363996Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2026-10-25T16:17:49.7765866Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2026-10-25T16:17:51.0303281Z Removing HTTP extra header
+2026-10-25T16:17:51.0312575Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-25T16:17:51.0689744Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2026-10-25T16:17:51.6174992Z Removing includeIf entries pointing to credentials config files
+2026-10-25T16:17:51.6186762Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-25T16:17:51.6563847Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+2026-10-25T16:17:52.1937987Z [command]"C:\Program Files\Git\bin\git.exe" config --file D:\a\_temp\git-credentials-3f5bc328-271b-4a78-90ae-57dd0b89a225.config http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+2026-10-25T16:17:52.2264000Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:D:/a/majax_mlkem1536/majax_mlkem1536/.git.path D:\a\_temp\git-credentials-3f5bc328-271b-4a78-90ae-57dd0b89a225.config
+2026-10-25T16:17:52.2667930Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:D:/a/majax_mlkem1536/majax_mlkem1536/.git/worktrees/*.path D:\a\_temp\git-credentials-3f5bc328-271b-4a78-90ae-57dd0b89a225.config
+2026-10-25T16:17:52.3108633Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-3f5bc328-271b-4a78-90ae-57dd0b89a225.config
+2026-10-25T16:17:52.3505799Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-3f5bc328-271b-4a78-90ae-57dd0b89a225.config
+2026-10-25T16:17:52.3898877Z ##[endgroup]
+2026-10-25T16:17:52.3899497Z ##[group]Fetching the repository
+2026-10-25T16:17:52.3911825Z [command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +75c26f668a99cf0676a01494bc33a7c99a193803:refs/remotes/origin/main
+2026-10-25T16:17:56.0734741Z From https://github.com/MajidNIMAR/majax_mlkem1536
+2026-10-25T16:17:56.0735538Z  * [new ref]         75c26f668a99cf0676a01494bc33a7c99a193803 -> origin/main
+2026-10-25T16:17:56.0803354Z [command]"C:\Program Files\Git\bin\git.exe" branch --list --remote origin/main
+2026-10-25T16:17:56.1244807Z   origin/main
+2026-10-25T16:17:56.1289805Z [command]"C:\Program Files\Git\bin\git.exe" rev-parse refs/remotes/origin/main
+2026-10-25T16:17:56.1656520Z 75c26f668a99cf0676a01494bc33a7c99a193803
+2026-10-25T16:17:56.1690745Z ##[endgroup]
+2026-10-25T16:17:56.1691128Z ##[group]Determining the checkout info
+2026-10-25T16:17:56.1691691Z ##[endgroup]
+2026-10-25T16:17:56.1700577Z [command]"C:\Program Files\Git\bin\git.exe" sparse-checkout disable
+2026-10-25T16:17:56.2192791Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all extensions.worktreeConfig
+2026-10-25T16:17:56.2699764Z ##[group]Checking out the ref
+2026-10-25T16:17:56.2708368Z [command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force -B main refs/remotes/origin/main
+2026-10-25T16:17:57.3607653Z Updating files:  85% (579/677)
+2026-10-25T16:17:57.4013924Z Updating files:  86% (583/677)
+2026-10-25T16:17:57.5361519Z Updating files:  87% (589/677)
+2026-10-25T16:17:57.5991162Z Updating files:  88% (596/677)
+2026-10-25T16:17:57.6033922Z Updating files:  89% (603/677)
+2026-10-25T16:17:57.6588870Z Updating files:  90% (610/677)
+2026-10-25T16:17:57.6674663Z Updating files:  91% (617/677)
+2026-10-25T16:17:57.6709723Z Updating files:  92% (623/677)
+2026-10-25T16:17:57.6816524Z Updating files:  93% (630/677)
+2026-10-25T16:17:57.6883101Z Updating files:  94% (637/677)
+2026-10-25T16:17:57.6906875Z Updating files:  95% (644/677)
+2026-10-25T16:17:57.6938794Z Updating files:  96% (650/677)
+2026-10-25T16:17:57.6960651Z Updating files:  97% (657/677)
+2026-10-25T16:17:57.7004280Z Updating files:  98% (664/677)
+2026-10-25T16:17:57.7235223Z Updating files:  99% (671/677)
+2026-10-25T16:17:57.7237882Z Updating files: 100% (677/677)
+2026-10-25T16:17:57.7238292Z Updating files: 100% (677/677), done.
+2026-10-25T16:17:57.7380700Z Switched to a new branch 'main'
+2026-10-25T16:17:57.7403809Z branch 'main' set up to track 'origin/main'.
+2026-10-25T16:17:57.7547142Z ##[endgroup]
+2026-10-25T16:17:57.7995753Z [command]"C:\Program Files\Git\bin\git.exe" log -1 --format=%H
+2026-10-25T16:17:57.8335313Z 75c26f668a99cf0676a01494bc33a7c99a193803
+2026-10-25T16:17:58.1262049Z ##[group]Run actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c
+2026-10-25T16:17:58.1262532Z with:
+2026-10-25T16:17:58.1262738Z   python-version: 3.13
+2026-10-25T16:17:58.1262956Z   check-latest: false
+2026-10-25T16:17:58.1265823Z   token: ***
+2026-10-25T16:17:58.1266033Z   update-environment: true
+2026-10-25T16:17:58.1266267Z   allow-prereleases: false
+2026-10-25T16:17:58.1266479Z   freethreaded: false
+2026-10-25T16:17:58.1266673Z ##[endgroup]
+2026-10-25T16:17:58.3322299Z ##[group]Installed versions
+2026-10-25T16:17:58.3500610Z (node:1848) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-25T16:17:58.3501551Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-25T16:17:58.3503503Z Successfully set up CPython (3.13.16)
+2026-10-25T16:17:58.3504507Z ##[endgroup]
+2026-10-25T16:17:58.5471591Z ##[group]Run ./scripts/bootstrap.ps1
+2026-10-25T16:17:58.5471984Z [36;1m./scripts/bootstrap.ps1[0m
+2026-10-25T16:17:58.6131241Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-10-25T16:17:58.6131626Z env:
+2026-10-25T16:17:58.6131911Z   pythonLocation: C:\hostedtoolcache\windows\Python\3.13.16\x64
+2026-10-25T16:17:58.6132457Z   PKG_CONFIG_PATH: C:\hostedtoolcache\windows\Python\3.13.16\x64/lib/pkgconfig
+2026-10-25T16:17:58.6132903Z   Python_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.16\x64
+2026-10-25T16:17:58.6133290Z   Python2_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.16\x64
+2026-10-25T16:17:58.6133662Z   Python3_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.16\x64
+2026-10-25T16:17:58.6133961Z ##[endgroup]
+2026-10-25T16:17:59.7502253Z info: profile set to minimal
+2026-10-25T16:17:59.7502814Z info: setting default host tuple to x86_64-pc-windows-gnu
+2026-10-25T16:17:59.7506141Z info: skipping toolchain installation
+2026-10-25T16:17:59.7506610Z 
+2026-10-25T16:17:59.7507813Z 
+2026-10-25T16:17:59.7508112Z Rust is installed now. Great!
+2026-10-25T16:17:59.7508554Z 
+2026-10-25T16:17:59.7509602Z To get started you need Cargo's bin directory (D:\a\majax_mlkem1536
+2026-10-25T16:17:59.7536357Z \majax_mlkem1536\.tools\cargo\bin) in your PATH
+2026-10-25T16:17:59.7536822Z environment variable. This has not been done automatically.
+2026-10-25T16:17:59.7831373Z info: syncing channel updates for 1.91.1-x86_64-pc-windows-gnu
+2026-10-25T16:18:00.1857421Z info: latest update on 2025-11-10 for version 1.91.1 (ed61e7d7e 2025-11-07)
+2026-10-25T16:18:00.1859683Z info: downloading 7 components
+2026-10-25T16:18:16.6512320Z 
+2026-10-25T16:18:17.2345179Z   1.91.1-x86_64-pc-windows-gnu installed - rustc 1.91.1 (ed61e7d7e 2025-11-07)
+2026-10-25T16:18:17.2345581Z 
+2026-10-25T16:18:17.2352492Z info: default toolchain set to 1.91.1-x86_64-pc-windows-gnu
+2026-10-25T16:18:17.3201091Z Local toolchain ready. Run .\scripts\dev.ps1 check
+2026-10-25T16:18:17.3793530Z ##[group]Run ./scripts/research-setup.ps1
+2026-10-25T16:18:17.3793919Z [36;1m./scripts/research-setup.ps1[0m
+2026-10-25T16:18:17.3862778Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-10-25T16:18:17.3863143Z env:
+2026-10-25T16:18:17.3863416Z   pythonLocation: C:\hostedtoolcache\windows\Python\3.13.16\x64
+2026-10-25T16:18:17.3863876Z   PKG_CONFIG_PATH: C:\hostedtoolcache\windows\Python\3.13.16\x64/lib/pkgconfig
+2026-10-25T16:18:17.3864308Z   Python_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.16\x64
+2026-10-25T16:18:17.3864695Z   Python2_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.16\x64
+2026-10-25T16:18:17.3865075Z   Python3_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.16\x64
+2026-10-25T16:18:17.3865372Z ##[endgroup]
+2026-10-25T16:18:24.3922122Z Collecting numpy==2.3.5 (from -r research/requirements-research.txt (line 2))
+2026-10-25T16:18:24.5010825Z   Downloading numpy-2.3.5-cp313-cp313-win_amd64.whl.metadata (60 kB)
+2026-10-25T16:18:24.5769013Z Downloading numpy-2.3.5-cp313-cp313-win_amd64.whl (12.8 MB)
+2026-10-25T16:18:24.7686552Z    ---------------------------------------- 12.8/12.8 MB 79.8 MB/s  0:00:00
+2026-10-25T16:18:24.8591927Z Installing collected packages: numpy
+2026-10-25T16:18:27.2735895Z Successfully installed numpy-2.3.5
+2026-10-25T16:18:27.2750951Z 
+2026-10-25T16:18:27.2752675Z [notice] A new release of pip is available: 26.2.1 -> 26.2.2
+2026-10-25T16:18:27.2753565Z [notice] To update, run: D:\a\majax_mlkem1536\majax_mlkem1536\.tools\research-venv\Scripts\python.exe -m pip install --upgrade pip
+2026-10-25T16:18:28.3722889Z .tools\upstream\security-estimates
+2026-10-25T16:18:28.9948340Z Verified external reference copies: 3
+2026-10-25T16:18:29.0842558Z ##[group]Run ./scripts/dev.ps1 check
+2026-10-25T16:18:29.0842929Z [36;1m./scripts/dev.ps1 check[0m
+2026-10-25T16:18:29.0910330Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-10-25T16:18:29.0910668Z env:
+2026-10-25T16:18:29.0910944Z   pythonLocation: C:\hostedtoolcache\windows\Python\3.13.16\x64
+2026-10-25T16:18:29.0911690Z   PKG_CONFIG_PATH: C:\hostedtoolcache\windows\Python\3.13.16\x64/lib/pkgconfig
+2026-10-25T16:18:29.0912279Z   Python_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.16\x64
+2026-10-25T16:18:29.0912732Z   Python2_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.16\x64
+2026-10-25T16:18:29.0913122Z   Python3_ROOT_DIR: C:\hostedtoolcache\windows\Python\3.13.16\x64
+2026-10-25T16:18:29.0913441Z ##[endgroup]
+2026-10-25T16:18:29.6278066Z {
+2026-10-25T16:18:29.6278489Z   "source_integrity": "passed",
+2026-10-25T16:18:29.6278915Z   "frozen_files": 8,
+2026-10-25T16:18:29.6279274Z   "reference_crate": "ml-kem 0.3.3",
+2026-10-25T16:18:29.6279931Z   "acvp_source_commit": "975de31eb83d87039ec88934fdc47d8c312b892d",
+2026-10-25T16:18:29.6280562Z   "selected_parameter_set": "ML-KEM-1024",
+2026-10-25T16:18:29.6280987Z   "coverage": {
+2026-10-25T16:18:29.6281277Z     "keyGen": 25,
+2026-10-25T16:18:29.6281590Z     "encapsulation": 50,
+2026-10-25T16:18:29.6281939Z     "decapsulation": 30,
+2026-10-25T16:18:29.6282301Z     "decapsulationKeyCheck": 20,
+2026-10-25T16:18:29.6282704Z     "encapsulationKeyCheck": 20
+2026-10-25T16:18:29.6283398Z   },
+2026-10-25T16:18:29.6283682Z   "total_selected_cases": 145,
+2026-10-25T16:18:29.6284068Z   "implicit_rejection_cases": 15
+2026-10-25T16:18:29.6284428Z }
+2026-10-25T16:18:30.0194173Z     Updating crates.io index
+2026-10-25T16:18:30.6783068Z  Downloading crates ...
+2026-10-25T16:18:30.9310488Z   Downloaded kem v0.3.0
+2026-10-25T16:18:30.9366474Z   Downloaded autocfg v1.5.1
+2026-10-25T16:18:30.9515209Z   Downloaded unicode-ident v1.0.27
+2026-10-25T16:18:30.9646099Z   Downloaded crypto-common v0.1.7
+2026-10-25T16:18:30.9688230Z   Downloaded cfg-if v1.0.5
+2026-10-25T16:18:30.9746677Z   Downloaded hex v0.4.3
+2026-10-25T16:18:30.9815970Z   Downloaded block-buffer v0.12.1
+2026-10-25T16:18:30.9874466Z   Downloaded itoa v1.0.18
+2026-10-25T16:18:30.9941753Z   Downloaded crypto-common v0.2.2
+2026-10-25T16:18:30.9996400Z   Downloaded version_check v0.9.5
+2026-10-25T16:18:31.0068808Z   Downloaded zeroize v1.9.1
+2026-10-25T16:18:31.0133492Z   Downloaded toml_write v0.1.2
+2026-10-25T16:18:31.0192630Z   Downloaded spki v0.8.1
+2026-10-25T16:18:31.0307897Z   Downloaded toml v0.8.23
+2026-10-25T16:18:31.0431001Z   Downloaded serde_derive v1.0.228
+2026-10-25T16:18:31.0559385Z   Downloaded toml_edit v0.22.27
+2026-10-25T16:18:31.0737721Z   Downloaded serde v1.0.228
+2026-10-25T16:18:31.0857634Z   Downloaded typenum v1.20.1
+2026-10-25T16:18:31.0971740Z   Downloaded indexmap v2.14.2
+2026-10-25T16:18:31.1132442Z   Downloaded serde_json v1.0.145
+2026-10-25T16:18:31.1416487Z   Downloaded hashbrown v0.17.1
+2026-10-25T16:18:31.1593322Z   Downloaded winnow v0.7.15
+2026-10-25T16:18:31.2231965Z   Downloaded sha3 v0.12.0
+2026-10-25T16:18:31.2338941Z   Downloaded getrandom v0.4.3
+2026-10-25T16:18:31.2493933Z   Downloaded memchr v2.8.3
+2026-10-25T16:18:31.2713921Z   Downloaded serde_core v1.0.228
+2026-10-25T16:18:31.2817961Z   Downloaded ryu v1.0.23
+2026-10-25T16:18:31.2950972Z   Downloaded proc-macro2 v1.0.107
+2026-10-25T16:18:31.3071088Z   Downloaded syn v2.0.119
+2026-10-25T16:18:31.3542051Z   Downloaded shake v0.1.0
+2026-10-25T16:18:31.3602841Z   Downloaded num-traits v0.2.19
+2026-10-25T16:18:31.3725837Z   Downloaded der v0.8.2
+2026-10-25T16:18:31.4084599Z   Downloaded const-oid v0.10.2
+2026-10-25T16:18:31.4170710Z   Downloaded pkcs8 v0.11.0
+2026-10-25T16:18:31.4294258Z   Downloaded ml-kem v0.3.3
+2026-10-25T16:18:31.4397226Z   Downloaded digest v0.10.7
+2026-10-25T16:18:31.4469950Z   Downloaded ctutils v0.4.5
+2026-10-25T16:18:31.4550938Z   Downloaded sha2 v0.10.9
+2026-10-25T16:18:31.4655844Z   Downloaded rand_core v0.10.1
+2026-10-25T16:18:31.4716824Z   Downloaded cmov v0.5.4
+2026-10-25T16:18:31.4783542Z   Downloaded quote v1.0.47
+2026-10-25T16:18:31.4896369Z   Downloaded module-lattice v0.2.3
+2026-10-25T16:18:31.4951452Z   Downloaded keccak v0.2.2
+2026-10-25T16:18:31.5015437Z   Downloaded generic-array v0.14.7
+2026-10-25T16:18:31.5075688Z   Downloaded digest v0.11.3
+2026-10-25T16:18:31.5167554Z   Downloaded block-buffer v0.10.4
+2026-10-25T16:18:31.5207027Z   Downloaded hybrid-array v0.4.15
+2026-10-25T16:18:31.5293940Z   Downloaded base64ct v1.8.3
+2026-10-25T16:18:31.5399435Z   Downloaded toml_datetime v0.6.11
+2026-10-25T16:18:31.5438246Z   Downloaded sponge-cursor v0.1.0
+2026-10-25T16:18:31.5486404Z   Downloaded serde_spanned v0.6.9
+2026-10-25T16:18:31.5522947Z   Downloaded equivalent v1.0.3
+2026-10-25T16:18:31.5563148Z   Downloaded cpufeatures v0.2.17
+2026-10-25T16:18:31.6171820Z     Checking typenum v1.20.1
+2026-10-25T16:18:31.6172351Z    Compiling proc-macro2 v1.0.107
+2026-10-25T16:18:31.6172807Z     Checking cmov v0.5.4
+2026-10-25T16:18:31.6173687Z    Compiling unicode-ident v1.0.27
+2026-10-25T16:18:31.7703750Z    Compiling quote v1.0.47
+2026-10-25T16:18:31.9418388Z     Checking zeroize v1.9.1
+2026-10-25T16:18:32.1077294Z     Checking cfg-if v1.0.5
+2026-10-25T16:18:32.1564377Z     Checking ctutils v0.4.5
+2026-10-25T16:18:32.2044068Z    Compiling serde_core v1.0.228
+2026-10-25T16:18:32.4775027Z    Compiling getrandom v0.4.3
+2026-10-25T16:18:32.6403657Z     Checking rand_core v0.10.1
+2026-10-25T16:18:32.9711358Z    Compiling serde v1.0.228
+2026-10-25T16:18:33.4903436Z     Checking hybrid-array v0.4.15
+2026-10-25T16:18:33.5976944Z     Checking const-oid v0.10.2
+2026-10-25T16:18:33.7817145Z    Compiling syn v2.0.119
+2026-10-25T16:18:33.8028463Z     Checking keccak v0.2.2
+2026-10-25T16:18:33.9248117Z     Checking sponge-cursor v0.1.0
+2026-10-25T16:18:34.0662015Z    Compiling autocfg v1.5.1
+2026-10-25T16:18:34.7644600Z    Compiling num-traits v0.2.19
+2026-10-25T16:18:35.2012192Z    Compiling version_check v0.9.5
+2026-10-25T16:18:35.4981284Z     Checking crypto-common v0.2.2
+2026-10-25T16:18:35.6962706Z     Checking hashbrown v0.17.1
+2026-10-25T16:18:36.4446112Z     Checking equivalent v1.0.3
+2026-10-25T16:18:36.5089829Z    Compiling generic-array v0.14.7
+2026-10-25T16:18:36.6449070Z     Checking indexmap v2.14.2
+2026-10-25T16:18:37.1611864Z     Checking digest v0.11.3
+2026-10-25T16:18:37.3595255Z     Checking sha3 v0.12.0
+2026-10-25T16:18:37.6118550Z     Checking shake v0.1.0
+2026-10-25T16:18:37.7253358Z    Compiling serde_json v1.0.145
+2026-10-25T16:18:37.7777302Z     Checking winnow v0.7.15
+2026-10-25T16:18:37.9759159Z     Checking toml_write v0.1.2
+2026-10-25T16:18:38.0042308Z     Checking module-lattice v0.2.3
+2026-10-25T16:18:38.2286231Z     Checking kem v0.3.0
+2026-10-25T16:18:38.3292780Z     Checking itoa v1.0.18
+2026-10-25T16:18:38.3579067Z     Checking memchr v2.8.3
+2026-10-25T16:18:38.4684315Z    Compiling serde_derive v1.0.228
+2026-10-25T16:18:38.5370869Z     Checking ryu v1.0.23
+2026-10-25T16:18:39.7432098Z     Checking ml-kem v0.3.3
+2026-10-25T16:18:40.5809587Z     Checking block-buffer v0.10.4
+2026-10-25T16:18:40.7783831Z     Checking crypto-common v0.1.7
+2026-10-25T16:18:40.7868510Z     Checking cpufeatures v0.2.17
+2026-10-25T16:18:40.8407367Z     Checking hex v0.4.3
+2026-10-25T16:18:40.8909975Z     Checking digest v0.10.7
+2026-10-25T16:18:41.5178082Z     Checking sha2 v0.10.9
+2026-10-25T16:18:43.4103342Z     Checking toml_datetime v0.6.11
+2026-10-25T16:18:43.4103879Z     Checking serde_spanned v0.6.9
+2026-10-25T16:18:43.4105343Z     Checking kem1024-reference v0.1.0 (D:\a\majax_mlkem1536\majax_mlkem1536\crates\kem1024-reference)
+2026-10-25T16:18:43.6715562Z     Checking toml_edit v0.22.27
+2026-10-25T16:18:45.4057229Z     Checking toml v0.8.23
+2026-10-25T16:18:45.7954928Z     Checking kem1536 v0.1.0 (D:\a\majax_mlkem1536\majax_mlkem1536\crates\kem1536)
+2026-10-25T16:18:46.4559070Z     Checking kem1536-cli v0.1.0 (D:\a\majax_mlkem1536\majax_mlkem1536\crates\kem1536-cli)
+2026-10-25T16:18:46.4560108Z     Checking kem1536-bench v0.1.0 (D:\a\majax_mlkem1536\majax_mlkem1536\crates\kem1536-bench)
+2026-10-25T16:18:47.0075644Z     Finished `dev` profile [unoptimized + debuginfo] target(s) in 17.04s
+2026-10-25T16:18:47.2338602Z    Compiling typenum v1.20.1
+2026-10-25T16:18:47.2340818Z    Compiling zeroize v1.9.1
+2026-10-25T16:18:47.2341855Z    Compiling cfg-if v1.0.5
+2026-10-25T16:18:47.2346427Z    Compiling cmov v0.5.4
+2026-10-25T16:18:47.2979663Z    Compiling rand_core v0.10.1
+2026-10-25T16:18:47.4793430Z    Compiling getrandom v0.4.3
+2026-10-25T16:18:47.5152330Z    Compiling serde_core v1.0.228
+2026-10-25T16:18:47.5635494Z    Compiling ctutils v0.4.5
+2026-10-25T16:18:47.6962245Z    Compiling const-oid v0.10.2
+2026-10-25T16:18:47.9355421Z    Compiling sponge-cursor v0.1.0
+2026-10-25T16:18:48.0097364Z    Compiling keccak v0.2.2
+2026-10-25T16:18:48.0791111Z    Compiling equivalent v1.0.3
+2026-10-25T16:18:48.1493042Z    Compiling hashbrown v0.17.1
+2026-10-25T16:18:48.1533043Z    Compiling num-traits v0.2.19
+2026-10-25T16:18:49.1892978Z    Compiling hybrid-array v0.4.15
+2026-10-25T16:18:49.2940012Z    Compiling indexmap v2.14.2
+2026-10-25T16:18:49.5854423Z    Compiling generic-array v0.14.7
+2026-10-25T16:18:50.5581345Z    Compiling toml_write v0.1.2
+2026-10-25T16:18:50.7613742Z    Compiling winnow v0.7.15
+2026-10-25T16:18:50.8507008Z    Compiling ryu v1.0.23
+2026-10-25T16:18:51.1348951Z    Compiling itoa v1.0.18
+2026-10-25T16:18:51.2434167Z    Compiling crypto-common v0.2.2
+2026-10-25T16:18:51.3942665Z    Compiling module-lattice v0.2.3
+2026-10-25T16:18:51.7832819Z    Compiling serde v1.0.228
+2026-10-25T16:18:51.9642871Z    Compiling memchr v2.8.3
+2026-10-25T16:18:52.8884152Z    Compiling serde_spanned v0.6.9
+2026-10-25T16:18:53.0481250Z    Compiling toml_datetime v0.6.11
+2026-10-25T16:18:53.4014904Z    Compiling digest v0.11.3
+2026-10-25T16:18:53.4848956Z    Compiling kem v0.3.0
+2026-10-25T16:18:53.5843826Z    Compiling sha3 v0.12.0
+2026-10-25T16:18:53.5965374Z    Compiling shake v0.1.0
+2026-10-25T16:18:53.7196823Z    Compiling serde_json v1.0.145
+2026-10-25T16:18:54.0643868Z    Compiling toml_edit v0.22.27
+2026-10-25T16:18:54.0644782Z    Compiling ml-kem v0.3.3
+2026-10-25T16:18:54.1631590Z    Compiling crypto-common v0.1.7
+2026-10-25T16:18:54.2976084Z    Compiling block-buffer v0.10.4
+2026-10-25T16:18:54.4667175Z    Compiling digest v0.10.7
+2026-10-25T16:18:54.7445901Z    Compiling cpufeatures v0.2.17
+2026-10-25T16:18:54.8088671Z    Compiling sha2 v0.10.9
+2026-10-25T16:18:55.5331383Z    Compiling hex v0.4.3
+2026-10-25T16:18:55.9785445Z    Compiling kem1024-reference v0.1.0 (D:\a\majax_mlkem1536\majax_mlkem1536\crates\kem1024-reference)
+2026-10-25T16:18:57.0058317Z    Compiling toml v0.8.23
+2026-10-25T16:18:58.4313887Z    Compiling kem1536 v0.1.0 (D:\a\majax_mlkem1536\majax_mlkem1536\crates\kem1536)
+2026-10-25T16:19:00.4787354Z    Compiling kem1536-cli v0.1.0 (D:\a\majax_mlkem1536\majax_mlkem1536\crates\kem1536-cli)
+2026-10-25T16:19:00.4788352Z    Compiling kem1536-bench v0.1.0 (D:\a\majax_mlkem1536\majax_mlkem1536\crates\kem1536-bench)
+2026-10-25T16:19:02.3098542Z     Finished `test` profile [unoptimized + debuginfo] target(s) in 15.21s
+2026-10-25T16:19:02.3149025Z      Running unittests src\lib.rs (target\debug\deps\kem1024_reference-cb92f8d3d02b0b46.exe)
+2026-10-25T16:19:02.3265132Z 
+2026-10-25T16:19:02.3265341Z running 5 tests
+2026-10-25T16:19:02.3415637Z test tests::a_corrupted_private_key_hash_is_rejected ... ok
+2026-10-25T16:19:02.3420013Z test tests::truncated_key_encodings_are_rejected ... ok
+2026-10-25T16:19:02.3460870Z test tests::noncanonical_public_coefficients_are_rejected ... ok
+2026-10-25T16:19:02.3469658Z test tests::a_modified_expected_answer_is_detected ... ok
+2026-10-25T16:19:04.0665228Z test tests::official_vectors_and_fresh_round_trips_pass ... ok
+2026-10-25T16:19:04.0665698Z 
+2026-10-25T16:19:04.0666610Z test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.74s
+2026-10-25T16:19:04.0666961Z 
+2026-10-25T16:19:04.0687690Z      Running unittests src\lib.rs (target\debug\deps\kem1536-40ae3793747ea36f.exe)
+2026-10-25T16:19:04.0796365Z 
+2026-10-25T16:19:04.0796595Z running 18 tests
+2026-10-25T16:19:04.0801437Z test dev_kem::tests::entropy_failure_is_propagated ... ok
+2026-10-25T16:19:04.1796137Z test dev_kem::tests::canonical_boundaries_and_private_hash_validation ... ok
+2026-10-25T16:19:04.4055471Z test dev_kem::tests::operating_system_randomness_roundtrip ... ok
+2026-10-25T16:19:04.4378900Z test engine_poly::tests::arithmetic_agrees_with_separate_generic_oracle ... ok
+2026-10-25T16:19:04.4759995Z test engine_poly::tests::reciprocal_reduction_and_quotient_boundaries ... ok
+2026-10-25T16:19:04.5323041Z test reference_ring::tests::independent_convolution_and_ring_laws_at_both_moduli ... ok
+2026-10-25T16:19:04.5788927Z test reference_ring::tests::quotient_sign_and_multiplicative_identity ... ok
+2026-10-25T16:19:04.5968880Z test reference_ring::tests::rejects_invalid_moduli_and_noncanonical_inputs ... ok
+2026-10-25T16:19:04.6123534Z test secret_box::tests::wipe_keeps_storage_and_clears_every_owned_byte ... ok
+2026-10-25T16:19:04.6144273Z test tests::a_profile_for_another_version_is_rejected ... ok
+2026-10-25T16:19:04.6187979Z test dev_kem::tests::canonical_bad_ciphertext_and_last_noncanonical_coefficient_reject ... ok
+2026-10-25T16:19:04.6189821Z test tests::a_rank_four_profile_cannot_masquerade_as_p0 ... ok
+2026-10-25T16:19:04.6207139Z test tests::changed_noise_requires_a_new_profile ... ok
+2026-10-25T16:19:04.6208412Z test tests::inconsistent_declared_sizes_are_rejected ... ok
+2026-10-25T16:19:04.6226278Z test tests::published_profile_has_the_required_dimensions_and_sizes ... ok
+2026-10-25T16:19:04.6227351Z test tests::unknown_configuration_fields_are_not_silently_ignored ... ok
+2026-10-25T16:19:04.6672133Z test dev_kem::tests::full_deterministic_roundtrip_and_rejection ... ok
+2026-10-25T16:19:05.5922350Z test dev_kem::tests::packing_and_rounding_exhaustive ... ok
+2026-10-25T16:19:05.5922791Z 
+2026-10-25T16:19:05.5923159Z test result: ok. 18 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.51s
+2026-10-25T16:19:05.5923653Z 
+2026-10-25T16:19:05.5940862Z      Running unittests src\main.rs (target\debug\deps\kem1536_bench-4a7b84c23be9726d.exe)
+2026-10-25T16:19:05.6044903Z 
+2026-10-25T16:19:05.6045145Z running 0 tests
+2026-10-25T16:19:05.6045367Z 
+2026-10-25T16:19:05.6045756Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+2026-10-25T16:19:05.6046299Z 
+2026-10-25T16:19:05.6055956Z      Running unittests src\bin\m03-replay.rs (target\debug\deps\m03_replay-deda0307b6eb4df3.exe)
+2026-10-25T16:19:05.6149404Z 
+2026-10-25T16:19:05.6149627Z running 0 tests
+2026-10-25T16:19:05.6149833Z 
+2026-10-25T16:19:05.6150207Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+2026-10-25T16:19:05.6151140Z 
+2026-10-25T16:19:05.6160937Z      Running unittests src\main.rs (target\debug\deps\kem1536-c151513197331a7d.exe)
+2026-10-25T16:19:05.6256098Z 
+2026-10-25T16:19:05.6256348Z running 0 tests
+2026-10-25T16:19:05.6256550Z 
+2026-10-25T16:19:05.6257118Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+2026-10-25T16:19:05.6257884Z 
+2026-10-25T16:19:05.6268444Z      Running tests\commands.rs (target\debug\deps\commands-90792e98dc554eca.exe)
+2026-10-25T16:19:05.6362966Z 
+2026-10-25T16:19:05.6363209Z running 5 tests
+2026-10-25T16:19:05.6516138Z test deterministic_vectors_are_absent_from_default_application ... ok
+2026-10-25T16:19:05.6549382Z test profile_output_is_machine_readable ... ok
+2026-10-25T16:19:05.6611070Z test unavailable_crypto_commands_fail_instead_of_simulating_success ... ok
+2026-10-25T16:19:05.6621586Z test development_profile_and_status_are_explicit ... ok
+2026-10-25T16:19:05.6765238Z test invalid_stress_counts_fail_without_output ... ok
+2026-10-25T16:19:05.6765757Z 
+2026-10-25T16:19:05.6766528Z test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+2026-10-25T16:19:05.6766882Z 
+2026-10-25T16:19:05.6776372Z    Doc-tests kem1024_reference
+2026-10-25T16:19:05.7459298Z 
+2026-10-25T16:19:05.7459875Z running 0 tests
+2026-10-25T16:19:05.7460124Z 
+2026-10-25T16:19:05.7460538Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+2026-10-25T16:19:05.7461041Z 
+2026-10-25T16:19:05.7537051Z    Doc-tests kem1536
+2026-10-25T16:19:05.8322431Z 
+2026-10-25T16:19:05.8324826Z running 0 tests
+2026-10-25T16:19:05.8325079Z 
+2026-10-25T16:19:05.8325474Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+2026-10-25T16:19:05.8325989Z 
+2026-10-25T16:19:05.9709342Z    Compiling kem1536 v0.1.0 (D:\a\majax_mlkem1536\majax_mlkem1536\crates\kem1536)
+2026-10-25T16:19:07.4769247Z    Compiling kem1536-bench v0.1.0 (D:\a\majax_mlkem1536\majax_mlkem1536\crates\kem1536-bench)
+2026-10-25T16:19:07.4788904Z    Compiling kem1536-cli v0.1.0 (D:\a\majax_mlkem1536\majax_mlkem1536\crates\kem1536-cli)
+2026-10-25T16:19:08.8788100Z     Finished `test` profile [unoptimized + debuginfo] target(s) in 2.97s
+2026-10-25T16:19:08.8836755Z      Running unittests src\lib.rs (target\debug\deps\kem1024_reference-cb92f8d3d02b0b46.exe)
+2026-10-25T16:19:08.8897970Z 
+2026-10-25T16:19:08.8898179Z running 5 tests
+2026-10-25T16:19:08.9020128Z test tests::noncanonical_public_coefficients_are_rejected ... ok
+2026-10-25T16:19:08.9024381Z test tests::a_corrupted_private_key_hash_is_rejected ... ok
+2026-10-25T16:19:08.9025882Z test tests::truncated_key_encodings_are_rejected ... ok
+2026-10-25T16:19:08.9071089Z test tests::a_modified_expected_answer_is_detected ... ok
+2026-10-25T16:19:10.6128516Z test tests::official_vectors_and_fresh_round_trips_pass ... ok
+2026-10-25T16:19:10.6128874Z 
+2026-10-25T16:19:10.6129167Z test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.72s
+2026-10-25T16:19:10.6129591Z 
+2026-10-25T16:19:10.6148607Z      Running unittests src\lib.rs (target\debug\deps\kem1536-fb61d8eb9acf98de.exe)
+2026-10-25T16:19:10.6260903Z 
+2026-10-25T16:19:10.6261109Z running 19 tests
+2026-10-25T16:19:10.6268226Z test dev_kem::tests::entropy_failure_is_propagated ... ok
+2026-10-25T16:19:10.7262606Z test dev_kem::tests::canonical_boundaries_and_private_hash_validation ... ok
+2026-10-25T16:19:11.0720304Z test dev_kem::tests::operating_system_randomness_roundtrip ... ok
+2026-10-25T16:19:11.0725670Z test dev_kem::tests::current_engine_matches_independently_verified_case0 ... ok
+2026-10-25T16:19:11.1059814Z test engine_poly::tests::arithmetic_agrees_with_separate_generic_oracle ... ok
+2026-10-25T16:19:11.1197982Z test engine_poly::tests::reciprocal_reduction_and_quotient_boundaries ... ok
+2026-10-25T16:19:11.1722163Z test reference_ring::tests::independent_convolution_and_ring_laws_at_both_moduli ... ok
+2026-10-25T16:19:11.1767229Z test reference_ring::tests::quotient_sign_and_multiplicative_identity ... ok
+2026-10-25T16:19:11.1770792Z test reference_ring::tests::rejects_invalid_moduli_and_noncanonical_inputs ... ok
+2026-10-25T16:19:11.1777865Z test secret_box::tests::wipe_keeps_storage_and_clears_every_owned_byte ... ok
+2026-10-25T16:19:11.1798790Z test dev_kem::tests::canonical_bad_ciphertext_and_last_noncanonical_coefficient_reject ... ok
+2026-10-25T16:19:11.1799847Z test tests::a_profile_for_another_version_is_rejected ... ok
+2026-10-25T16:19:11.1808611Z test tests::a_rank_four_profile_cannot_masquerade_as_p0 ... ok
+2026-10-25T16:19:11.1809563Z test tests::changed_noise_requires_a_new_profile ... ok
+2026-10-25T16:19:11.1819289Z test tests::inconsistent_declared_sizes_are_rejected ... ok
+2026-10-25T16:19:11.1820061Z test tests::published_profile_has_the_required_dimensions_and_sizes ... ok
+2026-10-25T16:19:11.1827433Z test tests::unknown_configuration_fields_are_not_silently_ignored ... ok
+2026-10-25T16:19:11.2085686Z test dev_kem::tests::full_deterministic_roundtrip_and_rejection ... ok
+2026-10-25T16:19:12.2745151Z test dev_kem::tests::packing_and_rounding_exhaustive ... ok
+2026-10-25T16:19:12.2745550Z 
+2026-10-25T16:19:12.2745845Z test result: ok. 19 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.65s
+2026-10-25T16:19:12.2746262Z 
+2026-10-25T16:19:12.2764327Z      Running unittests src\main.rs (target\debug\deps\kem1536_bench-58e4a871dc393433.exe)
+2026-10-25T16:19:12.2868183Z 
+2026-10-25T16:19:12.2868618Z running 0 tests
+2026-10-25T16:19:12.2869350Z 
+2026-10-25T16:19:12.2869785Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+2026-10-25T16:19:12.2870368Z 
+2026-10-25T16:19:12.2880133Z      Running unittests src\bin\m03-replay.rs (target\debug\deps\m03_replay-23cb2d1415a171ff.exe)
+2026-10-25T16:19:12.2974743Z 
+2026-10-25T16:19:12.2974961Z running 0 tests
+2026-10-25T16:19:12.2975163Z 
+2026-10-25T16:19:12.2975741Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+2026-10-25T16:19:12.2976196Z 
+2026-10-25T16:19:12.2986053Z      Running unittests src\main.rs (target\debug\deps\kem1536-9b74a83e02ec5954.exe)
+2026-10-25T16:19:12.3078423Z 
+2026-10-25T16:19:12.3078637Z running 0 tests
+2026-10-25T16:19:12.3078857Z 
+2026-10-25T16:19:12.3079268Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+2026-10-25T16:19:12.3080104Z 
+2026-10-25T16:19:12.3089881Z      Running tests\commands.rs (target\debug\deps\commands-db74861f664d171c.exe)
+2026-10-25T16:19:12.3185303Z 
+2026-10-25T16:19:12.3185489Z running 4 tests
+2026-10-25T16:19:12.3331022Z test profile_output_is_machine_readable ... ok
+2026-10-25T16:19:12.3357203Z test unavailable_crypto_commands_fail_instead_of_simulating_success ... ok
+2026-10-25T16:19:12.3403725Z test development_profile_and_status_are_explicit ... ok
+2026-10-25T16:19:12.3530568Z test invalid_stress_counts_fail_without_output ... ok
+2026-10-25T16:19:12.3531180Z 
+2026-10-25T16:19:12.3531839Z test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+2026-10-25T16:19:12.3532449Z 
+2026-10-25T16:19:12.3541915Z    Doc-tests kem1024_reference
+2026-10-25T16:19:12.4164181Z 
+2026-10-25T16:19:12.4164585Z running 0 tests
+2026-10-25T16:19:12.4164817Z 
+2026-10-25T16:19:12.4165171Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+2026-10-25T16:19:12.4165584Z 
+2026-10-25T16:19:12.4241149Z    Doc-tests kem1536
+2026-10-25T16:19:12.5152056Z 
+2026-10-25T16:19:12.5152499Z running 0 tests
+2026-10-25T16:19:12.5796859Z 
+2026-10-25T16:19:12.5797631Z test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+2026-10-25T16:19:12.5798278Z 
+2026-10-25T16:19:12.5798381Z {
+2026-10-25T16:19:12.5798708Z   "profile_id": "KEM1536-EXP-P0",
+2026-10-25T16:19:12.5799130Z   "configuration_check": "passed",
+2026-10-25T16:19:12.5799536Z   "coefficient_count": 1536,
+2026-10-25T16:19:12.5799916Z   "sizes_bytes": {
+2026-10-25T16:19:12.5800227Z     "vector_bytes": 2304,
+2026-10-25T16:19:12.5800576Z     "encapsulation_key_bytes": 2336,
+2026-10-25T16:19:12.5800987Z     "decapsulation_key_bytes": 4704,
+2026-10-25T16:19:12.5801372Z     "c1_bytes": 2112,
+2026-10-25T16:19:12.5802173Z     "c2_bytes": 160,
+2026-10-25T16:19:12.5802566Z     "ciphertext_bytes": 2272,
+2026-10-25T16:19:12.5802939Z     "shared_secret_bytes": 32
+2026-10-25T16:19:12.5803278Z   },
+2026-10-25T16:19:12.5803576Z   "cryptographic_validation": "pending"
+2026-10-25T16:19:12.5804007Z }
+2026-10-25T16:19:18.0342819Z ...............................................................................................
+2026-10-25T16:19:18.0343301Z ----------------------------------------------------------------------
+2026-10-25T16:19:18.0343636Z Ran 95 tests in 5.021s
+2026-10-25T16:19:18.0343782Z 
+2026-10-25T16:19:18.0343851Z OK
+2026-10-25T16:19:18.1135954Z {
+2026-10-25T16:19:18.1136311Z   "snapshot": "run-001",
+2026-10-25T16:19:18.1136973Z   "input_files": 13,
+2026-10-25T16:19:18.1137272Z   "output_files": 2,
+2026-10-25T16:19:18.1137568Z   "noise_scenarios": 8,
+2026-10-25T16:19:18.1137779Z   "attack_estimates": 24,
+2026-10-25T16:19:18.1138006Z   "checksums": "passed"
+2026-10-25T16:19:18.1138407Z }
+2026-10-25T16:19:18.1911428Z {
+2026-10-25T16:19:18.1911781Z   "snapshot": "run-002",
+2026-10-25T16:19:18.1912147Z   "checksums": "passed",
+2026-10-25T16:19:18.1912463Z   "attempted": 120,
+2026-10-25T16:19:18.1912774Z   "export_retries_preserved": 8,
+2026-10-25T16:19:18.1913148Z   "statuses": {
+2026-10-25T16:19:18.1913419Z     "ok": 118,
+2026-10-25T16:19:18.1913674Z     "error": 2
+2026-10-25T16:19:18.1913919Z   },
+2026-10-25T16:19:18.1914361Z   "coverage": "incomplete; failures retained, do not infer a global minimum"
+2026-10-25T16:19:18.1914898Z }
+2026-10-25T16:19:18.2491863Z {
+2026-10-25T16:19:18.2492178Z   "snapshot": "run-003",
+2026-10-25T16:19:18.2492472Z   "checksums": "passed",
+2026-10-25T16:19:18.2492684Z   "scenarios": 6,
+2026-10-25T16:19:18.2492909Z   "run001_probability_matches": 4,
+2026-10-25T16:19:18.2493188Z   "replacement_profile_selected": false
+2026-10-25T16:19:18.2493434Z }
+2026-10-25T16:19:18.3144077Z {
+2026-10-25T16:19:18.3144484Z   "snapshot": "run-004",
+2026-10-25T16:19:18.3144894Z   "checksums": "passed",
+2026-10-25T16:19:18.3145227Z   "toy_ranks": 2,
+2026-10-25T16:19:18.3145531Z   "lossless_u_scenarios": 4,
+2026-10-25T16:19:18.3145884Z   "prior_marginal_matches": 8,
+2026-10-25T16:19:18.3146672Z   "rounding_independence_needed_for_witness": false,
+2026-10-25T16:19:18.3147136Z   "profile_selected": false,
+2026-10-25T16:19:18.3147469Z   "j2_closed": false
+2026-10-25T16:19:18.3147739Z }
+2026-10-25T16:19:18.7413875Z {
+2026-10-25T16:19:18.7414191Z   "snapshot": "run-004",
+2026-10-25T16:19:18.7414751Z   "certificate": "rational Chernoff replay passed",
+2026-10-25T16:19:18.7415148Z   "full_noise_recurrence_used": false,
+2026-10-25T16:19:18.7415414Z   "c05_exact_comparison": true,
+2026-10-25T16:19:18.7415703Z   "log2_upper_display": -310.08596919852425
+2026-10-25T16:19:18.7415974Z }
+2026-10-25T16:19:21.7299797Z {
+2026-10-25T16:19:21.7300183Z   "snapshot": "run-005",
+2026-10-25T16:19:21.7300507Z   "checksums": "passed",
+2026-10-25T16:19:21.7300754Z   "reported_bounds": 240,
+2026-10-25T16:19:21.7301021Z   "best_found": "interleaved-dv3-m12-88",
+2026-10-25T16:19:21.7301313Z   "bytes": 2581,
+2026-10-25T16:19:21.7301532Z   "certificate_replay": "exact",
+2026-10-25T16:19:21.7301799Z   "profile_selected": false,
+2026-10-25T16:19:21.7302079Z   "j2_closed": false
+2026-10-25T16:19:21.7302277Z }
+2026-10-25T16:19:23.2769964Z {
+2026-10-25T16:19:23.2770324Z   "snapshot": "run-005",
+2026-10-25T16:19:23.2770682Z   "method": "independent enumeration of CBD3 bit strings",
+2026-10-25T16:19:23.2771054Z   "CBD_bit_strings": 64,
+2026-10-25T16:19:23.2771308Z   "pair_outcomes": 4096,
+2026-10-25T16:19:23.2771577Z   "project_arithmetic_imported": false,
+2026-10-25T16:19:23.2771882Z   "full_fraction_matches": true,
+2026-10-25T16:19:23.2772172Z   "c05_exact_comparison": true,
+2026-10-25T16:19:23.2772633Z   "candidate_id": "interleaved-dv3-m12-88"
+2026-10-25T16:19:23.2772909Z }
+2026-10-25T16:19:24.8998794Z {
+2026-10-25T16:19:24.8999204Z   "snapshot": "run-006",
+2026-10-25T16:19:24.8999504Z   "checksums": "passed",
+2026-10-25T16:19:24.8999756Z   "toy_tori": 5,
+2026-10-25T16:19:24.8999995Z   "actual_modulus_cover": "certified",
+2026-10-25T16:19:24.9000297Z   "rational_certificate": "replayed",
+2026-10-25T16:19:24.9000628Z   "best_found": "staggered-dv4-pairs228",
+2026-10-25T16:19:24.9000912Z   "bytes": 2567,
+2026-10-25T16:19:24.9001123Z   "profile_selected": false,
+2026-10-25T16:19:24.9001382Z   "j2_closed": false
+2026-10-25T16:19:24.9001577Z }
+2026-10-25T16:19:26.2060283Z {
+2026-10-25T16:19:26.2061161Z   "snapshot": "run-006",
+2026-10-25T16:19:26.2061624Z   "project_arithmetic_imported": false,
+2026-10-25T16:19:26.2062112Z   "cover_for_all_q_squared_pairs": true,
+2026-10-25T16:19:26.2062947Z   "CBD_bit_strings": 64,
+2026-10-25T16:19:26.2063313Z   "pair_outcomes": 4096,
+2026-10-25T16:19:26.2063688Z   "full_fraction_matches": true,
+2026-10-25T16:19:26.2064096Z   "c05_exact_comparison": true,
+2026-10-25T16:19:26.2064524Z   "candidate_id": "staggered-dv4-pairs228"
+2026-10-25T16:19:26.2064944Z }
+2026-10-25T16:19:51.3076398Z {
+2026-10-25T16:19:51.3076753Z   "snapshot": "run-007",
+2026-10-25T16:19:51.3077160Z   "rational_results_replayed": 9,
+2026-10-25T16:19:51.3077572Z   "mapped_prior_attacks": 30,
+2026-10-25T16:19:51.3077948Z   "new_attack_costs": 0,
+2026-10-25T16:19:51.3078307Z   "profile_selected": false,
+2026-10-25T16:19:51.3078654Z   "j2_closed": false
+2026-10-25T16:19:51.3078903Z }
+2026-10-25T16:19:51.4045961Z {
+2026-10-25T16:19:51.4046314Z   "snapshot": "run-008",
+2026-10-25T16:19:51.4046685Z   "integrity": "passed",
+2026-10-25T16:19:51.4047038Z   "published_calibrations": 6,
+2026-10-25T16:19:51.4047426Z   "preserved_evaluations": 1043,
+2026-10-25T16:19:51.4047662Z   "statuses": {
+2026-10-25T16:19:51.4047898Z     "conditional_model_cost": 969,
+2026-10-25T16:19:51.4048196Z     "zero_guess_target_unreachable_within_2^100": 74
+2026-10-25T16:19:51.4048479Z   },
+2026-10-25T16:19:51.4048667Z   "high_precision_replays": 4,
+2026-10-25T16:19:51.4049054Z   "verification": "integrity and numerical consistency; not full Sage recomputation",
+2026-10-25T16:19:51.4049551Z   "applicability": "conditional GV/score/zero-guess heuristics",
+2026-10-25T16:19:51.4049900Z   "profile_selected": false,
+2026-10-25T16:19:51.4050457Z   "j2_closed": false
+2026-10-25T16:19:51.4050683Z }
+2026-10-25T16:19:51.5503327Z {
+2026-10-25T16:19:51.5503678Z   "snapshot": "run-009",
+2026-10-25T16:19:51.5504013Z   "inherited": 1043,
+2026-10-25T16:19:51.5504292Z   "new": 1187,
+2026-10-25T16:19:51.5504540Z   "statuses": {
+2026-10-25T16:19:51.5504816Z     "conditional_model_cost": 1187
+2026-10-25T16:19:51.5505142Z   },
+2026-10-25T16:19:51.5505402Z   "verified_trajectories": 44,
+2026-10-25T16:19:51.5505780Z   "locally_stable_points": 4,
+2026-10-25T16:19:51.5506191Z   "unit_and_two_coordinate_neighbors_per_point": 32,
+2026-10-25T16:19:51.5506659Z   "high_precision_replays": 4,
+2026-10-25T16:19:51.5507013Z   "global_optimality_claimed": false,
+2026-10-25T16:19:51.5507379Z   "profile_selected": false,
+2026-10-25T16:19:51.5507691Z   "j2_closed": false
+2026-10-25T16:19:51.5507941Z }
+2026-10-25T16:19:51.8802259Z {
+2026-10-25T16:19:51.8802610Z   "snapshot": "run-010",
+2026-10-25T16:19:51.8802956Z   "experiments": 8,
+2026-10-25T16:19:51.8803309Z   "reconstructed_observations": 2048,
+2026-10-25T16:19:51.8803707Z   "actual_modulus_oracles": 64,
+2026-10-25T16:19:51.8804063Z   "independent_toy_targets": 6302,
+2026-10-25T16:19:51.8804421Z   "attack_costs_updated": false,
+2026-10-25T16:19:51.8804769Z   "profile_selected": false,
+2026-10-25T16:19:51.8805097Z   "j2_closed": false
+2026-10-25T16:19:51.8805365Z }
+2026-10-25T16:19:52.8772418Z {
+2026-10-25T16:19:52.8773265Z   "method": "complete toy codebooks plus full actual-modulus block alphabets",
+2026-10-25T16:19:52.8773900Z   "project_arithmetic_imported": false,
+2026-10-25T16:19:52.8774276Z   "toy_cases": 6,
+2026-10-25T16:19:52.8774582Z   "classified_targets": 6302,
+2026-10-25T16:19:52.8774937Z   "actual_modulus_blocks": 64,
+2026-10-25T16:19:52.8775307Z   "actual_modulus_candidate_symbols": 352320,
+2026-10-25T16:19:52.8775984Z   "all_matched": true
+2026-10-25T16:19:52.8776247Z }
+2026-10-25T16:19:57.9395567Z {
+2026-10-25T16:19:57.9396887Z   "snapshot": "run-011",
+2026-10-25T16:19:57.9398047Z   "residuals_reconstructed": 2048,
+2026-10-25T16:19:57.9399150Z   "exact_integer_moment_matrices": 8,
+2026-10-25T16:19:57.9400425Z   "score_banks": 8,
+2026-10-25T16:19:57.9410838Z   "terms_per_bank": 32,
+2026-10-25T16:19:57.9411935Z   "equal_norm_controls": 18,
+2026-10-25T16:19:57.9412639Z   "exact_toy_targets": 6302,
+2026-10-25T16:19:57.9413445Z   "high_precision_checks": 114,
+2026-10-25T16:19:57.9414284Z   "attack_costs_updated": false,
+2026-10-25T16:19:57.9415572Z   "profile_selected": false,
+2026-10-25T16:19:57.9417337Z   "j2_closed": false
+2026-10-25T16:19:57.9424126Z }
+2026-10-25T16:19:58.5012577Z {
+2026-10-25T16:19:58.5012884Z   "toy_cases": 6,
+2026-10-25T16:19:58.5013200Z   "complete_targets": 6302,
+2026-10-25T16:19:58.5013568Z   "literal_secret_bit_strings": 1152,
+2026-10-25T16:19:58.5013957Z   "project_arithmetic_imported": false,
+2026-10-25T16:19:58.5014349Z   "joint_phase_laws_matched": true,
+2026-10-25T16:19:58.5014736Z   "exact_block_factorizations_matched": true,
+2026-10-25T16:19:58.5015174Z   "coordinate_factorization_failures": 6,
+2026-10-25T16:19:58.5015561Z   "shared_secret_moments_matched": true
+2026-10-25T16:19:58.5015894Z }
+2026-10-25T16:20:00.1440847Z {
+2026-10-25T16:20:00.1441193Z   "snapshot": "run-012",
+2026-10-25T16:20:00.1441543Z   "paired_targets": 2048,
+2026-10-25T16:20:00.1441862Z   "toy_targets": 6302,
+2026-10-25T16:20:00.1442157Z   "weight_intervals": 5513,
+2026-10-25T16:20:00.1442488Z   "decoded_blocks": 38400,
+2026-10-25T16:20:00.1442861Z   "real_optimum_certified_blocks": 38400,
+2026-10-25T16:20:00.1443260Z   "independent_actual_blocks": 64,
+2026-10-25T16:20:00.1443601Z   "attack_costs_updated": false,
+2026-10-25T16:20:00.1443925Z   "profile_selected": false,
+2026-10-25T16:20:00.1444229Z   "j2_closed": false
+2026-10-25T16:20:00.1444490Z }
+2026-10-25T16:20:02.5462481Z {
+2026-10-25T16:20:02.5462864Z   "project_arithmetic_imported": false,
+2026-10-25T16:20:02.5463245Z   "complete_codebooks": 6,
+2026-10-25T16:20:02.5463825Z   "classified_targets": 6302,
+2026-10-25T16:20:02.5464075Z   "actual_modulus_blocks": 64,
+2026-10-25T16:20:02.5464313Z   "symbol_candidates_per_metric": 352320,
+2026-10-25T16:20:02.5464564Z   "all_matched": true
+2026-10-25T16:20:02.5464758Z }
+2026-10-25T16:20:13.8728734Z {
+2026-10-25T16:20:13.8729159Z   "snapshot": "run-013",
+2026-10-25T16:20:13.8729534Z   "panels": 32,
+2026-10-25T16:20:13.8729850Z   "complete_guess_scores": 80608,
+2026-10-25T16:20:13.8730269Z   "phase_identities_checked": 419904,
+2026-10-25T16:20:13.8730654Z   "literal_CBD_bit_strings": 65536,
+2026-10-25T16:20:13.8730910Z   "transcendental_entries_verified": 24,
+2026-10-25T16:20:13.8731169Z   "attack_costs_updated": false,
+2026-10-25T16:20:13.8731407Z   "profile_selected": false,
+2026-10-25T16:20:13.8731617Z   "j2_closed": false
+2026-10-25T16:20:13.8731804Z }
+2026-10-25T16:20:16.9616774Z {
+2026-10-25T16:20:16.9617406Z   "project_arithmetic_imported": false,
+2026-10-25T16:20:16.9617812Z   "matrices": 4,
+2026-10-25T16:20:16.9618152Z   "literal_CBD_bit_strings": 65536,
+2026-10-25T16:20:16.9618520Z   "panels": 32,
+2026-10-25T16:20:16.9618799Z   "complete_guess_scores": 80608,
+2026-10-25T16:20:16.9619157Z   "all_exact_laws_and_events_matched": true,
+2026-10-25T16:20:16.9619611Z   "maximum_absolute_moment_delta": 1.6930901125533637e-15
+2026-10-25T16:20:16.9620005Z }
+2026-10-25T16:22:10.8983594Z {
+2026-10-25T16:22:10.8983877Z   "snapshot": "run-014",
+2026-10-25T16:22:10.8984128Z   "matrices": 32,
+2026-10-25T16:22:10.8984369Z   "LLL_certificates": 32,
+2026-10-25T16:22:10.8984597Z   "panels": 768,
+2026-10-25T16:22:10.8984814Z   "distinct_score_banks": 224,
+2026-10-25T16:22:10.8985061Z   "complete_guess_scores": 822808,
+2026-10-25T16:22:10.8985310Z   "literal_CBD_bit_strings": 524288,
+2026-10-25T16:22:10.8985563Z   "attack_costs_updated": false,
+2026-10-25T16:22:10.8985808Z   "profile_selected": false,
+2026-10-25T16:22:10.8986116Z   "j2_closed": false
+2026-10-25T16:22:10.8986512Z }
+2026-10-25T16:22:31.6714173Z {
+2026-10-25T16:22:31.6714471Z   "project_arithmetic_imported": false,
+2026-10-25T16:22:31.6714767Z   "matrices": 32,
+2026-10-25T16:22:31.6714977Z   "LLL_certificates": 32,
+2026-10-25T16:22:31.6715198Z   "panels": 768,
+2026-10-25T16:22:31.6715414Z   "literal_CBD_bit_strings": 524288,
+2026-10-25T16:22:31.6715671Z   "distinct_score_banks": 224,
+2026-10-25T16:22:31.6715920Z   "complete_guess_scores": 822808,
+2026-10-25T16:22:31.6716195Z   "exact_laws_events_and_hashes_matched": true,
+2026-10-25T16:22:31.6717670Z   "maximum_absolute_moment_delta": 3.164135620181696e-15
+2026-10-25T16:22:31.6717986Z }
+2026-10-25T16:22:40.9737314Z {
+2026-10-25T16:22:40.9737709Z   "snapshot": "run-015",
+2026-10-25T16:22:40.9738079Z   "matrices": 16,
+2026-10-25T16:22:40.9738375Z   "LLL_certificates": 16,
+2026-10-25T16:22:40.9738681Z   "panels": 1152,
+2026-10-25T16:22:40.9738960Z   "exact_CBD_laws": 96,
+2026-10-25T16:22:40.9739275Z   "distinct_score_banks": 155,
+2026-10-25T16:22:40.9739651Z   "complete_guess_scores": 5949643,
+2026-10-25T16:22:40.9740060Z   "H07_exact_calibrations": 192,
+2026-10-25T16:22:40.9740431Z   "maximum_bit_denominator": 18014398509481984,
+2026-10-25T16:22:40.9740838Z   "attack_costs_updated": false,
+2026-10-25T16:22:40.9741188Z   "profile_selected": false,
+2026-10-25T16:22:40.9741499Z   "j2_closed": false
+2026-10-25T16:22:40.9741757Z }
+2026-10-25T16:22:58.7897539Z {
+2026-10-25T16:22:58.7898277Z   "project_arithmetic_imported": false,
+2026-10-25T16:22:58.7898761Z   "matrices": 16,
+2026-10-25T16:22:58.7899074Z   "LLL_certificates": 16,
+2026-10-25T16:22:58.7899376Z   "panels": 1152,
+2026-10-25T16:22:58.7899648Z   "exact_laws_verified": 96,
+2026-10-25T16:22:58.7900242Z   "maximum_Bernoulli_layers": 54,
+2026-10-25T16:22:58.7900590Z   "total_Bernoulli_layers": 3072,
+2026-10-25T16:22:58.7900894Z   "distinct_score_banks": 155,
+2026-10-25T16:22:58.7901208Z   "complete_guess_scores": 5949643,
+2026-10-25T16:22:58.7901557Z   "exact_hashes_and_events_matched": true,
+2026-10-25T16:22:58.7902284Z   "maximum_absolute_moment_delta": 2.4320823133194835e-15
+2026-10-25T16:22:58.7902640Z }
+2026-10-25T16:22:59.0292787Z {
+2026-10-25T16:22:59.0293190Z   "snapshot": "run-016",
+2026-10-25T16:22:59.0293557Z   "points": 4,
+2026-10-25T16:22:59.0293843Z   "concrete_sample_panels": 8,
+2026-10-25T16:22:59.0294163Z   "residuals": 2048,
+2026-10-25T16:22:59.0294457Z   "independent_decimal_digits": 90,
+2026-10-25T16:22:59.0294801Z   "attack_costs_updated": false,
+2026-10-25T16:22:59.0295070Z   "profile_selected": false,
+2026-10-25T16:22:59.0295311Z   "j2_closed": false
+2026-10-25T16:22:59.0295494Z }
+2026-10-25T16:23:02.8683653Z {
+2026-10-25T16:23:02.8684015Z   "project_arithmetic_imported": false,
+2026-10-25T16:23:02.8684572Z   "decimal_digits": 90,
+2026-10-25T16:23:02.8684868Z   "points_verified": 4,
+2026-10-25T16:23:02.8685176Z   "residuals_verified": 2048,
+2026-10-25T16:23:02.8685488Z   "numeric_fields_verified": 192,
+2026-10-25T16:23:02.8685969Z   "maximum_absolute_delta": 9.298973104991545e-12,
+2026-10-25T16:23:02.8686443Z   "normal_tail_method": "Mills brackets and integrated Taylor series",
+2026-10-25T16:23:02.8686946Z   "code_integral_method": "alternating exponential series"
+2026-10-25T16:23:02.8687305Z }
+2026-10-25T16:23:10.0624181Z {
+2026-10-25T16:23:10.0624599Z   "snapshot": "run-017",
+2026-10-25T16:23:10.0624966Z   "matrices": 4,
+2026-10-25T16:23:10.0625247Z   "LLL_certificates": 4,
+2026-10-25T16:23:10.0625561Z   "banks": 8,
+2026-10-25T16:23:10.0625815Z   "panels": 24,
+2026-10-25T16:23:10.0626103Z   "moment_records": 648,
+2026-10-25T16:23:10.0626395Z   "phase_identities": 4194304,
+2026-10-25T16:23:10.0626697Z   "synthetic_CBD_states": 16384,
+2026-10-25T16:23:10.0627013Z   "all_q21_candidates_tested": false,
+2026-10-25T16:23:10.0627338Z   "attack_costs_updated": false,
+2026-10-25T16:23:10.0627639Z   "profile_selected": false,
+2026-10-25T16:23:10.0627928Z   "j2_closed": false
+2026-10-25T16:23:10.0628182Z }
+2026-10-25T16:23:42.2189725Z {
+2026-10-25T16:23:42.2190217Z   "project_arithmetic_imported": false,
+2026-10-25T16:23:42.2190732Z   "numpy": "2.3.5",
+2026-10-25T16:23:42.2191109Z   "decimal_digits": 80,
+2026-10-25T16:23:42.2191502Z   "matrices_verified": 4,
+2026-10-25T16:23:42.2191937Z   "LLL_certificates_verified": 4,
+2026-10-25T16:23:42.2192416Z   "complete_banks_verified": 8,
+2026-10-25T16:23:42.2192872Z   "moment_records_verified": 648,
+2026-10-25T16:23:42.2193308Z   "phase_identities_verified": 4194304,
+2026-10-25T16:23:42.2194170Z   "exhaustive_decoder_coordinate_terms": 1101148160,
+2026-10-25T16:23:42.2194681Z   "high_precision_characters": 64,
+2026-10-25T16:23:42.2195215Z   "all_sample_events_and_integer_hashes_matched": true,
+2026-10-25T16:23:42.2195788Z   "maximum_absolute_numeric_delta": 8.981260180007666e-12
+2026-10-25T16:23:42.2196283Z }
+2026-10-25T16:23:45.3887339Z matrix 0: 7 distinct geometries, 8256 greedy costs
+2026-10-25T16:23:48.3108640Z matrix 1: 7 distinct geometries, 8256 greedy costs
+2026-10-25T16:23:51.2132638Z matrix 2: 7 distinct geometries, 8256 greedy costs
+2026-10-25T16:23:54.1140736Z matrix 3: 7 distinct geometries, 8256 greedy costs
+2026-10-25T16:23:54.1351608Z {
+2026-10-25T16:23:54.1351926Z   "snapshot": "run-018",
+2026-10-25T16:23:54.1352292Z   "selection_panels": 36,
+2026-10-25T16:23:54.1352608Z   "distinct_uniform_laws": 28,
+2026-10-25T16:23:54.1352915Z   "distinct_LWE_panels": 56,
+2026-10-25T16:23:54.1353224Z   "phase_identities": 4194304,
+2026-10-25T16:23:54.1353542Z   "H10_uniform_calibrations": 12,
+2026-10-25T16:23:54.1353888Z   "H10_CBD_calibrations": 96,
+2026-10-25T16:23:54.1354215Z   "exact_CBD_fourth_moment_computed": false,
+2026-10-25T16:23:54.1354571Z   "attack_costs_updated": false,
+2026-10-25T16:23:54.1354875Z   "profile_selected": false,
+2026-10-25T16:23:54.1355174Z   "j2_closed": false
+2026-10-25T16:23:54.1355746Z }
+2026-10-25T16:24:12.3421018Z {
+2026-10-25T16:24:12.3421604Z   "project_arithmetic_imported": false,
+2026-10-25T16:24:12.3422600Z   "numpy": "2.3.5",
+2026-10-25T16:24:12.3423398Z   "matrices": 4,
+2026-10-25T16:24:12.3423813Z   "greedy_costs_verified": 33024,
+2026-10-25T16:24:12.3424580Z   "exact_uniform_laws_verified": 28,
+2026-10-25T16:24:12.3425087Z   "LWE_panels_verified": 56,
+2026-10-25T16:24:12.3425564Z   "numerical_CBD_moments_verified": 224,
+2026-10-25T16:24:12.3426110Z   "unique_phase_identities_verified": 4194304,
+2026-10-25T16:24:12.3426659Z   "H10_uniform_calibrations": 12,
+2026-10-25T16:24:12.3427107Z   "H10_CBD_calibrations": 96,
+2026-10-25T16:24:12.3427623Z   "all_selected_sample_events_and_hashes_matched": true,
+2026-10-25T16:24:12.3428266Z   "maximum_absolute_numeric_delta": 5.684341886080802e-14,
+2026-10-25T16:24:12.3428964Z   "maximum_mean_error_over_true_bias_scale": 2.840764309695734e-14
+2026-10-25T16:24:12.3429547Z }
+2026-10-25T16:24:14.5680938Z matrix 0 repeated: 8 complete CBD expansions
+2026-10-25T16:24:16.3364634Z matrix 0 radix: 8 complete CBD expansions
+2026-10-25T16:24:18.1298437Z matrix 1 repeated: 8 complete CBD expansions
+2026-10-25T16:24:19.8901417Z matrix 1 radix: 8 complete CBD expansions
+2026-10-25T16:24:21.6768175Z matrix 2 repeated: 8 complete CBD expansions
+2026-10-25T16:24:23.4416368Z matrix 2 radix: 8 complete CBD expansions
+2026-10-25T16:24:25.2163407Z matrix 3 repeated: 8 complete CBD expansions
+2026-10-25T16:24:26.9841000Z matrix 3 radix: 8 complete CBD expansions
+2026-10-25T16:24:27.0197165Z {
+2026-10-25T16:24:27.0197473Z   "snapshot": "run-019",
+2026-10-25T16:24:27.0197802Z   "selection_panels": 36,
+2026-10-25T16:24:27.0198123Z   "CBD_banks": 64,
+2026-10-25T16:24:27.0198416Z   "population_moment_records": 1024,
+2026-10-25T16:24:27.0198749Z   "character_evaluation": "numeric",
+2026-10-25T16:24:27.0199067Z   "rare_tail_certified": false,
+2026-10-25T16:24:27.0199401Z   "attack_costs_updated": false,
+2026-10-25T16:24:27.0199729Z   "profile_selected": false,
+2026-10-25T16:24:27.0200062Z   "j2_closed": false
+2026-10-25T16:24:27.0200321Z }
+2026-10-25T16:24:41.2863534Z {
+2026-10-25T16:24:41.2863991Z   "project_arithmetic_imported": false,
+2026-10-25T16:24:41.2864391Z   "numpy": "2.3.5",
+2026-10-25T16:24:41.2864694Z   "coordinate_table_decimal_digits": 80,
+2026-10-25T16:24:41.2865051Z   "distinct_geometries_verified": 32,
+2026-10-25T16:24:41.2865423Z   "CBD_banks_verified": 64,
+2026-10-25T16:24:41.2865750Z   "population_moment_records_verified": 1024,
+2026-10-25T16:24:41.2866101Z   "cosine_sign_evaluations": 1824768,
+2026-10-25T16:24:41.2866426Z   "replayed_phase_identities": 4194304,
+2026-10-25T16:24:41.2867118Z   "all_multiplicities_and_sample_events_matched": true,
+2026-10-25T16:24:41.2867547Z   "maximum_absolute_numeric_delta": 8.377298854611581e-12,
+2026-10-25T16:24:41.2867997Z   "maximum_correction_error_over_absolute_mass": 2.3636648194269583e-13
+2026-10-25T16:24:41.2868391Z }
+2026-10-25T16:24:53.6510272Z matrix 0: six N32 certificates
+2026-10-25T16:25:05.3667850Z matrix 1: six N32 certificates
+2026-10-25T16:25:17.1193781Z matrix 2: six N32 certificates
+2026-10-25T16:25:28.8873887Z matrix 3: six N32 certificates
+2026-10-25T16:25:32.7147319Z {
+2026-10-25T16:25:32.7147791Z   "snapshot": "run-020",
+2026-10-25T16:25:32.7148289Z   "exact_rational_replay": true,
+2026-10-25T16:25:32.7148758Z   "protocol_commit": "5fc45d1",
+2026-10-25T16:25:32.7149202Z   "N": 32,
+2026-10-25T16:25:32.7149584Z   "CBD_banks": 24,
+2026-10-25T16:25:32.7169741Z   "H12_calibration_banks": 64,
+2026-10-25T16:25:32.7170252Z   "H12_numeric_raw_moments_enclosed": 1024,
+2026-10-25T16:25:32.7170747Z   "uniform_in_all_offsets": true,
+2026-10-25T16:25:32.7171195Z   "rational_moment_bounds": true,
+2026-10-25T16:25:32.7171651Z   "full_probability_law_enumerated": false,
+2026-10-25T16:25:32.7172119Z   "rare_tail_certified": false,
+2026-10-25T16:25:32.7172515Z   "attack_costs_updated": false,
+2026-10-25T16:25:32.7172823Z   "profile_selected": false,
+2026-10-25T16:25:32.7173116Z   "j2_closed": false,
+2026-10-25T16:25:32.7173383Z   "groups": [
+2026-10-25T16:25:32.7173677Z     {
+2026-10-25T16:25:32.7173915Z       "method": "norm",
+2026-10-25T16:25:32.7174517Z       "family": "repeated",
+2026-10-25T16:25:32.7175148Z       "all_variances_positive": true,
+2026-10-25T16:25:32.7175532Z       "maximum_kurtosis_absolute_error": 1.3121868950786495e-35,
+2026-10-25T16:25:32.7175970Z       "maximum_kurtosis_error_log2": -115.87551010308316
+2026-10-25T16:25:32.7176307Z     },
+2026-10-25T16:25:32.7176539Z     {
+2026-10-25T16:25:32.7176776Z       "method": "norm",
+2026-10-25T16:25:32.7177045Z       "family": "radix",
+2026-10-25T16:25:32.7177336Z       "all_variances_positive": true,
+2026-10-25T16:25:32.7177741Z       "maximum_kurtosis_absolute_error": 1.210932532904534e-13,
+2026-10-25T16:25:32.7178160Z       "maximum_kurtosis_error_log2": -42.908946746005945
+2026-10-25T16:25:32.7178496Z     },
+2026-10-25T16:25:32.7178723Z     {
+2026-10-25T16:25:32.7178954Z       "method": "hash",
+2026-10-25T16:25:32.7179226Z       "family": "repeated",
+2026-10-25T16:25:32.7179515Z       "all_variances_positive": true,
+2026-10-25T16:25:32.7179882Z       "maximum_kurtosis_absolute_error": 1.3121868950786495e-35,
+2026-10-25T16:25:32.7180287Z       "maximum_kurtosis_error_log2": -115.87551010308316
+2026-10-25T16:25:32.7180610Z     },
+2026-10-25T16:25:32.7180865Z     {
+2026-10-25T16:25:32.7181096Z       "method": "hash",
+2026-10-25T16:25:32.7181365Z       "family": "radix",
+2026-10-25T16:25:32.7181640Z       "all_variances_positive": true,
+2026-10-25T16:25:32.7181994Z       "maximum_kurtosis_absolute_error": 2.9815243043791345e-13,
+2026-10-25T16:25:32.7182390Z       "maximum_kurtosis_error_log2": -41.609015136362984
+2026-10-25T16:25:32.7182718Z     },
+2026-10-25T16:25:32.7182941Z     {
+2026-10-25T16:25:32.7183172Z       "method": "energy",
+2026-10-25T16:25:32.7183464Z       "family": "repeated",
+2026-10-25T16:25:32.7183752Z       "all_variances_positive": true,
+2026-10-25T16:25:32.7184131Z       "maximum_kurtosis_absolute_error": 1.3121868950786495e-35,
+2026-10-25T16:25:32.7184527Z       "maximum_kurtosis_error_log2": -115.87551010308316
+2026-10-25T16:25:32.7185161Z     },
+2026-10-25T16:25:32.7185443Z     {
+2026-10-25T16:25:32.7185682Z       "method": "energy",
+2026-10-25T16:25:32.7185958Z       "family": "radix",
+2026-10-25T16:25:32.7186241Z       "all_variances_positive": true,
+2026-10-25T16:25:32.7186608Z       "maximum_kurtosis_absolute_error": 6.757272572741464e-14,
+2026-10-25T16:25:32.7187009Z       "maximum_kurtosis_error_log2": -43.750552277149524
+2026-10-25T16:25:32.7187339Z     }
+2026-10-25T16:25:32.7187584Z   ]
+2026-10-25T16:25:32.7187804Z }
+2026-10-25T16:26:46.4932831Z {
+2026-10-25T16:26:46.4933214Z   "project_arithmetic_imported": false,
+2026-10-25T16:26:46.4933604Z   "full_coordinates_used": true,
+2026-10-25T16:26:46.4933930Z   "N32_banks_verified": 24,
+2026-10-25T16:26:46.4934238Z   "H12_banks_verified": 64,
+2026-10-25T16:26:46.4934535Z   "cosine_sign_evaluations": 23132160,
+2026-10-25T16:26:46.4934923Z   "histograms_and_rational_bounds_matched": true,
+2026-10-25T16:26:46.4935286Z   "rare_tail_certified": false
+2026-10-25T16:26:46.4935586Z }
+2026-10-25T16:26:47.0163912Z {
+2026-10-25T16:26:47.0164759Z   "profile": "KEM1536-DEV-Q7681-R1",
+2026-10-25T16:26:47.0165262Z   "vectors_verified": 16,
+2026-10-25T16:26:47.0165709Z   "total_frozen_vectors": 1000,
+2026-10-25T16:26:47.0166210Z   "full_rejection_corpus_replayed": false,
+2026-10-25T16:26:47.0166753Z   "all_hashes_verified": true,
+2026-10-25T16:26:47.0167179Z   "security_validation": "pending",
+2026-10-25T16:26:47.0167956Z   "j2_closed": false,
+2026-10-25T16:26:47.0168382Z   "j3_validated": false
+2026-10-25T16:26:47.0168736Z }
+2026-10-25T16:26:47.2941345Z {
+2026-10-25T16:26:47.2941737Z   "paired_rejections_replayed": 16,
+2026-10-25T16:26:47.2942135Z   "total_frozen_rejections": 10000,
+2026-10-25T16:26:47.2942509Z   "all_hashes_verified": true,
+2026-10-25T16:26:47.2942842Z   "all_replacement_secrets_equal": true,
+2026-10-25T16:26:47.2943197Z   "security_validation": "pending"
+2026-10-25T16:26:47.2943506Z }
+2026-10-25T16:26:47.6024173Z {
+2026-10-25T16:26:47.6024870Z   "mutation_cases_replayed": 16,
+2026-10-25T16:26:47.6025229Z   "full_hashes_verified": true,
+2026-10-25T16:26:47.6025565Z   "timing_statistics_replayed": true,
+2026-10-25T16:26:47.6025905Z   "constant_time_proven": false
+2026-10-25T16:26:47.6026186Z }
+2026-10-25T16:26:51.3684626Z {
+2026-10-25T16:26:51.3685001Z   "snapshot": "m03-001",
+2026-10-25T16:26:51.3685338Z   "hashes_verified": 80,
+2026-10-25T16:26:51.3685674Z   "benchmark_observations_recomputed": 60000,
+2026-10-25T16:26:51.3686077Z   "full_binary_inventories_recomputed": 2,
+2026-10-25T16:26:51.3686465Z   "smoke_corpus_requests_previously_verified": 511,
+2026-10-25T16:26:51.3686826Z   "long_campaign_closed": false,
+2026-10-25T16:26:51.3687148Z   "constant_time_proven": false,
+2026-10-25T16:26:51.3687451Z   "M03_A01_resolved": false
+2026-10-25T16:26:51.3687759Z }
+2026-10-25T16:26:55.3227181Z {
+2026-10-25T16:26:55.3228714Z   "elapsed_seconds": 3.7966844,
+2026-10-25T16:26:55.3229368Z   "fresh_round_trips": 16,
+2026-10-25T16:26:55.3229885Z   "implicit_rejections_checked": 16,
+2026-10-25T16:26:55.3230419Z   "profile": "KEM1536-DEV-Q7681-R1",
+2026-10-25T16:26:55.3230927Z   "secrets_printed": false,
+2026-10-25T16:26:55.3231410Z   "security_validation": "pending"
+2026-10-25T16:26:55.3231872Z }
+2026-10-25T16:26:55.4944270Z {
+2026-10-25T16:26:55.4945104Z   "configuration_check": "passed",
+2026-10-25T16:26:55.4945880Z   "implementation_status": "experimental-r1-reference",
+2026-10-25T16:26:55.4946606Z   "scope": "public parameters and object sizes only"
+2026-10-25T16:26:55.4947133Z }
+2026-10-25T16:26:55.5667210Z Post job cleanup.
+2026-10-25T16:26:55.7511689Z (node:8116) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-25T16:26:55.7513152Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-25T16:26:55.7959096Z Post job cleanup.
+2026-10-25T16:26:56.0206509Z [command]"C:\Program Files\Git\bin\git.exe" version
+2026-10-25T16:26:56.0684720Z git version 2.56.0.windows.2
+2026-10-25T16:26:56.0765283Z Temporarily overriding HOME='D:\a\_temp\f1e2140d-6f72-44ad-ba80-d4cff62656bc' before making global git config changes
+2026-10-25T16:26:56.0766511Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-25T16:26:56.0780899Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\majax_mlkem1536\majax_mlkem1536
+2026-10-25T16:26:56.1312361Z Removing SSH command configuration
+2026-10-25T16:26:56.1328964Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2026-10-25T16:26:56.1892303Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2026-10-25T16:26:56.8003071Z Removing HTTP extra header
+2026-10-25T16:26:56.8014606Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-25T16:26:56.8415185Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2026-10-25T16:26:57.4295310Z Removing includeIf entries pointing to credentials config files
+2026-10-25T16:26:57.4308471Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-25T16:26:57.4682386Z includeif.gitdir:D:/a/majax_mlkem1536/majax_mlkem1536/.git.path
+2026-10-25T16:26:57.4683156Z includeif.gitdir:D:/a/majax_mlkem1536/majax_mlkem1536/.git/worktrees/*.path
+2026-10-25T16:26:57.4684310Z includeif.gitdir:/github/workspace/.git.path
+2026-10-25T16:26:57.4684853Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-10-25T16:26:57.4735218Z [command]"C:\Program Files\Git\bin\git.exe" config --local --get-all includeif.gitdir:D:/a/majax_mlkem1536/majax_mlkem1536/.git.path
+2026-10-25T16:26:57.5092146Z D:\a\_temp\git-credentials-3f5bc328-271b-4a78-90ae-57dd0b89a225.config
+2026-10-25T16:26:57.5146164Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset includeif.gitdir:D:/a/majax_mlkem1536/majax_mlkem1536/.git.path D\:\\a\\_temp\\git\-credentials\-3f5bc328\-271b\-4a78\-90ae\-57dd0b89a225\.config
+2026-10-25T16:26:57.5622491Z [command]"C:\Program Files\Git\bin\git.exe" config --local --get-all includeif.gitdir:D:/a/majax_mlkem1536/majax_mlkem1536/.git/worktrees/*.path
+2026-10-25T16:26:57.5997572Z D:\a\_temp\git-credentials-3f5bc328-271b-4a78-90ae-57dd0b89a225.config
+2026-10-25T16:26:57.6043038Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset includeif.gitdir:D:/a/majax_mlkem1536/majax_mlkem1536/.git/worktrees/*.path D\:\\a\\_temp\\git\-credentials\-3f5bc328\-271b\-4a78\-90ae\-57dd0b89a225\.config
+2026-10-25T16:26:57.6453727Z [command]"C:\Program Files\Git\bin\git.exe" config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-10-25T16:26:57.6810297Z /github/runner_temp/git-credentials-3f5bc328-271b-4a78-90ae-57dd0b89a225.config
+2026-10-25T16:26:57.6858825Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-3f5bc328\-271b\-4a78\-90ae\-57dd0b89a225\.config
+2026-10-25T16:26:57.7258868Z [command]"C:\Program Files\Git\bin\git.exe" config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-10-25T16:26:57.7604857Z /github/runner_temp/git-credentials-3f5bc328-271b-4a78-90ae-57dd0b89a225.config
+2026-10-25T16:26:57.7652345Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-3f5bc328\-271b\-4a78\-90ae\-57dd0b89a225\.config
+2026-10-25T16:26:57.8063287Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+2026-10-25T16:26:58.3727612Z Removing credentials config 'D:\a\_temp\git-credentials-3f5bc328-271b-4a78-90ae-57dd0b89a225.config'
+2026-10-25T16:26:58.3964963Z Cleaning up orphan processes

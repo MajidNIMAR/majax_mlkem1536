@@ -96,6 +96,13 @@ The workflow in `.github/workflows/ci.yml` runs the full check command on
 Windows and Ubuntu; its actual status is visible in this repository's
 Actions tab.
 
+The complete checks passed on fresh GitHub-hosted **Windows and Ubuntu**
+runners for [code revision 75c26f6](https://github.com/MajidNIMAR/majax_mlkem1536/commit/75c26f668a99cf0676a01494bc33a7c99a193803),
+including **95 Python tests** per platform. The
+[CI run](https://github.com/MajidNIMAR/majax_mlkem1536/actions/runs/40210986511)
+and [preserved logs and provenance](results/publication/portability-001/)
+record the result and the two portability fixes found during publication.
+
 ## Preserved evidence and current limits
 
 | Evidence | Preserved scope |
