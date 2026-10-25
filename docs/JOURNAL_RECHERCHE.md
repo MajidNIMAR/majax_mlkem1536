@@ -1124,3 +1124,17 @@ avec 16 échanges et 16 rejets. Le contrôle complet local est relancé ;
 la correction et les notes sont envoyées dans un second commit public.
 Le cœur cryptographique, les paramètres et les anciens résultats sont
 inchangés. Les preuves initiales restent des preuves historiques.
+
+## 25 octobre 2026 — Rejeu H11 portable
+
+La première CI Ubuntu passe les tests et H10 puis échoue sur une égalité
+stricte de dictionnaires contenant des probabilités flottantes dans la
+calibration H11. Le diagnostic Linux retrouve erfc=0,02275013194817922
+contre 0,022750131948179216 dans l'archive Windows. Nouveau runner de
+rejeu et nouveau vérificateur, sans modifier les sources historiques
+référencées par les empreintes ou les instantanés : calcul inchangé,
+compteurs et structure exacts, flottants finis comparés avec tolérance
+relative 1e-13 et absolue 1e-30. Quatre tests couvrent l'écart observé et
+le rejet de compteurs, probabilités ou structures incorrects. Le rejeu
+complet portable H11 passe sous Windows ; dev check utilise le nouveau
+vérificateur sur les deux plateformes. La CI complète est relancée.

@@ -31,6 +31,16 @@ cible Windows GNU. L'auto-test release réussit ensuite : 16 échanges et
 16 rejets. Le contrôle complet et la CI sont relancés ; leur réussite
 reste à constater. Aucun changement du moteur ou de ses formats.
 
+**Portabilité numérique du contrôle H11.** La première CI Ubuntu passe
+les tests et H10, puis relève une égalité stricte inadaptée sur des champs
+flottants de calibration H11. Le diagnostic Linux isole notamment un
+écart `erfc` de 3,47 × 10^-18. Un nouveau rejeu portable conserve le calcul,
+les compteurs exacts et toutes les empreintes historiques, avec tolérance
+relative 10^-13/absolue 10^-30 limitée aux champs flottants de calibration.
+Les sources et résultats figés restent inchangés. Quatre nouveaux tests
+et le rejeu complet H11 passent sous Windows ; le contrôle distant est
+relancé. Voir [le détail du correctif](PUBLICATION_GITHUB.md).
+
 
 **Actualisation bibliographique.** La [revue des attaques au 24 octobre 2026](VEILLE_ATTAQUES_2026.md) complète maintenant l'étude initiale : variantes duales avec codes, hybrides avec rotations, critiques des modèles de score, corrélations du bruit, progrès quantiques et oracles d'échec. Le tableau Core-SVP historique ci-dessous reste celui de `run-001` ; il ne doit pas être présenté comme une synthèse des meilleures attaques connues à cette date.
 

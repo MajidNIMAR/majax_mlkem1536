@@ -114,7 +114,7 @@ try {
             if ($LASTEXITCODE -ne 0) { throw 'Real-modulus dual list verification failed.' }
             & $taskCheckResearchPython research/verify_real_dual_independent.py
             if ($LASTEXITCODE -ne 0) { throw 'Independent real-modulus dual list verification failed.' }
-            & $taskCheckResearchPython research/verify_additive_score.py
+            & $taskCheckResearchPython research/verify_additive_portable.py
             if ($LASTEXITCODE -ne 0) { throw 'Additive score moment and selection verification failed.' }
             & $taskCheckResearchPython research/verify_additive_score_independent.py
             if ($LASTEXITCODE -ne 0) { throw 'Independent additive score verification failed.' }

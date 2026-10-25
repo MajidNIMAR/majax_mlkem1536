@@ -54,7 +54,7 @@ case "${1:-check}" in
         python3 research/verify_score_transfer_independent.py
         "$task_check_research_python" research/verify_real_dual.py
         "$task_check_research_python" research/verify_real_dual_independent.py
-        "$task_check_research_python" research/verify_additive_score.py
+        "$task_check_research_python" research/verify_additive_portable.py
         "$task_check_research_python" research/verify_additive_score_independent.py
         "$task_check_research_python" research/verify_cbd_fourth.py
         "$task_check_research_python" research/verify_cbd_fourth_independent.py

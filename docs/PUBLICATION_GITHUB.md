@@ -75,3 +75,25 @@ changement. Le contrôle complet est relancé, ainsi que la CI publique.
 Le moteur, ses formats et paramètres ne changent pas. Les preuves initiales
 restent celles du premier instantané ; `PUBLICATION_PROVENANCE.json`
 décrit cet import initial, les commits ultérieurs conservent les évolutions.
+
+## Rejeu numérique portable de H11
+
+La première CI Ubuntu passe les tests Rust/Python et le rejeu H10, puis
+échoue dans la calibration H11 : l'ancien runner comparait par égalité
+stricte des dictionnaires contenant des probabilités flottantes. Un
+diagnostic sous Linux retrouve par exemple `erfc` à
+0,02275013194817922, contre 0,022750131948179216 dans l'archive Windows,
+soit un écart de 3,47 × 10^-18.
+
+Les sources historiques et les instantanés restent inchangés.
+`replay_additive_portable.py` reprend le même calcul ; seule la comparaison
+des champs flottants de calibration accepte une tolérance relative de
+10^-13 et absolue de 10^-30, avec finitude exigée. Les compteurs entiers,
+les champs et la structure restent exacts. Le nouveau vérificateur garde
+tous les contrôles d'empreintes historiques et les autres comparaisons
+du rejeu. Les scripts `dev check` l'utilisent désormais.
+
+Quatre tests de régression couvrent l'écart Linux observé, une modification
+d'un seul compteur, une modification significative de probabilité et des
+valeurs non finies ou une structure altérée. Le rejeu complet H11 portable
+réussit sous Windows ; la CI doit encore confirmer les deux plateformes.
