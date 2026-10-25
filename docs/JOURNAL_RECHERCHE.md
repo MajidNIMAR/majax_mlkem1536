@@ -1095,3 +1095,32 @@ identiques. La copie finale précise seulement les documents et ajoute ces
 preuves ; moteur, scripts, profils et CI restent identiques à l'export
 qui a passé les contrôles. Le statut distant se lit sur GitHub Actions.
 La campagne longue M03 continue séparément et n'est pas déclarée terminée.
+
+## 25 octobre 2026 — Sources publiées sur GitHub
+
+Le premier instantané public est envoyé avec succès sur
+https://github.com/MajidNIMAR/majax_mlkem1536, branche main, commit
+08c8aa3760a2db1a2a463ece25bf141d3281ff97. GitHub confirme le caractère
+public, la branche main, la licence Apache-2.0 et le même commit que
+l'export local. Il contient 672 fichiers suivis ; les 671 empreintes de
+l'export ont été vérifiées avant l'envoi. Aucun cache local n'est présent
+dans cette copie finale. Le snapshot provient du commit local db22fc6.
+
+La CI distante est déclenchée sur ce commit :
+https://github.com/MajidNIMAR/majax_mlkem1536/actions/runs/40210170341.
+Les deux jobs Windows/Ubuntu sont observés en cours à ce constat ; aucune
+réussite distante n'est encore déclarée. Les résultats locaux de la copie
+propre restent conservés dans results/publication/initial-001.
+
+## 25 octobre 2026 — Première CI publique et liaison Windows
+
+Le job Windows de la première CI échoue à l'édition de liens pendant
+Clippy : objets crt2.o et bibliothèques système introuvables, malgré le
+bootstrap réussi. La détection de l'environnement MinGW diffère du poste
+local. Le mode link-self-contained=yes est désormais explicite pour la
+cible Windows GNU dans .cargo/config.toml ; les bibliothèques et objets
+sont ceux du Rust épinglé. L'auto-test release passe après le correctif
+avec 16 échanges et 16 rejets. Le contrôle complet local est relancé ;
+la correction et les notes sont envoyées dans un second commit public.
+Le cœur cryptographique, les paramètres et les anciens résultats sont
+inchangés. Les preuves initiales restent des preuves historiques.

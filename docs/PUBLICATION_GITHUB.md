@@ -59,3 +59,19 @@ local e2e9bc9. Reconstruction release dans une cible neuve, auto-test de
 et caches locaux ont été réutilisés. La copie finale ajoute les présentes
 précisions documentaires et ces preuves sans modifier le moteur, les scripts,
 les paramètres ou la CI testés. Le statut distant effectif se lit dans Actions.
+
+## Correctif de liaison Windows sur exécutant neuf
+
+La première CI publique a trouvé une différence d'environnement absente
+du poste local : la détection de MinGW sélectionnait un mode sans les
+objets de démarrage et bibliothèques nécessaires (`crt2.o`, `kernel32`,
+etc.). Le démarrage et la préparation Python avaient réussi ; Clippy
+échouait à l'édition de liens d'une dépendance de construction.
+
+`.cargo/config.toml` impose désormais `-C link-self-contained=yes` pour
+`x86_64-pc-windows-gnu`, afin d'utiliser les objets et bibliothèques fournis
+par la version Rust épinglée. L'auto-test release local réussit après ce
+changement. Le contrôle complet est relancé, ainsi que la CI publique.
+Le moteur, ses formats et paramètres ne changent pas. Les preuves initiales
+restent celles du premier instantané ; `PUBLICATION_PROVENANCE.json`
+décrit cet import initial, les commits ultérieurs conservent les évolutions.

@@ -19,6 +19,19 @@ avant les contrôles Windows/Ubuntu ; sa réussite distante reste à constater.
 La campagne longue M03 continue séparément, sans résultat final anticipé.
 Voir [la procédure de publication](PUBLICATION_GITHUB.md).
 
+L'envoi public est confirmé au commit `08c8aa3` (672 fichiers), issu du
+commit local `db22fc6`. Les deux jobs de [CI distante](https://github.com/MajidNIMAR/majax_mlkem1536/actions/runs/40210170341)
+sont en cours au constat de publication.
+
+**Premier retour de CI : liaison Windows.** Le job Windows initial échoue
+pendant Clippy parce que la détection de MinGW n'emploie pas les objets et
+bibliothèques livrés avec Rust. Les préparations Rust/Python réussissent.
+Le correctif `.cargo/config.toml` impose `link-self-contained=yes` pour la
+cible Windows GNU. L'auto-test release réussit ensuite : 16 échanges et
+16 rejets. Le contrôle complet et la CI sont relancés ; leur réussite
+reste à constater. Aucun changement du moteur ou de ses formats.
+
+
 **Actualisation bibliographique.** La [revue des attaques au 24 octobre 2026](VEILLE_ATTAQUES_2026.md) complète maintenant l'étude initiale : variantes duales avec codes, hybrides avec rotations, critiques des modèles de score, corrélations du bruit, progrès quantiques et oracles d'échec. Le tableau Core-SVP historique ci-dessous reste celui de `run-001` ; il ne doit pas être présenté comme une synthèse des meilleures attaques connues à cette date.
 
 ## Résultat principal

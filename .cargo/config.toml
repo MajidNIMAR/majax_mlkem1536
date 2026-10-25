@@ -1,0 +1,4 @@
+[target.x86_64-pc-windows-gnu]
+# Use the startup objects and import libraries shipped with the pinned Rust
+# toolchain even when the host also has a partial MinGW installation on PATH.
+rustflags = ["-C", "link-self-contained=yes"]
