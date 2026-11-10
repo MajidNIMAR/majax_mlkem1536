@@ -1,0 +1,83 @@
+{
+  "job": {
+    "index": 89,
+    "scenario": "Kyber2017-k4",
+    "degree": 256,
+    "rank": 4,
+    "n": 1024,
+    "q": 7681,
+    "secret": {
+      "kind": "CBD",
+      "eta": 3
+    },
+    "error": {
+      "kind": "Gaussian-moments",
+      "mean": {
+        "numerator": 2,
+        "denominator": 7681
+      },
+      "variance": {
+        "numerator": 334361603,
+        "denominator": 117995522
+      }
+    },
+    "panel": "independent_rounding_Gaussian_moment_proxy",
+    "sample_budget": "ideal_k_plus_1",
+    "samples": 1280,
+    "abstract_matrix_blocks": [
+      5,
+      4
+    ],
+    "targets": 1,
+    "leakage_oracle": "none",
+    "memory_cap": null,
+    "exponential_memory_allowed": true,
+    "shape_model": "GSA",
+    "cost_model": "MATZOV-classical",
+    "algorithm": "usvp",
+    "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+    "actual_compressed_scheme_attack_cost": false,
+    "ciphertext_rows_claimed_independent_samples": false
+  },
+  "status": "estimated_proxy",
+  "cost": {
+    "rop": "1.00617369300479e82",
+    "red": "1.00617369300479e82",
+    "delta": "1.00228118806105",
+    "beta": "864",
+    "d": "1930",
+    "tag": "usvp",
+    "problem": "LWEParameters(n=1024, q=7681, Xs=D(σ=1.22), Xe=D(σ=1.68, μ=0.00), m=1280, tag='Kyber2017-k4')"
+  },
+  "log2_cost": {
+    "rop": 272.40698315589367,
+    "red": 272.40698315589367
+  },
+  "success_contract": {
+    "id": "uSVP_GSA_geometric_condition",
+    "meaning": "GSA success predicate; no explicit end-to-end success target in preserved job",
+    "global_success_certified": false
+  },
+  "input_distribution_repr": {
+    "Xs": "D(σ=1.22)",
+    "Xe": "D(σ=1.68, μ=0.00)"
+  },
+  "input_distribution_means": {
+    "Xs": "0",
+    "Xe": "0.000260382762661112"
+  },
+  "normalized_parameters_repr": "LWEParameters(n=1024, q=7681, Xs=D(σ=1.22), Xe=D(σ=1.68, μ=0.00), m=1280, tag='Kyber2017-k4')",
+  "reported_memory_unit": "estimator-native units, not bytes; N is vector count",
+  "cost_is_global_security_lower_bound": false,
+  "quantum_physical_gate_count": null,
+  "sage": "10.7",
+  "python": "3.12.15",
+  "estimator_messages": "",
+  "executing_worker_sha256": "07447605b196070965432c10c260c918f09d7ad0d28d0298e5087084cbf16a8b",
+  "reduction_dimensions": {
+    "beta": 864
+  },
+  "classical_fit_used_beyond_1024": false,
+  "fit_flag_is_not_an_attack_cost_correction": true,
+  "elapsed_seconds": 9.356573620000063
+}

@@ -1,0 +1,348 @@
+
+File: /mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m06-measurements-001/bin/baseline-m06-measure
+Format: elf64-x86-64
+Arch: x86_64
+AddressSize: 64bit
+LoadName: <Not found>
+StackSizes [
+  Entry {
+    Functions: [m06_measure::main::h16dac5a6a77255b0]
+    Size: 0x1A8
+  }
+  Entry {
+    Functions: [core::ptr::drop_in_place$LT$std..io..error..Error$GT$::h07a45d32b19a567f]
+    Size: 0x28
+  }
+  Entry {
+    Functions: [core::ptr::drop_in_place$LT$serde_json..error..Error$GT$::hacd1b4f147a54126]
+    Size: 0x18
+  }
+  Entry {
+    Functions: [core::ptr::drop_in_place$LT$std..io..stdio..StdoutLock$GT$::hd5e305a6d626ffc1]
+    Size: 0x0
+  }
+  Entry {
+    Functions: [core::ptr::drop_in_place$LT$std..io..buffered..bufwriter..BufWriter$LT$std..io..stdio..StdoutLock$GT$$GT$::ha571e7576d46fe70]
+    Size: 0x18
+  }
+  Entry {
+    Functions: [_$LT$kem1536..dev_kem..Error$u20$as$u20$core..fmt..Debug$GT$::fmt::h569275f68f4b966e]
+    Size: 0x0
+  }
+  Entry {
+    Functions: [_$LT$core..num..error..ParseIntError$u20$as$u20$core..fmt..Debug$GT$::fmt::ha3a87f33f6dad506]
+    Size: 0x18
+  }
+  Entry {
+    Functions: [_$LT$core..num..error..TryFromIntError$u20$as$u20$core..fmt..Debug$GT$::fmt::h1b49c22632b5e673]
+    Size: 0x8
+  }
+  Entry {
+    Functions: [main]
+    Size: 0x8
+  }
+  Entry {
+    Functions: [_$LT$$RF$mut$u20$serde_json..ser..Serializer$LT$W$C$F$GT$$u20$as$u20$serde_core..ser..Serializer$GT$::serialize_str::h1c71aa793fabf9d0 (.llvm.2385522154565223408)]
+    Size: 0x48
+  }
+  Entry {
+    Functions: [serde_core::ser::SerializeMap::serialize_entry::hfe45483fdf3f7035, serde_core::ser::SerializeMap::serialize_entry::h5d0ed44ecd8203fd]
+    Size: 0x58
+  }
+  Entry {
+    Functions: [serde_core::ser::SerializeMap::serialize_entry::hc077ea730f3f61c0]
+    Size: 0x28
+  }
+  Entry {
+    Functions: [std::io::Write::write_fmt::he86c3ff2a5f50961]
+    Size: 0x98
+  }
+  Entry {
+    Functions: [std::io::buffered::bufwriter::BufWriter$LT$W$GT$::write_all_cold::h13a1917496240b5a]
+    Size: 0x18
+  }
+  Entry {
+    Functions: [std::io::buffered::bufwriter::BufWriter$LT$W$GT$::flush_buf::h6c0179449b95b21a (.llvm.2385522154565223408)]
+    Size: 0x48
+  }
+  Entry {
+    Functions: [core::fmt::Write::write_char::h364e5f4e341eac3d]
+    Size: 0x8
+  }
+  Entry {
+    Functions: [core::fmt::Write::write_fmt::hede3b916bc090f03]
+    Size: 0x38
+  }
+  Entry {
+    Functions: [core::ptr::drop_in_place$LT$std..io..default_write_fmt..Adapter$LT$std..io..buffered..bufwriter..BufWriter$LT$std..io..stdio..StdoutLock$GT$$GT$$GT$::h1a3ba16b835406dd]
+    Size: 0x28
+  }
+  Entry {
+    Functions: [_$LT$std..io..default_write_fmt..Adapter$LT$T$GT$$u20$as$u20$core..fmt..Write$GT$::write_str::he96efb1a290a805d]
+    Size: 0x38
+  }
+  Entry {
+    Functions: [_$LT$std..io..buffered..bufwriter..BufWriter$LT$W$GT$$u20$as$u20$core..ops..drop..Drop$GT$::drop::h18e161d1f907408c]
+    Size: 0x28
+  }
+  Entry {
+    Functions: [std::rt::lang_start::_$u7b$$u7b$closure$u7d$$u7d$::h44fd89d8778d2f42 (.llvm.3470271237871591324)]
+    Size: 0x8
+  }
+  Entry {
+    Functions: [std::sys::backtrace::__rust_begin_short_backtrace::hd610c0746a3b4fbe]
+    Size: 0x8
+  }
+  Entry {
+    Functions: [_$LT$$RF$T$u20$as$u20$core..fmt..Debug$GT$::fmt::h85893a5f010c246c]
+    Size: 0x0
+  }
+  Entry {
+    Functions: [_$LT$$RF$T$u20$as$u20$core..fmt..Debug$GT$::fmt::he71be4b84eae7ebb]
+    Size: 0x0
+  }
+  Entry {
+    Functions: [core::ops::function::FnOnce::call_once$u7b$$u7b$vtable.shim$u7d$$u7d$::hc5b9f0a0750a5424 (.llvm.3470271237871591324)]
+    Size: 0x8
+  }
+  Entry {
+    Functions: [core::ptr::drop_in_place$LT$alloc..vec..Vec$LT$alloc..string..String$GT$$GT$::h47e3722787c563e3]
+    Size: 0x28
+  }
+  Entry {
+    Functions: [core::ptr::drop_in_place$LT$core..iter..adapters..skip..Skip$LT$std..env..Args$GT$$GT$::h65b2a666d02cd66b]
+    Size: 0x28
+  }
+  Entry {
+    Functions: [core::iter::traits::iterator::Iterator::nth::h069ce232f960ee0a]
+    Size: 0x48
+  }
+  Entry {
+    Functions: [alloc::raw_vec::finish_grow::h653738e0ab9ff3aa]
+    Size: 0x18
+  }
+  Entry {
+    Functions: [alloc::raw_vec::RawVec$LT$T$C$A$GT$::grow_one::h7ac4f0d3d7e55231]
+    Size: 0x48
+  }
+  Entry {
+    Functions: [alloc::raw_vec::RawVecInner$LT$A$GT$::reserve::do_reserve_and_handle::ha8142cef23638ef6]
+    Size: 0x48
+  }
+  Entry {
+    Functions: [_$LT$zeroize..Zeroizing$LT$Z$GT$$u20$as$u20$core..ops..drop..Drop$GT$::drop::h8a3a82f9160dab42]
+    Size: 0x0
+  }
+  Entry {
+    Functions: [_$LT$alloc..vec..Vec$LT$T$GT$$u20$as$u20$alloc..vec..spec_from_iter..SpecFromIter$LT$T$C$I$GT$$GT$::from_iter::h526344444524a2dc]
+    Size: 0xA8
+  }
+  Entry {
+    Functions: [__rustc::__rust_alloc]
+    Size: 0x0
+  }
+  Entry {
+    Functions: [__rustc::__rust_dealloc]
+    Size: 0x0
+  }
+  Entry {
+    Functions: [__rustc::__rust_realloc]
+    Size: 0x0
+  }
+  Entry {
+    Functions: [__rustc::__rust_alloc_zeroed]
+    Size: 0x0
+  }
+  Entry {
+    Functions: [__rustc::__rust_alloc_error_handler]
+    Size: 0x0
+  }
+  Entry {
+    Functions: [__rustc::__rust_alloc_error_handler_should_panic_v2]
+    Size: 0x0
+  }
+  Entry {
+    Functions: [__rustc::__rust_no_alloc_shim_is_unstable_v2]
+    Size: 0x0
+  }
+  Entry {
+    Functions: [serde_json::error::Error::io::h58180dd4f3897844]
+    Size: 0x38
+  }
+  Entry {
+    Functions: [core::ptr::drop_in_place$LT$alloc..string..String$GT$::h63ce3efadd749cbc]
+    Size: 0x0
+  }
+  Entry {
+    Functions: [core::ptr::drop_in_place$LT$serde_json..error..ErrorImpl$GT$::h0d1f7c1ab2eb6545 (.llvm.7215933415913441938)]
+    Size: 0x28
+  }
+  Entry {
+    Functions: [_$LT$core..fmt..Error$u20$as$u20$core..fmt..Debug$GT$::fmt::h71ca773022667bfc]
+    Size: 0x0
+  }
+  Entry {
+    Functions: [_$LT$alloc..string..String$u20$as$u20$core..fmt..Debug$GT$::fmt::hc9ba220b3a6d24e8]
+    Size: 0x0
+  }
+  Entry {
+    Functions: [_$LT$alloc..string..String$u20$as$u20$core..fmt..Write$GT$::write_char::h631179a280c97600]
+    Size: 0x28
+  }
+  Entry {
+    Functions: [_$LT$alloc..string..String$u20$as$u20$core..fmt..Write$GT$::write_str::hd717793223240653]
+    Size: 0x28
+  }
+  Entry {
+    Functions: [_$LT$serde_json..error..Error$u20$as$u20$core..fmt..Debug$GT$::fmt::h2baf59e51f2be6df]
+    Size: 0x98
+  }
+  Entry {
+    Functions: [_$LT$serde_json..error..ErrorCode$u20$as$u20$core..fmt..Display$GT$::fmt::hc28b5cd6ab9cbe87]
+    Size: 0x0
+  }
+  Entry {
+    Functions: [alloc::raw_vec::finish_grow::hd2789c6cf98f5a43 (.llvm.2390253023683956975)]
+    Size: 0x18
+  }
+  Entry {
+    Functions: [alloc::raw_vec::RawVecInner$LT$A$GT$::reserve::do_reserve_and_handle::h405e688db9220365 (.llvm.2390253023683956975)]
+    Size: 0x48
+  }
+  Entry {
+    Functions: [core::fmt::Write::write_fmt::h7c136febb525eb77]
+    Size: 0x38
+  }
+  Entry {
+    Functions: [core::ptr::drop_in_place$LT$alloc..string..String$GT$::h63ce3efadd749cbc (.llvm.10732445124142252273)]
+    Size: 0x0
+  }
+  Entry {
+    Functions: [_$LT$alloc..string..String$u20$as$u20$core..fmt..Write$GT$::write_char::h631179a280c97600]
+    Size: 0x28
+  }
+  Entry {
+    Functions: [_$LT$alloc..string..String$u20$as$u20$core..fmt..Write$GT$::write_str::hd717793223240653]
+    Size: 0x28
+  }
+  Entry {
+    Functions: [_$LT$u64$u20$as$u20$itoa..Unsigned$GT$::fmt::h3fa1e27bc64f0e03]
+    Size: 0x8
+  }
+  Entry {
+    Functions: [sponge_cursor::SpongeCursor$LT$_$GT$::absorb_u64_le::h165f56530e87068c]
+    Size: 0x38
+  }
+  Entry {
+    Functions: [_$LT$sha3..Sha3_512$u20$as$u20$digest..Update$GT$::update::h298d630cc356ac54]
+    Size: 0x38
+  }
+  Entry {
+    Functions: [core::ptr::drop_in_place$LT$$u5b$kem1536..engine_poly..Polynomial$u3b$$u20$6$u5d$$GT$::h8658f64502e84231]
+    Size: 0x0
+  }
+  Entry {
+    Functions: [_$LT$shake..Shake$LT$_$GT$$u20$as$u20$digest..Update$GT$::update::_$u7b$$u7b$closure$u7d$$u7d$::h62ce2d28d562004b]
+    Size: 0x38
+  }
+  Entry {
+    Functions: [kem1536::dev_kem::noise_into::hf34f2a9ca84d2fb2]
+    Size: 0x368
+  }
+  Entry {
+    Functions: [kem1536::dev_kem::decapsulate::h57c3fd88fc3f53e6]
+    Size: 0x1D88
+  }
+  Entry {
+    Functions: [kem1536::dev_kem::encapsulate::h3e4822f416e8083b]
+    Size: 0xD8
+  }
+  Entry {
+    Functions: [kem1536::dev_kem::hash_public::hbdd74979369a0bdd]
+    Size: 0x1D8
+  }
+  Entry {
+    Functions: [kem1536::dev_kem::SharedSecret::matches::h8d90def7960a0326]
+    Size: 0x0
+  }
+  Entry {
+    Functions: [kem1536::dev_kem::pke_encrypt_into::h6d2fab45fc98ee1a]
+    Size: 0x2C38
+  }
+  Entry {
+    Functions: [kem1536::dev_kem::encode_vector_into::h569be2aabcefe13f]
+    Size: 0x38
+  }
+  Entry {
+    Functions: [kem1536::dev_kem::xof::hf6ad80ea6a690f35]
+    Size: 0x2B8
+  }
+  Entry {
+    Functions: [kem1536::dev_kem::derive::h9295a3b752f9a9a3]
+    Size: 0x288
+  }
+  Entry {
+    Functions: [kem1536::dev_kem::keygen::h3643a6400f92430e]
+    Size: 0x1CB8
+  }
+  Entry {
+    Functions: [kem1536::dev_kem::uniform::h1e1450f87276bea6]
+    Size: 0x3E8
+  }
+  Entry {
+    Functions: [_$LT$zeroize..Zeroizing$LT$Z$GT$$u20$as$u20$core..ops..drop..Drop$GT$::drop::h874caf7dba3fd58c]
+    Size: 0x0
+  }
+  Entry {
+    Functions: [_$LT$zeroize..Zeroizing$LT$Z$GT$$u20$as$u20$core..ops..drop..Drop$GT$::drop::hecee04a9ef92235f]
+    Size: 0x0
+  }
+  Entry {
+    Functions: [keccak::backends::soft::keccak_p::hb0c7bddac9651ca8]
+    Size: 0x80
+  }
+  Entry {
+    Functions: [kem1536::engine_poly::Polynomial::multiply_into::h86e42f7d85aee49d]
+    Size: 0x428
+  }
+  Entry {
+    Functions: [kem1536::engine_poly::Polynomial::fill_with::h9131381d82cfb1a6]
+    Size: 0x88
+  }
+  Entry {
+    Functions: [kem1536::engine_poly::transform::h3151719d0ca0048d]
+    Size: 0x58
+  }
+  Entry {
+    Functions: [_$LT$sha3..Sha3_256$u20$as$u20$digest..FixedOutput$GT$::finalize_into::h4e55c17697a00a98]
+    Size: 0x18
+  }
+  Entry {
+    Functions: [_$LT$sha3..Sha3_512$u20$as$u20$digest..FixedOutput$GT$::finalize_into::ha1afe929f6e28d3b]
+    Size: 0x18
+  }
+  Entry {
+    Functions: [keccak::backends::soft::keccak_p::he657387e802405ac]
+    Size: 0x80
+  }
+  Entry {
+    Functions: [getrandom::error::Error::from_errno::h497ba36149f58a74]
+    Size: 0x0
+  }
+  Entry {
+    Functions: [getrandom::backends::linux_android_with_fallback::use_file_fallback::hce33b85b329c450b]
+    Size: 0x38
+  }
+  Entry {
+    Functions: [getrandom::backends::linux_android_with_fallback::init::ha2f3dfe382b5a981]
+    Size: 0x8
+  }
+  Entry {
+    Functions: [getrandom::backends::use_file::open_or_wait::h7362e4d9d52700ae]
+    Size: 0x38
+  }
+  Entry {
+    Functions: [getrandom::backends::use_file::utils::get_errno::get_errno::h9691f3eee6efff47]
+    Size: 0x8
+  }
+]

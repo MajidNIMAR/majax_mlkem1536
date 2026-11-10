@@ -1,0 +1,1879 @@
+{
+  "schema": "m06-bounded-ntt-review-v1",
+  "binary_sha256": "f84cb5418bef5bc630d631a209bd98f4f51e1f1496616963468139becda2d027",
+  "platform": "windows",
+  "kind": "research",
+  "helpers": {
+    "kem1536::engine_poly::Polynomial::forward_into": {
+      "body_sha256": "31cad7365c5280ebcc7ef73672e1cda77b741cdd2e906808ed44ec55a9074b8e",
+      "conditional_branches": [
+        {
+          "address": "14005d5fd",
+          "opcode": "jne",
+          "operands": "14005d510 <kem1536::engine_poly::Polynomial::forward_into+0x30>"
+        }
+      ],
+      "calls": [
+        {
+          "address": "14005d61a",
+          "opcode": "jmp",
+          "operands": "14005e1b0 <kem1536::engine_poly::transform>",
+          "target": "kem1536::engine_poly::transform"
+        }
+      ],
+      "indirect_transfers": [],
+      "divisions": 0
+    },
+    "kem1536::engine_poly::NttPolynomial::multiply_add_assign": {
+      "body_sha256": "cf7b1e91365e0e6604a2e715c267c2e78f5c18e8e92ef56ce87a1257ff3e571c",
+      "conditional_branches": [
+        {
+          "address": "14005e158",
+          "opcode": "jne",
+          "operands": "14005dfd0 <kem1536::engine_poly::NttPolynomial::multiply_add_assign+0x70>"
+        }
+      ],
+      "calls": [],
+      "indirect_transfers": [],
+      "divisions": 0
+    },
+    "kem1536::engine_poly::NttPolynomial::inverse_into": {
+      "body_sha256": "26c74f39633c39addebcdfccddb1c9e289e357221645531a3efbe1f2ad2d20ba",
+      "conditional_branches": [
+        {
+          "address": "14005df3b",
+          "opcode": "jne",
+          "operands": "14005de50 <kem1536::engine_poly::NttPolynomial::inverse_into+0x50>"
+        }
+      ],
+      "calls": [
+        {
+          "address": "14005de20",
+          "opcode": "call",
+          "operands": "140188db8 <memcpy>",
+          "target": "memcpy"
+        },
+        {
+          "address": "14005de2f",
+          "opcode": "call",
+          "operands": "14005e1b0 <kem1536::engine_poly::transform>",
+          "target": "kem1536::engine_poly::transform"
+        }
+      ],
+      "indirect_transfers": [],
+      "divisions": 0,
+      "direct_copy_contract": {
+        "bytes": 512,
+        "copy_address": "14005de20",
+        "inverse_transform_address": "14005de2f",
+        "source": "borrowed NttPolynomial",
+        "destination": "borrowed Polynomial owner",
+        "temporary_polynomial_return": false
+      }
+    },
+    "kem1536::engine_poly::transform": {
+      "body_sha256": "5d70a350b4c4ea454d0b285ad248c625085031a6bfcfb4ad3c6da3dd6cd5afb3",
+      "conditional_branches": [
+        {
+          "address": "14005e1ea",
+          "opcode": "je",
+          "operands": "14005e235 <kem1536::engine_poly::transform+0x85>"
+        },
+        {
+          "address": "14005e21d",
+          "opcode": "jae",
+          "operands": "14005e1e0 <kem1536::engine_poly::transform+0x30>"
+        },
+        {
+          "address": "14005e2a3",
+          "opcode": "je",
+          "operands": "14005e39d <kem1536::engine_poly::transform+0x1ed>"
+        },
+        {
+          "address": "14005e2b4",
+          "opcode": "ja",
+          "operands": "14005e3b1 <kem1536::engine_poly::transform+0x201>"
+        },
+        {
+          "address": "14005e351",
+          "opcode": "jne",
+          "operands": "14005e2a0 <kem1536::engine_poly::transform+0xf0>"
+        },
+        {
+          "address": "14005e372",
+          "opcode": "jb",
+          "operands": "14005e290 <kem1536::engine_poly::transform+0xe0>"
+        },
+        {
+          "address": "14005e386",
+          "opcode": "jne",
+          "operands": "14005e240 <kem1536::engine_poly::transform+0x90>"
+        }
+      ],
+      "calls": [
+        {
+          "address": "14005e3ac",
+          "opcode": "call",
+          "operands": "14017fc67 <core::panicking::panic_bounds_check>",
+          "target": "core::panicking::panic_bounds_check"
+        },
+        {
+          "address": "14005e3c0",
+          "opcode": "call",
+          "operands": "14017fc67 <core::panicking::panic_bounds_check>",
+          "target": "core::panicking::panic_bounds_check"
+        }
+      ],
+      "indirect_transfers": [],
+      "divisions": 0
+    }
+  },
+  "targeted_owner_storage": {
+    "kem1536::dev_kem::keygen_internal": {
+      "body_sha256": "d93fd9957bee4d9c087cab78588aa2789a325525f2c4006c644582a9365e5d85",
+      "literal_zero_store_loops_before_first_ret": [
+        {
+          "seed_address": "140055bb6",
+          "entry": "140055bc0",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            98,
+            100,
+            102,
+            104,
+            106,
+            108,
+            110,
+            112
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            112,
+            623
+          ]
+        },
+        {
+          "seed_address": "140055d76",
+          "entry": "140055d80",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            98,
+            100,
+            102,
+            104,
+            106,
+            108,
+            110,
+            112
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            112,
+            623
+          ]
+        },
+        {
+          "seed_address": "140055f36",
+          "entry": "140055f40",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            98,
+            100,
+            102,
+            104,
+            106,
+            108,
+            110,
+            112
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            112,
+            623
+          ]
+        },
+        {
+          "seed_address": "1400560f6",
+          "entry": "140056100",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            98,
+            100,
+            102,
+            104,
+            106,
+            108,
+            110,
+            112
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            112,
+            623
+          ]
+        },
+        {
+          "seed_address": "1400562b6",
+          "entry": "1400562c0",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            98,
+            100,
+            102,
+            104,
+            106,
+            108,
+            110,
+            112
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            112,
+            623
+          ]
+        },
+        {
+          "seed_address": "140056476",
+          "entry": "140056480",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            98,
+            100,
+            102,
+            104,
+            106,
+            108,
+            110,
+            112
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            112,
+            623
+          ]
+        },
+        {
+          "seed_address": "140056600",
+          "entry": "140056610",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            1122,
+            1124,
+            1126,
+            1128,
+            1130,
+            1132,
+            1134,
+            1136
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            1136,
+            1647
+          ]
+        },
+        {
+          "seed_address": "14005666c",
+          "entry": "140056680",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            610,
+            612,
+            614,
+            616,
+            618,
+            620,
+            622,
+            624
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            624,
+            1135
+          ]
+        },
+        {
+          "seed_address": "1400566dc",
+          "entry": "1400566f0",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            1634,
+            1636,
+            1638,
+            1640,
+            1642,
+            1644,
+            1646,
+            1648
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            1648,
+            2159
+          ]
+        },
+        {
+          "seed_address": "14005674c",
+          "entry": "140056760",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            2146,
+            2148,
+            2150,
+            2152,
+            2154,
+            2156,
+            2158,
+            2160
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            2160,
+            2671
+          ]
+        },
+        {
+          "seed_address": "1400567bc",
+          "entry": "1400567d0",
+          "counter_start": 526,
+          "counter_end_exclusive": 1038,
+          "step": 16,
+          "store_offsets": [
+            2146,
+            2148,
+            2150,
+            2152,
+            2154,
+            2156,
+            2158,
+            2160
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            2672,
+            3183
+          ]
+        },
+        {
+          "seed_address": "14005682c",
+          "entry": "140056840",
+          "counter_start": 1038,
+          "counter_end_exclusive": 1550,
+          "step": 16,
+          "store_offsets": [
+            2146,
+            2148,
+            2150,
+            2152,
+            2154,
+            2156,
+            2158,
+            2160
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            3184,
+            3695
+          ]
+        },
+        {
+          "seed_address": "14005689c",
+          "entry": "1400568b0",
+          "counter_start": 1550,
+          "counter_end_exclusive": 2062,
+          "step": 16,
+          "store_offsets": [
+            2146,
+            2148,
+            2150,
+            2152,
+            2154,
+            2156,
+            2158,
+            2160
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            3696,
+            4207
+          ]
+        },
+        {
+          "seed_address": "14005690c",
+          "entry": "140056920",
+          "counter_start": 2062,
+          "counter_end_exclusive": 2574,
+          "step": 16,
+          "store_offsets": [
+            2146,
+            2148,
+            2150,
+            2152,
+            2154,
+            2156,
+            2158,
+            2160
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            4208,
+            4719
+          ]
+        },
+        {
+          "seed_address": "14005697c",
+          "entry": "140056990",
+          "counter_start": 2574,
+          "counter_end_exclusive": 3086,
+          "step": 16,
+          "store_offsets": [
+            2146,
+            2148,
+            2150,
+            2152,
+            2154,
+            2156,
+            2158,
+            2160
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            4720,
+            5231
+          ]
+        },
+        {
+          "seed_address": "1400569ec",
+          "entry": "140056a00",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            5218,
+            5220,
+            5222,
+            5224,
+            5226,
+            5228,
+            5230,
+            5232
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            5232,
+            5743
+          ]
+        },
+        {
+          "seed_address": "140056a5c",
+          "entry": "140056a70",
+          "counter_start": 526,
+          "counter_end_exclusive": 1038,
+          "step": 16,
+          "store_offsets": [
+            5218,
+            5220,
+            5222,
+            5224,
+            5226,
+            5228,
+            5230,
+            5232
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            5744,
+            6255
+          ]
+        },
+        {
+          "seed_address": "140056acc",
+          "entry": "140056ae0",
+          "counter_start": 1038,
+          "counter_end_exclusive": 1550,
+          "step": 16,
+          "store_offsets": [
+            5218,
+            5220,
+            5222,
+            5224,
+            5226,
+            5228,
+            5230,
+            5232
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            6256,
+            6767
+          ]
+        },
+        {
+          "seed_address": "140056b3c",
+          "entry": "140056b50",
+          "counter_start": 1550,
+          "counter_end_exclusive": 2062,
+          "step": 16,
+          "store_offsets": [
+            5218,
+            5220,
+            5222,
+            5224,
+            5226,
+            5228,
+            5230,
+            5232
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            6768,
+            7279
+          ]
+        },
+        {
+          "seed_address": "140056bac",
+          "entry": "140056bc0",
+          "counter_start": 2062,
+          "counter_end_exclusive": 2574,
+          "step": 16,
+          "store_offsets": [
+            5218,
+            5220,
+            5222,
+            5224,
+            5226,
+            5228,
+            5230,
+            5232
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            7280,
+            7791
+          ]
+        },
+        {
+          "seed_address": "140056c1c",
+          "entry": "140056c30",
+          "counter_start": 2574,
+          "counter_end_exclusive": 3086,
+          "step": 16,
+          "store_offsets": [
+            5218,
+            5220,
+            5222,
+            5224,
+            5226,
+            5228,
+            5230,
+            5232
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            7792,
+            8303
+          ]
+        },
+        {
+          "seed_address": "140056d37",
+          "entry": "140056d40",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            8290,
+            8292,
+            8294,
+            8296,
+            8298,
+            8300,
+            8302,
+            8304
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            8304,
+            8815
+          ]
+        },
+        {
+          "seed_address": "140056d9c",
+          "entry": "140056db0",
+          "counter_start": 526,
+          "counter_end_exclusive": 1038,
+          "step": 16,
+          "store_offsets": [
+            8290,
+            8292,
+            8294,
+            8296,
+            8298,
+            8300,
+            8302,
+            8304
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            8816,
+            9327
+          ]
+        },
+        {
+          "seed_address": "140056e0c",
+          "entry": "140056e20",
+          "counter_start": 1038,
+          "counter_end_exclusive": 1550,
+          "step": 16,
+          "store_offsets": [
+            8290,
+            8292,
+            8294,
+            8296,
+            8298,
+            8300,
+            8302,
+            8304
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            9328,
+            9839
+          ]
+        },
+        {
+          "seed_address": "140056e7c",
+          "entry": "140056e90",
+          "counter_start": 1550,
+          "counter_end_exclusive": 2062,
+          "step": 16,
+          "store_offsets": [
+            8290,
+            8292,
+            8294,
+            8296,
+            8298,
+            8300,
+            8302,
+            8304
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            9840,
+            10351
+          ]
+        },
+        {
+          "seed_address": "140056eec",
+          "entry": "140056f00",
+          "counter_start": 2062,
+          "counter_end_exclusive": 2574,
+          "step": 16,
+          "store_offsets": [
+            8290,
+            8292,
+            8294,
+            8296,
+            8298,
+            8300,
+            8302,
+            8304
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            10352,
+            10863
+          ]
+        },
+        {
+          "seed_address": "140056f5c",
+          "entry": "140056f70",
+          "counter_start": 2574,
+          "counter_end_exclusive": 3086,
+          "step": 16,
+          "store_offsets": [
+            8290,
+            8292,
+            8294,
+            8296,
+            8298,
+            8300,
+            8302,
+            8304
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            10864,
+            11375
+          ]
+        }
+      ],
+      "targeted_owners": [
+        {
+          "label": "transformed_s",
+          "bytes": 3072,
+          "manually_reviewed_stack_interval_inclusive": [
+            5232,
+            8303
+          ]
+        },
+        {
+          "label": "keygen_sum",
+          "bytes": 512,
+          "manually_reviewed_stack_interval_inclusive": [
+            624,
+            1135
+          ]
+        }
+      ],
+      "owner_identity_basis": "manual source/call-argument trace for this exact frozen binary",
+      "control_flow_and_all_owner_lifetimes_proved": false
+    },
+    "_ZN7kem15367dev_kem16pke_encrypt_into17hb7a07b7e2ccab391E.llvm.13480299102224752084": {
+      "body_sha256": "3588d5a2e8f3b882dbc6695c59fadbd624e4c03d6ff637f9e31d919bf9dc5ec0",
+      "literal_zero_store_loops_before_first_ret": [
+        {
+          "seed_address": "140059096",
+          "entry": "1400590a0",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            34,
+            36,
+            38,
+            40,
+            42,
+            44,
+            46,
+            48
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            48,
+            559
+          ]
+        },
+        {
+          "seed_address": "140059256",
+          "entry": "140059260",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            34,
+            36,
+            38,
+            40,
+            42,
+            44,
+            46,
+            48
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            48,
+            559
+          ]
+        },
+        {
+          "seed_address": "140059416",
+          "entry": "140059420",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            34,
+            36,
+            38,
+            40,
+            42,
+            44,
+            46,
+            48
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            48,
+            559
+          ]
+        },
+        {
+          "seed_address": "1400595d6",
+          "entry": "1400595e0",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            34,
+            36,
+            38,
+            40,
+            42,
+            44,
+            46,
+            48
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            48,
+            559
+          ]
+        },
+        {
+          "seed_address": "140059796",
+          "entry": "1400597a0",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            34,
+            36,
+            38,
+            40,
+            42,
+            44,
+            46,
+            48
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            48,
+            559
+          ]
+        },
+        {
+          "seed_address": "140059956",
+          "entry": "140059960",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            34,
+            36,
+            38,
+            40,
+            42,
+            44,
+            46,
+            48
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            48,
+            559
+          ]
+        },
+        {
+          "seed_address": "14005a011",
+          "entry": "14005a020",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            34,
+            36,
+            38,
+            40,
+            42,
+            44,
+            46,
+            48
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            48,
+            559
+          ]
+        },
+        {
+          "seed_address": "14005a064",
+          "entry": "14005a070",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            2594,
+            2596,
+            2598,
+            2600,
+            2602,
+            2604,
+            2606,
+            2608
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            2608,
+            3119
+          ]
+        },
+        {
+          "seed_address": "14005a0cc",
+          "entry": "14005a0e0",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            2082,
+            2084,
+            2086,
+            2088,
+            2090,
+            2092,
+            2094,
+            2096
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            2096,
+            2607
+          ]
+        },
+        {
+          "seed_address": "14005a13c",
+          "entry": "14005a150",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            1058,
+            1060,
+            1062,
+            1064,
+            1066,
+            1068,
+            1070,
+            1072
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            1072,
+            1583
+          ]
+        },
+        {
+          "seed_address": "14005a1ac",
+          "entry": "14005a1c0",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            546,
+            548,
+            550,
+            552,
+            554,
+            556,
+            558,
+            560
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            560,
+            1071
+          ]
+        },
+        {
+          "seed_address": "14005a21c",
+          "entry": "14005a230",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            1570,
+            1572,
+            1574,
+            1576,
+            1578,
+            1580,
+            1582,
+            1584
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            1584,
+            2095
+          ]
+        },
+        {
+          "seed_address": "14005a28c",
+          "entry": "14005a2a0",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            3618,
+            3620,
+            3622,
+            3624,
+            3626,
+            3628,
+            3630,
+            3632
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            3632,
+            4143
+          ]
+        },
+        {
+          "seed_address": "14005a2fc",
+          "entry": "14005a310",
+          "counter_start": 526,
+          "counter_end_exclusive": 1038,
+          "step": 16,
+          "store_offsets": [
+            3618,
+            3620,
+            3622,
+            3624,
+            3626,
+            3628,
+            3630,
+            3632
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            4144,
+            4655
+          ]
+        },
+        {
+          "seed_address": "14005a36c",
+          "entry": "14005a380",
+          "counter_start": 1038,
+          "counter_end_exclusive": 1550,
+          "step": 16,
+          "store_offsets": [
+            3618,
+            3620,
+            3622,
+            3624,
+            3626,
+            3628,
+            3630,
+            3632
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            4656,
+            5167
+          ]
+        },
+        {
+          "seed_address": "14005a3dc",
+          "entry": "14005a3f0",
+          "counter_start": 1550,
+          "counter_end_exclusive": 2062,
+          "step": 16,
+          "store_offsets": [
+            3618,
+            3620,
+            3622,
+            3624,
+            3626,
+            3628,
+            3630,
+            3632
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            5168,
+            5679
+          ]
+        },
+        {
+          "seed_address": "14005a44c",
+          "entry": "14005a460",
+          "counter_start": 2062,
+          "counter_end_exclusive": 2574,
+          "step": 16,
+          "store_offsets": [
+            3618,
+            3620,
+            3622,
+            3624,
+            3626,
+            3628,
+            3630,
+            3632
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            5680,
+            6191
+          ]
+        },
+        {
+          "seed_address": "14005a4bc",
+          "entry": "14005a4d0",
+          "counter_start": 2574,
+          "counter_end_exclusive": 3086,
+          "step": 16,
+          "store_offsets": [
+            3618,
+            3620,
+            3622,
+            3624,
+            3626,
+            3628,
+            3630,
+            3632
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            6192,
+            6703
+          ]
+        },
+        {
+          "seed_address": "14005a52c",
+          "entry": "14005a540",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            3106,
+            3108,
+            3110,
+            3112,
+            3114,
+            3116,
+            3118,
+            3120
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            3120,
+            3631
+          ]
+        },
+        {
+          "seed_address": "14005a59c",
+          "entry": "14005a5b0",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            6690,
+            6692,
+            6694,
+            6696,
+            6698,
+            6700,
+            6702,
+            6704
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            6704,
+            7215
+          ]
+        },
+        {
+          "seed_address": "14005a60c",
+          "entry": "14005a620",
+          "counter_start": 526,
+          "counter_end_exclusive": 1038,
+          "step": 16,
+          "store_offsets": [
+            6690,
+            6692,
+            6694,
+            6696,
+            6698,
+            6700,
+            6702,
+            6704
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            7216,
+            7727
+          ]
+        },
+        {
+          "seed_address": "14005a67c",
+          "entry": "14005a690",
+          "counter_start": 1038,
+          "counter_end_exclusive": 1550,
+          "step": 16,
+          "store_offsets": [
+            6690,
+            6692,
+            6694,
+            6696,
+            6698,
+            6700,
+            6702,
+            6704
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            7728,
+            8239
+          ]
+        },
+        {
+          "seed_address": "14005a6ec",
+          "entry": "14005a700",
+          "counter_start": 1550,
+          "counter_end_exclusive": 2062,
+          "step": 16,
+          "store_offsets": [
+            6690,
+            6692,
+            6694,
+            6696,
+            6698,
+            6700,
+            6702,
+            6704
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            8240,
+            8751
+          ]
+        },
+        {
+          "seed_address": "14005a75c",
+          "entry": "14005a770",
+          "counter_start": 2062,
+          "counter_end_exclusive": 2574,
+          "step": 16,
+          "store_offsets": [
+            6690,
+            6692,
+            6694,
+            6696,
+            6698,
+            6700,
+            6702,
+            6704
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            8752,
+            9263
+          ]
+        },
+        {
+          "seed_address": "14005a7cc",
+          "entry": "14005a7e0",
+          "counter_start": 2574,
+          "counter_end_exclusive": 3086,
+          "step": 16,
+          "store_offsets": [
+            6690,
+            6692,
+            6694,
+            6696,
+            6698,
+            6700,
+            6702,
+            6704
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            9264,
+            9775
+          ]
+        },
+        {
+          "seed_address": "14005a83c",
+          "entry": "14005a850",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            9762,
+            9764,
+            9766,
+            9768,
+            9770,
+            9772,
+            9774,
+            9776
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            9776,
+            10287
+          ]
+        },
+        {
+          "seed_address": "14005a8ac",
+          "entry": "14005a8c0",
+          "counter_start": 526,
+          "counter_end_exclusive": 1038,
+          "step": 16,
+          "store_offsets": [
+            9762,
+            9764,
+            9766,
+            9768,
+            9770,
+            9772,
+            9774,
+            9776
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            10288,
+            10799
+          ]
+        },
+        {
+          "seed_address": "14005a91c",
+          "entry": "14005a930",
+          "counter_start": 1038,
+          "counter_end_exclusive": 1550,
+          "step": 16,
+          "store_offsets": [
+            9762,
+            9764,
+            9766,
+            9768,
+            9770,
+            9772,
+            9774,
+            9776
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            10800,
+            11311
+          ]
+        },
+        {
+          "seed_address": "14005a98c",
+          "entry": "14005a9a0",
+          "counter_start": 1550,
+          "counter_end_exclusive": 2062,
+          "step": 16,
+          "store_offsets": [
+            9762,
+            9764,
+            9766,
+            9768,
+            9770,
+            9772,
+            9774,
+            9776
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            11312,
+            11823
+          ]
+        },
+        {
+          "seed_address": "14005a9fc",
+          "entry": "14005aa10",
+          "counter_start": 2062,
+          "counter_end_exclusive": 2574,
+          "step": 16,
+          "store_offsets": [
+            9762,
+            9764,
+            9766,
+            9768,
+            9770,
+            9772,
+            9774,
+            9776
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            11824,
+            12335
+          ]
+        },
+        {
+          "seed_address": "14005aa6c",
+          "entry": "14005aa80",
+          "counter_start": 2574,
+          "counter_end_exclusive": 3086,
+          "step": 16,
+          "store_offsets": [
+            9762,
+            9764,
+            9766,
+            9768,
+            9770,
+            9772,
+            9774,
+            9776
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            12336,
+            12847
+          ]
+        }
+      ],
+      "targeted_owners": [
+        {
+          "label": "transformed_r",
+          "bytes": 3072,
+          "manually_reviewed_stack_interval_inclusive": [
+            6704,
+            9775
+          ]
+        },
+        {
+          "label": "encryption_sum",
+          "bytes": 512,
+          "manually_reviewed_stack_interval_inclusive": [
+            560,
+            1071
+          ]
+        },
+        {
+          "label": "noise_randomness",
+          "bytes": 512,
+          "manually_reviewed_stack_interval_inclusive": [
+            3120,
+            3631
+          ]
+        }
+      ],
+      "owner_identity_basis": "manual source/call-argument trace for this exact frozen binary",
+      "control_flow_and_all_owner_lifetimes_proved": false
+    },
+    "kem1536::dev_kem::pke_decrypt": {
+      "body_sha256": "000318d946119d0c92f861a668fece28834f0ba740e015f9a91c7f68f1f820f4",
+      "literal_zero_store_loops_before_first_ret": [
+        {
+          "seed_address": "140054cef",
+          "entry": "140054d00",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            66,
+            68,
+            70,
+            72,
+            74,
+            76,
+            78,
+            80
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            80,
+            591
+          ]
+        },
+        {
+          "seed_address": "140054d44",
+          "entry": "140054d50",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            578,
+            580,
+            582,
+            584,
+            586,
+            588,
+            590,
+            592
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            592,
+            1103
+          ]
+        },
+        {
+          "seed_address": "140054dac",
+          "entry": "140054dc0",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            1602,
+            1604,
+            1606,
+            1608,
+            1610,
+            1612,
+            1614,
+            1616
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            1616,
+            2127
+          ]
+        },
+        {
+          "seed_address": "140054e1c",
+          "entry": "140054e30",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            2114,
+            2116,
+            2118,
+            2120,
+            2122,
+            2124,
+            2126,
+            2128
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            2128,
+            2639
+          ]
+        },
+        {
+          "seed_address": "140054e8c",
+          "entry": "140054ea0",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            1090,
+            1092,
+            1094,
+            1096,
+            1098,
+            1100,
+            1102,
+            1104
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            1104,
+            1615
+          ]
+        },
+        {
+          "seed_address": "140054efc",
+          "entry": "140054f10",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            2626,
+            2628,
+            2630,
+            2632,
+            2634,
+            2636,
+            2638,
+            2640
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            2640,
+            3151
+          ]
+        },
+        {
+          "seed_address": "140054f6c",
+          "entry": "140054f80",
+          "counter_start": 526,
+          "counter_end_exclusive": 1038,
+          "step": 16,
+          "store_offsets": [
+            2626,
+            2628,
+            2630,
+            2632,
+            2634,
+            2636,
+            2638,
+            2640
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            3152,
+            3663
+          ]
+        },
+        {
+          "seed_address": "140054fdc",
+          "entry": "140054ff0",
+          "counter_start": 1038,
+          "counter_end_exclusive": 1550,
+          "step": 16,
+          "store_offsets": [
+            2626,
+            2628,
+            2630,
+            2632,
+            2634,
+            2636,
+            2638,
+            2640
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            3664,
+            4175
+          ]
+        },
+        {
+          "seed_address": "14005504c",
+          "entry": "140055060",
+          "counter_start": 1550,
+          "counter_end_exclusive": 2062,
+          "step": 16,
+          "store_offsets": [
+            2626,
+            2628,
+            2630,
+            2632,
+            2634,
+            2636,
+            2638,
+            2640
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            4176,
+            4687
+          ]
+        },
+        {
+          "seed_address": "1400550bc",
+          "entry": "1400550d0",
+          "counter_start": 2062,
+          "counter_end_exclusive": 2574,
+          "step": 16,
+          "store_offsets": [
+            2626,
+            2628,
+            2630,
+            2632,
+            2634,
+            2636,
+            2638,
+            2640
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            4688,
+            5199
+          ]
+        },
+        {
+          "seed_address": "14005512c",
+          "entry": "140055140",
+          "counter_start": 2574,
+          "counter_end_exclusive": 3086,
+          "step": 16,
+          "store_offsets": [
+            2626,
+            2628,
+            2630,
+            2632,
+            2634,
+            2636,
+            2638,
+            2640
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            5200,
+            5711
+          ]
+        },
+        {
+          "seed_address": "14005519c",
+          "entry": "1400551b0",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            5698,
+            5700,
+            5702,
+            5704,
+            5706,
+            5708,
+            5710,
+            5712
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            5712,
+            6223
+          ]
+        },
+        {
+          "seed_address": "14005520c",
+          "entry": "140055220",
+          "counter_start": 526,
+          "counter_end_exclusive": 1038,
+          "step": 16,
+          "store_offsets": [
+            5698,
+            5700,
+            5702,
+            5704,
+            5706,
+            5708,
+            5710,
+            5712
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            6224,
+            6735
+          ]
+        },
+        {
+          "seed_address": "14005527c",
+          "entry": "140055290",
+          "counter_start": 1038,
+          "counter_end_exclusive": 1550,
+          "step": 16,
+          "store_offsets": [
+            5698,
+            5700,
+            5702,
+            5704,
+            5706,
+            5708,
+            5710,
+            5712
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            6736,
+            7247
+          ]
+        },
+        {
+          "seed_address": "1400552ec",
+          "entry": "140055300",
+          "counter_start": 1550,
+          "counter_end_exclusive": 2062,
+          "step": 16,
+          "store_offsets": [
+            5698,
+            5700,
+            5702,
+            5704,
+            5706,
+            5708,
+            5710,
+            5712
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            7248,
+            7759
+          ]
+        },
+        {
+          "seed_address": "14005535c",
+          "entry": "140055370",
+          "counter_start": 2062,
+          "counter_end_exclusive": 2574,
+          "step": 16,
+          "store_offsets": [
+            5698,
+            5700,
+            5702,
+            5704,
+            5706,
+            5708,
+            5710,
+            5712
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            7760,
+            8271
+          ]
+        },
+        {
+          "seed_address": "1400553cc",
+          "entry": "1400553e0",
+          "counter_start": 2574,
+          "counter_end_exclusive": 3086,
+          "step": 16,
+          "store_offsets": [
+            5698,
+            5700,
+            5702,
+            5704,
+            5706,
+            5708,
+            5710,
+            5712
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            8272,
+            8783
+          ]
+        }
+      ],
+      "targeted_owners": [
+        {
+          "label": "decrypt_left",
+          "bytes": 512,
+          "manually_reviewed_stack_interval_inclusive": [
+            2128,
+            2639
+          ]
+        },
+        {
+          "label": "decrypt_right",
+          "bytes": 512,
+          "manually_reviewed_stack_interval_inclusive": [
+            1616,
+            2127
+          ]
+        },
+        {
+          "label": "decrypt_sum",
+          "bytes": 512,
+          "manually_reviewed_stack_interval_inclusive": [
+            592,
+            1103
+          ]
+        }
+      ],
+      "owner_identity_basis": "manual source/call-argument trace for this exact frozen binary",
+      "control_flow_and_all_owner_lifetimes_proved": false
+    }
+  },
+  "old_test_product_absent": true,
+  "constant_time_proved": false,
+  "all_secret_owners_erased_proved": false,
+  "all_copies_erased_proved": false,
+  "scope": "literal normal-prefix loop coverage at reviewed owner locations and a short inverse ABI copy trace; no all-path dataflow, spill, register, panic or system-library proof"
+}

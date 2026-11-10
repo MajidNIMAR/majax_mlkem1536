@@ -1,0 +1,26 @@
+{
+  "kind": "M04-security-first-three",
+  "source_base_commit": "4baca843ae1d159a059670485c7970642506e3bc",
+  "files": {
+    "attacks/comparison.json": "38e6c021df34f33b78ed5240b91702d93bd3958b4548dc53bd22a7d2d91f5d6e",
+    "attacks/provenance.json": "adf1314c33590b6a17b42a47ee4e9d30a1c7392934e8779e2be723951f18bb51",
+    "certificate/provenance.json": "693dd630f31a7899181c2e35924ceab25b0f377f62a3c8e009d96503176db7d9",
+    "certificate/sources.tar.gz": "2b427ce328a713db28a2bdc352377f2dbb0a3ecdcdc1a8b8f883d8c5fef8ef09",
+    "certificate/summary.json": "47e24ce3dd0997924962d1cfd0fb19df1ac339423f936673ea1b512075ca23fb",
+    "certificate/tests.log": "c9aa7f8cc84bad6c1601a494c9d34425b21ab063c153d74568eca8de52bbb325",
+    "sources/ARGUMENT_SECURITE_R1.md": "ea701a745dfcfc04be7aeadc119b91dd6c1b45189f7a64109c427e85454d9e56",
+    "sources/COMPARAISON_ATTAQUES_CADRE_COMMUN_R1.md": "6ad90acac976090e15c5fb2893a7118916bb47f2dfee59f75b4fed88f1ad5541",
+    "sources/compare_attacks_common.py": "034fc26d1343813a2a6fe2aacc670cdbc08b5461ddd25fe959c0023025bf4923",
+    "sources/LIEN_CERTIFICAT_PROGRAMME_R1.md": "f83007e07648f05cc52669f4aaa255b356cfc775dee05b3d8b2fafd28b16d2e5",
+    "sources/test_compare_attacks_common.py": "576585c92248d2228e36a80a343105e1a44f90063dbdf4dc271bb9eb8e239f79",
+    "sources/test_r1_certificate_bridge.py": "4d5952d25b5654978a337fa9af6a6b564977778d5c9c7322053fcc43f7e0764d",
+    "sources/verify_r1_certificate_bridge.py": "fa7e33ddf848f3574170c4210a47472c914a6bf38a3ed7aa0e90eaee9ed9c041"
+  },
+  "claims": {
+    "full_concrete_IND_CCA_proof": false,
+    "strict_attack_pairs": 30,
+    "scientific_tests": 12,
+    "QROM_bound_closed": false,
+    "ideal_correction_exact": true
+  }
+}

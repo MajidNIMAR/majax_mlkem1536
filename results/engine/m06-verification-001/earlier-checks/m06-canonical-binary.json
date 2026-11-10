@@ -1,0 +1,36 @@
+{
+  "canonical_binary": "target/release/kem1536.exe",
+  "sha256": "cce4565fef3bb03e7e12db75ea6ef7a50f2e55ab31f414c16e24b045325aa1c1",
+  "audited_binary_sha256": "8afa24959f7ec8e59472938f9569da4f30ef8088d9aa48f4c82baa2e19f11b67",
+  "same_bytes_outside_two_PE_metadata_fields": true,
+  "raw_binary_identical": false,
+  "canonical_PE_fields": [
+    {
+      "name": "COFF_TimeDateStamp",
+      "offset": 136,
+      "size": 4,
+      "value": 1794334386
+    },
+    {
+      "name": "OptionalHeader_CheckSum",
+      "offset": 216,
+      "size": 4,
+      "value": 5065445
+    }
+  ],
+  "audited_PE_fields": [
+    {
+      "name": "COFF_TimeDateStamp",
+      "offset": 136,
+      "size": 4,
+      "value": 1794332553
+    },
+    {
+      "name": "OptionalHeader_CheckSum",
+      "offset": 216,
+      "size": 4,
+      "value": 5063612
+    }
+  ],
+  "binaries_modified": false
+}

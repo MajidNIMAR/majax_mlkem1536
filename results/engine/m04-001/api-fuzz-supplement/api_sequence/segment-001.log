@@ -1,0 +1,17 @@
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 5040402
+INFO: Loaded 1 modules   (36998 inline 8-bit counters): 36998 [0x5775277d5080, 0x5775277de106), 
+INFO: Loaded 1 PC tables (36998 PCs): 36998 [0x5775277de108,0x57752786e968), 
+INFO:      205 files found in /mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m04-fuzz-api-supplement/api_sequence/corpus
+INFO: seed corpus: files: 205 min: 4b max: 17b total: 2647b rss: 35Mb
+#32	pulse  cov: 865 ft: 6028 corp: 29/144b exec/s: 16 rss: 44Mb
+#64	pulse  cov: 873 ft: 6731 corp: 58/346b exec/s: 16 rss: 46Mb
+#128	pulse  cov: 1028 ft: 7934 corp: 122/1271b exec/s: 10 rss: 51Mb
+#207	INITED cov: 1028 ft: 8082 corp: 167/2036b exec/s: 9 rss: 57Mb
+#207	DONE   cov: 1028 ft: 8082 corp: 167/2036b lim: 17 exec/s: 9 rss: 57Mb
+Done 207 runs in 22 second(s)
+stat::number_of_executed_units: 207
+stat::average_exec_per_sec:     9
+stat::new_units_added:          0
+stat::slowest_unit_time_sec:    0
+stat::peak_rss_mb:              57

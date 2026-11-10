@@ -1,0 +1,53 @@
+{
+  "binary_sha256": "7f50e99da22709ecda15dbafa80c2909ba1423ff26f0d9c1bbcfb3f538617622",
+  "function": "kem1536::engine_poly::Polynomial::multiply_into",
+  "function_disassembly_sha256": "35df7ebe971f803d6c0e6d778b9787f13f052356dcd998f906a5989760dbc083",
+  "normal_return_scratch_wipes": [
+    {
+      "entry": "140065600",
+      "normal_path_counter_values": "14,30,...,510",
+      "store_offsets": [
+        530,
+        532,
+        534,
+        536,
+        538,
+        540,
+        542,
+        544
+      ],
+      "bytes": 512,
+      "stack_interval_inclusive": [
+        544,
+        1055
+      ]
+    },
+    {
+      "entry": "140065670",
+      "normal_path_counter_values": "14,30,...,510",
+      "store_offsets": [
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32
+      ],
+      "bytes": 512,
+      "stack_interval_inclusive": [
+        32,
+        543
+      ]
+    }
+  ],
+  "total_normal_return_scratch_bytes": 1024,
+  "direct_memcpy_reference_in_function": false,
+  "divisions_in_function": 0,
+  "unwind_cleanup_present": true,
+  "old_return_value_temporary": "removed at source; direct output stores reviewed separately",
+  "all_copies_erased_proved": false,
+  "constant_time_proved": false,
+  "limits": "normal-return loop coverage only; output provenance, registers, spills, callers and indirect target sets require separate review"
+}

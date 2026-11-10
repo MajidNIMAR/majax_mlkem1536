@@ -1,0 +1,60 @@
+[
+  {
+    "cached_version": "26 September 2017",
+    "id": "HHK17",
+    "pages": 35,
+    "read_scope": "section 2.1 definitions/conventions; section 3.1-3.3 including table page 21",
+    "sha256": "33412e6927c288f40384d594fd21915dce0a755487489a0a5f7c1961a63df290",
+    "title": "A Modular Analysis of the Fujisaki-Okamoto Transformation",
+    "url": "https://people.inf.ethz.ch/dhofheinz/pdf/conf/tcc/HofheinzHK17.pdf"
+  },
+  {
+    "full_pdf_retrieved": false,
+    "full_pdf_sha256": null,
+    "id": "HHK21-erratum",
+    "no_claim_of_reading_unretrieved_pages": true,
+    "read_scope": "primary indexed first-page erratum, independently checked twice; global ROM section 3.3 unchanged, individual theorem counting and rigidity corrected",
+    "title": "Erratum to HHK17, 2 November 2021",
+    "url": "https://eprint.iacr.org/2017/604.pdf"
+  },
+  {
+    "cover_date": "9 December 2020; thesis catalogued/published 2021",
+    "id": "Hov21-thesis",
+    "pages": 189,
+    "read_scope": "Definitions pages 26,32; sections 2.1.1,2.1.3,2.1.4 including rigidity and corrected qPCO terms; normalization caveat noted",
+    "retrieved_copy": "https://d-nb.info/1227710364/34",
+    "sha256": "06fd15e5930057285c9c0101b2517b64df03a7e52169475365f7c050ff569ce9",
+    "title": "Generic Constructions of Quantum-Resistant Cryptosystems",
+    "url": "https://doi.org/10.13154/294-7758"
+  },
+  {
+    "id": "GYY25",
+    "pages": 97,
+    "pdf_creation_date": "2025-09-30",
+    "read_scope": "Figure 7 pages 15-16, definitions appendix E pages 49-50, Theorem 22 and Remark 6 pages 96-97; ACWC constructions excluded",
+    "retrieved_copy": "https://eprint.iacr.asia/2025/1641.pdf",
+    "sha256": "408b2f6f880658b4026e19393ef2d6cd764255f823b0a5ec28538e40f14d34ff",
+    "title": "Fujisaki-Okamoto Transformation under Average-Case Decryption Error: Tighter and More General Proofs with Applications to PQC",
+    "url": "https://eprint.iacr.org/2025/1641"
+  },
+  {
+    "finite_numeric_bound_imported": false,
+    "id": "MS25",
+    "pages": 31,
+    "pdf_creation_date": "2025-10-25",
+    "read_scope": "Figure 3.2 page 17, Figure 4.1-4.2 and Theorem 4.3 pages 22-27, applicability limitation page 27, Appendix A pages 30-31",
+    "retrieved_copy": "https://eprint.iacr.asia/2025/1997.pdf",
+    "sha256": "5bab9b2ca4b8a73e6c48ae05a2f5d6d2f14ae57b5558e0d3b3c775177b30a4e8",
+    "title": "Provable decryption failure security for practical lattice-based PKE",
+    "url": "https://eprint.iacr.org/2025/1997"
+  },
+  {
+    "id": "HHM22-v1",
+    "no_claim_to_be_latest_version": true,
+    "pages": 52,
+    "read_scope": "Section 6 and Theorem 10 pages 31-32, FFP-NG/FFP-NK distinction",
+    "sha256": "8ae9bc66b45d58c8ce055bae6978440211c532566b395dd03f8e8e682bb09a12",
+    "title": "Failing gracefully: Decryption failures and the Fujisaki-Okamoto transform",
+    "url": "https://arxiv.org/abs/2203.10182v1"
+  }
+]

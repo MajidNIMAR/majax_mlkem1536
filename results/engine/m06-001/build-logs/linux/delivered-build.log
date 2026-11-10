@@ -1,0 +1,20 @@
+   Compiling libc v0.2.191
+   Compiling generic-array v0.14.7
+   Compiling num-traits v0.2.19
+   Compiling serde_json v1.0.145
+   Compiling block-buffer v0.10.4
+   Compiling crypto-common v0.1.7
+   Compiling digest v0.10.7
+   Compiling sha2 v0.10.9
+   Compiling module-lattice v0.2.3
+   Compiling getrandom v0.4.3
+   Compiling crypto-common v0.2.2
+   Compiling digest v0.11.3
+   Compiling kem v0.3.0
+   Compiling sha3 v0.12.0
+   Compiling shake v0.1.0
+   Compiling ml-kem v0.3.3
+   Compiling kem1536 v0.1.0 (/mnt/c/Users/majax/Documents/Codex/NIST/crates/kem1536)
+   Compiling kem1024-reference v0.1.0 (/mnt/c/Users/majax/Documents/Codex/NIST/crates/kem1024-reference)
+   Compiling kem1536-cli v0.1.0 (/mnt/c/Users/majax/Documents/Codex/NIST/crates/kem1536-cli)
+    Finished `release` profile [optimized] target(s) in 23.70s

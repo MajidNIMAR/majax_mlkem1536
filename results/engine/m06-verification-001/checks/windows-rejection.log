@@ -1,0 +1,9 @@
+{
+  "complete_kem_proof": false,
+  "concrete_keccak_proof": false,
+  "ideal_rejection_prf_bounded": true,
+  "panels": 7,
+  "rational_replay": "passed",
+  "snapshot": "C:\\Users\\majax\\Documents\\Codex\\NIST\\results\\security\\m06-rejection-001",
+  "source_contract": "passed"
+}

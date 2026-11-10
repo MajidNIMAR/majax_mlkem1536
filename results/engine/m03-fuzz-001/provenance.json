@@ -1,0 +1,9 @@
+{
+  "input_sha256": {},
+  "output_sha256": {
+    "campaign.tar.gz": "ad5df027340dda12ec9916ced38ea74fabe8de165f1a197d5ae13dceae31c139",
+    "config.json": "fcb0dc0c8d5b3e4a0ad18c7b60e6a9ae31bc06e32d54adec8a5c9b9c5a9f7c31",
+    "RAPPORT_AUTOMATIQUE.md": "c6fee7fe9fe101255b141d5c18b7276601c60b3362d19f04f3159d1e2f14e6b1",
+    "summary.json": "c24d0de4d59b651db1d598d767148f49de8d5f190faf72f3962bba0c39463034"
+  }
+}

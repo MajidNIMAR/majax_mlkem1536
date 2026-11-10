@@ -6,6 +6,8 @@
 /fuzz/coverage/
 /.venv/
 /artifacts/generated/
+/artifacts/retained/
+/publication/
 __pycache__/
 *.py[cod]
 .DS_Store

@@ -1,0 +1,154 @@
+{
+  "profile": "KEM1536-DEV-Q7681-R1",
+  "quantizer": {
+    "v_error_range": [
+      -120,
+      120
+    ],
+    "v_residues_exhausted": 7681,
+    "decoder_intervals": [
+      [
+        -1920,
+        1920
+      ],
+      [
+        -1920,
+        1919
+      ]
+    ],
+    "common_safe_radius": 1799,
+    "tail_threshold": 1800,
+    "error_histogram_sha256": "004f3146cc32218cfe3598db19a3711dabe4c4307df15e9d43273bd995390f5f",
+    "rounding_independence_required": false
+  },
+  "certificate": {
+    "CBD3_counts": {
+      "-3": 1,
+      "-2": 6,
+      "-1": 15,
+      "0": 20,
+      "1": 15,
+      "2": 6,
+      "3": 1
+    },
+    "CBD3_denominator": 64,
+    "independent_products_per_coefficient": 3072,
+    "coefficient_variance_ideal": "13827/2",
+    "message_upper_sha256": "7db4c3a427b4d143750f116a665bc74024afd1dc758f6486ae4daceb5b969e13",
+    "log2_message_upper_display": -310.08596919852425,
+    "exact_upper_at_most_2_pow_minus_310": true,
+    "C05_exact_comparison": true,
+    "ideal_independent_noise_only": true,
+    "concrete_SHAKE_failure_bound_proved": false
+  },
+  "source_contract": {
+    "reviewed_source_anchors": 21,
+    "formal_program_verification": false
+  },
+  "synthetic_vectors": [
+    {
+      "case": 0,
+      "coefficients_checked": 256,
+      "max_abs_B": 233,
+      "max_abs_delta_v": 119,
+      "shared_seed_collision": false,
+      "full_public_fields_checked": true,
+      "decomposition_sha256": "e813c0a117013f8ab6fd4b228f399c5b933cc09bbb176eb052a9174c5142237c"
+    },
+    {
+      "case": 1,
+      "coefficients_checked": 256,
+      "max_abs_B": 267,
+      "max_abs_delta_v": 120,
+      "shared_seed_collision": false,
+      "full_public_fields_checked": true,
+      "decomposition_sha256": "4210d35890c96df230a14ad6000f25d8e154c12c8de0409bc9cb613e3144b40b"
+    },
+    {
+      "case": 2,
+      "coefficients_checked": 256,
+      "max_abs_B": 265,
+      "max_abs_delta_v": 120,
+      "shared_seed_collision": false,
+      "full_public_fields_checked": true,
+      "decomposition_sha256": "93acfd7252e781fe42595ef3df62902e26f9b7ea21b337379c8e94a7c2f7df99"
+    },
+    {
+      "case": 3,
+      "coefficients_checked": 256,
+      "max_abs_B": 232,
+      "max_abs_delta_v": 120,
+      "shared_seed_collision": false,
+      "full_public_fields_checked": true,
+      "decomposition_sha256": "45c834f857735d7b9dbb0d18160e9d604dc88369e66ce59dcc4de9ac9edd9fd7"
+    },
+    {
+      "case": 250,
+      "coefficients_checked": 256,
+      "max_abs_B": 240,
+      "max_abs_delta_v": 119,
+      "shared_seed_collision": false,
+      "full_public_fields_checked": true,
+      "decomposition_sha256": "aff011ba4d4d7d46ec05d7f59e9040beea5c2bf1faf757c83f2b124ebe588817"
+    },
+    {
+      "case": 500,
+      "coefficients_checked": 256,
+      "max_abs_B": 329,
+      "max_abs_delta_v": 120,
+      "shared_seed_collision": false,
+      "full_public_fields_checked": true,
+      "decomposition_sha256": "81d56eb38ed9e61a9660078f0a3bc9e05cd2125668cd86a8856f829579e2c8bf"
+    },
+    {
+      "case": 750,
+      "coefficients_checked": 256,
+      "max_abs_B": 244,
+      "max_abs_delta_v": 120,
+      "shared_seed_collision": false,
+      "full_public_fields_checked": true,
+      "decomposition_sha256": "d5090ef97dd9ed9423476bfccc208ae01c698625f8795736cb352f38a77620e0"
+    },
+    {
+      "case": 999,
+      "coefficients_checked": 256,
+      "max_abs_B": 216,
+      "max_abs_delta_v": 120,
+      "shared_seed_collision": false,
+      "full_public_fields_checked": true,
+      "decomposition_sha256": "05ab5361c7887f9ec7a827fead3b2a4f5162f51ef92aaf09a97196522aff6eb0"
+    }
+  ],
+  "seed_collision": {
+    "aligned_nonce_seed_collision": "r=s, e1=e, B=e2 exactly",
+    "all_B_and_delta_support_combinations_checked": 3374,
+    "extra_2_pow_minus_256_correctness_penalty_required": false,
+    "claim_scope": "honest single-exchange ideal sampler; not security or adversarial keys"
+  },
+  "dishonest_key_witness": {
+    "public_synthetic_key_only": true,
+    "private_encoding_hash_consistent": true,
+    "s_is_zero_and_t0_constant": 3840,
+    "failed_message_bits": 111,
+    "Rust_import_executed_by_this_verifier": false,
+    "claim": "satisfies the documented format predicates; no honest-key correctness guarantee"
+  },
+  "input_sha256": {
+    "crates/kem1536/src/dev_kem.rs": "a21bb340bd5af3c4983f1f76b59ef542aea67edf4c62ad7ff23e8205612cb564",
+    "crates/kem1536/src/engine_poly.rs": "e16599a7d711f045ece773216a508c573907e37217906082e3a8e61192dba8d9",
+    "results/j2/run-004/correctness-certificate.json": "52b005bd7575b56326730f44ccaeae689e5552c1068f4df201d97e0d16969e06",
+    "results/j2/run-004/certificate-provenance.json": "fa0afcdafb1a76e0dca2d0011ad7838b2b63d804b1b5e270d39b3cdd2d8d5901",
+    "results/engine/r1-001/vectors.jsonl.gz": "134b11b059cf124998d2b288d35b86234def684980f95198baa66b7d7e0ee5ec",
+    "results/engine/r1-001/provenance.json": "15c4c89352814f2eceaacbd9aa945cd24033da05476de8064d36c0cb9f7e0e35",
+    "docs/SPECIFICATION_DEV_Q7681_R1.md": "f9174d6daa5fc8e06513579c366279970c775d79cf85d9d8ed2e6b16cb89d47a",
+    "research/verify_r1_certificate_bridge.py": "fa7e33ddf848f3574170c4210a47472c914a6bf38a3ed7aa0e90eaee9ed9c041"
+  },
+  "claims": {
+    "exact_finite_reconstruction": true,
+    "ideal_honest_average_key_correctness": true,
+    "fixed_or_adversarial_key_bound": false,
+    "concrete_SHAKE_independence_proved": false,
+    "CCA_security_proved": false,
+    "rare_failure_rate_measured": false
+  }
+}

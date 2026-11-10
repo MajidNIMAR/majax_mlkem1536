@@ -1,0 +1,83 @@
+{
+  "job": {
+    "index": 70,
+    "scenario": "R1",
+    "degree": 256,
+    "rank": 6,
+    "n": 1536,
+    "q": 7681,
+    "secret": {
+      "kind": "CBD",
+      "eta": 3
+    },
+    "error": {
+      "kind": "CBD",
+      "eta": 3
+    },
+    "panel": "before_serialization_LWE_proxy",
+    "sample_budget": "key",
+    "samples": 1536,
+    "abstract_matrix_blocks": [
+      6,
+      6
+    ],
+    "targets": 1,
+    "leakage_oracle": "none",
+    "memory_cap": null,
+    "exponential_memory_allowed": true,
+    "shape_model": "GSA",
+    "cost_model": "MATZOV-classical",
+    "algorithm": "dual_hybrid",
+    "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+    "actual_compressed_scheme_attack_cost": false,
+    "ciphertext_rows_claimed_independent_samples": false
+  },
+  "status": "estimated_proxy",
+  "cost": {
+    "rop": "2.4968386e123*e^(-20) + 2.85088931089154e115",
+    "problem": "LWEParameters(n=1536, q=7681, Xs=D(σ=1.22), Xe=D(σ=1.22), m=1536, tag='R1')",
+    "red": "2.85088931089154e115",
+    "guess": "2.4968386e123*e^(-20)",
+    "beta": "1254",
+    "p": "5",
+    "zeta": "40",
+    "t": "110",
+    "beta_": "1215",
+    "N": "3.18977461644809e75",
+    "m": "1536"
+  },
+  "log2_cost": {
+    "rop": 383.77256296063496,
+    "red": 383.5331429380893,
+    "guess": 381.06335743350434,
+    "N": 250.8180616059906
+  },
+  "success_contract": {
+    "id": "MATZOV_Nf_mu_half",
+    "meaning": "MATZOV Nf internal mu=0.5; not a certified 0.99 recovery probability",
+    "global_success_certified": false
+  },
+  "input_distribution_repr": {
+    "Xs": "D(σ=1.22)",
+    "Xe": "D(σ=1.22)"
+  },
+  "input_distribution_means": {
+    "Xs": "0",
+    "Xe": "0"
+  },
+  "normalized_parameters_repr": "LWEParameters(n=1536, q=7681, Xs=D(σ=1.22), Xe=D(σ=1.22), m=1536, tag='R1')",
+  "reported_memory_unit": "estimator-native units, not bytes; N is vector count",
+  "cost_is_global_security_lower_bound": false,
+  "quantum_physical_gate_count": null,
+  "sage": "10.7",
+  "python": "3.12.15",
+  "estimator_messages": "",
+  "executing_worker_sha256": "07447605b196070965432c10c260c918f09d7ad0d28d0298e5087084cbf16a8b",
+  "reduction_dimensions": {
+    "beta": 1254,
+    "beta_": 1215
+  },
+  "classical_fit_used_beyond_1024": true,
+  "fit_flag_is_not_an_attack_cost_correction": true,
+  "elapsed_seconds": 86.26765839599989
+}

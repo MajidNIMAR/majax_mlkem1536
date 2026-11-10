@@ -1,0 +1,9 @@
+{
+  "schema": "m05-integration-output-hashes-v1",
+  "output_sha256": {
+    "linux-check.log": "e6c63bc5fa6942a68619041eca7af5204ebcc7a506ae24e66300ed4ebb87ba64",
+    "source-binding.json": "36aed16dbaa2587769071adfade47806102b7e01f611821fd52e73a376805bf6",
+    "verification.json": "d53de02afdbd2607e1efa73ad555ede68fe2f5ab13729b7cccbf93489e3ee778",
+    "windows-check.log": "54aba7a680f7900d1cc5580d55a2a3fb83933532a894890a3f35a677ba301f9d"
+  }
+}

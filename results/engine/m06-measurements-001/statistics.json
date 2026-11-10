@@ -1,0 +1,50 @@
+{
+  "baseline/decaps": {
+    "count": 10000,
+    "median_ns": 1207789.5,
+    "p95_ns": 1400962,
+    "mean_ns": 1243143.6044,
+    "minimum_ns": 1160424,
+    "maximum_ns": 5256635
+  },
+  "baseline/encaps": {
+    "count": 10000,
+    "median_ns": 1045195.0,
+    "p95_ns": 1292152,
+    "mean_ns": 1086574.9982,
+    "minimum_ns": 1002757,
+    "maximum_ns": 8236041
+  },
+  "baseline/keygen": {
+    "count": 10000,
+    "median_ns": 912009.0,
+    "p95_ns": 1045463,
+    "mean_ns": 936528.1856,
+    "minimum_ns": 876653,
+    "maximum_ns": 7230630
+  },
+  "candidate/decaps": {
+    "count": 10000,
+    "median_ns": 686917.0,
+    "p95_ns": 799802,
+    "mean_ns": 707280.1694,
+    "minimum_ns": 657066,
+    "maximum_ns": 2931790
+  },
+  "candidate/encaps": {
+    "count": 10000,
+    "median_ns": 560312.5,
+    "p95_ns": 674465,
+    "mean_ns": 574153.3897,
+    "minimum_ns": 496306,
+    "maximum_ns": 3262055
+  },
+  "candidate/keygen": {
+    "count": 10000,
+    "median_ns": 508664.0,
+    "p95_ns": 591919,
+    "mean_ns": 521251.3287,
+    "minimum_ns": 450226,
+    "maximum_ns": 2757028
+  }
+}

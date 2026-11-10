@@ -2,6 +2,7 @@ use kem1536::dev_kem as r1;
 use ml_kem::{Decapsulate, Encapsulate, Kem, MlKem1024};
 use serde::Serialize;
 use std::{hint::black_box, io::Write, time::Instant};
+mod delivery;
 
 #[derive(Serialize)]
 struct Observation {
@@ -95,6 +96,7 @@ fn mlkem_series(series: usize, rows: &mut Vec<Observation>) {
 fn main() {
     let arguments: Vec<String> = std::env::args().skip(1).collect();
     match arguments.as_slice() {
+        [mode] if mode == "delivery-timing" => delivery::timing(),
         [mode] if mode == "measure" => {
             let mut rows = Vec::with_capacity(30000);
             for series in 0..5 {
@@ -134,7 +136,7 @@ fn main() {
             std::io::stdin().read_line(&mut done).unwrap();
         }
         _ => {
-            eprintln!("usage: kem1536-bench measure | rss <R1|ML-KEM-1024>");
+            eprintln!("usage: kem1536-bench measure | delivery-timing | rss <R1|ML-KEM-1024>");
             std::process::exit(1);
         }
     }

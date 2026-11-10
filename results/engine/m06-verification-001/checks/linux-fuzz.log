@@ -1,0 +1,8 @@
+{
+  "main_CPU_seconds": 713.3599999999999,
+  "supplemental_CPU_seconds": 137.63,
+  "total_CPU_seconds": 850.9899999999999,
+  "source_and_binary_hashes_verified": true,
+  "source_coverage_exports": 4,
+  "independent_replay_requests": 8638
+}

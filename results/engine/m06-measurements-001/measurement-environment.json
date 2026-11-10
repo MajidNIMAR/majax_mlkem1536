@@ -1,0 +1,13 @@
+{
+  "started_utc": "2026-11-10T17:38:28.395798+00:00",
+  "CPU": 10,
+  "samples_per_operation_per_series": 2000,
+  "series": 5,
+  "warmup_per_operation": 100,
+  "proc_loadavg": "0.24 0.05 0.02 1/344 391\n",
+  "processes": "your 131072x1 screen size is bogus. expect trouble\n    PID COMMAND         %CPU\n      1 systemd         18.2\n    126 systemd-udevd   16.6\n    116 systemd-udevd   16.3\n    203 snapd           13.3\n    314 python3         12.0\n    236 unattended-upgr 10.0\n     90 systemd-udevd    7.6\n    200 networkd-dispat  7.6\n    141 systemd-resolve  7.3\n    204 systemd-logind   6.3\n     65 systemd-journal  6.2\n    272 systemd-timedat  6.0\n    142 systemd-timesyn  5.6\n    315 login            2.0\n    130 systemd-udevd    1.6\n    194 dbus-daemon      1.6\n    118 systemd-udevd    1.3\n    121 systemd-udevd    1.3\n    100 systemd-udevd    1.0\n    102 systemd-udevd    1.0\n    103 systemd-udevd    1.0\n    104 systemd-udevd    1.0\n    135 systemd-udevd    1.0\n    201 rsyslogd         1.0\n     96 systemd-udevd    0.6\n     97 systemd-udevd    0.6\n     98 systemd-udevd    0.6\n     99 systemd-udevd    0.6\n    113 systemd-udevd    0.6\n    105 systemd-udevd    0.3\n    106 systemd-udevd    0.3\n    107 systemd-udevd    0.3\n    108 systemd-udevd    0.3\n    109 systemd-udevd    0.3\n    114 systemd-udevd    0.3\n    115 systemd-udevd    0.3\n    117 systemd-udevd    0.3\n    120 systemd-udevd    0.3\n    122 systemd-udevd    0.3\n    123 systemd-udevd    0.3\n    125 systemd-udevd    0.3\n    127 systemd-udevd    0.3\n    128 systemd-udevd    0.3\n    131 systemd-udevd    0.3\n    137 systemd-udevd    0.3\n      2 init-systemd(Ub  0.2\n      8 init             0.0\n    111 systemd-udevd    0.0\n    112 systemd-udevd    0.0\n    119 systemd-udevd    0.0\n    124 systemd-udevd    0.0\n    129 systemd-udevd    0.0\n    132 systemd-udevd    0.0\n    133 systemd-udevd    0.0\n    146 systemd-udevd    0.0\n    166 systemd-udevd    0.0\n    193 cron             0.0\n    226 agetty           0.0\n    228 agetty           0.0\n    312 SessionLeader    0.0\n    313 Relay(314)       0.0\n    360 systemd          0.0\n    361 (sd-pam)         0.0\n    374 bash             0.0\n    392 ps               0.0\n",
+  "frequency_fixed": false,
+  "host_activity_isolation_proven": false,
+  "OS_randomness_included_keygen_and_encaps": true,
+  "validation_and_drop_outside_timer": true
+}

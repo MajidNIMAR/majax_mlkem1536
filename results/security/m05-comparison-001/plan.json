@@ -1,0 +1,4983 @@
+{
+  "schema": 1,
+  "pilot": false,
+  "profiles": [
+    {
+      "id": "R1",
+      "degree": 256,
+      "rank": 6,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "pk_bits": 13,
+      "u_bits": 13,
+      "v_bits": 5,
+      "pk_quantizer": null,
+      "source": "docs/SPECIFICATION_DEV_Q7681_R1.md",
+      "implementation": true,
+      "flattened_secret_dimension": 1536,
+      "actual_public_observation": "A*s+e mod q; matrix seed and exact/invertible representation",
+      "secret_moments": {
+        "mean": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "variance": {
+          "numerator": 3,
+          "denominator": 2
+        },
+        "support": [
+          -3,
+          3
+        ]
+      },
+      "error_moments_before_serialization": {
+        "mean": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "variance": {
+          "numerator": 3,
+          "denominator": 2
+        },
+        "support": [
+          -3,
+          3
+        ]
+      },
+      "key_observation_is_unrounded": true,
+      "composite_modulus_algebraic_attacks_not_modeled": false
+    },
+    {
+      "id": "ML-KEM-1024",
+      "degree": 256,
+      "rank": 4,
+      "q": 3329,
+      "secret": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "pk_bits": 12,
+      "u_bits": 11,
+      "v_bits": 5,
+      "pk_quantizer": null,
+      "source": "NIST FIPS 203 final; NTT encoding is exactly invertible",
+      "implementation": true,
+      "flattened_secret_dimension": 1024,
+      "actual_public_observation": "A*s+e mod q; matrix seed and exact/invertible representation",
+      "secret_moments": {
+        "mean": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "variance": {
+          "numerator": 1,
+          "denominator": 1
+        },
+        "support": [
+          -2,
+          2
+        ]
+      },
+      "error_moments_before_serialization": {
+        "mean": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "variance": {
+          "numerator": 1,
+          "denominator": 1
+        },
+        "support": [
+          -2,
+          2
+        ]
+      },
+      "key_observation_is_unrounded": true,
+      "composite_modulus_algebraic_attacks_not_modeled": false
+    },
+    {
+      "id": "Aigis-Enc-mode4",
+      "degree": 256,
+      "rank": 4,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 8
+      },
+      "pk_bits": 11,
+      "u_bits": 11,
+      "v_bits": 5,
+      "pk_quantizer": "nearest",
+      "source": "PQMagic@b9ea5ce134966b8f90d637bab97178a92ae130f3",
+      "implementation": true,
+      "flattened_secret_dimension": 1024,
+      "actual_public_observation": "C_pk(A*s+e mod q), with published seed for A",
+      "secret_moments": {
+        "mean": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "variance": {
+          "numerator": 3,
+          "denominator": 2
+        },
+        "support": [
+          -3,
+          3
+        ]
+      },
+      "error_moments_before_serialization": {
+        "mean": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "variance": {
+          "numerator": 4,
+          "denominator": 1
+        },
+        "support": [
+          -8,
+          8
+        ]
+      },
+      "key_observation_is_unrounded": false,
+      "composite_modulus_algebraic_attacks_not_modeled": false
+    },
+    {
+      "id": "Kyber2017-k4",
+      "degree": 256,
+      "rank": 4,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "pk_bits": 11,
+      "u_bits": 11,
+      "v_bits": 3,
+      "pk_quantizer": "nearest",
+      "source": "pq-crystals/kyber@ca375e3e3391360a863efd4122b14e396c994dde",
+      "implementation": true,
+      "flattened_secret_dimension": 1024,
+      "actual_public_observation": "C_pk(A*s+e mod q), with published seed for A",
+      "secret_moments": {
+        "mean": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "variance": {
+          "numerator": 3,
+          "denominator": 2
+        },
+        "support": [
+          -3,
+          3
+        ]
+      },
+      "error_moments_before_serialization": {
+        "mean": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "variance": {
+          "numerator": 3,
+          "denominator": 2
+        },
+        "support": [
+          -3,
+          3
+        ]
+      },
+      "key_observation_is_unrounded": false,
+      "composite_modulus_algebraic_attacks_not_modeled": false
+    },
+    {
+      "id": "KINDI-512-3-2-1",
+      "degree": 512,
+      "rank": 3,
+      "q": 8192,
+      "secret": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "error": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "pk_bits": 12,
+      "u_bits": 13,
+      "v_bits": 13,
+      "pk_quantizer": "truncate",
+      "source": "NIST round-1 KINDI archive sha256:ed51557337dee49deeda4d97c057ef65e98074a49af683eb621660f271b6963c",
+      "implementation": true,
+      "flattened_secret_dimension": 1536,
+      "actual_public_observation": "C_pk(A*s+e mod q), with published seed for A",
+      "secret_moments": {
+        "mean": {
+          "numerator": -1,
+          "denominator": 2
+        },
+        "variance": {
+          "numerator": 5,
+          "denominator": 4
+        },
+        "support": [
+          -2,
+          1
+        ]
+      },
+      "error_moments_before_serialization": {
+        "mean": {
+          "numerator": -1,
+          "denominator": 2
+        },
+        "variance": {
+          "numerator": 5,
+          "denominator": 4
+        },
+        "support": [
+          -2,
+          1
+        ]
+      },
+      "key_observation_is_unrounded": false,
+      "composite_modulus_algebraic_attacks_not_modeled": true
+    },
+    {
+      "id": "Kyber1536-paper-point",
+      "degree": 256,
+      "rank": 6,
+      "q": 3329,
+      "secret": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "pk_bits": null,
+      "u_bits": null,
+      "v_bits": null,
+      "pk_quantizer": null,
+      "source": "ePrint 2023/016, Table 4; rounding omitted in that simplified construction",
+      "implementation": false,
+      "flattened_secret_dimension": 1536,
+      "actual_public_observation": "A*s+e mod q; matrix seed and exact/invertible representation",
+      "secret_moments": {
+        "mean": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "variance": {
+          "numerator": 1,
+          "denominator": 1
+        },
+        "support": [
+          -2,
+          2
+        ]
+      },
+      "error_moments_before_serialization": {
+        "mean": {
+          "numerator": 0,
+          "denominator": 1
+        },
+        "variance": {
+          "numerator": 1,
+          "denominator": 1
+        },
+        "support": [
+          -2,
+          2
+        ]
+      },
+      "key_observation_is_unrounded": true,
+      "composite_modulus_algebraic_attacks_not_modeled": false
+    }
+  ],
+  "rounding_diagnostics": {
+    "Aigis-Enc-mode4": {
+      "coefficient_values_enumerated": 7681,
+      "quantizer": "nearest",
+      "public_key_bits": 11,
+      "preimage_size_histogram": {
+        "3": 511,
+        "4": 1537
+      },
+      "rounding_error_under_uniform_input": {
+        "mean": {
+          "numerator": 2,
+          "denominator": 7681
+        },
+        "variance": {
+          "numerator": 78684160,
+          "denominator": 58997761
+        },
+        "support": [
+          -2,
+          2
+        ]
+      },
+      "rounding_error_pmf_under_uniform_input": {
+        "-2": {
+          "numerator": 768,
+          "denominator": 7681
+        },
+        "-1": {
+          "numerator": 2048,
+          "denominator": 7681
+        },
+        "0": {
+          "numerator": 2048,
+          "denominator": 7681
+        },
+        "1": {
+          "numerator": 2048,
+          "denominator": 7681
+        },
+        "2": {
+          "numerator": 769,
+          "denominator": 7681
+        }
+      },
+      "independent_sum_error_moments": {
+        "mean": {
+          "numerator": 2,
+          "denominator": 7681
+        },
+        "variance": {
+          "numerator": 314675204,
+          "denominator": 58997761
+        },
+        "support": [
+          -10,
+          10
+        ]
+      },
+      "independent_sum_error_pmf": {
+        "-10": {
+          "numerator": 3,
+          "denominator": 1966336
+        },
+        "-9": {
+          "numerator": 7,
+          "denominator": 245792
+        },
+        "-8": {
+          "numerator": 31,
+          "denominator": 122896
+        },
+        "-7": {
+          "numerator": 347,
+          "denominator": 245792
+        },
+        "-6": {
+          "numerator": 2823937,
+          "denominator": 503382016
+        },
+        "-5": {
+          "numerator": 530433,
+          "denominator": 31461376
+        },
+        "-4": {
+          "numerator": 2507791,
+          "denominator": 62922752
+        },
+        "-3": {
+          "numerator": 2393123,
+          "denominator": 31461376
+        },
+        "-2": {
+          "numerator": 15014727,
+          "denominator": 125845504
+        },
+        "-1": {
+          "numerator": 4895761,
+          "denominator": 31461376
+        },
+        "0": {
+          "numerator": 10690537,
+          "denominator": 62922752
+        },
+        "1": {
+          "numerator": 4896203,
+          "denominator": 31461376
+        },
+        "2": {
+          "numerator": 30034979,
+          "denominator": 251691008
+        },
+        "3": {
+          "numerator": 2393803,
+          "denominator": 31461376
+        },
+        "4": {
+          "numerator": 2508777,
+          "denominator": 62922752
+        },
+        "5": {
+          "numerator": 530705,
+          "denominator": 31461376
+        },
+        "6": {
+          "numerator": 706439,
+          "denominator": 125845504
+        },
+        "7": {
+          "numerator": 44451,
+          "denominator": 31461376
+        },
+        "8": {
+          "numerator": 15887,
+          "denominator": 62922752
+        },
+        "9": {
+          "numerator": 897,
+          "denominator": 31461376
+        },
+        "10": {
+          "numerator": 769,
+          "denominator": 503382016
+        }
+      },
+      "actual_error_laws_at_fixed_signals": [
+        {
+          "fixed_signal_residue": 0,
+          "moments": {
+            "mean": {
+              "numerator": 0,
+              "denominator": 1
+            },
+            "variance": {
+              "numerator": 1913,
+              "denominator": 256
+            },
+            "support": [
+              -8,
+              8
+            ]
+          },
+          "pmf": {
+            "-8": {
+              "numerator": 137,
+              "denominator": 65536
+            },
+            "-4": {
+              "numerator": 3689,
+              "denominator": 16384
+            },
+            "0": {
+              "numerator": 17875,
+              "denominator": 32768
+            },
+            "4": {
+              "numerator": 3689,
+              "denominator": 16384
+            },
+            "8": {
+              "numerator": 137,
+              "denominator": 65536
+            }
+          }
+        },
+        {
+          "fixed_signal_residue": 1,
+          "moments": {
+            "mean": {
+              "numerator": 117,
+              "denominator": 512
+            },
+            "variance": {
+              "numerator": 1867399,
+              "denominator": 262144
+            },
+            "support": [
+              -9,
+              7
+            ]
+          },
+          "pmf": {
+            "-9": {
+              "numerator": 17,
+              "denominator": 65536
+            },
+            "-5": {
+              "numerator": 1717,
+              "denominator": 16384
+            },
+            "-1": {
+              "numerator": 16159,
+              "denominator": 32768
+            },
+            "3": {
+              "numerator": 6409,
+              "denominator": 16384
+            },
+            "7": {
+              "numerator": 697,
+              "denominator": 65536
+            }
+          }
+        },
+        {
+          "fixed_signal_residue": 3840,
+          "moments": {
+            "mean": {
+              "numerator": 26139,
+              "denominator": 65536
+            },
+            "variance": {
+              "numerator": 18600786215,
+              "denominator": 4294967296
+            },
+            "support": [
+              -7,
+              8
+            ]
+          },
+          "pmf": {
+            "-7": {
+              "numerator": 137,
+              "denominator": 65536
+            },
+            "-3": {
+              "numerator": 3689,
+              "denominator": 16384
+            },
+            "1": {
+              "numerator": 21879,
+              "denominator": 32768
+            },
+            "4": {
+              "numerator": 1717,
+              "denominator": 16384
+            },
+            "8": {
+              "numerator": 17,
+              "denominator": 65536
+            }
+          }
+        },
+        {
+          "fixed_signal_residue": 7680,
+          "moments": {
+            "mean": {
+              "numerator": -117,
+              "denominator": 512
+            },
+            "variance": {
+              "numerator": 1867399,
+              "denominator": 262144
+            },
+            "support": [
+              -7,
+              9
+            ]
+          },
+          "pmf": {
+            "-7": {
+              "numerator": 697,
+              "denominator": 65536
+            },
+            "-3": {
+              "numerator": 6409,
+              "denominator": 16384
+            },
+            "1": {
+              "numerator": 16159,
+              "denominator": 32768
+            },
+            "5": {
+              "numerator": 1717,
+              "denominator": 16384
+            },
+            "9": {
+              "numerator": 17,
+              "denominator": 65536
+            }
+          }
+        }
+      ],
+      "actual_conditional_laws_differ": true,
+      "actual_scheme_rounding_independence_established": false,
+      "gaussian_moment_substitution_is_exact_distribution": false
+    },
+    "Kyber2017-k4": {
+      "coefficient_values_enumerated": 7681,
+      "quantizer": "nearest",
+      "public_key_bits": 11,
+      "preimage_size_histogram": {
+        "3": 511,
+        "4": 1537
+      },
+      "rounding_error_under_uniform_input": {
+        "mean": {
+          "numerator": 2,
+          "denominator": 7681
+        },
+        "variance": {
+          "numerator": 78684160,
+          "denominator": 58997761
+        },
+        "support": [
+          -2,
+          2
+        ]
+      },
+      "rounding_error_pmf_under_uniform_input": {
+        "-2": {
+          "numerator": 768,
+          "denominator": 7681
+        },
+        "-1": {
+          "numerator": 2048,
+          "denominator": 7681
+        },
+        "0": {
+          "numerator": 2048,
+          "denominator": 7681
+        },
+        "1": {
+          "numerator": 2048,
+          "denominator": 7681
+        },
+        "2": {
+          "numerator": 769,
+          "denominator": 7681
+        }
+      },
+      "independent_sum_error_moments": {
+        "mean": {
+          "numerator": 2,
+          "denominator": 7681
+        },
+        "variance": {
+          "numerator": 334361603,
+          "denominator": 117995522
+        },
+        "support": [
+          -5,
+          5
+        ]
+      },
+      "independent_sum_error_pmf": {
+        "-5": {
+          "numerator": 12,
+          "denominator": 7681
+        },
+        "-4": {
+          "numerator": 104,
+          "denominator": 7681
+        },
+        "-3": {
+          "numerator": 404,
+          "denominator": 7681
+        },
+        "-2": {
+          "numerator": 944,
+          "denominator": 7681
+        },
+        "-1": {
+          "numerator": 96257,
+          "denominator": 491584
+        },
+        "0": {
+          "numerator": 55811,
+          "denominator": 245792
+        },
+        "1": {
+          "numerator": 96271,
+          "denominator": 491584
+        },
+        "2": {
+          "numerator": 15109,
+          "denominator": 122896
+        },
+        "3": {
+          "numerator": 25871,
+          "denominator": 491584
+        },
+        "4": {
+          "numerator": 3331,
+          "denominator": 245792
+        },
+        "5": {
+          "numerator": 769,
+          "denominator": 491584
+        }
+      },
+      "actual_error_laws_at_fixed_signals": [
+        {
+          "fixed_signal_residue": 0,
+          "moments": {
+            "mean": {
+              "numerator": 0,
+              "denominator": 1
+            },
+            "variance": {
+              "numerator": 7,
+              "denominator": 2
+            },
+            "support": [
+              -4,
+              4
+            ]
+          },
+          "pmf": {
+            "-4": {
+              "numerator": 7,
+              "denominator": 64
+            },
+            "0": {
+              "numerator": 25,
+              "denominator": 32
+            },
+            "4": {
+              "numerator": 7,
+              "denominator": 64
+            }
+          }
+        },
+        {
+          "fixed_signal_residue": 1,
+          "moments": {
+            "mean": {
+              "numerator": 5,
+              "denominator": 16
+            },
+            "variance": {
+              "numerator": 1031,
+              "denominator": 256
+            },
+            "support": [
+              -5,
+              3
+            ]
+          },
+          "pmf": {
+            "-5": {
+              "numerator": 1,
+              "denominator": 64
+            },
+            "-1": {
+              "numerator": 41,
+              "denominator": 64
+            },
+            "3": {
+              "numerator": 11,
+              "denominator": 32
+            }
+          }
+        },
+        {
+          "fixed_signal_residue": 3840,
+          "moments": {
+            "mean": {
+              "numerator": 39,
+              "denominator": 64
+            },
+            "variance": {
+              "numerator": 7119,
+              "denominator": 4096
+            },
+            "support": [
+              -3,
+              4
+            ]
+          },
+          "pmf": {
+            "-3": {
+              "numerator": 7,
+              "denominator": 64
+            },
+            "1": {
+              "numerator": 7,
+              "denominator": 8
+            },
+            "4": {
+              "numerator": 1,
+              "denominator": 64
+            }
+          }
+        },
+        {
+          "fixed_signal_residue": 7680,
+          "moments": {
+            "mean": {
+              "numerator": -5,
+              "denominator": 16
+            },
+            "variance": {
+              "numerator": 1031,
+              "denominator": 256
+            },
+            "support": [
+              -3,
+              5
+            ]
+          },
+          "pmf": {
+            "-3": {
+              "numerator": 11,
+              "denominator": 32
+            },
+            "1": {
+              "numerator": 41,
+              "denominator": 64
+            },
+            "5": {
+              "numerator": 1,
+              "denominator": 64
+            }
+          }
+        }
+      ],
+      "actual_conditional_laws_differ": true,
+      "actual_scheme_rounding_independence_established": false,
+      "gaussian_moment_substitution_is_exact_distribution": false
+    },
+    "KINDI-512-3-2-1": {
+      "coefficient_values_enumerated": 8192,
+      "quantizer": "truncate",
+      "public_key_bits": 12,
+      "preimage_size_histogram": {
+        "2": 4096
+      },
+      "rounding_error_under_uniform_input": {
+        "mean": {
+          "numerator": -1,
+          "denominator": 2
+        },
+        "variance": {
+          "numerator": 1,
+          "denominator": 4
+        },
+        "support": [
+          -1,
+          0
+        ]
+      },
+      "rounding_error_pmf_under_uniform_input": {
+        "-1": {
+          "numerator": 1,
+          "denominator": 2
+        },
+        "0": {
+          "numerator": 1,
+          "denominator": 2
+        }
+      },
+      "independent_sum_error_moments": {
+        "mean": {
+          "numerator": -1,
+          "denominator": 1
+        },
+        "variance": {
+          "numerator": 3,
+          "denominator": 2
+        },
+        "support": [
+          -3,
+          1
+        ]
+      },
+      "independent_sum_error_pmf": {
+        "-3": {
+          "numerator": 1,
+          "denominator": 8
+        },
+        "-2": {
+          "numerator": 1,
+          "denominator": 4
+        },
+        "-1": {
+          "numerator": 1,
+          "denominator": 4
+        },
+        "0": {
+          "numerator": 1,
+          "denominator": 4
+        },
+        "1": {
+          "numerator": 1,
+          "denominator": 8
+        }
+      },
+      "actual_error_laws_at_fixed_signals": [
+        {
+          "fixed_signal_residue": 0,
+          "moments": {
+            "mean": {
+              "numerator": -1,
+              "denominator": 1
+            },
+            "variance": {
+              "numerator": 1,
+              "denominator": 1
+            },
+            "support": [
+              -2,
+              0
+            ]
+          },
+          "pmf": {
+            "-2": {
+              "numerator": 1,
+              "denominator": 2
+            },
+            "0": {
+              "numerator": 1,
+              "denominator": 2
+            }
+          }
+        },
+        {
+          "fixed_signal_residue": 1,
+          "moments": {
+            "mean": {
+              "numerator": -1,
+              "denominator": 1
+            },
+            "variance": {
+              "numerator": 2,
+              "denominator": 1
+            },
+            "support": [
+              -3,
+              1
+            ]
+          },
+          "pmf": {
+            "-3": {
+              "numerator": 1,
+              "denominator": 4
+            },
+            "-1": {
+              "numerator": 1,
+              "denominator": 2
+            },
+            "1": {
+              "numerator": 1,
+              "denominator": 4
+            }
+          }
+        },
+        {
+          "fixed_signal_residue": 4096,
+          "moments": {
+            "mean": {
+              "numerator": -1,
+              "denominator": 1
+            },
+            "variance": {
+              "numerator": 1,
+              "denominator": 1
+            },
+            "support": [
+              -2,
+              0
+            ]
+          },
+          "pmf": {
+            "-2": {
+              "numerator": 1,
+              "denominator": 2
+            },
+            "0": {
+              "numerator": 1,
+              "denominator": 2
+            }
+          }
+        },
+        {
+          "fixed_signal_residue": 8191,
+          "moments": {
+            "mean": {
+              "numerator": -1,
+              "denominator": 1
+            },
+            "variance": {
+              "numerator": 2,
+              "denominator": 1
+            },
+            "support": [
+              -3,
+              1
+            ]
+          },
+          "pmf": {
+            "-3": {
+              "numerator": 1,
+              "denominator": 4
+            },
+            "-1": {
+              "numerator": 1,
+              "denominator": 2
+            },
+            "1": {
+              "numerator": 1,
+              "denominator": 4
+            }
+          }
+        }
+      ],
+      "actual_conditional_laws_differ": true,
+      "actual_scheme_rounding_independence_established": false,
+      "gaussian_moment_substitution_is_exact_distribution": false
+    }
+  },
+  "jobs": [
+    {
+      "index": 0,
+      "scenario": "Aigis-Enc-mode4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 8
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1280,
+      "abstract_matrix_blocks": [
+        5,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "bdd",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 1,
+      "scenario": "Aigis-Enc-mode4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 8
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1280,
+      "abstract_matrix_blocks": [
+        5,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "dual_hybrid",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 2,
+      "scenario": "Aigis-Enc-mode4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 8
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1280,
+      "abstract_matrix_blocks": [
+        5,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "usvp",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 3,
+      "scenario": "KINDI-512-3-2-1",
+      "degree": 512,
+      "rank": 3,
+      "n": 1536,
+      "q": 8192,
+      "secret": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "error": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 2048,
+      "abstract_matrix_blocks": [
+        4,
+        3
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "bdd",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 4,
+      "scenario": "KINDI-512-3-2-1",
+      "degree": 512,
+      "rank": 3,
+      "n": 1536,
+      "q": 8192,
+      "secret": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "error": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 2048,
+      "abstract_matrix_blocks": [
+        4,
+        3
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "dual_hybrid",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 5,
+      "scenario": "KINDI-512-3-2-1",
+      "degree": 512,
+      "rank": 3,
+      "n": 1536,
+      "q": 8192,
+      "secret": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "error": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 2048,
+      "abstract_matrix_blocks": [
+        4,
+        3
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "usvp",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 6,
+      "scenario": "Kyber1536-paper-point",
+      "degree": 256,
+      "rank": 6,
+      "n": 1536,
+      "q": 3329,
+      "secret": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1792,
+      "abstract_matrix_blocks": [
+        7,
+        6
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "bdd",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 7,
+      "scenario": "Kyber1536-paper-point",
+      "degree": 256,
+      "rank": 6,
+      "n": 1536,
+      "q": 3329,
+      "secret": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1792,
+      "abstract_matrix_blocks": [
+        7,
+        6
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "dual_hybrid",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 8,
+      "scenario": "Kyber1536-paper-point",
+      "degree": 256,
+      "rank": 6,
+      "n": 1536,
+      "q": 3329,
+      "secret": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1792,
+      "abstract_matrix_blocks": [
+        7,
+        6
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "usvp",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 9,
+      "scenario": "Kyber2017-k4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1280,
+      "abstract_matrix_blocks": [
+        5,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "bdd",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 10,
+      "scenario": "Kyber2017-k4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1280,
+      "abstract_matrix_blocks": [
+        5,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "dual_hybrid",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 11,
+      "scenario": "Kyber2017-k4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1280,
+      "abstract_matrix_blocks": [
+        5,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "usvp",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 12,
+      "scenario": "ML-KEM-1024",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 3329,
+      "secret": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1280,
+      "abstract_matrix_blocks": [
+        5,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "bdd",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 13,
+      "scenario": "ML-KEM-1024",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 3329,
+      "secret": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1280,
+      "abstract_matrix_blocks": [
+        5,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "dual_hybrid",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 14,
+      "scenario": "ML-KEM-1024",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 3329,
+      "secret": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1280,
+      "abstract_matrix_blocks": [
+        5,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "usvp",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 15,
+      "scenario": "R1",
+      "degree": 256,
+      "rank": 6,
+      "n": 1536,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1792,
+      "abstract_matrix_blocks": [
+        7,
+        6
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "bdd",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 16,
+      "scenario": "R1",
+      "degree": 256,
+      "rank": 6,
+      "n": 1536,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1792,
+      "abstract_matrix_blocks": [
+        7,
+        6
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "dual_hybrid",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 17,
+      "scenario": "R1",
+      "degree": 256,
+      "rank": 6,
+      "n": 1536,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1792,
+      "abstract_matrix_blocks": [
+        7,
+        6
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "usvp",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 18,
+      "scenario": "Aigis-Enc-mode4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 8
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1280,
+      "abstract_matrix_blocks": [
+        5,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "bdd",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 19,
+      "scenario": "Aigis-Enc-mode4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 8
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1280,
+      "abstract_matrix_blocks": [
+        5,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "dual_hybrid",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 20,
+      "scenario": "Aigis-Enc-mode4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 8
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1280,
+      "abstract_matrix_blocks": [
+        5,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "usvp",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 21,
+      "scenario": "KINDI-512-3-2-1",
+      "degree": 512,
+      "rank": 3,
+      "n": 1536,
+      "q": 8192,
+      "secret": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "error": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 2048,
+      "abstract_matrix_blocks": [
+        4,
+        3
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "bdd",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 22,
+      "scenario": "KINDI-512-3-2-1",
+      "degree": 512,
+      "rank": 3,
+      "n": 1536,
+      "q": 8192,
+      "secret": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "error": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 2048,
+      "abstract_matrix_blocks": [
+        4,
+        3
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "dual_hybrid",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 23,
+      "scenario": "KINDI-512-3-2-1",
+      "degree": 512,
+      "rank": 3,
+      "n": 1536,
+      "q": 8192,
+      "secret": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "error": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 2048,
+      "abstract_matrix_blocks": [
+        4,
+        3
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "usvp",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 24,
+      "scenario": "Kyber1536-paper-point",
+      "degree": 256,
+      "rank": 6,
+      "n": 1536,
+      "q": 3329,
+      "secret": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1792,
+      "abstract_matrix_blocks": [
+        7,
+        6
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "bdd",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 25,
+      "scenario": "Kyber1536-paper-point",
+      "degree": 256,
+      "rank": 6,
+      "n": 1536,
+      "q": 3329,
+      "secret": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1792,
+      "abstract_matrix_blocks": [
+        7,
+        6
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "dual_hybrid",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 26,
+      "scenario": "Kyber1536-paper-point",
+      "degree": 256,
+      "rank": 6,
+      "n": 1536,
+      "q": 3329,
+      "secret": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1792,
+      "abstract_matrix_blocks": [
+        7,
+        6
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "usvp",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 27,
+      "scenario": "Kyber2017-k4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1280,
+      "abstract_matrix_blocks": [
+        5,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "bdd",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 28,
+      "scenario": "Kyber2017-k4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1280,
+      "abstract_matrix_blocks": [
+        5,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "dual_hybrid",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 29,
+      "scenario": "Kyber2017-k4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1280,
+      "abstract_matrix_blocks": [
+        5,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "usvp",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 30,
+      "scenario": "ML-KEM-1024",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 3329,
+      "secret": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1280,
+      "abstract_matrix_blocks": [
+        5,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "bdd",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 31,
+      "scenario": "ML-KEM-1024",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 3329,
+      "secret": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1280,
+      "abstract_matrix_blocks": [
+        5,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "dual_hybrid",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 32,
+      "scenario": "ML-KEM-1024",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 3329,
+      "secret": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1280,
+      "abstract_matrix_blocks": [
+        5,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "usvp",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 33,
+      "scenario": "R1",
+      "degree": 256,
+      "rank": 6,
+      "n": 1536,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1792,
+      "abstract_matrix_blocks": [
+        7,
+        6
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "bdd",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 34,
+      "scenario": "R1",
+      "degree": 256,
+      "rank": 6,
+      "n": 1536,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1792,
+      "abstract_matrix_blocks": [
+        7,
+        6
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "dual_hybrid",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 35,
+      "scenario": "R1",
+      "degree": 256,
+      "rank": 6,
+      "n": 1536,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1792,
+      "abstract_matrix_blocks": [
+        7,
+        6
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "usvp",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 36,
+      "scenario": "Aigis-Enc-mode4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 8
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "key",
+      "samples": 1024,
+      "abstract_matrix_blocks": [
+        4,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "bdd",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 37,
+      "scenario": "Aigis-Enc-mode4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 8
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "key",
+      "samples": 1024,
+      "abstract_matrix_blocks": [
+        4,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "dual_hybrid",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 38,
+      "scenario": "Aigis-Enc-mode4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 8
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "key",
+      "samples": 1024,
+      "abstract_matrix_blocks": [
+        4,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "usvp",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 39,
+      "scenario": "KINDI-512-3-2-1",
+      "degree": 512,
+      "rank": 3,
+      "n": 1536,
+      "q": 8192,
+      "secret": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "error": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "key",
+      "samples": 1536,
+      "abstract_matrix_blocks": [
+        3,
+        3
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "bdd",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 40,
+      "scenario": "KINDI-512-3-2-1",
+      "degree": 512,
+      "rank": 3,
+      "n": 1536,
+      "q": 8192,
+      "secret": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "error": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "key",
+      "samples": 1536,
+      "abstract_matrix_blocks": [
+        3,
+        3
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "dual_hybrid",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 41,
+      "scenario": "KINDI-512-3-2-1",
+      "degree": 512,
+      "rank": 3,
+      "n": 1536,
+      "q": 8192,
+      "secret": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "error": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "key",
+      "samples": 1536,
+      "abstract_matrix_blocks": [
+        3,
+        3
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "usvp",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 42,
+      "scenario": "Kyber1536-paper-point",
+      "degree": 256,
+      "rank": 6,
+      "n": 1536,
+      "q": 3329,
+      "secret": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "key",
+      "samples": 1536,
+      "abstract_matrix_blocks": [
+        6,
+        6
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "bdd",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 43,
+      "scenario": "Kyber1536-paper-point",
+      "degree": 256,
+      "rank": 6,
+      "n": 1536,
+      "q": 3329,
+      "secret": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "key",
+      "samples": 1536,
+      "abstract_matrix_blocks": [
+        6,
+        6
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "dual_hybrid",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 44,
+      "scenario": "Kyber1536-paper-point",
+      "degree": 256,
+      "rank": 6,
+      "n": 1536,
+      "q": 3329,
+      "secret": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "key",
+      "samples": 1536,
+      "abstract_matrix_blocks": [
+        6,
+        6
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "usvp",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 45,
+      "scenario": "Kyber2017-k4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "key",
+      "samples": 1024,
+      "abstract_matrix_blocks": [
+        4,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "bdd",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 46,
+      "scenario": "Kyber2017-k4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "key",
+      "samples": 1024,
+      "abstract_matrix_blocks": [
+        4,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "dual_hybrid",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 47,
+      "scenario": "Kyber2017-k4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "key",
+      "samples": 1024,
+      "abstract_matrix_blocks": [
+        4,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "usvp",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 48,
+      "scenario": "ML-KEM-1024",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 3329,
+      "secret": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "key",
+      "samples": 1024,
+      "abstract_matrix_blocks": [
+        4,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "bdd",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 49,
+      "scenario": "ML-KEM-1024",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 3329,
+      "secret": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "key",
+      "samples": 1024,
+      "abstract_matrix_blocks": [
+        4,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "dual_hybrid",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 50,
+      "scenario": "ML-KEM-1024",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 3329,
+      "secret": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "key",
+      "samples": 1024,
+      "abstract_matrix_blocks": [
+        4,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "usvp",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 51,
+      "scenario": "R1",
+      "degree": 256,
+      "rank": 6,
+      "n": 1536,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "key",
+      "samples": 1536,
+      "abstract_matrix_blocks": [
+        6,
+        6
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "bdd",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 52,
+      "scenario": "R1",
+      "degree": 256,
+      "rank": 6,
+      "n": 1536,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "key",
+      "samples": 1536,
+      "abstract_matrix_blocks": [
+        6,
+        6
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "dual_hybrid",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 53,
+      "scenario": "R1",
+      "degree": 256,
+      "rank": 6,
+      "n": 1536,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "key",
+      "samples": 1536,
+      "abstract_matrix_blocks": [
+        6,
+        6
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "usvp",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 54,
+      "scenario": "Aigis-Enc-mode4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 8
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "key",
+      "samples": 1024,
+      "abstract_matrix_blocks": [
+        4,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "bdd",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 55,
+      "scenario": "Aigis-Enc-mode4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 8
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "key",
+      "samples": 1024,
+      "abstract_matrix_blocks": [
+        4,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "dual_hybrid",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 56,
+      "scenario": "Aigis-Enc-mode4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 8
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "key",
+      "samples": 1024,
+      "abstract_matrix_blocks": [
+        4,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "usvp",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 57,
+      "scenario": "KINDI-512-3-2-1",
+      "degree": 512,
+      "rank": 3,
+      "n": 1536,
+      "q": 8192,
+      "secret": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "error": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "key",
+      "samples": 1536,
+      "abstract_matrix_blocks": [
+        3,
+        3
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "bdd",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 58,
+      "scenario": "KINDI-512-3-2-1",
+      "degree": 512,
+      "rank": 3,
+      "n": 1536,
+      "q": 8192,
+      "secret": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "error": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "key",
+      "samples": 1536,
+      "abstract_matrix_blocks": [
+        3,
+        3
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "dual_hybrid",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 59,
+      "scenario": "KINDI-512-3-2-1",
+      "degree": 512,
+      "rank": 3,
+      "n": 1536,
+      "q": 8192,
+      "secret": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "error": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "key",
+      "samples": 1536,
+      "abstract_matrix_blocks": [
+        3,
+        3
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "usvp",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 60,
+      "scenario": "Kyber1536-paper-point",
+      "degree": 256,
+      "rank": 6,
+      "n": 1536,
+      "q": 3329,
+      "secret": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "key",
+      "samples": 1536,
+      "abstract_matrix_blocks": [
+        6,
+        6
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "bdd",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 61,
+      "scenario": "Kyber1536-paper-point",
+      "degree": 256,
+      "rank": 6,
+      "n": 1536,
+      "q": 3329,
+      "secret": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "key",
+      "samples": 1536,
+      "abstract_matrix_blocks": [
+        6,
+        6
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "dual_hybrid",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 62,
+      "scenario": "Kyber1536-paper-point",
+      "degree": 256,
+      "rank": 6,
+      "n": 1536,
+      "q": 3329,
+      "secret": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "key",
+      "samples": 1536,
+      "abstract_matrix_blocks": [
+        6,
+        6
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "usvp",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 63,
+      "scenario": "Kyber2017-k4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "key",
+      "samples": 1024,
+      "abstract_matrix_blocks": [
+        4,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "bdd",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 64,
+      "scenario": "Kyber2017-k4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "key",
+      "samples": 1024,
+      "abstract_matrix_blocks": [
+        4,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "dual_hybrid",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 65,
+      "scenario": "Kyber2017-k4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "key",
+      "samples": 1024,
+      "abstract_matrix_blocks": [
+        4,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "usvp",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 66,
+      "scenario": "ML-KEM-1024",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 3329,
+      "secret": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "key",
+      "samples": 1024,
+      "abstract_matrix_blocks": [
+        4,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "bdd",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 67,
+      "scenario": "ML-KEM-1024",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 3329,
+      "secret": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "key",
+      "samples": 1024,
+      "abstract_matrix_blocks": [
+        4,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "dual_hybrid",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 68,
+      "scenario": "ML-KEM-1024",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 3329,
+      "secret": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 2
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "key",
+      "samples": 1024,
+      "abstract_matrix_blocks": [
+        4,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "usvp",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 69,
+      "scenario": "R1",
+      "degree": 256,
+      "rank": 6,
+      "n": 1536,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "key",
+      "samples": 1536,
+      "abstract_matrix_blocks": [
+        6,
+        6
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "bdd",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 70,
+      "scenario": "R1",
+      "degree": 256,
+      "rank": 6,
+      "n": 1536,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "key",
+      "samples": 1536,
+      "abstract_matrix_blocks": [
+        6,
+        6
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "dual_hybrid",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 71,
+      "scenario": "R1",
+      "degree": 256,
+      "rank": 6,
+      "n": 1536,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "panel": "before_serialization_LWE_proxy",
+      "sample_budget": "key",
+      "samples": 1536,
+      "abstract_matrix_blocks": [
+        6,
+        6
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "usvp",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 72,
+      "scenario": "Aigis-Enc-mode4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "Gaussian-moments",
+        "mean": {
+          "numerator": 2,
+          "denominator": 7681
+        },
+        "variance": {
+          "numerator": 314675204,
+          "denominator": 58997761
+        }
+      },
+      "panel": "independent_rounding_Gaussian_moment_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1280,
+      "abstract_matrix_blocks": [
+        5,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "bdd",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 73,
+      "scenario": "Aigis-Enc-mode4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "Gaussian-moments",
+        "mean": {
+          "numerator": 2,
+          "denominator": 7681
+        },
+        "variance": {
+          "numerator": 314675204,
+          "denominator": 58997761
+        }
+      },
+      "panel": "independent_rounding_Gaussian_moment_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1280,
+      "abstract_matrix_blocks": [
+        5,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "dual_hybrid",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 74,
+      "scenario": "Aigis-Enc-mode4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "Gaussian-moments",
+        "mean": {
+          "numerator": 2,
+          "denominator": 7681
+        },
+        "variance": {
+          "numerator": 314675204,
+          "denominator": 58997761
+        }
+      },
+      "panel": "independent_rounding_Gaussian_moment_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1280,
+      "abstract_matrix_blocks": [
+        5,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "usvp",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 75,
+      "scenario": "KINDI-512-3-2-1",
+      "degree": 512,
+      "rank": 3,
+      "n": 1536,
+      "q": 8192,
+      "secret": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "error": {
+        "kind": "Gaussian-moments",
+        "mean": {
+          "numerator": -1,
+          "denominator": 1
+        },
+        "variance": {
+          "numerator": 3,
+          "denominator": 2
+        }
+      },
+      "panel": "independent_rounding_Gaussian_moment_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 2048,
+      "abstract_matrix_blocks": [
+        4,
+        3
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "bdd",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 76,
+      "scenario": "KINDI-512-3-2-1",
+      "degree": 512,
+      "rank": 3,
+      "n": 1536,
+      "q": 8192,
+      "secret": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "error": {
+        "kind": "Gaussian-moments",
+        "mean": {
+          "numerator": -1,
+          "denominator": 1
+        },
+        "variance": {
+          "numerator": 3,
+          "denominator": 2
+        }
+      },
+      "panel": "independent_rounding_Gaussian_moment_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 2048,
+      "abstract_matrix_blocks": [
+        4,
+        3
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "dual_hybrid",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 77,
+      "scenario": "KINDI-512-3-2-1",
+      "degree": 512,
+      "rank": 3,
+      "n": 1536,
+      "q": 8192,
+      "secret": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "error": {
+        "kind": "Gaussian-moments",
+        "mean": {
+          "numerator": -1,
+          "denominator": 1
+        },
+        "variance": {
+          "numerator": 3,
+          "denominator": 2
+        }
+      },
+      "panel": "independent_rounding_Gaussian_moment_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 2048,
+      "abstract_matrix_blocks": [
+        4,
+        3
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "usvp",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 78,
+      "scenario": "Kyber2017-k4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "Gaussian-moments",
+        "mean": {
+          "numerator": 2,
+          "denominator": 7681
+        },
+        "variance": {
+          "numerator": 334361603,
+          "denominator": 117995522
+        }
+      },
+      "panel": "independent_rounding_Gaussian_moment_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1280,
+      "abstract_matrix_blocks": [
+        5,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "bdd",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 79,
+      "scenario": "Kyber2017-k4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "Gaussian-moments",
+        "mean": {
+          "numerator": 2,
+          "denominator": 7681
+        },
+        "variance": {
+          "numerator": 334361603,
+          "denominator": 117995522
+        }
+      },
+      "panel": "independent_rounding_Gaussian_moment_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1280,
+      "abstract_matrix_blocks": [
+        5,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "dual_hybrid",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 80,
+      "scenario": "Kyber2017-k4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "Gaussian-moments",
+        "mean": {
+          "numerator": 2,
+          "denominator": 7681
+        },
+        "variance": {
+          "numerator": 334361603,
+          "denominator": 117995522
+        }
+      },
+      "panel": "independent_rounding_Gaussian_moment_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1280,
+      "abstract_matrix_blocks": [
+        5,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "usvp",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 81,
+      "scenario": "Aigis-Enc-mode4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "Gaussian-moments",
+        "mean": {
+          "numerator": 2,
+          "denominator": 7681
+        },
+        "variance": {
+          "numerator": 314675204,
+          "denominator": 58997761
+        }
+      },
+      "panel": "independent_rounding_Gaussian_moment_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1280,
+      "abstract_matrix_blocks": [
+        5,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "bdd",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 82,
+      "scenario": "Aigis-Enc-mode4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "Gaussian-moments",
+        "mean": {
+          "numerator": 2,
+          "denominator": 7681
+        },
+        "variance": {
+          "numerator": 314675204,
+          "denominator": 58997761
+        }
+      },
+      "panel": "independent_rounding_Gaussian_moment_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1280,
+      "abstract_matrix_blocks": [
+        5,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "dual_hybrid",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 83,
+      "scenario": "Aigis-Enc-mode4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "Gaussian-moments",
+        "mean": {
+          "numerator": 2,
+          "denominator": 7681
+        },
+        "variance": {
+          "numerator": 314675204,
+          "denominator": 58997761
+        }
+      },
+      "panel": "independent_rounding_Gaussian_moment_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1280,
+      "abstract_matrix_blocks": [
+        5,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "usvp",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 84,
+      "scenario": "KINDI-512-3-2-1",
+      "degree": 512,
+      "rank": 3,
+      "n": 1536,
+      "q": 8192,
+      "secret": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "error": {
+        "kind": "Gaussian-moments",
+        "mean": {
+          "numerator": -1,
+          "denominator": 1
+        },
+        "variance": {
+          "numerator": 3,
+          "denominator": 2
+        }
+      },
+      "panel": "independent_rounding_Gaussian_moment_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 2048,
+      "abstract_matrix_blocks": [
+        4,
+        3
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "bdd",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 85,
+      "scenario": "KINDI-512-3-2-1",
+      "degree": 512,
+      "rank": 3,
+      "n": 1536,
+      "q": 8192,
+      "secret": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "error": {
+        "kind": "Gaussian-moments",
+        "mean": {
+          "numerator": -1,
+          "denominator": 1
+        },
+        "variance": {
+          "numerator": 3,
+          "denominator": 2
+        }
+      },
+      "panel": "independent_rounding_Gaussian_moment_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 2048,
+      "abstract_matrix_blocks": [
+        4,
+        3
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "dual_hybrid",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 86,
+      "scenario": "KINDI-512-3-2-1",
+      "degree": 512,
+      "rank": 3,
+      "n": 1536,
+      "q": 8192,
+      "secret": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "error": {
+        "kind": "Gaussian-moments",
+        "mean": {
+          "numerator": -1,
+          "denominator": 1
+        },
+        "variance": {
+          "numerator": 3,
+          "denominator": 2
+        }
+      },
+      "panel": "independent_rounding_Gaussian_moment_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 2048,
+      "abstract_matrix_blocks": [
+        4,
+        3
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "usvp",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 87,
+      "scenario": "Kyber2017-k4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "Gaussian-moments",
+        "mean": {
+          "numerator": 2,
+          "denominator": 7681
+        },
+        "variance": {
+          "numerator": 334361603,
+          "denominator": 117995522
+        }
+      },
+      "panel": "independent_rounding_Gaussian_moment_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1280,
+      "abstract_matrix_blocks": [
+        5,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "bdd",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 88,
+      "scenario": "Kyber2017-k4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "Gaussian-moments",
+        "mean": {
+          "numerator": 2,
+          "denominator": 7681
+        },
+        "variance": {
+          "numerator": 334361603,
+          "denominator": 117995522
+        }
+      },
+      "panel": "independent_rounding_Gaussian_moment_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1280,
+      "abstract_matrix_blocks": [
+        5,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "dual_hybrid",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 89,
+      "scenario": "Kyber2017-k4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "Gaussian-moments",
+        "mean": {
+          "numerator": 2,
+          "denominator": 7681
+        },
+        "variance": {
+          "numerator": 334361603,
+          "denominator": 117995522
+        }
+      },
+      "panel": "independent_rounding_Gaussian_moment_proxy",
+      "sample_budget": "ideal_k_plus_1",
+      "samples": 1280,
+      "abstract_matrix_blocks": [
+        5,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "usvp",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 90,
+      "scenario": "Aigis-Enc-mode4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "Gaussian-moments",
+        "mean": {
+          "numerator": 2,
+          "denominator": 7681
+        },
+        "variance": {
+          "numerator": 314675204,
+          "denominator": 58997761
+        }
+      },
+      "panel": "independent_rounding_Gaussian_moment_proxy",
+      "sample_budget": "key",
+      "samples": 1024,
+      "abstract_matrix_blocks": [
+        4,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "bdd",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 91,
+      "scenario": "Aigis-Enc-mode4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "Gaussian-moments",
+        "mean": {
+          "numerator": 2,
+          "denominator": 7681
+        },
+        "variance": {
+          "numerator": 314675204,
+          "denominator": 58997761
+        }
+      },
+      "panel": "independent_rounding_Gaussian_moment_proxy",
+      "sample_budget": "key",
+      "samples": 1024,
+      "abstract_matrix_blocks": [
+        4,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "dual_hybrid",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 92,
+      "scenario": "Aigis-Enc-mode4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "Gaussian-moments",
+        "mean": {
+          "numerator": 2,
+          "denominator": 7681
+        },
+        "variance": {
+          "numerator": 314675204,
+          "denominator": 58997761
+        }
+      },
+      "panel": "independent_rounding_Gaussian_moment_proxy",
+      "sample_budget": "key",
+      "samples": 1024,
+      "abstract_matrix_blocks": [
+        4,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "usvp",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 93,
+      "scenario": "KINDI-512-3-2-1",
+      "degree": 512,
+      "rank": 3,
+      "n": 1536,
+      "q": 8192,
+      "secret": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "error": {
+        "kind": "Gaussian-moments",
+        "mean": {
+          "numerator": -1,
+          "denominator": 1
+        },
+        "variance": {
+          "numerator": 3,
+          "denominator": 2
+        }
+      },
+      "panel": "independent_rounding_Gaussian_moment_proxy",
+      "sample_budget": "key",
+      "samples": 1536,
+      "abstract_matrix_blocks": [
+        3,
+        3
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "bdd",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 94,
+      "scenario": "KINDI-512-3-2-1",
+      "degree": 512,
+      "rank": 3,
+      "n": 1536,
+      "q": 8192,
+      "secret": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "error": {
+        "kind": "Gaussian-moments",
+        "mean": {
+          "numerator": -1,
+          "denominator": 1
+        },
+        "variance": {
+          "numerator": 3,
+          "denominator": 2
+        }
+      },
+      "panel": "independent_rounding_Gaussian_moment_proxy",
+      "sample_budget": "key",
+      "samples": 1536,
+      "abstract_matrix_blocks": [
+        3,
+        3
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "dual_hybrid",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 95,
+      "scenario": "KINDI-512-3-2-1",
+      "degree": 512,
+      "rank": 3,
+      "n": 1536,
+      "q": 8192,
+      "secret": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "error": {
+        "kind": "Gaussian-moments",
+        "mean": {
+          "numerator": -1,
+          "denominator": 1
+        },
+        "variance": {
+          "numerator": 3,
+          "denominator": 2
+        }
+      },
+      "panel": "independent_rounding_Gaussian_moment_proxy",
+      "sample_budget": "key",
+      "samples": 1536,
+      "abstract_matrix_blocks": [
+        3,
+        3
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "usvp",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 96,
+      "scenario": "Kyber2017-k4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "Gaussian-moments",
+        "mean": {
+          "numerator": 2,
+          "denominator": 7681
+        },
+        "variance": {
+          "numerator": 334361603,
+          "denominator": 117995522
+        }
+      },
+      "panel": "independent_rounding_Gaussian_moment_proxy",
+      "sample_budget": "key",
+      "samples": 1024,
+      "abstract_matrix_blocks": [
+        4,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "bdd",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 97,
+      "scenario": "Kyber2017-k4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "Gaussian-moments",
+        "mean": {
+          "numerator": 2,
+          "denominator": 7681
+        },
+        "variance": {
+          "numerator": 334361603,
+          "denominator": 117995522
+        }
+      },
+      "panel": "independent_rounding_Gaussian_moment_proxy",
+      "sample_budget": "key",
+      "samples": 1024,
+      "abstract_matrix_blocks": [
+        4,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "dual_hybrid",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 98,
+      "scenario": "Kyber2017-k4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "Gaussian-moments",
+        "mean": {
+          "numerator": 2,
+          "denominator": 7681
+        },
+        "variance": {
+          "numerator": 334361603,
+          "denominator": 117995522
+        }
+      },
+      "panel": "independent_rounding_Gaussian_moment_proxy",
+      "sample_budget": "key",
+      "samples": 1024,
+      "abstract_matrix_blocks": [
+        4,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "usvp",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 99,
+      "scenario": "Aigis-Enc-mode4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "Gaussian-moments",
+        "mean": {
+          "numerator": 2,
+          "denominator": 7681
+        },
+        "variance": {
+          "numerator": 314675204,
+          "denominator": 58997761
+        }
+      },
+      "panel": "independent_rounding_Gaussian_moment_proxy",
+      "sample_budget": "key",
+      "samples": 1024,
+      "abstract_matrix_blocks": [
+        4,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "bdd",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 100,
+      "scenario": "Aigis-Enc-mode4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "Gaussian-moments",
+        "mean": {
+          "numerator": 2,
+          "denominator": 7681
+        },
+        "variance": {
+          "numerator": 314675204,
+          "denominator": 58997761
+        }
+      },
+      "panel": "independent_rounding_Gaussian_moment_proxy",
+      "sample_budget": "key",
+      "samples": 1024,
+      "abstract_matrix_blocks": [
+        4,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "dual_hybrid",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 101,
+      "scenario": "Aigis-Enc-mode4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "Gaussian-moments",
+        "mean": {
+          "numerator": 2,
+          "denominator": 7681
+        },
+        "variance": {
+          "numerator": 314675204,
+          "denominator": 58997761
+        }
+      },
+      "panel": "independent_rounding_Gaussian_moment_proxy",
+      "sample_budget": "key",
+      "samples": 1024,
+      "abstract_matrix_blocks": [
+        4,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "usvp",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 102,
+      "scenario": "KINDI-512-3-2-1",
+      "degree": 512,
+      "rank": 3,
+      "n": 1536,
+      "q": 8192,
+      "secret": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "error": {
+        "kind": "Gaussian-moments",
+        "mean": {
+          "numerator": -1,
+          "denominator": 1
+        },
+        "variance": {
+          "numerator": 3,
+          "denominator": 2
+        }
+      },
+      "panel": "independent_rounding_Gaussian_moment_proxy",
+      "sample_budget": "key",
+      "samples": 1536,
+      "abstract_matrix_blocks": [
+        3,
+        3
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "bdd",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 103,
+      "scenario": "KINDI-512-3-2-1",
+      "degree": 512,
+      "rank": 3,
+      "n": 1536,
+      "q": 8192,
+      "secret": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "error": {
+        "kind": "Gaussian-moments",
+        "mean": {
+          "numerator": -1,
+          "denominator": 1
+        },
+        "variance": {
+          "numerator": 3,
+          "denominator": 2
+        }
+      },
+      "panel": "independent_rounding_Gaussian_moment_proxy",
+      "sample_budget": "key",
+      "samples": 1536,
+      "abstract_matrix_blocks": [
+        3,
+        3
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "dual_hybrid",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 104,
+      "scenario": "KINDI-512-3-2-1",
+      "degree": 512,
+      "rank": 3,
+      "n": 1536,
+      "q": 8192,
+      "secret": {
+        "kind": "Uniform",
+        "bounds": [
+          -2,
+          1
+        ]
+      },
+      "error": {
+        "kind": "Gaussian-moments",
+        "mean": {
+          "numerator": -1,
+          "denominator": 1
+        },
+        "variance": {
+          "numerator": 3,
+          "denominator": 2
+        }
+      },
+      "panel": "independent_rounding_Gaussian_moment_proxy",
+      "sample_budget": "key",
+      "samples": 1536,
+      "abstract_matrix_blocks": [
+        3,
+        3
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "usvp",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 105,
+      "scenario": "Kyber2017-k4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "Gaussian-moments",
+        "mean": {
+          "numerator": 2,
+          "denominator": 7681
+        },
+        "variance": {
+          "numerator": 334361603,
+          "denominator": 117995522
+        }
+      },
+      "panel": "independent_rounding_Gaussian_moment_proxy",
+      "sample_budget": "key",
+      "samples": 1024,
+      "abstract_matrix_blocks": [
+        4,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "bdd",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 106,
+      "scenario": "Kyber2017-k4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "Gaussian-moments",
+        "mean": {
+          "numerator": 2,
+          "denominator": 7681
+        },
+        "variance": {
+          "numerator": 334361603,
+          "denominator": 117995522
+        }
+      },
+      "panel": "independent_rounding_Gaussian_moment_proxy",
+      "sample_budget": "key",
+      "samples": 1024,
+      "abstract_matrix_blocks": [
+        4,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "dual_hybrid",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    },
+    {
+      "index": 107,
+      "scenario": "Kyber2017-k4",
+      "degree": 256,
+      "rank": 4,
+      "n": 1024,
+      "q": 7681,
+      "secret": {
+        "kind": "CBD",
+        "eta": 3
+      },
+      "error": {
+        "kind": "Gaussian-moments",
+        "mean": {
+          "numerator": 2,
+          "denominator": 7681
+        },
+        "variance": {
+          "numerator": 334361603,
+          "denominator": 117995522
+        }
+      },
+      "panel": "independent_rounding_Gaussian_moment_proxy",
+      "sample_budget": "key",
+      "samples": 1024,
+      "abstract_matrix_blocks": [
+        4,
+        4
+      ],
+      "targets": 1,
+      "leakage_oracle": "none",
+      "memory_cap": null,
+      "exponential_memory_allowed": true,
+      "shape_model": "GSA",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "usvp",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "actual_compressed_scheme_attack_cost": false,
+      "ciphertext_rows_claimed_independent_samples": false
+    }
+  ],
+  "comparison_scope": "Explicit unstructured-LWE heuristic proxies, not total KEM security",
+  "global_security_rating": null
+}

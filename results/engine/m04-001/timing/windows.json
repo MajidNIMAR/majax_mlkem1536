@@ -1,0 +1,275 @@
+{
+  "observations": 16000,
+  "fresh_keys": 8,
+  "classes": 5,
+  "observations_per_key_and_class": 400,
+  "warmups_per_key_and_class": 50,
+  "public_order_seed_hex": "4d30342d54494d45",
+  "outliers_removed": 0,
+  "contrasts": [
+    {
+      "key": 0,
+      "class": "canonical_changed_v",
+      "t": -0.13130430767611131,
+      "mean_difference_ns": -2308.0,
+      "relative_mean_difference": -0.0014651928612477278,
+      "threshold_crossed": false
+    },
+    {
+      "key": 0,
+      "class": "noncanonical_first_u",
+      "t": -0.6859556131392324,
+      "mean_difference_ns": -11675.75,
+      "relative_mean_difference": -0.00741214278583759,
+      "threshold_crossed": false
+    },
+    {
+      "key": 0,
+      "class": "noncanonical_last_u",
+      "t": -0.058363305982086444,
+      "mean_difference_ns": -1007.5,
+      "relative_mean_difference": -0.0006395935042058431,
+      "threshold_crossed": false
+    },
+    {
+      "key": 0,
+      "class": "zero",
+      "t": 0.14256405059908814,
+      "mean_difference_ns": 2653.5,
+      "relative_mean_difference": 0.0016845274078513197,
+      "threshold_crossed": false
+    },
+    {
+      "key": 1,
+      "class": "canonical_changed_v",
+      "t": -0.7410094212284419,
+      "mean_difference_ns": -12212.75,
+      "relative_mean_difference": -0.007697600934597258,
+      "threshold_crossed": false
+    },
+    {
+      "key": 1,
+      "class": "noncanonical_first_u",
+      "t": -1.578180027656052,
+      "mean_difference_ns": -25986.0,
+      "relative_mean_difference": -0.01637877283056186,
+      "threshold_crossed": false
+    },
+    {
+      "key": 1,
+      "class": "noncanonical_last_u",
+      "t": -0.2667979207610998,
+      "mean_difference_ns": -4524.75,
+      "relative_mean_difference": -0.0028519145834328013,
+      "threshold_crossed": false
+    },
+    {
+      "key": 1,
+      "class": "zero",
+      "t": -0.5946890297321973,
+      "mean_difference_ns": -9429.75,
+      "relative_mean_difference": -0.005943497771838324,
+      "threshold_crossed": false
+    },
+    {
+      "key": 2,
+      "class": "canonical_changed_v",
+      "t": 0.2442423066077079,
+      "mean_difference_ns": 3059.75,
+      "relative_mean_difference": 0.002179475216416066,
+      "threshold_crossed": false
+    },
+    {
+      "key": 2,
+      "class": "noncanonical_first_u",
+      "t": -0.5301960023289098,
+      "mean_difference_ns": -6779.5,
+      "relative_mean_difference": -0.004829071731250174,
+      "threshold_crossed": false
+    },
+    {
+      "key": 2,
+      "class": "noncanonical_last_u",
+      "t": -0.0749312310801379,
+      "mean_difference_ns": -969.25,
+      "relative_mean_difference": -0.0006904016189267986,
+      "threshold_crossed": false
+    },
+    {
+      "key": 2,
+      "class": "zero",
+      "t": -0.24767217047924273,
+      "mean_difference_ns": -3125.5,
+      "relative_mean_difference": -0.0022263092700084692,
+      "threshold_crossed": false
+    },
+    {
+      "key": 3,
+      "class": "canonical_changed_v",
+      "t": 0.5295731564599027,
+      "mean_difference_ns": 8525.25,
+      "relative_mean_difference": 0.0058495783023717884,
+      "threshold_crossed": false
+    },
+    {
+      "key": 3,
+      "class": "noncanonical_first_u",
+      "t": 0.1213559075845536,
+      "mean_difference_ns": 2354.75,
+      "relative_mean_difference": 0.0016157056400117262,
+      "threshold_crossed": false
+    },
+    {
+      "key": 3,
+      "class": "noncanonical_last_u",
+      "t": 0.04988284531196086,
+      "mean_difference_ns": 769.25,
+      "relative_mean_difference": 0.0005278189037388344,
+      "threshold_crossed": false
+    },
+    {
+      "key": 3,
+      "class": "zero",
+      "t": 0.2658044352909163,
+      "mean_difference_ns": 3980.75,
+      "relative_mean_difference": 0.0027313813468422036,
+      "threshold_crossed": false
+    },
+    {
+      "key": 4,
+      "class": "canonical_changed_v",
+      "t": -0.5022813602253859,
+      "mean_difference_ns": -5416.75,
+      "relative_mean_difference": -0.004009037588589887,
+      "threshold_crossed": false
+    },
+    {
+      "key": 4,
+      "class": "noncanonical_first_u",
+      "t": -1.1743764176032538,
+      "mean_difference_ns": -12791.0,
+      "relative_mean_difference": -0.009466857395237597,
+      "threshold_crossed": false
+    },
+    {
+      "key": 4,
+      "class": "noncanonical_last_u",
+      "t": -0.9505808426008339,
+      "mean_difference_ns": -10165.5,
+      "relative_mean_difference": -0.007523675932396824,
+      "threshold_crossed": false
+    },
+    {
+      "key": 4,
+      "class": "zero",
+      "t": -0.2747459923755726,
+      "mean_difference_ns": -2946.75,
+      "relative_mean_difference": -0.0021809445727008353,
+      "threshold_crossed": false
+    },
+    {
+      "key": 5,
+      "class": "canonical_changed_v",
+      "t": 0.40731583120381937,
+      "mean_difference_ns": 4925.75,
+      "relative_mean_difference": 0.0036246854638394255,
+      "threshold_crossed": false
+    },
+    {
+      "key": 5,
+      "class": "noncanonical_first_u",
+      "t": 0.18180699758895097,
+      "mean_difference_ns": 2216.25,
+      "relative_mean_difference": 0.0016308601043971227,
+      "threshold_crossed": false
+    },
+    {
+      "key": 5,
+      "class": "noncanonical_last_u",
+      "t": 1.1295571292001796,
+      "mean_difference_ns": 15190.25,
+      "relative_mean_difference": 0.011177968505727418,
+      "threshold_crossed": false
+    },
+    {
+      "key": 5,
+      "class": "zero",
+      "t": 1.3175525739641283,
+      "mean_difference_ns": 17816.75,
+      "relative_mean_difference": 0.013110717096454567,
+      "threshold_crossed": false
+    },
+    {
+      "key": 6,
+      "class": "canonical_changed_v",
+      "t": 0.25660142612563624,
+      "mean_difference_ns": 4032.0,
+      "relative_mean_difference": 0.002655926150497871,
+      "threshold_crossed": false
+    },
+    {
+      "key": 6,
+      "class": "noncanonical_first_u",
+      "t": 0.19711302185300947,
+      "mean_difference_ns": 3637.0,
+      "relative_mean_difference": 0.002395734972559711,
+      "threshold_crossed": false
+    },
+    {
+      "key": 6,
+      "class": "noncanonical_last_u",
+      "t": 0.04372814666034929,
+      "mean_difference_ns": 701.75,
+      "relative_mean_difference": 0.00046225103574203396,
+      "threshold_crossed": false
+    },
+    {
+      "key": 6,
+      "class": "zero",
+      "t": 0.22802688458420795,
+      "mean_difference_ns": 3599.0,
+      "relative_mean_difference": 0.0023707039225302176,
+      "threshold_crossed": false
+    },
+    {
+      "key": 7,
+      "class": "canonical_changed_v",
+      "t": -0.36368141033002294,
+      "mean_difference_ns": -4742.75,
+      "relative_mean_difference": -0.003367906554307249,
+      "threshold_crossed": false
+    },
+    {
+      "key": 7,
+      "class": "noncanonical_first_u",
+      "t": 0.4189336968096357,
+      "mean_difference_ns": 6172.75,
+      "relative_mean_difference": 0.004383373608792382,
+      "threshold_crossed": false
+    },
+    {
+      "key": 7,
+      "class": "noncanonical_last_u",
+      "t": 0.0435317183035278,
+      "mean_difference_ns": 599.5,
+      "relative_mean_difference": 0.0004257150343803059,
+      "threshold_crossed": false
+    },
+    {
+      "key": 7,
+      "class": "zero",
+      "t": -0.3884944130642502,
+      "mean_difference_ns": -5207.25,
+      "relative_mean_difference": -0.003697755817809588,
+      "threshold_crossed": false
+    }
+  ],
+  "comparisons": 32,
+  "maximum_absolute_t": 1.578180027656052,
+  "threshold": 4.5,
+  "threshold_crossings": 0,
+  "constant_time_proved": false,
+  "multiple_comparison_control": "none; diagnostic only",
+  "scope": "fixed ciphertext per class and key; finite raw-time observations; environment recorded separately",
+  "input_sha256": "f4faff953f5b8e2b506fcd4ebe950e122d37e8758234e8e6bc8e8b9ed4f2cdc4"
+}

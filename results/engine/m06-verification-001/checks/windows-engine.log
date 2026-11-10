@@ -1,0 +1,12 @@
+{
+  "hashes_verified": 114,
+  "full_binary_inventories_recomputed": 4,
+  "vectors_per_host": 1000,
+  "rejections_per_host": 10000,
+  "mutations_per_host": 10000,
+  "formats_per_host": 20000,
+  "timing_observations_recomputed": 32000,
+  "constant_time_proved": false,
+  "all_copies_erased_proved": false,
+  "full_concrete_CCA_proof": false
+}

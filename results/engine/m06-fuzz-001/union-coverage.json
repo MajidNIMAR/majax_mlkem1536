@@ -1,0 +1,5935 @@
+{
+  "data": [
+    {
+      "files": [
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cmov-0.5.4/src/backends/x86.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 3,
+              "covered": 3,
+              "percent": 100
+            },
+            "instantiations": {
+              "count": 3,
+              "covered": 3,
+              "percent": 100
+            },
+            "lines": {
+              "count": 11,
+              "covered": 11,
+              "percent": 100
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 12,
+              "covered": 12,
+              "notcovered": 0,
+              "percent": 100
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cmov-0.5.4/src/lib.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 2,
+              "covered": 2,
+              "percent": 100
+            },
+            "instantiations": {
+              "count": 2,
+              "covered": 2,
+              "percent": 100
+            },
+            "lines": {
+              "count": 8,
+              "covered": 8,
+              "percent": 100
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 20,
+              "covered": 20,
+              "notcovered": 0,
+              "percent": 100
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cmov-0.5.4/src/slice.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 11,
+              "covered": 10,
+              "percent": 90.9090909090909
+            },
+            "instantiations": {
+              "count": 11,
+              "covered": 10,
+              "percent": 90.9090909090909
+            },
+            "lines": {
+              "count": 92,
+              "covered": 83,
+              "percent": 90.21739130434783
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 190,
+              "covered": 163,
+              "notcovered": 27,
+              "percent": 85.78947368421052
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctutils-0.4.5/src/choice.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 4,
+              "covered": 4,
+              "percent": 100
+            },
+            "instantiations": {
+              "count": 4,
+              "covered": 4,
+              "percent": 100
+            },
+            "lines": {
+              "count": 12,
+              "covered": 12,
+              "percent": 100
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 15,
+              "covered": 15,
+              "notcovered": 0,
+              "percent": 100
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctutils-0.4.5/src/traits/ct_assign.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 3,
+              "covered": 3,
+              "percent": 100
+            },
+            "instantiations": {
+              "count": 3,
+              "covered": 3,
+              "percent": 100
+            },
+            "lines": {
+              "count": 9,
+              "covered": 9,
+              "percent": 100
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 19,
+              "covered": 19,
+              "notcovered": 0,
+              "percent": 100
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctutils-0.4.5/src/traits/ct_eq.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 3,
+              "covered": 3,
+              "percent": 100
+            },
+            "instantiations": {
+              "count": 3,
+              "covered": 3,
+              "percent": 100
+            },
+            "lines": {
+              "count": 11,
+              "covered": 11,
+              "percent": 100
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 19,
+              "covered": 19,
+              "notcovered": 0,
+              "percent": 100
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctutils-0.4.5/src/traits/ct_select.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 2,
+              "covered": 2,
+              "percent": 100
+            },
+            "instantiations": {
+              "count": 2,
+              "covered": 2,
+              "percent": 100
+            },
+            "lines": {
+              "count": 8,
+              "covered": 8,
+              "percent": 100
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 16,
+              "covered": 16,
+              "notcovered": 0,
+              "percent": 100
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/digest-0.11.3/src/digest.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 3,
+              "covered": 3,
+              "percent": 100
+            },
+            "instantiations": {
+              "count": 8,
+              "covered": 8,
+              "percent": 100
+            },
+            "lines": {
+              "count": 9,
+              "covered": 9,
+              "percent": 100
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 12,
+              "covered": 12,
+              "notcovered": 0,
+              "percent": 100
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/digest-0.11.3/src/lib.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 1,
+              "covered": 1,
+              "percent": 100
+            },
+            "instantiations": {
+              "count": 2,
+              "covered": 2,
+              "percent": 100
+            },
+            "lines": {
+              "count": 5,
+              "covered": 5,
+              "percent": 100
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 8,
+              "covered": 8,
+              "notcovered": 0,
+              "percent": 100
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/equivalent-1.0.3/src/lib.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 1,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 1,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 3,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 5,
+              "covered": 0,
+              "notcovered": 5,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.4.3/src/backends/../utils/get_errno.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 1,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 1,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 3,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 4,
+              "covered": 0,
+              "notcovered": 4,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.4.3/src/backends/../utils/lazy_ptr.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 5,
+              "covered": 4,
+              "percent": 80
+            },
+            "instantiations": {
+              "count": 9,
+              "covered": 4,
+              "percent": 44.44444444444444
+            },
+            "lines": {
+              "count": 22,
+              "covered": 19,
+              "percent": 86.36363636363636
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 34,
+              "covered": 30,
+              "notcovered": 4,
+              "percent": 88.23529411764706
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.4.3/src/backends/../utils/sanitizer.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 1,
+              "covered": 1,
+              "percent": 100
+            },
+            "instantiations": {
+              "count": 1,
+              "covered": 1,
+              "percent": 100
+            },
+            "lines": {
+              "count": 3,
+              "covered": 3,
+              "percent": 100
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 3,
+              "covered": 3,
+              "notcovered": 0,
+              "percent": 100
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.4.3/src/backends/../utils/sys_fill_exact.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 1,
+              "covered": 1,
+              "percent": 100
+            },
+            "instantiations": {
+              "count": 2,
+              "covered": 1,
+              "percent": 50
+            },
+            "lines": {
+              "count": 19,
+              "covered": 14,
+              "percent": 73.68421052631578
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 31,
+              "covered": 23,
+              "notcovered": 8,
+              "percent": 74.19354838709677
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.4.3/src/backends/linux_android_with_fallback.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 4,
+              "covered": 3,
+              "percent": 75
+            },
+            "instantiations": {
+              "count": 5,
+              "covered": 3,
+              "percent": 60
+            },
+            "lines": {
+              "count": 29,
+              "covered": 19,
+              "percent": 65.51724137931035
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 50,
+              "covered": 38,
+              "notcovered": 12,
+              "percent": 76
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.4.3/src/backends/use_file.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 8,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 8,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 78,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 126,
+              "covered": 0,
+              "notcovered": 126,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.4.3/src/error.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 8,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 8,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 59,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 94,
+              "covered": 0,
+              "notcovered": 94,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.4.3/src/lib.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 4,
+              "covered": 2,
+              "percent": 50
+            },
+            "instantiations": {
+              "count": 4,
+              "covered": 2,
+              "percent": 50
+            },
+            "lines": {
+              "count": 16,
+              "covered": 9,
+              "percent": 56.25
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 20,
+              "covered": 11,
+              "notcovered": 9,
+              "percent": 55.00000000000001
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.4.3/src/util.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 7,
+              "covered": 2,
+              "percent": 28.57142857142857
+            },
+            "instantiations": {
+              "count": 9,
+              "covered": 2,
+              "percent": 22.22222222222222
+            },
+            "lines": {
+              "count": 35,
+              "covered": 8,
+              "percent": 22.857142857142858
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 61,
+              "covered": 10,
+              "notcovered": 51,
+              "percent": 16.39344262295082
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hashbrown-0.17.1/src/alloc.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 4,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 5,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 22,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 24,
+              "covered": 0,
+              "notcovered": 24,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hashbrown-0.17.1/src/control/bitmask.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 8,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 8,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 33,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 44,
+              "covered": 0,
+              "notcovered": 44,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hashbrown-0.17.1/src/control/group/sse2.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 9,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 9,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 37,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 53,
+              "covered": 0,
+              "notcovered": 53,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hashbrown-0.17.1/src/control/tag.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 7,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 8,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 27,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 45,
+              "covered": 0,
+              "notcovered": 45,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hashbrown-0.17.1/src/lib.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 2,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 2,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 10,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 17,
+              "covered": 0,
+              "notcovered": 17,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hashbrown-0.17.1/src/map.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 213,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 213,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 1103,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 1270,
+              "covered": 0,
+              "notcovered": 1270,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hashbrown-0.17.1/src/raw.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 171,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 266,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 1346,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 1773,
+              "covered": 0,
+              "notcovered": 1773,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hashbrown-0.17.1/src/scopeguard.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 5,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 25,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 20,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 22,
+              "covered": 0,
+              "notcovered": 22,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hashbrown-0.17.1/src/set.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 126,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 126,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 539,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 676,
+              "covered": 0,
+              "notcovered": 676,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hashbrown-0.17.1/src/table.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 128,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 157,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 614,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 648,
+              "covered": 0,
+              "notcovered": 648,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hashbrown-0.17.1/src/util.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 4,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 4,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 16,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 18,
+              "covered": 0,
+              "notcovered": 18,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hybrid-array-0.4.15/src/from_fn.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 6,
+              "covered": 5,
+              "percent": 83.33333333333334
+            },
+            "instantiations": {
+              "count": 10,
+              "covered": 9,
+              "percent": 90
+            },
+            "lines": {
+              "count": 38,
+              "covered": 31,
+              "percent": 81.57894736842105
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 52,
+              "covered": 35,
+              "notcovered": 17,
+              "percent": 67.3076923076923
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hybrid-array-0.4.15/src/lib.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 12,
+              "covered": 9,
+              "percent": 75
+            },
+            "instantiations": {
+              "count": 20,
+              "covered": 14,
+              "percent": 70
+            },
+            "lines": {
+              "count": 34,
+              "covered": 25,
+              "percent": 73.52941176470588
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 38,
+              "covered": 29,
+              "notcovered": 9,
+              "percent": 76.31578947368422
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/indexmap-2.14.2/src/inner.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 32,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 38,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 168,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 300,
+              "covered": 0,
+              "notcovered": 300,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/indexmap-2.14.2/src/inner/entry.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 14,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 14,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 55,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 76,
+              "covered": 0,
+              "notcovered": 76,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/indexmap-2.14.2/src/lib.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 9,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 11,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 33,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 36,
+              "covered": 0,
+              "notcovered": 36,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/indexmap-2.14.2/src/macros.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 2,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 12,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 6,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 9,
+              "covered": 0,
+              "notcovered": 9,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/indexmap-2.14.2/src/map.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 31,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 35,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 144,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 205,
+              "covered": 0,
+              "notcovered": 205,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/indexmap-2.14.2/src/map/entry.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 1,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 1,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 7,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 8,
+              "covered": 0,
+              "notcovered": 8,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/indexmap-2.14.2/src/map/iter.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 7,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 7,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 33,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 23,
+              "covered": 0,
+              "notcovered": 23,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/indexmap-2.14.2/src/map/mutable.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 3,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 3,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 14,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 18,
+              "covered": 0,
+              "notcovered": 18,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/indexmap-2.14.2/src/util.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 1,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 1,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 3,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 3,
+              "covered": 0,
+              "notcovered": 3,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/keccak-0.2.2/src/backends/soft.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 3,
+              "covered": 3,
+              "percent": 100
+            },
+            "instantiations": {
+              "count": 7,
+              "covered": 7,
+              "percent": 100
+            },
+            "lines": {
+              "count": 38,
+              "covered": 38,
+              "percent": 100
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 63,
+              "covered": 63,
+              "notcovered": 0,
+              "percent": 100
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/keccak-0.2.2/src/lib.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 6,
+              "covered": 6,
+              "percent": 100
+            },
+            "instantiations": {
+              "count": 106,
+              "covered": 42,
+              "percent": 39.62264150943396
+            },
+            "lines": {
+              "count": 21,
+              "covered": 21,
+              "percent": 100
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 23,
+              "covered": 23,
+              "notcovered": 0,
+              "percent": 100
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libfuzzer-sys-0.4.13/src/lib.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 12,
+              "covered": 10,
+              "percent": 83.33333333333334
+            },
+            "instantiations": {
+              "count": 15,
+              "covered": 13,
+              "percent": 86.66666666666667
+            },
+            "lines": {
+              "count": 54,
+              "covered": 37,
+              "percent": 68.51851851851852
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 88,
+              "covered": 53,
+              "notcovered": 35,
+              "percent": 60.22727272727273
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 2,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 12,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 12,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 9,
+              "covered": 0,
+              "notcovered": 9,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.228/src/de/ignored_any.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 17,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 17,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 81,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 73,
+              "covered": 0,
+              "notcovered": 73,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.228/src/de/impls.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 203,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 965,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 1270,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 1448,
+              "covered": 0,
+              "notcovered": 1448,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.228/src/de/mod.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 68,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 237,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 386,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 459,
+              "covered": 0,
+              "notcovered": 459,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.228/src/de/value.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 120,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 248,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 673,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 678,
+              "covered": 0,
+              "notcovered": 678,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.228/src/format.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 3,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 3,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 14,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 22,
+              "covered": 0,
+              "notcovered": 22,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.228/src/macros.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 1,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 1114,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 6,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 6,
+              "covered": 0,
+              "notcovered": 6,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.228/src/private/doc.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 3,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 3,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 8,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 6,
+              "covered": 0,
+              "notcovered": 6,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.228/src/private/seed.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 1,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 1,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 5,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 5,
+              "covered": 0,
+              "notcovered": 5,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.228/src/private/size_hint.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 3,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 3,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 17,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 22,
+              "covered": 0,
+              "notcovered": 22,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.228/src/private/string.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 1,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 1,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 3,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 4,
+              "covered": 0,
+              "notcovered": 4,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.228/src/ser/fmt.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 17,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 32,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 90,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 59,
+              "covered": 0,
+              "notcovered": 59,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.228/src/ser/impls.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 44,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 145,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 309,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 408,
+              "covered": 0,
+              "notcovered": 408,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.228/src/ser/mod.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 12,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 22,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 59,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 79,
+              "covered": 0,
+              "notcovered": 79,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_spanned-0.6.9/src/spanned.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 17,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 17,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 90,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 121,
+              "covered": 0,
+              "notcovered": 121,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sha3-0.12.0/src/lib.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 13,
+              "covered": 5,
+              "percent": 38.46153846153847
+            },
+            "instantiations": {
+              "count": 119,
+              "covered": 10,
+              "percent": 8.403361344537815
+            },
+            "lines": {
+              "count": 51,
+              "covered": 18,
+              "percent": 35.294117647058826
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 77,
+              "covered": 30,
+              "notcovered": 47,
+              "percent": 38.961038961038966
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sha3-0.12.0/src/utils.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 5,
+              "covered": 2,
+              "percent": 40
+            },
+            "instantiations": {
+              "count": 21,
+              "covered": 3,
+              "percent": 14.285714285714285
+            },
+            "lines": {
+              "count": 46,
+              "covered": 18,
+              "percent": 39.130434782608695
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 79,
+              "covered": 33,
+              "notcovered": 46,
+              "percent": 41.77215189873418
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/shake-0.1.0/src/lib.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 9,
+              "covered": 9,
+              "percent": 100
+            },
+            "instantiations": {
+              "count": 27,
+              "covered": 27,
+              "percent": 100
+            },
+            "lines": {
+              "count": 43,
+              "covered": 43,
+              "percent": 100
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 57,
+              "covered": 57,
+              "notcovered": 0,
+              "percent": 100
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sponge-cursor-0.1.0/src/lib.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 9,
+              "covered": 7,
+              "percent": 77.77777777777779
+            },
+            "instantiations": {
+              "count": 46,
+              "covered": 29,
+              "percent": 63.04347826086957
+            },
+            "lines": {
+              "count": 108,
+              "covered": 91,
+              "percent": 84.25925925925925
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 162,
+              "covered": 135,
+              "notcovered": 27,
+              "percent": 83.33333333333334
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sponge-cursor-0.1.0/src/u64_le_utils.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 4,
+              "covered": 4,
+              "percent": 100
+            },
+            "instantiations": {
+              "count": 14,
+              "covered": 10,
+              "percent": 71.42857142857143
+            },
+            "lines": {
+              "count": 58,
+              "covered": 44,
+              "percent": 75.86206896551724
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 110,
+              "covered": 68,
+              "notcovered": 42,
+              "percent": 61.81818181818181
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.8.23/src/de.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 20,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 25,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 149,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 161,
+              "covered": 0,
+              "notcovered": 161,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.8.23/src/fmt.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 5,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 5,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 44,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 72,
+              "covered": 0,
+              "notcovered": 72,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.8.23/src/macros.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 3,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 3,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 31,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 52,
+              "covered": 0,
+              "notcovered": 52,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.8.23/src/map.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 49,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 69,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 219,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 234,
+              "covered": 0,
+              "notcovered": 234,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.8.23/src/ser/array.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 10,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 10,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 46,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 60,
+              "covered": 0,
+              "notcovered": 60,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.8.23/src/ser/map.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 11,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 11,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 51,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 65,
+              "covered": 0,
+              "notcovered": 65,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.8.23/src/ser/mod.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 41,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 41,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 282,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 331,
+              "covered": 0,
+              "notcovered": 331,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.8.23/src/ser/ser_value/array.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 10,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 10,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 44,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 54,
+              "covered": 0,
+              "notcovered": 54,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.8.23/src/ser/ser_value/map.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 9,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 9,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 41,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 50,
+              "covered": 0,
+              "notcovered": 50,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.8.23/src/ser/ser_value/mod.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 30,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 30,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 197,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 238,
+              "covered": 0,
+              "notcovered": 238,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.8.23/src/table.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 9,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 9,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 50,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 46,
+              "covered": 0,
+              "notcovered": 46,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml-0.8.23/src/value.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 161,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 177,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 863,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 1060,
+              "covered": 0,
+              "notcovered": 1060,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_datetime-0.6.11/src/datetime.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 58,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 64,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 513,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 733,
+              "covered": 0,
+              "notcovered": 733,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/array.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 44,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 46,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 191,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 262,
+              "covered": 0,
+              "notcovered": 262,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/array_of_tables.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 22,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 22,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 83,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 109,
+              "covered": 0,
+              "notcovered": 109,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/de/array.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 8,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 25,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 46,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 52,
+              "covered": 0,
+              "notcovered": 52,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/de/datetime.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 3,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 17,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 19,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 24,
+              "covered": 0,
+              "notcovered": 24,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/de/key.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 12,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 18,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 91,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 65,
+              "covered": 0,
+              "notcovered": 65,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/de/mod.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 40,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 64,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 196,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 240,
+              "covered": 0,
+              "notcovered": 240,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/de/spanned.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 3,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 14,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 36,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 51,
+              "covered": 0,
+              "notcovered": 51,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/de/table.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 16,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 62,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 136,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 147,
+              "covered": 0,
+              "notcovered": 147,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/de/table_enum.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 7,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 7,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 122,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 171,
+              "covered": 0,
+              "notcovered": 171,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/de/value.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 17,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 49,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 161,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 233,
+              "covered": 0,
+              "notcovered": 233,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/document.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 29,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 31,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 109,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 115,
+              "covered": 0,
+              "notcovered": 115,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/encode.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 18,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 26,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 253,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 574,
+              "covered": 0,
+              "notcovered": 574,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/error.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 15,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 15,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 105,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 192,
+              "covered": 0,
+              "notcovered": 192,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/index.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 21,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 21,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 75,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 144,
+              "covered": 0,
+              "notcovered": 144,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/inline_table.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 104,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 104,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 435,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 658,
+              "covered": 0,
+              "notcovered": 658,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/internal_string.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 20,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 20,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 83,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 83,
+              "covered": 0,
+              "notcovered": 83,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/item.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 54,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 54,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 228,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 342,
+              "covered": 0,
+              "notcovered": 342,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/key.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 58,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 62,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 201,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 265,
+              "covered": 0,
+              "notcovered": 265,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/parser/array.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 4,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 4,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 36,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 80,
+              "covered": 0,
+              "notcovered": 80,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/parser/datetime.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 28,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 32,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 171,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 269,
+              "covered": 0,
+              "notcovered": 269,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/parser/document.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 16,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 34,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 91,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 103,
+              "covered": 0,
+              "notcovered": 103,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/parser/error.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 9,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 9,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 47,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 79,
+              "covered": 0,
+              "notcovered": 79,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/parser/inline_table.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 8,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 8,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 100,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 137,
+              "covered": 0,
+              "notcovered": 137,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/parser/key.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 10,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 10,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 58,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 96,
+              "covered": 0,
+              "notcovered": 96,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/parser/mod.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 13,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 22,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 75,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 122,
+              "covered": 0,
+              "notcovered": 122,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/parser/numbers.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 33,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 33,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 213,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 240,
+              "covered": 0,
+              "notcovered": 240,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/parser/state.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 16,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 18,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 245,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 369,
+              "covered": 0,
+              "notcovered": 369,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/parser/strings.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 32,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 45,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 188,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 309,
+              "covered": 0,
+              "notcovered": 309,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/parser/table.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 8,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 18,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 56,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 56,
+              "covered": 0,
+              "notcovered": 56,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/parser/trivia.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 10,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 10,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 57,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 91,
+              "covered": 0,
+              "notcovered": 91,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/parser/value.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 4,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 4,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 43,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 59,
+              "covered": 0,
+              "notcovered": 59,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/raw_string.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 19,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 19,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 105,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 155,
+              "covered": 0,
+              "notcovered": 155,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/repr.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 33,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 108,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 143,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 208,
+              "covered": 0,
+              "notcovered": 208,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/ser/array.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 10,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 11,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 53,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 67,
+              "covered": 0,
+              "notcovered": 67,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/ser/key.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 28,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 28,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 125,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 86,
+              "covered": 0,
+              "notcovered": 86,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/ser/map.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 83,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 92,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 396,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 444,
+              "covered": 0,
+              "notcovered": 444,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/ser/mod.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 17,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 18,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 72,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 102,
+              "covered": 0,
+              "notcovered": 102,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/ser/pretty.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 6,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 6,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 38,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 56,
+              "covered": 0,
+              "notcovered": 56,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/ser/value.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 30,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 31,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 139,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 146,
+              "covered": 0,
+              "notcovered": 146,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/table.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 102,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 111,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 414,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 616,
+              "covered": 0,
+              "notcovered": 616,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/value.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 41,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 42,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 189,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 291,
+              "covered": 0,
+              "notcovered": 291,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/visit.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 24,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 28,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 108,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 163,
+              "covered": 0,
+              "notcovered": 163,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_edit-0.22.27/src/visit_mut.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 24,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 51,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 108,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 163,
+              "covered": 0,
+              "notcovered": 163,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_write-0.1.2/src/key.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 5,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 6,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 19,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 27,
+              "covered": 0,
+              "notcovered": 27,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_write-0.1.2/src/string.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 28,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 31,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 256,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 302,
+              "covered": 0,
+              "notcovered": 302,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_write-0.1.2/src/value.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 25,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 32,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 137,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 263,
+              "covered": 0,
+              "notcovered": 263,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/toml_write-0.1.2/src/write.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 16,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 28,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 48,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 79,
+              "covered": 0,
+              "notcovered": 79,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/winnow-0.7.15/src/ascii/mod.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 62,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 62,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 504,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 509,
+              "covered": 0,
+              "notcovered": 509,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/winnow-0.7.15/src/binary/bits/mod.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 13,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 13,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 145,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 184,
+              "covered": 0,
+              "notcovered": 184,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/winnow-0.7.15/src/binary/mod.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 103,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 103,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 529,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 516,
+              "covered": 0,
+              "notcovered": 516,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/winnow-0.7.15/src/combinator/branch.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 9,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 95,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 73,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 128,
+              "covered": 0,
+              "notcovered": 128,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/winnow-0.7.15/src/combinator/core.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 24,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 241,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 159,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 163,
+              "covered": 0,
+              "notcovered": 163,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/winnow-0.7.15/src/combinator/debug/mod.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 3,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 284,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 14,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 10,
+              "covered": 0,
+              "notcovered": 10,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/winnow-0.7.15/src/combinator/expression.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 14,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 14,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 180,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 211,
+              "covered": 0,
+              "notcovered": 211,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/winnow-0.7.15/src/combinator/impls.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 36,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 515,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 161,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 324,
+              "covered": 0,
+              "notcovered": 324,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/winnow-0.7.15/src/combinator/multi.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 40,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 208,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 768,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 902,
+              "covered": 0,
+              "notcovered": 902,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/winnow-0.7.15/src/combinator/sequence.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 9,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 53,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 76,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 64,
+              "covered": 0,
+              "notcovered": 64,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/winnow-0.7.15/src/error.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 112,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 187,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 582,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 891,
+              "covered": 0,
+              "notcovered": 891,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/winnow-0.7.15/src/lib.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 3,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 3,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 11,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 9,
+              "covered": 0,
+              "notcovered": 9,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/winnow-0.7.15/src/macros/dispatch.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 1,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 15,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 5,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 9,
+              "covered": 0,
+              "notcovered": 9,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/winnow-0.7.15/src/macros/mod.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 4,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 32,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 16,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 30,
+              "covered": 0,
+              "notcovered": 30,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/winnow-0.7.15/src/parser.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 37,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 773,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 341,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 229,
+              "covered": 0,
+              "notcovered": 229,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/winnow-0.7.15/src/stream/bstr.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 49,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 120,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 172,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 245,
+              "covered": 0,
+              "notcovered": 245,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/winnow-0.7.15/src/stream/bytes.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 51,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 51,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 179,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 258,
+              "covered": 0,
+              "notcovered": 258,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/winnow-0.7.15/src/stream/locating.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 36,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 117,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 113,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 165,
+              "covered": 0,
+              "notcovered": 165,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/winnow-0.7.15/src/stream/mod.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 240,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 336,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 897,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 1416,
+              "covered": 0,
+              "notcovered": 1416,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/winnow-0.7.15/src/stream/partial.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 32,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 32,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 105,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 138,
+              "covered": 0,
+              "notcovered": 138,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/winnow-0.7.15/src/stream/range.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 12,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 12,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 60,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 100,
+              "covered": 0,
+              "notcovered": 100,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/winnow-0.7.15/src/stream/stateful.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 31,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 105,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 96,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 136,
+              "covered": 0,
+              "notcovered": 136,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/winnow-0.7.15/src/stream/token.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 37,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 37,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 124,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 174,
+              "covered": 0,
+              "notcovered": 174,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/winnow-0.7.15/src/token/mod.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 44,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 234,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 335,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 428,
+              "covered": 0,
+              "notcovered": 428,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zeroize-1.9.1/src/lib.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 13,
+              "covered": 13,
+              "percent": 100
+            },
+            "instantiations": {
+              "count": 70,
+              "covered": 65,
+              "percent": 92.85714285714286
+            },
+            "lines": {
+              "count": 60,
+              "covered": 60,
+              "percent": 100
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 85,
+              "covered": 85,
+              "notcovered": 0,
+              "percent": 100
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m06-fuzz-001/source/crates/kem1536/src/dev_kem.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 51,
+              "covered": 50,
+              "percent": 98.0392156862745
+            },
+            "instantiations": {
+              "count": 53,
+              "covered": 52,
+              "percent": 98.11320754716981
+            },
+            "lines": {
+              "count": 363,
+              "covered": 334,
+              "percent": 92.01101928374655
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 730,
+              "covered": 680,
+              "notcovered": 50,
+              "percent": 93.15068493150685
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m06-fuzz-001/source/crates/kem1536/src/engine_poly.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 17,
+              "covered": 14,
+              "percent": 82.35294117647058
+            },
+            "instantiations": {
+              "count": 21,
+              "covered": 18,
+              "percent": 85.71428571428571
+            },
+            "lines": {
+              "count": 120,
+              "covered": 90,
+              "percent": 75
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 189,
+              "covered": 154,
+              "notcovered": 35,
+              "percent": 81.48148148148148
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m06-fuzz-001/source/crates/kem1536/src/lib.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 7,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 7,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 61,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 78,
+              "covered": 0,
+              "notcovered": 78,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m06-fuzz-001/source/crates/kem1536/src/reference_ring.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 10,
+              "covered": 0,
+              "percent": 0
+            },
+            "instantiations": {
+              "count": 10,
+              "covered": 0,
+              "percent": 0
+            },
+            "lines": {
+              "count": 46,
+              "covered": 0,
+              "percent": 0
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 68,
+              "covered": 0,
+              "notcovered": 68,
+              "percent": 0
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m06-fuzz-001/source/crates/kem1536/src/secret_box.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 5,
+              "covered": 5,
+              "percent": 100
+            },
+            "instantiations": {
+              "count": 14,
+              "covered": 10,
+              "percent": 71.42857142857143
+            },
+            "lines": {
+              "count": 15,
+              "covered": 15,
+              "percent": 100
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 17,
+              "covered": 17,
+              "notcovered": 0,
+              "percent": 100
+            }
+          }
+        },
+        {
+          "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m06-fuzz-001/source/fuzz/src/lib.rs",
+          "summary": {
+            "branches": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "functions": {
+              "count": 8,
+              "covered": 8,
+              "percent": 100
+            },
+            "instantiations": {
+              "count": 8,
+              "covered": 8,
+              "percent": 100
+            },
+            "lines": {
+              "count": 114,
+              "covered": 112,
+              "percent": 98.24561403508771
+            },
+            "mcdc": {
+              "count": 0,
+              "covered": 0,
+              "notcovered": 0,
+              "percent": 0
+            },
+            "regions": {
+              "count": 224,
+              "covered": 222,
+              "notcovered": 2,
+              "percent": 99.10714285714286
+            }
+          }
+        }
+      ],
+      "totals": {
+        "branches": {
+          "count": 0,
+          "covered": 0,
+          "notcovered": 0,
+          "percent": 0
+        },
+        "functions": {
+          "count": 4142,
+          "covered": 194,
+          "percent": 4.683727667793336
+        },
+        "instantiations": {
+          "count": 10070,
+          "covered": 367,
+          "percent": 3.644488579940417
+        },
+        "lines": {
+          "count": 23430,
+          "covered": 1205,
+          "percent": 5.142979086641058
+        },
+        "mcdc": {
+          "count": 0,
+          "covered": 0,
+          "notcovered": 0,
+          "percent": 0
+        },
+        "regions": {
+          "count": 30846,
+          "covered": 2083,
+          "notcovered": 28763,
+          "percent": 6.7529015107307275
+        }
+      }
+    }
+  ],
+  "type": "llvm.coverage.json.export",
+  "version": "3.0.1"
+}

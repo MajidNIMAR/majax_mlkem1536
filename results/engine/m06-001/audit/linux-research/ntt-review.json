@@ -1,0 +1,1914 @@
+{
+  "schema": "m06-bounded-ntt-review-v1",
+  "binary_sha256": "e01cdb5c9a067f4a091e6c0ebd323e1b32ca176cc9f6fe74ff2b94bfc414b70a",
+  "platform": "linux",
+  "kind": "research",
+  "helpers": {
+    "kem1536::engine_poly::Polynomial::forward_into": {
+      "body_sha256": "ab370332925bb595319c1e589acdbd4da3586f4ea59a90e8c719f13345918876",
+      "conditional_branches": [
+        {
+          "address": "2ab2cc",
+          "opcode": "jne",
+          "operands": "2ab1e0 <kem1536::engine_poly::Polynomial::forward_into+0x20>"
+        }
+      ],
+      "calls": [
+        {
+          "address": "2ab2dc",
+          "opcode": "jmp",
+          "operands": "2ab8b0 <kem1536::engine_poly::transform>",
+          "target": "kem1536::engine_poly::transform"
+        }
+      ],
+      "indirect_transfers": [],
+      "divisions": 0
+    },
+    "kem1536::engine_poly::NttPolynomial::multiply_add_assign": {
+      "body_sha256": "40d185359c02b14ec8a8996f00360f65cf2f202e342ff32bc28c4f0efa930157",
+      "conditional_branches": [
+        {
+          "address": "2ab8a8",
+          "opcode": "jne",
+          "operands": "2ab720 <kem1536::engine_poly::NttPolynomial::multiply_add_assign+0x30>"
+        }
+      ],
+      "calls": [],
+      "indirect_transfers": [],
+      "divisions": 0
+    },
+    "kem1536::engine_poly::NttPolynomial::inverse_into": {
+      "body_sha256": "e7c0f5552111f503f998e7e74ff898de4a4c03639a8ba5c52bb4cfe9467c279f",
+      "conditional_branches": [
+        {
+          "address": "2ab6db",
+          "opcode": "jne",
+          "operands": "2ab5f0 <kem1536::engine_poly::NttPolynomial::inverse_into+0x40>"
+        }
+      ],
+      "calls": [
+        {
+          "address": "2ab5bf",
+          "opcode": "call",
+          "operands": "*0x96de3(%rip)        # 3423a8 <memcpy@GLIBC_2.14>",
+          "target": "memcpy@GLIBC_2.14"
+        },
+        {
+          "address": "2ab5cf",
+          "opcode": "call",
+          "operands": "2ab8b0 <kem1536::engine_poly::transform>",
+          "target": "kem1536::engine_poly::transform"
+        },
+        {
+          "address": "2ab5bf",
+          "opcode": "call",
+          "operands": "*0x96de3(%rip)        # 3423a8 <memcpy@GLIBC_2.14>",
+          "target": "EXTERNAL:memcpy@GLIBC_2.14"
+        }
+      ],
+      "indirect_transfers": [
+        {
+          "address": "2ab5bf",
+          "opcode": "call",
+          "operands": "*0x96de3(%rip)        # 3423a8 <memcpy@GLIBC_2.14>"
+        }
+      ],
+      "divisions": 0,
+      "direct_copy_contract": {
+        "bytes": 512,
+        "copy_address": "2ab5bf",
+        "inverse_transform_address": "2ab5cf",
+        "source": "borrowed NttPolynomial",
+        "destination": "borrowed Polynomial owner",
+        "temporary_polynomial_return": false
+      }
+    },
+    "kem1536::engine_poly::transform": {
+      "body_sha256": "2fad51ca68e40061507de5cafc8c176c7903bf7e5c8fd07645109b771c2cdba6",
+      "conditional_branches": [
+        {
+          "address": "2ab8d9",
+          "opcode": "je",
+          "operands": "2ab918 <kem1536::engine_poly::transform+0x68>"
+        },
+        {
+          "address": "2ab904",
+          "opcode": "jae",
+          "operands": "2ab8d0 <kem1536::engine_poly::transform+0x20>"
+        },
+        {
+          "address": "2ab983",
+          "opcode": "je",
+          "operands": "2aba75 <kem1536::engine_poly::transform+0x1c5>"
+        },
+        {
+          "address": "2ab994",
+          "opcode": "ja",
+          "operands": "2aba8d <kem1536::engine_poly::transform+0x1dd>"
+        },
+        {
+          "address": "2aba2b",
+          "opcode": "jne",
+          "operands": "2ab980 <kem1536::engine_poly::transform+0xd0>"
+        },
+        {
+          "address": "2aba4c",
+          "opcode": "jb",
+          "operands": "2ab970 <kem1536::engine_poly::transform+0xc0>"
+        },
+        {
+          "address": "2aba60",
+          "opcode": "jne",
+          "operands": "2ab920 <kem1536::engine_poly::transform+0x70>"
+        }
+      ],
+      "calls": [
+        {
+          "address": "2aba87",
+          "opcode": "call",
+          "operands": "*0x96ac3(%rip)        # 342550 <_DYNAMIC+0x408>",
+          "target": "_DYNAMIC"
+        },
+        {
+          "address": "2aba9c",
+          "opcode": "call",
+          "operands": "*0x96aae(%rip)        # 342550 <_DYNAMIC+0x408>",
+          "target": "_DYNAMIC"
+        },
+        {
+          "address": "2aba87",
+          "opcode": "call",
+          "operands": "*0x96ac3(%rip)        # 342550 <_DYNAMIC+0x408>",
+          "target": "core::panicking::panic_bounds_check"
+        },
+        {
+          "address": "2aba9c",
+          "opcode": "call",
+          "operands": "*0x96aae(%rip)        # 342550 <_DYNAMIC+0x408>",
+          "target": "core::panicking::panic_bounds_check"
+        }
+      ],
+      "indirect_transfers": [
+        {
+          "address": "2aba87",
+          "opcode": "call",
+          "operands": "*0x96ac3(%rip)        # 342550 <_DYNAMIC+0x408>"
+        },
+        {
+          "address": "2aba9c",
+          "opcode": "call",
+          "operands": "*0x96aae(%rip)        # 342550 <_DYNAMIC+0x408>"
+        }
+      ],
+      "divisions": 0
+    }
+  },
+  "targeted_owner_storage": {
+    "kem1536::dev_kem::keygen_internal": {
+      "body_sha256": "ac462b03bb18db8c426c92d214f6a72b50ab537eacb09ec7511ab7503d134b5f",
+      "literal_zero_store_loops_before_first_ret": [
+        {
+          "seed_address": "2a3e53",
+          "entry": "2a3e60",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            58,
+            60,
+            62,
+            64,
+            66,
+            68,
+            70,
+            72
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            72,
+            583
+          ]
+        },
+        {
+          "seed_address": "2a4016",
+          "entry": "2a4020",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            58,
+            60,
+            62,
+            64,
+            66,
+            68,
+            70,
+            72
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            72,
+            583
+          ]
+        },
+        {
+          "seed_address": "2a41e6",
+          "entry": "2a41f0",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            58,
+            60,
+            62,
+            64,
+            66,
+            68,
+            70,
+            72
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            72,
+            583
+          ]
+        },
+        {
+          "seed_address": "2a43b6",
+          "entry": "2a43c0",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            58,
+            60,
+            62,
+            64,
+            66,
+            68,
+            70,
+            72
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            72,
+            583
+          ]
+        },
+        {
+          "seed_address": "2a4586",
+          "entry": "2a4590",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            58,
+            60,
+            62,
+            64,
+            66,
+            68,
+            70,
+            72
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            72,
+            583
+          ]
+        },
+        {
+          "seed_address": "2a4756",
+          "entry": "2a4760",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            58,
+            60,
+            62,
+            64,
+            66,
+            68,
+            70,
+            72
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            72,
+            583
+          ]
+        },
+        {
+          "seed_address": "2a48ec",
+          "entry": "2a4900",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            1082,
+            1084,
+            1086,
+            1088,
+            1090,
+            1092,
+            1094,
+            1096
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            1096,
+            1607
+          ]
+        },
+        {
+          "seed_address": "2a495c",
+          "entry": "2a4970",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            570,
+            572,
+            574,
+            576,
+            578,
+            580,
+            582,
+            584
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            584,
+            1095
+          ]
+        },
+        {
+          "seed_address": "2a49cc",
+          "entry": "2a49e0",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            1594,
+            1596,
+            1598,
+            1600,
+            1602,
+            1604,
+            1606,
+            1608
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            1608,
+            2119
+          ]
+        },
+        {
+          "seed_address": "2a4a3c",
+          "entry": "2a4a50",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            2106,
+            2108,
+            2110,
+            2112,
+            2114,
+            2116,
+            2118,
+            2120
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            2120,
+            2631
+          ]
+        },
+        {
+          "seed_address": "2a4aac",
+          "entry": "2a4ac0",
+          "counter_start": 526,
+          "counter_end_exclusive": 1038,
+          "step": 16,
+          "store_offsets": [
+            2106,
+            2108,
+            2110,
+            2112,
+            2114,
+            2116,
+            2118,
+            2120
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            2632,
+            3143
+          ]
+        },
+        {
+          "seed_address": "2a4b1c",
+          "entry": "2a4b30",
+          "counter_start": 1038,
+          "counter_end_exclusive": 1550,
+          "step": 16,
+          "store_offsets": [
+            2106,
+            2108,
+            2110,
+            2112,
+            2114,
+            2116,
+            2118,
+            2120
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            3144,
+            3655
+          ]
+        },
+        {
+          "seed_address": "2a4b8c",
+          "entry": "2a4ba0",
+          "counter_start": 1550,
+          "counter_end_exclusive": 2062,
+          "step": 16,
+          "store_offsets": [
+            2106,
+            2108,
+            2110,
+            2112,
+            2114,
+            2116,
+            2118,
+            2120
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            3656,
+            4167
+          ]
+        },
+        {
+          "seed_address": "2a4bfc",
+          "entry": "2a4c10",
+          "counter_start": 2062,
+          "counter_end_exclusive": 2574,
+          "step": 16,
+          "store_offsets": [
+            2106,
+            2108,
+            2110,
+            2112,
+            2114,
+            2116,
+            2118,
+            2120
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            4168,
+            4679
+          ]
+        },
+        {
+          "seed_address": "2a4c6c",
+          "entry": "2a4c80",
+          "counter_start": 2574,
+          "counter_end_exclusive": 3086,
+          "step": 16,
+          "store_offsets": [
+            2106,
+            2108,
+            2110,
+            2112,
+            2114,
+            2116,
+            2118,
+            2120
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            4680,
+            5191
+          ]
+        },
+        {
+          "seed_address": "2a4cdc",
+          "entry": "2a4cf0",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            5178,
+            5180,
+            5182,
+            5184,
+            5186,
+            5188,
+            5190,
+            5192
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            5192,
+            5703
+          ]
+        },
+        {
+          "seed_address": "2a4d4c",
+          "entry": "2a4d60",
+          "counter_start": 526,
+          "counter_end_exclusive": 1038,
+          "step": 16,
+          "store_offsets": [
+            5178,
+            5180,
+            5182,
+            5184,
+            5186,
+            5188,
+            5190,
+            5192
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            5704,
+            6215
+          ]
+        },
+        {
+          "seed_address": "2a4dbc",
+          "entry": "2a4dd0",
+          "counter_start": 1038,
+          "counter_end_exclusive": 1550,
+          "step": 16,
+          "store_offsets": [
+            5178,
+            5180,
+            5182,
+            5184,
+            5186,
+            5188,
+            5190,
+            5192
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            6216,
+            6727
+          ]
+        },
+        {
+          "seed_address": "2a4e2c",
+          "entry": "2a4e40",
+          "counter_start": 1550,
+          "counter_end_exclusive": 2062,
+          "step": 16,
+          "store_offsets": [
+            5178,
+            5180,
+            5182,
+            5184,
+            5186,
+            5188,
+            5190,
+            5192
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            6728,
+            7239
+          ]
+        },
+        {
+          "seed_address": "2a4e9c",
+          "entry": "2a4eb0",
+          "counter_start": 2062,
+          "counter_end_exclusive": 2574,
+          "step": 16,
+          "store_offsets": [
+            5178,
+            5180,
+            5182,
+            5184,
+            5186,
+            5188,
+            5190,
+            5192
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            7240,
+            7751
+          ]
+        },
+        {
+          "seed_address": "2a4f0c",
+          "entry": "2a4f20",
+          "counter_start": 2574,
+          "counter_end_exclusive": 3086,
+          "step": 16,
+          "store_offsets": [
+            5178,
+            5180,
+            5182,
+            5184,
+            5186,
+            5188,
+            5190,
+            5192
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            7752,
+            8263
+          ]
+        },
+        {
+          "seed_address": "2a5030",
+          "entry": "2a5040",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            8250,
+            8252,
+            8254,
+            8256,
+            8258,
+            8260,
+            8262,
+            8264
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            8264,
+            8775
+          ]
+        },
+        {
+          "seed_address": "2a509c",
+          "entry": "2a50b0",
+          "counter_start": 526,
+          "counter_end_exclusive": 1038,
+          "step": 16,
+          "store_offsets": [
+            8250,
+            8252,
+            8254,
+            8256,
+            8258,
+            8260,
+            8262,
+            8264
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            8776,
+            9287
+          ]
+        },
+        {
+          "seed_address": "2a510c",
+          "entry": "2a5120",
+          "counter_start": 1038,
+          "counter_end_exclusive": 1550,
+          "step": 16,
+          "store_offsets": [
+            8250,
+            8252,
+            8254,
+            8256,
+            8258,
+            8260,
+            8262,
+            8264
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            9288,
+            9799
+          ]
+        },
+        {
+          "seed_address": "2a517c",
+          "entry": "2a5190",
+          "counter_start": 1550,
+          "counter_end_exclusive": 2062,
+          "step": 16,
+          "store_offsets": [
+            8250,
+            8252,
+            8254,
+            8256,
+            8258,
+            8260,
+            8262,
+            8264
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            9800,
+            10311
+          ]
+        },
+        {
+          "seed_address": "2a51ec",
+          "entry": "2a5200",
+          "counter_start": 2062,
+          "counter_end_exclusive": 2574,
+          "step": 16,
+          "store_offsets": [
+            8250,
+            8252,
+            8254,
+            8256,
+            8258,
+            8260,
+            8262,
+            8264
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            10312,
+            10823
+          ]
+        },
+        {
+          "seed_address": "2a525c",
+          "entry": "2a5270",
+          "counter_start": 2574,
+          "counter_end_exclusive": 3086,
+          "step": 16,
+          "store_offsets": [
+            8250,
+            8252,
+            8254,
+            8256,
+            8258,
+            8260,
+            8262,
+            8264
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            10824,
+            11335
+          ]
+        }
+      ],
+      "targeted_owners": [
+        {
+          "label": "transformed_s",
+          "bytes": 3072,
+          "manually_reviewed_stack_interval_inclusive": [
+            5192,
+            8263
+          ]
+        },
+        {
+          "label": "keygen_sum",
+          "bytes": 512,
+          "manually_reviewed_stack_interval_inclusive": [
+            584,
+            1095
+          ]
+        }
+      ],
+      "owner_identity_basis": "manual source/call-argument trace for this exact frozen binary",
+      "control_flow_and_all_owner_lifetimes_proved": false
+    },
+    "_ZN7kem15367dev_kem16pke_encrypt_into17h293a05237cd29bf3E.llvm.853666414717446541": {
+      "body_sha256": "b1ecab79201f741ae8836ce1f8e6a5c59e285fe2abe4ec58cf61f684080d2710",
+      "literal_zero_store_loops_before_first_ret": [
+        {
+          "seed_address": "2a6f44",
+          "entry": "2a6f50",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            10,
+            12,
+            14,
+            16,
+            18,
+            20,
+            22,
+            24
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            24,
+            535
+          ]
+        },
+        {
+          "seed_address": "2a7107",
+          "entry": "2a7110",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            10,
+            12,
+            14,
+            16,
+            18,
+            20,
+            22,
+            24
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            24,
+            535
+          ]
+        },
+        {
+          "seed_address": "2a72c7",
+          "entry": "2a72d0",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            10,
+            12,
+            14,
+            16,
+            18,
+            20,
+            22,
+            24
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            24,
+            535
+          ]
+        },
+        {
+          "seed_address": "2a7487",
+          "entry": "2a7490",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            10,
+            12,
+            14,
+            16,
+            18,
+            20,
+            22,
+            24
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            24,
+            535
+          ]
+        },
+        {
+          "seed_address": "2a7647",
+          "entry": "2a7650",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            10,
+            12,
+            14,
+            16,
+            18,
+            20,
+            22,
+            24
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            24,
+            535
+          ]
+        },
+        {
+          "seed_address": "2a7807",
+          "entry": "2a7810",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            10,
+            12,
+            14,
+            16,
+            18,
+            20,
+            22,
+            24
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            24,
+            535
+          ]
+        },
+        {
+          "seed_address": "2a7ee0",
+          "entry": "2a7ef0",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            10,
+            12,
+            14,
+            16,
+            18,
+            20,
+            22,
+            24
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            24,
+            535
+          ]
+        },
+        {
+          "seed_address": "2a7f34",
+          "entry": "2a7f40",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            2570,
+            2572,
+            2574,
+            2576,
+            2578,
+            2580,
+            2582,
+            2584
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            2584,
+            3095
+          ]
+        },
+        {
+          "seed_address": "2a7f9c",
+          "entry": "2a7fb0",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            2058,
+            2060,
+            2062,
+            2064,
+            2066,
+            2068,
+            2070,
+            2072
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            2072,
+            2583
+          ]
+        },
+        {
+          "seed_address": "2a800c",
+          "entry": "2a8020",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            1034,
+            1036,
+            1038,
+            1040,
+            1042,
+            1044,
+            1046,
+            1048
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            1048,
+            1559
+          ]
+        },
+        {
+          "seed_address": "2a807c",
+          "entry": "2a8090",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            522,
+            524,
+            526,
+            528,
+            530,
+            532,
+            534,
+            536
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            536,
+            1047
+          ]
+        },
+        {
+          "seed_address": "2a80ec",
+          "entry": "2a8100",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            1546,
+            1548,
+            1550,
+            1552,
+            1554,
+            1556,
+            1558,
+            1560
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            1560,
+            2071
+          ]
+        },
+        {
+          "seed_address": "2a815c",
+          "entry": "2a8170",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            3594,
+            3596,
+            3598,
+            3600,
+            3602,
+            3604,
+            3606,
+            3608
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            3608,
+            4119
+          ]
+        },
+        {
+          "seed_address": "2a81cc",
+          "entry": "2a81e0",
+          "counter_start": 526,
+          "counter_end_exclusive": 1038,
+          "step": 16,
+          "store_offsets": [
+            3594,
+            3596,
+            3598,
+            3600,
+            3602,
+            3604,
+            3606,
+            3608
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            4120,
+            4631
+          ]
+        },
+        {
+          "seed_address": "2a823c",
+          "entry": "2a8250",
+          "counter_start": 1038,
+          "counter_end_exclusive": 1550,
+          "step": 16,
+          "store_offsets": [
+            3594,
+            3596,
+            3598,
+            3600,
+            3602,
+            3604,
+            3606,
+            3608
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            4632,
+            5143
+          ]
+        },
+        {
+          "seed_address": "2a82ac",
+          "entry": "2a82c0",
+          "counter_start": 1550,
+          "counter_end_exclusive": 2062,
+          "step": 16,
+          "store_offsets": [
+            3594,
+            3596,
+            3598,
+            3600,
+            3602,
+            3604,
+            3606,
+            3608
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            5144,
+            5655
+          ]
+        },
+        {
+          "seed_address": "2a831c",
+          "entry": "2a8330",
+          "counter_start": 2062,
+          "counter_end_exclusive": 2574,
+          "step": 16,
+          "store_offsets": [
+            3594,
+            3596,
+            3598,
+            3600,
+            3602,
+            3604,
+            3606,
+            3608
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            5656,
+            6167
+          ]
+        },
+        {
+          "seed_address": "2a838c",
+          "entry": "2a83a0",
+          "counter_start": 2574,
+          "counter_end_exclusive": 3086,
+          "step": 16,
+          "store_offsets": [
+            3594,
+            3596,
+            3598,
+            3600,
+            3602,
+            3604,
+            3606,
+            3608
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            6168,
+            6679
+          ]
+        },
+        {
+          "seed_address": "2a83fc",
+          "entry": "2a8410",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            3082,
+            3084,
+            3086,
+            3088,
+            3090,
+            3092,
+            3094,
+            3096
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            3096,
+            3607
+          ]
+        },
+        {
+          "seed_address": "2a846c",
+          "entry": "2a8480",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            6666,
+            6668,
+            6670,
+            6672,
+            6674,
+            6676,
+            6678,
+            6680
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            6680,
+            7191
+          ]
+        },
+        {
+          "seed_address": "2a84dc",
+          "entry": "2a84f0",
+          "counter_start": 526,
+          "counter_end_exclusive": 1038,
+          "step": 16,
+          "store_offsets": [
+            6666,
+            6668,
+            6670,
+            6672,
+            6674,
+            6676,
+            6678,
+            6680
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            7192,
+            7703
+          ]
+        },
+        {
+          "seed_address": "2a854c",
+          "entry": "2a8560",
+          "counter_start": 1038,
+          "counter_end_exclusive": 1550,
+          "step": 16,
+          "store_offsets": [
+            6666,
+            6668,
+            6670,
+            6672,
+            6674,
+            6676,
+            6678,
+            6680
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            7704,
+            8215
+          ]
+        },
+        {
+          "seed_address": "2a85bc",
+          "entry": "2a85d0",
+          "counter_start": 1550,
+          "counter_end_exclusive": 2062,
+          "step": 16,
+          "store_offsets": [
+            6666,
+            6668,
+            6670,
+            6672,
+            6674,
+            6676,
+            6678,
+            6680
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            8216,
+            8727
+          ]
+        },
+        {
+          "seed_address": "2a862c",
+          "entry": "2a8640",
+          "counter_start": 2062,
+          "counter_end_exclusive": 2574,
+          "step": 16,
+          "store_offsets": [
+            6666,
+            6668,
+            6670,
+            6672,
+            6674,
+            6676,
+            6678,
+            6680
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            8728,
+            9239
+          ]
+        },
+        {
+          "seed_address": "2a869c",
+          "entry": "2a86b0",
+          "counter_start": 2574,
+          "counter_end_exclusive": 3086,
+          "step": 16,
+          "store_offsets": [
+            6666,
+            6668,
+            6670,
+            6672,
+            6674,
+            6676,
+            6678,
+            6680
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            9240,
+            9751
+          ]
+        },
+        {
+          "seed_address": "2a870c",
+          "entry": "2a8720",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            9738,
+            9740,
+            9742,
+            9744,
+            9746,
+            9748,
+            9750,
+            9752
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            9752,
+            10263
+          ]
+        },
+        {
+          "seed_address": "2a877c",
+          "entry": "2a8790",
+          "counter_start": 526,
+          "counter_end_exclusive": 1038,
+          "step": 16,
+          "store_offsets": [
+            9738,
+            9740,
+            9742,
+            9744,
+            9746,
+            9748,
+            9750,
+            9752
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            10264,
+            10775
+          ]
+        },
+        {
+          "seed_address": "2a87ec",
+          "entry": "2a8800",
+          "counter_start": 1038,
+          "counter_end_exclusive": 1550,
+          "step": 16,
+          "store_offsets": [
+            9738,
+            9740,
+            9742,
+            9744,
+            9746,
+            9748,
+            9750,
+            9752
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            10776,
+            11287
+          ]
+        },
+        {
+          "seed_address": "2a885c",
+          "entry": "2a8870",
+          "counter_start": 1550,
+          "counter_end_exclusive": 2062,
+          "step": 16,
+          "store_offsets": [
+            9738,
+            9740,
+            9742,
+            9744,
+            9746,
+            9748,
+            9750,
+            9752
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            11288,
+            11799
+          ]
+        },
+        {
+          "seed_address": "2a88cc",
+          "entry": "2a88e0",
+          "counter_start": 2062,
+          "counter_end_exclusive": 2574,
+          "step": 16,
+          "store_offsets": [
+            9738,
+            9740,
+            9742,
+            9744,
+            9746,
+            9748,
+            9750,
+            9752
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            11800,
+            12311
+          ]
+        },
+        {
+          "seed_address": "2a893c",
+          "entry": "2a8950",
+          "counter_start": 2574,
+          "counter_end_exclusive": 3086,
+          "step": 16,
+          "store_offsets": [
+            9738,
+            9740,
+            9742,
+            9744,
+            9746,
+            9748,
+            9750,
+            9752
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            12312,
+            12823
+          ]
+        }
+      ],
+      "targeted_owners": [
+        {
+          "label": "transformed_r",
+          "bytes": 3072,
+          "manually_reviewed_stack_interval_inclusive": [
+            6680,
+            9751
+          ]
+        },
+        {
+          "label": "encryption_sum",
+          "bytes": 512,
+          "manually_reviewed_stack_interval_inclusive": [
+            536,
+            1047
+          ]
+        },
+        {
+          "label": "noise_randomness",
+          "bytes": 512,
+          "manually_reviewed_stack_interval_inclusive": [
+            3096,
+            3607
+          ]
+        }
+      ],
+      "owner_identity_basis": "manual source/call-argument trace for this exact frozen binary",
+      "control_flow_and_all_owner_lifetimes_proved": false
+    },
+    "kem1536::dev_kem::pke_decrypt": {
+      "body_sha256": "c3331041b1c6bd21228be3659538bd834865de0b46f2e1d3995d62a6f2688aee",
+      "literal_zero_store_loops_before_first_ret": [
+        {
+          "seed_address": "2a306a",
+          "entry": "2a3070",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            26,
+            28,
+            30,
+            32,
+            34,
+            36,
+            38,
+            40
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            40,
+            551
+          ]
+        },
+        {
+          "seed_address": "2a30b4",
+          "entry": "2a30c0",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            538,
+            540,
+            542,
+            544,
+            546,
+            548,
+            550,
+            552
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            552,
+            1063
+          ]
+        },
+        {
+          "seed_address": "2a311c",
+          "entry": "2a3130",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            1562,
+            1564,
+            1566,
+            1568,
+            1570,
+            1572,
+            1574,
+            1576
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            1576,
+            2087
+          ]
+        },
+        {
+          "seed_address": "2a318c",
+          "entry": "2a31a0",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            2074,
+            2076,
+            2078,
+            2080,
+            2082,
+            2084,
+            2086,
+            2088
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            2088,
+            2599
+          ]
+        },
+        {
+          "seed_address": "2a31fc",
+          "entry": "2a3210",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            1050,
+            1052,
+            1054,
+            1056,
+            1058,
+            1060,
+            1062,
+            1064
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            1064,
+            1575
+          ]
+        },
+        {
+          "seed_address": "2a326c",
+          "entry": "2a3280",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            2586,
+            2588,
+            2590,
+            2592,
+            2594,
+            2596,
+            2598,
+            2600
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            2600,
+            3111
+          ]
+        },
+        {
+          "seed_address": "2a32dc",
+          "entry": "2a32f0",
+          "counter_start": 526,
+          "counter_end_exclusive": 1038,
+          "step": 16,
+          "store_offsets": [
+            2586,
+            2588,
+            2590,
+            2592,
+            2594,
+            2596,
+            2598,
+            2600
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            3112,
+            3623
+          ]
+        },
+        {
+          "seed_address": "2a334c",
+          "entry": "2a3360",
+          "counter_start": 1038,
+          "counter_end_exclusive": 1550,
+          "step": 16,
+          "store_offsets": [
+            2586,
+            2588,
+            2590,
+            2592,
+            2594,
+            2596,
+            2598,
+            2600
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            3624,
+            4135
+          ]
+        },
+        {
+          "seed_address": "2a33bc",
+          "entry": "2a33d0",
+          "counter_start": 1550,
+          "counter_end_exclusive": 2062,
+          "step": 16,
+          "store_offsets": [
+            2586,
+            2588,
+            2590,
+            2592,
+            2594,
+            2596,
+            2598,
+            2600
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            4136,
+            4647
+          ]
+        },
+        {
+          "seed_address": "2a342c",
+          "entry": "2a3440",
+          "counter_start": 2062,
+          "counter_end_exclusive": 2574,
+          "step": 16,
+          "store_offsets": [
+            2586,
+            2588,
+            2590,
+            2592,
+            2594,
+            2596,
+            2598,
+            2600
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            4648,
+            5159
+          ]
+        },
+        {
+          "seed_address": "2a349c",
+          "entry": "2a34b0",
+          "counter_start": 2574,
+          "counter_end_exclusive": 3086,
+          "step": 16,
+          "store_offsets": [
+            2586,
+            2588,
+            2590,
+            2592,
+            2594,
+            2596,
+            2598,
+            2600
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            5160,
+            5671
+          ]
+        },
+        {
+          "seed_address": "2a350c",
+          "entry": "2a3520",
+          "counter_start": 14,
+          "counter_end_exclusive": 526,
+          "step": 16,
+          "store_offsets": [
+            5658,
+            5660,
+            5662,
+            5664,
+            5666,
+            5668,
+            5670,
+            5672
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            5672,
+            6183
+          ]
+        },
+        {
+          "seed_address": "2a357c",
+          "entry": "2a3590",
+          "counter_start": 526,
+          "counter_end_exclusive": 1038,
+          "step": 16,
+          "store_offsets": [
+            5658,
+            5660,
+            5662,
+            5664,
+            5666,
+            5668,
+            5670,
+            5672
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            6184,
+            6695
+          ]
+        },
+        {
+          "seed_address": "2a35ec",
+          "entry": "2a3600",
+          "counter_start": 1038,
+          "counter_end_exclusive": 1550,
+          "step": 16,
+          "store_offsets": [
+            5658,
+            5660,
+            5662,
+            5664,
+            5666,
+            5668,
+            5670,
+            5672
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            6696,
+            7207
+          ]
+        },
+        {
+          "seed_address": "2a365c",
+          "entry": "2a3670",
+          "counter_start": 1550,
+          "counter_end_exclusive": 2062,
+          "step": 16,
+          "store_offsets": [
+            5658,
+            5660,
+            5662,
+            5664,
+            5666,
+            5668,
+            5670,
+            5672
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            7208,
+            7719
+          ]
+        },
+        {
+          "seed_address": "2a36cc",
+          "entry": "2a36e0",
+          "counter_start": 2062,
+          "counter_end_exclusive": 2574,
+          "step": 16,
+          "store_offsets": [
+            5658,
+            5660,
+            5662,
+            5664,
+            5666,
+            5668,
+            5670,
+            5672
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            7720,
+            8231
+          ]
+        },
+        {
+          "seed_address": "2a373c",
+          "entry": "2a3750",
+          "counter_start": 2574,
+          "counter_end_exclusive": 3086,
+          "step": 16,
+          "store_offsets": [
+            5658,
+            5660,
+            5662,
+            5664,
+            5666,
+            5668,
+            5670,
+            5672
+          ],
+          "bytes_per_loop_execution": 512,
+          "stack_interval_inclusive": [
+            8232,
+            8743
+          ]
+        }
+      ],
+      "targeted_owners": [
+        {
+          "label": "decrypt_left",
+          "bytes": 512,
+          "manually_reviewed_stack_interval_inclusive": [
+            2088,
+            2599
+          ]
+        },
+        {
+          "label": "decrypt_right",
+          "bytes": 512,
+          "manually_reviewed_stack_interval_inclusive": [
+            1576,
+            2087
+          ]
+        },
+        {
+          "label": "decrypt_sum",
+          "bytes": 512,
+          "manually_reviewed_stack_interval_inclusive": [
+            552,
+            1063
+          ]
+        }
+      ],
+      "owner_identity_basis": "manual source/call-argument trace for this exact frozen binary",
+      "control_flow_and_all_owner_lifetimes_proved": false
+    }
+  },
+  "old_test_product_absent": true,
+  "constant_time_proved": false,
+  "all_secret_owners_erased_proved": false,
+  "all_copies_erased_proved": false,
+  "scope": "literal normal-prefix loop coverage at reviewed owner locations and a short inverse ABI copy trace; no all-path dataflow, spill, register, panic or system-library proof"
+}

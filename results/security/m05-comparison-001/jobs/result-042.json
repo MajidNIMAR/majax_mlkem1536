@@ -1,0 +1,79 @@
+{
+  "job": {
+    "index": 42,
+    "scenario": "Kyber1536-paper-point",
+    "degree": 256,
+    "rank": 6,
+    "n": 1536,
+    "q": 3329,
+    "secret": {
+      "kind": "CBD",
+      "eta": 2
+    },
+    "error": {
+      "kind": "CBD",
+      "eta": 2
+    },
+    "panel": "before_serialization_LWE_proxy",
+    "sample_budget": "key",
+    "samples": 1536,
+    "abstract_matrix_blocks": [
+      6,
+      6
+    ],
+    "targets": 1,
+    "leakage_oracle": "none",
+    "memory_cap": null,
+    "exponential_memory_allowed": true,
+    "shape_model": "GSA",
+    "cost_model": "BCSS23-quantum-asymptotic",
+    "algorithm": "bdd",
+    "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+    "actual_compressed_scheme_attack_cost": false,
+    "ciphertext_rows_claimed_independent_samples": false
+  },
+  "status": "estimated_proxy",
+  "cost": {
+    "rop": "2.33039261195543e107",
+    "red": "8.61841124932620e106",
+    "svp": "1.46855148702281e107",
+    "beta": "1386",
+    "eta": "1388",
+    "d": "2779",
+    "tag": "bdd",
+    "problem": "LWEParameters(n=1536, q=3329, Xs=D(σ=1.00), Xe=D(σ=1.00), m=1536, tag='Kyber1536-paper-point')"
+  },
+  "log2_cost": {
+    "rop": 356.6668791857693,
+    "red": 355.23179999999996,
+    "svp": 356.00069999999994
+  },
+  "success_contract": {
+    "id": "primal_BDD_guess_amplification_0.99",
+    "meaning": "hybrid guessing amplification 0.99 where applicable; geometric success is heuristic",
+    "global_success_certified": false
+  },
+  "input_distribution_repr": {
+    "Xs": "D(σ=1.00)",
+    "Xe": "D(σ=1.00)"
+  },
+  "input_distribution_means": {
+    "Xs": "0",
+    "Xe": "0"
+  },
+  "normalized_parameters_repr": "LWEParameters(n=1536, q=3329, Xs=D(σ=1.00), Xe=D(σ=1.00), m=1536, tag='Kyber1536-paper-point')",
+  "reported_memory_unit": "estimator-native units, not bytes; N is vector count",
+  "cost_is_global_security_lower_bound": false,
+  "quantum_physical_gate_count": null,
+  "sage": "10.7",
+  "python": "3.12.15",
+  "estimator_messages": "",
+  "executing_worker_sha256": "07447605b196070965432c10c260c918f09d7ad0d28d0298e5087084cbf16a8b",
+  "reduction_dimensions": {
+    "beta": 1386,
+    "eta": 1388
+  },
+  "classical_fit_used_beyond_1024": false,
+  "fit_flag_is_not_an_attack_cost_correction": true,
+  "elapsed_seconds": 10.06210863299998
+}

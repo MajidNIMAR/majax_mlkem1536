@@ -1,0 +1,161 @@
+{
+  "created_utc": "2026-11-10T17:57:10.781772+00:00",
+  "platforms": {
+    "windows": {
+      "build_comparisons": {
+        "research": {
+          "byte_identical": false,
+          "comparison_sha256": "df5f3c8ab7ef53ef97a194643cd7ade1aaf0a76c1b3868d14681883df0f32273",
+          "first_metadata": [
+            {
+              "name": "COFF_TimeDateStamp",
+              "offset": 136,
+              "size": 4,
+              "value": 1794332549
+            },
+            {
+              "name": "OptionalHeader_CheckSum",
+              "offset": 216,
+              "size": 4,
+              "value": 5129662
+            }
+          ],
+          "second_metadata": [
+            {
+              "name": "COFF_TimeDateStamp",
+              "offset": 136,
+              "size": 4,
+              "value": 1794333252
+            },
+            {
+              "name": "OptionalHeader_CheckSum",
+              "offset": 216,
+              "size": 4,
+              "value": 5130365
+            }
+          ],
+          "binaries_modified": false
+        },
+        "delivered": {
+          "byte_identical": false,
+          "comparison_sha256": "9351e8e6feeee663e06a75e3dbc8bc3cca4ba5944385f0d9e6af4e1619619c92",
+          "first_metadata": [
+            {
+              "name": "COFF_TimeDateStamp",
+              "offset": 136,
+              "size": 4,
+              "value": 1794332553
+            },
+            {
+              "name": "OptionalHeader_CheckSum",
+              "offset": 216,
+              "size": 4,
+              "value": 5063612
+            }
+          ],
+          "second_metadata": [
+            {
+              "name": "COFF_TimeDateStamp",
+              "offset": 136,
+              "size": 4,
+              "value": 1794333256
+            },
+            {
+              "name": "OptionalHeader_CheckSum",
+              "offset": 216,
+              "size": 4,
+              "value": 5064315
+            }
+          ],
+          "binaries_modified": false
+        },
+        "timing": {
+          "byte_identical": false,
+          "comparison_sha256": "41ae656f8c6ca076fe4eb4e6e91742e6598d1bf643d4d4d2dbd77a10f7e9c28c",
+          "first_metadata": [
+            {
+              "name": "COFF_TimeDateStamp",
+              "offset": 136,
+              "size": 4,
+              "value": 1794332555
+            },
+            {
+              "name": "OptionalHeader_CheckSum",
+              "offset": 216,
+              "size": 4,
+              "value": 2536667
+            }
+          ],
+          "second_metadata": [
+            {
+              "name": "COFF_TimeDateStamp",
+              "offset": 136,
+              "size": 4,
+              "value": 1794333259
+            },
+            {
+              "name": "OptionalHeader_CheckSum",
+              "offset": 216,
+              "size": 4,
+              "value": 2537371
+            }
+          ],
+          "binaries_modified": false
+        }
+      },
+      "self_test_binary_sha256_before": "8afa24959f7ec8e59472938f9569da4f30ef8088d9aa48f4c82baa2e19f11b67",
+      "self_test_binary_sha256_after": "8afa24959f7ec8e59472938f9569da4f30ef8088d9aa48f4c82baa2e19f11b67",
+      "fresh_self_test": {
+        "elapsed_seconds": 0.0392413,
+        "fresh_round_trips": 16,
+        "implicit_rejections_checked": 16,
+        "profile": "KEM1536-DEV-Q7681-R1",
+        "secrets_printed": false,
+        "security_validation": "pending"
+      }
+    },
+    "linux": {
+      "build_comparisons": {
+        "research": {
+          "byte_identical": true,
+          "comparison_sha256": "e01cdb5c9a067f4a091e6c0ebd323e1b32ca176cc9f6fe74ff2b94bfc414b70a",
+          "first_metadata": [],
+          "second_metadata": [],
+          "binaries_modified": false
+        },
+        "delivered": {
+          "byte_identical": true,
+          "comparison_sha256": "eef23ebf6c9b96b14d377d585971a4cbc531d0c58e26654a544abac8133b39ff",
+          "first_metadata": [],
+          "second_metadata": [],
+          "binaries_modified": false
+        },
+        "timing": {
+          "byte_identical": true,
+          "comparison_sha256": "9d405db1f7a8ab1962b6fa66ecc34f31b82a909e4432609d54571261a15a72ee",
+          "first_metadata": [],
+          "second_metadata": [],
+          "binaries_modified": false
+        }
+      },
+      "self_test_binary_sha256_before": "eef23ebf6c9b96b14d377d585971a4cbc531d0c58e26654a544abac8133b39ff",
+      "self_test_binary_sha256_after": "eef23ebf6c9b96b14d377d585971a4cbc531d0c58e26654a544abac8133b39ff",
+      "fresh_self_test": {
+        "elapsed_seconds": 0.047276775,
+        "fresh_round_trips": 16,
+        "implicit_rejections_checked": 16,
+        "profile": "KEM1536-DEV-Q7681-R1",
+        "secrets_printed": false,
+        "security_validation": "pending"
+      }
+    }
+  },
+  "initial_source_capture_scope": "project crates/profiles/configs; external Rust includes omitted",
+  "second_source_capture_scope": "same sources plus literal Rust include_str/include_bytes inputs, captured before rebuild",
+  "all_common_source_bytes_identical": true,
+  "raw_binaries_byte_identical": false,
+  "Windows_comparison_scope": "only COFF timestamp and PE optional-header checksum masked in temporary copies; original bytes retained",
+  "first_builds_json_sha256": "798e2c7d72a711bc9e23307c758913bae22f6acae4118d48cac0be5e09a78cd1",
+  "second_builds_json_sha256": "c54d274530be529f9e8e9cee45d4c69ef808d6c7dbe44a37f9632bf176bb3c77",
+  "independent_cross_host_reproduction_claimed": false
+}

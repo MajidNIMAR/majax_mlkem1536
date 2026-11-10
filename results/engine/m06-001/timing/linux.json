@@ -1,0 +1,275 @@
+{
+  "observations": 16000,
+  "fresh_keys": 8,
+  "classes": 5,
+  "observations_per_key_and_class": 400,
+  "warmups_per_key_and_class": 50,
+  "public_order_seed_hex": "4d30342d54494d45",
+  "outliers_removed": 0,
+  "contrasts": [
+    {
+      "key": 0,
+      "class": "canonical_changed_v",
+      "t": 0.12646577062849573,
+      "mean_difference_ns": 718.5274999999674,
+      "relative_mean_difference": 0.0010205953188731649,
+      "threshold_crossed": false
+    },
+    {
+      "key": 0,
+      "class": "noncanonical_first_u",
+      "t": -0.5690984929004451,
+      "mean_difference_ns": -2279.9124999999767,
+      "relative_mean_difference": -0.003238384090992337,
+      "threshold_crossed": false
+    },
+    {
+      "key": 0,
+      "class": "noncanonical_last_u",
+      "t": -0.7614198651337942,
+      "mean_difference_ns": -3650.9425000000047,
+      "relative_mean_difference": -0.005185792923688047,
+      "threshold_crossed": false
+    },
+    {
+      "key": 0,
+      "class": "zero",
+      "t": 1.2973413291750147,
+      "mean_difference_ns": 11062.714999999967,
+      "relative_mean_difference": 0.015713462801393716,
+      "threshold_crossed": false
+    },
+    {
+      "key": 1,
+      "class": "canonical_changed_v",
+      "t": -0.8252698997359719,
+      "mean_difference_ns": -6572.260000000009,
+      "relative_mean_difference": -0.009386214552749945,
+      "threshold_crossed": false
+    },
+    {
+      "key": 1,
+      "class": "noncanonical_first_u",
+      "t": -0.21686036143002305,
+      "mean_difference_ns": -1884.5100000000093,
+      "relative_mean_difference": -0.0026913748370884388,
+      "threshold_crossed": false
+    },
+    {
+      "key": 1,
+      "class": "noncanonical_last_u",
+      "t": -0.8940068347305058,
+      "mean_difference_ns": -7151.8125,
+      "relative_mean_difference": -0.01021390610931991,
+      "threshold_crossed": false
+    },
+    {
+      "key": 1,
+      "class": "zero",
+      "t": -1.031662407331396,
+      "mean_difference_ns": -8076.627499999944,
+      "relative_mean_difference": -0.011534686481916384,
+      "threshold_crossed": false
+    },
+    {
+      "key": 2,
+      "class": "canonical_changed_v",
+      "t": -0.6309563413931013,
+      "mean_difference_ns": -6513.084999999963,
+      "relative_mean_difference": -0.008804661296920719,
+      "threshold_crossed": false
+    },
+    {
+      "key": 2,
+      "class": "noncanonical_first_u",
+      "t": -0.8207245099037092,
+      "mean_difference_ns": -8156.977499999921,
+      "relative_mean_difference": -0.011026944081660663,
+      "threshold_crossed": false
+    },
+    {
+      "key": 2,
+      "class": "noncanonical_last_u",
+      "t": -0.000976997713386705,
+      "mean_difference_ns": -10.919999999925494,
+      "relative_mean_difference": -1.4762113708283985e-05,
+      "threshold_crossed": false
+    },
+    {
+      "key": 2,
+      "class": "zero",
+      "t": -0.498494829697985,
+      "mean_difference_ns": -4972.089999999967,
+      "relative_mean_difference": -0.006721479665597255,
+      "threshold_crossed": false
+    },
+    {
+      "key": 3,
+      "class": "canonical_changed_v",
+      "t": 0.6201645301692444,
+      "mean_difference_ns": 1341.802500000107,
+      "relative_mean_difference": 0.001954509965076429,
+      "threshold_crossed": false
+    },
+    {
+      "key": 3,
+      "class": "noncanonical_first_u",
+      "t": 0.12609296318398722,
+      "mean_difference_ns": 277.0700000000652,
+      "relative_mean_difference": 0.00040358851323038254,
+      "threshold_crossed": false
+    },
+    {
+      "key": 3,
+      "class": "noncanonical_last_u",
+      "t": 0.7744963699512745,
+      "mean_difference_ns": 5141.6275000000605,
+      "relative_mean_difference": 0.007489449591471414,
+      "threshold_crossed": false
+    },
+    {
+      "key": 3,
+      "class": "zero",
+      "t": 0.9389701593879656,
+      "mean_difference_ns": 9724.722500000033,
+      "relative_mean_difference": 0.014165323908586777,
+      "threshold_crossed": false
+    },
+    {
+      "key": 4,
+      "class": "canonical_changed_v",
+      "t": -0.37973977826966576,
+      "mean_difference_ns": -3749.5374999999767,
+      "relative_mean_difference": -0.00522969598945917,
+      "threshold_crossed": false
+    },
+    {
+      "key": 4,
+      "class": "noncanonical_first_u",
+      "t": -0.851934324396256,
+      "mean_difference_ns": -7773.155000000028,
+      "relative_mean_difference": -0.010841667146666728,
+      "threshold_crossed": false
+    },
+    {
+      "key": 4,
+      "class": "noncanonical_last_u",
+      "t": -0.6923630648924101,
+      "mean_difference_ns": -6403.244999999995,
+      "relative_mean_difference": -0.008930974739157741,
+      "threshold_crossed": false
+    },
+    {
+      "key": 4,
+      "class": "zero",
+      "t": -0.9557868406980043,
+      "mean_difference_ns": -8323.69000000006,
+      "relative_mean_difference": -0.011609530031504415,
+      "threshold_crossed": false
+    },
+    {
+      "key": 5,
+      "class": "canonical_changed_v",
+      "t": 0.0010062956177410926,
+      "mean_difference_ns": 3.362500000046566,
+      "relative_mean_difference": 4.828742715912973e-06,
+      "threshold_crossed": false
+    },
+    {
+      "key": 5,
+      "class": "noncanonical_first_u",
+      "t": 0.3131923482387791,
+      "mean_difference_ns": 1041.9749999999767,
+      "relative_mean_difference": 0.0014963358189869528,
+      "threshold_crossed": false
+    },
+    {
+      "key": 5,
+      "class": "noncanonical_last_u",
+      "t": -0.3351648516951931,
+      "mean_difference_ns": -1117.7624999999534,
+      "relative_mean_difference": -0.0016051710126158223,
+      "threshold_crossed": false
+    },
+    {
+      "key": 5,
+      "class": "zero",
+      "t": 0.8040476648351176,
+      "mean_difference_ns": 2762.8399999999674,
+      "relative_mean_difference": 0.003967596587374895,
+      "threshold_crossed": false
+    },
+    {
+      "key": 6,
+      "class": "canonical_changed_v",
+      "t": 0.18838132736482008,
+      "mean_difference_ns": 738.2475000000559,
+      "relative_mean_difference": 0.0010621848266992371,
+      "threshold_crossed": false
+    },
+    {
+      "key": 6,
+      "class": "noncanonical_first_u",
+      "t": 0.6102449119435477,
+      "mean_difference_ns": 2241.5725000000093,
+      "relative_mean_difference": 0.003225157277804673,
+      "threshold_crossed": false
+    },
+    {
+      "key": 6,
+      "class": "noncanonical_last_u",
+      "t": -0.4535663286113441,
+      "mean_difference_ns": -1634.6699999999255,
+      "relative_mean_difference": -0.0023519506272086685,
+      "threshold_crossed": false
+    },
+    {
+      "key": 6,
+      "class": "zero",
+      "t": 1.0035472709247477,
+      "mean_difference_ns": 5912.2675000000745,
+      "relative_mean_difference": 0.00850652502024949,
+      "threshold_crossed": false
+    },
+    {
+      "key": 7,
+      "class": "canonical_changed_v",
+      "t": 0.13867648637212024,
+      "mean_difference_ns": 815.5050000000047,
+      "relative_mean_difference": 0.0011614033373364778,
+      "threshold_crossed": false
+    },
+    {
+      "key": 7,
+      "class": "noncanonical_first_u",
+      "t": -0.7919828238049995,
+      "mean_difference_ns": -3430.742500000051,
+      "relative_mean_difference": -0.004885899889077477,
+      "threshold_crossed": false
+    },
+    {
+      "key": 7,
+      "class": "noncanonical_last_u",
+      "t": 0.34755493139924226,
+      "mean_difference_ns": 2260.4475000000093,
+      "relative_mean_difference": 0.0032192215502956987,
+      "threshold_crossed": false
+    },
+    {
+      "key": 7,
+      "class": "zero",
+      "t": 1.657925906901661,
+      "mean_difference_ns": 13318.647499999963,
+      "relative_mean_difference": 0.018967782730097308,
+      "threshold_crossed": false
+    }
+  ],
+  "comparisons": 32,
+  "maximum_absolute_t": 1.657925906901661,
+  "threshold": 4.5,
+  "threshold_crossings": 0,
+  "constant_time_proved": false,
+  "multiple_comparison_control": "none; diagnostic only",
+  "scope": "fixed ciphertext per class and key; finite raw-time observations; environment recorded separately",
+  "input_sha256": "1fbb2e42f70b06b5317725141d18447e9e65c7858da506bed6b474b40ce31eb0"
+}

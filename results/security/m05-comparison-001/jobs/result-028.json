@@ -1,0 +1,83 @@
+{
+  "job": {
+    "index": 28,
+    "scenario": "Kyber2017-k4",
+    "degree": 256,
+    "rank": 4,
+    "n": 1024,
+    "q": 7681,
+    "secret": {
+      "kind": "CBD",
+      "eta": 3
+    },
+    "error": {
+      "kind": "CBD",
+      "eta": 3
+    },
+    "panel": "before_serialization_LWE_proxy",
+    "sample_budget": "ideal_k_plus_1",
+    "samples": 1280,
+    "abstract_matrix_blocks": [
+      5,
+      4
+    ],
+    "targets": 1,
+    "leakage_oracle": "none",
+    "memory_cap": null,
+    "exponential_memory_allowed": true,
+    "shape_model": "GSA",
+    "cost_model": "MATZOV-classical",
+    "algorithm": "dual_hybrid",
+    "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+    "actual_compressed_scheme_attack_cost": false,
+    "ciphertext_rows_claimed_independent_samples": false
+  },
+  "status": "estimated_proxy",
+  "cost": {
+    "rop": "2.6241097e76*e^(-5) + 1.83570345559855e76",
+    "problem": "LWEParameters(n=1024, q=7681, Xs=D(σ=1.22), Xe=D(σ=1.22), m=1280, tag='Kyber2017-k4')",
+    "red": "1.83570345559855e76",
+    "guess": "2.6241097e76*e^(-5)",
+    "beta": "792",
+    "p": "4",
+    "zeta": "10",
+    "t": "100",
+    "beta_": "775",
+    "N": "2.49230509442070e48",
+    "m": "1024"
+  },
+  "log2_cost": {
+    "rop": 253.35669747564137,
+    "red": 253.342868232233,
+    "guess": 246.64488804412713,
+    "N": 160.7700292406382
+  },
+  "success_contract": {
+    "id": "MATZOV_Nf_mu_half",
+    "meaning": "MATZOV Nf internal mu=0.5; not a certified 0.99 recovery probability",
+    "global_success_certified": false
+  },
+  "input_distribution_repr": {
+    "Xs": "D(σ=1.22)",
+    "Xe": "D(σ=1.22)"
+  },
+  "input_distribution_means": {
+    "Xs": "0",
+    "Xe": "0"
+  },
+  "normalized_parameters_repr": "LWEParameters(n=1024, q=7681, Xs=D(σ=1.22), Xe=D(σ=1.22), m=1280, tag='Kyber2017-k4')",
+  "reported_memory_unit": "estimator-native units, not bytes; N is vector count",
+  "cost_is_global_security_lower_bound": false,
+  "quantum_physical_gate_count": null,
+  "sage": "10.7",
+  "python": "3.12.15",
+  "estimator_messages": "",
+  "executing_worker_sha256": "07447605b196070965432c10c260c918f09d7ad0d28d0298e5087084cbf16a8b",
+  "reduction_dimensions": {
+    "beta": 792,
+    "beta_": 775
+  },
+  "classical_fit_used_beyond_1024": false,
+  "fit_flag_is_not_an_attack_cost_correction": true,
+  "elapsed_seconds": 37.750036993000094
+}

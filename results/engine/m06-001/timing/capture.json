@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-11-10T17:44:49.248191+00:00",
+  "hosts": {
+    "windows": {
+      "started_utc": "2026-11-10T17:44:19.355228+00:00",
+      "elapsed_seconds": 12.598389200051315,
+      "binary_sha256": "baf688c12736551ee517b6d3565bd9998006a2f968d0be417ebffd3d7e4c846c",
+      "raw_sha256": "797d0335ef8c23a3cebc2145884703aec84d7a80298027c39cfaf7677bb3cb0c",
+      "self_test_sha256": "63a0ed274a82935d6a50dc2228aa22523e84215df194982f02d8eaaceef9e086",
+      "threshold_crossings": 0,
+      "maximum_absolute_t": 1.5591280577951256
+    },
+    "linux": {
+      "started_utc": "2026-11-10T17:44:36.214472+00:00",
+      "elapsed_seconds": 12.90416020003613,
+      "binary_sha256": "9d405db1f7a8ab1962b6fa66ecc34f31b82a909e4432609d54571261a15a72ee",
+      "raw_sha256": "1fbb2e42f70b06b5317725141d18447e9e65c7858da506bed6b474b40ce31eb0",
+      "self_test_sha256": "39cbbd9fa60e7f4f7e34961c62b79b3de541a88fcf2301e1095e001720f8ae0b",
+      "threshold_crossings": 0,
+      "maximum_absolute_t": 1.657925906901661
+    }
+  },
+  "controller_platform": "Windows-11-10.0.26300-SP0",
+  "all_outliers_retained": true,
+  "controller_policy": "sequential hosts; benchmark finished; fuzz/build/regression held until completion",
+  "cpu_frequency_fixed": false,
+  "host_wide_isolation_proved": false,
+  "constant_time_proved": false
+}

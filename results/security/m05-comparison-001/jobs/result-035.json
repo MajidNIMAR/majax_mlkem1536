@@ -1,0 +1,76 @@
+{
+  "job": {
+    "index": 35,
+    "scenario": "R1",
+    "degree": 256,
+    "rank": 6,
+    "n": 1536,
+    "q": 7681,
+    "secret": {
+      "kind": "CBD",
+      "eta": 3
+    },
+    "error": {
+      "kind": "CBD",
+      "eta": 3
+    },
+    "panel": "before_serialization_LWE_proxy",
+    "sample_budget": "ideal_k_plus_1",
+    "samples": 1792,
+    "abstract_matrix_blocks": [
+      7,
+      6
+    ],
+    "targets": 1,
+    "leakage_oracle": "none",
+    "memory_cap": null,
+    "exponential_memory_allowed": true,
+    "shape_model": "GSA",
+    "cost_model": "MATZOV-classical",
+    "algorithm": "usvp",
+    "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+    "actual_compressed_scheme_attack_cost": false,
+    "ciphertext_rows_claimed_independent_samples": false
+  },
+  "status": "estimated_proxy",
+  "cost": {
+    "rop": "1.82672213302064e121",
+    "red": "1.82672213302064e121",
+    "delta": "1.00164504706747",
+    "beta": "1327",
+    "d": "2853",
+    "tag": "usvp",
+    "problem": "LWEParameters(n=1536, q=7681, Xs=D(σ=1.22), Xe=D(σ=1.22), m=1792, tag='R1')"
+  },
+  "log2_cost": {
+    "rop": 402.8225566803057,
+    "red": 402.8225566803057
+  },
+  "success_contract": {
+    "id": "uSVP_GSA_geometric_condition",
+    "meaning": "GSA success predicate; no explicit end-to-end success target in preserved job",
+    "global_success_certified": false
+  },
+  "input_distribution_repr": {
+    "Xs": "D(σ=1.22)",
+    "Xe": "D(σ=1.22)"
+  },
+  "input_distribution_means": {
+    "Xs": "0",
+    "Xe": "0"
+  },
+  "normalized_parameters_repr": "LWEParameters(n=1536, q=7681, Xs=D(σ=1.22), Xe=D(σ=1.22), m=1792, tag='R1')",
+  "reported_memory_unit": "estimator-native units, not bytes; N is vector count",
+  "cost_is_global_security_lower_bound": false,
+  "quantum_physical_gate_count": null,
+  "sage": "10.7",
+  "python": "3.12.15",
+  "estimator_messages": "",
+  "executing_worker_sha256": "07447605b196070965432c10c260c918f09d7ad0d28d0298e5087084cbf16a8b",
+  "reduction_dimensions": {
+    "beta": 1327
+  },
+  "classical_fit_used_beyond_1024": true,
+  "fit_flag_is_not_an_attack_cost_correction": true,
+  "elapsed_seconds": 9.246423246999939
+}

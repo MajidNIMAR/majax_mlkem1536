@@ -1,0 +1,30 @@
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling libc v0.2.191
+   Compiling serde_core v1.0.228
+   Compiling getrandom v0.4.3
+   Compiling serde v1.0.228
+   Compiling generic-array v0.14.7
+   Compiling num-traits v0.2.19
+   Compiling serde_json v1.0.145
+   Compiling crypto-common v0.1.7
+   Compiling block-buffer v0.10.4
+   Compiling digest v0.10.7
+   Compiling module-lattice v0.2.3
+   Compiling sha2 v0.10.9
+   Compiling syn v2.0.119
+   Compiling crypto-common v0.2.2
+   Compiling digest v0.11.3
+   Compiling kem v0.3.0
+   Compiling sha3 v0.12.0
+   Compiling shake v0.1.0
+   Compiling serde_derive v1.0.228
+   Compiling ml-kem v0.3.3
+   Compiling serde_spanned v0.6.9
+   Compiling toml_datetime v0.6.11
+   Compiling kem1024-reference v0.1.0 (/mnt/c/Users/majax/Documents/Codex/NIST/crates/kem1024-reference)
+   Compiling toml_edit v0.22.27
+   Compiling toml v0.8.23
+   Compiling kem1536 v0.1.0 (/mnt/c/Users/majax/Documents/Codex/NIST/crates/kem1536)
+   Compiling kem1536-cli v0.1.0 (/mnt/c/Users/majax/Documents/Codex/NIST/crates/kem1536-cli)
+    Finished `release` profile [optimized] target(s) in 34.11s

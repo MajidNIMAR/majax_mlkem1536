@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-10-25T20:04:51.005377+00:00",
+  "python": "3.13.7",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "consolidator_sha256_normalized_LF": "034fc26d1343813a2a6fe2aacc670cdbc08b5461ddd25fe959c0023025bf4923",
+  "comparison_sha256": "38e6c021df34f33b78ed5240b91702d93bd3958b4548dc53bd22a7d2d91f5d6e",
+  "source_hashes": {
+    "results/j2/run-002/modern-attacks.json": "4941557560f1104da1aba3865c810f83374f2474cd54b5346682f83dbf1297a5",
+    "results/j2/run-002/provenance.json": "f6ef6532f9eeab87282ff9e344c2fad0697c926f1ee63e988aeeed6179728eb4",
+    "results/j2/run-009/study.json": "c1368a2d48c33b76f5972f8db31f656f87889884b69472f0b6a1e2d063d5e6c2",
+    "results/j2/run-009/provenance.json": "88ec18bdc3de52dee16998dc9f1925a66f0e7b49033c969ecc761b05210bb917",
+    "results/j2/run-016/study.json": "382f987a7a942ef28d2720d10946ad38e8a435fcb6425ae361eb2c0d4055b0be",
+    "results/j2/run-016/provenance.json": "b217cf33cf970f566dfa40fac52a0d73c368478ed3c28409d2f82328b37bb070",
+    "results/j2/run-008/study.json": "84ee4419cde7be0214adb82d4fe3a159318bf7a960129c1d332cd5af3fafa545",
+    "results/j2/run-008/provenance.json": "dbe3f4f02afb3c9a3ba9877d8b85c40adc9c990a3b0289b2338c766e1aea15af",
+    "results/j2/run-008/calibration.json": "551acbc2d8e90f95dbc8a6b0d7dc0dabc85816fed83f22271935daf445101b5f",
+    "research/modern-tools-manifest.json": "390423c5cd57cb91cb50b15f1f559b070bdf885f843ddf136427ce49a87523ad",
+    "references/coded-dual-evaluation/manifest.json": "40241b82086f0528ee408014d09b927c51887fc45d700f374e9452b2095efce7"
+  },
+  "no_external_estimator_or_WSL_process_launched": true
+}

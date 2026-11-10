@@ -1,0 +1,103 @@
+{
+  "observations_verified": 60000,
+  "operations_per_version": 3,
+  "sources_verified": true,
+  "descriptive_dispersion": {
+    "baseline/decaps": {
+      "series_median_ns": {
+        "0": 1215657.5,
+        "1": 1205062.5,
+        "2": 1205589.0,
+        "3": 1202393.0,
+        "4": 1210552.5
+      },
+      "q1_ns": 1187459.75,
+      "q3_ns": 1244921.75,
+      "IQR_ns": 57462.0,
+      "posthoc_Tukey_below_q1_minus_1_5_IQR": 0,
+      "posthoc_Tukey_above_q3_plus_1_5_IQR": 781,
+      "maximum_ns": 5256635,
+      "observations_excluded": 0
+    },
+    "baseline/encaps": {
+      "series_median_ns": {
+        "0": 1041726.5,
+        "1": 1051969.0,
+        "2": 1040060.0,
+        "3": 1050811.0,
+        "4": 1043299.5
+      },
+      "q1_ns": 1026773.5,
+      "q3_ns": 1079121.0,
+      "IQR_ns": 52347.5,
+      "posthoc_Tukey_below_q1_minus_1_5_IQR": 0,
+      "posthoc_Tukey_above_q3_plus_1_5_IQR": 1000,
+      "maximum_ns": 8236041,
+      "observations_excluded": 0
+    },
+    "baseline/keygen": {
+      "series_median_ns": {
+        "0": 917564.5,
+        "1": 909482.5,
+        "2": 912204.5,
+        "3": 908973.0,
+        "4": 911422.5
+      },
+      "q1_ns": 898694.25,
+      "q3_ns": 940097.5,
+      "IQR_ns": 41403.25,
+      "posthoc_Tukey_below_q1_minus_1_5_IQR": 0,
+      "posthoc_Tukey_above_q3_plus_1_5_IQR": 772,
+      "maximum_ns": 7230630,
+      "observations_excluded": 0
+    },
+    "candidate/decaps": {
+      "series_median_ns": {
+        "0": 686444.5,
+        "1": 686824.5,
+        "2": 685082.0,
+        "3": 682359.0,
+        "4": 704333.0
+      },
+      "q1_ns": 669745.0,
+      "q3_ns": 709737.5,
+      "IQR_ns": 39992.5,
+      "posthoc_Tukey_below_q1_minus_1_5_IQR": 0,
+      "posthoc_Tukey_above_q3_plus_1_5_IQR": 727,
+      "maximum_ns": 2931790,
+      "observations_excluded": 0
+    },
+    "candidate/encaps": {
+      "series_median_ns": {
+        "0": 544733.5,
+        "1": 569798.5,
+        "2": 562586.5,
+        "3": 559386.5,
+        "4": 560509.0
+      },
+      "q1_ns": 544502.75,
+      "q3_ns": 576743.25,
+      "IQR_ns": 32240.5,
+      "posthoc_Tukey_below_q1_minus_1_5_IQR": 0,
+      "posthoc_Tukey_above_q3_plus_1_5_IQR": 847,
+      "maximum_ns": 3262055,
+      "observations_excluded": 0
+    },
+    "candidate/keygen": {
+      "series_median_ns": {
+        "0": 510854.0,
+        "1": 508388.5,
+        "2": 508941.5,
+        "3": 509124.5,
+        "4": 506429.5
+      },
+      "q1_ns": 494511.75,
+      "q3_ns": 523332.5,
+      "IQR_ns": 28820.75,
+      "posthoc_Tukey_below_q1_minus_1_5_IQR": 7,
+      "posthoc_Tukey_above_q3_plus_1_5_IQR": 761,
+      "maximum_ns": 2757028,
+      "observations_excluded": 0
+    }
+  }
+}

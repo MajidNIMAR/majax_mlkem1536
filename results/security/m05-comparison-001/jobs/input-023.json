@@ -1,0 +1,39 @@
+{
+  "index": 23,
+  "scenario": "KINDI-512-3-2-1",
+  "degree": 512,
+  "rank": 3,
+  "n": 1536,
+  "q": 8192,
+  "secret": {
+    "kind": "Uniform",
+    "bounds": [
+      -2,
+      1
+    ]
+  },
+  "error": {
+    "kind": "Uniform",
+    "bounds": [
+      -2,
+      1
+    ]
+  },
+  "panel": "before_serialization_LWE_proxy",
+  "sample_budget": "ideal_k_plus_1",
+  "samples": 2048,
+  "abstract_matrix_blocks": [
+    4,
+    3
+  ],
+  "targets": 1,
+  "leakage_oracle": "none",
+  "memory_cap": null,
+  "exponential_memory_allowed": true,
+  "shape_model": "GSA",
+  "cost_model": "MATZOV-classical",
+  "algorithm": "usvp",
+  "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+  "actual_compressed_scheme_attack_cost": false,
+  "ciphertext_rows_claimed_independent_samples": false
+}

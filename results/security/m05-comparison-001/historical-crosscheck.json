@@ -1,0 +1,225 @@
+{
+  "snapshot": "run-002",
+  "modern_attacks_sha256": "4941557560f1104da1aba3865c810f83374f2474cd54b5346682f83dbf1297a5",
+  "checks": [
+    {
+      "job_index": 6,
+      "historical_scenario": "p0-1536",
+      "delta_log2_rop": 0.0,
+      "passed": true
+    },
+    {
+      "job_index": 7,
+      "historical_scenario": "p0-1536",
+      "delta_log2_rop": 0.0,
+      "passed": true
+    },
+    {
+      "job_index": 8,
+      "historical_scenario": "p0-1536",
+      "delta_log2_rop": 0.0,
+      "passed": true
+    },
+    {
+      "job_index": 12,
+      "historical_scenario": "baseline-1024",
+      "delta_log2_rop": 0.0,
+      "passed": true
+    },
+    {
+      "job_index": 13,
+      "historical_scenario": "baseline-1024",
+      "delta_log2_rop": 0.0,
+      "passed": true
+    },
+    {
+      "job_index": 14,
+      "historical_scenario": "baseline-1024",
+      "delta_log2_rop": 0.0,
+      "passed": true
+    },
+    {
+      "job_index": 15,
+      "historical_scenario": "q7681-eta3",
+      "delta_log2_rop": 0.0,
+      "passed": true
+    },
+    {
+      "job_index": 16,
+      "historical_scenario": "q7681-eta3",
+      "delta_log2_rop": 0.0,
+      "passed": true
+    },
+    {
+      "job_index": 17,
+      "historical_scenario": "q7681-eta3",
+      "delta_log2_rop": 0.0,
+      "passed": true
+    },
+    {
+      "job_index": 24,
+      "historical_scenario": "p0-1536",
+      "delta_log2_rop": 0.0,
+      "passed": true
+    },
+    {
+      "job_index": 25,
+      "historical_scenario": "p0-1536",
+      "delta_log2_rop": 0.0,
+      "passed": true
+    },
+    {
+      "job_index": 26,
+      "historical_scenario": "p0-1536",
+      "delta_log2_rop": 0.0,
+      "passed": true
+    },
+    {
+      "job_index": 30,
+      "historical_scenario": "baseline-1024",
+      "delta_log2_rop": 0.0,
+      "passed": true
+    },
+    {
+      "job_index": 31,
+      "historical_scenario": "baseline-1024",
+      "delta_log2_rop": 0.0,
+      "passed": true
+    },
+    {
+      "job_index": 32,
+      "historical_scenario": "baseline-1024",
+      "delta_log2_rop": 0.0,
+      "passed": true
+    },
+    {
+      "job_index": 33,
+      "historical_scenario": "q7681-eta3",
+      "delta_log2_rop": 0.0,
+      "passed": true
+    },
+    {
+      "job_index": 34,
+      "historical_scenario": "q7681-eta3",
+      "delta_log2_rop": 0.0,
+      "passed": true
+    },
+    {
+      "job_index": 35,
+      "historical_scenario": "q7681-eta3",
+      "delta_log2_rop": 0.0,
+      "passed": true
+    },
+    {
+      "job_index": 42,
+      "historical_scenario": "p0-1536",
+      "delta_log2_rop": 0.0,
+      "passed": true
+    },
+    {
+      "job_index": 43,
+      "historical_scenario": "p0-1536",
+      "delta_log2_rop": 0.0,
+      "passed": true
+    },
+    {
+      "job_index": 44,
+      "historical_scenario": "p0-1536",
+      "delta_log2_rop": 0.0,
+      "passed": true
+    },
+    {
+      "job_index": 48,
+      "historical_scenario": "baseline-1024",
+      "delta_log2_rop": 0.0,
+      "passed": true
+    },
+    {
+      "job_index": 49,
+      "historical_scenario": "baseline-1024",
+      "delta_log2_rop": 0.0,
+      "passed": true
+    },
+    {
+      "job_index": 50,
+      "historical_scenario": "baseline-1024",
+      "delta_log2_rop": 0.0,
+      "passed": true
+    },
+    {
+      "job_index": 51,
+      "historical_scenario": "q7681-eta3",
+      "delta_log2_rop": 0.0,
+      "passed": true
+    },
+    {
+      "job_index": 52,
+      "historical_scenario": "q7681-eta3",
+      "delta_log2_rop": 0.0,
+      "passed": true
+    },
+    {
+      "job_index": 53,
+      "historical_scenario": "q7681-eta3",
+      "delta_log2_rop": 0.0,
+      "passed": true
+    },
+    {
+      "job_index": 60,
+      "historical_scenario": "p0-1536",
+      "delta_log2_rop": 0.0,
+      "passed": true
+    },
+    {
+      "job_index": 61,
+      "historical_scenario": "p0-1536",
+      "delta_log2_rop": 0.0,
+      "passed": true
+    },
+    {
+      "job_index": 62,
+      "historical_scenario": "p0-1536",
+      "delta_log2_rop": 0.0,
+      "passed": true
+    },
+    {
+      "job_index": 66,
+      "historical_scenario": "baseline-1024",
+      "delta_log2_rop": 0.0,
+      "passed": true
+    },
+    {
+      "job_index": 67,
+      "historical_scenario": "baseline-1024",
+      "delta_log2_rop": 0.0,
+      "passed": true
+    },
+    {
+      "job_index": 68,
+      "historical_scenario": "baseline-1024",
+      "delta_log2_rop": 0.0,
+      "passed": true
+    },
+    {
+      "job_index": 69,
+      "historical_scenario": "q7681-eta3",
+      "delta_log2_rop": 0.0,
+      "passed": true
+    },
+    {
+      "job_index": 70,
+      "historical_scenario": "q7681-eta3",
+      "delta_log2_rop": 0.0,
+      "passed": true
+    },
+    {
+      "job_index": 71,
+      "historical_scenario": "q7681-eta3",
+      "delta_log2_rop": 0.0,
+      "passed": true
+    }
+  ],
+  "points": 36,
+  "all_passed": true,
+  "global_security_rating": null
+}

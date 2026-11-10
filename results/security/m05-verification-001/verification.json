@@ -1,0 +1,50 @@
+{
+  "schema": "m05-integration-verification-v1",
+  "checked_utc": "2026-10-26T14:27:04.485150+00:00",
+  "windows": {
+    "command": ".\\scripts\\dev.ps1 check",
+    "exit_code": 0,
+    "scope": "full project check",
+    "python_tests": 128,
+    "new_m05_tests_included": 13,
+    "fresh_round_trips": 16,
+    "fresh_implicit_rejections": 16
+  },
+  "linux": {
+    "distribution": "Ubuntu-22.04 on WSL2",
+    "python": "3.12.15",
+    "exit_code": 0,
+    "scope": "13 targeted M05 tests and both snapshot verifiers; not a full project check",
+    "commands": [
+      "python -m unittest discover -s research -p test_*m05.py -v",
+      "python -m unittest discover -s research -p test_r1_security_bounds.py -v",
+      "python research/r1_security_bounds.py --verify results/security/m05-cca-001",
+      "python research/compare_experimental_kems_m05.py --verify --output results/security/m05-comparison-001"
+    ],
+    "dev_sh_syntax_check": "passed"
+  },
+  "conditional_security_panels": 6,
+  "comparison_jobs": 108,
+  "historical_crosschecks": 36,
+  "production_engine_changed": false,
+  "formal_constant_time_proof": false,
+  "full_concrete_CCA_proof": false,
+  "new_remote_ci_run": false,
+  "input_sha256_normalized_lf": {
+    "AGENTS.md": "a16bf96cbcfd30d3226afdd029151587698ff237df6866815edd4e29535131f5",
+    "README.md": "0f78bf8d6753c5750a6232ee52d13bfc5d77875cdff2f61e9dde5ca55cff2009",
+    "SECURITY.md": "c7e14cc1eee821b1fd66622877bb88f65ba4ed1ea0cdbb15e950dbc780ec95a0",
+    "scripts/dev.ps1": "2f8322b078e6acfc7385304115ce37faaef065719ce1de3d3421f056c9340e80",
+    "scripts/dev.sh": "8f5b03a4eda0afcce45986faacfc02c398428fd81ee4bcf021727afdec6755db",
+    "research/r1_security_bounds.py": "f53a6c725ff2512e37c731615af3d7ad84b1117ee10728c49258c2b42b6a2d96",
+    "research/test_r1_security_bounds.py": "b4bb3897344b943d567ff30c05b5c5620e506fb7816aeac911522d0a2c633d87",
+    "research/compare_experimental_kems_m05.py": "07447605b196070965432c10c260c918f09d7ad0d28d0298e5087084cbf16a8b",
+    "research/test_compare_experimental_kems_m05.py": "a8deaa069243ee61888d4d8e430d011dc506a89e3a9aa09db5cfca8d42e7b91e",
+    "docs/PROTOCOLE_M05_SECURITE_ET_COMPARAISON.md": "d86a2232fb323ad72103cae8b48e0333889d99e8f025519a689ed843cb39711e",
+    "docs/APPLICABILITE_ATTAQUES_M05.md": "704c60db435cadca81688ce5b25cf4797cceb4c094bf023ec48dc1454f026d2e",
+    "docs/SECURITE_CONCRETE_R1_M05.md": "1631fa755900c09cdc7344a5cda1f47323dadab0484d0b9cade5af012aeb8e0a",
+    "docs/COMPARAISON_EXPERIMENTALE_M05.md": "6434ece9044512bffd5825e6010c4ac66cbec3479811fd29a97729cd0016bd67",
+    "docs/RAPPORT_RECHERCHE.md": "d2ba25fce7157c84a8290aca7e73273146fcda40867b201d73aed5e3ba8782cc",
+    "docs/JOURNAL_RECHERCHE.md": "ccc98408e493b5101453c6e8e827e00c40ef140484630b553b152c03394e49d6"
+  }
+}

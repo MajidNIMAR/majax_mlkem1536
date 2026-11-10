@@ -1,71 +1,233 @@
-"""Export committed project sources into a new standalone public repository tree.
+"""Export committed sources, or update a clean durable public Git checkout.
 
-Never exports ignored caches, live campaigns or the local Git database.
+New trees belong below artifacts/generated/publication/. --sync accepts only an
+existing direct child of publication/ and preserves its Git database and history.
+Both source and public worktrees must be clean, except for ignored local caches.
 Research-only external copies are restored separately by research setup.
 """
 
 import argparse
 import hashlib
 import json
-from pathlib import Path
+import os
+from pathlib import Path, PurePosixPath
+import stat
 import subprocess
-import zipfile
+import tarfile
 
 ROOT = Path(__file__).resolve().parents[1]
+PROVENANCE = "PUBLICATION_PROVENANCE.json"
 EXCLUDED = {
     "AGENTS.md",
-    "PUBLICATION_PROVENANCE.json",
+    PROVENANCE,
+    "docs/NETTOYAGE_ET_ORGANISATION.md",
+    "docs/maintenance/cleanup-001.json",
     "references/coded-dual-audit/optimizer_naive.py.txt",
     "references/coded-dual-audit/rot_utilitaries.py.txt",
     "references/coded-dual-audit/utilitaries.py.txt",
 }
 
 
-def export(destination):
-    destination = destination.resolve()
-    allowed = (ROOT / "artifacts/generated/publication").resolve()
-    if not destination.is_relative_to(allowed) or destination == allowed:
+def git(root, *arguments):
+    return subprocess.check_output(["git", *arguments], cwd=root)
+
+
+def safe_name(name):
+    """Accept portable relative paths, with no aliases of Git's private data."""
+    parts = name.split("/")
+    if not name or PurePosixPath(name).is_absolute() or "\\" in name:
+        raise ValueError(f"unsafe publication path: {name!r}")
+    for part in parts:
+        stem = part.split(".", 1)[0].casefold()
+        reserved = {"con", "prn", "aux", "nul"}
+        device = (stem.startswith(("com", "lpt")) and
+                  stem[3:] in "123456789\u00b9\u00b2\u00b3" and len(stem[3:]) == 1)
+        if (part in {"", ".", ".."} or part.rstrip(" .") != part or
+                part.casefold() == ".git" or part.casefold().startswith("git~") or
+                any(ord(c) < 32 or c in ':<>"|?*' for c in part) or
+                stem in reserved or device):
+            raise ValueError(f"unsafe publication path: {name!r}")
+    return parts
+
+
+def check_path(root, relative=""):
+    """Reject existing symlinks/reparse points and directory/file collisions."""
+    path = root
+    parts = safe_name(relative) if relative else []
+    for position in range(len(parts) + 1):
+        if position:
+            path = path / parts[position - 1]
+        try:
+            info = path.lstat()
+        except FileNotFoundError:
+            continue
+        if stat.S_ISLNK(info.st_mode) or getattr(info, "st_file_attributes", 0) & 0x400:
+            raise ValueError(f"publication paths must not traverse links: {path}")
+        if stat.S_ISREG(info.st_mode) and info.st_nlink > 1:
+            raise ValueError(f"publication files must not be hard links: {path}")
+        if position < len(parts) and not stat.S_ISDIR(info.st_mode):
+            raise ValueError(f"publication parent is not a directory: {path}")
+        if position == len(parts) and not (stat.S_ISDIR(info.st_mode) or
+                                           stat.S_ISREG(info.st_mode)):
+            raise ValueError(f"publication path is not an ordinary file/directory: {path}")
+    return path
+
+
+def clean_head(root, label):
+    actual = Path(os.fsdecode(git(root, "rev-parse", "--show-toplevel")).strip()).resolve()
+    if actual != root.resolve():
+        raise ValueError(f"{label} must be the root of its own Git checkout")
+    if git(root, "status", "--porcelain=v1", "--untracked-files=all"):
+        raise ValueError(f"{label} worktree must be clean (commit tracked/untracked changes first)")
+    return git(root, "rev-parse", "--verify", "HEAD^{commit}").decode("ascii").strip()
+
+
+def inventory(root, commit):
+    files = {}
+    spellings = {}
+    for entry in git(root, "ls-tree", "-r", "-z", "--full-tree", commit).split(b"\0"):
+        if not entry:
+            continue
+        metadata, raw_name = entry.split(b"\t", 1)
+        mode, kind, _ = metadata.split()
+        name = raw_name.decode("utf-8")
+        parts = safe_name(name)
+        if mode not in {b"100644", b"100755"} or kind != b"blob":
+            raise ValueError(f"source/public Git links and special entries are forbidden: {name}")
+        for length in range(1, len(parts) + 1):
+            prefix = "/".join(parts[:length])
+            previous = spellings.setdefault(prefix.casefold(), prefix)
+            if previous != prefix:
+                raise ValueError(f"case-colliding publication paths: {previous}, {prefix}")
+        files[name] = int(mode, 8)
+    return files
+
+
+def prepare(destination, sync):
+    destination = Path(destination)
+    if ".." in destination.parts:
+        raise ValueError("publication destination must not contain traversal components")
+    destination = Path(os.path.abspath(destination))
+    allowed = ROOT / ("publication" if sync else "artifacts/generated/publication")
+    if sync:
+        if destination.parent != allowed:
+            raise ValueError("--sync requires a direct child of publication/")
+    elif destination == allowed or not destination.is_relative_to(allowed):
         raise ValueError("export must be inside artifacts/generated/publication/")
-    if destination.exists():
+    check_path(ROOT, destination.relative_to(ROOT).as_posix())
+    if sync:
+        if not destination.is_dir() or not (destination / ".git").is_dir():
+            raise ValueError("--sync requires an existing standalone Git checkout")
+        # .git is deliberately never passed to the public-file path validator.
+        git_info = (destination / ".git").lstat()
+        if stat.S_ISLNK(git_info.st_mode) or getattr(git_info, "st_file_attributes", 0) & 0x400:
+            raise ValueError("public Git database must not be a link")
+    elif destination.exists():
         raise FileExistsError("refusing to replace an existing publication tree")
-    commit = subprocess.check_output(
-        ["git", "rev-parse", "HEAD"], cwd=ROOT, text=True
-    ).strip()
-    allowed.mkdir(parents=True, exist_ok=True)
-    archive = allowed / f"source-{commit}.zip"
-    if not archive.exists():
-        subprocess.run(
-            ["git", "archive", "--format=zip", f"--output={archive}", commit],
-            cwd=ROOT, check=True,
-        )
+    return destination
+
+
+def stream_snapshot(destination, commit, files):
+    """Stream Git's tar directly to owned files; no ZIP or complete staging copy."""
     hashes = {}
-    destination.mkdir()
-    with zipfile.ZipFile(archive) as snapshot:
-        for member in snapshot.infolist():
-            if member.is_dir() or member.filename in EXCLUDED:
-                continue
-            path = destination / member.filename
-            if not path.resolve().is_relative_to(destination):
-                raise ValueError("invalid archive path")
-            content = snapshot.read(member)
-            path.parent.mkdir(parents=True, exist_ok=True)
-            path.write_bytes(content)
-            hashes[member.filename] = hashlib.sha256(content).hexdigest()
+    process = subprocess.Popen(
+        ["git", "archive", "--format=tar", commit], cwd=ROOT,
+        stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+    )
+    try:
+        with tarfile.open(fileobj=process.stdout, mode="r|") as snapshot:
+            for member in snapshot:
+                name = member.name.rstrip("/") if member.isdir() else member.name
+                safe_name(name)
+                if member.isdir():
+                    continue
+                if not member.isfile() or member.name not in files or member.name in hashes:
+                    raise ValueError(f"unexpected archive entry: {member.name}")
+                if member.name in EXCLUDED:
+                    continue
+                path = check_path(destination, member.name)
+                if path.is_dir():
+                    raise ValueError(f"file would replace a publication directory: {path}")
+                path.parent.mkdir(parents=True, exist_ok=True)
+                digest = hashlib.sha256()
+                with snapshot.extractfile(member) as source, path.open("wb") as output:
+                    while chunk := source.read(1024 * 1024):
+                        digest.update(chunk)
+                        output.write(chunk)
+                if os.name != "nt":
+                    path.chmod(files[member.name] & 0o777)
+                hashes[member.name] = digest.hexdigest()
+        # tarfile stops at its end marker; drain Git's record padding before
+        # closing the pipe so a successful producer cannot receive SIGPIPE.
+        while process.stdout.read(64 * 1024):
+            pass
+        process.stdout.close()
+        error = process.stderr.read()
+        if process.wait() != 0:
+            raise RuntimeError(f"git archive failed: {error.decode('utf-8', errors='replace')}")
+    except BaseException:
+        if process.poll() is None:
+            process.kill()
+        process.wait()
+        raise
+    finally:
+        process.stdout.close()
+        process.stderr.close()
+    if set(hashes) != set(files) - EXCLUDED:
+        raise ValueError("Git archive omitted committed publication files")
+    return hashes
+
+
+def export(destination, *, sync=False):
+    """Write HEAD only. Preflight precedes writes; a runtime failure may be partial."""
+    destination = prepare(destination, sync)
+    commit = clean_head(ROOT, "source")
+    files = inventory(ROOT, commit)
+    public_commit = None
+    if sync:
+        public_commit = clean_head(destination, "public")
+        tracked = inventory(destination, public_commit)
+        stale = set(tracked) - (set(files) - EXCLUDED) - {PROVENANCE}
+        if stale:
+            raise ValueError("refusing stale tracked public files; review and remove explicitly "
+                             "with git rm before committing: " + ", ".join(sorted(stale)))
+        for name in (set(files) - EXCLUDED) | {PROVENANCE}:
+            path = check_path(destination, name)
+            if path.is_dir():
+                raise ValueError(f"file would replace a publication directory: {path}")
+            if path.exists() and name not in tracked:
+                raise ValueError(f"refusing to replace an ignored/untracked public file: {name}")
+    # Source links and all known target collisions have been checked before writes.
+    destination.mkdir(parents=True, exist_ok=sync)
+    hashes = stream_snapshot(destination, commit, files)
+    if clean_head(ROOT, "source") != commit:
+        raise ValueError("source HEAD changed during export; review the partial export")
+    if sync and git(destination, "rev-parse", "HEAD").decode("ascii").strip() != public_commit:
+        raise ValueError("public HEAD changed during sync; review the partial export")
     provenance = {
         "schema": 1,
         "local_source_commit": commit,
         "profile": "KEM1536-DEV-Q7681-R1",
         "excluded_paths": sorted(EXCLUDED),
-        "scope": "Initial public source snapshot, not the local Git history. Historical commit IDs in research notes refer to local research history.",
+        "scope": "Committed public source snapshot, not the local Git history. Historical "
+                 "commit IDs in research notes refer to local research history.",
         "sha256": hashes,
     }
-    (destination / "PUBLICATION_PROVENANCE.json").write_text(
+    if sync:
+        provenance["previous_public_commit"] = public_commit
+    check_path(destination, PROVENANCE).write_text(
         json.dumps(provenance, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
     )
-    print(json.dumps({"destination": str(destination), "commit": commit, "files": len(hashes)}))
+    result = {"destination": str(destination), "commit": commit,
+              "files": len(hashes), "sync": sync}
+    print(json.dumps(result))
+    return result
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("destination", type=Path)
-    export(parser.parse_args().destination)
+    parser.add_argument("--sync", action="store_true",
+                        help="update an existing clean direct child of publication/")
+    args = parser.parse_args()
+    export(args.destination, sync=args.sync)

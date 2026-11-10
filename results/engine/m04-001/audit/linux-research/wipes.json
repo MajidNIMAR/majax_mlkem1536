@@ -1,0 +1,53 @@
+{
+  "binary_sha256": "e2c72dcd949405ff2f20e8497c012f54b8c3f236e3c642b52b9b8079b6be148b",
+  "function": "kem1536::engine_poly::Polynomial::multiply_into",
+  "function_disassembly_sha256": "9102b1339233b96abace2fc6563ce9de77204f23dbdfe036b2d8239f04842805",
+  "normal_return_scratch_wipes": [
+    {
+      "entry": "2c4520",
+      "normal_path_counter_values": "14,30,...,510",
+      "store_offsets": [
+        498,
+        500,
+        502,
+        504,
+        506,
+        508,
+        510,
+        512
+      ],
+      "bytes": 512,
+      "stack_interval_inclusive": [
+        512,
+        1023
+      ]
+    },
+    {
+      "entry": "2c4590",
+      "normal_path_counter_values": "14,30,...,510",
+      "store_offsets": [
+        -14,
+        -12,
+        -10,
+        -8,
+        -6,
+        -4,
+        -2,
+        0
+      ],
+      "bytes": 512,
+      "stack_interval_inclusive": [
+        0,
+        511
+      ]
+    }
+  ],
+  "total_normal_return_scratch_bytes": 1024,
+  "direct_memcpy_reference_in_function": false,
+  "divisions_in_function": 0,
+  "unwind_cleanup_present": true,
+  "old_return_value_temporary": "removed at source; direct output stores reviewed separately",
+  "all_copies_erased_proved": false,
+  "constant_time_proved": false,
+  "limits": "normal-return loop coverage only; output provenance, registers, spills, callers and indirect target sets require separate review"
+}

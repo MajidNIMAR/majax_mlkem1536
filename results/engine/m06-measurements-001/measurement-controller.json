@@ -1,0 +1,4 @@
+{
+  "sha256": "5db541235ac34da2494c737638b17a5c91c14cbbf965d5aa4d663f4fdedac04d",
+  "scope": "controller actually used for measurement; original controller.py was preserved before build"
+}

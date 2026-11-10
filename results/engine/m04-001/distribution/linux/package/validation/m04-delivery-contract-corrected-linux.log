@@ -1,0 +1,27 @@
+   Compiling proc-macro2 v1.0.107
+   Compiling getrandom v0.4.3
+   Compiling quote v1.0.47
+   Compiling serde_core v1.0.228
+   Compiling serde v1.0.228
+   Compiling hybrid-array v0.4.15
+   Compiling libc v0.2.191
+   Compiling crypto-common v0.2.2
+   Compiling digest v0.11.3
+   Compiling sha3 v0.12.0
+   Compiling shake v0.1.0
+   Compiling syn v2.0.119
+   Compiling serde_derive v1.0.228
+   Compiling toml_datetime v0.6.11
+   Compiling serde_spanned v0.6.9
+   Compiling toml_edit v0.22.27
+   Compiling toml v0.8.23
+   Compiling kem1536 v0.1.0 (/mnt/c/Users/majax/Documents/Codex/NIST/crates/kem1536)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 34.92s
+     Running tests/delivery_contract.rs (target/m04-linux-research/debug/deps/delivery_contract-eaa564c3d91f9a5d)
+
+running 2 tests
+test every_encoded_polynomial_boundary_is_validated_on_import ... ok
+test rejection_is_bound_to_both_key_and_entire_ciphertext ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 12.63s
+

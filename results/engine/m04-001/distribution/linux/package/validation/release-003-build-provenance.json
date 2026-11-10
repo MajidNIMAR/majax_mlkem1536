@@ -1,0 +1,32 @@
+{
+  "binary_sha256": "e025ab71066ba63d3efccf6eb28f5e91a4050d151ea83f4fb1aab4320ced71c9",
+  "certification": false,
+  "environment": {
+    "build_id": "disabled with --build-id=none",
+    "cargo": "cargo 1.91.1 (ea2d97820 2025-10-10)",
+    "dependency_cache": "shared preexisting local Cargo cache; --frozen --offline",
+    "features": "default CLI; research-vectors disabled",
+    "host": "Linux 6.6.87.2-microsoft-standard-WSL2 x86_64 GNU/Linux",
+    "jobs": 2,
+    "path_remaps": [
+      "source=/source",
+      "target=/target",
+      "cargo=/cargo",
+      "rustup=/rustup"
+    ],
+    "rustc": "rustc 1.91.1 (ed61e7d7e 2025-11-07)\nbinary: rustc\ncommit-hash: ed61e7d7e242494fb7057f2657300d9e77bb4fcb\ncommit-date: 2025-11-07\nhost: x86_64-unknown-linux-gnu\nrelease: 1.91.1\nLLVM version: 21.1.2",
+    "source_date_epoch": "1792959519",
+    "strip": "debuginfo; symbol names retained for binary review",
+    "target": "x86_64-unknown-linux-gnu"
+  },
+  "isolation": "same host and dependency cache; distinct source and target directories; no containers",
+  "platform": "linux",
+  "profile": "KEM1536-DEV-Q7681-R1",
+  "research_vectors_enabled": false,
+  "schema": "m04-distribution-v1",
+  "source_archive_sha256": "cc07a8d9474f891b40864c7dd432c226c0472c6d1cb3f224d35312ae0fc51318",
+  "source_git_head": "78f5faff017d99a2b323efda17f37a3146f63340",
+  "source_kind": "tracked working files plus nonignored new files; not necessarily HEAD",
+  "source_manifest_sha256": "b316ad7e2c9212840c2007f29a6f859c0806821d809fef8cd09b7771643922d8",
+  "two_isolated_builds_identical": true
+}

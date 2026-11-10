@@ -1,0 +1,18 @@
+   Compiling serde v1.0.228
+   Compiling getrandom v0.4.3
+   Compiling toml_datetime v0.6.11
+   Compiling serde_spanned v0.6.9
+   Compiling majax-mlkem v0.1.0 (/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m04-pair/ntt-001/sources/NIST/.tools/comparison/mlkem1024-demo/engine)
+   Compiling toml_edit v0.22.27
+   Compiling toml v0.8.23
+   Compiling kem1536 v0.1.0 (/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m04-pair/ntt-001/sources/NIST/crates/kem1536)
+   Compiling kem-engine-pair v0.1.0 (/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m04-pair/ntt-001/sources/NIST/comparisons/engine-pair)
+    Finished `release` profile [optimized] target(s) in 30.24s
+     Running unittests src/main.rs (/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m04-pair/smoke-002/target/release/deps/kem_engine_pair-8d92121dcc18d23b)
+
+running 2 tests
+test tests::actual_r1_public_api_exchanges_and_rejects_a_mutation ... ok
+test tests::actual_original_public_api_exchanges_and_rejects_a_mutation ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+

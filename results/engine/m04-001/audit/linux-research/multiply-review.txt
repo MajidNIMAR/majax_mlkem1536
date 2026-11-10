@@ -1,0 +1,323 @@
+<kem1536::engine_poly::Polynomial::multiply_into>:
+  2c4080:	push   %r15
+  2c4082:	push   %r14
+  2c4084:	push   %r13
+  2c4086:	push   %r12
+  2c4088:	push   %rbx
+  2c4089:	sub    $0x400,%rsp
+  2c4090:	mov    %rdx,%rbx
+  2c4093:	mov    %rsi,%r14
+  2c4096:	mov    %rdi,%r15
+  2c4099:	lea    0x200(%rsp),%rdi
+  2c40a1:	xor    %r12d,%r12d
+  2c40a4:	mov    0x83655(%rip),%r13        # 347700 <memset@GLIBC_2.2.5>
+  2c40ab:	mov    $0x200,%edx
+  2c40b0:	xor    %esi,%esi
+  2c40b2:	call   *%r13
+  2c40b5:	mov    %rsp,%rdi
+  2c40b8:	mov    $0x200,%edx
+  2c40bd:	xor    %esi,%esi
+  2c40bf:	call   *%r13
+  2c40c2:	lea    -0x794db(%rip),%rax        # 24abee <anon.9d10edde812cd5fe713d6e7538532d96.45.llvm.5482535082301014156+0x788>
+  2c40c9:	movdqa -0x2ad1a1(%rip),%xmm7        # 16f30 <anon.97f5925eb534de959e9a708dd2cdcd18.0.llvm.5992542685732737947+0x130>
+  2c40d1:	movdqa -0x2ad7ea(%rip),%xmm8        # 168f0 <anon.8554263a54e99dcf72bc1de6c3f1f541.23.llvm.3156243418157432044+0x50>
+  2c40da:	nopw   0x0(%rax,%rax,1)
+  2c40e0:	movdqu (%r15,%r12,1),%xmm1
+  2c40e6:	movdqu (%r12,%rax,1),%xmm0
+  2c40ec:	movdqa %xmm0,%xmm3
+  2c40f0:	pmulhuw %xmm1,%xmm3
+  2c40f4:	pmullw %xmm0,%xmm1
+  2c40f8:	movdqa %xmm1,%xmm2
+  2c40fc:	punpcklwd %xmm3,%xmm2
+  2c4100:	punpckhwd %xmm3,%xmm1
+  2c4104:	pshufd $0xf5,%xmm1,%xmm4
+  2c4109:	pmuludq %xmm7,%xmm4
+  2c410d:	movdqa %xmm1,%xmm3
+  2c4111:	pmuludq %xmm7,%xmm3
+  2c4115:	pshufd $0xf5,%xmm3,%xmm5
+  2c411a:	pshufd $0xf5,%xmm2,%xmm6
+  2c411f:	pmuludq %xmm7,%xmm6
+  2c4123:	movdqa %xmm2,%xmm3
+  2c4127:	pmuludq %xmm7,%xmm3
+  2c412b:	pshufd $0xf5,%xmm3,%xmm3
+  2c4130:	pmuludq %xmm8,%xmm3
+  2c4135:	pshufd $0xe8,%xmm3,%xmm3
+  2c413a:	pshufd $0xf5,%xmm6,%xmm6
+  2c413f:	pmuludq %xmm8,%xmm6
+  2c4144:	pshufd $0xe8,%xmm6,%xmm6
+  2c4149:	punpckldq %xmm6,%xmm3
+  2c414d:	pmuludq %xmm8,%xmm5
+  2c4152:	pshufd $0xe8,%xmm5,%xmm5
+  2c4157:	pshufd $0xf5,%xmm4,%xmm4
+  2c415c:	pmuludq %xmm8,%xmm4
+  2c4161:	pshufd $0xe8,%xmm4,%xmm4
+  2c4166:	punpckldq %xmm4,%xmm5
+  2c416a:	paddd  %xmm1,%xmm5
+  2c416e:	paddd  %xmm2,%xmm3
+  2c4172:	movdqa %xmm3,%xmm1
+  2c4176:	paddd  %xmm8,%xmm1
+  2c417b:	movdqa %xmm5,%xmm2
+  2c417f:	paddd  %xmm8,%xmm2
+  2c4184:	pxor   %xmm4,%xmm4
+  2c4188:	pcmpgtd %xmm2,%xmm4
+  2c418c:	pxor   %xmm6,%xmm6
+  2c4190:	pcmpgtd %xmm1,%xmm6
+  2c4194:	pand   %xmm6,%xmm3
+  2c4198:	pandn  %xmm1,%xmm6
+  2c419c:	por    %xmm3,%xmm6
+  2c41a0:	pand   %xmm4,%xmm5
+  2c41a4:	pandn  %xmm2,%xmm4
+  2c41a8:	por    %xmm5,%xmm4
+  2c41ac:	pslld  $0x10,%xmm4
+  2c41b1:	psrad  $0x10,%xmm4
+  2c41b6:	pslld  $0x10,%xmm6
+  2c41bb:	psrad  $0x10,%xmm6
+  2c41c0:	packssdw %xmm4,%xmm6
+  2c41c4:	movdqu %xmm6,(%rsp,%r12,1)
+  2c41ca:	movdqu (%r14,%r12,1),%xmm1
+  2c41d0:	movdqa %xmm1,%xmm2
+  2c41d4:	pmulhuw %xmm0,%xmm2
+  2c41d8:	pmullw %xmm0,%xmm1
+  2c41dc:	movdqa %xmm1,%xmm0
+  2c41e0:	punpcklwd %xmm2,%xmm0
+  2c41e4:	punpckhwd %xmm2,%xmm1
+  2c41e8:	pshufd $0xf5,%xmm1,%xmm3
+  2c41ed:	pmuludq %xmm7,%xmm3
+  2c41f1:	movdqa %xmm1,%xmm2
+  2c41f5:	pmuludq %xmm7,%xmm2
+  2c41f9:	pshufd $0xf5,%xmm2,%xmm4
+  2c41fe:	pshufd $0xf5,%xmm0,%xmm5
+  2c4203:	pmuludq %xmm7,%xmm5
+  2c4207:	movdqa %xmm0,%xmm2
+  2c420b:	pmuludq %xmm7,%xmm2
+  2c420f:	pshufd $0xf5,%xmm2,%xmm2
+  2c4214:	pmuludq %xmm8,%xmm2
+  2c4219:	pshufd $0xe8,%xmm2,%xmm2
+  2c421e:	pshufd $0xf5,%xmm5,%xmm5
+  2c4223:	pmuludq %xmm8,%xmm5
+  2c4228:	pshufd $0xe8,%xmm5,%xmm5
+  2c422d:	punpckldq %xmm5,%xmm2
+  2c4231:	pmuludq %xmm8,%xmm4
+  2c4236:	pshufd $0xe8,%xmm4,%xmm4
+  2c423b:	pshufd $0xf5,%xmm3,%xmm3
+  2c4240:	pmuludq %xmm8,%xmm3
+  2c4245:	pshufd $0xe8,%xmm3,%xmm3
+  2c424a:	punpckldq %xmm3,%xmm4
+  2c424e:	paddd  %xmm1,%xmm4
+  2c4252:	paddd  %xmm0,%xmm2
+  2c4256:	movdqa %xmm2,%xmm0
+  2c425a:	paddd  %xmm8,%xmm0
+  2c425f:	movdqa %xmm4,%xmm1
+  2c4263:	paddd  %xmm8,%xmm1
+  2c4268:	pxor   %xmm3,%xmm3
+  2c426c:	pcmpgtd %xmm1,%xmm3
+  2c4270:	pxor   %xmm5,%xmm5
+  2c4274:	pcmpgtd %xmm0,%xmm5
+  2c4278:	pand   %xmm5,%xmm2
+  2c427c:	pandn  %xmm0,%xmm5
+  2c4280:	por    %xmm2,%xmm5
+  2c4284:	pand   %xmm3,%xmm4
+  2c4288:	pandn  %xmm1,%xmm3
+  2c428c:	por    %xmm4,%xmm3
+  2c4290:	pslld  $0x10,%xmm3
+  2c4295:	psrad  $0x10,%xmm3
+  2c429a:	pslld  $0x10,%xmm5
+  2c429f:	psrad  $0x10,%xmm5
+  2c42a4:	packssdw %xmm3,%xmm5
+  2c42a8:	movdqu %xmm5,0x200(%rsp,%r12,1)
+  2c42b2:	add    $0x10,%r12
+  2c42b6:	cmp    $0x200,%r12
+  2c42bd:	jne    2c40e0 <kem1536::engine_poly::Polynomial::multiply_into+0x60>
+  2c42c3:	lea    -0x2ad4ba(%rip),%rsi        # 16e10 <anon.97f5925eb534de959e9a708dd2cdcd18.0.llvm.5992542685732737947+0x10>
+  2c42ca:	mov    %rsp,%rdi
+  2c42cd:	call   2c4960 <kem1536::engine_poly::transform>
+  2c42d2:	lea    -0x2ad4c9(%rip),%rsi        # 16e10 <anon.97f5925eb534de959e9a708dd2cdcd18.0.llvm.5992542685732737947+0x10>
+  2c42d9:	lea    0x200(%rsp),%rdi
+  2c42e1:	call   2c4960 <kem1536::engine_poly::transform>
+  2c42e6:	xor    %eax,%eax
+  2c42e8:	movdqa -0x2ad3c0(%rip),%xmm6        # 16f30 <anon.97f5925eb534de959e9a708dd2cdcd18.0.llvm.5992542685732737947+0x130>
+  2c42f0:	movdqa -0x2ada08(%rip),%xmm7        # 168f0 <anon.8554263a54e99dcf72bc1de6c3f1f541.23.llvm.3156243418157432044+0x50>
+  2c42f8:	nopl   0x0(%rax,%rax,1)
+  2c4300:	movdqu (%rsp,%rax,2),%xmm1
+  2c4305:	movdqu 0x200(%rsp,%rax,2),%xmm0
+  2c430e:	movdqa %xmm0,%xmm2
+  2c4312:	pmulhuw %xmm1,%xmm2
+  2c4316:	pmullw %xmm1,%xmm0
+  2c431a:	movdqa %xmm0,%xmm1
+  2c431e:	punpcklwd %xmm2,%xmm1
+  2c4322:	punpckhwd %xmm2,%xmm0
+  2c4326:	pshufd $0xf5,%xmm0,%xmm3
+  2c432b:	pmuludq %xmm6,%xmm3
+  2c432f:	movdqa %xmm0,%xmm2
+  2c4333:	pmuludq %xmm6,%xmm2
+  2c4337:	pshufd $0xf5,%xmm2,%xmm4
+  2c433c:	pshufd $0xf5,%xmm1,%xmm5
+  2c4341:	pmuludq %xmm6,%xmm5
+  2c4345:	movdqa %xmm1,%xmm2
+  2c4349:	pmuludq %xmm6,%xmm2
+  2c434d:	pshufd $0xf5,%xmm2,%xmm2
+  2c4352:	pmuludq %xmm7,%xmm2
+  2c4356:	pshufd $0xe8,%xmm2,%xmm2
+  2c435b:	pshufd $0xf5,%xmm5,%xmm5
+  2c4360:	pmuludq %xmm7,%xmm5
+  2c4364:	pshufd $0xe8,%xmm5,%xmm5
+  2c4369:	punpckldq %xmm5,%xmm2
+  2c436d:	pmuludq %xmm7,%xmm4
+  2c4371:	pshufd $0xe8,%xmm4,%xmm4
+  2c4376:	pshufd $0xf5,%xmm3,%xmm3
+  2c437b:	pmuludq %xmm7,%xmm3
+  2c437f:	pshufd $0xe8,%xmm3,%xmm3
+  2c4384:	punpckldq %xmm3,%xmm4
+  2c4388:	paddd  %xmm0,%xmm4
+  2c438c:	paddd  %xmm1,%xmm2
+  2c4390:	movdqa %xmm2,%xmm0
+  2c4394:	paddd  %xmm7,%xmm0
+  2c4398:	movdqa %xmm4,%xmm1
+  2c439c:	paddd  %xmm7,%xmm1
+  2c43a0:	pxor   %xmm3,%xmm3
+  2c43a4:	pcmpgtd %xmm1,%xmm3
+  2c43a8:	pxor   %xmm5,%xmm5
+  2c43ac:	pcmpgtd %xmm0,%xmm5
+  2c43b0:	pand   %xmm5,%xmm2
+  2c43b4:	pandn  %xmm0,%xmm5
+  2c43b8:	por    %xmm2,%xmm5
+  2c43bc:	pand   %xmm3,%xmm4
+  2c43c0:	pandn  %xmm1,%xmm3
+  2c43c4:	por    %xmm4,%xmm3
+  2c43c8:	pslld  $0x10,%xmm3
+  2c43cd:	psrad  $0x10,%xmm3
+  2c43d2:	pslld  $0x10,%xmm5
+  2c43d7:	psrad  $0x10,%xmm5
+  2c43dc:	packssdw %xmm3,%xmm5
+  2c43e0:	movdqu %xmm5,(%rsp,%rax,2)
+  2c43e5:	add    $0x8,%rax
+  2c43e9:	cmp    $0x100,%rax
+  2c43ef:	jne    2c4300 <kem1536::engine_poly::Polynomial::multiply_into+0x280>
+  2c43f5:	lea    -0x2ad5dc(%rip),%rsi        # 16e20 <anon.97f5925eb534de959e9a708dd2cdcd18.0.llvm.5992542685732737947+0x20>
+  2c43fc:	mov    %rsp,%rdi
+  2c43ff:	call   2c4960 <kem1536::engine_poly::transform>
+  2c4404:	xor    %eax,%eax
+  2c4406:	lea    -0x79a1f(%rip),%rcx        # 24a9ee <anon.9d10edde812cd5fe713d6e7538532d96.45.llvm.5482535082301014156+0x588>
+  2c440d:	movdqa -0x2ad4e5(%rip),%xmm6        # 16f30 <anon.97f5925eb534de959e9a708dd2cdcd18.0.llvm.5992542685732737947+0x130>
+  2c4415:	movdqa -0x2adb2d(%rip),%xmm7        # 168f0 <anon.8554263a54e99dcf72bc1de6c3f1f541.23.llvm.3156243418157432044+0x50>
+  2c441d:	nopl   (%rax)
+  2c4420:	movdqu (%rsp,%rax,1),%xmm1
+  2c4425:	movdqu (%rax,%rcx,1),%xmm0
+  2c442a:	movdqa %xmm0,%xmm2
+  2c442e:	pmulhuw %xmm1,%xmm2
+  2c4432:	pmullw %xmm1,%xmm0
+  2c4436:	movdqa %xmm0,%xmm1
+  2c443a:	punpcklwd %xmm2,%xmm1
+  2c443e:	punpckhwd %xmm2,%xmm0
+  2c4442:	pshufd $0xf5,%xmm0,%xmm3
+  2c4447:	pmuludq %xmm6,%xmm3
+  2c444b:	movdqa %xmm0,%xmm2
+  2c444f:	pmuludq %xmm6,%xmm2
+  2c4453:	pshufd $0xf5,%xmm2,%xmm4
+  2c4458:	pshufd $0xf5,%xmm1,%xmm5
+  2c445d:	pmuludq %xmm6,%xmm5
+  2c4461:	movdqa %xmm1,%xmm2
+  2c4465:	pmuludq %xmm6,%xmm2
+  2c4469:	pshufd $0xf5,%xmm2,%xmm2
+  2c446e:	pmuludq %xmm7,%xmm2
+  2c4472:	pshufd $0xe8,%xmm2,%xmm2
+  2c4477:	pshufd $0xf5,%xmm5,%xmm5
+  2c447c:	pmuludq %xmm7,%xmm5
+  2c4480:	pshufd $0xe8,%xmm5,%xmm5
+  2c4485:	punpckldq %xmm5,%xmm2
+  2c4489:	pmuludq %xmm7,%xmm4
+  2c448d:	pshufd $0xe8,%xmm4,%xmm4
+  2c4492:	pshufd $0xf5,%xmm3,%xmm3
+  2c4497:	pmuludq %xmm7,%xmm3
+  2c449b:	pshufd $0xe8,%xmm3,%xmm3
+  2c44a0:	punpckldq %xmm3,%xmm4
+  2c44a4:	paddd  %xmm0,%xmm4
+  2c44a8:	paddd  %xmm1,%xmm2
+  2c44ac:	movdqa %xmm2,%xmm0
+  2c44b0:	paddd  %xmm7,%xmm0
+  2c44b4:	movdqa %xmm4,%xmm1
+  2c44b8:	paddd  %xmm7,%xmm1
+  2c44bc:	pxor   %xmm3,%xmm3
+  2c44c0:	pcmpgtd %xmm1,%xmm3
+  2c44c4:	pxor   %xmm5,%xmm5
+  2c44c8:	pcmpgtd %xmm0,%xmm5
+  2c44cc:	pand   %xmm5,%xmm2
+  2c44d0:	pandn  %xmm0,%xmm5
+  2c44d4:	por    %xmm2,%xmm5
+  2c44d8:	pand   %xmm3,%xmm4
+  2c44dc:	pandn  %xmm1,%xmm3
+  2c44e0:	por    %xmm4,%xmm3
+  2c44e4:	pslld  $0x10,%xmm3
+  2c44e9:	psrad  $0x10,%xmm3
+  2c44ee:	pslld  $0x10,%xmm5
+  2c44f3:	psrad  $0x10,%xmm5
+  2c44f8:	packssdw %xmm3,%xmm5
+  2c44fc:	movdqu %xmm5,(%rbx,%rax,1)
+  2c4501:	add    $0x10,%rax
+  2c4505:	cmp    $0x200,%rax
+  2c450b:	jne    2c4420 <kem1536::engine_poly::Polynomial::multiply_into+0x3a0>
+  2c4511:	mov    $0xe,%eax
+  2c4516:	cs nopw 0x0(%rax,%rax,1)
+  2c4520:	movw   $0x0,0x1f2(%rsp,%rax,1)
+  2c452a:	movw   $0x0,0x1f4(%rsp,%rax,1)
+  2c4534:	movw   $0x0,0x1f6(%rsp,%rax,1)
+  2c453e:	movw   $0x0,0x1f8(%rsp,%rax,1)
+  2c4548:	movw   $0x0,0x1fa(%rsp,%rax,1)
+  2c4552:	movw   $0x0,0x1fc(%rsp,%rax,1)
+  2c455c:	movw   $0x0,0x1fe(%rsp,%rax,1)
+  2c4566:	movw   $0x0,0x200(%rsp,%rax,1)
+  2c4570:	add    $0x10,%rax
+  2c4574:	cmp    $0x20e,%rax
+  2c457a:	jne    2c4520 <kem1536::engine_poly::Polynomial::multiply_into+0x4a0>
+  2c457c:	mov    $0xe,%eax
+  2c4581:	data16 data16 data16 data16 data16 cs nopw 0x0(%rax,%rax,1)
+  2c4590:	movw   $0x0,-0xe(%rsp,%rax,1)
+  2c4597:	movw   $0x0,-0xc(%rsp,%rax,1)
+  2c459e:	movw   $0x0,-0xa(%rsp,%rax,1)
+  2c45a5:	movw   $0x0,-0x8(%rsp,%rax,1)
+  2c45ac:	movw   $0x0,-0x6(%rsp,%rax,1)
+  2c45b3:	movw   $0x0,-0x4(%rsp,%rax,1)
+  2c45ba:	movw   $0x0,-0x2(%rsp,%rax,1)
+  2c45c1:	movw   $0x0,(%rsp,%rax,1)
+  2c45c7:	add    $0x10,%rax
+  2c45cb:	cmp    $0x20e,%rax
+  2c45d1:	jne    2c4590 <kem1536::engine_poly::Polynomial::multiply_into+0x510>
+  2c45d3:	add    $0x400,%rsp
+  2c45da:	pop    %rbx
+  2c45db:	pop    %r12
+  2c45dd:	pop    %r13
+  2c45df:	pop    %r14
+  2c45e1:	pop    %r15
+  2c45e3:	ret    
+  2c45e4:	xor    %ecx,%ecx
+  2c45e6:	cs nopw 0x0(%rax,%rax,1)
+  2c45f0:	movw   $0x0,0x200(%rsp,%rcx,1)
+  2c45fa:	movw   $0x0,0x202(%rsp,%rcx,1)
+  2c4604:	movw   $0x0,0x204(%rsp,%rcx,1)
+  2c460e:	movw   $0x0,0x206(%rsp,%rcx,1)
+  2c4618:	movw   $0x0,0x208(%rsp,%rcx,1)
+  2c4622:	movw   $0x0,0x20a(%rsp,%rcx,1)
+  2c462c:	movw   $0x0,0x20c(%rsp,%rcx,1)
+  2c4636:	movw   $0x0,0x20e(%rsp,%rcx,1)
+  2c4640:	add    $0x10,%rcx
+  2c4644:	cmp    $0x200,%rcx
+  2c464b:	jne    2c45f0 <kem1536::engine_poly::Polynomial::multiply_into+0x570>
+  2c464d:	xor    %ecx,%ecx
+  2c464f:	nop
+  2c4650:	movw   $0x0,(%rsp,%rcx,1)
+  2c4656:	movw   $0x0,0x2(%rsp,%rcx,1)
+  2c465d:	movw   $0x0,0x4(%rsp,%rcx,1)
+  2c4664:	movw   $0x0,0x6(%rsp,%rcx,1)
+  2c466b:	movw   $0x0,0x8(%rsp,%rcx,1)
+  2c4672:	movw   $0x0,0xa(%rsp,%rcx,1)
+  2c4679:	movw   $0x0,0xc(%rsp,%rcx,1)
+  2c4680:	movw   $0x0,0xe(%rsp,%rcx,1)
+  2c4687:	add    $0x10,%rcx
+  2c468b:	cmp    $0x200,%rcx
+  2c4692:	jne    2c4650 <kem1536::engine_poly::Polynomial::multiply_into+0x5d0>
+  2c4694:	mov    %rax,%rdi
+  2c4697:	call   340240 <_Unwind_Resume@plt>
+  2c469c:	int3   
+  2c469d:	int3   
+  2c469e:	int3   
+  2c469f:	int3   

@@ -1,0 +1,76 @@
+{
+  "created_utc": "2026-10-25T20:25:24.975370+00:00",
+  "profile": "KEM1536-DEV-Q7681-R1",
+  "platforms": {
+    "windows": {
+      "binary_sha256": "7f50e99da22709ecda15dbafa80c2909ba1423ff26f0d9c1bbcfb3f538617622",
+      "compared_to_frozen_M01": {
+        "dev-vectors": 1000,
+        "dev-rejection-vectors": 10000
+      },
+      "all_fields_equal": true,
+      "formats": {
+        "inputs": 20000,
+        "public_key_imports": 6667,
+        "private_key_imports": 6667,
+        "ciphertext_imports": 6666,
+        "wrong_lengths_rejected": 17010,
+        "exact_length_inputs": 2990,
+        "accepted_imports": 993,
+        "seed": 5562000709837083213,
+        "panics_observed": 0
+      },
+      "frozen_M02_mutations_compared": 10000
+    },
+    "linux": {
+      "binary_sha256": "e2c72dcd949405ff2f20e8497c012f54b8c3f236e3c642b52b9b8079b6be148b",
+      "compared_to_frozen_M01": {
+        "dev-vectors": 1000,
+        "dev-rejection-vectors": 10000
+      },
+      "all_fields_equal": true,
+      "formats": {
+        "inputs": 20000,
+        "public_key_imports": 6667,
+        "private_key_imports": 6667,
+        "ciphertext_imports": 6666,
+        "wrong_lengths_rejected": 17010,
+        "exact_length_inputs": 2990,
+        "accepted_imports": 993,
+        "seed": 5562000709837083213,
+        "panics_observed": 0
+      },
+      "frozen_M02_mutations_compared": 10000
+    }
+  },
+  "binary_sha256": {
+    "windows": "7f50e99da22709ecda15dbafa80c2909ba1423ff26f0d9c1bbcfb3f538617622",
+    "linux": "e2c72dcd949405ff2f20e8497c012f54b8c3f236e3c642b52b9b8079b6be148b"
+  },
+  "elapsed_seconds": 118.83216869999887,
+  "oracle_scope": "complete equality to frozen M01/M02 outputs, previously independently checked; no new Python rare-event simulation",
+  "constant_time_proved": false,
+  "source_sha256": {
+    "Cargo.toml": "ff13a1ad6016fdb1e11376f304b4c3ea7670d1442d8f12cdbf02ebd01577de42",
+    "Cargo.lock": "ad9f28bdd7332407c054eed738e782a81e60f0c5180022e8b173fb2987f70cb3",
+    "rust-toolchain.toml": "b729462cbfa06a5d7efd33810fa271fe918b2db1ce61d99e57ec1c866659c270",
+    "research/validate_m04_engine.py": "af7afa16197818536f4eb90b5e2378525c3b731a0580926b4b2cf54e4fac97d1",
+    "crates/kem1024-reference/Cargo.toml": "8e8e6f877d8c07f5379c88bdd3d175aea8a5c4d9b3b45cdd9e13548fe885f4de",
+    "crates/kem1536/Cargo.toml": "201a6e832bbc6cec754a6de609f0b503cc1c98c7458f676ad2077a2a73823e47",
+    "crates/kem1536-bench/Cargo.toml": "3a8e568fb1b93b97c478ad58dc82b3feaecdd7fc3746793c385cfda5530c40d5",
+    "crates/kem1536-cli/Cargo.toml": "ef96cbb2a121d68b061677ec628515eaa9bbff1658534d8933595a08d8009df6",
+    "crates/kem1536-cli/src/main.rs": "41420995cc9b4ebbca8ab55d594a4eefd0b29740cc96b78e9b856079c2086bd1",
+    "crates/kem1536-cli/tests/commands.rs": "02483131e88c5fb97badc6e2fd686094d3771769f8c5ba9464ef12f4b9534905",
+    "crates/kem1536-bench/src/delivery.rs": "ae5023f44a1e3419f486bf728f68e29010e68743b1131c5d7216eeeccbf1797f",
+    "crates/kem1536-bench/src/main.rs": "608f534dade786650d782c6b4e6f24008f7eded79db1637c72678540459fb386",
+    "crates/kem1536-bench/src/bin/m03-replay.rs": "8215b138b87462cd58267256eb6b2fefa43c1d67879efbfc62044a1c575fc86f",
+    "crates/kem1536/src/dev_hardening.rs": "8bbfac92e9af19b6955f4fa033ab7026371fd1d89d07b972553434174f132d06",
+    "crates/kem1536/src/dev_kem.rs": "4bc3f75ce59cb24b8c8ca88e313cc8ab23b71282fb56cc6459c83e745d70756b",
+    "crates/kem1536/src/engine_poly.rs": "906e9e27579f703c569b4231c0e83e07cdeed21dacecd38b4cd1f5a0dbc67579",
+    "crates/kem1536/src/lib.rs": "76f654cc20fa27475c7cd66fdace8913878ba6d9c034cbcd59b59c6c4d5ec033",
+    "crates/kem1536/src/reference_ring.rs": "f94a48f7a35d74487fcdf50937f48c3f7502c6053418e941201bf1014cce125b",
+    "crates/kem1536/src/secret_box.rs": "08d6ba7accadb46dc66b780a396dc418950641b29a91d365e12537001c40d28e",
+    "crates/kem1536/tests/delivery_contract.rs": "d610891bae29571aa17a8056ea216b9042a2c099a3bff52e023ba77affb431ec",
+    "crates/kem1024-reference/src/lib.rs": "33bf92b4bee59b28a2fe499f592068ffe3468ff1593d8d3bce18f0875f3cbb52"
+  }
+}

@@ -1,0 +1,12 @@
+   Compiling kem1536 v0.1.0 (/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m04-pair/schoolbook-002/sources/NIST/crates/kem1536)
+   Compiling majax-mlkem v0.1.0 (/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m04-pair/schoolbook-002/sources/NIST/.tools/comparison/mlkem1024-demo/engine)
+   Compiling kem-engine-pair v0.1.0 (/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m04-pair/schoolbook-002/sources/NIST/comparisons/engine-pair)
+    Finished `release` profile [optimized] target(s) in 26.43s
+     Running unittests src/main.rs (/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m04-pair/smoke-002/target/release/deps/kem_engine_pair-098c752688e76ea3)
+
+running 2 tests
+test tests::actual_original_public_api_exchanges_and_rejects_a_mutation ... ok
+test tests::actual_r1_public_api_exchanges_and_rejects_a_mutation ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+

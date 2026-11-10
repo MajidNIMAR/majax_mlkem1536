@@ -1,0 +1,4 @@
+    Checking majax-mlkem v0.1.0 (/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m04-pair/schoolbook-002/sources/NIST/.tools/comparison/mlkem1024-demo/engine)
+    Checking kem1536 v0.1.0 (/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m04-pair/schoolbook-002/sources/NIST/crates/kem1536)
+    Checking kem-engine-pair v0.1.0 (/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m04-pair/schoolbook-002/sources/NIST/comparisons/engine-pair)
+    Finished `release` profile [optimized] target(s) in 13.18s

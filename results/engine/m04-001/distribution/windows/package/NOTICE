@@ -1,0 +1,11 @@
+majax_mlkem1536
+Copyright 2026 MajidNIMAR and project contributors.
+
+Experimental KEM research and Rust implementation of KEM1536-DEV-Q7681-R1.
+Original project contributions are distributed under Apache License 2.0.
+Third-party references, datasets and dependencies retain their own terms;
+see THIRD_PARTY_NOTICES.md and the recorded source manifests.
+
+The project is maintained independently of Majax Messenger and the separate
+majax-mlkem1024-demo repository. The local workspace name NIST does not
+indicate affiliation, approval or certification by NIST.

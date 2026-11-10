@@ -1,0 +1,32 @@
+{
+  "corpus_files": {
+    "import_public": 2756,
+    "import_private": 2596,
+    "decapsulate": 1811,
+    "api_sequence": 1073
+  },
+  "supplement_corpus_files": {
+    "import_public": 0,
+    "import_private": 0,
+    "decapsulate": 0,
+    "api_sequence": 343
+  },
+  "distinct_deterministic_requests": 8638,
+  "all_Rust_Python_outputs_equal": true,
+  "oracle_reencryption_acceptances": 16,
+  "accepted_private_keys_with_independent_decapsulation_probe": 1545,
+  "fresh_operations_tested_by_fuzzer_not_recreated_by_this_oracle": 2288,
+  "cumulative_sha256": "70f192bca270daa5807bc9299131608b40d44644f8ae48d16997d9c973f725ca",
+  "numpy": "2.3.5",
+  "oracle_sha256": "41b754345d86f30115ccb6f1f1615ccbc4107496dc9fedd5ddf23dd9921f881d",
+  "replay_controller_sha256": "4a66b3ee42ba53dacd4dffde3ca9c83155ebcf6edc27af082e3d553f9d932c8a",
+  "replay_command": [
+    "wsl",
+    "-d",
+    "Ubuntu-22.04",
+    "--",
+    "/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m06-fuzz-001/bin/m06-replay"
+  ],
+  "Rust_platform": "Linux",
+  "Python_platform": "nt"
+}

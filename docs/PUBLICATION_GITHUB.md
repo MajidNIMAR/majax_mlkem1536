@@ -1,5 +1,11 @@
 # Publication du moteur sur GitHub
 
+Le projet est présenté sous le nom **MAJAX R6 — recherche et ingénierie
+cryptographique**. R6 désigne le rang six de la construction ; le profil
+technique `KEM1536-DEV-Q7681-R1`, les formats et les domaines de hachage
+conservent leur identité. Les noms techniques et les archives historiques
+gardent leur nomenclature d'origine.
+
 Le dépôt public est `MajidNIMAR/majax_mlkem1536`, distinct de
 `MajidNIMAR/majax-mlkem1024-demo`. Il présente le développement expérimental
 du moteur `KEM1536-DEV-Q7681-R1`, ses sources, sa spécification et les
@@ -10,10 +16,25 @@ comme dans le démonstrateur 1024.
 ## Source de la publication
 
 Le dossier local de recherche reste `NIST`. `research/export_publication.py`
-exporte exclusivement les fichiers d'un commit Git dans un nouveau dossier
-sous `artifacts/generated/publication/`. Les outils locaux, caches, clés
+exporte exclusivement les fichiers d'un commit Git propre dans un nouveau
+dossier sous `artifacts/generated/publication/`. Les outils locaux, caches, clés
 d'application, sorties vivantes et base Git locale ne sont pas exportés.
 L'export refuse de remplacer un dossier existant.
+
+Le mode `--sync` met à jour la copie durable située directement sous
+`publication/`, en conservant sa base `.git` et son historique public.
+Les deux arbres doivent être propres. Il refuse les liens, les collisions
+avec des fichiers ignorés et les chemins suivis devenus obsolètes ; ceux-ci
+doivent être examinés et retirés explicitement avant toute synchronisation.
+Le contenu provient du HEAD commité, avec flux tar direct, sans ZIP intermédiaire.
+
+```powershell
+python research/export_publication.py publication/majax_mlkem1536 --sync
+```
+
+Il faut ensuite examiner le diff, commiter dans ce dépôt public, lancer ses
+contrôles et publier depuis celui-ci. L'historique Git du dossier local de
+recherche ne doit pas être poussé à sa place.
 
 `PUBLICATION_PROVENANCE.json`, ajouté à l'export, donne le commit local,
 les exclusions et les SHA-256 de chaque fichier exporté. Le dépôt GitHub
@@ -30,6 +51,18 @@ copies externes se récupèrent directement chez leur auteur au moyen de
 `research/fetch_reference_copies.py --fetch`, appelé par la préparation de
 l'environnement de recherche. Leurs URLs de révision et empreintes restent
 publiées. Le script n'exécute pas ces fichiers de référence.
+
+Les notes d'entretien du poste `docs/NETTOYAGE_ET_ORGANISATION.md` et
+`docs/maintenance/cleanup-001.json` restent locales et sont également
+exclues de l'export. Elles ne constituent pas des preuves cryptographiques.
+Les rapports scientifiques, sources, spécifications et instantanés utiles
+à la reproductibilité restent publiés avec leurs empreintes.
+
+La copie durable du dépôt public est sous `publication/majax_mlkem1536/`.
+Elle conserve son propre historique Git, distinct de celui du dossier
+de recherche. Les validations historiques ci-dessous conservent leurs
+révisions exactes ; le badge et l'onglet Actions indiquent les contrôles
+des révisions courantes.
 
 ## Vérification depuis une copie propre
 

@@ -1,0 +1,152 @@
+[
+  {
+    "url": "https://csrc.nist.gov/CSRC/media/Projects/Post-Quantum-Cryptography/documents/round-1/submissions/KINDI.zip",
+    "sha256": "ed51557337dee49deeda4d97c057ef65e98074a49af683eb621660f271b6963c",
+    "bytes": 12376347,
+    "external_code_executed": false,
+    "tracked_full_source_copy": false
+  },
+  {
+    "url": "https://csrc.nist.gov/CSRC/media/Projects/Post-Quantum-Cryptography/documents/round-1/submissions/KINDI.zip",
+    "member": "KINDI/Reference_Implementation/kem/KINDI-512-3-2-1/params.h",
+    "sha256": "64b62c5de4d35a8d8d7c6c00fa66810408e1ecc1a3131b280c7c2a4ca23e7f50",
+    "external_code_executed": false,
+    "tracked_full_source_copy": false
+  },
+  {
+    "url": "https://csrc.nist.gov/CSRC/media/Projects/Post-Quantum-Cryptography/documents/round-1/submissions/KINDI.zip",
+    "member": "KINDI/Reference_Implementation/kem/KINDI-512-3-2-1/core.c",
+    "sha256": "fc83dd167d5f63d979a1f85555b2ababf341175f6f6685d2b4e4599b95663252",
+    "external_code_executed": false,
+    "tracked_full_source_copy": false
+  },
+  {
+    "url": "https://csrc.nist.gov/CSRC/media/Projects/Post-Quantum-Cryptography/documents/round-1/submissions/KINDI.zip",
+    "member": "KINDI/Reference_Implementation/kem/KINDI-512-3-2-1/poly.c",
+    "sha256": "deda3b15270971d882efa784253eeca2d1641742705d2d0c1905e2cde6115308",
+    "external_code_executed": false,
+    "tracked_full_source_copy": false
+  },
+  {
+    "url": "https://csrc.nist.gov/CSRC/media/Projects/Post-Quantum-Cryptography/documents/round-1/submissions/KINDI.zip",
+    "member": "KINDI/Reference_Implementation/kem/KINDI-512-3-2-1/poly_encode.c",
+    "sha256": "5becfb548ae6f75460a28985f17776195159ba4401e8b2963fcb7ded61e59acf",
+    "external_code_executed": false,
+    "tracked_full_source_copy": false
+  },
+  {
+    "url": "https://csrc.nist.gov/CSRC/media/Projects/Post-Quantum-Cryptography/documents/round-1/submissions/KINDI.zip",
+    "member": "KINDI/Reference_Implementation/kem/KINDI-512-3-2-1/gen_randomness.c",
+    "sha256": "cec2a52ebfe5e6db0822d1ca957660d191445390bc59b31792afa58630608334",
+    "external_code_executed": false,
+    "tracked_full_source_copy": false
+  },
+  {
+    "url": "https://csrc.nist.gov/CSRC/media/Projects/Post-Quantum-Cryptography/documents/round-1/submissions/KINDI.zip",
+    "member": "KINDI/Reference_Implementation/kem/KINDI-512-3-2-1/kem.c",
+    "sha256": "6cee5950db1e0adf4ad57a9613046786d5a22916c605f0c6b58889763c3f71f1",
+    "external_code_executed": false,
+    "tracked_full_source_copy": false
+  },
+  {
+    "url": "https://raw.githubusercontent.com/pqcrypto-cn/PQMagic/b9ea5ce134966b8f90d637bab97178a92ae130f3/kem/aigis-enc/std/params.h",
+    "sha256": "2cbd7593cf0af10e93943f6d7ab9365cce4f9b80482dc4d8e49f9b392d8f5ad9",
+    "commit": "b9ea5ce134966b8f90d637bab97178a92ae130f3",
+    "external_code_executed": false,
+    "tracked_full_source_copy": false
+  },
+  {
+    "url": "https://raw.githubusercontent.com/pqcrypto-cn/PQMagic/b9ea5ce134966b8f90d637bab97178a92ae130f3/kem/aigis-enc/std/owcpa.c",
+    "sha256": "ed43064819ca636126adc7b0b5b5d0380402622218e8735a6aec20ee9845f552",
+    "commit": "b9ea5ce134966b8f90d637bab97178a92ae130f3",
+    "external_code_executed": false,
+    "tracked_full_source_copy": false
+  },
+  {
+    "url": "https://raw.githubusercontent.com/pqcrypto-cn/PQMagic/b9ea5ce134966b8f90d637bab97178a92ae130f3/kem/aigis-enc/std/kem.c",
+    "sha256": "6a95a7726cc0e21226c7ea01c545791577edee20d5ba3e762d65534a85584a47",
+    "commit": "b9ea5ce134966b8f90d637bab97178a92ae130f3",
+    "external_code_executed": false,
+    "tracked_full_source_copy": false
+  },
+  {
+    "url": "https://raw.githubusercontent.com/pqcrypto-cn/PQMagic/b9ea5ce134966b8f90d637bab97178a92ae130f3/kem/aigis-enc/std/poly.c",
+    "sha256": "87c714a5eb6d12633c1cdbe5dd82749a240a1c838ad9a323a01adb4311ee6589",
+    "commit": "b9ea5ce134966b8f90d637bab97178a92ae130f3",
+    "external_code_executed": false,
+    "tracked_full_source_copy": false
+  },
+  {
+    "url": "https://raw.githubusercontent.com/pqcrypto-cn/PQMagic/b9ea5ce134966b8f90d637bab97178a92ae130f3/kem/aigis-enc/std/polyvec.c",
+    "sha256": "54304d8ee8b9b49e006e641fcef8fbaf3dba603d29bee641fa40d861f6388b3e",
+    "commit": "b9ea5ce134966b8f90d637bab97178a92ae130f3",
+    "external_code_executed": false,
+    "tracked_full_source_copy": false
+  },
+  {
+    "url": "https://raw.githubusercontent.com/pqcrypto-cn/PQMagic/b9ea5ce134966b8f90d637bab97178a92ae130f3/kem/aigis-enc/std/cbd.c",
+    "sha256": "aef3e17a7c6ca3c15c969b841cbff2ea3f817945796f0c66e3e1bb25bd20b897",
+    "commit": "b9ea5ce134966b8f90d637bab97178a92ae130f3",
+    "external_code_executed": false,
+    "tracked_full_source_copy": false
+  },
+  {
+    "url": "https://raw.githubusercontent.com/pq-crystals/kyber/ca375e3e3391360a863efd4122b14e396c994dde/ref/params.h",
+    "sha256": "d262761dfc2446c2fb346f7eec534c7f70aab65e29fc41e72bbba327663f1591",
+    "commit": "ca375e3e3391360a863efd4122b14e396c994dde",
+    "external_code_executed": false,
+    "tracked_full_source_copy": false
+  },
+  {
+    "url": "https://raw.githubusercontent.com/pq-crystals/kyber/ca375e3e3391360a863efd4122b14e396c994dde/ref/indcpa.c",
+    "sha256": "964ddfd4fb83e31c207cb03a6e46365b640f8930037eca2b9ecc4a24285fa682",
+    "commit": "ca375e3e3391360a863efd4122b14e396c994dde",
+    "external_code_executed": false,
+    "tracked_full_source_copy": false
+  },
+  {
+    "url": "https://raw.githubusercontent.com/pq-crystals/kyber/ca375e3e3391360a863efd4122b14e396c994dde/ref/poly.c",
+    "sha256": "17e739bfb0fe15ee3a561ef3adf7bb8b4fe282bb414d348ad9e9d4de261dcfd3",
+    "commit": "ca375e3e3391360a863efd4122b14e396c994dde",
+    "external_code_executed": false,
+    "tracked_full_source_copy": false
+  },
+  {
+    "url": "https://raw.githubusercontent.com/pq-crystals/kyber/ca375e3e3391360a863efd4122b14e396c994dde/ref/polyvec.c",
+    "sha256": "6ff296e3959f4e29b95474b7a12109559e5776060e46fc4d59bbe8ac184e5d12",
+    "commit": "ca375e3e3391360a863efd4122b14e396c994dde",
+    "external_code_executed": false,
+    "tracked_full_source_copy": false
+  },
+  {
+    "url": "https://raw.githubusercontent.com/pq-crystals/kyber/ca375e3e3391360a863efd4122b14e396c994dde/ref/cbd.c",
+    "sha256": "a30ef8171d4a65082d32965a8373dae37ec144b5259cdd257cd6d16ae465eb17",
+    "commit": "ca375e3e3391360a863efd4122b14e396c994dde",
+    "external_code_executed": false,
+    "tracked_full_source_copy": false
+  },
+  {
+    "project_file": "docs/SPECIFICATION_DEV_Q7681_R1.md",
+    "sha256": "f9174d6daa5fc8e06513579c366279970c775d79cf85d9d8ed2e6b16cb89d47a"
+  },
+  {
+    "project_file": "references/NIST.FIPS.203.pdf",
+    "sha256": "fe1f12f32a7e44ec9fdebbf400cda843a40b506dee676725234dc6f7923b6cac"
+  },
+  {
+    "project_file": "profiles/kem1536-p0.toml",
+    "sha256": "ec07497ccab9150a982ecc882b8d1890d8dda18c4150e22f86cff70735e22740"
+  },
+  {
+    "url": "https://eprint.iacr.org/2023/016.pdf",
+    "scope": "Table 4 parameter point consulted through the web PDF index; no byte-pinned PDF copy available (direct HTTP 403)",
+    "parameter_point": {
+      "degree": 256,
+      "rank": 6,
+      "q": 3329,
+      "eta": 2
+    },
+    "local_independent_parameter_witness": "profiles/kem1536-p0.toml",
+    "article_implementation_executed": false
+  }
+]

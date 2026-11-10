@@ -1,0 +1,172 @@
+[
+  {
+    "version": "baseline",
+    "series": 0,
+    "started_utc": "2026-11-10T17:38:28.424999+00:00",
+    "finished_utc": "2026-11-10T17:38:42.779386+00:00",
+    "command": [
+      "taskset",
+      "-c",
+      "10",
+      "/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m06-measurements-001/bin/baseline-m06-measure",
+      "measure",
+      "0",
+      "2000",
+      "100"
+    ],
+    "exit_code": 0
+  },
+  {
+    "version": "candidate",
+    "series": 0,
+    "started_utc": "2026-11-10T17:38:42.791801+00:00",
+    "finished_utc": "2026-11-10T17:38:50.746601+00:00",
+    "command": [
+      "taskset",
+      "-c",
+      "10",
+      "/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m06-measurements-001/bin/candidate-m06-measure",
+      "measure",
+      "0",
+      "2000",
+      "100"
+    ],
+    "exit_code": 0
+  },
+  {
+    "version": "candidate",
+    "series": 1,
+    "started_utc": "2026-11-10T17:38:50.757661+00:00",
+    "finished_utc": "2026-11-10T17:38:58.855521+00:00",
+    "command": [
+      "taskset",
+      "-c",
+      "10",
+      "/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m06-measurements-001/bin/candidate-m06-measure",
+      "measure",
+      "1",
+      "2000",
+      "100"
+    ],
+    "exit_code": 0
+  },
+  {
+    "version": "baseline",
+    "series": 1,
+    "started_utc": "2026-11-10T17:38:58.869766+00:00",
+    "finished_utc": "2026-11-10T17:39:13.195245+00:00",
+    "command": [
+      "taskset",
+      "-c",
+      "10",
+      "/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m06-measurements-001/bin/baseline-m06-measure",
+      "measure",
+      "1",
+      "2000",
+      "100"
+    ],
+    "exit_code": 0
+  },
+  {
+    "version": "baseline",
+    "series": 2,
+    "started_utc": "2026-11-10T17:39:13.208579+00:00",
+    "finished_utc": "2026-11-10T17:39:27.620513+00:00",
+    "command": [
+      "taskset",
+      "-c",
+      "10",
+      "/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m06-measurements-001/bin/baseline-m06-measure",
+      "measure",
+      "2",
+      "2000",
+      "100"
+    ],
+    "exit_code": 0
+  },
+  {
+    "version": "candidate",
+    "series": 2,
+    "started_utc": "2026-11-10T17:39:27.630062+00:00",
+    "finished_utc": "2026-11-10T17:39:35.613143+00:00",
+    "command": [
+      "taskset",
+      "-c",
+      "10",
+      "/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m06-measurements-001/bin/candidate-m06-measure",
+      "measure",
+      "2",
+      "2000",
+      "100"
+    ],
+    "exit_code": 0
+  },
+  {
+    "version": "candidate",
+    "series": 3,
+    "started_utc": "2026-11-10T17:39:35.626725+00:00",
+    "finished_utc": "2026-11-10T17:39:43.612980+00:00",
+    "command": [
+      "taskset",
+      "-c",
+      "10",
+      "/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m06-measurements-001/bin/candidate-m06-measure",
+      "measure",
+      "3",
+      "2000",
+      "100"
+    ],
+    "exit_code": 0
+  },
+  {
+    "version": "baseline",
+    "series": 3,
+    "started_utc": "2026-11-10T17:39:43.626778+00:00",
+    "finished_utc": "2026-11-10T17:39:58.088390+00:00",
+    "command": [
+      "taskset",
+      "-c",
+      "10",
+      "/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m06-measurements-001/bin/baseline-m06-measure",
+      "measure",
+      "3",
+      "2000",
+      "100"
+    ],
+    "exit_code": 0
+  },
+  {
+    "version": "baseline",
+    "series": 4,
+    "started_utc": "2026-11-10T17:39:58.102342+00:00",
+    "finished_utc": "2026-11-10T17:40:12.398137+00:00",
+    "command": [
+      "taskset",
+      "-c",
+      "10",
+      "/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m06-measurements-001/bin/baseline-m06-measure",
+      "measure",
+      "4",
+      "2000",
+      "100"
+    ],
+    "exit_code": 0
+  },
+  {
+    "version": "candidate",
+    "series": 4,
+    "started_utc": "2026-11-10T17:40:12.411371+00:00",
+    "finished_utc": "2026-11-10T17:40:20.446715+00:00",
+    "command": [
+      "taskset",
+      "-c",
+      "10",
+      "/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m06-measurements-001/bin/candidate-m06-measure",
+      "measure",
+      "4",
+      "2000",
+      "100"
+    ],
+    "exit_code": 0
+  }
+]

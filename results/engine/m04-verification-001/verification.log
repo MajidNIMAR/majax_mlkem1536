@@ -1,0 +1,10 @@
+{
+  "hashes_verified": 609,
+  "source_files_verified": 61,
+  "full_binary_inventories_recomputed": 4,
+  "delivered_binaries_bound_to_audits": 2,
+  "timing_observations_recomputed": 32000,
+  "fresh_objdump_replay": true,
+  "constant_time_proved": false,
+  "full_concrete_CCA_proof": false
+}

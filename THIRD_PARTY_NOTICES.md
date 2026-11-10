@@ -31,6 +31,13 @@ Copies of this project's own earlier sources inside `results/engine/` are
 historical project contributions. Existing notices embedded in any source
 or reference remain applicable.
 
+The M06 diagnostic archive retains dependency and Rust toolchain notices
+in its `licenses/` member, reusing the M04 bundle for the unchanged engine
+dependency lock. It also retains the `libfuzzer-sys 0.4.13` and `arbitrary
+1.5.0` license texts. The vendored libFuzzer source identifies itself as
+`Apache-2.0 WITH LLVM-exception`; the corresponding Apache and LLVM exception
+texts are retained. `licenses.json` records the origins and file hashes.
+
 ## Original reference-implementation attribution
 
 Le témoin utilise le paquet `ml-kem`, version 0.3.3, développé par les

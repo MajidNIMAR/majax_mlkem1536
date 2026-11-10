@@ -1,0 +1,12 @@
+{
+  "command": "research/verify_m04.py --recheck-disassembly",
+  "exit_code": 0,
+  "provenance_sha256": "2d5917ec1f0d50b97b9d25fca4802b27561547ee91fc67e02af27ec9259cf7dc",
+  "verifier_sha256": "44c98c530fbb7ab7a82b3cedfa35fbd983580ae2f270192c5c5b59d967aef695",
+  "log_sha256": "eb34c75040f0b616469741e4f2370429016e7c3aa55bc142612d6b985437bafc",
+  "claims": {
+    "full_concrete_CCA_proof": false,
+    "independent_external_audit": false,
+    "constant_time_proven": false
+  }
+}

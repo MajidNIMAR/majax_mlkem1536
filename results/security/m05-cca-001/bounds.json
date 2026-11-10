@@ -1,0 +1,391 @@
+{
+  "advantage_convention": "absolute bias |Pr[win]-1/2|, maximum 1/2",
+  "certificate_delta": {
+    "approx_log2": "-310.085969198539768793",
+    "approx_probability": "4.516708227493801587664235E-94"
+  },
+  "complete_concrete_keccak_bound": false,
+  "expanded_sampler_delta": {
+    "approx_log2": "-310.085969198539768793",
+    "approx_probability": "4.516708227493801587664235E-94"
+  },
+  "expanded_sampler_factor": {
+    "denominator_hex": "0x10000000000000000000000000000000000000000000000000000000000000000",
+    "numerator_hex": "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+  },
+  "inclusive_query_formula": "Q_RO=2*g512+j+3*D+2; challenge and implicit decapsulation calls included",
+  "model": "mono-user, one challenge, classical Decaps; independent ideal domain-separated oracles",
+  "panels": [
+    {
+      "decapsulations": 0,
+      "explicit_g512": 0,
+      "explicit_j": 0,
+      "qrom_theorem22": {
+        "correction": {
+          "approx_log2": "-304.085969198539768793",
+          "approx_probability": "2.890693265596033016105111E-92"
+        },
+        "correction_coefficient": 64,
+        "full_bound_evaluated": false,
+        "generic_zero_work_message_guess_probability": "2^-256",
+        "ow_probability_required": {
+          "approx_log2": "-260.830074998557687637",
+          "approx_probability": "3.036153007650390688612389E-79"
+        },
+        "prf_advantage_allocation_required": "2^-130; not established",
+        "queries": {
+          "coherent_namespace_query_multiplier": 2,
+          "decapsulations": 0,
+          "explicit_g512": 0,
+          "public_shake256_budget": 0,
+          "qrom_coins": 1,
+          "qrom_key": 1,
+          "rejection_keyed_classical_queries_max": 0
+        },
+        "sqrt_ow_coefficient": 4,
+        "sufficient_ow_requirement_below_message_guess_floor": true
+      },
+      "queries": {
+        "coins": 1,
+        "decapsulations": 0,
+        "explicit_g512": 0,
+        "explicit_j": 0,
+        "key_and_rejection": 1,
+        "key_only": 1,
+        "total_rom": 2
+      },
+      "rom": {
+        "correction": {
+          "approx_log2": "-308.085969198539768793",
+          "approx_probability": "1.806683290997520635065694E-93"
+        },
+        "correction_coefficient": 4,
+        "known_additive": {
+          "approx_log2": "-253.415037499278843768",
+          "approx_probability": "5.181701133056666955900140E-77"
+        },
+        "message_guessing": {
+          "approx_log2": "-253.415037499278843819",
+          "approx_probability": "5.181701133056666775231811E-77"
+        },
+        "pke_cpa_coefficient": 6,
+        "pke_cpa_required": {
+          "approx_log2": "-130.584962500721156181",
+          "approx_probability": "4.897893128426197949869736E-40"
+        },
+        "target_not_certified_by_this_rom_bound_even_with_zero_pke_advantage": false
+      },
+      "target_bias": "2^-128"
+    },
+    {
+      "decapsulations": 65536,
+      "explicit_g512": 65536,
+      "explicit_j": 65536,
+      "qrom_theorem22": {
+        "correction": {
+          "approx_log2": "-270.916014845540998660",
+          "approx_probability": "2.793529267294266401134757E-82"
+        },
+        "correction_coefficient": 618487873600,
+        "full_bound_evaluated": false,
+        "generic_zero_work_message_guess_probability": "2^-256",
+        "ow_probability_required": {
+          "approx_log2": "-296.000014675815551129",
+          "approx_probability": "7.854469644476164879409636E-90"
+        },
+        "prf_advantage_allocation_required": "2^-130; not established",
+        "queries": {
+          "coherent_namespace_query_multiplier": 2,
+          "decapsulations": 65536,
+          "explicit_g512": 65536,
+          "public_shake256_budget": 65536,
+          "qrom_coins": 196609,
+          "qrom_key": 196609,
+          "rejection_keyed_classical_queries_max": 65536
+        },
+        "sqrt_ow_coefficient": 786436,
+        "sufficient_ow_requirement_below_message_guess_floor": true
+      },
+      "queries": {
+        "coins": 131073,
+        "decapsulations": 65536,
+        "explicit_g512": 65536,
+        "explicit_j": 65536,
+        "key_and_rejection": 262145,
+        "key_only": 131073,
+        "total_rom": 393218
+      },
+      "rom": {
+        "correction": {
+          "approx_log2": "-290.385522706944020287",
+          "approx_probability": "3.848108941994349126245474E-88"
+        },
+        "correction_coefficient": 851972,
+        "known_additive": {
+          "approx_log2": "-235.830067660649912018",
+          "approx_probability": "1.018769078069138236492641E-71"
+        },
+        "message_guessing": {
+          "approx_log2": "-235.830067660649912073",
+          "approx_probability": "1.018769078069138198011551E-71"
+        },
+        "pke_cpa_coefficient": 6,
+        "pke_cpa_required": {
+          "approx_log2": "-130.584962500721156181",
+          "approx_probability": "4.897893128426197949869736E-40"
+        },
+        "target_not_certified_by_this_rom_bound_even_with_zero_pke_advantage": false
+      },
+      "target_bias": "2^-128"
+    },
+    {
+      "decapsulations": 4294967296,
+      "explicit_g512": 4294967296,
+      "explicit_j": 4294967296,
+      "qrom_theorem22": {
+        "correction": {
+          "approx_log2": "-238.916044196649584943",
+          "approx_probability": "1.199787274858491982111527E-72"
+        },
+        "correction_coefficient": 2656331147438809153600,
+        "full_bound_evaluated": false,
+        "generic_zero_work_message_guess_probability": "2^-256",
+        "ow_probability_required": {
+          "approx_log2": "-328.000000000223935743",
+          "approx_probability": "1.828779825767775982244423E-99"
+        },
+        "prf_advantage_allocation_required": "2^-130; not established",
+        "queries": {
+          "coherent_namespace_query_multiplier": 2,
+          "decapsulations": 4294967296,
+          "explicit_g512": 4294967296,
+          "public_shake256_budget": 4294967296,
+          "qrom_coins": 12884901889,
+          "qrom_key": 12884901889,
+          "rejection_keyed_classical_queries_max": 4294967296
+        },
+        "sqrt_ow_coefficient": 51539607556,
+        "sufficient_ow_requirement_below_message_guess_floor": true
+      },
+      "queries": {
+        "coins": 8589934593,
+        "decapsulations": 4294967296,
+        "explicit_g512": 4294967296,
+        "explicit_j": 4294967296,
+        "key_and_rejection": 17179869185,
+        "key_only": 8589934593,
+        "total_rom": 25769803778
+      },
+      "rom": {
+        "correction": {
+          "approx_log2": "-274.385529480295321674",
+          "approx_probability": "2.521884836126469091124752E-83"
+        },
+        "correction_coefficient": 55834574852,
+        "known_additive": {
+          "approx_log2": "-219.830074998445719711",
+          "approx_probability": "6.676571071755528859811274E-67"
+        },
+        "message_guessing": {
+          "approx_log2": "-219.830074998445719765",
+          "approx_probability": "6.676571071755528607622790E-67"
+        },
+        "pke_cpa_coefficient": 6,
+        "pke_cpa_required": {
+          "approx_log2": "-130.584962500721156181",
+          "approx_probability": "4.897893128426197949869736E-40"
+        },
+        "target_not_certified_by_this_rom_bound_even_with_zero_pke_advantage": false
+      },
+      "target_bias": "2^-128"
+    },
+    {
+      "decapsulations": 18446744073709551616,
+      "explicit_g512": 18446744073709551616,
+      "explicit_j": 18446744073709551616,
+      "qrom_theorem22": {
+        "correction": {
+          "approx_log2": "-174.916044197097456430",
+          "approx_probability": "2.213216879533729041076643E-53"
+        },
+        "correction_coefficient": 49000660836615138742267718332326856360000,
+        "full_bound_evaluated": false,
+        "generic_zero_work_message_guess_probability": "2^-256",
+        "ow_probability_required": {
+          "approx_log2": "-392.000000000000028974",
+          "approx_probability": "9.913835302014055676868157E-119"
+        },
+        "prf_advantage_allocation_required": "2^-130; not established",
+        "queries": {
+          "coherent_namespace_query_multiplier": 2,
+          "decapsulations": 18446744073709551616,
+          "explicit_g512": 18446744073709551616,
+          "public_shake256_budget": 18446744073709551616,
+          "qrom_coins": 55340232221128654849,
+          "qrom_key": 55340232221128654849,
+          "rejection_keyed_classical_queries_max": 18446744073709551616
+        },
+        "sqrt_ow_coefficient": 221360928884514619396,
+        "sufficient_ow_requirement_below_message_guess_floor": true
+      },
+      "queries": {
+        "coins": 36893488147419103233,
+        "decapsulations": 18446744073709551616,
+        "explicit_g512": 18446744073709551616,
+        "explicit_j": 18446744073709551616,
+        "key_and_rejection": 73786976294838206465,
+        "key_only": 36893488147419103233,
+        "total_rom": 110680464442257309698
+      },
+      "rom": {
+        "correction": {
+          "approx_log2": "-242.385529480398676632",
+          "approx_probability": "1.083141289466553950160992E-73"
+        },
+        "correction_coefficient": 239807672958224171012,
+        "known_additive": {
+          "approx_log2": "-187.830074998557687583",
+          "approx_probability": "2.867565440038414207017931E-57"
+        },
+        "message_guessing": {
+          "approx_log2": "-187.830074998557687637",
+          "approx_probability": "2.867565440038414098703802E-57"
+        },
+        "pke_cpa_coefficient": 6,
+        "pke_cpa_required": {
+          "approx_log2": "-130.584962500721156183",
+          "approx_probability": "4.897893128426197945090460E-40"
+        },
+        "target_not_certified_by_this_rom_bound_even_with_zero_pke_advantage": false
+      },
+      "target_bias": "2^-128"
+    },
+    {
+      "decapsulations": 79228162514264337593543950336,
+      "explicit_g512": 79228162514264337593543950336,
+      "explicit_j": 79228162514264337593543950336,
+      "qrom_theorem22": {
+        "correction": {
+          "approx_log2": "-110.916044197097456430",
+          "approx_probability": "4.082664535637276280254922E-34"
+        },
+        "correction_coefficient": 903902649895682029992353676957115771121477936820781408321600,
+        "full_bound_evaluated": false,
+        "generic_zero_work_message_guess_probability": "2^-256",
+        "ow_probability_required": null,
+        "prf_advantage_allocation_required": "2^-130; not established",
+        "queries": {
+          "coherent_namespace_query_multiplier": 2,
+          "decapsulations": 79228162514264337593543950336,
+          "explicit_g512": 79228162514264337593543950336,
+          "public_shake256_budget": 79228162514264337593543950336,
+          "qrom_coins": 237684487542793012780631851009,
+          "qrom_key": 237684487542793012780631851009,
+          "rejection_keyed_classical_queries_max": 79228162514264337593543950336
+        },
+        "sqrt_ow_coefficient": 950737950171172051122527404036,
+        "sufficient_ow_requirement_below_message_guess_floor": false
+      },
+      "queries": {
+        "coins": 158456325028528675187087900673,
+        "decapsulations": 79228162514264337593543950336,
+        "explicit_g512": 79228162514264337593543950336,
+        "explicit_j": 79228162514264337593543950336,
+        "key_and_rejection": 316912650057057350374175801345,
+        "key_only": 158456325028528675187087900673,
+        "total_rom": 475368975085586025561263702018
+      },
+      "rom": {
+        "correction": {
+          "approx_log2": "-210.385529480398676632",
+          "approx_probability": "4.652056415206118501683479E-64"
+        },
+        "correction_coefficient": 1029966112685436388716071354372,
+        "known_additive": {
+          "approx_log2": "-155.830074998557687583",
+          "approx_probability": "1.231609978410483800262123E-47"
+        },
+        "message_guessing": {
+          "approx_log2": "-155.830074998557687637",
+          "approx_probability": "1.231609978410483753741559E-47"
+        },
+        "pke_cpa_coefficient": 6,
+        "pke_cpa_required": {
+          "approx_log2": "-130.584962506767421264",
+          "approx_probability": "4.897893107899364976361672E-40"
+        },
+        "target_not_certified_by_this_rom_bound_even_with_zero_pke_advantage": false
+      },
+      "target_bias": "2^-128"
+    },
+    {
+      "decapsulations": 340282366920938463463374607431768211456,
+      "explicit_g512": 340282366920938463463374607431768211456,
+      "explicit_j": 340282366920938463463374607431768211456,
+      "qrom_theorem22": {
+        "correction": {
+          "approx_log2": "-46.916044197097456430",
+          "approx_probability": "7.531186782771108471950329E-15"
+        },
+        "correction_coefficient": 16674060850173532140994221841251058730936212006301061406666860021766390164750400,
+        "full_bound_evaluated": false,
+        "generic_zero_work_message_guess_probability": "2^-256",
+        "ow_probability_required": null,
+        "prf_advantage_allocation_required": "2^-130; not established",
+        "queries": {
+          "coherent_namespace_query_multiplier": 2,
+          "decapsulations": 340282366920938463463374607431768211456,
+          "explicit_g512": 340282366920938463463374607431768211456,
+          "public_shake256_budget": 340282366920938463463374607431768211456,
+          "qrom_coins": 1020847100762815390390123822295304634369,
+          "qrom_key": 1020847100762815390390123822295304634369,
+          "rejection_keyed_classical_queries_max": 340282366920938463463374607431768211456
+        },
+        "sqrt_ow_coefficient": 4083388403051261561560495289181218537476,
+        "sufficient_ow_requirement_below_message_guess_floor": false
+      },
+      "queries": {
+        "coins": 680564733841876926926749214863536422913,
+        "decapsulations": 340282366920938463463374607431768211456,
+        "explicit_g512": 340282366920938463463374607431768211456,
+        "explicit_j": 340282366920938463463374607431768211456,
+        "key_and_rejection": 1361129467683753853853498429727072845825,
+        "key_only": 680564733841876926926749214863536422913,
+        "total_rom": 2041694201525630780780247644590609268738
+      },
+      "rom": {
+        "correction": {
+          "approx_log2": "-178.385529480398676632",
+          "approx_probability": "1.998043016245727606383106E-54"
+        },
+        "correction_coefficient": 4423670769972200025023869896612986748932,
+        "known_additive": {
+          "approx_log2": "-123.830074998557687583",
+          "approx_probability": "5.289724578700293985663616E-38"
+        },
+        "message_guessing": {
+          "approx_log2": "-123.830074998557687637",
+          "approx_probability": "5.289724578700293785859314E-38"
+        },
+        "pke_cpa_coefficient": 6,
+        "pke_cpa_required": null,
+        "target_not_certified_by_this_rom_bound_even_with_zero_pke_advantage": true
+      },
+      "target_bias": "2^-128"
+    }
+  ],
+  "pke_ow_convention": "plaintext recovery success probability in [0,1]",
+  "profile": "KEM1536-DEV-Q7681-R1",
+  "qrom_formula": "epsilon_PRF_J + 2*(Q_F+Q_K)*sqrt(epsilon_OW_seeded_aux) + 16*(Q_F+1)^2*delta_RO",
+  "qrom_queries": "Q_F=Q_K=2*g512+D+1; conservative coherent namespace dispatch and implicit calls included. Public J/Noise queries remain in the PRF/PKE games.",
+  "rejection_prf_convention": "absolute distinguishing probability gap in [0,1]; quantum public-oracle access and classical indexed queries",
+  "rom_formula": "6*epsilon_CPA_bias_seeded_aux + (2*Q_RO+D)*delta_RO + 3*Q_RO/2^256",
+  "rom_pke_coefficient_status": "Conservative coefficient 6; source table prints 3 but an OW-to-CPA normalization inconsistency is documented in M05. No claim that HHK prints 6.",
+  "schema": "m05-r1-conditional-security-bounds-v1",
+  "unknowns": [
+    "seeded PKE CPA in ROM with public matrix/noise/KG oracles",
+    "seeded PKE OW in QROM with auxiliary oracles",
+    "rejection-prefix PRF against quantum adversaries and public quantum J access",
+    "all substitutions of ideal oracles by concrete Keccak"
+  ]
+}

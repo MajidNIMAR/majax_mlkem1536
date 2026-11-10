@@ -1,0 +1,9 @@
+    Checking serde v1.0.228
+    Checking majax-mlkem v0.1.0 (/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m04-pair/ntt-001/sources/NIST/.tools/comparison/mlkem1024-demo/engine)
+    Checking kem1536 v0.1.0 (/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m04-pair/ntt-001/sources/NIST/crates/kem1536)
+    Checking serde_spanned v0.6.9
+    Checking toml_datetime v0.6.11
+    Checking toml_edit v0.22.27
+    Checking kem-engine-pair v0.1.0 (/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m04-pair/ntt-001/sources/NIST/comparisons/engine-pair)
+    Checking toml v0.8.23
+    Finished `release` profile [optimized] target(s) in 13.42s

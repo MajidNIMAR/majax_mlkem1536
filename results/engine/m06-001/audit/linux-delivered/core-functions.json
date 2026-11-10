@@ -1,0 +1,4672 @@
+{
+  "<kem1536::dev_kem::Error as core::fmt::Debug>::fmt": {
+    "address": "000000000026a8b0",
+    "instructions": 17,
+    "conditional_branches": [],
+    "divisions": [],
+    "calls": [
+      {
+        "address": "26a8d2",
+        "opcode": "jmp",
+        "operands": "*0xcaf70(%rip)        # 335848 <_DYNAMIC+0x288>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "26a8d2",
+        "opcode": "jmp",
+        "operands": "*0xcaf70(%rip)        # 335848 <_DYNAMIC+0x288>",
+        "target": "core::fmt::Formatter::write_str"
+      }
+    ],
+    "indirect_transfers": [
+      {
+        "address": "26a8d2",
+        "opcode": "jmp",
+        "operands": "*0xcaf70(%rip)        # 335848 <_DYNAMIC+0x288>"
+      }
+    ],
+    "conditional_moves": 0,
+    "resolved_indirect_transfers": [
+      {
+        "address": "26a8d2",
+        "opcode": "jmp",
+        "operands": "*0xcaf70(%rip)        # 335848 <_DYNAMIC+0x288>",
+        "target": "core::fmt::Formatter::write_str"
+      }
+    ]
+  },
+  "core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>": {
+    "address": "0000000000298e50",
+    "instructions": 82,
+    "conditional_branches": [
+      {
+        "address": "298ea1",
+        "opcode": "jne",
+        "operands": "298e60 <core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>+0x10>"
+      },
+      {
+        "address": "298f0a",
+        "opcode": "jne",
+        "operands": "298eb0 <core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>+0x60>"
+      },
+      {
+        "address": "298f6a",
+        "opcode": "jne",
+        "operands": "298f10 <core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>+0xc0>"
+      },
+      {
+        "address": "298fca",
+        "opcode": "jne",
+        "operands": "298f70 <core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>+0x120>"
+      },
+      {
+        "address": "29902a",
+        "opcode": "jne",
+        "operands": "298fd0 <core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>+0x180>"
+      },
+      {
+        "address": "29908a",
+        "opcode": "jne",
+        "operands": "299030 <core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>+0x1e0>"
+      }
+    ],
+    "divisions": [],
+    "calls": [],
+    "indirect_transfers": [],
+    "conditional_moves": 0,
+    "resolved_indirect_transfers": []
+  },
+  "kem1536::dev_kem::_::<impl serde_core::ser::Serialize for kem1536::dev_kem::Diagnostics>::serialize": {
+    "address": "00000000002719f0",
+    "instructions": 183,
+    "conditional_branches": [
+      {
+        "address": "271a40",
+        "opcode": "jne",
+        "operands": "271bb2 <kem1536::dev_kem::_::<impl serde_core::ser::Serialize for kem1536::dev_kem::Diagnostics>::serialize+0x1c2>"
+      },
+      {
+        "address": "271a61",
+        "opcode": "jne",
+        "operands": "271bb2 <kem1536::dev_kem::_::<impl serde_core::ser::Serialize for kem1536::dev_kem::Diagnostics>::serialize+0x1c2>"
+      },
+      {
+        "address": "271a82",
+        "opcode": "jne",
+        "operands": "271bb2 <kem1536::dev_kem::_::<impl serde_core::ser::Serialize for kem1536::dev_kem::Diagnostics>::serialize+0x1c2>"
+      },
+      {
+        "address": "271aa1",
+        "opcode": "je",
+        "operands": "271c76 <kem1536::dev_kem::_::<impl serde_core::ser::Serialize for kem1536::dev_kem::Diagnostics>::serialize+0x286>"
+      },
+      {
+        "address": "271ace",
+        "opcode": "je",
+        "operands": "271aeb <kem1536::dev_kem::_::<impl serde_core::ser::Serialize for kem1536::dev_kem::Diagnostics>::serialize+0xfb>"
+      },
+      {
+        "address": "271ad3",
+        "opcode": "je",
+        "operands": "271aeb <kem1536::dev_kem::_::<impl serde_core::ser::Serialize for kem1536::dev_kem::Diagnostics>::serialize+0xfb>"
+      },
+      {
+        "address": "271b29",
+        "opcode": "jne",
+        "operands": "271b4d <kem1536::dev_kem::_::<impl serde_core::ser::Serialize for kem1536::dev_kem::Diagnostics>::serialize+0x15d>"
+      },
+      {
+        "address": "271b71",
+        "opcode": "je",
+        "operands": "271b80 <kem1536::dev_kem::_::<impl serde_core::ser::Serialize for kem1536::dev_kem::Diagnostics>::serialize+0x190>"
+      },
+      {
+        "address": "271b9b",
+        "opcode": "jne",
+        "operands": "271bb2 <kem1536::dev_kem::_::<impl serde_core::ser::Serialize for kem1536::dev_kem::Diagnostics>::serialize+0x1c2>"
+      },
+      {
+        "address": "271bac",
+        "opcode": "je",
+        "operands": "271c49 <kem1536::dev_kem::_::<impl serde_core::ser::Serialize for kem1536::dev_kem::Diagnostics>::serialize+0x259>"
+      },
+      {
+        "address": "271bc1",
+        "opcode": "je",
+        "operands": "271bfa <kem1536::dev_kem::_::<impl serde_core::ser::Serialize for kem1536::dev_kem::Diagnostics>::serialize+0x20a>"
+      },
+      {
+        "address": "271c1e",
+        "opcode": "je",
+        "operands": "271c35 <kem1536::dev_kem::_::<impl serde_core::ser::Serialize for kem1536::dev_kem::Diagnostics>::serialize+0x245>"
+      },
+      {
+        "address": "271c23",
+        "opcode": "je",
+        "operands": "271c35 <kem1536::dev_kem::_::<impl serde_core::ser::Serialize for kem1536::dev_kem::Diagnostics>::serialize+0x245>"
+      },
+      {
+        "address": "271cbe",
+        "opcode": "je",
+        "operands": "271ce3 <kem1536::dev_kem::_::<impl serde_core::ser::Serialize for kem1536::dev_kem::Diagnostics>::serialize+0x2f3>"
+      }
+    ],
+    "divisions": [],
+    "calls": [
+      {
+        "address": "271a38",
+        "opcode": "call",
+        "operands": "271d00 <<serde_json::value::ser::SerializeMap as serde_core::ser::SerializeStruct>::serialize_field>",
+        "target": "<serde_json::value::ser::SerializeMap as serde_core::ser::SerializeStruct>::serialize_field"
+      },
+      {
+        "address": "271a59",
+        "opcode": "call",
+        "operands": "272020 <<serde_json::value::ser::SerializeMap as serde_core::ser::SerializeStruct>::serialize_field>",
+        "target": "<serde_json::value::ser::SerializeMap as serde_core::ser::SerializeStruct>::serialize_field"
+      },
+      {
+        "address": "271a7a",
+        "opcode": "call",
+        "operands": "272020 <<serde_json::value::ser::SerializeMap as serde_core::ser::SerializeStruct>::serialize_field>",
+        "target": "<serde_json::value::ser::SerializeMap as serde_core::ser::SerializeStruct>::serialize_field"
+      },
+      {
+        "address": "271a88",
+        "opcode": "call",
+        "operands": "*0xc3d72(%rip)        # 335800 <_DYNAMIC+0x240>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "271a98",
+        "opcode": "call",
+        "operands": "*0xc3d6a(%rip)        # 335808 <_DYNAMIC+0x248>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "271ae2",
+        "opcode": "call",
+        "operands": "*0xc3d00(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "271b1e",
+        "opcode": "call",
+        "operands": "*0xc3da4(%rip)        # 3358c8 <_DYNAMIC+0x308>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "271b42",
+        "opcode": "call",
+        "operands": "*0xc3ca0(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "271b64",
+        "opcode": "call",
+        "operands": "2712f0 <alloc::collections::btree::map::BTreeMap<K,V,A>::insert>",
+        "target": "alloc::collections::btree::map::BTreeMap<K,V,A>::insert"
+      },
+      {
+        "address": "271b7b",
+        "opcode": "call",
+        "operands": "271030 <_ZN4core3ptr45drop_in_place$LT$serde_json..value..Value$GT$17h96639b83f37b61a7E.llvm.17184617344634706475>",
+        "target": "_ZN4core3ptr45drop_in_place$LT$serde_json..value..Value$GT$17h96639b83f37b61a7E.llvm.17184617344634706475"
+      },
+      {
+        "address": "271b93",
+        "opcode": "call",
+        "operands": "271d00 <<serde_json::value::ser::SerializeMap as serde_core::ser::SerializeStruct>::serialize_field>",
+        "target": "<serde_json::value::ser::SerializeMap as serde_core::ser::SerializeStruct>::serialize_field"
+      },
+      {
+        "address": "271ba4",
+        "opcode": "call",
+        "operands": "272280 <<serde_json::value::ser::SerializeMap as serde_core::ser::SerializeStruct>::serialize_field>",
+        "target": "<serde_json::value::ser::SerializeMap as serde_core::ser::SerializeStruct>::serialize_field"
+      },
+      {
+        "address": "271c12",
+        "opcode": "call",
+        "operands": "270eb0 <_ZN4core3ptr117drop_in_place$LT$alloc..collections..btree..map..IntoIter$LT$alloc..string..String$C$serde_json..value..Value$GT$$GT$17h4943310ea12e60abE.llvm.17184617344634706475>",
+        "target": "_ZN4core3ptr117drop_in_place$LT$alloc..collections..btree..map..IntoIter$LT$alloc..string..String$C$serde_json..value..Value$GT$$GT$17h4943310ea12e60abE.llvm.17184617344634706475"
+      },
+      {
+        "address": "271c2f",
+        "opcode": "call",
+        "operands": "*0xc3bb3(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "271c6e",
+        "opcode": "call",
+        "operands": "*0xc3c4c(%rip)        # 3358c0 <_DYNAMIC+0x300>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "271c87",
+        "opcode": "call",
+        "operands": "*0xc3bb3(%rip)        # 335840 <_DYNAMIC+0x280>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "271ca4",
+        "opcode": "call",
+        "operands": "*0xc3b3e(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "271cca",
+        "opcode": "call",
+        "operands": "*0xc3b18(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "271cd3",
+        "opcode": "call",
+        "operands": "32e800 <_Unwind_Resume@plt>",
+        "target": "_Unwind_Resume@plt"
+      },
+      {
+        "address": "271cde",
+        "opcode": "call",
+        "operands": "2711e0 <core::ptr::drop_in_place<serde_json::value::ser::SerializeMap>>",
+        "target": "core::ptr::drop_in_place<serde_json::value::ser::SerializeMap>"
+      },
+      {
+        "address": "271ce6",
+        "opcode": "call",
+        "operands": "32e800 <_Unwind_Resume@plt>",
+        "target": "_Unwind_Resume@plt"
+      },
+      {
+        "address": "271ceb",
+        "opcode": "call",
+        "operands": "*0xc3b07(%rip)        # 3357f8 <_DYNAMIC+0x238>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "271a88",
+        "opcode": "call",
+        "operands": "*0xc3d72(%rip)        # 335800 <_DYNAMIC+0x240>",
+        "target": "__rustc::__rust_no_alloc_shim_is_unstable_v2"
+      },
+      {
+        "address": "271a98",
+        "opcode": "call",
+        "operands": "*0xc3d6a(%rip)        # 335808 <_DYNAMIC+0x248>",
+        "target": "__rustc::__rust_alloc"
+      },
+      {
+        "address": "271ae2",
+        "opcode": "call",
+        "operands": "*0xc3d00(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "271b1e",
+        "opcode": "call",
+        "operands": "*0xc3da4(%rip)        # 3358c8 <_DYNAMIC+0x308>",
+        "target": "serde_json::value::from::<impl core::convert::From<f64> for serde_json::value::Value>::from"
+      },
+      {
+        "address": "271b42",
+        "opcode": "call",
+        "operands": "*0xc3ca0(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "271c2f",
+        "opcode": "call",
+        "operands": "*0xc3bb3(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "271c6e",
+        "opcode": "call",
+        "operands": "*0xc3c4c(%rip)        # 3358c0 <_DYNAMIC+0x300>",
+        "target": "<serde_json::value::ser::SerializeMap as serde_core::ser::SerializeStruct>::end"
+      },
+      {
+        "address": "271c87",
+        "opcode": "call",
+        "operands": "*0xc3bb3(%rip)        # 335840 <_DYNAMIC+0x280>",
+        "target": "alloc::raw_vec::handle_error"
+      },
+      {
+        "address": "271ca4",
+        "opcode": "call",
+        "operands": "*0xc3b3e(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "271cca",
+        "opcode": "call",
+        "operands": "*0xc3b18(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "271ceb",
+        "opcode": "call",
+        "operands": "*0xc3b07(%rip)        # 3357f8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      }
+    ],
+    "indirect_transfers": [
+      {
+        "address": "271a88",
+        "opcode": "call",
+        "operands": "*0xc3d72(%rip)        # 335800 <_DYNAMIC+0x240>"
+      },
+      {
+        "address": "271a98",
+        "opcode": "call",
+        "operands": "*0xc3d6a(%rip)        # 335808 <_DYNAMIC+0x248>"
+      },
+      {
+        "address": "271ae2",
+        "opcode": "call",
+        "operands": "*0xc3d00(%rip)        # 3357e8 <_DYNAMIC+0x228>"
+      },
+      {
+        "address": "271b1e",
+        "opcode": "call",
+        "operands": "*0xc3da4(%rip)        # 3358c8 <_DYNAMIC+0x308>"
+      },
+      {
+        "address": "271b42",
+        "opcode": "call",
+        "operands": "*0xc3ca0(%rip)        # 3357e8 <_DYNAMIC+0x228>"
+      },
+      {
+        "address": "271c2f",
+        "opcode": "call",
+        "operands": "*0xc3bb3(%rip)        # 3357e8 <_DYNAMIC+0x228>"
+      },
+      {
+        "address": "271c6e",
+        "opcode": "call",
+        "operands": "*0xc3c4c(%rip)        # 3358c0 <_DYNAMIC+0x300>"
+      },
+      {
+        "address": "271c87",
+        "opcode": "call",
+        "operands": "*0xc3bb3(%rip)        # 335840 <_DYNAMIC+0x280>"
+      },
+      {
+        "address": "271ca4",
+        "opcode": "call",
+        "operands": "*0xc3b3e(%rip)        # 3357e8 <_DYNAMIC+0x228>"
+      },
+      {
+        "address": "271cca",
+        "opcode": "call",
+        "operands": "*0xc3b18(%rip)        # 3357e8 <_DYNAMIC+0x228>"
+      },
+      {
+        "address": "271ceb",
+        "opcode": "call",
+        "operands": "*0xc3b07(%rip)        # 3357f8 <_DYNAMIC+0x238>"
+      }
+    ],
+    "conditional_moves": 0,
+    "resolved_indirect_transfers": [
+      {
+        "address": "271a88",
+        "opcode": "call",
+        "operands": "*0xc3d72(%rip)        # 335800 <_DYNAMIC+0x240>",
+        "target": "__rustc::__rust_no_alloc_shim_is_unstable_v2"
+      },
+      {
+        "address": "271a98",
+        "opcode": "call",
+        "operands": "*0xc3d6a(%rip)        # 335808 <_DYNAMIC+0x248>",
+        "target": "__rustc::__rust_alloc"
+      },
+      {
+        "address": "271ae2",
+        "opcode": "call",
+        "operands": "*0xc3d00(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "271b1e",
+        "opcode": "call",
+        "operands": "*0xc3da4(%rip)        # 3358c8 <_DYNAMIC+0x308>",
+        "target": "serde_json::value::from::<impl core::convert::From<f64> for serde_json::value::Value>::from"
+      },
+      {
+        "address": "271b42",
+        "opcode": "call",
+        "operands": "*0xc3ca0(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "271c2f",
+        "opcode": "call",
+        "operands": "*0xc3bb3(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "271c6e",
+        "opcode": "call",
+        "operands": "*0xc3c4c(%rip)        # 3358c0 <_DYNAMIC+0x300>",
+        "target": "<serde_json::value::ser::SerializeMap as serde_core::ser::SerializeStruct>::end"
+      },
+      {
+        "address": "271c87",
+        "opcode": "call",
+        "operands": "*0xc3bb3(%rip)        # 335840 <_DYNAMIC+0x280>",
+        "target": "alloc::raw_vec::handle_error"
+      },
+      {
+        "address": "271ca4",
+        "opcode": "call",
+        "operands": "*0xc3b3e(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "271cca",
+        "opcode": "call",
+        "operands": "*0xc3b18(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "271ceb",
+        "opcode": "call",
+        "operands": "*0xc3b07(%rip)        # 3357f8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      }
+    ]
+  },
+  "kem1536::dev_kem::decapsulate": {
+    "address": "0000000000299e30",
+    "instructions": 1017,
+    "conditional_branches": [
+      {
+        "address": "29a2f3",
+        "opcode": "jne",
+        "operands": "29a220 <kem1536::dev_kem::decapsulate+0x3f0>"
+      },
+      {
+        "address": "29a34e",
+        "opcode": "je",
+        "operands": "29a389 <kem1536::dev_kem::decapsulate+0x559>"
+      },
+      {
+        "address": "29a476",
+        "opcode": "jne",
+        "operands": "29a3d0 <kem1536::dev_kem::decapsulate+0x5a0>"
+      },
+      {
+        "address": "29a4fc",
+        "opcode": "jne",
+        "operands": "29a4a0 <kem1536::dev_kem::decapsulate+0x670>"
+      },
+      {
+        "address": "29a57a",
+        "opcode": "jne",
+        "operands": "29a520 <kem1536::dev_kem::decapsulate+0x6f0>"
+      },
+      {
+        "address": "29a5ea",
+        "opcode": "jne",
+        "operands": "29a590 <kem1536::dev_kem::decapsulate+0x760>"
+      },
+      {
+        "address": "29a65a",
+        "opcode": "jne",
+        "operands": "29a600 <kem1536::dev_kem::decapsulate+0x7d0>"
+      },
+      {
+        "address": "29a6ca",
+        "opcode": "jne",
+        "operands": "29a670 <kem1536::dev_kem::decapsulate+0x840>"
+      },
+      {
+        "address": "29a73a",
+        "opcode": "jne",
+        "operands": "29a6e0 <kem1536::dev_kem::decapsulate+0x8b0>"
+      },
+      {
+        "address": "29a7aa",
+        "opcode": "jne",
+        "operands": "29a750 <kem1536::dev_kem::decapsulate+0x920>"
+      },
+      {
+        "address": "29a81a",
+        "opcode": "jne",
+        "operands": "29a7c0 <kem1536::dev_kem::decapsulate+0x990>"
+      },
+      {
+        "address": "29a88a",
+        "opcode": "jne",
+        "operands": "29a830 <kem1536::dev_kem::decapsulate+0xa00>"
+      },
+      {
+        "address": "29a8fa",
+        "opcode": "jne",
+        "operands": "29a8a0 <kem1536::dev_kem::decapsulate+0xa70>"
+      },
+      {
+        "address": "29a96a",
+        "opcode": "jne",
+        "operands": "29a910 <kem1536::dev_kem::decapsulate+0xae0>"
+      },
+      {
+        "address": "29a9da",
+        "opcode": "jne",
+        "operands": "29a980 <kem1536::dev_kem::decapsulate+0xb50>"
+      },
+      {
+        "address": "29aa4a",
+        "opcode": "jne",
+        "operands": "29a9f0 <kem1536::dev_kem::decapsulate+0xbc0>"
+      },
+      {
+        "address": "29aaba",
+        "opcode": "jne",
+        "operands": "29aa60 <kem1536::dev_kem::decapsulate+0xc30>"
+      },
+      {
+        "address": "29ab2a",
+        "opcode": "jne",
+        "operands": "29aad0 <kem1536::dev_kem::decapsulate+0xca0>"
+      },
+      {
+        "address": "29ab9a",
+        "opcode": "jne",
+        "operands": "29ab40 <kem1536::dev_kem::decapsulate+0xd10>"
+      },
+      {
+        "address": "29ac0a",
+        "opcode": "jne",
+        "operands": "29abb0 <kem1536::dev_kem::decapsulate+0xd80>"
+      },
+      {
+        "address": "29ac7a",
+        "opcode": "jne",
+        "operands": "29ac20 <kem1536::dev_kem::decapsulate+0xdf0>"
+      },
+      {
+        "address": "29af81",
+        "opcode": "jne",
+        "operands": "29af60 <kem1536::dev_kem::decapsulate+0x1130>"
+      },
+      {
+        "address": "29b36b",
+        "opcode": "jne",
+        "operands": "29b320 <kem1536::dev_kem::decapsulate+0x14f0>"
+      },
+      {
+        "address": "29b686",
+        "opcode": "jne",
+        "operands": "29b62c <kem1536::dev_kem::decapsulate+0x17fc>"
+      },
+      {
+        "address": "29b6ea",
+        "opcode": "jne",
+        "operands": "29b6a0 <kem1536::dev_kem::decapsulate+0x1870>"
+      },
+      {
+        "address": "29b77d",
+        "opcode": "jne",
+        "operands": "29b723 <kem1536::dev_kem::decapsulate+0x18f3>"
+      },
+      {
+        "address": "29b7db",
+        "opcode": "jne",
+        "operands": "29b781 <kem1536::dev_kem::decapsulate+0x1951>"
+      },
+      {
+        "address": "29b839",
+        "opcode": "jne",
+        "operands": "29b7df <kem1536::dev_kem::decapsulate+0x19af>"
+      },
+      {
+        "address": "29b897",
+        "opcode": "jne",
+        "operands": "29b83d <kem1536::dev_kem::decapsulate+0x1a0d>"
+      }
+    ],
+    "divisions": [],
+    "calls": [
+      {
+        "address": "299e7a",
+        "opcode": "call",
+        "operands": "*0x9bad8(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "299ed5",
+        "opcode": "call",
+        "operands": "2bd6c0 <kem1536::engine_poly::Polynomial::fill_with>",
+        "target": "kem1536::engine_poly::Polynomial::fill_with"
+      },
+      {
+        "address": "299f1a",
+        "opcode": "call",
+        "operands": "2bd6c0 <kem1536::engine_poly::Polynomial::fill_with>",
+        "target": "kem1536::engine_poly::Polynomial::fill_with"
+      },
+      {
+        "address": "299f5f",
+        "opcode": "call",
+        "operands": "2bd6c0 <kem1536::engine_poly::Polynomial::fill_with>",
+        "target": "kem1536::engine_poly::Polynomial::fill_with"
+      },
+      {
+        "address": "299fa4",
+        "opcode": "call",
+        "operands": "2bd6c0 <kem1536::engine_poly::Polynomial::fill_with>",
+        "target": "kem1536::engine_poly::Polynomial::fill_with"
+      },
+      {
+        "address": "299fe9",
+        "opcode": "call",
+        "operands": "2bd6c0 <kem1536::engine_poly::Polynomial::fill_with>",
+        "target": "kem1536::engine_poly::Polynomial::fill_with"
+      },
+      {
+        "address": "29a02e",
+        "opcode": "call",
+        "operands": "2bd6c0 <kem1536::engine_poly::Polynomial::fill_with>",
+        "target": "kem1536::engine_poly::Polynomial::fill_with"
+      },
+      {
+        "address": "29a04a",
+        "opcode": "call",
+        "operands": "*0x9b908(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29a0a0",
+        "opcode": "call",
+        "operands": "2bd6c0 <kem1536::engine_poly::Polynomial::fill_with>",
+        "target": "kem1536::engine_poly::Polynomial::fill_with"
+      },
+      {
+        "address": "29a0e5",
+        "opcode": "call",
+        "operands": "2bd6c0 <kem1536::engine_poly::Polynomial::fill_with>",
+        "target": "kem1536::engine_poly::Polynomial::fill_with"
+      },
+      {
+        "address": "29a12a",
+        "opcode": "call",
+        "operands": "2bd6c0 <kem1536::engine_poly::Polynomial::fill_with>",
+        "target": "kem1536::engine_poly::Polynomial::fill_with"
+      },
+      {
+        "address": "29a16f",
+        "opcode": "call",
+        "operands": "2bd6c0 <kem1536::engine_poly::Polynomial::fill_with>",
+        "target": "kem1536::engine_poly::Polynomial::fill_with"
+      },
+      {
+        "address": "29a1b4",
+        "opcode": "call",
+        "operands": "2bd6c0 <kem1536::engine_poly::Polynomial::fill_with>",
+        "target": "kem1536::engine_poly::Polynomial::fill_with"
+      },
+      {
+        "address": "29a1f9",
+        "opcode": "call",
+        "operands": "2bd6c0 <kem1536::engine_poly::Polynomial::fill_with>",
+        "target": "kem1536::engine_poly::Polynomial::fill_with"
+      },
+      {
+        "address": "29a21a",
+        "opcode": "call",
+        "operands": "*0x9b738(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29a35e",
+        "opcode": "call",
+        "operands": "2bd590 <kem1536::engine_poly::Polynomial::forward_into>",
+        "target": "kem1536::engine_poly::Polynomial::forward_into"
+      },
+      {
+        "address": "29a371",
+        "opcode": "call",
+        "operands": "2bd590 <kem1536::engine_poly::Polynomial::forward_into>",
+        "target": "kem1536::engine_poly::Polynomial::forward_into"
+      },
+      {
+        "address": "29a37f",
+        "opcode": "call",
+        "operands": "2bdac0 <kem1536::engine_poly::NttPolynomial::multiply_add_assign>",
+        "target": "kem1536::engine_poly::NttPolynomial::multiply_add_assign"
+      },
+      {
+        "address": "29a39b",
+        "opcode": "call",
+        "operands": "*0x9b5b7(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29a3ac",
+        "opcode": "call",
+        "operands": "2bd980 <kem1536::engine_poly::NttPolynomial::inverse_into>",
+        "target": "kem1536::engine_poly::NttPolynomial::inverse_into"
+      },
+      {
+        "address": "29acd1",
+        "opcode": "call",
+        "operands": "29f500 <kem1536::dev_kem::derive>",
+        "target": "kem1536::dev_kem::derive"
+      },
+      {
+        "address": "29acef",
+        "opcode": "call",
+        "operands": "*0x9ac63(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29ad08",
+        "opcode": "call",
+        "operands": "29cbb0 <kem1536::dev_kem::pke_encrypt_into>",
+        "target": "kem1536::dev_kem::pke_encrypt_into"
+      },
+      {
+        "address": "29ad4c",
+        "opcode": "call",
+        "operands": "29eeb0 <kem1536::dev_kem::xof>",
+        "target": "kem1536::dev_kem::xof"
+      },
+      {
+        "address": "29b6f4",
+        "opcode": "call",
+        "operands": "2a2750 <<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop>",
+        "target": "<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop"
+      },
+      {
+        "address": "29b6fe",
+        "opcode": "call",
+        "operands": "2a2850 <<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop>",
+        "target": "<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop"
+      },
+      {
+        "address": "29b708",
+        "opcode": "call",
+        "operands": "*0x9a0ea(%rip)        # 3357f8 <_DYNAMIC+0x238>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29b8a1",
+        "opcode": "call",
+        "operands": "298e50 <core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>>",
+        "target": "core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>"
+      },
+      {
+        "address": "29b8ae",
+        "opcode": "call",
+        "operands": "298e50 <core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>>",
+        "target": "core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>"
+      },
+      {
+        "address": "29b8b6",
+        "opcode": "call",
+        "operands": "32e800 <_Unwind_Resume@plt>",
+        "target": "_Unwind_Resume@plt"
+      },
+      {
+        "address": "299e7a",
+        "opcode": "call",
+        "operands": "*0x9bad8(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29a04a",
+        "opcode": "call",
+        "operands": "*0x9b908(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29a21a",
+        "opcode": "call",
+        "operands": "*0x9b738(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29a39b",
+        "opcode": "call",
+        "operands": "*0x9b5b7(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29acef",
+        "opcode": "call",
+        "operands": "*0x9ac63(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29b708",
+        "opcode": "call",
+        "operands": "*0x9a0ea(%rip)        # 3357f8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      }
+    ],
+    "indirect_transfers": [
+      {
+        "address": "299e7a",
+        "opcode": "call",
+        "operands": "*0x9bad8(%rip)        # 335958 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "29a04a",
+        "opcode": "call",
+        "operands": "*0x9b908(%rip)        # 335958 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "29a21a",
+        "opcode": "call",
+        "operands": "*0x9b738(%rip)        # 335958 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "29a314",
+        "opcode": "call",
+        "operands": "*%rbx"
+      },
+      {
+        "address": "29a328",
+        "opcode": "call",
+        "operands": "*%rbx"
+      },
+      {
+        "address": "29a33c",
+        "opcode": "call",
+        "operands": "*%rbx"
+      },
+      {
+        "address": "29a39b",
+        "opcode": "call",
+        "operands": "*0x9b5b7(%rip)        # 335958 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "29acef",
+        "opcode": "call",
+        "operands": "*0x9ac63(%rip)        # 335958 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "29b708",
+        "opcode": "call",
+        "operands": "*0x9a0ea(%rip)        # 3357f8 <_DYNAMIC+0x238>"
+      }
+    ],
+    "conditional_moves": 7,
+    "resolved_indirect_transfers": [
+      {
+        "address": "299e7a",
+        "opcode": "call",
+        "operands": "*0x9bad8(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29a04a",
+        "opcode": "call",
+        "operands": "*0x9b908(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29a21a",
+        "opcode": "call",
+        "operands": "*0x9b738(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29a39b",
+        "opcode": "call",
+        "operands": "*0x9b5b7(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29acef",
+        "opcode": "call",
+        "operands": "*0x9ac63(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29b708",
+        "opcode": "call",
+        "operands": "*0x9a0ea(%rip)        # 3357f8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      }
+    ]
+  },
+  "kem1536::dev_kem::derive": {
+    "address": "000000000029f500",
+    "instructions": 418,
+    "conditional_branches": [],
+    "divisions": [],
+    "calls": [
+      {
+        "address": "29f59c",
+        "opcode": "call",
+        "operands": "298b40 <<sha3::Sha3_512 as digest::Update>::update>",
+        "target": "<sha3::Sha3_512 as digest::Update>::update"
+      },
+      {
+        "address": "29f5af",
+        "opcode": "call",
+        "operands": "298b40 <<sha3::Sha3_512 as digest::Update>::update>",
+        "target": "<sha3::Sha3_512 as digest::Update>::update"
+      },
+      {
+        "address": "29f5c3",
+        "opcode": "call",
+        "operands": "298b40 <<sha3::Sha3_512 as digest::Update>::update>",
+        "target": "<sha3::Sha3_512 as digest::Update>::update"
+      },
+      {
+        "address": "29f5d8",
+        "opcode": "call",
+        "operands": "298b40 <<sha3::Sha3_512 as digest::Update>::update>",
+        "target": "<sha3::Sha3_512 as digest::Update>::update"
+      },
+      {
+        "address": "29f5f5",
+        "opcode": "call",
+        "operands": "*0x96215(%rip)        # 335810 <memcpy@GLIBC_2.14>",
+        "target": "memcpy@GLIBC_2.14"
+      },
+      {
+        "address": "29f623",
+        "opcode": "call",
+        "operands": "*0x96417(%rip)        # 335a40 <_DYNAMIC+0x480>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29fe02",
+        "opcode": "call",
+        "operands": "32e800 <_Unwind_Resume@plt>",
+        "target": "_Unwind_Resume@plt"
+      },
+      {
+        "address": "29f5f5",
+        "opcode": "call",
+        "operands": "*0x96215(%rip)        # 335810 <memcpy@GLIBC_2.14>",
+        "target": "EXTERNAL:memcpy@GLIBC_2.14"
+      },
+      {
+        "address": "29f623",
+        "opcode": "call",
+        "operands": "*0x96417(%rip)        # 335a40 <_DYNAMIC+0x480>",
+        "target": "<sha3::Sha3_512 as digest::FixedOutput>::finalize_into"
+      }
+    ],
+    "indirect_transfers": [
+      {
+        "address": "29f5f5",
+        "opcode": "call",
+        "operands": "*0x96215(%rip)        # 335810 <memcpy@GLIBC_2.14>"
+      },
+      {
+        "address": "29f623",
+        "opcode": "call",
+        "operands": "*0x96417(%rip)        # 335a40 <_DYNAMIC+0x480>"
+      }
+    ],
+    "conditional_moves": 0,
+    "resolved_indirect_transfers": [
+      {
+        "address": "29f5f5",
+        "opcode": "call",
+        "operands": "*0x96215(%rip)        # 335810 <memcpy@GLIBC_2.14>",
+        "target": "EXTERNAL:memcpy@GLIBC_2.14"
+      },
+      {
+        "address": "29f623",
+        "opcode": "call",
+        "operands": "*0x96417(%rip)        # 335a40 <_DYNAMIC+0x480>",
+        "target": "<sha3::Sha3_512 as digest::FixedOutput>::finalize_into"
+      }
+    ]
+  },
+  "kem1536::dev_kem::encapsulate": {
+    "address": "000000000029b8c0",
+    "instructions": 290,
+    "conditional_branches": [
+      {
+        "address": "29b8f1",
+        "opcode": "je",
+        "operands": "29b957 <kem1536::dev_kem::encapsulate+0x97>"
+      },
+      {
+        "address": "29b8f7",
+        "opcode": "je",
+        "operands": "29b96a <kem1536::dev_kem::encapsulate+0xaa>"
+      },
+      {
+        "address": "29b913",
+        "opcode": "je",
+        "operands": "29ba2f <kem1536::dev_kem::encapsulate+0x16f>"
+      },
+      {
+        "address": "29b927",
+        "opcode": "jle",
+        "operands": "29b940 <kem1536::dev_kem::encapsulate+0x80>"
+      },
+      {
+        "address": "29b92c",
+        "opcode": "jb",
+        "operands": "29b980 <kem1536::dev_kem::encapsulate+0xc0>"
+      },
+      {
+        "address": "29b944",
+        "opcode": "jne",
+        "operands": "29b980 <kem1536::dev_kem::encapsulate+0xc0>"
+      },
+      {
+        "address": "29b94b",
+        "opcode": "je",
+        "operands": "29b910 <kem1536::dev_kem::encapsulate+0x50>"
+      },
+      {
+        "address": "29b968",
+        "opcode": "jne",
+        "operands": "29b8f9 <kem1536::dev_kem::encapsulate+0x39>"
+      },
+      {
+        "address": "29b97a",
+        "opcode": "je",
+        "operands": "29ba2f <kem1536::dev_kem::encapsulate+0x16f>"
+      },
+      {
+        "address": "29bab7",
+        "opcode": "je",
+        "operands": "29bcf0 <kem1536::dev_kem::encapsulate+0x430>"
+      },
+      {
+        "address": "29bd49",
+        "opcode": "jne",
+        "operands": "29bd10 <kem1536::dev_kem::encapsulate+0x450>"
+      }
+    ],
+    "divisions": [],
+    "calls": [
+      {
+        "address": "29b94f",
+        "opcode": "call",
+        "operands": "*0x9a0fb(%rip)        # 335a50 <_DYNAMIC+0x490>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29b957",
+        "opcode": "call",
+        "operands": "*0x9a02b(%rip)        # 335988 <_DYNAMIC+0x3c8>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29b972",
+        "opcode": "call",
+        "operands": "*0x9a018(%rip)        # 335990 <_DYNAMIC+0x3d0>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29ba5c",
+        "opcode": "call",
+        "operands": "29bdb0 <kem1536::dev_kem::hash_public>",
+        "target": "kem1536::dev_kem::hash_public"
+      },
+      {
+        "address": "29ba99",
+        "opcode": "call",
+        "operands": "29f500 <kem1536::dev_kem::derive>",
+        "target": "kem1536::dev_kem::derive"
+      },
+      {
+        "address": "29ba9e",
+        "opcode": "call",
+        "operands": "*0x99d5c(%rip)        # 335800 <_DYNAMIC+0x240>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29baae",
+        "opcode": "call",
+        "operands": "*0x99d54(%rip)        # 335808 <_DYNAMIC+0x248>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29bacf",
+        "opcode": "call",
+        "operands": "*0x99e83(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29bae3",
+        "opcode": "call",
+        "operands": "29cbb0 <kem1536::dev_kem::pke_encrypt_into>",
+        "target": "kem1536::dev_kem::pke_encrypt_into"
+      },
+      {
+        "address": "29bcfa",
+        "opcode": "call",
+        "operands": "*0x99b18(%rip)        # 335818 <_DYNAMIC+0x258>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29bd58",
+        "opcode": "call",
+        "operands": "*0x99a8a(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29bd6d",
+        "opcode": "call",
+        "operands": "2a2850 <<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop>",
+        "target": "<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop"
+      },
+      {
+        "address": "29bd74",
+        "opcode": "call",
+        "operands": "*0x99a7e(%rip)        # 3357f8 <_DYNAMIC+0x238>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29bd80",
+        "opcode": "call",
+        "operands": "2a2750 <<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop>",
+        "target": "<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop"
+      },
+      {
+        "address": "29bd8a",
+        "opcode": "call",
+        "operands": "2a2850 <<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop>",
+        "target": "<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop"
+      },
+      {
+        "address": "29bd92",
+        "opcode": "call",
+        "operands": "32e800 <_Unwind_Resume@plt>",
+        "target": "_Unwind_Resume@plt"
+      },
+      {
+        "address": "29bd97",
+        "opcode": "call",
+        "operands": "*0x99a5b(%rip)        # 3357f8 <_DYNAMIC+0x238>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29bd9d",
+        "opcode": "call",
+        "operands": "*0x99a55(%rip)        # 3357f8 <_DYNAMIC+0x238>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29b94f",
+        "opcode": "call",
+        "operands": "*0x9a0fb(%rip)        # 335a50 <_DYNAMIC+0x490>",
+        "target": "getrandom::error::Error::from_errno"
+      },
+      {
+        "address": "29b957",
+        "opcode": "call",
+        "operands": "*0x9a02b(%rip)        # 335988 <_DYNAMIC+0x3c8>",
+        "target": "getrandom::backends::linux_android_with_fallback::init"
+      },
+      {
+        "address": "29b972",
+        "opcode": "call",
+        "operands": "*0x9a018(%rip)        # 335990 <_DYNAMIC+0x3d0>",
+        "target": "getrandom::backends::linux_android_with_fallback::use_file_fallback"
+      },
+      {
+        "address": "29ba9e",
+        "opcode": "call",
+        "operands": "*0x99d5c(%rip)        # 335800 <_DYNAMIC+0x240>",
+        "target": "__rustc::__rust_no_alloc_shim_is_unstable_v2"
+      },
+      {
+        "address": "29baae",
+        "opcode": "call",
+        "operands": "*0x99d54(%rip)        # 335808 <_DYNAMIC+0x248>",
+        "target": "__rustc::__rust_alloc"
+      },
+      {
+        "address": "29bacf",
+        "opcode": "call",
+        "operands": "*0x99e83(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29bcfa",
+        "opcode": "call",
+        "operands": "*0x99b18(%rip)        # 335818 <_DYNAMIC+0x258>",
+        "target": "alloc::alloc::handle_alloc_error"
+      },
+      {
+        "address": "29bd58",
+        "opcode": "call",
+        "operands": "*0x99a8a(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "29bd74",
+        "opcode": "call",
+        "operands": "*0x99a7e(%rip)        # 3357f8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      },
+      {
+        "address": "29bd97",
+        "opcode": "call",
+        "operands": "*0x99a5b(%rip)        # 3357f8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      },
+      {
+        "address": "29bd9d",
+        "opcode": "call",
+        "operands": "*0x99a55(%rip)        # 3357f8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      }
+    ],
+    "indirect_transfers": [
+      {
+        "address": "29b921",
+        "opcode": "call",
+        "operands": "*%r15"
+      },
+      {
+        "address": "29b946",
+        "opcode": "call",
+        "operands": "*%rbp"
+      },
+      {
+        "address": "29b94f",
+        "opcode": "call",
+        "operands": "*0x9a0fb(%rip)        # 335a50 <_DYNAMIC+0x490>"
+      },
+      {
+        "address": "29b957",
+        "opcode": "call",
+        "operands": "*0x9a02b(%rip)        # 335988 <_DYNAMIC+0x3c8>"
+      },
+      {
+        "address": "29b972",
+        "opcode": "call",
+        "operands": "*0x9a018(%rip)        # 335990 <_DYNAMIC+0x3d0>"
+      },
+      {
+        "address": "29ba9e",
+        "opcode": "call",
+        "operands": "*0x99d5c(%rip)        # 335800 <_DYNAMIC+0x240>"
+      },
+      {
+        "address": "29baae",
+        "opcode": "call",
+        "operands": "*0x99d54(%rip)        # 335808 <_DYNAMIC+0x248>"
+      },
+      {
+        "address": "29bacf",
+        "opcode": "call",
+        "operands": "*0x99e83(%rip)        # 335958 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "29bcfa",
+        "opcode": "call",
+        "operands": "*0x99b18(%rip)        # 335818 <_DYNAMIC+0x258>"
+      },
+      {
+        "address": "29bd58",
+        "opcode": "call",
+        "operands": "*0x99a8a(%rip)        # 3357e8 <_DYNAMIC+0x228>"
+      },
+      {
+        "address": "29bd74",
+        "opcode": "call",
+        "operands": "*0x99a7e(%rip)        # 3357f8 <_DYNAMIC+0x238>"
+      },
+      {
+        "address": "29bd97",
+        "opcode": "call",
+        "operands": "*0x99a5b(%rip)        # 3357f8 <_DYNAMIC+0x238>"
+      },
+      {
+        "address": "29bd9d",
+        "opcode": "call",
+        "operands": "*0x99a55(%rip)        # 3357f8 <_DYNAMIC+0x238>"
+      }
+    ],
+    "conditional_moves": 0,
+    "resolved_indirect_transfers": [
+      {
+        "address": "29b94f",
+        "opcode": "call",
+        "operands": "*0x9a0fb(%rip)        # 335a50 <_DYNAMIC+0x490>",
+        "target": "getrandom::error::Error::from_errno"
+      },
+      {
+        "address": "29b957",
+        "opcode": "call",
+        "operands": "*0x9a02b(%rip)        # 335988 <_DYNAMIC+0x3c8>",
+        "target": "getrandom::backends::linux_android_with_fallback::init"
+      },
+      {
+        "address": "29b972",
+        "opcode": "call",
+        "operands": "*0x9a018(%rip)        # 335990 <_DYNAMIC+0x3d0>",
+        "target": "getrandom::backends::linux_android_with_fallback::use_file_fallback"
+      },
+      {
+        "address": "29ba9e",
+        "opcode": "call",
+        "operands": "*0x99d5c(%rip)        # 335800 <_DYNAMIC+0x240>",
+        "target": "__rustc::__rust_no_alloc_shim_is_unstable_v2"
+      },
+      {
+        "address": "29baae",
+        "opcode": "call",
+        "operands": "*0x99d54(%rip)        # 335808 <_DYNAMIC+0x248>",
+        "target": "__rustc::__rust_alloc"
+      },
+      {
+        "address": "29bacf",
+        "opcode": "call",
+        "operands": "*0x99e83(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29bcfa",
+        "opcode": "call",
+        "operands": "*0x99b18(%rip)        # 335818 <_DYNAMIC+0x258>",
+        "target": "alloc::alloc::handle_alloc_error"
+      },
+      {
+        "address": "29bd58",
+        "opcode": "call",
+        "operands": "*0x99a8a(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "29bd74",
+        "opcode": "call",
+        "operands": "*0x99a7e(%rip)        # 3357f8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      },
+      {
+        "address": "29bd97",
+        "opcode": "call",
+        "operands": "*0x99a5b(%rip)        # 3357f8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      },
+      {
+        "address": "29bd9d",
+        "opcode": "call",
+        "operands": "*0x99a55(%rip)        # 3357f8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      }
+    ]
+  },
+  "kem1536::dev_kem::encode_vector_into": {
+    "address": "000000000029ec90",
+    "instructions": 165,
+    "conditional_branches": [
+      {
+        "address": "29ee72",
+        "opcode": "jne",
+        "operands": "29ecd0 <kem1536::dev_kem::encode_vector_into+0x40>"
+      },
+      {
+        "address": "29ee90",
+        "opcode": "jne",
+        "operands": "29ecb0 <kem1536::dev_kem::encode_vector_into+0x20>"
+      }
+    ],
+    "divisions": [],
+    "calls": [],
+    "indirect_transfers": [
+      {
+        "address": "29ecc4",
+        "opcode": "call",
+        "operands": "*%r13"
+      }
+    ],
+    "conditional_moves": 0,
+    "resolved_indirect_transfers": []
+  },
+  "kem1536::dev_kem::hash_public": {
+    "address": "000000000029bdb0",
+    "instructions": 91,
+    "conditional_branches": [],
+    "divisions": [],
+    "calls": [
+      {
+        "address": "29be2e",
+        "opcode": "call",
+        "operands": "298710 <sponge_cursor::SpongeCursor<_>::absorb_u64_le>",
+        "target": "sponge_cursor::SpongeCursor<_>::absorb_u64_le"
+      },
+      {
+        "address": "29be45",
+        "opcode": "call",
+        "operands": "298710 <sponge_cursor::SpongeCursor<_>::absorb_u64_le>",
+        "target": "sponge_cursor::SpongeCursor<_>::absorb_u64_le"
+      },
+      {
+        "address": "29be58",
+        "opcode": "call",
+        "operands": "298710 <sponge_cursor::SpongeCursor<_>::absorb_u64_le>",
+        "target": "sponge_cursor::SpongeCursor<_>::absorb_u64_le"
+      },
+      {
+        "address": "29be70",
+        "opcode": "call",
+        "operands": "*0x9999a(%rip)        # 335810 <memcpy@GLIBC_2.14>",
+        "target": "memcpy@GLIBC_2.14"
+      },
+      {
+        "address": "29be94",
+        "opcode": "call",
+        "operands": "*0x99afe(%rip)        # 335998 <_DYNAMIC+0x3d8>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29bfc4",
+        "opcode": "call",
+        "operands": "32e800 <_Unwind_Resume@plt>",
+        "target": "_Unwind_Resume@plt"
+      },
+      {
+        "address": "29be70",
+        "opcode": "call",
+        "operands": "*0x9999a(%rip)        # 335810 <memcpy@GLIBC_2.14>",
+        "target": "EXTERNAL:memcpy@GLIBC_2.14"
+      },
+      {
+        "address": "29be94",
+        "opcode": "call",
+        "operands": "*0x99afe(%rip)        # 335998 <_DYNAMIC+0x3d8>",
+        "target": "<sha3::Sha3_256 as digest::FixedOutput>::finalize_into"
+      }
+    ],
+    "indirect_transfers": [
+      {
+        "address": "29be70",
+        "opcode": "call",
+        "operands": "*0x9999a(%rip)        # 335810 <memcpy@GLIBC_2.14>"
+      },
+      {
+        "address": "29be94",
+        "opcode": "call",
+        "operands": "*0x99afe(%rip)        # 335998 <_DYNAMIC+0x3d8>"
+      }
+    ],
+    "conditional_moves": 0,
+    "resolved_indirect_transfers": [
+      {
+        "address": "29be70",
+        "opcode": "call",
+        "operands": "*0x9999a(%rip)        # 335810 <memcpy@GLIBC_2.14>",
+        "target": "EXTERNAL:memcpy@GLIBC_2.14"
+      },
+      {
+        "address": "29be94",
+        "opcode": "call",
+        "operands": "*0x99afe(%rip)        # 335998 <_DYNAMIC+0x3d8>",
+        "target": "<sha3::Sha3_256 as digest::FixedOutput>::finalize_into"
+      }
+    ]
+  },
+  "kem1536::dev_kem::keygen": {
+    "address": "000000000029fe10",
+    "instructions": 1311,
+    "conditional_branches": [
+      {
+        "address": "29fe7c",
+        "opcode": "je",
+        "operands": "29fee7 <kem1536::dev_kem::keygen+0xd7>"
+      },
+      {
+        "address": "29fe82",
+        "opcode": "je",
+        "operands": "29fef9 <kem1536::dev_kem::keygen+0xe9>"
+      },
+      {
+        "address": "29fea3",
+        "opcode": "je",
+        "operands": "2a012c <kem1536::dev_kem::keygen+0x31c>"
+      },
+      {
+        "address": "29feb7",
+        "opcode": "jle",
+        "operands": "29fed0 <kem1536::dev_kem::keygen+0xc0>"
+      },
+      {
+        "address": "29febc",
+        "opcode": "jb",
+        "operands": "29ff14 <kem1536::dev_kem::keygen+0x104>"
+      },
+      {
+        "address": "29fed4",
+        "opcode": "jne",
+        "operands": "29ff14 <kem1536::dev_kem::keygen+0x104>"
+      },
+      {
+        "address": "29fedb",
+        "opcode": "je",
+        "operands": "29fea0 <kem1536::dev_kem::keygen+0x90>"
+      },
+      {
+        "address": "29fef7",
+        "opcode": "jne",
+        "operands": "29fe84 <kem1536::dev_kem::keygen+0x74>"
+      },
+      {
+        "address": "29ff0e",
+        "opcode": "je",
+        "operands": "2a012c <kem1536::dev_kem::keygen+0x31c>"
+      },
+      {
+        "address": "2a01e7",
+        "opcode": "je",
+        "operands": "2a020c <kem1536::dev_kem::keygen+0x3fc>"
+      },
+      {
+        "address": "2a023e",
+        "opcode": "je",
+        "operands": "2a0260 <kem1536::dev_kem::keygen+0x450>"
+      },
+      {
+        "address": "2a0307",
+        "opcode": "je",
+        "operands": "2a03bc <kem1536::dev_kem::keygen+0x5ac>"
+      },
+      {
+        "address": "2a03aa",
+        "opcode": "jne",
+        "operands": "2a0350 <kem1536::dev_kem::keygen+0x540>"
+      },
+      {
+        "address": "2a0487",
+        "opcode": "jne",
+        "operands": "2a03f0 <kem1536::dev_kem::keygen+0x5e0>"
+      },
+      {
+        "address": "2a04e7",
+        "opcode": "je",
+        "operands": "2a059c <kem1536::dev_kem::keygen+0x78c>"
+      },
+      {
+        "address": "2a058a",
+        "opcode": "jne",
+        "operands": "2a0530 <kem1536::dev_kem::keygen+0x720>"
+      },
+      {
+        "address": "2a0667",
+        "opcode": "jne",
+        "operands": "2a05d0 <kem1536::dev_kem::keygen+0x7c0>"
+      },
+      {
+        "address": "2a06c7",
+        "opcode": "je",
+        "operands": "2a077c <kem1536::dev_kem::keygen+0x96c>"
+      },
+      {
+        "address": "2a076a",
+        "opcode": "jne",
+        "operands": "2a0710 <kem1536::dev_kem::keygen+0x900>"
+      },
+      {
+        "address": "2a0847",
+        "opcode": "jne",
+        "operands": "2a07b0 <kem1536::dev_kem::keygen+0x9a0>"
+      },
+      {
+        "address": "2a08a7",
+        "opcode": "je",
+        "operands": "2a095c <kem1536::dev_kem::keygen+0xb4c>"
+      },
+      {
+        "address": "2a094a",
+        "opcode": "jne",
+        "operands": "2a08f0 <kem1536::dev_kem::keygen+0xae0>"
+      },
+      {
+        "address": "2a0a27",
+        "opcode": "jne",
+        "operands": "2a0990 <kem1536::dev_kem::keygen+0xb80>"
+      },
+      {
+        "address": "2a0a87",
+        "opcode": "je",
+        "operands": "2a0b3c <kem1536::dev_kem::keygen+0xd2c>"
+      },
+      {
+        "address": "2a0b2a",
+        "opcode": "jne",
+        "operands": "2a0ad0 <kem1536::dev_kem::keygen+0xcc0>"
+      },
+      {
+        "address": "2a0c07",
+        "opcode": "jne",
+        "operands": "2a0b70 <kem1536::dev_kem::keygen+0xd60>"
+      },
+      {
+        "address": "2a0c67",
+        "opcode": "je",
+        "operands": "2a0d1c <kem1536::dev_kem::keygen+0xf0c>"
+      },
+      {
+        "address": "2a0d0a",
+        "opcode": "jne",
+        "operands": "2a0cb0 <kem1536::dev_kem::keygen+0xea0>"
+      },
+      {
+        "address": "2a0de7",
+        "opcode": "jne",
+        "operands": "2a0d50 <kem1536::dev_kem::keygen+0xf40>"
+      },
+      {
+        "address": "2a0e06",
+        "opcode": "je",
+        "operands": "2a1ad5 <kem1536::dev_kem::keygen+0x1cc5>"
+      },
+      {
+        "address": "2a0eba",
+        "opcode": "jne",
+        "operands": "2a0e60 <kem1536::dev_kem::keygen+0x1050>"
+      },
+      {
+        "address": "2a0f2a",
+        "opcode": "jne",
+        "operands": "2a0ed0 <kem1536::dev_kem::keygen+0x10c0>"
+      },
+      {
+        "address": "2a0f9a",
+        "opcode": "jne",
+        "operands": "2a0f40 <kem1536::dev_kem::keygen+0x1130>"
+      },
+      {
+        "address": "2a100a",
+        "opcode": "jne",
+        "operands": "2a0fb0 <kem1536::dev_kem::keygen+0x11a0>"
+      },
+      {
+        "address": "2a107a",
+        "opcode": "jne",
+        "operands": "2a1020 <kem1536::dev_kem::keygen+0x1210>"
+      },
+      {
+        "address": "2a10ea",
+        "opcode": "jne",
+        "operands": "2a1090 <kem1536::dev_kem::keygen+0x1280>"
+      },
+      {
+        "address": "2a115a",
+        "opcode": "jne",
+        "operands": "2a1100 <kem1536::dev_kem::keygen+0x12f0>"
+      },
+      {
+        "address": "2a11ca",
+        "opcode": "jne",
+        "operands": "2a1170 <kem1536::dev_kem::keygen+0x1360>"
+      },
+      {
+        "address": "2a123a",
+        "opcode": "jne",
+        "operands": "2a11e0 <kem1536::dev_kem::keygen+0x13d0>"
+      },
+      {
+        "address": "2a12aa",
+        "opcode": "jne",
+        "operands": "2a1250 <kem1536::dev_kem::keygen+0x1440>"
+      },
+      {
+        "address": "2a131a",
+        "opcode": "jne",
+        "operands": "2a12c0 <kem1536::dev_kem::keygen+0x14b0>"
+      },
+      {
+        "address": "2a138a",
+        "opcode": "jne",
+        "operands": "2a1330 <kem1536::dev_kem::keygen+0x1520>"
+      },
+      {
+        "address": "2a13fa",
+        "opcode": "jne",
+        "operands": "2a13a0 <kem1536::dev_kem::keygen+0x1590>"
+      },
+      {
+        "address": "2a146a",
+        "opcode": "jne",
+        "operands": "2a1410 <kem1536::dev_kem::keygen+0x1600>"
+      },
+      {
+        "address": "2a14da",
+        "opcode": "jne",
+        "operands": "2a1480 <kem1536::dev_kem::keygen+0x1670>"
+      },
+      {
+        "address": "2a1635",
+        "opcode": "je",
+        "operands": "2a1ae7 <kem1536::dev_kem::keygen+0x1cd7>"
+      },
+      {
+        "address": "2a172a",
+        "opcode": "jne",
+        "operands": "2a16d0 <kem1536::dev_kem::keygen+0x18c0>"
+      },
+      {
+        "address": "2a179a",
+        "opcode": "jne",
+        "operands": "2a1740 <kem1536::dev_kem::keygen+0x1930>"
+      },
+      {
+        "address": "2a180a",
+        "opcode": "jne",
+        "operands": "2a17b0 <kem1536::dev_kem::keygen+0x19a0>"
+      },
+      {
+        "address": "2a187a",
+        "opcode": "jne",
+        "operands": "2a1820 <kem1536::dev_kem::keygen+0x1a10>"
+      },
+      {
+        "address": "2a18ea",
+        "opcode": "jne",
+        "operands": "2a1890 <kem1536::dev_kem::keygen+0x1a80>"
+      },
+      {
+        "address": "2a195a",
+        "opcode": "jne",
+        "operands": "2a1900 <kem1536::dev_kem::keygen+0x1af0>"
+      },
+      {
+        "address": "2a1b3a",
+        "opcode": "jne",
+        "operands": "2a1b01 <kem1536::dev_kem::keygen+0x1cf1>"
+      },
+      {
+        "address": "2a1be7",
+        "opcode": "jne",
+        "operands": "2a1b8d <kem1536::dev_kem::keygen+0x1d7d>"
+      },
+      {
+        "address": "2a1c8a",
+        "opcode": "jne",
+        "operands": "2a1c30 <kem1536::dev_kem::keygen+0x1e20>"
+      },
+      {
+        "address": "2a1cea",
+        "opcode": "jne",
+        "operands": "2a1c90 <kem1536::dev_kem::keygen+0x1e80>"
+      },
+      {
+        "address": "2a1d4a",
+        "opcode": "jne",
+        "operands": "2a1cf0 <kem1536::dev_kem::keygen+0x1ee0>"
+      }
+    ],
+    "divisions": [],
+    "calls": [
+      {
+        "address": "29fedf",
+        "opcode": "call",
+        "operands": "*0x95b6b(%rip)        # 335a50 <_DYNAMIC+0x490>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29fee7",
+        "opcode": "call",
+        "operands": "*0x95a9b(%rip)        # 335988 <_DYNAMIC+0x3c8>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29ff06",
+        "opcode": "call",
+        "operands": "*0x95a84(%rip)        # 335990 <_DYNAMIC+0x3d0>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "2a017d",
+        "opcode": "call",
+        "operands": "*0x957d5(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a01d0",
+        "opcode": "call",
+        "operands": "29f500 <kem1536::dev_kem::derive>",
+        "target": "kem1536::dev_kem::derive"
+      },
+      {
+        "address": "2a0205",
+        "opcode": "call",
+        "operands": "299570 <kem1536::dev_kem::noise_into>",
+        "target": "kem1536::dev_kem::noise_into"
+      },
+      {
+        "address": "2a021d",
+        "opcode": "call",
+        "operands": "*0x95735(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a0256",
+        "opcode": "call",
+        "operands": "2bd590 <kem1536::engine_poly::Polynomial::forward_into>",
+        "target": "kem1536::engine_poly::Polynomial::forward_into"
+      },
+      {
+        "address": "2a02bb",
+        "opcode": "call",
+        "operands": "299570 <kem1536::dev_kem::noise_into>",
+        "target": "kem1536::dev_kem::noise_into"
+      },
+      {
+        "address": "2a02d4",
+        "opcode": "call",
+        "operands": "*0x9567e(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a0319",
+        "opcode": "call",
+        "operands": "2a1da0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a0324",
+        "opcode": "call",
+        "operands": "2bd590 <kem1536::engine_poly::Polynomial::forward_into>",
+        "target": "kem1536::engine_poly::Polynomial::forward_into"
+      },
+      {
+        "address": "2a03b2",
+        "opcode": "call",
+        "operands": "2bdac0 <kem1536::engine_poly::NttPolynomial::multiply_add_assign>",
+        "target": "kem1536::engine_poly::NttPolynomial::multiply_add_assign"
+      },
+      {
+        "address": "2a03cc",
+        "opcode": "call",
+        "operands": "2bd980 <kem1536::engine_poly::NttPolynomial::inverse_into>",
+        "target": "kem1536::engine_poly::NttPolynomial::inverse_into"
+      },
+      {
+        "address": "2a049f",
+        "opcode": "call",
+        "operands": "299570 <kem1536::dev_kem::noise_into>",
+        "target": "kem1536::dev_kem::noise_into"
+      },
+      {
+        "address": "2a04b8",
+        "opcode": "call",
+        "operands": "*0x9549a(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a04fc",
+        "opcode": "call",
+        "operands": "2a1da0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a0507",
+        "opcode": "call",
+        "operands": "2bd590 <kem1536::engine_poly::Polynomial::forward_into>",
+        "target": "kem1536::engine_poly::Polynomial::forward_into"
+      },
+      {
+        "address": "2a0592",
+        "opcode": "call",
+        "operands": "2bdac0 <kem1536::engine_poly::NttPolynomial::multiply_add_assign>",
+        "target": "kem1536::engine_poly::NttPolynomial::multiply_add_assign"
+      },
+      {
+        "address": "2a05ac",
+        "opcode": "call",
+        "operands": "2bd980 <kem1536::engine_poly::NttPolynomial::inverse_into>",
+        "target": "kem1536::engine_poly::NttPolynomial::inverse_into"
+      },
+      {
+        "address": "2a067f",
+        "opcode": "call",
+        "operands": "299570 <kem1536::dev_kem::noise_into>",
+        "target": "kem1536::dev_kem::noise_into"
+      },
+      {
+        "address": "2a0698",
+        "opcode": "call",
+        "operands": "*0x952ba(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a06dc",
+        "opcode": "call",
+        "operands": "2a1da0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a06e7",
+        "opcode": "call",
+        "operands": "2bd590 <kem1536::engine_poly::Polynomial::forward_into>",
+        "target": "kem1536::engine_poly::Polynomial::forward_into"
+      },
+      {
+        "address": "2a0772",
+        "opcode": "call",
+        "operands": "2bdac0 <kem1536::engine_poly::NttPolynomial::multiply_add_assign>",
+        "target": "kem1536::engine_poly::NttPolynomial::multiply_add_assign"
+      },
+      {
+        "address": "2a078c",
+        "opcode": "call",
+        "operands": "2bd980 <kem1536::engine_poly::NttPolynomial::inverse_into>",
+        "target": "kem1536::engine_poly::NttPolynomial::inverse_into"
+      },
+      {
+        "address": "2a085f",
+        "opcode": "call",
+        "operands": "299570 <kem1536::dev_kem::noise_into>",
+        "target": "kem1536::dev_kem::noise_into"
+      },
+      {
+        "address": "2a0878",
+        "opcode": "call",
+        "operands": "*0x950da(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a08bc",
+        "opcode": "call",
+        "operands": "2a1da0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a08c7",
+        "opcode": "call",
+        "operands": "2bd590 <kem1536::engine_poly::Polynomial::forward_into>",
+        "target": "kem1536::engine_poly::Polynomial::forward_into"
+      },
+      {
+        "address": "2a0952",
+        "opcode": "call",
+        "operands": "2bdac0 <kem1536::engine_poly::NttPolynomial::multiply_add_assign>",
+        "target": "kem1536::engine_poly::NttPolynomial::multiply_add_assign"
+      },
+      {
+        "address": "2a096c",
+        "opcode": "call",
+        "operands": "2bd980 <kem1536::engine_poly::NttPolynomial::inverse_into>",
+        "target": "kem1536::engine_poly::NttPolynomial::inverse_into"
+      },
+      {
+        "address": "2a0a3f",
+        "opcode": "call",
+        "operands": "299570 <kem1536::dev_kem::noise_into>",
+        "target": "kem1536::dev_kem::noise_into"
+      },
+      {
+        "address": "2a0a58",
+        "opcode": "call",
+        "operands": "*0x94efa(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a0a9c",
+        "opcode": "call",
+        "operands": "2a1da0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a0aa7",
+        "opcode": "call",
+        "operands": "2bd590 <kem1536::engine_poly::Polynomial::forward_into>",
+        "target": "kem1536::engine_poly::Polynomial::forward_into"
+      },
+      {
+        "address": "2a0b32",
+        "opcode": "call",
+        "operands": "2bdac0 <kem1536::engine_poly::NttPolynomial::multiply_add_assign>",
+        "target": "kem1536::engine_poly::NttPolynomial::multiply_add_assign"
+      },
+      {
+        "address": "2a0b4c",
+        "opcode": "call",
+        "operands": "2bd980 <kem1536::engine_poly::NttPolynomial::inverse_into>",
+        "target": "kem1536::engine_poly::NttPolynomial::inverse_into"
+      },
+      {
+        "address": "2a0c1f",
+        "opcode": "call",
+        "operands": "299570 <kem1536::dev_kem::noise_into>",
+        "target": "kem1536::dev_kem::noise_into"
+      },
+      {
+        "address": "2a0c38",
+        "opcode": "call",
+        "operands": "*0x94d1a(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a0c7c",
+        "opcode": "call",
+        "operands": "2a1da0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a0c87",
+        "opcode": "call",
+        "operands": "2bd590 <kem1536::engine_poly::Polynomial::forward_into>",
+        "target": "kem1536::engine_poly::Polynomial::forward_into"
+      },
+      {
+        "address": "2a0d12",
+        "opcode": "call",
+        "operands": "2bdac0 <kem1536::engine_poly::NttPolynomial::multiply_add_assign>",
+        "target": "kem1536::engine_poly::NttPolynomial::multiply_add_assign"
+      },
+      {
+        "address": "2a0d2c",
+        "opcode": "call",
+        "operands": "2bd980 <kem1536::engine_poly::NttPolynomial::inverse_into>",
+        "target": "kem1536::engine_poly::NttPolynomial::inverse_into"
+      },
+      {
+        "address": "2a0ded",
+        "opcode": "call",
+        "operands": "*0x94a0d(%rip)        # 335800 <_DYNAMIC+0x240>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "2a0dfd",
+        "opcode": "call",
+        "operands": "*0x94a05(%rip)        # 335808 <_DYNAMIC+0x248>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "2a0e19",
+        "opcode": "call",
+        "operands": "*0x94b39(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a0e2a",
+        "opcode": "call",
+        "operands": "29ec90 <kem1536::dev_kem::encode_vector_into>",
+        "target": "kem1536::dev_kem::encode_vector_into"
+      },
+      {
+        "address": "2a161c",
+        "opcode": "call",
+        "operands": "*0x941de(%rip)        # 335800 <_DYNAMIC+0x240>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "2a162c",
+        "opcode": "call",
+        "operands": "*0x941d6(%rip)        # 335808 <_DYNAMIC+0x248>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "2a1648",
+        "opcode": "call",
+        "operands": "*0x9430a(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a1659",
+        "opcode": "call",
+        "operands": "29ec90 <kem1536::dev_kem::encode_vector_into>",
+        "target": "kem1536::dev_kem::encode_vector_into"
+      },
+      {
+        "address": "2a1670",
+        "opcode": "call",
+        "operands": "*0x9419a(%rip)        # 335810 <memcpy@GLIBC_2.14>",
+        "target": "memcpy@GLIBC_2.14"
+      },
+      {
+        "address": "2a1681",
+        "opcode": "call",
+        "operands": "29bdb0 <kem1536::dev_kem::hash_public>",
+        "target": "kem1536::dev_kem::hash_public"
+      },
+      {
+        "address": "2a1adf",
+        "opcode": "call",
+        "operands": "*0x93d33(%rip)        # 335818 <_DYNAMIC+0x258>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "2a1af1",
+        "opcode": "call",
+        "operands": "*0x93d21(%rip)        # 335818 <_DYNAMIC+0x258>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "2a1b49",
+        "opcode": "call",
+        "operands": "*0x93c99(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "2a1b69",
+        "opcode": "call",
+        "operands": "2a2750 <<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop>",
+        "target": "<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop"
+      },
+      {
+        "address": "2a1b73",
+        "opcode": "call",
+        "operands": "*0x93c7f(%rip)        # 3357f8 <_DYNAMIC+0x238>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "2a1c17",
+        "opcode": "call",
+        "operands": "*0x93bcb(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "2a1d54",
+        "opcode": "call",
+        "operands": "298e50 <core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>>",
+        "target": "core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>"
+      },
+      {
+        "address": "2a1d61",
+        "opcode": "call",
+        "operands": "298e50 <core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>>",
+        "target": "core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>"
+      },
+      {
+        "address": "2a1d6b",
+        "opcode": "call",
+        "operands": "2a2750 <<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop>",
+        "target": "<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop"
+      },
+      {
+        "address": "2a1d78",
+        "opcode": "call",
+        "operands": "298e50 <core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>>",
+        "target": "core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>"
+      },
+      {
+        "address": "2a1d82",
+        "opcode": "call",
+        "operands": "2a2750 <<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop>",
+        "target": "<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop"
+      },
+      {
+        "address": "2a1d8a",
+        "opcode": "call",
+        "operands": "32e800 <_Unwind_Resume@plt>",
+        "target": "_Unwind_Resume@plt"
+      },
+      {
+        "address": "2a1d8f",
+        "opcode": "call",
+        "operands": "*0x93a63(%rip)        # 3357f8 <_DYNAMIC+0x238>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "2a1d95",
+        "opcode": "call",
+        "operands": "*0x93a5d(%rip)        # 3357f8 <_DYNAMIC+0x238>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29fedf",
+        "opcode": "call",
+        "operands": "*0x95b6b(%rip)        # 335a50 <_DYNAMIC+0x490>",
+        "target": "getrandom::error::Error::from_errno"
+      },
+      {
+        "address": "29fee7",
+        "opcode": "call",
+        "operands": "*0x95a9b(%rip)        # 335988 <_DYNAMIC+0x3c8>",
+        "target": "getrandom::backends::linux_android_with_fallback::init"
+      },
+      {
+        "address": "29ff06",
+        "opcode": "call",
+        "operands": "*0x95a84(%rip)        # 335990 <_DYNAMIC+0x3d0>",
+        "target": "getrandom::backends::linux_android_with_fallback::use_file_fallback"
+      },
+      {
+        "address": "2a017d",
+        "opcode": "call",
+        "operands": "*0x957d5(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a021d",
+        "opcode": "call",
+        "operands": "*0x95735(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a02d4",
+        "opcode": "call",
+        "operands": "*0x9567e(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a04b8",
+        "opcode": "call",
+        "operands": "*0x9549a(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a0698",
+        "opcode": "call",
+        "operands": "*0x952ba(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a0878",
+        "opcode": "call",
+        "operands": "*0x950da(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a0a58",
+        "opcode": "call",
+        "operands": "*0x94efa(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a0c38",
+        "opcode": "call",
+        "operands": "*0x94d1a(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a0ded",
+        "opcode": "call",
+        "operands": "*0x94a0d(%rip)        # 335800 <_DYNAMIC+0x240>",
+        "target": "__rustc::__rust_no_alloc_shim_is_unstable_v2"
+      },
+      {
+        "address": "2a0dfd",
+        "opcode": "call",
+        "operands": "*0x94a05(%rip)        # 335808 <_DYNAMIC+0x248>",
+        "target": "__rustc::__rust_alloc"
+      },
+      {
+        "address": "2a0e19",
+        "opcode": "call",
+        "operands": "*0x94b39(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a161c",
+        "opcode": "call",
+        "operands": "*0x941de(%rip)        # 335800 <_DYNAMIC+0x240>",
+        "target": "__rustc::__rust_no_alloc_shim_is_unstable_v2"
+      },
+      {
+        "address": "2a162c",
+        "opcode": "call",
+        "operands": "*0x941d6(%rip)        # 335808 <_DYNAMIC+0x248>",
+        "target": "__rustc::__rust_alloc"
+      },
+      {
+        "address": "2a1648",
+        "opcode": "call",
+        "operands": "*0x9430a(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a1670",
+        "opcode": "call",
+        "operands": "*0x9419a(%rip)        # 335810 <memcpy@GLIBC_2.14>",
+        "target": "EXTERNAL:memcpy@GLIBC_2.14"
+      },
+      {
+        "address": "2a1adf",
+        "opcode": "call",
+        "operands": "*0x93d33(%rip)        # 335818 <_DYNAMIC+0x258>",
+        "target": "alloc::alloc::handle_alloc_error"
+      },
+      {
+        "address": "2a1af1",
+        "opcode": "call",
+        "operands": "*0x93d21(%rip)        # 335818 <_DYNAMIC+0x258>",
+        "target": "alloc::alloc::handle_alloc_error"
+      },
+      {
+        "address": "2a1b49",
+        "opcode": "call",
+        "operands": "*0x93c99(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "2a1b73",
+        "opcode": "call",
+        "operands": "*0x93c7f(%rip)        # 3357f8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      },
+      {
+        "address": "2a1c17",
+        "opcode": "call",
+        "operands": "*0x93bcb(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "2a1d8f",
+        "opcode": "call",
+        "operands": "*0x93a63(%rip)        # 3357f8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      },
+      {
+        "address": "2a1d95",
+        "opcode": "call",
+        "operands": "*0x93a5d(%rip)        # 3357f8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      }
+    ],
+    "indirect_transfers": [
+      {
+        "address": "29feb1",
+        "opcode": "call",
+        "operands": "*%r14"
+      },
+      {
+        "address": "29fed6",
+        "opcode": "call",
+        "operands": "*%rbx"
+      },
+      {
+        "address": "29fedf",
+        "opcode": "call",
+        "operands": "*0x95b6b(%rip)        # 335a50 <_DYNAMIC+0x490>"
+      },
+      {
+        "address": "29fee7",
+        "opcode": "call",
+        "operands": "*0x95a9b(%rip)        # 335988 <_DYNAMIC+0x3c8>"
+      },
+      {
+        "address": "29ff06",
+        "opcode": "call",
+        "operands": "*0x95a84(%rip)        # 335990 <_DYNAMIC+0x3d0>"
+      },
+      {
+        "address": "2a017d",
+        "opcode": "call",
+        "operands": "*0x957d5(%rip)        # 335958 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "2a021d",
+        "opcode": "call",
+        "operands": "*0x95735(%rip)        # 335958 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "2a0279",
+        "opcode": "call",
+        "operands": "*%rbx"
+      },
+      {
+        "address": "2a028a",
+        "opcode": "call",
+        "operands": "*%rbx"
+      },
+      {
+        "address": "2a029b",
+        "opcode": "call",
+        "operands": "*%rbx"
+      },
+      {
+        "address": "2a02ac",
+        "opcode": "call",
+        "operands": "*%rbx"
+      },
+      {
+        "address": "2a02d4",
+        "opcode": "call",
+        "operands": "*0x9567e(%rip)        # 335958 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "2a04b8",
+        "opcode": "call",
+        "operands": "*0x9549a(%rip)        # 335958 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "2a0698",
+        "opcode": "call",
+        "operands": "*0x952ba(%rip)        # 335958 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "2a0878",
+        "opcode": "call",
+        "operands": "*0x950da(%rip)        # 335958 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "2a0a58",
+        "opcode": "call",
+        "operands": "*0x94efa(%rip)        # 335958 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "2a0c38",
+        "opcode": "call",
+        "operands": "*0x94d1a(%rip)        # 335958 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "2a0ded",
+        "opcode": "call",
+        "operands": "*0x94a0d(%rip)        # 335800 <_DYNAMIC+0x240>"
+      },
+      {
+        "address": "2a0dfd",
+        "opcode": "call",
+        "operands": "*0x94a05(%rip)        # 335808 <_DYNAMIC+0x248>"
+      },
+      {
+        "address": "2a0e19",
+        "opcode": "call",
+        "operands": "*0x94b39(%rip)        # 335958 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "2a161c",
+        "opcode": "call",
+        "operands": "*0x941de(%rip)        # 335800 <_DYNAMIC+0x240>"
+      },
+      {
+        "address": "2a162c",
+        "opcode": "call",
+        "operands": "*0x941d6(%rip)        # 335808 <_DYNAMIC+0x248>"
+      },
+      {
+        "address": "2a1648",
+        "opcode": "call",
+        "operands": "*0x9430a(%rip)        # 335958 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "2a1670",
+        "opcode": "call",
+        "operands": "*0x9419a(%rip)        # 335810 <memcpy@GLIBC_2.14>"
+      },
+      {
+        "address": "2a1adf",
+        "opcode": "call",
+        "operands": "*0x93d33(%rip)        # 335818 <_DYNAMIC+0x258>"
+      },
+      {
+        "address": "2a1af1",
+        "opcode": "call",
+        "operands": "*0x93d21(%rip)        # 335818 <_DYNAMIC+0x258>"
+      },
+      {
+        "address": "2a1b49",
+        "opcode": "call",
+        "operands": "*0x93c99(%rip)        # 3357e8 <_DYNAMIC+0x228>"
+      },
+      {
+        "address": "2a1b73",
+        "opcode": "call",
+        "operands": "*0x93c7f(%rip)        # 3357f8 <_DYNAMIC+0x238>"
+      },
+      {
+        "address": "2a1c17",
+        "opcode": "call",
+        "operands": "*0x93bcb(%rip)        # 3357e8 <_DYNAMIC+0x228>"
+      },
+      {
+        "address": "2a1d8f",
+        "opcode": "call",
+        "operands": "*0x93a63(%rip)        # 3357f8 <_DYNAMIC+0x238>"
+      },
+      {
+        "address": "2a1d95",
+        "opcode": "call",
+        "operands": "*0x93a5d(%rip)        # 3357f8 <_DYNAMIC+0x238>"
+      }
+    ],
+    "conditional_moves": 0,
+    "resolved_indirect_transfers": [
+      {
+        "address": "29fedf",
+        "opcode": "call",
+        "operands": "*0x95b6b(%rip)        # 335a50 <_DYNAMIC+0x490>",
+        "target": "getrandom::error::Error::from_errno"
+      },
+      {
+        "address": "29fee7",
+        "opcode": "call",
+        "operands": "*0x95a9b(%rip)        # 335988 <_DYNAMIC+0x3c8>",
+        "target": "getrandom::backends::linux_android_with_fallback::init"
+      },
+      {
+        "address": "29ff06",
+        "opcode": "call",
+        "operands": "*0x95a84(%rip)        # 335990 <_DYNAMIC+0x3d0>",
+        "target": "getrandom::backends::linux_android_with_fallback::use_file_fallback"
+      },
+      {
+        "address": "2a017d",
+        "opcode": "call",
+        "operands": "*0x957d5(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a021d",
+        "opcode": "call",
+        "operands": "*0x95735(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a02d4",
+        "opcode": "call",
+        "operands": "*0x9567e(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a04b8",
+        "opcode": "call",
+        "operands": "*0x9549a(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a0698",
+        "opcode": "call",
+        "operands": "*0x952ba(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a0878",
+        "opcode": "call",
+        "operands": "*0x950da(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a0a58",
+        "opcode": "call",
+        "operands": "*0x94efa(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a0c38",
+        "opcode": "call",
+        "operands": "*0x94d1a(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a0ded",
+        "opcode": "call",
+        "operands": "*0x94a0d(%rip)        # 335800 <_DYNAMIC+0x240>",
+        "target": "__rustc::__rust_no_alloc_shim_is_unstable_v2"
+      },
+      {
+        "address": "2a0dfd",
+        "opcode": "call",
+        "operands": "*0x94a05(%rip)        # 335808 <_DYNAMIC+0x248>",
+        "target": "__rustc::__rust_alloc"
+      },
+      {
+        "address": "2a0e19",
+        "opcode": "call",
+        "operands": "*0x94b39(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a161c",
+        "opcode": "call",
+        "operands": "*0x941de(%rip)        # 335800 <_DYNAMIC+0x240>",
+        "target": "__rustc::__rust_no_alloc_shim_is_unstable_v2"
+      },
+      {
+        "address": "2a162c",
+        "opcode": "call",
+        "operands": "*0x941d6(%rip)        # 335808 <_DYNAMIC+0x248>",
+        "target": "__rustc::__rust_alloc"
+      },
+      {
+        "address": "2a1648",
+        "opcode": "call",
+        "operands": "*0x9430a(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a1670",
+        "opcode": "call",
+        "operands": "*0x9419a(%rip)        # 335810 <memcpy@GLIBC_2.14>",
+        "target": "EXTERNAL:memcpy@GLIBC_2.14"
+      },
+      {
+        "address": "2a1adf",
+        "opcode": "call",
+        "operands": "*0x93d33(%rip)        # 335818 <_DYNAMIC+0x258>",
+        "target": "alloc::alloc::handle_alloc_error"
+      },
+      {
+        "address": "2a1af1",
+        "opcode": "call",
+        "operands": "*0x93d21(%rip)        # 335818 <_DYNAMIC+0x258>",
+        "target": "alloc::alloc::handle_alloc_error"
+      },
+      {
+        "address": "2a1b49",
+        "opcode": "call",
+        "operands": "*0x93c99(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "2a1b73",
+        "opcode": "call",
+        "operands": "*0x93c7f(%rip)        # 3357f8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      },
+      {
+        "address": "2a1c17",
+        "opcode": "call",
+        "operands": "*0x93bcb(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "2a1d8f",
+        "opcode": "call",
+        "operands": "*0x93a63(%rip)        # 3357f8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      },
+      {
+        "address": "2a1d95",
+        "opcode": "call",
+        "operands": "*0x93a5d(%rip)        # 3357f8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      }
+    ]
+  },
+  "kem1536::dev_kem::noise_into": {
+    "address": "0000000000299570",
+    "instructions": 306,
+    "conditional_branches": [
+      {
+        "address": "299b24",
+        "opcode": "jne",
+        "operands": "299a50 <kem1536::dev_kem::noise_into+0x4e0>"
+      },
+      {
+        "address": "299b7a",
+        "opcode": "jne",
+        "operands": "299b30 <kem1536::dev_kem::noise_into+0x5c0>"
+      },
+      {
+        "address": "299ceb",
+        "opcode": "jne",
+        "operands": "299ca0 <kem1536::dev_kem::noise_into+0x730>"
+      }
+    ],
+    "divisions": [],
+    "calls": [
+      {
+        "address": "299614",
+        "opcode": "call",
+        "operands": "298710 <sponge_cursor::SpongeCursor<_>::absorb_u64_le>",
+        "target": "sponge_cursor::SpongeCursor<_>::absorb_u64_le"
+      },
+      {
+        "address": "299630",
+        "opcode": "call",
+        "operands": "298710 <sponge_cursor::SpongeCursor<_>::absorb_u64_le>",
+        "target": "sponge_cursor::SpongeCursor<_>::absorb_u64_le"
+      },
+      {
+        "address": "299648",
+        "opcode": "call",
+        "operands": "298710 <sponge_cursor::SpongeCursor<_>::absorb_u64_le>",
+        "target": "sponge_cursor::SpongeCursor<_>::absorb_u64_le"
+      },
+      {
+        "address": "299662",
+        "opcode": "call",
+        "operands": "298710 <sponge_cursor::SpongeCursor<_>::absorb_u64_le>",
+        "target": "sponge_cursor::SpongeCursor<_>::absorb_u64_le"
+      },
+      {
+        "address": "299868",
+        "opcode": "call",
+        "operands": "2a28d0 <keccak::backends::soft::keccak_p>",
+        "target": "keccak::backends::soft::keccak_p"
+      },
+      {
+        "address": "2998ed",
+        "opcode": "call",
+        "operands": "2a28d0 <keccak::backends::soft::keccak_p>",
+        "target": "keccak::backends::soft::keccak_p"
+      },
+      {
+        "address": "299a3c",
+        "opcode": "call",
+        "operands": "*0x9bdce(%rip)        # 335810 <memcpy@GLIBC_2.14>",
+        "target": "memcpy@GLIBC_2.14"
+      },
+      {
+        "address": "299e2b",
+        "opcode": "call",
+        "operands": "32e800 <_Unwind_Resume@plt>",
+        "target": "_Unwind_Resume@plt"
+      },
+      {
+        "address": "299a3c",
+        "opcode": "call",
+        "operands": "*0x9bdce(%rip)        # 335810 <memcpy@GLIBC_2.14>",
+        "target": "EXTERNAL:memcpy@GLIBC_2.14"
+      }
+    ],
+    "indirect_transfers": [
+      {
+        "address": "2996e9",
+        "opcode": "call",
+        "operands": "*%r12"
+      },
+      {
+        "address": "299726",
+        "opcode": "call",
+        "operands": "*%r12"
+      },
+      {
+        "address": "299a3c",
+        "opcode": "call",
+        "operands": "*0x9bdce(%rip)        # 335810 <memcpy@GLIBC_2.14>"
+      }
+    ],
+    "conditional_moves": 1,
+    "resolved_indirect_transfers": [
+      {
+        "address": "299a3c",
+        "opcode": "call",
+        "operands": "*0x9bdce(%rip)        # 335810 <memcpy@GLIBC_2.14>",
+        "target": "EXTERNAL:memcpy@GLIBC_2.14"
+      }
+    ]
+  },
+  "kem1536::dev_kem::pke_encrypt_into": {
+    "address": "000000000029cbb0",
+    "instructions": 1378,
+    "conditional_branches": [
+      {
+        "address": "29ce07",
+        "opcode": "je",
+        "operands": "29ce39 <kem1536::dev_kem::pke_encrypt_into+0x289>"
+      },
+      {
+        "address": "29cec7",
+        "opcode": "je",
+        "operands": "29cf69 <kem1536::dev_kem::pke_encrypt_into+0x3b9>"
+      },
+      {
+        "address": "29cf52",
+        "opcode": "jne",
+        "operands": "29cf10 <kem1536::dev_kem::pke_encrypt_into+0x360>"
+      },
+      {
+        "address": "29d037",
+        "opcode": "jne",
+        "operands": "29cfa0 <kem1536::dev_kem::pke_encrypt_into+0x3f0>"
+      },
+      {
+        "address": "29d087",
+        "opcode": "je",
+        "operands": "29d129 <kem1536::dev_kem::pke_encrypt_into+0x579>"
+      },
+      {
+        "address": "29d112",
+        "opcode": "jne",
+        "operands": "29d0d0 <kem1536::dev_kem::pke_encrypt_into+0x520>"
+      },
+      {
+        "address": "29d1f7",
+        "opcode": "jne",
+        "operands": "29d160 <kem1536::dev_kem::pke_encrypt_into+0x5b0>"
+      },
+      {
+        "address": "29d247",
+        "opcode": "je",
+        "operands": "29d2e9 <kem1536::dev_kem::pke_encrypt_into+0x739>"
+      },
+      {
+        "address": "29d2d2",
+        "opcode": "jne",
+        "operands": "29d290 <kem1536::dev_kem::pke_encrypt_into+0x6e0>"
+      },
+      {
+        "address": "29d3b4",
+        "opcode": "jne",
+        "operands": "29d320 <kem1536::dev_kem::pke_encrypt_into+0x770>"
+      },
+      {
+        "address": "29d407",
+        "opcode": "je",
+        "operands": "29d4a9 <kem1536::dev_kem::pke_encrypt_into+0x8f9>"
+      },
+      {
+        "address": "29d492",
+        "opcode": "jne",
+        "operands": "29d450 <kem1536::dev_kem::pke_encrypt_into+0x8a0>"
+      },
+      {
+        "address": "29d577",
+        "opcode": "jne",
+        "operands": "29d4e0 <kem1536::dev_kem::pke_encrypt_into+0x930>"
+      },
+      {
+        "address": "29d5c7",
+        "opcode": "je",
+        "operands": "29d669 <kem1536::dev_kem::pke_encrypt_into+0xab9>"
+      },
+      {
+        "address": "29d652",
+        "opcode": "jne",
+        "operands": "29d610 <kem1536::dev_kem::pke_encrypt_into+0xa60>"
+      },
+      {
+        "address": "29d737",
+        "opcode": "jne",
+        "operands": "29d6a0 <kem1536::dev_kem::pke_encrypt_into+0xaf0>"
+      },
+      {
+        "address": "29d787",
+        "opcode": "je",
+        "operands": "29d829 <kem1536::dev_kem::pke_encrypt_into+0xc79>"
+      },
+      {
+        "address": "29d812",
+        "opcode": "jne",
+        "operands": "29d7d0 <kem1536::dev_kem::pke_encrypt_into+0xc20>"
+      },
+      {
+        "address": "29d8f7",
+        "opcode": "jne",
+        "operands": "29d860 <kem1536::dev_kem::pke_encrypt_into+0xcb0>"
+      },
+      {
+        "address": "29da54",
+        "opcode": "jne",
+        "operands": "29d980 <kem1536::dev_kem::pke_encrypt_into+0xdd0>"
+      },
+      {
+        "address": "29db17",
+        "opcode": "jne",
+        "operands": "29da80 <kem1536::dev_kem::pke_encrypt_into+0xed0>"
+      },
+      {
+        "address": "29db4e",
+        "opcode": "je",
+        "operands": "29db7e <kem1536::dev_kem::pke_encrypt_into+0xfce>"
+      },
+      {
+        "address": "29dc47",
+        "opcode": "jne",
+        "operands": "29dbb0 <kem1536::dev_kem::pke_encrypt_into+0x1000>"
+      },
+      {
+        "address": "29dd6c",
+        "opcode": "jne",
+        "operands": "29dca0 <kem1536::dev_kem::pke_encrypt_into+0x10f0>"
+      },
+      {
+        "address": "29de9a",
+        "opcode": "jne",
+        "operands": "29ddf0 <kem1536::dev_kem::pke_encrypt_into+0x1240>"
+      },
+      {
+        "address": "29def2",
+        "opcode": "jne",
+        "operands": "29deb0 <kem1536::dev_kem::pke_encrypt_into+0x1300>"
+      },
+      {
+        "address": "29df5a",
+        "opcode": "jne",
+        "operands": "29df00 <kem1536::dev_kem::pke_encrypt_into+0x1350>"
+      },
+      {
+        "address": "29dfca",
+        "opcode": "jne",
+        "operands": "29df70 <kem1536::dev_kem::pke_encrypt_into+0x13c0>"
+      },
+      {
+        "address": "29e03a",
+        "opcode": "jne",
+        "operands": "29dfe0 <kem1536::dev_kem::pke_encrypt_into+0x1430>"
+      },
+      {
+        "address": "29e0aa",
+        "opcode": "jne",
+        "operands": "29e050 <kem1536::dev_kem::pke_encrypt_into+0x14a0>"
+      },
+      {
+        "address": "29e11a",
+        "opcode": "jne",
+        "operands": "29e0c0 <kem1536::dev_kem::pke_encrypt_into+0x1510>"
+      },
+      {
+        "address": "29e18a",
+        "opcode": "jne",
+        "operands": "29e130 <kem1536::dev_kem::pke_encrypt_into+0x1580>"
+      },
+      {
+        "address": "29e1fa",
+        "opcode": "jne",
+        "operands": "29e1a0 <kem1536::dev_kem::pke_encrypt_into+0x15f0>"
+      },
+      {
+        "address": "29e26a",
+        "opcode": "jne",
+        "operands": "29e210 <kem1536::dev_kem::pke_encrypt_into+0x1660>"
+      },
+      {
+        "address": "29e2da",
+        "opcode": "jne",
+        "operands": "29e280 <kem1536::dev_kem::pke_encrypt_into+0x16d0>"
+      },
+      {
+        "address": "29e34a",
+        "opcode": "jne",
+        "operands": "29e2f0 <kem1536::dev_kem::pke_encrypt_into+0x1740>"
+      },
+      {
+        "address": "29e3ba",
+        "opcode": "jne",
+        "operands": "29e360 <kem1536::dev_kem::pke_encrypt_into+0x17b0>"
+      },
+      {
+        "address": "29e42a",
+        "opcode": "jne",
+        "operands": "29e3d0 <kem1536::dev_kem::pke_encrypt_into+0x1820>"
+      },
+      {
+        "address": "29e49a",
+        "opcode": "jne",
+        "operands": "29e440 <kem1536::dev_kem::pke_encrypt_into+0x1890>"
+      },
+      {
+        "address": "29e50a",
+        "opcode": "jne",
+        "operands": "29e4b0 <kem1536::dev_kem::pke_encrypt_into+0x1900>"
+      },
+      {
+        "address": "29e57a",
+        "opcode": "jne",
+        "operands": "29e520 <kem1536::dev_kem::pke_encrypt_into+0x1970>"
+      },
+      {
+        "address": "29e5ea",
+        "opcode": "jne",
+        "operands": "29e590 <kem1536::dev_kem::pke_encrypt_into+0x19e0>"
+      },
+      {
+        "address": "29e65a",
+        "opcode": "jne",
+        "operands": "29e600 <kem1536::dev_kem::pke_encrypt_into+0x1a50>"
+      },
+      {
+        "address": "29e6ca",
+        "opcode": "jne",
+        "operands": "29e670 <kem1536::dev_kem::pke_encrypt_into+0x1ac0>"
+      },
+      {
+        "address": "29e73a",
+        "opcode": "jne",
+        "operands": "29e6e0 <kem1536::dev_kem::pke_encrypt_into+0x1b30>"
+      },
+      {
+        "address": "29e7aa",
+        "opcode": "jne",
+        "operands": "29e750 <kem1536::dev_kem::pke_encrypt_into+0x1ba0>"
+      },
+      {
+        "address": "29e81a",
+        "opcode": "jne",
+        "operands": "29e7c0 <kem1536::dev_kem::pke_encrypt_into+0x1c10>"
+      },
+      {
+        "address": "29e88a",
+        "opcode": "jne",
+        "operands": "29e830 <kem1536::dev_kem::pke_encrypt_into+0x1c80>"
+      },
+      {
+        "address": "29e8fa",
+        "opcode": "jne",
+        "operands": "29e8a0 <kem1536::dev_kem::pke_encrypt_into+0x1cf0>"
+      },
+      {
+        "address": "29e96a",
+        "opcode": "jne",
+        "operands": "29e910 <kem1536::dev_kem::pke_encrypt_into+0x1d60>"
+      },
+      {
+        "address": "29e9f6",
+        "opcode": "jne",
+        "operands": "29e9b4 <kem1536::dev_kem::pke_encrypt_into+0x1e04>"
+      },
+      {
+        "address": "29ea5c",
+        "opcode": "jne",
+        "operands": "29ea02 <kem1536::dev_kem::pke_encrypt_into+0x1e52>"
+      },
+      {
+        "address": "29eaba",
+        "opcode": "jne",
+        "operands": "29ea60 <kem1536::dev_kem::pke_encrypt_into+0x1eb0>"
+      },
+      {
+        "address": "29eb2a",
+        "opcode": "jne",
+        "operands": "29ead0 <kem1536::dev_kem::pke_encrypt_into+0x1f20>"
+      },
+      {
+        "address": "29eb8a",
+        "opcode": "jne",
+        "operands": "29eb30 <kem1536::dev_kem::pke_encrypt_into+0x1f80>"
+      },
+      {
+        "address": "29ebea",
+        "opcode": "jne",
+        "operands": "29eb90 <kem1536::dev_kem::pke_encrypt_into+0x1fe0>"
+      },
+      {
+        "address": "29ec5a",
+        "opcode": "jne",
+        "operands": "29ec00 <kem1536::dev_kem::pke_encrypt_into+0x2050>"
+      }
+    ],
+    "divisions": [],
+    "calls": [
+      {
+        "address": "29cc10",
+        "opcode": "call",
+        "operands": "*0x98d42(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29cc65",
+        "opcode": "call",
+        "operands": "2bd6c0 <kem1536::engine_poly::Polynomial::fill_with>",
+        "target": "kem1536::engine_poly::Polynomial::fill_with"
+      },
+      {
+        "address": "29ccaa",
+        "opcode": "call",
+        "operands": "2bd6c0 <kem1536::engine_poly::Polynomial::fill_with>",
+        "target": "kem1536::engine_poly::Polynomial::fill_with"
+      },
+      {
+        "address": "29ccef",
+        "opcode": "call",
+        "operands": "2bd6c0 <kem1536::engine_poly::Polynomial::fill_with>",
+        "target": "kem1536::engine_poly::Polynomial::fill_with"
+      },
+      {
+        "address": "29cd34",
+        "opcode": "call",
+        "operands": "2bd6c0 <kem1536::engine_poly::Polynomial::fill_with>",
+        "target": "kem1536::engine_poly::Polynomial::fill_with"
+      },
+      {
+        "address": "29cd79",
+        "opcode": "call",
+        "operands": "2bd6c0 <kem1536::engine_poly::Polynomial::fill_with>",
+        "target": "kem1536::engine_poly::Polynomial::fill_with"
+      },
+      {
+        "address": "29cdbe",
+        "opcode": "call",
+        "operands": "2bd6c0 <kem1536::engine_poly::Polynomial::fill_with>",
+        "target": "kem1536::engine_poly::Polynomial::fill_with"
+      },
+      {
+        "address": "29ce15",
+        "opcode": "call",
+        "operands": "299570 <kem1536::dev_kem::noise_into>",
+        "target": "kem1536::dev_kem::noise_into"
+      },
+      {
+        "address": "29ce32",
+        "opcode": "call",
+        "operands": "2bd590 <kem1536::engine_poly::Polynomial::forward_into>",
+        "target": "kem1536::engine_poly::Polynomial::forward_into"
+      },
+      {
+        "address": "29ce91",
+        "opcode": "call",
+        "operands": "299570 <kem1536::dev_kem::noise_into>",
+        "target": "kem1536::dev_kem::noise_into"
+      },
+      {
+        "address": "29cea8",
+        "opcode": "call",
+        "operands": "*0x98aaa(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29ced9",
+        "opcode": "call",
+        "operands": "2a1da0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29cee4",
+        "opcode": "call",
+        "operands": "2bd590 <kem1536::engine_poly::Polynomial::forward_into>",
+        "target": "kem1536::engine_poly::Polynomial::forward_into"
+      },
+      {
+        "address": "29cf5f",
+        "opcode": "call",
+        "operands": "2bdac0 <kem1536::engine_poly::NttPolynomial::multiply_add_assign>",
+        "target": "kem1536::engine_poly::NttPolynomial::multiply_add_assign"
+      },
+      {
+        "address": "29cf79",
+        "opcode": "call",
+        "operands": "2bd980 <kem1536::engine_poly::NttPolynomial::inverse_into>",
+        "target": "kem1536::engine_poly::NttPolynomial::inverse_into"
+      },
+      {
+        "address": "29d04f",
+        "opcode": "call",
+        "operands": "299570 <kem1536::dev_kem::noise_into>",
+        "target": "kem1536::dev_kem::noise_into"
+      },
+      {
+        "address": "29d066",
+        "opcode": "call",
+        "operands": "*0x988ec(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29d09c",
+        "opcode": "call",
+        "operands": "2a1da0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29d0a7",
+        "opcode": "call",
+        "operands": "2bd590 <kem1536::engine_poly::Polynomial::forward_into>",
+        "target": "kem1536::engine_poly::Polynomial::forward_into"
+      },
+      {
+        "address": "29d11f",
+        "opcode": "call",
+        "operands": "2bdac0 <kem1536::engine_poly::NttPolynomial::multiply_add_assign>",
+        "target": "kem1536::engine_poly::NttPolynomial::multiply_add_assign"
+      },
+      {
+        "address": "29d139",
+        "opcode": "call",
+        "operands": "2bd980 <kem1536::engine_poly::NttPolynomial::inverse_into>",
+        "target": "kem1536::engine_poly::NttPolynomial::inverse_into"
+      },
+      {
+        "address": "29d20f",
+        "opcode": "call",
+        "operands": "299570 <kem1536::dev_kem::noise_into>",
+        "target": "kem1536::dev_kem::noise_into"
+      },
+      {
+        "address": "29d226",
+        "opcode": "call",
+        "operands": "*0x9872c(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29d25c",
+        "opcode": "call",
+        "operands": "2a1da0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29d267",
+        "opcode": "call",
+        "operands": "2bd590 <kem1536::engine_poly::Polynomial::forward_into>",
+        "target": "kem1536::engine_poly::Polynomial::forward_into"
+      },
+      {
+        "address": "29d2df",
+        "opcode": "call",
+        "operands": "2bdac0 <kem1536::engine_poly::NttPolynomial::multiply_add_assign>",
+        "target": "kem1536::engine_poly::NttPolynomial::multiply_add_assign"
+      },
+      {
+        "address": "29d2f9",
+        "opcode": "call",
+        "operands": "2bd980 <kem1536::engine_poly::NttPolynomial::inverse_into>",
+        "target": "kem1536::engine_poly::NttPolynomial::inverse_into"
+      },
+      {
+        "address": "29d3cc",
+        "opcode": "call",
+        "operands": "299570 <kem1536::dev_kem::noise_into>",
+        "target": "kem1536::dev_kem::noise_into"
+      },
+      {
+        "address": "29d3e3",
+        "opcode": "call",
+        "operands": "*0x9856f(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29d41c",
+        "opcode": "call",
+        "operands": "2a1da0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29d427",
+        "opcode": "call",
+        "operands": "2bd590 <kem1536::engine_poly::Polynomial::forward_into>",
+        "target": "kem1536::engine_poly::Polynomial::forward_into"
+      },
+      {
+        "address": "29d49f",
+        "opcode": "call",
+        "operands": "2bdac0 <kem1536::engine_poly::NttPolynomial::multiply_add_assign>",
+        "target": "kem1536::engine_poly::NttPolynomial::multiply_add_assign"
+      },
+      {
+        "address": "29d4b9",
+        "opcode": "call",
+        "operands": "2bd980 <kem1536::engine_poly::NttPolynomial::inverse_into>",
+        "target": "kem1536::engine_poly::NttPolynomial::inverse_into"
+      },
+      {
+        "address": "29d58f",
+        "opcode": "call",
+        "operands": "299570 <kem1536::dev_kem::noise_into>",
+        "target": "kem1536::dev_kem::noise_into"
+      },
+      {
+        "address": "29d5a6",
+        "opcode": "call",
+        "operands": "*0x983ac(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29d5dc",
+        "opcode": "call",
+        "operands": "2a1da0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29d5e7",
+        "opcode": "call",
+        "operands": "2bd590 <kem1536::engine_poly::Polynomial::forward_into>",
+        "target": "kem1536::engine_poly::Polynomial::forward_into"
+      },
+      {
+        "address": "29d65f",
+        "opcode": "call",
+        "operands": "2bdac0 <kem1536::engine_poly::NttPolynomial::multiply_add_assign>",
+        "target": "kem1536::engine_poly::NttPolynomial::multiply_add_assign"
+      },
+      {
+        "address": "29d679",
+        "opcode": "call",
+        "operands": "2bd980 <kem1536::engine_poly::NttPolynomial::inverse_into>",
+        "target": "kem1536::engine_poly::NttPolynomial::inverse_into"
+      },
+      {
+        "address": "29d74f",
+        "opcode": "call",
+        "operands": "299570 <kem1536::dev_kem::noise_into>",
+        "target": "kem1536::dev_kem::noise_into"
+      },
+      {
+        "address": "29d766",
+        "opcode": "call",
+        "operands": "*0x981ec(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29d79c",
+        "opcode": "call",
+        "operands": "2a1da0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29d7a7",
+        "opcode": "call",
+        "operands": "2bd590 <kem1536::engine_poly::Polynomial::forward_into>",
+        "target": "kem1536::engine_poly::Polynomial::forward_into"
+      },
+      {
+        "address": "29d81f",
+        "opcode": "call",
+        "operands": "2bdac0 <kem1536::engine_poly::NttPolynomial::multiply_add_assign>",
+        "target": "kem1536::engine_poly::NttPolynomial::multiply_add_assign"
+      },
+      {
+        "address": "29d839",
+        "opcode": "call",
+        "operands": "2bd980 <kem1536::engine_poly::NttPolynomial::inverse_into>",
+        "target": "kem1536::engine_poly::NttPolynomial::inverse_into"
+      },
+      {
+        "address": "29d90f",
+        "opcode": "call",
+        "operands": "*0x98043(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29d922",
+        "opcode": "call",
+        "operands": "299570 <kem1536::dev_kem::noise_into>",
+        "target": "kem1536::dev_kem::noise_into"
+      },
+      {
+        "address": "29d938",
+        "opcode": "call",
+        "operands": "*0x9801a(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29db32",
+        "opcode": "call",
+        "operands": "*0x97e20(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29db5e",
+        "opcode": "call",
+        "operands": "2bd590 <kem1536::engine_poly::Polynomial::forward_into>",
+        "target": "kem1536::engine_poly::Polynomial::forward_into"
+      },
+      {
+        "address": "29db74",
+        "opcode": "call",
+        "operands": "2bdac0 <kem1536::engine_poly::NttPolynomial::multiply_add_assign>",
+        "target": "kem1536::engine_poly::NttPolynomial::multiply_add_assign"
+      },
+      {
+        "address": "29db8e",
+        "opcode": "call",
+        "operands": "2bd980 <kem1536::engine_poly::NttPolynomial::inverse_into>",
+        "target": "kem1536::engine_poly::NttPolynomial::inverse_into"
+      },
+      {
+        "address": "29dc5b",
+        "opcode": "call",
+        "operands": "*0x97cf7(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29dd82",
+        "opcode": "call",
+        "operands": "29ec90 <kem1536::dev_kem::encode_vector_into>",
+        "target": "kem1536::dev_kem::encode_vector_into"
+      },
+      {
+        "address": "29e993",
+        "opcode": "call",
+        "operands": "298e50 <core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>>",
+        "target": "core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>"
+      },
+      {
+        "address": "29e99b",
+        "opcode": "call",
+        "operands": "32e800 <_Unwind_Resume@plt>",
+        "target": "_Unwind_Resume@plt"
+      },
+      {
+        "address": "29ebf4",
+        "opcode": "call",
+        "operands": "298e50 <core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>>",
+        "target": "core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>"
+      },
+      {
+        "address": "29ec64",
+        "opcode": "call",
+        "operands": "298e50 <core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>>",
+        "target": "core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>"
+      },
+      {
+        "address": "29ec71",
+        "opcode": "call",
+        "operands": "298e50 <core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>>",
+        "target": "core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>"
+      },
+      {
+        "address": "29ec79",
+        "opcode": "call",
+        "operands": "32e800 <_Unwind_Resume@plt>",
+        "target": "_Unwind_Resume@plt"
+      },
+      {
+        "address": "29cc10",
+        "opcode": "call",
+        "operands": "*0x98d42(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29cea8",
+        "opcode": "call",
+        "operands": "*0x98aaa(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29d066",
+        "opcode": "call",
+        "operands": "*0x988ec(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29d226",
+        "opcode": "call",
+        "operands": "*0x9872c(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29d3e3",
+        "opcode": "call",
+        "operands": "*0x9856f(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29d5a6",
+        "opcode": "call",
+        "operands": "*0x983ac(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29d766",
+        "opcode": "call",
+        "operands": "*0x981ec(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29d90f",
+        "opcode": "call",
+        "operands": "*0x98043(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29d938",
+        "opcode": "call",
+        "operands": "*0x9801a(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29db32",
+        "opcode": "call",
+        "operands": "*0x97e20(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29dc5b",
+        "opcode": "call",
+        "operands": "*0x97cf7(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      }
+    ],
+    "indirect_transfers": [
+      {
+        "address": "29cc10",
+        "opcode": "call",
+        "operands": "*0x98d42(%rip)        # 335958 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "29cde3",
+        "opcode": "call",
+        "operands": "*%r13"
+      },
+      {
+        "address": "29cdf8",
+        "opcode": "call",
+        "operands": "*%r13"
+      },
+      {
+        "address": "29ce4b",
+        "opcode": "call",
+        "operands": "*%r13"
+      },
+      {
+        "address": "29ce5d",
+        "opcode": "call",
+        "operands": "*%r13"
+      },
+      {
+        "address": "29ce6f",
+        "opcode": "call",
+        "operands": "*%r13"
+      },
+      {
+        "address": "29ce81",
+        "opcode": "call",
+        "operands": "*%r13"
+      },
+      {
+        "address": "29cea8",
+        "opcode": "call",
+        "operands": "*0x98aaa(%rip)        # 335958 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "29d066",
+        "opcode": "call",
+        "operands": "*0x988ec(%rip)        # 335958 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "29d226",
+        "opcode": "call",
+        "operands": "*0x9872c(%rip)        # 335958 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "29d3e3",
+        "opcode": "call",
+        "operands": "*0x9856f(%rip)        # 335958 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "29d5a6",
+        "opcode": "call",
+        "operands": "*0x983ac(%rip)        # 335958 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "29d766",
+        "opcode": "call",
+        "operands": "*0x981ec(%rip)        # 335958 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "29d90f",
+        "opcode": "call",
+        "operands": "*0x98043(%rip)        # 335958 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "29d938",
+        "opcode": "call",
+        "operands": "*0x9801a(%rip)        # 335958 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "29db32",
+        "opcode": "call",
+        "operands": "*0x97e20(%rip)        # 335958 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "29dc5b",
+        "opcode": "call",
+        "operands": "*0x97cf7(%rip)        # 335958 <memset@GLIBC_2.2.5>"
+      }
+    ],
+    "conditional_moves": 0,
+    "resolved_indirect_transfers": [
+      {
+        "address": "29cc10",
+        "opcode": "call",
+        "operands": "*0x98d42(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29cea8",
+        "opcode": "call",
+        "operands": "*0x98aaa(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29d066",
+        "opcode": "call",
+        "operands": "*0x988ec(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29d226",
+        "opcode": "call",
+        "operands": "*0x9872c(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29d3e3",
+        "opcode": "call",
+        "operands": "*0x9856f(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29d5a6",
+        "opcode": "call",
+        "operands": "*0x983ac(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29d766",
+        "opcode": "call",
+        "operands": "*0x981ec(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29d90f",
+        "opcode": "call",
+        "operands": "*0x98043(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29d938",
+        "opcode": "call",
+        "operands": "*0x9801a(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29db32",
+        "opcode": "call",
+        "operands": "*0x97e20(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29dc5b",
+        "opcode": "call",
+        "operands": "*0x97cf7(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      }
+    ]
+  },
+  "kem1536::dev_kem::run_diagnostics": {
+    "address": "000000000029bfd0",
+    "instructions": 603,
+    "conditional_branches": [
+      {
+        "address": "29c00c",
+        "opcode": "je",
+        "operands": "29c648 <kem1536::dev_kem::run_diagnostics+0x678>"
+      },
+      {
+        "address": "29c041",
+        "opcode": "je",
+        "operands": "29c6d3 <kem1536::dev_kem::run_diagnostics+0x703>"
+      },
+      {
+        "address": "29c07a",
+        "opcode": "je",
+        "operands": "29c6ec <kem1536::dev_kem::run_diagnostics+0x71c>"
+      },
+      {
+        "address": "29c1fa",
+        "opcode": "je",
+        "operands": "29c700 <kem1536::dev_kem::run_diagnostics+0x730>"
+      },
+      {
+        "address": "29c219",
+        "opcode": "je",
+        "operands": "29ca47 <kem1536::dev_kem::run_diagnostics+0xa77>"
+      },
+      {
+        "address": "29c31d",
+        "opcode": "je",
+        "operands": "29c715 <kem1536::dev_kem::run_diagnostics+0x745>"
+      },
+      {
+        "address": "29c4a9",
+        "opcode": "jne",
+        "operands": "29c470 <kem1536::dev_kem::run_diagnostics+0x4a0>"
+      },
+      {
+        "address": "29c5a9",
+        "opcode": "jne",
+        "operands": "29c570 <kem1536::dev_kem::run_diagnostics+0x5a0>"
+      },
+      {
+        "address": "29c609",
+        "opcode": "jne",
+        "operands": "29c5d0 <kem1536::dev_kem::run_diagnostics+0x600>"
+      },
+      {
+        "address": "29c642",
+        "opcode": "jne",
+        "operands": "29c030 <kem1536::dev_kem::run_diagnostics+0x60>"
+      },
+      {
+        "address": "29c8a9",
+        "opcode": "jne",
+        "operands": "29c870 <kem1536::dev_kem::run_diagnostics+0x8a0>"
+      },
+      {
+        "address": "29c9a9",
+        "opcode": "jne",
+        "operands": "29c970 <kem1536::dev_kem::run_diagnostics+0x9a0>"
+      },
+      {
+        "address": "29ca09",
+        "opcode": "jne",
+        "operands": "29c9d0 <kem1536::dev_kem::run_diagnostics+0xa00>"
+      },
+      {
+        "address": "29caa9",
+        "opcode": "jne",
+        "operands": "29ca70 <kem1536::dev_kem::run_diagnostics+0xaa0>"
+      },
+      {
+        "address": "29cb19",
+        "opcode": "jne",
+        "operands": "29cae0 <kem1536::dev_kem::run_diagnostics+0xb10>"
+      },
+      {
+        "address": "29cb79",
+        "opcode": "jne",
+        "operands": "29cb40 <kem1536::dev_kem::run_diagnostics+0xb70>"
+      }
+    ],
+    "divisions": [],
+    "calls": [
+      {
+        "address": "29bfec",
+        "opcode": "call",
+        "operands": "*0x99b46(%rip)        # 335b38 <_DYNAMIC+0x578>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29c033",
+        "opcode": "call",
+        "operands": "*0x99b07(%rip)        # 335b40 <_DYNAMIC+0x580>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29c067",
+        "opcode": "call",
+        "operands": "*0x99ac3(%rip)        # 335b30 <_DYNAMIC+0x570>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29c0bb",
+        "opcode": "call",
+        "operands": "*0x99a67(%rip)        # 335b28 <_DYNAMIC+0x568>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29c200",
+        "opcode": "call",
+        "operands": "*0x995fa(%rip)        # 335800 <_DYNAMIC+0x240>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29c210",
+        "opcode": "call",
+        "operands": "*0x995f2(%rip)        # 335808 <_DYNAMIC+0x248>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29c22d",
+        "opcode": "call",
+        "operands": "*0x995dd(%rip)        # 335810 <memcpy@GLIBC_2.14>",
+        "target": "memcpy@GLIBC_2.14"
+      },
+      {
+        "address": "29c268",
+        "opcode": "call",
+        "operands": "*0x998ba(%rip)        # 335b28 <_DYNAMIC+0x568>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29c29f",
+        "opcode": "call",
+        "operands": "29eeb0 <kem1536::dev_kem::xof>",
+        "target": "kem1536::dev_kem::xof"
+      },
+      {
+        "address": "29c4b8",
+        "opcode": "call",
+        "operands": "*0x9932a(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29c5b8",
+        "opcode": "call",
+        "operands": "*0x9922a(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29c650",
+        "opcode": "call",
+        "operands": "*0x994f2(%rip)        # 335b48 <_DYNAMIC+0x588>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29c8b8",
+        "opcode": "call",
+        "operands": "*0x98f2a(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29c9b8",
+        "opcode": "call",
+        "operands": "*0x98e2a(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29ca51",
+        "opcode": "call",
+        "operands": "*0x98dc1(%rip)        # 335818 <_DYNAMIC+0x258>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29ca61",
+        "opcode": "call",
+        "operands": "2a2850 <<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop>",
+        "target": "<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop"
+      },
+      {
+        "address": "29cab8",
+        "opcode": "call",
+        "operands": "*0x98d2a(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29cacf",
+        "opcode": "call",
+        "operands": "2a2850 <<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop>",
+        "target": "<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop"
+      },
+      {
+        "address": "29cb28",
+        "opcode": "call",
+        "operands": "*0x98cba(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29cba5",
+        "opcode": "call",
+        "operands": "32e800 <_Unwind_Resume@plt>",
+        "target": "_Unwind_Resume@plt"
+      },
+      {
+        "address": "29cbaa",
+        "opcode": "call",
+        "operands": "*0x98c48(%rip)        # 3357f8 <_DYNAMIC+0x238>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29bfec",
+        "opcode": "call",
+        "operands": "*0x99b46(%rip)        # 335b38 <_DYNAMIC+0x578>",
+        "target": "std::time::Instant::now"
+      },
+      {
+        "address": "29c033",
+        "opcode": "call",
+        "operands": "*0x99b07(%rip)        # 335b40 <_DYNAMIC+0x580>",
+        "target": "kem1536::dev_kem::keygen"
+      },
+      {
+        "address": "29c067",
+        "opcode": "call",
+        "operands": "*0x99ac3(%rip)        # 335b30 <_DYNAMIC+0x570>",
+        "target": "kem1536::dev_kem::encapsulate"
+      },
+      {
+        "address": "29c0bb",
+        "opcode": "call",
+        "operands": "*0x99a67(%rip)        # 335b28 <_DYNAMIC+0x568>",
+        "target": "kem1536::dev_kem::decapsulate"
+      },
+      {
+        "address": "29c200",
+        "opcode": "call",
+        "operands": "*0x995fa(%rip)        # 335800 <_DYNAMIC+0x240>",
+        "target": "__rustc::__rust_no_alloc_shim_is_unstable_v2"
+      },
+      {
+        "address": "29c210",
+        "opcode": "call",
+        "operands": "*0x995f2(%rip)        # 335808 <_DYNAMIC+0x248>",
+        "target": "__rustc::__rust_alloc"
+      },
+      {
+        "address": "29c22d",
+        "opcode": "call",
+        "operands": "*0x995dd(%rip)        # 335810 <memcpy@GLIBC_2.14>",
+        "target": "EXTERNAL:memcpy@GLIBC_2.14"
+      },
+      {
+        "address": "29c268",
+        "opcode": "call",
+        "operands": "*0x998ba(%rip)        # 335b28 <_DYNAMIC+0x568>",
+        "target": "kem1536::dev_kem::decapsulate"
+      },
+      {
+        "address": "29c4b8",
+        "opcode": "call",
+        "operands": "*0x9932a(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "29c5b8",
+        "opcode": "call",
+        "operands": "*0x9922a(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "29c650",
+        "opcode": "call",
+        "operands": "*0x994f2(%rip)        # 335b48 <_DYNAMIC+0x588>",
+        "target": "std::time::Instant::elapsed"
+      },
+      {
+        "address": "29c8b8",
+        "opcode": "call",
+        "operands": "*0x98f2a(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "29c9b8",
+        "opcode": "call",
+        "operands": "*0x98e2a(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "29ca51",
+        "opcode": "call",
+        "operands": "*0x98dc1(%rip)        # 335818 <_DYNAMIC+0x258>",
+        "target": "alloc::alloc::handle_alloc_error"
+      },
+      {
+        "address": "29cab8",
+        "opcode": "call",
+        "operands": "*0x98d2a(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "29cb28",
+        "opcode": "call",
+        "operands": "*0x98cba(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "29cbaa",
+        "opcode": "call",
+        "operands": "*0x98c48(%rip)        # 3357f8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      }
+    ],
+    "indirect_transfers": [
+      {
+        "address": "29bfec",
+        "opcode": "call",
+        "operands": "*0x99b46(%rip)        # 335b38 <_DYNAMIC+0x578>"
+      },
+      {
+        "address": "29c033",
+        "opcode": "call",
+        "operands": "*0x99b07(%rip)        # 335b40 <_DYNAMIC+0x580>"
+      },
+      {
+        "address": "29c067",
+        "opcode": "call",
+        "operands": "*0x99ac3(%rip)        # 335b30 <_DYNAMIC+0x570>"
+      },
+      {
+        "address": "29c0bb",
+        "opcode": "call",
+        "operands": "*0x99a67(%rip)        # 335b28 <_DYNAMIC+0x568>"
+      },
+      {
+        "address": "29c200",
+        "opcode": "call",
+        "operands": "*0x995fa(%rip)        # 335800 <_DYNAMIC+0x240>"
+      },
+      {
+        "address": "29c210",
+        "opcode": "call",
+        "operands": "*0x995f2(%rip)        # 335808 <_DYNAMIC+0x248>"
+      },
+      {
+        "address": "29c22d",
+        "opcode": "call",
+        "operands": "*0x995dd(%rip)        # 335810 <memcpy@GLIBC_2.14>"
+      },
+      {
+        "address": "29c268",
+        "opcode": "call",
+        "operands": "*0x998ba(%rip)        # 335b28 <_DYNAMIC+0x568>"
+      },
+      {
+        "address": "29c4b8",
+        "opcode": "call",
+        "operands": "*0x9932a(%rip)        # 3357e8 <_DYNAMIC+0x228>"
+      },
+      {
+        "address": "29c5b8",
+        "opcode": "call",
+        "operands": "*0x9922a(%rip)        # 3357e8 <_DYNAMIC+0x228>"
+      },
+      {
+        "address": "29c61f",
+        "opcode": "call",
+        "operands": "*%r14"
+      },
+      {
+        "address": "29c62f",
+        "opcode": "call",
+        "operands": "*%r14"
+      },
+      {
+        "address": "29c650",
+        "opcode": "call",
+        "operands": "*0x994f2(%rip)        # 335b48 <_DYNAMIC+0x588>"
+      },
+      {
+        "address": "29c8b8",
+        "opcode": "call",
+        "operands": "*0x98f2a(%rip)        # 3357e8 <_DYNAMIC+0x228>"
+      },
+      {
+        "address": "29c9b8",
+        "opcode": "call",
+        "operands": "*0x98e2a(%rip)        # 3357e8 <_DYNAMIC+0x228>"
+      },
+      {
+        "address": "29ca1f",
+        "opcode": "call",
+        "operands": "*%r14"
+      },
+      {
+        "address": "29ca2f",
+        "opcode": "call",
+        "operands": "*%r14"
+      },
+      {
+        "address": "29ca51",
+        "opcode": "call",
+        "operands": "*0x98dc1(%rip)        # 335818 <_DYNAMIC+0x258>"
+      },
+      {
+        "address": "29cab8",
+        "opcode": "call",
+        "operands": "*0x98d2a(%rip)        # 3357e8 <_DYNAMIC+0x228>"
+      },
+      {
+        "address": "29cb28",
+        "opcode": "call",
+        "operands": "*0x98cba(%rip)        # 3357e8 <_DYNAMIC+0x228>"
+      },
+      {
+        "address": "29cb8f",
+        "opcode": "call",
+        "operands": "*%r14"
+      },
+      {
+        "address": "29cb9f",
+        "opcode": "call",
+        "operands": "*%r14"
+      },
+      {
+        "address": "29cbaa",
+        "opcode": "call",
+        "operands": "*0x98c48(%rip)        # 3357f8 <_DYNAMIC+0x238>"
+      }
+    ],
+    "conditional_moves": 12,
+    "resolved_indirect_transfers": [
+      {
+        "address": "29bfec",
+        "opcode": "call",
+        "operands": "*0x99b46(%rip)        # 335b38 <_DYNAMIC+0x578>",
+        "target": "std::time::Instant::now"
+      },
+      {
+        "address": "29c033",
+        "opcode": "call",
+        "operands": "*0x99b07(%rip)        # 335b40 <_DYNAMIC+0x580>",
+        "target": "kem1536::dev_kem::keygen"
+      },
+      {
+        "address": "29c067",
+        "opcode": "call",
+        "operands": "*0x99ac3(%rip)        # 335b30 <_DYNAMIC+0x570>",
+        "target": "kem1536::dev_kem::encapsulate"
+      },
+      {
+        "address": "29c0bb",
+        "opcode": "call",
+        "operands": "*0x99a67(%rip)        # 335b28 <_DYNAMIC+0x568>",
+        "target": "kem1536::dev_kem::decapsulate"
+      },
+      {
+        "address": "29c200",
+        "opcode": "call",
+        "operands": "*0x995fa(%rip)        # 335800 <_DYNAMIC+0x240>",
+        "target": "__rustc::__rust_no_alloc_shim_is_unstable_v2"
+      },
+      {
+        "address": "29c210",
+        "opcode": "call",
+        "operands": "*0x995f2(%rip)        # 335808 <_DYNAMIC+0x248>",
+        "target": "__rustc::__rust_alloc"
+      },
+      {
+        "address": "29c22d",
+        "opcode": "call",
+        "operands": "*0x995dd(%rip)        # 335810 <memcpy@GLIBC_2.14>",
+        "target": "EXTERNAL:memcpy@GLIBC_2.14"
+      },
+      {
+        "address": "29c268",
+        "opcode": "call",
+        "operands": "*0x998ba(%rip)        # 335b28 <_DYNAMIC+0x568>",
+        "target": "kem1536::dev_kem::decapsulate"
+      },
+      {
+        "address": "29c4b8",
+        "opcode": "call",
+        "operands": "*0x9932a(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "29c5b8",
+        "opcode": "call",
+        "operands": "*0x9922a(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "29c650",
+        "opcode": "call",
+        "operands": "*0x994f2(%rip)        # 335b48 <_DYNAMIC+0x588>",
+        "target": "std::time::Instant::elapsed"
+      },
+      {
+        "address": "29c8b8",
+        "opcode": "call",
+        "operands": "*0x98f2a(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "29c9b8",
+        "opcode": "call",
+        "operands": "*0x98e2a(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "29ca51",
+        "opcode": "call",
+        "operands": "*0x98dc1(%rip)        # 335818 <_DYNAMIC+0x258>",
+        "target": "alloc::alloc::handle_alloc_error"
+      },
+      {
+        "address": "29cab8",
+        "opcode": "call",
+        "operands": "*0x98d2a(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "29cb28",
+        "opcode": "call",
+        "operands": "*0x98cba(%rip)        # 3357e8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "29cbaa",
+        "opcode": "call",
+        "operands": "*0x98c48(%rip)        # 3357f8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      }
+    ]
+  },
+  "kem1536::dev_kem::uniform": {
+    "address": "00000000002a1da0",
+    "instructions": 265,
+    "conditional_branches": [
+      {
+        "address": "2a2108",
+        "opcode": "jb",
+        "operands": "2a2180 <kem1536::dev_kem::uniform+0x3e0>"
+      },
+      {
+        "address": "2a2114",
+        "opcode": "je",
+        "operands": "2a2150 <kem1536::dev_kem::uniform+0x3b0>"
+      },
+      {
+        "address": "2a211e",
+        "opcode": "jb",
+        "operands": "2a20e0 <kem1536::dev_kem::uniform+0x340>"
+      },
+      {
+        "address": "2a213d",
+        "opcode": "jne",
+        "operands": "2a215b <kem1536::dev_kem::uniform+0x3bb>"
+      },
+      {
+        "address": "2a2192",
+        "opcode": "jne",
+        "operands": "2a210a <kem1536::dev_kem::uniform+0x36a>"
+      },
+      {
+        "address": "2a246b",
+        "opcode": "jne",
+        "operands": "2a2410 <kem1536::dev_kem::uniform+0x670>"
+      }
+    ],
+    "divisions": [],
+    "calls": [
+      {
+        "address": "2a1e6f",
+        "opcode": "call",
+        "operands": "299090 <<shake::Shake<_> as digest::Update>::update::{{closure}}>",
+        "target": "<shake::Shake<_> as digest::Update>::update::{{closure}}"
+      },
+      {
+        "address": "2a1ea7",
+        "opcode": "call",
+        "operands": "299090 <<shake::Shake<_> as digest::Update>::update::{{closure}}>",
+        "target": "<shake::Shake<_> as digest::Update>::update::{{closure}}"
+      },
+      {
+        "address": "2a1ed8",
+        "opcode": "call",
+        "operands": "299090 <<shake::Shake<_> as digest::Update>::update::{{closure}}>",
+        "target": "<shake::Shake<_> as digest::Update>::update::{{closure}}"
+      },
+      {
+        "address": "2a1f18",
+        "opcode": "call",
+        "operands": "299090 <<shake::Shake<_> as digest::Update>::update::{{closure}}>",
+        "target": "<shake::Shake<_> as digest::Update>::update::{{closure}}"
+      },
+      {
+        "address": "2a20c8",
+        "opcode": "call",
+        "operands": "*0x9388a(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a216b",
+        "opcode": "call",
+        "operands": "2a28d0 <keccak::backends::soft::keccak_p>",
+        "target": "keccak::backends::soft::keccak_p"
+      },
+      {
+        "address": "2a21ad",
+        "opcode": "call",
+        "operands": "*0x9365d(%rip)        # 335810 <memcpy@GLIBC_2.14>",
+        "target": "memcpy@GLIBC_2.14"
+      },
+      {
+        "address": "2a2403",
+        "opcode": "call",
+        "operands": "32e800 <_Unwind_Resume@plt>",
+        "target": "_Unwind_Resume@plt"
+      },
+      {
+        "address": "2a2577",
+        "opcode": "call",
+        "operands": "32e800 <_Unwind_Resume@plt>",
+        "target": "_Unwind_Resume@plt"
+      },
+      {
+        "address": "2a20c8",
+        "opcode": "call",
+        "operands": "*0x9388a(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a21ad",
+        "opcode": "call",
+        "operands": "*0x9365d(%rip)        # 335810 <memcpy@GLIBC_2.14>",
+        "target": "EXTERNAL:memcpy@GLIBC_2.14"
+      }
+    ],
+    "indirect_transfers": [
+      {
+        "address": "2a1f3c",
+        "opcode": "call",
+        "operands": "*%rbp"
+      },
+      {
+        "address": "2a1f78",
+        "opcode": "call",
+        "operands": "*%rbp"
+      },
+      {
+        "address": "2a20c8",
+        "opcode": "call",
+        "operands": "*0x9388a(%rip)        # 335958 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "2a2137",
+        "opcode": "call",
+        "operands": "*%rbp"
+      },
+      {
+        "address": "2a2179",
+        "opcode": "call",
+        "operands": "*%rbp"
+      },
+      {
+        "address": "2a21ad",
+        "opcode": "call",
+        "operands": "*0x9365d(%rip)        # 335810 <memcpy@GLIBC_2.14>"
+      }
+    ],
+    "conditional_moves": 0,
+    "resolved_indirect_transfers": [
+      {
+        "address": "2a20c8",
+        "opcode": "call",
+        "operands": "*0x9388a(%rip)        # 335958 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a21ad",
+        "opcode": "call",
+        "operands": "*0x9365d(%rip)        # 335810 <memcpy@GLIBC_2.14>",
+        "target": "EXTERNAL:memcpy@GLIBC_2.14"
+      }
+    ]
+  },
+  "kem1536::dev_kem::xof": {
+    "address": "000000000029eeb0",
+    "instructions": 206,
+    "conditional_branches": [],
+    "divisions": [],
+    "calls": [
+      {
+        "address": "29ef4e",
+        "opcode": "call",
+        "operands": "298710 <sponge_cursor::SpongeCursor<_>::absorb_u64_le>",
+        "target": "sponge_cursor::SpongeCursor<_>::absorb_u64_le"
+      },
+      {
+        "address": "29ef6a",
+        "opcode": "call",
+        "operands": "298710 <sponge_cursor::SpongeCursor<_>::absorb_u64_le>",
+        "target": "sponge_cursor::SpongeCursor<_>::absorb_u64_le"
+      },
+      {
+        "address": "29ef81",
+        "opcode": "call",
+        "operands": "298710 <sponge_cursor::SpongeCursor<_>::absorb_u64_le>",
+        "target": "sponge_cursor::SpongeCursor<_>::absorb_u64_le"
+      },
+      {
+        "address": "29ef99",
+        "opcode": "call",
+        "operands": "298710 <sponge_cursor::SpongeCursor<_>::absorb_u64_le>",
+        "target": "sponge_cursor::SpongeCursor<_>::absorb_u64_le"
+      },
+      {
+        "address": "29f14d",
+        "opcode": "call",
+        "operands": "2a28d0 <keccak::backends::soft::keccak_p>",
+        "target": "keccak::backends::soft::keccak_p"
+      },
+      {
+        "address": "29f3a2",
+        "opcode": "call",
+        "operands": "2a2850 <<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop>",
+        "target": "<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop"
+      },
+      {
+        "address": "29f3aa",
+        "opcode": "call",
+        "operands": "32e800 <_Unwind_Resume@plt>",
+        "target": "_Unwind_Resume@plt"
+      },
+      {
+        "address": "29f3af",
+        "opcode": "call",
+        "operands": "*0x96443(%rip)        # 3357f8 <_DYNAMIC+0x238>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29f4ee",
+        "opcode": "call",
+        "operands": "32e800 <_Unwind_Resume@plt>",
+        "target": "_Unwind_Resume@plt"
+      },
+      {
+        "address": "29f3af",
+        "opcode": "call",
+        "operands": "*0x96443(%rip)        # 3357f8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      }
+    ],
+    "indirect_transfers": [
+      {
+        "address": "29efd0",
+        "opcode": "call",
+        "operands": "*%r12"
+      },
+      {
+        "address": "29f00b",
+        "opcode": "call",
+        "operands": "*%r12"
+      },
+      {
+        "address": "29f3af",
+        "opcode": "call",
+        "operands": "*0x96443(%rip)        # 3357f8 <_DYNAMIC+0x238>"
+      }
+    ],
+    "conditional_moves": 0,
+    "resolved_indirect_transfers": [
+      {
+        "address": "29f3af",
+        "opcode": "call",
+        "operands": "*0x96443(%rip)        # 3357f8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      }
+    ]
+  },
+  "kem1536::engine_poly::NttPolynomial::inverse_into": {
+    "address": "00000000002bd980",
+    "instructions": 84,
+    "conditional_branches": [
+      {
+        "address": "2bdaab",
+        "opcode": "jne",
+        "operands": "2bd9c0 <kem1536::engine_poly::NttPolynomial::inverse_into+0x40>"
+      }
+    ],
+    "divisions": [],
+    "calls": [
+      {
+        "address": "2bd98f",
+        "opcode": "call",
+        "operands": "*0x77e7b(%rip)        # 335810 <memcpy@GLIBC_2.14>",
+        "target": "memcpy@GLIBC_2.14"
+      },
+      {
+        "address": "2bd99f",
+        "opcode": "call",
+        "operands": "2bdc80 <kem1536::engine_poly::transform>",
+        "target": "kem1536::engine_poly::transform"
+      },
+      {
+        "address": "2bd98f",
+        "opcode": "call",
+        "operands": "*0x77e7b(%rip)        # 335810 <memcpy@GLIBC_2.14>",
+        "target": "EXTERNAL:memcpy@GLIBC_2.14"
+      }
+    ],
+    "indirect_transfers": [
+      {
+        "address": "2bd98f",
+        "opcode": "call",
+        "operands": "*0x77e7b(%rip)        # 335810 <memcpy@GLIBC_2.14>"
+      }
+    ],
+    "conditional_moves": 0,
+    "resolved_indirect_transfers": [
+      {
+        "address": "2bd98f",
+        "opcode": "call",
+        "operands": "*0x77e7b(%rip)        # 335810 <memcpy@GLIBC_2.14>",
+        "target": "EXTERNAL:memcpy@GLIBC_2.14"
+      }
+    ]
+  },
+  "kem1536::engine_poly::NttPolynomial::multiply_add_assign": {
+    "address": "00000000002bdac0",
+    "instructions": 87,
+    "conditional_branches": [
+      {
+        "address": "2bdc78",
+        "opcode": "jne",
+        "operands": "2bdaf0 <kem1536::engine_poly::NttPolynomial::multiply_add_assign+0x30>"
+      }
+    ],
+    "divisions": [],
+    "calls": [],
+    "indirect_transfers": [],
+    "conditional_moves": 0,
+    "resolved_indirect_transfers": []
+  },
+  "kem1536::engine_poly::Polynomial::fill_with": {
+    "address": "00000000002bd6c0",
+    "instructions": 194,
+    "conditional_branches": [
+      {
+        "address": "2bd719",
+        "opcode": "ja",
+        "operands": "2bd964 <kem1536::engine_poly::Polynomial::fill_with+0x2a4>"
+      },
+      {
+        "address": "2bd724",
+        "opcode": "ja",
+        "operands": "2bd964 <kem1536::engine_poly::Polynomial::fill_with+0x2a4>"
+      },
+      {
+        "address": "2bd94f",
+        "opcode": "jne",
+        "operands": "2bd700 <kem1536::engine_poly::Polynomial::fill_with+0x40>"
+      }
+    ],
+    "divisions": [],
+    "calls": [
+      {
+        "address": "2bd973",
+        "opcode": "call",
+        "operands": "*0x77ea7(%rip)        # 335820 <_DYNAMIC+0x260>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "2bd973",
+        "opcode": "call",
+        "operands": "*0x77ea7(%rip)        # 335820 <_DYNAMIC+0x260>",
+        "target": "core::slice::index::slice_index_fail"
+      }
+    ],
+    "indirect_transfers": [
+      {
+        "address": "2bd973",
+        "opcode": "call",
+        "operands": "*0x77ea7(%rip)        # 335820 <_DYNAMIC+0x260>"
+      }
+    ],
+    "conditional_moves": 1,
+    "resolved_indirect_transfers": [
+      {
+        "address": "2bd973",
+        "opcode": "call",
+        "operands": "*0x77ea7(%rip)        # 335820 <_DYNAMIC+0x260>",
+        "target": "core::slice::index::slice_index_fail"
+      }
+    ]
+  },
+  "kem1536::engine_poly::Polynomial::forward_into": {
+    "address": "00000000002bd590",
+    "instructions": 79,
+    "conditional_branches": [
+      {
+        "address": "2bd69c",
+        "opcode": "jne",
+        "operands": "2bd5b0 <kem1536::engine_poly::Polynomial::forward_into+0x20>"
+      }
+    ],
+    "divisions": [],
+    "calls": [
+      {
+        "address": "2bd6ac",
+        "opcode": "jmp",
+        "operands": "2bdc80 <kem1536::engine_poly::transform>",
+        "target": "kem1536::engine_poly::transform"
+      }
+    ],
+    "indirect_transfers": [],
+    "conditional_moves": 0,
+    "resolved_indirect_transfers": []
+  },
+  "kem1536::engine_poly::transform": {
+    "address": "00000000002bdc80",
+    "instructions": 148,
+    "conditional_branches": [
+      {
+        "address": "2bdca9",
+        "opcode": "je",
+        "operands": "2bdce8 <kem1536::engine_poly::transform+0x68>"
+      },
+      {
+        "address": "2bdcd4",
+        "opcode": "jae",
+        "operands": "2bdca0 <kem1536::engine_poly::transform+0x20>"
+      },
+      {
+        "address": "2bdd53",
+        "opcode": "je",
+        "operands": "2bde45 <kem1536::engine_poly::transform+0x1c5>"
+      },
+      {
+        "address": "2bdd64",
+        "opcode": "ja",
+        "operands": "2bde5d <kem1536::engine_poly::transform+0x1dd>"
+      },
+      {
+        "address": "2bddfb",
+        "opcode": "jne",
+        "operands": "2bdd50 <kem1536::engine_poly::transform+0xd0>"
+      },
+      {
+        "address": "2bde1c",
+        "opcode": "jb",
+        "operands": "2bdd40 <kem1536::engine_poly::transform+0xc0>"
+      },
+      {
+        "address": "2bde30",
+        "opcode": "jne",
+        "operands": "2bdcf0 <kem1536::engine_poly::transform+0x70>"
+      }
+    ],
+    "divisions": [],
+    "calls": [
+      {
+        "address": "2bde57",
+        "opcode": "call",
+        "operands": "*0x77a8b(%rip)        # 3358e8 <_DYNAMIC+0x328>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "2bde6c",
+        "opcode": "call",
+        "operands": "*0x77a76(%rip)        # 3358e8 <_DYNAMIC+0x328>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "2bde57",
+        "opcode": "call",
+        "operands": "*0x77a8b(%rip)        # 3358e8 <_DYNAMIC+0x328>",
+        "target": "core::panicking::panic_bounds_check"
+      },
+      {
+        "address": "2bde6c",
+        "opcode": "call",
+        "operands": "*0x77a76(%rip)        # 3358e8 <_DYNAMIC+0x328>",
+        "target": "core::panicking::panic_bounds_check"
+      }
+    ],
+    "indirect_transfers": [
+      {
+        "address": "2bde57",
+        "opcode": "call",
+        "operands": "*0x77a8b(%rip)        # 3358e8 <_DYNAMIC+0x328>"
+      },
+      {
+        "address": "2bde6c",
+        "opcode": "call",
+        "operands": "*0x77a76(%rip)        # 3358e8 <_DYNAMIC+0x328>"
+      }
+    ],
+    "conditional_moves": 4,
+    "resolved_indirect_transfers": [
+      {
+        "address": "2bde57",
+        "opcode": "call",
+        "operands": "*0x77a8b(%rip)        # 3358e8 <_DYNAMIC+0x328>",
+        "target": "core::panicking::panic_bounds_check"
+      },
+      {
+        "address": "2bde6c",
+        "opcode": "call",
+        "operands": "*0x77a76(%rip)        # 3358e8 <_DYNAMIC+0x328>",
+        "target": "core::panicking::panic_bounds_check"
+      }
+    ]
+  }
+}

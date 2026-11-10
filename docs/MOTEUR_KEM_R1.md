@@ -11,11 +11,15 @@ Le [dossier M03](M03_FUZZ_BINAIRES_BENCHMARKS.md) ajoute les mesures P01
 Windows/Linux (60000 observations), les désassemblages complets et la
 campagne longue lancée sur quatre cibles. Il documente aussi M03-A01,
 copie temporaire sur pile non explicitement effacée dans la multiplication
-Windows ; aucune garantie générale d'effacement des copies n'est acquise.
+Windows. [M04](M04_MOTEUR_NTT_ET_CONTROLES.md) corrige ce constat précis
+dans les binaires livrés, ajoute la NTT, des régressions complètes, les
+doubles builds et le comparatif direct des dépôts. Aucune garantie
+générale d'effacement des copies n'est acquise.
 
 ## Ce qui est implémenté
 
-- Anneau Z_7681[X]/(X^256+1), six polynômes, convolution directe.
+- Anneau Z_7681[X]/(X^256+1), six polynômes, NTT scalaire négacyclique ;
+  convolution directe conservée comme oracle indépendant.
 - Représentation exacte canonique sur 13 bits, compression de v sur 5
   bits, conversion du message sur 256 bits et validation des longueurs.
 - Matrice uniforme par rejet de candidats 13 bits ; bruit CBD(3) par
@@ -160,6 +164,17 @@ acceptée par cette interface. Ne jamais utiliser ces clés pour une application
 
 ## Critères restant ouverts
 
+Depuis M06, le cœur transforme une seule fois les opérandes réutilisés et
+accumule les six produits dans le domaine NTT, avec inverse dans un
+propriétaire fourni par l'appelant. Les comptes testés sont 48/55/68
+transformations pour KeyGen/Encaps/Decaps, contre 108/126/144 auparavant.
+La décapsulation rejetée du test exige aussi 68 transformations. Les
+formats, domaines et octets R1 restent identiques sur les corpus
+intégraux Windows/Linux. Les [mesures M06](M06_MESURES_ET_DURCISSEMENT.md)
+établissent un gain sur la machine enregistrée et une hausse de certaines
+frames de pile ; la [contre-revue M06](M06_REVUE_INDEPENDANTE.md) distingue
+le traitement des propriétaires des obligations globales encore ouvertes.
+
 Les seuils numériques de T02/T03 sont atteints sur ce corpus R1 ;
 la campagne T04 comporte 10 000 échanges ; le corpus apparié T06
 comporte 10 000 rejets exacts dans la famille spécifiée. Ces constats
@@ -176,8 +191,9 @@ générale de temps constant. Voir les résultats et limites dans le
 [dossier M02](DURCISSEMENT_MOTEUR_M02.md).
 
 Poursuivre le fuzzing long à couverture guidée, la revue mémoire et
-temporelle complète, la NTT ou d'autres optimisations comparées aux
-oracles, la portabilité native, les mesures P01 et la cryptanalyse J2.
+temporelle complète, les optimisations après la NTT déjà livrée,
+la portabilité native et la cryptanalyse J2. Les mesures M04 sont
+réalisées sous charge et sont distinctes des mesures historiques P01.
 T07/T08/T09/T10 ne sont pas validés globalement par ces seuls contrôles ;
 le million de parcours avant gel et la revue externe restent à faire.
 Aucune sécurité globale ou preuve IND-CCA propre à R1 n'est revendiquée.

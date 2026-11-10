@@ -58,6 +58,22 @@ try {
             }
             & $taskCheckResearchPython -m unittest discover -s research -p test_*.py
             if ($LASTEXITCODE -ne 0) { throw 'Research arithmetic verification failed.' }
+            & $taskCheckResearchPython research/verify_r1_certificate_bridge.py
+            if ($LASTEXITCODE -ne 0) { throw 'R1 certificate/program bridge failed.' }
+            & $taskCheckResearchPython research/compare_attacks_common.py --verify results/security/m04-001/attacks
+            if ($LASTEXITCODE -ne 0) { throw 'Common attack contract verification failed.' }
+            & $taskCheckResearchPython research/r1_security_bounds.py --verify results/security/m05-cca-001
+            if ($LASTEXITCODE -ne 0) { throw 'M05 conditional security budget verification failed.' }
+            & $taskCheckResearchPython research/compare_experimental_kems_m05.py --verify --output results/security/m05-comparison-001
+            if ($LASTEXITCODE -ne 0) { throw 'M05 experimental KEM comparison verification failed.' }
+            & $taskCheckResearchPython research/rejection_security_m06.py --verify results/security/m06-rejection-001
+            if ($LASTEXITCODE -ne 0) { throw 'M06 implicit rejection model verification failed.' }
+            & $taskCheckResearchPython research/run_m06_measurements.py verify --output results/engine/m06-measurements-001
+            if ($LASTEXITCODE -ne 0) { throw 'M06 measurement evidence verification failed.' }
+            & $taskCheckResearchPython research/verify_m06.py
+            if ($LASTEXITCODE -ne 0) { throw 'M06 engine evidence verification failed.' }
+            & $taskCheckResearchPython research/run_m06_fuzz.py verify-archive --output results/engine/m06-fuzz-001
+            if ($LASTEXITCODE -ne 0) { throw 'M06 instrumented evidence verification failed.' }
             python research/verify_results.py
             if ($LASTEXITCODE -ne 0) { throw 'Frozen research result verification failed.' }
             python research/verify_modern_results.py
@@ -134,6 +150,8 @@ try {
             if ($LASTEXITCODE -ne 0) { throw 'M02 hardening evidence verification failed.' }
             & $taskCheckResearchPython research/verify_m03.py
             if ($LASTEXITCODE -ne 0) { throw 'M03 evidence verification failed.' }
+            & $taskCheckResearchPython research/verify_m04.py
+            if ($LASTEXITCODE -ne 0) { throw 'M04 engine delivery evidence verification failed.' }
             Invoke-TaskCargo -CargoArguments @('run', '--locked', '--quiet', '-p', 'kem1536-cli', '--', 'dev-self-test')
             Invoke-TaskCargo -CargoArguments @('run', '--locked', '--quiet', '-p', 'kem1536-cli', '--', 'self-check')
         }

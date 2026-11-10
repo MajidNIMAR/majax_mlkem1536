@@ -1,0 +1,89 @@
+{
+  "job": {
+    "index": 93,
+    "scenario": "KINDI-512-3-2-1",
+    "degree": 512,
+    "rank": 3,
+    "n": 1536,
+    "q": 8192,
+    "secret": {
+      "kind": "Uniform",
+      "bounds": [
+        -2,
+        1
+      ]
+    },
+    "error": {
+      "kind": "Gaussian-moments",
+      "mean": {
+        "numerator": -1,
+        "denominator": 1
+      },
+      "variance": {
+        "numerator": 3,
+        "denominator": 2
+      }
+    },
+    "panel": "independent_rounding_Gaussian_moment_proxy",
+    "sample_budget": "key",
+    "samples": 1536,
+    "abstract_matrix_blocks": [
+      3,
+      3
+    ],
+    "targets": 1,
+    "leakage_oracle": "none",
+    "memory_cap": null,
+    "exponential_memory_allowed": true,
+    "shape_model": "GSA",
+    "cost_model": "BCSS23-quantum-asymptotic",
+    "algorithm": "bdd",
+    "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+    "actual_compressed_scheme_attack_cost": false,
+    "ciphertext_rows_claimed_independent_samples": false
+  },
+  "status": "estimated_proxy",
+  "cost": {
+    "rop": "5.69537371690522e100",
+    "red": "2.84768685845261e100",
+    "svp": "2.84768685845261e100",
+    "beta": "1302",
+    "eta": "1301",
+    "d": "2838",
+    "tag": "bdd",
+    "problem": "LWEParameters(n=1536, q=8192, Xs=D(σ=1.12, μ=-0.50), Xe=D(σ=1.22, μ=-1.00), m=1536, tag='KINDI-512-3-2-1')"
+  },
+  "log2_cost": {
+    "rop": 334.70259999999996,
+    "red": 333.70259999999996,
+    "svp": 333.70259999999996
+  },
+  "success_contract": {
+    "id": "primal_BDD_guess_amplification_0.99",
+    "meaning": "hybrid guessing amplification 0.99 where applicable; geometric success is heuristic",
+    "global_success_certified": false
+  },
+  "input_distribution_repr": {
+    "Xs": "D(σ=1.12, μ=-0.50)",
+    "Xe": "D(σ=1.22, μ=-1.00)"
+  },
+  "input_distribution_means": {
+    "Xs": "-0.500000000000000",
+    "Xe": "-1.00000000000000"
+  },
+  "normalized_parameters_repr": "LWEParameters(n=1536, q=8192, Xs=D(σ=1.12, μ=-0.50), Xe=D(σ=1.22, μ=-1.00), m=1536, tag='KINDI-512-3-2-1')",
+  "reported_memory_unit": "estimator-native units, not bytes; N is vector count",
+  "cost_is_global_security_lower_bound": false,
+  "quantum_physical_gate_count": null,
+  "sage": "10.7",
+  "python": "3.12.15",
+  "estimator_messages": "",
+  "executing_worker_sha256": "07447605b196070965432c10c260c918f09d7ad0d28d0298e5087084cbf16a8b",
+  "reduction_dimensions": {
+    "beta": 1302,
+    "eta": 1301
+  },
+  "classical_fit_used_beyond_1024": false,
+  "fit_flag_is_not_an_attack_cost_correction": true,
+  "elapsed_seconds": 11.520888867999929
+}

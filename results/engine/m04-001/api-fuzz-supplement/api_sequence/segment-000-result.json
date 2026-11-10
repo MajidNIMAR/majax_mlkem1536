@@ -1,0 +1,36 @@
+{
+  "segment": 0,
+  "command": [
+    "/usr/bin/time",
+    "-f",
+    "{\"user_seconds\":%U,\"system_seconds\":%S,\"peak_RSS_KiB\":%M,\"wall_seconds\":%e,\"exit_code\":%x}",
+    "-o",
+    "/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m04-fuzz-api-supplement/api_sequence/segment-000-usage.json",
+    "taskset",
+    "-c",
+    "10",
+    "/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m04-fuzz-api-supplement/bin/api_sequence",
+    "/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m04-fuzz-api-supplement/api_sequence/corpus",
+    "-artifact_prefix=/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m04-fuzz-api-supplement/api_sequence/failures/",
+    "-seed=5040401",
+    "-max_total_time=60",
+    "-max_len=16384",
+    "-rss_limit_mb=2048",
+    "-timeout=60",
+    "-print_final_stats=1",
+    "-use_value_profile=1"
+  ],
+  "exit_code": 0,
+  "wall_observed_seconds": 61.42588642700139,
+  "resource_usage": {
+    "user_seconds": 50.19,
+    "system_seconds": 1.27,
+    "peak_RSS_KiB": 99200,
+    "wall_seconds": 61.41,
+    "exit_code": 0
+  },
+  "executions": 544,
+  "peak_rss_mb_libfuzzer": 96,
+  "coverage_edges": 1028,
+  "features": 8086
+}

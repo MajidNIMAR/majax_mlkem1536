@@ -1,0 +1,20 @@
+00000000002c2420 <kem1536::engine_poly::Polynomial::multiply_into>:
+  2c2420:	push   %r15
+  2c2422:	push   %r14
+  2c2424:	push   %r13
+  2c2426:	push   %r12
+  2c2428:	push   %rbx
+  2c2429:	sub    $0x400,%rsp
+  2c2430:	mov    %rdx,%rbx
+  2c2433:	mov    %rsi,%r14
+  2c2436:	mov    %rdi,%r15
+  2c2439:	lea    0x200(%rsp),%rdi
+  2c2441:	xor    %r12d,%r12d
+  2c2444:	mov    0x774dd(%rip),%r13        # 339928 <memset@GLIBC_2.2.5>
+  2c244b:	mov    $0x200,%edx
+  2c2450:	xor    %esi,%esi
+  2c2452:	call   *%r13
+  2c2455:	mov    %rsp,%rdi
+  2c2458:	mov    $0x200,%edx
+  2c245d:	xor    %esi,%esi
+  2c245f:	call   *%r13

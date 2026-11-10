@@ -1,0 +1,16 @@
+   Compiling getrandom v0.4.3
+   Compiling hybrid-array v0.4.15
+   Compiling crypto-common v0.2.2
+   Compiling digest v0.11.3
+   Compiling sha3 v0.12.0
+   Compiling shake v0.1.0
+   Compiling kem1536 v0.1.0 (C:\Users\majax\Documents\Codex\NIST\crates\kem1536)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 6.67s
+     Running tests\delivery_contract.rs (target\debug\deps\delivery_contract-937288f87b7786a9.exe)
+
+running 2 tests
+test every_encoded_polynomial_boundary_is_validated_on_import ... ok
+test rejection_is_bound_to_both_key_and_entire_ciphertext ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 11.30s
+

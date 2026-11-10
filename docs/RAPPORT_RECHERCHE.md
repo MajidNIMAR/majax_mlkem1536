@@ -1,6 +1,54 @@
-# Rapport de recherche — KEM à six blocs de 256 coefficients
+# Rapport de recherche — MAJAX R6, KEM à six blocs de 256 coefficients
 
-Version de travail du 25 octobre 2026. Ce document est la base évolutive du futur article. Le [journal](JOURNAL_RECHERCHE.md) conserve les étapes et décisions ; les [résultats figés de J2](../results/j2/run-001/) conservent les calculs et leur provenance. Une modification du rapport doit rester cohérente avec ces données.
+Version de travail du 10 novembre 2026. Ce document est la base évolutive du futur article. Le [journal](JOURNAL_RECHERCHE.md) conserve les étapes et décisions ; les [résultats figés de J2](../results/j2/run-001/) conservent les calculs et leur provenance. Une modification du rapport doit rester cohérente avec ces données.
+
+**Présentation du projet — MAJAX R6.** Le nom de présentation met en avant
+le programme de recherche, l'ingénierie et l'architecture cryptographique.
+R6 désigne le rang six ; le profil technique `KEM1536-DEV-Q7681-R1`, ses
+formats, ses domaines et les résultats figés gardent leur identité. Le
+README rassemble désormais le moteur exécutable, les résultats M06 et les
+preuves selon leur portée. La synchronisation de publication préserve
+l'historique public et ajoute une provenance de l'instantané source.
+Les contrôles publics courants se lisent dans Actions ; les réussites
+historiques restent liées à leur révision exacte.
+
+**État courant — M06.** Le moteur accumule désormais les produits dans le
+domaine NTT et réutilise les opérandes transformés. Les corpus intégraux
+concordent sous Windows/Linux. Les 60 000 mesures comparatives donnent
+des rapports de médianes de 1,79/1,87/1,76 pour KeyGen/Encaps/Decaps,
+avec hausse de certaines frames statiques de pile explicitement conservée.
+Le [volet J idéal](REJET_IMPLICITE_R1_M06.md) borne maintenant le rejet
+secret dans le ROM/QROM ; sa borne quantique trop lâche ne certifie pas
+l'allocation illustrative M05. La revue des binaires est acquise dans son
+périmètre. La campagne instrumentée M06 est achevée : 850,99 secondes CPU,
+quatre exports de couverture et leur union LLVM, 8638 requêtes de corpus
+confrontées à Python. Les résultats
+historiques ne sont ni écrasés ni crédités automatiquement à ce code.
+
+**Historique — M05.** Les points 1 et 2 demandés après la recherche de
+projets comparables sont exécutés : [majorants conditionnels ROM/QROM](SECURITE_CONCRETE_R1_M05.md)
+et [108 estimations comparatives](COMPARAISON_EXPERIMENTALE_M05.md).
+Le transfert de correction aux bruits expansés est maintenant établi
+dans un modèle RO, en moyenne sur les oracles et les clés ; les avantages
+du PKE à graines, de la PRF quantique de rejet et le passage aux primitives
+concrètes restent ouverts. Aucun niveau global ni supériorité universelle
+n'est acquis. Les résultats négatifs face au point académique de rang 6
+à q=3329 sont conservés. Le moteur NTT et les formats R1 ne changent pas.
+Les deux nouveaux instantanés sont sous `results/security/m05-cca-001`
+et `results/security/m05-comparison-001` ; leurs rejeux sont intégrés à
+`check`. La campagne longue M03 historique a atteint ses budgets ; son
+reçu automatique conserve la nécessité d'une revue finale distincte.
+
+**Historique — programme proposé avant la réalisation M04.** À la demande
+de définir comment atteindre puis dépasser le niveau du démonstrateur
+1024, le [programme M04](PROGRAMME_AMELIORATION_M04.md) ordonne les travaux
+de moteur : traiter M03-A01 puis introduire une NTT scalaire compatible,
+renforcer les contrôles et la distribution, comparer directement les deux
+dépôts. Le contrat de sécurité, le lien certificat/programme et la
+cryptanalyse commune restent un axe parallèle. Aucun gain ou niveau
+supérieur n'est annoncé ; les critères de sortie sont définis avant
+développement. La campagne M03 était encore active à cette étape ; sa
+fin automatique est consignée plus bas, sans validation globale anticipée.
 
 **Première publication GitHub du moteur 1536.** Le dépôt public
 [MajidNIMAR/majax_mlkem1536](https://github.com/MajidNIMAR/majax_mlkem1536)
@@ -271,3 +319,358 @@ Avant publication, il faudra stabiliser le profil, compléter J2, faire relire l
 ## Actualisation automatique M03 — 2026-10-25T14:59:22.748948+00:00
 
 Temps CPU de fuzzing cumulé mesuré : 85.01 s. Budgets atteints : True. Post-traitements : {"coverage_exported": true, "independent_corpus_replayed": true}. Preuves dans results/engine/m03-smoke-001. La revue finale reste requise ; T07 et la validation globale ne sont pas déclarés acquis automatiquement.
+
+## M04 — Trois travaux scientifiques avant les modifications du moteur
+
+À la demande de l'utilisateur du 25 octobre 2026, les travaux 1–3 ont été
+menés et revus avant l'optimisation du moteur. Les sources et sorties sont
+conservées dans `results/security/m04-001` avec manifeste SHA-256.
+
+- `docs/ARGUMENT_SECURITE_R1.md` définit le jeu mono-utilisateur, les deux
+  hybrides CPA idéaux MLWE_(6,6) et MLWE_(7,6), la rigidité par réencapsulation
+  et les obligations d'expansion/FO. Le résultat est conditionnel : aucune
+  borne IND-CCA concrète complète ou QROM fermée n'est annoncée.
+- `docs/LIEN_CERTIFICAT_PROGRAMME_R1.md` et un vérificateur indépendant
+  standard Python retrouvent exactement la fraction run-004, la borne
+  entière ≤2^-310, l'arrondi dans [-120,120] et le rayon commun 1799.
+  Huit vecteurs répartis (2048 coefficients) sont reconstruits intégralement.
+  La borne concerne l'espérance sur clés honnêtes du pire message avec
+  bruits idéaux ; elle ne certifie ni chaque clé ni l'indépendance réelle de
+  SHAKE. La collision de graines aux nonces alignés annule les deux produits
+  croisés, elle n'impose pas une pénalité automatique de correction 2^-256.
+- `docs/COMPARAISON_ATTAQUES_CADRE_COMMUN_R1.md` consolide 60 estimations en
+  30 paires strictes et rattache quatre minima du dual aux ressources et aux
+  queues. R1 retourne des coûts plus élevés dans ces modèles, sans niveau
+  global déduit. La réussite de toutes les familles n'est pas 99 % ; les
+  listes matérialisées et les extrapolations de réduction restent explicites.
+
+Les sept tests du lien de correction et les cinq tests des contrats
+comparatifs passent. Les vérificateurs historiques run-002/009/016 ont été
+repassés sans nouvelle estimation Sage. Décision : conserver les paramètres
+et octets R1, puis corriger M03-A01, optimiser la multiplication et contrôler
+les réalisations livrées. Les graines et messages de 256 bits imposent des
+plafonds génériques de recherche distincts des estimations de réseaux.
+La campagne longue M03 reste active sur ses propres sources gelées.
+
+## M04 — Moteur NTT livré, contrôles et comparaison exécutés
+
+La séquence demandée a été exécutée : trois travaux scientifiques avant
+modification du moteur, puis correction mémoire, NTT, contrôles des
+binaires livrés, distribution et confrontation directe des dépôts.
+Le détail est dans `docs/M04_MOTEUR_NTT_ET_CONTROLES.md` ; preuves nouvelles
+immutables dans `results/security/m04-001` et `results/engine/m04-001`.
+
+La réalisation scalaire NTT conserve les domaines, formats et octets R1.
+Les sources de production sont celles de 78f5faf (dev_kem SHA4bc3f75c…,
+engine_poly SHA 906e9e27…). Chacun des deux binaires de recherche retrouve
+1000 vecteurs, 10000 rejets, 10000 mutations et 20000 décisions de formats.
+Les nouveaux tests API et le consommateur KEM/HKDF/AES-GCM passent sur les
+deux OS. Les contre-revues ont corrigé deux faiblesses des contrôles :
+mutation de plusieurs octets à la fois et reconnaissance trop permissive
+d'instructions intercalées dans les boucles d'effacement. Aucun défaut
+supplémentaire de production n'a été identifié dans ce périmètre.
+
+M03-A01 est corrigé dans les deux binaires effectivement empaquetés :
+sortie polynomiale écrite directement dans la destination de l'appelant,
+deux scratch de 512 octets effacés sur le retour normal. Windows SHA-256
+ea80bc3a7f49ba287cf0958be1e7eceabe55cfc8882cdabc2517b6c58712ca65 ;
+Linux e025ab71066ba63d3efccf6eb28f5e91a4050d151ea83f4fb1aab4320ced71c9.
+Deux appels par registre Linux sont qualifiés comme memset ; 23 autres
+sites restent ouverts. Ni l'effacement de toutes les copies ni un temps
+constant général ne sont prouvés. Les anciens constats M03 restent intacts.
+
+Le diagnostic temporel conserve 32000 observations et 64 contrastes, huit clés
+et cinq classes par OS. Max |t|=1,578180 Windows et 1,981728 Linux, sous 4,5,
+sans filtrage, sans preuve CT et sous charge. Le fuzzing ASan/std reconstruite
+consomme 458,97 s CPU sur quatre harnais ; un complément API de 73,47 s CPU ajoute
+510 exécutions après initialisation. Total 532,44 s CPU, aucun défaut observé.
+La std instrumentée est contrôlée ; ni couverture de lignes nouvelle ni
+oracle indépendant complet sur les mutants ne sont revendiqués.
+
+La comparaison du vrai dépôt 1024 à 3dd7c91 avec R1 utilise Rust 1.93.0 commun
+et 24000 observations ; les versions des 29 dépendances initiales sont conservées.
+La révision NTT améliore les médianes R1 de ×2,25 à ×2,64 ; dans le panneau AVX2,
+R1 donne 0,962/1,132/1,233 ms (KeyGen/Encaps/Decaps), le premier dépôt
+0,099/0,083/0,090 ms. Le témoin inchangé varie jusqu'à 13,2 % entre processus ;
+les gains restent des observations sous charge, pas un effet NTT isolé.
+Le premier moteur reste plus rapide, sans conclusion globale de sécurité.
+
+La distribution 003 a obtenu deux builds isolés identiques pour chaque
+cible, sur le même hôte avec les caches existants. Les paquets 004 actualisent les
+sources et réutilisent ces mêmes octets après égalité exacte des 30 entrées compilables ;
+aucune nouvelle compilation n'est prétendue. Licences, inventaires,
+prérequis et provenance sont inclus. Les paquets restent locaux sous
+artifacts/generated/m04-distribution/release-004 ; la source locale et les
+preuves sont versionnées. L'instantané source004 précède l'archive finale
+M04 : le contrôle de recherche complet emploie également cette dernière.
+
+La tâche complète check réussit deux fois ; 115 tests Python réussissent dans
+la dernière campagne, plus les contrôles des workspaces autonomes. Le
+vérificateur M04 contrôle 609 fichiers, 61 sources, quatre inventaires et 32000
+observations, puis redésassemble réellement les quatre binaires et rattache
+les deux paquets à leurs octets. Les conclusions C01/CCA concrètes et QROM
+restent ouvertes ; le certificat de correction demeure dans son modèle
+idéal documenté. Aucun dossier institutionnel, dépôt distant ou service
+applicatif n'est créé ou modifié par cette passe.
+
+La campagne longue M03 reste distincte sur 8ef4ceb. Au pointage du 25 octobre
+2026 à 21:00:43 UTC, ses quatre travailleurs tournent encore, avec 77691,14 secondes
+CPU cumulées sur 86400 (environ 89,9 %). Sa clôture et sa revue ne sont pas
+annoncées ; aucun budget de cette campagne n'est crédité à la NTT.
+
+
+## Actualisation automatique M03 — 2026-10-25T22:46:15.756612+00:00
+
+Temps CPU de fuzzing cumulé mesuré : 86941.20 s. Budgets atteints : True. Post-traitements : {"coverage_exported": true, "independent_corpus_replayed": true}. Preuves dans results/engine/m03-fuzz-001. La revue finale reste requise ; T07 et la validation globale ne sont pas déclarés acquis automatiquement.
+
+## 26 octobre 2026 — M05, sécurité et comparaison expérimentale
+
+Le [protocole M05](PROTOCOLE_M05_SECURITE_ET_COMPARAISON.md) fixe le profil
+R1 et demande une confrontation favorable ou défavorable aux sources.
+La réalisation NTT de production n'est pas modifiée ; les paramètres,
+formats et domaines de hachage restent identiques.
+
+### Argument de sécurité et correction à graines
+
+La [note de sécurité M05](SECURITE_CONCRETE_R1_M05.md) apporte le passage
+du certificat rationnel aux bruits issus de graines dans le modèle RO.
+Pour deux graines distinctes, les adresses du bruit sont disjointes ;
+si rseed=σ, on obtient r=s et e1=e, donc B=e2 et aucun dépassement du
+seuil majorant. Cela établit δ_RO≤(1−2^-256)δ_cert pour la moyenne sur
+oracles/clés du pire message. Ce n'est pas une borne pour toute clé ou
+tout oracle fixé, ni un résultat direct sur SHAKE concret.
+
+Le calculateur conserve les deux coordonnées de G512 et les appels
+implicites : Q_RO=2g+j+3D+2. Le majorant ROM laisse un avantage du PKE
+à graines inconnu. Une incohérence locale de normalisation CPA/OW dans
+les textes relus est conservée ; le coefficient 6 retenu est une marge
+conservatrice de notre analyse, pas une constante imprimée attribuée à HHK.
+Le contrôle formel final des constantes reste une obligation.
+
+Le PDF complet de Ge–Yang–Yu–Yu 2025 a été récupéré et relu. Son théorème
+22 concerne directement le FO implicite utilisé ici ; la simulation
+cohérente des domaines est comptée. Le majorant conserve séparément
+l'avantage OW du PKE et la sécurité de la PRF de rejet avec accès public
+quantique. Aucun de ces termes n'est remplacé par zéro. Le travail de
+Majenz–Sisinni 2025 est également relu : ses hypothèses asymptotiques et
+sa compression omise ne fournissent pas de coût fini R1 à reprendre.
+
+L'instantané `results/security/m05-cca-001` conserve six panneaux
+rationnels, sept sources propres, les ancrages de lecture et empreintes
+des PDF. Leurs octets externes restent dans les caches ignorés. Pour
+g=j=D=2^64, les seuls termes connus ont pour logarithmes environ −242,386
+(correction ROM), −187,830 (devinette ROM) et −174,916 (correction QROM).
+Ces composantes ne donnent pas un niveau global. Les sept tests contrôlent
+notamment les compteurs, les inversions exactes, les racines par entiers,
+le partage CBD(3) et 729 tables pondérées d'un oracle scalaire réduit.
+
+### Comparaison des problèmes et des proxys
+
+Le [panneau M05](COMPARAISON_EXPERIMENTALE_M05.md) conserve les sources
+primaires épinglées : Aigis-Enc mode 4 à secret CBD(3)/erreur CBD(8), Kyber
+historique k=4 à q=7681, KINDI-512-3-2-1 à degré 512 et uniforme sur
+{−2,−1,0,1}, plus R1, ML-KEM-1024 et le point d'article rang 6 à q=3329.
+Les lois et équations des observations comprimées sont distinguées des
+instances LWE abstraites. Une sensibilité gaussienne à l'arrondi marginal
+indépendant supposé reste un proxy, pas une attaque validée du KEM publié.
+
+Après un pilote de 15 travaux, le panneau complet termine ses 108 travaux
+avec coûts finis en 690,37 s, quatre travailleurs et délai de 180 s par
+travail. Les 229 fichiers figés dans `results/security/m05-comparison-001`
+conservent entrées/sorties, sources du travailleur, paramètres et provenance.
+Les 36 croisements avec run-002 retrouvent exactement les coûts historiques.
+Les 23 554 résidus des quantificateurs sont énumérés en entiers ; les
+contre-exemples conditionnels empêchent de créditer une indépendance fictive.
+
+Les proxys R1 sont plus coûteux que ceux des comparateurs de rang quatre et
+de KINDI dans les conventions exécutées. Le résultat défavorable est aussi
+conservé : le point académique rang 6 à q=3329 coûte davantage que R1 dans
+les six colonnes du panneau avant sérialisation. Le défaut de correction
+historique de P0 reste distinct et empêche une substitution automatique.
+Les 54 paires de budgets retournent ici les mêmes coûts, avec m=1536
+effectivement choisi pour le dual R1 même lorsque 1792 est autorisé.
+
+Les 24 extrapolations classiques au-delà de 1024, les quantités
+exponentielles N, les succès heuristiques et l'absence de pic mémoire
+calculé restent signalés. Les lectures récentes sont consignées dans
+[l'applicabilité M05](APPLICABILITE_ATTAQUES_M05.md). L'attaque KINDI
+rapportée par CryptanalysisBench cible le jeu 256-3-4-2 dans son benchmark,
+pas le jeu 512 comparé ici ; aucune transposition automatique n'est faite.
+
+### Contrôles et décision
+
+Les deux livrables ont été contre-relus, leurs 13 nouveaux tests et leurs
+rejeux sont réussis sous Windows et Linux. Leurs vérifications sont
+intégrées à `check` sans relancer les estimations Sage à chaque contrôle.
+Le contrôle complet Windows termine avec code 0 : formatage, Clippy,
+tests Rust, 128 tests Python, vérifications des instantanés et auto-test
+frais du moteur. Le contrôle Linux M05 porte sur les 13 nouveaux tests,
+les six panneaux rationnels et les 108 sorties comparatives ; il n'est
+pas présenté comme un nouveau `check` intégral Linux.
+Les reçus d'intégration sont conservés dans
+`results/security/m05-verification-001`.
+
+R1 demeure la base du moteur expérimental. M05 termine le panneau et
+l'instanciation conditionnelle annoncés ; C01 reste ouvert pour les
+avantages du PKE à graines, la PRF quantique de rejet, les constantes
+formelles finales et les primitives concrètes. Aucun niveau global,
+audit extérieur ou supériorité universelle n'est annoncé. Les modifications
+et preuves sont destinées à un commit local ; aucune publication distante
+n'est comprise dans cette passe.
+
+## 10 novembre 2026 — M06, développement du moteur et preuves associées
+
+Le [bilan moteur M06](M06_MOTEUR_ACCUMULATION_NTT.md) part de `693c6a3`.
+La réalisation réutilise les opérandes transformés et accumule les six
+produits avant une seule inverse dans la destination détenue. Les types
+coefficient et NTT sont distincts, les sommes restent canoniques après
+chaque terme et aucun cache persistant n'est ajouté. Les lois CBD(3),
+le module 7681, le rang six, les tailles et domaines R1 sont identiques.
+
+| Opération | Transformations avant / après | Médiane avant / après, µs | Rapport des médianes |
+|---|---:|---:|---:|
+| KeyGen | 108 / 48 | 912,009 / 508,664 | 1,79 |
+| Encaps | 126 / 55 | 1045,195 / 560,313 | 1,87 |
+| Decaps | 144 / 68 | 1207,790 / 686,917 | 1,76 |
+
+Les comptes sont testés dans le programme, y compris 68 pour un rejet
+contrôlé ; les latences proviennent de 60000 observations dans cinq
+séries alternées, sur la même machine et le même CPU logique. Les
+extrêmes sont conservés. Les contrôleurs de la passe ont séparé les
+mesures des builds lourds et du fuzzing ; l'hôte général et sa fréquence
+ne sont pas isolés. Les résultats décrivent une exécution, sans facteur
+universel de vitesse ni amélioration d'un niveau de sécurité.
+
+La contrepartie mémoire est écrite : les frames LLVM statiques passent
+de 7352 à 11464 octets pour KeyGen, de 11320 à 12872 pour PKE Encrypt,
+de 7560 à 9096 pour Decaps. Les deux processus RSS séparés mesurent
+2048 KiB chacun ; cette granularité ne mesure pas le cœur seul. Aucun
+pic dynamique de pile n'est déduit de ces données.
+
+### Conservation des octets et revue de réalisation
+
+Les nouveaux exécutables de recherche retrouvent tous les cas figés
+M01/M02 sous Windows et Linux : 1000 vecteurs complets, 10000 rejets,
+10000 mutations et 20000 entrées de format par système. Les produits
+scalaires sont aussi confrontés à la convolution générique indépendante.
+La campagne de régression ne mesure pas de nouvelle fréquence d'échec
+rare ; les références et leurs quantificateurs restent ceux des études.
+
+Le premier check global a refusé les repères M04 devenus périmés.
+Le pont certificat est adapté, puis renforcé après contre-revue d'une
+ancre initialement satisfaite par un autre site intact. Les nouveaux
+tests mutants ciblent séparément les deux inverses et additions, les
+transpositions, resets, transformations et sorties. Le certificat exact
+run-004 reste inchangé et sa sortie M06 est figée avec l'outil courant.
+
+Quatre désassemblages complets sont conservés. La revue ciblée contrôle
+les quatre helpers NTT sans division, la copie inverse de 512 octets
+vers le propriétaire et huit emplacements des nouveaux buffers dans
+leurs appelants. Le filtre lexical du cœur omet un nom LLVM manglé en
+build de recherche ; la fermeture d'appels et la revue explicite le
+traitent. Les emplacements reconnus ne prouvent ni tous les chemins,
+ni l'effacement de toutes les copies, spills, registres ou sorties
+exceptionnelles. Une contre-revue interne distincte n'est pas un audit
+extérieur indépendant.
+
+Deux cibles neuves par système sont construites. La première capture
+avait omis les fichiers publics incorporés par include_str/include_bytes
+du témoin ; une deuxième capture les inclut avant reconstruction. Les
+sources communes concordent. Les trois Linux sont identiques en octets.
+Les trois Windows ne diffèrent que dans l'horodatage COFF et le checksum
+PE ; ces deux champs sont masqués dans une copie de comparaison, jamais
+dans les binaires bruts conservés. Aucune identité brute Windows ou
+reproduction par un autre hôte n'est revendiquée.
+
+Le panneau temporel distinct conserve 32000 observations, maxima |t|
+1,559/1,658 et aucun dépassement de 4,5. Tous les extrêmes restent inclus.
+Sans contrôle de multiplicité ni garantie de puissance, il ne prouve
+pas le temps constant. `results/engine/m06-001` conserve 114 membres
+vérifiés et son manifeste de provenance, soit 115 fichiers ; son
+vérificateur rejoue quatre inventaires depuis les textes
+archivés et les revues ciblées, sans nouveau désassemblage. Les mesures
+comparatives sont séparées dans `results/engine/m06-measurements-001`.
+
+### Borne du rejet idéal et conséquence défavorable
+
+L'[étude J M06](REJET_IMPLICITE_R1_M06.md) ferme la seule inconnue ciblée
+du rejet préfixé dans le modèle idéal : ε_J≤min(1,q/2^256) en ROM,
+ε_J≤min(1,2q/2^128) en QROM pour D>0, zéro exact pour D=0. z doit
+être uniforme et indépendant des autres données ; les accès indexés
+sont classiques et q compte les portes potentiellement J de la
+réduction complète. La ligne entière est reprogrammée dès le départ,
+ce qui évite un facteur D ajouté artificiellement.
+
+La constante 2 du théorème O2H principal AHU est relue, ainsi que la
+correction SXY d'août 2021 excluant l'ancienne constante sqrt(2). L'erreur
+signalée de l'annexe FO d'AHU n'est pas utilisée. Les empreintes indiquent
+les fichiers réellement récupérés ; les versions corrigées lues par
+index n'ont pas d'empreinte inventée.
+
+Sept panneaux rationnels et huit tests finis Windows/Linux sont figés
+dans `results/security/m06-rejection-001`. À q=D=2^64, les majorants sont
+2^-192 et 2^-63. La borne quantique ne certifie pas l'allocation M05
+2^-130 dès une requête entière positive. Ce résultat défavorable est
+une limite de la preuve suffisante, pas une attaque atteignable ou une
+impossibilité de sécurité. C01 reste ouvert pour le PKE à graines, les
+primitives concrètes, les constantes finales et une borne plus serrée
+si nécessaire.
+
+Le contrôle complet Windows réussit après la correction du pont,
+avec 144 tests Python à son étape d'exécution, tests Rust, Clippy,
+instantanés et auto-tests. Les tests Rust avec/sans recherche et les
+24 nouveaux tests de recherche passent aussi sous Linux. Les ajouts
+ultérieurs d'intégration sont rejoués séparément avant commit. Les
+résultats et le budget de la campagne instrumentée M06 sont consignés
+dans la note de mesures ; aucun temps historique n'est transféré à cette
+version. Le bilan final est de 713,36 secondes CPU principales et 137,63
+de complément API, soit 850,99 s. Les deux segments API initiaux n'avaient
+aucune mutation et restent conservés ; le complément atteint 1740
+exécutions après INITED. Les quatre exports et leur vraie union LLVM
+couvrent 334/363 lignes instrumentées de dev_kem, 90/120 d'engine_poly,
+15/15 de secret_box ; les zéros des fichiers de profil et d'anneau de
+référence restent affichés. Les trois constructeurs constants des tables
+NTT et run_diagnostics expliquent les noms non parcourus de ces modules,
+sans preuve de toutes les branches ou d'effacement déduite. Les 8638
+requêtes déterministes concordent intégralement avec Python, dont 1545
+sondes sur clés privées importées. Les 2288 opérations à aléa frais restent
+hors de ce rejeu déterministe, avec leurs invariants vérifiés par le
+harnais. Le suivi délégué interrompu par un filtre automatique a été
+repris par le contrôleur racine, sans doublon de campagne. Les reçus,
+notices et sources sont conservés dans `results/engine/m06-fuzz-001`.
+
+Les sept contrôles finaux d'intégration réussissent : quatre rejeux de
+preuves M06 sous Windows, 154 tests Python Windows, rejeu de l'archive
+instrumentée sous Linux et 25 tests M06 ciblés Linux. Formatage, Clippy
+strict toutes fonctionnalités, tests Rust et auto-test du binaire habituel
+ont leurs reçus. Le check global antérieur réussi comptait 144 tests ;
+les ajouts ultérieurs sont couverts par ces contrôles finaux, sans
+revendiquer un nouveau check intégral Linux. L'instantané
+`results/engine/m06-verification-001` conserve 28 membres vérifiés et sa
+provenance. Cette passe est livrée par un commit local, sans publication
+distante implicite. Les anciens résultats et paquets restent intacts.
+
+## 10 novembre 2026 — organisation et intégrité après nettoyage
+
+Le rangement du projet, décrit dans les notes locales d'entretien, rassemble les
+emplacements de référence dans NIST. L'inventaire de Documents et Codex
+n'identifie aucun code ou rapport 1536 extérieur à rapatrier. Le clone
+public propre est déplacé vers `publication/majax_mlkem1536`, séparé du
+dépôt courant de recherche et conservé à sa révision publique ecb40ad.
+
+Les compilations reconstructibles, exports redondants et anciens essais
+d'installation sont supprimés après tri : 267 chemins de travail, environ
+37 Go d'espace libre récupéré sur le volume. Treize produits historiques
+uniques omis par les anciens paquets sont conservés une seule fois avec
+index et empreintes ; les sources primaires sont dédupliquées dans leur
+cache privé. Les résultats scientifiques figés et les historiques Git
+restent en place.
+
+Les empreintes des 1885 fichiers suivis sont contrôlées avant/après, avant
+les mises à jour documentaires. Les 1549 fichiers de résultats conservent
+leurs octets, ainsi que le moteur exécuté. L'auto-test frais passe
+16 échanges et 16 rejets ; les données officielles, outils modernes,
+158 archives Sage et Git public déplacé sont vérifiés. Le reçu
+local `docs/maintenance/cleanup-001.json`, exclu de l'export public, distingue suppressions, déplacement,
+produits uniques retenus et mesures d'espace. Ce rangement ne modifie
+aucun paramètre ni argument de sécurité.

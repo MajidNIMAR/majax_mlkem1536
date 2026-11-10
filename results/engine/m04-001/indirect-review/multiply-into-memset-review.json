@@ -1,0 +1,62 @@
+{
+  "schema": "m04-manual-indirect-review-v1",
+  "binary_sha256": "e025ab71066ba63d3efccf6eb28f5e91a4050d151ea83f4fb1aab4320ced71c9",
+  "function": "kem1536::engine_poly::Polynomial::multiply_into",
+  "function_address": "0x2c2420",
+  "reviewed_sites": [
+    "0x2c2452",
+    "0x2c245f"
+  ],
+  "register_load": {
+    "address": "0x2c2444",
+    "instruction": "mov 0x774dd(%rip),%r13",
+    "next_instruction": "0x2c244b",
+    "got_slot": "0x339928",
+    "relocation": "0000000000339928  0000000a00000006 R_X86_64_GLOB_DAT      0000000000000000 memset@GLIBC_2.2.5 + 0"
+  },
+  "calls": [
+    {
+      "address": "0x2c2452",
+      "target": "memset@GLIBC_2.2.5 via GOT and r13",
+      "destination": "rsp+0x200",
+      "value": 0,
+      "bytes": 512
+    },
+    {
+      "address": "0x2c245f",
+      "target": "memset@GLIBC_2.2.5 via GOT and r13",
+      "destination": "rsp",
+      "value": 0,
+      "bytes": 512
+    }
+  ],
+  "reasoning": [
+    "The RIP-relative load and relocation identify the import symbol exactly.",
+    "No branch or explicit write to r13 lies between the load and either call.",
+    "r13 is callee-saved under the System V AMD64 ABI, so the first valid ABI call preserves it for the second.",
+    "Both destinations and lengths are fixed stack ranges; esi is explicitly zero at both sites.",
+    "These calls initialize the two scratch buffers before secret coefficient loads; they are not the post-computation wipes."
+  ],
+  "unresolved_core_sites_before_review": 25,
+  "qualified_sites": 2,
+  "remaining_core_sites_not_reviewed_here": 23,
+  "assumptions": [
+    "System V AMD64 ABI compliance",
+    "Normal dynamic symbol binding and correct libc memset semantics; hostile interposition or modified loader excluded"
+  ],
+  "limitations": [
+    "No review of the actual dynamically selected libc memset body.",
+    "No closure of the remaining 23 register-indirect sites.",
+    "No claim of a complete call graph, general constant time, or erasure of all compiler copies."
+  ],
+  "evidence_sha256": {
+    "multiply_into-prologue.txt": "fba3c581e44aad424692a7c1ac1b52157d6362d2e0015cb3332ce4faa1e912cd",
+    "memset-relocation.txt": "218b2e4d42d05408706107073ada9d5ed67d7693337982376eacb4e99049d9c9"
+  },
+  "delivered_binary": "artifacts/generated/m04-distribution/release-003/linux/package/bin/kem1536",
+  "audit_files_sha256": {
+    "disassembly.txt.gz": "3adfc1db59d082ed3acbaea03105d734e3d0037702a47737ef11b0aa37630f1f",
+    "relocations.txt": "3e9bc3f542ede1d421171269cbd59e97ede55e6fb363846feb891e9ebab9d605",
+    "binary.gz": "2d0fd404719cee215da1b5b7ba1cd186bb14f012ab0f216782e22fa022f0800c"
+  }
+}

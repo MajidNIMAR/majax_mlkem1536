@@ -6,6 +6,25 @@ coefficients. Chaque étude doit servir une décision pour sa construction.
 Le futur article décrit ce travail et ses limites ; son écriture ne
 remplace pas le développement du moteur.
 
+Le [programme M04](PROGRAMME_AMELIORATION_M04.md) a été exécuté selon
+l'ordre confirmé : trois travaux scientifiques, puis mémoire, NTT,
+contrôles, distribution et comparaison directe. Le
+[bilan M04](M04_MOTEUR_NTT_ET_CONTROLES.md) distingue les livraisons
+obtenues des obligations IND-CCA concrètes et QROM encore ouvertes.
+
+M06 poursuit le développement du cœur : transformées réutilisées,
+accumulation NTT, contrôles des octets sur deux OS, mesures comparatives
+et revue des propriétaires propre à ce code. Le
+[protocole M06](PROTOCOLE_M06_MOTEUR.md), les
+[mesures et leur coût mémoire](M06_MESURES_ET_DURCISSEMENT.md) et la
+[contre-revue](M06_REVUE_INDEPENDANTE.md) identifient ce périmètre.
+Le [rejet idéal](REJET_IMPLICITE_R1_M06.md) est désormais borné ; le PKE
+à graines, les primitives concrètes et la marge de la réduction quantique
+restent des travaux de C01. La hausse des frames appelle une mesure
+dynamique de pile avant une nouvelle optimisation mémoire. Le prochain
+jalon de distribution doit reconstruire et contrôler la nouvelle version,
+car les paquets M04 conservent leurs propres anciens exécutables.
+
 **Actualisation M01.** L'utilisateur demande ensuite d'avancer sur le
 moteur sans attendre de nouvelle validation. Le [bilan opérationnel](BILAN_J2_ET_DECISION_PROTOTYPE.md)
 autorise le prototype R1 en parallèle de J2. Les opérations et la seconde
@@ -23,14 +42,16 @@ pas un candidat final et ne valide aucun jalon encore ouvert.
 | Arithmétique polynomiale de référence | Première brique Rust disponible | Convolution indépendante, lois de l'anneau et signe X^256=−1 |
 | Profil de développement du rang 6 | R1 spécifié comme base d'essai | Domaines/formats propres, sans sélection finale |
 | KeyGen / Encaps / Decaps du rang 6 | Rust et référence Python disponibles | 1000 vecteurs concordants, 10000 échanges frais et rejets appariés |
-| Durcissement et performances | M03 : P01 mesuré, campagne longue lancée ; J4 ouvert | 60000 observations Windows/Linux ; quatre objectifs de six heures CPU ; constat mémoire M03-A01 encore ouvert |
+| Durcissement et performances | M04 : M03-A01 corrigé sur les deux binaires livrés, NTT et contrôles ajoutés ; J4 ouvert | Corpus intégraux inchangés, 32000 observations temporelles et 24000 mesures comparatives sous charge ; pas de preuve CT |
+| Distribution | Deux builds isolés identiques pour chaque cible, paquets 004 liés aux builds 003 | Provenance, inventaires, licences et égalité exacte des entrées compilables |
 
 L'oracle générique dans Z_q[X]/(X^256+1) reste distinct du moteur.
 Le cœur R1 emploie depuis [M02](DURCISSEMENT_MOTEUR_M02.md) une convolution
 spécialisée en q=7681, des réciproques entières et des buffers fixes effacés.
 Les corpus complets retrouvent les octets M01 sous Windows et Linux.
-La NTT et la preuve générale de temps constant restent ouvertes ; toute
-optimisation doit retrouver les oracles sur des vecteurs communs.
+La NTT est réalisée depuis M04 et retrouve ces oracles. La preuve générale
+de temps constant reste ouverte ; toute nouvelle optimisation doit garder
+ces contrôles et sa propre revue de réalisation.
 
 ## Finir J2 avec un bilan de décision
 
@@ -40,10 +61,10 @@ de l'utilisateur ; le dossier de validation de J2 reste à compléter.
 
 | Exigence | Éléments déjà disponibles | Travail restant pour la décision |
 |---|---|---|
-| C01 : IND-CCA et hypothèses | Contrat initial et transformation de référence | Expliciter les conditions pour le profil envisagé et ses écarts, y compris les modèles quantiques pertinents |
-| C02 : comparaison des attaques | run-001/run-002 et études duales run-008 à run-020 ; veille conservée | Consolider temps/mémoire/cibles/requêtes, couverture des échecs et limites restantes ; classer ce qui bloque le prototype |
-| C03 : limites symétriques | Graines et secret partagé de 32 octets dans le contrat initial | Écrire le plafond revendicable et le rattacher au candidat envisagé |
-| C04/C05 : bruit et échecs | Rejet P0 et certificat du témoin simple ; variantes de compression comparées | Choisir une base de développement seulement après examen commun de la correction et des attaques ; conserver la marge et les hypothèses |
+| C01 : IND-CCA et hypothèses | Argument exact R1, raccords ROM/QROM conditionnels M05, J idéal borné M06 | Avantages PKE à graines, borne quantique de rejet plus serrée si nécessaire, primitives concrètes et constantes finales |
+| C02 : comparaison des attaques | 30 paires strictes et quatre points dual/temps/mémoire/queue, veille conservée | Réoptimiser les compromis réellement réalisables et justifier les queues avant un niveau global |
+| C03 : limites symétriques | Plafonds de recherche des graines/messages 256 bits écrits pour R1 | Quantifier les ressources et les effets multi-cibles dans un jeu choisi |
+| C04/C05 : bruit et échecs | Rejet P0 ; certificat rationnel relié aux opérations et au pire message moyen-clé idéal | Transfert aux primitives concrètes et recherches adaptatives, pas de borne uniforme sur toute clé |
 | C06 : compromis | Comparaisons à seuils communs run-007 | Consigner la décision, les tailles et les raisons de retenir ou écarter les variantes |
 
 J2 n'exige pas de prétendre résoudre toutes les questions ouvertes de
@@ -65,9 +86,11 @@ Le **bilan de développement J2 → J3** est désormais écrit et le prototype
 est fonctionnel. M02 a traité la mémoire, l'arithmétique et une seconde
 cible Linux/WSL, avec corpus malveillants et contrôle instrumenté.
 M03 conserve les désassemblages intégraux et 60000 observations P01 ;
-le fuzzing à couverture guidée de longue durée est lancé. La suite porte
-sur la revue des données finales et la qualification de M03-A01 avant
-une optimisation ou une revendication d'effacement plus forte.
+le fuzzing à couverture guidée de longue durée est lancé sur sa version
+historique. M04 corrige M03-A01 et ajoute 532,44 s CPU instrumentées sur
+la NTT, dont un complément de mutations API. Ces budgets restent séparés
+de la campagne longue historique ; aucune revendication générale
+d'effacement n'est ajoutée.
 Le dossier cryptographique J2 continue
 en parallèle, avec ses limites explicites.
 

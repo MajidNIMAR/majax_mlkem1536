@@ -1,0 +1,79 @@
+{
+  "job": {
+    "index": 63,
+    "scenario": "Kyber2017-k4",
+    "degree": 256,
+    "rank": 4,
+    "n": 1024,
+    "q": 7681,
+    "secret": {
+      "kind": "CBD",
+      "eta": 3
+    },
+    "error": {
+      "kind": "CBD",
+      "eta": 3
+    },
+    "panel": "before_serialization_LWE_proxy",
+    "sample_budget": "key",
+    "samples": 1024,
+    "abstract_matrix_blocks": [
+      4,
+      4
+    ],
+    "targets": 1,
+    "leakage_oracle": "none",
+    "memory_cap": null,
+    "exponential_memory_allowed": true,
+    "shape_model": "GSA",
+    "cost_model": "MATZOV-classical",
+    "algorithm": "bdd",
+    "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+    "actual_compressed_scheme_attack_cost": false,
+    "ciphertext_rows_claimed_independent_samples": false
+  },
+  "status": "estimated_proxy",
+  "cost": {
+    "rop": "1.04101981521004e78",
+    "red": "5.27101289177569e77",
+    "svp": "5.13918526032466e77",
+    "beta": "813",
+    "eta": "848",
+    "d": "1919",
+    "tag": "bdd",
+    "problem": "LWEParameters(n=1024, q=7681, Xs=D(σ=1.22), Xe=D(σ=1.22), m=1024, tag='Kyber2017-k4')"
+  },
+  "log2_cost": {
+    "rop": 259.16838893097855,
+    "red": 258.1865435269237,
+    "svp": 258.1500029665132
+  },
+  "success_contract": {
+    "id": "primal_BDD_guess_amplification_0.99",
+    "meaning": "hybrid guessing amplification 0.99 where applicable; geometric success is heuristic",
+    "global_success_certified": false
+  },
+  "input_distribution_repr": {
+    "Xs": "D(σ=1.22)",
+    "Xe": "D(σ=1.22)"
+  },
+  "input_distribution_means": {
+    "Xs": "0",
+    "Xe": "0"
+  },
+  "normalized_parameters_repr": "LWEParameters(n=1024, q=7681, Xs=D(σ=1.22), Xe=D(σ=1.22), m=1024, tag='Kyber2017-k4')",
+  "reported_memory_unit": "estimator-native units, not bytes; N is vector count",
+  "cost_is_global_security_lower_bound": false,
+  "quantum_physical_gate_count": null,
+  "sage": "10.7",
+  "python": "3.12.15",
+  "estimator_messages": "",
+  "executing_worker_sha256": "07447605b196070965432c10c260c918f09d7ad0d28d0298e5087084cbf16a8b",
+  "reduction_dimensions": {
+    "beta": 813,
+    "eta": 848
+  },
+  "classical_fit_used_beyond_1024": false,
+  "fit_flag_is_not_an_attack_cost_correction": true,
+  "elapsed_seconds": 8.96894450700006
+}

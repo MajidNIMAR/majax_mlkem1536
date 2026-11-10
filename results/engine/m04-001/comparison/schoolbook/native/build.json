@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-10-25T20:30:32.005479+00:00",
+  "rustc_verbose": "rustc 1.93.0 (254b59607 2026-01-19)\nbinary: rustc\ncommit-hash: 254b59607d4417e9dffbc307138ae5c86280fe4c\ncommit-date: 2026-01-19\nhost: x86_64-unknown-linux-gnu\nrelease: 1.93.0\nLLVM version: 21.1.8",
+  "cargo": "cargo 1.93.0 (083ac5135 2025-12-15)",
+  "gcc": "11.4.0",
+  "backend_feature": "native",
+  "binary_sha256": "131e8610487ebf5b39d971b690639e3550edecbeebf3ea126e3c6811bcf79681",
+  "binary_bytes": 2316416,
+  "RUSTFLAGS": "-C target-cpu=x86-64",
+  "Cargo_build_jobs": 2,
+  "release_profile": {
+    "opt_level": 3,
+    "codegen_units": 1,
+    "lto": "thin",
+    "panic": "abort",
+    "strip": false
+  },
+  "comparison_lock_sha256": "798a610a194c516067066fa4dfa041c1256ba2cb66859941d1215ff49cf7bac9",
+  "build_cache_directory": "/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m04-pair/smoke-002/target",
+  "snapshot_manifest_sha256": "63189939b97daca526420a640881907a3359ef88c8c8cbde47ba7b06a39790ab",
+  "deterministic_testing_feature": false
+}

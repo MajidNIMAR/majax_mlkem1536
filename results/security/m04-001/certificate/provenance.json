@@ -1,0 +1,18 @@
+{
+  "scope": "R1 correctness bridge before subsequent multiplication changes; no binary equivalence proof",
+  "input_sha256": {
+    "crates/kem1536/src/dev_kem.rs": "a21bb340bd5af3c4983f1f76b59ef542aea67edf4c62ad7ff23e8205612cb564",
+    "crates/kem1536/src/engine_poly.rs": "e16599a7d711f045ece773216a508c573907e37217906082e3a8e61192dba8d9",
+    "docs/SPECIFICATION_DEV_Q7681_R1.md": "f9174d6daa5fc8e06513579c366279970c775d79cf85d9d8ed2e6b16cb89d47a",
+    "docs/LIEN_CERTIFICAT_PROGRAMME_R1.md": "f83007e07648f05cc52669f4aaa255b356cfc775dee05b3d8b2fafd28b16d2e5",
+    "research/verify_r1_certificate_bridge.py": "fa7e33ddf848f3574170c4210a47472c914a6bf38a3ed7aa0e90eaee9ed9c041",
+    "research/test_r1_certificate_bridge.py": "4d5952d25b5654978a337fa9af6a6b564977778d5c9c7322053fcc43f7e0764d",
+    "results/j2/run-004/correctness-certificate.json": "52b005bd7575b56326730f44ccaeae689e5552c1068f4df201d97e0d16969e06",
+    "results/j2/run-004/certificate-provenance.json": "fa0afcdafb1a76e0dca2d0011ad7838b2b63d804b1b5e270d39b3cdd2d8d5901"
+  },
+  "output_sha256": {
+    "summary.json": "47e24ce3dd0997924962d1cfd0fb19df1ac339423f936673ea1b512075ca23fb",
+    "sources.tar.gz": "2b427ce328a713db28a2bdc352377f2dbb0a3ecdcdc1a8b8f883d8c5fef8ef09",
+    "tests.log": "c9aa7f8cc84bad6c1601a494c9d34425b21ab063c153d74568eca8de52bbb325"
+  }
+}

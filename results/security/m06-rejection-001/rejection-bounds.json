@@ -1,0 +1,337 @@
+{
+  "advantage": "absolute distinguishing probability gap in [0,1]; NOT |Pr[win]-1/2|",
+  "ciphertext_bytes": 2656,
+  "coherent_namespace_multiplier": 1,
+  "complete_concrete_shake_bound": false,
+  "complete_kem_proof": false,
+  "exact_correction_recipe": "qrom_correction_coefficient * (1-2^-256) * archived certificate message_upper fraction",
+  "exact_ow_requirement_recipe": "[(target_bias-epsilon_j_qrom_upper-qrom_correction)/(4*(2*g512+D+1))]^2 when residual>=0",
+  "key_bits": 256,
+  "keyed_queries_already_counted_separately": true,
+  "no_extra_ciphertext_or_output_collision_penalty": true,
+  "one_candidate_one_ciphertext_gap": {
+    "approx_log2": "-256.000000000000000000",
+    "approx_probability": "8.636168555094444625386352E-78",
+    "denominator_hex": "0x100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "numerator_hex": "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+  },
+  "panels": [
+    {
+      "epsilon_j_qrom_upper": {
+        "approx_log2": null,
+        "approx_probability": "0",
+        "denominator_hex": "0x1",
+        "numerator_hex": "0x0"
+      },
+      "epsilon_j_rom_upper": {
+        "approx_log2": null,
+        "approx_probability": "0",
+        "denominator_hex": "0x1",
+        "numerator_hex": "0x0"
+      },
+      "full_ind_cca_bound_evaluated": false,
+      "g512_queries_for_m05_panel": 0,
+      "keyed_classical_queries": 0,
+      "m05_allocation_certified_by_this_qrom_bound": true,
+      "m05_prf_allocation": {
+        "approx_log2": "-130.000000000000000000",
+        "approx_probability": "7.346839692639296924804603E-40",
+        "denominator_hex": "0x400000000000000000000000000000000",
+        "numerator_hex": "0x1"
+      },
+      "public_global_shake256_queries": 0,
+      "qrom_correction": {
+        "approx_log2": "-304.085969198539768793",
+        "approx_probability": "2.890693265596033016105111E-92"
+      },
+      "qrom_correction_coefficient": 64,
+      "qrom_known_additive_upper": {
+        "approx_log2": "-304.085969198539768793",
+        "approx_probability": "2.890693265596033016105111E-92"
+      },
+      "sufficient_ow_requirement": {
+        "approx_log2": "-260.000000000000000000",
+        "approx_probability": "5.397605346934027890866470E-79"
+      },
+      "target_bias": {
+        "approx_log2": "-128.000000000000000000",
+        "approx_probability": "2.938735877055718769921841E-39",
+        "denominator_hex": "0x100000000000000000000000000000000",
+        "numerator_hex": "0x1"
+      },
+      "target_certified_by_this_bound_with_ow_zero": true
+    },
+    {
+      "epsilon_j_qrom_upper": {
+        "approx_log2": "-127.000000000000000000",
+        "approx_probability": "5.877471754111437539843683E-39",
+        "denominator_hex": "0x80000000000000000000000000000000",
+        "numerator_hex": "0x1"
+      },
+      "epsilon_j_rom_upper": {
+        "approx_log2": "-256.000000000000000000",
+        "approx_probability": "8.636168555094444625386352E-78",
+        "denominator_hex": "0x10000000000000000000000000000000000000000000000000000000000000000",
+        "numerator_hex": "0x1"
+      },
+      "full_ind_cca_bound_evaluated": false,
+      "g512_queries_for_m05_panel": 1,
+      "keyed_classical_queries": 1,
+      "m05_allocation_certified_by_this_qrom_bound": false,
+      "m05_prf_allocation": {
+        "approx_log2": "-130.000000000000000000",
+        "approx_probability": "7.346839692639296924804603E-40",
+        "denominator_hex": "0x400000000000000000000000000000000",
+        "numerator_hex": "0x1"
+      },
+      "public_global_shake256_queries": 1,
+      "qrom_correction": {
+        "approx_log2": "-301.442113008765044097",
+        "approx_probability": "1.806683290997520635065694E-91"
+      },
+      "qrom_correction_coefficient": 400,
+      "qrom_known_additive_upper": {
+        "approx_log2": "-127.000000000000000000",
+        "approx_probability": "5.877471754111437539843683E-39"
+      },
+      "sufficient_ow_requirement": null,
+      "target_bias": {
+        "approx_log2": "-128.000000000000000000",
+        "approx_probability": "2.938735877055718769921841E-39",
+        "denominator_hex": "0x100000000000000000000000000000000",
+        "numerator_hex": "0x1"
+      },
+      "target_certified_by_this_bound_with_ow_zero": false
+    },
+    {
+      "epsilon_j_qrom_upper": {
+        "approx_log2": "-111.000000000000000000",
+        "approx_probability": "3.851859888774471706111956E-34",
+        "denominator_hex": "0x8000000000000000000000000000",
+        "numerator_hex": "0x1"
+      },
+      "epsilon_j_rom_upper": {
+        "approx_log2": "-240.000000000000000000",
+        "approx_probability": "5.659799424266695229693200E-73",
+        "denominator_hex": "0x1000000000000000000000000000000000000000000000000000000000000",
+        "numerator_hex": "0x1"
+      },
+      "full_ind_cca_bound_evaluated": false,
+      "g512_queries_for_m05_panel": 65536,
+      "keyed_classical_queries": 65536,
+      "m05_allocation_certified_by_this_qrom_bound": false,
+      "m05_prf_allocation": {
+        "approx_log2": "-130.000000000000000000",
+        "approx_probability": "7.346839692639296924804603E-40",
+        "denominator_hex": "0x400000000000000000000000000000000",
+        "numerator_hex": "0x1"
+      },
+      "public_global_shake256_queries": 65536,
+      "qrom_correction": {
+        "approx_log2": "-270.916014845540998660",
+        "approx_probability": "2.793529267294266401134757E-82"
+      },
+      "qrom_correction_coefficient": 618487873600,
+      "qrom_known_additive_upper": {
+        "approx_log2": "-111.000000000000000000",
+        "approx_probability": "3.851859888774471706111956E-34"
+      },
+      "sufficient_ow_requirement": null,
+      "target_bias": {
+        "approx_log2": "-128.000000000000000000",
+        "approx_probability": "2.938735877055718769921841E-39",
+        "denominator_hex": "0x100000000000000000000000000000000",
+        "numerator_hex": "0x1"
+      },
+      "target_certified_by_this_bound_with_ow_zero": false
+    },
+    {
+      "epsilon_j_qrom_upper": {
+        "approx_log2": "-95.000000000000000000",
+        "approx_probability": "2.524354896707237777317531E-29",
+        "denominator_hex": "0x800000000000000000000000",
+        "numerator_hex": "0x1"
+      },
+      "epsilon_j_rom_upper": {
+        "approx_log2": "-224.000000000000000000",
+        "approx_probability": "3.709206150687421385731735E-68",
+        "denominator_hex": "0x100000000000000000000000000000000000000000000000000000000",
+        "numerator_hex": "0x1"
+      },
+      "full_ind_cca_bound_evaluated": false,
+      "g512_queries_for_m05_panel": 4294967296,
+      "keyed_classical_queries": 4294967296,
+      "m05_allocation_certified_by_this_qrom_bound": false,
+      "m05_prf_allocation": {
+        "approx_log2": "-130.000000000000000000",
+        "approx_probability": "7.346839692639296924804603E-40",
+        "denominator_hex": "0x400000000000000000000000000000000",
+        "numerator_hex": "0x1"
+      },
+      "public_global_shake256_queries": 4294967296,
+      "qrom_correction": {
+        "approx_log2": "-238.916044196649584943",
+        "approx_probability": "1.199787274858491982111527E-72"
+      },
+      "qrom_correction_coefficient": 2656331147438809153600,
+      "qrom_known_additive_upper": {
+        "approx_log2": "-95.000000000000000000",
+        "approx_probability": "2.524354896707237777317531E-29"
+      },
+      "sufficient_ow_requirement": null,
+      "target_bias": {
+        "approx_log2": "-128.000000000000000000",
+        "approx_probability": "2.938735877055718769921841E-39",
+        "denominator_hex": "0x100000000000000000000000000000000",
+        "numerator_hex": "0x1"
+      },
+      "target_certified_by_this_bound_with_ow_zero": false
+    },
+    {
+      "epsilon_j_qrom_upper": {
+        "approx_log2": "-63.000000000000000000",
+        "approx_probability": "1.084202172485504434007453E-19",
+        "denominator_hex": "0x8000000000000000",
+        "numerator_hex": "0x1"
+      },
+      "epsilon_j_rom_upper": {
+        "approx_log2": "-192.000000000000000000",
+        "approx_probability": "1.593091911132452277028880E-58",
+        "denominator_hex": "0x1000000000000000000000000000000000000000000000000",
+        "numerator_hex": "0x1"
+      },
+      "full_ind_cca_bound_evaluated": false,
+      "g512_queries_for_m05_panel": 18446744073709551616,
+      "keyed_classical_queries": 18446744073709551616,
+      "m05_allocation_certified_by_this_qrom_bound": false,
+      "m05_prf_allocation": {
+        "approx_log2": "-130.000000000000000000",
+        "approx_probability": "7.346839692639296924804603E-40",
+        "denominator_hex": "0x400000000000000000000000000000000",
+        "numerator_hex": "0x1"
+      },
+      "public_global_shake256_queries": 18446744073709551616,
+      "qrom_correction": {
+        "approx_log2": "-174.916044197097456430",
+        "approx_probability": "2.213216879533729041076643E-53"
+      },
+      "qrom_correction_coefficient": 49000660836615138742267718332326856360000,
+      "qrom_known_additive_upper": {
+        "approx_log2": "-63.000000000000000000",
+        "approx_probability": "1.084202172485504434007453E-19"
+      },
+      "sufficient_ow_requirement": null,
+      "target_bias": {
+        "approx_log2": "-128.000000000000000000",
+        "approx_probability": "2.938735877055718769921841E-39",
+        "denominator_hex": "0x100000000000000000000000000000000",
+        "numerator_hex": "0x1"
+      },
+      "target_certified_by_this_bound_with_ow_zero": false
+    },
+    {
+      "epsilon_j_qrom_upper": {
+        "approx_log2": "-31.000000000000000000",
+        "approx_probability": "4.656612873077392578125000E-10",
+        "denominator_hex": "0x80000000",
+        "numerator_hex": "0x1"
+      },
+      "epsilon_j_rom_upper": {
+        "approx_log2": "-160.000000000000000000",
+        "approx_probability": "6.842277657836020854119773E-49",
+        "denominator_hex": "0x10000000000000000000000000000000000000000",
+        "numerator_hex": "0x1"
+      },
+      "full_ind_cca_bound_evaluated": false,
+      "g512_queries_for_m05_panel": 79228162514264337593543950336,
+      "keyed_classical_queries": 79228162514264337593543950336,
+      "m05_allocation_certified_by_this_qrom_bound": false,
+      "m05_prf_allocation": {
+        "approx_log2": "-130.000000000000000000",
+        "approx_probability": "7.346839692639296924804603E-40",
+        "denominator_hex": "0x400000000000000000000000000000000",
+        "numerator_hex": "0x1"
+      },
+      "public_global_shake256_queries": 79228162514264337593543950336,
+      "qrom_correction": {
+        "approx_log2": "-110.916044197097456430",
+        "approx_probability": "4.082664535637276280254922E-34"
+      },
+      "qrom_correction_coefficient": 903902649895682029992353676957115771121477936820781408321600,
+      "qrom_known_additive_upper": {
+        "approx_log2": "-31.000000000000000000",
+        "approx_probability": "4.656612873077392578125004E-10"
+      },
+      "sufficient_ow_requirement": null,
+      "target_bias": {
+        "approx_log2": "-128.000000000000000000",
+        "approx_probability": "2.938735877055718769921841E-39",
+        "denominator_hex": "0x100000000000000000000000000000000",
+        "numerator_hex": "0x1"
+      },
+      "target_certified_by_this_bound_with_ow_zero": false
+    },
+    {
+      "epsilon_j_qrom_upper": {
+        "approx_log2": "0.000000000000000000",
+        "approx_probability": "1.000000000000000000000000E+0",
+        "denominator_hex": "0x1",
+        "numerator_hex": "0x1"
+      },
+      "epsilon_j_rom_upper": {
+        "approx_log2": "-128.000000000000000000",
+        "approx_probability": "2.938735877055718769921841E-39",
+        "denominator_hex": "0x100000000000000000000000000000000",
+        "numerator_hex": "0x1"
+      },
+      "full_ind_cca_bound_evaluated": false,
+      "g512_queries_for_m05_panel": 340282366920938463463374607431768211456,
+      "keyed_classical_queries": 340282366920938463463374607431768211456,
+      "m05_allocation_certified_by_this_qrom_bound": false,
+      "m05_prf_allocation": {
+        "approx_log2": "-130.000000000000000000",
+        "approx_probability": "7.346839692639296924804603E-40",
+        "denominator_hex": "0x400000000000000000000000000000000",
+        "numerator_hex": "0x1"
+      },
+      "public_global_shake256_queries": 340282366920938463463374607431768211456,
+      "qrom_correction": {
+        "approx_log2": "-46.916044197097456430",
+        "approx_probability": "7.531186782771108471950329E-15"
+      },
+      "qrom_correction_coefficient": 16674060850173532140994221841251058730936212006301061406666860021766390164750400,
+      "qrom_known_additive_upper": {
+        "approx_log2": "0.000000000000010865",
+        "approx_probability": "1.000000000000007531186783E+0"
+      },
+      "sufficient_ow_requirement": null,
+      "target_bias": {
+        "approx_log2": "-128.000000000000000000",
+        "approx_probability": "2.938735877055718769921841E-39",
+        "denominator_hex": "0x100000000000000000000000000000000",
+        "numerator_hex": "0x1"
+      },
+      "target_certified_by_this_bound_with_ow_zero": false
+    }
+  ],
+  "prf_allocation_limits_for_d_positive": {
+    "qrom_max_public_queries": 0,
+    "rom_max_public_queries": 85070591730234615865843651857942052864
+  },
+  "proven_other_namespace_calls_charged_to_auxiliary_resources": true,
+  "q_counts_all_potentially_j_public_calls_of_prf_distinguisher": true,
+  "qrom_formula": "D=0: 0; otherwise min(1,2*q/2^128)",
+  "qrom_reference": "AHU2018/904 Theorem3 pp11,25-28; constant agrees with SXY2017/1005 corrected Lemma2.2 (2021)",
+  "rejection_output_bits": 256,
+  "remaining": [
+    "seeded PKE CPA/OW with public quantum auxiliary oracles",
+    "complete FO theorem instantiation and ROM constants review",
+    "all substitutions of ideal oracles by concrete Keccak",
+    "tighter rejection bound if a smaller gap is required at large q"
+  ],
+  "rom_formula": "D=0: 0; otherwise min(1,q/2^256)",
+  "schema": "m06-r1-rejection-ideal-ro-v1",
+  "scope": "single uniformly random independent z; global public SHAKE ideal bitstream oracle, classical indexed oracle, independent auxiliary domains",
+  "study_date": "2026-11-10",
+  "study_timezone": "Europe/Paris"
+}

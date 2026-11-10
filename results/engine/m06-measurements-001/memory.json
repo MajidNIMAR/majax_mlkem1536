@@ -1,0 +1,50 @@
+{
+  "measurements": [
+    {
+      "version": "baseline",
+      "command": [
+        "/usr/bin/time",
+        "-f",
+        "{\"peak_RSS_KiB\":%M,\"user_seconds\":%U,\"system_seconds\":%S}",
+        "-o",
+        "/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m06-measurements-001/baseline-rss.json",
+        "taskset",
+        "-c",
+        "10",
+        "/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m06-measurements-001/bin/baseline-m06-measure",
+        "rss"
+      ],
+      "usage": {
+        "peak_RSS_KiB": 2048,
+        "user_seconds": 3.3,
+        "system_seconds": 0.0
+      },
+      "round_trips": 1000
+    },
+    {
+      "version": "candidate",
+      "command": [
+        "/usr/bin/time",
+        "-f",
+        "{\"peak_RSS_KiB\":%M,\"user_seconds\":%U,\"system_seconds\":%S}",
+        "-o",
+        "/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m06-measurements-001/candidate-rss.json",
+        "taskset",
+        "-c",
+        "10",
+        "/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m06-measurements-001/bin/candidate-m06-measure",
+        "rss"
+      ],
+      "usage": {
+        "peak_RSS_KiB": 2048,
+        "user_seconds": 1.9,
+        "system_seconds": 0.0
+      },
+      "round_trips": 1000
+    }
+  ],
+  "separate_process_for_each_version": true,
+  "RSS_includes_runtime_allocator_executable_harness": true,
+  "static_stack_frames_in_separate_files": true,
+  "dynamic_stack_peak_measured": false
+}

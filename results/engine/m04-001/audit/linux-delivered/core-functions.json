@@ -1,0 +1,5068 @@
+{
+  "<kem1536::dev_kem::Error as core::fmt::Debug>::fmt": {
+    "address": "000000000026a2b0",
+    "instructions": 17,
+    "conditional_branches": [],
+    "divisions": [],
+    "calls": [
+      {
+        "address": "26a2d2",
+        "opcode": "jmp",
+        "operands": "*0xcf540(%rip)        # 339818 <_DYNAMIC+0x288>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "26a2d2",
+        "opcode": "jmp",
+        "operands": "*0xcf540(%rip)        # 339818 <_DYNAMIC+0x288>",
+        "target": "core::fmt::Formatter::write_str"
+      }
+    ],
+    "indirect_transfers": [
+      {
+        "address": "26a2d2",
+        "opcode": "jmp",
+        "operands": "*0xcf540(%rip)        # 339818 <_DYNAMIC+0x288>"
+      }
+    ],
+    "conditional_moves": 0,
+    "resolved_indirect_transfers": [
+      {
+        "address": "26a2d2",
+        "opcode": "jmp",
+        "operands": "*0xcf540(%rip)        # 339818 <_DYNAMIC+0x288>",
+        "target": "core::fmt::Formatter::write_str"
+      }
+    ]
+  },
+  "core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>": {
+    "address": "0000000000298850",
+    "instructions": 82,
+    "conditional_branches": [
+      {
+        "address": "2988a1",
+        "opcode": "jne",
+        "operands": "298860 <core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>+0x10>"
+      },
+      {
+        "address": "29890a",
+        "opcode": "jne",
+        "operands": "2988b0 <core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>+0x60>"
+      },
+      {
+        "address": "29896a",
+        "opcode": "jne",
+        "operands": "298910 <core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>+0xc0>"
+      },
+      {
+        "address": "2989ca",
+        "opcode": "jne",
+        "operands": "298970 <core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>+0x120>"
+      },
+      {
+        "address": "298a2a",
+        "opcode": "jne",
+        "operands": "2989d0 <core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>+0x180>"
+      },
+      {
+        "address": "298a8a",
+        "opcode": "jne",
+        "operands": "298a30 <core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>+0x1e0>"
+      }
+    ],
+    "divisions": [],
+    "calls": [],
+    "indirect_transfers": [],
+    "conditional_moves": 0,
+    "resolved_indirect_transfers": []
+  },
+  "kem1536::dev_kem::_::<impl serde_core::ser::Serialize for kem1536::dev_kem::Diagnostics>::serialize": {
+    "address": "00000000002715c0",
+    "instructions": 88,
+    "conditional_branches": [
+      {
+        "address": "2715de",
+        "opcode": "je",
+        "operands": "2716d0 <kem1536::dev_kem::_::<impl serde_core::ser::Serialize for kem1536::dev_kem::Diagnostics>::serialize+0x110>"
+      },
+      {
+        "address": "271616",
+        "opcode": "jne",
+        "operands": "2716b0 <kem1536::dev_kem::_::<impl serde_core::ser::Serialize for kem1536::dev_kem::Diagnostics>::serialize+0xf0>"
+      },
+      {
+        "address": "271637",
+        "opcode": "jne",
+        "operands": "2716b0 <kem1536::dev_kem::_::<impl serde_core::ser::Serialize for kem1536::dev_kem::Diagnostics>::serialize+0xf0>"
+      },
+      {
+        "address": "271654",
+        "opcode": "jne",
+        "operands": "2716b0 <kem1536::dev_kem::_::<impl serde_core::ser::Serialize for kem1536::dev_kem::Diagnostics>::serialize+0xf0>"
+      },
+      {
+        "address": "271671",
+        "opcode": "jne",
+        "operands": "2716b0 <kem1536::dev_kem::_::<impl serde_core::ser::Serialize for kem1536::dev_kem::Diagnostics>::serialize+0xf0>"
+      },
+      {
+        "address": "27168e",
+        "opcode": "jne",
+        "operands": "2716b0 <kem1536::dev_kem::_::<impl serde_core::ser::Serialize for kem1536::dev_kem::Diagnostics>::serialize+0xf0>"
+      },
+      {
+        "address": "2716ae",
+        "opcode": "je",
+        "operands": "2716ba <kem1536::dev_kem::_::<impl serde_core::ser::Serialize for kem1536::dev_kem::Diagnostics>::serialize+0xfa>"
+      }
+    ],
+    "divisions": [],
+    "calls": [
+      {
+        "address": "27160e",
+        "opcode": "call",
+        "operands": "26f400 <serde_core::ser::SerializeMap::serialize_entry>",
+        "target": "serde_core::ser::SerializeMap::serialize_entry"
+      },
+      {
+        "address": "27162f",
+        "opcode": "call",
+        "operands": "26f1d0 <serde_core::ser::SerializeMap::serialize_entry>",
+        "target": "serde_core::ser::SerializeMap::serialize_entry"
+      },
+      {
+        "address": "27164c",
+        "opcode": "call",
+        "operands": "26f1d0 <serde_core::ser::SerializeMap::serialize_entry>",
+        "target": "serde_core::ser::SerializeMap::serialize_entry"
+      },
+      {
+        "address": "271669",
+        "opcode": "call",
+        "operands": "26f790 <serde_core::ser::SerializeMap::serialize_entry>",
+        "target": "serde_core::ser::SerializeMap::serialize_entry"
+      },
+      {
+        "address": "271686",
+        "opcode": "call",
+        "operands": "26f400 <serde_core::ser::SerializeMap::serialize_entry>",
+        "target": "serde_core::ser::SerializeMap::serialize_entry"
+      },
+      {
+        "address": "2716a6",
+        "opcode": "call",
+        "operands": "26fa30 <serde_core::ser::SerializeMap::serialize_entry>",
+        "target": "serde_core::ser::SerializeMap::serialize_entry"
+      },
+      {
+        "address": "2716cb",
+        "opcode": "jmp",
+        "operands": "271d80 <_ZN91_$LT$serde_json..ser..Compound$LT$W$C$F$GT$$u20$as$u20$serde_core..ser..SerializeStruct$GT$3end17hdd9a97c900a34ee6E.llvm.14014198722618873529>",
+        "target": "_ZN91_$LT$serde_json..ser..Compound$LT$W$C$F$GT$$u20$as$u20$serde_core..ser..SerializeStruct$GT$3end17hdd9a97c900a34ee6E.llvm.14014198722618873529"
+      },
+      {
+        "address": "2716e9",
+        "opcode": "call",
+        "operands": "26edb0 <alloc::raw_vec::RawVecInner<A>::reserve::do_reserve_and_handle>",
+        "target": "alloc::raw_vec::RawVecInner<A>::reserve::do_reserve_and_handle"
+      }
+    ],
+    "indirect_transfers": [],
+    "conditional_moves": 0,
+    "resolved_indirect_transfers": []
+  },
+  "kem1536::dev_kem::decapsulate": {
+    "address": "0000000000299830",
+    "instructions": 1126,
+    "conditional_branches": [
+      {
+        "address": "299cdf",
+        "opcode": "jne",
+        "operands": "299c10 <kem1536::dev_kem::decapsulate+0x3e0>"
+      },
+      {
+        "address": "299dcf",
+        "opcode": "jne",
+        "operands": "299d30 <kem1536::dev_kem::decapsulate+0x500>"
+      },
+      {
+        "address": "299eaf",
+        "opcode": "jne",
+        "operands": "299e10 <kem1536::dev_kem::decapsulate+0x5e0>"
+      },
+      {
+        "address": "299f8f",
+        "opcode": "jne",
+        "operands": "299ef0 <kem1536::dev_kem::decapsulate+0x6c0>"
+      },
+      {
+        "address": "29a06f",
+        "opcode": "jne",
+        "operands": "299fd0 <kem1536::dev_kem::decapsulate+0x7a0>"
+      },
+      {
+        "address": "29a14f",
+        "opcode": "jne",
+        "operands": "29a0b0 <kem1536::dev_kem::decapsulate+0x880>"
+      },
+      {
+        "address": "29a22f",
+        "opcode": "jne",
+        "operands": "29a190 <kem1536::dev_kem::decapsulate+0x960>"
+      },
+      {
+        "address": "29a2a9",
+        "opcode": "jne",
+        "operands": "29a250 <kem1536::dev_kem::decapsulate+0xa20>"
+      },
+      {
+        "address": "29a32a",
+        "opcode": "jne",
+        "operands": "29a2d0 <kem1536::dev_kem::decapsulate+0xaa0>"
+      },
+      {
+        "address": "29a39a",
+        "opcode": "jne",
+        "operands": "29a340 <kem1536::dev_kem::decapsulate+0xb10>"
+      },
+      {
+        "address": "29a40a",
+        "opcode": "jne",
+        "operands": "29a3b0 <kem1536::dev_kem::decapsulate+0xb80>"
+      },
+      {
+        "address": "29a47a",
+        "opcode": "jne",
+        "operands": "29a420 <kem1536::dev_kem::decapsulate+0xbf0>"
+      },
+      {
+        "address": "29a4ea",
+        "opcode": "jne",
+        "operands": "29a490 <kem1536::dev_kem::decapsulate+0xc60>"
+      },
+      {
+        "address": "29a55a",
+        "opcode": "jne",
+        "operands": "29a500 <kem1536::dev_kem::decapsulate+0xcd0>"
+      },
+      {
+        "address": "29a5ca",
+        "opcode": "jne",
+        "operands": "29a570 <kem1536::dev_kem::decapsulate+0xd40>"
+      },
+      {
+        "address": "29a63a",
+        "opcode": "jne",
+        "operands": "29a5e0 <kem1536::dev_kem::decapsulate+0xdb0>"
+      },
+      {
+        "address": "29a6aa",
+        "opcode": "jne",
+        "operands": "29a650 <kem1536::dev_kem::decapsulate+0xe20>"
+      },
+      {
+        "address": "29a71a",
+        "opcode": "jne",
+        "operands": "29a6c0 <kem1536::dev_kem::decapsulate+0xe90>"
+      },
+      {
+        "address": "29a78a",
+        "opcode": "jne",
+        "operands": "29a730 <kem1536::dev_kem::decapsulate+0xf00>"
+      },
+      {
+        "address": "29a7fa",
+        "opcode": "jne",
+        "operands": "29a7a0 <kem1536::dev_kem::decapsulate+0xf70>"
+      },
+      {
+        "address": "29a86a",
+        "opcode": "jne",
+        "operands": "29a810 <kem1536::dev_kem::decapsulate+0xfe0>"
+      },
+      {
+        "address": "29a8da",
+        "opcode": "jne",
+        "operands": "29a880 <kem1536::dev_kem::decapsulate+0x1050>"
+      },
+      {
+        "address": "29abd0",
+        "opcode": "jne",
+        "operands": "29abb0 <kem1536::dev_kem::decapsulate+0x1380>"
+      },
+      {
+        "address": "29afbb",
+        "opcode": "jne",
+        "operands": "29af70 <kem1536::dev_kem::decapsulate+0x1740>"
+      },
+      {
+        "address": "29b2ca",
+        "opcode": "jne",
+        "operands": "29b280 <kem1536::dev_kem::decapsulate+0x1a50>"
+      },
+      {
+        "address": "29b34d",
+        "opcode": "jne",
+        "operands": "29b2f3 <kem1536::dev_kem::decapsulate+0x1ac3>"
+      },
+      {
+        "address": "29b3ab",
+        "opcode": "jne",
+        "operands": "29b351 <kem1536::dev_kem::decapsulate+0x1b21>"
+      }
+    ],
+    "divisions": [],
+    "calls": [
+      {
+        "address": "299870",
+        "opcode": "call",
+        "operands": "*0xa00b2(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2998cb",
+        "opcode": "call",
+        "operands": "2c2a40 <kem1536::engine_poly::Polynomial::fill_with>",
+        "target": "kem1536::engine_poly::Polynomial::fill_with"
+      },
+      {
+        "address": "299910",
+        "opcode": "call",
+        "operands": "2c2a40 <kem1536::engine_poly::Polynomial::fill_with>",
+        "target": "kem1536::engine_poly::Polynomial::fill_with"
+      },
+      {
+        "address": "299955",
+        "opcode": "call",
+        "operands": "2c2a40 <kem1536::engine_poly::Polynomial::fill_with>",
+        "target": "kem1536::engine_poly::Polynomial::fill_with"
+      },
+      {
+        "address": "29999a",
+        "opcode": "call",
+        "operands": "2c2a40 <kem1536::engine_poly::Polynomial::fill_with>",
+        "target": "kem1536::engine_poly::Polynomial::fill_with"
+      },
+      {
+        "address": "2999df",
+        "opcode": "call",
+        "operands": "2c2a40 <kem1536::engine_poly::Polynomial::fill_with>",
+        "target": "kem1536::engine_poly::Polynomial::fill_with"
+      },
+      {
+        "address": "299a24",
+        "opcode": "call",
+        "operands": "2c2a40 <kem1536::engine_poly::Polynomial::fill_with>",
+        "target": "kem1536::engine_poly::Polynomial::fill_with"
+      },
+      {
+        "address": "299a3b",
+        "opcode": "call",
+        "operands": "*0x9fee7(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "299a8b",
+        "opcode": "call",
+        "operands": "2c2a40 <kem1536::engine_poly::Polynomial::fill_with>",
+        "target": "kem1536::engine_poly::Polynomial::fill_with"
+      },
+      {
+        "address": "299ad3",
+        "opcode": "call",
+        "operands": "2c2a40 <kem1536::engine_poly::Polynomial::fill_with>",
+        "target": "kem1536::engine_poly::Polynomial::fill_with"
+      },
+      {
+        "address": "299b18",
+        "opcode": "call",
+        "operands": "2c2a40 <kem1536::engine_poly::Polynomial::fill_with>",
+        "target": "kem1536::engine_poly::Polynomial::fill_with"
+      },
+      {
+        "address": "299b5d",
+        "opcode": "call",
+        "operands": "2c2a40 <kem1536::engine_poly::Polynomial::fill_with>",
+        "target": "kem1536::engine_poly::Polynomial::fill_with"
+      },
+      {
+        "address": "299ba2",
+        "opcode": "call",
+        "operands": "2c2a40 <kem1536::engine_poly::Polynomial::fill_with>",
+        "target": "kem1536::engine_poly::Polynomial::fill_with"
+      },
+      {
+        "address": "299bed",
+        "opcode": "call",
+        "operands": "2c2a40 <kem1536::engine_poly::Polynomial::fill_with>",
+        "target": "kem1536::engine_poly::Polynomial::fill_with"
+      },
+      {
+        "address": "299bff",
+        "opcode": "call",
+        "operands": "*0x9fd23(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "299cf7",
+        "opcode": "call",
+        "operands": "*0x9fc2b(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "299d10",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "299de8",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "299ecd",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "299fad",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29a08d",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29a168",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29a92d",
+        "opcode": "call",
+        "operands": "2a1220 <kem1536::dev_kem::derive>",
+        "target": "kem1536::dev_kem::derive"
+      },
+      {
+        "address": "29a94c",
+        "opcode": "call",
+        "operands": "*0x9efd6(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29a965",
+        "opcode": "call",
+        "operands": "29c6d0 <kem1536::dev_kem::pke_encrypt_into>",
+        "target": "kem1536::dev_kem::pke_encrypt_into"
+      },
+      {
+        "address": "29a9a9",
+        "opcode": "call",
+        "operands": "2a0bd0 <kem1536::dev_kem::xof>",
+        "target": "kem1536::dev_kem::xof"
+      },
+      {
+        "address": "29b2d4",
+        "opcode": "call",
+        "operands": "2a6ad0 <<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop>",
+        "target": "<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop"
+      },
+      {
+        "address": "29b2de",
+        "opcode": "call",
+        "operands": "2a6bd0 <<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop>",
+        "target": "<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop"
+      },
+      {
+        "address": "29b2e8",
+        "opcode": "call",
+        "operands": "*0x9e4da(%rip)        # 3397c8 <_DYNAMIC+0x238>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29b3ba",
+        "opcode": "call",
+        "operands": "298850 <core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>>",
+        "target": "core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>"
+      },
+      {
+        "address": "29b3cc",
+        "opcode": "call",
+        "operands": "298850 <core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>>",
+        "target": "core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>"
+      },
+      {
+        "address": "29b3d4",
+        "opcode": "call",
+        "operands": "3327d0 <_Unwind_Resume@plt>",
+        "target": "_Unwind_Resume@plt"
+      },
+      {
+        "address": "299870",
+        "opcode": "call",
+        "operands": "*0xa00b2(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "299a3b",
+        "opcode": "call",
+        "operands": "*0x9fee7(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "299bff",
+        "opcode": "call",
+        "operands": "*0x9fd23(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "299cf7",
+        "opcode": "call",
+        "operands": "*0x9fc2b(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29a94c",
+        "opcode": "call",
+        "operands": "*0x9efd6(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29b2e8",
+        "opcode": "call",
+        "operands": "*0x9e4da(%rip)        # 3397c8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      }
+    ],
+    "indirect_transfers": [
+      {
+        "address": "299870",
+        "opcode": "call",
+        "operands": "*0xa00b2(%rip)        # 339928 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "299a3b",
+        "opcode": "call",
+        "operands": "*0x9fee7(%rip)        # 339928 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "299bff",
+        "opcode": "call",
+        "operands": "*0x9fd23(%rip)        # 339928 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "299cf7",
+        "opcode": "call",
+        "operands": "*0x9fc2b(%rip)        # 339928 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "29a94c",
+        "opcode": "call",
+        "operands": "*0x9efd6(%rip)        # 339928 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "29b2e8",
+        "opcode": "call",
+        "operands": "*0x9e4da(%rip)        # 3397c8 <_DYNAMIC+0x238>"
+      }
+    ],
+    "conditional_moves": 7,
+    "resolved_indirect_transfers": [
+      {
+        "address": "299870",
+        "opcode": "call",
+        "operands": "*0xa00b2(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "299a3b",
+        "opcode": "call",
+        "operands": "*0x9fee7(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "299bff",
+        "opcode": "call",
+        "operands": "*0x9fd23(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "299cf7",
+        "opcode": "call",
+        "operands": "*0x9fc2b(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29a94c",
+        "opcode": "call",
+        "operands": "*0x9efd6(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29b2e8",
+        "opcode": "call",
+        "operands": "*0x9e4da(%rip)        # 3397c8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      }
+    ]
+  },
+  "kem1536::dev_kem::derive": {
+    "address": "00000000002a1220",
+    "instructions": 418,
+    "conditional_branches": [],
+    "divisions": [],
+    "calls": [
+      {
+        "address": "2a12bc",
+        "opcode": "call",
+        "operands": "298540 <<sha3::Sha3_512 as digest::Update>::update>",
+        "target": "<sha3::Sha3_512 as digest::Update>::update"
+      },
+      {
+        "address": "2a12cf",
+        "opcode": "call",
+        "operands": "298540 <<sha3::Sha3_512 as digest::Update>::update>",
+        "target": "<sha3::Sha3_512 as digest::Update>::update"
+      },
+      {
+        "address": "2a12e3",
+        "opcode": "call",
+        "operands": "298540 <<sha3::Sha3_512 as digest::Update>::update>",
+        "target": "<sha3::Sha3_512 as digest::Update>::update"
+      },
+      {
+        "address": "2a12f8",
+        "opcode": "call",
+        "operands": "298540 <<sha3::Sha3_512 as digest::Update>::update>",
+        "target": "<sha3::Sha3_512 as digest::Update>::update"
+      },
+      {
+        "address": "2a1315",
+        "opcode": "call",
+        "operands": "*0x984c5(%rip)        # 3397e0 <memcpy@GLIBC_2.14>",
+        "target": "memcpy@GLIBC_2.14"
+      },
+      {
+        "address": "2a1343",
+        "opcode": "call",
+        "operands": "*0x986c7(%rip)        # 339a10 <_DYNAMIC+0x480>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "2a1b22",
+        "opcode": "call",
+        "operands": "3327d0 <_Unwind_Resume@plt>",
+        "target": "_Unwind_Resume@plt"
+      },
+      {
+        "address": "2a1315",
+        "opcode": "call",
+        "operands": "*0x984c5(%rip)        # 3397e0 <memcpy@GLIBC_2.14>",
+        "target": "EXTERNAL:memcpy@GLIBC_2.14"
+      },
+      {
+        "address": "2a1343",
+        "opcode": "call",
+        "operands": "*0x986c7(%rip)        # 339a10 <_DYNAMIC+0x480>",
+        "target": "<sha3::Sha3_512 as digest::FixedOutput>::finalize_into"
+      }
+    ],
+    "indirect_transfers": [
+      {
+        "address": "2a1315",
+        "opcode": "call",
+        "operands": "*0x984c5(%rip)        # 3397e0 <memcpy@GLIBC_2.14>"
+      },
+      {
+        "address": "2a1343",
+        "opcode": "call",
+        "operands": "*0x986c7(%rip)        # 339a10 <_DYNAMIC+0x480>"
+      }
+    ],
+    "conditional_moves": 0,
+    "resolved_indirect_transfers": [
+      {
+        "address": "2a1315",
+        "opcode": "call",
+        "operands": "*0x984c5(%rip)        # 3397e0 <memcpy@GLIBC_2.14>",
+        "target": "EXTERNAL:memcpy@GLIBC_2.14"
+      },
+      {
+        "address": "2a1343",
+        "opcode": "call",
+        "operands": "*0x986c7(%rip)        # 339a10 <_DYNAMIC+0x480>",
+        "target": "<sha3::Sha3_512 as digest::FixedOutput>::finalize_into"
+      }
+    ]
+  },
+  "kem1536::dev_kem::encapsulate": {
+    "address": "000000000029b3e0",
+    "instructions": 290,
+    "conditional_branches": [
+      {
+        "address": "29b411",
+        "opcode": "je",
+        "operands": "29b477 <kem1536::dev_kem::encapsulate+0x97>"
+      },
+      {
+        "address": "29b417",
+        "opcode": "je",
+        "operands": "29b48a <kem1536::dev_kem::encapsulate+0xaa>"
+      },
+      {
+        "address": "29b433",
+        "opcode": "je",
+        "operands": "29b54f <kem1536::dev_kem::encapsulate+0x16f>"
+      },
+      {
+        "address": "29b447",
+        "opcode": "jle",
+        "operands": "29b460 <kem1536::dev_kem::encapsulate+0x80>"
+      },
+      {
+        "address": "29b44c",
+        "opcode": "jb",
+        "operands": "29b4a0 <kem1536::dev_kem::encapsulate+0xc0>"
+      },
+      {
+        "address": "29b464",
+        "opcode": "jne",
+        "operands": "29b4a0 <kem1536::dev_kem::encapsulate+0xc0>"
+      },
+      {
+        "address": "29b46b",
+        "opcode": "je",
+        "operands": "29b430 <kem1536::dev_kem::encapsulate+0x50>"
+      },
+      {
+        "address": "29b488",
+        "opcode": "jne",
+        "operands": "29b419 <kem1536::dev_kem::encapsulate+0x39>"
+      },
+      {
+        "address": "29b49a",
+        "opcode": "je",
+        "operands": "29b54f <kem1536::dev_kem::encapsulate+0x16f>"
+      },
+      {
+        "address": "29b5d7",
+        "opcode": "je",
+        "operands": "29b810 <kem1536::dev_kem::encapsulate+0x430>"
+      },
+      {
+        "address": "29b869",
+        "opcode": "jne",
+        "operands": "29b830 <kem1536::dev_kem::encapsulate+0x450>"
+      }
+    ],
+    "divisions": [],
+    "calls": [
+      {
+        "address": "29b46f",
+        "opcode": "call",
+        "operands": "*0x9e5ab(%rip)        # 339a20 <_DYNAMIC+0x490>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29b477",
+        "opcode": "call",
+        "operands": "*0x9e4db(%rip)        # 339958 <_DYNAMIC+0x3c8>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29b492",
+        "opcode": "call",
+        "operands": "*0x9e4c8(%rip)        # 339960 <_DYNAMIC+0x3d0>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29b57c",
+        "opcode": "call",
+        "operands": "29b8d0 <kem1536::dev_kem::hash_public>",
+        "target": "kem1536::dev_kem::hash_public"
+      },
+      {
+        "address": "29b5b9",
+        "opcode": "call",
+        "operands": "2a1220 <kem1536::dev_kem::derive>",
+        "target": "kem1536::dev_kem::derive"
+      },
+      {
+        "address": "29b5be",
+        "opcode": "call",
+        "operands": "*0x9e20c(%rip)        # 3397d0 <_DYNAMIC+0x240>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29b5ce",
+        "opcode": "call",
+        "operands": "*0x9e204(%rip)        # 3397d8 <_DYNAMIC+0x248>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29b5ef",
+        "opcode": "call",
+        "operands": "*0x9e333(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29b603",
+        "opcode": "call",
+        "operands": "29c6d0 <kem1536::dev_kem::pke_encrypt_into>",
+        "target": "kem1536::dev_kem::pke_encrypt_into"
+      },
+      {
+        "address": "29b81a",
+        "opcode": "call",
+        "operands": "*0x9dfc8(%rip)        # 3397e8 <_DYNAMIC+0x258>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29b878",
+        "opcode": "call",
+        "operands": "*0x9df3a(%rip)        # 3397b8 <_DYNAMIC+0x228>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29b88d",
+        "opcode": "call",
+        "operands": "2a6bd0 <<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop>",
+        "target": "<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop"
+      },
+      {
+        "address": "29b894",
+        "opcode": "call",
+        "operands": "*0x9df2e(%rip)        # 3397c8 <_DYNAMIC+0x238>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29b8a0",
+        "opcode": "call",
+        "operands": "2a6ad0 <<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop>",
+        "target": "<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop"
+      },
+      {
+        "address": "29b8aa",
+        "opcode": "call",
+        "operands": "2a6bd0 <<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop>",
+        "target": "<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop"
+      },
+      {
+        "address": "29b8b2",
+        "opcode": "call",
+        "operands": "3327d0 <_Unwind_Resume@plt>",
+        "target": "_Unwind_Resume@plt"
+      },
+      {
+        "address": "29b8b7",
+        "opcode": "call",
+        "operands": "*0x9df0b(%rip)        # 3397c8 <_DYNAMIC+0x238>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29b8bd",
+        "opcode": "call",
+        "operands": "*0x9df05(%rip)        # 3397c8 <_DYNAMIC+0x238>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29b46f",
+        "opcode": "call",
+        "operands": "*0x9e5ab(%rip)        # 339a20 <_DYNAMIC+0x490>",
+        "target": "getrandom::error::Error::from_errno"
+      },
+      {
+        "address": "29b477",
+        "opcode": "call",
+        "operands": "*0x9e4db(%rip)        # 339958 <_DYNAMIC+0x3c8>",
+        "target": "getrandom::backends::linux_android_with_fallback::init"
+      },
+      {
+        "address": "29b492",
+        "opcode": "call",
+        "operands": "*0x9e4c8(%rip)        # 339960 <_DYNAMIC+0x3d0>",
+        "target": "getrandom::backends::linux_android_with_fallback::use_file_fallback"
+      },
+      {
+        "address": "29b5be",
+        "opcode": "call",
+        "operands": "*0x9e20c(%rip)        # 3397d0 <_DYNAMIC+0x240>",
+        "target": "__rustc::__rust_no_alloc_shim_is_unstable_v2"
+      },
+      {
+        "address": "29b5ce",
+        "opcode": "call",
+        "operands": "*0x9e204(%rip)        # 3397d8 <_DYNAMIC+0x248>",
+        "target": "__rustc::__rust_alloc"
+      },
+      {
+        "address": "29b5ef",
+        "opcode": "call",
+        "operands": "*0x9e333(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29b81a",
+        "opcode": "call",
+        "operands": "*0x9dfc8(%rip)        # 3397e8 <_DYNAMIC+0x258>",
+        "target": "alloc::alloc::handle_alloc_error"
+      },
+      {
+        "address": "29b878",
+        "opcode": "call",
+        "operands": "*0x9df3a(%rip)        # 3397b8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "29b894",
+        "opcode": "call",
+        "operands": "*0x9df2e(%rip)        # 3397c8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      },
+      {
+        "address": "29b8b7",
+        "opcode": "call",
+        "operands": "*0x9df0b(%rip)        # 3397c8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      },
+      {
+        "address": "29b8bd",
+        "opcode": "call",
+        "operands": "*0x9df05(%rip)        # 3397c8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      }
+    ],
+    "indirect_transfers": [
+      {
+        "address": "29b441",
+        "opcode": "call",
+        "operands": "*%r15"
+      },
+      {
+        "address": "29b466",
+        "opcode": "call",
+        "operands": "*%rbp"
+      },
+      {
+        "address": "29b46f",
+        "opcode": "call",
+        "operands": "*0x9e5ab(%rip)        # 339a20 <_DYNAMIC+0x490>"
+      },
+      {
+        "address": "29b477",
+        "opcode": "call",
+        "operands": "*0x9e4db(%rip)        # 339958 <_DYNAMIC+0x3c8>"
+      },
+      {
+        "address": "29b492",
+        "opcode": "call",
+        "operands": "*0x9e4c8(%rip)        # 339960 <_DYNAMIC+0x3d0>"
+      },
+      {
+        "address": "29b5be",
+        "opcode": "call",
+        "operands": "*0x9e20c(%rip)        # 3397d0 <_DYNAMIC+0x240>"
+      },
+      {
+        "address": "29b5ce",
+        "opcode": "call",
+        "operands": "*0x9e204(%rip)        # 3397d8 <_DYNAMIC+0x248>"
+      },
+      {
+        "address": "29b5ef",
+        "opcode": "call",
+        "operands": "*0x9e333(%rip)        # 339928 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "29b81a",
+        "opcode": "call",
+        "operands": "*0x9dfc8(%rip)        # 3397e8 <_DYNAMIC+0x258>"
+      },
+      {
+        "address": "29b878",
+        "opcode": "call",
+        "operands": "*0x9df3a(%rip)        # 3397b8 <_DYNAMIC+0x228>"
+      },
+      {
+        "address": "29b894",
+        "opcode": "call",
+        "operands": "*0x9df2e(%rip)        # 3397c8 <_DYNAMIC+0x238>"
+      },
+      {
+        "address": "29b8b7",
+        "opcode": "call",
+        "operands": "*0x9df0b(%rip)        # 3397c8 <_DYNAMIC+0x238>"
+      },
+      {
+        "address": "29b8bd",
+        "opcode": "call",
+        "operands": "*0x9df05(%rip)        # 3397c8 <_DYNAMIC+0x238>"
+      }
+    ],
+    "conditional_moves": 0,
+    "resolved_indirect_transfers": [
+      {
+        "address": "29b46f",
+        "opcode": "call",
+        "operands": "*0x9e5ab(%rip)        # 339a20 <_DYNAMIC+0x490>",
+        "target": "getrandom::error::Error::from_errno"
+      },
+      {
+        "address": "29b477",
+        "opcode": "call",
+        "operands": "*0x9e4db(%rip)        # 339958 <_DYNAMIC+0x3c8>",
+        "target": "getrandom::backends::linux_android_with_fallback::init"
+      },
+      {
+        "address": "29b492",
+        "opcode": "call",
+        "operands": "*0x9e4c8(%rip)        # 339960 <_DYNAMIC+0x3d0>",
+        "target": "getrandom::backends::linux_android_with_fallback::use_file_fallback"
+      },
+      {
+        "address": "29b5be",
+        "opcode": "call",
+        "operands": "*0x9e20c(%rip)        # 3397d0 <_DYNAMIC+0x240>",
+        "target": "__rustc::__rust_no_alloc_shim_is_unstable_v2"
+      },
+      {
+        "address": "29b5ce",
+        "opcode": "call",
+        "operands": "*0x9e204(%rip)        # 3397d8 <_DYNAMIC+0x248>",
+        "target": "__rustc::__rust_alloc"
+      },
+      {
+        "address": "29b5ef",
+        "opcode": "call",
+        "operands": "*0x9e333(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29b81a",
+        "opcode": "call",
+        "operands": "*0x9dfc8(%rip)        # 3397e8 <_DYNAMIC+0x258>",
+        "target": "alloc::alloc::handle_alloc_error"
+      },
+      {
+        "address": "29b878",
+        "opcode": "call",
+        "operands": "*0x9df3a(%rip)        # 3397b8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "29b894",
+        "opcode": "call",
+        "operands": "*0x9df2e(%rip)        # 3397c8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      },
+      {
+        "address": "29b8b7",
+        "opcode": "call",
+        "operands": "*0x9df0b(%rip)        # 3397c8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      },
+      {
+        "address": "29b8bd",
+        "opcode": "call",
+        "operands": "*0x9df05(%rip)        # 3397c8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      }
+    ]
+  },
+  "kem1536::dev_kem::encode_vector_into": {
+    "address": "00000000002a09b0",
+    "instructions": 165,
+    "conditional_branches": [
+      {
+        "address": "2a0b92",
+        "opcode": "jne",
+        "operands": "2a09f0 <kem1536::dev_kem::encode_vector_into+0x40>"
+      },
+      {
+        "address": "2a0bb0",
+        "opcode": "jne",
+        "operands": "2a09d0 <kem1536::dev_kem::encode_vector_into+0x20>"
+      }
+    ],
+    "divisions": [],
+    "calls": [],
+    "indirect_transfers": [
+      {
+        "address": "2a09e4",
+        "opcode": "call",
+        "operands": "*%r13"
+      }
+    ],
+    "conditional_moves": 0,
+    "resolved_indirect_transfers": []
+  },
+  "kem1536::dev_kem::hash_public": {
+    "address": "000000000029b8d0",
+    "instructions": 91,
+    "conditional_branches": [],
+    "divisions": [],
+    "calls": [
+      {
+        "address": "29b94e",
+        "opcode": "call",
+        "operands": "298110 <sponge_cursor::SpongeCursor<_>::absorb_u64_le>",
+        "target": "sponge_cursor::SpongeCursor<_>::absorb_u64_le"
+      },
+      {
+        "address": "29b965",
+        "opcode": "call",
+        "operands": "298110 <sponge_cursor::SpongeCursor<_>::absorb_u64_le>",
+        "target": "sponge_cursor::SpongeCursor<_>::absorb_u64_le"
+      },
+      {
+        "address": "29b978",
+        "opcode": "call",
+        "operands": "298110 <sponge_cursor::SpongeCursor<_>::absorb_u64_le>",
+        "target": "sponge_cursor::SpongeCursor<_>::absorb_u64_le"
+      },
+      {
+        "address": "29b990",
+        "opcode": "call",
+        "operands": "*0x9de4a(%rip)        # 3397e0 <memcpy@GLIBC_2.14>",
+        "target": "memcpy@GLIBC_2.14"
+      },
+      {
+        "address": "29b9b4",
+        "opcode": "call",
+        "operands": "*0x9dfae(%rip)        # 339968 <_DYNAMIC+0x3d8>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29bae4",
+        "opcode": "call",
+        "operands": "3327d0 <_Unwind_Resume@plt>",
+        "target": "_Unwind_Resume@plt"
+      },
+      {
+        "address": "29b990",
+        "opcode": "call",
+        "operands": "*0x9de4a(%rip)        # 3397e0 <memcpy@GLIBC_2.14>",
+        "target": "EXTERNAL:memcpy@GLIBC_2.14"
+      },
+      {
+        "address": "29b9b4",
+        "opcode": "call",
+        "operands": "*0x9dfae(%rip)        # 339968 <_DYNAMIC+0x3d8>",
+        "target": "<sha3::Sha3_256 as digest::FixedOutput>::finalize_into"
+      }
+    ],
+    "indirect_transfers": [
+      {
+        "address": "29b990",
+        "opcode": "call",
+        "operands": "*0x9de4a(%rip)        # 3397e0 <memcpy@GLIBC_2.14>"
+      },
+      {
+        "address": "29b9b4",
+        "opcode": "call",
+        "operands": "*0x9dfae(%rip)        # 339968 <_DYNAMIC+0x3d8>"
+      }
+    ],
+    "conditional_moves": 0,
+    "resolved_indirect_transfers": [
+      {
+        "address": "29b990",
+        "opcode": "call",
+        "operands": "*0x9de4a(%rip)        # 3397e0 <memcpy@GLIBC_2.14>",
+        "target": "EXTERNAL:memcpy@GLIBC_2.14"
+      },
+      {
+        "address": "29b9b4",
+        "opcode": "call",
+        "operands": "*0x9dfae(%rip)        # 339968 <_DYNAMIC+0x3d8>",
+        "target": "<sha3::Sha3_256 as digest::FixedOutput>::finalize_into"
+      }
+    ]
+  },
+  "kem1536::dev_kem::keygen": {
+    "address": "00000000002a1b30",
+    "instructions": 2813,
+    "conditional_branches": [
+      {
+        "address": "2a1b88",
+        "opcode": "je",
+        "operands": "2a1bf8 <kem1536::dev_kem::keygen+0xc8>"
+      },
+      {
+        "address": "2a1b8e",
+        "opcode": "je",
+        "operands": "2a1c0a <kem1536::dev_kem::keygen+0xda>"
+      },
+      {
+        "address": "2a1bb3",
+        "opcode": "je",
+        "operands": "2a1e35 <kem1536::dev_kem::keygen+0x305>"
+      },
+      {
+        "address": "2a1bc7",
+        "opcode": "jle",
+        "operands": "2a1be0 <kem1536::dev_kem::keygen+0xb0>"
+      },
+      {
+        "address": "2a1bcc",
+        "opcode": "jb",
+        "operands": "2a1c25 <kem1536::dev_kem::keygen+0xf5>"
+      },
+      {
+        "address": "2a1be4",
+        "opcode": "jne",
+        "operands": "2a1c25 <kem1536::dev_kem::keygen+0xf5>"
+      },
+      {
+        "address": "2a1bec",
+        "opcode": "je",
+        "operands": "2a1bb0 <kem1536::dev_kem::keygen+0x80>"
+      },
+      {
+        "address": "2a1c08",
+        "opcode": "jne",
+        "operands": "2a1b90 <kem1536::dev_kem::keygen+0x60>"
+      },
+      {
+        "address": "2a1c1f",
+        "opcode": "je",
+        "operands": "2a1e35 <kem1536::dev_kem::keygen+0x305>"
+      },
+      {
+        "address": "2a1ef7",
+        "opcode": "je",
+        "operands": "2a1f1c <kem1536::dev_kem::keygen+0x3ec>"
+      },
+      {
+        "address": "2a1fd5",
+        "opcode": "jne",
+        "operands": "2a1f90 <kem1536::dev_kem::keygen+0x460>"
+      },
+      {
+        "address": "2a2087",
+        "opcode": "jne",
+        "operands": "2a1ff0 <kem1536::dev_kem::keygen+0x4c0>"
+      },
+      {
+        "address": "2a2115",
+        "opcode": "jne",
+        "operands": "2a20d0 <kem1536::dev_kem::keygen+0x5a0>"
+      },
+      {
+        "address": "2a21c7",
+        "opcode": "jne",
+        "operands": "2a2130 <kem1536::dev_kem::keygen+0x600>"
+      },
+      {
+        "address": "2a2255",
+        "opcode": "jne",
+        "operands": "2a2210 <kem1536::dev_kem::keygen+0x6e0>"
+      },
+      {
+        "address": "2a2307",
+        "opcode": "jne",
+        "operands": "2a2270 <kem1536::dev_kem::keygen+0x740>"
+      },
+      {
+        "address": "2a2395",
+        "opcode": "jne",
+        "operands": "2a2350 <kem1536::dev_kem::keygen+0x820>"
+      },
+      {
+        "address": "2a2447",
+        "opcode": "jne",
+        "operands": "2a23b0 <kem1536::dev_kem::keygen+0x880>"
+      },
+      {
+        "address": "2a24d5",
+        "opcode": "jne",
+        "operands": "2a2490 <kem1536::dev_kem::keygen+0x960>"
+      },
+      {
+        "address": "2a2587",
+        "opcode": "jne",
+        "operands": "2a24f0 <kem1536::dev_kem::keygen+0x9c0>"
+      },
+      {
+        "address": "2a2615",
+        "opcode": "jne",
+        "operands": "2a25d0 <kem1536::dev_kem::keygen+0xaa0>"
+      },
+      {
+        "address": "2a26c7",
+        "opcode": "jne",
+        "operands": "2a2630 <kem1536::dev_kem::keygen+0xb00>"
+      },
+      {
+        "address": "2a2765",
+        "opcode": "jne",
+        "operands": "2a2720 <kem1536::dev_kem::keygen+0xbf0>"
+      },
+      {
+        "address": "2a2827",
+        "opcode": "jne",
+        "operands": "2a2790 <kem1536::dev_kem::keygen+0xc60>"
+      },
+      {
+        "address": "2a28b5",
+        "opcode": "jne",
+        "operands": "2a2870 <kem1536::dev_kem::keygen+0xd40>"
+      },
+      {
+        "address": "2a2977",
+        "opcode": "jne",
+        "operands": "2a28e0 <kem1536::dev_kem::keygen+0xdb0>"
+      },
+      {
+        "address": "2a2a05",
+        "opcode": "jne",
+        "operands": "2a29c0 <kem1536::dev_kem::keygen+0xe90>"
+      },
+      {
+        "address": "2a2ac7",
+        "opcode": "jne",
+        "operands": "2a2a30 <kem1536::dev_kem::keygen+0xf00>"
+      },
+      {
+        "address": "2a2b55",
+        "opcode": "jne",
+        "operands": "2a2b10 <kem1536::dev_kem::keygen+0xfe0>"
+      },
+      {
+        "address": "2a2c17",
+        "opcode": "jne",
+        "operands": "2a2b80 <kem1536::dev_kem::keygen+0x1050>"
+      },
+      {
+        "address": "2a2ca5",
+        "opcode": "jne",
+        "operands": "2a2c60 <kem1536::dev_kem::keygen+0x1130>"
+      },
+      {
+        "address": "2a2d67",
+        "opcode": "jne",
+        "operands": "2a2cd0 <kem1536::dev_kem::keygen+0x11a0>"
+      },
+      {
+        "address": "2a2df5",
+        "opcode": "jne",
+        "operands": "2a2db0 <kem1536::dev_kem::keygen+0x1280>"
+      },
+      {
+        "address": "2a2eb7",
+        "opcode": "jne",
+        "operands": "2a2e20 <kem1536::dev_kem::keygen+0x12f0>"
+      },
+      {
+        "address": "2a2f55",
+        "opcode": "jne",
+        "operands": "2a2f10 <kem1536::dev_kem::keygen+0x13e0>"
+      },
+      {
+        "address": "2a3017",
+        "opcode": "jne",
+        "operands": "2a2f80 <kem1536::dev_kem::keygen+0x1450>"
+      },
+      {
+        "address": "2a30a5",
+        "opcode": "jne",
+        "operands": "2a3060 <kem1536::dev_kem::keygen+0x1530>"
+      },
+      {
+        "address": "2a3167",
+        "opcode": "jne",
+        "operands": "2a30d0 <kem1536::dev_kem::keygen+0x15a0>"
+      },
+      {
+        "address": "2a31f5",
+        "opcode": "jne",
+        "operands": "2a31b0 <kem1536::dev_kem::keygen+0x1680>"
+      },
+      {
+        "address": "2a32b7",
+        "opcode": "jne",
+        "operands": "2a3220 <kem1536::dev_kem::keygen+0x16f0>"
+      },
+      {
+        "address": "2a3345",
+        "opcode": "jne",
+        "operands": "2a3300 <kem1536::dev_kem::keygen+0x17d0>"
+      },
+      {
+        "address": "2a3407",
+        "opcode": "jne",
+        "operands": "2a3370 <kem1536::dev_kem::keygen+0x1840>"
+      },
+      {
+        "address": "2a3495",
+        "opcode": "jne",
+        "operands": "2a3450 <kem1536::dev_kem::keygen+0x1920>"
+      },
+      {
+        "address": "2a3557",
+        "opcode": "jne",
+        "operands": "2a34c0 <kem1536::dev_kem::keygen+0x1990>"
+      },
+      {
+        "address": "2a35e5",
+        "opcode": "jne",
+        "operands": "2a35a0 <kem1536::dev_kem::keygen+0x1a70>"
+      },
+      {
+        "address": "2a36a7",
+        "opcode": "jne",
+        "operands": "2a3610 <kem1536::dev_kem::keygen+0x1ae0>"
+      },
+      {
+        "address": "2a3745",
+        "opcode": "jne",
+        "operands": "2a3700 <kem1536::dev_kem::keygen+0x1bd0>"
+      },
+      {
+        "address": "2a3807",
+        "opcode": "jne",
+        "operands": "2a3770 <kem1536::dev_kem::keygen+0x1c40>"
+      },
+      {
+        "address": "2a3895",
+        "opcode": "jne",
+        "operands": "2a3850 <kem1536::dev_kem::keygen+0x1d20>"
+      },
+      {
+        "address": "2a3957",
+        "opcode": "jne",
+        "operands": "2a38c0 <kem1536::dev_kem::keygen+0x1d90>"
+      },
+      {
+        "address": "2a39e5",
+        "opcode": "jne",
+        "operands": "2a39a0 <kem1536::dev_kem::keygen+0x1e70>"
+      },
+      {
+        "address": "2a3aa7",
+        "opcode": "jne",
+        "operands": "2a3a10 <kem1536::dev_kem::keygen+0x1ee0>"
+      },
+      {
+        "address": "2a3b35",
+        "opcode": "jne",
+        "operands": "2a3af0 <kem1536::dev_kem::keygen+0x1fc0>"
+      },
+      {
+        "address": "2a3bf7",
+        "opcode": "jne",
+        "operands": "2a3b60 <kem1536::dev_kem::keygen+0x2030>"
+      },
+      {
+        "address": "2a3c85",
+        "opcode": "jne",
+        "operands": "2a3c40 <kem1536::dev_kem::keygen+0x2110>"
+      },
+      {
+        "address": "2a3d47",
+        "opcode": "jne",
+        "operands": "2a3cb0 <kem1536::dev_kem::keygen+0x2180>"
+      },
+      {
+        "address": "2a3dd5",
+        "opcode": "jne",
+        "operands": "2a3d90 <kem1536::dev_kem::keygen+0x2260>"
+      },
+      {
+        "address": "2a3e97",
+        "opcode": "jne",
+        "operands": "2a3e00 <kem1536::dev_kem::keygen+0x22d0>"
+      },
+      {
+        "address": "2a3f35",
+        "opcode": "jne",
+        "operands": "2a3ef0 <kem1536::dev_kem::keygen+0x23c0>"
+      },
+      {
+        "address": "2a3ff7",
+        "opcode": "jne",
+        "operands": "2a3f60 <kem1536::dev_kem::keygen+0x2430>"
+      },
+      {
+        "address": "2a4085",
+        "opcode": "jne",
+        "operands": "2a4040 <kem1536::dev_kem::keygen+0x2510>"
+      },
+      {
+        "address": "2a4147",
+        "opcode": "jne",
+        "operands": "2a40b0 <kem1536::dev_kem::keygen+0x2580>"
+      },
+      {
+        "address": "2a41d5",
+        "opcode": "jne",
+        "operands": "2a4190 <kem1536::dev_kem::keygen+0x2660>"
+      },
+      {
+        "address": "2a4297",
+        "opcode": "jne",
+        "operands": "2a4200 <kem1536::dev_kem::keygen+0x26d0>"
+      },
+      {
+        "address": "2a4325",
+        "opcode": "jne",
+        "operands": "2a42e0 <kem1536::dev_kem::keygen+0x27b0>"
+      },
+      {
+        "address": "2a43e7",
+        "opcode": "jne",
+        "operands": "2a4350 <kem1536::dev_kem::keygen+0x2820>"
+      },
+      {
+        "address": "2a4475",
+        "opcode": "jne",
+        "operands": "2a4430 <kem1536::dev_kem::keygen+0x2900>"
+      },
+      {
+        "address": "2a4537",
+        "opcode": "jne",
+        "operands": "2a44a0 <kem1536::dev_kem::keygen+0x2970>"
+      },
+      {
+        "address": "2a45c5",
+        "opcode": "jne",
+        "operands": "2a4580 <kem1536::dev_kem::keygen+0x2a50>"
+      },
+      {
+        "address": "2a4687",
+        "opcode": "jne",
+        "operands": "2a45f0 <kem1536::dev_kem::keygen+0x2ac0>"
+      },
+      {
+        "address": "2a4725",
+        "opcode": "jne",
+        "operands": "2a46e0 <kem1536::dev_kem::keygen+0x2bb0>"
+      },
+      {
+        "address": "2a47e7",
+        "opcode": "jne",
+        "operands": "2a4750 <kem1536::dev_kem::keygen+0x2c20>"
+      },
+      {
+        "address": "2a4875",
+        "opcode": "jne",
+        "operands": "2a4830 <kem1536::dev_kem::keygen+0x2d00>"
+      },
+      {
+        "address": "2a4937",
+        "opcode": "jne",
+        "operands": "2a48a0 <kem1536::dev_kem::keygen+0x2d70>"
+      },
+      {
+        "address": "2a49c5",
+        "opcode": "jne",
+        "operands": "2a4980 <kem1536::dev_kem::keygen+0x2e50>"
+      },
+      {
+        "address": "2a4a87",
+        "opcode": "jne",
+        "operands": "2a49f0 <kem1536::dev_kem::keygen+0x2ec0>"
+      },
+      {
+        "address": "2a4b15",
+        "opcode": "jne",
+        "operands": "2a4ad0 <kem1536::dev_kem::keygen+0x2fa0>"
+      },
+      {
+        "address": "2a4bd7",
+        "opcode": "jne",
+        "operands": "2a4b40 <kem1536::dev_kem::keygen+0x3010>"
+      },
+      {
+        "address": "2a4c65",
+        "opcode": "jne",
+        "operands": "2a4c20 <kem1536::dev_kem::keygen+0x30f0>"
+      },
+      {
+        "address": "2a4d27",
+        "opcode": "jne",
+        "operands": "2a4c90 <kem1536::dev_kem::keygen+0x3160>"
+      },
+      {
+        "address": "2a4db5",
+        "opcode": "jne",
+        "operands": "2a4d70 <kem1536::dev_kem::keygen+0x3240>"
+      },
+      {
+        "address": "2a4e77",
+        "opcode": "jne",
+        "operands": "2a4de0 <kem1536::dev_kem::keygen+0x32b0>"
+      },
+      {
+        "address": "2a4e96",
+        "opcode": "je",
+        "operands": "2a57c8 <kem1536::dev_kem::keygen+0x3c98>"
+      },
+      {
+        "address": "2a4f4a",
+        "opcode": "jne",
+        "operands": "2a4ef0 <kem1536::dev_kem::keygen+0x33c0>"
+      },
+      {
+        "address": "2a4fba",
+        "opcode": "jne",
+        "operands": "2a4f60 <kem1536::dev_kem::keygen+0x3430>"
+      },
+      {
+        "address": "2a502a",
+        "opcode": "jne",
+        "operands": "2a4fd0 <kem1536::dev_kem::keygen+0x34a0>"
+      },
+      {
+        "address": "2a509a",
+        "opcode": "jne",
+        "operands": "2a5040 <kem1536::dev_kem::keygen+0x3510>"
+      },
+      {
+        "address": "2a510a",
+        "opcode": "jne",
+        "operands": "2a50b0 <kem1536::dev_kem::keygen+0x3580>"
+      },
+      {
+        "address": "2a517a",
+        "opcode": "jne",
+        "operands": "2a5120 <kem1536::dev_kem::keygen+0x35f0>"
+      },
+      {
+        "address": "2a51ea",
+        "opcode": "jne",
+        "operands": "2a5190 <kem1536::dev_kem::keygen+0x3660>"
+      },
+      {
+        "address": "2a5344",
+        "opcode": "je",
+        "operands": "2a57da <kem1536::dev_kem::keygen+0x3caa>"
+      },
+      {
+        "address": "2a543a",
+        "opcode": "jne",
+        "operands": "2a53e0 <kem1536::dev_kem::keygen+0x38b0>"
+      },
+      {
+        "address": "2a54aa",
+        "opcode": "jne",
+        "operands": "2a5450 <kem1536::dev_kem::keygen+0x3920>"
+      },
+      {
+        "address": "2a551a",
+        "opcode": "jne",
+        "operands": "2a54c0 <kem1536::dev_kem::keygen+0x3990>"
+      },
+      {
+        "address": "2a558a",
+        "opcode": "jne",
+        "operands": "2a5530 <kem1536::dev_kem::keygen+0x3a00>"
+      },
+      {
+        "address": "2a55fa",
+        "opcode": "jne",
+        "operands": "2a55a0 <kem1536::dev_kem::keygen+0x3a70>"
+      },
+      {
+        "address": "2a566a",
+        "opcode": "jne",
+        "operands": "2a5610 <kem1536::dev_kem::keygen+0x3ae0>"
+      },
+      {
+        "address": "2a582d",
+        "opcode": "jne",
+        "operands": "2a57f4 <kem1536::dev_kem::keygen+0x3cc4>"
+      },
+      {
+        "address": "2a58db",
+        "opcode": "jne",
+        "operands": "2a5881 <kem1536::dev_kem::keygen+0x3d51>"
+      },
+      {
+        "address": "2a597b",
+        "opcode": "jne",
+        "operands": "2a5921 <kem1536::dev_kem::keygen+0x3df1>"
+      }
+    ],
+    "divisions": [],
+    "calls": [
+      {
+        "address": "2a1bf0",
+        "opcode": "call",
+        "operands": "*0x97e2a(%rip)        # 339a20 <_DYNAMIC+0x490>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "2a1bf8",
+        "opcode": "call",
+        "operands": "*0x97d5a(%rip)        # 339958 <_DYNAMIC+0x3c8>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "2a1c17",
+        "opcode": "call",
+        "operands": "*0x97d43(%rip)        # 339960 <_DYNAMIC+0x3d0>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "2a1e86",
+        "opcode": "call",
+        "operands": "*0x97a9c(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a1ed7",
+        "opcode": "call",
+        "operands": "2a1220 <kem1536::dev_kem::derive>",
+        "target": "kem1536::dev_kem::derive"
+      },
+      {
+        "address": "2a1f15",
+        "opcode": "call",
+        "operands": "298f70 <kem1536::dev_kem::noise_into>",
+        "target": "kem1536::dev_kem::noise_into"
+      },
+      {
+        "address": "2a1f55",
+        "opcode": "call",
+        "operands": "298f70 <kem1536::dev_kem::noise_into>",
+        "target": "kem1536::dev_kem::noise_into"
+      },
+      {
+        "address": "2a1f69",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a1f86",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "2a209f",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a20bc",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "2a21df",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a21ff",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "2a231f",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a233f",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "2a245f",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a247f",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "2a259f",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a25bf",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "2a26dd",
+        "opcode": "call",
+        "operands": "298f70 <kem1536::dev_kem::noise_into>",
+        "target": "kem1536::dev_kem::noise_into"
+      },
+      {
+        "address": "2a26f4",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a2711",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "2a2842",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a285f",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "2a2992",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a29aa",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "2a2ae2",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a2afa",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "2a2c32",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a2c4a",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "2a2d82",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a2d9a",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "2a2ecd",
+        "opcode": "call",
+        "operands": "298f70 <kem1536::dev_kem::noise_into>",
+        "target": "kem1536::dev_kem::noise_into"
+      },
+      {
+        "address": "2a2ee4",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a2f01",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "2a3032",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a304f",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "2a3182",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a319a",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "2a32d2",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a32ea",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "2a3422",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a343a",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "2a3572",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a358a",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "2a36bd",
+        "opcode": "call",
+        "operands": "298f70 <kem1536::dev_kem::noise_into>",
+        "target": "kem1536::dev_kem::noise_into"
+      },
+      {
+        "address": "2a36d4",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a36f1",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "2a3822",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a383f",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "2a3972",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a398a",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "2a3ac2",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a3ada",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "2a3c12",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a3c2a",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "2a3d62",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a3d7a",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "2a3ead",
+        "opcode": "call",
+        "operands": "298f70 <kem1536::dev_kem::noise_into>",
+        "target": "kem1536::dev_kem::noise_into"
+      },
+      {
+        "address": "2a3ec4",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a3ee1",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "2a4012",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a402f",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "2a4162",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a417a",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "2a42b2",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a42ca",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "2a4402",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a441a",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "2a4552",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a456a",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "2a469d",
+        "opcode": "call",
+        "operands": "298f70 <kem1536::dev_kem::noise_into>",
+        "target": "kem1536::dev_kem::noise_into"
+      },
+      {
+        "address": "2a46b4",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a46d1",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "2a4802",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a481f",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "2a4952",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a496a",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "2a4aa2",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a4aba",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "2a4bf2",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a4c0a",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "2a4d42",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "2a4d5a",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "2a4e7d",
+        "opcode": "call",
+        "operands": "*0x9494d(%rip)        # 3397d0 <_DYNAMIC+0x240>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "2a4e8d",
+        "opcode": "call",
+        "operands": "*0x94945(%rip)        # 3397d8 <_DYNAMIC+0x248>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "2a4ea9",
+        "opcode": "call",
+        "operands": "*0x94a79(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a4eba",
+        "opcode": "call",
+        "operands": "2a09b0 <kem1536::dev_kem::encode_vector_into>",
+        "target": "kem1536::dev_kem::encode_vector_into"
+      },
+      {
+        "address": "2a532b",
+        "opcode": "call",
+        "operands": "*0x9449f(%rip)        # 3397d0 <_DYNAMIC+0x240>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "2a533b",
+        "opcode": "call",
+        "operands": "*0x94497(%rip)        # 3397d8 <_DYNAMIC+0x248>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "2a5357",
+        "opcode": "call",
+        "operands": "*0x945cb(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a5368",
+        "opcode": "call",
+        "operands": "2a09b0 <kem1536::dev_kem::encode_vector_into>",
+        "target": "kem1536::dev_kem::encode_vector_into"
+      },
+      {
+        "address": "2a537f",
+        "opcode": "call",
+        "operands": "*0x9445b(%rip)        # 3397e0 <memcpy@GLIBC_2.14>",
+        "target": "memcpy@GLIBC_2.14"
+      },
+      {
+        "address": "2a5390",
+        "opcode": "call",
+        "operands": "29b8d0 <kem1536::dev_kem::hash_public>",
+        "target": "kem1536::dev_kem::hash_public"
+      },
+      {
+        "address": "2a57d2",
+        "opcode": "call",
+        "operands": "*0x94010(%rip)        # 3397e8 <_DYNAMIC+0x258>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "2a57e4",
+        "opcode": "call",
+        "operands": "*0x93ffe(%rip)        # 3397e8 <_DYNAMIC+0x258>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "2a583c",
+        "opcode": "call",
+        "operands": "*0x93f76(%rip)        # 3397b8 <_DYNAMIC+0x228>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "2a58ec",
+        "opcode": "call",
+        "operands": "2a6ad0 <<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop>",
+        "target": "<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop"
+      },
+      {
+        "address": "2a58f6",
+        "opcode": "call",
+        "operands": "*0x93ecc(%rip)        # 3397c8 <_DYNAMIC+0x238>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "2a5914",
+        "opcode": "call",
+        "operands": "*0x93e9e(%rip)        # 3397b8 <_DYNAMIC+0x228>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "2a5985",
+        "opcode": "call",
+        "operands": "298850 <core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>>",
+        "target": "core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>"
+      },
+      {
+        "address": "2a598d",
+        "opcode": "call",
+        "operands": "2a6ad0 <<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop>",
+        "target": "<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop"
+      },
+      {
+        "address": "2a599a",
+        "opcode": "call",
+        "operands": "298850 <core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>>",
+        "target": "core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>"
+      },
+      {
+        "address": "2a59a4",
+        "opcode": "call",
+        "operands": "2a6ad0 <<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop>",
+        "target": "<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop"
+      },
+      {
+        "address": "2a59ac",
+        "opcode": "call",
+        "operands": "3327d0 <_Unwind_Resume@plt>",
+        "target": "_Unwind_Resume@plt"
+      },
+      {
+        "address": "2a59b1",
+        "opcode": "call",
+        "operands": "*0x93e11(%rip)        # 3397c8 <_DYNAMIC+0x238>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "2a59b7",
+        "opcode": "call",
+        "operands": "*0x93e0b(%rip)        # 3397c8 <_DYNAMIC+0x238>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "2a1bf0",
+        "opcode": "call",
+        "operands": "*0x97e2a(%rip)        # 339a20 <_DYNAMIC+0x490>",
+        "target": "getrandom::error::Error::from_errno"
+      },
+      {
+        "address": "2a1bf8",
+        "opcode": "call",
+        "operands": "*0x97d5a(%rip)        # 339958 <_DYNAMIC+0x3c8>",
+        "target": "getrandom::backends::linux_android_with_fallback::init"
+      },
+      {
+        "address": "2a1c17",
+        "opcode": "call",
+        "operands": "*0x97d43(%rip)        # 339960 <_DYNAMIC+0x3d0>",
+        "target": "getrandom::backends::linux_android_with_fallback::use_file_fallback"
+      },
+      {
+        "address": "2a1e86",
+        "opcode": "call",
+        "operands": "*0x97a9c(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a4e7d",
+        "opcode": "call",
+        "operands": "*0x9494d(%rip)        # 3397d0 <_DYNAMIC+0x240>",
+        "target": "__rustc::__rust_no_alloc_shim_is_unstable_v2"
+      },
+      {
+        "address": "2a4e8d",
+        "opcode": "call",
+        "operands": "*0x94945(%rip)        # 3397d8 <_DYNAMIC+0x248>",
+        "target": "__rustc::__rust_alloc"
+      },
+      {
+        "address": "2a4ea9",
+        "opcode": "call",
+        "operands": "*0x94a79(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a532b",
+        "opcode": "call",
+        "operands": "*0x9449f(%rip)        # 3397d0 <_DYNAMIC+0x240>",
+        "target": "__rustc::__rust_no_alloc_shim_is_unstable_v2"
+      },
+      {
+        "address": "2a533b",
+        "opcode": "call",
+        "operands": "*0x94497(%rip)        # 3397d8 <_DYNAMIC+0x248>",
+        "target": "__rustc::__rust_alloc"
+      },
+      {
+        "address": "2a5357",
+        "opcode": "call",
+        "operands": "*0x945cb(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a537f",
+        "opcode": "call",
+        "operands": "*0x9445b(%rip)        # 3397e0 <memcpy@GLIBC_2.14>",
+        "target": "EXTERNAL:memcpy@GLIBC_2.14"
+      },
+      {
+        "address": "2a57d2",
+        "opcode": "call",
+        "operands": "*0x94010(%rip)        # 3397e8 <_DYNAMIC+0x258>",
+        "target": "alloc::alloc::handle_alloc_error"
+      },
+      {
+        "address": "2a57e4",
+        "opcode": "call",
+        "operands": "*0x93ffe(%rip)        # 3397e8 <_DYNAMIC+0x258>",
+        "target": "alloc::alloc::handle_alloc_error"
+      },
+      {
+        "address": "2a583c",
+        "opcode": "call",
+        "operands": "*0x93f76(%rip)        # 3397b8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "2a58f6",
+        "opcode": "call",
+        "operands": "*0x93ecc(%rip)        # 3397c8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      },
+      {
+        "address": "2a5914",
+        "opcode": "call",
+        "operands": "*0x93e9e(%rip)        # 3397b8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "2a59b1",
+        "opcode": "call",
+        "operands": "*0x93e11(%rip)        # 3397c8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      },
+      {
+        "address": "2a59b7",
+        "opcode": "call",
+        "operands": "*0x93e0b(%rip)        # 3397c8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      }
+    ],
+    "indirect_transfers": [
+      {
+        "address": "2a1bc1",
+        "opcode": "call",
+        "operands": "*%r14"
+      },
+      {
+        "address": "2a1be6",
+        "opcode": "call",
+        "operands": "*%r13"
+      },
+      {
+        "address": "2a1bf0",
+        "opcode": "call",
+        "operands": "*0x97e2a(%rip)        # 339a20 <_DYNAMIC+0x490>"
+      },
+      {
+        "address": "2a1bf8",
+        "opcode": "call",
+        "operands": "*0x97d5a(%rip)        # 339958 <_DYNAMIC+0x3c8>"
+      },
+      {
+        "address": "2a1c17",
+        "opcode": "call",
+        "operands": "*0x97d43(%rip)        # 339960 <_DYNAMIC+0x3d0>"
+      },
+      {
+        "address": "2a1e86",
+        "opcode": "call",
+        "operands": "*0x97a9c(%rip)        # 339928 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "2a1f35",
+        "opcode": "call",
+        "operands": "*%r12"
+      },
+      {
+        "address": "2a1f47",
+        "opcode": "call",
+        "operands": "*%r12"
+      },
+      {
+        "address": "2a4e7d",
+        "opcode": "call",
+        "operands": "*0x9494d(%rip)        # 3397d0 <_DYNAMIC+0x240>"
+      },
+      {
+        "address": "2a4e8d",
+        "opcode": "call",
+        "operands": "*0x94945(%rip)        # 3397d8 <_DYNAMIC+0x248>"
+      },
+      {
+        "address": "2a4ea9",
+        "opcode": "call",
+        "operands": "*0x94a79(%rip)        # 339928 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "2a532b",
+        "opcode": "call",
+        "operands": "*0x9449f(%rip)        # 3397d0 <_DYNAMIC+0x240>"
+      },
+      {
+        "address": "2a533b",
+        "opcode": "call",
+        "operands": "*0x94497(%rip)        # 3397d8 <_DYNAMIC+0x248>"
+      },
+      {
+        "address": "2a5357",
+        "opcode": "call",
+        "operands": "*0x945cb(%rip)        # 339928 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "2a537f",
+        "opcode": "call",
+        "operands": "*0x9445b(%rip)        # 3397e0 <memcpy@GLIBC_2.14>"
+      },
+      {
+        "address": "2a57d2",
+        "opcode": "call",
+        "operands": "*0x94010(%rip)        # 3397e8 <_DYNAMIC+0x258>"
+      },
+      {
+        "address": "2a57e4",
+        "opcode": "call",
+        "operands": "*0x93ffe(%rip)        # 3397e8 <_DYNAMIC+0x258>"
+      },
+      {
+        "address": "2a583c",
+        "opcode": "call",
+        "operands": "*0x93f76(%rip)        # 3397b8 <_DYNAMIC+0x228>"
+      },
+      {
+        "address": "2a58f6",
+        "opcode": "call",
+        "operands": "*0x93ecc(%rip)        # 3397c8 <_DYNAMIC+0x238>"
+      },
+      {
+        "address": "2a5914",
+        "opcode": "call",
+        "operands": "*0x93e9e(%rip)        # 3397b8 <_DYNAMIC+0x228>"
+      },
+      {
+        "address": "2a59b1",
+        "opcode": "call",
+        "operands": "*0x93e11(%rip)        # 3397c8 <_DYNAMIC+0x238>"
+      },
+      {
+        "address": "2a59b7",
+        "opcode": "call",
+        "operands": "*0x93e0b(%rip)        # 3397c8 <_DYNAMIC+0x238>"
+      }
+    ],
+    "conditional_moves": 0,
+    "resolved_indirect_transfers": [
+      {
+        "address": "2a1bf0",
+        "opcode": "call",
+        "operands": "*0x97e2a(%rip)        # 339a20 <_DYNAMIC+0x490>",
+        "target": "getrandom::error::Error::from_errno"
+      },
+      {
+        "address": "2a1bf8",
+        "opcode": "call",
+        "operands": "*0x97d5a(%rip)        # 339958 <_DYNAMIC+0x3c8>",
+        "target": "getrandom::backends::linux_android_with_fallback::init"
+      },
+      {
+        "address": "2a1c17",
+        "opcode": "call",
+        "operands": "*0x97d43(%rip)        # 339960 <_DYNAMIC+0x3d0>",
+        "target": "getrandom::backends::linux_android_with_fallback::use_file_fallback"
+      },
+      {
+        "address": "2a1e86",
+        "opcode": "call",
+        "operands": "*0x97a9c(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a4e7d",
+        "opcode": "call",
+        "operands": "*0x9494d(%rip)        # 3397d0 <_DYNAMIC+0x240>",
+        "target": "__rustc::__rust_no_alloc_shim_is_unstable_v2"
+      },
+      {
+        "address": "2a4e8d",
+        "opcode": "call",
+        "operands": "*0x94945(%rip)        # 3397d8 <_DYNAMIC+0x248>",
+        "target": "__rustc::__rust_alloc"
+      },
+      {
+        "address": "2a4ea9",
+        "opcode": "call",
+        "operands": "*0x94a79(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a532b",
+        "opcode": "call",
+        "operands": "*0x9449f(%rip)        # 3397d0 <_DYNAMIC+0x240>",
+        "target": "__rustc::__rust_no_alloc_shim_is_unstable_v2"
+      },
+      {
+        "address": "2a533b",
+        "opcode": "call",
+        "operands": "*0x94497(%rip)        # 3397d8 <_DYNAMIC+0x248>",
+        "target": "__rustc::__rust_alloc"
+      },
+      {
+        "address": "2a5357",
+        "opcode": "call",
+        "operands": "*0x945cb(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a537f",
+        "opcode": "call",
+        "operands": "*0x9445b(%rip)        # 3397e0 <memcpy@GLIBC_2.14>",
+        "target": "EXTERNAL:memcpy@GLIBC_2.14"
+      },
+      {
+        "address": "2a57d2",
+        "opcode": "call",
+        "operands": "*0x94010(%rip)        # 3397e8 <_DYNAMIC+0x258>",
+        "target": "alloc::alloc::handle_alloc_error"
+      },
+      {
+        "address": "2a57e4",
+        "opcode": "call",
+        "operands": "*0x93ffe(%rip)        # 3397e8 <_DYNAMIC+0x258>",
+        "target": "alloc::alloc::handle_alloc_error"
+      },
+      {
+        "address": "2a583c",
+        "opcode": "call",
+        "operands": "*0x93f76(%rip)        # 3397b8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "2a58f6",
+        "opcode": "call",
+        "operands": "*0x93ecc(%rip)        # 3397c8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      },
+      {
+        "address": "2a5914",
+        "opcode": "call",
+        "operands": "*0x93e9e(%rip)        # 3397b8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "2a59b1",
+        "opcode": "call",
+        "operands": "*0x93e11(%rip)        # 3397c8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      },
+      {
+        "address": "2a59b7",
+        "opcode": "call",
+        "operands": "*0x93e0b(%rip)        # 3397c8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      }
+    ]
+  },
+  "kem1536::dev_kem::noise_into": {
+    "address": "0000000000298f70",
+    "instructions": 306,
+    "conditional_branches": [
+      {
+        "address": "299524",
+        "opcode": "jne",
+        "operands": "299450 <kem1536::dev_kem::noise_into+0x4e0>"
+      },
+      {
+        "address": "29957a",
+        "opcode": "jne",
+        "operands": "299530 <kem1536::dev_kem::noise_into+0x5c0>"
+      },
+      {
+        "address": "2996eb",
+        "opcode": "jne",
+        "operands": "2996a0 <kem1536::dev_kem::noise_into+0x730>"
+      }
+    ],
+    "divisions": [],
+    "calls": [
+      {
+        "address": "299014",
+        "opcode": "call",
+        "operands": "298110 <sponge_cursor::SpongeCursor<_>::absorb_u64_le>",
+        "target": "sponge_cursor::SpongeCursor<_>::absorb_u64_le"
+      },
+      {
+        "address": "299030",
+        "opcode": "call",
+        "operands": "298110 <sponge_cursor::SpongeCursor<_>::absorb_u64_le>",
+        "target": "sponge_cursor::SpongeCursor<_>::absorb_u64_le"
+      },
+      {
+        "address": "299048",
+        "opcode": "call",
+        "operands": "298110 <sponge_cursor::SpongeCursor<_>::absorb_u64_le>",
+        "target": "sponge_cursor::SpongeCursor<_>::absorb_u64_le"
+      },
+      {
+        "address": "299062",
+        "opcode": "call",
+        "operands": "298110 <sponge_cursor::SpongeCursor<_>::absorb_u64_le>",
+        "target": "sponge_cursor::SpongeCursor<_>::absorb_u64_le"
+      },
+      {
+        "address": "299268",
+        "opcode": "call",
+        "operands": "2a6c50 <keccak::backends::soft::keccak_p>",
+        "target": "keccak::backends::soft::keccak_p"
+      },
+      {
+        "address": "2992ed",
+        "opcode": "call",
+        "operands": "2a6c50 <keccak::backends::soft::keccak_p>",
+        "target": "keccak::backends::soft::keccak_p"
+      },
+      {
+        "address": "29943c",
+        "opcode": "call",
+        "operands": "*0xa039e(%rip)        # 3397e0 <memcpy@GLIBC_2.14>",
+        "target": "memcpy@GLIBC_2.14"
+      },
+      {
+        "address": "29982b",
+        "opcode": "call",
+        "operands": "3327d0 <_Unwind_Resume@plt>",
+        "target": "_Unwind_Resume@plt"
+      },
+      {
+        "address": "29943c",
+        "opcode": "call",
+        "operands": "*0xa039e(%rip)        # 3397e0 <memcpy@GLIBC_2.14>",
+        "target": "EXTERNAL:memcpy@GLIBC_2.14"
+      }
+    ],
+    "indirect_transfers": [
+      {
+        "address": "2990e9",
+        "opcode": "call",
+        "operands": "*%r12"
+      },
+      {
+        "address": "299126",
+        "opcode": "call",
+        "operands": "*%r12"
+      },
+      {
+        "address": "29943c",
+        "opcode": "call",
+        "operands": "*0xa039e(%rip)        # 3397e0 <memcpy@GLIBC_2.14>"
+      }
+    ],
+    "conditional_moves": 1,
+    "resolved_indirect_transfers": [
+      {
+        "address": "29943c",
+        "opcode": "call",
+        "operands": "*0xa039e(%rip)        # 3397e0 <memcpy@GLIBC_2.14>",
+        "target": "EXTERNAL:memcpy@GLIBC_2.14"
+      }
+    ]
+  },
+  "kem1536::dev_kem::pke_encrypt_into": {
+    "address": "000000000029c6d0",
+    "instructions": 3152,
+    "conditional_branches": [
+      {
+        "address": "29c907",
+        "opcode": "je",
+        "operands": "29c92a <kem1536::dev_kem::pke_encrypt_into+0x25a>"
+      },
+      {
+        "address": "29c9e1",
+        "opcode": "jne",
+        "operands": "29c9a0 <kem1536::dev_kem::pke_encrypt_into+0x2d0>"
+      },
+      {
+        "address": "29ca97",
+        "opcode": "jne",
+        "operands": "29ca00 <kem1536::dev_kem::pke_encrypt_into+0x330>"
+      },
+      {
+        "address": "29cb11",
+        "opcode": "jne",
+        "operands": "29cad0 <kem1536::dev_kem::pke_encrypt_into+0x400>"
+      },
+      {
+        "address": "29cbc7",
+        "opcode": "jne",
+        "operands": "29cb30 <kem1536::dev_kem::pke_encrypt_into+0x460>"
+      },
+      {
+        "address": "29cc41",
+        "opcode": "jne",
+        "operands": "29cc00 <kem1536::dev_kem::pke_encrypt_into+0x530>"
+      },
+      {
+        "address": "29ccf7",
+        "opcode": "jne",
+        "operands": "29cc60 <kem1536::dev_kem::pke_encrypt_into+0x590>"
+      },
+      {
+        "address": "29cd71",
+        "opcode": "jne",
+        "operands": "29cd30 <kem1536::dev_kem::pke_encrypt_into+0x660>"
+      },
+      {
+        "address": "29ce27",
+        "opcode": "jne",
+        "operands": "29cd90 <kem1536::dev_kem::pke_encrypt_into+0x6c0>"
+      },
+      {
+        "address": "29cea1",
+        "opcode": "jne",
+        "operands": "29ce60 <kem1536::dev_kem::pke_encrypt_into+0x790>"
+      },
+      {
+        "address": "29cf57",
+        "opcode": "jne",
+        "operands": "29cec0 <kem1536::dev_kem::pke_encrypt_into+0x7f0>"
+      },
+      {
+        "address": "29cfd1",
+        "opcode": "jne",
+        "operands": "29cf90 <kem1536::dev_kem::pke_encrypt_into+0x8c0>"
+      },
+      {
+        "address": "29d087",
+        "opcode": "jne",
+        "operands": "29cff0 <kem1536::dev_kem::pke_encrypt_into+0x920>"
+      },
+      {
+        "address": "29d121",
+        "opcode": "jne",
+        "operands": "29d0e0 <kem1536::dev_kem::pke_encrypt_into+0xa10>"
+      },
+      {
+        "address": "29d1d4",
+        "opcode": "jne",
+        "operands": "29d140 <kem1536::dev_kem::pke_encrypt_into+0xa70>"
+      },
+      {
+        "address": "29d251",
+        "opcode": "jne",
+        "operands": "29d210 <kem1536::dev_kem::pke_encrypt_into+0xb40>"
+      },
+      {
+        "address": "29d304",
+        "opcode": "jne",
+        "operands": "29d270 <kem1536::dev_kem::pke_encrypt_into+0xba0>"
+      },
+      {
+        "address": "29d381",
+        "opcode": "jne",
+        "operands": "29d340 <kem1536::dev_kem::pke_encrypt_into+0xc70>"
+      },
+      {
+        "address": "29d434",
+        "opcode": "jne",
+        "operands": "29d3a0 <kem1536::dev_kem::pke_encrypt_into+0xcd0>"
+      },
+      {
+        "address": "29d4b1",
+        "opcode": "jne",
+        "operands": "29d470 <kem1536::dev_kem::pke_encrypt_into+0xda0>"
+      },
+      {
+        "address": "29d564",
+        "opcode": "jne",
+        "operands": "29d4d0 <kem1536::dev_kem::pke_encrypt_into+0xe00>"
+      },
+      {
+        "address": "29d5e1",
+        "opcode": "jne",
+        "operands": "29d5a0 <kem1536::dev_kem::pke_encrypt_into+0xed0>"
+      },
+      {
+        "address": "29d694",
+        "opcode": "jne",
+        "operands": "29d600 <kem1536::dev_kem::pke_encrypt_into+0xf30>"
+      },
+      {
+        "address": "29d711",
+        "opcode": "jne",
+        "operands": "29d6d0 <kem1536::dev_kem::pke_encrypt_into+0x1000>"
+      },
+      {
+        "address": "29d7c4",
+        "opcode": "jne",
+        "operands": "29d730 <kem1536::dev_kem::pke_encrypt_into+0x1060>"
+      },
+      {
+        "address": "29d851",
+        "opcode": "jne",
+        "operands": "29d810 <kem1536::dev_kem::pke_encrypt_into+0x1140>"
+      },
+      {
+        "address": "29d907",
+        "opcode": "jne",
+        "operands": "29d870 <kem1536::dev_kem::pke_encrypt_into+0x11a0>"
+      },
+      {
+        "address": "29d981",
+        "opcode": "jne",
+        "operands": "29d940 <kem1536::dev_kem::pke_encrypt_into+0x1270>"
+      },
+      {
+        "address": "29da37",
+        "opcode": "jne",
+        "operands": "29d9a0 <kem1536::dev_kem::pke_encrypt_into+0x12d0>"
+      },
+      {
+        "address": "29dab1",
+        "opcode": "jne",
+        "operands": "29da70 <kem1536::dev_kem::pke_encrypt_into+0x13a0>"
+      },
+      {
+        "address": "29db67",
+        "opcode": "jne",
+        "operands": "29dad0 <kem1536::dev_kem::pke_encrypt_into+0x1400>"
+      },
+      {
+        "address": "29dbe1",
+        "opcode": "jne",
+        "operands": "29dba0 <kem1536::dev_kem::pke_encrypt_into+0x14d0>"
+      },
+      {
+        "address": "29dc97",
+        "opcode": "jne",
+        "operands": "29dc00 <kem1536::dev_kem::pke_encrypt_into+0x1530>"
+      },
+      {
+        "address": "29dd11",
+        "opcode": "jne",
+        "operands": "29dcd0 <kem1536::dev_kem::pke_encrypt_into+0x1600>"
+      },
+      {
+        "address": "29ddc7",
+        "opcode": "jne",
+        "operands": "29dd30 <kem1536::dev_kem::pke_encrypt_into+0x1660>"
+      },
+      {
+        "address": "29de41",
+        "opcode": "jne",
+        "operands": "29de00 <kem1536::dev_kem::pke_encrypt_into+0x1730>"
+      },
+      {
+        "address": "29def7",
+        "opcode": "jne",
+        "operands": "29de60 <kem1536::dev_kem::pke_encrypt_into+0x1790>"
+      },
+      {
+        "address": "29df91",
+        "opcode": "jne",
+        "operands": "29df50 <kem1536::dev_kem::pke_encrypt_into+0x1880>"
+      },
+      {
+        "address": "29e047",
+        "opcode": "jne",
+        "operands": "29dfb0 <kem1536::dev_kem::pke_encrypt_into+0x18e0>"
+      },
+      {
+        "address": "29e0c1",
+        "opcode": "jne",
+        "operands": "29e080 <kem1536::dev_kem::pke_encrypt_into+0x19b0>"
+      },
+      {
+        "address": "29e177",
+        "opcode": "jne",
+        "operands": "29e0e0 <kem1536::dev_kem::pke_encrypt_into+0x1a10>"
+      },
+      {
+        "address": "29e1f1",
+        "opcode": "jne",
+        "operands": "29e1b0 <kem1536::dev_kem::pke_encrypt_into+0x1ae0>"
+      },
+      {
+        "address": "29e2a7",
+        "opcode": "jne",
+        "operands": "29e210 <kem1536::dev_kem::pke_encrypt_into+0x1b40>"
+      },
+      {
+        "address": "29e321",
+        "opcode": "jne",
+        "operands": "29e2e0 <kem1536::dev_kem::pke_encrypt_into+0x1c10>"
+      },
+      {
+        "address": "29e3d7",
+        "opcode": "jne",
+        "operands": "29e340 <kem1536::dev_kem::pke_encrypt_into+0x1c70>"
+      },
+      {
+        "address": "29e451",
+        "opcode": "jne",
+        "operands": "29e410 <kem1536::dev_kem::pke_encrypt_into+0x1d40>"
+      },
+      {
+        "address": "29e507",
+        "opcode": "jne",
+        "operands": "29e470 <kem1536::dev_kem::pke_encrypt_into+0x1da0>"
+      },
+      {
+        "address": "29e581",
+        "opcode": "jne",
+        "operands": "29e540 <kem1536::dev_kem::pke_encrypt_into+0x1e70>"
+      },
+      {
+        "address": "29e637",
+        "opcode": "jne",
+        "operands": "29e5a0 <kem1536::dev_kem::pke_encrypt_into+0x1ed0>"
+      },
+      {
+        "address": "29e6d1",
+        "opcode": "jne",
+        "operands": "29e690 <kem1536::dev_kem::pke_encrypt_into+0x1fc0>"
+      },
+      {
+        "address": "29e787",
+        "opcode": "jne",
+        "operands": "29e6f0 <kem1536::dev_kem::pke_encrypt_into+0x2020>"
+      },
+      {
+        "address": "29e801",
+        "opcode": "jne",
+        "operands": "29e7c0 <kem1536::dev_kem::pke_encrypt_into+0x20f0>"
+      },
+      {
+        "address": "29e8b7",
+        "opcode": "jne",
+        "operands": "29e820 <kem1536::dev_kem::pke_encrypt_into+0x2150>"
+      },
+      {
+        "address": "29e931",
+        "opcode": "jne",
+        "operands": "29e8f0 <kem1536::dev_kem::pke_encrypt_into+0x2220>"
+      },
+      {
+        "address": "29e9e7",
+        "opcode": "jne",
+        "operands": "29e950 <kem1536::dev_kem::pke_encrypt_into+0x2280>"
+      },
+      {
+        "address": "29ea61",
+        "opcode": "jne",
+        "operands": "29ea20 <kem1536::dev_kem::pke_encrypt_into+0x2350>"
+      },
+      {
+        "address": "29eb17",
+        "opcode": "jne",
+        "operands": "29ea80 <kem1536::dev_kem::pke_encrypt_into+0x23b0>"
+      },
+      {
+        "address": "29eb91",
+        "opcode": "jne",
+        "operands": "29eb50 <kem1536::dev_kem::pke_encrypt_into+0x2480>"
+      },
+      {
+        "address": "29ec47",
+        "opcode": "jne",
+        "operands": "29ebb0 <kem1536::dev_kem::pke_encrypt_into+0x24e0>"
+      },
+      {
+        "address": "29ecc1",
+        "opcode": "jne",
+        "operands": "29ec80 <kem1536::dev_kem::pke_encrypt_into+0x25b0>"
+      },
+      {
+        "address": "29ed77",
+        "opcode": "jne",
+        "operands": "29ece0 <kem1536::dev_kem::pke_encrypt_into+0x2610>"
+      },
+      {
+        "address": "29ee11",
+        "opcode": "jne",
+        "operands": "29edd0 <kem1536::dev_kem::pke_encrypt_into+0x2700>"
+      },
+      {
+        "address": "29eec7",
+        "opcode": "jne",
+        "operands": "29ee30 <kem1536::dev_kem::pke_encrypt_into+0x2760>"
+      },
+      {
+        "address": "29ef41",
+        "opcode": "jne",
+        "operands": "29ef00 <kem1536::dev_kem::pke_encrypt_into+0x2830>"
+      },
+      {
+        "address": "29eff7",
+        "opcode": "jne",
+        "operands": "29ef60 <kem1536::dev_kem::pke_encrypt_into+0x2890>"
+      },
+      {
+        "address": "29f071",
+        "opcode": "jne",
+        "operands": "29f030 <kem1536::dev_kem::pke_encrypt_into+0x2960>"
+      },
+      {
+        "address": "29f127",
+        "opcode": "jne",
+        "operands": "29f090 <kem1536::dev_kem::pke_encrypt_into+0x29c0>"
+      },
+      {
+        "address": "29f1a1",
+        "opcode": "jne",
+        "operands": "29f160 <kem1536::dev_kem::pke_encrypt_into+0x2a90>"
+      },
+      {
+        "address": "29f257",
+        "opcode": "jne",
+        "operands": "29f1c0 <kem1536::dev_kem::pke_encrypt_into+0x2af0>"
+      },
+      {
+        "address": "29f2d1",
+        "opcode": "jne",
+        "operands": "29f290 <kem1536::dev_kem::pke_encrypt_into+0x2bc0>"
+      },
+      {
+        "address": "29f387",
+        "opcode": "jne",
+        "operands": "29f2f0 <kem1536::dev_kem::pke_encrypt_into+0x2c20>"
+      },
+      {
+        "address": "29f401",
+        "opcode": "jne",
+        "operands": "29f3c0 <kem1536::dev_kem::pke_encrypt_into+0x2cf0>"
+      },
+      {
+        "address": "29f4b7",
+        "opcode": "jne",
+        "operands": "29f420 <kem1536::dev_kem::pke_encrypt_into+0x2d50>"
+      },
+      {
+        "address": "29f614",
+        "opcode": "jne",
+        "operands": "29f540 <kem1536::dev_kem::pke_encrypt_into+0x2e70>"
+      },
+      {
+        "address": "29f6d7",
+        "opcode": "jne",
+        "operands": "29f640 <kem1536::dev_kem::pke_encrypt_into+0x2f70>"
+      },
+      {
+        "address": "29f7b7",
+        "opcode": "jne",
+        "operands": "29f720 <kem1536::dev_kem::pke_encrypt_into+0x3050>"
+      },
+      {
+        "address": "29f887",
+        "opcode": "jne",
+        "operands": "29f7f0 <kem1536::dev_kem::pke_encrypt_into+0x3120>"
+      },
+      {
+        "address": "29f967",
+        "opcode": "jne",
+        "operands": "29f8d0 <kem1536::dev_kem::pke_encrypt_into+0x3200>"
+      },
+      {
+        "address": "29fa47",
+        "opcode": "jne",
+        "operands": "29f9b0 <kem1536::dev_kem::pke_encrypt_into+0x32e0>"
+      },
+      {
+        "address": "29fb17",
+        "opcode": "jne",
+        "operands": "29fa80 <kem1536::dev_kem::pke_encrypt_into+0x33b0>"
+      },
+      {
+        "address": "29fbe7",
+        "opcode": "jne",
+        "operands": "29fb50 <kem1536::dev_kem::pke_encrypt_into+0x3480>"
+      },
+      {
+        "address": "29fd0d",
+        "opcode": "jne",
+        "operands": "29fc40 <kem1536::dev_kem::pke_encrypt_into+0x3570>"
+      },
+      {
+        "address": "29fe39",
+        "opcode": "jne",
+        "operands": "29fd90 <kem1536::dev_kem::pke_encrypt_into+0x36c0>"
+      },
+      {
+        "address": "29fe91",
+        "opcode": "jne",
+        "operands": "29fe50 <kem1536::dev_kem::pke_encrypt_into+0x3780>"
+      },
+      {
+        "address": "29fefa",
+        "opcode": "jne",
+        "operands": "29fea0 <kem1536::dev_kem::pke_encrypt_into+0x37d0>"
+      },
+      {
+        "address": "29ff6a",
+        "opcode": "jne",
+        "operands": "29ff10 <kem1536::dev_kem::pke_encrypt_into+0x3840>"
+      },
+      {
+        "address": "29ffda",
+        "opcode": "jne",
+        "operands": "29ff80 <kem1536::dev_kem::pke_encrypt_into+0x38b0>"
+      },
+      {
+        "address": "2a004a",
+        "opcode": "jne",
+        "operands": "29fff0 <kem1536::dev_kem::pke_encrypt_into+0x3920>"
+      },
+      {
+        "address": "2a00ba",
+        "opcode": "jne",
+        "operands": "2a0060 <kem1536::dev_kem::pke_encrypt_into+0x3990>"
+      },
+      {
+        "address": "2a012a",
+        "opcode": "jne",
+        "operands": "2a00d0 <kem1536::dev_kem::pke_encrypt_into+0x3a00>"
+      },
+      {
+        "address": "2a019a",
+        "opcode": "jne",
+        "operands": "2a0140 <kem1536::dev_kem::pke_encrypt_into+0x3a70>"
+      },
+      {
+        "address": "2a020a",
+        "opcode": "jne",
+        "operands": "2a01b0 <kem1536::dev_kem::pke_encrypt_into+0x3ae0>"
+      },
+      {
+        "address": "2a027a",
+        "opcode": "jne",
+        "operands": "2a0220 <kem1536::dev_kem::pke_encrypt_into+0x3b50>"
+      },
+      {
+        "address": "2a02ea",
+        "opcode": "jne",
+        "operands": "2a0290 <kem1536::dev_kem::pke_encrypt_into+0x3bc0>"
+      },
+      {
+        "address": "2a035a",
+        "opcode": "jne",
+        "operands": "2a0300 <kem1536::dev_kem::pke_encrypt_into+0x3c30>"
+      },
+      {
+        "address": "2a03ca",
+        "opcode": "jne",
+        "operands": "2a0370 <kem1536::dev_kem::pke_encrypt_into+0x3ca0>"
+      },
+      {
+        "address": "2a043a",
+        "opcode": "jne",
+        "operands": "2a03e0 <kem1536::dev_kem::pke_encrypt_into+0x3d10>"
+      },
+      {
+        "address": "2a04aa",
+        "opcode": "jne",
+        "operands": "2a0450 <kem1536::dev_kem::pke_encrypt_into+0x3d80>"
+      },
+      {
+        "address": "2a051a",
+        "opcode": "jne",
+        "operands": "2a04c0 <kem1536::dev_kem::pke_encrypt_into+0x3df0>"
+      },
+      {
+        "address": "2a058a",
+        "opcode": "jne",
+        "operands": "2a0530 <kem1536::dev_kem::pke_encrypt_into+0x3e60>"
+      },
+      {
+        "address": "2a05fa",
+        "opcode": "jne",
+        "operands": "2a05a0 <kem1536::dev_kem::pke_encrypt_into+0x3ed0>"
+      },
+      {
+        "address": "2a066a",
+        "opcode": "jne",
+        "operands": "2a0610 <kem1536::dev_kem::pke_encrypt_into+0x3f40>"
+      },
+      {
+        "address": "2a06da",
+        "opcode": "jne",
+        "operands": "2a0680 <kem1536::dev_kem::pke_encrypt_into+0x3fb0>"
+      },
+      {
+        "address": "2a074a",
+        "opcode": "jne",
+        "operands": "2a06f0 <kem1536::dev_kem::pke_encrypt_into+0x4020>"
+      },
+      {
+        "address": "2a07ba",
+        "opcode": "jne",
+        "operands": "2a0760 <kem1536::dev_kem::pke_encrypt_into+0x4090>"
+      },
+      {
+        "address": "2a0832",
+        "opcode": "jne",
+        "operands": "2a07d8 <kem1536::dev_kem::pke_encrypt_into+0x4108>"
+      },
+      {
+        "address": "2a0890",
+        "opcode": "jne",
+        "operands": "2a0836 <kem1536::dev_kem::pke_encrypt_into+0x4166>"
+      },
+      {
+        "address": "2a08f0",
+        "opcode": "jne",
+        "operands": "2a08af <kem1536::dev_kem::pke_encrypt_into+0x41df>"
+      },
+      {
+        "address": "2a0953",
+        "opcode": "jne",
+        "operands": "2a08f9 <kem1536::dev_kem::pke_encrypt_into+0x4229>"
+      }
+    ],
+    "divisions": [],
+    "calls": [
+      {
+        "address": "29c722",
+        "opcode": "call",
+        "operands": "*0x9d200(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29c774",
+        "opcode": "call",
+        "operands": "2c2a40 <kem1536::engine_poly::Polynomial::fill_with>",
+        "target": "kem1536::engine_poly::Polynomial::fill_with"
+      },
+      {
+        "address": "29c7b9",
+        "opcode": "call",
+        "operands": "2c2a40 <kem1536::engine_poly::Polynomial::fill_with>",
+        "target": "kem1536::engine_poly::Polynomial::fill_with"
+      },
+      {
+        "address": "29c7fe",
+        "opcode": "call",
+        "operands": "2c2a40 <kem1536::engine_poly::Polynomial::fill_with>",
+        "target": "kem1536::engine_poly::Polynomial::fill_with"
+      },
+      {
+        "address": "29c843",
+        "opcode": "call",
+        "operands": "2c2a40 <kem1536::engine_poly::Polynomial::fill_with>",
+        "target": "kem1536::engine_poly::Polynomial::fill_with"
+      },
+      {
+        "address": "29c888",
+        "opcode": "call",
+        "operands": "2c2a40 <kem1536::engine_poly::Polynomial::fill_with>",
+        "target": "kem1536::engine_poly::Polynomial::fill_with"
+      },
+      {
+        "address": "29c8cd",
+        "opcode": "call",
+        "operands": "2c2a40 <kem1536::engine_poly::Polynomial::fill_with>",
+        "target": "kem1536::engine_poly::Polynomial::fill_with"
+      },
+      {
+        "address": "29c8ea",
+        "opcode": "call",
+        "operands": "*0x9d038(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29c923",
+        "opcode": "call",
+        "operands": "298f70 <kem1536::dev_kem::noise_into>",
+        "target": "kem1536::dev_kem::noise_into"
+      },
+      {
+        "address": "29c961",
+        "opcode": "call",
+        "operands": "298f70 <kem1536::dev_kem::noise_into>",
+        "target": "kem1536::dev_kem::noise_into"
+      },
+      {
+        "address": "29c970",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29c988",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29caaa",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29cac5",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29cbda",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29cbf2",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29cd0a",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29cd22",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29ce3a",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29ce55",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29cf6a",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29cf85",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29d09d",
+        "opcode": "call",
+        "operands": "298f70 <kem1536::dev_kem::noise_into>",
+        "target": "kem1536::dev_kem::noise_into"
+      },
+      {
+        "address": "29d0af",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29d0c7",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29d1ea",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29d1fd",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29d31a",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29d332",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29d44a",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29d462",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29d57a",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29d58d",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29d6aa",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29d6bd",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29d7da",
+        "opcode": "call",
+        "operands": "298f70 <kem1536::dev_kem::noise_into>",
+        "target": "kem1536::dev_kem::noise_into"
+      },
+      {
+        "address": "29d7ec",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29d804",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29d91d",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29d930",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29da4d",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29da65",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29db7d",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29db95",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29dcad",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29dcc0",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29dddd",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29ddf0",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29df0d",
+        "opcode": "call",
+        "operands": "298f70 <kem1536::dev_kem::noise_into>",
+        "target": "kem1536::dev_kem::noise_into"
+      },
+      {
+        "address": "29df1f",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29df37",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29e05d",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29e070",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29e18d",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29e1a5",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29e2bd",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29e2d5",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29e3ed",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29e400",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29e51d",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29e530",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29e64d",
+        "opcode": "call",
+        "operands": "298f70 <kem1536::dev_kem::noise_into>",
+        "target": "kem1536::dev_kem::noise_into"
+      },
+      {
+        "address": "29e65f",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29e677",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29e79d",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29e7b0",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29e8cd",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29e8e5",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29e9fd",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29ea15",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29eb2d",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29eb40",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29ec5d",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29ec70",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29ed8d",
+        "opcode": "call",
+        "operands": "298f70 <kem1536::dev_kem::noise_into>",
+        "target": "kem1536::dev_kem::noise_into"
+      },
+      {
+        "address": "29ed9f",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29edb7",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29eedd",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29eef0",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29f00d",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29f025",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29f13d",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29f155",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29f26d",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29f280",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29f39d",
+        "opcode": "call",
+        "operands": "2a59c0 <kem1536::dev_kem::uniform>",
+        "target": "kem1536::dev_kem::uniform"
+      },
+      {
+        "address": "29f3b0",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29f4cf",
+        "opcode": "call",
+        "operands": "*0x9a453(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29f4e0",
+        "opcode": "call",
+        "operands": "298f70 <kem1536::dev_kem::noise_into>",
+        "target": "kem1536::dev_kem::noise_into"
+      },
+      {
+        "address": "29f4f7",
+        "opcode": "call",
+        "operands": "*0x9a42b(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29f6f5",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29f7d0",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29f8a5",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29f985",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29fa60",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29fb30",
+        "opcode": "call",
+        "operands": "2c2420 <kem1536::engine_poly::Polynomial::multiply_into>",
+        "target": "kem1536::engine_poly::Polynomial::multiply_into"
+      },
+      {
+        "address": "29fbfa",
+        "opcode": "call",
+        "operands": "*0x99d28(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29fd26",
+        "opcode": "call",
+        "operands": "2a09b0 <kem1536::dev_kem::encode_vector_into>",
+        "target": "kem1536::dev_kem::encode_vector_into"
+      },
+      {
+        "address": "2a095d",
+        "opcode": "call",
+        "operands": "298850 <core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>>",
+        "target": "core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>"
+      },
+      {
+        "address": "2a096f",
+        "opcode": "call",
+        "operands": "298850 <core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>>",
+        "target": "core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>"
+      },
+      {
+        "address": "2a0977",
+        "opcode": "call",
+        "operands": "3327d0 <_Unwind_Resume@plt>",
+        "target": "_Unwind_Resume@plt"
+      },
+      {
+        "address": "2a0987",
+        "opcode": "call",
+        "operands": "298850 <core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>>",
+        "target": "core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>"
+      },
+      {
+        "address": "2a0994",
+        "opcode": "call",
+        "operands": "298850 <core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>>",
+        "target": "core::ptr::drop_in_place<[kem1536::engine_poly::Polynomial; 6]>"
+      },
+      {
+        "address": "2a099c",
+        "opcode": "call",
+        "operands": "3327d0 <_Unwind_Resume@plt>",
+        "target": "_Unwind_Resume@plt"
+      },
+      {
+        "address": "29c722",
+        "opcode": "call",
+        "operands": "*0x9d200(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29c8ea",
+        "opcode": "call",
+        "operands": "*0x9d038(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29f4cf",
+        "opcode": "call",
+        "operands": "*0x9a453(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29f4f7",
+        "opcode": "call",
+        "operands": "*0x9a42b(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29fbfa",
+        "opcode": "call",
+        "operands": "*0x99d28(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      }
+    ],
+    "indirect_transfers": [
+      {
+        "address": "29c722",
+        "opcode": "call",
+        "operands": "*0x9d200(%rip)        # 339928 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "29c8ea",
+        "opcode": "call",
+        "operands": "*0x9d038(%rip)        # 339928 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "29c943",
+        "opcode": "call",
+        "operands": "*%rbx"
+      },
+      {
+        "address": "29c954",
+        "opcode": "call",
+        "operands": "*%rbx"
+      },
+      {
+        "address": "29f4cf",
+        "opcode": "call",
+        "operands": "*0x9a453(%rip)        # 339928 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "29f4f7",
+        "opcode": "call",
+        "operands": "*0x9a42b(%rip)        # 339928 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "29fbfa",
+        "opcode": "call",
+        "operands": "*0x99d28(%rip)        # 339928 <memset@GLIBC_2.2.5>"
+      }
+    ],
+    "conditional_moves": 0,
+    "resolved_indirect_transfers": [
+      {
+        "address": "29c722",
+        "opcode": "call",
+        "operands": "*0x9d200(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29c8ea",
+        "opcode": "call",
+        "operands": "*0x9d038(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29f4cf",
+        "opcode": "call",
+        "operands": "*0x9a453(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29f4f7",
+        "opcode": "call",
+        "operands": "*0x9a42b(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "29fbfa",
+        "opcode": "call",
+        "operands": "*0x99d28(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      }
+    ]
+  },
+  "kem1536::dev_kem::run_diagnostics": {
+    "address": "000000000029baf0",
+    "instructions": 603,
+    "conditional_branches": [
+      {
+        "address": "29bb2c",
+        "opcode": "je",
+        "operands": "29c168 <kem1536::dev_kem::run_diagnostics+0x678>"
+      },
+      {
+        "address": "29bb61",
+        "opcode": "je",
+        "operands": "29c1f3 <kem1536::dev_kem::run_diagnostics+0x703>"
+      },
+      {
+        "address": "29bb9a",
+        "opcode": "je",
+        "operands": "29c20c <kem1536::dev_kem::run_diagnostics+0x71c>"
+      },
+      {
+        "address": "29bd1a",
+        "opcode": "je",
+        "operands": "29c220 <kem1536::dev_kem::run_diagnostics+0x730>"
+      },
+      {
+        "address": "29bd39",
+        "opcode": "je",
+        "operands": "29c567 <kem1536::dev_kem::run_diagnostics+0xa77>"
+      },
+      {
+        "address": "29be3d",
+        "opcode": "je",
+        "operands": "29c235 <kem1536::dev_kem::run_diagnostics+0x745>"
+      },
+      {
+        "address": "29bfc9",
+        "opcode": "jne",
+        "operands": "29bf90 <kem1536::dev_kem::run_diagnostics+0x4a0>"
+      },
+      {
+        "address": "29c0c9",
+        "opcode": "jne",
+        "operands": "29c090 <kem1536::dev_kem::run_diagnostics+0x5a0>"
+      },
+      {
+        "address": "29c129",
+        "opcode": "jne",
+        "operands": "29c0f0 <kem1536::dev_kem::run_diagnostics+0x600>"
+      },
+      {
+        "address": "29c162",
+        "opcode": "jne",
+        "operands": "29bb50 <kem1536::dev_kem::run_diagnostics+0x60>"
+      },
+      {
+        "address": "29c3c9",
+        "opcode": "jne",
+        "operands": "29c390 <kem1536::dev_kem::run_diagnostics+0x8a0>"
+      },
+      {
+        "address": "29c4c9",
+        "opcode": "jne",
+        "operands": "29c490 <kem1536::dev_kem::run_diagnostics+0x9a0>"
+      },
+      {
+        "address": "29c529",
+        "opcode": "jne",
+        "operands": "29c4f0 <kem1536::dev_kem::run_diagnostics+0xa00>"
+      },
+      {
+        "address": "29c5c9",
+        "opcode": "jne",
+        "operands": "29c590 <kem1536::dev_kem::run_diagnostics+0xaa0>"
+      },
+      {
+        "address": "29c639",
+        "opcode": "jne",
+        "operands": "29c600 <kem1536::dev_kem::run_diagnostics+0xb10>"
+      },
+      {
+        "address": "29c699",
+        "opcode": "jne",
+        "operands": "29c660 <kem1536::dev_kem::run_diagnostics+0xb70>"
+      }
+    ],
+    "divisions": [],
+    "calls": [
+      {
+        "address": "29bb0c",
+        "opcode": "call",
+        "operands": "*0x9dff6(%rip)        # 339b08 <_DYNAMIC+0x578>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29bb53",
+        "opcode": "call",
+        "operands": "*0x9dfb7(%rip)        # 339b10 <_DYNAMIC+0x580>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29bb87",
+        "opcode": "call",
+        "operands": "*0x9df73(%rip)        # 339b00 <_DYNAMIC+0x570>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29bbdb",
+        "opcode": "call",
+        "operands": "*0x9df17(%rip)        # 339af8 <_DYNAMIC+0x568>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29bd20",
+        "opcode": "call",
+        "operands": "*0x9daaa(%rip)        # 3397d0 <_DYNAMIC+0x240>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29bd30",
+        "opcode": "call",
+        "operands": "*0x9daa2(%rip)        # 3397d8 <_DYNAMIC+0x248>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29bd4d",
+        "opcode": "call",
+        "operands": "*0x9da8d(%rip)        # 3397e0 <memcpy@GLIBC_2.14>",
+        "target": "memcpy@GLIBC_2.14"
+      },
+      {
+        "address": "29bd88",
+        "opcode": "call",
+        "operands": "*0x9dd6a(%rip)        # 339af8 <_DYNAMIC+0x568>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29bdbf",
+        "opcode": "call",
+        "operands": "2a0bd0 <kem1536::dev_kem::xof>",
+        "target": "kem1536::dev_kem::xof"
+      },
+      {
+        "address": "29bfd8",
+        "opcode": "call",
+        "operands": "*0x9d7da(%rip)        # 3397b8 <_DYNAMIC+0x228>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29c0d8",
+        "opcode": "call",
+        "operands": "*0x9d6da(%rip)        # 3397b8 <_DYNAMIC+0x228>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29c170",
+        "opcode": "call",
+        "operands": "*0x9d9a2(%rip)        # 339b18 <_DYNAMIC+0x588>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29c3d8",
+        "opcode": "call",
+        "operands": "*0x9d3da(%rip)        # 3397b8 <_DYNAMIC+0x228>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29c4d8",
+        "opcode": "call",
+        "operands": "*0x9d2da(%rip)        # 3397b8 <_DYNAMIC+0x228>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29c571",
+        "opcode": "call",
+        "operands": "*0x9d271(%rip)        # 3397e8 <_DYNAMIC+0x258>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29c581",
+        "opcode": "call",
+        "operands": "2a6bd0 <<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop>",
+        "target": "<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop"
+      },
+      {
+        "address": "29c5d8",
+        "opcode": "call",
+        "operands": "*0x9d1da(%rip)        # 3397b8 <_DYNAMIC+0x228>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29c5ef",
+        "opcode": "call",
+        "operands": "2a6bd0 <<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop>",
+        "target": "<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop"
+      },
+      {
+        "address": "29c648",
+        "opcode": "call",
+        "operands": "*0x9d16a(%rip)        # 3397b8 <_DYNAMIC+0x228>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29c6c5",
+        "opcode": "call",
+        "operands": "3327d0 <_Unwind_Resume@plt>",
+        "target": "_Unwind_Resume@plt"
+      },
+      {
+        "address": "29c6ca",
+        "opcode": "call",
+        "operands": "*0x9d0f8(%rip)        # 3397c8 <_DYNAMIC+0x238>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "29bb0c",
+        "opcode": "call",
+        "operands": "*0x9dff6(%rip)        # 339b08 <_DYNAMIC+0x578>",
+        "target": "std::time::Instant::now"
+      },
+      {
+        "address": "29bb53",
+        "opcode": "call",
+        "operands": "*0x9dfb7(%rip)        # 339b10 <_DYNAMIC+0x580>",
+        "target": "kem1536::dev_kem::keygen"
+      },
+      {
+        "address": "29bb87",
+        "opcode": "call",
+        "operands": "*0x9df73(%rip)        # 339b00 <_DYNAMIC+0x570>",
+        "target": "kem1536::dev_kem::encapsulate"
+      },
+      {
+        "address": "29bbdb",
+        "opcode": "call",
+        "operands": "*0x9df17(%rip)        # 339af8 <_DYNAMIC+0x568>",
+        "target": "kem1536::dev_kem::decapsulate"
+      },
+      {
+        "address": "29bd20",
+        "opcode": "call",
+        "operands": "*0x9daaa(%rip)        # 3397d0 <_DYNAMIC+0x240>",
+        "target": "__rustc::__rust_no_alloc_shim_is_unstable_v2"
+      },
+      {
+        "address": "29bd30",
+        "opcode": "call",
+        "operands": "*0x9daa2(%rip)        # 3397d8 <_DYNAMIC+0x248>",
+        "target": "__rustc::__rust_alloc"
+      },
+      {
+        "address": "29bd4d",
+        "opcode": "call",
+        "operands": "*0x9da8d(%rip)        # 3397e0 <memcpy@GLIBC_2.14>",
+        "target": "EXTERNAL:memcpy@GLIBC_2.14"
+      },
+      {
+        "address": "29bd88",
+        "opcode": "call",
+        "operands": "*0x9dd6a(%rip)        # 339af8 <_DYNAMIC+0x568>",
+        "target": "kem1536::dev_kem::decapsulate"
+      },
+      {
+        "address": "29bfd8",
+        "opcode": "call",
+        "operands": "*0x9d7da(%rip)        # 3397b8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "29c0d8",
+        "opcode": "call",
+        "operands": "*0x9d6da(%rip)        # 3397b8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "29c170",
+        "opcode": "call",
+        "operands": "*0x9d9a2(%rip)        # 339b18 <_DYNAMIC+0x588>",
+        "target": "std::time::Instant::elapsed"
+      },
+      {
+        "address": "29c3d8",
+        "opcode": "call",
+        "operands": "*0x9d3da(%rip)        # 3397b8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "29c4d8",
+        "opcode": "call",
+        "operands": "*0x9d2da(%rip)        # 3397b8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "29c571",
+        "opcode": "call",
+        "operands": "*0x9d271(%rip)        # 3397e8 <_DYNAMIC+0x258>",
+        "target": "alloc::alloc::handle_alloc_error"
+      },
+      {
+        "address": "29c5d8",
+        "opcode": "call",
+        "operands": "*0x9d1da(%rip)        # 3397b8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "29c648",
+        "opcode": "call",
+        "operands": "*0x9d16a(%rip)        # 3397b8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "29c6ca",
+        "opcode": "call",
+        "operands": "*0x9d0f8(%rip)        # 3397c8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      }
+    ],
+    "indirect_transfers": [
+      {
+        "address": "29bb0c",
+        "opcode": "call",
+        "operands": "*0x9dff6(%rip)        # 339b08 <_DYNAMIC+0x578>"
+      },
+      {
+        "address": "29bb53",
+        "opcode": "call",
+        "operands": "*0x9dfb7(%rip)        # 339b10 <_DYNAMIC+0x580>"
+      },
+      {
+        "address": "29bb87",
+        "opcode": "call",
+        "operands": "*0x9df73(%rip)        # 339b00 <_DYNAMIC+0x570>"
+      },
+      {
+        "address": "29bbdb",
+        "opcode": "call",
+        "operands": "*0x9df17(%rip)        # 339af8 <_DYNAMIC+0x568>"
+      },
+      {
+        "address": "29bd20",
+        "opcode": "call",
+        "operands": "*0x9daaa(%rip)        # 3397d0 <_DYNAMIC+0x240>"
+      },
+      {
+        "address": "29bd30",
+        "opcode": "call",
+        "operands": "*0x9daa2(%rip)        # 3397d8 <_DYNAMIC+0x248>"
+      },
+      {
+        "address": "29bd4d",
+        "opcode": "call",
+        "operands": "*0x9da8d(%rip)        # 3397e0 <memcpy@GLIBC_2.14>"
+      },
+      {
+        "address": "29bd88",
+        "opcode": "call",
+        "operands": "*0x9dd6a(%rip)        # 339af8 <_DYNAMIC+0x568>"
+      },
+      {
+        "address": "29bfd8",
+        "opcode": "call",
+        "operands": "*0x9d7da(%rip)        # 3397b8 <_DYNAMIC+0x228>"
+      },
+      {
+        "address": "29c0d8",
+        "opcode": "call",
+        "operands": "*0x9d6da(%rip)        # 3397b8 <_DYNAMIC+0x228>"
+      },
+      {
+        "address": "29c13f",
+        "opcode": "call",
+        "operands": "*%r14"
+      },
+      {
+        "address": "29c14f",
+        "opcode": "call",
+        "operands": "*%r14"
+      },
+      {
+        "address": "29c170",
+        "opcode": "call",
+        "operands": "*0x9d9a2(%rip)        # 339b18 <_DYNAMIC+0x588>"
+      },
+      {
+        "address": "29c3d8",
+        "opcode": "call",
+        "operands": "*0x9d3da(%rip)        # 3397b8 <_DYNAMIC+0x228>"
+      },
+      {
+        "address": "29c4d8",
+        "opcode": "call",
+        "operands": "*0x9d2da(%rip)        # 3397b8 <_DYNAMIC+0x228>"
+      },
+      {
+        "address": "29c53f",
+        "opcode": "call",
+        "operands": "*%r14"
+      },
+      {
+        "address": "29c54f",
+        "opcode": "call",
+        "operands": "*%r14"
+      },
+      {
+        "address": "29c571",
+        "opcode": "call",
+        "operands": "*0x9d271(%rip)        # 3397e8 <_DYNAMIC+0x258>"
+      },
+      {
+        "address": "29c5d8",
+        "opcode": "call",
+        "operands": "*0x9d1da(%rip)        # 3397b8 <_DYNAMIC+0x228>"
+      },
+      {
+        "address": "29c648",
+        "opcode": "call",
+        "operands": "*0x9d16a(%rip)        # 3397b8 <_DYNAMIC+0x228>"
+      },
+      {
+        "address": "29c6af",
+        "opcode": "call",
+        "operands": "*%r14"
+      },
+      {
+        "address": "29c6bf",
+        "opcode": "call",
+        "operands": "*%r14"
+      },
+      {
+        "address": "29c6ca",
+        "opcode": "call",
+        "operands": "*0x9d0f8(%rip)        # 3397c8 <_DYNAMIC+0x238>"
+      }
+    ],
+    "conditional_moves": 12,
+    "resolved_indirect_transfers": [
+      {
+        "address": "29bb0c",
+        "opcode": "call",
+        "operands": "*0x9dff6(%rip)        # 339b08 <_DYNAMIC+0x578>",
+        "target": "std::time::Instant::now"
+      },
+      {
+        "address": "29bb53",
+        "opcode": "call",
+        "operands": "*0x9dfb7(%rip)        # 339b10 <_DYNAMIC+0x580>",
+        "target": "kem1536::dev_kem::keygen"
+      },
+      {
+        "address": "29bb87",
+        "opcode": "call",
+        "operands": "*0x9df73(%rip)        # 339b00 <_DYNAMIC+0x570>",
+        "target": "kem1536::dev_kem::encapsulate"
+      },
+      {
+        "address": "29bbdb",
+        "opcode": "call",
+        "operands": "*0x9df17(%rip)        # 339af8 <_DYNAMIC+0x568>",
+        "target": "kem1536::dev_kem::decapsulate"
+      },
+      {
+        "address": "29bd20",
+        "opcode": "call",
+        "operands": "*0x9daaa(%rip)        # 3397d0 <_DYNAMIC+0x240>",
+        "target": "__rustc::__rust_no_alloc_shim_is_unstable_v2"
+      },
+      {
+        "address": "29bd30",
+        "opcode": "call",
+        "operands": "*0x9daa2(%rip)        # 3397d8 <_DYNAMIC+0x248>",
+        "target": "__rustc::__rust_alloc"
+      },
+      {
+        "address": "29bd4d",
+        "opcode": "call",
+        "operands": "*0x9da8d(%rip)        # 3397e0 <memcpy@GLIBC_2.14>",
+        "target": "EXTERNAL:memcpy@GLIBC_2.14"
+      },
+      {
+        "address": "29bd88",
+        "opcode": "call",
+        "operands": "*0x9dd6a(%rip)        # 339af8 <_DYNAMIC+0x568>",
+        "target": "kem1536::dev_kem::decapsulate"
+      },
+      {
+        "address": "29bfd8",
+        "opcode": "call",
+        "operands": "*0x9d7da(%rip)        # 3397b8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "29c0d8",
+        "opcode": "call",
+        "operands": "*0x9d6da(%rip)        # 3397b8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "29c170",
+        "opcode": "call",
+        "operands": "*0x9d9a2(%rip)        # 339b18 <_DYNAMIC+0x588>",
+        "target": "std::time::Instant::elapsed"
+      },
+      {
+        "address": "29c3d8",
+        "opcode": "call",
+        "operands": "*0x9d3da(%rip)        # 3397b8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "29c4d8",
+        "opcode": "call",
+        "operands": "*0x9d2da(%rip)        # 3397b8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "29c571",
+        "opcode": "call",
+        "operands": "*0x9d271(%rip)        # 3397e8 <_DYNAMIC+0x258>",
+        "target": "alloc::alloc::handle_alloc_error"
+      },
+      {
+        "address": "29c5d8",
+        "opcode": "call",
+        "operands": "*0x9d1da(%rip)        # 3397b8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "29c648",
+        "opcode": "call",
+        "operands": "*0x9d16a(%rip)        # 3397b8 <_DYNAMIC+0x228>",
+        "target": "__rustc::__rust_dealloc"
+      },
+      {
+        "address": "29c6ca",
+        "opcode": "call",
+        "operands": "*0x9d0f8(%rip)        # 3397c8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      }
+    ]
+  },
+  "kem1536::dev_kem::uniform": {
+    "address": "00000000002a59c0",
+    "instructions": 265,
+    "conditional_branches": [
+      {
+        "address": "2a5d28",
+        "opcode": "jb",
+        "operands": "2a5da0 <kem1536::dev_kem::uniform+0x3e0>"
+      },
+      {
+        "address": "2a5d34",
+        "opcode": "je",
+        "operands": "2a5d70 <kem1536::dev_kem::uniform+0x3b0>"
+      },
+      {
+        "address": "2a5d3e",
+        "opcode": "jb",
+        "operands": "2a5d00 <kem1536::dev_kem::uniform+0x340>"
+      },
+      {
+        "address": "2a5d5d",
+        "opcode": "jne",
+        "operands": "2a5d7b <kem1536::dev_kem::uniform+0x3bb>"
+      },
+      {
+        "address": "2a5db2",
+        "opcode": "jne",
+        "operands": "2a5d2a <kem1536::dev_kem::uniform+0x36a>"
+      },
+      {
+        "address": "2a608b",
+        "opcode": "jne",
+        "operands": "2a6030 <kem1536::dev_kem::uniform+0x670>"
+      }
+    ],
+    "divisions": [],
+    "calls": [
+      {
+        "address": "2a5a8f",
+        "opcode": "call",
+        "operands": "298a90 <<shake::Shake<_> as digest::Update>::update::{{closure}}>",
+        "target": "<shake::Shake<_> as digest::Update>::update::{{closure}}"
+      },
+      {
+        "address": "2a5ac7",
+        "opcode": "call",
+        "operands": "298a90 <<shake::Shake<_> as digest::Update>::update::{{closure}}>",
+        "target": "<shake::Shake<_> as digest::Update>::update::{{closure}}"
+      },
+      {
+        "address": "2a5af8",
+        "opcode": "call",
+        "operands": "298a90 <<shake::Shake<_> as digest::Update>::update::{{closure}}>",
+        "target": "<shake::Shake<_> as digest::Update>::update::{{closure}}"
+      },
+      {
+        "address": "2a5b38",
+        "opcode": "call",
+        "operands": "298a90 <<shake::Shake<_> as digest::Update>::update::{{closure}}>",
+        "target": "<shake::Shake<_> as digest::Update>::update::{{closure}}"
+      },
+      {
+        "address": "2a5ce8",
+        "opcode": "call",
+        "operands": "*0x93c3a(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a5d8b",
+        "opcode": "call",
+        "operands": "2a6c50 <keccak::backends::soft::keccak_p>",
+        "target": "keccak::backends::soft::keccak_p"
+      },
+      {
+        "address": "2a5dcd",
+        "opcode": "call",
+        "operands": "*0x93a0d(%rip)        # 3397e0 <memcpy@GLIBC_2.14>",
+        "target": "memcpy@GLIBC_2.14"
+      },
+      {
+        "address": "2a6023",
+        "opcode": "call",
+        "operands": "3327d0 <_Unwind_Resume@plt>",
+        "target": "_Unwind_Resume@plt"
+      },
+      {
+        "address": "2a6197",
+        "opcode": "call",
+        "operands": "3327d0 <_Unwind_Resume@plt>",
+        "target": "_Unwind_Resume@plt"
+      },
+      {
+        "address": "2a5ce8",
+        "opcode": "call",
+        "operands": "*0x93c3a(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a5dcd",
+        "opcode": "call",
+        "operands": "*0x93a0d(%rip)        # 3397e0 <memcpy@GLIBC_2.14>",
+        "target": "EXTERNAL:memcpy@GLIBC_2.14"
+      }
+    ],
+    "indirect_transfers": [
+      {
+        "address": "2a5b5c",
+        "opcode": "call",
+        "operands": "*%rbp"
+      },
+      {
+        "address": "2a5b98",
+        "opcode": "call",
+        "operands": "*%rbp"
+      },
+      {
+        "address": "2a5ce8",
+        "opcode": "call",
+        "operands": "*0x93c3a(%rip)        # 339928 <memset@GLIBC_2.2.5>"
+      },
+      {
+        "address": "2a5d57",
+        "opcode": "call",
+        "operands": "*%rbp"
+      },
+      {
+        "address": "2a5d99",
+        "opcode": "call",
+        "operands": "*%rbp"
+      },
+      {
+        "address": "2a5dcd",
+        "opcode": "call",
+        "operands": "*0x93a0d(%rip)        # 3397e0 <memcpy@GLIBC_2.14>"
+      }
+    ],
+    "conditional_moves": 0,
+    "resolved_indirect_transfers": [
+      {
+        "address": "2a5ce8",
+        "opcode": "call",
+        "operands": "*0x93c3a(%rip)        # 339928 <memset@GLIBC_2.2.5>",
+        "target": "EXTERNAL:memset@GLIBC_2.2.5"
+      },
+      {
+        "address": "2a5dcd",
+        "opcode": "call",
+        "operands": "*0x93a0d(%rip)        # 3397e0 <memcpy@GLIBC_2.14>",
+        "target": "EXTERNAL:memcpy@GLIBC_2.14"
+      }
+    ]
+  },
+  "kem1536::dev_kem::xof": {
+    "address": "00000000002a0bd0",
+    "instructions": 206,
+    "conditional_branches": [],
+    "divisions": [],
+    "calls": [
+      {
+        "address": "2a0c6e",
+        "opcode": "call",
+        "operands": "298110 <sponge_cursor::SpongeCursor<_>::absorb_u64_le>",
+        "target": "sponge_cursor::SpongeCursor<_>::absorb_u64_le"
+      },
+      {
+        "address": "2a0c8a",
+        "opcode": "call",
+        "operands": "298110 <sponge_cursor::SpongeCursor<_>::absorb_u64_le>",
+        "target": "sponge_cursor::SpongeCursor<_>::absorb_u64_le"
+      },
+      {
+        "address": "2a0ca1",
+        "opcode": "call",
+        "operands": "298110 <sponge_cursor::SpongeCursor<_>::absorb_u64_le>",
+        "target": "sponge_cursor::SpongeCursor<_>::absorb_u64_le"
+      },
+      {
+        "address": "2a0cb9",
+        "opcode": "call",
+        "operands": "298110 <sponge_cursor::SpongeCursor<_>::absorb_u64_le>",
+        "target": "sponge_cursor::SpongeCursor<_>::absorb_u64_le"
+      },
+      {
+        "address": "2a0e6d",
+        "opcode": "call",
+        "operands": "2a6c50 <keccak::backends::soft::keccak_p>",
+        "target": "keccak::backends::soft::keccak_p"
+      },
+      {
+        "address": "2a10c2",
+        "opcode": "call",
+        "operands": "2a6bd0 <<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop>",
+        "target": "<zeroize::Zeroizing<Z> as core::ops::drop::Drop>::drop"
+      },
+      {
+        "address": "2a10ca",
+        "opcode": "call",
+        "operands": "3327d0 <_Unwind_Resume@plt>",
+        "target": "_Unwind_Resume@plt"
+      },
+      {
+        "address": "2a10cf",
+        "opcode": "call",
+        "operands": "*0x986f3(%rip)        # 3397c8 <_DYNAMIC+0x238>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "2a120e",
+        "opcode": "call",
+        "operands": "3327d0 <_Unwind_Resume@plt>",
+        "target": "_Unwind_Resume@plt"
+      },
+      {
+        "address": "2a10cf",
+        "opcode": "call",
+        "operands": "*0x986f3(%rip)        # 3397c8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      }
+    ],
+    "indirect_transfers": [
+      {
+        "address": "2a0cf0",
+        "opcode": "call",
+        "operands": "*%r12"
+      },
+      {
+        "address": "2a0d2b",
+        "opcode": "call",
+        "operands": "*%r12"
+      },
+      {
+        "address": "2a10cf",
+        "opcode": "call",
+        "operands": "*0x986f3(%rip)        # 3397c8 <_DYNAMIC+0x238>"
+      }
+    ],
+    "conditional_moves": 0,
+    "resolved_indirect_transfers": [
+      {
+        "address": "2a10cf",
+        "opcode": "call",
+        "operands": "*0x986f3(%rip)        # 3397c8 <_DYNAMIC+0x238>",
+        "target": "core::panicking::panic_in_cleanup"
+      }
+    ]
+  },
+  "kem1536::engine_poly::Polynomial::fill_with": {
+    "address": "00000000002c2a40",
+    "instructions": 194,
+    "conditional_branches": [
+      {
+        "address": "2c2a99",
+        "opcode": "ja",
+        "operands": "2c2ce4 <kem1536::engine_poly::Polynomial::fill_with+0x2a4>"
+      },
+      {
+        "address": "2c2aa4",
+        "opcode": "ja",
+        "operands": "2c2ce4 <kem1536::engine_poly::Polynomial::fill_with+0x2a4>"
+      },
+      {
+        "address": "2c2ccf",
+        "opcode": "jne",
+        "operands": "2c2a80 <kem1536::engine_poly::Polynomial::fill_with+0x40>"
+      }
+    ],
+    "divisions": [],
+    "calls": [
+      {
+        "address": "2c2cf3",
+        "opcode": "call",
+        "operands": "*0x76af7(%rip)        # 3397f0 <_DYNAMIC+0x260>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "2c2cf3",
+        "opcode": "call",
+        "operands": "*0x76af7(%rip)        # 3397f0 <_DYNAMIC+0x260>",
+        "target": "core::slice::index::slice_index_fail"
+      }
+    ],
+    "indirect_transfers": [
+      {
+        "address": "2c2cf3",
+        "opcode": "call",
+        "operands": "*0x76af7(%rip)        # 3397f0 <_DYNAMIC+0x260>"
+      }
+    ],
+    "conditional_moves": 1,
+    "resolved_indirect_transfers": [
+      {
+        "address": "2c2cf3",
+        "opcode": "call",
+        "operands": "*0x76af7(%rip)        # 3397f0 <_DYNAMIC+0x260>",
+        "target": "core::slice::index::slice_index_fail"
+      }
+    ]
+  },
+  "kem1536::engine_poly::Polynomial::multiply_into": {
+    "address": "00000000002c2420",
+    "instructions": 322,
+    "conditional_branches": [
+      {
+        "address": "2c265d",
+        "opcode": "jne",
+        "operands": "2c2480 <kem1536::engine_poly::Polynomial::multiply_into+0x60>"
+      },
+      {
+        "address": "2c278f",
+        "opcode": "jne",
+        "operands": "2c26a0 <kem1536::engine_poly::Polynomial::multiply_into+0x280>"
+      },
+      {
+        "address": "2c28ab",
+        "opcode": "jne",
+        "operands": "2c27c0 <kem1536::engine_poly::Polynomial::multiply_into+0x3a0>"
+      },
+      {
+        "address": "2c291a",
+        "opcode": "jne",
+        "operands": "2c28c0 <kem1536::engine_poly::Polynomial::multiply_into+0x4a0>"
+      },
+      {
+        "address": "2c2971",
+        "opcode": "jne",
+        "operands": "2c2930 <kem1536::engine_poly::Polynomial::multiply_into+0x510>"
+      },
+      {
+        "address": "2c29eb",
+        "opcode": "jne",
+        "operands": "2c2990 <kem1536::engine_poly::Polynomial::multiply_into+0x570>"
+      },
+      {
+        "address": "2c2a32",
+        "opcode": "jne",
+        "operands": "2c29f0 <kem1536::engine_poly::Polynomial::multiply_into+0x5d0>"
+      }
+    ],
+    "divisions": [],
+    "calls": [
+      {
+        "address": "2c266d",
+        "opcode": "call",
+        "operands": "2c2d00 <kem1536::engine_poly::transform>",
+        "target": "kem1536::engine_poly::transform"
+      },
+      {
+        "address": "2c2681",
+        "opcode": "call",
+        "operands": "2c2d00 <kem1536::engine_poly::transform>",
+        "target": "kem1536::engine_poly::transform"
+      },
+      {
+        "address": "2c279f",
+        "opcode": "call",
+        "operands": "2c2d00 <kem1536::engine_poly::transform>",
+        "target": "kem1536::engine_poly::transform"
+      },
+      {
+        "address": "2c2a37",
+        "opcode": "call",
+        "operands": "3327d0 <_Unwind_Resume@plt>",
+        "target": "_Unwind_Resume@plt"
+      }
+    ],
+    "indirect_transfers": [
+      {
+        "address": "2c2452",
+        "opcode": "call",
+        "operands": "*%r13"
+      },
+      {
+        "address": "2c245f",
+        "opcode": "call",
+        "operands": "*%r13"
+      }
+    ],
+    "conditional_moves": 0,
+    "resolved_indirect_transfers": []
+  },
+  "kem1536::engine_poly::transform": {
+    "address": "00000000002c2d00",
+    "instructions": 148,
+    "conditional_branches": [
+      {
+        "address": "2c2d29",
+        "opcode": "je",
+        "operands": "2c2d68 <kem1536::engine_poly::transform+0x68>"
+      },
+      {
+        "address": "2c2d54",
+        "opcode": "jae",
+        "operands": "2c2d20 <kem1536::engine_poly::transform+0x20>"
+      },
+      {
+        "address": "2c2dd3",
+        "opcode": "je",
+        "operands": "2c2ec5 <kem1536::engine_poly::transform+0x1c5>"
+      },
+      {
+        "address": "2c2de4",
+        "opcode": "ja",
+        "operands": "2c2edd <kem1536::engine_poly::transform+0x1dd>"
+      },
+      {
+        "address": "2c2e7b",
+        "opcode": "jne",
+        "operands": "2c2dd0 <kem1536::engine_poly::transform+0xd0>"
+      },
+      {
+        "address": "2c2e9c",
+        "opcode": "jb",
+        "operands": "2c2dc0 <kem1536::engine_poly::transform+0xc0>"
+      },
+      {
+        "address": "2c2eb0",
+        "opcode": "jne",
+        "operands": "2c2d70 <kem1536::engine_poly::transform+0x70>"
+      }
+    ],
+    "divisions": [],
+    "calls": [
+      {
+        "address": "2c2ed7",
+        "opcode": "call",
+        "operands": "*0x769db(%rip)        # 3398b8 <_DYNAMIC+0x328>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "2c2eec",
+        "opcode": "call",
+        "operands": "*0x769c6(%rip)        # 3398b8 <_DYNAMIC+0x328>",
+        "target": "_DYNAMIC"
+      },
+      {
+        "address": "2c2ed7",
+        "opcode": "call",
+        "operands": "*0x769db(%rip)        # 3398b8 <_DYNAMIC+0x328>",
+        "target": "core::panicking::panic_bounds_check"
+      },
+      {
+        "address": "2c2eec",
+        "opcode": "call",
+        "operands": "*0x769c6(%rip)        # 3398b8 <_DYNAMIC+0x328>",
+        "target": "core::panicking::panic_bounds_check"
+      }
+    ],
+    "indirect_transfers": [
+      {
+        "address": "2c2ed7",
+        "opcode": "call",
+        "operands": "*0x769db(%rip)        # 3398b8 <_DYNAMIC+0x328>"
+      },
+      {
+        "address": "2c2eec",
+        "opcode": "call",
+        "operands": "*0x769c6(%rip)        # 3398b8 <_DYNAMIC+0x328>"
+      }
+    ],
+    "conditional_moves": 4,
+    "resolved_indirect_transfers": [
+      {
+        "address": "2c2ed7",
+        "opcode": "call",
+        "operands": "*0x769db(%rip)        # 3398b8 <_DYNAMIC+0x328>",
+        "target": "core::panicking::panic_bounds_check"
+      },
+      {
+        "address": "2c2eec",
+        "opcode": "call",
+        "operands": "*0x769c6(%rip)        # 3398b8 <_DYNAMIC+0x328>",
+        "target": "core::panicking::panic_bounds_check"
+      }
+    ]
+  }
+}

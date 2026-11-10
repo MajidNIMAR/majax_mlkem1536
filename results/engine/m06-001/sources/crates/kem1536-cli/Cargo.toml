@@ -1,0 +1,23 @@
+[package]
+name = "kem1536-cli"
+description = "Local development commands for the KEM1536 research project"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[[bin]]
+name = "kem1536"
+path = "src/main.rs"
+
+[dependencies]
+kem1536 = { path = "../kem1536" }
+kem1024-reference = { path = "../kem1024-reference" }
+serde_json.workspace = true
+
+[features]
+research-vectors = ["kem1536/research-vectors"]
+
+[lints]
+workspace = true
+

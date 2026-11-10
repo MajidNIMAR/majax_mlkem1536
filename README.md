@@ -1,42 +1,115 @@
-# Majax MLKEM1536 — experimental KEM engine
+# MAJAX R6
 
-A working Rust implementation of **KEM1536-DEV-Q7681-R1**, an experimental
-module-lattice KEM with **six polynomials of 256 coefficients**. This
-repository publishes the engine, its specification, independent Python
-reference and preserved research evidence while development continues.
+**Post-quantum KEM research and cryptographic engineering**
 
-**1536 means 6 × 256 coefficients.** It is neither a security-bit claim nor
-a standardized ML-KEM parameter-set name. The R1 profile has its own modulus,
-formats and hash domains. It is not interoperable with FIPS 203 ML-KEM.
+MAJAX R6 is an open research and engineering project built around a working
+Rust key encapsulation mechanism. It brings together a specified cryptographic
+construction, polynomial arithmetic, key and secret management, independent
+reference implementations, cryptanalysis and reproducible experiments.
 
-This is a separate research project by the author of
-[majax-mlkem1024-demo](https://github.com/MajidNIMAR/majax-mlkem1024-demo).
-That companion repository demonstrates the standardized ML-KEM parameter
-sets through PQClean-backed dependencies. Here, the R1 arithmetic and KEM
-operations are implemented in the project's Rust source. Neither repository
-publishes the operational architecture of Majax Messenger.
+The implemented construction is **`KEM1536-DEV-Q7681-R1`**: a module-lattice
+KEM with **six polynomials of 256 coefficients**. The project develops the
+engine itself and preserves the reasoning, measurements and implementation
+evidence needed to examine its evolution.
 
-## Implemented today
+[Specification](docs/SPECIFICATION_DEV_Q7681_R1.md) ·
+[Engine and API guide](docs/MOTEUR_KEM_R1.md) ·
+[Research report](docs/RAPPORT_RECHERCHE.md) ·
+[M06 engineering review](docs/M06_MOTEUR_ACCUMULATION_NTT.md)
 
-- Key generation, encapsulation and decapsulation, with operating-system
-  randomness and implicit ciphertext rejection.
-- Typed public keys, private keys, ciphertexts and shared secrets.
-- Specialized arithmetic in `Z_7681[X]/(X^256 + 1)` with rank six and CBD(3)
-  noise; exact canonical 13-bit `u` and 5-bit compressed `v`.
-- An independent Python implementation for synthetic reference checks.
-- Windows and Linux/WSL2 execution, frozen vectors, negative tests,
-  sanitizer checks, timing diagnostics, binary inspection and benchmarks.
+[![Main-branch checks](https://github.com/MajidNIMAR/majax_mlkem1536/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/MajidNIMAR/majax_mlkem1536/actions/workflows/ci.yml)
+
+## Research program and engine architecture
+
+The work connects three areas:
+
+- **Cryptographic research:** construction and parameter analysis, exact
+  correctness certificates, conditional security arguments and comparisons
+  under declared attack models.
+- **Engine development:** KeyGen, Encaps and Decaps in Rust, operating-system
+  randomness, typed objects, validated encodings and implicit rejection.
+- **Implementation evaluation:** independent Python checks, malformed inputs,
+  instrumented diagnostics, compiled-code review and preserved raw benchmarks.
+
+| Component | Current realization | Source or reference |
+|---|---|---|
+| KEM construction | R1 key generation, encapsulation, decapsulation and implicit rejection | [KEM implementation](crates/kem1536/src/dev_kem.rs) |
+| Polynomial arithmetic | Scalar negacyclic NTT in `Z_7681[X]/(X^256 + 1)`, reused transforms and accumulated products | [Arithmetic implementation](crates/kem1536/src/engine_poly.rs) |
+| Secret ownership | Typed keys and shared secrets, bounded buffers and explicit zeroizing owners | [Secret storage](crates/kem1536/src/secret_box.rs), [implementation review](docs/M06_REVUE_INDEPENDANTE.md) |
+| Independent reference | Separate Python implementation and generic convolution checks | [Python reference](research/kem_r1_reference.py), [certificate/program bridge](docs/LIEN_CERTIFICAT_PROGRAMME_R1.md) |
+| Integration | Rust library API, command-line diagnostics and a KEM/HKDF/AEAD consumer example | [Engine guide](docs/MOTEUR_KEM_R1.md), [channel example](examples/r1-channel-demo/README.md) |
+
+R1 uses rank six, modulus **7681**, **CBD(3)** noise, exact canonical
+13-bit `u` coefficients and 5-bit compressed `v`. Its serialized objects are:
 
 | R1 object | Bytes |
-| --- | ---: |
+|---|---:|
 | Encapsulation/public key | 2528 |
 | Expanded decapsulation/private key | 5088 |
 | Ciphertext | 2656 |
 | Shared secret | 32 |
 
-The [specification](docs/SPECIFICATION_DEV_Q7681_R1.md) defines the actual
-construction. The [engine guide](docs/MOTEUR_KEM_R1.md) explains the API and
-its validation boundary. Research notes are currently maintained in French.
+**R6 denotes the module rank; 1536 denotes the coefficient count, 6 × 256.**
+The implemented R1 identifier, formats and hash domains are defined by its
+own specification. R1 is distinct from the standardized FIPS 203 ML-KEM
+parameter sets and does not interoperate with them. These names do not
+represent a security-bit rating.
+
+This is a separate research project by the author of
+[majax-mlkem1024-demo](https://github.com/MajidNIMAR/majax-mlkem1024-demo),
+the companion repository for standardized ML-KEM parameter sets. R6's
+arithmetic and KEM operations are implemented in this repository. The
+project is developed independently from Majax Messenger's operational
+architecture.
+
+## Current engineering milestone: M06
+
+M06 reuses transformed operands and accumulates rank-six products before
+a single inverse transform. Coefficient and NTT representations have
+distinct types, and results are written into storage owned by the caller.
+The number of transforms per KeyGen/Encaps/Decaps operation changes from
+**108/126/144 to 48/55/68**, while preserving R1 formats and outputs on the
+complete regression corpora.
+
+The [recorded comparison](docs/M06_MESURES_ET_DURCISSEMENT.md) contains
+**60,000 raw observations** in five alternating series on an AMD Ryzen 7
+2700 under WSL2 Ubuntu 22.04, with Rust 1.91.1:
+
+| Operation | Median before M06, µs | Median M06, µs | Ratio before/M06 |
+|---|---:|---:|---:|
+| Key generation | 912.009 | 508.664 | 1.79× |
+| Encapsulation | 1045.195 | 560.313 | 1.87× |
+| Valid decapsulation | 1207.790 | 686.917 | 1.76× |
+
+These are measurements from the documented machine and harness. All
+outliers are retained. The speedup has a storage tradeoff: several static
+LLVM stack frames increase. Whole-process RSS is measured separately and
+does not establish the engine's dynamic stack peak. The measurement note
+preserves the distributions, build inputs, compiler details and limitations.
+
+## Preserved implementation and research evidence
+
+| Evidence | Recorded scope |
+|---|---|
+| [R1 reference vectors](results/engine/r1-001/) and [rejection corpus](results/engine/r1-rejections-001/) | 1,000 complete Rust/Python vectors, 10,000 fresh exchanges and 10,000 paired rejection outputs |
+| [M06 engine regression and binary review](results/engine/m06-001/) | Complete Windows/Linux equality to the frozen outputs: 1,000 vectors, 10,000 rejections, 10,000 mutations and 20,000 format cases per system; four preserved binary inventories and targeted owner review |
+| [M06 instrumented campaign](results/engine/m06-fuzz-001/) | 850.99 CPU seconds with ASan and rebuilt standard library, a separate API supplement, four source-coverage exports and their LLVM union |
+| [M06 independent corpus replay](docs/M06_MESURES_ET_DURCISSEMENT.md) | 8,638 deterministic Rust/Python requests match, including 1,545 decapsulation probes with accepted imported private keys; fresh-randomness operations remain a separate harness check |
+| [M06 integration receipts](results/engine/m06-verification-001/) | 154 Python tests on Windows, 25 targeted M06 tests on Linux, preserved Rust/Clippy/format checks and evidence replay; the Linux scope is not a new complete project check |
+| [Correctness certificate and program bridge](docs/LIEN_CERTIFICAT_PROGRAMME_R1.md) | Exact finite reconstruction and explicit ideal-sampler assumptions linked to the implemented operations |
+| [M05 security analysis](docs/SECURITE_CONCRETE_R1_M05.md) and [M06 ideal rejection](docs/REJET_IMPLICITE_R1_M06.md) | Conditional ROM/QROM bounds, query budgets, exact rational panels and explicit remaining obligations |
+| [Experimental KEM comparison](docs/COMPARAISON_EXPERIMENTALE_M05.md) | 108 finite estimator outputs across six profiles/problems, with declared rounding proxies and 36 historical cross-checks |
+
+The [M04 review](docs/M04_MOTEUR_NTT_ET_CONTROLES.md) records the earlier
+memory correction, NTT introduction and delivery checks. Its
+[distribution](docs/DISTRIBUTION_M04.md) and
+[direct repository comparison](docs/COMPARAISON_DEPOTS_EXECUTION_M04.md)
+retain their original version and measurement scope.
+
+The historical long M03 campaign reached **86,941.20 cumulative CPU
+seconds** on its own frozen implementation. Its
+[automatic archive](results/engine/m03-fuzz-001/) still requires final
+review. That duration is kept separate from the later M06 campaign.
 
 ## Run the engine
 
@@ -54,13 +127,14 @@ bash scripts/bootstrap.sh
 bash scripts/engine.sh self-test
 ```
 
-The scripts install Rust **1.91.1** under this checkout's `.tools/` directory.
-The self-test builds the release executable and checks 16 fresh exchanges
-and 16 implicit rejections. Its JSON summary contains no private key or
-shared secret. Build only with `engine.ps1 build` or `engine.sh build`;
-the executable is `target/release/kem1536[.exe]`.
+The scripts install Rust **1.91.1** inside this checkout's `.tools/`
+directory. The self-test builds the release executable and checks
+**16 fresh exchanges and 16 implicit rejections**. Its JSON summary
+contains no private key or shared secret.
 
-For 10,000 additional fresh exchanges and rejection checks:
+Build only with `engine.ps1 build` or `engine.sh build`; the executable
+is `target/release/kem1536[.exe]`. For 10,000 additional fresh exchanges
+and rejection checks:
 
 ```powershell
 .\scripts\engine.ps1 stress -Count 10000
@@ -70,13 +144,16 @@ For 10,000 additional fresh exchanges and rejection checks:
 bash scripts/engine.sh stress 10000
 ```
 
-## Verify the research evidence
+The [engine guide](docs/MOTEUR_KEM_R1.md) documents the Rust API. The
+[consumer example](examples/r1-channel-demo/README.md) shows how to combine
+the KEM's shared secret with HKDF and AEAD for a channel experiment.
 
-The full checks also require **Python 3.11 or newer** (`python` on Windows,
-`python3` on Linux). On Debian/Ubuntu, install the Python venv support
-package if it is not already available. Setup installs **NumPy 2.3.5** in
-a local virtual environment and downloads hash-pinned external research
-references. It does not install Python packages globally.
+## Reproduce the checks
+
+The complete checks require **Python 3.11 or newer** (`python` on Windows,
+`python3` on Linux). Setup creates a local virtual environment with
+**NumPy 2.3.5** and retrieves hash-pinned external research references.
+On Debian/Ubuntu, Python venv support must be available.
 
 ```powershell
 .\scripts\research-setup.ps1
@@ -89,61 +166,52 @@ bash scripts/dev.sh check
 ```
 
 `check` runs formatting, Clippy, Rust and Python tests, the standardized
-ML-KEM-1024 comparison and integrity checks over the research snapshots.
-It replays **16** cases from each of the large R1 regression corpora.
-Commands for full replay are documented in the engine and hardening guides.
-The workflow in `.github/workflows/ci.yml` runs the full check command on
-Windows and Ubuntu; its actual status is visible in this repository's
-Actions tab.
+ML-KEM-1024 comparison and integrity checks over the preserved snapshots.
+Its ordinary reference replay uses **16 cases** from each of the large
+R1 corpora. Full-corpus commands and their retained results are documented
+in the engine and hardening guides. Evidence verifiers recompute retained
+data; they do not rerun long campaigns or benchmarks as part of every check.
 
-The complete checks passed on fresh GitHub-hosted **Windows and Ubuntu**
-runners for [code revision 75c26f6](https://github.com/MajidNIMAR/majax_mlkem1536/commit/75c26f668a99cf0676a01494bc33a7c99a193803),
-including **95 Python tests** per platform. The
+The published CI baseline passed on fresh GitHub-hosted **Windows and
+Ubuntu** runners for [revision 75c26f6](https://github.com/MajidNIMAR/majax_mlkem1536/commit/75c26f668a99cf0676a01494bc33a7c99a193803),
+with **95 Python tests** per platform. Its
 [CI run](https://github.com/MajidNIMAR/majax_mlkem1536/actions/runs/40210986511)
-and [preserved logs and provenance](results/publication/portability-001/)
-record the result and the two portability fixes found during publication.
+and [logs](results/publication/portability-001/)
+preserve that historical result. The M04–M06 evidence above records
+subsequent development and validation; each snapshot retains its own scope.
+Current public workflow results for the revision under test are available
+in the [repository's Actions tab](https://github.com/MajidNIMAR/majax_mlkem1536/actions).
 
-## Preserved evidence and current limits
+## Security and research status
 
-| Evidence | Preserved scope |
-| --- | --- |
-| [M01 vectors](results/engine/r1-001/) | 1,000 complete vectors matched between Rust and Python; 10,000 fresh exchanges |
-| [M01 rejection corpus](results/engine/r1-rejections-001/) | 10,000 paired rejection secrets matched exactly |
-| [M02 hardening](docs/DURCISSEMENT_MOTEUR_M02.md) | Full Windows/Linux regression, 20,000 format cases and 10,000 mutations per platform, sanitizer and timing diagnostics |
-| [M03 measurements](docs/M03_FUZZ_BINAIRES_BENCHMARKS.md) | 60,000 raw benchmark observations and compiled-code review on Windows/Linux |
-| [M03 short fuzzing](results/engine/m03-smoke-001/) | 85.01 CPU seconds; 511 retained deterministic requests checked against the independent Python reference |
+R6 is an **experimental research implementation** intended for analysis,
+reproducibility and independent review. Parameter selection and cryptanalysis
+continue. The correctness certificates and conditional ROM/QROM arguments
+retain their stated assumptions; the seeded-PKE obligations, concrete
+SHAKE-based security argument and final reduction margins remain open.
+The loose quantum rejection bound does not certify the earlier illustrative
+allocation. Formal constant-time execution, complete erasure of secret
+copies, an external security audit and standardization remain future work.
+The available evidence does not establish a global security-bit rating or
+production-security guarantee. See [SECURITY.md](SECURITY.md).
 
-The separate long fuzzing campaign has a target of **24 cumulative CPU
-hours** across four workers. At the initial public snapshot it is still
-running locally. Its live ignored output is not a completed public result.
-Publication of its final archive requires completion and review.
-
-Parameter selection and cryptanalysis remain open. The existing checks do
-not establish a security level, a formal constant-time guarantee, complete
-secret-copy erasure or external certification. M03-A01 documents a 512-byte
-temporary without an explicit wipe in the reviewed Windows multiplication
-binary. See [SECURITY.md](SECURITY.md) and the detailed review.
-
-Functional agreement across implementations and tested platforms is
-documented. Byte-for-byte reproducible **builds** have not yet been established
-for R1. The companion 1024 project's build procedure is a separate result.
-
-## Follow development
+## Research record and next work
 
 - [Research report](docs/RAPPORT_RECHERCHE.md) and [research journal](docs/JOURNAL_RECHERCHE.md)
 - [Engine roadmap](docs/FEUILLE_DE_ROUTE_MOTEUR.md)
-- [Initial requirements](CAHIER_DES_CHARGES_KEM_1536.md) and [profile specification](docs/SPECIFICATION_DEV_Q7681_R1.md)
-- [Detailed research context](docs/CONTEXTE_RECHERCHE.md) and [development guide](docs/DEVELOPPEMENT.md)
-- [Public snapshot and reproduction notes](docs/PUBLICATION_GITHUB.md)
+- [Initial requirements](CAHIER_DES_CHARGES_KEM_1536.md) and [R1 specification](docs/SPECIFICATION_DEV_Q7681_R1.md)
+- [Detailed context](docs/CONTEXTE_RECHERCHE.md) and [development guide](docs/DEVELOPPEMENT.md)
+- [Publication provenance](docs/PUBLICATION_GITHUB.md)
 
-Historical P0 and twenty J2 snapshots are preserved with negative results
-and model assumptions. P0 is not the executable R1 profile. Development
-continues with reproducibility, hardening and independent cryptanalysis.
+Research notes are currently maintained in French. The historical P0
+candidate and twenty J2 snapshots preserve the original hypotheses,
+negative results and decisions. Current work continues on memory usage,
+implementation guarantees, portable delivery and the remaining security
+arguments.
 
 ## License and attribution
 
-Original project contributions are licensed under **Apache-2.0**, consistent
-with the companion 1024 repository. Third-party sources and datasets retain
-their own terms; see [NOTICE](NOTICE) and
-[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). The local research workspace
-is named `NIST`; that name does not indicate institutional affiliation.
+Original project contributions are licensed under **Apache-2.0**.
+Third-party material retains its own terms; see [NOTICE](NOTICE) and
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). The local workspace name
+`NIST` does not indicate institutional affiliation.

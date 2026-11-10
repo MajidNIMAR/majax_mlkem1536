@@ -1,0 +1,203 @@
+{
+  "phase": "measure",
+  "created_utc": "2026-10-25T20:36:08.794741+00:00",
+  "build_sha256": "64af56d73dc8bb4ae8992d30e28cb8b3dd4432a9f14afc5bea05ca83a86458a9",
+  "controller_sha256": "415bff6fad6efd541698060e723f3ca35d9d9a9143d3b4a839233f0b00089a5d",
+  "engine_labels": {
+    "R1": "R1-schoolbook-M02",
+    "original-ML-KEM-1024": "original-ML-KEM-1024"
+  },
+  "binary_sha256": "131e8610487ebf5b39d971b690639e3550edecbeebf3ea126e3c6811bcf79681",
+  "raw_sha256": "6241b11eb20e250055b38b5b1a766e9a634c961ec9f49b63f2ed527bbe3aee6e",
+  "configuration": {
+    "series": 5,
+    "warmups": 50,
+    "observations_per_series": 200
+  },
+  "elapsed_wall_seconds": 23.3421358830019,
+  "CPU_user_seconds": 23.19,
+  "CPU_system_seconds": 0.03,
+  "process_max_RSS_KiB": 2432,
+  "RSS_is_combined_process_not_per_engine_memory": true,
+  "state_before": {
+    "utc": "2026-10-25T20:35:45.372168+00:00",
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "processor": "x86_64",
+    "cpu_affinity_requested": 10,
+    "load_average": [
+      6.58203125,
+      7.60107421875,
+      6.95849609375
+    ],
+    "allowed_cpus": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "cpu_model": "AMD Ryzen 7 2700 Eight-Core Processor",
+    "process_cpu_snapshot": "PID    PPID %CPU COMMAND\n   9303    9302 98.5 api_sequence\n  12804   12803 93.9 decapsulate\n  12807   12806 90.7 import_private\n  12692   12691 58.1 import_public\n  13430   13425 15.0 python3\n  13486   12898 15.0 rustc\n  12898   12897  2.9 cargo\n  13488   12898  1.0 build-script-bu\n    398     320  0.2 python3\n   7309    7304  0.1 python3\n      1       0  0.0 systemd\n      2       1  0.0 init-systemd(Ub\n      8       2  0.0 init\n     62       1  0.0 systemd-journal\n     91       1  0.0 systemd-udevd\n    103       1  0.0 systemd-resolve\n    107       1  0.0 systemd-timesyn\n    198       1  0.0 cron\n    200       1  0.0 dbus-daemon\n    205       1  0.0 networkd-dispat\n    206       1  0.0 rsyslogd\n    209       1  0.0 systemd-logind\n    231       1  0.0 agetty\n    233       1  0.0 agetty\n    247       1  0.0 unattended-upgr\n    318       2  0.0 SessionLeader\n    319     318  0.0 Relay(320)\n    320     319  0.0 bash\n    321       2  0.0 login\n    366       1  0.0 systemd\n    367     366  0.0 (sd-pam)\n    377     321  0.0 bash\n   7303       2  0.0 SessionLeader\n   7304    7303  0.0 Relay(7309)\n   9302     398  0.0 time\n  10900       2  0.0 SessionLeader\n  10901   10900  0.0 Relay(10902)\n  10902   10901  0.0 bash\n  12691     398  0.0 time\n  12803     398  0.0 time\n  12806     398  0.0 time\n  12897   10902  0.0 bash\n  13424       2  0.0 SessionLeader\n  13425   13424  0.0 Relay(13430)\n  13494   13488  0.0 rustc\n  13499   13430  0.0 ps",
+    "concurrent_fuzzing": {
+      "updated_utc": "2026-10-25T20:35:41.150726+00:00",
+      "worker_statuses": {
+        "import_public": "running",
+        "import_private": "running",
+        "decapsulate": "running",
+        "api_sequence": "running"
+      }
+    }
+  },
+  "state_after": {
+    "utc": "2026-10-25T20:36:08.841056+00:00",
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "processor": "x86_64",
+    "cpu_affinity_requested": 10,
+    "load_average": [
+      6.70166015625,
+      7.56103515625,
+      6.96044921875
+    ],
+    "allowed_cpus": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "cpu_model": "AMD Ryzen 7 2700 Eight-Core Processor",
+    "process_cpu_snapshot": "PID    PPID %CPU COMMAND\n   9303    9302 98.6 api_sequence\n  13707   12898 98.0 rustc\n  12804   12803 94.8 decapsulate\n  12807   12806 92.0 import_private\n  12692   12691 60.9 import_public\n  12898   12897  2.2 cargo\n  13430   13425  2.1 python3\n    398     320  0.2 python3\n   7309    7304  0.1 python3\n      1       0  0.0 systemd\n      2       1  0.0 init-systemd(Ub\n      8       2  0.0 init\n     62       1  0.0 systemd-journal\n     91       1  0.0 systemd-udevd\n    103       1  0.0 systemd-resolve\n    107       1  0.0 systemd-timesyn\n    198       1  0.0 cron\n    200       1  0.0 dbus-daemon\n    205       1  0.0 networkd-dispat\n    206       1  0.0 rsyslogd\n    209       1  0.0 systemd-logind\n    231       1  0.0 agetty\n    233       1  0.0 agetty\n    247       1  0.0 unattended-upgr\n    318       2  0.0 SessionLeader\n    319     318  0.0 Relay(320)\n    320     319  0.0 bash\n    321       2  0.0 login\n    366       1  0.0 systemd\n    367     366  0.0 (sd-pam)\n    377     321  0.0 bash\n   7303       2  0.0 SessionLeader\n   7304    7303  0.0 Relay(7309)\n   9302     398  0.0 time\n  10900       2  0.0 SessionLeader\n  10901   10900  0.0 Relay(10902)\n  10902   10901  0.0 bash\n  12691     398  0.0 time\n  12803     398  0.0 time\n  12806     398  0.0 time\n  12897   10902  0.0 bash\n  13424       2  0.0 SessionLeader\n  13425   13424  0.0 Relay(13430)\n  13815   12898  0.0 rustc\n  13820   13430  0.0 ps",
+    "concurrent_fuzzing": {
+      "updated_utc": "2026-10-25T20:36:01.178935+00:00",
+      "worker_statuses": {
+        "import_public": "running",
+        "import_private": "running",
+        "decapsulate": "running",
+        "api_sequence": "running"
+      }
+    }
+  },
+  "uncontended_performance_claim": false,
+  "validation": {
+    "metadata": {
+      "kind": "metadata",
+      "schema": 1,
+      "configuration": {
+        "series": 5,
+        "warmups_per_operation_and_series": 50,
+        "observations_per_operation_and_series": 200
+      },
+      "engines": [
+        {
+          "name": "R1",
+          "backend": "Rust baseline x86-64; arithmetic defined by frozen source",
+          "public_key_bytes": 2528,
+          "expanded_private_key_bytes": 5088,
+          "ciphertext_bytes": 2656,
+          "shared_secret_bytes": 32
+        },
+        {
+          "name": "original-ML-KEM-1024",
+          "backend": "x86_64-avx2",
+          "public_key_bytes": 1568,
+          "expanded_private_key_bytes": 3168,
+          "ciphertext_bytes": 1568,
+          "shared_secret_bytes": 32
+        }
+      ],
+      "architecture": "x86_64",
+      "operating_system": "linux",
+      "deterministic_testing_enabled": false,
+      "caller_validation_in_timer": false,
+      "caller_output_drop_in_timer": false,
+      "application_rng_path_in_timer": true,
+      "public_api_representation_note": "R1 typed prevalidated keys; original public byte APIs include their imports/copies; internal drops and validation remain inside each API call"
+    },
+    "raw_observations": 6000,
+    "summaries": [
+      {
+        "kind": "summary",
+        "engine": "R1",
+        "operation": "decaps",
+        "observations": 1000,
+        "median_nanoseconds": 2887135.5,
+        "p95_nanoseconds_nearest_rank": 4193905,
+        "minimum_nanoseconds": 2577853,
+        "maximum_nanoseconds": 9391463
+      },
+      {
+        "kind": "summary",
+        "engine": "R1",
+        "operation": "encaps",
+        "observations": 1000,
+        "median_nanoseconds": 2547591.5,
+        "p95_nanoseconds_nearest_rank": 3627394,
+        "minimum_nanoseconds": 2261081,
+        "maximum_nanoseconds": 5275454
+      },
+      {
+        "kind": "summary",
+        "engine": "R1",
+        "operation": "keygen",
+        "observations": 1000,
+        "median_nanoseconds": 2544544.5,
+        "p95_nanoseconds_nearest_rank": 3879969,
+        "minimum_nanoseconds": 1958192,
+        "maximum_nanoseconds": 6032768
+      },
+      {
+        "kind": "summary",
+        "engine": "original-ML-KEM-1024",
+        "operation": "decaps",
+        "observations": 1000,
+        "median_nanoseconds": 84443.0,
+        "p95_nanoseconds_nearest_rank": 140303,
+        "minimum_nanoseconds": 81195,
+        "maximum_nanoseconds": 381404
+      },
+      {
+        "kind": "summary",
+        "engine": "original-ML-KEM-1024",
+        "operation": "encaps",
+        "observations": 1000,
+        "median_nanoseconds": 83132.5,
+        "p95_nanoseconds_nearest_rank": 124107,
+        "minimum_nanoseconds": 78887,
+        "maximum_nanoseconds": 258085
+      },
+      {
+        "kind": "summary",
+        "engine": "original-ML-KEM-1024",
+        "operation": "keygen",
+        "observations": 1000,
+        "median_nanoseconds": 91696.0,
+        "p95_nanoseconds_nearest_rank": 128408,
+        "minimum_nanoseconds": 77998,
+        "maximum_nanoseconds": 246477
+      }
+    ],
+    "all_samples_retained": true
+  }
+}

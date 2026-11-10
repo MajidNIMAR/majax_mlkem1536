@@ -1,0 +1,218 @@
+{
+  "per_target_counts_summed": false,
+  "source_union_validated": true,
+  "merge_command": [
+    "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-rustup/toolchains/1.91.1-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/bin/llvm-profdata",
+    "merge",
+    "-sparse",
+    "/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m06-fuzz-001/import_public-coverage.profdata",
+    "/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m06-fuzz-001/import_private-coverage.profdata",
+    "/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m06-fuzz-001/decapsulate-coverage.profdata",
+    "/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m06-fuzz-001/api_sequence-coverage.profdata",
+    "-o",
+    "/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m06-fuzz-001/union-coverage.profdata"
+  ],
+  "export_command": [
+    "/mnt/c/Users/majax/Documents/Codex/NIST/.tools/linux-rustup/toolchains/1.91.1-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/bin/llvm-cov",
+    "export",
+    "-summary-only",
+    "/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m06-fuzz-001/coverage-bin/import_public",
+    "-object=/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m06-fuzz-001/coverage-bin/import_private",
+    "-object=/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m06-fuzz-001/coverage-bin/decapsulate",
+    "-object=/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m06-fuzz-001/coverage-bin/api_sequence",
+    "-instr-profile=/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m06-fuzz-001/union-coverage.profdata"
+  ],
+  "profdata_sha256": "555757fcb23ecc6235c253f0f414b5cbbb60cec241988b5059a371c8b1ace1cb",
+  "core_files": [
+    {
+      "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m06-fuzz-001/source/crates/kem1536/src/dev_kem.rs",
+      "summary": {
+        "branches": {
+          "count": 0,
+          "covered": 0,
+          "notcovered": 0,
+          "percent": 0
+        },
+        "functions": {
+          "count": 51,
+          "covered": 50,
+          "percent": 98.0392156862745
+        },
+        "instantiations": {
+          "count": 53,
+          "covered": 52,
+          "percent": 98.11320754716981
+        },
+        "lines": {
+          "count": 363,
+          "covered": 334,
+          "percent": 92.01101928374655
+        },
+        "mcdc": {
+          "count": 0,
+          "covered": 0,
+          "notcovered": 0,
+          "percent": 0
+        },
+        "regions": {
+          "count": 730,
+          "covered": 680,
+          "notcovered": 50,
+          "percent": 93.15068493150685
+        }
+      }
+    },
+    {
+      "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m06-fuzz-001/source/crates/kem1536/src/engine_poly.rs",
+      "summary": {
+        "branches": {
+          "count": 0,
+          "covered": 0,
+          "notcovered": 0,
+          "percent": 0
+        },
+        "functions": {
+          "count": 17,
+          "covered": 14,
+          "percent": 82.35294117647058
+        },
+        "instantiations": {
+          "count": 21,
+          "covered": 18,
+          "percent": 85.71428571428571
+        },
+        "lines": {
+          "count": 120,
+          "covered": 90,
+          "percent": 75
+        },
+        "mcdc": {
+          "count": 0,
+          "covered": 0,
+          "notcovered": 0,
+          "percent": 0
+        },
+        "regions": {
+          "count": 189,
+          "covered": 154,
+          "notcovered": 35,
+          "percent": 81.48148148148148
+        }
+      }
+    },
+    {
+      "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m06-fuzz-001/source/crates/kem1536/src/lib.rs",
+      "summary": {
+        "branches": {
+          "count": 0,
+          "covered": 0,
+          "notcovered": 0,
+          "percent": 0
+        },
+        "functions": {
+          "count": 7,
+          "covered": 0,
+          "percent": 0
+        },
+        "instantiations": {
+          "count": 7,
+          "covered": 0,
+          "percent": 0
+        },
+        "lines": {
+          "count": 61,
+          "covered": 0,
+          "percent": 0
+        },
+        "mcdc": {
+          "count": 0,
+          "covered": 0,
+          "notcovered": 0,
+          "percent": 0
+        },
+        "regions": {
+          "count": 78,
+          "covered": 0,
+          "notcovered": 78,
+          "percent": 0
+        }
+      }
+    },
+    {
+      "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m06-fuzz-001/source/crates/kem1536/src/reference_ring.rs",
+      "summary": {
+        "branches": {
+          "count": 0,
+          "covered": 0,
+          "notcovered": 0,
+          "percent": 0
+        },
+        "functions": {
+          "count": 10,
+          "covered": 0,
+          "percent": 0
+        },
+        "instantiations": {
+          "count": 10,
+          "covered": 0,
+          "percent": 0
+        },
+        "lines": {
+          "count": 46,
+          "covered": 0,
+          "percent": 0
+        },
+        "mcdc": {
+          "count": 0,
+          "covered": 0,
+          "notcovered": 0,
+          "percent": 0
+        },
+        "regions": {
+          "count": 68,
+          "covered": 0,
+          "notcovered": 68,
+          "percent": 0
+        }
+      }
+    },
+    {
+      "filename": "/mnt/c/Users/majax/Documents/Codex/NIST/artifacts/generated/m06-fuzz-001/source/crates/kem1536/src/secret_box.rs",
+      "summary": {
+        "branches": {
+          "count": 0,
+          "covered": 0,
+          "notcovered": 0,
+          "percent": 0
+        },
+        "functions": {
+          "count": 5,
+          "covered": 5,
+          "percent": 100
+        },
+        "instantiations": {
+          "count": 14,
+          "covered": 10,
+          "percent": 71.42857142857143
+        },
+        "lines": {
+          "count": 15,
+          "covered": 15,
+          "percent": 100
+        },
+        "mcdc": {
+          "count": 0,
+          "covered": 0,
+          "notcovered": 0,
+          "percent": 0
+        },
+        "regions": {
+          "count": 17,
+          "covered": 17,
+          "notcovered": 0,
+          "percent": 100
+        }
+      }
+    }
+  ]
+}

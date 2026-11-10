@@ -1156,3 +1156,218 @@ Le dernier commit de publication ne contient que documents et preuves ;
 le code demeure celui de la CI verte. La campagne longue M03 reste active
 et distincte. Aucune clôture de J2/J3/J4 ou validation de sécurité n'est
 déduite de la réussite de publication.
+
+## 25 octobre 2026 — Programme proposé pour améliorer le moteur
+
+À la demande de l'auteur, comparaison des écarts techniques et des garanties
+avec le projet 1024. Deux lectures complémentaires du dossier confirment
+l'ordre proposé : traiter le constat mémoire M03-A01 puis la NTT scalaire
+compatible ; poursuivre le durcissement, les releases reproductibles et
+la comparaison directe. La sécurité CCA, le rattachement de la correction
+au programme et les hypothèses d'attaques communes restent en parallèle.
+Le programme et ses critères de sortie sont consignés dans
+PROGRAMME_AMELIORATION_M04.md, lié à la feuille de route et au rapport.
+
+Le dossier distingue normalisation d'un nouvel algorithme, validation
+CAVP d'une fonction approuvée et validation de module FIPS 140-3.
+Aucune sélection institutionnelle ou supériorité n'est promise. La campagne
+M03 existante n'a pas été modifiée. Aucun code moteur n'est changé pendant
+cette étape de priorisation ; aucune NTT ni correction A01 n'est déclarée
+livrée par le document. Les documents sont conservés localement.
+
+### 25 octobre 2026 — M04, priorité aux travaux de sécurité 1–3
+
+Argument exact R1, lien certificat/programme indépendant et comparaison
+commune livrés/revus avant changement moteur. Instantané
+`results/security/m04-001`, douze nouveaux tests réussis. Certificat entier
+≤2^-310 dans le modèle idéal ; pire message avant moyenne sur clés, pas de
+borne pour toute clé importée. Trente paires d'estimations compatibles et
+quatre points dual/ressources, sans nouveau coût global. C01 concret/QROM
+restent ouverts. Autorisation utilisateur appliquée pour poursuivre ensuite
+mémoire, NTT, contrôles, distribution et comparaison directe des dépôts.
+Aucun dossier institutionnel ni contact externe ; campagne longue inchangée.
+
+### 25 octobre 2026 — M04 terminé : réalisation, distribution et preuves
+
+Après les trois travaux scientifiques, NTT scalaire et destinations possédées
+intégrées sans changer les octets R1. Corpus intégraux sur deux OS passés,
+M03-A01 corrigé sur les binaires livrés, deux revues machine et deux écarts
+de tests corrigés. Doubles builds identiques sur deux OS (003), rempaquetage
+004 à 30 entrées compilables identiques ; licences, inventaires et prérequis
+inclus. Comparaison du premier dépôt figé, 24000 mesures, gain médian R1
+×2,25–×2,64 sous charge ; le 1024 reste plus rapide. Diagnostic temporel de
+32000 observations, maxima |t| 1,578/1,982, sans preuve CT. ASan avec std
+recompilée : 532,44 s CPU, dont complément API de 73,47 s et 510 exécutions
+après initialisation. Deux checks complets réussis, 115 tests Python passés.
+Archives nouvelles `results/security/m04-001` et `results/engine/m04-001` ;
+609 empreintes et quatre nouveaux désassemblages vérifiés. C01 concret/QROM,
+effacement global et 23 appels indirects Linux restent ouverts. Campagne
+longue M03 historique en cours, sans crédit transféré à la NTT. Aucun push
+ou contact externe. Rapport et guides actualisés.
+
+
+## Actualisation automatique M03 — 2026-10-25T22:46:15.756612+00:00
+
+Temps CPU de fuzzing cumulé mesuré : 86941.20 s. Budgets atteints : True. Post-traitements : {"coverage_exported": true, "independent_corpus_replayed": true}. Preuves dans results/engine/m03-fuzz-001. La revue finale reste requise ; T07 et la validation globale ne sont pas déclarés acquis automatiquement.
+
+### 26 octobre 2026 — M05, sécurité conditionnelle et panel expérimental
+
+Points 1/2 exécutés sans modification du moteur R1. Nouveau transfert de
+correction aux graines dans le modèle RO, δ_RO≤(1−2^-256)δ_cert, avec
+collision des graines traitée par annulation des produits. Comptage ROM
+incluant les appels implicites ; coefficient CPA prudent et incertitude de
+normalisation documentée. Théorème 22 GYY25 relu et rattaché au FO implicite,
+avec coût du dispatch quantique. Six panneaux rationnels et sept tests
+dans `results/security/m05-cca-001` ; CPA/OW, PRF, constantes finales et
+Keccak concret restent ouverts, sans fermeture C01.
+
+Panel de 108 estimations finies, 690,37 s, sources épinglées et 229 fichiers
+dans `results/security/m05-comparison-001`. Aigis asymétrique, KINDI degré
+512 et uniforme non centrée ; compression et proxys distingués. Trente-six
+croisements historiques exacts, 23 554 résidus de quantificateurs contrôlés,
+six tests comparatifs. R1 dépasse les proxys rang quatre/KINDI étudiés,
+mais reste sous le point académique rang six q=3329 dans les six conventions.
+Résultat négatif conservé ; correction P0 distincte, pas de changement de
+paramètres. Deux budgets séparés même lorsque leur optimum calculé coïncide.
+Extrapolations, mémoire et succès conditionnels explicités.
+
+Revue contradictoire et 13 nouveaux tests/rejeux Windows/Linux réussis.
+Intégration aux deux scripts `check`, rapport et liens de suivi actualisés.
+`check` intégral Windows réussi avec 128 tests Python, tests Rust,
+formatage/Clippy, instantanés et auto-test ; Linux valide les tests et
+rejeux ciblés M05, pas un nouveau contrôle intégral.
+Reçus dans `results/security/m05-verification-001`. L'archive automatique
+M03 achevée, dont les quatre empreintes de sortie sont vérifiées, est
+conservée séparément au commit `9146ef4` avec revue finale encore requise.
+Aucun temps M03 crédité à la NTT, aucun push ni contact extérieur.
+
+### 10 novembre 2026 — M06, accumulation NTT et réutilisation
+
+Développement autorisé et lancé depuis `693c6a3`. Les coefficients et
+les valeurs NTT ont des types distincts, propriétaires `Zeroizing`.
+Réutilisation locale des six transformées de s/r, produits accumulés avec
+réduction après chaque terme et inverse directement dans la destination.
+Aucun cache secret persistant. Comptes mesurés par les tests : 48/55/68
+transformations, y compris 68 pour le rejet contrôlé, contre 108/126/144.
+La convolution générique indépendante retrouve les produits scalaires.
+
+Corpus intégraux Windows/Linux identiques aux sorties M01/M02 : 1000
+vecteurs, 10000 rejets, 10000 mutations et 20000 formats par système.
+Soixante mille observations comparatives, cinq séries alternées, sans
+compilation ou fuzzing lancé par les contrôleurs pendant les mesures.
+Rapports de médianes 1,79/1,87/1,76 ; RSS 2048 KiB dans chacun des deux
+processus séparés. Hausse des frames LLVM de KeyGen, PKE Encrypt et
+Decaps conservée ; ni pic dynamique de pile ni gain universel affirmé.
+Diagnostic séparé de 32000 observations : maxima |t| 1,559/1,658,
+zéro franchissement de 4,5, sans preuve CT ou contrôle de multiplicité.
+
+Premier contrôle global arrêté par les repères M04 du pont certificat.
+Branche M06 revue et tests mutants renforcés : chaque inverse/addition,
+transposition, reset et sortie sont contrôlés. La contre-revue a corrigé
+une ancre initialement trop globale avant le gel ; aucun changement du
+certificat run-004 ni du profil R1. L'échec initial et la reprise restent
+traçables dans les reçus d'intégration M06.
+
+Étude J achevée et contre-relue : majorants idéaux q/2^256 en ROM et
+2q/2^128 en QROM pour D>0, zéro si D=0. Sept panneaux rationnels,
+huit tests Windows/Linux, correction de constante SXY2021 et théorème
+AHU principal vérifiés. La borne quantique ne certifie pas l'allocation
+M05 2^-130 ; aucun niveau global, attaque atteignable, transfert Keccak
+ou fermeture C01 déduit. Instantané `results/security/m06-rejection-001`.
+
+La revue machine et la campagne ASan/std reconstruite M06 sont suivies
+séparément après les mesures ; leurs reçus finaux complètent cette entrée.
+
+**Clôture instrumentée M06.** 713,36 s CPU principales, puis 137,63 s de
+complément API, total 850,99 s, sans défaut signalé. Les deux segments API
+initiaux sont init-only et restent conservés ; le complément satisfait
+le garde après INITED. Quatre exports source LLVM, vraie union des quatre
+objets/profils et export complet de compteurs de fonctions conservés.
+Lignes instrumentées couvertes : dev_kem334/363, engine_poly90/120,
+secret_box15/15 ; profil/anneau de référence0, sans transfert de leurs
+tests Rust à cette couverture. Les trois fonctions constantes de tables
+NTT sont non parcourues à l'exécution ; run_diagnostics hors harnais.
+Les limites de branches et d'effacement restent ouvertes.
+
+Rejeu Linux Rust / Windows Python NumPy2.3.5 : 8638 requêtes déterministes
+identiques, dont 1545 sondes sur clés privées acceptées ; 2288 opérations
+fraîches restent uniquement vérifiées par le harnais. Le filtre automatique
+ayant interrompu le suivi délégué après la campagne principale, le
+contrôleur racine constate son achèvement, vérifie l'absence de doublon
+actif et exécute complément et post-traitement. Le code source du moteur
+reste figé. Sources, profils, binaires, corpus et notices sont préservés.
+L'exécutable Windows habituel est reconstruit et passe 16 échanges et 16 rejets ;
+ses octets concordent avec le livré examiné hors les deux champs PE.
+
+**Clôture d'intégration.** Sept contrôles finaux réussis, dont les quatre
+archives M06 sous Windows, le rejeu de l'archive instrumentée sous Linux,
+154 tests Python Windows et 25 tests M06 ciblés Linux. Les reçus incluent
+Clippy strict avec toutes les fonctionnalités, formatage, tests Rust et
+auto-test du binaire habituel. Le check global antérieur réussi conserve
+ses 144 tests et sa portée initiale ; les ajouts ultérieurs sont contrôlés
+par les reçus finaux. `results/engine/m06-verification-001` conserve
+28 membres vérifiés et son manifeste de provenance. Les études historiques
+et les paquets M04 restent figés. Préparation d'un commit local M06,
+sans publication distante ni contact externe.
+
+### 10 novembre 2026 — rangement et suppression des caches redondants
+
+À la demande de l'utilisateur, inventaire de Documents, Codex et NIST.
+Aucun moteur ou rapport 1536 extérieur à NIST identifié ; les stages du
+démonstrateur 1024 et les documents Majax restent dans leurs projets.
+Le clone public propre est déplacé de generated/publication vers
+`publication/majax_mlkem1536`, avec HEAD ecb40ad et historique intacts.
+
+267 chemins de travail supprimés : anciens builds, sorties générées déjà
+archivées, exports et installations Sage abandonnées. Les 2436 points de
+réanalyse rencontrés sont détachés sans parcourir leurs destinations.
+Le Rust Linux local 1.91.0 est retiré, défaut local réglé sur 1.91.1 ;
+1.93.0 reste disponible. L'espace libre du volume augmente d'environ
+37 Go (environ 34,4 Gio), mesuré sans additionner les tailles creuses ou liées.
+
+Avant suppression, conservation d'une seule copie de 13 produits uniques
+omis des vieux paquets : huit ELF de couverture M03, quatre ELF de
+comparaison M04, archive source finale M04. Empreintes vérifiées et index
+sous `artifacts/retained`. Les sources primaires sont dédupliquées :
+34 nouveaux fichiers distincts, 41 instances réutilisant des sources déjà
+conservées ; index privé sous `.tools/primary-sources`.
+
+Contrôles SHA-256 avant/après sur les 1885 fichiers suivis avant les mises
+à jour documentaires, dont les 1549 fichiers de résultats : identité
+conservée. L'exécutable garde son empreinte et réussit 16 échanges et
+16 rejets frais. Vérification des données officielles, des sources/ZIP
+modernes, des 158 archives Sage et fsck complet du Git public déplacé.
+Le guide `NETTOYAGE_ET_ORGANISATION.md` et le reçu
+`maintenance/cleanup-001.json` donnent les emplacements et opérations.
+Aucun changement de paramètres, de moteur ou publication distante.
+
+Exception administrative conservée : l'auto-revue de commandes refuse le
+retrait du dossier d'audit cleanup-001, puis celui de ses fichiers sans
+récursion (« blocked by policy », aucun autre motif fourni). Ses 16 petits
+fichiers restent en place, environ 0,55 Mo ; aucune nouvelle tentative de
+suppression par une autre voie. Le reçu décrit cette limite explicitement.
+
+### 10 novembre 2026 — identité de recherche et préparation de publication M06
+
+À la demande de l'utilisateur, refonte de la présentation sous le nom
+MAJAX R6 : moteur KEM post-quantique de recherche et d'ingénierie, rang six
+de 256 coefficients. Le README présente l'architecture, les opérations,
+les tailles, les gains M06, les preuves et les commandes de reproduction.
+La notice et la politique de sécurité reprennent cette identité. Aucun
+changement du profil R1, du code cryptographique ou des archives figées.
+
+L'exporteur de HEAD propre ajoute un mode de synchronisation vers le clone
+public durable. Il conserve le Git public, refuse les arbres modifiés,
+liens et collisions, et écrit les empreintes de l'instantané sans ZIP
+intermédiaire. Les notes d'entretien du PC restent locales. Dix tests
+ciblés réussissent sous Windows ; une relecture indépendante ne relève
+aucun défaut bloquant. La documentation distingue l'historique local de
+l'historique public et les validations de chaque révision.
+
+La publication doit maintenant transporter les évolutions M04–M06 vers le
+dépôt public et obtenir un contrôle complet sur exécutants Windows/Ubuntu
+neufs. Les anciens contrôles à 95 tests ne sont pas transférés à M06.
+La prochaine évolution moteur recommandée est M07 : mesurer le pic de
+pile et les allocations, puis améliorer les espaces de travail en
+préservant les octets R1 et les gains observés. Les obligations de sécurité
+restent suivies avec leurs hypothèses et limites explicites.

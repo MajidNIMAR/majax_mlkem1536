@@ -1,0 +1,330 @@
+{
+  "targets": {
+    "import_public": {
+      "segments": [
+        {
+          "segment": 0,
+          "log_relative_path": "import_public/segment-000.log",
+          "origin": "main",
+          "log_sha256": "29b02e1ffab0d58b354e6495b575d5a192418bd91802a74a475312f50353dd51",
+          "INITED_counter": 2597,
+          "final_executed_units_counter": 175002,
+          "executions_after_INITED": 172405,
+          "new_or_reduced_feature_events_after_INITED": 27,
+          "INITED_line_unique": true
+        },
+        {
+          "segment": 1,
+          "log_relative_path": "import_public/segment-001.log",
+          "origin": "main",
+          "log_sha256": "d826a9de94054c380e8d551c67ee8fad919f3b1c6c416537dc3c240da60f603e",
+          "INITED_counter": 2623,
+          "final_executed_units_counter": 148445,
+          "executions_after_INITED": 145822,
+          "new_or_reduced_feature_events_after_INITED": 24,
+          "INITED_line_unique": true
+        },
+        {
+          "segment": 2,
+          "log_relative_path": "import_public/segment-002.log",
+          "origin": "main",
+          "log_sha256": "acf23e42854b88af932b9f1ea680af20a00e4ab38be7bbe49e5a27b37fcdaed3",
+          "INITED_counter": 2647,
+          "final_executed_units_counter": 149346,
+          "executions_after_INITED": 146699,
+          "new_or_reduced_feature_events_after_INITED": 29,
+          "INITED_line_unique": true
+        },
+        {
+          "segment": 3,
+          "log_relative_path": "import_public/segment-003.log",
+          "origin": "main",
+          "log_sha256": "67561d1ec48fbc04c319682dd20c789fc68a963e34d6cb00ad06a3992cf279c2",
+          "INITED_counter": 2673,
+          "final_executed_units_counter": 139005,
+          "executions_after_INITED": 136332,
+          "new_or_reduced_feature_events_after_INITED": 26,
+          "INITED_line_unique": true
+        },
+        {
+          "segment": 4,
+          "log_relative_path": "import_public/segment-004.log",
+          "origin": "main",
+          "log_sha256": "7993899890fdd10a396761038f1be93e3fff1deab7d2309095115f650158f921",
+          "INITED_counter": 2697,
+          "final_executed_units_counter": 110595,
+          "executions_after_INITED": 107898,
+          "new_or_reduced_feature_events_after_INITED": 16,
+          "INITED_line_unique": true
+        },
+        {
+          "segment": 5,
+          "log_relative_path": "import_public/segment-005.log",
+          "origin": "main",
+          "log_sha256": "220dd07b84f67e2202d89e7abed363a1af40ba4150fb220431b29d83afe74a37",
+          "INITED_counter": 2711,
+          "final_executed_units_counter": 53864,
+          "executions_after_INITED": 51153,
+          "new_or_reduced_feature_events_after_INITED": 15,
+          "INITED_line_unique": true
+        },
+        {
+          "segment": 6,
+          "log_relative_path": "import_public/segment-006.log",
+          "origin": "main",
+          "log_sha256": "9b78f4fcef41488e5bcf0e578f73ce58a71b0b970cf23211e1d88f23d672d124",
+          "INITED_counter": 2726,
+          "final_executed_units_counter": 28290,
+          "executions_after_INITED": 25564,
+          "new_or_reduced_feature_events_after_INITED": 15,
+          "INITED_line_unique": true
+        },
+        {
+          "segment": 7,
+          "log_relative_path": "import_public/segment-007.log",
+          "origin": "main",
+          "log_sha256": "396d9881de8cd33e3e68d8f2abd905073816c8cb3ccc8632abdac21aee6515cf",
+          "INITED_counter": 2740,
+          "final_executed_units_counter": 14954,
+          "executions_after_INITED": 12214,
+          "new_or_reduced_feature_events_after_INITED": 7,
+          "INITED_line_unique": true
+        },
+        {
+          "segment": 8,
+          "log_relative_path": "import_public/segment-008.log",
+          "origin": "main",
+          "log_sha256": "1e01bcaa2742fbe0e2c29b550915219c3a08e24f157aea1b666c17fdb672cd2d",
+          "INITED_counter": 2747,
+          "final_executed_units_counter": 16285,
+          "executions_after_INITED": 13538,
+          "new_or_reduced_feature_events_after_INITED": 9,
+          "INITED_line_unique": true
+        },
+        {
+          "segment": 9,
+          "log_relative_path": "import_public/segment-009.log",
+          "origin": "main",
+          "log_sha256": "b89fe2ddca0fb141e6979b1bcf7ad2c726ef952fc13018440e6ce387ebe246c1",
+          "INITED_counter": 2756,
+          "final_executed_units_counter": 2756,
+          "executions_after_INITED": 0,
+          "new_or_reduced_feature_events_after_INITED": 0,
+          "INITED_line_unique": true
+        },
+        {
+          "segment": 10,
+          "log_relative_path": "import_public/segment-010.log",
+          "origin": "main",
+          "log_sha256": "d403a31cf5adfd447adc7165066e65b540e279a30f5c49be47d44d1b891e57a2",
+          "INITED_counter": 2756,
+          "final_executed_units_counter": 2756,
+          "executions_after_INITED": 0,
+          "new_or_reduced_feature_events_after_INITED": 0,
+          "INITED_line_unique": true
+        },
+        {
+          "segment": 11,
+          "log_relative_path": "import_public/segment-011.log",
+          "origin": "main",
+          "log_sha256": "2b45978ea6c87712d310830f4fefd53df15a28e106429b783afefde5720a0935",
+          "INITED_counter": 2756,
+          "final_executed_units_counter": 2756,
+          "executions_after_INITED": 0,
+          "new_or_reduced_feature_events_after_INITED": 0,
+          "INITED_line_unique": true
+        },
+        {
+          "segment": 12,
+          "log_relative_path": "import_public/segment-012.log",
+          "origin": "main",
+          "log_sha256": "3d2cca5087917f0b904187b66f5b3a7dd3753023e8b248ea0fc79d35ee33d371",
+          "INITED_counter": 2756,
+          "final_executed_units_counter": 2756,
+          "executions_after_INITED": 0,
+          "new_or_reduced_feature_events_after_INITED": 0,
+          "INITED_line_unique": true
+        }
+      ],
+      "executions_after_INITED": 811625,
+      "post_initialization_fuzzing_observed": true,
+      "unique_mutated_inputs_not_counted": true
+    },
+    "import_private": {
+      "segments": [
+        {
+          "segment": 0,
+          "log_relative_path": "import_private/segment-000.log",
+          "origin": "main",
+          "log_sha256": "ec77e89074eb74c39ba2a9e37a1b23af51e6dec9c0854530de9cbb24958d580c",
+          "INITED_counter": 2575,
+          "final_executed_units_counter": 8441,
+          "executions_after_INITED": 5866,
+          "new_or_reduced_feature_events_after_INITED": 12,
+          "INITED_line_unique": true
+        },
+        {
+          "segment": 1,
+          "log_relative_path": "import_private/segment-001.log",
+          "origin": "main",
+          "log_sha256": "c7b185a47cee818b6ad0991f0090ea4151f3925295bf9b296a281c217888bbf5",
+          "INITED_counter": 2587,
+          "final_executed_units_counter": 9029,
+          "executions_after_INITED": 6442,
+          "new_or_reduced_feature_events_after_INITED": 10,
+          "INITED_line_unique": true
+        },
+        {
+          "segment": 2,
+          "log_relative_path": "import_private/segment-002.log",
+          "origin": "main",
+          "log_sha256": "baa982daafd1f6432632e1d0a600b1b923d6e2905d4c86f3a145a2f4ef7a23fb",
+          "INITED_counter": 2597,
+          "final_executed_units_counter": 2597,
+          "executions_after_INITED": 0,
+          "new_or_reduced_feature_events_after_INITED": 0,
+          "INITED_line_unique": true
+        },
+        {
+          "segment": 3,
+          "log_relative_path": "import_private/segment-003.log",
+          "origin": "main",
+          "log_sha256": "6443e66d83ffe48c94334a9e79fd35e35307a0d49ec2b4cfbdd3a0e836578767",
+          "INITED_counter": 2597,
+          "final_executed_units_counter": 2597,
+          "executions_after_INITED": 0,
+          "new_or_reduced_feature_events_after_INITED": 0,
+          "INITED_line_unique": true
+        }
+      ],
+      "executions_after_INITED": 12308,
+      "post_initialization_fuzzing_observed": true,
+      "unique_mutated_inputs_not_counted": true
+    },
+    "decapsulate": {
+      "segments": [
+        {
+          "segment": 0,
+          "log_relative_path": "decapsulate/segment-000.log",
+          "origin": "main",
+          "log_sha256": "70a7d579908b2d5f400f067a3a32a8e2d9a940db1f21cadbddd7c3305cc2272c",
+          "INITED_counter": 1777,
+          "final_executed_units_counter": 3729,
+          "executions_after_INITED": 1952,
+          "new_or_reduced_feature_events_after_INITED": 14,
+          "INITED_line_unique": true
+        },
+        {
+          "segment": 1,
+          "log_relative_path": "decapsulate/segment-001.log",
+          "origin": "main",
+          "log_sha256": "baceb0be75cabefd9aecf4d18ce0b14a7a677adf1b33430ea946cb4f516f9667",
+          "INITED_counter": 1791,
+          "final_executed_units_counter": 3400,
+          "executions_after_INITED": 1609,
+          "new_or_reduced_feature_events_after_INITED": 14,
+          "INITED_line_unique": true
+        },
+        {
+          "segment": 2,
+          "log_relative_path": "decapsulate/segment-002.log",
+          "origin": "main",
+          "log_sha256": "cbdfaf55c617b4b66c304ba3531d41eeb183c661417566fb3843c9f0c1fa8835",
+          "INITED_counter": 1805,
+          "final_executed_units_counter": 2295,
+          "executions_after_INITED": 490,
+          "new_or_reduced_feature_events_after_INITED": 7,
+          "INITED_line_unique": true
+        },
+        {
+          "segment": 3,
+          "log_relative_path": "decapsulate/segment-003.log",
+          "origin": "main",
+          "log_sha256": "f7fa266af4c44ea939bdfa4ab172f6c438cb91c07c4ffcb79966d2c98828b19b",
+          "INITED_counter": 1812,
+          "final_executed_units_counter": 1812,
+          "executions_after_INITED": 0,
+          "new_or_reduced_feature_events_after_INITED": 0,
+          "INITED_line_unique": true
+        }
+      ],
+      "executions_after_INITED": 4051,
+      "post_initialization_fuzzing_observed": true,
+      "unique_mutated_inputs_not_counted": true
+    },
+    "api_sequence": {
+      "segments": [
+        {
+          "segment": 0,
+          "log_relative_path": "api_sequence/segment-000.log",
+          "origin": "main",
+          "log_sha256": "17d144f650d7f1298746bc8e8f5ebad416cadf6d0adc67862c08d93c49db7afb",
+          "INITED_counter": 1075,
+          "final_executed_units_counter": 1075,
+          "executions_after_INITED": 0,
+          "new_or_reduced_feature_events_after_INITED": 0,
+          "INITED_line_unique": true
+        },
+        {
+          "segment": 1,
+          "log_relative_path": "api_sequence/segment-001.log",
+          "origin": "main",
+          "log_sha256": "cd48a507b1e397345281cbaceaaaac54e846fdb70981ed9ae27de49833012766",
+          "INITED_counter": 1075,
+          "final_executed_units_counter": 1075,
+          "executions_after_INITED": 0,
+          "new_or_reduced_feature_events_after_INITED": 0,
+          "INITED_line_unique": true
+        },
+        {
+          "segment": 0,
+          "log_relative_path": "supplement-001/api_sequence/segment-000.log",
+          "origin": "supplement",
+          "log_sha256": "65e94c3be37c97a65eed01d5620d7d600378fcc68783f36e203eef6c105536aa",
+          "INITED_counter": 34,
+          "final_executed_units_counter": 974,
+          "executions_after_INITED": 940,
+          "new_or_reduced_feature_events_after_INITED": 214,
+          "INITED_line_unique": true
+        },
+        {
+          "segment": 1,
+          "log_relative_path": "supplement-001/api_sequence/segment-001.log",
+          "origin": "supplement",
+          "log_sha256": "5eba9b4a198015d75ed5b010eabbe2a3b1a68c8adcb0d84d1e7a0581ad711fae",
+          "INITED_counter": 241,
+          "final_executed_units_counter": 945,
+          "executions_after_INITED": 704,
+          "new_or_reduced_feature_events_after_INITED": 84,
+          "INITED_line_unique": true
+        },
+        {
+          "segment": 2,
+          "log_relative_path": "supplement-001/api_sequence/segment-002.log",
+          "origin": "supplement",
+          "log_sha256": "88fb98e60014eea3d0cecd8a019153054934648fe22c6d54269a6591758e9587",
+          "INITED_counter": 323,
+          "final_executed_units_counter": 419,
+          "executions_after_INITED": 96,
+          "new_or_reduced_feature_events_after_INITED": 22,
+          "INITED_line_unique": true
+        },
+        {
+          "segment": 3,
+          "log_relative_path": "supplement-001/api_sequence/segment-003.log",
+          "origin": "supplement",
+          "log_sha256": "fd262e9ce0610970ff513591e2690cbc1aaf0bbb9d08fa5e5575253e774d877a",
+          "INITED_counter": 345,
+          "final_executed_units_counter": 345,
+          "executions_after_INITED": 0,
+          "new_or_reduced_feature_events_after_INITED": 0,
+          "INITED_line_unique": true
+        }
+      ],
+      "executions_after_INITED": 1740,
+      "post_initialization_fuzzing_observed": true,
+      "unique_mutated_inputs_not_counted": true
+    }
+  },
+  "all_four_have_post_INITED_execution": true
+}

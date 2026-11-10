@@ -1,0 +1,33 @@
+Python 3.12.15
+test_asymmetric_aigis_and_gaussian_sensitivity_are_not_silently_relabelled (test_compare_experimental_kems_m05.ExperimentalKEMComparisonTests.test_asymmetric_aigis_and_gaussian_sensitivity_are_not_silently_relabelled) ... ok
+test_kindi_truncation_error_depends_on_signal_even_with_matching_marginal (test_compare_experimental_kems_m05.ExperimentalKEMComparisonTests.test_kindi_truncation_error_depends_on_signal_even_with_matching_marginal) ... ok
+test_kindi_two_bit_source_is_uniform_not_cbd (test_compare_experimental_kems_m05.ExperimentalKEMComparisonTests.test_kindi_two_bit_source_is_uniform_not_cbd) ... ok
+test_nearest_public_key_compression_has_three_or_four_preimages (test_compare_experimental_kems_m05.ExperimentalKEMComparisonTests.test_nearest_public_key_compression_has_three_or_four_preimages) ... ok
+test_no_duplicate_or_missing_convention_and_pilot_is_a_true_subset (test_compare_experimental_kems_m05.ExperimentalKEMComparisonTests.test_no_duplicate_or_missing_convention_and_pilot_is_a_true_subset) ... ok
+test_rank_and_ring_degree_are_distinct_and_budgets_do_not_merge (test_compare_experimental_kems_m05.ExperimentalKEMComparisonTests.test_rank_and_ring_degree_are_distinct_and_budgets_do_not_merge) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.157s
+
+OK
+test_cbd_three_splitting_and_conditional_mean_are_exact (test_r1_security_bounds.R1SecurityBoundsTests.test_cbd_three_splitting_and_conditional_mean_are_exact) ... ok
+test_expanded_oracle_collision_and_quantifiers_exhaustively (test_r1_security_bounds.R1SecurityBoundsTests.test_expanded_oracle_collision_and_quantifiers_exhaustively) ... ok
+test_frozen_certificate_probability_is_checked_with_integers (test_r1_security_bounds.R1SecurityBoundsTests.test_frozen_certificate_probability_is_checked_with_integers) ... ok
+test_implicit_calls_and_both_g_coordinates_are_counted (test_r1_security_bounds.R1SecurityBoundsTests.test_implicit_calls_and_both_g_coordinates_are_counted) ... ok
+test_integer_sqrt_enclosures_do_not_depend_on_decimal_rounding (test_r1_security_bounds.R1SecurityBoundsTests.test_integer_sqrt_enclosures_do_not_depend_on_decimal_rounding) ... ok
+test_qrom_obligation_uses_probability_not_cpa_bias (test_r1_security_bounds.R1SecurityBoundsTests.test_qrom_obligation_uses_probability_not_cpa_bias) ... ok
+test_rom_target_inversion_is_exact_and_unachievable_targets_are_rejected (test_r1_security_bounds.R1SecurityBoundsTests.test_rom_target_inversion_is_exact_and_unachievable_targets_are_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.130s
+
+OK
+{"snapshot": "m05-cca-001", "rational_replay": "passed", "panels": 6, "concrete_keccak_proof": false}
+{
+  "jobs_verified": 108,
+  "statuses": {
+    "estimated_proxy": 108
+  },
+  "quantizer_coefficients_enumerated": 23554,
+  "global_security_rating": null
+}

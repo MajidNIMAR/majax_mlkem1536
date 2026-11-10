@@ -1,0 +1,203 @@
+rustc 1.91.1 (ed61e7d7e 2025-11-07)
+binary: rustc
+commit-hash: ed61e7d7e242494fb7057f2657300d9e77bb4fcb
+commit-date: 2025-11-07
+host: x86_64-unknown-linux-gnu
+release: 1.91.1
+LLVM version: 21.1.2
+    Blocking waiting for file lock on package cache
+   Compiling typenum v1.20.1
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling cfg-if v1.0.5
+   Compiling unicode-ident v1.0.27
+   Compiling cmov v0.5.4
+   Compiling zeroize v1.9.1
+   Compiling libc v0.2.191
+   Compiling getrandom v0.4.3
+   Compiling serde_core v1.0.228
+   Compiling rand_core v0.10.1
+   Compiling serde v1.0.228
+   Compiling const-oid v0.10.2
+   Compiling autocfg v1.5.1
+   Compiling version_check v0.9.5
+   Compiling hashbrown v0.17.1
+   Compiling ctutils v0.4.5
+   Compiling sponge-cursor v0.1.0
+   Compiling keccak v0.2.2
+   Compiling equivalent v1.0.3
+   Compiling winnow v0.7.15
+   Compiling toml_write v0.1.2
+   Compiling generic-array v0.14.7
+   Compiling num-traits v0.2.19
+   Compiling indexmap v2.14.2
+   Compiling hybrid-array v0.4.15
+   Compiling serde_json v1.0.145
+   Compiling itoa v1.0.18
+   Compiling memchr v2.8.3
+   Compiling ryu v1.0.23
+   Compiling cpufeatures v0.2.17
+   Compiling hex v0.4.3
+   Compiling crypto-common v0.1.7
+   Compiling block-buffer v0.10.4
+   Compiling digest v0.10.7
+   Compiling sha2 v0.10.9
+   Compiling module-lattice v0.2.3
+   Compiling syn v2.0.119
+   Compiling crypto-common v0.2.2
+   Compiling digest v0.11.3
+   Compiling kem v0.3.0
+   Compiling sha3 v0.12.0
+   Compiling shake v0.1.0
+   Compiling serde_derive v1.0.228
+   Compiling ml-kem v0.3.3
+   Compiling toml_datetime v0.6.11
+   Compiling serde_spanned v0.6.9
+   Compiling kem1024-reference v0.1.0 (/mnt/c/Users/majax/Documents/Codex/NIST/crates/kem1024-reference)
+   Compiling toml_edit v0.22.27
+   Compiling toml v0.8.23
+   Compiling kem1536 v0.1.0 (/mnt/c/Users/majax/Documents/Codex/NIST/crates/kem1536)
+   Compiling kem1536-bench v0.1.0 (/mnt/c/Users/majax/Documents/Codex/NIST/crates/kem1536-bench)
+   Compiling kem1536-cli v0.1.0 (/mnt/c/Users/majax/Documents/Codex/NIST/crates/kem1536-cli)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2m 33s
+     Running unittests src/lib.rs (target/m04-linux-research/debug/deps/kem1024_reference-dcedc7b95da975ab)
+
+running 5 tests
+test tests::truncated_key_encodings_are_rejected ... ok
+test tests::noncanonical_public_coefficients_are_rejected ... ok
+test tests::a_corrupted_private_key_hash_is_rejected ... ok
+test tests::a_modified_expected_answer_is_detected ... ok
+test tests::official_vectors_and_fresh_round_trips_pass ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.98s
+
+     Running unittests src/lib.rs (target/m04-linux-research/debug/deps/kem1536-5c3955c9228a4c6e)
+
+running 22 tests
+test reference_ring::tests::rejects_invalid_moduli_and_noncanonical_inputs ... ok
+test dev_kem::tests::entropy_failure_is_propagated ... ok
+test engine_poly::tests::ntt_product_reduction_canonical_boundaries ... ok
+test reference_ring::tests::quotient_sign_and_multiplicative_identity ... ok
+test engine_poly::tests::ntt_roots_and_inverse_roundtrips ... ok
+test secret_box::tests::wipe_keeps_storage_and_clears_every_owned_byte ... ok
+test engine_poly::tests::reciprocal_reduction_and_quotient_boundaries ... ok
+test engine_poly::tests::arithmetic_agrees_with_separate_generic_oracle ... ok
+test tests::a_rank_four_profile_cannot_masquerade_as_p0 ... ok
+test tests::inconsistent_declared_sizes_are_rejected ... ok
+test tests::published_profile_has_the_required_dimensions_and_sizes ... ok
+test tests::changed_noise_requires_a_new_profile ... ok
+test tests::a_profile_for_another_version_is_rejected ... ok
+test tests::unknown_configuration_fields_are_not_silently_ignored ... ok
+test dev_kem::tests::canonical_boundaries_and_private_hash_validation ... ok
+test reference_ring::tests::independent_convolution_and_ring_laws_at_both_moduli ... ok
+test engine_poly::tests::ntt_product_edges_wrap_sign_and_pseudorandom_oracle ... ok
+test dev_kem::tests::operating_system_randomness_roundtrip ... ok
+test dev_kem::tests::current_engine_matches_independently_verified_case0 ... ok
+test dev_kem::tests::canonical_bad_ciphertext_and_last_noncanonical_coefficient_reject ... ok
+test dev_kem::tests::full_deterministic_roundtrip_and_rejection ... ok
+test dev_kem::tests::packing_and_rounding_exhaustive ... ok
+
+test result: ok. 22 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.91s
+
+     Running tests/delivery_contract.rs (target/m04-linux-research/debug/deps/delivery_contract-e0b38e6a1563ad80)
+
+running 2 tests
+test every_encoded_polynomial_boundary_is_validated_on_import ... ok
+test rejection_is_bound_to_both_key_and_entire_ciphertext ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 13.28s
+
+     Running unittests src/main.rs (target/m04-linux-research/debug/deps/kem1536_bench-e990fbfa391a8d46)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/m03-replay.rs (target/m04-linux-research/debug/deps/m03_replay-15503f02c2ee795e)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/m04-linux-research/debug/deps/kem1536-d50a4b6161f08fe3)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/commands.rs (target/m04-linux-research/debug/deps/commands-3da47f77a54d8ca4)
+
+running 4 tests
+test unavailable_crypto_commands_fail_instead_of_simulating_success ... ok
+test profile_output_is_machine_readable ... ok
+test development_profile_and_status_are_explicit ... ok
+test invalid_stress_counts_fail_without_output ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.44s
+
+   Doc-tests kem1024_reference
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests kem1536
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Compiling typenum v1.20.1
+   Compiling proc-macro2 v1.0.107
+   Compiling cfg-if v1.0.5
+   Compiling zeroize v1.9.1
+   Compiling quote v1.0.47
+   Compiling libc v0.2.191
+   Compiling unicode-ident v1.0.27
+   Compiling cmov v0.5.4
+   Compiling getrandom v0.4.3
+   Compiling serde_core v1.0.228
+   Compiling rand_core v0.10.1
+   Compiling serde v1.0.228
+   Compiling const-oid v0.10.2
+   Compiling version_check v0.9.5
+   Compiling autocfg v1.5.1
+   Compiling equivalent v1.0.3
+   Compiling ctutils v0.4.5
+   Compiling sponge-cursor v0.1.0
+   Compiling keccak v0.2.2
+   Compiling hashbrown v0.17.1
+   Compiling serde_json v1.0.145
+   Compiling winnow v0.7.15
+   Compiling toml_write v0.1.2
+   Compiling generic-array v0.14.7
+   Compiling num-traits v0.2.19
+   Compiling ryu v1.0.23
+   Compiling hybrid-array v0.4.15
+   Compiling itoa v1.0.18
+   Compiling memchr v2.8.3
+   Compiling cpufeatures v0.2.17
+   Compiling hex v0.4.3
+   Compiling indexmap v2.14.2
+   Compiling crypto-common v0.1.7
+   Compiling block-buffer v0.10.4
+   Compiling digest v0.10.7
+   Compiling module-lattice v0.2.3
+   Compiling sha2 v0.10.9
+   Compiling syn v2.0.119
+   Compiling crypto-common v0.2.2
+   Compiling digest v0.11.3
+   Compiling kem v0.3.0
+   Compiling serde_derive v1.0.228
+   Compiling sha3 v0.12.0
+   Compiling shake v0.1.0
+   Compiling ml-kem v0.3.3
+   Compiling serde_spanned v0.6.9
+   Compiling toml_datetime v0.6.11
+   Compiling kem1024-reference v0.1.0 (/mnt/c/Users/majax/Documents/Codex/NIST/crates/kem1024-reference)
+   Compiling toml_edit v0.22.27
+   Compiling toml v0.8.23
+   Compiling kem1536 v0.1.0 (/mnt/c/Users/majax/Documents/Codex/NIST/crates/kem1536)
+   Compiling kem1536-bench v0.1.0 (/mnt/c/Users/majax/Documents/Codex/NIST/crates/kem1536-bench)
+   Compiling kem1536-cli v0.1.0 (/mnt/c/Users/majax/Documents/Codex/NIST/crates/kem1536-cli)
+    Finished `release` profile [optimized] target(s) in 56.37s

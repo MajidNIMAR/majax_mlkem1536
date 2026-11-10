@@ -1,0 +1,27 @@
+{
+  "checked_source_fragments": [
+    "const TAG: &[u8] = b\"KEM1536-DEV-Q7681-R1\\0\";",
+    "pub const CIPHERTEXT_BYTES: usize = 2656;",
+    "pub const SHARED_SECRET_BYTES: usize = 32;",
+    "h.update(TAG);",
+    "h.update(label);",
+    "h.update(p);",
+    "h.finalize_xof().read(&mut out[..]);",
+    "sk[PRIVATE_KEY_BYTES - 32..].copy_from_slice(z);",
+    "random_bytes::<64>(|out| getrandom::fill(out).map_err(|_| Error::RandomnessUnavailable))?",
+    "seeds[..32].try_into().expect(\"32 bytes\")",
+    "seeds[32..].try_into().expect(\"32 bytes\")",
+    "let fallback = xof::<32>(b\"J\\0\", &[&dk.0[offset + 32..], c.as_bytes()]);",
+    "(*fallback).ct_select(&*good, c.as_bytes().ct_eq(&cp[..]))"
+  ],
+  "ciphertext_bytes": 2656,
+  "fixed_length_namespace_injective": true,
+  "j_input_bytes": 2711,
+  "key_bits": 256,
+  "noise_input_bytes": 56,
+  "output_bits": 256,
+  "profile": "KEM1536-DEV-Q7681-R1",
+  "public_j_prefix_hex": "4b454d313533362d4445562d51373638312d5231004a00",
+  "scope": "literal interface checks plus documented human review; not a source-level formal proof or an OS entropy proof",
+  "source_sha256": "eb7635eedc73c3db93d7baa81a86817157969a82890f797acfb3694a767e0262"
+}

@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-10-26T13:30:26.048202+00:00",
+  "jobs": 108,
+  "plan_sha256": "c51353f11d5497128e746740e215068f268a94bff6fa9d51f3fea1fd923914cd",
+  "pilot": false,
+  "source_sha256": {
+    "compare_experimental_kems_m05.py": "07447605b196070965432c10c260c918f09d7ad0d28d0298e5087084cbf16a8b",
+    "modern_tools.py": "3462c9b1ce74eaa74ffae21791f8c4c7e7332344b2fab45ff6cbdd7134dc6c1a",
+    "sieve_models.py": "c957772ed3b71ff2ed9dbc2c89e189d1c2449e681bed60d6a771663eacbab7de",
+    "cost_serialization.py": "240d1d0bb1aad4e494e8d6d234459e82d0ff14b0e48acad187f3ba6617ced964",
+    "compare_attacks_common.py": "034fc26d1343813a2a6fe2aacc670cdbc08b5461ddd25fe959c0023025bf4923",
+    "modern-tools-manifest.json": "390423c5cd57cb91cb50b15f1f559b070bdf885f843ddf136427ce49a87523ad",
+    "test_compare_experimental_kems_m05.py": "a8deaa069243ee61888d4d8e430d011dc506a89e3a9aa09db5cfca8d42e7b91e"
+  }
+}

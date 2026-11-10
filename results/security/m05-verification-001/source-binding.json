@@ -1,0 +1,81 @@
+{
+  "checked_utc": "2026-10-26T14:19:27.276103+00:00",
+  "base_engine_commit": "f54d92ebe96c4034a4ae6f6c63aa19158f297f12",
+  "security_inputs": [
+    {
+      "path": "research/r1_security_bounds.py",
+      "sha256": "f53a6c725ff2512e37c731615af3d7ad84b1117ee10728c49258c2b42b6a2d96",
+      "matches_frozen_source": true
+    },
+    {
+      "path": "research/test_r1_security_bounds.py",
+      "sha256": "b4bb3897344b943d567ff30c05b5c5620e506fb7816aeac911522d0a2c633d87",
+      "matches_frozen_source": true
+    },
+    {
+      "path": "docs/SECURITE_CONCRETE_R1_M05.md",
+      "sha256": "1631fa755900c09cdc7344a5cda1f47323dadab0484d0b9cade5af012aeb8e0a",
+      "matches_frozen_source": true
+    },
+    {
+      "path": "crates/kem1536/src/dev_kem.rs",
+      "sha256": "4bc3f75ce59cb24b8c8ca88e313cc8ab23b71282fb56cc6459c83e745d70756b",
+      "matches_frozen_source": true
+    },
+    {
+      "path": "crates/kem1536/src/engine_poly.rs",
+      "sha256": "906e9e27579f703c569b4231c0e83e07cdeed21dacecd38b4cd1f5a0dbc67579",
+      "matches_frozen_source": true
+    },
+    {
+      "path": "docs/SPECIFICATION_DEV_Q7681_R1.md",
+      "sha256": "f9174d6daa5fc8e06513579c366279970c775d79cf85d9d8ed2e6b16cb89d47a",
+      "matches_frozen_source": true
+    },
+    {
+      "path": "results/j2/run-004/correctness-certificate.json",
+      "sha256": "52b005bd7575b56326730f44ccaeae689e5552c1068f4df201d97e0d16969e06",
+      "matches_frozen_source": true
+    }
+  ],
+  "comparison_inputs": [
+    {
+      "path": "research/compare_experimental_kems_m05.py",
+      "sha256": "07447605b196070965432c10c260c918f09d7ad0d28d0298e5087084cbf16a8b",
+      "matches_executed_source": true
+    },
+    {
+      "path": "research/modern_tools.py",
+      "sha256": "3462c9b1ce74eaa74ffae21791f8c4c7e7332344b2fab45ff6cbdd7134dc6c1a",
+      "matches_executed_source": true
+    },
+    {
+      "path": "research/sieve_models.py",
+      "sha256": "c957772ed3b71ff2ed9dbc2c89e189d1c2449e681bed60d6a771663eacbab7de",
+      "matches_executed_source": true
+    },
+    {
+      "path": "research/cost_serialization.py",
+      "sha256": "240d1d0bb1aad4e494e8d6d234459e82d0ff14b0e48acad187f3ba6617ced964",
+      "matches_executed_source": true
+    },
+    {
+      "path": "research/compare_attacks_common.py",
+      "sha256": "034fc26d1343813a2a6fe2aacc670cdbc08b5461ddd25fe959c0023025bf4923",
+      "matches_executed_source": true
+    },
+    {
+      "path": "research/modern-tools-manifest.json",
+      "sha256": "390423c5cd57cb91cb50b15f1f559b070bdf885f843ddf136427ce49a87523ad",
+      "matches_executed_source": true
+    },
+    {
+      "path": "research/test_compare_experimental_kems_m05.py",
+      "sha256": "a8deaa069243ee61888d4d8e430d011dc506a89e3a9aa09db5cfca8d42e7b91e",
+      "matches_executed_source": true
+    }
+  ],
+  "production_changes": false,
+  "concrete_keccak_proof": false,
+  "global_security_rating": null
+}

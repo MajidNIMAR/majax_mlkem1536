@@ -1,0 +1,113 @@
+{
+  "created_utc": "2026-11-10T18:53:17.411798+00:00",
+  "checks": {
+    "windows-engine": {
+      "command": [
+        "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\research-venv\\Scripts\\python.exe",
+        "-B",
+        "research/verify_m06.py"
+      ],
+      "exit_code": 0,
+      "output_sha256": "df6b276448fece1972b951224214987460856fddb8f4ded85afa71f5f40d849a"
+    },
+    "windows-measurements": {
+      "command": [
+        "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\research-venv\\Scripts\\python.exe",
+        "-B",
+        "research/run_m06_measurements.py",
+        "verify",
+        "--output",
+        "results/engine/m06-measurements-001"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e522de3a1aac7b9d2c6057d3da6bb0d48339e3dcbfa7b5357404fd7a01d368de"
+    },
+    "windows-rejection": {
+      "command": [
+        "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\research-venv\\Scripts\\python.exe",
+        "-B",
+        "research/rejection_security_m06.py",
+        "--verify",
+        "results/security/m06-rejection-001"
+      ],
+      "exit_code": 0,
+      "output_sha256": "475fe3bd2dad0266f15bf3f0a9de58b0324d3f7de5c938dc6cfc3e1ac4dcd721"
+    },
+    "windows-fuzz": {
+      "command": [
+        "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\research-venv\\Scripts\\python.exe",
+        "-B",
+        "research/run_m06_fuzz.py",
+        "verify-archive",
+        "--output",
+        "results/engine/m06-fuzz-001"
+      ],
+      "exit_code": 0,
+      "output_sha256": "7bfc50bb306cf0da466346c10e5a077b989e3815f9208f8184fe5d5d920f5e09"
+    },
+    "windows-python-tests": {
+      "command": [
+        "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\research-venv\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "research",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0,
+      "output_sha256": "d9e7bcbbd868e0ff2a58e2294940b8f0ff3dbeb117b46a9e0819037bf1d1f5d1"
+    },
+    "linux-fuzz": {
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu-22.04",
+        "--",
+        "python3",
+        "-B",
+        "research/run_m06_fuzz.py",
+        "verify-archive",
+        "--output",
+        "results/engine/m06-fuzz-001"
+      ],
+      "exit_code": 0,
+      "output_sha256": "6b2343d5395e2867d68e6ce2de5882217b498dd47666f6bec9fa996e6248efbe"
+    },
+    "linux-new-tests": {
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu-22.04",
+        "--",
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "research",
+        "-p",
+        "test_*m06*.py"
+      ],
+      "exit_code": 0,
+      "output_sha256": "0aba5e9384d9fbf8f9d211de23e05de77e652851eff272dc93b4484d8f7fffa7"
+    }
+  },
+  "final_Windows_Python_tests": 154,
+  "full_Windows_check_earlier_exit_code": 0,
+  "full_Windows_check_earlier_Python_tests": 144,
+  "full_Windows_check_scope": "after production change and initial M06 tools; later harness/tool additions covered by final gates and Rust/Clippy receipts",
+  "first_Windows_check_failed": true,
+  "first_failure": "obsolete M04 certificate source anchors; reviewed and fixed",
+  "Linux_scope": "Rust default/all-features, targeted M06 tests and preserved evidence replay; no new full Linux check",
+  "current_production_source_sha256": {
+    "crates/kem1536/src/dev_kem.rs": "eb7635eedc73c3db93d7baa81a86817157969a82890f797acfb3694a767e0262",
+    "crates/kem1536/src/engine_poly.rs": "ffe7b50dfebfe8d9998296672bd1973a8376a02cb06f2338418e27f23a392ac2"
+  },
+  "constant_time_proved": false,
+  "full_concrete_CCA_proof": false,
+  "remote_publication_performed": false
+}

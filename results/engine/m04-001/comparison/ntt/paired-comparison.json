@@ -1,0 +1,363 @@
+{
+  "created_utc": "2026-10-25T20:36:47.891463+00:00",
+  "NTT_snapshot_sha256": "f8d4c1a00202bfbb1e423be15c3abdb3beb8616d360840dc321f536de467d32d",
+  "schoolbook_snapshot_sha256": "63189939b97daca526420a640881907a3359ef88c8c8cbde47ba7b06a39790ab",
+  "same_driver_toolchain_profile_lock_and_non_arithmetic_sources": true,
+  "only_replaced_sources": [
+    "crates/kem1536/src/dev_kem.rs",
+    "crates/kem1536/src/engine_poly.rs"
+  ],
+  "raw_observations": 24000,
+  "configuration": {
+    "series": 5,
+    "warmups": 50,
+    "observations_per_series": 200
+  },
+  "raw_sha256": {
+    "NTT/native/measure.jsonl": "52f1bb011d73b36d621899011f8e53923e17267388dc330cc55aaeef9189cefe",
+    "schoolbook/native/measure.jsonl": "6241b11eb20e250055b38b5b1a766e9a634c961ec9f49b63f2ed527bbe3aee6e",
+    "NTT/portable/measure.jsonl": "799a632ba9de141e244394d095c3df3f5f6109e7c8ee70514f5a6da75bdc3b3e",
+    "schoolbook/portable/measure.jsonl": "f09b179251653b162202c07398a0cc32bdadec1e2226260aecf259e9d424e958"
+  },
+  "comparisons": [
+    {
+      "backend_mode": "native",
+      "engine": "R1",
+      "operation": "decaps",
+      "NTT_process": {
+        "kind": "summary",
+        "engine": "R1",
+        "operation": "decaps",
+        "observations": 1000,
+        "median_nanoseconds": 1232613.0,
+        "p95_nanoseconds_nearest_rank": 1668505,
+        "minimum_nanoseconds": 1145421,
+        "maximum_nanoseconds": 1938654
+      },
+      "schoolbook_process": {
+        "kind": "summary",
+        "engine": "R1",
+        "operation": "decaps",
+        "observations": 1000,
+        "median_nanoseconds": 2887135.5,
+        "p95_nanoseconds_nearest_rank": 4193905,
+        "minimum_nanoseconds": 2577853,
+        "maximum_nanoseconds": 9391463
+      },
+      "median_ratio_schoolbook_process_over_NTT_process": 2.342288698886025,
+      "p95_ratio_schoolbook_process_over_NTT_process": 2.513570531703531,
+      "interpretation": "engine revision ratio"
+    },
+    {
+      "backend_mode": "native",
+      "engine": "R1",
+      "operation": "encaps",
+      "NTT_process": {
+        "kind": "summary",
+        "engine": "R1",
+        "operation": "encaps",
+        "observations": 1000,
+        "median_nanoseconds": 1131762.0,
+        "p95_nanoseconds_nearest_rank": 1481849,
+        "minimum_nanoseconds": 997065,
+        "maximum_nanoseconds": 5526601
+      },
+      "schoolbook_process": {
+        "kind": "summary",
+        "engine": "R1",
+        "operation": "encaps",
+        "observations": 1000,
+        "median_nanoseconds": 2547591.5,
+        "p95_nanoseconds_nearest_rank": 3627394,
+        "minimum_nanoseconds": 2261081,
+        "maximum_nanoseconds": 5275454
+      },
+      "median_ratio_schoolbook_process_over_NTT_process": 2.2509957924015827,
+      "p95_ratio_schoolbook_process_over_NTT_process": 2.4478836912532924,
+      "interpretation": "engine revision ratio"
+    },
+    {
+      "backend_mode": "native",
+      "engine": "R1",
+      "operation": "keygen",
+      "NTT_process": {
+        "kind": "summary",
+        "engine": "R1",
+        "operation": "keygen",
+        "observations": 1000,
+        "median_nanoseconds": 962321.0,
+        "p95_nanoseconds_nearest_rank": 1315567,
+        "minimum_nanoseconds": 879999,
+        "maximum_nanoseconds": 3799650
+      },
+      "schoolbook_process": {
+        "kind": "summary",
+        "engine": "R1",
+        "operation": "keygen",
+        "observations": 1000,
+        "median_nanoseconds": 2544544.5,
+        "p95_nanoseconds_nearest_rank": 3879969,
+        "minimum_nanoseconds": 1958192,
+        "maximum_nanoseconds": 6032768
+      },
+      "median_ratio_schoolbook_process_over_NTT_process": 2.6441743451509425,
+      "p95_ratio_schoolbook_process_over_NTT_process": 2.9492751034344886,
+      "interpretation": "engine revision ratio"
+    },
+    {
+      "backend_mode": "native",
+      "engine": "original-ML-KEM-1024",
+      "operation": "decaps",
+      "NTT_process": {
+        "kind": "summary",
+        "engine": "original-ML-KEM-1024",
+        "operation": "decaps",
+        "observations": 1000,
+        "median_nanoseconds": 90023.5,
+        "p95_nanoseconds_nearest_rank": 138302,
+        "minimum_nanoseconds": 80805,
+        "maximum_nanoseconds": 269046
+      },
+      "schoolbook_process": {
+        "kind": "summary",
+        "engine": "original-ML-KEM-1024",
+        "operation": "decaps",
+        "observations": 1000,
+        "median_nanoseconds": 84443.0,
+        "p95_nanoseconds_nearest_rank": 140303,
+        "minimum_nanoseconds": 81195,
+        "maximum_nanoseconds": 381404
+      },
+      "median_ratio_schoolbook_process_over_NTT_process": 0.9380106305575766,
+      "p95_ratio_schoolbook_process_over_NTT_process": 1.014468337406545,
+      "interpretation": "unchanged backend control between separate processes"
+    },
+    {
+      "backend_mode": "native",
+      "engine": "original-ML-KEM-1024",
+      "operation": "encaps",
+      "NTT_process": {
+        "kind": "summary",
+        "engine": "original-ML-KEM-1024",
+        "operation": "encaps",
+        "observations": 1000,
+        "median_nanoseconds": 82959.0,
+        "p95_nanoseconds_nearest_rank": 124851,
+        "minimum_nanoseconds": 78515,
+        "maximum_nanoseconds": 340205
+      },
+      "schoolbook_process": {
+        "kind": "summary",
+        "engine": "original-ML-KEM-1024",
+        "operation": "encaps",
+        "observations": 1000,
+        "median_nanoseconds": 83132.5,
+        "p95_nanoseconds_nearest_rank": 124107,
+        "minimum_nanoseconds": 78887,
+        "maximum_nanoseconds": 258085
+      },
+      "median_ratio_schoolbook_process_over_NTT_process": 1.0020913945442929,
+      "p95_ratio_schoolbook_process_over_NTT_process": 0.9940408967489247,
+      "interpretation": "unchanged backend control between separate processes"
+    },
+    {
+      "backend_mode": "native",
+      "engine": "original-ML-KEM-1024",
+      "operation": "keygen",
+      "NTT_process": {
+        "kind": "summary",
+        "engine": "original-ML-KEM-1024",
+        "operation": "keygen",
+        "observations": 1000,
+        "median_nanoseconds": 99352.5,
+        "p95_nanoseconds_nearest_rank": 136257,
+        "minimum_nanoseconds": 78238,
+        "maximum_nanoseconds": 425026
+      },
+      "schoolbook_process": {
+        "kind": "summary",
+        "engine": "original-ML-KEM-1024",
+        "operation": "keygen",
+        "observations": 1000,
+        "median_nanoseconds": 91696.0,
+        "p95_nanoseconds_nearest_rank": 128408,
+        "minimum_nanoseconds": 77998,
+        "maximum_nanoseconds": 246477
+      },
+      "median_ratio_schoolbook_process_over_NTT_process": 0.9229360106690823,
+      "p95_ratio_schoolbook_process_over_NTT_process": 0.9423956200415391,
+      "interpretation": "unchanged backend control between separate processes"
+    },
+    {
+      "backend_mode": "portable",
+      "engine": "R1",
+      "operation": "decaps",
+      "NTT_process": {
+        "kind": "summary",
+        "engine": "R1",
+        "operation": "decaps",
+        "observations": 1000,
+        "median_nanoseconds": 1284642.5,
+        "p95_nanoseconds_nearest_rank": 1683750,
+        "minimum_nanoseconds": 1145332,
+        "maximum_nanoseconds": 2221486
+      },
+      "schoolbook_process": {
+        "kind": "summary",
+        "engine": "R1",
+        "operation": "decaps",
+        "observations": 1000,
+        "median_nanoseconds": 2934500.0,
+        "p95_nanoseconds_nearest_rank": 4436856,
+        "minimum_nanoseconds": 2619072,
+        "maximum_nanoseconds": 5274100
+      },
+      "median_ratio_schoolbook_process_over_NTT_process": 2.2842931009989162,
+      "p95_ratio_schoolbook_process_over_NTT_process": 2.6351037861915367,
+      "interpretation": "engine revision ratio"
+    },
+    {
+      "backend_mode": "portable",
+      "engine": "R1",
+      "operation": "encaps",
+      "NTT_process": {
+        "kind": "summary",
+        "engine": "R1",
+        "operation": "encaps",
+        "observations": 1000,
+        "median_nanoseconds": 1116949.0,
+        "p95_nanoseconds_nearest_rank": 1483445,
+        "minimum_nanoseconds": 997099,
+        "maximum_nanoseconds": 5664130
+      },
+      "schoolbook_process": {
+        "kind": "summary",
+        "engine": "R1",
+        "operation": "encaps",
+        "observations": 1000,
+        "median_nanoseconds": 2519276.5,
+        "p95_nanoseconds_nearest_rank": 3799128,
+        "minimum_nanoseconds": 2293950,
+        "maximum_nanoseconds": 5686470
+      },
+      "median_ratio_schoolbook_process_over_NTT_process": 2.2554982367144785,
+      "p95_ratio_schoolbook_process_over_NTT_process": 2.561017091971728,
+      "interpretation": "engine revision ratio"
+    },
+    {
+      "backend_mode": "portable",
+      "engine": "R1",
+      "operation": "keygen",
+      "NTT_process": {
+        "kind": "summary",
+        "engine": "R1",
+        "operation": "keygen",
+        "observations": 1000,
+        "median_nanoseconds": 1007409.0,
+        "p95_nanoseconds_nearest_rank": 1398968,
+        "minimum_nanoseconds": 876938,
+        "maximum_nanoseconds": 3742582
+      },
+      "schoolbook_process": {
+        "kind": "summary",
+        "engine": "R1",
+        "operation": "keygen",
+        "observations": 1000,
+        "median_nanoseconds": 2263903.5,
+        "p95_nanoseconds_nearest_rank": 3330981,
+        "minimum_nanoseconds": 1913813,
+        "maximum_nanoseconds": 4671656
+      },
+      "median_ratio_schoolbook_process_over_NTT_process": 2.2472535980917385,
+      "p95_ratio_schoolbook_process_over_NTT_process": 2.3810273001240914,
+      "interpretation": "engine revision ratio"
+    },
+    {
+      "backend_mode": "portable",
+      "engine": "original-ML-KEM-1024",
+      "operation": "decaps",
+      "NTT_process": {
+        "kind": "summary",
+        "engine": "original-ML-KEM-1024",
+        "operation": "decaps",
+        "observations": 1000,
+        "median_nanoseconds": 205727.5,
+        "p95_nanoseconds_nearest_rank": 251646,
+        "minimum_nanoseconds": 131777,
+        "maximum_nanoseconds": 462814
+      },
+      "schoolbook_process": {
+        "kind": "summary",
+        "engine": "original-ML-KEM-1024",
+        "operation": "decaps",
+        "observations": 1000,
+        "median_nanoseconds": 178545.0,
+        "p95_nanoseconds_nearest_rank": 241774,
+        "minimum_nanoseconds": 133662,
+        "maximum_nanoseconds": 774182
+      },
+      "median_ratio_schoolbook_process_over_NTT_process": 0.8678713346538504,
+      "p95_ratio_schoolbook_process_over_NTT_process": 0.9607702884210358,
+      "interpretation": "unchanged backend control between separate processes"
+    },
+    {
+      "backend_mode": "portable",
+      "engine": "original-ML-KEM-1024",
+      "operation": "encaps",
+      "NTT_process": {
+        "kind": "summary",
+        "engine": "original-ML-KEM-1024",
+        "operation": "encaps",
+        "observations": 1000,
+        "median_nanoseconds": 123028.0,
+        "p95_nanoseconds_nearest_rank": 194534,
+        "minimum_nanoseconds": 106885,
+        "maximum_nanoseconds": 618200
+      },
+      "schoolbook_process": {
+        "kind": "summary",
+        "engine": "original-ML-KEM-1024",
+        "operation": "encaps",
+        "observations": 1000,
+        "median_nanoseconds": 122561.5,
+        "p95_nanoseconds_nearest_rank": 193784,
+        "minimum_nanoseconds": 107892,
+        "maximum_nanoseconds": 2589641
+      },
+      "median_ratio_schoolbook_process_over_NTT_process": 0.99620818025165,
+      "p95_ratio_schoolbook_process_over_NTT_process": 0.9961446328148292,
+      "interpretation": "unchanged backend control between separate processes"
+    },
+    {
+      "backend_mode": "portable",
+      "engine": "original-ML-KEM-1024",
+      "operation": "keygen",
+      "NTT_process": {
+        "kind": "summary",
+        "engine": "original-ML-KEM-1024",
+        "operation": "keygen",
+        "observations": 1000,
+        "median_nanoseconds": 125428.5,
+        "p95_nanoseconds_nearest_rank": 181330,
+        "minimum_nanoseconds": 99641,
+        "maximum_nanoseconds": 272323
+      },
+      "schoolbook_process": {
+        "kind": "summary",
+        "engine": "original-ML-KEM-1024",
+        "operation": "keygen",
+        "observations": 1000,
+        "median_nanoseconds": 115625.0,
+        "p95_nanoseconds_nearest_rank": 179482,
+        "minimum_nanoseconds": 100149,
+        "maximum_nanoseconds": 552947
+      },
+      "median_ratio_schoolbook_process_over_NTT_process": 0.9218399327106678,
+      "p95_ratio_schoolbook_process_over_NTT_process": 0.9898086361881652,
+      "interpretation": "unchanged backend control between separate processes"
+    }
+  ],
+  "host_fully_isolated": false,
+  "pure_NTT_causal_isolation": false,
+  "security_superiority_inferred": false
+}

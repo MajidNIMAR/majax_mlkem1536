@@ -1,0 +1,20 @@
+[package]
+name = "r1-channel-demo"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.91"
+publish = false
+license = "Apache-2.0"
+
+[workspace]
+
+[dependencies]
+kem1536 = { path = "../../crates/kem1536" }
+aes-gcm = { version = "=0.11.1", default-features = false, features = ["alloc", "aes", "zeroize"] }
+hkdf = "=0.13.0"
+sha2 = "=0.11.0"
+getrandom = "=0.4.3"
+zeroize = "=1.9.1"
+
+[lints.rust]
+unsafe_code = "forbid"

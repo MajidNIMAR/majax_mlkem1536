@@ -1,0 +1,70 @@
+{
+  "concrete_keccak_proof": false,
+  "date": "2026-11-10",
+  "git_base": "693c6a305b5143b9b00b912353bbae153cad4e4f",
+  "inputs": [
+    {
+      "frozen": "sources/rejection_security_m06.py",
+      "original": "research/rejection_security_m06.py",
+      "sha256": "88e29673f5a98d66a0bb0f6772ae443cbbb7ceb3c66f0912f0811b1c0c5ee591"
+    },
+    {
+      "frozen": "sources/test_rejection_security_m06.py",
+      "original": "research/test_rejection_security_m06.py",
+      "sha256": "25be0864d9e3e7f44ac65dd0a9de418f0173238bdfe5ad96a916d7a58e8e2e80"
+    },
+    {
+      "frozen": "sources/REJET_IMPLICITE_R1_M06.md",
+      "original": "docs/REJET_IMPLICITE_R1_M06.md",
+      "sha256": "42092055920bd320538670dcd5e383629b90608d9da619429eb5c1dede24f43a"
+    },
+    {
+      "frozen": "sources/r1_security_bounds.py",
+      "original": "research/r1_security_bounds.py",
+      "sha256": "f53a6c725ff2512e37c731615af3d7ad84b1117ee10728c49258c2b42b6a2d96"
+    },
+    {
+      "frozen": "sources/SECURITE_CONCRETE_R1_M05.md",
+      "original": "docs/SECURITE_CONCRETE_R1_M05.md",
+      "sha256": "1631fa755900c09cdc7344a5cda1f47323dadab0484d0b9cade5af012aeb8e0a"
+    },
+    {
+      "frozen": "sources/PROTOCOLE_M06_MOTEUR.md",
+      "original": "docs/PROTOCOLE_M06_MOTEUR.md",
+      "sha256": "1d57a71f29f4b3a704406835e1c118e0d4b2a41aa32c2740b2b88366f3dac8ca"
+    },
+    {
+      "frozen": "sources/SPECIFICATION_DEV_Q7681_R1.md",
+      "original": "docs/SPECIFICATION_DEV_Q7681_R1.md",
+      "sha256": "f9174d6daa5fc8e06513579c366279970c775d79cf85d9d8ed2e6b16cb89d47a"
+    },
+    {
+      "frozen": "sources/dev_kem.rs",
+      "original": "crates/kem1536/src/dev_kem.rs",
+      "sha256": "eb7635eedc73c3db93d7baa81a86817157969a82890f797acfb3694a767e0262"
+    },
+    {
+      "frozen": "sources/correctness-certificate.json",
+      "original": "results/j2/run-004/correctness-certificate.json",
+      "sha256": "52b005bd7575b56326730f44ccaeae689e5552c1068f4df201d97e0d16969e06"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "rejection-bounds.json",
+      "sha256": "68ac9cd0ba492a3d7991eefc5223a08d165a3534b702a830f3e9db0134acfd20"
+    },
+    {
+      "path": "source-contract.json",
+      "sha256": "57054f8f9eff493e3c69585c60269e73e4934e79d116d6eedea8cf75f349ddeb"
+    },
+    {
+      "path": "source-anchors.json",
+      "sha256": "d358307921a0d11ee117e3c5590403091cc9e60ec7c864a6462a3df58a22ba11"
+    }
+  ],
+  "schema": "m06-rejection-provenance-v1",
+  "source_scope": "J interface; concurrent M06 arithmetic changes are not security evidence",
+  "source_snapshot_contains_working_tree_bytes": true,
+  "timezone": "Europe/Paris"
+}

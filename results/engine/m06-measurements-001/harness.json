@@ -1,0 +1,6 @@
+{
+  "path": "crates/kem1536-bench/src/bin/m06-measure.rs",
+  "sha256": "59af0ee67f7c08dff68cd5a55f4d2d12d03ae0736778da7bcee7918cd24a01ee",
+  "note": "same additional measurement harness, absent from baseline Git commit",
+  "production_baseline_from_git_archive": true
+}

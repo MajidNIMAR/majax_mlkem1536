@@ -1,0 +1,117 @@
+{
+  "all_compiled_inputs_exactly_identical": true,
+  "compiled_input_count": 30,
+  "compiled_input_sha256": {
+    ".cargo/config.toml": "6abf4f853edb1217e7b182d65dd5eba16c347eb7bf1826f54377e966451d593b",
+    "Cargo.lock": "ad9f28bdd7332407c054eed738e782a81e60f0c5180022e8b173fb2987f70cb3",
+    "Cargo.toml": "ff13a1ad6016fdb1e11376f304b4c3ea7670d1442d8f12cdbf02ebd01577de42",
+    "crates/kem1024-reference/Cargo.toml": "8e8e6f877d8c07f5379c88bdd3d175aea8a5c4d9b3b45cdd9e13548fe885f4de",
+    "crates/kem1024-reference/src/lib.rs": "33bf92b4bee59b28a2fe499f592068ffe3468ff1593d8d3bce18f0875f3cbb52",
+    "crates/kem1536-bench/Cargo.toml": "3a8e568fb1b93b97c478ad58dc82b3feaecdd7fc3746793c385cfda5530c40d5",
+    "crates/kem1536-bench/src/bin/m03-replay.rs": "8215b138b87462cd58267256eb6b2fefa43c1d67879efbfc62044a1c575fc86f",
+    "crates/kem1536-bench/src/delivery.rs": "ae5023f44a1e3419f486bf728f68e29010e68743b1131c5d7216eeeccbf1797f",
+    "crates/kem1536-bench/src/main.rs": "608f534dade786650d782c6b4e6f24008f7eded79db1637c72678540459fb386",
+    "crates/kem1536-cli/Cargo.toml": "ef96cbb2a121d68b061677ec628515eaa9bbff1658534d8933595a08d8009df6",
+    "crates/kem1536-cli/src/main.rs": "41420995cc9b4ebbca8ab55d594a4eefd0b29740cc96b78e9b856079c2086bd1",
+    "crates/kem1536/Cargo.toml": "201a6e832bbc6cec754a6de609f0b503cc1c98c7458f676ad2077a2a73823e47",
+    "crates/kem1536/src/dev_hardening.rs": "8bbfac92e9af19b6955f4fa033ab7026371fd1d89d07b972553434174f132d06",
+    "crates/kem1536/src/dev_kem.rs": "4bc3f75ce59cb24b8c8ca88e313cc8ab23b71282fb56cc6459c83e745d70756b",
+    "crates/kem1536/src/engine_poly.rs": "906e9e27579f703c569b4231c0e83e07cdeed21dacecd38b4cd1f5a0dbc67579",
+    "crates/kem1536/src/lib.rs": "76f654cc20fa27475c7cd66fdace8913878ba6d9c034cbcd59b59c6c4d5ec033",
+    "crates/kem1536/src/reference_ring.rs": "f94a48f7a35d74487fcdf50937f48c3f7502c6053418e941201bf1014cce125b",
+    "crates/kem1536/src/secret_box.rs": "08d6ba7accadb46dc66b780a396dc418950641b29a91d365e12537001c40d28e",
+    "fuzz/fixtures/cases.bin": "7ae0746c2a6edad67917a722aacd50731cf9db73a7d75d6c7743c3d2cc67f92f",
+    "profiles/kem1536-p0.toml": "ec07497ccab9150a982ecc882b8d1890d8dda18c4150e22f86cff70735e22740",
+    "references/manifest.json": "b1501e7ce59501223bd2d509ffdb9c0fc4e8904ae34aafc231b98d9abf2513ee",
+    "rust-toolchain.toml": "b729462cbfa06a5d7efd33810fa271fe918b2db1ce61d99e57ec1c866659c270",
+    "vectors/README.md": "43cd3d6b6287bec8c2c598128a45886487913fd3d6499fa4ea3b7495d6a161a6",
+    "vectors/nist-acvp/ML-KEM-encapDecap-FIPS203-tr1/expectedResults.json": "aa846067d30bebcfe4e839b076b1df5cdeb14332912b3e02dfe8d00c614098b4",
+    "vectors/nist-acvp/ML-KEM-encapDecap-FIPS203-tr1/prompt.json": "a25430d886a8212a21ed0d4015eb91aa30d555588465d47da04ffb45236d27fd",
+    "vectors/nist-acvp/ML-KEM-encapDecap-FIPS203/expectedResults.json": "9089ec6ff2424da9f2782b89b2f831a329a3e28d6e5e24b802b78ff36ac61cdf",
+    "vectors/nist-acvp/ML-KEM-encapDecap-FIPS203/prompt.json": "998e22dfb12efb14ce9fdff911ca634b13612819a1806f25da69adba7e16db91",
+    "vectors/nist-acvp/ML-KEM-keyGen-FIPS203/expectedResults.json": "a253d0ad91c95ebea5b409673defef0aa49d65d4ed72286399e2e798ddf073a4",
+    "vectors/nist-acvp/ML-KEM-keyGen-FIPS203/prompt.json": "3f9ce34f6c836c77958bad2729e837c3b213f44ac36c3065976e7acca6389523",
+    "vectors/nist-acvp/NIST-NOTICE.txt": "5cf49b45a3eb4bee05d9491dbd05af1ceae4adf5f0ca59890e633469cb1f8156"
+  },
+  "current_run": "release-004",
+  "current_source_manifest_sha256": "6db124b0f1c9b64c95b81df350a22710a6bc9c53bdbd6c2234ede50af03e0898",
+  "new_compilations_in_current_run": 0,
+  "noncompiled_changes": {
+    "README.md": {
+      "after": "9e576fd0f21cca33d56073692bbae8e81215ec673a7ad669e14f99dda1834e40",
+      "before": "f9ce0b8ebcb1e20c7f5bc2672845e23a2a278c9b7dca3d0c9b65f5a9b3aa1eb8"
+    },
+    "comparisons/engine-pair/README.md": {
+      "after": "594c7c679a409269d02f0bee37daa9c40ed9da1280e10a072c24fb83e3bdd958",
+      "before": "06b0d5f326b505305433747631f102894bebb351cdfb5b7787f3f7450f8db8bb"
+    },
+    "crates/kem1536/tests/delivery_contract.rs": {
+      "after": "f631bd12844931ed3a325be42e1bef7862b7308917e49e3621e19d14964023fe",
+      "before": "d610891bae29571aa17a8056ea216b9042a2c099a3bff52e023ba77affb431ec"
+    },
+    "docs/COMPARAISON_DEPOTS_EXECUTION_M04.md": {
+      "after": "1f2ac569442ac4d1fca053960539a25983e0c3beda9b6882deb0567600dcd231",
+      "before": "10095a9488ceb46e9fad3f6764067ae56edd393bfa69f38b77e40ecda2162ef2"
+    },
+    "docs/DISTRIBUTION_M04.md": {
+      "after": "33ddee58ae93e5e739285bc3c120591787b451243370561a67bca9ec627bb079",
+      "before": "98595ce3873dfa0559e3612edd375eac90b4e09691618d4fa0eb5962a563672b"
+    },
+    "docs/M04_MOTEUR_NTT_ET_CONTROLES.md": {
+      "after": "fb5c8b9cbdde407716ed5ee7cfb241c9640e1f3e0fd17d75016ad9c0536874a7",
+      "before": null
+    },
+    "docs/MOTEUR_KEM_R1.md": {
+      "after": "5be0b3065113c8461b8093321d64f124d64153ccfeaaec068224ce7b3680a006",
+      "before": "15748ddf06bf80c92202403991baff35284e0175539cf40f851e3b58b5995fec"
+    },
+    "docs/PROGRAMME_AMELIORATION_M04.md": {
+      "after": "cf57623b4e96897a328bd5c7f77c6d07050e5e7a34e14e5228c65b7570f41b0d",
+      "before": "fa0990a59d600dadf0d8fadb5476a00d4c2a76cc345ee3267246123a21985356"
+    },
+    "research/archive_m04_engine.py": {
+      "after": "2b04ce1016a9c5f42620b812420d966959a4e45cdadd6896388600be51063d5c",
+      "before": null
+    },
+    "research/review_m04_wipes.py": {
+      "after": "c1b084e8182b6360f60e14b8f8764082b8b63008a5ceae28daea3ceb932b6fb4",
+      "before": "c428ceeea9f60a9dec382618746529c197c9bb225caed1f5df5b153dc8da761a"
+    },
+    "research/run_engine_pair.py": {
+      "after": "2afbfbcb4d0fa3b53fb524ebf5a3ea764593506d9cc7abb27615f69478c1eb54",
+      "before": "16f43f1c0c5438db39f56c0c25ddcec93703827ac0757c4274b94b6424e286d2"
+    },
+    "research/test_m04_distribution.py": {
+      "after": "afcb76392c3e11c1232c7d60bf67976146614cd39f8bd09eb3e16c4dfccbe001",
+      "before": "92f6c2d549b8e11f69c01ed1707f097a67b030bc9fa6fbcf0baf410fb606bb15"
+    },
+    "research/test_m04_wipes.py": {
+      "after": "37b31dbf5de6c3cda0d9120f623b220f0a0c53d4109639cd2485f11d13ade00a",
+      "before": "ed2c41f0c10aeaa2f568056fcf2963f7069f5ecd13ef2590a511052af81dcc5c"
+    },
+    "research/verify_m04.py": {
+      "after": "f49dd59cb66d56acede7aa22484c4e0dda0250e76cc86de4a8c651300a1f1dd8",
+      "before": null
+    },
+    "research/verify_m04_distribution.py": {
+      "after": "6e3c3e7baaa55654f015b508432d0116be8567e0ae763fb1bcc30231cd8a9131",
+      "before": "ba8362a10e24e75fd2735cfee953f99186297322233ec1de8452ed6b8394eacb"
+    },
+    "scripts/dev.ps1": {
+      "after": "dee1e0fb66c085e82a27b0305763a70e380b3c60d023c5564f5a6da6c5941f84",
+      "before": "5e626dbc952e9f2e65ac707fc41e382db2ed6f6262fe8d6687ccc83591f9c2be"
+    },
+    "scripts/dev.sh": {
+      "after": "516a575948e087c4d68a8ef4e8ba332b572500b70fab00fdc130b4b541e76a25",
+      "before": "ffdcf2b9afd6957b6c1e923b06696b7d61558da11aac97ebe894032bce668a8b"
+    },
+    "scripts/reproduce-release.ps1": {
+      "after": "f3be21bd34baf7b9662f0837760f29733f8f0eaec3d3d2a20f207e1428ce2608",
+      "before": "a1215c374407ceb251bdec5e0659181be5d154f39de483bb6245cb73040f5c07"
+    }
+  },
+  "reference_run": "release-003",
+  "reference_source_manifest_sha256": "b316ad7e2c9212840c2007f29a6f859c0806821d809fef8cd09b7771643922d8",
+  "schema": "m04-compiled-input-equality-v1",
+  "scope": "Cargo/toolchain/config, all workspace src/manifests/build scripts, profiles, vectors, and literal includes; integration tests and documentation excluded"
+}

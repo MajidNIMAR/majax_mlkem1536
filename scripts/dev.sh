@@ -26,6 +26,14 @@ case "${1:-check}" in
             exit 1
         fi
         "$task_check_research_python" -m unittest discover -s research -p 'test_*.py'
+        "$task_check_research_python" research/verify_r1_certificate_bridge.py
+        "$task_check_research_python" research/compare_attacks_common.py --verify results/security/m04-001/attacks
+        "$task_check_research_python" research/r1_security_bounds.py --verify results/security/m05-cca-001
+        "$task_check_research_python" research/compare_experimental_kems_m05.py --verify --output results/security/m05-comparison-001
+        "$task_check_research_python" research/rejection_security_m06.py --verify results/security/m06-rejection-001
+        "$task_check_research_python" research/run_m06_measurements.py verify --output results/engine/m06-measurements-001
+        "$task_check_research_python" research/verify_m06.py
+        "$task_check_research_python" research/run_m06_fuzz.py verify-archive --output results/engine/m06-fuzz-001
         python3 research/verify_results.py
         python3 research/verify_modern_results.py
         python3 research/verify_decapsulation_results.py
@@ -64,6 +72,7 @@ case "${1:-check}" in
         "$task_check_research_python" research/validate_rejections_r1.py --limit 16
         "$task_check_research_python" research/validate_hardening_m02.py --limit 16
         "$task_check_research_python" research/verify_m03.py
+        "$task_check_research_python" research/verify_m04.py
         cargo run --locked --quiet -p kem1536-cli -- dev-self-test
         cargo run --locked --quiet -p kem1536-cli -- self-check
         ;;

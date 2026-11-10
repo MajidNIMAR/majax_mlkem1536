@@ -1,0 +1,12 @@
+test_bits_cbd_all_64_patterns_and_disjoint_word_slices (test_r1_certificate_bridge.CertificateBridgeTests.test_bits_cbd_all_64_patterns_and_disjoint_word_slices) ... ok
+test_decoder_support_and_first_unsafe_upper_boundary (test_r1_certificate_bridge.CertificateBridgeTests.test_decoder_support_and_first_unsafe_upper_boundary) ... ok
+test_exact_certificate_and_tampering_rejected (test_r1_certificate_bridge.CertificateBridgeTests.test_exact_certificate_and_tampering_rejected) ... ok
+test_negacyclic_sign_and_transpose_cancellation_exhaustive_small_ring (test_r1_certificate_bridge.CertificateBridgeTests.test_negacyclic_sign_and_transpose_cancellation_exhaustive_small_ring) ... ok
+test_shared_secret_wrong_ideal_independence_not_assumed (test_r1_certificate_bridge.CertificateBridgeTests.test_shared_secret_wrong_ideal_independence_not_assumed) ... ok
+test_source_contract_rejects_sampler_and_rounding_regression (test_r1_certificate_bridge.CertificateBridgeTests.test_source_contract_rejects_sampler_and_rounding_regression) ... ok
+test_synthetic_vector_reconstruction_and_bit_flip (test_r1_certificate_bridge.CertificateBridgeTests.test_synthetic_vector_reconstruction_and_bit_flip) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 1.635s
+
+OK

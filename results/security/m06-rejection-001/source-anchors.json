@@ -1,0 +1,46 @@
+[
+  {
+    "cached_pdf_version": "18 February 2019",
+    "id": "AHU19",
+    "latest_full_pdf_retrieved": false,
+    "latest_notice": "9 December 2021; primary indexed disclaimer limits flaw to FO AppendixB, main O2H results unaffected",
+    "pages": 45,
+    "pdf_sha256": "a3b09922553b2138dc022db72035e8378c30cf27cfad312b1a45558bad03d69d",
+    "read_scope": "Theorem3 p11, auxiliary-oracle discussion p10, full proof pp25-28",
+    "retrieved_copy": "https://eprint.iacr.asia/2018/904.pdf",
+    "title": "Quantum Security Proofs Using Semi-classical Oracles",
+    "url": "https://eprint.iacr.org/2018/904"
+  },
+  {
+    "corrected_constant": "2*q*2^(-ell/2); NOT sqrt(2)*q*2^(-ell/2)",
+    "corrected_pdf_sha256": null,
+    "full_corrected_pdf_retrieved": false,
+    "id": "SXY21-index",
+    "older_mirror_pdf_retrieved": "16May2018; excluded as proof for corrected constant",
+    "older_mirror_sha256": "97f6a84ff8ee7cb845b0adda6c66947635bdea1903fe2c5ad216639c5889b1bb",
+    "read_scope": "official indexed Lemma2.2 proof AppendixC.1 p27 and correction footnote9",
+    "title": "Tightly-Secure Key-Encapsulation Mechanism in the Quantum Random Oracle Model",
+    "url": "https://eprint.iacr.org/2017/1005.pdf",
+    "version": "August2021 correction; official notice last revision25August2021"
+  },
+  {
+    "id": "J25-v1",
+    "no_tighter_adaptive_constant_imported": true,
+    "pages": 24,
+    "pdf_cover_date": "21November2025",
+    "pdf_sha256": "95609e630baf7fd7572591e5cdf2e4693d768dab51c8d2a095b9d120922d8965",
+    "read_scope": "section2 Theorems1-2 pp10-11, comparison with AHU and auxiliary-game interpretation",
+    "retrieved_copy": "https://arxiv.org/pdf/2511.16009v1",
+    "title": "Nonadaptive One-Way to Hiding Implies Adaptive Quantum Reprogramming",
+    "url": "https://arxiv.org/abs/2511.16009v1"
+  },
+  {
+    "id": "GYY25",
+    "pages": 97,
+    "pdf_creation_date": "30September2025",
+    "pdf_sha256": "408b2f6f880658b4026e19393ef2d6cd764255f823b0a5ec28538e40f14d34ff",
+    "read_scope": "Theorem22 p96, Figure7 pp15-16 and Def4 p49, as frozen in M05",
+    "title": "Fujisaki-Okamoto Transformation under Average-Case Decryption Error",
+    "url": "https://eprint.iacr.org/2025/1641"
+  }
+]

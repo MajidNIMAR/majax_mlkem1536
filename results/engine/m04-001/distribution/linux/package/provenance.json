@@ -1,0 +1,43 @@
+{
+  "binary_reused_from_reference_run": true,
+  "binary_sha256": "e025ab71066ba63d3efccf6eb28f5e91a4050d151ea83f4fb1aab4320ced71c9",
+  "certification": false,
+  "compiled_input_equality_sha256": "98bc40eb8c1b86185b8c67a78e0f78592f59261d2890f7c24dbecc8d984f81fc",
+  "corrected_validation_logs": {
+    "m04-delivery-contract-corrected-linux.log": "d076bd8d896f2a0e15e0f02edcee99aa797a739a53b26b31cf43835456060530",
+    "m04-delivery-contract-corrected-windows.log": "f205ea74b2081b1acd983511bd290270020f880a7d237dfaa239462460306d9d"
+  },
+  "environment_of_reference_build": {
+    "build_id": "disabled with --build-id=none",
+    "cargo": "cargo 1.91.1 (ea2d97820 2025-10-10)",
+    "dependency_cache": "shared preexisting local Cargo cache; --frozen --offline",
+    "features": "default CLI; research-vectors disabled",
+    "host": "Linux 6.6.87.2-microsoft-standard-WSL2 x86_64 GNU/Linux",
+    "jobs": 2,
+    "path_remaps": [
+      "source=/source",
+      "target=/target",
+      "cargo=/cargo",
+      "rustup=/rustup"
+    ],
+    "rustc": "rustc 1.91.1 (ed61e7d7e 2025-11-07)\nbinary: rustc\ncommit-hash: ed61e7d7e242494fb7057f2657300d9e77bb4fcb\ncommit-date: 2025-11-07\nhost: x86_64-unknown-linux-gnu\nrelease: 1.91.1\nLLVM version: 21.1.2",
+    "source_date_epoch": "1792959519",
+    "strip": "debuginfo; symbol names retained for binary review",
+    "target": "x86_64-unknown-linux-gnu"
+  },
+  "new_compilations_in_this_run": 0,
+  "platform": "linux",
+  "profile": "KEM1536-DEV-Q7681-R1",
+  "reference_archive_sha256": "42be71986552233cf64f359498694cd07111e28436581b97c31139254a0fc231",
+  "reference_double_build_run": "release-003",
+  "reference_result_sha256": "e4ed7c07d28eb3fd07bc0dd3ae529894083244d7b1cef97a2f78b809a05e8c67",
+  "reference_source_manifest_sha256": "b316ad7e2c9212840c2007f29a6f859c0806821d809fef8cd09b7771643922d8",
+  "research_vectors_enabled": false,
+  "schema": "m04-distribution-repackage-v1",
+  "scope": "Current public sources; production inputs exactly equal to reference double builds. No new compilation performed.",
+  "source_archive_sha256": "1db47a22dfd27a06f583b036a603fb0c21c0f8b1df242f65ef2c12caeed12cd9",
+  "source_git_head": "78f5faff017d99a2b323efda17f37a3146f63340",
+  "source_kind": "tracked working files plus nonignored new files; not necessarily HEAD",
+  "source_manifest_sha256": "6db124b0f1c9b64c95b81df350a22710a6bc9c53bdbd6c2234ede50af03e0898",
+  "two_isolated_builds_identical_in_reference_run": true
+}

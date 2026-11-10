@@ -1,0 +1,82 @@
+{
+  "job": {
+    "index": 59,
+    "scenario": "KINDI-512-3-2-1",
+    "degree": 512,
+    "rank": 3,
+    "n": 1536,
+    "q": 8192,
+    "secret": {
+      "kind": "Uniform",
+      "bounds": [
+        -2,
+        1
+      ]
+    },
+    "error": {
+      "kind": "Uniform",
+      "bounds": [
+        -2,
+        1
+      ]
+    },
+    "panel": "before_serialization_LWE_proxy",
+    "sample_budget": "key",
+    "samples": 1536,
+    "abstract_matrix_blocks": [
+      3,
+      3
+    ],
+    "targets": 1,
+    "leakage_oracle": "none",
+    "memory_cap": null,
+    "exponential_memory_allowed": true,
+    "shape_model": "GSA",
+    "cost_model": "MATZOV-classical",
+    "algorithm": "usvp",
+    "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+    "actual_compressed_scheme_attack_cost": false,
+    "ciphertext_rows_claimed_independent_samples": false
+  },
+  "status": "estimated_proxy",
+  "cost": {
+    "rop": "1.13765307439155e118",
+    "red": "1.13765307439155e118",
+    "delta": "1.00168238760559",
+    "beta": "1289",
+    "d": "2847",
+    "tag": "usvp",
+    "problem": "LWEParameters(n=1536, q=8192, Xs=D(σ=1.12, μ=-0.50), Xe=D(σ=1.12, μ=-0.50), m=1536, tag='KINDI-512-3-2-1')"
+  },
+  "log2_cost": {
+    "rop": 392.1735758737191,
+    "red": 392.1735758737191
+  },
+  "success_contract": {
+    "id": "uSVP_GSA_geometric_condition",
+    "meaning": "GSA success predicate; no explicit end-to-end success target in preserved job",
+    "global_success_certified": false
+  },
+  "input_distribution_repr": {
+    "Xs": "D(σ=1.12, μ=-0.50)",
+    "Xe": "D(σ=1.12, μ=-0.50)"
+  },
+  "input_distribution_means": {
+    "Xs": "-0.500000000000000",
+    "Xe": "-0.500000000000000"
+  },
+  "normalized_parameters_repr": "LWEParameters(n=1536, q=8192, Xs=D(σ=1.12, μ=-0.50), Xe=D(σ=1.12, μ=-0.50), m=1536, tag='KINDI-512-3-2-1')",
+  "reported_memory_unit": "estimator-native units, not bytes; N is vector count",
+  "cost_is_global_security_lower_bound": false,
+  "quantum_physical_gate_count": null,
+  "sage": "10.7",
+  "python": "3.12.15",
+  "estimator_messages": "",
+  "executing_worker_sha256": "07447605b196070965432c10c260c918f09d7ad0d28d0298e5087084cbf16a8b",
+  "reduction_dimensions": {
+    "beta": 1289
+  },
+  "classical_fit_used_beyond_1024": true,
+  "fit_flag_is_not_an_attack_cost_correction": true,
+  "elapsed_seconds": 9.392473478000056
+}

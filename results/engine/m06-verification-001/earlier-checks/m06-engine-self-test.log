@@ -1,0 +1,12 @@
+   Compiling kem1536 v0.1.0 (C:\Users\majax\Documents\Codex\NIST\crates\kem1536)
+   Compiling kem1536-cli v0.1.0 (C:\Users\majax\Documents\Codex\NIST\crates\kem1536-cli)
+    Finished `release` profile [optimized] target(s) in 5.42s
+     Running `target\release\kem1536.exe dev-self-test`
+{
+  "elapsed_seconds": 0.0384273,
+  "fresh_round_trips": 16,
+  "implicit_rejections_checked": 16,
+  "profile": "KEM1536-DEV-Q7681-R1",
+  "secrets_printed": false,
+  "security_validation": "pending"
+}

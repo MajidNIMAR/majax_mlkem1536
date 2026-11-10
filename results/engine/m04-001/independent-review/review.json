@@ -1,0 +1,173 @@
+{
+  "schema": "m04-independent-root-review-v1",
+  "reviewed_utc": "2026-10-25T20:49:00.057785+00:00",
+  "scope": "Contre-revue indÃƒÂ©pendante des contrÃƒÂ´les mÃƒÂ©moire, timing et API ; aucune nouvelle mesure cryptographique ou campagne lourde.",
+  "reviewed_source_sha256": {
+    "research/review_m04_wipes.py": "c1b084e8182b6360f60e14b8f8764082b8b63008a5ceae28daea3ceb932b6fb4",
+    "research/test_m04_wipes.py": "37b31dbf5de6c3cda0d9120f623b220f0a0c53d4109639cd2485f11d13ade00a",
+    "research/analyze_delivery_timing.py": "c880cf94a3edf4230f06bb6a31571aa1348feaefdd398ef186b78f4e2d015022",
+    "crates/kem1536/tests/delivery_contract.rs": "f631bd12844931ed3a325be42e1bef7862b7308917e49e3621e19d14964023fe",
+    "docs/M04_MOTEUR_NTT_ET_CONTROLES.md": "fb5c8b9cbdde407716ed5ee7cfb241c9640e1f3e0fd17d75016ad9c0536874a7"
+  },
+  "production_code_modified_by_reviewer": false,
+  "new_agents_spawned": false,
+  "timing_replay": {
+    "new_timing_measurements": 0,
+    "windows": {
+      "observations": 16000,
+      "contrasts": 32,
+      "maximum_absolute_t": 1.578180027656052,
+      "all_summary_fields_match": true
+    },
+    "linux": {
+      "observations": 16000,
+      "contrasts": 32,
+      "maximum_absolute_t": 1.9817280842223306,
+      "all_summary_fields_match": true
+    },
+    "assessment": "Calculs Welch, dÃƒÂ©comptes et seuil correctement reproduits ; rÃƒÂ©sultat diagnostique fini, sans p-valeur ni preuve de temps constant.",
+    "limits": [
+      "DÃƒÂ©pendances temporelles et autocorrÃƒÂ©lations non contrÃƒÂ´lÃƒÂ©es par ce simple Welch.",
+      "Les seules lignes chronomÃƒÂ©triques ne prouvent ni la fraÃƒÂ®cheur des clÃƒÂ©s ni les 50 prÃƒÂ©chauffages : ces ÃƒÂ©lÃƒÂ©ments sont rattachÃƒÂ©s au producteur Rust examinÃƒÂ©.",
+      "Cinq chiffrÃƒÂ©s fixes par clÃƒÂ© ; absence de signal dans ces classes et sous cette charge seulement."
+    ]
+  },
+  "binary_review": [
+    {
+      "platform": "windows",
+      "binary_sha256": "ea80bc3a7f49ba287cf0958be1e7eceabe55cfc8882cdabc2517b6c58712ca65",
+      "delivered_binary_and_gzip_and_audit_summary_match": true,
+      "independent_objdump_instruction_lines": 317,
+      "independent_objdump_instructions_match_archived_disassembly": true,
+      "independent_disassembly": "artifacts/generated/m04-root-review-windows-multiply.txt",
+      "independent_disassembly_sha256": "03eae02ffde8f74c1d647aa65edce77d6da00ec068d94d98ce97202d8380bbfd",
+      "output_pointer_capture": {
+        "address": "0x14005cc56",
+        "register_flow": "r8 -> rsi"
+      },
+      "direct_output_store": {
+        "address": "0x14005d0ad",
+        "instruction": "movdqu xmm5, [destination + rax]",
+        "counter_bytes": "0,16,...,496 ; arrÃƒÂªt ÃƒÂ 512",
+        "output_bytes": 512
+      },
+      "normal_return_address": "0x14005d1a9",
+      "normal_return_wiped_stack_intervals_inclusive": [
+        [
+          32,
+          543
+        ],
+        [
+          544,
+          1055
+        ]
+      ],
+      "total_wiped_scratch_bytes": 1024,
+      "normal_return_wipe_loops_examined_directly": true,
+      "old_512_byte_return_result_temporary_observed": false,
+      "direct_output_and_removed_old_temporary_assessment": "Ãƒâ€°critures finales via le pointeur de destination fourni ; aucun troisiÃƒÂ¨me tableau de 512 octets ni copie tardive du rÃƒÂ©sultat observÃƒÂ©s dans cette fonction prÃƒÂ©cise.",
+      "scope_limits": [
+        "Reconnaissance de boucle et calcul des adresses sous les instructions observÃƒÂ©es, complÃƒÂ©tÃƒÂ©s par revue manuelle de ce chemin.",
+        "Aucune preuve automatique de l accessibilitÃƒÂ© universelle des blocs, du flot complet ou de l origine de toutes les donnÃƒÂ©es.",
+        "Registres, spills des appelants, temporaires de hachage, chemins non examinÃƒÂ©s et bibliothÃƒÂ¨ques systÃƒÂ¨me ne sont pas couverts.",
+        "Absence de division et de memcpy dans la fonction n implique pas un effacement universel."
+      ]
+    },
+    {
+      "platform": "linux",
+      "binary_sha256": "e025ab71066ba63d3efccf6eb28f5e91a4050d151ea83f4fb1aab4320ced71c9",
+      "delivered_binary_and_gzip_and_audit_summary_match": true,
+      "independent_objdump_instruction_lines": 322,
+      "independent_objdump_instructions_match_archived_disassembly": true,
+      "independent_disassembly": "artifacts/generated/m04-root-review-linux-multiply.txt",
+      "independent_disassembly_sha256": "ad0fbcf8047a3b6d1556ae575dfcf84e55a64830b1526ecd3cbf0e549d985b97",
+      "output_pointer_capture": {
+        "address": "0x2c2430",
+        "register_flow": "rdx -> rbx"
+      },
+      "direct_output_store": {
+        "address": "0x2c289c",
+        "instruction": "movdqu xmm5, [destination + rax]",
+        "counter_bytes": "0,16,...,496 ; arrÃƒÂªt ÃƒÂ 512",
+        "output_bytes": 512
+      },
+      "normal_return_address": "0x2c2983",
+      "normal_return_wiped_stack_intervals_inclusive": [
+        [
+          0,
+          511
+        ],
+        [
+          512,
+          1023
+        ]
+      ],
+      "total_wiped_scratch_bytes": 1024,
+      "normal_return_wipe_loops_examined_directly": true,
+      "old_512_byte_return_result_temporary_observed": false,
+      "direct_output_and_removed_old_temporary_assessment": "Ãƒâ€°critures finales via le pointeur de destination fourni ; aucun troisiÃƒÂ¨me tableau de 512 octets ni copie tardive du rÃƒÂ©sultat observÃƒÂ©s dans cette fonction prÃƒÂ©cise.",
+      "scope_limits": [
+        "Reconnaissance de boucle et calcul des adresses sous les instructions observÃƒÂ©es, complÃƒÂ©tÃƒÂ©s par revue manuelle de ce chemin.",
+        "Aucune preuve automatique de l accessibilitÃƒÂ© universelle des blocs, du flot complet ou de l origine de toutes les donnÃƒÂ©es.",
+        "Registres, spills des appelants, temporaires de hachage, chemins non examinÃƒÂ©s et bibliothÃƒÂ¨ques systÃƒÂ¨me ne sont pas couverts.",
+        "Absence de division et de memcpy dans la fonction n implique pas un effacement universel."
+      ],
+      "entry_memset_calls": {
+        "register": "r13",
+        "GOT_slot": "0x339928",
+        "relocation_symbol": "memset@GLIBC_2.2.5",
+        "call_sites": [
+          "0x2c2452",
+          "0x2c245f"
+        ],
+        "role": "Initialisation publique des deux scratch, avant chargement de coefficients secrets ; distincte des effacements finaux.",
+        "other_register_indirect_core_sites_not_closed": 23
+      }
+    }
+  ],
+  "findings": [
+    {
+      "id": "M04-REVIEW-API-01",
+      "severity": "validation-gap",
+      "initial_issue": "La fixture initiale changeait toujours les deux derniers octets du chiffrÃƒÂ©. Une dÃƒÂ©rivation fautive ne hachant que cette terminaison pouvait passer le test de liaison au chiffrÃƒÂ© entier.",
+      "production_bug_found": false,
+      "root_notified": true,
+      "current_status": "CorrigÃ© par root et retestÃ© sous Windows et Linux : deux tests API rÃ©ussis par OS. Le relecteur a vÃ©rifiÃ© les fins de traces, sans relancer les tests Rust.",
+      "current_source_uses_entire_ciphertext": true,
+      "source_evidence": "dev_kem.rs : xof::<32>(b\"J\\0\", &[&dk.0[offset + 32..], c.as_bytes()])",
+      "retest_evidence": {
+        "artifacts/generated/m04-delivery-contract-corrected-windows.log": "f205ea74b2081b1acd983511bd290270020f880a7d237dfaa239462460306d9d",
+        "artifacts/generated/m04-delivery-contract-corrected-linux.log": "d076bd8d896f2a0e15e0f02edcee99aa797a739a53b26b31cf43835456060530"
+      }
+    },
+    {
+      "id": "M04-REVIEW-WIPES-02",
+      "severity": "validation-gap",
+      "initial_issue": "Le reconnaisseur ignorait les instructions intercalÃƒÂ©es, dont un saut qui ÃƒÂ©vitait les ÃƒÂ©critures de la premiÃƒÂ¨re itÃƒÂ©ration.",
+      "root_notified": true,
+      "current_status": "CorrigÃƒÂ© et revÃƒÂ©rifiÃƒÂ© : les instructions non modÃƒÂ©lisÃƒÂ©es sont refusÃƒÂ©es, le saut synthÃƒÂ©tique dans le NOP du vrai corps Windows est rejetÃƒÂ©, et les deux corps rÃƒÂ©els restent acceptÃƒÂ©s.",
+      "unit_test_passed": true,
+      "actual_delivered_binaries_have_the_skip_branch": false
+    },
+    {
+      "id": "M04-REVIEW-SCOPE-03",
+      "severity": "wording",
+      "issue": "Le test corrigÃƒÂ© exerce onze positions choisies, et non chacun des 2656 octets. La formulation liaison testÃƒÂ©e ÃƒÂ  plusieurs positions est plus prÃƒÂ©cise que validation du chiffrÃƒÂ© entier.",
+      "blocking_production_issue": false,
+      "root_notified": true,
+      "current_status": "Corrigé dans le document : onze positions et huit clés sont explicitement nommées ; absence d énumération des 2656 positions indiquée."
+    },
+    {
+      "id": "M04-REVIEW-BINDING-04",
+      "severity": "standalone-tool-boundary",
+      "issue": "review_m04_wipes.py copie binary_sha256 depuis summary.json et utilise les mÃƒÂ©tadonnÃƒÂ©es de divisions de core-functions.json. Il ne reconstruit pas lui-mÃƒÂªme le dÃƒÂ©sassemblage ni ne rattache binary.gz au rÃƒÂ©sumÃƒÂ©.",
+      "current_artifact_mismatch": false,
+      "independent_binding_checked_by_reviewer": true,
+      "recommendation": "Conserver les empreintes et la gÃƒÂ©nÃƒÂ©ration du dÃƒÂ©sassemblage dans la chaÃƒÂ®ne globale. Le helper seul reste un contrÃƒÂ´le de motif sur des entrÃƒÂ©es d audit fiables.",
+      "root_followup": "Root ajoute un vÃ©rificateur global de liaison gzip/binaire/dÃ©sassemblage ; cette future extension ne fait pas partie des fichiers dÃ©jÃ  revus ici."
+    }
+  ],
+  "overall_assessment": "Les binaires livrÃƒÂ©s examinÃƒÂ©s confirment la correction ÃƒÂ©troite du temporaire M03-A01 et les deux effacements de scratch. Aucun bug de production supplÃƒÂ©mentaire n a ÃƒÂ©tÃƒÂ© identifiÃƒÂ© dans ce pÃƒÂ©rimÃƒÂ¨tre. Les ÃƒÂ©carts de validation ont ÃƒÂ©tÃƒÂ© signalÃƒÂ©s rapidement et les correctifs du reconnaisseur ont ÃƒÂ©tÃƒÂ© revÃƒÂ©rifiÃƒÂ©s. Cela ne constitue pas une preuve sÃƒÂ©mantique complÃƒÂ¨te de mÃƒÂ©moire, de temps constant, ou de sÃƒÂ©curitÃƒÂ© du KEM.",
+  "finalized_utc": "2026-10-25T20:49:17.587889+00:00",
+  "final_document_sha256": "fb5c8b9cbdde407716ed5ee7cfb241c9640e1f3e0fd17d75016ad9c0536874a7"
+}

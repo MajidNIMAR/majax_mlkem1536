@@ -1,0 +1,32 @@
+{
+  "output_sha256": {
+    "canonical-windows-engine.exe.gz": "3b880f4ce757c0e5a3c09d6eb8204b56cf89929e02c7b932698feeb7814e747e",
+    "checks/linux-fuzz.log": "6b2343d5395e2867d68e6ce2de5882217b498dd47666f6bec9fa996e6248efbe",
+    "checks/linux-new-tests.log": "0aba5e9384d9fbf8f9d211de23e05de77e652851eff272dc93b4484d8f7fffa7",
+    "checks/windows-engine.log": "df6b276448fece1972b951224214987460856fddb8f4ded85afa71f5f40d849a",
+    "checks/windows-fuzz.log": "7bfc50bb306cf0da466346c10e5a077b989e3815f9208f8184fe5d5d920f5e09",
+    "checks/windows-measurements.log": "e522de3a1aac7b9d2c6057d3da6bb0d48339e3dcbfa7b5357404fd7a01d368de",
+    "checks/windows-python-tests.log": "d9e7bcbbd868e0ff2a58e2294940b8f0ff3dbeb117b46a9e0819037bf1d1f5d1",
+    "checks/windows-rejection.log": "475fe3bd2dad0266f15bf3f0a9de58b0324d3f7de5c938dc6cfc3e1ac4dcd721",
+    "earlier-checks/m06-canonical-binary.json": "02e6d53a1ecebd40fb706f73512c347a899cb4eeb416f1a71eedf426aff0d4cf",
+    "earlier-checks/m06-engine-self-test.log": "3dc7c2aced001c5104d560375a4d57128dd5e837ce800b6bafe99af92f0f0927",
+    "earlier-checks/m06-final-clippy-all-features.log": "ab8bc9230ecfbc60b2a83a2b38bb9a8f1afa95718fb8797ec90764806f144c9f",
+    "earlier-checks/m06-final-clippy.log": "9736ffb7ab636c10e9f627746986fdf070bd25b8a47d0ba6f23c59fed348fa43",
+    "earlier-checks/m06-final-python-tests.log": "d17e5a90106c470626897db04dd7a1d74a0baa0646a889dfd0f9db2b5815e0cc",
+    "earlier-checks/m06-final-rust-tests.log": "bd9770a8983bdb9d0b825138bee02162073220a7d4a1e1257ee3cc956a800dc2",
+    "earlier-checks/m06-linux-engine-replay.log": "df6b276448fece1972b951224214987460856fddb8f4ded85afa71f5f40d849a",
+    "earlier-checks/m06-linux-research-tests.log": "94d1973b5c8959e6b6d771edca8f0b094201c4afcafd5ec9ecb4e352a3878665",
+    "earlier-checks/m06-linux-tests.log": "0700fd632b88721e5c2ead3eadbd584b2a28991184df5f9511362f4d50885f14",
+    "earlier-checks/m06-windows-check-initial-failed.log": "22e89e4e9f9432bd9cf310451c7a4ab9c7352f13478539089607da9c6cebd701",
+    "earlier-checks/m06-windows-check.log": "b6a7d18338c53e4beaf300b1215d9fcd6bdf5a6801cf813ffac5492aceff764a",
+    "sources/crates/kem1536-bench/src/bin/m06-replay.rs": "d74223999ec4149a3e02f2b682d60c7c65af0ef9982b18928768fc3cfa2f3b85",
+    "sources/research/freeze_m06_verification.py": "1ddb8036986d8f9955f07a79f4e6449a58083dae0fe31e23802c2ad0cff305ee",
+    "sources/research/inspect_m06_coverage.py": "ca34226ae5a6b259a288a3b9a8eed6a3f1d078ce6d32400fffd4251b6c8fdc2f",
+    "sources/research/replay_m06_fuzz_corpus.py": "4a66b3ee42ba53dacd4dffde3ca9c83155ebcf6edc27af082e3d553f9d932c8a",
+    "sources/research/run_m06_fuzz.py": "49f3644c72149ae5db257673a6237ac3039aaee62121d3c40da0fa19c8cace12",
+    "sources/research/test_m06_fuzz.py": "f7ad3b35e967fd28052e7211782efba9714143b196c760ed94e7c8aee512dd18",
+    "sources/scripts/dev.ps1": "bef2d5aaff25c1ce982e17f9b0bb819ed8e842e94b106ffab08312dd58366e02",
+    "sources/scripts/dev.sh": "e6b188085a2db170e22b9e70b8374c4efd880c0260ba5fae1c584018e85b9779",
+    "summary.json": "52ed460904b36236831f5ec60dba28292719e5b6ef7773fa9e1795c876dd69a2"
+  }
+}

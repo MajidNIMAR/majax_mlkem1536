@@ -1,0 +1,2084 @@
+{
+  "schema": 1,
+  "scope": "single-target algorithm-model comparison, not a global KEM security rating",
+  "source_attack_cutoff": "2026-10-24",
+  "new_estimator_runs": 0,
+  "source_hashes": {
+    "results/j2/run-002/modern-attacks.json": "4941557560f1104da1aba3865c810f83374f2474cd54b5346682f83dbf1297a5",
+    "results/j2/run-002/provenance.json": "f6ef6532f9eeab87282ff9e344c2fad0697c926f1ee63e988aeeed6179728eb4",
+    "results/j2/run-009/study.json": "c1368a2d48c33b76f5972f8db31f656f87889884b69472f0b6a1e2d063d5e6c2",
+    "results/j2/run-009/provenance.json": "88ec18bdc3de52dee16998dc9f1925a66f0e7b49033c969ecc761b05210bb917",
+    "results/j2/run-016/study.json": "382f987a7a942ef28d2720d10946ad38e8a435fcb6425ae361eb2c0d4055b0be",
+    "results/j2/run-016/provenance.json": "b217cf33cf970f566dfa40fac52a0d73c368478ed3c28409d2f82328b37bb070",
+    "results/j2/run-008/study.json": "84ee4419cde7be0214adb82d4fe3a159318bf7a960129c1d332cd5af3fafa545",
+    "results/j2/run-008/provenance.json": "dbe3f4f02afb3c9a3ba9877d8b85c40adc9c990a3b0289b2338c766e1aea15af",
+    "results/j2/run-008/calibration.json": "551acbc2d8e90f95dbc8a6b0d7dc0dabc85816fed83f22271935daf445101b5f",
+    "research/modern-tools-manifest.json": "390423c5cd57cb91cb50b15f1f559b070bdf885f843ddf136427ce49a87523ad",
+    "references/coded-dual-evaluation/manifest.json": "40241b82086f0528ee408014d09b927c51887fc45d700f374e9452b2095efce7"
+  },
+  "profiles": {
+    "baseline-1024": {
+      "n": 256,
+      "k": 4,
+      "q": 3329,
+      "eta": 2
+    },
+    "q7681-eta3": {
+      "n": 256,
+      "k": 6,
+      "q": 7681,
+      "eta": 3
+    }
+  },
+  "conventions": {
+    "single_target": true,
+    "leakage_oracle": "none",
+    "all_families_common_success_probability": null,
+    "all_families_common_physical_cost_unit": null,
+    "finite_memory_budgets_are_sensitivities_only": [
+      40,
+      60,
+      80
+    ],
+    "global_security_lower_bound": null,
+    "global_security_bits": null,
+    "new_attack_from_small_moment_studies": false
+  },
+  "strict_pairs": [
+    {
+      "tool": "community",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "ring_code_commit": null,
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "bdd",
+      "sample_budget": "extended",
+      "sample_counts": [
+        1280,
+        1792
+      ],
+      "success_contract": {
+        "id": "primal_BDD_guess_amplification_0.99",
+        "meaning": "hybrid guessing amplification 0.99 where applicable; geometric success is heuristic",
+        "global_success_certified": false
+      },
+      "targets": 1,
+      "oracle": "none",
+      "memory_cap_bytes": null,
+      "unit": "asymptotic reduction sensitivity plus retained estimator work",
+      "interpretation": "conditional unstructured-LWE model",
+      "ciphertext_samples_validated": false,
+      "source_indices_in_modern_attacks": [
+        8,
+        14
+      ],
+      "baseline_1024": {
+        "status": "ok",
+        "log2_operations": 224.88373410902034,
+        "log2_reported_mem": null,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "874",
+          "eta": "872",
+          "d": "1886"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": null
+      },
+      "r1_1536": {
+        "status": "ok",
+        "log2_operations": 341.1197937746384,
+        "log2_reported_mem": null,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "1324",
+          "eta": "1328",
+          "d": "2888"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": null
+      },
+      "conditional_log2_cost_difference": 116.23605966561809,
+      "security_gain_bits": null
+    },
+    {
+      "tool": "community",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "ring_code_commit": null,
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "bdd",
+      "sample_budget": "key",
+      "sample_counts": [
+        1024,
+        1536
+      ],
+      "success_contract": {
+        "id": "primal_BDD_guess_amplification_0.99",
+        "meaning": "hybrid guessing amplification 0.99 where applicable; geometric success is heuristic",
+        "global_success_certified": false
+      },
+      "targets": 1,
+      "oracle": "none",
+      "memory_cap_bytes": null,
+      "unit": "asymptotic reduction sensitivity plus retained estimator work",
+      "interpretation": "conditional unstructured-LWE model",
+      "ciphertext_samples_validated": false,
+      "source_indices_in_modern_attacks": [
+        9,
+        15
+      ],
+      "baseline_1024": {
+        "status": "ok",
+        "log2_operations": 224.88373410902034,
+        "log2_reported_mem": null,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "874",
+          "eta": "872",
+          "d": "1886"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": null
+      },
+      "r1_1536": {
+        "status": "ok",
+        "log2_operations": 341.1197937746384,
+        "log2_reported_mem": null,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "1324",
+          "eta": "1328",
+          "d": "2888"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": null
+      },
+      "conditional_log2_cost_difference": 116.23605966561809,
+      "security_gain_bits": null
+    },
+    {
+      "tool": "community",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "ring_code_commit": null,
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "bdd_hybrid",
+      "sample_budget": "extended",
+      "sample_counts": [
+        1280,
+        1792
+      ],
+      "success_contract": {
+        "id": "primal_BDD_guess_amplification_0.99",
+        "meaning": "hybrid guessing amplification 0.99 where applicable; geometric success is heuristic",
+        "global_success_certified": false
+      },
+      "targets": 1,
+      "oracle": "none",
+      "memory_cap_bytes": null,
+      "unit": "asymptotic reduction sensitivity plus retained estimator work",
+      "interpretation": "conditional unstructured-LWE model",
+      "ciphertext_samples_validated": false,
+      "source_indices_in_modern_attacks": [
+        24,
+        30
+      ],
+      "baseline_1024": {
+        "status": "ok",
+        "log2_operations": 224.88373410902034,
+        "log2_reported_mem": null,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "874",
+          "eta": "872",
+          "d": "1918",
+          "zeta": "0"
+        },
+        "guess_probability_not_global_success": "1.0",
+        "repetitions": "1"
+      },
+      "r1_1536": {
+        "status": "ok",
+        "log2_operations": 341.1197937746384,
+        "log2_reported_mem": null,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "1324",
+          "eta": "1328",
+          "d": "2889",
+          "zeta": "0"
+        },
+        "guess_probability_not_global_success": "1.0",
+        "repetitions": "1"
+      },
+      "conditional_log2_cost_difference": 116.23605966561809,
+      "security_gain_bits": null
+    },
+    {
+      "tool": "community",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "ring_code_commit": null,
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "bdd_hybrid",
+      "sample_budget": "key",
+      "sample_counts": [
+        1024,
+        1536
+      ],
+      "success_contract": {
+        "id": "primal_BDD_guess_amplification_0.99",
+        "meaning": "hybrid guessing amplification 0.99 where applicable; geometric success is heuristic",
+        "global_success_certified": false
+      },
+      "targets": 1,
+      "oracle": "none",
+      "memory_cap_bytes": null,
+      "unit": "asymptotic reduction sensitivity plus retained estimator work",
+      "interpretation": "conditional unstructured-LWE model",
+      "ciphertext_samples_validated": false,
+      "source_indices_in_modern_attacks": [
+        25,
+        31
+      ],
+      "baseline_1024": {
+        "status": "ok",
+        "log2_operations": 224.88373410902034,
+        "log2_reported_mem": null,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "874",
+          "eta": "872",
+          "d": "1918",
+          "zeta": "0"
+        },
+        "guess_probability_not_global_success": "1.0",
+        "repetitions": "1"
+      },
+      "r1_1536": {
+        "status": "ok",
+        "log2_operations": 341.1197937746384,
+        "log2_reported_mem": null,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "1324",
+          "eta": "1328",
+          "d": "2889",
+          "zeta": "0"
+        },
+        "guess_probability_not_global_success": "1.0",
+        "repetitions": "1"
+      },
+      "conditional_log2_cost_difference": 116.23605966561809,
+      "security_gain_bits": null
+    },
+    {
+      "tool": "community",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "ring_code_commit": null,
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "bdd_mitm_hybrid",
+      "sample_budget": "extended",
+      "sample_counts": [
+        1280,
+        1792
+      ],
+      "success_contract": {
+        "id": "primal_BDD_guess_amplification_0.99",
+        "meaning": "hybrid guessing amplification 0.99 where applicable; geometric success is heuristic",
+        "global_success_certified": false
+      },
+      "targets": 1,
+      "oracle": "none",
+      "memory_cap_bytes": null,
+      "unit": "asymptotic reduction sensitivity plus retained estimator work",
+      "interpretation": "conditional unstructured-LWE model",
+      "ciphertext_samples_validated": false,
+      "source_indices_in_modern_attacks": [
+        40,
+        46
+      ],
+      "baseline_1024": {
+        "status": "ok",
+        "log2_operations": 495.90701088150524,
+        "log2_reported_mem": null,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "875",
+          "eta": "2",
+          "d": "1606",
+          "zeta": "307"
+        },
+        "guess_probability_not_global_success": "1.64849880778128e-49",
+        "repetitions": "27935538468397223213461438555949574648781204747002"
+      },
+      "r1_1536": {
+        "status": "ok",
+        "log2_operations": 842.0366247182141,
+        "log2_reported_mem": null,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "1327",
+          "eta": "2",
+          "d": "2436",
+          "zeta": "446"
+        },
+        "guess_probability_not_global_success": "2.08279836230715e-82",
+        "repetitions": "22110494560245743585501559371530964975254474129462572353051530570293266457914243150"
+      },
+      "conditional_log2_cost_difference": 346.1296138367088,
+      "security_gain_bits": null
+    },
+    {
+      "tool": "community",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "ring_code_commit": null,
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "bdd_mitm_hybrid",
+      "sample_budget": "key",
+      "sample_counts": [
+        1024,
+        1536
+      ],
+      "success_contract": {
+        "id": "primal_BDD_guess_amplification_0.99",
+        "meaning": "hybrid guessing amplification 0.99 where applicable; geometric success is heuristic",
+        "global_success_certified": false
+      },
+      "targets": 1,
+      "oracle": "none",
+      "memory_cap_bytes": null,
+      "unit": "asymptotic reduction sensitivity plus retained estimator work",
+      "interpretation": "conditional unstructured-LWE model",
+      "ciphertext_samples_validated": false,
+      "source_indices_in_modern_attacks": [
+        41,
+        47
+      ],
+      "baseline_1024": {
+        "status": "ok",
+        "log2_operations": 495.90701088150524,
+        "log2_reported_mem": null,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "875",
+          "eta": "2",
+          "d": "1606",
+          "zeta": "307"
+        },
+        "guess_probability_not_global_success": "1.64849880778128e-49",
+        "repetitions": "27935538468397223213461438555949574648781204747002"
+      },
+      "r1_1536": {
+        "status": "ok",
+        "log2_operations": 842.0366247182141,
+        "log2_reported_mem": null,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "1327",
+          "eta": "2",
+          "d": "2436",
+          "zeta": "446"
+        },
+        "guess_probability_not_global_success": "2.08279836230715e-82",
+        "repetitions": "22110494560245743585501559371530964975254474129462572353051530570293266457914243150"
+      },
+      "conditional_log2_cost_difference": 346.1296138367088,
+      "security_gain_bits": null
+    },
+    {
+      "tool": "community",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "ring_code_commit": null,
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "dual",
+      "sample_budget": "extended",
+      "sample_counts": [
+        1280,
+        1792
+      ],
+      "success_contract": {
+        "id": "dual_default_success_0.99",
+        "meaning": "solver target 0.99 under estimator distribution and sampling heuristics",
+        "global_success_certified": false
+      },
+      "targets": 1,
+      "oracle": "none",
+      "memory_cap_bytes": null,
+      "unit": "asymptotic reduction sensitivity plus retained estimator work",
+      "interpretation": "conditional unstructured-LWE model",
+      "ciphertext_samples_validated": false,
+      "source_indices_in_modern_attacks": [
+        64,
+        70
+      ],
+      "baseline_1024": {
+        "status": "ok",
+        "log2_operations": 231.69520000000003,
+        "log2_reported_mem": 197.40157045020482,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "904",
+          "d": "1942",
+          "m": "918"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": "1"
+      },
+      "r1_1536": {
+        "status": "ok",
+        "log2_operations": 350.36209999999994,
+        "log2_reported_mem": 294.0701727780759,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "1367",
+          "d": "2925",
+          "m": "1389"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": "1"
+      },
+      "conditional_log2_cost_difference": 118.66689999999991,
+      "security_gain_bits": null
+    },
+    {
+      "tool": "community",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "ring_code_commit": null,
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "dual",
+      "sample_budget": "key",
+      "sample_counts": [
+        1024,
+        1536
+      ],
+      "success_contract": {
+        "id": "dual_default_success_0.99",
+        "meaning": "solver target 0.99 under estimator distribution and sampling heuristics",
+        "global_success_certified": false
+      },
+      "targets": 1,
+      "oracle": "none",
+      "memory_cap_bytes": null,
+      "unit": "asymptotic reduction sensitivity plus retained estimator work",
+      "interpretation": "conditional unstructured-LWE model",
+      "ciphertext_samples_validated": false,
+      "source_indices_in_modern_attacks": [
+        65,
+        71
+      ],
+      "baseline_1024": {
+        "status": "ok",
+        "log2_operations": 231.69520000000003,
+        "log2_reported_mem": 197.40157045020482,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "904",
+          "d": "1942",
+          "m": "918"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": "1"
+      },
+      "r1_1536": {
+        "status": "ok",
+        "log2_operations": 350.36209999999994,
+        "log2_reported_mem": 294.0701727780759,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "1367",
+          "d": "2925",
+          "m": "1389"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": "1"
+      },
+      "conditional_log2_cost_difference": 118.66689999999991,
+      "security_gain_bits": null
+    },
+    {
+      "tool": "community",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "ring_code_commit": null,
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "dual_hybrid",
+      "sample_budget": "extended",
+      "sample_counts": [
+        1280,
+        1792
+      ],
+      "success_contract": {
+        "id": "MATZOV_Nf_mu_half",
+        "meaning": "MATZOV Nf internal mu=0.5; not a certified 0.99 recovery probability",
+        "global_success_certified": false
+      },
+      "targets": 1,
+      "oracle": "none",
+      "memory_cap_bytes": null,
+      "unit": "asymptotic reduction sensitivity plus retained estimator work",
+      "interpretation": "conditional unstructured-LWE model",
+      "ciphertext_samples_validated": false,
+      "source_indices_in_modern_attacks": [
+        80,
+        86
+      ],
+      "baseline_1024": {
+        "status": "ok",
+        "log2_operations": 214.78948035790626,
+        "log2_reported_mem": null,
+        "log2_reported_N": 173.641611807152,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "838",
+          "beta_": "838",
+          "m": "1024",
+          "zeta": "10",
+          "t": "80",
+          "p": "4"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": null
+      },
+      "r1_1536": {
+        "status": "ok",
+        "log2_operations": 325.9580685363968,
+        "log2_reported_mem": null,
+        "log2_reported_N": 262.2581098468072,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "1271",
+          "beta_": "1271",
+          "m": "1536",
+          "zeta": "0",
+          "t": "130",
+          "p": "5"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": null
+      },
+      "conditional_log2_cost_difference": 111.16858817849055,
+      "security_gain_bits": null
+    },
+    {
+      "tool": "community",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "ring_code_commit": null,
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "dual_hybrid",
+      "sample_budget": "key",
+      "sample_counts": [
+        1024,
+        1536
+      ],
+      "success_contract": {
+        "id": "MATZOV_Nf_mu_half",
+        "meaning": "MATZOV Nf internal mu=0.5; not a certified 0.99 recovery probability",
+        "global_success_certified": false
+      },
+      "targets": 1,
+      "oracle": "none",
+      "memory_cap_bytes": null,
+      "unit": "asymptotic reduction sensitivity plus retained estimator work",
+      "interpretation": "conditional unstructured-LWE model",
+      "ciphertext_samples_validated": false,
+      "source_indices_in_modern_attacks": [
+        81,
+        87
+      ],
+      "baseline_1024": {
+        "status": "ok",
+        "log2_operations": 214.78948035790626,
+        "log2_reported_mem": null,
+        "log2_reported_N": 173.641611807152,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "838",
+          "beta_": "838",
+          "m": "1024",
+          "zeta": "10",
+          "t": "80",
+          "p": "4"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": null
+      },
+      "r1_1536": {
+        "status": "ok",
+        "log2_operations": 325.9580685363968,
+        "log2_reported_mem": null,
+        "log2_reported_N": 262.2581098468072,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "1271",
+          "beta_": "1271",
+          "m": "1536",
+          "zeta": "0",
+          "t": "130",
+          "p": "5"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": null
+      },
+      "conditional_log2_cost_difference": 111.16858817849055,
+      "security_gain_bits": null
+    },
+    {
+      "tool": "community",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "ring_code_commit": null,
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "usvp",
+      "sample_budget": "extended",
+      "sample_counts": [
+        1280,
+        1792
+      ],
+      "success_contract": {
+        "id": "uSVP_GSA_geometric_condition",
+        "meaning": "GSA success predicate; no explicit end-to-end success target in preserved job",
+        "global_success_certified": false
+      },
+      "targets": 1,
+      "oracle": "none",
+      "memory_cap_bytes": null,
+      "unit": "asymptotic reduction sensitivity plus retained estimator work",
+      "interpretation": "conditional unstructured-LWE model",
+      "ciphertext_samples_validated": false,
+      "source_indices_in_modern_attacks": [
+        104,
+        110
+      ],
+      "baseline_1024": {
+        "status": "ok",
+        "log2_operations": 224.00619999999998,
+        "log2_reported_mem": null,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "874",
+          "d": "1867"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": null
+      },
+      "r1_1536": {
+        "status": "ok",
+        "log2_operations": 340.1101,
+        "log2_reported_mem": null,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "1327",
+          "d": "2853"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": null
+      },
+      "conditional_log2_cost_difference": 116.10390000000001,
+      "security_gain_bits": null
+    },
+    {
+      "tool": "community",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "ring_code_commit": null,
+      "cost_model": "BCSS23-quantum-asymptotic",
+      "algorithm": "usvp",
+      "sample_budget": "key",
+      "sample_counts": [
+        1024,
+        1536
+      ],
+      "success_contract": {
+        "id": "uSVP_GSA_geometric_condition",
+        "meaning": "GSA success predicate; no explicit end-to-end success target in preserved job",
+        "global_success_certified": false
+      },
+      "targets": 1,
+      "oracle": "none",
+      "memory_cap_bytes": null,
+      "unit": "asymptotic reduction sensitivity plus retained estimator work",
+      "interpretation": "conditional unstructured-LWE model",
+      "ciphertext_samples_validated": false,
+      "source_indices_in_modern_attacks": [
+        105,
+        111
+      ],
+      "baseline_1024": {
+        "status": "ok",
+        "log2_operations": 224.00619999999998,
+        "log2_reported_mem": null,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "874",
+          "d": "1867"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": null
+      },
+      "r1_1536": {
+        "status": "ok",
+        "log2_operations": 340.1101,
+        "log2_reported_mem": null,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "1327",
+          "d": "2853"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": null
+      },
+      "conditional_log2_cost_difference": 116.10390000000001,
+      "security_gain_bits": null
+    },
+    {
+      "tool": "community",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "ring_code_commit": null,
+      "cost_model": "MATZOV-classical",
+      "algorithm": "arora-gb",
+      "sample_budget": "extended",
+      "sample_counts": [
+        1280,
+        1792
+      ],
+      "success_contract": {
+        "id": "Arora_GB_degree_regularity",
+        "meaning": "degree-of-regularity heuristic; no common recovery-success certificate",
+        "global_success_certified": false
+      },
+      "targets": 1,
+      "oracle": "none",
+      "memory_cap_bytes": null,
+      "unit": "estimator modeled word operations",
+      "interpretation": "conditional unstructured-LWE model",
+      "ciphertext_samples_validated": false,
+      "source_indices_in_modern_attacks": [
+        0,
+        6
+      ],
+      "baseline_1024": {
+        "status": "ok",
+        "log2_operations": 3311.642601240517,
+        "log2_reported_mem": 3311.642601240517,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "m": "1280",
+          "t": "2"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": null
+      },
+      "r1_1536": {
+        "status": "ok",
+        "log2_operations": 6469.921541720783,
+        "log2_reported_mem": 6469.921541720783,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "m": "1792",
+          "t": "3"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": null
+      },
+      "conditional_log2_cost_difference": 3158.2789404802666,
+      "security_gain_bits": null
+    },
+    {
+      "tool": "community",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "ring_code_commit": null,
+      "cost_model": "MATZOV-classical",
+      "algorithm": "arora-gb",
+      "sample_budget": "key",
+      "sample_counts": [
+        1024,
+        1536
+      ],
+      "success_contract": {
+        "id": "Arora_GB_degree_regularity",
+        "meaning": "degree-of-regularity heuristic; no common recovery-success certificate",
+        "global_success_certified": false
+      },
+      "targets": 1,
+      "oracle": "none",
+      "memory_cap_bytes": null,
+      "unit": "estimator modeled word operations",
+      "interpretation": "conditional unstructured-LWE model",
+      "ciphertext_samples_validated": false,
+      "source_indices_in_modern_attacks": [
+        1,
+        7
+      ],
+      "baseline_1024": {
+        "status": "ok",
+        "log2_operations": 3455.3547413562396,
+        "log2_reported_mem": 3455.3547413562396,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "m": "1024",
+          "t": "2"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": null
+      },
+      "r1_1536": {
+        "status": "ok",
+        "log2_operations": 6624.138047048853,
+        "log2_reported_mem": 6624.138047048853,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "m": "1536",
+          "t": "3"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": null
+      },
+      "conditional_log2_cost_difference": 3168.7833056926133,
+      "security_gain_bits": null
+    },
+    {
+      "tool": "community",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "ring_code_commit": null,
+      "cost_model": "MATZOV-classical",
+      "algorithm": "bdd",
+      "sample_budget": "extended",
+      "sample_counts": [
+        1280,
+        1792
+      ],
+      "success_contract": {
+        "id": "primal_BDD_guess_amplification_0.99",
+        "meaning": "hybrid guessing amplification 0.99 where applicable; geometric success is heuristic",
+        "global_success_certified": false
+      },
+      "targets": 1,
+      "oracle": "none",
+      "memory_cap_bytes": null,
+      "unit": "estimator modeled word operations",
+      "interpretation": "conditional unstructured-LWE model",
+      "ciphertext_samples_validated": false,
+      "source_indices_in_modern_attacks": [
+        16,
+        22
+      ],
+      "baseline_1024": {
+        "status": "ok",
+        "log2_operations": 270.7236234535225,
+        "log2_reported_mem": null,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "855",
+          "eta": "889",
+          "d": "1867"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": null
+      },
+      "r1_1536": {
+        "status": "ok",
+        "log2_operations": 398.2559188967806,
+        "log2_reported_mem": null,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "1307",
+          "eta": "1344",
+          "d": "2835"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": null
+      },
+      "conditional_log2_cost_difference": 127.53229544325808,
+      "security_gain_bits": null
+    },
+    {
+      "tool": "community",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "ring_code_commit": null,
+      "cost_model": "MATZOV-classical",
+      "algorithm": "bdd",
+      "sample_budget": "key",
+      "sample_counts": [
+        1024,
+        1536
+      ],
+      "success_contract": {
+        "id": "primal_BDD_guess_amplification_0.99",
+        "meaning": "hybrid guessing amplification 0.99 where applicable; geometric success is heuristic",
+        "global_success_certified": false
+      },
+      "targets": 1,
+      "oracle": "none",
+      "memory_cap_bytes": null,
+      "unit": "estimator modeled word operations",
+      "interpretation": "conditional unstructured-LWE model",
+      "ciphertext_samples_validated": false,
+      "source_indices_in_modern_attacks": [
+        17,
+        23
+      ],
+      "baseline_1024": {
+        "status": "ok",
+        "log2_operations": 270.7236234535225,
+        "log2_reported_mem": null,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "855",
+          "eta": "889",
+          "d": "1867"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": null
+      },
+      "r1_1536": {
+        "status": "ok",
+        "log2_operations": 398.2559188967806,
+        "log2_reported_mem": null,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "1307",
+          "eta": "1344",
+          "d": "2835"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": null
+      },
+      "conditional_log2_cost_difference": 127.53229544325808,
+      "security_gain_bits": null
+    },
+    {
+      "tool": "community",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "ring_code_commit": null,
+      "cost_model": "MATZOV-classical",
+      "algorithm": "bdd_hybrid",
+      "sample_budget": "extended",
+      "sample_counts": [
+        1280,
+        1792
+      ],
+      "success_contract": {
+        "id": "primal_BDD_guess_amplification_0.99",
+        "meaning": "hybrid guessing amplification 0.99 where applicable; geometric success is heuristic",
+        "global_success_certified": false
+      },
+      "targets": 1,
+      "oracle": "none",
+      "memory_cap_bytes": null,
+      "unit": "estimator modeled word operations",
+      "interpretation": "conditional unstructured-LWE model",
+      "ciphertext_samples_validated": false,
+      "source_indices_in_modern_attacks": [
+        32,
+        38
+      ],
+      "baseline_1024": {
+        "status": "ok",
+        "log2_operations": 270.7499155411828,
+        "log2_reported_mem": null,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "855",
+          "eta": "889",
+          "d": "1902",
+          "zeta": "0"
+        },
+        "guess_probability_not_global_success": "1.0",
+        "repetitions": "1"
+      },
+      "r1_1536": {
+        "status": "ok",
+        "log2_operations": 398.2740161465748,
+        "log2_reported_mem": null,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "1307",
+          "eta": "1344",
+          "d": "2875",
+          "zeta": "0"
+        },
+        "guess_probability_not_global_success": "1.0",
+        "repetitions": "1"
+      },
+      "conditional_log2_cost_difference": 127.524100605392,
+      "security_gain_bits": null
+    },
+    {
+      "tool": "community",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "ring_code_commit": null,
+      "cost_model": "MATZOV-classical",
+      "algorithm": "bdd_hybrid",
+      "sample_budget": "key",
+      "sample_counts": [
+        1024,
+        1536
+      ],
+      "success_contract": {
+        "id": "primal_BDD_guess_amplification_0.99",
+        "meaning": "hybrid guessing amplification 0.99 where applicable; geometric success is heuristic",
+        "global_success_certified": false
+      },
+      "targets": 1,
+      "oracle": "none",
+      "memory_cap_bytes": null,
+      "unit": "estimator modeled word operations",
+      "interpretation": "conditional unstructured-LWE model",
+      "ciphertext_samples_validated": false,
+      "source_indices_in_modern_attacks": [
+        33,
+        39
+      ],
+      "baseline_1024": {
+        "status": "ok",
+        "log2_operations": 270.7499155411828,
+        "log2_reported_mem": null,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "855",
+          "eta": "889",
+          "d": "1902",
+          "zeta": "0"
+        },
+        "guess_probability_not_global_success": "1.0",
+        "repetitions": "1"
+      },
+      "r1_1536": {
+        "status": "ok",
+        "log2_operations": 398.2740161465748,
+        "log2_reported_mem": null,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "1307",
+          "eta": "1344",
+          "d": "2875",
+          "zeta": "0"
+        },
+        "guess_probability_not_global_success": "1.0",
+        "repetitions": "1"
+      },
+      "conditional_log2_cost_difference": 127.524100605392,
+      "security_gain_bits": null
+    },
+    {
+      "tool": "community",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "ring_code_commit": null,
+      "cost_model": "MATZOV-classical",
+      "algorithm": "bdd_mitm_hybrid",
+      "sample_budget": "extended",
+      "sample_counts": [
+        1280,
+        1792
+      ],
+      "success_contract": {
+        "id": "primal_BDD_guess_amplification_0.99",
+        "meaning": "hybrid guessing amplification 0.99 where applicable; geometric success is heuristic",
+        "global_success_certified": false
+      },
+      "targets": 1,
+      "oracle": "none",
+      "memory_cap_bytes": null,
+      "unit": "estimator modeled word operations",
+      "interpretation": "conditional unstructured-LWE model",
+      "ciphertext_samples_validated": false,
+      "source_indices_in_modern_attacks": [
+        48,
+        54
+      ],
+      "baseline_1024": {
+        "status": "ok",
+        "log2_operations": 495.90701088150524,
+        "log2_reported_mem": null,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "875",
+          "eta": "2",
+          "d": "1606",
+          "zeta": "307"
+        },
+        "guess_probability_not_global_success": "1.64849880778128e-49",
+        "repetitions": "27935538468397223213461438555949574648781204747002"
+      },
+      "r1_1536": {
+        "status": "ok",
+        "log2_operations": 842.0366247182141,
+        "log2_reported_mem": null,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "1327",
+          "eta": "2",
+          "d": "2436",
+          "zeta": "446"
+        },
+        "guess_probability_not_global_success": "2.08279836230715e-82",
+        "repetitions": "22110494560245743585501559371530964975254474129462572353051530570293266457914243150"
+      },
+      "conditional_log2_cost_difference": 346.1296138367088,
+      "security_gain_bits": null
+    },
+    {
+      "tool": "community",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "ring_code_commit": null,
+      "cost_model": "MATZOV-classical",
+      "algorithm": "bdd_mitm_hybrid",
+      "sample_budget": "key",
+      "sample_counts": [
+        1024,
+        1536
+      ],
+      "success_contract": {
+        "id": "primal_BDD_guess_amplification_0.99",
+        "meaning": "hybrid guessing amplification 0.99 where applicable; geometric success is heuristic",
+        "global_success_certified": false
+      },
+      "targets": 1,
+      "oracle": "none",
+      "memory_cap_bytes": null,
+      "unit": "estimator modeled word operations",
+      "interpretation": "conditional unstructured-LWE model",
+      "ciphertext_samples_validated": false,
+      "source_indices_in_modern_attacks": [
+        49,
+        55
+      ],
+      "baseline_1024": {
+        "status": "ok",
+        "log2_operations": 495.90701088150524,
+        "log2_reported_mem": null,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "875",
+          "eta": "2",
+          "d": "1606",
+          "zeta": "307"
+        },
+        "guess_probability_not_global_success": "1.64849880778128e-49",
+        "repetitions": "27935538468397223213461438555949574648781204747002"
+      },
+      "r1_1536": {
+        "status": "ok",
+        "log2_operations": 842.0366247182141,
+        "log2_reported_mem": null,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "1327",
+          "eta": "2",
+          "d": "2436",
+          "zeta": "446"
+        },
+        "guess_probability_not_global_success": "2.08279836230715e-82",
+        "repetitions": "22110494560245743585501559371530964975254474129462572353051530570293266457914243150"
+      },
+      "conditional_log2_cost_difference": 346.1296138367088,
+      "security_gain_bits": null
+    },
+    {
+      "tool": "community",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "ring_code_commit": null,
+      "cost_model": "MATZOV-classical",
+      "algorithm": "bkw",
+      "sample_budget": "extended",
+      "sample_counts": [
+        1280,
+        1792
+      ],
+      "success_contract": {
+        "id": "coded_BKW_internal_target_0.99",
+        "meaning": "internal distinguish target 0.99, with sample amplification and changed noise",
+        "global_success_certified": false
+      },
+      "targets": 1,
+      "oracle": "none",
+      "memory_cap_bytes": null,
+      "unit": "estimator modeled word operations",
+      "interpretation": "conditional unstructured-LWE model",
+      "ciphertext_samples_validated": false,
+      "source_indices_in_modern_attacks": [
+        56,
+        62
+      ],
+      "baseline_1024": {
+        "status": "ok",
+        "log2_operations": 310.52958982667144,
+        "log2_reported_mem": 296.69175387994886,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "m": "2.2733687383406847e+89"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": null
+      },
+      "r1_1536": {
+        "status": "ok",
+        "log2_operations": 468.76728123284926,
+        "log2_reported_mem": 455.99567271382057,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "m": "9.346757270042721e+136"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": null
+      },
+      "conditional_log2_cost_difference": 158.23769140617782,
+      "security_gain_bits": null
+    },
+    {
+      "tool": "community",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "ring_code_commit": null,
+      "cost_model": "MATZOV-classical",
+      "algorithm": "bkw",
+      "sample_budget": "key",
+      "sample_counts": [
+        1024,
+        1536
+      ],
+      "success_contract": {
+        "id": "coded_BKW_internal_target_0.99",
+        "meaning": "internal distinguish target 0.99, with sample amplification and changed noise",
+        "global_success_certified": false
+      },
+      "targets": 1,
+      "oracle": "none",
+      "memory_cap_bytes": null,
+      "unit": "estimator modeled word operations",
+      "interpretation": "conditional unstructured-LWE model",
+      "ciphertext_samples_validated": false,
+      "source_indices_in_modern_attacks": [
+        57,
+        63
+      ],
+      "baseline_1024": {
+        "status": "ok",
+        "log2_operations": 315.0374052329178,
+        "log2_reported_mem": 296.69175387994886,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "m": "4.087288118700695e+90"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": null
+      },
+      "r1_1536": {
+        "status": "ok",
+        "log2_operations": 468.828751174665,
+        "log2_reported_mem": 455.99567271382057,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "m": "9.560013005843755e+136"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": null
+      },
+      "conditional_log2_cost_difference": 153.79134594174718,
+      "security_gain_bits": null
+    },
+    {
+      "tool": "community",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "ring_code_commit": null,
+      "cost_model": "MATZOV-classical",
+      "algorithm": "dual",
+      "sample_budget": "extended",
+      "sample_counts": [
+        1280,
+        1792
+      ],
+      "success_contract": {
+        "id": "dual_default_success_0.99",
+        "meaning": "solver target 0.99 under estimator distribution and sampling heuristics",
+        "global_success_certified": false
+      },
+      "targets": 1,
+      "oracle": "none",
+      "memory_cap_bytes": null,
+      "unit": "estimator modeled word operations",
+      "interpretation": "conditional unstructured-LWE model",
+      "ciphertext_samples_validated": false,
+      "source_indices_in_modern_attacks": [
+        72,
+        78
+      ],
+      "baseline_1024": {
+        "status": "ok",
+        "log2_operations": 288.5257109881612,
+        "log2_reported_mem": 195.3096869825351,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "918",
+          "d": "1954",
+          "m": "930"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": "1"
+      },
+      "r1_1536": {
+        "status": "ok",
+        "log2_operations": 422.275992792897,
+        "log2_reported_mem": 289.69031685311427,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "1392",
+          "d": "2946",
+          "m": "1410"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": "1"
+      },
+      "conditional_log2_cost_difference": 133.75028180473578,
+      "security_gain_bits": null
+    },
+    {
+      "tool": "community",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "ring_code_commit": null,
+      "cost_model": "MATZOV-classical",
+      "algorithm": "dual",
+      "sample_budget": "key",
+      "sample_counts": [
+        1024,
+        1536
+      ],
+      "success_contract": {
+        "id": "dual_default_success_0.99",
+        "meaning": "solver target 0.99 under estimator distribution and sampling heuristics",
+        "global_success_certified": false
+      },
+      "targets": 1,
+      "oracle": "none",
+      "memory_cap_bytes": null,
+      "unit": "estimator modeled word operations",
+      "interpretation": "conditional unstructured-LWE model",
+      "ciphertext_samples_validated": false,
+      "source_indices_in_modern_attacks": [
+        73,
+        79
+      ],
+      "baseline_1024": {
+        "status": "ok",
+        "log2_operations": 288.5257109881612,
+        "log2_reported_mem": 195.3096869825351,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "918",
+          "d": "1954",
+          "m": "930"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": "1"
+      },
+      "r1_1536": {
+        "status": "ok",
+        "log2_operations": 422.275992792897,
+        "log2_reported_mem": 289.69031685311427,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "1392",
+          "d": "2946",
+          "m": "1410"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": "1"
+      },
+      "conditional_log2_cost_difference": 133.75028180473578,
+      "security_gain_bits": null
+    },
+    {
+      "tool": "community",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "ring_code_commit": null,
+      "cost_model": "MATZOV-classical",
+      "algorithm": "dual_hybrid",
+      "sample_budget": "extended",
+      "sample_counts": [
+        1280,
+        1792
+      ],
+      "success_contract": {
+        "id": "MATZOV_Nf_mu_half",
+        "meaning": "MATZOV Nf internal mu=0.5; not a certified 0.99 recovery probability",
+        "global_success_certified": false
+      },
+      "targets": 1,
+      "oracle": "none",
+      "memory_cap_bytes": null,
+      "unit": "estimator modeled word operations",
+      "interpretation": "conditional unstructured-LWE model",
+      "ciphertext_samples_validated": false,
+      "source_indices_in_modern_attacks": [
+        88,
+        94
+      ],
+      "baseline_1024": {
+        "status": "ok",
+        "log2_operations": 262.3356800074737,
+        "log2_reported_mem": null,
+        "log2_reported_N": 165.93852657549195,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "823",
+          "beta_": "804",
+          "m": "1024",
+          "zeta": "0",
+          "t": "120",
+          "p": "4"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": null
+      },
+      "r1_1536": {
+        "status": "ok",
+        "log2_operations": 383.77256296063496,
+        "log2_reported_mem": null,
+        "log2_reported_N": 250.8180616059906,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "1254",
+          "beta_": "1215",
+          "m": "1536",
+          "zeta": "40",
+          "t": "110",
+          "p": "5"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": null
+      },
+      "conditional_log2_cost_difference": 121.43688295316127,
+      "security_gain_bits": null
+    },
+    {
+      "tool": "community",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "ring_code_commit": null,
+      "cost_model": "MATZOV-classical",
+      "algorithm": "dual_hybrid",
+      "sample_budget": "key",
+      "sample_counts": [
+        1024,
+        1536
+      ],
+      "success_contract": {
+        "id": "MATZOV_Nf_mu_half",
+        "meaning": "MATZOV Nf internal mu=0.5; not a certified 0.99 recovery probability",
+        "global_success_certified": false
+      },
+      "targets": 1,
+      "oracle": "none",
+      "memory_cap_bytes": null,
+      "unit": "estimator modeled word operations",
+      "interpretation": "conditional unstructured-LWE model",
+      "ciphertext_samples_validated": false,
+      "source_indices_in_modern_attacks": [
+        89,
+        95
+      ],
+      "baseline_1024": {
+        "status": "ok",
+        "log2_operations": 262.3356800074737,
+        "log2_reported_mem": null,
+        "log2_reported_N": 165.93852657549195,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "823",
+          "beta_": "804",
+          "m": "1024",
+          "zeta": "0",
+          "t": "120",
+          "p": "4"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": null
+      },
+      "r1_1536": {
+        "status": "ok",
+        "log2_operations": 383.77256296063496,
+        "log2_reported_mem": null,
+        "log2_reported_N": 250.8180616059906,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "1254",
+          "beta_": "1215",
+          "m": "1536",
+          "zeta": "40",
+          "t": "110",
+          "p": "5"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": null
+      },
+      "conditional_log2_cost_difference": 121.43688295316127,
+      "security_gain_bits": null
+    },
+    {
+      "tool": "community",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "ring_code_commit": null,
+      "cost_model": "MATZOV-classical",
+      "algorithm": "usvp",
+      "sample_budget": "extended",
+      "sample_counts": [
+        1280,
+        1792
+      ],
+      "success_contract": {
+        "id": "uSVP_GSA_geometric_condition",
+        "meaning": "GSA success predicate; no explicit end-to-end success target in preserved job",
+        "global_success_certified": false
+      },
+      "targets": 1,
+      "oracle": "none",
+      "memory_cap_bytes": null,
+      "unit": "estimator modeled word operations",
+      "interpretation": "conditional unstructured-LWE model",
+      "ciphertext_samples_validated": false,
+      "source_indices_in_modern_attacks": [
+        112,
+        118
+      ],
+      "baseline_1024": {
+        "status": "ok",
+        "log2_operations": 275.1043604571838,
+        "log2_reported_mem": null,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "874",
+          "d": "1867"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": null
+      },
+      "r1_1536": {
+        "status": "ok",
+        "log2_operations": 402.8225566803057,
+        "log2_reported_mem": null,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "1327",
+          "d": "2853"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": null
+      },
+      "conditional_log2_cost_difference": 127.71819622312188,
+      "security_gain_bits": null
+    },
+    {
+      "tool": "community",
+      "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+      "ring_code_commit": null,
+      "cost_model": "MATZOV-classical",
+      "algorithm": "usvp",
+      "sample_budget": "key",
+      "sample_counts": [
+        1024,
+        1536
+      ],
+      "success_contract": {
+        "id": "uSVP_GSA_geometric_condition",
+        "meaning": "GSA success predicate; no explicit end-to-end success target in preserved job",
+        "global_success_certified": false
+      },
+      "targets": 1,
+      "oracle": "none",
+      "memory_cap_bytes": null,
+      "unit": "estimator modeled word operations",
+      "interpretation": "conditional unstructured-LWE model",
+      "ciphertext_samples_validated": false,
+      "source_indices_in_modern_attacks": [
+        113,
+        119
+      ],
+      "baseline_1024": {
+        "status": "ok",
+        "log2_operations": 275.1043604571838,
+        "log2_reported_mem": null,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "874",
+          "d": "1867"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": null
+      },
+      "r1_1536": {
+        "status": "ok",
+        "log2_operations": 402.8225566803057,
+        "log2_reported_mem": null,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "1327",
+          "d": "2853"
+        },
+        "guess_probability_not_global_success": null,
+        "repetitions": null
+      },
+      "conditional_log2_cost_difference": 127.71819622312188,
+      "security_gain_bits": null
+    },
+    {
+      "tool": "ring-2026",
+      "estimator_commit": "6019056011d10d7e9c30a0d5da2d2f729fbc2eec",
+      "ring_code_commit": "a92f335665eef69927d2d8f49832bd595a6dac32",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "rot_bdd_hybrid",
+      "sample_budget": "key",
+      "sample_counts": [
+        1024,
+        1536
+      ],
+      "success_contract": {
+        "id": "primal_BDD_guess_amplification_0.99",
+        "meaning": "hybrid guessing amplification 0.99 where applicable; geometric success is heuristic",
+        "global_success_certified": false
+      },
+      "targets": 1,
+      "oracle": "none",
+      "memory_cap_bytes": null,
+      "unit": "estimator modeled word operations",
+      "interpretation": "exploratory dense-CBD use of sparse-secret rotation code",
+      "ciphertext_samples_validated": false,
+      "source_indices_in_modern_attacks": [
+        96,
+        99
+      ],
+      "baseline_1024": {
+        "status": "ok",
+        "log2_operations": 270.7499155411828,
+        "log2_reported_mem": null,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "855",
+          "eta": "889",
+          "d": "1902",
+          "zeta": "0"
+        },
+        "guess_probability_not_global_success": "1.0",
+        "repetitions": "1"
+      },
+      "r1_1536": {
+        "status": "ok",
+        "log2_operations": 398.2740161465748,
+        "log2_reported_mem": null,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "1307",
+          "eta": "1344",
+          "d": "2875",
+          "zeta": "0"
+        },
+        "guess_probability_not_global_success": "1.0",
+        "repetitions": "1"
+      },
+      "conditional_log2_cost_difference": 127.524100605392,
+      "security_gain_bits": null
+    },
+    {
+      "tool": "ring-2026",
+      "estimator_commit": "6019056011d10d7e9c30a0d5da2d2f729fbc2eec",
+      "ring_code_commit": "a92f335665eef69927d2d8f49832bd595a6dac32",
+      "cost_model": "MATZOV-classical",
+      "algorithm": "rot_bdd_mitm_hybrid",
+      "sample_budget": "key",
+      "sample_counts": [
+        1024,
+        1536
+      ],
+      "success_contract": {
+        "id": "primal_BDD_guess_amplification_0.99",
+        "meaning": "hybrid guessing amplification 0.99 where applicable; geometric success is heuristic",
+        "global_success_certified": false
+      },
+      "targets": 1,
+      "oracle": "none",
+      "memory_cap_bytes": null,
+      "unit": "estimator modeled word operations",
+      "interpretation": "exploratory dense-CBD use of sparse-secret rotation code",
+      "ciphertext_samples_validated": false,
+      "source_indices_in_modern_attacks": [
+        100,
+        103
+      ],
+      "baseline_1024": {
+        "status": "ok",
+        "log2_operations": 491.9225838594884,
+        "log2_reported_mem": null,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "875",
+          "eta": "2",
+          "d": "1603",
+          "zeta": "309"
+        },
+        "guess_probability_not_global_success": "1.66194897328394e-46",
+        "repetitions": "27709455946102141859975226674771138291990619277"
+      },
+      "r1_1536": {
+        "status": "ok",
+        "log2_operations": 838.0597182448371,
+        "log2_reported_mem": null,
+        "log2_reported_N": null,
+        "reported_mem_is_bytes": false,
+        "reported_fields": {
+          "beta": "1327",
+          "eta": "2",
+          "d": "2438",
+          "zeta": "444"
+        },
+        "guess_probability_not_global_success": "4.97908209522109e-81",
+        "repetitions": "924903445638730358683714389967580504359391410877858312536380125568602599074008792"
+      },
+      "conditional_log2_cost_difference": 346.1371343853487,
+      "security_gain_bits": null
+    }
+  ],
+  "coded_dual_points": [
+    {
+      "dimension": 1024,
+      "degree": 256,
+      "rank": 4,
+      "q": 3329,
+      "eta": 2,
+      "mode": "LWE",
+      "index": 1078,
+      "inputs": {
+        "n": 1024,
+        "degree": 256,
+        "q": 3329,
+        "eta": 2,
+        "samples": 790,
+        "nenu": 28,
+        "nfft": 114,
+        "kfft": 16,
+        "mlwe": false
+      },
+      "algorithm_source_commit": "e2104ca50a293ed09b8fcec703cd2b143d21bee8",
+      "decoder": "ideal_GV_radius_ratio_1",
+      "success_contract": {
+        "zero_subset_target": 0.6,
+        "normal_false_budget": 0.05,
+        "global_success_certified": false,
+        "probability_0_55_not_asserted": true
+      },
+      "cost_model": "authors embedded MATZOV list_decoding-classical, distinct from run-002",
+      "log2_operations": 258.45951281568244,
+      "beta0": 807,
+      "beta1": 788,
+      "reduction_table_extrapolated": false,
+      "search_global_optimum": false,
+      "search_locally_stable": true,
+      "log2_list_size": 163.52477471586442,
+      "storage": {
+        "representation": "dense_mod_q_packed",
+        "coordinate_bits": 12,
+        "bytes_per_vector": 2508,
+        "log2_list_bytes": 174.81709634866647,
+        "includes_auxiliary_memory": false,
+        "universal_memory_lower_bound": false,
+        "fixed_representation_cap_sensitivity": [
+          {
+            "log2_cap_bytes": 40,
+            "log2_max_vectors": 28.707678365681147,
+            "fits": false,
+            "log2_excess_bytes": 134.81709634866647
+          },
+          {
+            "log2_cap_bytes": 60,
+            "log2_max_vectors": 48.70767836719796,
+            "fits": false,
+            "log2_excess_bytes": 114.81709634866647
+          },
+          {
+            "log2_cap_bytes": 80,
+            "log2_max_vectors": 68.70767836719796,
+            "fits": false,
+            "log2_excess_bytes": 94.81709634866647
+          }
+        ],
+        "bounded_memory_attack_cost": null
+      },
+      "normal_variance_relative_excess_at_budget": 0.017352222535710116,
+      "moment_only_clipped_false_union_bound": 1.0,
+      "tail_law_validated": false,
+      "score_corrected_attack_cost": null,
+      "security_level_bits": null
+    },
+    {
+      "dimension": 1024,
+      "degree": 256,
+      "rank": 4,
+      "q": 3329,
+      "eta": 2,
+      "mode": "author_MLWE_zero_count_heuristic",
+      "index": 1256,
+      "inputs": {
+        "n": 1024,
+        "degree": 256,
+        "q": 3329,
+        "eta": 2,
+        "samples": 797,
+        "nenu": 33,
+        "nfft": 111,
+        "kfft": 16,
+        "mlwe": true
+      },
+      "algorithm_source_commit": "e2104ca50a293ed09b8fcec703cd2b143d21bee8",
+      "decoder": "ideal_GV_radius_ratio_1",
+      "success_contract": {
+        "zero_subset_target": 0.6,
+        "normal_false_budget": 0.05,
+        "global_success_certified": false,
+        "probability_0_55_not_asserted": true
+      },
+      "cost_model": "authors embedded MATZOV list_decoding-classical, distinct from run-002",
+      "log2_operations": 256.96892319052944,
+      "beta0": 801,
+      "beta1": 783,
+      "reduction_table_extrapolated": false,
+      "search_global_optimum": false,
+      "search_locally_stable": true,
+      "log2_list_size": 162.4871809676673,
+      "storage": {
+        "representation": "dense_mod_q_packed",
+        "coordinate_bits": 12,
+        "bytes_per_vector": 2516,
+        "log2_list_bytes": 173.78409717454662,
+        "includes_auxiliary_memory": false,
+        "universal_memory_lower_bound": false,
+        "fixed_representation_cap_sensitivity": [
+          {
+            "log2_cap_bytes": 40,
+            "log2_max_vectors": 28.703083792517134,
+            "fits": false,
+            "log2_excess_bytes": 133.78409717454662
+          },
+          {
+            "log2_cap_bytes": 60,
+            "log2_max_vectors": 48.70308379312071,
+            "fits": false,
+            "log2_excess_bytes": 113.78409717454662
+          },
+          {
+            "log2_cap_bytes": 80,
+            "log2_max_vectors": 68.70308379312071,
+            "fits": false,
+            "log2_excess_bytes": 93.78409717454662
+          }
+        ],
+        "bounded_memory_attack_cost": null
+      },
+      "normal_variance_relative_excess_at_budget": 0.0007807833214621418,
+      "moment_only_clipped_false_union_bound": 1.0,
+      "tail_law_validated": false,
+      "score_corrected_attack_cost": null,
+      "security_level_bits": null
+    },
+    {
+      "dimension": 1536,
+      "degree": 256,
+      "rank": 6,
+      "q": 7681,
+      "eta": 3,
+      "mode": "LWE",
+      "index": 1378,
+      "inputs": {
+        "n": 1536,
+        "degree": 256,
+        "q": 7681,
+        "eta": 3,
+        "samples": 1236,
+        "nenu": 35,
+        "nfft": 152,
+        "kfft": 22,
+        "mlwe": false
+      },
+      "algorithm_source_commit": "e2104ca50a293ed09b8fcec703cd2b143d21bee8",
+      "decoder": "ideal_GV_radius_ratio_1",
+      "success_contract": {
+        "zero_subset_target": 0.6,
+        "normal_false_budget": 0.05,
+        "global_success_certified": false,
+        "probability_0_55_not_asserted": true
+      },
+      "cost_model": "authors embedded MATZOV list_decoding-classical, distinct from run-002",
+      "log2_operations": 381.7117626490805,
+      "beta0": 1245,
+      "beta1": 1205,
+      "reduction_table_extrapolated": true,
+      "search_global_optimum": false,
+      "search_locally_stable": true,
+      "log2_list_size": 250.0600933155033,
+      "storage": {
+        "representation": "dense_mod_q_packed",
+        "coordinate_bits": 13,
+        "bytes_per_vector": 4201,
+        "log2_list_bytes": 262.09661038598983,
+        "includes_auxiliary_memory": false,
+        "universal_memory_lower_bound": false,
+        "fixed_representation_cap_sensitivity": [
+          {
+            "log2_cap_bytes": 40,
+            "log2_max_vectors": 27.963482929239248,
+            "fits": false,
+            "log2_excess_bytes": 222.09661038598983
+          },
+          {
+            "log2_cap_bytes": 60,
+            "log2_max_vectors": 47.96348292951348,
+            "fits": false,
+            "log2_excess_bytes": 202.09661038598983
+          },
+          {
+            "log2_cap_bytes": 80,
+            "log2_max_vectors": 67.96348292951349,
+            "fits": false,
+            "log2_excess_bytes": 182.09661038598983
+          }
+        ],
+        "bounded_memory_attack_cost": null
+      },
+      "normal_variance_relative_excess_at_budget": 0.014127821041702848,
+      "moment_only_clipped_false_union_bound": 1.0,
+      "tail_law_validated": false,
+      "score_corrected_attack_cost": null,
+      "security_level_bits": null
+    },
+    {
+      "dimension": 1536,
+      "degree": 256,
+      "rank": 6,
+      "q": 7681,
+      "eta": 3,
+      "mode": "author_MLWE_zero_count_heuristic",
+      "index": 1698,
+      "inputs": {
+        "n": 1536,
+        "degree": 256,
+        "q": 7681,
+        "eta": 3,
+        "samples": 1230,
+        "nenu": 50,
+        "nfft": 140,
+        "kfft": 21,
+        "mlwe": true
+      },
+      "algorithm_source_commit": "e2104ca50a293ed09b8fcec703cd2b143d21bee8",
+      "decoder": "ideal_GV_radius_ratio_1",
+      "success_contract": {
+        "zero_subset_target": 0.6,
+        "normal_false_budget": 0.05,
+        "global_success_certified": false,
+        "probability_0_55_not_asserted": true
+      },
+      "cost_model": "authors embedded MATZOV list_decoding-classical, distinct from run-002",
+      "log2_operations": 378.9848447099113,
+      "beta0": 1234,
+      "beta1": 1195,
+      "reduction_table_extrapolated": true,
+      "search_global_optimum": false,
+      "search_locally_stable": true,
+      "log2_list_size": 247.9849058191091,
+      "storage": {
+        "representation": "dense_mod_q_packed",
+        "coordinate_bits": 13,
+        "bytes_per_vector": 4186,
+        "log2_list_bytes": 260.0162624153648,
+        "includes_auxiliary_memory": false,
+        "universal_memory_lower_bound": false,
+        "fixed_representation_cap_sensitivity": [
+          {
+            "log2_cap_bytes": 40,
+            "log2_max_vectors": 27.968643400618813,
+            "fits": false,
+            "log2_excess_bytes": 220.0162624153648
+          },
+          {
+            "log2_cap_bytes": 60,
+            "log2_max_vectors": 47.96864340374429,
+            "fits": false,
+            "log2_excess_bytes": 200.0162624153648
+          },
+          {
+            "log2_cap_bytes": 80,
+            "log2_max_vectors": 67.9686434037443,
+            "fits": false,
+            "log2_excess_bytes": 180.0162624153648
+          }
+        ],
+        "bounded_memory_attack_cost": null
+      },
+      "normal_variance_relative_excess_at_budget": 0.0017314553278229283,
+      "moment_only_clipped_false_union_bound": 1.0,
+      "tail_law_validated": false,
+      "score_corrected_attack_cost": null,
+      "security_level_bits": null
+    }
+  ],
+  "generic_message_search": {
+    "profiles": [
+      "ML-KEM-1024",
+      "KEM1536-DEV-Q7681-R1"
+    ],
+    "message_bits": 256,
+    "classical_search_exponent": 256,
+    "ideal_coherent_quantum_query_exponent": 128,
+    "candidate_check": "deterministic encapsulation matches the public challenge ciphertext",
+    "scope": "generic attack ceiling in the ideal search model, not a security guarantee or physical gate count",
+    "multi_target_adjustment_performed": false
+  },
+  "decision": {
+    "continue_R1_engineering": true,
+    "parameter_change_justified_by_this_comparison": false,
+    "claim_global_superiority_over_ML_KEM_1024": false,
+    "claim_all_recent_attacks_integrated": false,
+    "require_higher_order_moment_campaign": false
+  }
+}

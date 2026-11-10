@@ -1,0 +1,29 @@
+test_ambiguous_init_or_missing_final_counter_is_not_guessed (test_m06_fuzz.FuzzInitializationTests) ... ok
+test_cpu_budget_with_only_initialized_seeds_is_insufficient (test_m06_fuzz.FuzzInitializationTests) ... ok
+test_post_init_counter_is_distinct_from_new_coverage_events (test_m06_fuzz.FuzzInitializationTests) ... ok
+test_descriptive_tail_count_does_not_replace_raw_statistics (test_m06_measurements.MeasurementTests) ... ok
+test_duplicate_does_not_fill_missing_observation (test_m06_measurements.MeasurementTests) ... ok
+test_missing_observation_cannot_pass (test_m06_measurements.MeasurementTests) ... ok
+test_quantile_and_median_keep_raw_nanoseconds (test_m06_measurements.MeasurementTests) ... ok
+test_zero_or_negative_duration_is_not_silently_discarded (test_m06_measurements.MeasurementTests) ... ok
+test_adaptive_public_and_indexed_queries_are_covered (test_rejection_security_m06.RejectionSecurityTests) ... ok
+test_allocation_limits_use_exact_gap_not_cca_bias (test_rejection_security_m06.RejectionSecurityTests) ... ok
+test_coherent_global_namespace_and_oracle_difference_norm (test_rejection_security_m06.RejectionSecurityTests) ... ok
+test_exact_gap_budgets_and_edge_cases (test_rejection_security_m06.RejectionSecurityTests) ... ok
+test_full_toy_distributions_for_repetition_and_no_indexed_access (test_rejection_security_m06.RejectionSecurityTests) ... ok
+test_one_candidate_exact_gap_and_accidental_output_matches (test_rejection_security_m06.RejectionSecurityTests) ... ok
+test_one_query_quantum_measurement_exhaustively (test_rejection_security_m06.RejectionSecurityTests) ... ok
+test_two_distinct_ciphertexts_do_not_require_a_birthday_penalty (test_rejection_security_m06.RejectionSecurityTests) ... ok
+test_copy_direction_size_and_call_state_are_checked (test_review_m06_binary.BinaryReviewTests) ... ok
+test_copy_targets_the_owned_destination_in_both_abis (test_review_m06_binary.BinaryReviewTests) ... ok
+test_full_coverage_of_shifted_seed_and_intervals (test_review_m06_binary.BinaryReviewTests) ... ok
+test_no_claim_for_cleanup_after_first_ret (test_review_m06_binary.BinaryReviewTests) ... ok
+test_rejects_partial_wipe_and_unmodelled_counter_or_flow (test_review_m06_binary.BinaryReviewTests) ... ok
+test_changed_missing_or_unlisted_bytes_rejected (test_verify_m06.M06EvidenceTests) ... ok
+test_incomplete_and_disagreeing_hosts_rejected (test_verify_m06.M06EvidenceTests) ... ok
+test_pe_comparison_allows_only_two_metadata_fields (test_verify_m06.M06EvidenceTests) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.058s
+
+OK

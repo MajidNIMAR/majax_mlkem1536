@@ -1,0 +1,158 @@
+{
+  "schema": 1,
+  "created_utc": "2026-10-25T20:25:23.197138+00:00",
+  "original_commit": "3dd7c91b5ec9777fd1afc09db198d00dc0deca88",
+  "R1_git_commit": "78f5faff017d99a2b323efda17f37a3146f63340",
+  "R1_worktree_may_include_uncommitted_changes": true,
+  "R1_exact_source_is_the_snapshot_not_only_the_git_commit": true,
+  "R1_implementation_variant": "R1-current",
+  "snapshot_base": "sources/NIST",
+  "comparison_manifest": "comparisons/engine-pair/Cargo.toml",
+  "toolchain": "1.93.0",
+  "production_rust_toolchain_modified": false,
+  "source_sha256": {
+    ".tools/comparison/mlkem1024-demo/engine/Cargo.lock": "46b80e8886c385443a77e0eed7a5f8c7086e1ffec4ec95d3ce5dbcdd417ff107",
+    ".tools/comparison/mlkem1024-demo/engine/Cargo.toml": "590e785b1cb304e70397b5a9de38e7e55ec6db6ef3c41ccbbd4ea64fae9eb1db",
+    ".tools/comparison/mlkem1024-demo/engine/src/bin/benchmark.rs": "3e60ac0609a15608025d076cdadf04c0c6c05a39d97048e6f697449923de0bb8",
+    ".tools/comparison/mlkem1024-demo/engine/src/lib.rs": "1ff3c8e8935d9b7b6fa3935ad2edb45742710ceca00d8a0214f70b52a0c78946",
+    ".tools/comparison/mlkem1024-demo/engine/src/main.rs": "cea862b69468dff8b594a6d1f3fc09c1602439d553430ac0a466ec192a38ffb6",
+    ".tools/comparison/mlkem1024-demo/engine/tests/conformance.rs": "0f709b328e69605a1b24826ef496ef1844d0ffaf9193915504e7791d3180a4d4",
+    ".tools/comparison/mlkem1024-demo/engine/tests/vectors/cctv-ml-kem-1024-strcmp.txt": "0df8dc1b11ecb1e261ba43effc51f649025c09bb5b597ea00f3c398110a1e2a2",
+    ".tools/comparison/mlkem1024-demo/engine/tests/vectors/cctv-ml-kem-512-strcmp.txt": "7e00647e59ba3519a95c7898986f3789160bfb4da223f4e23a058c662131eee2",
+    ".tools/comparison/mlkem1024-demo/engine/tests/vectors/cctv-ml-kem-768-strcmp.txt": "6baa6b942d85f354d0f269240719dee3392781e957045209b76c1d264f4e5105",
+    ".tools/comparison/mlkem1024-demo/engine/tests/vectors/nist-acvp-fips203.json": "1b53000c6f592ae9102fefa1f3927d617a416fd4d17598988ac507db012a891c",
+    ".tools/comparison/mlkem1024-demo/engine/tests/vectors/README.md": "bcce8b4af1ccc9de6e1b4f72631a70ca7f81f8df3e43adcc8a5ff67f7b46ffc6",
+    "Cargo.lock": "ad9f28bdd7332407c054eed738e782a81e60f0c5180022e8b173fb2987f70cb3",
+    "Cargo.toml": "ff13a1ad6016fdb1e11376f304b4c3ea7670d1442d8f12cdbf02ebd01577de42",
+    "comparisons/engine-pair/Cargo.lock": "798a610a194c516067066fa4dfa041c1256ba2cb66859941d1215ff49cf7bac9",
+    "comparisons/engine-pair/Cargo.toml": "ccf58883fc1806380b13626dff7e4772b07c08d937959ca10fc31ad6fd29f60b",
+    "comparisons/engine-pair/src/main.rs": "9ad0850a18387f78382b4b8bc6c1716c032869ebd9bd31c74506124c7c29a19d",
+    "crates/kem1024-reference/Cargo.toml": "8e8e6f877d8c07f5379c88bdd3d175aea8a5c4d9b3b45cdd9e13548fe885f4de",
+    "crates/kem1024-reference/src/lib.rs": "33bf92b4bee59b28a2fe499f592068ffe3468ff1593d8d3bce18f0875f3cbb52",
+    "crates/kem1536/Cargo.toml": "201a6e832bbc6cec754a6de609f0b503cc1c98c7458f676ad2077a2a73823e47",
+    "crates/kem1536/src/dev_hardening.rs": "8bbfac92e9af19b6955f4fa033ab7026371fd1d89d07b972553434174f132d06",
+    "crates/kem1536/src/dev_kem.rs": "4bc3f75ce59cb24b8c8ca88e313cc8ab23b71282fb56cc6459c83e745d70756b",
+    "crates/kem1536/src/engine_poly.rs": "906e9e27579f703c569b4231c0e83e07cdeed21dacecd38b4cd1f5a0dbc67579",
+    "crates/kem1536/src/lib.rs": "76f654cc20fa27475c7cd66fdace8913878ba6d9c034cbcd59b59c6c4d5ec033",
+    "crates/kem1536/src/reference_ring.rs": "f94a48f7a35d74487fcdf50937f48c3f7502c6053418e941201bf1014cce125b",
+    "crates/kem1536/src/secret_box.rs": "08d6ba7accadb46dc66b780a396dc418950641b29a91d365e12537001c40d28e",
+    "crates/kem1536/tests/delivery_contract.rs": "d610891bae29571aa17a8056ea216b9042a2c099a3bff52e023ba77affb431ec",
+    "crates/kem1536-bench/Cargo.toml": "3a8e568fb1b93b97c478ad58dc82b3feaecdd7fc3746793c385cfda5530c40d5",
+    "crates/kem1536-bench/src/bin/m03-replay.rs": "8215b138b87462cd58267256eb6b2fefa43c1d67879efbfc62044a1c575fc86f",
+    "crates/kem1536-bench/src/delivery.rs": "ae5023f44a1e3419f486bf728f68e29010e68743b1131c5d7216eeeccbf1797f",
+    "crates/kem1536-bench/src/main.rs": "608f534dade786650d782c6b4e6f24008f7eded79db1637c72678540459fb386",
+    "crates/kem1536-cli/Cargo.toml": "ef96cbb2a121d68b061677ec628515eaa9bbff1658534d8933595a08d8009df6",
+    "crates/kem1536-cli/src/main.rs": "41420995cc9b4ebbca8ab55d594a4eefd0b29740cc96b78e9b856079c2086bd1",
+    "crates/kem1536-cli/tests/commands.rs": "02483131e88c5fb97badc6e2fd686094d3771769f8c5ba9464ef12f4b9534905",
+    "fuzz/fixtures/cases.bin": "7ae0746c2a6edad67917a722aacd50731cf9db73a7d75d6c7743c3d2cc67f92f",
+    "profiles/kem1536-p0.toml": "ec07497ccab9150a982ecc882b8d1890d8dda18c4150e22f86cff70735e22740",
+    "references/manifest.json": "b1501e7ce59501223bd2d509ffdb9c0fc4e8904ae34aafc231b98d9abf2513ee",
+    "vectors/nist-acvp/ML-KEM-encapDecap-FIPS203/expectedResults.json": "9089ec6ff2424da9f2782b89b2f831a329a3e28d6e5e24b802b78ff36ac61cdf",
+    "vectors/nist-acvp/ML-KEM-encapDecap-FIPS203/prompt.json": "998e22dfb12efb14ce9fdff911ca634b13612819a1806f25da69adba7e16db91",
+    "vectors/nist-acvp/ML-KEM-encapDecap-FIPS203-tr1/expectedResults.json": "aa846067d30bebcfe4e839b076b1df5cdeb14332912b3e02dfe8d00c614098b4",
+    "vectors/nist-acvp/ML-KEM-encapDecap-FIPS203-tr1/prompt.json": "a25430d886a8212a21ed0d4015eb91aa30d555588465d47da04ffb45236d27fd",
+    "vectors/nist-acvp/ML-KEM-keyGen-FIPS203/expectedResults.json": "a253d0ad91c95ebea5b409673defef0aa49d65d4ed72286399e2e798ddf073a4",
+    "vectors/nist-acvp/ML-KEM-keyGen-FIPS203/prompt.json": "3f9ce34f6c836c77958bad2729e837c3b213f44ac36c3065976e7acca6389523",
+    "vectors/nist-acvp/NIST-NOTICE.txt": "5cf49b45a3eb4bee05d9491dbd05af1ceae4adf5f0ca59890e633469cb1f8156"
+  },
+  "runner_sha256": "16f43f1c0c5438db39f56c0c25ddcec93703827ac0757c4274b94b6424e286d2",
+  "dependency_lock_relation": {
+    "original": {
+      "reference_registry_packages": 29,
+      "exact_versions_and_checksums_retained": 29,
+      "reference_versions_absent_from_common_lock": [],
+      "all_reference_versions_retained": true
+    },
+    "R1_production_workspace": {
+      "reference_registry_packages": 56,
+      "exact_versions_and_checksums_retained": 35,
+      "reference_versions_absent_from_common_lock": [
+        {
+          "package": "autocfg",
+          "version": "1.5.1"
+        },
+        {
+          "package": "base64ct",
+          "version": "1.8.3"
+        },
+        {
+          "package": "block-buffer",
+          "version": "0.10.4"
+        },
+        {
+          "package": "cfg-if",
+          "version": "1.0.5"
+        },
+        {
+          "package": "cpufeatures",
+          "version": "0.2.17"
+        },
+        {
+          "package": "crypto-common",
+          "version": "0.1.7"
+        },
+        {
+          "package": "der",
+          "version": "0.8.2"
+        },
+        {
+          "package": "digest",
+          "version": "0.10.7"
+        },
+        {
+          "package": "generic-array",
+          "version": "0.14.7"
+        },
+        {
+          "package": "hex",
+          "version": "0.4.3"
+        },
+        {
+          "package": "kem",
+          "version": "0.3.0"
+        },
+        {
+          "package": "libc",
+          "version": "0.2.191"
+        },
+        {
+          "package": "ml-kem",
+          "version": "0.3.3"
+        },
+        {
+          "package": "module-lattice",
+          "version": "0.2.3"
+        },
+        {
+          "package": "num-traits",
+          "version": "0.2.19"
+        },
+        {
+          "package": "pkcs8",
+          "version": "0.11.0"
+        },
+        {
+          "package": "rand_core",
+          "version": "0.10.1"
+        },
+        {
+          "package": "sha2",
+          "version": "0.10.9"
+        },
+        {
+          "package": "spki",
+          "version": "0.8.1"
+        },
+        {
+          "package": "unicode-ident",
+          "version": "1.0.27"
+        },
+        {
+          "package": "version_check",
+          "version": "0.9.5"
+        }
+      ],
+      "all_reference_versions_retained": false
+    }
+  }
+}

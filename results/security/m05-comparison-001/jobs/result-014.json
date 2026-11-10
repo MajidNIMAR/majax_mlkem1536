@@ -1,0 +1,76 @@
+{
+  "job": {
+    "index": 14,
+    "scenario": "ML-KEM-1024",
+    "degree": 256,
+    "rank": 4,
+    "n": 1024,
+    "q": 3329,
+    "secret": {
+      "kind": "CBD",
+      "eta": 2
+    },
+    "error": {
+      "kind": "CBD",
+      "eta": 2
+    },
+    "panel": "before_serialization_LWE_proxy",
+    "sample_budget": "ideal_k_plus_1",
+    "samples": 1280,
+    "abstract_matrix_blocks": [
+      5,
+      4
+    ],
+    "targets": 1,
+    "leakage_oracle": "none",
+    "memory_cap": null,
+    "exponential_memory_allowed": true,
+    "shape_model": "GSA",
+    "cost_model": "BCSS23-quantum-asymptotic",
+    "algorithm": "usvp",
+    "estimator_commit": "f31b86fe490ab11abb4a69efa13007583791e10a",
+    "actual_compressed_scheme_attack_cost": false,
+    "ciphertext_rows_claimed_independent_samples": false
+  },
+  "status": "estimated_proxy",
+  "cost": {
+    "rop": "2.70760566889135e67",
+    "red": "2.70760566889135e67",
+    "delta": "1.00226158135442",
+    "beta": "874",
+    "d": "1867",
+    "tag": "usvp",
+    "problem": "LWEParameters(n=1024, q=3329, Xs=D(σ=1.00), Xe=D(σ=1.00), m=1280, tag='ML-KEM-1024')"
+  },
+  "log2_cost": {
+    "rop": 224.00619999999998,
+    "red": 224.00619999999998
+  },
+  "success_contract": {
+    "id": "uSVP_GSA_geometric_condition",
+    "meaning": "GSA success predicate; no explicit end-to-end success target in preserved job",
+    "global_success_certified": false
+  },
+  "input_distribution_repr": {
+    "Xs": "D(σ=1.00)",
+    "Xe": "D(σ=1.00)"
+  },
+  "input_distribution_means": {
+    "Xs": "0",
+    "Xe": "0"
+  },
+  "normalized_parameters_repr": "LWEParameters(n=1024, q=3329, Xs=D(σ=1.00), Xe=D(σ=1.00), m=1280, tag='ML-KEM-1024')",
+  "reported_memory_unit": "estimator-native units, not bytes; N is vector count",
+  "cost_is_global_security_lower_bound": false,
+  "quantum_physical_gate_count": null,
+  "sage": "10.7",
+  "python": "3.12.15",
+  "estimator_messages": "",
+  "executing_worker_sha256": "07447605b196070965432c10c260c918f09d7ad0d28d0298e5087084cbf16a8b",
+  "reduction_dimensions": {
+    "beta": 874
+  },
+  "classical_fit_used_beyond_1024": false,
+  "fit_flag_is_not_an_attack_cost_correction": true,
+  "elapsed_seconds": 7.295991461000085
+}

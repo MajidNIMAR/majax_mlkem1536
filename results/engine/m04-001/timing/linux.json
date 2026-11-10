@@ -1,0 +1,275 @@
+{
+  "observations": 16000,
+  "fresh_keys": 8,
+  "classes": 5,
+  "observations_per_key_and_class": 400,
+  "warmups_per_key_and_class": 50,
+  "public_order_seed_hex": "4d30342d54494d45",
+  "outliers_removed": 0,
+  "contrasts": [
+    {
+      "key": 0,
+      "class": "canonical_changed_v",
+      "t": 1.4471380440513042,
+      "mean_difference_ns": 33737.560000000056,
+      "relative_mean_difference": 0.021244604645498072,
+      "threshold_crossed": false
+    },
+    {
+      "key": 0,
+      "class": "noncanonical_first_u",
+      "t": 1.2752363132396405,
+      "mean_difference_ns": 34446.81500000018,
+      "relative_mean_difference": 0.021691223845815028,
+      "threshold_crossed": false
+    },
+    {
+      "key": 0,
+      "class": "noncanonical_last_u",
+      "t": 0.13109226270543345,
+      "mean_difference_ns": 2932.5575000001118,
+      "relative_mean_difference": 0.0018466369437414112,
+      "threshold_crossed": false
+    },
+    {
+      "key": 0,
+      "class": "zero",
+      "t": 1.2654549725765643,
+      "mean_difference_ns": 29070.75,
+      "relative_mean_difference": 0.018305905658207413,
+      "threshold_crossed": false
+    },
+    {
+      "key": 1,
+      "class": "canonical_changed_v",
+      "t": 1.8281727081502859,
+      "mean_difference_ns": 58168.80000000005,
+      "relative_mean_difference": 0.03476472636240861,
+      "threshold_crossed": false
+    },
+    {
+      "key": 1,
+      "class": "noncanonical_first_u",
+      "t": 1.9817280842223306,
+      "mean_difference_ns": 65938.01750000007,
+      "relative_mean_difference": 0.03940801830650127,
+      "threshold_crossed": false
+    },
+    {
+      "key": 1,
+      "class": "noncanonical_last_u",
+      "t": 1.5036480722419578,
+      "mean_difference_ns": 47397.76249999995,
+      "relative_mean_difference": 0.02832738931356551,
+      "threshold_crossed": false
+    },
+    {
+      "key": 1,
+      "class": "zero",
+      "t": 0.4391653469929855,
+      "mean_difference_ns": 12772.402499999851,
+      "relative_mean_difference": 0.007633457762632857,
+      "threshold_crossed": false
+    },
+    {
+      "key": 2,
+      "class": "canonical_changed_v",
+      "t": -0.5853817862739311,
+      "mean_difference_ns": -20707.75,
+      "relative_mean_difference": -0.01102631739193711,
+      "threshold_crossed": false
+    },
+    {
+      "key": 2,
+      "class": "noncanonical_first_u",
+      "t": -1.5958116244889344,
+      "mean_difference_ns": -54760.62000000011,
+      "relative_mean_difference": -0.029158550624730373,
+      "threshold_crossed": false
+    },
+    {
+      "key": 2,
+      "class": "noncanonical_last_u",
+      "t": -0.9491913507984324,
+      "mean_difference_ns": -34959.902500000084,
+      "relative_mean_difference": -0.018615203532792148,
+      "threshold_crossed": false
+    },
+    {
+      "key": 2,
+      "class": "zero",
+      "t": -1.0552391262797634,
+      "mean_difference_ns": -37827.31750000012,
+      "relative_mean_difference": -0.020142024548325064,
+      "threshold_crossed": false
+    },
+    {
+      "key": 3,
+      "class": "canonical_changed_v",
+      "t": 0.5643638826765967,
+      "mean_difference_ns": 27607.13500000001,
+      "relative_mean_difference": 0.0148354593742575,
+      "threshold_crossed": false
+    },
+    {
+      "key": 3,
+      "class": "noncanonical_first_u",
+      "t": -1.241181905041153,
+      "mean_difference_ns": -51516.54749999987,
+      "relative_mean_difference": -0.027683845047240672,
+      "threshold_crossed": false
+    },
+    {
+      "key": 3,
+      "class": "noncanonical_last_u",
+      "t": 0.6614128239196145,
+      "mean_difference_ns": 31938.425000000047,
+      "relative_mean_difference": 0.017162998136723374,
+      "threshold_crossed": false
+    },
+    {
+      "key": 3,
+      "class": "zero",
+      "t": 0.05762281891200214,
+      "mean_difference_ns": 2624.4575000000186,
+      "relative_mean_difference": 0.0014103249982555476,
+      "threshold_crossed": false
+    },
+    {
+      "key": 4,
+      "class": "canonical_changed_v",
+      "t": -0.060588997059777834,
+      "mean_difference_ns": -1501.0749999999534,
+      "relative_mean_difference": -0.0008769459901885679,
+      "threshold_crossed": false
+    },
+    {
+      "key": 4,
+      "class": "noncanonical_first_u",
+      "t": -0.14644063018866132,
+      "mean_difference_ns": -3968.6875,
+      "relative_mean_difference": -0.0023185547620449345,
+      "threshold_crossed": false
+    },
+    {
+      "key": 4,
+      "class": "noncanonical_last_u",
+      "t": 0.07974925570678298,
+      "mean_difference_ns": 2030.1350000000093,
+      "relative_mean_difference": 0.0011860291776170622,
+      "threshold_crossed": false
+    },
+    {
+      "key": 4,
+      "class": "zero",
+      "t": 0.18112150809824282,
+      "mean_difference_ns": 4401.342500000028,
+      "relative_mean_difference": 0.002571316994035389,
+      "threshold_crossed": false
+    },
+    {
+      "key": 5,
+      "class": "canonical_changed_v",
+      "t": -0.7645711721480826,
+      "mean_difference_ns": -19167.717500000028,
+      "relative_mean_difference": -0.011415903813791923,
+      "threshold_crossed": false
+    },
+    {
+      "key": 5,
+      "class": "noncanonical_first_u",
+      "t": -0.48641205294503476,
+      "mean_difference_ns": -11491.162500000093,
+      "relative_mean_difference": -0.006843903339490139,
+      "threshold_crossed": false
+    },
+    {
+      "key": 5,
+      "class": "noncanonical_last_u",
+      "t": -0.647379182018242,
+      "mean_difference_ns": -16712.935000000056,
+      "relative_mean_difference": -0.00995388514079242,
+      "threshold_crossed": false
+    },
+    {
+      "key": 5,
+      "class": "zero",
+      "t": 0.304116143341215,
+      "mean_difference_ns": 8214.407499999972,
+      "relative_mean_difference": 0.004892334515431506,
+      "threshold_crossed": false
+    },
+    {
+      "key": 6,
+      "class": "canonical_changed_v",
+      "t": -0.5541102365732546,
+      "mean_difference_ns": -17115.02500000014,
+      "relative_mean_difference": -0.009892936517083053,
+      "threshold_crossed": false
+    },
+    {
+      "key": 6,
+      "class": "noncanonical_first_u",
+      "t": 0.0372545473275217,
+      "mean_difference_ns": 1214.9775000000373,
+      "relative_mean_difference": 0.0007022890867635044,
+      "threshold_crossed": false
+    },
+    {
+      "key": 6,
+      "class": "noncanonical_last_u",
+      "t": 1.0345190222180307,
+      "mean_difference_ns": 36301.877499999944,
+      "relative_mean_difference": 0.020983444053305336,
+      "threshold_crossed": false
+    },
+    {
+      "key": 6,
+      "class": "zero",
+      "t": -0.277780008014187,
+      "mean_difference_ns": -8423.17749999999,
+      "relative_mean_difference": -0.004868819080288902,
+      "threshold_crossed": false
+    },
+    {
+      "key": 7,
+      "class": "canonical_changed_v",
+      "t": 0.4232618527461689,
+      "mean_difference_ns": 8991.930000000168,
+      "relative_mean_difference": 0.005665060853753316,
+      "threshold_crossed": false
+    },
+    {
+      "key": 7,
+      "class": "noncanonical_first_u",
+      "t": 0.39648386612130876,
+      "mean_difference_ns": 8086.245000000112,
+      "relative_mean_difference": 0.005094464703724146,
+      "threshold_crossed": false
+    },
+    {
+      "key": 7,
+      "class": "noncanonical_last_u",
+      "t": -0.39928166422427996,
+      "mean_difference_ns": -7950.799999999814,
+      "relative_mean_difference": -0.005009132170292692,
+      "threshold_crossed": false
+    },
+    {
+      "key": 7,
+      "class": "zero",
+      "t": -0.6866714904738601,
+      "mean_difference_ns": -13358.679999999935,
+      "relative_mean_difference": -0.00841618374762877,
+      "threshold_crossed": false
+    }
+  ],
+  "comparisons": 32,
+  "maximum_absolute_t": 1.9817280842223306,
+  "threshold": 4.5,
+  "threshold_crossings": 0,
+  "constant_time_proved": false,
+  "multiple_comparison_control": "none; diagnostic only",
+  "scope": "fixed ciphertext per class and key; finite raw-time observations; environment recorded separately",
+  "input_sha256": "2315d34cbebdebf4c6e383f86d7de29aad700970653dfb9f035bd3b20bc95270"
+}
