@@ -116,3 +116,38 @@ Chaque étape de développement met à jour le journal et le rapport,
 ajoute les vérifications utiles et livre du code exécutable ou un
 critère de décision vérifiable. Aucun déploiement ou publication n'est
 effectué implicitement.
+
+## M07 prévu — MAJAX R6, mémoire maîtrisée et livraison vérifiable
+
+MAJAX R6 désigne le moteur expérimental de rang 6, soit six polynômes de
+256 coefficients. Le profil d'essai reste `KEM1536-DEV-Q7681-R1`. Cette
+section définit les travaux prévus et leurs critères de sortie ; les
+résultats M07 seront consignés après leur exécution.
+
+1. **Mesurer la mémoire réelle de M06.** Établir le pic dynamique de pile,
+   les allocations et leurs tailles pour KeyGen, Encaps et Decaps valide
+   ou rejetée, sous Windows et Linux. Consigner le compilateur, le harnais
+   et ses limites. Les frames statiques LLVM et le RSS restent des mesures
+   distinctes de ce pic.
+2. **Comparer des espaces de travail détenus par l'opération.** Réemployer
+   les buffers temporaires dans des propriétaires établis avant leur
+   remplissage secret, avec durée de vie et effacement explicites. Évaluer
+   le compromis pile/allocation sans cache secret persistant entre appels.
+3. **Fixer les critères d'acceptation avant la comparaison.** Conserver
+   exactement les octets R1 sur les corpus intégraux, les formats, domaines
+   et comportements de rejet. Déclarer l'objectif mémoire et le budget de
+   latence avant les mesures ; retenir une variante seulement si elle les
+   respecte. Publier aussi les régressions et variantes écartées, avec les
+   distributions de temps et les coûts mémoire effectivement observés.
+4. **Contrôler les exécutables à livrer.** Effectuer les contrôles complets
+   sur environnements neufs Windows/Ubuntu, reconstruire les paquets et
+   rattacher chaque résultat au commit et aux SHA-256 réellement testés.
+   Refaire la revue des copies, propriétaires et effacements sur ces mêmes
+   binaires, y compris les chemins d'erreur examinés ; les constats par
+   empreinte de M06 gardent leur propre périmètre. L'état distant de CI
+   sera établi par les exécutions correspondantes, avec leurs journaux.
+5. **Poursuivre le volet de sécurité séparément.** Le PKE à graines, les
+   pertes et constantes du raccord FO, les primitives concrètes et une
+   borne quantique de rejet plus serrée si nécessaire restent des travaux
+   de C01. Les gains de mémoire ou de vitesse ne valident pas ces
+   obligations, ni une preuve générale de temps constant ou d'effacement.

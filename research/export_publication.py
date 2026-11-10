@@ -103,6 +103,63 @@ def inventory(root, commit):
     return files
 
 
+def canonical_blob_hashes(commit, names):
+    """Hash canonical Git blobs in bounded chunks, before attribute conversion."""
+    objects = {}
+    for entry in git(ROOT, "ls-tree", "-r", "-z", "--full-tree", commit).split(b"\0"):
+        if not entry:
+            continue
+        metadata, raw_name = entry.split(b"\t", 1)
+        name = raw_name.decode("utf-8")
+        if name in names:
+            _, kind, oid = metadata.split()
+            if kind != b"blob":
+                raise ValueError(f"expected a canonical Git blob: {name}")
+            objects[name] = oid
+    if set(objects) != set(names):
+        raise ValueError("canonical blob inventory differs from publication files")
+    hashes, by_object = {}, {}
+    process = subprocess.Popen(
+        ["git", "cat-file", "--batch"], cwd=ROOT,
+        stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+    )
+    try:
+        for name, oid in objects.items():
+            if oid not in by_object:
+                process.stdin.write(oid + b"\n")
+                process.stdin.flush()
+                header = process.stdout.readline().split()
+                if (len(header) != 3 or header[:2] != [oid, b"blob"] or
+                        not header[2].isdigit()):
+                    raise ValueError(f"unexpected canonical blob header for {name}")
+                remaining = int(header[2])
+                digest = hashlib.sha256()
+                while remaining:
+                    chunk = process.stdout.read(min(remaining, 1024 * 1024))
+                    if not chunk:
+                        raise ValueError(f"truncated canonical Git blob: {name}")
+                    digest.update(chunk)
+                    remaining -= len(chunk)
+                if process.stdout.read(1) != b"\n":
+                    raise ValueError(f"missing canonical Git blob separator: {name}")
+                by_object[oid] = digest.hexdigest()
+            hashes[name] = by_object[oid]
+        process.stdin.close()
+        error = process.stderr.read()
+        if process.wait() != 0:
+            raise RuntimeError(f"git cat-file failed: {error.decode('utf-8', errors='replace')}")
+    except BaseException:
+        if process.poll() is None:
+            process.kill()
+        process.wait()
+        raise
+    finally:
+        process.stdin.close()
+        process.stdout.close()
+        process.stderr.close()
+    return hashes
+
+
 def prepare(destination, sync):
     destination = Path(destination)
     if ".." in destination.parts:
@@ -198,6 +255,7 @@ def export(destination, *, sync=False):
             if path.exists() and name not in tracked:
                 raise ValueError(f"refusing to replace an ignored/untracked public file: {name}")
     # Source links and all known target collisions have been checked before writes.
+    blob_hashes = canonical_blob_hashes(commit, set(files) - EXCLUDED)
     destination.mkdir(parents=True, exist_ok=sync)
     hashes = stream_snapshot(destination, commit, files)
     if clean_head(ROOT, "source") != commit:
@@ -205,13 +263,20 @@ def export(destination, *, sync=False):
     if sync and git(destination, "rev-parse", "HEAD").decode("ascii").strip() != public_commit:
         raise ValueError("public HEAD changed during sync; review the partial export")
     provenance = {
-        "schema": 1,
+        "schema": 2,
         "local_source_commit": commit,
         "profile": "KEM1536-DEV-Q7681-R1",
         "excluded_paths": sorted(EXCLUDED),
         "scope": "Committed public source snapshot, not the local Git history. Historical "
                  "commit IDs in research notes refer to local research history.",
+        "hash_scope": {
+            "sha256": "SHA-256 of file bytes emitted by git archive, including attribute "
+                      "conversion such as .ps1 CRLF. Checkout bytes can vary with Git attributes.",
+            "git_blob_sha256": "SHA-256 of canonical source Git blob contents before archive "
+                               "or checkout attribute conversion; these are not Git object IDs.",
+        },
         "sha256": hashes,
+        "git_blob_sha256": blob_hashes,
     }
     if sync:
         provenance["previous_public_commit"] = public_commit

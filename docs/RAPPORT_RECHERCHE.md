@@ -11,6 +11,10 @@ preuves selon leur portée. La synchronisation de publication préserve
 l'historique public et ajoute une provenance de l'instantané source.
 Les contrôles publics courants se lisent dans Actions ; les réussites
 historiques restent liées à leur révision exacte.
+La provenance distingue les octets exportés après attributs Git des
+blobs canoniques : cette précision traite les fins de lignes PowerShell
+sans changer les scripts ni les preuves. Douze tests ciblés couvrent
+l'export et la conservation de l'historique public.
 
 **État courant — M06.** Le moteur accumule désormais les produits dans le
 domaine NTT et réutilise les opérandes transformés. Les corpus intégraux

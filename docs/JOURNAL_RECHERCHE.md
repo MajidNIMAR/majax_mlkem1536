@@ -1371,3 +1371,14 @@ La prochaine évolution moteur recommandée est M07 : mesurer le pic de
 pile et les allocations, puis améliorer les espaces de travail en
 préservant les octets R1 et les gains observés. Les obligations de sécurité
 restent suivies avec leurs hypothèses et limites explicites.
+
+Le contrôle des blobs Git publics repère ensuite sept scripts PowerShell
+dont les octets exportés par Git archive sont en CRLF alors que les blobs
+source et public sont en LF, conformément aux attributs Git. Il ne s'agit
+pas d'un changement du code. La provenance est précisée avec deux cartes :
+octets exportés et blobs canoniques, mêmes chemins et exclusions. Une
+régression dédiée couvre cette conversion ; aucune archive scientifique
+ni aucun script PowerShell n'est réécrit.
+Les douze tests de l'exporteur réussissent après cet ajout, dont la
+conversion réelle CRLF/LF à l'ajout Git et la lecture de blobs sur
+plusieurs blocs. Les empreintes de code cryptographique restent identiques.

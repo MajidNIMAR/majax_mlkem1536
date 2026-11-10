@@ -37,7 +37,15 @@ contrôles et publier depuis celui-ci. L'historique Git du dossier local de
 recherche ne doit pas être poussé à sa place.
 
 `PUBLICATION_PROVENANCE.json`, ajouté à l'export, donne le commit local,
-les exclusions et les SHA-256 de chaque fichier exporté. Le dépôt GitHub
+les exclusions et deux cartes SHA-256 : `sha256` pour les octets exportés,
+`git_blob_sha256` pour les blobs Git canoniques de la source. Git archive
+applique les attributs de conversion, par exemple CRLF pour les scripts
+PowerShell ; l'ajout à Git conserve leurs blobs LF. Les deux cartes ont
+les mêmes chemins mais peuvent donc différer sans modification de code.
+La seconde permet de contrôler les blobs effectivement commités sur
+GitHub ; la première décrit les fichiers produits par cet export.
+Les résultats figés conservent leurs octets grâce à l'attribut `-text`.
+Le dépôt GitHub
 commence par cet instantané public : les identifiants de commits historiques
 cités dans les protocoles sont ceux de l'historique local, et ne constituent
 pas des liens GitHub publics ou une preuve de préenregistrement public.

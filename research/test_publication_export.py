@@ -84,6 +84,7 @@ class PublicationExportTests(unittest.TestCase):
         self.assertEqual((self.destination / "README.md").read_bytes(), b"committed research\n")
         self.assertEqual((self.destination / "fuzz/fixtures/cases.bin").read_bytes(), b"\0\xff\r\n\x01")
         provenance = json.loads((self.destination / publication.PROVENANCE).read_text("utf-8"))
+        self.assertEqual(provenance["schema"], 2)
         self.assertEqual(provenance["local_source_commit"], self.source_commit)
         self.assertEqual(provenance["profile"], "KEM1536-DEV-Q7681-R1")
         self.assertEqual(set(provenance["excluded_paths"]), publication.EXCLUDED)
@@ -91,8 +92,47 @@ class PublicationExportTests(unittest.TestCase):
             self.assertFalse((self.destination / name).exists(), name)
         for name, expected in provenance["sha256"].items():
             self.assertEqual(hashlib.sha256((self.destination / name).read_bytes()).hexdigest(), expected)
+        self.assertEqual(set(provenance["git_blob_sha256"]), set(provenance["sha256"]))
+        for name, expected in provenance["git_blob_sha256"].items():
+            canonical = git(self.source, "cat-file", "blob", f"{self.source_commit}:{name}")
+            self.assertEqual(hashlib.sha256(canonical).hexdigest(), expected)
         self.assertFalse((self.destination / ".git").exists())
         self.assertEqual(list(self.destination.parent.iterdir()), [self.destination])
+
+    def test_eol_attributes_have_distinct_exported_and_canonical_hashes(self):
+        write(self.source, ".gitattributes", b"*.ps1 text eol=crlf\n")
+        canonical = b"Write-Output 'canonical LF'\nWrite-Output 'second line'\n"
+        write(self.source, "scripts/example.ps1", canonical)
+        source_commit = commit(self.source, "PowerShell EOL attribute fixture")
+        self.run_export()
+        exported = canonical.replace(b"\n", b"\r\n")
+        self.assertEqual(git(self.source, "cat-file", "blob", f"{source_commit}:scripts/example.ps1"), canonical)
+        self.assertEqual((self.destination / "scripts/example.ps1").read_bytes(), exported)
+        provenance = json.loads((self.destination / publication.PROVENANCE).read_text("utf-8"))
+        name = "scripts/example.ps1"
+        self.assertEqual(provenance["sha256"][name], hashlib.sha256(exported).hexdigest())
+        self.assertEqual(provenance["git_blob_sha256"][name], hashlib.sha256(canonical).hexdigest())
+        self.assertNotEqual(provenance["sha256"][name], provenance["git_blob_sha256"][name])
+        self.assertIn("attribute", provenance["hash_scope"]["sha256"])
+        self.assertIn("canonical", provenance["hash_scope"]["git_blob_sha256"])
+        # The public index stores LF again after applying the exported attributes.
+        git(self.destination, "init", "--quiet")
+        git(self.destination, "config", "core.autocrlf", "false")
+        git(self.destination, "add", "--all")
+        public_blob = git(self.destination, "show", ":scripts/example.ps1")
+        self.assertEqual(public_blob, canonical)
+        self.assertEqual(hashlib.sha256(public_blob).hexdigest(), provenance["git_blob_sha256"][name])
+
+    def test_canonical_hash_stream_handles_multiple_chunks_and_duplicate_blobs(self):
+        content = b"\0\xffpublication\r\n" * 100000
+        for name in ("large.bin", "duplicate.bin"):
+            write(self.source, name, content)
+        source_commit = commit(self.source, "bounded canonical blob fixture")
+        names = set(publication.inventory(self.source, source_commit)) - publication.EXCLUDED
+        hashes = publication.canonical_blob_hashes(source_commit, names)
+        self.assertEqual(set(hashes), names)
+        self.assertEqual(hashes["large.bin"], hashlib.sha256(content).hexdigest())
+        self.assertEqual(hashes["duplicate.bin"], hashes["large.bin"])
 
     def test_source_dirty_or_untracked_requires_a_commit_before_any_write(self):
         for name in ("README.md", "new-research.txt"):
