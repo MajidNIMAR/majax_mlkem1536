@@ -107,7 +107,8 @@ par la version Rust épinglée. L'auto-test release local réussit après ce
 changement. Le contrôle complet local puis la CI Windows réussissent.
 Le moteur, ses formats et paramètres ne changent pas. Les preuves initiales
 restent celles du premier instantané ; `PUBLICATION_PROVENANCE.json`
-décrit cet import initial, les commits ultérieurs conservent les évolutions.
+décrit l'instantané courant ; l'import initial reste conservé dans
+l'historique public, avec les évolutions ultérieures.
 
 ## Rejeu numérique portable de H11
 
