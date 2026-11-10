@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "local_source_commit": "c496317527cb9d4047f080da6c9c42a78a6d5601",
+  "local_source_commit": "18a280217714363d71b6c20cfc8504435a4faaa1",
   "profile": "KEM1536-DEV-Q7681-R1",
   "excluded_paths": [
     "AGENTS.md",
@@ -96,7 +96,7 @@
     "docs/PROTOCOLE_M03.md": "115a32108044229f119858b36e3e3eb719b5f882c811297759e3d279c09c14e2",
     "docs/PROTOCOLE_M05_SECURITE_ET_COMPARAISON.md": "d86a2232fb323ad72103cae8b48e0333889d99e8f025519a689ed843cb39711e",
     "docs/PROTOCOLE_M06_MOTEUR.md": "1d57a71f29f4b3a704406835e1c118e0d4b2a41aa32c2740b2b88366f3dac8ca",
-    "docs/PUBLICATION_GITHUB.md": "271b6811ee6680be7f49fdc4ca3c39af6b88d7c60db42187a5b872a0d7f712d4",
+    "docs/PUBLICATION_GITHUB.md": "429f91df7f52bb38109948cd9363bce12aeb673cfa5fd03fa36bd34143087abd",
     "docs/QUANTIFICATION_PAR_PAIRES.md": "198794c483faf11ce6a692cbd9490d6b1a11a00767ef8ba474c2b5b2dbc6bac3",
     "docs/QUATRIEME_MOMENT_CBD.md": "414ed1ec61e83a658602c26b334019656cf43fceaff93d5796cc03286431b839",
     "docs/RAPPORT_RECHERCHE.md": "977341fb9a110018f1368f46f7b8b6a4b957a78ce41bebe5519cf5415425c20e",
@@ -1896,5 +1896,5 @@
     "vectors/nist-acvp/ML-KEM-keyGen-FIPS203/prompt.json": "3f9ce34f6c836c77958bad2729e837c3b213f44ac36c3065976e7acca6389523",
     "vectors/nist-acvp/NIST-NOTICE.txt": "5cf49b45a3eb4bee05d9491dbd05af1ceae4adf5f0ca59890e633469cb1f8156"
   },
-  "previous_public_commit": "ecb40ade59f449889caea3f603c359384002ac65"
+  "previous_public_commit": "340d4885a8eb68e3b31121987f84e2f72e20bcec"
 }
