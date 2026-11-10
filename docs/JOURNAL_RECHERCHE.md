@@ -1382,3 +1382,19 @@ ni aucun script PowerShell n'est réécrit.
 Les douze tests de l'exporteur réussissent après cet ajout, dont la
 conversion réelle CRLF/LF à l'ajout Git et la lecture de blobs sur
 plusieurs blocs. Les empreintes de code cryptographique restent identiques.
+
+**Publication et clôture.** Le premier passage public complet est réussi
+sur Windows/Ubuntu pour `1b4a1be` (CI 42904274532), avec 164 tests Python
+par plateforme. L'intégration de la provenance à deux cartes et des deux
+tests supplémentaires aboutit au commit public `feaeef2`, source locale
+`b9d804e`, publié sur main. Sa CI 42906288492 réussit aussi sur les deux
+plateformes, avec 166 tests Python, formatage, Clippy strict, Rust avec et
+sans toutes les fonctionnalités, preuves et auto-tests.
+
+`results/publication/r6-m06-001` fige 11 membres vérifiés plus provenance :
+journaux et données API des deux passages, reçus, manifeste source testé
+et contrôle indépendant de 1882 fichiers exportés et 1882 blobs publics.
+Le contrôle neuf vérifie les archives ; il ne relance pas campagnes,
+benchmarks ou désassemblages. La clôture ajoute uniquement preuves et
+documentation au code testé. La description et les sujets GitHub sont mis
+à jour ; l'adresse existante est conservée pour les liens déjà partagés.

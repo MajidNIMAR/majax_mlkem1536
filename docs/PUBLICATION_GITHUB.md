@@ -141,7 +141,7 @@ valeurs non finies ou une structure altérée. Le rejeu complet H11 portable
 réussit sous Windows. La CI complète confirme désormais Windows et Ubuntu,
 avec 95 tests Python par plateforme et toutes les vérifications ordinaires.
 
-## Validation publique finale
+## Validation publique initiale finalisée
 
 La [CI 40210986511](https://github.com/MajidNIMAR/majax_mlkem1536/actions/runs/40210986511)
 réussit sur ses deux exécutants pour le commit public
@@ -155,3 +155,38 @@ Le commit de clôture ajoute seulement les preuves et actualise les
 documents ; le code demeure celui de la CI réussie. Les vingt instantanés
 J2 et les anciennes preuves moteur restent inchangés. La campagne longue
 M03 continue séparément ; sa fin n'est pas anticipée.
+
+## 10 novembre 2026 — publication MAJAX R6 et contrôle complet M06
+
+La présentation publique met désormais en avant le programme de recherche,
+l'architecture et le moteur exécutable sous le nom MAJAX R6. L'adresse
+`MajidNIMAR/majax_mlkem1536` conserve les liens existants. Les évolutions
+M04–M06 et leurs preuves sont intégrées par avance rapide de l'historique
+public, sans remplacement par l'historique Git local.
+
+Le [premier passage public](https://github.com/MajidNIMAR/majax_mlkem1536/actions/runs/42904274532)
+réussit sous Windows et Ubuntu au commit `1b4a1be`, avec 164 tests Python
+par plateforme. Le manifeste est ensuite précisé pour distinguer octets
+exportés et blobs Git canoniques, avec deux tests dédiés supplémentaires.
+Le [passage final sur main](https://github.com/MajidNIMAR/majax_mlkem1536/actions/runs/42906288492)
+réussit sur les deux plateformes pour le commit public
+`feaeef2d027b9f769c3623d92408fa2cb09e28b2`, issu du commit local
+`b9d804e8171af45bfd8105698062908386dcbca1`, avec **166 tests Python par
+plateforme**. Formatage, Clippy strict, tests Rust avec et sans toutes les
+fonctionnalités, pont certificat/programme, preuves M04–M06 et historiques,
+auto-test de 16 échanges et 16 rejets et self-check sont exécutés.
+
+L'[instantané de publication](../results/publication/r6-m06-001/) conserve
+11 membres vérifiés et son manifeste, soit 12 fichiers : données API,
+journaux ZIP testés, reçus, provenance source testée et vérification des
+1 882 fichiers exportés et des 1 882 blobs canoniques. Les deux cartes
+d'empreintes concordent avec les objets qu'elles décrivent ; les sept
+conversions PowerShell CRLF/LF sont identifiées explicitement.
+
+Ce contrôle neuf vérifie et rejoue les preuves archivées. Il ne relance
+ni campagne longue, ni mesures comparatives, ni nouveau désassemblage.
+Le rejeu ordinaire des grands corpus R1 utilise 16 cas par corpus ; les
+régressions intégrales restent liées à leurs archives M06 propres.
+Le commit de clôture ajoute ces reçus et met à jour les documents sans
+modifier le code ni les commandes contrôlés sur main. La feuille de route
+définit M07 comme un travail prévu de mesure et d'optimisation mémoire.

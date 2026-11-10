@@ -182,6 +182,19 @@ subsequent development and validation; each snapshot retains its own scope.
 Current public workflow results for the revision under test are available
 in the [repository's Actions tab](https://github.com/MajidNIMAR/majax_mlkem1536/actions).
 
+The updated **MAJAX R6 / M06** source passed the full checks on fresh
+Windows and Ubuntu runners at [revision feaeef2](https://github.com/MajidNIMAR/majax_mlkem1536/commit/feaeef2d027b9f769c3623d92408fa2cb09e28b2),
+with **166 Python tests per platform**, Rust tests, formatting, strict
+Clippy, evidence replay and engine self-tests. The
+[successful main-branch run](https://github.com/MajidNIMAR/majax_mlkem1536/actions/runs/42906288492)
+and [retained receipts](results/publication/r6-m06-001/)
+bind those results to the exact public source. The snapshot also verifies
+1,882 exported files and their canonical public Git blobs against the
+source provenance. These checks replay the archived campaigns and
+measurements; they do not start new fuzzing or benchmark campaigns.
+The subsequent publication of these receipts changes documentation and
+evidence only.
+
 ## Security and research status
 
 R6 is an **experimental research implementation** intended for analysis,

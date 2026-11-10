@@ -1,0 +1,16 @@
+{
+  "scope": "Fresh hosted Windows/Ubuntu checks for the exact public revision",
+  "public_commit": "1b4a1be59ab60d44cae8d063e6995f1287880def",
+  "run_url": "https://github.com/MajidNIMAR/majax_mlkem1536/actions/runs/42904274532",
+  "python_test_count_lines": [
+    "2026-11-10T21:23:50.8044844Z Ran 164 tests in 14.482s",
+    "2026-11-10T21:23:50.8044840Z Ran 164 tests in 14.482s",
+    "2026-11-10T21:22:45.0931899Z Ran 164 tests in 5.972s",
+    "2026-11-10T21:22:45.0931896Z Ran 164 tests in 5.972s"
+  ],
+  "sha256": {
+    "ci-logs.zip": "08065445a9d9df219962456c4add90fd5f0085b4305225038de58cfd42357a16",
+    "jobs.json": "3a932010d8acf43a68526fa528bf0289885b028e7fad8bc24367670af33e8c8c",
+    "run.json": "a24dd836ed17101dc620066be0ab6fcca56404edb494450b6da438fb3f698df3"
+  }
+}

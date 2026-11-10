@@ -16,6 +16,18 @@ blobs canoniques : cette précision traite les fins de lignes PowerShell
 sans changer les scripts ni les preuves. Douze tests ciblés couvrent
 l'export et la conservation de l'historique public.
 
+**Publication M06 contrôlée sur machines neuves.** Le
+[passage public final](https://github.com/MajidNIMAR/majax_mlkem1536/actions/runs/42906288492)
+réussit sous Windows et Ubuntu pour le commit public `feaeef2`, avec
+166 tests Python par plateforme, tests Rust, formatage, Clippy strict,
+rejeu des preuves et auto-tests. L'[archive de publication](../results/publication/r6-m06-001/)
+conserve les deux passages réussis et leur portée, ainsi que la
+concordance des 1 882 fichiers exportés et blobs Git canoniques. Ce
+résultat complète les anciens reçus locaux ; les campagnes et benchmarks
+archivés ne sont pas relancés par ce contrôle. Le prochain jalon
+[M07 prévu](FEUILLE_DE_ROUTE_MOTEUR.md) porte sur la mémoire dynamique,
+les espaces de travail et la livraison vérifiée, sans résultat anticipé.
+
 **État courant — M06.** Le moteur accumule désormais les produits dans le
 domaine NTT et réutilise les opérandes transformés. Les corpus intégraux
 concordent sous Windows/Linux. Les 60 000 mesures comparatives donnent
@@ -678,3 +690,21 @@ leurs octets, ainsi que le moteur exécuté. L'auto-test frais passe
 local `docs/maintenance/cleanup-001.json`, exclu de l'export public, distingue suppressions, déplacement,
 produits uniques retenus et mesures d'espace. Ce rangement ne modifie
 aucun paramètre ni argument de sécurité.
+
+## 10 novembre 2026 — publication actuelle et identité MAJAX R6
+
+La page GitHub, la notice et la description publique présentent le moteur
+comme un programme de recherche et d'ingénierie cryptographique. Les
+formats, les domaines et les octets du cœur R1 sont conservés. Les
+évolutions M04–M06 sont publiées avec leurs preuves et l'historique public
+reste intact. Les notes d'entretien du poste sont exclues de la publication.
+
+Le premier passage de branche réussit à `1b4a1be` avec 164 tests Python
+par système. La version consolidée réussit sur main à `feaeef2`, avec
+166 tests par système et tous les contrôles ordinaires. Les
+[reçus figés](../results/publication/r6-m06-001/) contiennent les journaux
+bruts, révisions et empreintes. Ils distinguent le contrôle depuis des
+exécutants neufs du rejeu des preuves historiques et des nouvelles
+expériences, qui ne sont pas exécutées dans ce passage. La publication
+des reçus ne modifie pas le code testé. M07 est planifié séparément,
+avec mesure préalable des pics de pile et allocations avant optimisation.

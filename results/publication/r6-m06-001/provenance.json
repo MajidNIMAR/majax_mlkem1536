@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "public_tested_commit": "feaeef2d027b9f769c3623d92408fa2cb09e28b2",
+  "local_tested_source_commit": "b9d804e8171af45bfd8105698062908386dcbca1",
+  "output_sha256": {
+    "branch/ci-logs.zip": "08065445a9d9df219962456c4add90fd5f0085b4305225038de58cfd42357a16",
+    "branch/jobs.json": "3a932010d8acf43a68526fa528bf0289885b028e7fad8bc24367670af33e8c8c",
+    "branch/receipt.json": "3d82a347f1b38e3520a636ad6ed01550742fd0ad1212a364afdb64fa8b387c89",
+    "branch/run.json": "a24dd836ed17101dc620066be0ab6fcca56404edb494450b6da438fb3f698df3",
+    "main/ci-logs.zip": "d2920d9253cd31c53d907e350e63490f62614384da88c2a1fe3828a01b7b3c2a",
+    "main/jobs.json": "24239eb1fb1d90e62f89544644a554296c46686e1bb465ac980885179294ed9a",
+    "main/receipt.json": "12c1a6a0fc7d462dc1c80da846ed8f105c71073ca7f80a117127f50b9dbf129e",
+    "main/run.json": "c4ef7d0506e81a1f30a10d5368d7598b5525de9ef2a7ec7247b65f50b709819c",
+    "source-integrity.json": "9ae23cf67dc52fb4b7367be61aa3597dcdb8b6e8b20288340c7c7681f54f2038",
+    "tested-source-provenance.json": "03a92517de28e95666d1f2b33deccf3bb631002bfd727988c4ebf5081e43e00b",
+    "verification.json": "433e341dec464e55cd3e62de369c109489c10016ce206bed1321a6eff94044ae"
+  }
+}

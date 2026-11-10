@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "profile": "KEM1536-DEV-Q7681-R1",
+  "runs": {
+    "branch": {
+      "run_id": 42904274532,
+      "public_commit": "1b4a1be59ab60d44cae8d063e6995f1287880def",
+      "url": "https://github.com/MajidNIMAR/majax_mlkem1536/actions/runs/42904274532",
+      "python_tests_by_host": {
+        "windows-latest": 164,
+        "ubuntu-24.04": 164
+      },
+      "conclusion": "success"
+    },
+    "main": {
+      "run_id": 42906288492,
+      "public_commit": "feaeef2d027b9f769c3623d92408fa2cb09e28b2",
+      "url": "https://github.com/MajidNIMAR/majax_mlkem1536/actions/runs/42906288492",
+      "python_tests_by_host": {
+        "ubuntu-24.04": 166,
+        "windows-latest": 166
+      },
+      "conclusion": "success"
+    }
+  },
+  "scope": "Fresh hosted full dev checks. Historical measurements, binary inventories and instrumented campaign archives were verified/replayed, not newly measured or rerun. Ordinary large reference corpus replay uses 16 cases per corpus.",
+  "source_integrity": {
+    "public_commit": "feaeef2d027b9f769c3623d92408fa2cb09e28b2",
+    "source_commit": "b9d804e8171af45bfd8105698062908386dcbca1",
+    "canonical_git_blobs_verified": 1882,
+    "exported_files_verified": 1882,
+    "all_equal": true,
+    "attribute_converted_paths": [
+      "scripts/bootstrap-modern.ps1",
+      "scripts/bootstrap.ps1",
+      "scripts/dev.ps1",
+      "scripts/engine.ps1",
+      "scripts/m03.ps1",
+      "scripts/reproduce-release.ps1",
+      "scripts/research-setup.ps1"
+    ],
+    "method": "Independent git cat-file --batch SHA-256 of each public commit blob, plus streamed hash of each exported working file; both compared to their schema-2 source maps"
+  }
+}
