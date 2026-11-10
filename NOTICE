@@ -8,5 +8,5 @@ Third-party references, datasets and dependencies retain their own terms;
 see THIRD_PARTY_NOTICES.md and the recorded source manifests.
 
 The project is maintained independently of Majax Messenger and the separate
-majax-mlkem1024-demo repository. The local workspace name NIST does not
+majax-mlkem repository. The local workspace name NIST does not
 indicate affiliation, approval or certification by NIST.

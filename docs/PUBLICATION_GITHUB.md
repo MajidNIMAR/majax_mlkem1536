@@ -7,7 +7,8 @@ conservent leur identité. Les noms techniques et les archives historiques
 gardent leur nomenclature d'origine.
 
 Le dépôt public est `MajidNIMAR/majax_mlkem1536`, distinct de
-`MajidNIMAR/majax-mlkem1024-demo`. Il présente le développement expérimental
+`MajidNIMAR/majax-mlkem` (MAJAX ML-KEM, ancien nom :
+`majax-mlkem1024-demo`). Il présente le développement expérimental
 du moteur `KEM1536-DEV-Q7681-R1`, ses sources, sa spécification et les
 résultats conservés. Il ne partage pas l'architecture opérationnelle de
 Majax Messenger. La licence des contributions propres est Apache-2.0,

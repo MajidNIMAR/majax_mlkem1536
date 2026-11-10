@@ -708,3 +708,22 @@ exécutants neufs du rejeu des preuves historiques et des nouvelles
 expériences, qui ne sont pas exécutées dans ce passage. La publication
 des reçus ne modifie pas le code testé. M07 est planifié séparément,
 avec mesure préalable des pics de pile et allocations avant optimisation.
+
+## 10 novembre 2026 — identité du moteur ML-KEM compagnon
+
+Le dépôt ML-KEM-1024 compagnon est renommé **MAJAX ML-KEM — Post-Quantum
+Cryptographic Engine**, à l'adresse
+[MajidNIMAR/majax-mlkem](https://github.com/MajidNIMAR/majax-mlkem).
+Le changement conserve l'identité GitHub et l'historique du dépôt. Sa
+présentation décrit maintenant la bibliothèque Rust et le CLI pour
+ML-KEM-512/768/1024, le service HTTP ML-KEM-1024 avec HKDF-SHA-256 et
+AES-256-GCM, les backends PQClean et les outils d'intégration et de
+vérification. Le titre de l'interface web et les liens courants suivent
+cette identité. Le commit public `ae903a6` porte cette refonte ; les
+contrôles de syntaxe PowerShell, shell et JavaScript sont réussis. La
+[CI publique 42917245769](https://github.com/MajidNIMAR/majax-mlkem/actions/runs/42917245769)
+réussit sur ses cinq jobs : intégration, vérification complète, assurance
+et performances x86-64/AArch64. Le moteur Rust, les
+paramètres, les domaines et le binaire fourni sont inchangés. Les notes
+historiques et comparaisons conservent leurs révisions et leur portée.
+Cette actualisation de présentation ne modifie pas le profil R1 de MAJAX R6.

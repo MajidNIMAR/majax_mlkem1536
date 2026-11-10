@@ -1398,3 +1398,25 @@ Le contrôle neuf vérifie les archives ; il ne relance pas campagnes,
 benchmarks ou désassemblages. La clôture ajoute uniquement preuves et
 documentation au code testé. La description et les sujets GitHub sont mis
 à jour ; l'adresse existante est conservée pour les liens déjà partagés.
+
+### 10 novembre 2026 — MAJAX ML-KEM, identité du moteur compagnon
+
+À la demande de l'utilisateur, le dépôt `majax-mlkem1024-demo` est renommé
+`majax-mlkem`, avec titre MAJAX ML-KEM — Post-Quantum Cryptographic Engine.
+L'identifiant GitHub, l'historique et la visibilité publique sont conservés.
+Le README présente les trois paramètres de la bibliothèque et du CLI,
+le service HTTP 1024, l'intégration autonome et les vérifications. La
+description, l'interface web et les liens courants sont actualisés. Le
+nouvel accès PowerShell `majax-engine.ps1` conserve l'entrée historique
+en relais ; l'identité de vérification des futures releases suit le
+nouveau dépôt. La description distingue le workflow de release configuré
+de publications déjà réalisées, et les interfaces HTTP/Rust/CLI.
+
+Commit public `ae903a6`, syntaxe PowerShell/shell/JavaScript vérifiée,
+contrôles d'intégrité conservés et cœur Rust inchangé. Le binaire fourni
+garde son SHA-256 `88b805e34122f91f98f89d30b01ba560c0a0148133753257011900f4ce7d35ca`.
+La [CI 42917245769](https://github.com/MajidNIMAR/majax-mlkem/actions/runs/42917245769)
+réussit à cette révision avec ses cinq jobs : intégration, vérification,
+assurance et performances x86-64/AArch64. La redirection de l'ancien
+URL vers le nouveau est vérifiée. Les références courantes depuis MAJAX R6 sont mises à jour,
+sans changement des résultats figés ni des domaines R1.

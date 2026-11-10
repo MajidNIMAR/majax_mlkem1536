@@ -56,7 +56,7 @@ parameter sets and does not interoperate with them. These names do not
 represent a security-bit rating.
 
 This is a separate research project by the author of
-[majax-mlkem1024-demo](https://github.com/MajidNIMAR/majax-mlkem1024-demo),
+[MAJAX ML-KEM](https://github.com/MajidNIMAR/majax-mlkem),
 the companion repository for standardized ML-KEM parameter sets. R6's
 arithmetic and KEM operations are implemented in this repository. The
 project is developed independently from Majax Messenger's operational
