@@ -1,0 +1,256 @@
+{
+  "schema": "m08-sharded-evidence-v1",
+  "profile": "KEM1536-DEV-Q7681-R1",
+  "created_utc": "2026-11-11T10:36:20.642277+00:00",
+  "stages": {
+    "measurements": {
+      "archive": {
+        "stem": "measurements.tar.gz",
+        "parts": [
+          {
+            "name": "measurements.tar.gz",
+            "bytes": 30578876,
+            "sha256": "7edb9c1dc2e11157d4b67ac6e746fa7dff285a38fb992d954463421091385f42"
+          }
+        ],
+        "bytes": 30578876,
+        "sha256": "7edb9c1dc2e11157d4b67ac6e746fa7dff285a38fb992d954463421091385f42",
+        "part_limit_bytes": 94371840
+      },
+      "inventory": {
+        "stream": {
+          "stem": "measurements.inventory.json.gz",
+          "parts": [
+            {
+              "name": "measurements.inventory.json.gz",
+              "bytes": 14627,
+              "sha256": "60e84337b616131d5b1a15beb776e7c54c1c2626e192666ccb88c1425f05a1d8"
+            }
+          ],
+          "bytes": 14627,
+          "sha256": "60e84337b616131d5b1a15beb776e7c54c1c2626e192666ccb88c1425f05a1d8",
+          "part_limit_bytes": 94371840
+        },
+        "json_bytes": 54616,
+        "json_sha256": "cdd14309f538d03877c2b78c92132cc69945567e185ded5e1c965eb70525788b"
+      },
+      "file_count": 378,
+      "directory_count": 96,
+      "payload_bytes": 72367976
+    },
+    "imports": {
+      "archive": {
+        "stem": "imports.tar.gz",
+        "parts": [
+          {
+            "name": "imports.tar.gz",
+            "bytes": 12824225,
+            "sha256": "312ab95edd4fc341d4a76a5f1d6e2939ce3727bf733a1b56a103a49856894e5f"
+          }
+        ],
+        "bytes": 12824225,
+        "sha256": "312ab95edd4fc341d4a76a5f1d6e2939ce3727bf733a1b56a103a49856894e5f",
+        "part_limit_bytes": 94371840
+      },
+      "inventory": {
+        "stream": {
+          "stem": "imports.inventory.json.gz",
+          "parts": [
+            {
+              "name": "imports.inventory.json.gz",
+              "bytes": 2569,
+              "sha256": "e486e8bcae0aebaee1e0288a2e828b508a8fda9b3fc89ee2697d73e5aea521b9"
+            }
+          ],
+          "bytes": 2569,
+          "sha256": "e486e8bcae0aebaee1e0288a2e828b508a8fda9b3fc89ee2697d73e5aea521b9",
+          "part_limit_bytes": 94371840
+        },
+        "json_bytes": 7492,
+        "json_sha256": "f208c47a31829280a67917c1ac96e8667f34d91c8cb2171743b1fb69d4353c2a"
+      },
+      "file_count": 52,
+      "directory_count": 22,
+      "payload_bytes": 84338402
+    },
+    "cli": {
+      "archive": {
+        "stem": "cli.tar.gz",
+        "parts": [
+          {
+            "name": "cli.tar.gz",
+            "bytes": 18341862,
+            "sha256": "79a93c10144444baba60e42cd4a36b5dfc12182d77d343714c654027234aeb1b"
+          }
+        ],
+        "bytes": 18341862,
+        "sha256": "79a93c10144444baba60e42cd4a36b5dfc12182d77d343714c654027234aeb1b",
+        "part_limit_bytes": 94371840
+      },
+      "inventory": {
+        "stream": {
+          "stem": "cli.inventory.json.gz",
+          "parts": [
+            {
+              "name": "cli.inventory.json.gz",
+              "bytes": 2433,
+              "sha256": "ec1e45c314014f05673682a7a25f15b718c2f489cdc927e7d9bff3847d834b9f"
+            }
+          ],
+          "bytes": 2433,
+          "sha256": "ec1e45c314014f05673682a7a25f15b718c2f489cdc927e7d9bff3847d834b9f",
+          "part_limit_bytes": 94371840
+        },
+        "json_bytes": 5829,
+        "json_sha256": "bbd25748919469a78bc9016a90305e02427defdf583d6a8581fff341fab37197"
+      },
+      "file_count": 44,
+      "directory_count": 7,
+      "payload_bytes": 25986821
+    },
+    "fuzz": {
+      "archive": {
+        "stem": "fuzz.tar.gz",
+        "parts": [
+          {
+            "name": "fuzz.tar.gz",
+            "bytes": 86730786,
+            "sha256": "08d4b27fdc56bbd133d8aa16daba850072d57f561f7638d264748f6c355ac5a4"
+          }
+        ],
+        "bytes": 86730786,
+        "sha256": "08d4b27fdc56bbd133d8aa16daba850072d57f561f7638d264748f6c355ac5a4",
+        "part_limit_bytes": 94371840
+      },
+      "inventory": {
+        "stream": {
+          "stem": "fuzz.inventory.json.gz",
+          "parts": [
+            {
+              "name": "fuzz.inventory.json.gz",
+              "bytes": 353764,
+              "sha256": "143517c136c61634820ea7567986946789411cc8feba89e6d403a84f36fcae93"
+            }
+          ],
+          "bytes": 353764,
+          "sha256": "143517c136c61634820ea7567986946789411cc8feba89e6d403a84f36fcae93",
+          "part_limit_bytes": 94371840
+        },
+        "json_bytes": 1104196,
+        "json_sha256": "753f534293fac617ff1b49e862aa8297a7ef11b7e15675bb9c7b6bd12114bb5f"
+      },
+      "file_count": 6486,
+      "directory_count": 101,
+      "payload_bytes": 292432829
+    },
+    "delivery": {
+      "archive": {
+        "stem": "delivery.tar.gz",
+        "parts": [
+          {
+            "name": "delivery.tar.gz",
+            "bytes": 22028570,
+            "sha256": "384fc58caaff15a33735aa0ebb2807bd1e09f9edd33384771856e47f2f69e6ea"
+          }
+        ],
+        "bytes": 22028570,
+        "sha256": "384fc58caaff15a33735aa0ebb2807bd1e09f9edd33384771856e47f2f69e6ea",
+        "part_limit_bytes": 94371840
+      },
+      "inventory": {
+        "stream": {
+          "stem": "delivery.inventory.json.gz",
+          "parts": [
+            {
+              "name": "delivery.inventory.json.gz",
+              "bytes": 12830,
+              "sha256": "ebcc6b63b9cf6ccb2f16699002972a9c0671dc4b0d7415a3969508d0419ec161"
+            }
+          ],
+          "bytes": 12830,
+          "sha256": "ebcc6b63b9cf6ccb2f16699002972a9c0671dc4b0d7415a3969508d0419ec161",
+          "part_limit_bytes": 94371840
+        },
+        "json_bytes": 64598,
+        "json_sha256": "75f501c264dd697b9a313dd4d4ce9579733417f110929bc7590bd2701b0c7f4f"
+      },
+      "file_count": 396,
+      "directory_count": 144,
+      "payload_bytes": 62267080
+    },
+    "diagnostic-notices": {
+      "archive": {
+        "stem": "diagnostic-notices.tar.gz",
+        "parts": [
+          {
+            "name": "diagnostic-notices.tar.gz",
+            "bytes": 525475,
+            "sha256": "4f37e58a9fa823f978c1dd56e4ce2d123c5331c17d528f6dff560c24b6a63e85"
+          }
+        ],
+        "bytes": 525475,
+        "sha256": "4f37e58a9fa823f978c1dd56e4ce2d123c5331c17d528f6dff560c24b6a63e85",
+        "part_limit_bytes": 94371840
+      },
+      "inventory": {
+        "stream": {
+          "stem": "diagnostic-notices.inventory.json.gz",
+          "parts": [
+            {
+              "name": "diagnostic-notices.inventory.json.gz",
+              "bytes": 4662,
+              "sha256": "c10ea6b9c2068dd6a3d0a0c656c65c70fabc5a383f9d61cb3676bf675f41a97c"
+            }
+          ],
+          "bytes": 4662,
+          "sha256": "c10ea6b9c2068dd6a3d0a0c656c65c70fabc5a383f9d61cb3676bf675f41a97c",
+          "part_limit_bytes": 94371840
+        },
+        "json_bytes": 20769,
+        "json_sha256": "babd113f5ba5047f0d921695279d30a19396244fc778ccd4a07521726012d078"
+      },
+      "file_count": 132,
+      "directory_count": 58,
+      "payload_bytes": 14843839
+    },
+    "controls": {
+      "archive": {
+        "stem": "controls.tar.gz",
+        "parts": [
+          {
+            "name": "controls.tar.gz",
+            "bytes": 154383,
+            "sha256": "91a8cf9ce8ccad811a7e3442d0fa42b86a3c95c8dc424d280af574d35a17f82b"
+          }
+        ],
+        "bytes": 154383,
+        "sha256": "91a8cf9ce8ccad811a7e3442d0fa42b86a3c95c8dc424d280af574d35a17f82b",
+        "part_limit_bytes": 94371840
+      },
+      "inventory": {
+        "stream": {
+          "stem": "controls.inventory.json.gz",
+          "parts": [
+            {
+              "name": "controls.inventory.json.gz",
+              "bytes": 1803,
+              "sha256": "7e8912b2eb62ebea73bb388c21f5f5d09f05ba1e62cca8c68775c248f0f291db"
+            }
+          ],
+          "bytes": 1803,
+          "sha256": "7e8912b2eb62ebea73bb388c21f5f5d09f05ba1e62cca8c68775c248f0f291db",
+          "part_limit_bytes": 94371840
+        },
+        "json_bytes": 3711,
+        "json_sha256": "292b4cd4f4bac9ddc8140531d9a79cbf1eddac405db19aef7b147c735841ef1e"
+      },
+      "file_count": 32,
+      "directory_count": 0,
+      "payload_bytes": 630876
+    }
+  },
+  "sidecar_sha256": {
+    "README.md": "740a1dc3fbc7360bd68204cb4f04c3f907e96fcc7100b1b65a97b9d352ab8968",
+    "summary.json": "5b533fcde1d103323d00ed53af312d66a2d3e129d5612006bdaec1aa3d3bed8f"
+  }
+}

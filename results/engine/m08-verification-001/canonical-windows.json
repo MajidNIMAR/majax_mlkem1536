@@ -1,0 +1,15 @@
+{
+  "profile": "KEM1536-DEV-Q7681-R1",
+  "recorded_utc": "2026-11-11T10:56:43.329010+00:00",
+  "canonical_path": "C:\\Users\\majax\\Documents\\Codex\\NIST\\target\\release\\kem1536.exe",
+  "previous_sha256": "c707186a5da83d5a5ed4523d713bdb204c95412818d8d18ba0a9ba9029105f33",
+  "binary_sha256": "d3fb7537face2cd4b7e295ec829b6a282a711d005f4535ff99dddce90a98dde1",
+  "source_original": "C:\\Users\\majax\\Documents\\Codex\\NIST\\artifacts\\generated\\m08-delivery-001\\windows\\package\\bin\\kem1536.exe",
+  "command": [
+    "C:\\Users\\majax\\Documents\\Codex\\NIST\\target\\release\\kem1536.exe",
+    "dev-self-test"
+  ],
+  "exit_code": 0,
+  "new_compilation_performed": false,
+  "archived_M07_not_modified": true
+}

@@ -196,16 +196,30 @@ fn decode_polynomial_into(bytes: &[u8], result: &mut Poly) -> u16 {
     });
     noncanonical
 }
+#[inline(always)]
+fn noncanonical_13(value: u16) -> u16 {
+    ((u32::from(value).wrapping_sub(u32::from(Q)) >> 31) ^ 1) as u16
+}
 fn validate_vector_encoding(bytes: &[u8]) -> Result<(), Error> {
     if bytes.len() != VECTOR_BYTES {
         return Err(Error::InvalidLength);
     }
     let mut noncanonical = 0_u16;
-    let mut checked = Poly::zero();
-    for row in bytes.chunks_exact(POLY_BYTES) {
-        noncanonical |= decode_polynomial_into(row, &mut checked);
+    // Thirteen bytes hold eight consecutive 13-bit coefficients. Validate
+    // directly, without reconstructing a polynomial or reducing its values.
+    // Each assembly is in 0..8192. The complete vector is scanned before
+    // the final decision; source shape alone is not an erasure guarantee.
+    for group in bytes.chunks_exact(13) {
+        let b = |i: usize| u16::from(group[i]);
+        noncanonical |= noncanonical_13(b(0) | ((b(1) & 31) << 8));
+        noncanonical |= noncanonical_13((b(1) >> 5) | (b(2) << 3) | ((b(3) & 3) << 11));
+        noncanonical |= noncanonical_13((b(3) >> 2) | ((b(4) & 127) << 6));
+        noncanonical |= noncanonical_13((b(4) >> 7) | (b(5) << 1) | ((b(6) & 15) << 9));
+        noncanonical |= noncanonical_13((b(6) >> 4) | (b(7) << 4) | ((b(8) & 1) << 12));
+        noncanonical |= noncanonical_13((b(8) >> 1) | ((b(9) & 63) << 7));
+        noncanonical |= noncanonical_13((b(9) >> 6) | (b(10) << 2) | ((b(11) & 7) << 10));
+        noncanonical |= noncanonical_13((b(11) >> 3) | (b(12) << 5));
     }
-    // Preserve the complete scan of all six rows before the import decision.
     if noncanonical != 0 {
         return Err(Error::NoncanonicalEncoding);
     }
@@ -678,6 +692,28 @@ mod tests {
                 ));
             }
         }
+    }
+
+    #[test]
+    fn direct_encoding_predicate_exhausts_13_bits_and_each_vector_position() {
+        for value in 0..8192 {
+            assert_eq!(noncanonical_13(value), u16::from(value >= Q));
+        }
+        let mut encoded = [0_u8; VECTOR_BYTES];
+        for position in 0..RANK * DEGREE {
+            for value in [0, Q - 1, Q, 8191] {
+                encoded.fill(0);
+                let mut coefficients = [0; DEGREE];
+                coefficients[position % DEGREE] = value;
+                let offset = (position / DEGREE) * POLY_BYTES;
+                pack_into(&coefficients, 13, &mut encoded[offset..offset + POLY_BYTES]);
+                assert_eq!(validate_vector_encoding(&encoded).is_ok(), value < Q);
+            }
+        }
+        assert!(matches!(
+            validate_vector_encoding(&encoded[..VECTOR_BYTES - 1]),
+            Err(Error::InvalidLength)
+        ));
     }
 
     #[test]

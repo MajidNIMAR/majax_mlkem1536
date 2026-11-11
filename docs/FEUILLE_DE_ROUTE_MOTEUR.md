@@ -20,10 +20,12 @@ et revue des propriétaires propre à ce code. Le
 [contre-revue](M06_REVUE_INDEPENDANTE.md) identifient ce périmètre.
 Le [rejet idéal](REJET_IMPLICITE_R1_M06.md) est désormais borné ; le PKE
 à graines, les primitives concrètes et la marge de la réduction quantique
-restent des travaux de C01. La hausse des frames appelle une mesure
-dynamique de pile avant une nouvelle optimisation mémoire. Le prochain
-jalon de distribution doit reconstruire et contrôler la nouvelle version,
-car les paquets M04 conservent leurs propres anciens exécutables.
+restent des travaux de C01. La hausse des frames a conduit aux mesures
+instrumentées et à la réduction de mémoire M07, puis à sa livraison vérifiée.
+M08 traite désormais les copies produites pendant l'import et élargit la
+validation ; son [bilan intermédiaire](M08_IMPORTS_ET_VALIDATION.md) distingue
+les résultats acquis des contrôles complémentaires et de la nouvelle livraison
+encore en cours.
 
 **Actualisation M01.** L'utilisateur demande ensuite d'avancer sur le
 moteur sans attendre de nouvelle validation. Le [bilan opérationnel](BILAN_J2_ET_DECISION_PROTOTYPE.md)
@@ -42,8 +44,9 @@ pas un candidat final et ne valide aucun jalon encore ouvert.
 | Arithmétique polynomiale de référence | Première brique Rust disponible | Convolution indépendante, lois de l'anneau et signe X^256=−1 |
 | Profil de développement du rang 6 | R1 spécifié comme base d'essai | Domaines/formats propres, sans sélection finale |
 | KeyGen / Encaps / Decaps du rang 6 | Rust et référence Python disponibles | 1000 vecteurs concordants, 10000 échanges frais et rejets appariés |
-| Durcissement et performances | M04 : M03-A01 corrigé sur les deux binaires livrés, NTT et contrôles ajoutés ; J4 ouvert | Corpus intégraux inchangés, 32000 observations temporelles et 24000 mesures comparatives sous charge ; pas de preuve CT |
-| Distribution | Deux builds isolés identiques pour chaque cible, paquets 004 liés aux builds 003 | Provenance, inventaires, licences et égalité exacte des entrées compilables |
+| Durcissement et performances | M07 réduit la mémoire observée ; M08 contrôle directement les encodages et sa revue ciblée est scellée ; J4 ouvert | Corpus intégraux inchangés et 210 budgets M08 satisfaits ; ni pile universelle, ni CT ou effacement global prouvés |
+| Import de clés | M08 : quatre consommateurs API par défaut, 88576 sondes chacun | Formats/ordre des erreurs conservés ; les sondes ne couvrent pas tous les vecteurs et l'import ne certifie pas l'entropie |
+| Distribution | Deux paquets M08 vérifiés, originaux inventoriés, une répétition par hôte ; gel et check Windows acquis, CI neuve à acquérir | Sources et licences ; Linux identique brut, Windows comparé hors timestamp COFF/checksum PE ; aucune reproduction par tiers revendiquée |
 
 L'oracle générique dans Z_q[X]/(X^256+1) reste distinct du moteur.
 Le cœur R1 emploie depuis [M02](DURCISSEMENT_MOTEUR_M02.md) une convolution
@@ -61,7 +64,7 @@ de l'utilisateur ; le dossier de validation de J2 reste à compléter.
 
 | Exigence | Éléments déjà disponibles | Travail restant pour la décision |
 |---|---|---|
-| C01 : IND-CCA et hypothèses | Argument exact R1, raccords ROM/QROM conditionnels M05, J idéal borné M06 | Avantages PKE à graines, borne quantique de rejet plus serrée si nécessaire, primitives concrètes et constantes finales |
+| C01 : IND-CCA et hypothèses | Argument exact R1, raccords conditionnels M05, J idéal M06 et information latérale classique M08 | Avantages PKE à graines, indépendances du jeu visé, borne quantique plus serrée si nécessaire, primitives concrètes et constantes finales |
 | C02 : comparaison des attaques | 30 paires strictes et quatre points dual/temps/mémoire/queue, veille conservée | Réoptimiser les compromis réellement réalisables et justifier les queues avant un niveau global |
 | C03 : limites symétriques | Plafonds de recherche des graines/messages 256 bits écrits pour R1 | Quantifier les ressources et les effets multi-cibles dans un jeu choisi |
 | C04/C05 : bruit et échecs | Rejet P0 ; certificat rationnel relié aux opérations et au pire message moyen-clé idéal | Transfert aux primitives concrètes et recherches adaptatives, pas de borne uniforme sur toute clé |
@@ -157,3 +160,39 @@ du point 5 conserve ses obligations ouvertes.
    borne quantique de rejet plus serrée si nécessaire restent des travaux
    de C01. Les gains de mémoire ou de vitesse ne valident pas ces
    obligations, ni une preuve générale de temps constant ou d'effacement.
+
+## M08 — imports directs et validation élargie, en cours
+
+Le [protocole M08](PROTOCOLE_M08_IMPORTS.md), les budgets et le plan sont
+préenregistrés au commit `7ad5698`. Les captures gardent 46 entrées pour la
+référence et 46 pour le candidat. Le cœur candidat `b39c2fdf…` conserve les
+formats et domaines R1 ; les nouvelles acquisitions sont propres à cette
+version et ne reçoivent aucun crédit des campagnes historiques.
+
+1. **Contrôle d'import et compatibilité acquis.** Le validateur parcourt les
+   encodages sans reconstruire de polynôme. Les corpus complets concordent
+   sur Windows/Linux et les quatre consommateurs API passent leurs sondes.
+   Les 300000 latences et 2880 observations mémoire satisfont 210 budgets.
+2. **Revue ciblée scellée.** Les quatre consommateurs ont leurs images,
+   inventaires physiques et 124 témoins adressés. Le retrait des copies
+   de bits visées est qualifié sur les chemins examinés, avec les limites
+   registres/ABI/PKE écrites. Les inventaires des CLI sont séparés.
+3. **Campagne, couverture et rejeu acquis.** Les
+   quatre harnais dépassent chacun 1800 secondes CPU nouvelles avec ASan
+   et std reconstruite : 7256,67 secondes au total en 30 segments, sans
+   défaut observé. L'union LLVM issue d'objets distincts sans std reconstruite
+   couvre 438/604 lignes et 17/36 branches instrumentées ; les mappings nuls
+   sont conservés. Les 3156 requêtes déterministes Rust/Python concordent,
+   dont 433 sondes privées. L'interruption et la reprise de l'oracle sont
+   tracées sans relancer ni créditer la campagne ou la couverture.
+4. **Livraison, gel et intégration locale acquis.** Deux paquets livrent
+   les originaux CLI inventoriés, avec une répétition comparée par hôte.
+   Les notices du CLI et celles des neuf images diagnostiques sont vérifiées.
+   Le gel
+   conserve les 7520 fichiers et 428 répertoires ; son rejeu extrait passe.
+   Le check Windows complet passe avec 352 tests Python, Rust/fmt/Clippy
+   et rejeux ; la CI neuve reste à acquérir.
+5. **C01 borné, sans clôture globale.** Le résultat figé M08 emploie une
+   probabilité de devinette conditionnelle classique et des hypothèses
+   d'indépendance explicites. La syntaxe de l'import ne démontre pas ces
+   hypothèses ; le PKE à graines et les primitives concrètes restent ouverts.

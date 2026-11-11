@@ -1558,3 +1558,201 @@ scientifiques testés. Le jalon M07 mémoire/livraison est clos dans son
 périmètre fini ; C01, l’effacement global, la preuve CT et la revue externe
 restent ouverts. Les observations défavorables de latence et d’import
 sont préservées.
+
+
+## 11 novembre 2026 — M08, protocole avant candidat
+
+L’utilisateur autorise la prochaine évolution. Le protocole M08 et les seuils
+mémoire/latence sont fixés avant toute modification du cœur M07. Deux
+instruments nouveaux sont préparés : probe mémoire enrichi de quatre cas
+d’import privé invalide et consommateur de bibliothèque par défaut conservant
+les imports. La piste est le contrôle direct de 13 octets/huit coefficients,
+sans Poly ni réduction, avec observation machine obligatoire avant conclusion
+sur les résidus. Les formats, domaines et paramètres R1 seront conservés.
+
+Le plan de campagne fixe 1800 secondes CPU par harnais, quatre workers
+parallèles sur CPU8/10/12/14, sans isolation globale garantie ni temps
+historique crédité. Les binaires LLVM de couverture seront distincts de la
+campagne ASan/std reconstruite, car cargo-fuzz refuse cette combinaison
+d’instrumentations. Aucun build/campagne ou gain candidat n’est acquis
+à ce stade. Un volet C01 borné traite l’information latérale classique ;
+l’import syntaxiquement valide ne certifie pas l’entropie de z.
+
+
+## 11 novembre 2026 — M08, candidat et budgets
+
+Référence capturée : 46 fichiers après commit 7ad5698, avant modification
+du cœur. Les deux probes et consommateurs de référence passent, puis le
+validateur direct est implémenté, cœur b39c2fdf… : huit assemblages/13 octets,
+prédicat explicite sans Poly/réduction, décision après balayage. Le test
+Rust sur 8192 valeurs et 6144 frontières passe. Les quatre consommateurs totalisent
+88576 sondes chacun et les corpus complets candidats concordent Windows/Linux.
+
+Les acquisitions finies contiennent 2880 observations mémoire et 300000 latences.
+Le vérificateur recalcule tous les stdout et 210/210 budgets passent. Deux
+avertissements WSL de session systemd sont gardés/hashés/classés, sans
+modifier les données. Avant ces acquisitions, le contrôleur est renforcé
+pour sauver les reçus par tentative et valider les statuts ; les deux
+versions sont conservées, sans changement des autres entrées compilables
+ni critères. Le helper d’affinité est identique au blob préenregistré.
+
+La revue machine ciblée est favorable mais son scellement reste en cours.
+La longue campagne et les paquets ne sont pas encore exécutés. Le volet
+C01 sur information latérale classique, approuvé dans son modèle conditionnel,
+est figé séparément sans certifier l’entropie des clés importées ni fermer C01.
+
+
+## 11 novembre 2026 — M08, revue ciblée scellée et lancement long
+
+La revue effective des quatre consommateurs est scellée : 51 membres
+et 124 témoins d’instructions. Les références reproduisent les bits
+spillés hors propriétaire sur s-invalid ; les candidats parcourent
+2496 octets/1536 coefficients en douze tours SIMD de 208 octets. Aucune
+écriture dérivée des coefficients n’est observée dans leur boucle. Les
+sauvegardes XMM Windows précèdent les premières lectures d’entrée. Les
+retours d’erreur et l’ordre des contrôles sont tracés. La suppression
+des copies ciblées est qualifiée pour ces images, sans effacement des
+registres, données antérieures, zones ABI ou autres chemins PKE.
+
+Le marqueur LONG_CAMPAIGN_ACCEPTED lie cette revue scellée au manifeste,
+au plan et à l’acceptation quantitative. Le wrapper vérifie leurs hashes
+avant lancement. Le fuzzer ne vérifie lui-même que le gate quantitatif ;
+la chronologie et l’acceptation de revue sont conservées séparément.
+La compilation ASan/std reconstruite est lancée, puis les quatre workers
+devront atteindre chacun 1800 secondes CPU. Aucun succès ni couverture
+finale n’est déclaré au lancement.
+
+
+## 11 novembre 2026 — M08, consolidation du bilan intermédiaire
+
+La présentation, le guide moteur, le lien certificat/programme, la feuille
+de route et le rapport sont actualisés sur les seuls résultats acquis.
+Le contrôle des encodages conserve le balayage complet, l'ordre des erreurs
+et les formats/domaines R1. Le pont documente 36 ancrages actifs et garde
+les branches historiques M02/M04/M06/M07 à 21/24/31/35 ancrages, sans preuve
+formelle complète ou transfert automatique à la réalisation machine.
+
+Le reçu quantitatif conserve les 210 budgets satisfaits et ses deux
+diagnostics WSL exacts. Le rejeu de la revue scellée retrouve 51 membres,
+quatre images et 124 témoins ; celui des CLI retrouve quatre inventaires,
+sans nouvel objdump. Le rejeu C01 retrouve sept membres et dix panneaux
+rationnels. Les empreintes de ces reçus sont consignées dans le bilan M08.
+
+Le lien à l'API est explicite : accepter les longueurs, coefficients et hash
+ne certifie ni génération honnête ni entropie de z. L'extension classique
+par p_guess(Z|E) suppose une indépendance conditionnelle de la vue idéale ;
+elle retrouve M06 pour une clé uniforme sans améliorer sa perte quantique.
+Ni SHAKE concret, ni information quantique corrélée, ni IND-CCA global
+ne sont validés par ce résultat.
+
+Les nouveaux outils de conservation et de smoke sont préparés et testés
+sur fixtures. Ils distinguent le consommateur API des CLI à livrer et
+les images fuzz, couverture et rejeu. Aucun gel complet, résultat final
+de campagne/LLVM, nouvelle livraison ou contrôle distant n'est déclaré
+dans cette consolidation. Les 46 entrées capturées, le code, les archives
+et le protocole préenregistré restent inchangés.
+
+
+## 11 novembre 2026 — M08, budgets de campagne principale atteints
+
+Les quatre harnais terminent leur travail principal avec sorties normales
+et aucun défaut observé. Le reçu totalise 7256,67 secondes CPU nouvelles :
+import_public 1801,59, import_private 1802,90, decapsulate 1809,01 et
+api_sequence 1843,17 secondes, en 30 segments. Aucun temps historique
+n'est crédité. Le contrôle du corpus récolté et la vérification principale
+sont conservés, avec leur sortie de contrôleur normale.
+
+Les compteurs après INITED, recalculés depuis les logs, sont respectivement
+29470724, 1930870, 353097 et 24371, soit 31779062 exécutions avec répétitions.
+Ils ne comptent pas les entrées uniques. Les corpus récoltés et dédupliqués
+par harnais contiennent respectivement 771, 723, 660 et 864 entrées. La
+demande libFuzzer max_total_time=600 n'est pas un plafond strict : maximum
+mural observé de 603,72 secondes, conservé sans retouche du plan ni des logs.
+
+Les exports LLVM sur objets distincts et le rejeu indépendant du nouveau
+corpus restent à valider, de même que la nouvelle distribution. La
+vérification principale les marque encore faux ; aucune couverture source,
+comparaison Python achevée ou clôture globale M08 n'en est anticipée.
+
+## 11 novembre 2026 — M08, couverture et reprise tracée de l'oracle
+
+Les quatre objets de couverture ASan avec std distribuée produisent une
+véritable union LLVM : 438/604 lignes, 64/85 fonctions, 827/1058 régions et
+17/36 branches instrumentées du cœur. Les cinq fichiers et leurs mappings
+nuls sont conservés ; ni somme des panneaux recouvrants ni preuve de tous
+les chemins, de temps constant ou d'effacement n'en découle.
+
+L'environnement d'exécution redémarre pendant l'oracle : la session de
+contrôleur disparaît, WSL présente un démarrage neuf et l'UTC observé passe
+d'environ 04:30 à 10:18. Le code de sortie du processus interrompu est
+inconnu. Les deux journaux et le transcript gzip partiel sont conservés avec
+leurs empreintes dans postprocessing/interrupted-oracle-001. L'adaptateur
+préparé et testé au commit 99ce3a5 reprend seulement le contrôleur oracle
+original et le binaire déjà compilé ; aucun fuzzing, objet LLVM ou binaire
+de rejeu n'est reconstruit. Ses reçus pré/post distinguent cette reprise.
+
+La reprise termine avec code 0 et le contrôle complet des données passe.
+Les 3156 requêtes déterministes distinctes concordent Rust/Python : 1066
+publiques, 1019 privées et 1071 de chiffrés. Les 433 privées acceptées ont
+une sonde indépendante de décapsulation. Les 854 chiffrés acceptés en
+syntaxe sont distincts des 16 réencryptions valides selon l'oracle. Les
+1022 opérations à aléa frais encodées dans le corpus ne sont pas recréées
+par cet oracle. Les lignes de la première tentative ne sont pas ajoutées.
+
+DELIVERY_ACCEPTED est enregistré après ces résultats pour autoriser une
+répétition de construction par hôte et la livraison des originaux CLI
+inventoriés. La distribution et les contrôles de publication sont encore
+à effectuer à cette étape du journal.
+
+## 11 novembre 2026 — M08, livraison qualifiée
+
+Deux constructions CLI nouvelles, une Windows et une Linux, sont terminées
+sur les sources capturées. La répétition Linux est identique octet pour
+octet ; Windows ne diffère que par timestamp COFF et checksum PE dans les
+copies de comparaison. Les paquets conservent les originaux inventoriés,
+leurs sources et licences. Chacun des quatre exécutables original/répétition
+passe 16 échanges frais, 16 rejets et cinq refus normaux de commandes de
+recherche. Le contrôleur de distribution termine avec code 0.
+
+La collecte diagnostique distincte identifie les neuf images conservées et
+123 textes de licences, deux graphes/locks/features et une union de 55
+packages. Elle ne recompile pas, ne réutilise aucun ancien bundle et ne
+prétend pas attribuer des symboles liés à chaque package. Les deux logs de
+collecte/vérification sont conservés dans l'étape de mesures avant le gel.
+
+Le paquet source conserve l'étude au moment de l'acquisition ; le bilan
+canonique du dépôt est actualisé ensuite. Le gel complet démarre après ces
+succès, sans réécrire les étapes ni leurs pièces.
+
+## 11 novembre 2026 — M08, gel et rejeu complet réussis
+
+Le gel Windows termine avec code 0 entre 10:34:08 et 10:37:34 UTC,
+stderr vide. L'extraction et le rejeu complets vérifient les six étapes et
+32 contrôles, soit 7520 fichiers et 428 répertoires. Les 17 membres physiques
+totalisent 171590926 octets ; le plus gros mesure 86730786 octets, sous
+90 Mio. Les pièces initiales et les trois traces de l'oracle interrompu
+sont conservées. Aucune campagne, mesure, compilation ou exécution d'oracle
+n'est effectuée par ce rejeu. L'archive ne modifie pas les résultats anciens.
+
+Le manifeste est lié à SHA-256
+02cc3515cfe6740ccc66e6f8c36f8183ec922607f156cc12a131fb3bc6c79385.
+Les tests complets d'intégration et les exécutions natives sur hôtes neufs
+restent les étapes suivantes ; leur résultat n'est pas anticipé ici.
+
+## 11 novembre 2026 — M08, check complet et originaux natifs Windows
+
+Le check complet Windows termine avec code 0 après 904,33 secondes : Rust,
+fmt, Clippy strict, 352 tests Python et tous les certificats/rejeux requis.
+Les inventaires avant/après des 2008 fichiers maintenus et des outils sont
+identiques. Le vérificateur de capture relit ensuite ces données avec code
+0, sans nouvelle exécution de commande de test.
+
+Le smoke natif séparé des archives passe pour l'original CLI et le
+consommateur par défaut : échanges/rejets frais, cinq refus normaux et
+88576 sondes bornées. L'original CLI M08 est promu atomiquement vers
+target/release/kem1536.exe, puis son auto-test confirme 16 échanges et
+16 rejets. Son empreinte est d3fb7537face2cd4b7e295ec829b6a282a711d005f4535ff99dddce90a98dde1.
+Les 22 fichiers de results/engine/m08-verification-001 conservent les
+captures, les journaux de gel, les contrôleurs et la promotion. Les anciens
+instantanés et l'original M07 restent inchangés. La publication et sa CI
+neuve sont les étapes suivantes.

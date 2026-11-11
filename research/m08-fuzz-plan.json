@@ -1,0 +1,16 @@
+{
+  "schema": "m08-fuzz-plan-v1",
+  "profile": "KEM1536-DEV-Q7681-R1",
+  "CPU_seconds_per_harness": 1800,
+  "affinity_CPU_by_harness": {
+    "import_public": 8,
+    "import_private": 10,
+    "decapsulate": 12,
+    "api_sequence": 14
+  },
+  "parallel_workers": 4,
+  "max_segment_wall_seconds": 600,
+  "historical_fuzz_CPU_seconds_credited": 0,
+  "host_wide_isolation_proved": false,
+  "topology": "WSL reports CPU8 core4, CPU10 core5, CPU12 core6, CPU14 core7; SMT siblings not used by these four workers"
+}

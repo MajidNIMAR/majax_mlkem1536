@@ -1,0 +1,29 @@
+{
+  "profile": "KEM1536-DEV-Q7681-R1",
+  "command": [
+    "powershell.exe",
+    "-NoProfile",
+    "-ExecutionPolicy",
+    "Bypass",
+    "-File",
+    "scripts/dev.ps1",
+    "check"
+  ],
+  "exit_code": 0,
+  "effective_exit_code": 0,
+  "complete_check_accepted": true,
+  "maintained_files_hashed_before": 2008,
+  "maintained_files_hashed_after": 2008,
+  "python_summary": {
+    "test_counts": [
+      352
+    ],
+    "following_OK": [
+      true
+    ]
+  },
+  "source_inventory_before_after_equal": true,
+  "tools_before_after_equal": true,
+  "members_verified": 6,
+  "new_executable_execution_performed_by_verifier": false
+}

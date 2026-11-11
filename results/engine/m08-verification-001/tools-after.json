@@ -1,0 +1,298 @@
+{
+  "schema": "m08-local-check-tools-v1",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "machine": "AMD64",
+  "capture_python_version": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+  "files": {
+    "powershell": {
+      "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "sha256": "d8f182560210d43baaf767d482ad1dc1207372522e91413b9d5e515a875e552d",
+      "bytes": 495616
+    },
+    "git": {
+      "path": "C:\\Program Files\\Git\\cmd\\git.exe",
+      "sha256": "c954fcc8e65a38450895ca65d308ecaee63f044d16494b5385faa5e036a3facb",
+      "bytes": 46464
+    },
+    "python_on_initial_PATH": {
+      "path": "C:\\Users\\majax\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "sha256": "d932e5e2f324d57f392e8fd063dcf6d0185be8a664c57c6d24e7762ed02c28ca",
+      "bytes": 105816
+    },
+    "capture_python": {
+      "path": "C:\\Users\\majax\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "sha256": "d932e5e2f324d57f392e8fd063dcf6d0185be8a664c57c6d24e7762ed02c28ca",
+      "bytes": 105816
+    },
+    "research_python": {
+      "path": "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\research-venv\\Scripts\\python.exe",
+      "sha256": "200d001707ed494066ef00e31e38330e32490c2a74a450ca5d66d2179396fd0e",
+      "bytes": 255320
+    },
+    "cargo_proxy": {
+      "path": "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\cargo\\bin\\cargo.exe",
+      "sha256": "00f139da614dced87d3c3d4121c43eebdac3c1bf8a5ee86b9d80dfd71c8d70fd",
+      "bytes": 12724224
+    },
+    "rustc_proxy": {
+      "path": "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\cargo\\bin\\rustc.exe",
+      "sha256": "00f139da614dced87d3c3d4121c43eebdac3c1bf8a5ee86b9d80dfd71c8d70fd",
+      "bytes": 12724224
+    },
+    "real_rustc.exe": {
+      "path": "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\rustup\\toolchains\\1.91.1-x86_64-pc-windows-gnu\\bin\\rustc.exe",
+      "sha256": "0a179a567b327d19b79ce6e4a7c5cdbbc4a3c179f7f4c58b04956126aa09ca9b",
+      "bytes": 45175
+    },
+    "real_cargo.exe": {
+      "path": "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\rustup\\toolchains\\1.91.1-x86_64-pc-windows-gnu\\bin\\cargo.exe",
+      "sha256": "11a772587c4212f54d1413f31b9ae9812509554b28692a322a6a90ee98cfffbe",
+      "bytes": 54472240
+    },
+    "real_rustfmt.exe": {
+      "path": "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\rustup\\toolchains\\1.91.1-x86_64-pc-windows-gnu\\bin\\rustfmt.exe",
+      "sha256": "92b1e8899e97b8e1c4342ed00ef5ecd2370ed225d01db2c2c120896aec67a9bd",
+      "bytes": 11278777
+    },
+    "real_clippy-driver.exe": {
+      "path": "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\rustup\\toolchains\\1.91.1-x86_64-pc-windows-gnu\\bin\\clippy-driver.exe",
+      "sha256": "44cc7993abc2c9816db3b1583793a91098d626e3964cfbf6b6b986b055918de6",
+      "bytes": 24239750
+    },
+    "driver_rustc_driver-ee49369eefca8df5.dll": {
+      "path": "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\rustup\\toolchains\\1.91.1-x86_64-pc-windows-gnu\\bin\\rustc_driver-ee49369eefca8df5.dll",
+      "sha256": "96e9b5d68b9335450f5386e6f06a08ebba3ba45d83d4334c066aa04b3645799d",
+      "bytes": 319759786
+    },
+    "import_helpers/dlltool.exe": {
+      "path": "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\native-tools\\dlltool.exe",
+      "sha256": "3cd94d02427abaacd489e9db6d048d28bf9223d5f9d45070ab4752fe3a390bc6",
+      "bytes": 78566232
+    },
+    "host_native/llc.exe": {
+      "path": "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\rustup\\toolchains\\1.91.1-x86_64-pc-windows-gnu\\lib\\rustlib\\x86_64-pc-windows-gnu\\bin\\llc.exe",
+      "sha256": "f51ba52c5feb4fe51c1dd293b09a2bdb4667aeb8558cd058752267d9446383f0",
+      "bytes": 184816773
+    },
+    "host_native/llvm-ar.exe": {
+      "path": "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\rustup\\toolchains\\1.91.1-x86_64-pc-windows-gnu\\lib\\rustlib\\x86_64-pc-windows-gnu\\bin\\llvm-ar.exe",
+      "sha256": "3cd94d02427abaacd489e9db6d048d28bf9223d5f9d45070ab4752fe3a390bc6",
+      "bytes": 78566232
+    },
+    "host_native/llvm-as.exe": {
+      "path": "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\rustup\\toolchains\\1.91.1-x86_64-pc-windows-gnu\\lib\\rustlib\\x86_64-pc-windows-gnu\\bin\\llvm-as.exe",
+      "sha256": "00aec002d92622cb71177f1a5ba291ccc94304f38a3d6a80f68ac341d569eee1",
+      "bytes": 26037768
+    },
+    "host_native/llvm-cov.exe": {
+      "path": "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\rustup\\toolchains\\1.91.1-x86_64-pc-windows-gnu\\lib\\rustlib\\x86_64-pc-windows-gnu\\bin\\llvm-cov.exe",
+      "sha256": "eacaa34a3401735b8162233b1e5b700d3d7c6f4176d5a0d3aacc4594e353835d",
+      "bytes": 22436382
+    },
+    "host_native/llvm-dis.exe": {
+      "path": "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\rustup\\toolchains\\1.91.1-x86_64-pc-windows-gnu\\lib\\rustlib\\x86_64-pc-windows-gnu\\bin\\llvm-dis.exe",
+      "sha256": "40600c66b832961e5baf0c83a086badfe7db540fdc4cf09c31ae58b314935674",
+      "bytes": 10390035
+    },
+    "host_native/llvm-link.exe": {
+      "path": "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\rustup\\toolchains\\1.91.1-x86_64-pc-windows-gnu\\lib\\rustlib\\x86_64-pc-windows-gnu\\bin\\llvm-link.exe",
+      "sha256": "aba1fcd17ce9363c1a4d12cf6cfb27ee9e13c9a92c206ff896994e0172735c5e",
+      "bytes": 29150554
+    },
+    "host_native/llvm-nm.exe": {
+      "path": "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\rustup\\toolchains\\1.91.1-x86_64-pc-windows-gnu\\lib\\rustlib\\x86_64-pc-windows-gnu\\bin\\llvm-nm.exe",
+      "sha256": "fe1c40c3dd24d54b4386cc49dde3aa9d4a98a0553b409d8c956043cf7c2c6c8b",
+      "bytes": 80805800
+    },
+    "host_native/llvm-objcopy.exe": {
+      "path": "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\rustup\\toolchains\\1.91.1-x86_64-pc-windows-gnu\\lib\\rustlib\\x86_64-pc-windows-gnu\\bin\\llvm-objcopy.exe",
+      "sha256": "67b63df38865928ec1007bcf00e34717c06c14504007eaaac8b63137a9a75c96",
+      "bytes": 19708916
+    },
+    "host_native/llvm-objdump.exe": {
+      "path": "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\rustup\\toolchains\\1.91.1-x86_64-pc-windows-gnu\\lib\\rustlib\\x86_64-pc-windows-gnu\\bin\\llvm-objdump.exe",
+      "sha256": "36060b2e827cc4224f394c04a27603cd6e439ee2859b9c9df5b4eb5ad88af02c",
+      "bytes": 55396062
+    },
+    "host_native/llvm-profdata.exe": {
+      "path": "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\rustup\\toolchains\\1.91.1-x86_64-pc-windows-gnu\\lib\\rustlib\\x86_64-pc-windows-gnu\\bin\\llvm-profdata.exe",
+      "sha256": "e7ba1f8e2d7088284ac66c04a06caa1927c7bfa8155bad34d06636d63d7b8952",
+      "bytes": 22321808
+    },
+    "host_native/llvm-readobj.exe": {
+      "path": "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\rustup\\toolchains\\1.91.1-x86_64-pc-windows-gnu\\lib\\rustlib\\x86_64-pc-windows-gnu\\bin\\llvm-readobj.exe",
+      "sha256": "7851ee8b146099457edf2ab3dd5a70cf3c0b65caa70850c31bb650f3d9f40f0f",
+      "bytes": 24000369
+    },
+    "host_native/llvm-size.exe": {
+      "path": "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\rustup\\toolchains\\1.91.1-x86_64-pc-windows-gnu\\lib\\rustlib\\x86_64-pc-windows-gnu\\bin\\llvm-size.exe",
+      "sha256": "f819ea524fdf01fb77826110aca6e39e5de7307b014d409c666028c0bbed9f76",
+      "bytes": 18389938
+    },
+    "host_native/llvm-strip.exe": {
+      "path": "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\rustup\\toolchains\\1.91.1-x86_64-pc-windows-gnu\\lib\\rustlib\\x86_64-pc-windows-gnu\\bin\\llvm-strip.exe",
+      "sha256": "67b63df38865928ec1007bcf00e34717c06c14504007eaaac8b63137a9a75c96",
+      "bytes": 19708916
+    },
+    "host_native/opt.exe": {
+      "path": "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\rustup\\toolchains\\1.91.1-x86_64-pc-windows-gnu\\lib\\rustlib\\x86_64-pc-windows-gnu\\bin\\opt.exe",
+      "sha256": "eda629d18874e589cafebbf44ccf22734f421647cf3b139150d72c659d185bd4",
+      "bytes": 184958895
+    },
+    "host_native/rust-lld.exe": {
+      "path": "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\rustup\\toolchains\\1.91.1-x86_64-pc-windows-gnu\\lib\\rustlib\\x86_64-pc-windows-gnu\\bin\\rust-lld.exe",
+      "sha256": "4f35c66e4f166227c201f117687a1702a4faad3c8f7af50b41d47d9c3e044e32",
+      "bytes": 197292599
+    },
+    "host_native/rust-objcopy.exe": {
+      "path": "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\rustup\\toolchains\\1.91.1-x86_64-pc-windows-gnu\\lib\\rustlib\\x86_64-pc-windows-gnu\\bin\\rust-objcopy.exe",
+      "sha256": "67b63df38865928ec1007bcf00e34717c06c14504007eaaac8b63137a9a75c96",
+      "bytes": 19708916
+    },
+    "host_native/wasm-component-ld.exe": {
+      "path": "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\rustup\\toolchains\\1.91.1-x86_64-pc-windows-gnu\\lib\\rustlib\\x86_64-pc-windows-gnu\\bin\\wasm-component-ld.exe",
+      "sha256": "9221c8699769aa6c848f6699d8e415e4e3f538ba3e0d8ef93838568ff7dd6fab",
+      "bytes": 7508480
+    },
+    "self_contained/dlltool.exe": {
+      "path": "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\rustup\\toolchains\\1.91.1-x86_64-pc-windows-gnu\\lib\\rustlib\\x86_64-pc-windows-gnu\\bin\\self-contained\\dlltool.exe",
+      "sha256": "e0873d701561544caaa59b80ba643fa72f2eecf11ccfca29ac83f05db2a8fa01",
+      "bytes": 1292800
+    },
+    "self_contained/ld.exe": {
+      "path": "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\rustup\\toolchains\\1.91.1-x86_64-pc-windows-gnu\\lib\\rustlib\\x86_64-pc-windows-gnu\\bin\\self-contained\\ld.exe",
+      "sha256": "31a9da4426bf057bbb1dd929213d07cacffe749c0ddee677d36548abce08e965",
+      "bytes": 1851392
+    },
+    "self_contained/x86_64-w64-mingw32-gcc.exe": {
+      "path": "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\rustup\\toolchains\\1.91.1-x86_64-pc-windows-gnu\\lib\\rustlib\\x86_64-pc-windows-gnu\\bin\\self-contained\\x86_64-w64-mingw32-gcc.exe",
+      "sha256": "fc8899647f5e75a722ef34f7d9f1690f4e06dba6378657edfa7bbae32b455c35",
+      "bytes": 2828800
+    },
+    "gcc_ld/ld.lld.exe": {
+      "path": "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\rustup\\toolchains\\1.91.1-x86_64-pc-windows-gnu\\lib\\rustlib\\x86_64-pc-windows-gnu\\bin\\gcc-ld\\ld.lld.exe",
+      "sha256": "88cc86f26f2963bba266fcae63928134115565ecb62a87dbd38676da007754d8",
+      "bytes": 877056
+    },
+    "gcc_ld/ld64.lld.exe": {
+      "path": "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\rustup\\toolchains\\1.91.1-x86_64-pc-windows-gnu\\lib\\rustlib\\x86_64-pc-windows-gnu\\bin\\gcc-ld\\ld64.lld.exe",
+      "sha256": "88cc86f26f2963bba266fcae63928134115565ecb62a87dbd38676da007754d8",
+      "bytes": 877056
+    },
+    "gcc_ld/lld-link.exe": {
+      "path": "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\rustup\\toolchains\\1.91.1-x86_64-pc-windows-gnu\\lib\\rustlib\\x86_64-pc-windows-gnu\\bin\\gcc-ld\\lld-link.exe",
+      "sha256": "88cc86f26f2963bba266fcae63928134115565ecb62a87dbd38676da007754d8",
+      "bytes": 877056
+    },
+    "gcc_ld/wasm-ld.exe": {
+      "path": "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\rustup\\toolchains\\1.91.1-x86_64-pc-windows-gnu\\lib\\rustlib\\x86_64-pc-windows-gnu\\bin\\gcc-ld\\wasm-ld.exe",
+      "sha256": "88cc86f26f2963bba266fcae63928134115565ecb62a87dbd38676da007754d8",
+      "bytes": 877056
+    }
+  },
+  "version_queries": {
+    "powershell_version": {
+      "command": [
+        "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "-NoProfile",
+        "-Command",
+        "[ordered]@{PSVersion=$PSVersionTable.PSVersion.ToString();PSEdition=[string]$PSVersionTable.PSEdition;CLRVersion=[string]$PSVersionTable.CLRVersion;BuildVersion=[string]$PSVersionTable.BuildVersion} | ConvertTo-Json -Compress"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"PSVersion\":\"5.1.26100.9818\",\"PSEdition\":\"Desktop\",\"CLRVersion\":\"4.0.30319.42000\",\"BuildVersion\":\"10.0.26100.9818\"}\r\n",
+      "stderr": "",
+      "stdout_sha256": "b73abc834ba1c97b8f632252c75efaa16782a62ab16b84940b143927628e7278",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "git_version": {
+      "command": [
+        "C:\\Program Files\\Git\\cmd\\git.EXE",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "git version 2.50.1.windows.1\n",
+      "stderr": "",
+      "stdout_sha256": "b9b2d0f043a4a56a9604fe4923c39281be494739b205014186b390d85172860f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "python_version": {
+      "command": [
+        "C:\\Users\\majax\\AppData\\Local\\Programs\\Python\\Python313\\python.EXE",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "Python 3.13.7\r\n",
+      "stderr": "",
+      "stdout_sha256": "f5472f7961ebcf2d6e0c1b66763a502fecc39672e3cdf4faa3fb74a423a642ff",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research_python_version": {
+      "command": [
+        "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\research-venv\\Scripts\\python.exe",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "Python 3.13.7\r\n",
+      "stderr": "",
+      "stdout_sha256": "f5472f7961ebcf2d6e0c1b66763a502fecc39672e3cdf4faa3fb74a423a642ff",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "research_numpy_version": {
+      "command": [
+        "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\research-venv\\Scripts\\python.exe",
+        "-c",
+        "import numpy; print(numpy.__version__)"
+      ],
+      "exit_code": 0,
+      "stdout": "2.3.5\r\n",
+      "stderr": "",
+      "stdout_sha256": "d8b342ed72e00e7abc74b127c8acf108976a3430ae99a0a79ed42ab0890ccf30",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cargo_version": {
+      "command": [
+        "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\cargo\\bin\\cargo.exe",
+        "--version",
+        "--verbose"
+      ],
+      "exit_code": 0,
+      "stdout": "cargo 1.91.1 (ea2d97820 2025-10-10)\nrelease: 1.91.1\ncommit-hash: ea2d97820c16195b0ca3fadb4319fe512c199a43\ncommit-date: 2025-10-10\nhost: x86_64-pc-windows-gnu\nlibgit2: 1.9.1 (sys:0.20.2 vendored)\nlibcurl: 8.15.0-DEV (sys:0.4.83+curl-8.15.0 vendored ssl:Schannel)\nos: Windows 10.0.26300 (Windows 11 Professional) [64-bit]\n",
+      "stderr": "",
+      "stdout_sha256": "84bfb0a38aaeaabd514a26e249c92068e0a4a7dec95b92ad902dc890871d18fe",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "rustc_version": {
+      "command": [
+        "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\cargo\\bin\\rustc.exe",
+        "-Vv"
+      ],
+      "exit_code": 0,
+      "stdout": "rustc 1.91.1 (ed61e7d7e 2025-11-07)\nbinary: rustc\ncommit-hash: ed61e7d7e242494fb7057f2657300d9e77bb4fcb\ncommit-date: 2025-11-07\nhost: x86_64-pc-windows-gnu\nrelease: 1.91.1\nLLVM version: 21.1.2\n",
+      "stderr": "",
+      "stdout_sha256": "9034cd2eda8c39cfa2a4d364bd5b0672fcc0627e9f27ad0f641702eda9f89583",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "rustc_sysroot": {
+      "command": [
+        "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\cargo\\bin\\rustc.exe",
+        "--print",
+        "sysroot"
+      ],
+      "exit_code": 0,
+      "stdout": "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\rustup\\toolchains\\1.91.1-x86_64-pc-windows-gnu\n",
+      "stderr": "",
+      "stdout_sha256": "f533977512a394519e5154142c23a772e60f1dab4f874377c0afa3770d18c70c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "tool_query_environment": {
+    "CARGO_HOME": "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\cargo",
+    "RUSTUP_HOME": "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\rustup",
+    "CARGO_TARGET_DIR": "C:\\Users\\majax\\Documents\\Codex\\NIST\\target",
+    "RUSTUP_AUTO_INSTALL": "0"
+  },
+  "inherited_RUSTUP_TOOLCHAIN": null,
+  "native_tools_hash_scope": "available EXEs in dev.ps1 import-helper and pinned Rust native/self-contained linker directories; not an execution trace or complete OS/toolchain-library inventory",
+  "check_environment": "ordinary inherited environment; scripts/dev.ps1 itself sets local Cargo/Rustup/target/PATH and PYTHONDONTWRITEBYTECODE",
+  "system_environment_or_credentials_dumped": false
+}

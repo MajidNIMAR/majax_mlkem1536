@@ -1,0 +1,9 @@
+{
+  "started_utc": "2026-11-11T10:34:08.2359610Z",
+  "finished_utc": "2026-11-11T10:37:34.4857709Z",
+  "exit_code": 0,
+  "request_sha256": "d18e5d128d240b86a52b0bd394c94c3646107f4c88ded85f90417f13302c03d1",
+  "stdout_sha256": "9ef368a43c36b01b3ff7a41fa8a4f10be53a3e4ad865bab3d8e1b224e3b58b24",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "evidence_preserved": true
+}

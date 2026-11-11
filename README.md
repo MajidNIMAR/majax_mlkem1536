@@ -15,6 +15,7 @@ evidence needed to examine its evolution.
 [Specification](docs/SPECIFICATION_DEV_Q7681_R1.md) ·
 [Engine and API guide](docs/MOTEUR_KEM_R1.md) ·
 [Research report](docs/RAPPORT_RECHERCHE.md) ·
+[M08 import study, in progress](docs/M08_IMPORTS_ET_VALIDATION.md) ·
 [M07 memory and delivery study](docs/M07_MEMOIRE_ET_VALIDATION.md)
 
 [![Main-branch checks](https://github.com/MajidNIMAR/majax_mlkem1536/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/MajidNIMAR/majax_mlkem1536/actions/workflows/ci.yml)
@@ -62,7 +63,49 @@ arithmetic and KEM operations are implemented in this repository. The
 project is developed independently from Majax Messenger's operational
 architecture.
 
-## Current engineering milestone: M07
+## Current engineering milestone: M08, in progress
+
+M08 replaces polynomial reconstruction during key import with a direct scan
+of the canonical 13-bit encoding. It checks all **1,536 coefficients** before
+the final decision, preserving R1 formats, domains and error order. The
+[M08 study](docs/M08_IMPORTS_ET_VALIDATION.md) records the measured candidate,
+the preregistered criteria and the remaining work.
+
+The Windows/Linux comparison retains **300,000 paired latency observations**
+and **2,880 memory observations**; all **210 predefined budget checks pass**.
+Each of the four reference/candidate API consumers passes **88,576 finite
+import probes**, and complete engine regression outputs match. These checks
+do not enumerate the full space of keys or ciphertexts.
+
+The sealed review of the four default-feature API consumers contains **124
+addressed instruction witnesses**. The candidate images no longer produce
+the targeted decoded-coefficient stack copies on the examined invalid-secret
+paths. Caller-owned data, ABI save areas, registers and other PKE paths remain
+outside that conclusion. Separate inventories identify the candidate CLI
+images; the consumer review is not a proof of CLI erasure.
+
+The four long-campaign harnesses have reached their new CPU budgets:
+**7,256.67 CPU seconds** in 30 segments, with no observed defect and no
+historical time credited. The separate LLVM union covers **438/604 mapped
+core lines** and **17/36 branches**, retaining zero-count mappings. The
+independent replay matches **3,156 distinct deterministic requests**, including
+433 accepted-private-key decapsulation probes. Fresh-randomness operations are
+counted separately. An environment interruption preserved the first partial
+oracle transcript; only the oracle was resumed with the frozen controller and
+replay image. Two qualified delivery packages ship the original inventoried
+CLI images. One new repeat build per host matches Linux bytes exactly and
+Windows bytes apart from the COFF timestamp/PE checksum. Source, notices and
+finite execution receipts are retained. The [complete M08 snapshot](results/engine/m08-001/)
+preserves 7,520 files and 428 directories, and its extracted data replay passes;
+the full Windows check passes with **352 Python tests**, Rust tests, fmt,
+strict Clippy and required data replays. Original-image native checks also
+pass locally. Fresh hosted CI remains to be acquired. The
+[bounded side-information result](docs/REJET_ET_INFORMATION_LATERALE_M08.md)
+is already preserved separately: it generalizes the ideal rejection-key
+assumption to classical side information, without establishing the entropy
+of imported keys or closing the complete KEM security argument.
+
+## Previous engineering milestone: M07
 
 M07 streams coefficient rows through reused operation-owned buffers while
 retaining the transformed operands and the **48/55/68** transform counts.
@@ -120,6 +163,7 @@ preserves the distributions, build inputs, compiler details and limitations.
 
 | Evidence | Recorded scope |
 |---|---|
+| [M08 ideal rejection with classical side information](results/security/m08-rejection-001/) | Ten exact rational panels under explicit conditional independence and guessing-probability assumptions; no quantum side information or concrete SHAKE guarantee |
 | [M07 memory, binary, fuzz and delivery evidence](results/engine/m07-001/) | 116/116 budgets pass, complete Windows/Linux output regression, four bounded binary reviews, 32,000 finite timing observations and new finite ASan/std-rebuilt campaign; no global erasure or constant-time proof |
 | [R1 reference vectors](results/engine/r1-001/) and [rejection corpus](results/engine/r1-rejections-001/) | 1,000 complete Rust/Python vectors, 10,000 fresh exchanges and 10,000 paired rejection outputs |
 | [M06 engine regression and binary review](results/engine/m06-001/) | Complete Windows/Linux equality to the frozen outputs: 1,000 vectors, 10,000 rejections, 10,000 mutations and 20,000 format cases per system; four preserved binary inventories and targeted owner review |

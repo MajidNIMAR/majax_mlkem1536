@@ -1,0 +1,55 @@
+{
+  "schema": "m08-local-full-check-v1",
+  "profile": "KEM1536-DEV-Q7681-R1",
+  "capture_started_utc": "2026-11-11T10:39:20.741534+00:00",
+  "command": [
+    "powershell.exe",
+    "-NoProfile",
+    "-ExecutionPolicy",
+    "Bypass",
+    "-File",
+    "scripts/dev.ps1",
+    "check"
+  ],
+  "working_directory": "C:\\Users\\majax\\Documents\\Codex\\NIST",
+  "capture_sha256": "e10991ab550360c300bd1051465667d865a69d4c7555ca55a1105804bf782c4d",
+  "expected_python_test_count": 352,
+  "scope": "Complete local Windows working-tree dev.ps1 check, including historical data replays and finite self-tests. No renewed performance/disassembly/fuzz campaign; source/tool equality compares endpoints only.",
+  "new_measurement_disassembly_or_fuzz_campaign": false,
+  "started_utc": "2026-11-11T10:39:29.650016+00:00",
+  "finished_utc": "2026-11-11T10:54:33.987373+00:00",
+  "exit_code": 0,
+  "elapsed_wall_seconds": 904.3288713000002,
+  "source_comparison": {
+    "source_inventory_before_after_equal": true,
+    "maintained_file_hashes_before_after_equal": true,
+    "git_head_before_after_equal": true,
+    "git_status_before_after_equal": true,
+    "added_names": [],
+    "removed_names": [],
+    "changed_hashes": [],
+    "endpoint_observations_only": true,
+    "continuous_filesystem_or_OS_attestation": false
+  },
+  "tools_before_after_equal": true,
+  "python_summary": {
+    "test_counts": [
+      352
+    ],
+    "following_OK": [
+      true
+    ]
+  },
+  "expected_python_count_matches": true,
+  "complete_check_accepted": true,
+  "effective_exit_code": 0,
+  "capture_script_before_after_equal": true,
+  "files_sha256": {
+    "capture_full_check.py": "e10991ab550360c300bd1051465667d865a69d4c7555ca55a1105804bf782c4d",
+    "source-after.json": "0208a95e595af77ea359af79077d869b08cbf8ddbcfe5fb4aee7c6b20dc397ac",
+    "source-before.json": "0208a95e595af77ea359af79077d869b08cbf8ddbcfe5fb4aee7c6b20dc397ac",
+    "tools-after.json": "a103f1cb289f4c76e3ee4ca5b6b53da3c8938732d459abca75481351547c5470",
+    "tools-before.json": "a103f1cb289f4c76e3ee4ca5b6b53da3c8938732d459abca75481351547c5470",
+    "windows-check.log": "ed1bfaefef845f221bc7da2fa3921e5d5b08850bf1dcbd6013f1e0df9534f71a"
+  }
+}

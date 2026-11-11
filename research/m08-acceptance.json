@@ -1,0 +1,17 @@
+{
+  "schema": "m08-acceptance-v1",
+  "profile": "KEM1536-DEV-Q7681-R1",
+  "memory_repetitions_per_pattern": 20,
+  "memory_stack_max_growth_bytes": 512,
+  "heap_request_increase_allowed": false,
+  "retained_output_bytes_must_match": true,
+  "paired_samples_per_operation_per_series": 1000,
+  "paired_warmup": 100,
+  "paired_series": 5,
+  "CPU": 10,
+  "median_ratio_max": 1.10,
+  "p95_ratio_max": 1.20,
+  "full_corpora_must_match": true,
+  "targeted_import_spill_review_required": true,
+  "universal_erasure_or_constant_time_claimed": false
+}

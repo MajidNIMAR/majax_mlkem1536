@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "scope": "M08 complete local Windows check, native original images and canonical CLI",
+  "output_sha256": {
+    "canonical-self-test.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "canonical-self-test.stdout": "f3011a07289c9b90034a8fad00a01f22c8a9cc57700a4d8b71db79b525b25239",
+    "canonical-windows.json": "a51f52f678ddee70e1d0267c3033155603ff0e52ca2bbb91d16eff899b4f0223",
+    "capture_full_check.py": "e10991ab550360c300bd1051465667d865a69d4c7555ca55a1105804bf782c4d",
+    "check-replay.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "check-replay.stdout": "6588d7dce73c21d87cc138d02972ec736920a044a61bc539d3f3526cbe915ca9",
+    "freeze-request.json": "d18e5d128d240b86a52b0bd394c94c3646107f4c88ded85f90417f13302c03d1",
+    "freeze-result.json": "2a80ecb62d9afae8166ab58ba366666e43d7da4715957613d5b64abf34828c32",
+    "freeze-stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "freeze-stdout.log": "9ef368a43c36b01b3ff7a41fa8a4f10be53a3e4ad865bab3d8e1b224e3b58b24",
+    "native-command.json": "27f8b23d603eac36d3c978722abe23623d6a71d8185914de43a06ac00c97534c",
+    "native-windows.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "native-windows.stdout.json": "1b3b1158f8c671f084208b186ee28d44b6f5921f5e5d0e296f55f46974ef193b",
+    "promote_and_freeze.py": "2c0c5a766f5e02542201cfc5347b4ef6ed09b4a09a5882b32f0e0c633ed59ccc",
+    "README.md": "90dd608220bbaa631ecc70a5d143b1c706bccff155826b5242ca11b5556e15bd",
+    "source-after.json": "0208a95e595af77ea359af79077d869b08cbf8ddbcfe5fb4aee7c6b20dc397ac",
+    "source-before.json": "0208a95e595af77ea359af79077d869b08cbf8ddbcfe5fb4aee7c6b20dc397ac",
+    "tools-after.json": "a103f1cb289f4c76e3ee4ca5b6b53da3c8938732d459abca75481351547c5470",
+    "tools-before.json": "a103f1cb289f4c76e3ee4ca5b6b53da3c8938732d459abca75481351547c5470",
+    "windows-check.json": "9f9e64aac7c5c791da91ec2f368bc77156a048ac2bc5a57086b1b6069930d11c",
+    "windows-check.log": "ed1bfaefef845f221bc7da2fa3921e5d5b08850bf1dcbd6013f1e0df9534f71a"
+  }
+}

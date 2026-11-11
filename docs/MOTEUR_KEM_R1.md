@@ -102,6 +102,9 @@ suivent le rejet implicite. `Decaps` rend toujours le même type de secret,
 sans révéler par un booléen si la réencapsulation a été acceptée.
 La validation de dk vérifie sa canonicité et H(ek), sans attester une
 génération honnête ou la relation t=A*s+e d'une clé importée.
+Elle ne mesure pas non plus l'entropie du champ de rejet z. Un z fixé reste
+syntaxiquement acceptable ; son acceptation n'établit pas les hypothèses de
+sécurité applicables à une clé honnêtement générée.
 
 ## Corpus et résultats conservés
 
@@ -215,3 +218,22 @@ et les paquets. L’[archive M07](../results/engine/m07-001/) conserve les
 exécutables originaux revus, la source compacte compilable, les licences
 et les reçus des répétitions de build. Le CLI livré conserve les auto-tests
 frais et désactive les commandes de recherche.
+
+M08 remplace la reconstruction de polynômes pendant l'import par un contrôle
+direct des encodages. Les 192 groupes de 13 octets couvrent les 1536 coefficients
+du vecteur. Le masque cumulé ne provoque une décision qu'après le balayage
+complet ; l'ordre privé longueur → secret → public intégré → hash est conservé.
+Les opérations PKE, formats, domaines et comptes NTT 48/55/68 restent identiques.
+Le [bilan M08](M08_IMPORTS_ET_VALIDATION.md) consigne 210 budgets
+satisfaits, les régressions et la revue ciblée des quatre consommateurs API
+Windows/Linux sans fonctionnalité de recherche. Ces images conservent les
+imports, y compris lorsque l'édition de liens les retire du CLI livré.
+
+La revue scellée qualifie le retrait des copies décodées ciblées sur les
+chemins s-invalid examinés. Elle ne couvre pas toutes les copies PKE, les
+registres ou les zones ABI préexistantes. Les quatre budgets de la campagne
+principale sont atteints. L'union LLVM couvre 438/604 lignes et 17/36 branches
+instrumentées du cœur ; 3156 requêtes déterministes concordent avec Python.
+Les deux paquets M08 livrent les originaux inventoriés après comparaison
+d'une répétition par hôte. Les paquets M07 gardent leurs
+exécutables et leur portée historiques.

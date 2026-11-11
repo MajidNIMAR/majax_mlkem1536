@@ -1,0 +1,350 @@
+{
+  "schema": "m08-j-classical-side-information-v1",
+  "profile": "KEM1536-DEV-Q7681-R1",
+  "source_contract": {
+    "profile": "KEM1536-DEV-Q7681-R1",
+    "key_bits": 256,
+    "ciphertext_bytes": 2656,
+    "output_bits": 256,
+    "public_j_prefix_hex": "4b454d313533362d4445562d51373638312d5231004a00",
+    "j_input_bytes": 2711,
+    "noise_input_bytes": 56,
+    "fixed_length_namespace_injective": true,
+    "checked_source_fragments": [
+      "const TAG: &[u8] = b\"KEM1536-DEV-Q7681-R1\\0\";",
+      "pub const CIPHERTEXT_BYTES: usize = 2656;",
+      "pub const SHARED_SECRET_BYTES: usize = 32;",
+      "h.update(TAG);",
+      "h.update(label);",
+      "h.update(p);",
+      "h.finalize_xof().read(&mut out[..]);",
+      "sk[PRIVATE_KEY_BYTES - 32..].copy_from_slice(z);",
+      "random_bytes::<64>(|out| getrandom::fill(out).map_err(|_| Error::RandomnessUnavailable))?",
+      "seeds[..32].try_into().expect(\"32 bytes\")",
+      "seeds[32..].try_into().expect(\"32 bytes\")",
+      "let fallback = xof::<32>(b\"J\\0\", &[&dk.0[offset + 32..], c.as_bytes()]);",
+      "(*fallback).ct_select(&*good, c.as_bytes().ct_eq(&cp[..]))"
+    ],
+    "source_sha256": "b39c2fdfcdd7c22634162a2c451213a6c4309b27524a82069f37903653e12334",
+    "scope": "literal interface checks plus documented human review; not a source-level formal proof or an OS entropy proof"
+  },
+  "panels": [
+    {
+      "conditional_min_entropy_bits_at_least": 0,
+      "guessing_probability_upper": {
+        "numerator_hex": "0x1",
+        "denominator_hex": "0x1"
+      },
+      "public_global_queries": 4294967296,
+      "keyed_classical_queries": 1,
+      "epsilon_j_rom_upper": {
+        "numerator_hex": "0x1",
+        "denominator_hex": "0x1"
+      },
+      "epsilon_j_qrom_upper": {
+        "numerator_hex": "0x1",
+        "denominator_hex": "0x1"
+      },
+      "sqrt_interval": {
+        "lower": {
+          "numerator_hex": "0x1",
+          "denominator_hex": "0x1"
+        },
+        "upper": {
+          "numerator_hex": "0x1",
+          "denominator_hex": "0x1"
+        }
+      }
+    },
+    {
+      "conditional_min_entropy_bits_at_least": 0,
+      "guessing_probability_upper": {
+        "numerator_hex": "0x1",
+        "denominator_hex": "0x1"
+      },
+      "public_global_queries": 18446744073709551616,
+      "keyed_classical_queries": 1,
+      "epsilon_j_rom_upper": {
+        "numerator_hex": "0x1",
+        "denominator_hex": "0x1"
+      },
+      "epsilon_j_qrom_upper": {
+        "numerator_hex": "0x1",
+        "denominator_hex": "0x1"
+      },
+      "sqrt_interval": {
+        "lower": {
+          "numerator_hex": "0x1",
+          "denominator_hex": "0x1"
+        },
+        "upper": {
+          "numerator_hex": "0x1",
+          "denominator_hex": "0x1"
+        }
+      }
+    },
+    {
+      "conditional_min_entropy_bits_at_least": 64,
+      "guessing_probability_upper": {
+        "numerator_hex": "0x1",
+        "denominator_hex": "0x10000000000000000"
+      },
+      "public_global_queries": 4294967296,
+      "keyed_classical_queries": 1,
+      "epsilon_j_rom_upper": {
+        "numerator_hex": "0x1",
+        "denominator_hex": "0x100000000"
+      },
+      "epsilon_j_qrom_upper": {
+        "numerator_hex": "0x1",
+        "denominator_hex": "0x1"
+      },
+      "sqrt_interval": {
+        "lower": {
+          "numerator_hex": "0x1",
+          "denominator_hex": "0x100000000"
+        },
+        "upper": {
+          "numerator_hex": "0x1",
+          "denominator_hex": "0x100000000"
+        }
+      }
+    },
+    {
+      "conditional_min_entropy_bits_at_least": 64,
+      "guessing_probability_upper": {
+        "numerator_hex": "0x1",
+        "denominator_hex": "0x10000000000000000"
+      },
+      "public_global_queries": 18446744073709551616,
+      "keyed_classical_queries": 1,
+      "epsilon_j_rom_upper": {
+        "numerator_hex": "0x1",
+        "denominator_hex": "0x1"
+      },
+      "epsilon_j_qrom_upper": {
+        "numerator_hex": "0x1",
+        "denominator_hex": "0x1"
+      },
+      "sqrt_interval": {
+        "lower": {
+          "numerator_hex": "0x1",
+          "denominator_hex": "0x100000000"
+        },
+        "upper": {
+          "numerator_hex": "0x1",
+          "denominator_hex": "0x100000000"
+        }
+      }
+    },
+    {
+      "conditional_min_entropy_bits_at_least": 128,
+      "guessing_probability_upper": {
+        "numerator_hex": "0x1",
+        "denominator_hex": "0x100000000000000000000000000000000"
+      },
+      "public_global_queries": 4294967296,
+      "keyed_classical_queries": 1,
+      "epsilon_j_rom_upper": {
+        "numerator_hex": "0x1",
+        "denominator_hex": "0x1000000000000000000000000"
+      },
+      "epsilon_j_qrom_upper": {
+        "numerator_hex": "0x1",
+        "denominator_hex": "0x80000000"
+      },
+      "sqrt_interval": {
+        "lower": {
+          "numerator_hex": "0x1",
+          "denominator_hex": "0x10000000000000000"
+        },
+        "upper": {
+          "numerator_hex": "0x1",
+          "denominator_hex": "0x10000000000000000"
+        }
+      }
+    },
+    {
+      "conditional_min_entropy_bits_at_least": 128,
+      "guessing_probability_upper": {
+        "numerator_hex": "0x1",
+        "denominator_hex": "0x100000000000000000000000000000000"
+      },
+      "public_global_queries": 18446744073709551616,
+      "keyed_classical_queries": 1,
+      "epsilon_j_rom_upper": {
+        "numerator_hex": "0x1",
+        "denominator_hex": "0x10000000000000000"
+      },
+      "epsilon_j_qrom_upper": {
+        "numerator_hex": "0x1",
+        "denominator_hex": "0x1"
+      },
+      "sqrt_interval": {
+        "lower": {
+          "numerator_hex": "0x1",
+          "denominator_hex": "0x10000000000000000"
+        },
+        "upper": {
+          "numerator_hex": "0x1",
+          "denominator_hex": "0x10000000000000000"
+        }
+      }
+    },
+    {
+      "conditional_min_entropy_bits_at_least": 192,
+      "guessing_probability_upper": {
+        "numerator_hex": "0x1",
+        "denominator_hex": "0x1000000000000000000000000000000000000000000000000"
+      },
+      "public_global_queries": 4294967296,
+      "keyed_classical_queries": 1,
+      "epsilon_j_rom_upper": {
+        "numerator_hex": "0x1",
+        "denominator_hex": "0x10000000000000000000000000000000000000000"
+      },
+      "epsilon_j_qrom_upper": {
+        "numerator_hex": "0x1",
+        "denominator_hex": "0x8000000000000000"
+      },
+      "sqrt_interval": {
+        "lower": {
+          "numerator_hex": "0x1",
+          "denominator_hex": "0x1000000000000000000000000"
+        },
+        "upper": {
+          "numerator_hex": "0x1",
+          "denominator_hex": "0x1000000000000000000000000"
+        }
+      }
+    },
+    {
+      "conditional_min_entropy_bits_at_least": 192,
+      "guessing_probability_upper": {
+        "numerator_hex": "0x1",
+        "denominator_hex": "0x1000000000000000000000000000000000000000000000000"
+      },
+      "public_global_queries": 18446744073709551616,
+      "keyed_classical_queries": 1,
+      "epsilon_j_rom_upper": {
+        "numerator_hex": "0x1",
+        "denominator_hex": "0x100000000000000000000000000000000"
+      },
+      "epsilon_j_qrom_upper": {
+        "numerator_hex": "0x1",
+        "denominator_hex": "0x80000000"
+      },
+      "sqrt_interval": {
+        "lower": {
+          "numerator_hex": "0x1",
+          "denominator_hex": "0x1000000000000000000000000"
+        },
+        "upper": {
+          "numerator_hex": "0x1",
+          "denominator_hex": "0x1000000000000000000000000"
+        }
+      }
+    },
+    {
+      "conditional_min_entropy_bits_at_least": 256,
+      "guessing_probability_upper": {
+        "numerator_hex": "0x1",
+        "denominator_hex": "0x10000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "public_global_queries": 4294967296,
+      "keyed_classical_queries": 1,
+      "epsilon_j_rom_upper": {
+        "numerator_hex": "0x1",
+        "denominator_hex": "0x100000000000000000000000000000000000000000000000000000000"
+      },
+      "epsilon_j_qrom_upper": {
+        "numerator_hex": "0x1",
+        "denominator_hex": "0x800000000000000000000000"
+      },
+      "sqrt_interval": {
+        "lower": {
+          "numerator_hex": "0x1",
+          "denominator_hex": "0x100000000000000000000000000000000"
+        },
+        "upper": {
+          "numerator_hex": "0x1",
+          "denominator_hex": "0x100000000000000000000000000000000"
+        }
+      }
+    },
+    {
+      "conditional_min_entropy_bits_at_least": 256,
+      "guessing_probability_upper": {
+        "numerator_hex": "0x1",
+        "denominator_hex": "0x10000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "public_global_queries": 18446744073709551616,
+      "keyed_classical_queries": 1,
+      "epsilon_j_rom_upper": {
+        "numerator_hex": "0x1",
+        "denominator_hex": "0x1000000000000000000000000000000000000000000000000"
+      },
+      "epsilon_j_qrom_upper": {
+        "numerator_hex": "0x1",
+        "denominator_hex": "0x8000000000000000"
+      },
+      "sqrt_interval": {
+        "lower": {
+          "numerator_hex": "0x1",
+          "denominator_hex": "0x100000000000000000000000000000000"
+        },
+        "upper": {
+          "numerator_hex": "0x1",
+          "denominator_hex": "0x100000000000000000000000000000000"
+        }
+      }
+    }
+  ],
+  "no_indexed_query": {
+    "public_global_queries": 115792089237316195423570985008687907853269984665640564039457584007913129639936,
+    "keyed_classical_queries": 0,
+    "rom": {
+      "numerator_hex": "0x0",
+      "denominator_hex": "0x1"
+    },
+    "qrom": {
+      "numerator_hex": "0x0",
+      "denominator_hex": "0x1"
+    }
+  },
+  "finite_distribution": {
+    "joint_counts": [
+      [
+        3,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        3
+      ]
+    ],
+    "exact_guessing_probability": {
+      "numerator_hex": "0x3",
+      "denominator_hex": "0x4"
+    }
+  },
+  "probability_convention": "absolute distinguishing probability gap, not CCA guessing bias",
+  "assumptions": [
+    "classical side information E",
+    "J-domain H_J and R independent of (E,Z) and auxiliary ideal domains",
+    "conditional on E the ideal view is independent of Z",
+    "all public domain/coherent-prefix queries included in q",
+    "only classical indexed-function queries",
+    "p_guess_upper bounds average posterior maximum, not Shannon entropy"
+  ],
+  "uniform_256_recovers_m06": true,
+  "import_format_checks_prove_entropy": false,
+  "unknown_imported_key_entropy_is_certified": false,
+  "quantum_side_information_covered": false,
+  "concrete_shake_security_proved": false,
+  "full_kem_security_proved": false,
+  "c01_closed": false,
+  "scope": "Conditional extension of the existing ideal-J bound. Arithmetic and finite fixtures do not prove application entropy or a general quantum adversary theorem by enumeration."
+}

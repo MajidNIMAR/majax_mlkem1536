@@ -19,10 +19,15 @@ class CertificateBridgeTests(unittest.TestCase):
     def frozen_source(self, milestone):
         relative = "crates/kem1536/src/dev_kem.rs"
         folder = ROOT / "results/engine" / {
-            "M02": "hardening-001", "M04": "m04-001", "M06": "m06-001",
+            "M02": "hardening-001", "M04": "m04-001", "M06": "m06-001", "M07": "m07-001",
         }[milestone]
         manifest = json.loads((folder / "provenance.json").read_text("utf-8"))
-        if milestone == "M04":
+        if milestone == "M07":
+            member = "candidate-source/" + relative
+            with tarfile.open(folder / "measurements.tar.gz") as archive:
+                raw = archive.extractfile(member).read()
+            checksum = manifest["stages"]["measurements"]["files"][member]["sha256"]
+        elif milestone == "M04":
             with tarfile.open(folder / "sources.tar.gz") as archive:
                 raw = archive.extractfile(relative).read()
             checksum = manifest["source_sha256"][relative]
@@ -50,6 +55,7 @@ class CertificateBridgeTests(unittest.TestCase):
             ("M02", "M02-schoolbook-return-owned-1", 21),
             ("M04", "M04-destination-owned-NTT-scalar-1", 24),
             ("M06", "M06-destination-owned-NTT-accumulated-1", 31),
+            ("M07", "M07-destination-owned-NTT-streamed-1", 35),
         ):
             with self.subTest(milestone=milestone):
                 contract = verify_static_contract(self.frozen_source(milestone))
@@ -159,7 +165,7 @@ class CertificateBridgeTests(unittest.TestCase):
             verify_static_contract(source.replace("encode_vector_into(&t,", "encode_vector_into(&s,", 1))
 
     def test_streamed_contract_rejects_decode_scan_and_import_faults(self):
-        source = (ROOT / "crates/kem1536/src/dev_kem.rs").read_text()
+        source = self.frozen_source("M07")
         self.assertEqual(verify_static_contract(source)["realization"],
                          "M07-destination-owned-NTT-streamed-1")
         flat = re.sub(r"\s+", "", source)
@@ -189,6 +195,53 @@ class CertificateBridgeTests(unittest.TestCase):
         self.assertEqual(flat.count(before), 2)
         for site in range(2):
             self.assert_contract_mutation_rejected(flat, before, "", site)
+
+    def test_direct_import_contract_checks_each_encoded_group_component(self):
+        source = (ROOT / "crates/kem1536/src/dev_kem.rs").read_text(encoding="utf-8")
+        contract = verify_static_contract(source)
+        self.assertEqual(contract["realization"], "M08-direct-encoding-NTT-streamed-1")
+        self.assertEqual(contract["reviewed_source_anchors"], 36)
+        self.assertFalse(contract["formal_program_verification"])
+        flat = re.sub(r"\s+", "", source)
+        for before, after in (
+            ("#[inline(always)]fnnoncanonical_13(value:u16)->u16", "fnnoncanonical_13(value:u16)->u16"),
+            ("u32::from(value).wrapping_sub(u32::from(Q))", "u32::from(value).wrapping_sub(u32::from(Q-1))"),
+            ("forgroupinbytes.chunks_exact(13){", "forgroupinbytes.chunks_exact(13).take(1){"),
+            ("bytes.chunks_exact(13)", "bytes.chunks_exact(12)"),
+            ("letb=|i:usize|u16::from(group[i]);", "letb=|i:usize|u16::from(group[i%12]);"),
+            ("b(0)|((b(1)&31)<<8)", "b(0)|((b(1)&63)<<8)"),
+            ("(b(1)>>5)|(b(2)<<3)|((b(3)&3)<<11)", "(b(1)>>4)|(b(2)<<3)|((b(3)&3)<<11)"),
+            ("(b(3)>>2)|((b(4)&127)<<6)", "(b(3)>>2)|((b(4)&63)<<6)"),
+            ("(b(4)>>7)|(b(5)<<1)|((b(6)&15)<<9)", "(b(4)>>7)|(b(5)<<1)|((b(6)&15)<<8)"),
+            ("(b(6)>>4)|(b(7)<<4)|((b(8)&1)<<12)", "(b(6)>>4)|(b(7)<<4)|((b(8)&1)<<11)"),
+            ("(b(8)>>1)|((b(9)&63)<<7)", "(b(8)>>1)|((b(9)&31)<<7)"),
+            ("(b(9)>>6)|(b(10)<<2)|((b(11)&7)<<10)", "(b(9)>>6)|(b(10)<<2)|((b(11)&7)<<9)"),
+            ("(b(11)>>3)|(b(12)<<5)", "(b(11)>>3)|(b(12)<<4)"),
+            ("ifbytes.len()!=VECTOR_BYTES", "ifbytes.len()<VECTOR_BYTES"),
+            ("ifnoncanonical!=0{returnErr(Error::NoncanonicalEncoding);}", ""),
+            ("validate_vector_encoding(&ek[..VECTOR_BYTES])?;", ""),
+            ("letek=&bytes[VECTOR_BYTES..VECTOR_BYTES+PUBLIC_KEY_BYTES];", "letek=&bytes[VECTOR_BYTES+1..VECTOR_BYTES+PUBLIC_KEY_BYTES];"),
+            ("hash_public(ek).as_slice().ct_eq(&bytes[offset..offset+32])", "hash_public(ek).as_slice().ct_eq(&bytes[offset+1..offset+33])"),
+            ("unpack_coefficient(bytes,13,j)", "unpack_coefficient(bytes,12,j)"),
+            ("reduce_once(u32::from(v))", "v"),
+        ):
+            self.assert_contract_mutation_rejected(flat, before, after)
+        before = "noncanonical|=noncanonical_13("
+        self.assertEqual(flat.count(before), 8)
+        for site in range(8):
+            self.assert_contract_mutation_rejected(flat, before, "noncanonical=noncanonical_13(", site)
+        for site in range(2):
+            self.assert_contract_mutation_rejected(flat, "validate_vector_encoding(&bytes[..VECTOR_BYTES])?;", "", site)
+
+    def test_direct_import_contract_rejects_early_success_and_legacy_fallback(self):
+        source = (ROOT / "crates/kem1536/src/dev_kem.rs").read_text(encoding="utf-8")
+        flat = re.sub(r"\s+", "", source)
+        before = "ifnoncanonical!=0{returnErr(Error::NoncanonicalEncoding);}Ok(())"
+        self.assert_contract_mutation_rejected(flat, before, "returnOk(());" + before)
+        helper = "#[inline(always)]fnnoncanonical_13(value:u16)->u16{((u32::from(value).wrapping_sub(u32::from(Q))>>31)^1)asu16}"
+        self.assertIn(helper, flat)
+        with self.assertRaisesRegex(ValueError, "reviewed R1 source contract changed"):
+            verify_static_contract(flat.replace(helper, "", 1))
 
     def test_streamed_contract_rejects_sampler_orientation_and_row_packing_faults(self):
         source = (ROOT / "crates/kem1536/src/dev_kem.rs").read_text()

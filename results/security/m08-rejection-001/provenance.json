@@ -1,0 +1,14 @@
+{
+  "schema": "m08-j-side-info-provenance-v1",
+  "source_base_git": "7ad56980df6c969d51e35b67dbf846c139f9d19a",
+  "output_sha256": {
+    "bounds.json": "27b264a417d42431968c24e71ec464a3466384a35b5e625acb396effc2e5d006",
+    "sources/dev_kem.rs": "b39c2fdfcdd7c22634162a2c451213a6c4309b27524a82069f37903653e12334",
+    "sources/r1_security_bounds.py": "f53a6c725ff2512e37c731615af3d7ad84b1117ee10728c49258c2b42b6a2d96",
+    "sources/rejection_security_m06.py": "88e29673f5a98d66a0bb0f6772ae443cbbb7ceb3c66f0912f0811b1c0c5ee591",
+    "sources/rejection_side_info_m08.py": "b27dc2a5f3c9e75c479246cdca041dee6b5368ea2fb85a7a82e451405ba0dde1",
+    "sources/REJET_ET_INFORMATION_LATERALE_M08.md": "33323826ac73e6577de923e8bb29e3f477fb77fcefaeff0a67b0cd6192d5b858",
+    "sources/test_rejection_side_info_m08.py": "ed9c2ce3902fb6711a9ee201125f6582f96e2c6d1284e1b25b91eb71614a0024"
+  },
+  "new_fuzz_or_benchmark_performed": false
+}

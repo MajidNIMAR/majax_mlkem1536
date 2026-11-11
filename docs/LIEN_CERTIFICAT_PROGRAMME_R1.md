@@ -288,6 +288,29 @@ figées et leurs nombres d'ancrages 21/24/31. La reconstruction mathématique
 et le contrôle de source sont distincts d'une vérification formelle de tout
 le programme ; `formal_program_verification` reste faux.
 
+M08 ajoute la réalisation `M08-direct-encoding-NTT-streamed-1`, avec
+36 ancrages. Le validateur source complet et son prédicat `noncanonical_13`
+sont rattachés au contrat : longueur du vecteur, huit assemblages de 13 bits
+par groupe, accumulation du masque et décision après balayage des 1536
+coefficients. Aucun `Poly` ni réduction modulaire n'est construit pour ce
+contrôle. L'ordre des imports privés reste longueur → secret → public intégré
+→ hash. Le décodeur utilisé par le PKE et le certificat run-004 sont conservés.
+
+Les mutants visent séparément chacun des huit assemblages et accumulations,
+la longueur, une décision anticipée et l'ordre des erreurs. Les branches
+historiques M02/M04/M06/M07 restent liées à leurs sources figées, avec
+21/24/31/35 ancrages. Ce contrôle textuel du programme et les tests finis ne
+constituent pas une preuve formelle de tout le programme ou du compilateur.
+La [revue machine M08](M08_IMPORTS_ET_VALIDATION.md) observe séparément les
+quatre images de consommateurs API ; sa conclusion bornée sur les copies
+ciblées ne découle pas des seuls ancrages.
+
+Le [volet M08 sur information latérale classique](REJET_ET_INFORMATION_LATERALE_M08.md)
+conserve le contrat littéral du domaine J du même cœur. Il ne change ni la
+borne de correction, ni les paramètres, ni les garanties d'un import : une
+clé acceptée syntaxiquement n'est pas un certificat d'entropie ou de génération
+honnête. Le transfert aux primitives concrètes et C01 restent ouverts.
+
 L'étape rattache donc une borne exacte et ses quantificateurs aux
 opérations R1 décrites et observées. Restent distincts : la vérification
 formelle de tout le code et du compilateur, le transfert aux primitives

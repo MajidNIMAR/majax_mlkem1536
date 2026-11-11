@@ -231,7 +231,9 @@ def verify_static_contract(source):
                "recover_message(&v)",
                "quotient((u32::from(x)<<width)+u32::from(Q/2))", "(1<<(width-1)))>>width)"]
     if "fndecode_polynomial_into(" in flat:
-        realization = "M07-destination-owned-NTT-streamed-1"
+        direct_import = "fnnoncanonical_13(" in flat
+        realization = ("M08-direct-encoding-NTT-streamed-1" if direct_import else
+                       "M07-destination-owned-NTT-streamed-1")
         # These are reviewed call-site/loop fragments, not a Rust parser or a
         # formal verification of arbitrary edits. Legacy contracts stay below.
         fragments = [
@@ -353,6 +355,38 @@ def verify_static_contract(source):
             "sum.inverse_into(&mut secret); v.subtract_assign(&secret); recover_message(&v)",
             "fn message_poly_into(message: &[u8; 32], out: &mut Poly)",
         ]
+        if direct_import:
+            # The complete reviewed validator includes its final decision;
+            # matching an unrelated intact loop cannot satisfy this anchor.
+            fragments[2] = r"""fn validate_vector_encoding(bytes: &[u8]) -> Result<(), Error> {
+                if bytes.len() != VECTOR_BYTES {
+                    return Err(Error::InvalidLength);
+                }
+                let mut noncanonical = 0_u16;
+                // Thirteen bytes hold eight consecutive 13-bit coefficients. Validate
+                // directly, without reconstructing a polynomial or reducing its values.
+                // Each assembly is in 0..8192. The complete vector is scanned before
+                // the final decision; source shape alone is not an erasure guarantee.
+                for group in bytes.chunks_exact(13) {
+                    let b = |i: usize| u16::from(group[i]);
+                    noncanonical |= noncanonical_13(b(0) | ((b(1) & 31) << 8));
+                    noncanonical |= noncanonical_13((b(1) >> 5) | (b(2) << 3) | ((b(3) & 3) << 11));
+                    noncanonical |= noncanonical_13((b(3) >> 2) | ((b(4) & 127) << 6));
+                    noncanonical |= noncanonical_13((b(4) >> 7) | (b(5) << 1) | ((b(6) & 15) << 9));
+                    noncanonical |= noncanonical_13((b(6) >> 4) | (b(7) << 4) | ((b(8) & 1) << 12));
+                    noncanonical |= noncanonical_13((b(8) >> 1) | ((b(9) & 63) << 7));
+                    noncanonical |= noncanonical_13((b(9) >> 6) | (b(10) << 2) | ((b(11) & 7) << 10));
+                    noncanonical |= noncanonical_13((b(11) >> 3) | (b(12) << 5));
+                }
+                if noncanonical != 0 {
+                    return Err(Error::NoncanonicalEncoding);
+                }
+                Ok(())
+            }"""
+            fragments.append(r"""#[inline(always)]
+                fn noncanonical_13(value: u16) -> u16 {
+                    ((u32::from(value).wrapping_sub(u32::from(Q)) >> 31) ^ 1) as u16
+                }""")
         anchors.extend(re.sub(r"\s+", "", fragment) for fragment in fragments)
     elif "letmuttransformed_s:[NttPoly;RANK]" in flat:
         realization = "M06-destination-owned-NTT-accumulated-1"

@@ -1,0 +1,13 @@
+{
+  "started_utc": "2026-11-11T10:39:20.906631+00:00",
+  "finished_utc": "2026-11-11T10:39:39.384542+00:00",
+  "command": [
+    "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\research-venv\\Scripts\\python.exe",
+    "-B",
+    "C:\\Users\\majax\\Documents\\Codex\\NIST\\research\\smoke_m08_package.py"
+  ],
+  "exit_code": 0,
+  "controller_sha256": "a7f7cd6e7228bb8ec1009c65ba65467e0aebc60a51a0d3e2e685b57ce8cbac4a",
+  "stdout_sha256": "1b3b1158f8c671f084208b186ee28d44b6f5921f5e5d0e296f55f46974ef193b",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

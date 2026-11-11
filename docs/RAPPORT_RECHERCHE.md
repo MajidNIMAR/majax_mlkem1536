@@ -2,6 +2,50 @@
 
 Version de travail du 11 novembre 2026. Ce document est la base évolutive du futur article. Le [journal](JOURNAL_RECHERCHE.md) conserve les étapes et décisions ; les [résultats figés de J2](../results/j2/run-001/) conservent les calculs et leur provenance. Une modification du rapport doit rester cohérente avec ces données.
 
+**M08 en cours — import direct des clés et validation élargie.** Le
+[protocole M08](PROTOCOLE_M08_IMPORTS.md) est fixé avant modification du
+moteur : référence M07, contrôle direct des encodages, consommateur API
+par défaut, revue des chemins compilés et nouvelle campagne de 1800 secondes
+CPU par harnais, avec couverture source et oracle indépendant distincts.
+Le [bilan M08](M08_IMPORTS_ET_VALIDATION.md) consigne maintenant le candidat :
+300000 latences et 2880 observations mémoire passent les 210 budgets ;
+88576 sondes d'import par version/hôte et les corpus complets concordent.
+La revue ciblée est scellée (124 témoins adressés) et qualifie la suppression
+des copies de bits visées dans les consommateurs. La campagne longue est
+terminée dans son volet principal : les quatre budgets sont atteints,
+7256,67 secondes CPU nouvelles en 30 segments, sans défaut observé ni crédit
+historique. L'union LLVM distincte couvre 438/604 lignes et 17/36 branches
+instrumentées du cœur, sans exclure les mappings nuls. Les 3156 requêtes
+déterministes concordent avec Python, dont 433 sondes de décapsulation de
+clés privées acceptées. La première tentative de rejeu a été interrompue par
+le redémarrage de l'environnement ; ses trois traces sont conservées et la
+reprise utilise le contrôleur et l'image gelés, sans nouveau fuzzing ou build.
+Les deux paquets de livraison passent leurs contrôles ; Linux est identique
+brut à sa répétition et Windows diffère uniquement dans deux métadonnées PE.
+Le gel complet et son rejeu passent : 7520 fichiers et 428 répertoires sont
+conservés dans l'archive M08. Le check complet Windows passe, avec 352 tests
+Python, Rust/fmt/Clippy/rejeux et 2008 fichiers identiques avant/après.
+Les originaux CLI/consommateur passent le smoke natif local. La CI neuve
+reste à acquérir avant la clôture de publication.
+Les conclusions des consommateurs API ne sont pas transférées
+aux CLI : leurs quatre inventaires propres identifient les autres images,
+sans preuve d'effacement PKE. Le diagnostic distinct de 32000 observations
+ne dépasse pas |t|=4,5, avec maxima Windows 1,843 et Linux 1,602 ; il ne
+démontre pas le temps constant.
+
+Le [volet théorique M08](REJET_ET_INFORMATION_LATERALE_M08.md) est figé dans
+`results/security/m08-rejection-001`. Pour une information latérale classique
+E et une borne p de la probabilité conditionnelle de deviner Z, le jeu idéal
+donne min(1,qp) en ROM et min(1,2q√p) en QROM pour D>0, zéro pour D=0.
+Ici D compte les accès classiques à la fonction indexée, même en QROM ;
+q compte les portes de requête publiques pouvant viser J.
+Les indépendances de la vue idéale sont des hypothèses explicites. Dix
+panneaux rationnels retrouvent M06 lorsque p=2^-256 ; la borne quantique
+uniforme n'est pas resserrée. Une clé importée valide ne certifie ni cette
+entropie, ni sa génération honnête. Les primitives concrètes, l'information
+quantique corrélée et la sécurité globale restent hors de ce résultat ;
+C01 reste ouvert.
+
 **M07 — mémoire, latence et livraison validées dans le périmètre mesuré.** Le moteur
 traite désormais les polynômes en coefficients ligne par ligne, en
 conservant les six opérandes NTT. Les 2240 observations mémoire et les

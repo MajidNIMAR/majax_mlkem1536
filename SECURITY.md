@@ -42,6 +42,25 @@ limitation; M07 does not establish complete erasure. This observation does
 not demonstrate a remote or practical leak. Callers requiring erasure of
 every compiler temporary, register and error path do not have that guarantee.
 
+The [M08 import study](docs/M08_IMPORTS_ET_VALIDATION.md) replaces the
+coefficient reconstruction used for key validation with a direct encoding
+scan. Its paired default-feature API consumers reproduce the targeted M07
+coefficient-bit stack copies in the reference images and no longer produce
+those copies on the examined invalid-secret return paths in the candidate
+images. This bounded result does not establish erasure of caller-owned input,
+preexisting ABI save areas or registers, and does not extend to all PKE paths or compiler
+configurations. CLI inventories are separate from this consumer import review.
+Extended campaign and delivery status are recorded in the study.
+
+An accepted private-key encoding does not certify honest key generation,
+the embedded key relation or the rejection key's entropy. The
+[M08 side-information analysis](docs/REJET_ET_INFORMATION_LATERALE_M08.md)
+bounds ideal rejection using a supplied classical conditional guessing
+probability and explicit ideal-view independence assumptions. It recovers
+the M06 uniform-key bound, whose quantum loss remains conservative. It
+does not cover quantum side information, establish concrete SHAKE security
+or supply a complete IND-CCA proof for R1.
+
 For a suspected vulnerability, use this repository's **Security → Report a
 vulnerability** private reporting facility. Include the commit, platform,
 toolchain and a minimal reproduction with synthetic data. Do not include

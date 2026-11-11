@@ -1,0 +1,109 @@
+{
+  "profile": "KEM1536-DEV-Q7681-R1",
+  "measurements_valid": true,
+  "budget_checks_passed": 210,
+  "budget_checks_total": 210,
+  "runtime_stderr_diagnostics": [
+    {
+      "path": "candidate/linux/memory.stderr",
+      "sha256": "181247eadb1cc9c68714dc263d588bb1fbd484fd681fb275a331f0debee3e43d",
+      "classification": "retained WSL launcher systemd-user-session warning; engine exited 0 with complete validated output"
+    },
+    {
+      "path": "paired-latency/linux/baseline-0.stderr",
+      "sha256": "181247eadb1cc9c68714dc263d588bb1fbd484fd681fb275a331f0debee3e43d",
+      "classification": "retained WSL launcher systemd-user-session warning; engine exited 0 with complete validated output"
+    }
+  ],
+  "timing": {
+    "windows": {
+      "observations": 16000,
+      "maximum_absolute_t": 1.842824291621183,
+      "threshold_crossings": 0,
+      "constant_time_proved": false
+    },
+    "linux": {
+      "observations": 16000,
+      "maximum_absolute_t": 1.602297847266119,
+      "threshold_crossings": 0,
+      "constant_time_proved": false
+    }
+  },
+  "launch_chronology": {
+    "root_launch_gate_bound_to_sealed_review": true,
+    "controller_enforces_quantitative_gate_only": true,
+    "recorded_exit_code": 0,
+    "recorded_UTC_order_verified": true,
+    "external_timestamp_attestation": false
+  },
+  "imports": {
+    "frozen_members_verified": 51,
+    "addressed_manual_instruction_witnesses": 124,
+    "consumer_images_verified": 4,
+    "physical_inventories_recomputed": 4,
+    "new_objdump_run": false,
+    "manual_dataflow_review_is_separate": true,
+    "constant_time_proved": false,
+    "all_copies_erased_proved": false
+  },
+  "CLI_inventory": {
+    "CLI_inventories_replayed": 4,
+    "new_objdump_run": false,
+    "PKE_erasure_proved": false,
+    "import_review_is_separate": true,
+    "constant_time_proved": false
+  },
+  "fuzz_and_postprocessing": {
+    "profile": "KEM1536-DEV-Q7681-R1",
+    "total_CPU_seconds": 7256.670000000001,
+    "candidate_and_harness_hashes_verified": true,
+    "all_four_have_post_INITED_execution": true,
+    "historical_CPU_seconds_credited": 0,
+    "source_line_coverage_measured": true,
+    "long_campaign_completed": true,
+    "independent_oracle_replayed": true,
+    "harvested_unique_inputs_by_target": {
+      "import_public": 771,
+      "import_private": 723,
+      "decapsulate": 660,
+      "api_sequence": 864
+    },
+    "secrets_printed": false,
+    "main_campaign_source_line_coverage_measured": false,
+    "source_branch_coverage_measured": true,
+    "coverage_standard_library_rebuilt": false,
+    "new_coverage_execution_by_verifier": false,
+    "independent_replay_requests_verified": 3156,
+    "new_oracle_execution_by_verifier": false,
+    "accepted_private_key_probes": 433
+  },
+  "postprocessing_recovery": {
+    "interrupted_oracle_attempt_preserved": true,
+    "original_campaign_or_coverage_rerun": false,
+    "resumed_oracle_exit_code": 0
+  },
+  "delivery": {
+    "profile": "KEM1536-DEV-Q7681-R1",
+    "packages_verified": 2,
+    "new_cli_builds_total": 2,
+    "shipped_binaries_are_inventoried_originals": true,
+    "third_party_reproduction_claimed": false,
+    "consumer_import_review_is_not_CLI_PKE_erasure_proof": true
+  },
+  "diagnostic_notices": {
+    "diagnostic_notice_files": 123,
+    "diagnostic_binaries_identified": 9,
+    "new_compilation_performed": false,
+    "reused_M06_bundle": false
+  },
+  "controls": {
+    "Python_control_files": 32,
+    "recursive_import_closure_retained": true,
+    "affinity_helper_matches_preregistered_blob": true,
+    "OS_affinity_attested": false
+  },
+  "main_campaign_CPU_is_counted_once": true,
+  "new_experiments_performed_by_replay": false,
+  "consumer_import_review_is_not_CLI_PKE_erasure_proof": true,
+  "global_security_constant_time_or_erasure_proved": false
+}

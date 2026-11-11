@@ -68,6 +68,8 @@ try {
             if ($LASTEXITCODE -ne 0) { throw 'M05 experimental KEM comparison verification failed.' }
             & $taskCheckResearchPython research/rejection_security_m06.py --verify results/security/m06-rejection-001
             if ($LASTEXITCODE -ne 0) { throw 'M06 implicit rejection model verification failed.' }
+            & $taskCheckResearchPython research/rejection_side_info_m08.py --verify results/security/m08-rejection-001
+            if ($LASTEXITCODE -ne 0) { throw 'M08 classical-side-information rejection model verification failed.' }
             & $taskCheckResearchPython research/run_m06_measurements.py verify --output results/engine/m06-measurements-001
             if ($LASTEXITCODE -ne 0) { throw 'M06 measurement evidence verification failed.' }
             & $taskCheckResearchPython research/verify_m06.py
@@ -76,6 +78,8 @@ try {
             if ($LASTEXITCODE -ne 0) { throw 'M06 instrumented evidence verification failed.' }
             & $taskCheckResearchPython research/archive_m07.py verify --output results/engine/m07-001
             if ($LASTEXITCODE -ne 0) { throw 'M07 memory, binary, fuzz and delivery evidence verification failed.' }
+            & $taskCheckResearchPython research/archive_m08.py verify --output results/engine/m08-001
+            if ($LASTEXITCODE -ne 0) { throw 'M08 import, extended fuzz, coverage and delivery evidence verification failed.' }
             python research/verify_results.py
             if ($LASTEXITCODE -ne 0) { throw 'Frozen research result verification failed.' }
             python research/verify_modern_results.py

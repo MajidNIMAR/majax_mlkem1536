@@ -1,0 +1,15 @@
+{
+  "started_utc": "2026-11-11T10:34:08.2359610Z",
+  "working_directory": "C:\\Users\\majax\\Documents\\Codex\\NIST",
+  "command": [
+    "C:\\Users\\majax\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "-B",
+    "research/archive_m08.py",
+    "freeze",
+    "--output",
+    "results/engine/m08-001"
+  ],
+  "archive_controller_sha256": "f1fc351ea4cb03820767230f82ffaf3cae8536a5101241665ca11b8d0b028fad",
+  "authorization": "Root explicit PACKAGEPASS then GO freeze",
+  "new_compilation_or_engine_execution_requested": false
+}
