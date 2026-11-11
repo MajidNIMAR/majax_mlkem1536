@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "scope": "M07 complete local Windows check and canonical original executable",
+  "output_sha256": {
+    "canonical-self-test.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "canonical-self-test.stdout": "b8c176c4c0a91a3c403ca3793ae2b9dc0b413a06111a759f9413a704c1afcfb7",
+    "canonical-windows.json": "4cf7efa40919c5231d72729c8af17f36b94b657facc2d31c386141326663d759",
+    "capture.py": "800453ccaa120d4f57e4d3544a98de606227cbaf24fbde048111edd6610aea8e",
+    "README.md": "ee28a2312d5a522c938fa5a2e3c8a33f896df290aa26221b52e9a6b4bd8f5559",
+    "windows-check.json": "6d4b97f0d6bcd0822d75147dc06ca169d782f8599b816174d96a8796bbac0e2c",
+    "windows-check.log": "2e0177baa8a5654bddbed9ccc85fb8cb240e89a8af37132fbdd2a9f1d4ddc739"
+  }
+}

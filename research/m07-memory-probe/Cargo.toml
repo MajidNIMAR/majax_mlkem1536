@@ -1,0 +1,17 @@
+[package]
+name = "m07-memory-probe"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.91"
+publish = false
+
+[workspace]
+
+[dependencies]
+kem1536 = { path = "../../crates/kem1536" }
+serde_json = "=1.0.145"
+shake = "=0.1.0"
+zeroize = "=1.9.1"
+
+[target.'cfg(target_os = "linux")'.dependencies]
+libc = "=0.2.191"

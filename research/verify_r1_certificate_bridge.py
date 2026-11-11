@@ -227,12 +227,137 @@ def verify_static_contract(source):
                "constPOLY_BYTES:usize=416;", "constTAG:&[u8]=b\"KEM1536-DEV-Q7681-R1\\0\";",
                "xof::<192>(b\"N\\0\",&[seed,&[nonce]])", "bit(6*j)+bit(6*j+1)+bit(6*j+2)",
                "bit(6*j+3)+bit(6*j+4)+bit(6*j+5)", "derive(b\"KG\\0\",&[d,&[6]])",
-               "compress(v.coefficients()[i],5)", "decompress(unpack_coefficient(&c.0[VECTOR_BYTES..],5,i),5)",
+               "decompress(unpack_coefficient(&c.0[VECTOR_BYTES..],5,i),5)",
                "recover_message(&v)",
                "quotient((u32::from(x)<<width)+u32::from(Q/2))", "(1<<(width-1)))>>width)"]
-    if "letmuttransformed_s:[NttPoly;RANK]" in flat:
+    if "fndecode_polynomial_into(" in flat:
+        realization = "M07-destination-owned-NTT-streamed-1"
+        # These are reviewed call-site/loop fragments, not a Rust parser or a
+        # formal verification of arbitrary edits. Legacy contracts stay below.
+        fragments = [
+            "const VECTOR_BYTES: usize = RANK * POLY_BYTES;",
+            r"""fn decode_polynomial_into(bytes: &[u8], result: &mut Poly) -> u16 {
+                debug_assert_eq!(bytes.len(), POLY_BYTES);
+                let mut noncanonical = 0_u16;
+                result.fill_with(|j| {
+                    let v = unpack_coefficient(bytes, 13, j);
+                    noncanonical |= ((u32::from(v).wrapping_sub(u32::from(Q)) >> 31) ^ 1) as u16;
+                    reduce_once(u32::from(v))
+                });
+                noncanonical
+            }""",
+            r"""fn validate_vector_encoding(bytes: &[u8]) -> Result<(), Error> {
+                if bytes.len() != VECTOR_BYTES { return Err(Error::InvalidLength); }
+                let mut noncanonical = 0_u16;
+                let mut checked = Poly::zero();
+                for row in bytes.chunks_exact(POLY_BYTES) {
+                    noncanonical |= decode_polynomial_into(row, &mut checked);
+                }""",
+            "if noncanonical != 0 { return Err(Error::NoncanonicalEncoding); } Ok(())",
+            r"""impl EncapsulationKey {
+                pub fn from_bytes(bytes: &[u8]) -> Result<Self, Error> {
+                    if bytes.len() != PUBLIC_KEY_BYTES { return Err(Error::InvalidLength); }
+                    validate_vector_encoding(&bytes[..VECTOR_BYTES])?;
+                    let mut key = Box::new([0; PUBLIC_KEY_BYTES]);
+                    key.copy_from_slice(bytes);
+                    Ok(Self(key))
+                }""",
+            r"""impl DecapsulationKey {
+                pub fn from_bytes(bytes: &[u8]) -> Result<Self, Error> {
+                    if bytes.len() != PRIVATE_KEY_BYTES { return Err(Error::InvalidLength); }
+                    validate_vector_encoding(&bytes[..VECTOR_BYTES])?;
+                    let ek = &bytes[VECTOR_BYTES..VECTOR_BYTES + PUBLIC_KEY_BYTES];
+                    validate_vector_encoding(&ek[..VECTOR_BYTES])?;
+                    let offset = VECTOR_BYTES + PUBLIC_KEY_BYTES;
+                    if !bool::from(hash_public(ek).as_slice().ct_eq(&bytes[offset..offset + 32]),) {
+                        return Err(Error::InconsistentPrivateKey);
+                    }
+                    let mut key = SecretBox::zero();
+                    key.copy_from_slice(bytes);
+                    Ok(Self(key))
+                }""",
+            r"""fn pke_keygen_into(d: &[u8; 32], encoded_s: &mut [u8]) -> EncapsulationKey {
+                debug_assert_eq!(encoded_s.len(), VECTOR_BYTES);""",
+            "let mut transformed_s: [NttPoly; RANK] = std::array::from_fn(|_| NttPoly::zero());",
+            r"""let mut coefficient = Poly::zero();
+                for (i, transformed) in transformed_s.iter_mut().enumerate() {
+                    noise_into(sigma, i as u8, &mut coefficient);
+                    pack_into(coefficient.coefficients(), 13,
+                              &mut encoded_s[i * POLY_BYTES..(i + 1) * POLY_BYTES],);
+                    coefficient.forward_into(transformed);
+                }""",
+            r"""for i in 0..RANK {
+                noise_into(sigma, 6 + i as u8, &mut coefficient);
+                sum.clear();
+                for (j, secret) in transformed_s.iter().enumerate() {
+                    uniform(rho, i as u8, j as u8).forward_into(&mut matrix_entry);
+                    sum.multiply_add_assign(&matrix_entry, secret);
+                }
+                sum.inverse_into(&mut product);
+                coefficient.add_assign(&product);
+                pack_into(coefficient.coefficients(), 13,
+                          &mut ek[i * POLY_BYTES..(i + 1) * POLY_BYTES],);
+            }""",
+            "ek[VECTOR_BYTES..].copy_from_slice(rho); EncapsulationKey(ek)",
+            r"""fn keygen_internal(d: &[u8; 32], z: &[u8; 32]) -> (EncapsulationKey, DecapsulationKey) {
+                let mut sk = SecretBox::zero();
+                let ek = pke_keygen_into(d, &mut sk[..VECTOR_BYTES]);
+                sk[VECTOR_BYTES..VECTOR_BYTES + PUBLIC_KEY_BYTES].copy_from_slice(ek.as_bytes());
+                sk[VECTOR_BYTES + PUBLIC_KEY_BYTES..PRIVATE_KEY_BYTES - 32]
+                    .copy_from_slice(&hash_public(ek.as_bytes()));
+                sk[PRIVATE_KEY_BYTES - 32..].copy_from_slice(z);
+                (ek, DecapsulationKey(sk))
+            }""",
+            r"""fn pke_encrypt_into(ek: &[u8], m: &[u8; 32], seed: &[u8],
+                                  out: &mut [u8; CIPHERTEXT_BYTES])""",
+            "let mut transformed_r: [NttPoly; RANK] = std::array::from_fn(|_| NttPoly::zero());",
+            r"""let mut coefficient = Poly::zero();
+                for (i, transformed) in transformed_r.iter_mut().enumerate() {
+                    noise_into(seed, i as u8, &mut coefficient);
+                    coefficient.forward_into(transformed);
+                }""",
+            r"""for i in 0..RANK {
+                noise_into(seed, 6 + i as u8, &mut coefficient);
+                sum.clear();
+                for (j, transformed) in transformed_r.iter().enumerate() {
+                    uniform(rho, j as u8, i as u8).forward_into(&mut matrix_entry);
+                    sum.multiply_add_assign(&matrix_entry, transformed);
+                }
+                sum.inverse_into(&mut product);
+                coefficient.add_assign(&product);
+                pack_into(coefficient.coefficients(), 13,
+                          &mut out[i * POLY_BYTES..(i + 1) * POLY_BYTES],);
+            }""",
+            r"""noise_into(seed, 12, &mut coefficient);
+                message_poly_into(m, &mut product);
+                coefficient.add_assign(&product);
+                sum.clear();
+                for (i, transformed) in transformed_r.iter().enumerate() {
+                    decode_polynomial_into(&ek[i * POLY_BYTES..(i + 1) * POLY_BYTES], &mut product);
+                    product.forward_into(&mut matrix_entry);
+                    sum.multiply_add_assign(&matrix_entry, transformed);
+                }
+                sum.inverse_into(&mut product);
+                coefficient.add_assign(&product);""",
+            r"""product.fill_with(|i| compress(coefficient.coefficients()[i], 5));
+                pack_into(product.coefficients(), 5, &mut out[VECTOR_BYTES..]);""",
+            r"""fn pke_decrypt(sk: &[u8], c: &Ciphertext) -> Zeroizing<[u8; 32]> {
+                debug_assert_eq!(sk.len(), VECTOR_BYTES);""",
+            r"""for i in 0..RANK {
+                decode_polynomial_into(&sk[i * POLY_BYTES..(i + 1) * POLY_BYTES], &mut secret);
+                decode_polynomial_into(&c.0[i * POLY_BYTES..(i + 1) * POLY_BYTES], &mut value);
+                secret.forward_into(&mut left);
+                value.forward_into(&mut right);
+                sum.multiply_add_assign(&left, &right);
+            }""",
+            "sum.inverse_into(&mut secret); v.subtract_assign(&secret); recover_message(&v)",
+            "fn message_poly_into(message: &[u8; 32], out: &mut Poly)",
+        ]
+        anchors.extend(re.sub(r"\s+", "", fragment) for fragment in fragments)
+    elif "letmuttransformed_s:[NttPoly;RANK]" in flat:
         realization = "M06-destination-owned-NTT-accumulated-1"
-        anchors.extend(["noise_into(sigma,iasu8,secret)", "noise_into(sigma,6+iasu8,value)",
+        anchors.extend(["compress(v.coefficients()[i],5)",
+                        "noise_into(sigma,iasu8,secret)", "noise_into(sigma,6+iasu8,value)",
                         "noise_into(seed,iasu8,&mutrandomness)", "noise_into(seed,6+iasu8,value)",
                         "noise_into(seed,12,&mutv)",
                         "for(secret,transformed)ins.iter().zip(&muttransformed_s){secret.forward_into(transformed);}",
@@ -249,14 +374,16 @@ def verify_static_contract(source):
                         "fnpke_keygen_into(d:&[u8;32],s:&mut[Poly;RANK])"])
     elif "fnnoise_into(" in flat:
         realization = "M04-destination-owned-NTT-scalar-1"
-        anchors.extend(["uniform(rho,j,iasu8)", "noise_into(sigma,iasu8,secret)", "noise_into(sigma,6+iasu8,value)",
+        anchors.extend(["compress(v.coefficients()[i],5)",
+                        "uniform(rho,j,iasu8)", "noise_into(sigma,iasu8,secret)", "noise_into(sigma,6+iasu8,value)",
                         "noise_into(seed,iasu8,randomness)", "noise_into(seed,6+iasu8,value)",
                         "noise_into(seed,12,&mutv)", "s[i].multiply_into(&u[i],&mutproduct)",
                         "v.subtract_assign(&product)", "fnmessage_poly_into(message:&[u8;32],out:&mutPoly)",
                         "fnpke_keygen_into(d:&[u8;32],s:&mut[Poly;RANK])"])
     else:
         realization = "M02-schoolbook-return-owned-1"
-        anchors.extend(["uniform(rho,j,iasu8)", "noise(sigma,iasu8)", "noise(sigma,6+iasu8)", "noise(seed,iasu8)",
+        anchors.extend(["compress(v.coefficients()[i],5)",
+                        "uniform(rho,j,iasu8)", "noise(sigma,iasu8)", "noise(sigma,6+iasu8)", "noise(seed,iasu8)",
                         "noise(seed,6+iasu8)", "noise(seed,12)", "v=v.subtract(&s[i].multiply(&u[i]))"])
     for anchor in anchors:
         require(anchor in flat, f"reviewed R1 source contract changed; review required: {anchor}")

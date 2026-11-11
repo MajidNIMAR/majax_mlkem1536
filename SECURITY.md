@@ -29,6 +29,19 @@ attack. It does not establish concrete SHAKE security. The M06 NTT
 accumulation refactor has its [own review](docs/M06_REVUE_INDEPENDANTE.md);
 historical binary-wipe checks and fuzz durations do not transfer automatically.
 
+The [M07 implementation study](docs/M07_MEMOIRE_ET_VALIDATION.md) preserves
+R1 formats while streaming coefficient rows through reused owners. Its
+memory metric is instrumented touched-stack depth, not a universal stack
+bound. A bounded review of the Windows/Linux research binaries identified
+coefficient-bit spills outside zeroizing owners in private-key validation.
+The delivered Linux CLI does not retain those import functions; their machine
+form is outside this check's scope. On the examined
+invalid-secret import paths, some spilled bits are not explicitly erased
+before return. The corresponding M06 reference binaries already have this
+limitation; M07 does not establish complete erasure. This observation does
+not demonstrate a remote or practical leak. Callers requiring erasure of
+every compiler temporary, register and error path do not have that guarantee.
+
 For a suspected vulnerability, use this repository's **Security → Report a
 vulnerability** private reporting facility. Include the commit, platform,
 toolchain and a minimal reproduction with synthetic data. Do not include

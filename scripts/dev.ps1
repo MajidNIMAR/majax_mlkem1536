@@ -74,6 +74,8 @@ try {
             if ($LASTEXITCODE -ne 0) { throw 'M06 engine evidence verification failed.' }
             & $taskCheckResearchPython research/run_m06_fuzz.py verify-archive --output results/engine/m06-fuzz-001
             if ($LASTEXITCODE -ne 0) { throw 'M06 instrumented evidence verification failed.' }
+            & $taskCheckResearchPython research/archive_m07.py verify --output results/engine/m07-001
+            if ($LASTEXITCODE -ne 0) { throw 'M07 memory, binary, fuzz and delivery evidence verification failed.' }
             python research/verify_results.py
             if ($LASTEXITCODE -ne 0) { throw 'Frozen research result verification failed.' }
             python research/verify_modern_results.py

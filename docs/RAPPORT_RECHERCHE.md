@@ -1,6 +1,25 @@
 # Rapport de recherche — MAJAX R6, KEM à six blocs de 256 coefficients
 
-Version de travail du 10 novembre 2026. Ce document est la base évolutive du futur article. Le [journal](JOURNAL_RECHERCHE.md) conserve les étapes et décisions ; les [résultats figés de J2](../results/j2/run-001/) conservent les calculs et leur provenance. Une modification du rapport doit rester cohérente avec ces données.
+Version de travail du 11 novembre 2026. Ce document est la base évolutive du futur article. Le [journal](JOURNAL_RECHERCHE.md) conserve les étapes et décisions ; les [résultats figés de J2](../results/j2/run-001/) conservent les calculs et leur provenance. Une modification du rapport doit rester cohérente avec ces données.
+
+**M07 en cours — critères mémoire et latence satisfaits.** Le moteur
+traite désormais les polynômes en coefficients ligne par ligne, en
+conservant les six opérandes NTT. Les 2240 observations mémoire et les
+80000 observations comparatives de latence satisfont les 116 contrôles
+des [budgets fixés avant candidat](DECISION_M07_BUDGETS.md). Le maximum
+observé de pile touchée diminue de 39 à 49 % sur les opérations principales
+selon l'hôte et l'opération ; cette métrique instrumentée n'est pas une
+borne universelle de pile. L'import privé valide passe de deux allocations
+à une. Les corpus intégraux concordent sur Windows/Linux. La médiane de
+KeyGen Windows augmente de 1,8 %, résultat défavorable conservé. Le
+[bilan détaillé M07](M07_MEMOIRE_ET_VALIDATION.md) décrit la méthode et
+ses limites. La campagne ASan/std reconstruite propre à M07 a atteint
+248,73 secondes CPU, avec activité après initialisation des quatre
+harnais. La revue bornée des quatre binaires est scellée, les deux paquets
+sont validés et l'[archive complète M07](../results/engine/m07-001/) se rejoue.
+Le [contrôle complet Windows](../results/engine/m07-verification-001/) réussit
+avec 227 tests Python, Rust/fmt/Clippy, rejeux et auto-tests. Les contrôles
+GitHub neufs Windows/Ubuntu et leur publication restent à consigner.
 
 **Présentation du projet — MAJAX R6.** Le nom de présentation met en avant
 le programme de recherche, l'ingénierie et l'architecture cryptographique.
@@ -25,10 +44,10 @@ conserve les deux passages réussis et leur portée, ainsi que la
 concordance des 1 882 fichiers exportés et blobs Git canoniques. Ce
 résultat complète les anciens reçus locaux ; les campagnes et benchmarks
 archivés ne sont pas relancés par ce contrôle. Le prochain jalon
-[M07 prévu](FEUILLE_DE_ROUTE_MOTEUR.md) porte sur la mémoire dynamique,
-les espaces de travail et la livraison vérifiée, sans résultat anticipé.
+[M07](FEUILLE_DE_ROUTE_MOTEUR.md) mesure la mémoire du moteur,
+réduit les espaces temporaires et renouvelle la livraison vérifiée.
 
-**État courant — M06.** Le moteur accumule désormais les produits dans le
+**Historique — M06.** Le moteur accumule désormais les produits dans le
 domaine NTT et réutilise les opérandes transformés. Les corpus intégraux
 concordent sous Windows/Linux. Les 60 000 mesures comparatives donnent
 des rapports de médianes de 1,79/1,87/1,76 pour KeyGen/Encaps/Decaps,

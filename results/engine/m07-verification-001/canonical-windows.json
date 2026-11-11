@@ -1,0 +1,14 @@
+{
+  "binary_sha256": "c707186a5da83d5a5ed4523d713bdb204c95412818d8d18ba0a9ba9029105f33",
+  "destination": "target/release/kem1536.exe",
+  "shipped_original": true,
+  "self_test": {
+    "elapsed_seconds": 0.0380003,
+    "fresh_round_trips": 16,
+    "implicit_rejections_checked": 16,
+    "profile": "KEM1536-DEV-Q7681-R1",
+    "secrets_printed": false,
+    "security_validation": "pending"
+  },
+  "test_stdout_sha256": "b8c176c4c0a91a3c403ca3793ae2b9dc0b413a06111a759f9413a704c1afcfb7"
+}

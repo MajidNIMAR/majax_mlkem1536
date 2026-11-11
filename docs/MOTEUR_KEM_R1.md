@@ -205,3 +205,13 @@ moteur. `check` vérifie ses empreintes, recalcule toutes les statistiques
 temporelles et rejoue 16 mutations indépendamment ; la campagne complète
 de 10000 mutations est conservée séparément. Le journal consigne le bilan
 final de vérification M02. Aucun fuzzing long ou audit externe n'en est déduit.
+
+
+Depuis M07, le moteur traite les lignes en coefficients dans des propriétaires
+réutilisés, sans modifier les formats R1 ni les comptes NTT 48/55/68.
+Le [bilan mémoire et livraison](M07_MEMOIRE_ET_VALIDATION.md) décrit les
+mesures Windows/Linux, leurs limites, la revue propre aux nouveaux binaires
+et les paquets. L’[archive M07](../results/engine/m07-001/) conserve les
+exécutables originaux revus, la source compacte compilable, les licences
+et les reçus des répétitions de build. Le CLI livré conserve les auto-tests
+frais et désactive les commandes de recherche.

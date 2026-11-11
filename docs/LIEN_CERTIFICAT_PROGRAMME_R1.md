@@ -276,6 +276,18 @@ a identifié puis fait corriger une première ancre globale qui pouvait
 Le certificat mathématique reste celui de run-004 ; aucun changement
 de loi de bruit, de seuil ou de paramètre n'est introduit.
 
+M07 ajoute la réalisation `M07-destination-owned-NTT-streamed-1`, avec
+35 ancrages : 12 communs au contrat, 22 propres au traitement par lignes
+et le rejet de matrice uniforme. Le contrôle relie le décodage complet,
+les six lignes avant décision d'import, l'ordre des erreurs privées,
+l'allocation du propriétaire privé avant remplissage, les encodages
+directs, nonces, orientations, remises à zéro, inverses et accumulations.
+Les mutants ciblent chaque site et les réutilisations de propriétaires.
+Les branches historiques M02/M04/M06 restent testées sur leurs sources
+figées et leurs nombres d'ancrages 21/24/31. La reconstruction mathématique
+et le contrôle de source sont distincts d'une vérification formelle de tout
+le programme ; `formal_program_verification` reste faux.
+
 L'étape rattache donc une borne exacte et ses quantificateurs aux
 opérations R1 décrites et observées. Restent distincts : la vérification
 formelle de tout le code et du compilateur, le transfert aux primitives

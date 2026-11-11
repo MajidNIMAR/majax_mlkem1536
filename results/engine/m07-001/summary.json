@@ -1,0 +1,49 @@
+{
+  "profile": "KEM1536-DEV-Q7681-R1",
+  "measurements_valid": true,
+  "budget_checks_passed": 116,
+  "budget_checks_total": 116,
+  "timing": {
+    "windows": {
+      "observations": 16000,
+      "maximum_absolute_t": 1.3929627738836474,
+      "threshold_crossings": 0,
+      "constant_time_proved": false
+    },
+    "linux": {
+      "observations": 16000,
+      "maximum_absolute_t": 3.1641458189847245,
+      "threshold_crossings": 0,
+      "constant_time_proved": false
+    }
+  },
+  "binary": {
+    "frozen_members_verified": 73,
+    "full_inventories_and_bounded_reviews_replayed": 4,
+    "reference_inventories_replayed": 2,
+    "spill_instruction_witnesses_verified": 6,
+    "new_objdump_run": false,
+    "all_copies_erased_proved": false,
+    "constant_time_proved": false
+  },
+  "fuzz": {
+    "profile": "KEM1536-DEV-Q7681-R1",
+    "total_CPU_seconds": 248.73,
+    "candidate_and_harness_hashes_verified": true,
+    "all_four_have_post_INITED_execution": true,
+    "historical_CPU_seconds_credited": 0,
+    "source_line_coverage_measured": false,
+    "long_campaign_completed": false,
+    "independent_oracle_replayed": false,
+    "secrets_printed": false
+  },
+  "delivery": {
+    "profile": "KEM1536-DEV-Q7681-R1",
+    "packages_verified": 2,
+    "new_cli_builds_total": 2,
+    "shipped_binaries_are_reviewed_originals": true,
+    "third_party_reproduction_claimed": false
+  },
+  "new_experiments_performed_by_replay": false,
+  "global_security_constant_time_or_erasure_proved": false
+}

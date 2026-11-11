@@ -1420,3 +1420,101 @@ réussit à cette révision avec ses cinq jobs : intégration, vérification,
 assurance et performances x86-64/AArch64. La redirection de l'ancien
 URL vers le nouveau est vérifiée. Les références courantes depuis MAJAX R6 sont mises à jour,
 sans changement des résultats figés ni des domaines R1.
+
+### 11 novembre 2026 — démarrage M07 et protocole mémoire
+
+L'utilisateur autorise le démarrage. Le cœur de référence reste M06,
+aux empreintes figées de `dev_kem.rs` et `engine_poly.rs`. Le protocole
+M07 est écrit avant optimisation. La profondeur de pile effectivement
+touchée est observée par peinture bornée dans un thread natif neuf,
+avec deux motifs publics et calibrations ; elle ne constitue pas une
+borne universelle de RSP. Les requêtes d'allocation Rust sont observées
+dans la fenêtre d'appel ; les sorties sont validées et détruites ensuite.
+La partie non sûre est confinée au harnais séparé.
+
+Le harnais de latence couvre KeyGen, Encaps, Decaps valide et rejetée,
+avec validation/destruction hors chronomètre. Sept tests du contrôleur
+rejettent observations incomplètes, dupliquées, saturées ou invalides et
+vérifient la conservation des extrêmes. Les deux démarrages de calibration
+réussissent, 28 observations par système, sans les créditer à la référence
+complète. La revue indépendante des bornes, du cycle de vie des threads
+et du désassemblage Windows ne relève plus de blocage après correction
+des erreurs de join et de validation des adresses de calibration. Aucun
+résultat d'optimisation n'est annoncé. Après référence, les budgets seront
+enregistrés avant le candidat.
+
+**Référence complète et décision.** Les builds figés Windows/Linux sont
+achevés. Les deux grilles mémoire contiennent chacune 560 observations,
+calibrations et invariants valides. Pile touchée : KeyGen Windows
+12984–13392/Linux12824 octets ; Encaps14808/14536 ; Decaps valide et rejetée
+23688/23336. Les allocations sont constantes : KG2/7616 octets retenus,
+Encaps1/2656, Decaps0. La référence de latence comprend 4000 observations
+par système, avec dispersion de médianes de série atteignant 1,095.
+
+Le premier flux Linux fusionné n'a pas été accepté par le parseur JSON
+et n'a pas été conservé par l'ancien contrôleur ; la deuxième acquisition
+complète, stdout/stderr séparés, est conservée et validée sans sélection
+de lignes. Les flux sont maintenant sauvegardés avant analyse. Les
+budgets sont décidés dans `DECISION_M07_BUDGETS.md` avant modification du
+cœur : pile primaire au moins2048 octets sous le minimum de référence,
+imports au plus+512 octets, tas demandé sans hausse, latence au plus
+1,10 médiane/1,20p95 lors de cinq séries alternées de1000 observations
+par opération/version. Ces seuils sont opérationnels, sans affirmation
+de significativité statistique. Le reçu lie tous les fichiers de référence.
+
+
+## 11 novembre 2026 — M07, candidat et comparaison quantitative
+
+Le candidat traite les lignes en coefficients dans des propriétaires réutilisés,
+encode les lignes au fur et à mesure et supprime le Box public temporaire à
+l’import privé. Il conserve les six opérandes NTT, les paramètres, domaines,
+formats et les comptes 48/55/68. Le cœur mesuré est lié à son SHA-256 ; la
+décision b96941b précède cette modification. Les 2240 observations mémoire
+et les 80000 latences comparatives passent les 116 contrôles de budget.
+Le maximum observé de pile touchée baisse de 39 à 49 % sur les opérations
+principales ; l’import privé valide demande une allocation au lieu de deux.
+Il s’agit d’observations instrumentées, sans borne universelle de pile/RSS.
+La médiane de KeyGen Windows augmente de 1,8 % et son p95 de 8,7 %.
+
+Les corpus intégraux Windows/Linux concordent : 1000 vecteurs, 10000 rejets,
+10000 mutations et 20000 formats par hôte. Le diagnostic temporel distinct
+contient 32000 observations, aucun contraste au seuil |t|=4,5, sans preuve CT.
+La campagne ASan avec std reconstruite termine 248,73 secondes CPU propres
+à M07, les quatre harnais ayant une activité après INITED. Aucun crédit
+historique, couverture source LLVM ou oracle indépendant de ce nouveau
+corpus fuzz n’est revendiqué. La revue binaire et la livraison sont encore
+en cours ; le détail évolue dans M07_MEMOIRE_ET_VALIDATION.md.
+
+
+## 11 novembre 2026 — M07, livraison et intégration locale
+
+La revue bornée des quatre originaux est scellée : 73 membres, deux références
+M06 et six témoins d’instructions. Les spills sur erreur d’import privé sont
+qualifiés comme préexistants sur les chemins comparés, sans garantie générale
+d’effacement ni fuite démontrée. Les imports absents du CLI Linux livré ne
+sont pas couverts par une forme machine.
+
+Le premier précontrôle du packaging a refusé, avant tout build, un mauvais
+niveau de lecture du reçu. Le correctif suit provenance → collection hashée →
+identités des binaires et conserve chaque copie de validation ; treize tests
+ciblés et la revue indépendante passent. Les deux répétitions de build
+sont ensuite exécutées : Linux identique brut ; Windows diffère seulement
+dans l’horodatage COFF et le checksum PE. Même hôte, chemin et caches partagés,
+sans reproduction indépendante par tiers. Les paquets livrent les originaux
+revus, avec 16 échanges et 16 rejets sur chaque original et répétition, commandes
+de recherche refusées, sources compactes, inventaires et licences vérifiés.
+
+Le gel results/engine/m07-001 et son rejeu complet passent, puis une revue
+indépendante confirme les inventaires et les 17 contrôles Python archivés.
+Le test d’extraction Ubuntu/Python3.10 passe, puis le rejeu s’arrête sur
+file_digest conformément au prérequis Python >=3.11 : aucun PASS complet Linux
+n’est déduit de ce test. La CI neuve Python3.13 sera consignée séparément.
+
+Le check Windows complet réussit, 00:44:54–00:58:42 UTC : 227 tests Python,
+Rust avec/sans toutes fonctionnalités, fmt, Clippy strict, preuves historiques
+et M07, auto-tests frais. Les empreintes avant/après du travail restent égales.
+Le reçu, le contrôleur et le log sont figés dans m07-verification-001. Le CLI
+habituel target/release/kem1536.exe est l’original revu c707186a…, copie exacte
+et nouvel auto-test 16/16 conservés. La publication et les contrôles GitHub
+Windows/Ubuntu restent à consigner. Les obligations de sécurité C01 restent
+ouvertes ; les gains d’implémentation ne les ferment pas.

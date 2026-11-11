@@ -15,7 +15,7 @@ evidence needed to examine its evolution.
 [Specification](docs/SPECIFICATION_DEV_Q7681_R1.md) ·
 [Engine and API guide](docs/MOTEUR_KEM_R1.md) ·
 [Research report](docs/RAPPORT_RECHERCHE.md) ·
-[M06 engineering review](docs/M06_MOTEUR_ACCUMULATION_NTT.md)
+[M07 memory and delivery study](docs/M07_MEMOIRE_ET_VALIDATION.md)
 
 [![Main-branch checks](https://github.com/MajidNIMAR/majax_mlkem1536/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/MajidNIMAR/majax_mlkem1536/actions/workflows/ci.yml)
 
@@ -62,7 +62,36 @@ arithmetic and KEM operations are implemented in this repository. The
 project is developed independently from Majax Messenger's operational
 architecture.
 
-## Current engineering milestone: M06
+## Current engineering milestone: M07
+
+M07 streams coefficient rows through reused operation-owned buffers while
+retaining the transformed operands and the **48/55/68** transform counts.
+R1 parameters, formats, domains and complete regression outputs remain the same.
+The [M07 study](docs/M07_MEMOIRE_ET_VALIDATION.md) compares both versions on
+Windows and Linux, using 2,240 memory observations and 80,000 paired latency
+observations under criteria fixed before the candidate.
+
+| Operation | Windows touched-stack maximum, M06 → M07, bytes | Linux touched-stack maximum, M06 → M07, bytes |
+|---|---:|---:|
+| Key generation | 13,392 → 8,144 | 12,824 → 7,208 |
+| Encapsulation | 14,808 → 7,672 | 14,536 → 7,400 |
+| Valid or rejected decapsulation | 23,688 → 13,064 | 23,336 → 12,696 |
+
+These are **instrumented touched-stack observations**, not universal stack
+bounds or the delivered CLI's peak. Private-key import also uses one allocation
+instead of two. All predefined budgets pass; Windows key generation is 1.8%
+slower at the median in this panel, a result retained alongside the gains.
+
+The [compact M07 evidence](results/engine/m07-001/) preserves new binary reviews,
+the full regression receipts, a finite 248.73 CPU-second ASan/std-rebuilt
+campaign and Windows/Linux packages with compact compilable source and licenses.
+Linux's repeat build is byte-identical; Windows differs only in the COFF
+timestamp and PE checksum. Both use the same source path, toolchain and shared
+dependency caches; this is not an independent third-party reproduction.
+The packages ship the original reviewed binaries. A preexisting invalid-private-key
+import spill limitation remains documented in [SECURITY](SECURITY.md).
+
+## Previous engineering milestone: M06
 
 M06 reuses transformed operands and accumulates rank-six products before
 a single inverse transform. Coefficient and NTT representations have
@@ -91,6 +120,7 @@ preserves the distributions, build inputs, compiler details and limitations.
 
 | Evidence | Recorded scope |
 |---|---|
+| [M07 memory, binary, fuzz and delivery evidence](results/engine/m07-001/) | 116/116 budgets pass, complete Windows/Linux output regression, four bounded binary reviews, 32,000 finite timing observations and new finite ASan/std-rebuilt campaign; no global erasure or constant-time proof |
 | [R1 reference vectors](results/engine/r1-001/) and [rejection corpus](results/engine/r1-rejections-001/) | 1,000 complete Rust/Python vectors, 10,000 fresh exchanges and 10,000 paired rejection outputs |
 | [M06 engine regression and binary review](results/engine/m06-001/) | Complete Windows/Linux equality to the frozen outputs: 1,000 vectors, 10,000 rejections, 10,000 mutations and 20,000 format cases per system; four preserved binary inventories and targeted owner review |
 | [M06 instrumented campaign](results/engine/m06-fuzz-001/) | 850.99 CPU seconds with ASan and rebuilt standard library, a separate API supplement, four source-coverage exports and their LLVM union |

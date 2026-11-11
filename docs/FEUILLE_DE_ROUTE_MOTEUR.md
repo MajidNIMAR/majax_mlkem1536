@@ -117,12 +117,14 @@ ajoute les vérifications utiles et livre du code exécutable ou un
 critère de décision vérifiable. Aucun déploiement ou publication n'est
 effectué implicitement.
 
-## M07 prévu — MAJAX R6, mémoire maîtrisée et livraison vérifiable
+## M07 — MAJAX R6, mémoire maîtrisée et livraison vérifiable
 
 MAJAX R6 désigne le moteur expérimental de rang 6, soit six polynômes de
 256 coefficients. Le profil d'essai reste `KEM1536-DEV-Q7681-R1`. Cette
-section définit les travaux prévus et leurs critères de sortie ; les
-résultats M07 seront consignés après leur exécution.
+section conserve les critères de sortie définis avant leur exécution.
+Le [bilan M07](M07_MEMOIRE_ET_VALIDATION.md) consigne désormais les mesures,
+les budgets satisfaits et les paquets vérifiés. Le contrôle complet Windows
+passe à 227 tests Python ; les exécutants GitHub neufs restent à consigner.
 
 1. **Mesurer la mémoire réelle de M06.** Établir le pic dynamique de pile,
    les allocations et leurs tailles pour KeyGen, Encaps et Decaps valide

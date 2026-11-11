@@ -18,4 +18,5 @@
 /results/engine/m04-001/** -text whitespace=cr-at-eol,-blank-at-eof,-blank-at-eol
 /results/engine/m04-001/distribution/**/licenses/** -diff
 /results/engine/m06*/** -text whitespace=cr-at-eol,-blank-at-eof,-blank-at-eol
+/results/engine/m07*/** -text whitespace=cr-at-eol,-blank-at-eof,-blank-at-eol
 

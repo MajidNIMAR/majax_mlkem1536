@@ -42,8 +42,7 @@ impl EncapsulationKey {
         if bytes.len() != PUBLIC_KEY_BYTES {
             return Err(Error::InvalidLength);
         }
-        let mut checked = std::array::from_fn(|_| Poly::zero());
-        decode_vector_into(&bytes[..VECTOR_BYTES], true, &mut checked)?;
+        validate_vector_encoding(&bytes[..VECTOR_BYTES])?;
         let mut key = Box::new([0; PUBLIC_KEY_BYTES]);
         key.copy_from_slice(bytes);
         Ok(Self(key))
@@ -57,13 +56,12 @@ impl DecapsulationKey {
         if bytes.len() != PRIVATE_KEY_BYTES {
             return Err(Error::InvalidLength);
         }
-        let mut checked = std::array::from_fn(|_| Poly::zero());
-        decode_vector_into(&bytes[..VECTOR_BYTES], true, &mut checked)?;
-        let ek =
-            EncapsulationKey::from_bytes(&bytes[VECTOR_BYTES..VECTOR_BYTES + PUBLIC_KEY_BYTES])?;
+        validate_vector_encoding(&bytes[..VECTOR_BYTES])?;
+        let ek = &bytes[VECTOR_BYTES..VECTOR_BYTES + PUBLIC_KEY_BYTES];
+        validate_vector_encoding(&ek[..VECTOR_BYTES])?;
         let offset = VECTOR_BYTES + PUBLIC_KEY_BYTES;
         if !bool::from(
-            hash_public(ek.as_bytes())
+            hash_public(ek)
                 .as_slice()
                 .ct_eq(&bytes[offset..offset + 32]),
         ) {
@@ -187,32 +185,31 @@ fn unpack_coefficient(bytes: &[u8], width: usize, j: usize) -> u16 {
 fn unpack(bytes: &[u8], width: usize) -> [u16; DEGREE] {
     std::array::from_fn(|j| unpack_coefficient(bytes, width, j))
 }
-fn decode_vector_into(bytes: &[u8], strict: bool, result: &mut [Poly; RANK]) -> Result<(), Error> {
+/// Decode one fixed row into an existing owner; return only its canonicality mask.
+fn decode_polynomial_into(bytes: &[u8], result: &mut Poly) -> u16 {
+    debug_assert_eq!(bytes.len(), POLY_BYTES);
+    let mut noncanonical = 0_u16;
+    result.fill_with(|j| {
+        let v = unpack_coefficient(bytes, 13, j);
+        noncanonical |= ((u32::from(v).wrapping_sub(u32::from(Q)) >> 31) ^ 1) as u16;
+        reduce_once(u32::from(v))
+    });
+    noncanonical
+}
+fn validate_vector_encoding(bytes: &[u8]) -> Result<(), Error> {
     if bytes.len() != VECTOR_BYTES {
         return Err(Error::InvalidLength);
     }
     let mut noncanonical = 0_u16;
-    for (p, polynomial) in result.iter_mut().enumerate() {
-        polynomial.fill_with(|j| {
-            let v = unpack_coefficient(&bytes[p * POLY_BYTES..(p + 1) * POLY_BYTES], 13, j);
-            // v is 13-bit (<2q). Scan all coefficients before the import decision.
-            noncanonical |= ((u32::from(v).wrapping_sub(u32::from(Q)) >> 31) ^ 1) as u16;
-            reduce_once(u32::from(v))
-        });
+    let mut checked = Poly::zero();
+    for row in bytes.chunks_exact(POLY_BYTES) {
+        noncanonical |= decode_polynomial_into(row, &mut checked);
     }
-    if strict && noncanonical != 0 {
+    // Preserve the complete scan of all six rows before the import decision.
+    if noncanonical != 0 {
         return Err(Error::NoncanonicalEncoding);
     }
     Ok(())
-}
-fn encode_vector_into(vector: &[Poly; RANK], out: &mut [u8]) {
-    for (i, p) in vector.iter().enumerate() {
-        pack_into(
-            p.coefficients(),
-            13,
-            &mut out[i * POLY_BYTES..(i + 1) * POLY_BYTES],
-        );
-    }
 }
 fn compress(x: u16, width: usize) -> u16 {
     (quotient((u32::from(x) << width) + u32::from(Q / 2)) & ((1 << width) - 1)) as u16
@@ -230,77 +227,84 @@ fn recover_message(p: &Poly) -> Zeroizing<[u8; 32]> {
     }
     m
 }
-fn pke_keygen_into(d: &[u8; 32], s: &mut [Poly; RANK]) -> EncapsulationKey {
+fn pke_keygen_into(d: &[u8; 32], encoded_s: &mut [u8]) -> EncapsulationKey {
+    debug_assert_eq!(encoded_s.len(), VECTOR_BYTES);
     let expanded = derive(b"KG\0", &[d, &[6]]);
     let (rho, sigma) = expanded.split_at(32);
-    for (i, secret) in s.iter_mut().enumerate() {
-        noise_into(sigma, i as u8, secret);
-    }
     let mut transformed_s: [NttPoly; RANK] = std::array::from_fn(|_| NttPoly::zero());
-    for (secret, transformed) in s.iter().zip(&mut transformed_s) {
-        secret.forward_into(transformed);
+    let mut coefficient = Poly::zero();
+    for (i, transformed) in transformed_s.iter_mut().enumerate() {
+        noise_into(sigma, i as u8, &mut coefficient);
+        pack_into(
+            coefficient.coefficients(),
+            13,
+            &mut encoded_s[i * POLY_BYTES..(i + 1) * POLY_BYTES],
+        );
+        coefficient.forward_into(transformed);
     }
-    let mut t: [Poly; RANK] = std::array::from_fn(|_| Poly::zero());
+    let mut ek = Box::new([0; PUBLIC_KEY_BYTES]);
     let mut matrix_entry = NttPoly::zero();
     let mut sum = NttPoly::zero();
     let mut product = Poly::zero();
-    for (i, value) in t.iter_mut().enumerate() {
-        noise_into(sigma, 6 + i as u8, value);
+    for i in 0..RANK {
+        noise_into(sigma, 6 + i as u8, &mut coefficient);
         sum.clear();
         for (j, secret) in transformed_s.iter().enumerate() {
             uniform(rho, i as u8, j as u8).forward_into(&mut matrix_entry);
             sum.multiply_add_assign(&matrix_entry, secret);
         }
         sum.inverse_into(&mut product);
-        value.add_assign(&product);
+        coefficient.add_assign(&product);
+        pack_into(
+            coefficient.coefficients(),
+            13,
+            &mut ek[i * POLY_BYTES..(i + 1) * POLY_BYTES],
+        );
     }
-    let mut ek = Box::new([0; PUBLIC_KEY_BYTES]);
-    encode_vector_into(&t, &mut ek[..VECTOR_BYTES]);
     ek[VECTOR_BYTES..].copy_from_slice(rho);
     EncapsulationKey(ek)
 }
 fn pke_encrypt_into(ek: &[u8], m: &[u8; 32], seed: &[u8], out: &mut [u8; CIPHERTEXT_BYTES]) {
-    let mut t = std::array::from_fn(|_| Poly::zero());
-    decode_vector_into(&ek[..VECTOR_BYTES], false, &mut t).expect("validated encapsulation key");
     let rho = &ek[VECTOR_BYTES..];
     let mut transformed_r: [NttPoly; RANK] = std::array::from_fn(|_| NttPoly::zero());
-    let mut randomness = Poly::zero();
+    // Each phase overwrites this complete owner: r_i, u_i, then v.
+    let mut coefficient = Poly::zero();
     for (i, transformed) in transformed_r.iter_mut().enumerate() {
-        noise_into(seed, i as u8, &mut randomness);
-        randomness.forward_into(transformed);
+        noise_into(seed, i as u8, &mut coefficient);
+        coefficient.forward_into(transformed);
     }
-    let mut u = std::array::from_fn(|_| Poly::zero());
     let mut matrix_entry = NttPoly::zero();
     let mut sum = NttPoly::zero();
     let mut product = Poly::zero();
-    for (i, value) in u.iter_mut().enumerate() {
-        noise_into(seed, 6 + i as u8, value);
+    for i in 0..RANK {
+        noise_into(seed, 6 + i as u8, &mut coefficient);
         sum.clear();
         for (j, transformed) in transformed_r.iter().enumerate() {
             uniform(rho, j as u8, i as u8).forward_into(&mut matrix_entry);
             sum.multiply_add_assign(&matrix_entry, transformed);
         }
         sum.inverse_into(&mut product);
-        value.add_assign(&product);
+        coefficient.add_assign(&product);
+        pack_into(
+            coefficient.coefficients(),
+            13,
+            &mut out[i * POLY_BYTES..(i + 1) * POLY_BYTES],
+        );
     }
-    let mut v = Poly::zero();
-    noise_into(seed, 12, &mut v);
-    let mut message = Poly::zero();
-    message_poly_into(m, &mut message);
-    v.add_assign(&message);
+    noise_into(seed, 12, &mut coefficient);
+    message_poly_into(m, &mut product);
+    coefficient.add_assign(&product);
     sum.clear();
-    for (value, transformed) in t.iter().zip(&transformed_r) {
-        value.forward_into(&mut matrix_entry);
+    for (i, transformed) in transformed_r.iter().enumerate() {
+        decode_polynomial_into(&ek[i * POLY_BYTES..(i + 1) * POLY_BYTES], &mut product);
+        product.forward_into(&mut matrix_entry);
         sum.multiply_add_assign(&matrix_entry, transformed);
     }
     sum.inverse_into(&mut product);
-    v.add_assign(&product);
-    let mut compressed = Zeroizing::new([0; DEGREE]);
-    for i in 0..DEGREE {
-        compressed[i] = compress(v.coefficients()[i], 5);
-    }
-    encode_vector_into(&u, &mut out[..VECTOR_BYTES]);
-    pack_into(&compressed, 5, &mut out[VECTOR_BYTES..]);
+    coefficient.add_assign(&product);
+    // Compressed values are canonical (<32<Q) and fill the whole second owner.
+    product.fill_with(|i| compress(coefficient.coefficients()[i], 5));
+    pack_into(product.coefficients(), 5, &mut out[VECTOR_BYTES..]);
 }
 fn pke_encrypt(ek: &EncapsulationKey, m: &[u8; 32], seed: &[u8]) -> Ciphertext {
     let mut out = SecretBox::zero();
@@ -308,32 +312,31 @@ fn pke_encrypt(ek: &EncapsulationKey, m: &[u8; 32], seed: &[u8]) -> Ciphertext {
     Ciphertext(out)
 }
 fn pke_decrypt(sk: &[u8], c: &Ciphertext) -> Zeroizing<[u8; 32]> {
-    let mut s = std::array::from_fn(|_| Poly::zero());
-    decode_vector_into(sk, false, &mut s).expect("validated decapsulation key");
+    debug_assert_eq!(sk.len(), VECTOR_BYTES);
     // Noncanonical ciphertext coefficients are reduced internally; re-encryption
     // remains canonical and will force the implicit rejection path.
-    let mut u = std::array::from_fn(|_| Poly::zero());
-    decode_vector_into(&c.0[..VECTOR_BYTES], false, &mut u).expect("fixed ciphertext length");
+    let mut secret = Poly::zero();
+    let mut value = Poly::zero();
     let mut v = Poly::zero();
     v.fill_with(|i| decompress(unpack_coefficient(&c.0[VECTOR_BYTES..], 5, i), 5));
     let mut left = NttPoly::zero();
     let mut right = NttPoly::zero();
     let mut sum = NttPoly::zero();
-    for (secret, value) in s.iter().zip(&u) {
+    for i in 0..RANK {
+        decode_polynomial_into(&sk[i * POLY_BYTES..(i + 1) * POLY_BYTES], &mut secret);
+        decode_polynomial_into(&c.0[i * POLY_BYTES..(i + 1) * POLY_BYTES], &mut value);
         secret.forward_into(&mut left);
         value.forward_into(&mut right);
         sum.multiply_add_assign(&left, &right);
     }
-    let mut product = Poly::zero();
-    sum.inverse_into(&mut product);
-    v.subtract_assign(&product);
+    // The secret coefficient row is no longer needed; reuse its existing owner.
+    sum.inverse_into(&mut secret);
+    v.subtract_assign(&secret);
     recover_message(&v)
 }
 fn keygen_internal(d: &[u8; 32], z: &[u8; 32]) -> (EncapsulationKey, DecapsulationKey) {
-    let mut s = std::array::from_fn(|_| Poly::zero());
-    let ek = pke_keygen_into(d, &mut s);
     let mut sk = SecretBox::zero();
-    encode_vector_into(&s, &mut sk[..VECTOR_BYTES]);
+    let ek = pke_keygen_into(d, &mut sk[..VECTOR_BYTES]);
     sk[VECTOR_BYTES..VECTOR_BYTES + PUBLIC_KEY_BYTES].copy_from_slice(ek.as_bytes());
     sk[VECTOR_BYTES + PUBLIC_KEY_BYTES..PRIVATE_KEY_BYTES - 32]
         .copy_from_slice(&hash_public(ek.as_bytes()));
@@ -642,6 +645,39 @@ mod tests {
             DecapsulationKey::from_bytes(&bad),
             Err(Error::NoncanonicalEncoding)
         ));
+    }
+
+    #[test]
+    fn every_encoded_row_is_checked_before_the_private_hash() {
+        let (ek, dk) = keygen_internal(&[23; 32], &[29; 32]);
+        for row in 0..RANK {
+            for position in [0, DEGREE - 1] {
+                let mut coefficients = [0; DEGREE];
+                coefficients[position] = Q;
+                let encoded = pack(&coefficients, 13);
+                let mut public = ek.as_bytes().to_vec();
+                public[row * POLY_BYTES..(row + 1) * POLY_BYTES].copy_from_slice(&encoded);
+                assert!(matches!(
+                    EncapsulationKey::from_bytes(&public),
+                    Err(Error::NoncanonicalEncoding)
+                ));
+
+                let mut private = dk.to_bytes();
+                private[VECTOR_BYTES..VECTOR_BYTES + PUBLIC_KEY_BYTES].copy_from_slice(&public);
+                // Both embedded public encoding and its hash are now invalid.
+                assert!(matches!(
+                    DecapsulationKey::from_bytes(&private),
+                    Err(Error::NoncanonicalEncoding)
+                ));
+                let mut private = dk.to_bytes();
+                private[row * POLY_BYTES..(row + 1) * POLY_BYTES].copy_from_slice(&encoded);
+                private[VECTOR_BYTES + PUBLIC_KEY_BYTES] ^= 1;
+                assert!(matches!(
+                    DecapsulationKey::from_bytes(&private),
+                    Err(Error::NoncanonicalEncoding)
+                ));
+            }
+        }
     }
 
     #[test]
