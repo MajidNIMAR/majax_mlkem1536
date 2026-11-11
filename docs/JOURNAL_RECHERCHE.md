@@ -1805,3 +1805,21 @@ aucun niveau global en bits ou catégorie NIST n'est déduit des tests ou
 des 1536 coefficients. La description courte est mise à jour et relue par
 l'API pour refléter ce même état M08. Sources du moteur, paramètres, contrôles et archives
 scientifiques restent inchangés ; il s'agit d'une actualisation éditoriale.
+
+## 11 novembre 2026 — Revue des cinq observations techniques M08
+
+Les observations sur temps constant ARM, C01, effacement, domaine du bruit
+et ordre des erreurs sont confrontées au code, aux preuves et aux sources
+primaires Arm/Android/NIST. La note REVUE_CRITIQUE_M08_CIBLES_ET_CONTRATS
+distingue obligations ouvertes et contrats déjà couverts. La comparaison
+numérique est rectifiée : 7681 > 3329. Les images qualifiées restent
+x86-64 Windows/Linux ; aucune fuite ou qualification Android n'est constatée.
+
+Le domaine TAG||N||00||seed32||nonce1 et les nonces CBD sont déjà spécifiés.
+Le scénario première ligne secrète non canonique et hash incohérent est
+déjà testé dans le test cité et le consommateur M08. Vérification ciblée :
+un test Rust exécuté et 13 cas du consommateur original passent, dont le
+cas combiné NoncanonicalEncoding. Reçus locaux dans m08-review-001.
+Les sources du moteur, la spécification et toutes les archives sont
+inchangées. La qualification Android reste un travail prospectif dépendant
+d'une cible matérielle précise ; C01 demeure ouvert.

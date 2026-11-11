@@ -16,6 +16,13 @@ qualifies removal of the targeted decoded-coefficient stack copies on the
 examined invalid-secret paths of the default-feature API consumers.
 This finding is specific to the preserved images and paths.
 
+Published M08 image reviews cover GNU x86-64 Windows and Linux/WSL.
+Android/ARM is not qualified by those results. Arithmetic instruction timing
+and secret-copy behavior require the actual target ABI, compiler/link flags
+and CPU to be examined. The [target and contract review](docs/REVUE_CRITIQUE_M08_CIBLES_ET_CONTRATS.md)
+records this boundary, the already specified noise domains and the combined
+invalid-secret/invalid-hash test that is already covered.
+
 The mathematical support includes exact correctness certificates linked to
 source and conditional ROM/QROM security arguments. **C01, the complete
 concrete security argument for R1, remains open.** The published tests and

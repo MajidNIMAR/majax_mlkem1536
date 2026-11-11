@@ -8,6 +8,13 @@ la frontière entre implémentation durcie et sécurité cryptographique
 conditionnelle. Les mesures et arguments cités restent ceux des instantanés
 figés ; cette actualisation de présentation n'ajoute pas d'expérience.
 
+La [revue des cibles et contrats M08](REVUE_CRITIQUE_M08_CIBLES_ET_CONTRATS.md)
+confronte les cinq observations reçues au code et à la spécification :
+qualification ARM/Android encore ouverte, C01 non fermé, domaines CBD déjà
+spécifiés et test combinant secret non canonique/hash incohérent déjà présent.
+Le test Rust et les 13 cas du consommateur Windows sont revérifiés avec
+succès ; aucune propriété Android ni modification de R1 n'en découle.
+
 **M08 livré et publié — import direct des clés et validation élargie.** Le
 [protocole M08](PROTOCOLE_M08_IMPORTS.md) est fixé avant modification du
 moteur : référence M07, contrôle direct des encodages, consommateur API

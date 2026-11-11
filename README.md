@@ -61,9 +61,12 @@ scope and raw results.
 | Implementation hardening | Validated encodings, zeroizing secret owners and a bounded machine-code review qualifying removal of targeted import spills; register/ABI/all-PKE erasure and formal constant time remain outside that result |
 | Cryptographic security argument | Exact correctness certificates and conditional ROM/QROM analyses under stated assumptions; the full concrete R1 argument **C01 remains open** |
 | External assurance and security rating | A certified global bit rating, NIST category or external cryptographic audit is not established by these artifacts; **1536 denotes the coefficient count** |
+| Target qualification | Published M08 image reviews concern GNU x86-64 Windows/Linux; Android/ARM timing and register/ABI behavior require their own qualification |
 
 The [security status](SECURITY.md) separates the current M08 correction,
 historical findings and the remaining cryptographic obligations.
+The [five-point technical review](docs/REVUE_CRITIQUE_M08_CIBLES_ET_CONTRATS.md)
+records the Android boundary, noise-domain framing and existing error-order tests.
 
 ## Research program and engine architecture
 
