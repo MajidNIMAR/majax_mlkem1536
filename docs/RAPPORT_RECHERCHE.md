@@ -2,6 +2,12 @@
 
 Version de travail du 11 novembre 2026. Ce document est la base évolutive du futur article. Le [journal](JOURNAL_RECHERCHE.md) conserve les étapes et décisions ; les [résultats figés de J2](../results/j2/run-001/) conservent les calculs et leur provenance. Une modification du rapport doit rester cohérente avec ces données.
 
+La présentation publique comporte un [résumé des résultats et garanties](../README.md#latest-verified-results--m08)
+avec les gains d'import M08, les résultats antérieurs M06/M07 distingués et
+la frontière entre implémentation durcie et sécurité cryptographique
+conditionnelle. Les mesures et arguments cités restent ceux des instantanés
+figés ; cette actualisation de présentation n'ajoute pas d'expérience.
+
 **M08 livré et publié — import direct des clés et validation élargie.** Le
 [protocole M08](PROTOCOLE_M08_IMPORTS.md) est fixé avant modification du
 moteur : référence M07, contrôle direct des encodages, consommateur API

@@ -1,9 +1,30 @@
 # Security and research status
 
 MAJAX R6 develops the experimental profile `KEM1536-DEV-Q7681-R1`.
-It is intended for research, reproducibility and independent review.
-Parameter selection and cryptanalysis remain open. No NIST certification,
+R1 is a specified and implemented profile intended for research,
+reproducibility and independent review. Its suitability for production and
+standardization remains to be established through further cryptanalysis
+and review. No NIST certification,
 formal constant-time guarantee or production-security claim is made.
+
+## Current assurance boundary
+
+The current delivered engineering milestone is M08. Functional agreement,
+format compatibility, finite malformed-input tests, sanitizer fuzzing and
+fresh Windows/Ubuntu integration are documented. Its [import review](docs/M08_IMPORTS_ET_VALIDATION.md)
+qualifies removal of the targeted decoded-coefficient stack copies on the
+examined invalid-secret paths of the default-feature API consumers.
+This finding is specific to the preserved images and paths.
+
+The mathematical support includes exact correctness certificates linked to
+source and conditional ROM/QROM security arguments. **C01, the complete
+concrete security argument for R1, remains open.** The published tests and
+lattice-attack estimates do not assign a certified global security-bit
+rating. The number 1536 is the coefficient count. Whole-program constant
+time, universal erasure and independent external cryptographic audit or
+certification are not established by this evidence.
+
+## Historical findings and their qualified corrections
 
 Known findings are recorded in
 [the historical M03 review](docs/M03_FUZZ_BINAIRES_BENCHMARKS.md).

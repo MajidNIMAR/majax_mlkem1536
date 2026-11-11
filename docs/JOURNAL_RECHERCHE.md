@@ -1785,3 +1785,23 @@ changer un octet dans results/publication/r6-m08-controls-001, avec README
 et manifeste. Le lecteur copié rejoue la vraie capsule avec code 0 ; les
 11 tests purs copiés passent. Le dépôt public donne ainsi accès au lecteur,
 sans dépendre d'un outil privé de l'atelier. La capsule CI reste inchangée.
+
+## 11 novembre 2026 — Visibilité des résultats et niveau de garantie
+
+À la demande de l'utilisateur, la description publique est confrontée à
+l'API GitHub et au README de main. Le README distant correspond exactement
+à la clôture M08 publiée ; la description courte reste générale et les
+accélérations d'import sont jusqu'ici dans l'étude détaillée. Une vue du
+service de consultation renvoie encore une présentation initiale ; l'état
+de main est vérifié directement par l'API, sans considérer cette vue comme
+un état actuel de main.
+
+Le README reçoit une synthèse visible des médianes d'import M08, des gains
+antérieurs M06/M07 présentés séparément, des tests/fuzzing/oracle et de la
+frontière de sécurité. SECURITY distingue le profil R1 opérationnel, la
+correction ciblée M08 et les constats historiques M07. Aucun facteur de
+vitesse global n'est obtenu en multipliant des comparaisons de jalons ;
+aucun niveau global en bits ou catégorie NIST n'est déduit des tests ou
+des 1536 coefficients. La description courte est mise à jour et relue par
+l'API pour refléter ce même état M08. Sources du moteur, paramètres, contrôles et archives
+scientifiques restent inchangés ; il s'agit d'une actualisation éditoriale.

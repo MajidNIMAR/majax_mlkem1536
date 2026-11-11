@@ -20,6 +20,51 @@ evidence needed to examine its evolution.
 
 [![Main-branch checks](https://github.com/MajidNIMAR/majax_mlkem1536/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/MajidNIMAR/majax_mlkem1536/actions/workflows/ci.yml)
 
+## Latest verified results — M08
+
+**M08 is the current delivered engineering milestone.** The Rust engine
+implements KeyGen, Encaps, Decaps and implicit rejection for the specified
+R1 profile. M08 strengthens key import while preserving R1 formats and
+outputs. Its measured import medians are:
+
+| Valid key import | Windows, M07 → M08 | Linux/WSL2, M07 → M08 |
+|---|---:|---:|
+| Public key | 18.900 → **1.400 µs** (**13.50×**) | 19.119 → **1.240 µs** (**15.42×**) |
+| Private key | 46.200 → **11.200 µs** (**4.12×**) | 47.122 → **10.936 µs** (**4.31×**) |
+
+These are operation-specific observations on the recorded environments.
+The four core KEM operations remain close to M07. The [M08 study](docs/M08_IMPORTS_ET_VALIDATION.md)
+retains the full distributions, source and executable identities, and limits:
+300,000 latency observations, 2,880 memory observations and 210 passed budgets.
+
+Earlier engine improvements are documented separately: [M06](docs/M06_MESURES_ET_DURCISSEMENT.md)
+measured **1.79× / 1.87× / 1.76×** gains for KeyGen / Encaps / valid Decaps
+on its Linux panel. [M07](docs/M07_MEMOIRE_ET_VALIDATION.md) reduced observed
+decapsulation touched-stack maxima from **23,688 to 13,064 bytes** on Windows
+and **23,336 to 12,696 bytes** on Linux; M08 retains those maxima. These
+stage-specific results are not combined into a cumulative speedup or a
+universal memory bound.
+
+The current validation includes **352 Python tests per OS**, Rust tests and
+fresh Windows/Ubuntu CI; complete regression replay on both measured hosts;
+**7,256.67 new CPU seconds of ASan/std-rebuilt fuzzing** without an observed
+defect; and **3,156 deterministic requests** matched to the independent Python
+reference, including 433 accepted-private-key decapsulation probes.
+The LLVM union records **438/604 mapped core lines and 17/36 branches**, with
+zero-count mappings retained. The [M08 evidence](results/engine/m08-001/)
+and [hosted execution receipts](results/publication/r6-m08-001/) preserve the
+scope and raw results.
+
+| Assurance area | Current published status |
+|---|---|
+| Functional engine and compatibility | Implemented and exercised on Windows/Linux; complete reference corpora match and R1 formats remain compatible |
+| Implementation hardening | Validated encodings, zeroizing secret owners and a bounded machine-code review qualifying removal of targeted import spills; register/ABI/all-PKE erasure and formal constant time remain outside that result |
+| Cryptographic security argument | Exact correctness certificates and conditional ROM/QROM analyses under stated assumptions; the full concrete R1 argument **C01 remains open** |
+| External assurance and security rating | A certified global bit rating, NIST category or external cryptographic audit is not established by these artifacts; **1536 denotes the coefficient count** |
+
+The [security status](SECURITY.md) separates the current M08 correction,
+historical findings and the remaining cryptographic obligations.
+
 ## Research program and engine architecture
 
 The work connects three areas:
@@ -141,8 +186,10 @@ campaign and Windows/Linux packages with compact compilable source and licenses.
 Linux's repeat build is byte-identical; Windows differs only in the COFF
 timestamp and PE checksum. Both use the same source path, toolchain and shared
 dependency caches; this is not an independent third-party reproduction.
-The packages ship the original reviewed binaries. A preexisting invalid-private-key
-import spill limitation remains documented in [SECURITY](SECURITY.md).
+The packages ship the original reviewed binaries. The frozen M07 binaries
+retain the import-spill finding documented in [SECURITY](SECURITY.md).
+M08's separate consumer review qualifies the targeted correction described
+above, with its remaining register/ABI/PKE limits.
 
 ## Previous engineering milestone: M06
 
