@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "local_source_commit": "09a9f195ce7e6bda00c8e10fb734fcc09aa51661",
+  "local_source_commit": "c7e34d3067e7761413196917e16868b21525234a",
   "profile": "KEM1536-DEV-Q7681-R1",
   "excluded_paths": [
     "AGENTS.md",
@@ -242,7 +242,7 @@
     "research/sage-linux-packages.json": "bc9c31845bd038ecd54cd647fc589b8b906452e59f2569089e5506c78212e2f1",
     "research/score_transfer.py": "d40d4b6f6e58e9dea2af64979850bd8315881038c5d578223ad11755afa5e6c1",
     "research/sieve_models.py": "c957772ed3b71ff2ed9dbc2c89e189d1c2449e681bed60d6a771663eacbab7de",
-    "research/smoke_m07_package.py": "c0f6e23866c76b83320bf0ae6896b4ad7744f1a6a9f26609cf0be1d90a6b6b06",
+    "research/smoke_m07_package.py": "886d44f559c4009667de991953ef125841d1204661494ebb2831c89c8c1f6c47",
     "research/summarize_m03_bench.py": "0ffdc46390ca3ba4bcd3ddd13d72439a336285c060d2e654a05b66c16d23f17a",
     "research/test_additive_score.py": "283326b9a5673982dee98e2a0accfc0ad580604841483571ec351b1212e396fa",
     "research/test_archive_m07.py": "868baff538e246adad31cdcaa13f9f0aae44dc277472da29ddb77f66f39a8e24",
@@ -2176,7 +2176,7 @@
     "research/sage-linux-packages.json": "bc9c31845bd038ecd54cd647fc589b8b906452e59f2569089e5506c78212e2f1",
     "research/score_transfer.py": "d40d4b6f6e58e9dea2af64979850bd8315881038c5d578223ad11755afa5e6c1",
     "research/sieve_models.py": "c957772ed3b71ff2ed9dbc2c89e189d1c2449e681bed60d6a771663eacbab7de",
-    "research/smoke_m07_package.py": "c0f6e23866c76b83320bf0ae6896b4ad7744f1a6a9f26609cf0be1d90a6b6b06",
+    "research/smoke_m07_package.py": "886d44f559c4009667de991953ef125841d1204661494ebb2831c89c8c1f6c47",
     "research/summarize_m03_bench.py": "0ffdc46390ca3ba4bcd3ddd13d72439a336285c060d2e654a05b66c16d23f17a",
     "research/test_additive_score.py": "283326b9a5673982dee98e2a0accfc0ad580604841483571ec351b1212e396fa",
     "research/test_archive_m07.py": "868baff538e246adad31cdcaa13f9f0aae44dc277472da29ddb77f66f39a8e24",
@@ -3884,5 +3884,5 @@
     "vectors/nist-acvp/ML-KEM-keyGen-FIPS203/prompt.json": "3f9ce34f6c836c77958bad2729e837c3b213f44ac36c3065976e7acca6389523",
     "vectors/nist-acvp/NIST-NOTICE.txt": "5cf49b45a3eb4bee05d9491dbd05af1ceae4adf5f0ca59890e633469cb1f8156"
   },
-  "previous_public_commit": "e7e8059031de5350ba0b71c7cfe379a74cb83414"
+  "previous_public_commit": "4f4b9aa8561753b8d13ea5ee69ccf71d25c60f87"
 }

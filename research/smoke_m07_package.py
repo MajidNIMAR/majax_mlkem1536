@@ -37,7 +37,7 @@ def smoke():
                 "packaged original self-test differs")
         for command in RESEARCH_COMMANDS:
             run = subprocess.run([str(executable), *command], capture_output=True, timeout=30)
-            require(run.returncode != 0 and run.stdout == b"", "packaged original enables research commands")
+            require(run.returncode == 1 and run.stdout == b"", "packaged original did not reject the command normally")
         return {"host": host, "original_binary_sha256": expected, "self_test": test,
                 "research_commands_rejected": len(RESEARCH_COMMANDS), "new_compilation_performed": False}
 
