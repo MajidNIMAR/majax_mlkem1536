@@ -1518,3 +1518,12 @@ habituel target/release/kem1536.exe est l’original revu c707186a…, copie exa
 et nouvel auto-test 16/16 conservés. La publication et les contrôles GitHub
 Windows/Ubuntu restent à consigner. Les obligations de sécurité C01 restent
 ouvertes ; les gains d’implémentation ne les ferment pas.
+
+
+**Contrôle natif du paquet préparé pour CI.** Le contrôle
+research/smoke_m07_package.py extrait la livraison vérifiée, identifie
+l’original du système hôte et exécute 16 échanges/16 rejets puis les cinq
+commandes de recherche, qui doivent être refusées. Il passe localement
+sous Windows avec l’original c707186a…, sans compilation. Le workflow
+l’exécutera sur chacun des deux hôtes neufs après le check complet ;
+aucun succès GitHub n’est anticipé à ce stade.

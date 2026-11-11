@@ -45,3 +45,11 @@ jobs:
         if: runner.os == 'Linux'
         shell: bash
         run: bash scripts/dev.sh check
+      - name: Run the original M07 package on Windows
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: ./.tools/research-venv/Scripts/python.exe -B research/smoke_m07_package.py
+      - name: Run the original M07 package on Ubuntu
+        if: runner.os == 'Linux'
+        shell: bash
+        run: .tools/research-venv/bin/python -B research/smoke_m07_package.py

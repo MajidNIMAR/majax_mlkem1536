@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "local_source_commit": "94e911c25d3dc55f119be5d62354b9513ac3b672",
+  "local_source_commit": "09a9f195ce7e6bda00c8e10fb734fcc09aa51661",
   "profile": "KEM1536-DEV-Q7681-R1",
   "excluded_paths": [
     "AGENTS.md",
@@ -20,7 +20,7 @@
     ".cargo/config.toml": "6abf4f853edb1217e7b182d65dd5eba16c347eb7bf1826f54377e966451d593b",
     ".editorconfig": "2d8ef9ac927250a534788786a5b30850984510a73b7fe276dfebdad680bed7dd",
     ".gitattributes": "464337f60853e41340fa9239b533c61db32783b4ae7da75693acd1ce1bbcf293",
-    ".github/workflows/ci.yml": "d508671da28fea4eb0a73a5d1784594dc7cbbbdf98d810b304f4464605d39f58",
+    ".github/workflows/ci.yml": "b4f543017d519d471264d3d50eb38b4451ff51f69622e9e0d97639a74758ffe4",
     ".gitignore": "455af89e1315c0c2e5da28766d03485d92ab1ab0c8e284fe09eff1101091dc31",
     "CAHIER_DES_CHARGES_KEM_1536.md": "fd38ac50d4b79b6155c843f81e401dcd03de9c4bf641f1dc427f7335581bb2d9",
     "Cargo.lock": "ad9f28bdd7332407c054eed738e782a81e60f0c5180022e8b173fb2987f70cb3",
@@ -77,7 +77,7 @@
     "docs/DURCISSEMENT_MOTEUR_M02.md": "d136b5f49b26b85deaae391f877eeb9c7c27c660409392666cf474f975ec2d3a",
     "docs/ERRATA_FIPS203.md": "6dfee9493e472d6e43539aa1aa40744f1897ec3f2f4eee49a9c8c1d947c418cc",
     "docs/FEUILLE_DE_ROUTE_MOTEUR.md": "24ec81fe3cf3193d511b0114b72bb579f4ef47174ca7d6a7fc652a249dae995a",
-    "docs/JOURNAL_RECHERCHE.md": "a10a8636db57092392d04f38167aeff46ec5e739777e4c277c8346638f57ed57",
+    "docs/JOURNAL_RECHERCHE.md": "a4013cd1cd40db4d044dd1d0fd41f673d4218f3be27048c366eec26c1b6faf5e",
     "docs/LIEN_CERTIFICAT_PROGRAMME_R1.md": "10963159c517b37baa04720178c8189718ca69797ecc69df38b79de5d8642bd9",
     "docs/LISTES_DUALES_Q7681.md": "8fdc3ec12f0060e6b6f0b9f69f3496f5b3363aa376fb56ca530c75a3e27960c4",
     "docs/LLL_ET_FAMILLE_ELARGIE.md": "4bd0636a6cb717db6ec2397216d03382cf5297181f2873f24fe6284b79bc2c67",
@@ -242,6 +242,7 @@
     "research/sage-linux-packages.json": "bc9c31845bd038ecd54cd647fc589b8b906452e59f2569089e5506c78212e2f1",
     "research/score_transfer.py": "d40d4b6f6e58e9dea2af64979850bd8315881038c5d578223ad11755afa5e6c1",
     "research/sieve_models.py": "c957772ed3b71ff2ed9dbc2c89e189d1c2449e681bed60d6a771663eacbab7de",
+    "research/smoke_m07_package.py": "c0f6e23866c76b83320bf0ae6896b4ad7744f1a6a9f26609cf0be1d90a6b6b06",
     "research/summarize_m03_bench.py": "0ffdc46390ca3ba4bcd3ddd13d72439a336285c060d2e654a05b66c16d23f17a",
     "research/test_additive_score.py": "283326b9a5673982dee98e2a0accfc0ad580604841483571ec351b1212e396fa",
     "research/test_archive_m07.py": "868baff538e246adad31cdcaa13f9f0aae44dc277472da29ddb77f66f39a8e24",
@@ -1953,7 +1954,7 @@
     ".cargo/config.toml": "6abf4f853edb1217e7b182d65dd5eba16c347eb7bf1826f54377e966451d593b",
     ".editorconfig": "2d8ef9ac927250a534788786a5b30850984510a73b7fe276dfebdad680bed7dd",
     ".gitattributes": "464337f60853e41340fa9239b533c61db32783b4ae7da75693acd1ce1bbcf293",
-    ".github/workflows/ci.yml": "d508671da28fea4eb0a73a5d1784594dc7cbbbdf98d810b304f4464605d39f58",
+    ".github/workflows/ci.yml": "b4f543017d519d471264d3d50eb38b4451ff51f69622e9e0d97639a74758ffe4",
     ".gitignore": "455af89e1315c0c2e5da28766d03485d92ab1ab0c8e284fe09eff1101091dc31",
     "CAHIER_DES_CHARGES_KEM_1536.md": "fd38ac50d4b79b6155c843f81e401dcd03de9c4bf641f1dc427f7335581bb2d9",
     "Cargo.lock": "ad9f28bdd7332407c054eed738e782a81e60f0c5180022e8b173fb2987f70cb3",
@@ -2010,7 +2011,7 @@
     "docs/DURCISSEMENT_MOTEUR_M02.md": "d136b5f49b26b85deaae391f877eeb9c7c27c660409392666cf474f975ec2d3a",
     "docs/ERRATA_FIPS203.md": "6dfee9493e472d6e43539aa1aa40744f1897ec3f2f4eee49a9c8c1d947c418cc",
     "docs/FEUILLE_DE_ROUTE_MOTEUR.md": "24ec81fe3cf3193d511b0114b72bb579f4ef47174ca7d6a7fc652a249dae995a",
-    "docs/JOURNAL_RECHERCHE.md": "a10a8636db57092392d04f38167aeff46ec5e739777e4c277c8346638f57ed57",
+    "docs/JOURNAL_RECHERCHE.md": "a4013cd1cd40db4d044dd1d0fd41f673d4218f3be27048c366eec26c1b6faf5e",
     "docs/LIEN_CERTIFICAT_PROGRAMME_R1.md": "10963159c517b37baa04720178c8189718ca69797ecc69df38b79de5d8642bd9",
     "docs/LISTES_DUALES_Q7681.md": "8fdc3ec12f0060e6b6f0b9f69f3496f5b3363aa376fb56ca530c75a3e27960c4",
     "docs/LLL_ET_FAMILLE_ELARGIE.md": "4bd0636a6cb717db6ec2397216d03382cf5297181f2873f24fe6284b79bc2c67",
@@ -2175,6 +2176,7 @@
     "research/sage-linux-packages.json": "bc9c31845bd038ecd54cd647fc589b8b906452e59f2569089e5506c78212e2f1",
     "research/score_transfer.py": "d40d4b6f6e58e9dea2af64979850bd8315881038c5d578223ad11755afa5e6c1",
     "research/sieve_models.py": "c957772ed3b71ff2ed9dbc2c89e189d1c2449e681bed60d6a771663eacbab7de",
+    "research/smoke_m07_package.py": "c0f6e23866c76b83320bf0ae6896b4ad7744f1a6a9f26609cf0be1d90a6b6b06",
     "research/summarize_m03_bench.py": "0ffdc46390ca3ba4bcd3ddd13d72439a336285c060d2e654a05b66c16d23f17a",
     "research/test_additive_score.py": "283326b9a5673982dee98e2a0accfc0ad580604841483571ec351b1212e396fa",
     "research/test_archive_m07.py": "868baff538e246adad31cdcaa13f9f0aae44dc277472da29ddb77f66f39a8e24",
@@ -3882,5 +3884,5 @@
     "vectors/nist-acvp/ML-KEM-keyGen-FIPS203/prompt.json": "3f9ce34f6c836c77958bad2729e837c3b213f44ac36c3065976e7acca6389523",
     "vectors/nist-acvp/NIST-NOTICE.txt": "5cf49b45a3eb4bee05d9491dbd05af1ceae4adf5f0ca59890e633469cb1f8156"
   },
-  "previous_public_commit": "bc424824856f0fa1c0419accf2dc57a15506b896"
+  "previous_public_commit": "e7e8059031de5350ba0b71c7cfe379a74cb83414"
 }
