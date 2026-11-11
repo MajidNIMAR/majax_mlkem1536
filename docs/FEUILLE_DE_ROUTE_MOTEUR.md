@@ -124,7 +124,11 @@ MAJAX R6 désigne le moteur expérimental de rang 6, soit six polynômes de
 section conserve les critères de sortie définis avant leur exécution.
 Le [bilan M07](M07_MEMOIRE_ET_VALIDATION.md) consigne désormais les mesures,
 les budgets satisfaits et les paquets vérifiés. Le contrôle complet Windows
-passe à 227 tests Python ; les exécutants GitHub neufs restent à consigner.
+passe à 227 tests Python. Les exécutants GitHub neufs Windows/Ubuntu passent
+également, avec 227 tests chacun et essais natifs des deux paquets originaux ;
+voir les [reçus de publication](../results/publication/r6-m07-001/).
+Le jalon mémoire/livraison est clôturé dans ce périmètre ; le volet de sécurité
+du point 5 conserve ses obligations ouvertes.
 
 1. **Mesurer la mémoire réelle de M06.** Établir le pic dynamique de pile,
    les allocations et leurs tailles pour KeyGen, Encaps et Decaps valide

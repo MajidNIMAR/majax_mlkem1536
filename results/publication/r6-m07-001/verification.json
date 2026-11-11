@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "public_tested_commit": "97d776c5a25f67c86a70fe83694c3e82425c0b33",
+  "local_source_commit": "c7e34d3067e7761413196917e16868b21525234a",
+  "run_id": 42936652940,
+  "url": "https://github.com/MajidNIMAR/majax_mlkem1536/actions/runs/42936652940",
+  "runners": {
+    "ubuntu-24.04": {
+      "python_tests": 227,
+      "native_original_package": {
+        "host": "linux",
+        "original_binary_sha256": "da097bdcd1340e6766791abdc1eb416e5fba4c1ebf8d2a775359a49a7e205014",
+        "self_test": {
+          "elapsed_seconds": 0.029419527,
+          "fresh_round_trips": 16,
+          "implicit_rejections_checked": 16,
+          "profile": "KEM1536-DEV-Q7681-R1",
+          "secrets_printed": false,
+          "security_validation": "pending"
+        },
+        "research_commands_rejected": 5,
+        "new_compilation_performed": false
+      },
+      "job_id": 130248267226,
+      "required_steps_verified": true
+    },
+    "windows-latest": {
+      "python_tests": 227,
+      "native_original_package": {
+        "host": "windows",
+        "original_binary_sha256": "c707186a5da83d5a5ed4523d713bdb204c95412818d8d18ba0a9ba9029105f33",
+        "self_test": {
+          "elapsed_seconds": 0.0420248,
+          "fresh_round_trips": 16,
+          "implicit_rejections_checked": 16,
+          "profile": "KEM1536-DEV-Q7681-R1",
+          "secrets_printed": false,
+          "security_validation": "pending"
+        },
+        "research_commands_rejected": 5,
+        "new_compilation_performed": false
+      },
+      "job_id": 130248266298,
+      "required_steps_verified": true
+    }
+  },
+  "source_integrity": {
+    "public_commit": "97d776c5a25f67c86a70fe83694c3e82425c0b33",
+    "source_commit": "c7e34d3067e7761413196917e16868b21525234a",
+    "canonical_git_blobs_verified": 1932,
+    "exported_files_verified": 1932,
+    "all_equal": true,
+    "attribute_converted_paths": [
+      "scripts/bootstrap-modern.ps1",
+      "scripts/bootstrap.ps1",
+      "scripts/dev.ps1",
+      "scripts/engine.ps1",
+      "scripts/m03.ps1",
+      "scripts/reproduce-release.ps1",
+      "scripts/research-setup.ps1"
+    ],
+    "method": "Independent git cat-file --batch SHA-256 of each public commit blob, plus streamed hash of each exported working file; both compared to their schema-2 source maps"
+  },
+  "scope": "Fresh hosted complete dev checks plus native execution of each preserved original package. Historical measurements, disassembly and fuzzing are replayed data, not renewed experiments. Native package self-tests are fresh 16 exchanges and 16 rejections per host with five normally rejected research commands."
+}

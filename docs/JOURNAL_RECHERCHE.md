@@ -1527,3 +1527,34 @@ commandes de recherche, qui doivent être refusées. Il passe localement
 sous Windows avec l’original c707186a…, sans compilation. Le workflow
 l’exécutera sur chacun des deux hôtes neufs après le check complet ;
 aucun succès GitHub n’est anticipé à ce stade.
+
+
+## 11 novembre 2026 — M07, contrôles neufs et clôture documentaire
+
+La publication main atteint 97d776c5a25f67c86a70fe83694c3e82425c0b33,
+source locale c7e34d3067e7761413196917e16868b21525234a. Le contrôle
+indépendant compare les 1932 fichiers exportés et les 1932 blobs canoniques
+aux deux cartes de provenance, avec sept conversions PowerShell explicites.
+
+Le run GitHub 42936652940 réussit sur Windows et Ubuntu : 227 tests Python
+par hôte, tests Rust avec/sans toutes fonctionnalités, fmt, Clippy strict,
+rejeux et auto-tests. Les originaux des paquets sont ensuite exécutés sur
+chaque hôte neuf, sans reconstruction de ces originaux : Windows c707186a…
+et Linux da097bdc…, chacun 16 échanges/16 rejets et cinq commandes de
+recherche refusées par le code normal 1. Ce dernier contrôle distingue
+ainsi un rejet attendu d’un crash. Les anciens corpus et mesures ne sont
+pas transformés en expériences neuves par leur rejeu.
+
+results/publication/r6-m07-001 conserve huit membres et sa provenance,
+soit neuf fichiers : réponses API liées au HEAD/run, jobs distincts par OS,
+ZIP de logs intègre, reçu de capture, intégrité des sources, provenance
+committée et bilan. Les étapes conditionnelles de l’autre OS sont les
+seules ignorées. Les doublons des lignes de tests entre logs globaux et
+par étape ne sont pas comptés comme quatre campagnes.
+
+La clôture ajoute les reçus et actualise le rapport, README et feuille
+de route. Elle conserve le code exécutable, les contrôles et archives
+scientifiques testés. Le jalon M07 mémoire/livraison est clos dans son
+périmètre fini ; C01, l’effacement global, la preuve CT et la revue externe
+restent ouverts. Les observations défavorables de latence et d’import
+sont préservées.

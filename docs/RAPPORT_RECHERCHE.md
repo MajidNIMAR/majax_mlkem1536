@@ -2,7 +2,7 @@
 
 Version de travail du 11 novembre 2026. Ce document est la base évolutive du futur article. Le [journal](JOURNAL_RECHERCHE.md) conserve les étapes et décisions ; les [résultats figés de J2](../results/j2/run-001/) conservent les calculs et leur provenance. Une modification du rapport doit rester cohérente avec ces données.
 
-**M07 en cours — critères mémoire et latence satisfaits.** Le moteur
+**M07 — mémoire, latence et livraison validées dans le périmètre mesuré.** Le moteur
 traite désormais les polynômes en coefficients ligne par ligne, en
 conservant les six opérandes NTT. Les 2240 observations mémoire et les
 80000 observations comparatives de latence satisfont les 116 contrôles
@@ -19,7 +19,16 @@ harnais. La revue bornée des quatre binaires est scellée, les deux paquets
 sont validés et l'[archive complète M07](../results/engine/m07-001/) se rejoue.
 Le [contrôle complet Windows](../results/engine/m07-verification-001/) réussit
 avec 227 tests Python, Rust/fmt/Clippy, rejeux et auto-tests. Les contrôles
-GitHub neufs Windows/Ubuntu et leur publication restent à consigner.
+GitHub neufs Windows/Ubuntu réussissent dans le
+[run 42936652940](https://github.com/MajidNIMAR/majax_mlkem1536/actions/runs/42936652940),
+pour le [commit public 97d776c](https://github.com/MajidNIMAR/majax_mlkem1536/commit/97d776c5a25f67c86a70fe83694c3e82425c0b33).
+Chaque hôte passe 227 tests Python et le check complet, puis exécute l'original
+de son paquet : 16 échanges, 16 rejets et cinq refus normaux de commandes de
+recherche. L'[archive de publication M07](../results/publication/r6-m07-001/)
+conserve huit membres et son manifeste, dont les journaux bruts et la
+concordance des 1932 fichiers exportés/blobs canoniques. Ces essais natifs
+sont frais ; les anciennes campagnes et mesures sont des données rejouées.
+La clôture documentaire conserve le code, les contrôles et les preuves testés.
 
 **Présentation du projet — MAJAX R6.** Le nom de présentation met en avant
 le programme de recherche, l'ingénierie et l'architecture cryptographique.

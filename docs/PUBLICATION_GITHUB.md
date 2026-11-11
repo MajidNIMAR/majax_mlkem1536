@@ -191,3 +191,23 @@ régressions intégrales restent liées à leurs archives M06 propres.
 Le commit de clôture ajoute ces reçus et met à jour les documents sans
 modifier le code ni les commandes contrôlés sur main. La feuille de route
 définit M07 comme un travail prévu de mesure et d'optimisation mémoire.
+
+
+## 11 novembre 2026 — publication M07 et exécution des paquets originaux
+
+Le [run 42936652940](https://github.com/MajidNIMAR/majax_mlkem1536/actions/runs/42936652940)
+réussit au commit public `97d776c`, source locale `c7e34d3`, sous Windows
+et Ubuntu : **227 tests Python par hôte**, Rust avec/sans toutes
+fonctionnalités, formatage, Clippy strict, rejeux et auto-tests. Chaque
+exécutant lance ensuite son binaire original livré, avec 16 échanges,
+16 rejets et cinq refus normaux de commandes de recherche, sans compiler
+à nouveau cet original.
+
+L’[archive de publication M07](../results/publication/r6-m07-001/) conserve
+huit membres et son manifeste : API et jobs liés au HEAD/run exacts, logs
+ZIP testés, capture, intégrité des 1932 fichiers exportés/blobs canoniques,
+provenance committée et bilan. Les mesures, revues assembleur et campagnes
+historiques sont des données rejouées ; les essais natifs des paquets sont
+frais. Les résultats propres à M07 sont dans
+[l’archive moteur](../results/engine/m07-001/). La clôture documentaire
+conserve les fichiers exécutables, contrôles et archives du commit testé.

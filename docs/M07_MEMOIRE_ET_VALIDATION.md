@@ -1,7 +1,8 @@
 # M07 — Mémoire du moteur et validation de la variante streamée
 
-11 novembre 2026. **Implémentation, mesures, revue binaire, campagne
-instrumentée, paquets et contrôle complet Windows validés.** Le moteur
+11 novembre 2026. **Jalon mémoire et livraison clôturé : implémentation,
+mesures, revue bornée, campagne instrumentée, paquets et contrôles complets
+Windows/Ubuntu réussis dans le périmètre décrit.** Le moteur
 reste le profil `KEM1536-DEV-Q7681-R1`.
 
 ## Référence, décision et code
@@ -208,5 +209,20 @@ passe : 227 tests Python, Rust avec/sans toutes fonctionnalités, formatage,
 Clippy strict, rejeux et auto-tests. Les fichiers restent identiques entre
 le début et la fin du contrôle. Le CLI habituel `target/release/kem1536.exe`
 est remplacé par l'original Windows revu, avec empreinte et auto-test conservés.
-Le passage sur les exécutants GitHub neufs Windows/Ubuntu reste à consigner.
+Le passage sur les exécutants GitHub neufs Windows/Ubuntu réussit au
+[run 42936652940](https://github.com/MajidNIMAR/majax_mlkem1536/actions/runs/42936652940),
+HEAD public `97d776c`, source locale `c7e34d3`. Chaque hôte passe 227 tests
+Python, les tests Rust avec et sans toutes fonctionnalités, fmt, Clippy strict,
+les vérificateurs et les auto-tests. Après le check complet, chaque hôte
+exécute aussi l'original de son paquet, sans reconstruction : 16 échanges,
+16 rejets et cinq refus normaux (code 1) de commandes de recherche.
+
+L'[archive de publication](../results/publication/r6-m07-001/) lie les deux
+jobs au run/HEAD exacts, conserve les journaux bruts, la provenance committée
+et la vérification indépendante des 1932 fichiers exportés/blobs canoniques.
+Les étapes ignorées sont celles de l'autre système. Les répétitions de lignes
+de tests dans les journaux globaux et par étape ne sont pas des campagnes
+supplémentaires. Les données historiques sont rejouées ; les essais natifs
+de paquets sont frais. La clôture documentaire conserve les sources exécutables,
+contrôles et archives scientifiques du commit testé.
 Aucune clôture de C01, preuve globale d'effacement, CT ou audit externe n'est annoncée.

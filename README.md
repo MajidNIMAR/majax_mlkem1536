@@ -212,7 +212,18 @@ subsequent development and validation; each snapshot retains its own scope.
 Current public workflow results for the revision under test are available
 in the [repository's Actions tab](https://github.com/MajidNIMAR/majax_mlkem1536/actions).
 
-The updated **MAJAX R6 / M06** source passed the full checks on fresh
+The **M07** source passed the complete checks on fresh Windows and Ubuntu
+runners at commit `97d776c`, with **227 Python tests per platform**, Rust
+default/all-feature tests, strict Clippy, formatting, evidence replay and
+fresh engine self-tests. Each runner then executed its **original preserved
+M07 package**, checking 16 exchanges, 16 rejections and five normally rejected
+research commands. The [successful run](https://github.com/MajidNIMAR/majax_mlkem1536/actions/runs/42936652940)
+and [retained records](results/publication/r6-m07-001/) bind this to the exact
+revision and original binary hashes. Historical campaigns/measurements are
+data replays; the native package self-tests are fresh. The documentation
+closure preserves the tested executable source, controls and evidence.
+
+The earlier **MAJAX R6 / M06** source passed the full checks on fresh
 Windows and Ubuntu runners at [revision feaeef2](https://github.com/MajidNIMAR/majax_mlkem1536/commit/feaeef2d027b9f769c3623d92408fa2cb09e28b2),
 with **166 Python tests per platform**, Rust tests, formatting, strict
 Clippy, evidence replay and engine self-tests. The

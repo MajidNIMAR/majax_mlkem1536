@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "public_tested_commit": "97d776c5a25f67c86a70fe83694c3e82425c0b33",
+  "local_tested_source_commit": "c7e34d3067e7761413196917e16868b21525234a",
+  "output_sha256": {
+    "main/ci-logs.zip": "f0f9a7a1ad8b7dc6bbf6ba6e7568943b62672c24836e59243afc0a5d3c5a370e",
+    "main/jobs.json": "90cfd96b403365a1d77365c17c8efe70ccdef89ed9d404879ed9499dba5cb22c",
+    "main/receipt.json": "0cd0a8904c0b8eded301184e10435fa237b04c53c9e8f8f022cee2bb38fa2e9f",
+    "main/run.json": "919927d9f6257a067326fb71721a3426de6544b32d9eb65aa389a8d6dd02d1c8",
+    "README.md": "439d67a87aa0e39391ce2000479487ecab2fb6acc2b0b5bd7579bc43eeeadd62",
+    "source-integrity.json": "4ac5f8dce19ac994a2bd2ac6e5cd66f3d73da58a997ca7015eddb0e6a1ea7e37",
+    "tested-source-provenance.json": "2ef29f254d819a63cd3b45663c53f7b3f02726a7825e0b6e011c7fa2e7492fb9",
+    "verification.json": "37b658f195af70c24b6f44ff820935d3cd19a98a02d315d4a46efe0d4a787797"
+  }
+}
