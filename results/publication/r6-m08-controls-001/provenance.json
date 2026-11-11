@@ -1,0 +1,19 @@
+{
+  "schema": "m08-publication-controls-v1",
+  "scope": "Exact tested readers and eleven pure tests for the M08 hosted integration receipt; no new engine version",
+  "receipt": "results/publication/r6-m08-001",
+  "receipt_provenance_sha256": "6a9f051763e0a6f7c44c80978303eb87b478b9e4263d561a7c26653747c991bd",
+  "tested_source_sha256": {
+    "capture_m08_ci_receipt.py": "0b427bc81c2cccf10a5d1c360375c3055fdbf0272841722ea46b4fd086d4b372",
+    "verify_m08_public_snapshot.py": "a1f24ad21012083036dc6211a52645e1a5845b160e43d2834507de67d8573d8d",
+    "freeze_m08_publication.py": "db1aa6262fe54349ed828ef9a0339a852e5277afb8d2149d918b2b8917488595",
+    "test_m08_publication_helpers.py": "b265bd8a01c6d248ded2ef6290f1ce6a6997e1eb5324448cbac159ff224f0277"
+  },
+  "output_sha256": {
+    "capture_m08_ci_receipt.py": "0b427bc81c2cccf10a5d1c360375c3055fdbf0272841722ea46b4fd086d4b372",
+    "freeze_m08_publication.py": "db1aa6262fe54349ed828ef9a0339a852e5277afb8d2149d918b2b8917488595",
+    "README.md": "3664eb54026e58923c5e47b10cb0b1c1cf8d0c53ac21e846c5190ac72cf3d176",
+    "test_m08_publication_helpers.py": "b265bd8a01c6d248ded2ef6290f1ce6a6997e1eb5324448cbac159ff224f0277",
+    "verify_m08_public_snapshot.py": "a1f24ad21012083036dc6211a52645e1a5845b160e43d2834507de67d8573d8d"
+  }
+}

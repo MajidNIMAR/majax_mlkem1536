@@ -1,0 +1,21 @@
+{
+  "schema": "m08-publication-config-v1",
+  "run_id": 43008567843,
+  "public_commit": "b0491eb3960dbcd0642f42f423397f05c58e5cbd",
+  "source_commit": "33a1828b70c7816ed8ba191ff6c5f3432141315c",
+  "branch": "main",
+  "python_test_count": 352,
+  "candidate_source_manifest_sha256": "c477cc93cbb33c95fe3e73dc95094cb2801c172123243c772ec78daf5331e5fe",
+  "runners": {
+    "windows-latest": {
+      "host": "windows",
+      "original_CLI_sha256": "d3fb7537face2cd4b7e295ec829b6a282a711d005f4535ff99dddce90a98dde1",
+      "original_default_consumer_sha256": "2c0c58d494823f2d3d03ddac95e8e651799c881fcaaec9034572665427ad5e70"
+    },
+    "ubuntu-24.04": {
+      "host": "linux",
+      "original_CLI_sha256": "aef5198cd39b6ac0406d079252ae908d3280a60c615ad5253700f6de3482403a",
+      "original_default_consumer_sha256": "69ad82bdb58981861e29e95f1ddee82aabce6240f605491f88e687ed69be069e"
+    }
+  }
+}

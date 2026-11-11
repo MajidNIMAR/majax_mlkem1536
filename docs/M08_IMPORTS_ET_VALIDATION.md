@@ -1,6 +1,6 @@
 # M08 — Imports de clés et validation élargie
 
-11 novembre 2026. **Moteur, mesures, revue ciblée, campagne prolongée, couverture LLVM, oracle et deux paquets de livraison vérifiés. L'archive complète et le contrôle local Windows passent ; la publication avec CI neuve est en préparation.**
+11 novembre 2026. **M08 est livré et publié : mesures, revue ciblée, campagne prolongée, couverture LLVM, oracle, paquets, archive complète et contrôle local validés. La CI neuve Windows/Ubuntu réussit sur le commit public b0491eb ; ses reçus sont figés. C01 reste ouvert.**
 
 Le profil reste `KEM1536-DEV-Q7681-R1`. Le cœur mesuré a pour SHA-256 `b39c2fdfcdd7c22634162a2c451213a6c4309b27524a82069f37903653e12334`. Le [protocole](PROTOCOLE_M08_IMPORTS.md), les seuils et le plan ont été committés au `7ad5698` avant référence et candidat.
 
@@ -47,7 +47,7 @@ La collecte des quatre consommateurs conserve les symboles par adresse, les réf
 
 Les CLI de recherche et de livraison candidats ont de nouveaux listings complets, un inventaire historique indexé par noms et un index physique conservant les noms dupliqués. Ces inventaires ne sont pas une nouvelle preuve d'effacement PKE et ne reprennent pas tacitement les conclusions par empreinte M07.
 
-## Campagne principale : budgets atteints, posttraitements en cours
+## Campagne principale et posttraitements acquis
 
 La campagne longue est lancée après acceptation explicite : 1800 secondes CPU
 nouvelles par harnais, quatre workers. LONG_CAMPAIGN_ACCEPTED.json lie le
@@ -168,13 +168,14 @@ copies. La distribution et le gel complet restent des étapes séparées.
 
 Le [résultat conditionnel sur information latérale classique](REJET_ET_INFORMATION_LATERALE_M08.md) est figé dans `results/security/m08-rejection-001` : dix panneaux rationnels, cas D=0 et contrôles finis. Pour p majorant la probabilité de deviner Z après E, les bornes sont min(1,qp) en ROM et min(1,2q√p) en QROM lorsque D>0 ; elles valent zéro lorsque D=0. D compte les accès classiques à la fonction indexée, même en QROM ; q compte les portes de requête publiques pouvant viser J. La vue idéale doit être indépendante de Z conditionnellement à E, et E reste classique. Le cas p=2^-256 retrouve M06 sans resserrer sa borne quantique. Ce résultat ne certifie ni l'entropie des clés importées, ni SHAKE concret ou le KEM global. C01 reste ouvert.
 
-## Pièces acquises du bilan intermédiaire
+## Reçus d'acquisition conservés
 
-Les reçus locaux permettent de vérifier les faits ci-dessus avant le gel
-complet du moteur. Les quatre inventaires CLI et les quatre images de
+Les reçus d'acquisition ci-dessous sont désormais conservés dans l'archive
+complète du moteur. Les chemins indiquent leurs étapes d'origine, également
+présentes dans l'atelier local. Les quatre inventaires CLI et les quatre images de
 consommateurs sont distincts. Leurs vérificateurs relisent les pièces
 conservées sans nouveau désassemblage. Le volet C01 est déjà un instantané
-figé indépendant ; les autres pièces restent dans l'atelier `artifacts/generated`.
+figé indépendant.
 
 | Pièce | Reçu | SHA-256 du reçu |
 |---|---|---|
@@ -256,5 +257,43 @@ est ensuite remplacé atomiquement par l'original M08, SHA
 puis vérifié par 16 nouveaux échanges et 16 rejets sans afficher de clé.
 Les 22 fichiers du reçu local conservent ces étapes et les journaux de gel.
 
-La CI sur hôtes neufs reste une étape distincte. La durée principale ne
-devient ni couverture exhaustive ni preuve globale.
+## Intégration hébergée et publication
+
+La [CI neuve 43008567843](https://github.com/MajidNIMAR/majax_mlkem1536/actions/runs/43008567843)
+réussit sur Windows et Ubuntu 24.04 au commit public
+`b0491eb3960dbcd0642f42f423397f05c58e5cbd`, issu du commit local
+`33a1828b70c7816ed8ba191ff6c5f3432141315c`. Chaque OS exécute le contrôle
+complet, avec 352 tests Python suivis de OK, les suites Rust/fmt/Clippy et
+les rejeux requis. Les étapes natives M07 et M08 réussissent également.
+
+Les originaux M08 sont exécutés directement après extraction et vérification
+de leurs empreintes : CLI 16 échanges, 16 rejets et cinq refus code 1 ;
+consommateur API un échange avec clés importées, un rejet et 88576 sondes.
+Les deux graphes de provenance des sources contrôlent 2024 blobs Git
+canoniques et 2024 fichiers exportés. Le [reçu hébergé](../results/publication/r6-m08-001/)
+conserve neuf membres et son manifeste, soit dix fichiers, dont les valeurs
+API sérialisées, le ZIP brut de journaux et les identités de sources testées.
+Son manifeste vaut SHA-256
+`6a9f051763e0a6f7c44c80978303eb87b478b9e4263d561a7c26653747c991bd`.
+Le rejeu séparé de ce reçu termine avec code 0 et stderr vide, sans réseau,
+Git, compilation ou exécution de binaire.
+
+Les [lecteurs figés](../results/publication/r6-m08-controls-001/) conservent
+les quatre fichiers exactement testés, un README et leur manifeste. Le
+lecteur copié a vérifié la vraie capsule et ses 11 tests purs copiés passent.
+Leur manifeste vaut
+`e692d5ff5e10f74f72fc1acc8e97d0a60012a0588f9e11ce4fbc98e62235a644`.
+Depuis la racine du dépôt, le rejeu public utilise :
+
+```text
+python -B results/publication/r6-m08-controls-001/freeze_m08_publication.py verify --output results/publication/r6-m08-001
+```
+
+La clôture ultérieure ajoute documentation, reçus CI, leurs lecteurs figés et
+manifeste d'export. Les sources du moteur, ses contrôles intégrés et les archives scientifiques restent
+identiques au commit b0491eb. Les exécutions natives hébergées sont fraîches ;
+les mesures de temps/mémoire, la campagne CPU et les listings sont ceux des
+acquisitions figées. La couverture de 438/604 lignes (72,5166 %) concerne
+les cinq fichiers mappés, zéros inclus ; 333/362 (91,989 %) concerne seulement
+dev_kem.rs. Aucune couverture de tous les chemins, sécurité globale,
+constance temporelle ou universalité d'effacement n'est établie.

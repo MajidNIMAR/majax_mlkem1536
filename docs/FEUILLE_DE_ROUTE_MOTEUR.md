@@ -23,9 +23,9 @@ Le [rejet idéal](REJET_IMPLICITE_R1_M06.md) est désormais borné ; le PKE
 restent des travaux de C01. La hausse des frames a conduit aux mesures
 instrumentées et à la réduction de mémoire M07, puis à sa livraison vérifiée.
 M08 traite désormais les copies produites pendant l'import et élargit la
-validation ; son [bilan intermédiaire](M08_IMPORTS_ET_VALIDATION.md) distingue
-les résultats acquis des contrôles complémentaires et de la nouvelle livraison
-encore en cours.
+validation. Son [bilan livré](M08_IMPORTS_ET_VALIDATION.md) conserve les
+mesures, la revue ciblée, la couverture, l'oracle, les paquets et la CI neuve
+Windows/Ubuntu, avec les limites scientifiques et d'intégration explicites.
 
 **Actualisation M01.** L'utilisateur demande ensuite d'avancer sur le
 moteur sans attendre de nouvelle validation. Le [bilan opérationnel](BILAN_J2_ET_DECISION_PROTOTYPE.md)
@@ -46,7 +46,7 @@ pas un candidat final et ne valide aucun jalon encore ouvert.
 | KeyGen / Encaps / Decaps du rang 6 | Rust et référence Python disponibles | 1000 vecteurs concordants, 10000 échanges frais et rejets appariés |
 | Durcissement et performances | M07 réduit la mémoire observée ; M08 contrôle directement les encodages et sa revue ciblée est scellée ; J4 ouvert | Corpus intégraux inchangés et 210 budgets M08 satisfaits ; ni pile universelle, ni CT ou effacement global prouvés |
 | Import de clés | M08 : quatre consommateurs API par défaut, 88576 sondes chacun | Formats/ordre des erreurs conservés ; les sondes ne couvrent pas tous les vecteurs et l'import ne certifie pas l'entropie |
-| Distribution | Deux paquets M08 vérifiés, originaux inventoriés, une répétition par hôte ; gel et check Windows acquis, CI neuve à acquérir | Sources et licences ; Linux identique brut, Windows comparé hors timestamp COFF/checksum PE ; aucune reproduction par tiers revendiquée |
+| Distribution | Deux paquets M08 vérifiés, originaux inventoriés, une répétition par hôte ; gel, check Windows et CI neuve Windows/Ubuntu acquis | Sources et licences ; Linux identique brut, Windows comparé hors timestamp COFF/checksum PE ; aucune reproduction par tiers revendiquée |
 
 L'oracle générique dans Z_q[X]/(X^256+1) reste distinct du moteur.
 Le cœur R1 emploie depuis [M02](DURCISSEMENT_MOTEUR_M02.md) une convolution
@@ -161,7 +161,7 @@ du point 5 conserve ses obligations ouvertes.
    de C01. Les gains de mémoire ou de vitesse ne valident pas ces
    obligations, ni une preuve générale de temps constant ou d'effacement.
 
-## M08 — imports directs et validation élargie, en cours
+## M08 — imports directs et validation élargie, livré
 
 Le [protocole M08](PROTOCOLE_M08_IMPORTS.md), les budgets et le plan sont
 préenregistrés au commit `7ad5698`. Les captures gardent 46 entrées pour la
@@ -191,7 +191,9 @@ version et ne reçoivent aucun crédit des campagnes historiques.
    Le gel
    conserve les 7520 fichiers et 428 répertoires ; son rejeu extrait passe.
    Le check Windows complet passe avec 352 tests Python, Rust/fmt/Clippy
-   et rejeux ; la CI neuve reste à acquérir.
+   et rejeux. La CI neuve 43008567843 passe sur public b0491eb, avec 352
+   tests Python par OS et des exécutions natives des originaux CLI/API.
+   Le reçu r6-m08-001 distingue données rejouées et exécutions fraîches.
 5. **C01 borné, sans clôture globale.** Le résultat figé M08 emploie une
    probabilité de devinette conditionnelle classique et des hypothèses
    d'indépendance explicites. La syntaxe de l'import ne démontre pas ces

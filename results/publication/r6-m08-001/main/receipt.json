@@ -1,0 +1,14 @@
+{
+  "schema": "m08-ci-capture-v1",
+  "scope": "Parsed API run/jobs reserialized as JSON, plus raw hosted full log archive",
+  "run_id": 43008567843,
+  "public_commit": "b0491eb3960dbcd0642f42f423397f05c58e5cbd",
+  "run_url": "https://github.com/MajidNIMAR/majax_mlkem1536/actions/runs/43008567843",
+  "sha256": {
+    "run.json": "659c4015a4b03992968fafa816c6c855bf97862813ccaf4db4a7e4e1e53063e1",
+    "jobs.json": "bc52c2f4df8158cc8a3daf157adda07499b4de88520bf7e1e6f88d6506ce6b6e",
+    "ci-logs.zip": "f811aef9fcad1336a87bf238b94703b63702b1a073647cc3ac5789f6df663e5f"
+  },
+  "credentials_retained": false,
+  "signed_log_storage_URL_retained": false
+}

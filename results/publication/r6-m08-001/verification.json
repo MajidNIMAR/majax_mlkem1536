@@ -1,0 +1,228 @@
+{
+  "schema": "m08-hosted-integration-v1",
+  "profile": "KEM1536-DEV-Q7681-R1",
+  "public_tested_commit": "b0491eb3960dbcd0642f42f423397f05c58e5cbd",
+  "local_source_commit": "33a1828b70c7816ed8ba191ff6c5f3432141315c",
+  "run_id": 43008567843,
+  "run_url": "https://github.com/MajidNIMAR/majax_mlkem1536/actions/runs/43008567843",
+  "runners": {
+    "ubuntu-24.04": {
+      "job_id": 130482102023,
+      "python_tests": 352,
+      "full_job_log": "0_check (ubuntu-24.04).txt",
+      "full_job_log_sha256": "03ee558df58083c63ad04941f3414a40209f290da3edefc7374fb37f4debe6d0",
+      "required_steps": [
+        "Bootstrap Ubuntu",
+        "Prepare Ubuntu research tools",
+        "Check Ubuntu",
+        "Run the original M08 package and import consumer on Ubuntu"
+      ],
+      "native_original_CLI_and_default_consumer": {
+        "schema": "m08-native-smoke-v1",
+        "profile": "KEM1536-DEV-Q7681-R1",
+        "host": "linux",
+        "started_utc": "2026-11-11T11:10:22.390567+00:00",
+        "finished_utc": "2026-11-11T11:10:29.382901+00:00",
+        "candidate_source_manifest_sha256": "c477cc93cbb33c95fe3e73dc95094cb2801c172123243c772ec78daf5331e5fe",
+        "original_CLI_sha256": "aef5198cd39b6ac0406d079252ae908d3280a60c615ad5253700f6de3482403a",
+        "original_default_consumer_sha256": "69ad82bdb58981861e29e95f1ddee82aabce6240f605491f88e687ed69be069e",
+        "checks": [
+          {
+            "operation": "dev-self-test",
+            "exit_code": 0,
+            "stdout_sha256": "4f791e7fa05f5616bc86acf9eb657e92594338e30f7791c2f677e34e200135c4",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "operation": "smoke",
+            "exit_code": 0,
+            "stdout_sha256": "b23f3f7694b143b76e67adc9c5ef809eae83cf2160af3dba499b643556a1cdee",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "operation": "exhaustive",
+            "exit_code": 0,
+            "stdout_sha256": "b94a78940de5b35e9f55802747b3176910569dab969abfe032368c7f0da6dcca",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ],
+        "CLI_fresh_round_trips": 16,
+        "CLI_implicit_rejections_checked": 16,
+        "research_commands_rejected": [
+          {
+            "arguments": [
+              "dev-vectors",
+              "1"
+            ],
+            "exit_code": 1,
+            "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stderr_sha256": "7756eec1ee17c16764107f4a8c02404e40c70f04594483ea0c63d8716db5767e"
+          },
+          {
+            "arguments": [
+              "dev-rejection-vectors"
+            ],
+            "exit_code": 1,
+            "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stderr_sha256": "ca26c0b1f4de0bb7922cb8407fa04f8e4c4d506620b004569fbcfe1ebb2b1388"
+          },
+          {
+            "arguments": [
+              "dev-hardening"
+            ],
+            "exit_code": 1,
+            "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stderr_sha256": "ca26c0b1f4de0bb7922cb8407fa04f8e4c4d506620b004569fbcfe1ebb2b1388"
+          },
+          {
+            "arguments": [
+              "dev-mutations"
+            ],
+            "exit_code": 1,
+            "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stderr_sha256": "ca26c0b1f4de0bb7922cb8407fa04f8e4c4d506620b004569fbcfe1ebb2b1388"
+          },
+          {
+            "arguments": [
+              "dev-timing"
+            ],
+            "exit_code": 1,
+            "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stderr_sha256": "ca26c0b1f4de0bb7922cb8407fa04f8e4c4d506620b004569fbcfe1ebb2b1388"
+          }
+        ],
+        "consumer_import_cases": 13,
+        "consumer_fresh_imported_key_round_trips": 1,
+        "consumer_fresh_rejections": 1,
+        "consumer_single_coefficient_and_boundary_probes": 88576,
+        "new_compilation_performed": false,
+        "new_benchmark_performed": false,
+        "new_disassembly_performed": false,
+        "constant_time_proved": false,
+        "universal_erasure_proved": false,
+        "secrets_printed": false
+      }
+    },
+    "windows-latest": {
+      "job_id": 130482101639,
+      "python_tests": 352,
+      "full_job_log": "1_check (windows-latest).txt",
+      "full_job_log_sha256": "b15e357703c68c9fe8bc51ebec4ae07735cc14e8fe11e845d75ce06c6e73bb3e",
+      "required_steps": [
+        "Bootstrap Windows",
+        "Prepare Windows research tools",
+        "Check Windows",
+        "Run the original M08 package and import consumer on Windows"
+      ],
+      "native_original_CLI_and_default_consumer": {
+        "schema": "m08-native-smoke-v1",
+        "profile": "KEM1536-DEV-Q7681-R1",
+        "host": "windows",
+        "started_utc": "2026-11-11T11:14:54.675275+00:00",
+        "finished_utc": "2026-11-11T11:15:05.919188+00:00",
+        "candidate_source_manifest_sha256": "c477cc93cbb33c95fe3e73dc95094cb2801c172123243c772ec78daf5331e5fe",
+        "original_CLI_sha256": "d3fb7537face2cd4b7e295ec829b6a282a711d005f4535ff99dddce90a98dde1",
+        "original_default_consumer_sha256": "2c0c58d494823f2d3d03ddac95e8e651799c881fcaaec9034572665427ad5e70",
+        "checks": [
+          {
+            "operation": "dev-self-test",
+            "exit_code": 0,
+            "stdout_sha256": "8ccb51e348ae07d62fa2c737e1fc583223c91cd9bd50c166b9f8380687d98f33",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "operation": "smoke",
+            "exit_code": 0,
+            "stdout_sha256": "a2f2a42c44a7ed455d00d18e1142e99ff959a18ea0a02449f1916382929ca78a",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "operation": "exhaustive",
+            "exit_code": 0,
+            "stdout_sha256": "b94a78940de5b35e9f55802747b3176910569dab969abfe032368c7f0da6dcca",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ],
+        "CLI_fresh_round_trips": 16,
+        "CLI_implicit_rejections_checked": 16,
+        "research_commands_rejected": [
+          {
+            "arguments": [
+              "dev-vectors",
+              "1"
+            ],
+            "exit_code": 1,
+            "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stderr_sha256": "7756eec1ee17c16764107f4a8c02404e40c70f04594483ea0c63d8716db5767e"
+          },
+          {
+            "arguments": [
+              "dev-rejection-vectors"
+            ],
+            "exit_code": 1,
+            "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stderr_sha256": "ca26c0b1f4de0bb7922cb8407fa04f8e4c4d506620b004569fbcfe1ebb2b1388"
+          },
+          {
+            "arguments": [
+              "dev-hardening"
+            ],
+            "exit_code": 1,
+            "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stderr_sha256": "ca26c0b1f4de0bb7922cb8407fa04f8e4c4d506620b004569fbcfe1ebb2b1388"
+          },
+          {
+            "arguments": [
+              "dev-mutations"
+            ],
+            "exit_code": 1,
+            "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stderr_sha256": "ca26c0b1f4de0bb7922cb8407fa04f8e4c4d506620b004569fbcfe1ebb2b1388"
+          },
+          {
+            "arguments": [
+              "dev-timing"
+            ],
+            "exit_code": 1,
+            "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "stderr_sha256": "ca26c0b1f4de0bb7922cb8407fa04f8e4c4d506620b004569fbcfe1ebb2b1388"
+          }
+        ],
+        "consumer_import_cases": 13,
+        "consumer_fresh_imported_key_round_trips": 1,
+        "consumer_fresh_rejections": 1,
+        "consumer_single_coefficient_and_boundary_probes": 88576,
+        "new_compilation_performed": false,
+        "new_benchmark_performed": false,
+        "new_disassembly_performed": false,
+        "constant_time_proved": false,
+        "universal_erasure_proved": false,
+        "secrets_printed": false
+      }
+    }
+  },
+  "source_integrity": {
+    "schema": "m08-source-integrity-v1",
+    "public_commit": "b0491eb3960dbcd0642f42f423397f05c58e5cbd",
+    "source_commit": "33a1828b70c7816ed8ba191ff6c5f3432141315c",
+    "canonical_git_blobs_verified": 2024,
+    "exported_files_verified": 2024,
+    "all_equal": true,
+    "source_provenance_sha256": "d0fcff7eff9ce4b65ddf77db7d1c697bb2c1084cf1165ca3f0025c6d5c89660e",
+    "git_blob_map_sha256": "60af78079697629d45ff68c7c6b68076b0a29d3cd8c0bf2a02523dcd965ad1f5",
+    "export_map_sha256": "870d9aa4781232cc12f1d27b84b737bc6fd1727cd3be799fb42d73fdce216a79",
+    "attribute_converted_paths": [
+      "scripts/bootstrap-modern.ps1",
+      "scripts/bootstrap.ps1",
+      "scripts/dev.ps1",
+      "scripts/engine.ps1",
+      "scripts/m03.ps1",
+      "scripts/reproduce-release.ps1",
+      "scripts/research-setup.ps1"
+    ],
+    "method": "Independent streamed git cat-file --batch SHA-256 of every committed public blob and every exported working file, compared with both committed schema2 source maps"
+  },
+  "scope": "Fresh hosted full checks plus native execution of exact preserved CLI/default-feature consumer images. Historical measurements, binary review and fuzzing are data replays; native CLI16/16, five normal exit1 command refusals and consumer fresh1/1 plus88576 probes are new finite integration checks.",
+  "global_security_constant_time_or_erasure_proved": false,
+  "credentials_or_signed_log_URL_retained": false
+}

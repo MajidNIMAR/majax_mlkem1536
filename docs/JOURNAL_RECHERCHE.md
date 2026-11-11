@@ -1756,3 +1756,32 @@ Les 22 fichiers de results/engine/m08-verification-001 conservent les
 captures, les journaux de gel, les contrôleurs et la promotion. Les anciens
 instantanés et l'original M07 restent inchangés. La publication et sa CI
 neuve sont les étapes suivantes.
+
+## 11 novembre 2026 — M08, publication et CI neuve validées
+
+La source locale 33a1828 est exportée après commit propre dans le dépôt
+public indépendant, sans lui transférer l'historique Git de recherche.
+La vérification des deux cartes contrôle 2024 fichiers exportés et 2024
+blobs canoniques, y compris les fins de ligne attribuées. Le commit public
+b0491eb3960dbcd0642f42f423397f05c58e5cbd est poussé normalement sur main.
+
+La CI 43008567843 réussit sur Windows et Ubuntu 24.04. Chaque OS passe
+352 tests Python, les suites Rust et les rejeux requis, puis les étapes
+natives M07/M08. Le CLI M08 original passe 16 échanges, 16 rejets et cinq
+refus code 1 ; le consommateur original passe un échange importé, un rejet
+et 88576 sondes, avec ses empreintes attendues. Aucune mesure ou campagne
+historique n'est créditée de cette intégration.
+
+results/publication/r6-m08-001 conserve neuf membres et son manifeste,
+soit dix fichiers, avec journaux bruts, API sérialisée et sources testées.
+Le gel et son rejeu séparé passent sans nouvelle exécution native ; son
+manifeste vaut 6a9f051763e0a6f7c44c80978303eb87b478b9e4263d561a7c26653747c991bd.
+La clôture documentaire et les lecteurs du reçu conservent exactement le
+code et les archives scientifiques testés ; leurs différences sont
+contrôlées avant l'export final. C01 et la validation globale restent ouverts.
+
+Les trois helpers de publication et leur fichier de tests sont conservés sans
+changer un octet dans results/publication/r6-m08-controls-001, avec README
+et manifeste. Le lecteur copié rejoue la vraie capsule avec code 0 ; les
+11 tests purs copiés passent. Le dépôt public donne ainsi accès au lecteur,
+sans dépendre d'un outil privé de l'atelier. La capsule CI reste inchangée.

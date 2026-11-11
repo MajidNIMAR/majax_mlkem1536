@@ -15,7 +15,7 @@ evidence needed to examine its evolution.
 [Specification](docs/SPECIFICATION_DEV_Q7681_R1.md) ·
 [Engine and API guide](docs/MOTEUR_KEM_R1.md) ·
 [Research report](docs/RAPPORT_RECHERCHE.md) ·
-[M08 import study, in progress](docs/M08_IMPORTS_ET_VALIDATION.md) ·
+[M08 import study and delivery](docs/M08_IMPORTS_ET_VALIDATION.md) ·
 [M07 memory and delivery study](docs/M07_MEMOIRE_ET_VALIDATION.md)
 
 [![Main-branch checks](https://github.com/MajidNIMAR/majax_mlkem1536/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/MajidNIMAR/majax_mlkem1536/actions/workflows/ci.yml)
@@ -63,7 +63,7 @@ arithmetic and KEM operations are implemented in this repository. The
 project is developed independently from Majax Messenger's operational
 architecture.
 
-## Current engineering milestone: M08, in progress
+## Current engineering milestone: M08
 
 M08 replaces polynomial reconstruction during key import with a direct scan
 of the canonical 13-bit encoding. It checks all **1,536 coefficients** before
@@ -99,7 +99,17 @@ finite execution receipts are retained. The [complete M08 snapshot](results/engi
 preserves 7,520 files and 428 directories, and its extracted data replay passes;
 the full Windows check passes with **352 Python tests**, Rust tests, fmt,
 strict Clippy and required data replays. Original-image native checks also
-pass locally. Fresh hosted CI remains to be acquired. The
+pass locally. [Fresh Windows/Ubuntu CI](https://github.com/MajidNIMAR/majax_mlkem1536/actions/runs/43008567843)
+passes on public commit `b0491eb`, with 352 Python tests on each OS and native
+execution of the original M07/M08 images. The M08 CLI passes 16 exchanges,
+16 rejections and five normal command refusals; its original API consumer
+passes a fresh imported-key exchange/rejection and 88,576 probes per OS.
+The [hosted integration receipt](results/publication/r6-m08-001/) binds both
+source maps (2,024 exported files and Git blobs) to the tested commit. Hosted
+native execution and historical measurements retain separate receipts.
+The [frozen offline readers](results/publication/r6-m08-controls-001/) make
+the hosted receipt replayable from the public repository.
+The
 [bounded side-information result](docs/REJET_ET_INFORMATION_LATERALE_M08.md)
 is already preserved separately: it generalizes the ideal rejection-key
 assumption to classical side information, without establishing the entropy

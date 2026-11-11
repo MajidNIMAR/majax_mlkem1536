@@ -2,7 +2,7 @@
 
 Version de travail du 11 novembre 2026. Ce document est la base évolutive du futur article. Le [journal](JOURNAL_RECHERCHE.md) conserve les étapes et décisions ; les [résultats figés de J2](../results/j2/run-001/) conservent les calculs et leur provenance. Une modification du rapport doit rester cohérente avec ces données.
 
-**M08 en cours — import direct des clés et validation élargie.** Le
+**M08 livré et publié — import direct des clés et validation élargie.** Le
 [protocole M08](PROTOCOLE_M08_IMPORTS.md) est fixé avant modification du
 moteur : référence M07, contrôle direct des encodages, consommateur API
 par défaut, revue des chemins compilés et nouvelle campagne de 1800 secondes
@@ -17,16 +17,21 @@ terminée dans son volet principal : les quatre budgets sont atteints,
 historique. L'union LLVM distincte couvre 438/604 lignes et 17/36 branches
 instrumentées du cœur, sans exclure les mappings nuls. Les 3156 requêtes
 déterministes concordent avec Python, dont 433 sondes de décapsulation de
-clés privées acceptées. La première tentative de rejeu a été interrompue par
-le redémarrage de l'environnement ; ses trois traces sont conservées et la
+clés privées acceptées. La première tentative de rejeu a été interrompue lors
+du redémarrage observé de l'environnement ; ses trois traces sont conservées et la
 reprise utilise le contrôleur et l'image gelés, sans nouveau fuzzing ou build.
 Les deux paquets de livraison passent leurs contrôles ; Linux est identique
 brut à sa répétition et Windows diffère uniquement dans deux métadonnées PE.
 Le gel complet et son rejeu passent : 7520 fichiers et 428 répertoires sont
 conservés dans l'archive M08. Le check complet Windows passe, avec 352 tests
 Python, Rust/fmt/Clippy/rejeux et 2008 fichiers identiques avant/après.
-Les originaux CLI/consommateur passent le smoke natif local. La CI neuve
-reste à acquérir avant la clôture de publication.
+Les originaux CLI/consommateur passent le smoke natif local et la
+[CI neuve Windows/Ubuntu](https://github.com/MajidNIMAR/majax_mlkem1536/actions/runs/43008567843),
+avec 352 tests Python par OS. Le [reçu de publication M08](../results/publication/r6-m08-001/)
+lie le commit public testé b0491eb à la source locale 33a1828 et aux 2024
+blobs/fichiers exportés. Les exécutions natives d'origine passent 16/16 CLI,
+cinq refus normaux et 88576 sondes d'import par OS ; ces intégrations ne
+sont pas de nouvelles campagnes ou mesures de performance.
 Les conclusions des consommateurs API ne sont pas transférées
 aux CLI : leurs quatre inventaires propres identifient les autres images,
 sans preuve d'effacement PKE. Le diagnostic distinct de 32000 observations
@@ -140,7 +145,7 @@ fin automatique est consignée plus bas, sans validation globale anticipée.
 
 **Première publication GitHub du moteur 1536.** Le dépôt public
 [MajidNIMAR/majax_mlkem1536](https://github.com/MajidNIMAR/majax_mlkem1536)
-est créé, distinct du démonstrateur 1024 du même auteur. L'export conserve
+est créé, distinct du moteur ML-KEM compagnon du même auteur. L'export conserve
 les sources et résultats d'un commit avec un manifeste SHA-256, une licence
 Apache-2.0 des contributions propres et les attributions tierces. Trois
 copies externes sont récupérées chez leur auteur par URL et empreinte.
@@ -401,7 +406,7 @@ Les sorties courantes vont dans `artifacts/generated/modern/`. L'instantané `re
 
 Une nouvelle étude doit créer un nouveau numéro d’exécution et conserver le code correspondant dans Git. Les dates, durées et empreintes peuvent varier entre exécutions ; les probabilités exactes et les optima, sous les mêmes hypothèses et conventions, doivent rester identiques à la précision numérique annoncée. La commande `check` vérifie les empreintes de l’instantané actif en plus des sources et des tests.
 
-Avant publication, il faudra stabiliser le profil, compléter J2, faire relire l’analyse, préciser les auteurs et contributions, fournir les licences, identifier le commit exact de l’article et du logiciel, puis déposer les artefacts cités. Ce rapport conserve le travail préparatoire ; aucun article ni dépôt distant n’a été publié.
+Pour le dépôt de l'article, il restera à fixer le périmètre des revendications et des obligations ouvertes, faire relire l'analyse, préciser les auteurs et contributions, les licences et les commits exacts du texte et du logiciel, puis identifier les artefacts cités. Le logiciel et ses résultats sont déjà publics sur GitHub ; ce rapport demeure la base évolutive de l'article.
 
 
 ## Actualisation automatique M03 — 2026-10-25T14:59:22.748948+00:00

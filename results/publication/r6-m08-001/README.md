@@ -1,0 +1,3 @@
+# MAJAX R6 M08 hosted integration evidence
+
+Exact API run/jobs and raw full logs bind two hosted Windows/Ubuntu checks to the committed schema2 source maps and the independently verified source-integrity receipt. Native checks execute the exact preserved original CLI and default-feature import consumer on each host. Counts, image hashes and tested identities are explicit in config.json and verification.json. Historical measurement, disassembly and fuzz archives are data replays. No credentials or signed log-storage URL is retained. These finite checks establish no global security, universal erasure or constant-time proof.
