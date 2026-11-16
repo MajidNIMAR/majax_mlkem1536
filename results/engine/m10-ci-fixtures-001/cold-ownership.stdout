@@ -1,0 +1,16 @@
+{
+  "case": "ownership",
+  "tests": 1,
+  "passed": true,
+  "skipped": 0,
+  "fake_ROOT": "C:\\Users\\majax\\Documents\\Codex\\NIST\\target\\m10-ci-fixtures-owned\\ownership-root-37admd0v",
+  "initial_artifacts_absent": true,
+  "initial_artifacts_generated_absent": true,
+  "test_created_parent": true,
+  "patched_globals_only": [
+    "test_m10_campaign.ROOT",
+    "m10_campaign.ROOT"
+  ],
+  "validation_functions_replaced": false,
+  "fake_files_after_test_sha256": {}
+}

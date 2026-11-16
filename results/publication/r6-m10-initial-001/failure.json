@@ -1,0 +1,37 @@
+{
+  "schema": "m10-failed-hosted-run-v1",
+  "recorded_utc": "2026-11-16T14:55:33.275525+00:00",
+  "run_id": 43889980583,
+  "public_tested_commit": "b96b5483655fc4447c40a1c96925bb6bb5a88c73",
+  "source_commit": "c7c0a329cb423ab5aa5fbdbe479d21795e01eb22",
+  "expected_python_tests_per_OS": 514,
+  "hosted_status": "failure",
+  "strict_publication_capture_performed": false,
+  "reader_freeze_performed": false,
+  "accepted_complete_test_claim": false,
+  "logs": {
+    "0_check (windows-latest).txt": {
+      "full_log_sha256": "42391a328a2554a24352dae515c0ebb2038c966f6dc479fef4492b19a4de3c38",
+      "matches": [
+        "======================================================================\nERROR: test_actual_streamed_tar_round_trip_keeps_exact_members (test_archive_m10.PublicationPartsTests.test_actual_streamed_tar_round_trip_keeps_exact_members)\n----------------------------------------------------------------------\nTraceback (most recent call last):",
+        "======================================================================\nERROR: test_ownership_is_restricted_to_direct_m10_children (test_m10_campaign.M10CampaignTests.test_ownership_is_restricted_to_direct_m10_children)\n----------------------------------------------------------------------\nTraceback (most recent call last):",
+        "----------------------------------------------------------------------\nRan 514 tests in 36.274s\n\nFAILED (errors=2)",
+        "\nFAILED (errors=2)\n\u001b[31;1mException: \u001b[0mD:\\a\\majax_mlkem1536\\majax_mlkem1536\\scripts\\dev.ps1:60\u001b[0m\n\u001b[31;1m\u001b[0m\u001b[36;1mLine |\u001b[0m",
+        "\u001b[31;1m\u001b[0m\u001b[36;1m\u001b[36;1m\u001b[0m\u001b[36;1m\u001b[0m\u001b[36;1m\u001b[31;1m\u001b[31;1m\u001b[36;1m     | \u001b[31;1mResearch arithmetic verification failed.\u001b[0m\n##[error]Process completed with exit code 1.\nPost job cleanup.\n[command]\"C:\\Program Files\\Git\\bin\\git.exe\" version"
+      ]
+    },
+    "1_check (ubuntu-24.04).txt": {
+      "full_log_sha256": "a85f6ec13f80a3b905320b3e50d7ae4714c685b8a79456a78c659866ffd43172",
+      "matches": [
+        "======================================================================\nERROR: test_actual_streamed_tar_round_trip_keeps_exact_members (test_archive_m10.PublicationPartsTests.test_actual_streamed_tar_round_trip_keeps_exact_members)\n----------------------------------------------------------------------\nTraceback (most recent call last):",
+        "======================================================================\nERROR: test_ownership_is_restricted_to_direct_m10_children (test_m10_campaign.M10CampaignTests.test_ownership_is_restricted_to_direct_m10_children)\n----------------------------------------------------------------------\nTraceback (most recent call last):",
+        "----------------------------------------------------------------------\nRan 514 tests in 26.110s\n\nFAILED (errors=2)",
+        "\nFAILED (errors=2)\n##[error]Process completed with exit code 1.\nPost job cleanup.",
+        "FAILED (errors=2)\n##[error]Process completed with exit code 1.\nPost job cleanup.\n[command]/usr/bin/git version"
+      ]
+    }
+  },
+  "new_engine_builds_by_this_capture": 0,
+  "new_fuzzing_credit_seconds": 0,
+  "external_audit": false
+}

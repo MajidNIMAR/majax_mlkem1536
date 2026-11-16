@@ -48,6 +48,7 @@ class PublicationPartsTests(unittest.TestCase):
     def test_actual_streamed_tar_round_trip_keeps_exact_members(self):
         generated=archive.ROOT/'artifacts/generated'
         target=archive.ROOT/'target/m10-archive-tests'
+        generated.mkdir(parents=True,exist_ok=True)
         target.mkdir(parents=True,exist_ok=True)
         with tempfile.TemporaryDirectory(prefix='m10-archive-fixture-',dir=generated) as raw_source, \
              tempfile.TemporaryDirectory(prefix='tar-',dir=target) as raw_output:

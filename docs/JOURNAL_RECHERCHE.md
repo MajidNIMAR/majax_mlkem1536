@@ -2113,3 +2113,26 @@ Il vérifie 37 entrées compilables au scellement, dont 31 suivies avant/après
 et six fichiers autonomes contrôlés seulement à cette étape. La publication,
 la CI Windows/Ubuntu et la promotion restent à constater séparément.
 
+## M10 — premier échec CI conservé, 16 novembre 2026
+
+La CI 43889980583 échoue sur les deux OS, 514 tests collectés et deux erreurs :
+le parent `artifacts/generated` des fixtures d'archivage et d'appartenance
+n'existe pas dans le checkout neuf. Les logs/API complets sont conservés dans
+`r6-m10-initial-001`, provenance
+`367ed4a6df47cc224fb6da0127fefadb1d927a225b6e36c90cba37abb23fc6f3`.
+Les deux tests préparent désormais leur parent sans affaiblir la validation.
+Les cinq tests d'archive et trois tests de campagne passent localement.
+Une répétition isolée à parent absent et une nouvelle suite complète sont
+préparées. Aucun moteur, contrôle d'acquisition ou résultat n'est modifié,
+aucune campagne n'est relancée et aucun succès CI n'est inventé.
+
+## M10 — fixtures corrigées et 514 tests rejoués, 16 novembre 2026
+
+`m10-ci-fixtures-001` passe : deux racines temporaires distinctes avec
+`artifacts/generated` absent au départ, puis 514 tests Python, `OK`, aucun
+ignoré. Les 313 entrées sont inchangées avant/après. La provenance est
+`7051a7e4656e74bc6a495a833fe706f55e2cdbab408b661d06ddc4e787a17aaa`.
+Les contrôleurs stricts, le moteur, le dossier réel et les preuves initiales
+restent inchangés. La nouvelle CI doit encore confirmer le checkout neuf
+sur Windows et Ubuntu avant la promotion.
+

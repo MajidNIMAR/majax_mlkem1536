@@ -26,6 +26,7 @@ class M10CampaignTests(unittest.TestCase):
 
     def test_ownership_is_restricted_to_direct_m10_children(self):
         parent = ROOT/'artifacts/generated'
+        parent.mkdir(parents=True,exist_ok=True)
         self.assertEqual(owned(parent/'m10-fixture',parent),parent/'m10-fixture')
         for name in ('m09-fixture','m10-fixture/child','../m10-fixture'):
             with self.assertRaises(ValueError):

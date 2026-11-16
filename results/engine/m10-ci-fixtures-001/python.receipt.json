@@ -1,0 +1,19 @@
+{
+  "command": [
+    "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\research-venv\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "research",
+    "-p",
+    "test_*.py"
+  ],
+  "cwd": "C:\\Users\\majax\\Documents\\Codex\\NIST",
+  "started_utc": "2026-11-16T15:03:05.301547+00:00",
+  "finished_utc": "2026-11-16T15:04:14.951033+00:00",
+  "exit_code": 0,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "7afbce04c0ef31f66b78b8ef3fe8a894aefda96339e471fd440998bcb69374db"
+}

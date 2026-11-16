@@ -1,0 +1,10 @@
+{
+  "schema": "m10-public-metadata-evidence-v1",
+  "files": {
+    "anonymous-verification.json": "f46ec9785dde209c5e4eb9bbea7c345c91812fd0c3960214af4f28ca9b452ad1",
+    "metadata-controller.py": "40251a6ece8fc0f2674042fcb5cb9375deff79713aecd0e7d0633c5484647e29",
+    "request.json": "494e1459f9d20d094638863dba39d3334f33a7aa446cc5824f6ba5f232324716",
+    "updated.json": "833379d756ebcb2e3ecc8964ab00bcf6fef488297cc585ae001cbf27ce6dbae3"
+  },
+  "credentials_retained": false
+}

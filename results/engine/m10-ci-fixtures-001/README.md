@@ -1,0 +1,3 @@
+# M10 missing-parent CI fixtures
+
+The two previously failing test methods run unchanged in separate empty fake ROOTs, initially without artifacts/generated. Only ROOT globals are patched; ownership and archive validation functions remain intact. Each test must create its own parent. One full Python514 suite follows. Exact streams, both fixed test sources, the executing helper, before/after input hashes and the unchanged initial CI identity are preserved. No actual ROOT/artifacts directory is deleted; no Rust build or fuzzing is requested by this helper. verification.json declares the actual outcome.

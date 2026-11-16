@@ -1,0 +1,8 @@
+{
+  "full_name": "MajidNIMAR/majax_mlkem1536",
+  "html_url": "https://github.com/MajidNIMAR/majax_mlkem1536",
+  "private": false,
+  "visibility": "public",
+  "default_branch": "main",
+  "description": "MAJAX R6: working Rust module-lattice KEM research and cryptographic engineering. Rank 6 x 256, q=7681; M10 secret-owner hardening, reproducible evidence and extended qualification. Experimental R1."
+}

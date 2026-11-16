@@ -1,0 +1,6 @@
+test_actual_streamed_tar_round_trip_keeps_exact_members (test_archive_m10.PublicationPartsTests.test_actual_streamed_tar_round_trip_keeps_exact_members) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.014s
+
+OK

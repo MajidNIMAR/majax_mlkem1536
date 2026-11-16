@@ -1,0 +1,15 @@
+{
+  "case": "archive",
+  "tests": 1,
+  "passed": true,
+  "skipped": 0,
+  "fake_ROOT": "C:\\Users\\majax\\Documents\\Codex\\NIST\\target\\m10-ci-fixtures-owned\\archive-root-5tr0f9tw",
+  "initial_artifacts_absent": true,
+  "initial_artifacts_generated_absent": true,
+  "test_created_parent": true,
+  "patched_globals_only": [
+    "archive_m10.ROOT"
+  ],
+  "validation_functions_replaced": false,
+  "fake_files_after_test_sha256": {}
+}

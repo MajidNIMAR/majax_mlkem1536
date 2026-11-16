@@ -1064,3 +1064,28 @@ Ces deux portées restent distinctes. Aucun temps de fuzzing supplémentaire
 n'est crédité par ce contrôle. La CI neuve et la promotion attendent leurs
 propres résultats ; C01 et la sélection cryptographique finale restent ouverts.
 
+## M10 — premier passage CI et portabilité des fixtures
+
+La CI 43889980583 du commit public `b96b548` échoue sur Windows et Ubuntu :
+les 514 tests sont collectés, avec deux erreurs. Deux fixtures supposaient
+à tort la présence préalable du dossier ignoré `artifacts/generated`.
+Le [recueil initial](../results/publication/r6-m10-initial-001/) conserve les
+API, les journaux complets et l'analyse des deux erreurs. Aucun succès de
+CI complète n'est attribué à ce passage.
+
+La correction ajoute seulement la création du parent de travail dans les
+deux tests concernés. Les contrôles d'appartenance restent identiques.
+Le moteur, les onze contrôleurs d'acquisition, les 37 entrées compilables,
+les images et les données scientifiques restent inchangés. Une vérification
+sur deux racines temporaires sans ce parent, puis une nouvelle suite Python
+et une nouvelle CI sont exigées. Le contrôle local complet antérieur est
+conservé dans sa portée temporelle ; il n'est pas présenté comme une nouvelle
+exécution des fixtures corrigées.
+
+Le [suivi des fixtures](../results/engine/m10-ci-fixtures-001/) passe : les
+deux cas réussissent dans deux racines isolées sans parent préalable, puis
+les 514 tests Python passent sans ignoré. Les 313 entrées suivies restent
+identiques avant/après ; le dossier réel et le recueil d'échec sont préservés.
+Le prochain passage CI porte sur cette correction des tests, sans nouveau
+build de qualification, nouvelle campagne ou modification du moteur.
+

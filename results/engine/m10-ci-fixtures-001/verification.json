@@ -1,0 +1,129 @@
+{
+  "schema": "m10-cold-CI-fixture-proof-v1",
+  "finished_utc": "2026-11-16T15:04:15.038209+00:00",
+  "status": "PASS",
+  "failure": null,
+  "Python_tests": 514,
+  "Python_status": "OK",
+  "skipped": 0,
+  "cold_cases": {
+    "archive": {
+      "case": "archive",
+      "tests": 1,
+      "passed": true,
+      "skipped": 0,
+      "fake_ROOT": "C:\\Users\\majax\\Documents\\Codex\\NIST\\target\\m10-ci-fixtures-owned\\archive-root-5tr0f9tw",
+      "initial_artifacts_absent": true,
+      "initial_artifacts_generated_absent": true,
+      "test_created_parent": true,
+      "patched_globals_only": [
+        "archive_m10.ROOT"
+      ],
+      "validation_functions_replaced": false,
+      "fake_files_after_test_sha256": {}
+    },
+    "ownership": {
+      "case": "ownership",
+      "tests": 1,
+      "passed": true,
+      "skipped": 0,
+      "fake_ROOT": "C:\\Users\\majax\\Documents\\Codex\\NIST\\target\\m10-ci-fixtures-owned\\ownership-root-37admd0v",
+      "initial_artifacts_absent": true,
+      "initial_artifacts_generated_absent": true,
+      "test_created_parent": true,
+      "patched_globals_only": [
+        "test_m10_campaign.ROOT",
+        "m10_campaign.ROOT"
+      ],
+      "validation_functions_replaced": false,
+      "fake_files_after_test_sha256": {}
+    }
+  },
+  "execution_receipts": [
+    {
+      "command": [
+        "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\research-venv\\Scripts\\python.exe",
+        "-B",
+        "C:\\Users\\majax\\Documents\\Codex\\NIST\\results\\engine\\m10-ci-fixtures-001\\execution-controller.py",
+        "--root",
+        "C:\\Users\\majax\\Documents\\Codex\\NIST",
+        "case",
+        "archive",
+        "--fake-root",
+        "C:\\Users\\majax\\Documents\\Codex\\NIST\\target\\m10-ci-fixtures-owned\\archive-root-5tr0f9tw"
+      ],
+      "cwd": "C:\\Users\\majax\\Documents\\Codex\\NIST",
+      "started_utc": "2026-11-16T15:03:04.672796+00:00",
+      "finished_utc": "2026-11-16T15:03:05.043358+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "8fd101310399c532ee75e6fb49ca29dec5b590505f6d8396886017ca91b307b2",
+      "stderr_sha256": "3beaf51a102ac21c7bd9fc4522fe89c7e5a2e00cf0364940cf5eedde1e4d7d55"
+    },
+    {
+      "command": [
+        "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\research-venv\\Scripts\\python.exe",
+        "-B",
+        "C:\\Users\\majax\\Documents\\Codex\\NIST\\results\\engine\\m10-ci-fixtures-001\\execution-controller.py",
+        "--root",
+        "C:\\Users\\majax\\Documents\\Codex\\NIST",
+        "case",
+        "ownership",
+        "--fake-root",
+        "C:\\Users\\majax\\Documents\\Codex\\NIST\\target\\m10-ci-fixtures-owned\\ownership-root-37admd0v"
+      ],
+      "cwd": "C:\\Users\\majax\\Documents\\Codex\\NIST",
+      "started_utc": "2026-11-16T15:03:05.048251+00:00",
+      "finished_utc": "2026-11-16T15:03:05.298330+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "f66c69e87929961ed964c9315071542764c86fdaff06b2e71352d1f5bc1dc414",
+      "stderr_sha256": "f9545b7bb25c8845a7183c505ac14c092db6632b988d15b33db93964ccc24118"
+    },
+    {
+      "command": [
+        "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\research-venv\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "research",
+        "-p",
+        "test_*.py"
+      ],
+      "cwd": "C:\\Users\\majax\\Documents\\Codex\\NIST",
+      "started_utc": "2026-11-16T15:03:05.301547+00:00",
+      "finished_utc": "2026-11-16T15:04:14.951033+00:00",
+      "exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "7afbce04c0ef31f66b78b8ef3fe8a894aefda96339e471fd440998bcb69374db"
+    }
+  ],
+  "source_and_control_input_count": 313,
+  "all_inputs_before_equal_after": true,
+  "input_manifest_before_sha256": "c8175b2f909e006ef0f745267af72a2fc5cacdeb3f03c84a5f60cb78a48f1f66",
+  "input_manifest_after_sha256": "c8175b2f909e006ef0f745267af72a2fc5cacdeb3f03c84a5f60cb78a48f1f66",
+  "fixed_test_sources_sha256": {
+    "research/test_archive_m10.py": "56d6cb1f746a954ea3fdb669e221643da579ffbd32c92ce2e8021a1efaca0a5c",
+    "research/test_m10_campaign.py": "1773b74cd84c52755d838820c2481608656d4c67c441e24473cb789b7236850d"
+  },
+  "strict_owned_controller_sha256": "0832e62e54e99d52408e83a0511c59e324e733bb91bdb53c353556d7204b43a9",
+  "initial_failed_CI_receipt_sha256": "367ed4a6df47cc224fb6da0127fefadb1d927a225b6e36c90cba37abb23fc6f3",
+  "initial_failed_CI_members_unchanged": true,
+  "actual_ROOT_artifacts_identity_before": {
+    "resolved": "C:\\Users\\majax\\Documents\\Codex\\NIST\\artifacts",
+    "device": 12703535595142910640,
+    "inode": 17169973580097134
+  },
+  "actual_ROOT_artifacts_identity_after": {
+    "resolved": "C:\\Users\\majax\\Documents\\Codex\\NIST\\artifacts",
+    "device": 12703535595142910640,
+    "inode": 17169973580097134
+  },
+  "temporary_cleanup_scope": "Only separate new fake roots under target/m10-ci-fixtures-owned",
+  "python_executable": "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\research-venv\\Scripts\\python.exe",
+  "python_runtime": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+  "new_Rust_builds_invoked": 0,
+  "new_fuzzing_credit_seconds": 0,
+  "engine_or_frozen_controllers_modified": false,
+  "external_audit": false
+}

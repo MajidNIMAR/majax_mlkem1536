@@ -1,0 +1,19 @@
+{
+  "command": [
+    "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\research-venv\\Scripts\\python.exe",
+    "-B",
+    "C:\\Users\\majax\\Documents\\Codex\\NIST\\results\\engine\\m10-ci-fixtures-001\\execution-controller.py",
+    "--root",
+    "C:\\Users\\majax\\Documents\\Codex\\NIST",
+    "case",
+    "ownership",
+    "--fake-root",
+    "C:\\Users\\majax\\Documents\\Codex\\NIST\\target\\m10-ci-fixtures-owned\\ownership-root-37admd0v"
+  ],
+  "cwd": "C:\\Users\\majax\\Documents\\Codex\\NIST",
+  "started_utc": "2026-11-16T15:03:05.048251+00:00",
+  "finished_utc": "2026-11-16T15:03:05.298330+00:00",
+  "exit_code": 0,
+  "stdout_sha256": "f66c69e87929961ed964c9315071542764c86fdaff06b2e71352d1f5bc1dc414",
+  "stderr_sha256": "f9545b7bb25c8845a7183c505ac14c092db6632b988d15b33db93964ccc24118"
+}

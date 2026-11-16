@@ -1,0 +1,27 @@
+{
+  "schema": "m10-CI-fixture-evidence-v1",
+  "status": "PASS",
+  "output_sha256": {
+    "cold-archive.receipt.json": "cdc1310d5c9ac6a4fea71067891ee976e9895033ec79c9f4a695b6ff3a6d9e04",
+    "cold-archive.stderr": "3beaf51a102ac21c7bd9fc4522fe89c7e5a2e00cf0364940cf5eedde1e4d7d55",
+    "cold-archive.stdout": "8fd101310399c532ee75e6fb49ca29dec5b590505f6d8396886017ca91b307b2",
+    "cold-ownership.receipt.json": "899e2d1afede46887a27aafd878eea3f0681da838914944c0e5b42806d57eca9",
+    "cold-ownership.stderr": "f9545b7bb25c8845a7183c505ac14c092db6632b988d15b33db93964ccc24118",
+    "cold-ownership.stdout": "f66c69e87929961ed964c9315071542764c86fdaff06b2e71352d1f5bc1dc414",
+    "execution-controller.py": "8a19d94e00f76c90d610c2048fb89537aead0ce7fc499881e8a4b180ca758d58",
+    "initial-CI-provenance.json": "367ed4a6df47cc224fb6da0127fefadb1d927a225b6e36c90cba37abb23fc6f3",
+    "inputs-after.json": "c8175b2f909e006ef0f745267af72a2fc5cacdeb3f03c84a5f60cb78a48f1f66",
+    "inputs-before.json": "c8175b2f909e006ef0f745267af72a2fc5cacdeb3f03c84a5f60cb78a48f1f66",
+    "python.receipt.json": "4ed929ff52cf7e37cd1ae14961981259c5980c9a16da1975fe53f3dae3d5228c",
+    "python.stderr": "7afbce04c0ef31f66b78b8ef3fe8a894aefda96339e471fd440998bcb69374db",
+    "python.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "README.md": "2e23d043df70d1330de1bf0dbba1fb628b4ade1e457cf485e1d581cb1ad3c240",
+    "test-sources/research/test_archive_m10.py": "56d6cb1f746a954ea3fdb669e221643da579ffbd32c92ce2e8021a1efaca0a5c",
+    "test-sources/research/test_m10_campaign.py": "1773b74cd84c52755d838820c2481608656d4c67c441e24473cb789b7236850d",
+    "verification.json": "a6c5c475c963d6c480b08c187b77ff78d087ff7a74eab3fdcf50bc3666bfcc84"
+  },
+  "executing_helper_sha256": "8a19d94e00f76c90d610c2048fb89537aead0ce7fc499881e8a4b180ca758d58",
+  "initial_failed_CI_receipt_sha256": "367ed4a6df47cc224fb6da0127fefadb1d927a225b6e36c90cba37abb23fc6f3",
+  "new_Rust_builds_invoked": 0,
+  "new_fuzzing_credit_seconds": 0
+}
