@@ -8,8 +8,10 @@ sans défaut observé. La couverture source/branches et le rejeu indépendant
 du nouveau corpus sont achevés, avec leurs reçus distincts. La distribution
 et le rejeu des 10 908 membres scellés sont vérifiés. Le check local Windows
 complet passe, avec 514 tests Python sans aucun ignoré. La CI neuve
-Windows/Ubuntu et la promotion canonique restent en attente de leurs
-résultats effectifs.
+Windows/Ubuntu passe avec 514 tests par OS sans ignoré ; la promotion
+canonique 002 est vérifiée après copie. **M10 est la référence livrée,
+qualifiée en interne dans le périmètre PC documenté.** Les tentatives
+refusées et leurs corrections restent conservées.
 
 Ce bilan suit le [protocole M10](PROTOCOLE_M10.md) et porte sur les quatre
 chantiers autorisés. La revue cryptographique extérieure est différée ;
@@ -178,7 +180,7 @@ les appels indirects non résolus, les dépendances et les copies de l'appelant.
 **La correction de ces résidus ciblés ne ferme pas l'effacement ou le
 temps constant de tout le programme.**
 
-## 4. Qualification : campagne, couverture et rejeu acquis, clôture en attente
+## 4. Qualification et livraison PC acquises dans le périmètre interne
 
 ### Corpus des trois itérations
 
@@ -455,8 +457,99 @@ Le recueil conserve le journal, les contrôles, les inventaires, les reçus
 et leurs liens au manifeste 003. Son scellage ne relance ni tests,
 compilation, moteur ou fuzzing et n'ajoute aucun temps de campagne.
 
-La **CI neuve Windows/Ubuntu et la promotion canonique restent en attente**
-de leurs résultats effectifs. M09 reste la référence livrée ; les acquis
-locaux ne leur donnent pas par avance un statut de succès. C01, la sélection
-cryptographique finale et les garanties globales de temps constant ou
-d'effacement restent ouverts.
+### Première CI refusée, correction des fixtures et contrôle complémentaire
+
+La [première CI 43889980583](../results/publication/r6-m10-initial-001/),
+sur le commit public `b96b5483655fc4447c40a1c96925bb6bb5a88c73`, échoue
+sur les deux OS : 514 tests sont exécutés, avec deux erreurs liées à l'absence
+de `artifacts/generated` dans un checkout neuf. Son statut est conservé
+comme échec ; il n'est pas crédité comme intégration réussie.
+
+La correction ne touche que la préparation du dossier parent dans
+`test_archive_m10.py` et `test_m10_campaign.py`. Elle ne change ni le moteur,
+ni les 11 contrôleurs d'acquisition, ni les 37 entrées compilables qualifiées.
+Le [recueil des fixtures corrigées](../results/engine/m10-ci-fixtures-001/)
+exécute les deux tests dans des racines temporaires initialement sans
+`artifacts/generated`, sans remplacer les contrôles de propriété ou
+d'archive, puis la suite Python complète : **514 tests, OK, zéro ignoré**.
+Ses 313 entrées enregistrées sont identiques avant/après.
+
+Ce complément Python porte sur les tests corrigés. Il reste distinct du
+check complet local décrit plus haut, effectué avant ces deux changements
+de fixtures. Ni ce complément, ni la nouvelle CI n'est présenté comme une
+répétition de la campagne longue ou des mesures de qualification.
+
+### CI neuve réussie et source effectivement testée
+
+Le [reçu strict de publication](../results/publication/r6-m10-001/) établit
+le succès de la [CI 43893183494](https://github.com/MajidNIMAR/majax_mlkem1536/actions/runs/43893183494)
+sur `windows-latest` et `ubuntu-24.04`, au commit public
+[`82c63441d1885c1e348884a2d9442ee48b6eaf03`](https://github.com/MajidNIMAR/majax_mlkem1536/commit/82c63441d1885c1e348884a2d9442ee48b6eaf03).
+La source de recherche correspondante est
+`25b250ad5038555eb95ff7f42b9a952bef7ede76`. Chacun des deux jobs exécute
+**514 tests Python, sans aucun ignoré**, les tests Rust, le formatage,
+Clippy strict et les rejeux de preuves requis.
+
+Les contrôles natifs portent aussi sur les **images originales qualifiées
+M10-003** de CLI et de consommateur API : par OS, 16 échanges frais,
+16 rejets implicites, cinq refus de commandes de recherche, 13 cas de
+consommateur et 88576 sondes finies. Le reçu relie **les 37 entrées
+compilables qualifiées** à la source publique effectivement testée.
+Les métadonnées de jobs, journaux complets, images et cartes de sources sont
+conservés ; une interface verte seule ne constitue pas cette preuve.
+Ces contrôles n'ajoutent aucun temps de fuzzing et ne sont pas un audit externe.
+
+### Lecteur de publication figé et rejeu hors ligne
+
+Le [lecteur figé](../results/publication/r6-m10-controls-001/) conserve
+**50 fichiers Python de première partie**, correspondant à sa fermeture
+d'imports statiques. Chaque fichier est identique octet pour octet au blob
+Git du commit public effectivement testé `82c63441…`. La provenance scelle
+63 membres, en plus de son propre fichier, avec **quatre tests purs réussis,
+sans ignoré**, puis un rejeu hors ligne réussi du reçu réel de publication.
+Ce rejeu n'utilise pas le réseau et ne relance ni moteur, compilation,
+benchmark, fuzzing ou nouvelle CI.
+
+La [première préparation refusée](../results/publication/r6-m10-freeze-initial-001/)
+reste conservée : les fins de ligne CRLF du fichier local différaient des
+blobs Git testés en LF, ce qui empêchait de revendiquer une copie exacte.
+Le helper corrigé lit et analyse directement les octets des blobs Git du
+commit testé, puis copie ces mêmes octets. Il ne normalise pas une source
+locale mutable et ne modifie aucun contrôleur d'acquisition figé.
+
+Le SHA-256 de la provenance finale est
+`0363b85d5d1a40339412376076f63c1391e8dfc477ab361ef87cfdae5477e62a`.
+Ce gel concerne le lecteur et ses imports locaux statiques ; il ne fige
+pas tous les imports dynamiques, les dépendances tierces ou l'environnement
+Python. Il n'est pas présenté comme une reproduction du moteur par un tiers.
+
+### Promotion Windows : tentative 001 refusée, tentative 002 acquise
+
+La [tentative canonique 001](../results/engine/m10-canonical-001/) est
+**FAIL**. Le helper attendait à tort deux objets JSON pour `dev-profile`,
+qui rend un seul objet. Le binaire retourne bien le profil avec exit code 0,
+mais le contrôle de framing refuse la promotion avant l'auto-test ; les
+compteurs d'échanges/rejets de cette tentative restent à zéro. Le rollback
+restaure exactement le CLI M09 précédent. Ce constat, les octets précédents
+et les reçus de la tentative ne sont pas remplacés.
+
+La [tentative 002](../results/engine/m10-canonical-002/) utilise un contrôle
+strict du seul objet JSON attendu. Le cas réel et trois témoins négatifs
+passent : objets JSON dupliqués, mauvais modulus et revendication de
+validation non autorisée sont refusés. Le moteur et son original livré
+restent inchangés.
+
+Après copie, le profil, **16 échanges frais**, **16 rejets implicites** et
+**cinq refus de commandes de recherche** passent. Le CLI installé sous
+`target/release/kem1536.exe` a exactement le SHA-256 de l'original Windows
+M10-003 qualifié :
+
+`2d6aa2e5859ea1df7774e5dd1cbb35827c8e9e1feddbe9f1f72a80c1661d5468`.
+
+La promotion 002 est **PASS**, liée au manifeste 003, au check local et à
+la CI réussie. Elle ne reconstruit pas le moteur et ne crée aucun crédit
+de benchmark ou de campagne. M10 devient la référence livrée, qualifiée
+en interne sur les PC documentés ; les étapes M09 et antérieures restent
+historiques et immuables. **C01, la sélection cryptographique finale, les
+garanties globales de temps constant/effacement et la revue extérieure
+restent ouverts ; le chantier d'audit externe est différé.**

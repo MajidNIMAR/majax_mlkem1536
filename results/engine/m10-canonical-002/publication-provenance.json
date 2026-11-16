@@ -1,0 +1,19 @@
+{
+  "schema": "m10-publication-receipt-v1",
+  "output_sha256": {
+    "ci-logs.zip": "c89715d2b8ff9b0b9fe1d976fb81bccf3e5f20bf6e08adcf29deba531c4adc6d",
+    "config.json": "965eb408c133ab504253cc5fb96ec4cdec3730c49488eace097bf3bfc34ade7d",
+    "engine-provenance.json": "1d89486958ae862226b821dcc2c0f63710c488dfd262789fc239ad4c8246a0a5",
+    "jobs.json": "35a1c8ce89e457df78c8980027f98b0cc30e185f5ec2ec031f3c0a41c1488f72",
+    "linux-build.json": "cbb4c815804f241dc4b13152cd5d6c39571b8c31a8d169be4c79b4c40953cbb4",
+    "qualified-source.json": "67084be5ab1cde058661104b16e738138db7993dec001ac39625feb830b2810d",
+    "README.md": "2cf0650dc37ec54109d36765e5b08b09493497bfc40927126869512ec3b28f2b",
+    "run.json": "6388ce9dcc0564781e4879313d464dd4a9d82f13d380464ee97be4b9f2b41f64",
+    "source-integrity.json": "7a432497bace41daafda23067e537adfcba8158d40e0c3f1f76a21e5c9aa526c",
+    "tested-source-provenance.json": "e7e0f08203b6d652b8ffd014af12407b974e7d60d87b19350494d4a884b63065",
+    "verification.json": "e62c11449fbd7ce2f116da5311b7751c7cc7d06979f470b8c1f3f86965404714",
+    "windows-build.json": "fcc594a440ceaf8ea26514e8df17b3c8bc8e1fd64df41b79fbc117ece52a71f9"
+  },
+  "credentials_retained": false,
+  "signed_log_storage_URL_retained": false
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "m10-frozen-reader-prepare-failure-v1",
+  "command": [
+    ".tools/research-venv/Scripts/python.exe",
+    "-B",
+    "artifacts/generated/m10-freeze-publication-001.py",
+    "prepare"
+  ],
+  "exit_code": 1,
+  "exception_type": "ValueError",
+  "message": "current source bytes differ from tested public Git blob: research/m10_publication.py",
+  "public_tested_commit": "82c63441d1885c1e348884a2d9442ee48b6eaf03",
+  "current_source_sha256": "2a20ee5be650614b2603873cc28fefda6dc14512454128772f5f452284f86de8",
+  "tested_public_blob_sha256": "ef1afa3d9871c48a280b9b16dcabc2d0b9df8934b28166ac2baf50251a1b37b7",
+  "equal_after_CRLF_to_LF": true,
+  "final_receipt_present": true,
+  "controls_folder_created": false,
+  "prepare_reexecuted": false,
+  "seal_executed": false,
+  "source_or_controller_modified": false
+}

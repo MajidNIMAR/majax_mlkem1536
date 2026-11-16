@@ -1,0 +1,10 @@
+{
+  "schema": "m10-freeze-failure-evidence-v1",
+  "output_sha256": {
+    "current-m10_publication.py": "2a20ee5be650614b2603873cc28fefda6dc14512454128772f5f452284f86de8",
+    "failure.json": "09c4f535e88722b115867654b6819c0c2126df72035428fee2f0d0bb9e3b612b",
+    "tested-m10_publication.py": "ef1afa3d9871c48a280b9b16dcabc2d0b9df8934b28166ac2baf50251a1b37b7"
+  },
+  "new_engine_builds": 0,
+  "new_fuzzing_credit_seconds": 0
+}

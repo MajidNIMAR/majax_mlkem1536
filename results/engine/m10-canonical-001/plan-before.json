@@ -1,0 +1,20 @@
+{
+  "schema": "m10-canonical-plan-v1",
+  "started_utc": "2026-11-16T15:27:54.879611+00:00",
+  "target": "target/release/kem1536.exe",
+  "previous_sha256": "9eb95fb2cb9a8531a216012b4cff71d6b10d1a7951285d9d3c666f8186002255",
+  "original_path": "artifacts/generated/m10-final-003/windows/bin/delivered.exe",
+  "original_M10_sha256": "2d6aa2e5859ea1df7774e5dd1cbb35827c8e9e1feddbe9f1f72a80c1661d5468",
+  "source_manifest_sha256": "67084be5ab1cde058661104b16e738138db7993dec001ac39625feb830b2810d",
+  "engine_provenance_sha256": "1d89486958ae862226b821dcc2c0f63710c488dfd262789fc239ad4c8246a0a5",
+  "local_check_provenance_sha256": "f26d015f16c05d04b4dc5e04c7a2b6a249acaf9a04b8d0bfd7e05f9cbe9f3779",
+  "previous_promotion_sha256": "6d360edd3000dcce7788b2ea3edbc152705b51a0f8ddfcc7c6924ce36e15af19",
+  "publication_provenance_sha256": "76a1c1ae0a630209d8acc247c0443ee7839dc6f0136c8455ea992ab402d139e3",
+  "final_CI_run": 43893183494,
+  "public_tested_commit": "82c63441d1885c1e348884a2d9442ee48b6eaf03",
+  "source_commit": "25b250ad5038555eb95ff7f42b9a952bef7ede76",
+  "python_tests_per_OS": 514,
+  "controller_sha256": "0365b67e4b509cd905c8f821e92a4211a9051744527c0cc6401e525ce5dc7a55",
+  "new_builds": 0,
+  "new_fuzzing_credit_seconds": 0
+}

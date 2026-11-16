@@ -22,4 +22,5 @@
 /results/engine/m08*/** -text whitespace=cr-at-eol,-blank-at-eof,-blank-at-eol
 /results/engine/m09*/** -text whitespace=cr-at-eol,-blank-at-eof,-blank-at-eol
 /results/engine/m10*/** -text whitespace=cr-at-eol,-blank-at-eof,-blank-at-eol
+/results/publication/r6-m10-controls-001/** -text whitespace=cr-at-eol,-blank-at-eof,-blank-at-eol
 

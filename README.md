@@ -24,8 +24,8 @@ evidence needed to examine its evolution.
 
 ## Latest verified results — M10
 
-**M10 is the new internally reviewed engine candidate.** It preserves the
-R1 construction, wire formats and deterministic outputs. SHA3/SHAKE material
+**M10 is the delivered engine reference, qualified internally on the recorded
+PC targets.** It preserves the R1 construction, wire formats and deterministic outputs. SHA3/SHAKE material
 is written into existing secret owners; borrowed SHAKE finalization keeps
 the absorbed state subject to wiping, and the local decapsulation output
 owner remains alive until after copying. The [four-image PC review](docs/REVUE_CYCLE_SECRET_M10.md)
@@ -73,15 +73,27 @@ passes with **514 Python tests, none skipped**, Rust tests, formatting,
 strict Clippy and the required evidence replays. Its 313 recorded source
 and control inputs are identical before and after the check. Same-host
 repeat CLI builds match Linux raw bytes and Windows outside the two declared
-PE metadata fields; the distribution is qualified internally. Fresh hosted
-Windows/Ubuntu CI and canonical promotion remain pending. **M09 remains
-the delivered reference** until those integration steps are completed.
+PE metadata fields; the distribution is qualified internally.
+
+[Fresh hosted CI 43893183494 passes on Windows and Ubuntu](https://github.com/MajidNIMAR/majax_mlkem1536/actions/runs/43893183494)
+at tested public commit [`82c63441`](https://github.com/MajidNIMAR/majax_mlkem1536/commit/82c63441d1885c1e348884a2d9442ee48b6eaf03),
+with **514 Python tests per OS, none skipped**, Rust/fmt/strict Clippy,
+evidence replays and native checks of the original M10 CLI/API consumer.
+The [publication receipt](results/publication/r6-m10-001/) links the tested
+source to all 37 qualified compilation inputs. The [frozen publication reader](results/publication/r6-m10-controls-001/)
+retains 50 exact tested Python Git blobs, passes its four pure tests and
+replays that receipt offline. The original M10 Windows CLI
+is [promoted locally and checked after copying](results/engine/m10-canonical-002/):
+profile, 16 fresh exchanges, 16 rejections and five disabled research-command
+refusals pass. The initial hosted fixture failure, its test-only correction
+and the first rolled-back promotion attempt are retained in the [M10 study](docs/M10_MOTEUR_ET_QUALIFICATION.md).
+These integrations add no fuzzing credit, external audit or global security rating.
 
 <a id="latest-verified-results--m09"></a>
 
 ## Historical delivered results — M09
 
-**M09 is the delivered engine reference, qualified internally.** It adds fixed-size
+**M09 is an immutable historical delivered milestone, qualified internally.** It introduced fixed-size
 borrowed noise roles, operation-level partial-entropy failure checks, direct
 message ownership and a scalar NTT with public precomputed twiddles. R1
 formats, domains and outputs are unchanged. The final M08 → M09 comparison
@@ -134,9 +146,9 @@ compilation inputs and the original image hashes. The [frozen offline reader](re
 replays that receipt. The [initial green run](results/publication/r6-m09-initial-001/)
 retains one omitted test and the reason a second run was required; its
 test-only correction changed no compiled input or scientific evidence.
-The [qualified packages](docs/DISTRIBUTION_M09.md) are available. The local
-Windows canonical CLI now contains the original M09 image, copied and
-[checked natively after promotion](results/engine/m09-canonical-001/), with
+The [historical qualified packages](docs/DISTRIBUTION_M09.md) remain available.
+The original M09 Windows image was copied and
+[checked natively after its promotion](results/engine/m09-canonical-001/), with
 16 fresh exchanges/rejections and five normal research-command refusals.
 These integrations are separate from the frozen measurements and campaigns.
 
@@ -183,7 +195,7 @@ scope and raw results.
 | Implementation hardening | M10 qualifies removal of two observed stack residues in its four reviewed PC images and completes its new long sanitizer campaign; earlier M08/M09 findings retain their own image scope. Register/ABI/all-PKE erasure and formal constant time remain open |
 | Cryptographic security argument | Exact correctness certificates and conditional ROM/QROM analyses under stated assumptions; the full concrete R1 argument **C01 remains open** |
 | External assurance and security rating | A certified global bit rating, NIST category or external cryptographic audit is not established by these artifacts; **1536 denotes the coefficient count** |
-| Target qualification | M09 CLI/default-consumer reviews and historical M08 reviews concern GNU x86-64 Windows/Linux; Android/ARM timing and register/ABI behavior require their own qualification |
+| Target qualification | M10 CLI/default-consumer reviews and hosted native checks concern the recorded GNU x86-64 Windows/Linux PC images; M08/M09 retain their own historical scope. Android/ARM requires its own qualification |
 
 The [security status](SECURITY.md) separates the M10 corrections, earlier
 M08/M09 findings and the remaining cryptographic obligations.
@@ -206,7 +218,7 @@ The work connects three areas:
 |---|---|---|
 | KEM construction | R1 key generation, encapsulation, decapsulation and implicit rejection | [KEM implementation](crates/kem1536/src/dev_kem.rs) |
 | Polynomial arithmetic | Scalar negacyclic NTT in `Z_7681[X]/(X^256 + 1)`, reused transforms and accumulated products | [Arithmetic implementation](crates/kem1536/src/engine_poly.rs) |
-| Secret ownership | Typed keys and shared secrets, bounded buffers and explicit zeroizing owners | [Secret storage](crates/kem1536/src/secret_box.rs), [M09 secret-lifecycle review](docs/REVUE_CYCLE_SECRET_M09.md) |
+| Secret ownership | Typed keys and shared secrets, bounded buffers and explicit zeroizing owners | [Secret storage](crates/kem1536/src/secret_box.rs), [M10 secret-lifecycle review](docs/REVUE_CYCLE_SECRET_M10.md) |
 | Independent reference | Separate Python implementation and generic convolution checks | [Python reference](research/kem_r1_reference.py), [certificate/program bridge](docs/LIEN_CERTIFICAT_PROGRAMME_R1.md) |
 | Integration | Rust library API, command-line diagnostics and a KEM/HKDF/AEAD consumer example | [Engine guide](docs/MOTEUR_KEM_R1.md), [channel example](examples/r1-channel-demo/README.md) |
 

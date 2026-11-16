@@ -1,0 +1,27 @@
+{
+  "schema": "m10-promotion-profile-parser-regression-v1",
+  "status": "PASS",
+  "cases": [
+    {
+      "case": "actual single dev-profile object",
+      "passed": true
+    },
+    {
+      "case": "duplicate JSON objects",
+      "passed": true
+    },
+    {
+      "case": "wrong modulus",
+      "passed": true
+    },
+    {
+      "case": "unsupported validation claim",
+      "passed": true
+    }
+  ],
+  "controller_sha256": "b302eaf6e5831483fcc961e4f8cb924b23c0d00a0f0343ace4a75042c720db2f",
+  "prior_controller_sha256": "0365b67e4b509cd905c8f821e92a4211a9051744527c0cc6401e525ce5dc7a55",
+  "prior_failed_promotion_provenance_sha256": "480bc34386972b8bb400f1e58f2db5852b3d3a7002dad96452110b1942dacdea",
+  "engine_changed": false,
+  "new_builds": 0
+}

@@ -1,0 +1,28 @@
+{
+  "command": [
+    "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\research-venv\\Scripts\\python.exe",
+    "-E",
+    "-s",
+    "-B",
+    "C:\\Users\\majax\\Documents\\Codex\\NIST\\results\\publication\\r6-m10-controls-001\\research\\m10_publication.py",
+    "verify",
+    "--output",
+    "C:\\Users\\majax\\Documents\\Codex\\NIST\\results\\publication\\r6-m10-001"
+  ],
+  "cwd": "C:\\Users\\majax\\Documents\\Codex\\NIST\\results\\publication\\r6-m10-controls-001",
+  "started_utc": "2026-11-16T15:31:15.264441+00:00",
+  "finished_utc": "2026-11-16T15:31:15.685365+00:00",
+  "exit_code": 0,
+  "expired": false,
+  "stdout_sha256": "57ff5c3f83c4d025df82f1c38280cdc5290c1e58f3241e22495b4522d7ea1271",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "public_tested_commit": "82c63441d1885c1e348884a2d9442ee48b6eaf03",
+  "source_commit": "25b250ad5038555eb95ff7f42b9a952bef7ede76",
+  "run_id": 43893183494,
+  "absolute_receipt_path": "C:\\Users\\majax\\Documents\\Codex\\NIST\\results\\publication\\r6-m10-001",
+  "offline_replay_passed": true,
+  "network_used": false,
+  "new_engine_builds": 0,
+  "new_fuzzing_credit_seconds": 0,
+  "external_audit": false
+}

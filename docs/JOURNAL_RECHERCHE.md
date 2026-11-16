@@ -2136,3 +2136,38 @@ Les contrôleurs stricts, le moteur, le dossier réel et les preuves initiales
 restent inchangés. La nouvelle CI doit encore confirmer le checkout neuf
 sur Windows et Ubuntu avant la promotion.
 
+## M10 — seconde CI validée et promotion 002, 16 novembre 2026
+
+Le collecteur strict valide la CI 43893183494, public `82c6344`, source local
+`25b250a` : 514 tests exécutés par OS, aucun ignoré, contrôles natifs des
+originaux et 37 entrées compilables égales. `r6-m10-001` a pour provenance
+`76a1c1ae0a630209d8acc247c0443ee7839dc6f0136c8455ea992ab402d139e3`.
+
+Le premier helper de promotion attendait deux JSON pour `dev-profile`,
+qui en émet exactement un. La tentative 001 est conservée, avec restauration
+M09 confirmée. Après correction stricte du parser et trois cas négatifs,
+la promotion 002 passe avec l'original M10, profil/16 échanges-rejets/cinq
+refus après copie. Aucune compilation ni campagne supplémentaire.
+
+Le premier gel du lecteur de publication refuse une différence CRLF/LF
+entre le fichier local et le blob public testé. Le constat est conservé
+dans `r6-m10-freeze-initial-001`. La copie exacte depuis les blobs publics
+est préparée dans un nouveau helper ; le contrôleur testé reste inchangé.
+
+## M10 — lecteur public figé et clôture interne, 16 novembre 2026
+
+Le gel final prend les 50 fichiers Python directement depuis les blobs
+du commit public testé `82c6344`, sans lire ni normaliser les sources locales.
+Les quatre tests purs figés et le rejeu hors ligne du reçu CI passent.
+`r6-m10-controls-001` conserve 63 membres et sa provenance
+`0363b85d5d1a40339412376076f63c1391e8dfc477ab361ef87cfdae5477e62a`.
+Le refus initial CRLF/LF reste conservé et explicitement relié au résultat.
+
+La référence locale est l'original Windows M10 003, qualifié et vérifié après
+copie (reçu canonique 002). Les paquets Windows/Linux, les analyses, la longue
+campagne, la couverture, l'oracle et les contrôles complets sont acquis dans
+leurs périmètres. C01, le gel cryptographique final et les garanties globales
+de temps constant/effacement restent ouverts. La revue externe, chantier 5,
+reste différée ; aucun tiers n'a été contacté. La clôture documentaire et ses
+reçus sont publiés avec le code actif testé inchangé.
+

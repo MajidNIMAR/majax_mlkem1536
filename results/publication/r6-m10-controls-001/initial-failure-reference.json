@@ -1,0 +1,12 @@
+{
+  "capsule": "results/publication/r6-m10-freeze-initial-001",
+  "provenance_sha256": "64f263f4ace576816f8facc70eb0e2495a159138bef26adab270c149f46902d8",
+  "verified_members_sha256": {
+    "current-m10_publication.py": "2a20ee5be650614b2603873cc28fefda6dc14512454128772f5f452284f86de8",
+    "failure.json": "09c4f535e88722b115867654b6819c0c2126df72035428fee2f0d0bb9e3b612b",
+    "tested-m10_publication.py": "ef1afa3d9871c48a280b9b16dcabc2d0b9df8934b28166ac2baf50251a1b37b7"
+  },
+  "initial_helper_sha256": "e75bd0862f37b58c10d704ae0037cdbcf3d151edc169560d2797e0830a7f5bdc",
+  "correction": "v002 selects modules from the tested public Git tree and parses/copies exact git-show bytes; it does not read or normalize mutable research source files.",
+  "no_failed_capsule_or_source_modified": true
+}

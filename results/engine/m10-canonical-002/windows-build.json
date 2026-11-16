@@ -1,0 +1,126 @@
+{
+  "profile": "KEM1536-DEV-Q7681-R1",
+  "host": "windows",
+  "source_manifest_sha256": "67084be5ab1cde058661104b16e738138db7993dec001ac39625feb830b2810d",
+  "binaries": {
+    "research": {
+      "path": "windows/bin/research.exe",
+      "sha256": "dea0ece3db85f7084680cc0a786271cc00884b29ef64352b92e419b96bf93e70",
+      "command": [
+        "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\cargo\\bin\\cargo.exe",
+        "build",
+        "--release",
+        "--locked",
+        "--offline",
+        "-p",
+        "kem1536-cli",
+        "--bin",
+        "kem1536",
+        "--features",
+        "research-vectors"
+      ],
+      "rustc": "rustc 1.91.1 (ed61e7d7e 2025-11-07)\nbinary: rustc\ncommit-hash: ed61e7d7e242494fb7057f2657300d9e77bb4fcb\ncommit-date: 2025-11-07\nhost: x86_64-pc-windows-gnu\nrelease: 1.91.1\nLLVM version: 21.1.2\n",
+      "emit_stack_metadata": false,
+      "exit_code": 0,
+      "started_utc": "2026-11-16T12:26:39.415844+00:00",
+      "finished_utc": "2026-11-16T12:27:33.780611+00:00"
+    },
+    "delivered": {
+      "path": "windows/bin/delivered.exe",
+      "sha256": "2d6aa2e5859ea1df7774e5dd1cbb35827c8e9e1feddbe9f1f72a80c1661d5468",
+      "command": [
+        "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\cargo\\bin\\cargo.exe",
+        "build",
+        "--release",
+        "--locked",
+        "--offline",
+        "-p",
+        "kem1536-cli",
+        "--bin",
+        "kem1536"
+      ],
+      "rustc": "rustc 1.91.1 (ed61e7d7e 2025-11-07)\nbinary: rustc\ncommit-hash: ed61e7d7e242494fb7057f2657300d9e77bb4fcb\ncommit-date: 2025-11-07\nhost: x86_64-pc-windows-gnu\nrelease: 1.91.1\nLLVM version: 21.1.2\n",
+      "emit_stack_metadata": false,
+      "exit_code": 0,
+      "started_utc": "2026-11-16T12:27:33.927981+00:00",
+      "finished_utc": "2026-11-16T12:27:39.651519+00:00"
+    },
+    "consumer": {
+      "path": "windows/bin/consumer.exe",
+      "sha256": "5d4313826aa2b4ee6bb02719657fd8e85db70310786a708646d6b02741fd1987",
+      "command": [
+        "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\cargo\\bin\\cargo.exe",
+        "build",
+        "--release",
+        "--locked",
+        "--offline",
+        "--manifest-path",
+        "C:\\Users\\majax\\Documents\\Codex\\NIST\\artifacts\\generated\\m10-final-003\\source\\research\\m08-import-consumer\\Cargo.toml"
+      ],
+      "rustc": "rustc 1.91.1 (ed61e7d7e 2025-11-07)\nbinary: rustc\ncommit-hash: ed61e7d7e242494fb7057f2657300d9e77bb4fcb\ncommit-date: 2025-11-07\nhost: x86_64-pc-windows-gnu\nrelease: 1.91.1\nLLVM version: 21.1.2\n",
+      "emit_stack_metadata": false,
+      "exit_code": 0,
+      "started_utc": "2026-11-16T12:27:39.757814+00:00",
+      "finished_utc": "2026-11-16T12:27:50.246535+00:00"
+    },
+    "latency": {
+      "path": "windows/bin/latency.exe",
+      "sha256": "8363b7259891467c2cc7f7a10a6ad2441842b1adc3bf389a568a40522b0c1631",
+      "command": [
+        "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\cargo\\bin\\cargo.exe",
+        "build",
+        "--release",
+        "--locked",
+        "--offline",
+        "-p",
+        "kem1536-bench",
+        "--bin",
+        "m07-measure"
+      ],
+      "rustc": "rustc 1.91.1 (ed61e7d7e 2025-11-07)\nbinary: rustc\ncommit-hash: ed61e7d7e242494fb7057f2657300d9e77bb4fcb\ncommit-date: 2025-11-07\nhost: x86_64-pc-windows-gnu\nrelease: 1.91.1\nLLVM version: 21.1.2\n",
+      "emit_stack_metadata": false,
+      "exit_code": 0,
+      "started_utc": "2026-11-16T12:27:50.354560+00:00",
+      "finished_utc": "2026-11-16T12:27:51.458600+00:00"
+    },
+    "timing": {
+      "path": "windows/bin/timing.exe",
+      "sha256": "bf49f78285a2a5e3d58eeb40456770b414c7d4286fbb87917a552e969ad15c11",
+      "command": [
+        "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\cargo\\bin\\cargo.exe",
+        "build",
+        "--release",
+        "--locked",
+        "--offline",
+        "-p",
+        "kem1536-bench",
+        "--bin",
+        "kem1536-bench"
+      ],
+      "rustc": "rustc 1.91.1 (ed61e7d7e 2025-11-07)\nbinary: rustc\ncommit-hash: ed61e7d7e242494fb7057f2657300d9e77bb4fcb\ncommit-date: 2025-11-07\nhost: x86_64-pc-windows-gnu\nrelease: 1.91.1\nLLVM version: 21.1.2\n",
+      "emit_stack_metadata": false,
+      "exit_code": 0,
+      "started_utc": "2026-11-16T12:27:51.563927+00:00",
+      "finished_utc": "2026-11-16T12:27:54.997750+00:00"
+    },
+    "probe": {
+      "path": "windows/bin/probe.exe",
+      "sha256": "28b9bec35f879bd114bf3c70903ffd1e98203fce85051c1b7ce92948985361e6",
+      "command": [
+        "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\cargo\\bin\\cargo.exe",
+        "build",
+        "--release",
+        "--locked",
+        "--offline",
+        "--manifest-path",
+        "C:\\Users\\majax\\Documents\\Codex\\NIST\\artifacts\\generated\\m10-final-003\\source\\research\\m08-memory-probe\\Cargo.toml"
+      ],
+      "rustc": "rustc 1.91.1 (ed61e7d7e 2025-11-07)\nbinary: rustc\ncommit-hash: ed61e7d7e242494fb7057f2657300d9e77bb4fcb\ncommit-date: 2025-11-07\nhost: x86_64-pc-windows-gnu\nrelease: 1.91.1\nLLVM version: 21.1.2\n",
+      "emit_stack_metadata": false,
+      "exit_code": 0,
+      "started_utc": "2026-11-16T12:27:55.151786+00:00",
+      "finished_utc": "2026-11-16T12:27:57.191417+00:00"
+    }
+  },
+  "compiler_tools_and_dependency_caches_shared": true
+}

@@ -239,7 +239,7 @@ d'une répétition par hôte. Les paquets M07 gardent leurs
 exécutables et leur portée historiques.
 
 
-## Réalisation M09
+## Réalisation M09 — étape historique
 
 Les API publiques et formats R1 restent compatibles. Le moteur utilise
 les vues internes de graines à rôle/taille fixes, un remplissage d'entropie
@@ -250,13 +250,13 @@ de la première vectorisation, correction ciblée, paquets et preuves.
 Le moteur fonctionne sur les PC qualifiés ; C01 et l'audit extérieur restent
 ouverts. Les images Android/Messenger ne sont pas incluses dans ce périmètre.
 
-La [référence livrée M09](M09_MOTEUR_CONTRATS_ET_QUALIFICATION.md)
+L'[étape livrée M09](M09_MOTEUR_CONTRATS_ET_QUALIFICATION.md)
 est liée à la CI neuve Windows/Ubuntu 43806407492 (439 tests Python
 exécutés par OS, sans test ignoré), à ses paquets originaux et au contrôle
 de copie locale. Ce sont des vérifications d'intégration distinctes des
 mesures et campagnes figées ; la construction et les octets R1 sont inchangés.
 
-## Réalisation M10 en qualification
+## Réalisation M10 livrée, qualifiée en interne sur PC
 
 L'API et les formats restent R1. La réalisation003 emploie des destinations
 possédées pour les dérivations et expansions, une finalisation SHAKE empruntée,
@@ -284,9 +284,21 @@ et les deux paquets sont qualifiés en interne. Le [check local Windows
 complet](../results/engine/m10-verification-001/) passe : 514 tests Python,
 aucun ignoré, tests Rust, formatage, Clippy strict et rejeux requis. Les
 313 entrées de sources/contrôles enregistrées sont identiques avant/après.
-La CI neuve Windows/Ubuntu et la promotion canonique restent en attente.
-Le [bilan M10](M10_MOTEUR_ET_QUALIFICATION.md) classe les chemins non
-parcourus et précise la portée des 37 entrées compilables qualifiées.
-M09 reste la référence livrée jusqu'à la clôture de cette intégration.
+La [CI neuve 43893183494](https://github.com/MajidNIMAR/majax_mlkem1536/actions/runs/43893183494)
+passe sur Windows/Ubuntu : 514 tests Python exécutés par OS, aucun ignoré,
+et contrôles natifs des CLI/consommateurs originaux. Le [reçu de publication](../results/publication/r6-m10-001/)
+relie les 37 entrées compilables qualifiées au commit public testé
+`82c63441d1885c1e348884a2d9442ee48b6eaf03`. Le [lecteur de publication figé](../results/publication/r6-m10-controls-001/)
+conserve 50 fichiers Python identiques aux blobs Git testés ; ses quatre
+tests purs et son rejeu hors ligne du reçu passent sans relancer le moteur.
+
+Le CLI Windows canonique contient désormais l'original M10-003, SHA-256
+`2d6aa2e5859ea1df7774e5dd1cbb35827c8e9e1feddbe9f1f72a80c1661d5468`.
+La [promotion 002](../results/engine/m10-canonical-002/) vérifie après copie
+le profil, 16 échanges, 16 rejets et les cinq refus de commandes de recherche.
+La première promotion refusée et son rollback M09 sont conservés séparément.
+Le [bilan M10](M10_MOTEUR_ET_QUALIFICATION.md) distingue cette intégration,
+la correction des fixtures de la première CI, les mesures et les campagnes.
+M10 est la référence livrée dans ce périmètre PC ; M09 devient historique.
 Le [volet sécurité](SECURITE_M10.md) et la [décision des paramètres](DECISION_PARAMETRES_M10.md)
 ne déclarent ni C01 fermé ni un niveau global de sécurité acquis.

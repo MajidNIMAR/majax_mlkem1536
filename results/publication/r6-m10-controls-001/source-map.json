@@ -1,0 +1,3208 @@
+{
+  "schema": "m10-publication-static-import-closure-v1",
+  "public_tested_commit": "82c63441d1885c1e348884a2d9442ee48b6eaf03",
+  "source_commit": "25b250ad5038555eb95ff7f42b9a952bef7ede76",
+  "run_id": 43893183494,
+  "entry_points": [
+    "research/m10_publication.py",
+    "research/test_m10_publication.py"
+  ],
+  "shared_python_files": [
+    "results/publication/r6-m08-controls-001/capture_m08_ci_receipt.py",
+    "results/publication/r6-m08-controls-001/freeze_m08_publication.py",
+    "results/publication/r6-m08-controls-001/test_m08_publication_helpers.py",
+    "results/publication/r6-m08-controls-001/verify_m08_public_snapshot.py"
+  ],
+  "local_import_closure_files": 50,
+  "origin_git_blob_sha256": {
+    "research/analyze_delivery_timing.py": "c880cf94a3edf4230f06bb6a31571aa1348feaefdd398ef186b78f4e2d015022",
+    "research/archive_m07.py": "f35ce1497dda3ca7d0831b9737492a7d5d8c218b93f6e66e0c2b4d403196d8ee",
+    "research/archive_m09.py": "f1b538387460a67b048c514b23ac6db434f142749abc81381e9ed5051ec780ab",
+    "research/archive_m10.py": "0f1a7cdc8757c40f129bba996cad809e4e69718f9a5201be18351f7a3103837b",
+    "research/build_m06_validation.py": "caf9f2fe4f0e4a42621712ddaf2773fd502a58336835ea8151f51f3b48c5203e",
+    "research/capture_m07_timing.py": "a88af4bf3f1294b99bc144f4788ead9ca3ad46e0983bfa29addf3767e80f999c",
+    "research/confirm_m06_builds.py": "2c2997c58bc07333504eab6d8ab65c2f7afc006b06917bb60d904290b282da56",
+    "research/export_publication.py": "59c1cb72188fa3562c7ab851fc3c9c7429d32a229bcd9a7f154e26d543360699",
+    "research/inspect_m03_binary.py": "365c41b8a05262dec18a3f73275a202104c21e55f99b01611a7191684ba7ff95",
+    "research/m09_chunks.py": "204f856ab7f44bf65f5f8ee1038d6f0fb8d4a3c2d488044f31487886d151d530",
+    "research/m09_distribution.py": "8804e4d87653f4f6776768babf88d2205332f3a5165abc18ccc22e41a3ae0f1a",
+    "research/m09_final_measure.py": "9a6ad6657274cdcd73a6f0cf13eff7e92312724c5f506ee18f86a790fa6adeed",
+    "research/m09_fuzz_smoke.py": "bfcf56b36a6127c59e22f361b89c8fec9a004aab0fd3756bacacacb876dfd3a8",
+    "research/m09_lifecycle_inventory.py": "a27ae27b1552bd41edd1f26e4a875825e3af2af3fe02f2f4999a853ccd7554d2",
+    "research/m09_lifecycle_review.py": "6ddfaf8393ae63aa6a1118710ab592bbd0a0d6b019cc7e6a96c30fd79a9ac82f",
+    "research/m09_scalar_review.py": "bb84b0a0dcdafc6b3048a6069de54e7d7889bda2a678026fd329ad78a7f3d8b1",
+    "research/m09_source_contract.py": "23d18ae6c3dd32a254fe2399c108e60d626eee143de57c8f073167edaabf780e",
+    "research/m10_campaign.py": "0832e62e54e99d52408e83a0511c59e324e733bb91bdb53c353556d7204b43a9",
+    "research/m10_capture.py": "eda45cc6f4541ff4c4a4a78be8d2c76562a1668be63a12c4aa706960fee9f4ac",
+    "research/m10_distribution.py": "03ada6ec3d9a47f6c23360448e5fe351b0d80f06a9887c7042caaf0f298472de",
+    "research/m10_measure.py": "2ab7fd16ab8a33168788f20a3bb734425531e35237e0215b3c9ddb3a14194871",
+    "research/m10_postprocess.py": "00a13a2eb203a4c90871c217d98b679dfe0d706fefe63a4fec3d4d4660fd0e83",
+    "research/m10_publication.py": "ef1afa3d9871c48a280b9b16dcabc2d0b9df8934b28166ac2baf50251a1b37b7",
+    "research/m10_qualification_evidence.py": "03222ef86e31f411a75511e0f25a03df46f654eb9c167dd8873dc4d079a3490f",
+    "research/m10_secret_inventory.py": "439d7375e1a8e19bae4020d2e7713c0bd2c2d44e083ee1d757adf37c00f0510e",
+    "research/m10_secret_review.py": "b0dd1e7fabec0863da341af84e75c4e9a1f79a2773d98fb634684c6f16c18907",
+    "research/m10_source_contract.py": "db2a6ba7b40d45a51cec4f7fc524094664072b17a729f85af76ae0b2d19bba9d",
+    "research/package_m07.py": "868916f547027176c43cc1be6919a3402d54fe175dcf3b6d4ef602dd3135a4e6",
+    "research/package_m08.py": "63d4331b62c13701aae1762d99a65f2464d0d1bb1176cb83bd0437376e290d54",
+    "research/postprocess_m08_fuzz.py": "bf390cb99244e7923fbb2be75df16bc2a07bd1c6bac282b75572e8d7b74bea62",
+    "research/replay_m08_fuzz_corpus.py": "7d03376527439da83d8d7d4fc3f31a3a2ed86bc3b4d555a1603e24ac185186a3",
+    "research/review_m06_binary.py": "9d8d9497e8ecb471c23dae33d2e0d8df104b6a246d529fe93393a17d9ea66c72",
+    "research/review_m07_binary.py": "fa46318d9b617b5c343ab3d9c426847b21dba7830e1ef22370cc495244bf9a24",
+    "research/review_m08_imports.py": "c1eb58fe58e07ea94bdf526f405e4a5986275bb5d06c946d5ed9b88623671331",
+    "research/run_m04_fuzz_smoke.py": "850f2df0f0ebad16fd4f00cff40c6536716414e082d89df7781670683fb0c464",
+    "research/run_m06_fuzz.py": "49f3644c72149ae5db257673a6237ac3039aaee62121d3c40da0fa19c8cace12",
+    "research/run_m07.py": "fe1bb9acedc7fd0934afd3e3bae96373e794a46b58211c1b9dbb51da8103b185",
+    "research/run_m07_fuzz.py": "c72cba12eda0dac2b3c1f377de7bdba31e99f0593620898dcde4cd3cabc859a2",
+    "research/run_m08.py": "1776c80b7aecb3d199ae67f4a6017aab6b337cd9a4e8af4276f68eb0565d9d28",
+    "research/run_m08_fuzz.py": "1a5ff29526c0822c7f4b2b853bc21d5b012a199828db52c11432aabaf82e87e7",
+    "research/run_m09_qualification.py": "d7d7ddb43f210bc5ce35a1c8856805b8b1f713b9c2ebf68f2912b88f60ead9de",
+    "research/test_m10_publication.py": "63d5c20492795ded9b75f3cb68a11b90eb3141ca89e9a09858da2f030b841ab9",
+    "research/validate_hardening_m02.py": "e47a0e696f719783128040beed25e71a7da745da266fed6c3f37da306a7a3c06",
+    "research/verify_m04_distribution.py": "6e3c3e7baaa55654f015b508432d0116be8567e0ae763fb1bcc30231cd8a9131",
+    "research/verify_m07.py": "cadcba0147ff90b6a04d19a13f7c91d4038c0887c1235fda6f806de0288a7379",
+    "research/verify_r1_certificate_bridge.py": "a2395477474108c5cd86fa6f53b82e918bbd78f3233e72d6d71de91a3878eed2",
+    "results/publication/r6-m08-controls-001/capture_m08_ci_receipt.py": "0b427bc81c2cccf10a5d1c360375c3055fdbf0272841722ea46b4fd086d4b372",
+    "results/publication/r6-m08-controls-001/freeze_m08_publication.py": "db1aa6262fe54349ed828ef9a0339a852e5277afb8d2149d918b2b8917488595",
+    "results/publication/r6-m08-controls-001/test_m08_publication_helpers.py": "b265bd8a01c6d248ded2ef6290f1ce6a6997e1eb5324448cbac159ff224f0277",
+    "results/publication/r6-m08-controls-001/verify_m08_public_snapshot.py": "a1f24ad21012083036dc6211a52645e1a5845b160e43d2834507de67d8573d8d"
+  },
+  "origin_git_blob_object_ids": {
+    "research/analyze_delivery_timing.py": "d2523738ab55ccc79de2bf85214af5d67f0ea586",
+    "research/archive_m07.py": "fbf915d9cfee4a728f2ba2b948604332c4978db4",
+    "research/archive_m09.py": "dd826ec6a258b533be93d6e273d05964097e4a71",
+    "research/archive_m10.py": "e495c06e17b1b0fcf006eab4ea6ffa7ad3f70cb0",
+    "research/build_m06_validation.py": "433ab0d4bb355a29becf26d9d53befdfa1f08624",
+    "research/capture_m07_timing.py": "e885061123f2c3469a919a8e98cd898368b25508",
+    "research/confirm_m06_builds.py": "a5b608f710db6377820538bad67e1e6bfa0f60bb",
+    "research/export_publication.py": "89ecfd295ece5f880fab34a773c084d82f40e033",
+    "research/inspect_m03_binary.py": "e027d8b9be74105bfb08921654f8c65693728f6c",
+    "research/m09_chunks.py": "87f051a71f27936524cbc36dbc90f1d662289b25",
+    "research/m09_distribution.py": "b6b20cb51b78323313c1747a38fcb3cd40540032",
+    "research/m09_final_measure.py": "3b940afc07ce413dee9365dc86dc1272f00039e5",
+    "research/m09_fuzz_smoke.py": "1d73686bb5dfc0cdb953e71a8781be782d18b2c1",
+    "research/m09_lifecycle_inventory.py": "fc1243f75cd8c1c0a703c3ca75c954f1aaefe3a2",
+    "research/m09_lifecycle_review.py": "2eb80033ac7fcd1e2a0e421efb3ccbbdb9f70ee9",
+    "research/m09_scalar_review.py": "9547785495c1e789318d97f4d0c5f73a188d76f5",
+    "research/m09_source_contract.py": "2f932aecda8825eddeb26ea59001dfa1c382b3f8",
+    "research/m10_campaign.py": "25aacf6f9acf3982ea647eedfdf57ece66671c74",
+    "research/m10_capture.py": "efe0ceb33cc6dc1c2e36ef689ee1bc06a520623a",
+    "research/m10_distribution.py": "48315ff9c9c659e5ad5b71b08cccadb9e9614c77",
+    "research/m10_measure.py": "e147d198c48befdc670bc6a41586c5074f3451e8",
+    "research/m10_postprocess.py": "a274289ecf8e996fca8f45f2c56f6f5fff854df8",
+    "research/m10_publication.py": "a1a10f9d516ceeec6e49b192dfc5e827cbe77534",
+    "research/m10_qualification_evidence.py": "481f64af48b85e05e1ea8d28aaac18beb3f7cc28",
+    "research/m10_secret_inventory.py": "05f569d6bec9c19cb60614c4f5067da4419708a2",
+    "research/m10_secret_review.py": "268d2570b66d73c64453f9c787a2a76a696a4bcb",
+    "research/m10_source_contract.py": "6b3c0070b2456f640b751e72fcf05797d6b7bba3",
+    "research/package_m07.py": "08211bc823e6dc46f878f6b59752f99f44cfd1b9",
+    "research/package_m08.py": "2cbb3e24bd22bfce69c2e74ba4b6b13371b50cb1",
+    "research/postprocess_m08_fuzz.py": "d38709148b507e290eb2ed0f3939dd5e3c115e17",
+    "research/replay_m08_fuzz_corpus.py": "23cb13dcc90a50bef14d0e04f062195012a6d61d",
+    "research/review_m06_binary.py": "d6fa86620a1e48d5ed6d16d22a03be9ceafa791b",
+    "research/review_m07_binary.py": "fa09da695a0a6417f097568a5fb462623ef00d06",
+    "research/review_m08_imports.py": "64e0ea928378af771e72d4818cd0739738e6b5a6",
+    "research/run_m04_fuzz_smoke.py": "13c3bee75cc9daf252a66965b98fa3ec51c7902c",
+    "research/run_m06_fuzz.py": "08568a41d57c42b1a969d3536361f3546ff316b6",
+    "research/run_m07.py": "e58e6e0b9093d66c403a05ac2bacd1804798352e",
+    "research/run_m07_fuzz.py": "64cfbc941fb6fcf990f3effa4d3cb4c4942f7202",
+    "research/run_m08.py": "0c9ffbcaf47f8ba46597c9c5ca44faa5cf7783f1",
+    "research/run_m08_fuzz.py": "af211538d65515e07caa9f5cecbe0c951d0ca4d1",
+    "research/run_m09_qualification.py": "181565af30bad13b82d32ef0f4abaa3e2aff43a8",
+    "research/test_m10_publication.py": "da6d38095072a746b698754b489eb3f551175fc3",
+    "research/validate_hardening_m02.py": "654b39d78b56e9f80e5e2633678fda0b5bb6c644",
+    "research/verify_m04_distribution.py": "ebe39afb37c53909df7842c80e6ca4b27a6573e5",
+    "research/verify_m07.py": "2e465fd9139e900f4897207a4d99c9e5276bfe57",
+    "research/verify_r1_certificate_bridge.py": "7f66d5e95d19ba26f37370f144df8f9767f7841f",
+    "results/publication/r6-m08-controls-001/capture_m08_ci_receipt.py": "7972a09ad64b9564dc334a992bbb7995e84b1f5e",
+    "results/publication/r6-m08-controls-001/freeze_m08_publication.py": "20687954a288b315ffc50efd9644551c0d27930b",
+    "results/publication/r6-m08-controls-001/test_m08_publication_helpers.py": "8d91b65ac3212c0bdcc82a562649df81601a5db8",
+    "results/publication/r6-m08-controls-001/verify_m08_public_snapshot.py": "b27f45ab18f8f29139da826a69282289a3d25b1d"
+  },
+  "all_copied_bytes_equal_tested_public_blobs": true,
+  "AST_and_copied_source_origin": "exact tested public Git blobs; mutable research source files are not read or normalized",
+  "ast_imports_including_nested": {
+    "research/analyze_delivery_timing.py": [
+      {
+        "line": 2,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 3,
+        "statement": "from collections import defaultdict",
+        "first_party_files": []
+      },
+      {
+        "line": 4,
+        "statement": "import gzip",
+        "first_party_files": []
+      },
+      {
+        "line": 5,
+        "statement": "import hashlib",
+        "first_party_files": []
+      },
+      {
+        "line": 6,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 7,
+        "statement": "import math",
+        "first_party_files": []
+      },
+      {
+        "line": 8,
+        "statement": "from pathlib import Path",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "import statistics",
+        "first_party_files": []
+      }
+    ],
+    "research/archive_m07.py": [
+      {
+        "line": 6,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 7,
+        "statement": "import ast",
+        "first_party_files": []
+      },
+      {
+        "line": 8,
+        "statement": "from contextlib import contextmanager",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "from datetime import datetime, timezone",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "import gzip",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "import hashlib",
+        "first_party_files": []
+      },
+      {
+        "line": 12,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 13,
+        "statement": "from pathlib import Path, PurePosixPath",
+        "first_party_files": []
+      },
+      {
+        "line": 14,
+        "statement": "import shutil",
+        "first_party_files": []
+      },
+      {
+        "line": 15,
+        "statement": "import stat",
+        "first_party_files": []
+      },
+      {
+        "line": 16,
+        "statement": "import tarfile",
+        "first_party_files": []
+      },
+      {
+        "line": 17,
+        "statement": "import tempfile",
+        "first_party_files": []
+      },
+      {
+        "line": 19,
+        "statement": "from analyze_delivery_timing import analyze",
+        "first_party_files": [
+          "research/analyze_delivery_timing.py"
+        ]
+      },
+      {
+        "line": 20,
+        "statement": "from package_m07 import verify",
+        "first_party_files": [
+          "research/package_m07.py"
+        ]
+      },
+      {
+        "line": 21,
+        "statement": "from review_m07_binary import verify",
+        "first_party_files": [
+          "research/review_m07_binary.py"
+        ]
+      },
+      {
+        "line": 22,
+        "statement": "from run_m07_fuzz import verify",
+        "first_party_files": [
+          "research/run_m07_fuzz.py"
+        ]
+      },
+      {
+        "line": 23,
+        "statement": "from verify_m07 import analyze",
+        "first_party_files": [
+          "research/verify_m07.py"
+        ]
+      }
+    ],
+    "research/archive_m09.py": [
+      {
+        "line": 6,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 7,
+        "statement": "import gzip",
+        "first_party_files": []
+      },
+      {
+        "line": 8,
+        "statement": "import hashlib",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "import io",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "import itertools",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 12,
+        "statement": "from pathlib import Path, PurePosixPath",
+        "first_party_files": []
+      },
+      {
+        "line": 13,
+        "statement": "import tarfile",
+        "first_party_files": []
+      },
+      {
+        "line": 14,
+        "statement": "import tempfile",
+        "first_party_files": []
+      },
+      {
+        "line": 16,
+        "statement": "from run_m07 import require, read, save, utc",
+        "first_party_files": [
+          "research/run_m07.py"
+        ]
+      },
+      {
+        "line": 17,
+        "statement": "from m09_chunks import sha, open_archive",
+        "first_party_files": [
+          "research/m09_chunks.py"
+        ]
+      },
+      {
+        "line": 18,
+        "statement": "from run_m08 import validate_memory",
+        "first_party_files": [
+          "research/run_m08.py"
+        ]
+      },
+      {
+        "line": 19,
+        "statement": "from verify_r1_certificate_bridge import verify_static_contract",
+        "first_party_files": [
+          "research/verify_r1_certificate_bridge.py"
+        ]
+      },
+      {
+        "line": 20,
+        "statement": "from analyze_delivery_timing import analyze",
+        "first_party_files": [
+          "research/analyze_delivery_timing.py"
+        ]
+      },
+      {
+        "line": 21,
+        "statement": "from validate_hardening_m02 import mutations, oracle",
+        "first_party_files": [
+          "research/validate_hardening_m02.py"
+        ]
+      },
+      {
+        "line": 22,
+        "statement": "from export_publication import safe_name",
+        "first_party_files": [
+          "research/export_publication.py"
+        ]
+      },
+      {
+        "line": 23,
+        "statement": "from archive_m07 import BoundedReader",
+        "first_party_files": [
+          "research/archive_m07.py"
+        ]
+      },
+      {
+        "line": 185,
+        "statement": "from m09_final_measure import evaluate_raws",
+        "first_party_files": [
+          "research/m09_final_measure.py"
+        ]
+      },
+      {
+        "line": 231,
+        "statement": "from m09_chunks import verify",
+        "first_party_files": [
+          "research/m09_chunks.py"
+        ]
+      },
+      {
+        "line": 258,
+        "statement": "from m09_distribution import verify",
+        "first_party_files": [
+          "research/m09_distribution.py"
+        ]
+      },
+      {
+        "line": 266,
+        "statement": "from m09_lifecycle_inventory import verify",
+        "first_party_files": [
+          "research/m09_lifecycle_inventory.py"
+        ]
+      },
+      {
+        "line": 276,
+        "statement": "from m09_scalar_review import verify",
+        "first_party_files": [
+          "research/m09_scalar_review.py"
+        ]
+      },
+      {
+        "line": 291,
+        "statement": "from m09_lifecycle_review import verify",
+        "first_party_files": [
+          "research/m09_lifecycle_review.py"
+        ]
+      },
+      {
+        "line": 297,
+        "statement": "from m09_fuzz_smoke import verify_raws",
+        "first_party_files": [
+          "research/m09_fuzz_smoke.py"
+        ]
+      },
+      {
+        "line": 310,
+        "statement": "from m09_fuzz_smoke import verify_raws",
+        "first_party_files": [
+          "research/m09_fuzz_smoke.py"
+        ]
+      }
+    ],
+    "research/archive_m10.py": [
+      {
+        "line": 2,
+        "statement": "import argparse, gzip, hashlib, json, tarfile",
+        "first_party_files": []
+      },
+      {
+        "line": 3,
+        "statement": "from pathlib import Path",
+        "first_party_files": []
+      },
+      {
+        "line": 4,
+        "statement": "from run_m07 import ROOT, read, require, save, utc",
+        "first_party_files": [
+          "research/run_m07.py"
+        ]
+      },
+      {
+        "line": 5,
+        "statement": "from archive_m09 import members, inventory, data_reader, safe_name, digest, parsed",
+        "first_party_files": [
+          "research/archive_m09.py"
+        ]
+      },
+      {
+        "line": 6,
+        "statement": "from m09_chunks import sha, recovered_bytes, PART_LIMIT",
+        "first_party_files": [
+          "research/m09_chunks.py"
+        ]
+      },
+      {
+        "line": 7,
+        "statement": "from m10_qualification_evidence import qualification_scope",
+        "first_party_files": [
+          "research/m10_qualification_evidence.py"
+        ]
+      },
+      {
+        "line": 8,
+        "statement": "from m10_measure import M09_CORE",
+        "first_party_files": [
+          "research/m10_measure.py"
+        ]
+      },
+      {
+        "line": 226,
+        "statement": "from m10_secret_inventory import verify",
+        "first_party_files": [
+          "research/m10_secret_inventory.py"
+        ]
+      },
+      {
+        "line": 235,
+        "statement": "from m10_secret_review import verify",
+        "first_party_files": [
+          "research/m10_secret_review.py"
+        ]
+      },
+      {
+        "line": 240,
+        "statement": "from m10_postprocess import verify",
+        "first_party_files": [
+          "research/m10_postprocess.py"
+        ]
+      },
+      {
+        "line": 254,
+        "statement": "from m10_distribution import verify",
+        "first_party_files": [
+          "research/m10_distribution.py"
+        ]
+      },
+      {
+        "line": 261,
+        "statement": "from m10_secret_inventory import verify",
+        "first_party_files": [
+          "research/m10_secret_inventory.py"
+        ]
+      },
+      {
+        "line": 262,
+        "statement": "from m10_secret_review import verify_rejected, verify",
+        "first_party_files": [
+          "research/m10_secret_review.py"
+        ]
+      }
+    ],
+    "research/build_m06_validation.py": [
+      {
+        "line": 7,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 8,
+        "statement": "from datetime import datetime, timezone",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "import hashlib",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "import os",
+        "first_party_files": []
+      },
+      {
+        "line": 12,
+        "statement": "from pathlib import Path",
+        "first_party_files": []
+      },
+      {
+        "line": 13,
+        "statement": "import re",
+        "first_party_files": []
+      },
+      {
+        "line": 14,
+        "statement": "import shutil",
+        "first_party_files": []
+      },
+      {
+        "line": 15,
+        "statement": "import subprocess",
+        "first_party_files": []
+      }
+    ],
+    "research/capture_m07_timing.py": [
+      {
+        "line": 6,
+        "statement": "from contextlib import contextmanager",
+        "first_party_files": []
+      },
+      {
+        "line": 7,
+        "statement": "import ctypes",
+        "first_party_files": []
+      },
+      {
+        "line": 8,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "import os",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "from pathlib import Path",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "import shutil",
+        "first_party_files": []
+      },
+      {
+        "line": 12,
+        "statement": "import subprocess",
+        "first_party_files": []
+      },
+      {
+        "line": 14,
+        "statement": "from analyze_delivery_timing import analyze",
+        "first_party_files": [
+          "research/analyze_delivery_timing.py"
+        ]
+      },
+      {
+        "line": 15,
+        "statement": "from run_m07 import ROOT, checked_source, linux, linux_prefix, read, require, save, sha, utc, windows_environment",
+        "first_party_files": [
+          "research/run_m07.py"
+        ]
+      }
+    ],
+    "research/confirm_m06_builds.py": [
+      {
+        "line": 3,
+        "statement": "from datetime import datetime, timezone",
+        "first_party_files": []
+      },
+      {
+        "line": 4,
+        "statement": "import hashlib",
+        "first_party_files": []
+      },
+      {
+        "line": 5,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 6,
+        "statement": "from pathlib import Path",
+        "first_party_files": []
+      },
+      {
+        "line": 7,
+        "statement": "import subprocess",
+        "first_party_files": []
+      },
+      {
+        "line": 8,
+        "statement": "import struct",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "from validate_hardening_m02 import command",
+        "first_party_files": [
+          "research/validate_hardening_m02.py"
+        ]
+      }
+    ],
+    "research/export_publication.py": [
+      {
+        "line": 9,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "import hashlib",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 12,
+        "statement": "import os",
+        "first_party_files": []
+      },
+      {
+        "line": 13,
+        "statement": "from pathlib import Path, PurePosixPath",
+        "first_party_files": []
+      },
+      {
+        "line": 14,
+        "statement": "import stat",
+        "first_party_files": []
+      },
+      {
+        "line": 15,
+        "statement": "import subprocess",
+        "first_party_files": []
+      },
+      {
+        "line": 16,
+        "statement": "import tarfile",
+        "first_party_files": []
+      }
+    ],
+    "research/inspect_m03_binary.py": [
+      {
+        "line": 2,
+        "statement": "import argparse, gzip, hashlib, json, os, re, subprocess",
+        "first_party_files": []
+      },
+      {
+        "line": 3,
+        "statement": "from pathlib import Path",
+        "first_party_files": []
+      }
+    ],
+    "research/m09_chunks.py": [
+      {
+        "line": 6,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 7,
+        "statement": "import hashlib",
+        "first_party_files": []
+      },
+      {
+        "line": 8,
+        "statement": "import io",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "from pathlib import Path",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "import shutil",
+        "first_party_files": []
+      },
+      {
+        "line": 13,
+        "statement": "from export_publication import safe_name",
+        "first_party_files": [
+          "research/export_publication.py"
+        ]
+      }
+    ],
+    "research/m09_distribution.py": [
+      {
+        "line": 6,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 7,
+        "statement": "import copy",
+        "first_party_files": []
+      },
+      {
+        "line": 8,
+        "statement": "import hashlib",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "from pathlib import Path",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "import shutil",
+        "first_party_files": []
+      },
+      {
+        "line": 12,
+        "statement": "import subprocess",
+        "first_party_files": []
+      },
+      {
+        "line": 14,
+        "statement": "from confirm_m06_builds import comparison_bytes",
+        "first_party_files": [
+          "research/confirm_m06_builds.py"
+        ]
+      },
+      {
+        "line": 15,
+        "statement": "from package_m08 import check_windows_imports, validate_executable, windows_path, verify_archive, zip_package",
+        "first_party_files": [
+          "research/package_m08.py"
+        ]
+      },
+      {
+        "line": 16,
+        "statement": "from run_m07 import inventory, linux, linux_prefix, utc, windows_environment",
+        "first_party_files": [
+          "research/run_m07.py"
+        ]
+      },
+      {
+        "line": 17,
+        "statement": "from verify_m04_distribution import cargo_lock, compiled_inventory, deterministic_tar, license_inventory, native_dependencies",
+        "first_party_files": [
+          "research/verify_m04_distribution.py"
+        ]
+      },
+      {
+        "line": 294,
+        "statement": "from pathlib import PurePosixPath",
+        "first_party_files": []
+      }
+    ],
+    "research/m09_final_measure.py": [
+      {
+        "line": 6,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 7,
+        "statement": "from collections import defaultdict",
+        "first_party_files": []
+      },
+      {
+        "line": 8,
+        "statement": "from datetime import datetime",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "import hashlib",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "import math",
+        "first_party_files": []
+      },
+      {
+        "line": 12,
+        "statement": "from pathlib import Path, PurePosixPath",
+        "first_party_files": []
+      },
+      {
+        "line": 13,
+        "statement": "import shutil",
+        "first_party_files": []
+      },
+      {
+        "line": 14,
+        "statement": "import statistics",
+        "first_party_files": []
+      },
+      {
+        "line": 15,
+        "statement": "import subprocess",
+        "first_party_files": []
+      },
+      {
+        "line": 17,
+        "statement": "from run_m07 import linux, linux_prefix, read, require, save, sha, utc, windows_environment",
+        "first_party_files": [
+          "research/run_m07.py"
+        ]
+      },
+      {
+        "line": 18,
+        "statement": "from capture_m07_timing import affinity",
+        "first_party_files": [
+          "research/capture_m07_timing.py"
+        ]
+      },
+      {
+        "line": 19,
+        "statement": "from validate_hardening_m02 import command",
+        "first_party_files": [
+          "research/validate_hardening_m02.py"
+        ]
+      },
+      {
+        "line": 20,
+        "statement": "from run_m08 import validate_memory, MEMORY_OPERATIONS",
+        "first_party_files": [
+          "research/run_m08.py"
+        ]
+      }
+    ],
+    "research/m09_fuzz_smoke.py": [
+      {
+        "line": 7,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 8,
+        "statement": "from concurrent.futures import ThreadPoolExecutor, as_completed",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "import hashlib",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "import math",
+        "first_party_files": []
+      },
+      {
+        "line": 12,
+        "statement": "import os",
+        "first_party_files": []
+      },
+      {
+        "line": 13,
+        "statement": "from pathlib import Path, PurePosixPath",
+        "first_party_files": []
+      },
+      {
+        "line": 14,
+        "statement": "import re",
+        "first_party_files": []
+      },
+      {
+        "line": 15,
+        "statement": "import shutil",
+        "first_party_files": []
+      },
+      {
+        "line": 16,
+        "statement": "import subprocess",
+        "first_party_files": []
+      },
+      {
+        "line": 17,
+        "statement": "import sys",
+        "first_party_files": []
+      },
+      {
+        "line": 18,
+        "statement": "import time",
+        "first_party_files": []
+      },
+      {
+        "line": 20,
+        "statement": "from run_m08_fuzz import environment, inventory, read, require, save, sha, utc",
+        "first_party_files": [
+          "research/run_m08_fuzz.py"
+        ]
+      },
+      {
+        "line": 21,
+        "statement": "from run_m04_fuzz_smoke import TARGETS, statistics",
+        "first_party_files": [
+          "research/run_m04_fuzz_smoke.py"
+        ]
+      },
+      {
+        "line": 142,
+        "statement": "from package_m08 import diagnostic_records",
+        "first_party_files": [
+          "research/package_m08.py"
+        ]
+      },
+      {
+        "line": 360,
+        "statement": "from package_m08 import diagnostic_records",
+        "first_party_files": [
+          "research/package_m08.py"
+        ]
+      }
+    ],
+    "research/m09_lifecycle_inventory.py": [
+      {
+        "line": 7,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 8,
+        "statement": "from collections import Counter",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "import gzip",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "import hashlib",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 12,
+        "statement": "from pathlib import Path",
+        "first_party_files": []
+      },
+      {
+        "line": 13,
+        "statement": "import re",
+        "first_party_files": []
+      },
+      {
+        "line": 14,
+        "statement": "import subprocess",
+        "first_party_files": []
+      },
+      {
+        "line": 15,
+        "statement": "import sys",
+        "first_party_files": []
+      }
+    ],
+    "research/m09_lifecycle_review.py": [
+      {
+        "line": 7,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 8,
+        "statement": "import gzip",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "from pathlib import Path",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "import re",
+        "first_party_files": []
+      },
+      {
+        "line": 13,
+        "statement": "from m09_lifecycle_inventory import ROOT, parse, read, require, save, sha, tracked_files, verify",
+        "first_party_files": [
+          "research/m09_lifecycle_inventory.py"
+        ]
+      }
+    ],
+    "research/m09_scalar_review.py": [
+      {
+        "line": 7,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 8,
+        "statement": "import gzip",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "from pathlib import Path",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "import re",
+        "first_party_files": []
+      },
+      {
+        "line": 13,
+        "statement": "from m09_lifecycle_inventory import ROOT, parse, read, require, save, sha, tracked_files, verify",
+        "first_party_files": [
+          "research/m09_lifecycle_inventory.py"
+        ]
+      }
+    ],
+    "research/m09_source_contract.py": [
+      {
+        "line": 6,
+        "statement": "import re",
+        "first_party_files": []
+      }
+    ],
+    "research/m10_campaign.py": [
+      {
+        "line": 6,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 7,
+        "statement": "from concurrent.futures import ThreadPoolExecutor, as_completed",
+        "first_party_files": []
+      },
+      {
+        "line": 8,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "import math",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "import os",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "from pathlib import Path",
+        "first_party_files": []
+      },
+      {
+        "line": 12,
+        "statement": "import re",
+        "first_party_files": []
+      },
+      {
+        "line": 13,
+        "statement": "import shutil",
+        "first_party_files": []
+      },
+      {
+        "line": 14,
+        "statement": "import subprocess",
+        "first_party_files": []
+      },
+      {
+        "line": 15,
+        "statement": "import sys",
+        "first_party_files": []
+      },
+      {
+        "line": 16,
+        "statement": "from run_m08_fuzz import ROOT, TARGETS, environment, inventory, read, require, save, sha, utc, harvest, verify_harvest, ordinary",
+        "first_party_files": [
+          "research/run_m08_fuzz.py"
+        ]
+      },
+      {
+        "line": 18,
+        "statement": "from m09_fuzz_smoke import observe_init_cpu, cpu_lower, parse_init, collect_notices, scalar_lock",
+        "first_party_files": [
+          "research/m09_fuzz_smoke.py"
+        ]
+      },
+      {
+        "line": 19,
+        "statement": "from run_m04_fuzz_smoke import statistics",
+        "first_party_files": [
+          "research/run_m04_fuzz_smoke.py"
+        ]
+      },
+      {
+        "line": 317,
+        "statement": "from package_m08 import diagnostic_records",
+        "first_party_files": [
+          "research/package_m08.py"
+        ]
+      }
+    ],
+    "research/m10_capture.py": [
+      {
+        "line": 2,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 3,
+        "statement": "from pathlib import Path",
+        "first_party_files": []
+      },
+      {
+        "line": 4,
+        "statement": "import shutil",
+        "first_party_files": []
+      },
+      {
+        "line": 5,
+        "statement": "import subprocess",
+        "first_party_files": []
+      },
+      {
+        "line": 6,
+        "statement": "from build_m06_validation import source_files",
+        "first_party_files": [
+          "research/build_m06_validation.py"
+        ]
+      },
+      {
+        "line": 7,
+        "statement": "from run_m07 import ROOT, require, save, sha, utc",
+        "first_party_files": [
+          "research/run_m07.py"
+        ]
+      },
+      {
+        "line": 44,
+        "statement": "import json",
+        "first_party_files": []
+      }
+    ],
+    "research/m10_distribution.py": [
+      {
+        "line": 6,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 7,
+        "statement": "import copy",
+        "first_party_files": []
+      },
+      {
+        "line": 8,
+        "statement": "import hashlib",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "from pathlib import Path",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "import shutil",
+        "first_party_files": []
+      },
+      {
+        "line": 12,
+        "statement": "import subprocess",
+        "first_party_files": []
+      },
+      {
+        "line": 14,
+        "statement": "from confirm_m06_builds import comparison_bytes",
+        "first_party_files": [
+          "research/confirm_m06_builds.py"
+        ]
+      },
+      {
+        "line": 15,
+        "statement": "from package_m08 import check_windows_imports, validate_executable, windows_path, verify_archive, zip_package",
+        "first_party_files": [
+          "research/package_m08.py"
+        ]
+      },
+      {
+        "line": 16,
+        "statement": "from run_m07 import inventory, linux, linux_prefix, utc, windows_environment",
+        "first_party_files": [
+          "research/run_m07.py"
+        ]
+      },
+      {
+        "line": 17,
+        "statement": "from verify_m04_distribution import cargo_lock, compiled_inventory, deterministic_tar, license_inventory, native_dependencies",
+        "first_party_files": [
+          "research/verify_m04_distribution.py"
+        ]
+      },
+      {
+        "line": 294,
+        "statement": "from pathlib import PurePosixPath",
+        "first_party_files": []
+      }
+    ],
+    "research/m10_measure.py": [
+      {
+        "line": 2,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 3,
+        "statement": "from collections import defaultdict",
+        "first_party_files": []
+      },
+      {
+        "line": 4,
+        "statement": "from datetime import datetime",
+        "first_party_files": []
+      },
+      {
+        "line": 5,
+        "statement": "import hashlib",
+        "first_party_files": []
+      },
+      {
+        "line": 6,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 7,
+        "statement": "import math",
+        "first_party_files": []
+      },
+      {
+        "line": 8,
+        "statement": "from pathlib import Path",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "import shutil",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "import statistics",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "import subprocess",
+        "first_party_files": []
+      },
+      {
+        "line": 12,
+        "statement": "from run_m07 import ROOT, read, require, save, sha, utc, linux",
+        "first_party_files": [
+          "research/run_m07.py"
+        ]
+      },
+      {
+        "line": 13,
+        "statement": "from m10_capture import inventory",
+        "first_party_files": [
+          "research/m10_capture.py"
+        ]
+      },
+      {
+        "line": 14,
+        "statement": "from run_m09_qualification import checked, image",
+        "first_party_files": [
+          "research/run_m09_qualification.py"
+        ]
+      },
+      {
+        "line": 15,
+        "statement": "from run_m08 import validate_memory, MEMORY_OPERATIONS",
+        "first_party_files": [
+          "research/run_m08.py"
+        ]
+      },
+      {
+        "line": 16,
+        "statement": "from capture_m07_timing import affinity",
+        "first_party_files": [
+          "research/capture_m07_timing.py"
+        ]
+      },
+      {
+        "line": 17,
+        "statement": "from validate_hardening_m02 import command",
+        "first_party_files": [
+          "research/validate_hardening_m02.py"
+        ]
+      }
+    ],
+    "research/m10_postprocess.py": [
+      {
+        "line": 8,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "from contextlib import contextmanager",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "from pathlib import Path",
+        "first_party_files": []
+      },
+      {
+        "line": 12,
+        "statement": "import postprocess_m08_fuzz",
+        "first_party_files": [
+          "research/postprocess_m08_fuzz.py"
+        ]
+      },
+      {
+        "line": 13,
+        "statement": "from m10_campaign import ROOT, owned, verify",
+        "first_party_files": [
+          "research/m10_campaign.py"
+        ]
+      }
+    ],
+    "research/m10_publication.py": [
+      {
+        "line": 7,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 8,
+        "statement": "import hashlib",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "from pathlib import Path",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "import re",
+        "first_party_files": []
+      },
+      {
+        "line": 12,
+        "statement": "import shutil",
+        "first_party_files": []
+      },
+      {
+        "line": 13,
+        "statement": "import subprocess",
+        "first_party_files": []
+      },
+      {
+        "line": 14,
+        "statement": "import sys",
+        "first_party_files": []
+      },
+      {
+        "line": 15,
+        "statement": "import zipfile",
+        "first_party_files": []
+      },
+      {
+        "line": 16,
+        "statement": "from archive_m10 import members",
+        "first_party_files": [
+          "research/archive_m10.py"
+        ]
+      },
+      {
+        "line": 17,
+        "statement": "from verify_m04_distribution import compiled_input_names",
+        "first_party_files": [
+          "research/verify_m04_distribution.py"
+        ]
+      },
+      {
+        "line": 22,
+        "statement": "from capture_m08_ci_receipt import authentication, read_api, download_logs",
+        "first_party_files": [
+          "results/publication/r6-m08-controls-001/capture_m08_ci_receipt.py"
+        ]
+      },
+      {
+        "line": 23,
+        "statement": "from freeze_m08_publication import check_run, check_integrity, require, sha, read, save",
+        "first_party_files": [
+          "results/publication/r6-m08-controls-001/freeze_m08_publication.py"
+        ]
+      }
+    ],
+    "research/m10_qualification_evidence.py": [
+      {
+        "line": 2,
+        "statement": "import gzip",
+        "first_party_files": []
+      },
+      {
+        "line": 3,
+        "statement": "import io",
+        "first_party_files": []
+      },
+      {
+        "line": 4,
+        "statement": "import itertools",
+        "first_party_files": []
+      },
+      {
+        "line": 5,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 6,
+        "statement": "from archive_m09 import parsed, digest, safe_name",
+        "first_party_files": [
+          "research/archive_m09.py"
+        ]
+      },
+      {
+        "line": 7,
+        "statement": "from run_m07 import ROOT, require",
+        "first_party_files": [
+          "research/run_m07.py"
+        ]
+      },
+      {
+        "line": 8,
+        "statement": "from m09_chunks import sha",
+        "first_party_files": [
+          "research/m09_chunks.py"
+        ]
+      },
+      {
+        "line": 9,
+        "statement": "from verify_r1_certificate_bridge import verify_static_contract",
+        "first_party_files": [
+          "research/verify_r1_certificate_bridge.py"
+        ]
+      },
+      {
+        "line": 10,
+        "statement": "from run_m08 import validate_memory",
+        "first_party_files": [
+          "research/run_m08.py"
+        ]
+      },
+      {
+        "line": 11,
+        "statement": "from analyze_delivery_timing import analyze",
+        "first_party_files": [
+          "research/analyze_delivery_timing.py"
+        ]
+      },
+      {
+        "line": 12,
+        "statement": "from validate_hardening_m02 import mutations, oracle",
+        "first_party_files": [
+          "research/validate_hardening_m02.py"
+        ]
+      },
+      {
+        "line": 78,
+        "statement": "from m10_measure import evaluate_raws",
+        "first_party_files": [
+          "research/m10_measure.py"
+        ]
+      }
+    ],
+    "research/m10_secret_inventory.py": [
+      {
+        "line": 8,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "import gzip",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "from pathlib import Path",
+        "first_party_files": []
+      },
+      {
+        "line": 13,
+        "statement": "import m09_lifecycle_inventory",
+        "first_party_files": [
+          "research/m09_lifecycle_inventory.py"
+        ]
+      },
+      {
+        "line": 14,
+        "statement": "from verify_r1_certificate_bridge import verify_static_contract",
+        "first_party_files": [
+          "research/verify_r1_certificate_bridge.py"
+        ]
+      }
+    ],
+    "research/m10_secret_review.py": [
+      {
+        "line": 8,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "import gzip",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "from pathlib import Path",
+        "first_party_files": []
+      },
+      {
+        "line": 12,
+        "statement": "import re",
+        "first_party_files": []
+      },
+      {
+        "line": 14,
+        "statement": "import m09_lifecycle_inventory",
+        "first_party_files": [
+          "research/m09_lifecycle_inventory.py"
+        ]
+      },
+      {
+        "line": 15,
+        "statement": "import m10_secret_inventory",
+        "first_party_files": [
+          "research/m10_secret_inventory.py"
+        ]
+      },
+      {
+        "line": 16,
+        "statement": "from m09_scalar_review import split_operands",
+        "first_party_files": [
+          "research/m09_scalar_review.py"
+        ]
+      }
+    ],
+    "research/m10_source_contract.py": [
+      {
+        "line": 8,
+        "statement": "import re",
+        "first_party_files": []
+      }
+    ],
+    "research/package_m07.py": [
+      {
+        "line": 7,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 8,
+        "statement": "from datetime import datetime, timezone",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "import hashlib",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "import importlib.util",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 12,
+        "statement": "import os",
+        "first_party_files": []
+      },
+      {
+        "line": 13,
+        "statement": "from pathlib import Path",
+        "first_party_files": []
+      },
+      {
+        "line": 14,
+        "statement": "import re",
+        "first_party_files": []
+      },
+      {
+        "line": 15,
+        "statement": "import shutil",
+        "first_party_files": []
+      },
+      {
+        "line": 16,
+        "statement": "import struct",
+        "first_party_files": []
+      },
+      {
+        "line": 17,
+        "statement": "import subprocess",
+        "first_party_files": []
+      },
+      {
+        "line": 18,
+        "statement": "import sys",
+        "first_party_files": []
+      },
+      {
+        "line": 19,
+        "statement": "import tarfile",
+        "first_party_files": []
+      },
+      {
+        "line": 20,
+        "statement": "import zipfile",
+        "first_party_files": []
+      },
+      {
+        "line": 22,
+        "statement": "from confirm_m06_builds import comparison_bytes",
+        "first_party_files": [
+          "research/confirm_m06_builds.py"
+        ]
+      },
+      {
+        "line": 23,
+        "statement": "from run_m07_fuzz import inventory, ordinary, owned, safe_name",
+        "first_party_files": [
+          "research/run_m07_fuzz.py"
+        ]
+      },
+      {
+        "line": 24,
+        "statement": "from verify_m04_distribution import cargo_lock, compiled_inventory, license_inventory, deterministic_tar, native_dependencies",
+        "first_party_files": [
+          "research/verify_m04_distribution.py"
+        ]
+      }
+    ],
+    "research/package_m08.py": [
+      {
+        "line": 10,
+        "statement": "import ast",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 12,
+        "statement": "from datetime import datetime, timezone",
+        "first_party_files": []
+      },
+      {
+        "line": 13,
+        "statement": "import hashlib",
+        "first_party_files": []
+      },
+      {
+        "line": 14,
+        "statement": "import importlib.util",
+        "first_party_files": []
+      },
+      {
+        "line": 15,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 16,
+        "statement": "import os",
+        "first_party_files": []
+      },
+      {
+        "line": 17,
+        "statement": "from pathlib import Path",
+        "first_party_files": []
+      },
+      {
+        "line": 18,
+        "statement": "import re",
+        "first_party_files": []
+      },
+      {
+        "line": 19,
+        "statement": "import shutil",
+        "first_party_files": []
+      },
+      {
+        "line": 20,
+        "statement": "import struct",
+        "first_party_files": []
+      },
+      {
+        "line": 21,
+        "statement": "import subprocess",
+        "first_party_files": []
+      },
+      {
+        "line": 22,
+        "statement": "import sys",
+        "first_party_files": []
+      },
+      {
+        "line": 23,
+        "statement": "import tarfile",
+        "first_party_files": []
+      },
+      {
+        "line": 24,
+        "statement": "import zipfile",
+        "first_party_files": []
+      },
+      {
+        "line": 28,
+        "statement": "from confirm_m06_builds import comparison_bytes",
+        "first_party_files": [
+          "research/confirm_m06_builds.py"
+        ]
+      },
+      {
+        "line": 29,
+        "statement": "from run_m08_fuzz import TARGETS, inventory, ordinary, original_campaign_root, owned, safe_name",
+        "first_party_files": [
+          "research/run_m08_fuzz.py"
+        ]
+      },
+      {
+        "line": 30,
+        "statement": "from verify_m04_distribution import cargo_lock, compiled_inventory, license_inventory, deterministic_tar, native_dependencies",
+        "first_party_files": [
+          "research/verify_m04_distribution.py"
+        ]
+      },
+      {
+        "line": 31,
+        "statement": "from review_m08_imports import check_consumer_command",
+        "first_party_files": [
+          "research/review_m08_imports.py"
+        ]
+      },
+      {
+        "line": 717,
+        "statement": "from postprocess_m08_fuzz import verify",
+        "first_party_files": [
+          "research/postprocess_m08_fuzz.py"
+        ]
+      }
+    ],
+    "research/postprocess_m08_fuzz.py": [
+      {
+        "line": 7,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 8,
+        "statement": "import gzip",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "import hashlib",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "import os",
+        "first_party_files": []
+      },
+      {
+        "line": 12,
+        "statement": "from pathlib import Path, PurePosixPath",
+        "first_party_files": []
+      },
+      {
+        "line": 13,
+        "statement": "import re",
+        "first_party_files": []
+      },
+      {
+        "line": 14,
+        "statement": "import shutil",
+        "first_party_files": []
+      },
+      {
+        "line": 15,
+        "statement": "import subprocess",
+        "first_party_files": []
+      },
+      {
+        "line": 16,
+        "statement": "import sys",
+        "first_party_files": []
+      },
+      {
+        "line": 20,
+        "statement": "from run_m08_fuzz import ROOT, TARGETS, environment, inventory, owned, read, require, save, sha, utc, verify",
+        "first_party_files": [
+          "research/run_m08_fuzz.py"
+        ]
+      },
+      {
+        "line": 21,
+        "statement": "from replay_m08_fuzz_corpus import verify",
+        "first_party_files": [
+          "research/replay_m08_fuzz_corpus.py"
+        ]
+      }
+    ],
+    "research/replay_m08_fuzz_corpus.py": [
+      {
+        "line": 6,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 7,
+        "statement": "import gzip",
+        "first_party_files": []
+      },
+      {
+        "line": 8,
+        "statement": "import hashlib",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "import importlib.util",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "import os",
+        "first_party_files": []
+      },
+      {
+        "line": 12,
+        "statement": "from pathlib import Path",
+        "first_party_files": []
+      },
+      {
+        "line": 13,
+        "statement": "import subprocess",
+        "first_party_files": []
+      },
+      {
+        "line": 14,
+        "statement": "import sys",
+        "first_party_files": []
+      },
+      {
+        "line": 18,
+        "statement": "from run_m08_fuzz import PROFILE, TARGETS, inventory, read, require, save, sha",
+        "first_party_files": [
+          "research/run_m08_fuzz.py"
+        ]
+      }
+    ],
+    "research/review_m06_binary.py": [
+      {
+        "line": 8,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "import gzip",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "import hashlib",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 12,
+        "statement": "from pathlib import Path",
+        "first_party_files": []
+      },
+      {
+        "line": 13,
+        "statement": "import re",
+        "first_party_files": []
+      },
+      {
+        "line": 15,
+        "statement": "from inspect_m03_binary import parse_disassembly, resolve_elf_relocations",
+        "first_party_files": [
+          "research/inspect_m03_binary.py"
+        ]
+      }
+    ],
+    "research/review_m07_binary.py": [
+      {
+        "line": 8,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "from collections import Counter",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "import gzip",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "import hashlib",
+        "first_party_files": []
+      },
+      {
+        "line": 12,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 13,
+        "statement": "from pathlib import Path",
+        "first_party_files": []
+      },
+      {
+        "line": 14,
+        "statement": "import re",
+        "first_party_files": []
+      },
+      {
+        "line": 15,
+        "statement": "import shutil",
+        "first_party_files": []
+      },
+      {
+        "line": 16,
+        "statement": "import subprocess",
+        "first_party_files": []
+      },
+      {
+        "line": 17,
+        "statement": "import sys",
+        "first_party_files": []
+      },
+      {
+        "line": 19,
+        "statement": "from inspect_m03_binary import inventory, parse_disassembly, resolve_elf_relocations",
+        "first_party_files": [
+          "research/inspect_m03_binary.py"
+        ]
+      },
+      {
+        "line": 20,
+        "statement": "from review_m06_binary import instructions, inverse_copy_contract, zero_store_loops",
+        "first_party_files": [
+          "research/review_m06_binary.py"
+        ]
+      }
+    ],
+    "research/review_m08_imports.py": [
+      {
+        "line": 7,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 8,
+        "statement": "from collections import Counter",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "import gzip",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "import hashlib",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 12,
+        "statement": "from pathlib import Path",
+        "first_party_files": []
+      },
+      {
+        "line": 13,
+        "statement": "import re",
+        "first_party_files": []
+      },
+      {
+        "line": 14,
+        "statement": "import shutil",
+        "first_party_files": []
+      },
+      {
+        "line": 16,
+        "statement": "from inspect_m03_binary import linux_path, tool",
+        "first_party_files": [
+          "research/inspect_m03_binary.py"
+        ]
+      },
+      {
+        "line": 17,
+        "statement": "from review_m07_binary import address_bodies",
+        "first_party_files": [
+          "research/review_m07_binary.py"
+        ]
+      }
+    ],
+    "research/run_m04_fuzz_smoke.py": [
+      {
+        "line": 8,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "from datetime import datetime, timezone",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "import hashlib",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 12,
+        "statement": "import math",
+        "first_party_files": []
+      },
+      {
+        "line": 13,
+        "statement": "import os",
+        "first_party_files": []
+      },
+      {
+        "line": 14,
+        "statement": "from pathlib import Path",
+        "first_party_files": []
+      },
+      {
+        "line": 15,
+        "statement": "import re",
+        "first_party_files": []
+      },
+      {
+        "line": 16,
+        "statement": "import shutil",
+        "first_party_files": []
+      },
+      {
+        "line": 17,
+        "statement": "import subprocess",
+        "first_party_files": []
+      },
+      {
+        "line": 18,
+        "statement": "import sys",
+        "first_party_files": []
+      },
+      {
+        "line": 19,
+        "statement": "import time",
+        "first_party_files": []
+      }
+    ],
+    "research/run_m06_fuzz.py": [
+      {
+        "line": 7,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 8,
+        "statement": "from datetime import datetime, timezone",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "import gzip",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "import hashlib",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 12,
+        "statement": "import os",
+        "first_party_files": []
+      },
+      {
+        "line": 13,
+        "statement": "from pathlib import Path",
+        "first_party_files": []
+      },
+      {
+        "line": 14,
+        "statement": "import re",
+        "first_party_files": []
+      },
+      {
+        "line": 15,
+        "statement": "import shutil",
+        "first_party_files": []
+      },
+      {
+        "line": 16,
+        "statement": "import subprocess",
+        "first_party_files": []
+      },
+      {
+        "line": 17,
+        "statement": "import sys",
+        "first_party_files": []
+      },
+      {
+        "line": 18,
+        "statement": "import tarfile",
+        "first_party_files": []
+      },
+      {
+        "line": 20,
+        "statement": "from run_m04_fuzz_smoke import run_target, TARGETS",
+        "first_party_files": [
+          "research/run_m04_fuzz_smoke.py"
+        ]
+      }
+    ],
+    "research/run_m07.py": [
+      {
+        "line": 6,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 7,
+        "statement": "from collections import defaultdict",
+        "first_party_files": []
+      },
+      {
+        "line": 8,
+        "statement": "from datetime import datetime, timezone",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "import gzip",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "import hashlib",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 12,
+        "statement": "import math",
+        "first_party_files": []
+      },
+      {
+        "line": 13,
+        "statement": "import os",
+        "first_party_files": []
+      },
+      {
+        "line": 14,
+        "statement": "from pathlib import Path",
+        "first_party_files": []
+      },
+      {
+        "line": 15,
+        "statement": "import shutil",
+        "first_party_files": []
+      },
+      {
+        "line": 16,
+        "statement": "import statistics",
+        "first_party_files": []
+      },
+      {
+        "line": 17,
+        "statement": "import subprocess",
+        "first_party_files": []
+      },
+      {
+        "line": 18,
+        "statement": "import sys",
+        "first_party_files": []
+      },
+      {
+        "line": 20,
+        "statement": "from build_m06_validation import source_files",
+        "first_party_files": [
+          "research/build_m06_validation.py"
+        ]
+      },
+      {
+        "line": 314,
+        "statement": "import ctypes",
+        "first_party_files": []
+      }
+    ],
+    "research/run_m07_fuzz.py": [
+      {
+        "line": 7,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 8,
+        "statement": "from datetime import datetime, timezone",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "import hashlib",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "import math",
+        "first_party_files": []
+      },
+      {
+        "line": 12,
+        "statement": "import os",
+        "first_party_files": []
+      },
+      {
+        "line": 13,
+        "statement": "from pathlib import Path, PurePosixPath",
+        "first_party_files": []
+      },
+      {
+        "line": 14,
+        "statement": "import shutil",
+        "first_party_files": []
+      },
+      {
+        "line": 15,
+        "statement": "import stat",
+        "first_party_files": []
+      },
+      {
+        "line": 16,
+        "statement": "import subprocess",
+        "first_party_files": []
+      },
+      {
+        "line": 17,
+        "statement": "import sys",
+        "first_party_files": []
+      },
+      {
+        "line": 19,
+        "statement": "from run_m04_fuzz_smoke import TARGETS, run_target, statistics",
+        "first_party_files": [
+          "research/run_m04_fuzz_smoke.py"
+        ]
+      },
+      {
+        "line": 20,
+        "statement": "from run_m06_fuzz import inspect_post_init",
+        "first_party_files": [
+          "research/run_m06_fuzz.py"
+        ]
+      }
+    ],
+    "research/run_m08.py": [
+      {
+        "line": 6,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 7,
+        "statement": "from collections import defaultdict",
+        "first_party_files": []
+      },
+      {
+        "line": 8,
+        "statement": "import gzip",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "import hashlib",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "import math",
+        "first_party_files": []
+      },
+      {
+        "line": 12,
+        "statement": "import os",
+        "first_party_files": []
+      },
+      {
+        "line": 13,
+        "statement": "from pathlib import Path",
+        "first_party_files": []
+      },
+      {
+        "line": 14,
+        "statement": "import shutil",
+        "first_party_files": []
+      },
+      {
+        "line": 15,
+        "statement": "import statistics",
+        "first_party_files": []
+      },
+      {
+        "line": 16,
+        "statement": "import subprocess",
+        "first_party_files": []
+      },
+      {
+        "line": 18,
+        "statement": "from build_m06_validation import source_files",
+        "first_party_files": [
+          "research/build_m06_validation.py"
+        ]
+      },
+      {
+        "line": 19,
+        "statement": "from capture_m07_timing import affinity",
+        "first_party_files": [
+          "research/capture_m07_timing.py"
+        ]
+      },
+      {
+        "line": 20,
+        "statement": "from run_m07 import MEMORY_NUMBERS, execute, linux, linux_prefix, read, require, save, sha, utc, windows_environment",
+        "first_party_files": [
+          "research/run_m07.py"
+        ]
+      }
+    ],
+    "research/run_m08_fuzz.py": [
+      {
+        "line": 7,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 8,
+        "statement": "from concurrent.futures import ThreadPoolExecutor, as_completed",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "from datetime import datetime, timezone",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "import hashlib",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 12,
+        "statement": "import math",
+        "first_party_files": []
+      },
+      {
+        "line": 13,
+        "statement": "import os",
+        "first_party_files": []
+      },
+      {
+        "line": 14,
+        "statement": "from pathlib import Path, PurePosixPath",
+        "first_party_files": []
+      },
+      {
+        "line": 15,
+        "statement": "import shutil",
+        "first_party_files": []
+      },
+      {
+        "line": 16,
+        "statement": "import stat",
+        "first_party_files": []
+      },
+      {
+        "line": 17,
+        "statement": "import subprocess",
+        "first_party_files": []
+      },
+      {
+        "line": 18,
+        "statement": "import sys",
+        "first_party_files": []
+      },
+      {
+        "line": 19,
+        "statement": "import time",
+        "first_party_files": []
+      },
+      {
+        "line": 23,
+        "statement": "from run_m04_fuzz_smoke import TARGETS, statistics",
+        "first_party_files": [
+          "research/run_m04_fuzz_smoke.py"
+        ]
+      },
+      {
+        "line": 24,
+        "statement": "from run_m06_fuzz import inspect_post_init",
+        "first_party_files": [
+          "research/run_m06_fuzz.py"
+        ]
+      },
+      {
+        "line": 25,
+        "statement": "from run_m07_fuzz import require_post_init, verify_segments",
+        "first_party_files": [
+          "research/run_m07_fuzz.py"
+        ]
+      }
+    ],
+    "research/run_m09_qualification.py": [
+      {
+        "line": 7,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 8,
+        "statement": "import gzip",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "import itertools",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "from pathlib import Path",
+        "first_party_files": []
+      },
+      {
+        "line": 12,
+        "statement": "import shutil",
+        "first_party_files": []
+      },
+      {
+        "line": 13,
+        "statement": "import subprocess",
+        "first_party_files": []
+      },
+      {
+        "line": 15,
+        "statement": "from build_m06_validation import source_files",
+        "first_party_files": [
+          "research/build_m06_validation.py"
+        ]
+      },
+      {
+        "line": 16,
+        "statement": "from run_m07 import linux, linux_prefix, read, require, save, sha, utc, windows_environment",
+        "first_party_files": [
+          "research/run_m07.py"
+        ]
+      },
+      {
+        "line": 17,
+        "statement": "import validate_hardening_m02",
+        "first_party_files": [
+          "research/validate_hardening_m02.py"
+        ]
+      },
+      {
+        "line": 18,
+        "statement": "from analyze_delivery_timing import analyze",
+        "first_party_files": [
+          "research/analyze_delivery_timing.py"
+        ]
+      },
+      {
+        "line": 19,
+        "statement": "from capture_m07_timing import affinity",
+        "first_party_files": [
+          "research/capture_m07_timing.py"
+        ]
+      },
+      {
+        "line": 20,
+        "statement": "from run_m08 import validate_memory",
+        "first_party_files": [
+          "research/run_m08.py"
+        ]
+      }
+    ],
+    "research/test_m10_publication.py": [
+      {
+        "line": 2,
+        "statement": "from copy import deepcopy",
+        "first_party_files": []
+      },
+      {
+        "line": 3,
+        "statement": "import unittest",
+        "first_party_files": []
+      },
+      {
+        "line": 5,
+        "statement": "from m10_publication import check_smoke, qualified_input_names",
+        "first_party_files": [
+          "research/m10_publication.py"
+        ]
+      }
+    ],
+    "research/validate_hardening_m02.py": [
+      {
+        "line": 3,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 4,
+        "statement": "from datetime import datetime, timezone",
+        "first_party_files": []
+      },
+      {
+        "line": 5,
+        "statement": "import gzip",
+        "first_party_files": []
+      },
+      {
+        "line": 6,
+        "statement": "import hashlib",
+        "first_party_files": []
+      },
+      {
+        "line": 7,
+        "statement": "import importlib.util",
+        "first_party_files": []
+      },
+      {
+        "line": 8,
+        "statement": "import itertools",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "import math",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "from pathlib import Path",
+        "first_party_files": []
+      },
+      {
+        "line": 12,
+        "statement": "import platform",
+        "first_party_files": []
+      },
+      {
+        "line": 13,
+        "statement": "import re",
+        "first_party_files": []
+      },
+      {
+        "line": 14,
+        "statement": "import shutil",
+        "first_party_files": []
+      },
+      {
+        "line": 15,
+        "statement": "import statistics",
+        "first_party_files": []
+      },
+      {
+        "line": 16,
+        "statement": "import subprocess",
+        "first_party_files": []
+      },
+      {
+        "line": 17,
+        "statement": "import time",
+        "first_party_files": []
+      }
+    ],
+    "research/verify_m04_distribution.py": [
+      {
+        "line": 7,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 8,
+        "statement": "import gzip",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "import hashlib",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "from pathlib import Path, PurePosixPath",
+        "first_party_files": []
+      },
+      {
+        "line": 12,
+        "statement": "import re",
+        "first_party_files": []
+      },
+      {
+        "line": 13,
+        "statement": "import shutil",
+        "first_party_files": []
+      },
+      {
+        "line": 14,
+        "statement": "import subprocess",
+        "first_party_files": []
+      },
+      {
+        "line": 15,
+        "statement": "import tarfile",
+        "first_party_files": []
+      },
+      {
+        "line": 17,
+        "statement": "from export_publication import EXCLUDED",
+        "first_party_files": [
+          "research/export_publication.py"
+        ]
+      }
+    ],
+    "research/verify_m07.py": [
+      {
+        "line": 6,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 7,
+        "statement": "from datetime import datetime",
+        "first_party_files": []
+      },
+      {
+        "line": 8,
+        "statement": "import gzip",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "import hashlib",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "from pathlib import Path, PurePosixPath",
+        "first_party_files": []
+      },
+      {
+        "line": 12,
+        "statement": "import re",
+        "first_party_files": []
+      },
+      {
+        "line": 13,
+        "statement": "import sys",
+        "first_party_files": []
+      },
+      {
+        "line": 15,
+        "statement": "from run_m07 import BASELINE_CORE, MEMORY_OPERATIONS, OPERATIONS, summarize, validate_memory",
+        "first_party_files": [
+          "research/run_m07.py"
+        ]
+      },
+      {
+        "line": 16,
+        "statement": "from verify_r1_certificate_bridge import verify_static_contract",
+        "first_party_files": [
+          "research/verify_r1_certificate_bridge.py"
+        ]
+      }
+    ],
+    "research/verify_r1_certificate_bridge.py": [
+      {
+        "line": 8,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "from collections import Counter",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "from fractions import Fraction",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "import gzip",
+        "first_party_files": []
+      },
+      {
+        "line": 12,
+        "statement": "import hashlib",
+        "first_party_files": []
+      },
+      {
+        "line": 13,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 14,
+        "statement": "import math",
+        "first_party_files": []
+      },
+      {
+        "line": 15,
+        "statement": "from pathlib import Path",
+        "first_party_files": []
+      },
+      {
+        "line": 16,
+        "statement": "import re",
+        "first_party_files": []
+      },
+      {
+        "line": 228,
+        "statement": "from m10_source_contract import correspondence",
+        "first_party_files": [
+          "research/m10_source_contract.py"
+        ]
+      },
+      {
+        "line": 232,
+        "statement": "from m09_source_contract import correspondence",
+        "first_party_files": [
+          "research/m09_source_contract.py"
+        ]
+      }
+    ],
+    "results/publication/r6-m08-controls-001/capture_m08_ci_receipt.py": [
+      {
+        "line": 7,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 8,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "import os",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "from pathlib import Path",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "import subprocess",
+        "first_party_files": []
+      },
+      {
+        "line": 12,
+        "statement": "import urllib.error",
+        "first_party_files": []
+      },
+      {
+        "line": 13,
+        "statement": "import urllib.parse",
+        "first_party_files": []
+      },
+      {
+        "line": 14,
+        "statement": "import urllib.request",
+        "first_party_files": []
+      },
+      {
+        "line": 16,
+        "statement": "from freeze_m08_publication import ROOT, WORK, REPOSITORY, check_run, hex_value, require, save, sha",
+        "first_party_files": [
+          "results/publication/r6-m08-controls-001/freeze_m08_publication.py"
+        ]
+      }
+    ],
+    "results/publication/r6-m08-controls-001/freeze_m08_publication.py": [
+      {
+        "line": 7,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 8,
+        "statement": "from datetime import datetime, timezone",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "import hashlib",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "from pathlib import Path, PurePosixPath",
+        "first_party_files": []
+      },
+      {
+        "line": 12,
+        "statement": "import re",
+        "first_party_files": []
+      },
+      {
+        "line": 13,
+        "statement": "import shutil",
+        "first_party_files": []
+      },
+      {
+        "line": 14,
+        "statement": "import subprocess",
+        "first_party_files": []
+      },
+      {
+        "line": 15,
+        "statement": "import zipfile",
+        "first_party_files": []
+      }
+    ],
+    "results/publication/r6-m08-controls-001/test_m08_publication_helpers.py": [
+      {
+        "line": 2,
+        "statement": "from copy import deepcopy",
+        "first_party_files": []
+      },
+      {
+        "line": 3,
+        "statement": "import hashlib",
+        "first_party_files": []
+      },
+      {
+        "line": 4,
+        "statement": "import io",
+        "first_party_files": []
+      },
+      {
+        "line": 5,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 6,
+        "statement": "from pathlib import Path",
+        "first_party_files": []
+      },
+      {
+        "line": 7,
+        "statement": "import tempfile",
+        "first_party_files": []
+      },
+      {
+        "line": 8,
+        "statement": "import unittest",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "from unittest.mock import patch",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "import urllib.error",
+        "first_party_files": []
+      },
+      {
+        "line": 11,
+        "statement": "import zipfile",
+        "first_party_files": []
+      },
+      {
+        "line": 13,
+        "statement": "import capture_m08_ci_receipt",
+        "first_party_files": [
+          "results/publication/r6-m08-controls-001/capture_m08_ci_receipt.py"
+        ]
+      },
+      {
+        "line": 14,
+        "statement": "import freeze_m08_publication",
+        "first_party_files": [
+          "results/publication/r6-m08-controls-001/freeze_m08_publication.py"
+        ]
+      }
+    ],
+    "results/publication/r6-m08-controls-001/verify_m08_public_snapshot.py": [
+      {
+        "line": 6,
+        "statement": "import argparse",
+        "first_party_files": []
+      },
+      {
+        "line": 7,
+        "statement": "import hashlib",
+        "first_party_files": []
+      },
+      {
+        "line": 8,
+        "statement": "import json",
+        "first_party_files": []
+      },
+      {
+        "line": 9,
+        "statement": "from pathlib import Path",
+        "first_party_files": []
+      },
+      {
+        "line": 10,
+        "statement": "import subprocess",
+        "first_party_files": []
+      },
+      {
+        "line": 12,
+        "statement": "from freeze_m08_publication import ROOT, WORK, canonical_sha, check_manifest, hex_value, require, safe_name, save, sha",
+        "first_party_files": [
+          "results/publication/r6-m08-controls-001/freeze_m08_publication.py"
+        ]
+      }
+    ]
+  },
+  "non_first_party_import_names": [
+    "argparse",
+    "ast",
+    "collections",
+    "concurrent",
+    "contextlib",
+    "copy",
+    "ctypes",
+    "datetime",
+    "fractions",
+    "gzip",
+    "hashlib",
+    "importlib",
+    "io",
+    "itertools",
+    "json",
+    "math",
+    "os",
+    "pathlib",
+    "platform",
+    "re",
+    "shutil",
+    "stat",
+    "statistics",
+    "struct",
+    "subprocess",
+    "sys",
+    "tarfile",
+    "tempfile",
+    "time",
+    "unittest",
+    "urllib",
+    "zipfile"
+  ],
+  "mirrored_root_from_research_reader": ".",
+  "scope": "Static first-party ast.Import/ImportFrom closure including nested imports; shared M08 Python files also copied. Dynamic imports and third-party runtimes are not a complete frozen environment. Offline publication verify and four pure tests only; network capture/status from the mini-root are not qualified.",
+  "initial_failure_reference": {
+    "capsule": "results/publication/r6-m10-freeze-initial-001",
+    "provenance_sha256": "64f263f4ace576816f8facc70eb0e2495a159138bef26adab270c149f46902d8",
+    "verified_members_sha256": {
+      "current-m10_publication.py": "2a20ee5be650614b2603873cc28fefda6dc14512454128772f5f452284f86de8",
+      "failure.json": "09c4f535e88722b115867654b6819c0c2126df72035428fee2f0d0bb9e3b612b",
+      "tested-m10_publication.py": "ef1afa3d9871c48a280b9b16dcabc2d0b9df8934b28166ac2baf50251a1b37b7"
+    },
+    "initial_helper_sha256": "e75bd0862f37b58c10d704ae0037cdbcf3d151edc169560d2797e0830a7f5bdc",
+    "correction": "v002 selects modules from the tested public Git tree and parses/copies exact git-show bytes; it does not read or normalize mutable research source files.",
+    "no_failed_capsule_or_source_modified": true
+  },
+  "verified_input_receipt_sha256": {
+    "ci-logs.zip": "c89715d2b8ff9b0b9fe1d976fb81bccf3e5f20bf6e08adcf29deba531c4adc6d",
+    "config.json": "965eb408c133ab504253cc5fb96ec4cdec3730c49488eace097bf3bfc34ade7d",
+    "engine-provenance.json": "1d89486958ae862226b821dcc2c0f63710c488dfd262789fc239ad4c8246a0a5",
+    "jobs.json": "35a1c8ce89e457df78c8980027f98b0cc30e185f5ec2ec031f3c0a41c1488f72",
+    "linux-build.json": "cbb4c815804f241dc4b13152cd5d6c39571b8c31a8d169be4c79b4c40953cbb4",
+    "provenance.json": "76a1c1ae0a630209d8acc247c0443ee7839dc6f0136c8455ea992ab402d139e3",
+    "qualified-source.json": "67084be5ab1cde058661104b16e738138db7993dec001ac39625feb830b2810d",
+    "README.md": "2cf0650dc37ec54109d36765e5b08b09493497bfc40927126869512ec3b28f2b",
+    "run.json": "6388ce9dcc0564781e4879313d464dd4a9d82f13d380464ee97be4b9f2b41f64",
+    "source-integrity.json": "7a432497bace41daafda23067e537adfcba8158d40e0c3f1f76a21e5c9aa526c",
+    "tested-source-provenance.json": "e7e0f08203b6d652b8ffd014af12407b974e7d60d87b19350494d4a884b63065",
+    "verification.json": "e62c11449fbd7ce2f116da5311b7751c7cc7d06979f470b8c1f3f86965404714",
+    "windows-build.json": "fcc594a440ceaf8ea26514e8df17b3c8bc8e1fd64df41b79fbc117ece52a71f9"
+  },
+  "capture_helper_sha256": "194903459f9876604b77d051ed5123d8b33078e16dbaa6047fcf6a5a86df27f2"
+}

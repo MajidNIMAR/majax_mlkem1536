@@ -15,8 +15,9 @@ latence et mémoire. Les quatre harnais de la campagne longue ont chacun
 atteint 1 800 secondes CPU conservatrices après `INITED`. La couverture et
 les 4 263 comparaisons déterministes Rust/Python sont acquises. La distribution
 et le rejeu des 10 908 membres sont vérifiés. Le check global local passe
-(514 tests Python sans ignoré, 313 entrées inchangées) ; la CI reste suivie
-séparément. C01 et le
+(514 tests Python sans ignoré, 313 entrées inchangées). La CI 43893183494
+passe avec 514 tests par OS, sans ignoré, et les essais des originaux ;
+la promotion Windows 002 est vérifiée après copie. C01 et le
 gel cryptographique final ne sont pas déclarés clos. La revue extérieure,
 chantier 5, demeure différée conformément à la demande de l'utilisateur.
 

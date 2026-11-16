@@ -9,8 +9,8 @@ formal constant-time guarantee or production-security claim is made.
 
 ## Current assurance boundary
 
-M10 is the new internally reviewed candidate on the recorded GNU x86-64
-Windows/Linux PC images. It writes derived material into existing owners,
+M10 is the delivered engine reference, qualified internally on the recorded
+GNU x86-64 Windows/Linux PC images. It writes derived material into existing owners,
 uses borrowed SHAKE finalization and keeps the local decapsulation output
 owner alive through copying. The [M10 lifecycle review](docs/REVUE_CYCLE_SECRET_M10.md)
 qualifies removal of the two observed normal-return stack residues. Sensitive
@@ -35,17 +35,29 @@ passes with all 514 Python tests executed, none skipped, plus Rust tests,
 formatting, strict Clippy and the required evidence replays. The 313 recorded
 source/control inputs are unchanged before and after. This check and its
 seal add no fuzzing, cryptographic, constant-time or erasure guarantee.
-Fresh Windows/Ubuntu hosted CI and canonical promotion remain pending.
+[Fresh hosted CI 43893183494](https://github.com/MajidNIMAR/majax_mlkem1536/actions/runs/43893183494)
+passes on Windows and Ubuntu at public commit `82c63441d1885c1e348884a2d9442ee48b6eaf03`,
+with 514 Python tests executed per OS, none skipped, and native checks of
+the original M10 CLI/default consumer. The [publication receipt](results/publication/r6-m10-001/)
+links all 37 qualified compilation inputs to that tested source. Its [frozen
+reader](results/publication/r6-m10-controls-001/) preserves 50 byte-identical
+tested Git blobs, passes four pure tests and replays the receipt offline;
+this is a receipt check, not a new engine or campaign execution. The original
+M10 Windows CLI is [promoted locally](results/engine/m10-canonical-002/), with
+profile, 16 exchanges, 16 rejections and five research-command refusals
+checked after copying. The first failed hosted attempt and test-only fix,
+and the failed initial promotion with M09 rollback, remain documented in
+the [M10 study](docs/M10_MOTEUR_ET_QUALIFICATION.md).
 
 The [M10 security argument](docs/SECURITE_M10.md) supplies conditional matrix,
 noise and classical FO compositions with explicit resources. The [parameter
 decision](docs/DECISION_PARAMETRES_M10.md) retains R1 for development after
 forty new finite-sample estimates. C01, concrete advantage/resource calibration,
 the complete quantum resource map and fixed SHA3/SHAKE assumptions remain open.
-External review is deferred by the project owner. M09 remains the previous
-delivered reference while M10 qualification is in progress.
+External cryptographic review remains deferred by the project owner. M09
+and earlier milestones remain immutable historical evidence.
 
-The current delivered engine reference is M09, qualified internally. It preserves R1 bytes,
+M09 is the previous delivered milestone, qualified internally. It preserves R1 bytes,
 uses fixed-size borrowed noise roles and tests operation-level failures
 after every partial entropy prefix. Decapsulation writes its recovered
 message into its final zeroizing owner. A scalar public-twiddle NTT improves
@@ -60,10 +72,10 @@ passes on Windows and Ubuntu at `fdd323dcf840b0d12fd43a446acffbd0cce83d7b`,
 with all 439 Python tests executed per OS and none skipped. The
 [publication receipt](results/publication/r6-m09-001/) binds the exact
 source maps, compiled inputs and original CLI/consumer images. The original
-Windows CLI is [promoted locally and checked after copying](results/engine/m09-canonical-001/).
+Windows CLI was [promoted locally and checked after copying](results/engine/m09-canonical-001/).
 This closure grants no new cryptographic, constant-time or global-erasure assurance.
 
-The first M09 vectorized candidate is rejected: a Windows ABI save copied
+The first M09 vectorized candidate was rejected: a Windows ABI save copied
 16 bytes derived from e2+Encode(m) outside its wiping owner. The four final
 scalar images have a separate [targeted review](docs/REVUE_CYCLE_SECRET_M09.md)
 showing removal of this mechanism and normal-return message-owner wipes.
@@ -77,8 +89,8 @@ qualifies removal of the targeted decoded-coefficient stack copies on the
 examined invalid-secret paths of the default-feature API consumers.
 This finding is specific to the preserved images and paths.
 
-M09's four-image review and the historical M08 image reviews cover GNU
-x86-64 Windows and Linux/WSL. Android/ARM is not qualified by those results. Arithmetic instruction timing
+The M10 four-image review and the historical M08/M09 reviews concern their
+recorded GNU x86-64 Windows and Linux/WSL images. Android/ARM is not qualified by those results. Arithmetic instruction timing
 and secret-copy behavior require the actual target ABI, compiler/link flags
 and CPU to be examined. The [target and contract review](docs/REVUE_CRITIQUE_M08_CIBLES_ET_CONTRATS.md)
 records this boundary, the already specified noise domains and the combined

@@ -6,8 +6,10 @@ Le [bilan courant M10](M10_MOTEUR_ET_QUALIFICATION.md) relie le durcissement
 du cycle secret, les nouvelles analyses conditionnelles et les acquisitions
 du candidat 003. Sa campagne longue a atteint les quatre budgets ; la
 couverture LLVM, le rejeu indépendant, la distribution et le contrôle global
-local sont acquis. La CI et la promotion sont suivies séparément dans ce
-bilan. M09 reste la référence livrée jusqu'à cette clôture.
+local sont acquis. La CI 43893183494 passe sur Windows/Ubuntu et l'original
+Windows 003 est promu après vérification. M10 devient la référence livrée,
+qualifiée dans le périmètre PC interne. Les reçus restent distincts ; cette
+clôture d'ingénierie ne ferme pas C01 ni la sélection cryptographique finale.
 Les gains antérieurs M06/M07/M08/M09 gardent leur portée historique ;
 la sécurité cryptographique complète et le gel final des paramètres restent
 ouverts.
@@ -1088,4 +1090,40 @@ les 514 tests Python passent sans ignoré. Les 313 entrées suivies restent
 identiques avant/après ; le dossier réel et le recueil d'échec sont préservés.
 Le prochain passage CI porte sur cette correction des tests, sans nouveau
 build de qualification, nouvelle campagne ou modification du moteur.
+
+## M10 — CI complète et binaire local promu
+
+La [CI 43893183494](https://github.com/MajidNIMAR/majax_mlkem1536/actions/runs/43893183494)
+du commit public `82c63441d1885c1e348884a2d9442ee48b6eaf03` passe sur
+Windows et Ubuntu. Le [collecteur strict](../results/publication/r6-m10-001/)
+vérifie 514 tests Python `OK` sans ignoré par OS, les contrôles complets et
+les essais natifs des originaux M10. Les 37 entrées compilables sont égales
+au source qualifié. Les doubles cartes contrôlent 2 360 fichiers exportés
+et leurs blobs Git. Il s'agit d'une nouvelle CI, sans crédit de fuzzing ajouté.
+
+Le [reçu canonique 002](../results/engine/m10-canonical-002/) constate la
+copie de l'original Windows vers `target/release/kem1536.exe`, SHA-256
+`2d6aa2e5859ea1df7774e5dd1cbb35827c8e9e1feddbe9f1f72a80c1661d5468`.
+Profil exact, 16 échanges/rejets et cinq commandes de recherche refusées
+passent après copie. Le binaire n'est pas recompilé pour cette promotion.
+
+La [première tentative](../results/engine/m10-canonical-001/) avait été
+annulée : son helper attendait deux objets JSON alors que `dev-profile`
+en émet un. L'original M09 avait été restauré. Le nouveau helper accepte
+exactement le profil réel et rejette trois cadres/affirmations erronés.
+Ce correctif ne modifie pas le moteur. Un autre contrôle de clôture a refusé
+la copie de contrôleurs locaux CRLF au lieu des blobs LF effectivement
+testés ; le [constat](../results/publication/r6-m10-freeze-initial-001/)
+reste conservé. Le gel du lecteur doit prendre les blobs publics exacts,
+sans normalisation supposée équivalente.
+
+Le [lecteur figé final](../results/publication/r6-m10-controls-001/) prend
+effectivement ses 50 fichiers Python depuis les blobs publics testés, pour
+l'AST et pour les octets copiés. Quatre tests purs sans ignoré et le rejeu
+hors ligne du reçu CI passent. Les 63 membres et leur provenance sont
+inventoriés ; le premier écart CRLF/LF reste relié au résultat final.
+Le moteur, les images et tous les contrôleurs testés restent inchangés.
+Cette clôture conserve les incidents d'outillage au lieu de les transformer
+en nouvelles acquisitions ou en défauts du moteur. Le rapport, le journal,
+le guide, le README et la description GitHub sont actualisés pour M10.
 

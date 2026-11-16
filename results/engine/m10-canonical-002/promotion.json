@@ -1,0 +1,99 @@
+{
+  "schema": "m10-canonical-promotion-v1",
+  "started_utc": "2026-11-16T15:30:34.022350+00:00",
+  "target": "target/release/kem1536.exe",
+  "previous_sha256": "9eb95fb2cb9a8531a216012b4cff71d6b10d1a7951285d9d3c666f8186002255",
+  "original_path": "artifacts/generated/m10-final-003/windows/bin/delivered.exe",
+  "original_M10_sha256": "2d6aa2e5859ea1df7774e5dd1cbb35827c8e9e1feddbe9f1f72a80c1661d5468",
+  "source_manifest_sha256": "67084be5ab1cde058661104b16e738138db7993dec001ac39625feb830b2810d",
+  "engine_provenance_sha256": "1d89486958ae862226b821dcc2c0f63710c488dfd262789fc239ad4c8246a0a5",
+  "local_check_provenance_sha256": "f26d015f16c05d04b4dc5e04c7a2b6a249acaf9a04b8d0bfd7e05f9cbe9f3779",
+  "previous_promotion_sha256": "6d360edd3000dcce7788b2ea3edbc152705b51a0f8ddfcc7c6924ce36e15af19",
+  "prior_failed_attempt_provenance_sha256": "480bc34386972b8bb400f1e58f2db5852b3d3a7002dad96452110b1942dacdea",
+  "publication_provenance_sha256": "76a1c1ae0a630209d8acc247c0443ee7839dc6f0136c8455ea992ab402d139e3",
+  "final_CI_run": 43893183494,
+  "public_tested_commit": "82c63441d1885c1e348884a2d9442ee48b6eaf03",
+  "source_commit": "25b250ad5038555eb95ff7f42b9a952bef7ede76",
+  "python_tests_per_OS": 514,
+  "controller_sha256": "b302eaf6e5831483fcc961e4f8cb924b23c0d00a0f0343ace4a75042c720db2f",
+  "new_builds": 0,
+  "new_fuzzing_credit_seconds": 0,
+  "finished_utc": "2026-11-16T15:30:34.251846+00:00",
+  "status": "PASS",
+  "failure": null,
+  "original_and_promoted_sha256": "2d6aa2e5859ea1df7774e5dd1cbb35827c8e9e1feddbe9f1f72a80c1661d5468",
+  "canonical_sha256_after": "2d6aa2e5859ea1df7774e5dd1cbb35827c8e9e1feddbe9f1f72a80c1661d5468",
+  "copied": true,
+  "previous_canonical_restored_after_failure": false,
+  "checks": [
+    {
+      "operation": "profile",
+      "arguments": [
+        "dev-profile"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "5e063e616b21cc97cb76694751444ac09078b9d39c0d142157a18a699277738c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "operation": "self-test",
+      "arguments": [
+        "dev-self-test"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "fc1a99ca14346af50c9aafd6f73e66c8dd1f577904be0861ceeaba209a022fef",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "operation": "refuse-vectors",
+      "arguments": [
+        "dev-vectors",
+        "1"
+      ],
+      "exit_code": 1,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "7756eec1ee17c16764107f4a8c02404e40c70f04594483ea0c63d8716db5767e"
+    },
+    {
+      "operation": "refuse-rejections",
+      "arguments": [
+        "dev-rejection-vectors"
+      ],
+      "exit_code": 1,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "ca26c0b1f4de0bb7922cb8407fa04f8e4c4d506620b004569fbcfe1ebb2b1388"
+    },
+    {
+      "operation": "refuse-hardening",
+      "arguments": [
+        "dev-hardening"
+      ],
+      "exit_code": 1,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "ca26c0b1f4de0bb7922cb8407fa04f8e4c4d506620b004569fbcfe1ebb2b1388"
+    },
+    {
+      "operation": "refuse-mutations",
+      "arguments": [
+        "dev-mutations"
+      ],
+      "exit_code": 1,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "ca26c0b1f4de0bb7922cb8407fa04f8e4c4d506620b004569fbcfe1ebb2b1388"
+    },
+    {
+      "operation": "refuse-timing",
+      "arguments": [
+        "dev-timing"
+      ],
+      "exit_code": 1,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "ca26c0b1f4de0bb7922cb8407fa04f8e4c4d506620b004569fbcfe1ebb2b1388"
+    }
+  ],
+  "fresh_round_trips": 16,
+  "implicit_rejections": 16,
+  "external_audit": false,
+  "C01_closed": false,
+  "global_security_or_CT_or_erasure_proved": false
+}

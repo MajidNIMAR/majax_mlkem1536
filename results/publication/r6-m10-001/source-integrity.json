@@ -1,0 +1,21 @@
+{
+  "schema": "m08-source-integrity-v1",
+  "public_commit": "82c63441d1885c1e348884a2d9442ee48b6eaf03",
+  "source_commit": "25b250ad5038555eb95ff7f42b9a952bef7ede76",
+  "canonical_git_blobs_verified": 2360,
+  "exported_files_verified": 2360,
+  "all_equal": true,
+  "source_provenance_sha256": "e7e0f08203b6d652b8ffd014af12407b974e7d60d87b19350494d4a884b63065",
+  "git_blob_map_sha256": "d1d492d503aa9f5d51a875c31a57f58971b4451e2624591e463398dcd2fa94eb",
+  "export_map_sha256": "1e62a408a1c34dd1edfee2170872e6a1652cc2987c4923c1a97e11a11eb4c8f0",
+  "attribute_converted_paths": [
+    "scripts/bootstrap-modern.ps1",
+    "scripts/bootstrap.ps1",
+    "scripts/dev.ps1",
+    "scripts/engine.ps1",
+    "scripts/m03.ps1",
+    "scripts/reproduce-release.ps1",
+    "scripts/research-setup.ps1"
+  ],
+  "method": "Independent streamed git cat-file --batch SHA-256 of every committed public blob and every exported working file, compared with both committed schema2 source maps"
+}

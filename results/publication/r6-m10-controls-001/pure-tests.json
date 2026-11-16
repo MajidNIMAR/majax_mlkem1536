@@ -1,0 +1,29 @@
+{
+  "command": [
+    "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\research-venv\\Scripts\\python.exe",
+    "-E",
+    "-s",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "C:\\Users\\majax\\Documents\\Codex\\NIST\\results\\publication\\r6-m10-controls-001\\research",
+    "-p",
+    "test_m10_publication.py",
+    "-v"
+  ],
+  "cwd": "C:\\Users\\majax\\Documents\\Codex\\NIST\\results\\publication\\r6-m10-controls-001",
+  "started_utc": "2026-11-16T15:31:01.518338+00:00",
+  "finished_utc": "2026-11-16T15:31:01.943259+00:00",
+  "exit_code": 0,
+  "expired": false,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "296d82fb09308ac5e1161ef3355a71134b1e5becf727cdc581efb7248a2bee31",
+  "tests": 4,
+  "local_import_closure_files": 50,
+  "all_copied_bytes_equal_tested_public_blobs": true,
+  "network_used": false,
+  "new_engine_builds": 0,
+  "external_audit": false
+}

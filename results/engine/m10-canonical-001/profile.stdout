@@ -1,0 +1,14 @@
+{
+  "ciphertext_bytes": 2656,
+  "dv": 5,
+  "eta": 3,
+  "expanded_private_key_bytes": 5088,
+  "k": 6,
+  "n": 256,
+  "profile": "KEM1536-DEV-Q7681-R1",
+  "public_key_bytes": 2528,
+  "q": 7681,
+  "security_validation": "pending",
+  "shared_secret_bytes": 32,
+  "u_encoding": "exact-13-bit-canonical"
+}

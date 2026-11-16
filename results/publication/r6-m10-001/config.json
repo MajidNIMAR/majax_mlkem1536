@@ -1,0 +1,18 @@
+{
+  "run_id": 43893183494,
+  "public_commit": "82c63441d1885c1e348884a2d9442ee48b6eaf03",
+  "source_commit": "25b250ad5038555eb95ff7f42b9a952bef7ede76",
+  "branch": "main",
+  "python_test_count": 514,
+  "source_manifest_sha256": "67084be5ab1cde058661104b16e738138db7993dec001ac39625feb830b2810d",
+  "images": {
+    "windows": {
+      "CLI": "2d6aa2e5859ea1df7774e5dd1cbb35827c8e9e1feddbe9f1f72a80c1661d5468",
+      "consumer": "5d4313826aa2b4ee6bb02719657fd8e85db70310786a708646d6b02741fd1987"
+    },
+    "linux": {
+      "CLI": "1d8c015a849f4e53f5f83b0c734a1fadb98a9ff7084e8fdce1cf3747795935f2",
+      "consumer": "7edd21cd13fb86101f4e294920610f11c00ff5b5d515a90ed2cbb6e640c488a0"
+    }
+  }
+}

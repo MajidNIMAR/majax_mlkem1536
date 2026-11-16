@@ -1,0 +1,24 @@
+{
+  "schema": "m10-canonical-evidence-v1",
+  "output_sha256": {
+    "closeout-controller.py": "0365b67e4b509cd905c8f821e92a4211a9051744527c0cc6401e525ce5dc7a55",
+    "engine-provenance.json": "1d89486958ae862226b821dcc2c0f63710c488dfd262789fc239ad4c8246a0a5",
+    "hosted-verification.json": "e62c11449fbd7ce2f116da5311b7751c7cc7d06979f470b8c1f3f86965404714",
+    "linux-build.json": "cbb4c815804f241dc4b13152cd5d6c39571b8c31a8d169be4c79b4c40953cbb4",
+    "plan-before.json": "ae388a9b97e2183cf2277d0eb4fdc57eec2a7f9648593a0a38c0d698461abfa0",
+    "previous-canonical.exe.gz": "78caa16ff8d8712289778a7741b85e29f64e22a682403458f1f8cb07afb50bc9",
+    "previous-promotion.json": "6d360edd3000dcce7788b2ea3edbc152705b51a0f8ddfcc7c6924ce36e15af19",
+    "previous-provenance.json": "25d6e3ca869adfdb2b547e753a2e72eb35e7657dacd8452d27385a38722ffd11",
+    "profile.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "profile.stdout": "5e063e616b21cc97cb76694751444ac09078b9d39c0d142157a18a699277738c",
+    "promotion.json": "64d40d3de1d5019e0c80e160bda9cb744f5e10681736aabbe54378449d64a7d2",
+    "publication-provenance.json": "76a1c1ae0a630209d8acc247c0443ee7839dc6f0136c8455ea992ab402d139e3",
+    "qualified-source.json": "67084be5ab1cde058661104b16e738138db7993dec001ac39625feb830b2810d",
+    "README.md": "5ab273ab6e58ae53364594757a1d595717930d83e8baa6e8df7622bd24a2f846",
+    "windows-build.json": "fcc594a440ceaf8ea26514e8df17b3c8bc8e1fd64df41b79fbc117ece52a71f9"
+  },
+  "controller_sha256": "0365b67e4b509cd905c8f821e92a4211a9051744527c0cc6401e525ce5dc7a55",
+  "source_manifest_sha256": "67084be5ab1cde058661104b16e738138db7993dec001ac39625feb830b2810d",
+  "engine_provenance_sha256": "1d89486958ae862226b821dcc2c0f63710c488dfd262789fc239ad4c8246a0a5",
+  "publication_provenance_sha256": "76a1c1ae0a630209d8acc247c0443ee7839dc6f0136c8455ea992ab402d139e3"
+}
