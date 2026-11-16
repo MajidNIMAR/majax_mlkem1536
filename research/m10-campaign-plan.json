@@ -1,0 +1,22 @@
+{
+  "schema": "m10-campaign-plan-v1",
+  "profile": "KEM1536-DEV-Q7681-R1",
+  "post_INITED_CPU_lower_seconds_per_harness": 1800,
+  "affinity_CPU_by_harness": {
+    "import_public": 8,
+    "import_private": 12,
+    "decapsulate": 14,
+    "api_sequence": 6
+  },
+  "parallel_workers": 4,
+  "segment_wall_seconds_requested": 300,
+  "maximum_segments_per_harness": 64,
+  "initialization_CPU_credited": 0,
+  "historical_fuzz_CPU_seconds_credited": 0,
+  "maximum_input_bytes": 16384,
+  "rss_limit_megabytes_per_worker": 2048,
+  "individual_input_timeout_seconds": 60,
+  "coverage_objects_separate_from_std_rebuilt_fuzz_objects": true,
+  "independent_harvested_corpus_oracle_replay_required": true,
+  "external_audit_in_scope": false
+}

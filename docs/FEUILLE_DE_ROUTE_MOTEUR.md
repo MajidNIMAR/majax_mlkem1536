@@ -6,6 +6,20 @@ coefficients. Chaque étude doit servir une décision pour sa construction.
 Le futur article décrit ce travail et ses limites ; son écriture ne
 remplace pas le développement du moteur.
 
+**M10, 16 novembre 2026 — chantiers 1 à 4.** Le
+[bilan courant](M10_MOTEUR_ET_QUALIFICATION.md) rassemble les raccords de
+sécurité conditionnels, les 40 estimations nouvelles et la décision de
+conserver R1 pour le développement. Le candidat 003 retire deux résidus
+secrets observés sur les images PC examinées et passe les budgets de
+latence et mémoire. Les quatre harnais de la campagne longue ont chacun
+atteint 1 800 secondes CPU conservatrices après `INITED`. La couverture et
+les 4 263 comparaisons déterministes Rust/Python sont acquises. La distribution
+et le rejeu des 10 908 membres sont vérifiés. Le check global local passe
+(514 tests Python sans ignoré, 313 entrées inchangées) ; la CI reste suivie
+séparément. C01 et le
+gel cryptographique final ne sont pas déclarés clos. La revue extérieure,
+chantier 5, demeure différée conformément à la demande de l'utilisateur.
+
 **M09, 16 novembre 2026.** Les cinq chantiers sont exécutés dans le moteur :
 contrats de graines et d'entropie, cycle des propriétaires secrets, sous-lemme
 ROM précis, optimisation NTT mesurée et distribution/dossier de revue.

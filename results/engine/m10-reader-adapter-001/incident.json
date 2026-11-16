@@ -1,0 +1,20 @@
+{
+  "schema": "m10-reader-adapter-incident-v1",
+  "initial_action": "archive_m10.py create",
+  "initial_exit_code": 1,
+  "error_type": "FileNotFoundError",
+  "error_scope": "Owned temporary file-only mirror omitted import_public/failures",
+  "acquisition_changed": false,
+  "archives_changed": false,
+  "rerun_of_fuzz_or_coverage_or_oracle": false,
+  "adaptation": "Restore four required failure directories in temporary mirror without deleting any archived incident file",
+  "engine_provenance_sha256": "1d89486958ae862226b821dcc2c0f63710c488dfd262789fc239ad4c8246a0a5",
+  "before_controller_sha256": {
+    "research/archive_m10.py": "70707aa5410465f46bfc99a4f8647f85122b56237aa587f64a25c1899673ae54",
+    "research/test_archive_m10.py": "6f03bfae1e5075a13d53b22cd3eec8a873ee895051cbcffc1175f9c2d6932264"
+  },
+  "after_controller_sha256": {
+    "research/archive_m10.py": "bf78bdc0b833892d01a3db0843cf69a8d2e714898c04cbf4d0b904cbfa50bbdd",
+    "research/test_archive_m10.py": "bdb978887da538c42559554d0cb92f7dc867e0ffe5660b315a24e30331ef5d50"
+  }
+}

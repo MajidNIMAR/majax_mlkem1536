@@ -255,3 +255,38 @@ est liée à la CI neuve Windows/Ubuntu 43806407492 (439 tests Python
 exécutés par OS, sans test ignoré), à ses paquets originaux et au contrôle
 de copie locale. Ce sont des vérifications d'intégration distinctes des
 mesures et campagnes figées ; la construction et les octets R1 sont inchangés.
+
+## Réalisation M10 en qualification
+
+L'API et les formats restent R1. La réalisation003 emploie des destinations
+possédées pour les dérivations et expansions, une finalisation SHAKE empruntée,
+une affectation conditionnelle du secret et une copie de sortie qui conserve
+l'effacement du propriétaire local de Decaps. Les deux résidus observés sont
+retirés dans les quatre images PC examinées ; le [dossier de cycle secret](REVUE_CYCLE_SECRET_M10.md)
+conserve aussi les itérations001/002 et les limites masque/ABI/registres.
+Les budgets de mesure passent sur les deux OS. La campagne longue neuve
+ASan/std reconstruite atteint ses quatre budgets de 1800 secondes CPU
+conservatrices après INITED : 8041,14 secondes CPU totales, dont 7408,48
+créditées après INITED, en 33 segments. Elle compte 33197231 exécutions
+après INITED, répétitions comprises, sans défaut observé ; aucun temps
+historique, de compilation ou d'initialisation n'est crédité. Les corpus
+récoltés comptent 3968 entrées après déduplication propre à chaque harnais.
+
+Les objets distincts de couverture LLVM donnent 492/669 lignes du cœur
+mappé et 18/38 branches, en conservant les compteurs nuls. Le rejeu du
+nouveau corpus confronte 4263 requêtes déterministes Rust/Python, toutes
+concordantes, dont 641 sondes de décapsulation après import privé accepté.
+Les 1887 opérations à aléa frais encodées dans le corpus restent comptées
+séparément et ne sont pas reproduites par l'oracle.
+
+Le [recueil moteur M10](../results/engine/m10-001/) est scellé et rejoué,
+et les deux paquets sont qualifiés en interne. Le [check local Windows
+complet](../results/engine/m10-verification-001/) passe : 514 tests Python,
+aucun ignoré, tests Rust, formatage, Clippy strict et rejeux requis. Les
+313 entrées de sources/contrôles enregistrées sont identiques avant/après.
+La CI neuve Windows/Ubuntu et la promotion canonique restent en attente.
+Le [bilan M10](M10_MOTEUR_ET_QUALIFICATION.md) classe les chemins non
+parcourus et précise la portée des 37 entrées compilables qualifiées.
+M09 reste la référence livrée jusqu'à la clôture de cette intégration.
+Le [volet sécurité](SECURITE_M10.md) et la [décision des paramètres](DECISION_PARAMETRES_M10.md)
+ne déclarent ni C01 fermé ni un niveau global de sécurité acquis.

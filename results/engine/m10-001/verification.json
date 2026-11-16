@@ -1,0 +1,176 @@
+{
+  "schema": "m10-engine-verification-v1",
+  "verified": true,
+  "groups": {
+    "baseline": {
+      "new_M10_reference_builds": 12,
+      "core": "M09",
+      "historical_campaign_credit": 0
+    },
+    "qualification": {
+      "contract": {
+        "reviewed_source_anchors": 78,
+        "realization": "M10-borrowed-XOF-copied-output-3",
+        "formal_program_verification": false
+      },
+      "counts": {
+        "windows": {
+          "vectors": 1000,
+          "rejections": 10000,
+          "mutations": 10000,
+          "formats": 20000,
+          "timing_observations": 16000,
+          "memory_observations": 108
+        },
+        "linux": {
+          "vectors": 1000,
+          "rejections": 10000,
+          "mutations": 10000,
+          "formats": 20000,
+          "timing_observations": 16000,
+          "memory_observations": 108
+        }
+      },
+      "performance_memory_budgets_passed": true,
+      "timing_threshold_crossings": {
+        "windows": 0,
+        "linux": 0
+      }
+    },
+    "cli-review": {
+      "role": "candidate",
+      "binary_kind": "delivered",
+      "images": {
+        "windows": {
+          "physical_functions": 4946,
+          "engine_roots": 37,
+          "reachable_functions": 194,
+          "unresolved_transfers": 54,
+          "division_sites": 5
+        },
+        "linux": {
+          "physical_functions": 1446,
+          "engine_roots": 19,
+          "reachable_functions": 147,
+          "unresolved_transfers": 169,
+          "division_sites": 0
+        }
+      },
+      "source_contract": {
+        "reviewed_source_anchors": 78,
+        "realization": "M10-borrowed-XOF-copied-output-3",
+        "formal_program_verification": false
+      },
+      "new_objdump_on_verify": false,
+      "external_review": false,
+      "complete_erasure_proved": false,
+      "constant_time_proved": false
+    },
+    "consumer-review": {
+      "role": "candidate",
+      "binary_kind": "consumer",
+      "images": {
+        "windows": {
+          "physical_functions": 4620,
+          "engine_roots": 37,
+          "reachable_functions": 155,
+          "unresolved_transfers": 52,
+          "division_sites": 5
+        },
+        "linux": {
+          "physical_functions": 699,
+          "engine_roots": 22,
+          "reachable_functions": 110,
+          "unresolved_transfers": 122,
+          "division_sites": 0
+        }
+      },
+      "source_contract": {
+        "reviewed_source_anchors": 78,
+        "realization": "M10-borrowed-XOF-copied-output-3",
+        "formal_program_verification": false
+      },
+      "new_objdump_on_verify": false,
+      "external_review": false,
+      "complete_erasure_proved": false,
+      "constant_time_proved": false
+    },
+    "secret-review": {
+      "status": "BOUNDED_REVIEW_PASS",
+      "images_reviewed": 4,
+      "new_binary_executions": 0,
+      "SHAKE_owners_normal_suffix_wiped": true,
+      "local_output_source_wiped": true,
+      "whole_program_erasure_proved": false,
+      "constant_time_proved": false
+    },
+    "fuzz": {
+      "schema": "m10-long-campaign-result-v1",
+      "profile": "KEM1536-DEV-Q7681-R1",
+      "long_campaign_completed": true,
+      "total_CPU_seconds": 8041.139999999999,
+      "total_post_INITED_CPU_lower_seconds": 7408.48,
+      "executions_after_INITED_including_repetitions": 33197231,
+      "all_four_budgets_reached": true,
+      "harvested_unique_inputs_by_target": {
+        "import_public": 899,
+        "import_private": 1022,
+        "decapsulate": 886,
+        "api_sequence": 1161
+      },
+      "historical_CPU_credited": 0,
+      "source_line_coverage_measured": true,
+      "independent_oracle_replayed": true,
+      "constant_time_proved": false,
+      "external_audit": false,
+      "main_campaign_source_line_coverage_measured": false,
+      "source_branch_coverage_measured": true,
+      "coverage_standard_library_rebuilt": false,
+      "new_coverage_execution_by_verifier": false,
+      "independent_replay_requests_verified": 4263,
+      "new_oracle_execution_by_verifier": false,
+      "accepted_private_key_probes": 641
+    },
+    "distribution": {
+      "verified": true,
+      "hosts": [
+        "linux",
+        "windows"
+      ],
+      "source_manifest_sha256": "67084be5ab1cde058661104b16e738138db7993dec001ac39625feb830b2810d",
+      "promotion_status": "QUALIFIED_INTERNAL",
+      "scope": "distribution only; external audit and full M10 qualification separate"
+    },
+    "controls": {
+      "readers_and_documents": 295,
+      "new_acquisitions": 0
+    },
+    "rejected": {
+      "first": {
+        "status": "REJECTED_FOR_PROMOTION",
+        "images_reviewed": 8,
+        "source_state_residue_preexisting": true,
+        "new_binary_executions": 0,
+        "whole_program_erasure_proved": false,
+        "constant_time_proved": false
+      },
+      "second": {
+        "status": "REJECTED_FOR_PROMOTION",
+        "images_reviewed": 4,
+        "new_binary_executions": 0,
+        "SHAKE_owners_normal_suffix_wiped": true,
+        "local_output_source_wiped": false,
+        "whole_program_erasure_proved": false,
+        "constant_time_proved": false
+      },
+      "promoted": false
+    }
+  },
+  "members": 10908,
+  "source_manifest_sha256": "67084be5ab1cde058661104b16e738138db7993dec001ac39625feb830b2810d",
+  "C01_closed": false,
+  "cryptographic_profile_finalized": false,
+  "external_review_performed": false,
+  "new_engine_or_compiler_executions_by_verifier": 0,
+  "historical_time_recredited": false
+}

@@ -21,9 +21,15 @@ class CertificateBridgeTests(unittest.TestCase):
         relative = "crates/kem1536/src/dev_kem.rs"
         folder = ROOT / "results/engine" / {
             "M02": "hardening-001", "M04": "m04-001", "M06": "m06-001", "M07": "m07-001", "M08": "m08-001",
+            "M09": "m09-001",
         }[milestone]
         manifest = json.loads((folder / "provenance.json").read_text("utf-8"))
-        if milestone in ("M07", "M08"):
+        if milestone == "M09":
+            member = "source/" + relative
+            with tarfile.open(folder / "qualification.tar.gz") as archive:
+                raw = archive.extractfile(member).read()
+            checksum = manifest["groups"]["qualification"]["files"][member]["sha256"]
+        elif milestone in ("M07", "M08"):
             member = "candidate-source/" + relative
             with tarfile.open(folder / "measurements.tar.gz") as archive:
                 raw = archive.extractfile(member).read()
@@ -63,6 +69,7 @@ class CertificateBridgeTests(unittest.TestCase):
             ("M06", "M06-destination-owned-NTT-accumulated-1", 31),
             ("M07", "M07-destination-owned-NTT-streamed-1", 35),
             ("M08", "M08-direct-encoding-NTT-streamed-1", 36),
+            ("M09", "M09-typed-noise-destination-message-1", 62),
         ):
             with self.subTest(milestone=milestone):
                 contract = verify_static_contract(self.frozen_source(milestone))
@@ -126,7 +133,7 @@ class CertificateBridgeTests(unittest.TestCase):
         self.assertNotEqual(shared, independent)
 
     def test_source_contract_rejects_sampler_and_rounding_regression(self):
-        source = (ROOT / "crates/kem1536/src/dev_kem.rs").read_text()
+        source = self.frozen_source("M09")
         verify_static_contract(source)
         call = "noise_into(self.0, (2 * RANK)"
         for before, after in (("xof::<192>", "xof::<191>"),
@@ -204,7 +211,7 @@ class CertificateBridgeTests(unittest.TestCase):
             self.assert_contract_mutation_rejected(flat, before, "", site)
 
     def test_direct_import_contract_checks_each_encoded_group_component(self):
-        source = (ROOT / "crates/kem1536/src/dev_kem.rs").read_text(encoding="utf-8")
+        source = self.frozen_source("M09")
         contract = verify_static_contract(source)
         self.assertEqual(contract["realization"], "M09-typed-noise-destination-message-1")
         self.assertEqual(contract["reviewed_source_anchors"], 62)
@@ -241,7 +248,7 @@ class CertificateBridgeTests(unittest.TestCase):
             self.assert_contract_mutation_rejected(flat, "validate_vector_encoding(&bytes[..VECTOR_BYTES])?;", "", site)
 
     def test_direct_import_contract_rejects_early_success_and_legacy_fallback(self):
-        source = (ROOT / "crates/kem1536/src/dev_kem.rs").read_text(encoding="utf-8")
+        source = self.frozen_source("M09")
         flat = re.sub(r"\s+", "", source)
         before = "ifnoncanonical!=0{returnErr(Error::NoncanonicalEncoding);}Ok(())"
         self.assert_contract_mutation_rejected(flat, before, "returnOk(());" + before)
@@ -251,7 +258,7 @@ class CertificateBridgeTests(unittest.TestCase):
             verify_static_contract(flat.replace(helper, "", 1))
 
     def test_m09_contract_rejects_role_entropy_and_destination_changes(self):
-        source = (ROOT / "crates/kem1536/src/dev_kem.rs").read_text(encoding="utf-8")
+        source = self.frozen_source("M09")
         flat = re.sub(r"\s+", "", source)
         for before, after in (
             ("structKeygenNoise<'a>(&'a[u8;32]);", "structKeygenNoise<'a>(&'a[u8]);"),
@@ -272,7 +279,7 @@ class CertificateBridgeTests(unittest.TestCase):
             self.assert_contract_mutation_rejected(flat, before, after)
 
     def test_streamed_contract_rejects_sampler_orientation_and_row_packing_faults(self):
-        source = (ROOT / "crates/kem1536/src/dev_kem.rs").read_text()
+        source = self.frozen_source("M09")
         verify_static_contract(source)
         flat = re.sub(r"\s+", "", source)
         for before, after in (
@@ -324,7 +331,7 @@ class CertificateBridgeTests(unittest.TestCase):
             self.assert_contract_mutation_rejected(flat, before, "foriin0..RANK-1{", site)
 
     def test_streamed_contract_checks_every_reset_inverse_accumulation_and_addition_site(self):
-        source = (ROOT / "crates/kem1536/src/dev_kem.rs").read_text()
+        source = self.frozen_source("M09")
         verify_static_contract(source)
         flat = re.sub(r"\s+", "", source)
         for before, after, count in (

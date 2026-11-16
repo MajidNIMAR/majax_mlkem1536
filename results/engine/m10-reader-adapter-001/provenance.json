@@ -1,0 +1,19 @@
+{
+  "schema": "m10-reader-adapter-evidence-v1",
+  "engine_provenance_sha256": "1d89486958ae862226b821dcc2c0f63710c488dfd262789fc239ad4c8246a0a5",
+  "files": {
+    "archive_m10.py.diff": "27aea6d2aa568164069e2701dc28326abbe1a1c66dfed00572b22cd053d089a4",
+    "execution.json": "4de265cd52564b07a512e58027cc40aeefa0141348dcebee8ae0366f3e3abec4",
+    "incident.json": "2c28a5debf559bc1f03ccad23b6bde82c2ac29219b92f03eab3f7e4c8b06944b",
+    "provenance.json": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "README.md": "eff592f69e705ba373b954205a6556186cf9054b5c3342ce88dcf94a4a8c2c56",
+    "replay.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "replay.stdout": "700028a5a74c2d14d56d3b9d17ea8ee765d6c91fd4e56b7e13cb044a0ba67c67",
+    "test_archive_m10.py.diff": "99630d7f0d4e92e3a0ceee9f8ce1f18bc0fd3ceaaa2bf650bb750e640dbbff71",
+    "before/research/archive_m10.py": "70707aa5410465f46bfc99a4f8647f85122b56237aa587f64a25c1899673ae54",
+    "before/research/test_archive_m10.py": "6f03bfae1e5075a13d53b22cd3eec8a873ee895051cbcffc1175f9c2d6932264",
+    "after/research/archive_m10.py": "bf78bdc0b833892d01a3db0843cf69a8d2e714898c04cbf4d0b904cbfa50bbdd",
+    "after/research/test_archive_m10.py": "bdb978887da538c42559554d0cb92f7dc867e0ffe5660b315a24e30331ef5d50"
+  },
+  "new_acquisitions": 0
+}

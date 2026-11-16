@@ -1,0 +1,79 @@
+name: Engine and research checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-24.04]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c # v6
+        with:
+          python-version: '3.13'
+      - name: Bootstrap Windows
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: ./scripts/bootstrap.ps1
+      - name: Prepare Windows research tools
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: ./scripts/research-setup.ps1
+      - name: Check Windows
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: ./scripts/dev.ps1 check
+      - name: Bootstrap Ubuntu
+        if: runner.os == 'Linux'
+        shell: bash
+        run: bash scripts/bootstrap.sh
+      - name: Prepare Ubuntu research tools
+        if: runner.os == 'Linux'
+        shell: bash
+        run: bash scripts/research-setup.sh
+      - name: Check Ubuntu
+        if: runner.os == 'Linux'
+        shell: bash
+        run: bash scripts/dev.sh check
+      - name: Run the original M07 package on Windows
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: ./.tools/research-venv/Scripts/python.exe -B research/smoke_m07_package.py
+      - name: Run the original M07 package on Ubuntu
+        if: runner.os == 'Linux'
+        shell: bash
+        run: .tools/research-venv/bin/python -B research/smoke_m07_package.py
+      - name: Run the original M08 package and import consumer on Windows
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: ./.tools/research-venv/Scripts/python.exe -B research/smoke_m08_package.py
+      - name: Run the original M08 package and import consumer on Ubuntu
+        if: runner.os == 'Linux'
+        shell: bash
+        run: .tools/research-venv/bin/python -B research/smoke_m08_package.py
+      - name: Run the original M09 package and import consumer on Windows
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: ./.tools/research-venv/Scripts/python.exe -B research/smoke_m09_package.py
+      - name: Run the original M09 package and import consumer on Ubuntu
+        if: runner.os == 'Linux'
+        shell: bash
+        run: .tools/research-venv/bin/python -B research/smoke_m09_package.py
+      - name: Run the original M10 package and import consumer on Windows
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: ./.tools/research-venv/Scripts/python.exe -B research/smoke_m10_package.py
+      - name: Run the original M10 package and import consumer on Ubuntu
+        if: runner.os == 'Linux'
+        shell: bash
+        run: .tools/research-venv/bin/python -B research/smoke_m10_package.py

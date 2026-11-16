@@ -1,0 +1,23 @@
+--- before/research/test_archive_m10.py
++++ after/research/test_archive_m10.py
+@@ -8,6 +8,20 @@
+ 
+ 
+ class PublicationPartsTests(unittest.TestCase):
++    def test_file_only_fuzz_mirror_restores_empty_directories_and_preserves_incidents(self):
++        parent=archive.ROOT/'target/m10-archive-tests'
++        parent.mkdir(parents=True,exist_ok=True)
++        with tempfile.TemporaryDirectory(prefix='empty-fuzz-',dir=parent) as temporary:
++            folder=Path(temporary)
++            for name in ('import_public','import_private','decapsulate','api_sequence'):
++                (folder/name).mkdir()
++            archive.restore_empty_fuzz_directories(folder)
++            self.assertTrue(all((folder/n/'failures').is_dir() for n in ('import_public','import_private','decapsulate','api_sequence')))
++            incident=folder/'decapsulate/failures/crash-example'
++            incident.write_bytes(b'preserve a hypothetical failing input')
++            archive.restore_empty_fuzz_directories(folder)
++            self.assertEqual(incident.read_bytes(),b'preserve a hypothetical failing input')
++
+     def test_all_expected_linked_capsules_are_required(self):
+         links={name:'a'*64 for name in archive.LINKS}
+         archive.check_link_names(links)

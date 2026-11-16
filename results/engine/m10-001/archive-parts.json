@@ -1,0 +1,24 @@
+{
+  "schema": "m09-byte-identical-parts-v1",
+  "scope": "Shared byte-preserving storage format for NEW M10 data; no M09 run credit",
+  "engine_provenance_sha256": "1d89486958ae862226b821dcc2c0f63710c488dfd262789fc239ad4c8246a0a5",
+  "part_limit_bytes": 94371840,
+  "archives": {
+    "rejected.tar.gz": {
+      "bytes": 166571427,
+      "sha256": "fc4c3a639dff69b936de04571b3cfa44cdd05169a0b7a79062c16a576096b48c",
+      "parts": [
+        {
+          "name": "rejected.tar.gz.part-001",
+          "bytes": 94371840,
+          "sha256": "8bc7bf7153733f1365cc6ac1291745e26546647f30d63572fbc5d1a00117b3e3"
+        },
+        {
+          "name": "rejected.tar.gz.part-002",
+          "bytes": 72199587,
+          "sha256": "e592982841485723c12031fada45e8a961f0e20b15e24a9761f27c1cce064f8f"
+        }
+      ]
+    }
+  }
+}

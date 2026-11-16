@@ -1,0 +1,35 @@
+{
+  "schema": "m10-local-full-check-v1",
+  "sealed_utc": "2026-11-16T14:43:28.731994+00:00",
+  "exit_code": 0,
+  "python_tests": 514,
+  "python_status": "OK",
+  "skipped": 0,
+  "source_and_control_input_count": 313,
+  "source_and_controls_unchanged": true,
+  "qualified_compilation_inputs_checked_at_seal": 37,
+  "qualified_inputs_in_before_after": 31,
+  "qualified_inputs_outside_before_after": [
+    "research/m08-import-consumer/Cargo.lock",
+    "research/m08-import-consumer/Cargo.toml",
+    "research/m08-import-consumer/src/main.rs",
+    "research/m08-memory-probe/Cargo.lock",
+    "research/m08-memory-probe/Cargo.toml",
+    "research/m08-memory-probe/src/main.rs"
+  ],
+  "source_manifest_sha256": "67084be5ab1cde058661104b16e738138db7993dec001ac39625feb830b2810d",
+  "engine_provenance_sha256": "1d89486958ae862226b821dcc2c0f63710c488dfd262789fc239ad4c8246a0a5",
+  "original_check_members_sha256": {
+    "controls/.github/workflows/ci.yml": "e099627f949bda2479a78e7531365194f0d277abf84c77a02073b90c831d8bad",
+    "controls/research/run_m09_check.py": "2b77c228f320eef2a8fc0e616ae0c43efb211c931c238babb48dfd0fa5564da4",
+    "controls/scripts/dev.ps1": "2b4a1fe71b9f6df0208e3dae512165e24e164b723ded4e25b95d6629220bfec1",
+    "controls/scripts/dev.sh": "59d3fc3ac0e68354108d01cd64ac440784662f2c6c09340a8d8d926b6e42e4e4",
+    "full-check.log": "cd2c5d759c79c4a78905695e98fd6bce768116de6fb96d2b34d1fd17b9ceabbe",
+    "inputs-before.json": "e7e737ce579af0866b66e7348df8a84169f9b5b5aa18465042cc464f2ef8f7ed",
+    "receipt.json": "0b8493ac4ec09f662727e86443a77f3657d7a923e17d391279a17fefc14f0f50"
+  },
+  "fresh_long_fuzz_credit": 0,
+  "new_builds": 0,
+  "external_audit": false,
+  "global_security_or_CT_or_erasure_proved": false
+}

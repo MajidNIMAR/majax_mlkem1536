@@ -39,6 +39,9 @@ case "${1:-check}" in
         "$task_check_research_python" research/archive_m07.py verify --output results/engine/m07-001
         "$task_check_research_python" research/archive_m08.py verify --output results/engine/m08-001
         "$task_check_research_python" research/archive_m09.py verify --output results/engine/m09-001
+        "$task_check_research_python" research/m10_security.py verify --output results/security/m10-001
+        "$task_check_research_python" research/m10_parameters_report.py verify --result results/security/m10-parameters-001
+        "$task_check_research_python" research/archive_m10.py verify --output results/engine/m10-001
         python3 research/verify_results.py
         python3 research/verify_modern_results.py
         python3 research/verify_decapsulation_results.py

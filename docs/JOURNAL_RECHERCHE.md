@@ -1982,3 +1982,134 @@ R1 fonctionne et les améliorations sont mesurées ; **C01 complet, QROM,
 primitives concrètes, temps constant/effacement universels et audit externe
 restent ouverts**. Android et Messenger demeurent différés. Les futurs
 commits de clôture documentaire conservent le code effectivement testé.
+
+## M10 — ouverture des quatre chantiers vers un candidat final
+
+16 novembre 2026. L'utilisateur autorise l'argument complet, la décision
+sur les paramètres, le durcissement étendu et la qualification prolongée.
+La revue extérieure est différée. Le protocole M10 est commis1105e7f avant
+changement du moteur ; les objectifs ne sont pas déclarés atteints d'avance.
+
+La référence M09 est capturée (56 fichiers ; manifeste
+`fea4458893be1e7f84e42d58da22c3740363a015103917fb0828603f902925ce`).
+Douze images sont reconstruites à neuf dans des cibles M10 séparées,
+avec sources et contrôles inchangés pendant l'exécution. Les travaux
+sur la sélection finale et les dérivations vers un propriétaire précèdent
+la capture du candidat et sa revue. Le canonical M09 reste conservé.
+
+Le panneau cryptanalytique du commit c37e9f7 demande40 nouveaux calculs :
+deux profils, deux jeux d'échantillons finis, deux coûts et cinq familles.
+Les lignes structurées MLWE ne sont pas déclarées LWE indépendantes.
+Les travaux ont une limite300s chacun ; erreurs et expirations seront
+conservées. Le runtime Sage volatil absent a été réhydraté depuis les
+158 archives locales épinglées, sans modification d'outils globaux.
+
+Le plan de qualification longue fixe1800 secondes CPU conservatrices
+après INITED pour chacun des quatre harnais ; aucune initialisation ni
+campagne antérieure ne sera créditée. Couverture LLVM et confrontation
+du corpus récolté à l'oracle indépendant sont des exigences séparées.
+Le lancement attend les critères de validation, mesures et revue des
+images du candidat effectivement compilé.
+
+### M10 — itérations de durcissement, analyses et lancement long
+
+La réalisation001 passe les corpus complets sur les deux OS mais ne suffit
+pas pour la livraison : la revue confirme l'état SHAKE absorbé laissé en
+pile (défaut préexistant M09), puis la source locale32 du secret de sortie
+déplacée sans essuyage. La réalisation002, finalisation SHAKE empruntée,
+retire le premier mécanisme mais conserve le second. Elle passe aussi les
+corpus et reste non promouvable. Les sources, 24 builds et inventaires
+001/002 sont conservés, sans substitution ni crédit transféré.
+
+La réalisation003 conserve le propriétaire local de key32 après copie de
+sortie. Ses quatre images CLI/consommateur ont la revue bornée PASS,
+confirmée par une seconde lecture interne : états SHA3/SHAKE, lecteur et
+source locale de sortie ont les essuyages examinés. Le masque sensible,
+registres/ABI/copies appelant et dépendances restent hors garantie globale.
+Le pont reconnaît78 ancrages et conserve75/77 sur les itérations négatives.
+Source003 : manifeste `67084be5ab1cde058661104b16e738138db7993dec001ac39625feb830b2810d`,
+dev_kem.rs `7b64b6e1adf18d5a3e0b66e6c95eb392aebb24c20077c74aadd304fcadc43d32`.
+
+Les 40000 latences et432 observations mémoire nouvelles respectent les
+budgets M09→M10 ; aucune référence mémoire historique n'est réutilisée.
+Les médianes changent de−4,31 à+2,20% selon opération/OS. La pile touchée
+de Decaps diminue de224 octets sur les deux OS ; Encaps Windows augmente
+de16 octets, sans hausse des allocations demandées. Le diagnostic neuf
+32000 observations ne franchit pas4,5 : max|t|1,74635 Windows/1,35509 Linux.
+Ce diagnostic n'est pas une preuve de temps constant. Les paquets répétés
+retrouvent Linux brut exact et Windows hors deux seules métadonnées PE.
+
+Les deux capsules mathématiques sont scellées : `results/security/m10-001`
+(composition matrice/bruits/FO classique,28 tests) et `m10-parameters-001`
+(40 coûts finis,20 paires strictes favorables au proxy R1,13 tests).
+Le raccord classique a été confronté à une lecture interne séparée,
+avec quantificateurs adaptatifs et coût de Parse borné explicités.
+R1 est conservé pour le développement ; C01 concret, carte complète QROM
+et réoptimisation sous plafond RAM restent ouverts. Aucun audit extérieur.
+
+Le gate19 preuves lie validation, mesures, diagnostic et revue003 au plan
+préalable ; SHA `50d78100f750595f4f3baf811d9942112110517a8d201f1fb0893c1c314053cb`.
+Le contrôleur long et son adaptateur sont commis8523262 avant lancement.
+Le nouveau build ASan/std réussit ; les quatre workers sont actifs avec
+budgets séparés1800s CPU après INITED. La couverture et l'oracle du corpus
+récolté attendent la fin de cette acquisition. Les70 nouveaux tests Python
+M10 passent, ainsi que le test de parties d'archive ; check global et CI
+restent à constater après le gel complet.
+
+## M10 — fin de l'acquisition prolongée, 16 novembre 2026
+
+Les quatre harnais ont atteint séparément leur budget de 1 800 secondes CPU
+après observation de `INITED`. Le total conservateur est de 7 408,48 secondes,
+pour 8 041,14 secondes CPU mesurées et 33 197 231 exécutions après `INITED`,
+répétitions comprises. Aucun temps d'une ancienne campagne n'est crédité.
+Les quatre corpus récoltés contiennent respectivement 899, 1 022, 886 et
+1 161 entrées distinctes par harnais. Les journaux ne signalent aucun défaut
+ASan ni échec de harnais ; ce constat porte sur les exécutions observées.
+
+Le post-traitement est lancé avec des cibles de compilation séparées pour
+la couverture LLVM des sources/branches et le rejeu contre l'oracle Python.
+À cette entrée du journal, ces deux résultats ne sont pas encore acquis.
+Les onze contrôleurs de campagne et de post-traitement restent inchangés.
+
+## M10 — couverture et comparaison indépendante du corpus, 16 novembre 2026
+
+Les quatre passages LLVM se terminent, puis l'union des objets/profils est
+exportée en entier. Résultat : 492/669 lignes et 18/38 branches cartographiées
+du cœur ; `dev_kem.rs` atteint 384/417 lignes et 14/20 branches. Les zéros
+restent inventoriés et ne sont pas effacés du dénominateur.
+
+Le rejeu déterministe produit 4 263 requêtes distinctes à partir des quatre
+corpus récoltés. Toutes les sorties Rust/Python concordent, dont 641 sondes
+de décapsulation après import privé accepté et 16 rechiffrements acceptés.
+Les 1 887 opérations à aléa frais encodées restent hors de cette comparaison
+déterministe. Les sources originales et les onze contrôleurs sont inchangés
+par rapport à leur gel. La vérification globale des archives et la CI restent
+des opérations distinctes à constater.
+
+## M10 — distribution et adaptation de lecture, 16 novembre 2026
+
+Les paquets Windows/Linux et le paquet source passent la vérification de
+distribution `QUALIFIED_INTERNAL`. Cette acceptation borne l'ingénierie PC ;
+elle n'est ni une clôture C01 ni une décision cryptographique finale.
+
+Le premier rejeu global des neuf groupes échoue dans le miroir temporaire :
+les dossiers vides `failures` ne sont pas matérialisés par le format qui
+conserve seulement les fichiers. Les données d'acquisition et les archives
+restent inchangées. L'adaptateur crée les quatre dossiers attendus dans le
+miroir, sans retirer aucun fichier d'incident. Un test supplémentaire vérifie
+également la conservation d'un fichier d'incident hypothétique. Les cinq
+tests d'archivage passent ; la suite globale attendue compte désormais 514
+tests. `m10-reader-adapter-001` conserve le delta et le nouveau rejeu.
+
+## M10 — contrôle global local réussi, 16 novembre 2026
+
+Le contrôle complet se termine à 14:42:39 UTC, sortie 0. Les 514 tests
+Python sont exécutés sans aucun ignoré ; Rust, formatage, Clippy, les
+recueils et certificats ainsi que les essais natifs de fin passent.
+Les 313 entrées suivies sont identiques avant/après. Le sceau local
+`m10-verification-001` conserve le journal SHA-256
+`cd2c5d759c79c4a78905695e98fd6bce768116de6fb96d2b34d1fd17b9ceabbe`.
+Il vérifie 37 entrées compilables au scellement, dont 31 suivies avant/après
+et six fichiers autonomes contrôlés seulement à cette étape. La publication,
+la CI Windows/Ubuntu et la promotion restent à constater séparément.
+

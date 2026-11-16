@@ -15,13 +15,71 @@ evidence needed to examine its evolution.
 [Specification](docs/SPECIFICATION_DEV_Q7681_R1.md) ·
 [Engine and API guide](docs/MOTEUR_KEM_R1.md) ·
 [Research report](docs/RAPPORT_RECHERCHE.md) ·
+[M10 engine and qualification](docs/M10_MOTEUR_ET_QUALIFICATION.md) ·
 [M09 engine and qualification](docs/M09_MOTEUR_CONTRATS_ET_QUALIFICATION.md) ·
 [M08 import study and delivery](docs/M08_IMPORTS_ET_VALIDATION.md) ·
 [M07 memory and delivery study](docs/M07_MEMOIRE_ET_VALIDATION.md)
 
 [![Main-branch checks](https://github.com/MajidNIMAR/majax_mlkem1536/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/MajidNIMAR/majax_mlkem1536/actions/workflows/ci.yml)
 
-## Latest verified results — M09
+## Latest verified results — M10
+
+**M10 is the new internally reviewed engine candidate.** It preserves the
+R1 construction, wire formats and deterministic outputs. SHA3/SHAKE material
+is written into existing secret owners; borrowed SHAKE finalization keeps
+the absorbed state subject to wiping, and the local decapsulation output
+owner remains alive until after copying. The [four-image PC review](docs/REVUE_CYCLE_SECRET_M10.md)
+qualifies removal of two observed normal-return stack residues. The first
+two M10 iterations and their negative evidence are retained. Sensitive mask,
+ABI/register/dependency/caller copies and global constant time remain open.
+
+The fresh M09 → M10 comparison contains **40,000 latencies and 432 memory
+observations**, with all preregistered budgets passed. Median changes range
+from **4.31% lower to 2.20% higher**, depending on operation and OS. Observed
+decapsulation touched-stack maxima fall by **224 bytes on each OS**;
+Windows encapsulation rises by **16 bytes**. Requested allocation counters
+do not increase. A separate 32,000-observation timing diagnostic has no
+threshold crossing; it does not prove constant time. See the [M10 study](docs/M10_MOTEUR_ET_QUALIFICATION.md)
+for complete distributions, costs, source/image identities and limitations.
+
+The [M10 security composition](docs/SECURITE_M10.md) supplies explicit matrix,
+noise and classical FO reductions, with conditional quantum analyses and
+resource maps. The [parameter decision](docs/DECISION_PARAMETRES_M10.md)
+records **40 fresh finite-sample estimates and 20 strict pairs favourable
+to the R1 proxy**. These are declared attack-cost models, including
+extrapolations; they give no certified global bit rating or constrained-RAM
+optimum. R1 is retained for development; **C01 and final cryptographic
+parameter selection remain open**. External review is deferred.
+
+The new four-harness ASan/std-rebuilt campaign has completed with no observed
+defect: **8,041.14 total CPU seconds**, including **7,408.48 conservative
+post-INIT CPU seconds**, with each harness exceeding its own 1,800-second
+budget. It records **33,197,231 post-INIT executions including repetitions**
+and 3,968 harvested entries deduplicated within each harness. Historical
+runs, compilation and initialization receive no post-INIT budget credit.
+Separate LLVM coverage objects record **492/669 mapped core lines and
+18/38 branches**, with zero-count mappings retained. Independent replay
+matches **4,263 deterministic Rust/Python requests**, including 641 accepted
+private-key decapsulation probes. The 1,887 fresh-randomness operations
+encoded in the corpus are counted separately and are not recreated by the
+oracle. These results do not establish complete path coverage, constant
+time or global erasure; the [M10 study](docs/M10_MOTEUR_ET_QUALIFICATION.md)
+classifies the uncovered code.
+
+The [evidence capsule](results/engine/m10-001/) is sealed and its 10,908
+members replay successfully, with the file-only mirror adaptation preserved.
+The [complete local Windows check](results/engine/m10-verification-001/)
+passes with **514 Python tests, none skipped**, Rust tests, formatting,
+strict Clippy and the required evidence replays. Its 313 recorded source
+and control inputs are identical before and after the check. Same-host
+repeat CLI builds match Linux raw bytes and Windows outside the two declared
+PE metadata fields; the distribution is qualified internally. Fresh hosted
+Windows/Ubuntu CI and canonical promotion remain pending. **M09 remains
+the delivered reference** until those integration steps are completed.
+
+<a id="latest-verified-results--m09"></a>
+
+## Historical delivered results — M09
 
 **M09 is the delivered engine reference, qualified internally.** It adds fixed-size
 borrowed noise roles, operation-level partial-entropy failure checks, direct
@@ -122,13 +180,13 @@ scope and raw results.
 | Assurance area | Current published status |
 |---|---|
 | Functional engine and compatibility | Implemented and exercised on Windows/Linux; complete reference corpora match and R1 formats remain compatible |
-| Implementation hardening | Validated encodings and zeroizing owners; M08 qualifies removal of targeted import spills in its images, while M09 has typed entropy/noise contracts, message-owner checks and its own targeted scalar correction review; register/ABI/all-PKE erasure and formal constant time remain open |
+| Implementation hardening | M10 qualifies removal of two observed stack residues in its four reviewed PC images and completes its new long sanitizer campaign; earlier M08/M09 findings retain their own image scope. Register/ABI/all-PKE erasure and formal constant time remain open |
 | Cryptographic security argument | Exact correctness certificates and conditional ROM/QROM analyses under stated assumptions; the full concrete R1 argument **C01 remains open** |
 | External assurance and security rating | A certified global bit rating, NIST category or external cryptographic audit is not established by these artifacts; **1536 denotes the coefficient count** |
 | Target qualification | M09 CLI/default-consumer reviews and historical M08 reviews concern GNU x86-64 Windows/Linux; Android/ARM timing and register/ABI behavior require their own qualification |
 
-The [security status](SECURITY.md) separates the M09 and M08 corrections,
-historical findings and the remaining cryptographic obligations.
+The [security status](SECURITY.md) separates the M10 corrections, earlier
+M08/M09 findings and the remaining cryptographic obligations.
 The [five-point technical review](docs/REVUE_CRITIQUE_M08_CIBLES_ET_CONTRATS.md)
 records the Android boundary, noise-domain framing and existing error-order tests.
 

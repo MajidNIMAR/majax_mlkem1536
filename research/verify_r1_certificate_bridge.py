@@ -223,10 +223,14 @@ def verify_vector(row):
 def verify_static_contract(source):
     """Fail closed on changed reviewed call sites; not a Rust semantics proof."""
     flat = re.sub(r"\s+", "", source)
+    m10_anchors = 0
+    if any(marker in flat for marker in ("fnderive_into(", "fnxof_into<", "fnassign_shared_secret_into(")):
+        from m10_source_contract import correspondence as m10_correspondence
+        flat, m10_anchors = m10_correspondence(source)
     m09_anchors = 0
     if "structKeygenNoise<" in flat:
         from m09_source_contract import correspondence
-        flat, m09_anchors = correspondence(source)
+        flat, m09_anchors = correspondence(flat if m10_anchors else source)
     anchors = ["pubconstQ:u16=7681;", "pubconstRANK:usize=6;",
                "constPOLY_BYTES:usize=416;", "constTAG:&[u8]=b\"KEM1536-DEV-Q7681-R1\\0\";",
                "xof::<192>(b\"N\\0\",&[seed,&[nonce]])", "bit(6*j)+bit(6*j+1)+bit(6*j+2)",
@@ -428,7 +432,11 @@ def verify_static_contract(source):
     require('letvalue=u16::from_le_bytes(pair)&8191;ifvalue<Q{' in flat, "matrix rejection changed")
     if m09_anchors:
         realization = "M09-typed-noise-destination-message-1"
-    return {"reviewed_source_anchors": len(anchors) + 1 + m09_anchors, "realization": realization,
+    if m10_anchors:
+        realization = {13: "M10-destination-derived-conditional-assignment-1",
+                       15: "M10-borrowed-XOF-destination-assignment-2",
+                       16: "M10-borrowed-XOF-copied-output-3"}[m10_anchors]
+    return {"reviewed_source_anchors": len(anchors) + 1 + m09_anchors + m10_anchors, "realization": realization,
             "formal_program_verification": False}
 
 

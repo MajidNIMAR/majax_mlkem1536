@@ -84,6 +84,12 @@ try {
             if ($LASTEXITCODE -ne 0) { throw 'M08 import, extended fuzz, coverage and delivery evidence verification failed.' }
             & $taskCheckResearchPython research/archive_m09.py verify --output results/engine/m09-001
             if ($LASTEXITCODE -ne 0) { throw 'M09 engine, scalar review, finite sanitizer smoke and delivery evidence verification failed.' }
+            & $taskCheckResearchPython research/m10_security.py verify --output results/security/m10-001
+            if ($LASTEXITCODE -ne 0) { throw 'M10 conditional security capsule verification failed.' }
+            & $taskCheckResearchPython research/m10_parameters_report.py verify --result results/security/m10-parameters-001
+            if ($LASTEXITCODE -ne 0) { throw 'M10 parameter decision verification failed.' }
+            & $taskCheckResearchPython research/archive_m10.py verify --output results/engine/m10-001
+            if ($LASTEXITCODE -ne 0) { throw 'M10 engine capsule verification failed.' }
             python research/verify_results.py
             if ($LASTEXITCODE -ne 0) { throw 'Frozen research result verification failed.' }
             python research/verify_modern_results.py

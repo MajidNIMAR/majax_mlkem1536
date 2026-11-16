@@ -1,0 +1,37 @@
+--- before/research/archive_m10.py
++++ after/research/archive_m10.py
+@@ -5,7 +5,7 @@
+ from archive_m09 import members, inventory, data_reader, safe_name, digest, parsed
+ from m09_chunks import sha, recovered_bytes, PART_LIMIT
+ from m10_qualification_evidence import qualification_scope
+-from m10_measure import M09_CORE
++from m10_measure import M09_CORE
+ 
+ GROUPS={'baseline':('m10-baseline-001',),'qualification':('m10-final-003',),
+     'cli-review':('m10-candidate-cli-003',),'consumer-review':('m10-candidate-consumer-003',),
+@@ -31,6 +31,13 @@
+         for host in ('windows','linux'):
+             require(qualified['measurements/context/'+label+'-'+host+'-build.json']==raws[host+'/build.json'],
+                 'archived and measured '+label+' build differ')
++
++
++def restore_empty_fuzz_directories(folder):
++    # The capsule inventories files only. Restore the four required failure
++    # directories in the owned temporary mirror; preserve every archived file.
++    for name in ('import_public','import_private','decapsulate','api_sequence'):
++        (folder/name/'failures').mkdir(exist_ok=True)
+ 
+ 
+ class PartWriter:
+@@ -239,7 +246,10 @@
+         require(gate['gate_controller_sha256']==digest(qualified['acceptance/gate-controller.py'])
+             and digest(raws['accepted-marker.json'])==digest(qualified['acceptance/gate.json']),
+             'root campaign gate/controller differs from qualification')
+-        return data_reader(raws,fuzz_verify)
++        def replay_fuzz(folder):
++            restore_empty_fuzz_directories(folder)
++            return fuzz_verify(folder)
++        return data_reader(raws,replay_fuzz)
+     if name=='distribution':
+         from m10_distribution import verify as distribution_verify
+         require(parsed(raws,'result.json')['source_manifest_sha256']==source_sha,'packaged source differs')

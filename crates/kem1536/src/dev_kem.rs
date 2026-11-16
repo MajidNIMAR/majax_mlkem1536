@@ -5,8 +5,9 @@ use crate::engine_poly::{
     quotient, reduce_once, NttPolynomial as NttPoly, Polynomial as Poly, N as DEGREE,
 };
 use crate::secret_box::SecretBox;
-use ctutils::{CtEq, CtSelect};
+use ctutils::{Choice, CtAssign, CtEq};
 use sha3::{Digest, Sha3_256, Sha3_512};
+use shake::digest::ExtendableOutputReset;
 use shake::{ExtendableOutput, Shake128, Shake256, Update, XofReader};
 use zeroize::{Zeroize, Zeroizing};
 
@@ -146,28 +147,37 @@ fn hash_public(ek: &[u8]) -> [u8; 32] {
     Digest::update(&mut h, ek);
     h.finalize().into()
 }
-fn derive(label: &[u8], parts: &[&[u8]]) -> Zeroizing<[u8; 64]> {
+fn derive_into(label: &[u8], parts: &[&[u8]], out: &mut [u8; 64]) {
     let mut h = Sha3_512::new();
     Digest::update(&mut h, TAG);
     Digest::update(&mut h, label);
     for p in parts {
         Digest::update(&mut h, p);
     }
-    let mut digest = h.finalize();
+    // Borrow both state and destination: no filled digest/owner is returned
+    // through this internal boundary. The dependency's zeroize feature also
+    // wipes its state on drop; register/ABI copies need separate image review.
+    Digest::finalize_into_reset(&mut h, out.into());
+}
+#[cfg(any(test, feature = "research-vectors"))]
+fn derive(label: &[u8], parts: &[&[u8]]) -> Zeroizing<[u8; 64]> {
     let mut out = Zeroizing::new([0; 64]);
-    out.copy_from_slice(&digest);
-    digest.as_mut_slice().zeroize();
+    derive_into(label, parts, &mut out);
     out
 }
-fn xof<const L: usize>(label: &[u8], parts: &[&[u8]]) -> Zeroizing<[u8; L]> {
+fn xof_into<const L: usize>(label: &[u8], parts: &[&[u8]], out: &mut [u8; L]) {
     let mut h = Shake256::default();
     h.update(TAG);
     h.update(label);
     for p in parts {
         h.update(p);
     }
+    h.finalize_xof_reset().read(&mut out[..]);
+}
+#[cfg(any(test, feature = "research-vectors"))]
+fn xof<const L: usize>(label: &[u8], parts: &[&[u8]]) -> Zeroizing<[u8; L]> {
     let mut out = Zeroizing::new([0; L]);
-    h.finalize_xof().read(&mut out[..]);
+    xof_into(label, parts, &mut out);
     out
 }
 fn uniform(rho: &[u8], i: u8, j: u8) -> Poly {
@@ -189,7 +199,8 @@ fn uniform(rho: &[u8], i: u8, j: u8) -> Poly {
     result // Public matrix coefficients only.
 }
 fn noise_into(seed: &[u8; 32], nonce: u8, out: &mut Poly) {
-    let bytes = xof::<192>(b"N\0", &[seed, &[nonce]]);
+    let mut bytes = Zeroizing::new([0; 192]);
+    xof_into(b"N\0", &[seed, &[nonce]], &mut bytes);
     out.fill_with(|j| {
         let bit = |k: usize| i32::from((bytes[k / 8] >> (k % 8)) & 1);
         let a = bit(6 * j) + bit(6 * j + 1) + bit(6 * j + 2);
@@ -281,7 +292,8 @@ fn recover_message_into(p: &Poly, m: &mut [u8; 32]) {
 }
 fn pke_keygen_into(d: &[u8; 32], encoded_s: &mut [u8]) -> EncapsulationKey {
     debug_assert_eq!(encoded_s.len(), VECTOR_BYTES);
-    let expanded = derive(b"KG\0", &[d, &[6]]);
+    let mut expanded = Zeroizing::new([0; 64]);
+    derive_into(b"KG\0", &[d, &[6]], &mut expanded);
     let rho = &expanded[..32];
     let sigma = KeygenNoise(seed_tail(&expanded));
     let mut transformed_s: [NttPoly; RANK] = std::array::from_fn(|_| NttPoly::zero());
@@ -402,7 +414,8 @@ fn keygen_internal(d: &[u8; 32], z: &[u8; 32]) -> (EncapsulationKey, Decapsulati
     (ek, DecapsulationKey(sk))
 }
 fn encaps_internal(ek: &EncapsulationKey, m: &[u8; 32]) -> (Ciphertext, SharedSecret) {
-    let material = derive(b"G\0", &[m, &hash_public(ek.as_bytes())]);
+    let mut material = Zeroizing::new([0; 64]);
+    derive_into(b"G\0", &[m, &hash_public(ek.as_bytes())], &mut material);
     let c = pke_encrypt(ek, m, &EncryptionCoins(seed_tail(&material)));
     let mut key = Zeroizing::new([0; 32]);
     key.copy_from_slice(&material[..32]);
@@ -447,20 +460,35 @@ fn encapsulate_with_entropy(
     fill_entropy_into(&mut m, fill)?;
     Ok(encaps_internal(ek, &m))
 }
+/// `out` already contains the rejection key. Replace it by the favourable key
+/// only under the ciphertext equality mask, writing into its existing owner.
+/// The separate emitted helper is reviewed for copies and conditional control.
+#[inline(never)]
+fn assign_shared_secret_into(out: &mut [u8; 32], good: &[u8; 32], valid: Choice) {
+    out.ct_assign(good, valid);
+}
 pub fn decapsulate(dk: &DecapsulationKey, c: &Ciphertext) -> SharedSecret {
     let ek = &dk.0[VECTOR_BYTES..VECTOR_BYTES + PUBLIC_KEY_BYTES];
     let offset = VECTOR_BYTES + PUBLIC_KEY_BYTES;
     let mut m = Zeroizing::new([0; 32]);
     pke_decrypt_into(&dk.0[..VECTOR_BYTES], c, &mut m);
-    let material = derive(b"G\0", &[&m[..], &dk.0[offset..offset + 32]]);
+    let mut material = Zeroizing::new([0; 64]);
+    derive_into(b"G\0", &[&m[..], &dk.0[offset..offset + 32]], &mut material);
     let mut cp = Zeroizing::new([0; CIPHERTEXT_BYTES]);
     pke_encrypt_into(ek, &m, &EncryptionCoins(seed_tail(&material)), &mut cp);
-    let fallback = xof::<32>(b"J\0", &[&dk.0[offset + 32..], c.as_bytes()]);
-    let mut good = Zeroizing::new([0; 32]);
-    good.copy_from_slice(&material[..32]);
-    SharedSecret(Zeroizing::new(
-        (*fallback).ct_select(&*good, c.as_bytes().ct_eq(&cp[..])),
-    ))
+    let mut key = Zeroizing::new([0; 32]);
+    xof_into(b"J\0", &[&dk.0[offset + 32..], c.as_bytes()], &mut key);
+    assign_shared_secret_into(
+        &mut key,
+        material[..32]
+            .try_into()
+            .expect("fixed favourable key view"),
+        c.as_bytes().ct_eq(&cp[..]),
+    );
+    // Copy the API output explicitly so the local selection owner keeps its
+    // Drop. Moving `key` left its address-taken stack source unwiped in the
+    // first two M10 PC images; the final emitted output path is reviewed.
+    SharedSecret(Zeroizing::new(*key))
 }
 
 #[cfg(feature = "research-vectors")]
@@ -491,9 +519,11 @@ pub fn run_diagnostics(rounds: usize) -> Result<Diagnostics, Error> {
         altered.0[1] |= 31;
         altered.0[CIPHERTEXT_BYTES - 8..].copy_from_slice(&(i as u64).to_le_bytes());
         let rejected = decapsulate(&dk, &altered);
-        let expected = xof::<32>(
+        let mut expected = Zeroizing::new([0; 32]);
+        xof_into(
             b"J\0",
             &[&dk.0[PRIVATE_KEY_BYTES - 32..], altered.as_bytes()],
+            &mut expected,
         );
         if !bool::from(rejected.as_bytes().as_slice().ct_eq(&expected[..])) {
             return Err(Error::SelfTestFailure);
@@ -589,6 +619,51 @@ pub mod research_vectors {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn derived_material_overwrites_its_owner_and_matches_independent_sha3() {
+        // Python 3 hashlib.sha3_512 on TAG || KG\0 || [0x5a;32] || [6].
+        // The expected bytes do not use either Rust helper as their oracle.
+        let expected = [
+            171, 172, 151, 158, 183, 198, 122, 40, 147, 89, 251, 116, 82, 150, 236, 32, 63, 229,
+            16, 241, 144, 165, 58, 230, 206, 27, 144, 243, 212, 220, 45, 184, 121, 240, 215, 33,
+            29, 49, 252, 100, 118, 120, 198, 57, 143, 5, 1, 186, 44, 42, 218, 219, 13, 162, 103,
+            254, 29, 57, 116, 40, 128, 110, 12, 236,
+        ];
+        let mut material = Zeroizing::new([0xa5; 64]);
+        let address = material.as_ptr();
+        derive_into(b"KG\0", &[&[0x5a; 32], &[6]], &mut material);
+        assert_eq!(material.as_ptr(), address);
+        assert_eq!(*material, expected);
+    }
+
+    #[test]
+    fn noise_expansion_overwrites_its_owner_and_matches_independent_shake() {
+        // Python hashlib.sha3_256(hashlib.shake_256(
+        // TAG || N\0 || [0x55;32] || [12]).digest(192)).digest().
+        let expected_hash = [
+            169, 213, 155, 243, 146, 11, 149, 62, 211, 170, 19, 242, 99, 210, 65, 39, 208, 15, 91,
+            229, 159, 35, 62, 121, 203, 13, 15, 117, 131, 184, 223, 3,
+        ];
+        let mut bytes = Zeroizing::new([0x5a; 192]);
+        let address = bytes.as_ptr();
+        xof_into(b"N\0", &[&[0x55; 32], &[12]], &mut bytes);
+        assert_eq!(bytes.as_ptr(), address);
+        assert_eq!(Sha3_256::digest(&bytes[..])[..], expected_hash);
+    }
+
+    #[test]
+    fn shared_secret_assignment_preserves_destination_and_rejection_on_false() {
+        let good: [u8; 32] = std::array::from_fn(|i| (i as u8).wrapping_mul(7));
+        let fallback: [u8; 32] = std::array::from_fn(|i| !good[i]);
+        for (mask, expected) in [(Choice::FALSE, fallback), (Choice::TRUE, good)] {
+            let mut key = Zeroizing::new(fallback);
+            let address = key.as_ptr();
+            assign_shared_secret_into(&mut key, &good, mask);
+            assert_eq!(key.as_ptr(), address);
+            assert_eq!(*key, expected);
+        }
+    }
 
     #[test]
     fn retained_ntt_transform_counts_and_rejection_work_are_fixed() {

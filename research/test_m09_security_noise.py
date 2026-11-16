@@ -144,12 +144,21 @@ class HiddenNoiseHybridTests(unittest.TestCase):
         self.assertTrue(report["queries_are_of_pke_reduction_not_original_cca_adversary"])
         self.assertEqual(len(report["panels"]), 8)
 
-    def test_active_m09_realization_keeps_the_referenced_sampling_semantics(self):
+    def test_frozen_m09_realization_keeps_the_referenced_sampling_semantics(self):
         active = ROOT / "crates/kem1536/src/dev_kem.rs"
         if not active.is_file():
             self.skipTest("standalone frozen finite tests do not contain the later active realization")
+        import hashlib
+        import tarfile
+        folder = ROOT / "results/engine/m09-001"
+        member = "source/crates/kem1536/src/dev_kem.rs"
+        manifest = json.loads((folder / "provenance.json").read_text("utf-8"))
+        with tarfile.open(folder / "qualification.tar.gz") as archive:
+            source = archive.extractfile(member).read()
+        self.assertEqual(hashlib.sha256(source).hexdigest(),
+                         manifest["groups"]["qualification"]["files"][member]["sha256"])
         from verify_r1_certificate_bridge import verify_static_contract
-        contract = verify_static_contract(active.read_text(encoding="utf-8-sig"))
+        contract = verify_static_contract(source.decode("utf-8-sig"))
         self.assertEqual(contract["realization"], "M09-typed-noise-destination-message-1")
         self.assertFalse(contract["formal_program_verification"])
         # The existing bridge checks role wrappers, fixed seed widths,

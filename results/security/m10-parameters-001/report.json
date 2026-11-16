@@ -1,0 +1,3117 @@
+{
+  "schema": "m10-parameters-report-v1",
+  "requested_new_jobs": 40,
+  "completed_finite_jobs": 40,
+  "result_status_counts": {
+    "returned": 40
+  },
+  "missing_or_nonfinite_jobs": [],
+  "strict_pairs": [
+    {
+      "sample_game": "ideal_k_plus_1",
+      "cost_model": "BCSS23-quantum-reduction-sensitivity",
+      "family": "bdd",
+      "success_contract": "BDD geometric predicate and estimator amplification; not global success certificate",
+      "R1": {
+        "job": {
+          "index": 36,
+          "profile": "R1",
+          "degree": 256,
+          "rank": 6,
+          "q": 7681,
+          "eta": 3,
+          "dimension": 1536,
+          "sample_game": "ideal_k_plus_1",
+          "samples": 1792,
+          "abstract_matrix_block_shape": [
+            7,
+            6
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "BCSS23-quantum-reduction-sensitivity",
+          "family": "bdd",
+          "success_contract": "BDD geometric predicate and estimator amplification; not global success certificate",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 341.1197937746384,
+        "dimensions": {
+          "beta": 1324,
+          "eta": 1328,
+          "d": 2888
+        },
+        "memory": {
+          "log2_native_mem": null,
+          "log2_native_vector_count_N": null,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "unreported or not validated for this family",
+          "inside_declared_storage_cap": null
+        },
+        "MATZOV_fit_beyond_1024": false,
+        "historical_M05_counterpart_log2_operations": 341.1197937746384,
+        "historical_jobs_counted_as_new": 0,
+        "new_minus_historical_same_family_log2_cost": 0.0
+      },
+      "reference": {
+        "job": {
+          "index": 16,
+          "profile": "ML-KEM-1024",
+          "degree": 256,
+          "rank": 4,
+          "q": 3329,
+          "eta": 2,
+          "dimension": 1024,
+          "sample_game": "ideal_k_plus_1",
+          "samples": 1280,
+          "abstract_matrix_block_shape": [
+            5,
+            4
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "BCSS23-quantum-reduction-sensitivity",
+          "family": "bdd",
+          "success_contract": "BDD geometric predicate and estimator amplification; not global success certificate",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 224.88373410902034,
+        "dimensions": {
+          "beta": 874,
+          "eta": 872,
+          "d": 1886
+        },
+        "memory": {
+          "log2_native_mem": null,
+          "log2_native_vector_count_N": null,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "unreported or not validated for this family",
+          "inside_declared_storage_cap": null
+        },
+        "MATZOV_fit_beyond_1024": false,
+        "historical_M05_counterpart_log2_operations": 224.88373410902034,
+        "historical_jobs_counted_as_new": 0,
+        "new_minus_historical_same_family_log2_cost": 0.0
+      },
+      "conditional_log2_cost_difference": 116.23605966561809,
+      "R1_proxy_at_least_reference": true,
+      "global_security_gain_bits": null
+    },
+    {
+      "sample_game": "ideal_k_plus_1",
+      "cost_model": "BCSS23-quantum-reduction-sensitivity",
+      "family": "dual",
+      "success_contract": "dual solver success_probability0.99 under estimator distribution heuristics",
+      "R1": {
+        "job": {
+          "index": 38,
+          "profile": "R1",
+          "degree": 256,
+          "rank": 6,
+          "q": 7681,
+          "eta": 3,
+          "dimension": 1536,
+          "sample_game": "ideal_k_plus_1",
+          "samples": 1792,
+          "abstract_matrix_block_shape": [
+            7,
+            6
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "BCSS23-quantum-reduction-sensitivity",
+          "family": "dual",
+          "success_contract": "dual solver success_probability0.99 under estimator distribution heuristics",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 350.36209999999994,
+        "dimensions": {
+          "beta": 1367,
+          "d": 2925,
+          "m": 1389
+        },
+        "memory": {
+          "log2_native_mem": 294.0701727780759,
+          "log2_native_vector_count_N": null,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "stored elements modulo q in the pinned dual solver",
+          "dense_u16_storage_convention_bytes_per_element": 2,
+          "log2_dense_u16_storage_bytes": 295.0701727780759,
+          "inside_declared_storage_cap": {
+            "40": false,
+            "60": false,
+            "80": false
+          },
+          "interpretation": "storage sensitivity only; reduction overhead and all physical peak resources are not proved"
+        },
+        "MATZOV_fit_beyond_1024": false,
+        "historical_M05_counterpart_log2_operations": null,
+        "historical_jobs_counted_as_new": 0
+      },
+      "reference": {
+        "job": {
+          "index": 18,
+          "profile": "ML-KEM-1024",
+          "degree": 256,
+          "rank": 4,
+          "q": 3329,
+          "eta": 2,
+          "dimension": 1024,
+          "sample_game": "ideal_k_plus_1",
+          "samples": 1280,
+          "abstract_matrix_block_shape": [
+            5,
+            4
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "BCSS23-quantum-reduction-sensitivity",
+          "family": "dual",
+          "success_contract": "dual solver success_probability0.99 under estimator distribution heuristics",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 231.69520000000003,
+        "dimensions": {
+          "beta": 904,
+          "d": 1942,
+          "m": 918
+        },
+        "memory": {
+          "log2_native_mem": 197.40157045020482,
+          "log2_native_vector_count_N": null,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "stored elements modulo q in the pinned dual solver",
+          "dense_u16_storage_convention_bytes_per_element": 2,
+          "log2_dense_u16_storage_bytes": 198.40157045020482,
+          "inside_declared_storage_cap": {
+            "40": false,
+            "60": false,
+            "80": false
+          },
+          "interpretation": "storage sensitivity only; reduction overhead and all physical peak resources are not proved"
+        },
+        "MATZOV_fit_beyond_1024": false,
+        "historical_M05_counterpart_log2_operations": null,
+        "historical_jobs_counted_as_new": 0
+      },
+      "conditional_log2_cost_difference": 118.66689999999991,
+      "R1_proxy_at_least_reference": true,
+      "global_security_gain_bits": null
+    },
+    {
+      "sample_game": "ideal_k_plus_1",
+      "cost_model": "BCSS23-quantum-reduction-sensitivity",
+      "family": "dual_hybrid_matzov",
+      "success_contract": "MATZOV internal mu0.5; not a certified recovery probability0.99",
+      "R1": {
+        "job": {
+          "index": 39,
+          "profile": "R1",
+          "degree": 256,
+          "rank": 6,
+          "q": 7681,
+          "eta": 3,
+          "dimension": 1536,
+          "sample_game": "ideal_k_plus_1",
+          "samples": 1792,
+          "abstract_matrix_block_shape": [
+            7,
+            6
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "BCSS23-quantum-reduction-sensitivity",
+          "family": "dual_hybrid_matzov",
+          "success_contract": "MATZOV internal mu0.5; not a certified recovery probability0.99",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 325.9580685363968,
+        "dimensions": {
+          "beta": 1271,
+          "beta_": 1271,
+          "zeta": 0,
+          "m": 1536
+        },
+        "memory": {
+          "log2_native_mem": null,
+          "log2_native_vector_count_N": 262.2581098468072,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "unreported or not validated for this family",
+          "inside_declared_storage_cap": null
+        },
+        "MATZOV_fit_beyond_1024": false,
+        "historical_M05_counterpart_log2_operations": 325.9580685363968,
+        "historical_jobs_counted_as_new": 0,
+        "new_minus_historical_same_family_log2_cost": 0.0
+      },
+      "reference": {
+        "job": {
+          "index": 19,
+          "profile": "ML-KEM-1024",
+          "degree": 256,
+          "rank": 4,
+          "q": 3329,
+          "eta": 2,
+          "dimension": 1024,
+          "sample_game": "ideal_k_plus_1",
+          "samples": 1280,
+          "abstract_matrix_block_shape": [
+            5,
+            4
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "BCSS23-quantum-reduction-sensitivity",
+          "family": "dual_hybrid_matzov",
+          "success_contract": "MATZOV internal mu0.5; not a certified recovery probability0.99",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 214.78948035790626,
+        "dimensions": {
+          "beta": 838,
+          "beta_": 838,
+          "zeta": 10,
+          "m": 1024
+        },
+        "memory": {
+          "log2_native_mem": null,
+          "log2_native_vector_count_N": 173.641611807152,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "unreported or not validated for this family",
+          "inside_declared_storage_cap": null
+        },
+        "MATZOV_fit_beyond_1024": false,
+        "historical_M05_counterpart_log2_operations": 214.78948035790626,
+        "historical_jobs_counted_as_new": 0,
+        "new_minus_historical_same_family_log2_cost": 0.0
+      },
+      "conditional_log2_cost_difference": 111.16858817849055,
+      "R1_proxy_at_least_reference": true,
+      "global_security_gain_bits": null
+    },
+    {
+      "sample_game": "ideal_k_plus_1",
+      "cost_model": "BCSS23-quantum-reduction-sensitivity",
+      "family": "primal_hybrid_mitm",
+      "success_contract": "MITM=True, Babai=False, GSA, guessing amplification target0.99; heuristic geometry",
+      "R1": {
+        "job": {
+          "index": 37,
+          "profile": "R1",
+          "degree": 256,
+          "rank": 6,
+          "q": 7681,
+          "eta": 3,
+          "dimension": 1536,
+          "sample_game": "ideal_k_plus_1",
+          "samples": 1792,
+          "abstract_matrix_block_shape": [
+            7,
+            6
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "BCSS23-quantum-reduction-sensitivity",
+          "family": "primal_hybrid_mitm",
+          "success_contract": "MITM=True, Babai=False, GSA, guessing amplification target0.99; heuristic geometry",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 341.1197937746384,
+        "dimensions": {
+          "beta": 1324,
+          "eta": 1328,
+          "d": 2889,
+          "zeta": 0
+        },
+        "memory": {
+          "log2_native_mem": null,
+          "log2_native_vector_count_N": null,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "unreported or not validated for this family",
+          "inside_declared_storage_cap": null
+        },
+        "MATZOV_fit_beyond_1024": false,
+        "historical_M05_counterpart_log2_operations": null,
+        "historical_jobs_counted_as_new": 0
+      },
+      "reference": {
+        "job": {
+          "index": 17,
+          "profile": "ML-KEM-1024",
+          "degree": 256,
+          "rank": 4,
+          "q": 3329,
+          "eta": 2,
+          "dimension": 1024,
+          "sample_game": "ideal_k_plus_1",
+          "samples": 1280,
+          "abstract_matrix_block_shape": [
+            5,
+            4
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "BCSS23-quantum-reduction-sensitivity",
+          "family": "primal_hybrid_mitm",
+          "success_contract": "MITM=True, Babai=False, GSA, guessing amplification target0.99; heuristic geometry",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 224.88373410902034,
+        "dimensions": {
+          "beta": 874,
+          "eta": 872,
+          "d": 1918,
+          "zeta": 0
+        },
+        "memory": {
+          "log2_native_mem": null,
+          "log2_native_vector_count_N": null,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "unreported or not validated for this family",
+          "inside_declared_storage_cap": null
+        },
+        "MATZOV_fit_beyond_1024": false,
+        "historical_M05_counterpart_log2_operations": null,
+        "historical_jobs_counted_as_new": 0
+      },
+      "conditional_log2_cost_difference": 116.23605966561809,
+      "R1_proxy_at_least_reference": true,
+      "global_security_gain_bits": null
+    },
+    {
+      "sample_game": "ideal_k_plus_1",
+      "cost_model": "BCSS23-quantum-reduction-sensitivity",
+      "family": "usvp",
+      "success_contract": "GSA geometric predicate; not a certified global recovery probability",
+      "R1": {
+        "job": {
+          "index": 35,
+          "profile": "R1",
+          "degree": 256,
+          "rank": 6,
+          "q": 7681,
+          "eta": 3,
+          "dimension": 1536,
+          "sample_game": "ideal_k_plus_1",
+          "samples": 1792,
+          "abstract_matrix_block_shape": [
+            7,
+            6
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "BCSS23-quantum-reduction-sensitivity",
+          "family": "usvp",
+          "success_contract": "GSA geometric predicate; not a certified global recovery probability",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 340.1101,
+        "dimensions": {
+          "beta": 1327,
+          "d": 2853
+        },
+        "memory": {
+          "log2_native_mem": null,
+          "log2_native_vector_count_N": null,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "unreported or not validated for this family",
+          "inside_declared_storage_cap": null
+        },
+        "MATZOV_fit_beyond_1024": false,
+        "historical_M05_counterpart_log2_operations": 340.1101,
+        "historical_jobs_counted_as_new": 0,
+        "new_minus_historical_same_family_log2_cost": 0.0
+      },
+      "reference": {
+        "job": {
+          "index": 15,
+          "profile": "ML-KEM-1024",
+          "degree": 256,
+          "rank": 4,
+          "q": 3329,
+          "eta": 2,
+          "dimension": 1024,
+          "sample_game": "ideal_k_plus_1",
+          "samples": 1280,
+          "abstract_matrix_block_shape": [
+            5,
+            4
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "BCSS23-quantum-reduction-sensitivity",
+          "family": "usvp",
+          "success_contract": "GSA geometric predicate; not a certified global recovery probability",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 224.00619999999998,
+        "dimensions": {
+          "beta": 874,
+          "d": 1867
+        },
+        "memory": {
+          "log2_native_mem": null,
+          "log2_native_vector_count_N": null,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "unreported or not validated for this family",
+          "inside_declared_storage_cap": null
+        },
+        "MATZOV_fit_beyond_1024": false,
+        "historical_M05_counterpart_log2_operations": 224.00619999999998,
+        "historical_jobs_counted_as_new": 0,
+        "new_minus_historical_same_family_log2_cost": 0.0
+      },
+      "conditional_log2_cost_difference": 116.10390000000001,
+      "R1_proxy_at_least_reference": true,
+      "global_security_gain_bits": null
+    },
+    {
+      "sample_game": "ideal_k_plus_1",
+      "cost_model": "MATZOV-classical",
+      "family": "bdd",
+      "success_contract": "BDD geometric predicate and estimator amplification; not global success certificate",
+      "R1": {
+        "job": {
+          "index": 31,
+          "profile": "R1",
+          "degree": 256,
+          "rank": 6,
+          "q": 7681,
+          "eta": 3,
+          "dimension": 1536,
+          "sample_game": "ideal_k_plus_1",
+          "samples": 1792,
+          "abstract_matrix_block_shape": [
+            7,
+            6
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "MATZOV-classical",
+          "family": "bdd",
+          "success_contract": "BDD geometric predicate and estimator amplification; not global success certificate",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 398.2559188967806,
+        "dimensions": {
+          "beta": 1307,
+          "eta": 1344,
+          "d": 2835
+        },
+        "memory": {
+          "log2_native_mem": null,
+          "log2_native_vector_count_N": null,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "unreported or not validated for this family",
+          "inside_declared_storage_cap": null
+        },
+        "MATZOV_fit_beyond_1024": true,
+        "historical_M05_counterpart_log2_operations": 398.2559188967806,
+        "historical_jobs_counted_as_new": 0,
+        "new_minus_historical_same_family_log2_cost": 0.0
+      },
+      "reference": {
+        "job": {
+          "index": 11,
+          "profile": "ML-KEM-1024",
+          "degree": 256,
+          "rank": 4,
+          "q": 3329,
+          "eta": 2,
+          "dimension": 1024,
+          "sample_game": "ideal_k_plus_1",
+          "samples": 1280,
+          "abstract_matrix_block_shape": [
+            5,
+            4
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "MATZOV-classical",
+          "family": "bdd",
+          "success_contract": "BDD geometric predicate and estimator amplification; not global success certificate",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 270.7236234535225,
+        "dimensions": {
+          "beta": 855,
+          "eta": 889,
+          "d": 1867
+        },
+        "memory": {
+          "log2_native_mem": null,
+          "log2_native_vector_count_N": null,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "unreported or not validated for this family",
+          "inside_declared_storage_cap": null
+        },
+        "MATZOV_fit_beyond_1024": false,
+        "historical_M05_counterpart_log2_operations": 270.7236234535225,
+        "historical_jobs_counted_as_new": 0,
+        "new_minus_historical_same_family_log2_cost": 0.0
+      },
+      "conditional_log2_cost_difference": 127.53229544325808,
+      "R1_proxy_at_least_reference": true,
+      "global_security_gain_bits": null
+    },
+    {
+      "sample_game": "ideal_k_plus_1",
+      "cost_model": "MATZOV-classical",
+      "family": "dual",
+      "success_contract": "dual solver success_probability0.99 under estimator distribution heuristics",
+      "R1": {
+        "job": {
+          "index": 33,
+          "profile": "R1",
+          "degree": 256,
+          "rank": 6,
+          "q": 7681,
+          "eta": 3,
+          "dimension": 1536,
+          "sample_game": "ideal_k_plus_1",
+          "samples": 1792,
+          "abstract_matrix_block_shape": [
+            7,
+            6
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "MATZOV-classical",
+          "family": "dual",
+          "success_contract": "dual solver success_probability0.99 under estimator distribution heuristics",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 422.275992792897,
+        "dimensions": {
+          "beta": 1392,
+          "d": 2946,
+          "m": 1410
+        },
+        "memory": {
+          "log2_native_mem": 289.69031685311427,
+          "log2_native_vector_count_N": null,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "stored elements modulo q in the pinned dual solver",
+          "dense_u16_storage_convention_bytes_per_element": 2,
+          "log2_dense_u16_storage_bytes": 290.69031685311427,
+          "inside_declared_storage_cap": {
+            "40": false,
+            "60": false,
+            "80": false
+          },
+          "interpretation": "storage sensitivity only; reduction overhead and all physical peak resources are not proved"
+        },
+        "MATZOV_fit_beyond_1024": true,
+        "historical_M05_counterpart_log2_operations": null,
+        "historical_jobs_counted_as_new": 0
+      },
+      "reference": {
+        "job": {
+          "index": 13,
+          "profile": "ML-KEM-1024",
+          "degree": 256,
+          "rank": 4,
+          "q": 3329,
+          "eta": 2,
+          "dimension": 1024,
+          "sample_game": "ideal_k_plus_1",
+          "samples": 1280,
+          "abstract_matrix_block_shape": [
+            5,
+            4
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "MATZOV-classical",
+          "family": "dual",
+          "success_contract": "dual solver success_probability0.99 under estimator distribution heuristics",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 288.5257109881612,
+        "dimensions": {
+          "beta": 918,
+          "d": 1954,
+          "m": 930
+        },
+        "memory": {
+          "log2_native_mem": 195.3096869825351,
+          "log2_native_vector_count_N": null,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "stored elements modulo q in the pinned dual solver",
+          "dense_u16_storage_convention_bytes_per_element": 2,
+          "log2_dense_u16_storage_bytes": 196.3096869825351,
+          "inside_declared_storage_cap": {
+            "40": false,
+            "60": false,
+            "80": false
+          },
+          "interpretation": "storage sensitivity only; reduction overhead and all physical peak resources are not proved"
+        },
+        "MATZOV_fit_beyond_1024": false,
+        "historical_M05_counterpart_log2_operations": null,
+        "historical_jobs_counted_as_new": 0
+      },
+      "conditional_log2_cost_difference": 133.75028180473578,
+      "R1_proxy_at_least_reference": true,
+      "global_security_gain_bits": null
+    },
+    {
+      "sample_game": "ideal_k_plus_1",
+      "cost_model": "MATZOV-classical",
+      "family": "dual_hybrid_matzov",
+      "success_contract": "MATZOV internal mu0.5; not a certified recovery probability0.99",
+      "R1": {
+        "job": {
+          "index": 34,
+          "profile": "R1",
+          "degree": 256,
+          "rank": 6,
+          "q": 7681,
+          "eta": 3,
+          "dimension": 1536,
+          "sample_game": "ideal_k_plus_1",
+          "samples": 1792,
+          "abstract_matrix_block_shape": [
+            7,
+            6
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "MATZOV-classical",
+          "family": "dual_hybrid_matzov",
+          "success_contract": "MATZOV internal mu0.5; not a certified recovery probability0.99",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 383.77256296063496,
+        "dimensions": {
+          "beta": 1254,
+          "beta_": 1215,
+          "zeta": 40,
+          "m": 1536
+        },
+        "memory": {
+          "log2_native_mem": null,
+          "log2_native_vector_count_N": 250.8180616059906,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "unreported or not validated for this family",
+          "inside_declared_storage_cap": null
+        },
+        "MATZOV_fit_beyond_1024": true,
+        "historical_M05_counterpart_log2_operations": 383.77256296063496,
+        "historical_jobs_counted_as_new": 0,
+        "new_minus_historical_same_family_log2_cost": 0.0
+      },
+      "reference": {
+        "job": {
+          "index": 14,
+          "profile": "ML-KEM-1024",
+          "degree": 256,
+          "rank": 4,
+          "q": 3329,
+          "eta": 2,
+          "dimension": 1024,
+          "sample_game": "ideal_k_plus_1",
+          "samples": 1280,
+          "abstract_matrix_block_shape": [
+            5,
+            4
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "MATZOV-classical",
+          "family": "dual_hybrid_matzov",
+          "success_contract": "MATZOV internal mu0.5; not a certified recovery probability0.99",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 262.3356800074737,
+        "dimensions": {
+          "beta": 823,
+          "beta_": 804,
+          "zeta": 0,
+          "m": 1024
+        },
+        "memory": {
+          "log2_native_mem": null,
+          "log2_native_vector_count_N": 165.93852657549195,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "unreported or not validated for this family",
+          "inside_declared_storage_cap": null
+        },
+        "MATZOV_fit_beyond_1024": false,
+        "historical_M05_counterpart_log2_operations": 262.3356800074737,
+        "historical_jobs_counted_as_new": 0,
+        "new_minus_historical_same_family_log2_cost": 0.0
+      },
+      "conditional_log2_cost_difference": 121.43688295316127,
+      "R1_proxy_at_least_reference": true,
+      "global_security_gain_bits": null
+    },
+    {
+      "sample_game": "ideal_k_plus_1",
+      "cost_model": "MATZOV-classical",
+      "family": "primal_hybrid_mitm",
+      "success_contract": "MITM=True, Babai=False, GSA, guessing amplification target0.99; heuristic geometry",
+      "R1": {
+        "job": {
+          "index": 32,
+          "profile": "R1",
+          "degree": 256,
+          "rank": 6,
+          "q": 7681,
+          "eta": 3,
+          "dimension": 1536,
+          "sample_game": "ideal_k_plus_1",
+          "samples": 1792,
+          "abstract_matrix_block_shape": [
+            7,
+            6
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "MATZOV-classical",
+          "family": "primal_hybrid_mitm",
+          "success_contract": "MITM=True, Babai=False, GSA, guessing amplification target0.99; heuristic geometry",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 398.2740161465748,
+        "dimensions": {
+          "beta": 1307,
+          "eta": 1344,
+          "d": 2875,
+          "zeta": 0
+        },
+        "memory": {
+          "log2_native_mem": null,
+          "log2_native_vector_count_N": null,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "unreported or not validated for this family",
+          "inside_declared_storage_cap": null
+        },
+        "MATZOV_fit_beyond_1024": true,
+        "historical_M05_counterpart_log2_operations": null,
+        "historical_jobs_counted_as_new": 0
+      },
+      "reference": {
+        "job": {
+          "index": 12,
+          "profile": "ML-KEM-1024",
+          "degree": 256,
+          "rank": 4,
+          "q": 3329,
+          "eta": 2,
+          "dimension": 1024,
+          "sample_game": "ideal_k_plus_1",
+          "samples": 1280,
+          "abstract_matrix_block_shape": [
+            5,
+            4
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "MATZOV-classical",
+          "family": "primal_hybrid_mitm",
+          "success_contract": "MITM=True, Babai=False, GSA, guessing amplification target0.99; heuristic geometry",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 270.7499155411828,
+        "dimensions": {
+          "beta": 855,
+          "eta": 889,
+          "d": 1902,
+          "zeta": 0
+        },
+        "memory": {
+          "log2_native_mem": null,
+          "log2_native_vector_count_N": null,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "unreported or not validated for this family",
+          "inside_declared_storage_cap": null
+        },
+        "MATZOV_fit_beyond_1024": false,
+        "historical_M05_counterpart_log2_operations": null,
+        "historical_jobs_counted_as_new": 0
+      },
+      "conditional_log2_cost_difference": 127.524100605392,
+      "R1_proxy_at_least_reference": true,
+      "global_security_gain_bits": null
+    },
+    {
+      "sample_game": "ideal_k_plus_1",
+      "cost_model": "MATZOV-classical",
+      "family": "usvp",
+      "success_contract": "GSA geometric predicate; not a certified global recovery probability",
+      "R1": {
+        "job": {
+          "index": 30,
+          "profile": "R1",
+          "degree": 256,
+          "rank": 6,
+          "q": 7681,
+          "eta": 3,
+          "dimension": 1536,
+          "sample_game": "ideal_k_plus_1",
+          "samples": 1792,
+          "abstract_matrix_block_shape": [
+            7,
+            6
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "MATZOV-classical",
+          "family": "usvp",
+          "success_contract": "GSA geometric predicate; not a certified global recovery probability",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 402.8225566803057,
+        "dimensions": {
+          "beta": 1327,
+          "d": 2853
+        },
+        "memory": {
+          "log2_native_mem": null,
+          "log2_native_vector_count_N": null,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "unreported or not validated for this family",
+          "inside_declared_storage_cap": null
+        },
+        "MATZOV_fit_beyond_1024": true,
+        "historical_M05_counterpart_log2_operations": 402.8225566803057,
+        "historical_jobs_counted_as_new": 0,
+        "new_minus_historical_same_family_log2_cost": 0.0
+      },
+      "reference": {
+        "job": {
+          "index": 10,
+          "profile": "ML-KEM-1024",
+          "degree": 256,
+          "rank": 4,
+          "q": 3329,
+          "eta": 2,
+          "dimension": 1024,
+          "sample_game": "ideal_k_plus_1",
+          "samples": 1280,
+          "abstract_matrix_block_shape": [
+            5,
+            4
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "MATZOV-classical",
+          "family": "usvp",
+          "success_contract": "GSA geometric predicate; not a certified global recovery probability",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 275.1043604571838,
+        "dimensions": {
+          "beta": 874,
+          "d": 1867
+        },
+        "memory": {
+          "log2_native_mem": null,
+          "log2_native_vector_count_N": null,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "unreported or not validated for this family",
+          "inside_declared_storage_cap": null
+        },
+        "MATZOV_fit_beyond_1024": false,
+        "historical_M05_counterpart_log2_operations": 275.1043604571838,
+        "historical_jobs_counted_as_new": 0,
+        "new_minus_historical_same_family_log2_cost": 0.0
+      },
+      "conditional_log2_cost_difference": 127.71819622312188,
+      "R1_proxy_at_least_reference": true,
+      "global_security_gain_bits": null
+    },
+    {
+      "sample_game": "key",
+      "cost_model": "BCSS23-quantum-reduction-sensitivity",
+      "family": "bdd",
+      "success_contract": "BDD geometric predicate and estimator amplification; not global success certificate",
+      "R1": {
+        "job": {
+          "index": 26,
+          "profile": "R1",
+          "degree": 256,
+          "rank": 6,
+          "q": 7681,
+          "eta": 3,
+          "dimension": 1536,
+          "sample_game": "key",
+          "samples": 1536,
+          "abstract_matrix_block_shape": [
+            6,
+            6
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "BCSS23-quantum-reduction-sensitivity",
+          "family": "bdd",
+          "success_contract": "BDD geometric predicate and estimator amplification; not global success certificate",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 341.1197937746384,
+        "dimensions": {
+          "beta": 1324,
+          "eta": 1328,
+          "d": 2888
+        },
+        "memory": {
+          "log2_native_mem": null,
+          "log2_native_vector_count_N": null,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "unreported or not validated for this family",
+          "inside_declared_storage_cap": null
+        },
+        "MATZOV_fit_beyond_1024": false,
+        "historical_M05_counterpart_log2_operations": 341.1197937746384,
+        "historical_jobs_counted_as_new": 0,
+        "new_minus_historical_same_family_log2_cost": 0.0
+      },
+      "reference": {
+        "job": {
+          "index": 6,
+          "profile": "ML-KEM-1024",
+          "degree": 256,
+          "rank": 4,
+          "q": 3329,
+          "eta": 2,
+          "dimension": 1024,
+          "sample_game": "key",
+          "samples": 1024,
+          "abstract_matrix_block_shape": [
+            4,
+            4
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "BCSS23-quantum-reduction-sensitivity",
+          "family": "bdd",
+          "success_contract": "BDD geometric predicate and estimator amplification; not global success certificate",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 224.88373410902034,
+        "dimensions": {
+          "beta": 874,
+          "eta": 872,
+          "d": 1886
+        },
+        "memory": {
+          "log2_native_mem": null,
+          "log2_native_vector_count_N": null,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "unreported or not validated for this family",
+          "inside_declared_storage_cap": null
+        },
+        "MATZOV_fit_beyond_1024": false,
+        "historical_M05_counterpart_log2_operations": 224.88373410902034,
+        "historical_jobs_counted_as_new": 0,
+        "new_minus_historical_same_family_log2_cost": 0.0
+      },
+      "conditional_log2_cost_difference": 116.23605966561809,
+      "R1_proxy_at_least_reference": true,
+      "global_security_gain_bits": null
+    },
+    {
+      "sample_game": "key",
+      "cost_model": "BCSS23-quantum-reduction-sensitivity",
+      "family": "dual",
+      "success_contract": "dual solver success_probability0.99 under estimator distribution heuristics",
+      "R1": {
+        "job": {
+          "index": 28,
+          "profile": "R1",
+          "degree": 256,
+          "rank": 6,
+          "q": 7681,
+          "eta": 3,
+          "dimension": 1536,
+          "sample_game": "key",
+          "samples": 1536,
+          "abstract_matrix_block_shape": [
+            6,
+            6
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "BCSS23-quantum-reduction-sensitivity",
+          "family": "dual",
+          "success_contract": "dual solver success_probability0.99 under estimator distribution heuristics",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 350.36209999999994,
+        "dimensions": {
+          "beta": 1367,
+          "d": 2925,
+          "m": 1389
+        },
+        "memory": {
+          "log2_native_mem": 294.0701727780759,
+          "log2_native_vector_count_N": null,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "stored elements modulo q in the pinned dual solver",
+          "dense_u16_storage_convention_bytes_per_element": 2,
+          "log2_dense_u16_storage_bytes": 295.0701727780759,
+          "inside_declared_storage_cap": {
+            "40": false,
+            "60": false,
+            "80": false
+          },
+          "interpretation": "storage sensitivity only; reduction overhead and all physical peak resources are not proved"
+        },
+        "MATZOV_fit_beyond_1024": false,
+        "historical_M05_counterpart_log2_operations": null,
+        "historical_jobs_counted_as_new": 0
+      },
+      "reference": {
+        "job": {
+          "index": 8,
+          "profile": "ML-KEM-1024",
+          "degree": 256,
+          "rank": 4,
+          "q": 3329,
+          "eta": 2,
+          "dimension": 1024,
+          "sample_game": "key",
+          "samples": 1024,
+          "abstract_matrix_block_shape": [
+            4,
+            4
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "BCSS23-quantum-reduction-sensitivity",
+          "family": "dual",
+          "success_contract": "dual solver success_probability0.99 under estimator distribution heuristics",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 231.69520000000003,
+        "dimensions": {
+          "beta": 904,
+          "d": 1942,
+          "m": 918
+        },
+        "memory": {
+          "log2_native_mem": 197.40157045020482,
+          "log2_native_vector_count_N": null,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "stored elements modulo q in the pinned dual solver",
+          "dense_u16_storage_convention_bytes_per_element": 2,
+          "log2_dense_u16_storage_bytes": 198.40157045020482,
+          "inside_declared_storage_cap": {
+            "40": false,
+            "60": false,
+            "80": false
+          },
+          "interpretation": "storage sensitivity only; reduction overhead and all physical peak resources are not proved"
+        },
+        "MATZOV_fit_beyond_1024": false,
+        "historical_M05_counterpart_log2_operations": null,
+        "historical_jobs_counted_as_new": 0
+      },
+      "conditional_log2_cost_difference": 118.66689999999991,
+      "R1_proxy_at_least_reference": true,
+      "global_security_gain_bits": null
+    },
+    {
+      "sample_game": "key",
+      "cost_model": "BCSS23-quantum-reduction-sensitivity",
+      "family": "dual_hybrid_matzov",
+      "success_contract": "MATZOV internal mu0.5; not a certified recovery probability0.99",
+      "R1": {
+        "job": {
+          "index": 29,
+          "profile": "R1",
+          "degree": 256,
+          "rank": 6,
+          "q": 7681,
+          "eta": 3,
+          "dimension": 1536,
+          "sample_game": "key",
+          "samples": 1536,
+          "abstract_matrix_block_shape": [
+            6,
+            6
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "BCSS23-quantum-reduction-sensitivity",
+          "family": "dual_hybrid_matzov",
+          "success_contract": "MATZOV internal mu0.5; not a certified recovery probability0.99",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 325.9580685363968,
+        "dimensions": {
+          "beta": 1271,
+          "beta_": 1271,
+          "zeta": 0,
+          "m": 1536
+        },
+        "memory": {
+          "log2_native_mem": null,
+          "log2_native_vector_count_N": 262.2581098468072,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "unreported or not validated for this family",
+          "inside_declared_storage_cap": null
+        },
+        "MATZOV_fit_beyond_1024": false,
+        "historical_M05_counterpart_log2_operations": 325.9580685363968,
+        "historical_jobs_counted_as_new": 0,
+        "new_minus_historical_same_family_log2_cost": 0.0
+      },
+      "reference": {
+        "job": {
+          "index": 9,
+          "profile": "ML-KEM-1024",
+          "degree": 256,
+          "rank": 4,
+          "q": 3329,
+          "eta": 2,
+          "dimension": 1024,
+          "sample_game": "key",
+          "samples": 1024,
+          "abstract_matrix_block_shape": [
+            4,
+            4
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "BCSS23-quantum-reduction-sensitivity",
+          "family": "dual_hybrid_matzov",
+          "success_contract": "MATZOV internal mu0.5; not a certified recovery probability0.99",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 214.78948035790626,
+        "dimensions": {
+          "beta": 838,
+          "beta_": 838,
+          "zeta": 10,
+          "m": 1024
+        },
+        "memory": {
+          "log2_native_mem": null,
+          "log2_native_vector_count_N": 173.641611807152,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "unreported or not validated for this family",
+          "inside_declared_storage_cap": null
+        },
+        "MATZOV_fit_beyond_1024": false,
+        "historical_M05_counterpart_log2_operations": 214.78948035790626,
+        "historical_jobs_counted_as_new": 0,
+        "new_minus_historical_same_family_log2_cost": 0.0
+      },
+      "conditional_log2_cost_difference": 111.16858817849055,
+      "R1_proxy_at_least_reference": true,
+      "global_security_gain_bits": null
+    },
+    {
+      "sample_game": "key",
+      "cost_model": "BCSS23-quantum-reduction-sensitivity",
+      "family": "primal_hybrid_mitm",
+      "success_contract": "MITM=True, Babai=False, GSA, guessing amplification target0.99; heuristic geometry",
+      "R1": {
+        "job": {
+          "index": 27,
+          "profile": "R1",
+          "degree": 256,
+          "rank": 6,
+          "q": 7681,
+          "eta": 3,
+          "dimension": 1536,
+          "sample_game": "key",
+          "samples": 1536,
+          "abstract_matrix_block_shape": [
+            6,
+            6
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "BCSS23-quantum-reduction-sensitivity",
+          "family": "primal_hybrid_mitm",
+          "success_contract": "MITM=True, Babai=False, GSA, guessing amplification target0.99; heuristic geometry",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 341.1197937746384,
+        "dimensions": {
+          "beta": 1324,
+          "eta": 1328,
+          "d": 2889,
+          "zeta": 0
+        },
+        "memory": {
+          "log2_native_mem": null,
+          "log2_native_vector_count_N": null,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "unreported or not validated for this family",
+          "inside_declared_storage_cap": null
+        },
+        "MATZOV_fit_beyond_1024": false,
+        "historical_M05_counterpart_log2_operations": null,
+        "historical_jobs_counted_as_new": 0
+      },
+      "reference": {
+        "job": {
+          "index": 7,
+          "profile": "ML-KEM-1024",
+          "degree": 256,
+          "rank": 4,
+          "q": 3329,
+          "eta": 2,
+          "dimension": 1024,
+          "sample_game": "key",
+          "samples": 1024,
+          "abstract_matrix_block_shape": [
+            4,
+            4
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "BCSS23-quantum-reduction-sensitivity",
+          "family": "primal_hybrid_mitm",
+          "success_contract": "MITM=True, Babai=False, GSA, guessing amplification target0.99; heuristic geometry",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 224.88373410902034,
+        "dimensions": {
+          "beta": 874,
+          "eta": 872,
+          "d": 1918,
+          "zeta": 0
+        },
+        "memory": {
+          "log2_native_mem": null,
+          "log2_native_vector_count_N": null,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "unreported or not validated for this family",
+          "inside_declared_storage_cap": null
+        },
+        "MATZOV_fit_beyond_1024": false,
+        "historical_M05_counterpart_log2_operations": null,
+        "historical_jobs_counted_as_new": 0
+      },
+      "conditional_log2_cost_difference": 116.23605966561809,
+      "R1_proxy_at_least_reference": true,
+      "global_security_gain_bits": null
+    },
+    {
+      "sample_game": "key",
+      "cost_model": "BCSS23-quantum-reduction-sensitivity",
+      "family": "usvp",
+      "success_contract": "GSA geometric predicate; not a certified global recovery probability",
+      "R1": {
+        "job": {
+          "index": 25,
+          "profile": "R1",
+          "degree": 256,
+          "rank": 6,
+          "q": 7681,
+          "eta": 3,
+          "dimension": 1536,
+          "sample_game": "key",
+          "samples": 1536,
+          "abstract_matrix_block_shape": [
+            6,
+            6
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "BCSS23-quantum-reduction-sensitivity",
+          "family": "usvp",
+          "success_contract": "GSA geometric predicate; not a certified global recovery probability",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 340.1101,
+        "dimensions": {
+          "beta": 1327,
+          "d": 2853
+        },
+        "memory": {
+          "log2_native_mem": null,
+          "log2_native_vector_count_N": null,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "unreported or not validated for this family",
+          "inside_declared_storage_cap": null
+        },
+        "MATZOV_fit_beyond_1024": false,
+        "historical_M05_counterpart_log2_operations": 340.1101,
+        "historical_jobs_counted_as_new": 0,
+        "new_minus_historical_same_family_log2_cost": 0.0
+      },
+      "reference": {
+        "job": {
+          "index": 5,
+          "profile": "ML-KEM-1024",
+          "degree": 256,
+          "rank": 4,
+          "q": 3329,
+          "eta": 2,
+          "dimension": 1024,
+          "sample_game": "key",
+          "samples": 1024,
+          "abstract_matrix_block_shape": [
+            4,
+            4
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "BCSS23-quantum-reduction-sensitivity",
+          "family": "usvp",
+          "success_contract": "GSA geometric predicate; not a certified global recovery probability",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 224.00619999999998,
+        "dimensions": {
+          "beta": 874,
+          "d": 1867
+        },
+        "memory": {
+          "log2_native_mem": null,
+          "log2_native_vector_count_N": null,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "unreported or not validated for this family",
+          "inside_declared_storage_cap": null
+        },
+        "MATZOV_fit_beyond_1024": false,
+        "historical_M05_counterpart_log2_operations": 224.00619999999998,
+        "historical_jobs_counted_as_new": 0,
+        "new_minus_historical_same_family_log2_cost": 0.0
+      },
+      "conditional_log2_cost_difference": 116.10390000000001,
+      "R1_proxy_at_least_reference": true,
+      "global_security_gain_bits": null
+    },
+    {
+      "sample_game": "key",
+      "cost_model": "MATZOV-classical",
+      "family": "bdd",
+      "success_contract": "BDD geometric predicate and estimator amplification; not global success certificate",
+      "R1": {
+        "job": {
+          "index": 21,
+          "profile": "R1",
+          "degree": 256,
+          "rank": 6,
+          "q": 7681,
+          "eta": 3,
+          "dimension": 1536,
+          "sample_game": "key",
+          "samples": 1536,
+          "abstract_matrix_block_shape": [
+            6,
+            6
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "MATZOV-classical",
+          "family": "bdd",
+          "success_contract": "BDD geometric predicate and estimator amplification; not global success certificate",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 398.2559188967806,
+        "dimensions": {
+          "beta": 1307,
+          "eta": 1344,
+          "d": 2835
+        },
+        "memory": {
+          "log2_native_mem": null,
+          "log2_native_vector_count_N": null,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "unreported or not validated for this family",
+          "inside_declared_storage_cap": null
+        },
+        "MATZOV_fit_beyond_1024": true,
+        "historical_M05_counterpart_log2_operations": 398.2559188967806,
+        "historical_jobs_counted_as_new": 0,
+        "new_minus_historical_same_family_log2_cost": 0.0
+      },
+      "reference": {
+        "job": {
+          "index": 1,
+          "profile": "ML-KEM-1024",
+          "degree": 256,
+          "rank": 4,
+          "q": 3329,
+          "eta": 2,
+          "dimension": 1024,
+          "sample_game": "key",
+          "samples": 1024,
+          "abstract_matrix_block_shape": [
+            4,
+            4
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "MATZOV-classical",
+          "family": "bdd",
+          "success_contract": "BDD geometric predicate and estimator amplification; not global success certificate",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 270.7236234535225,
+        "dimensions": {
+          "beta": 855,
+          "eta": 889,
+          "d": 1867
+        },
+        "memory": {
+          "log2_native_mem": null,
+          "log2_native_vector_count_N": null,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "unreported or not validated for this family",
+          "inside_declared_storage_cap": null
+        },
+        "MATZOV_fit_beyond_1024": false,
+        "historical_M05_counterpart_log2_operations": 270.7236234535225,
+        "historical_jobs_counted_as_new": 0,
+        "new_minus_historical_same_family_log2_cost": 0.0
+      },
+      "conditional_log2_cost_difference": 127.53229544325808,
+      "R1_proxy_at_least_reference": true,
+      "global_security_gain_bits": null
+    },
+    {
+      "sample_game": "key",
+      "cost_model": "MATZOV-classical",
+      "family": "dual",
+      "success_contract": "dual solver success_probability0.99 under estimator distribution heuristics",
+      "R1": {
+        "job": {
+          "index": 23,
+          "profile": "R1",
+          "degree": 256,
+          "rank": 6,
+          "q": 7681,
+          "eta": 3,
+          "dimension": 1536,
+          "sample_game": "key",
+          "samples": 1536,
+          "abstract_matrix_block_shape": [
+            6,
+            6
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "MATZOV-classical",
+          "family": "dual",
+          "success_contract": "dual solver success_probability0.99 under estimator distribution heuristics",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 422.275992792897,
+        "dimensions": {
+          "beta": 1392,
+          "d": 2946,
+          "m": 1410
+        },
+        "memory": {
+          "log2_native_mem": 289.69031685311427,
+          "log2_native_vector_count_N": null,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "stored elements modulo q in the pinned dual solver",
+          "dense_u16_storage_convention_bytes_per_element": 2,
+          "log2_dense_u16_storage_bytes": 290.69031685311427,
+          "inside_declared_storage_cap": {
+            "40": false,
+            "60": false,
+            "80": false
+          },
+          "interpretation": "storage sensitivity only; reduction overhead and all physical peak resources are not proved"
+        },
+        "MATZOV_fit_beyond_1024": true,
+        "historical_M05_counterpart_log2_operations": null,
+        "historical_jobs_counted_as_new": 0
+      },
+      "reference": {
+        "job": {
+          "index": 3,
+          "profile": "ML-KEM-1024",
+          "degree": 256,
+          "rank": 4,
+          "q": 3329,
+          "eta": 2,
+          "dimension": 1024,
+          "sample_game": "key",
+          "samples": 1024,
+          "abstract_matrix_block_shape": [
+            4,
+            4
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "MATZOV-classical",
+          "family": "dual",
+          "success_contract": "dual solver success_probability0.99 under estimator distribution heuristics",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 288.5257109881612,
+        "dimensions": {
+          "beta": 918,
+          "d": 1954,
+          "m": 930
+        },
+        "memory": {
+          "log2_native_mem": 195.3096869825351,
+          "log2_native_vector_count_N": null,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "stored elements modulo q in the pinned dual solver",
+          "dense_u16_storage_convention_bytes_per_element": 2,
+          "log2_dense_u16_storage_bytes": 196.3096869825351,
+          "inside_declared_storage_cap": {
+            "40": false,
+            "60": false,
+            "80": false
+          },
+          "interpretation": "storage sensitivity only; reduction overhead and all physical peak resources are not proved"
+        },
+        "MATZOV_fit_beyond_1024": false,
+        "historical_M05_counterpart_log2_operations": null,
+        "historical_jobs_counted_as_new": 0
+      },
+      "conditional_log2_cost_difference": 133.75028180473578,
+      "R1_proxy_at_least_reference": true,
+      "global_security_gain_bits": null
+    },
+    {
+      "sample_game": "key",
+      "cost_model": "MATZOV-classical",
+      "family": "dual_hybrid_matzov",
+      "success_contract": "MATZOV internal mu0.5; not a certified recovery probability0.99",
+      "R1": {
+        "job": {
+          "index": 24,
+          "profile": "R1",
+          "degree": 256,
+          "rank": 6,
+          "q": 7681,
+          "eta": 3,
+          "dimension": 1536,
+          "sample_game": "key",
+          "samples": 1536,
+          "abstract_matrix_block_shape": [
+            6,
+            6
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "MATZOV-classical",
+          "family": "dual_hybrid_matzov",
+          "success_contract": "MATZOV internal mu0.5; not a certified recovery probability0.99",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 383.77256296063496,
+        "dimensions": {
+          "beta": 1254,
+          "beta_": 1215,
+          "zeta": 40,
+          "m": 1536
+        },
+        "memory": {
+          "log2_native_mem": null,
+          "log2_native_vector_count_N": 250.8180616059906,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "unreported or not validated for this family",
+          "inside_declared_storage_cap": null
+        },
+        "MATZOV_fit_beyond_1024": true,
+        "historical_M05_counterpart_log2_operations": 383.77256296063496,
+        "historical_jobs_counted_as_new": 0,
+        "new_minus_historical_same_family_log2_cost": 0.0
+      },
+      "reference": {
+        "job": {
+          "index": 4,
+          "profile": "ML-KEM-1024",
+          "degree": 256,
+          "rank": 4,
+          "q": 3329,
+          "eta": 2,
+          "dimension": 1024,
+          "sample_game": "key",
+          "samples": 1024,
+          "abstract_matrix_block_shape": [
+            4,
+            4
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "MATZOV-classical",
+          "family": "dual_hybrid_matzov",
+          "success_contract": "MATZOV internal mu0.5; not a certified recovery probability0.99",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 262.3356800074737,
+        "dimensions": {
+          "beta": 823,
+          "beta_": 804,
+          "zeta": 0,
+          "m": 1024
+        },
+        "memory": {
+          "log2_native_mem": null,
+          "log2_native_vector_count_N": 165.93852657549195,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "unreported or not validated for this family",
+          "inside_declared_storage_cap": null
+        },
+        "MATZOV_fit_beyond_1024": false,
+        "historical_M05_counterpart_log2_operations": 262.3356800074737,
+        "historical_jobs_counted_as_new": 0,
+        "new_minus_historical_same_family_log2_cost": 0.0
+      },
+      "conditional_log2_cost_difference": 121.43688295316127,
+      "R1_proxy_at_least_reference": true,
+      "global_security_gain_bits": null
+    },
+    {
+      "sample_game": "key",
+      "cost_model": "MATZOV-classical",
+      "family": "primal_hybrid_mitm",
+      "success_contract": "MITM=True, Babai=False, GSA, guessing amplification target0.99; heuristic geometry",
+      "R1": {
+        "job": {
+          "index": 22,
+          "profile": "R1",
+          "degree": 256,
+          "rank": 6,
+          "q": 7681,
+          "eta": 3,
+          "dimension": 1536,
+          "sample_game": "key",
+          "samples": 1536,
+          "abstract_matrix_block_shape": [
+            6,
+            6
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "MATZOV-classical",
+          "family": "primal_hybrid_mitm",
+          "success_contract": "MITM=True, Babai=False, GSA, guessing amplification target0.99; heuristic geometry",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 398.2740161465748,
+        "dimensions": {
+          "beta": 1307,
+          "eta": 1344,
+          "d": 2875,
+          "zeta": 0
+        },
+        "memory": {
+          "log2_native_mem": null,
+          "log2_native_vector_count_N": null,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "unreported or not validated for this family",
+          "inside_declared_storage_cap": null
+        },
+        "MATZOV_fit_beyond_1024": true,
+        "historical_M05_counterpart_log2_operations": null,
+        "historical_jobs_counted_as_new": 0
+      },
+      "reference": {
+        "job": {
+          "index": 2,
+          "profile": "ML-KEM-1024",
+          "degree": 256,
+          "rank": 4,
+          "q": 3329,
+          "eta": 2,
+          "dimension": 1024,
+          "sample_game": "key",
+          "samples": 1024,
+          "abstract_matrix_block_shape": [
+            4,
+            4
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "MATZOV-classical",
+          "family": "primal_hybrid_mitm",
+          "success_contract": "MITM=True, Babai=False, GSA, guessing amplification target0.99; heuristic geometry",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 270.7499155411828,
+        "dimensions": {
+          "beta": 855,
+          "eta": 889,
+          "d": 1902,
+          "zeta": 0
+        },
+        "memory": {
+          "log2_native_mem": null,
+          "log2_native_vector_count_N": null,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "unreported or not validated for this family",
+          "inside_declared_storage_cap": null
+        },
+        "MATZOV_fit_beyond_1024": false,
+        "historical_M05_counterpart_log2_operations": null,
+        "historical_jobs_counted_as_new": 0
+      },
+      "conditional_log2_cost_difference": 127.524100605392,
+      "R1_proxy_at_least_reference": true,
+      "global_security_gain_bits": null
+    },
+    {
+      "sample_game": "key",
+      "cost_model": "MATZOV-classical",
+      "family": "usvp",
+      "success_contract": "GSA geometric predicate; not a certified global recovery probability",
+      "R1": {
+        "job": {
+          "index": 20,
+          "profile": "R1",
+          "degree": 256,
+          "rank": 6,
+          "q": 7681,
+          "eta": 3,
+          "dimension": 1536,
+          "sample_game": "key",
+          "samples": 1536,
+          "abstract_matrix_block_shape": [
+            6,
+            6
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "MATZOV-classical",
+          "family": "usvp",
+          "success_contract": "GSA geometric predicate; not a certified global recovery probability",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 402.8225566803057,
+        "dimensions": {
+          "beta": 1327,
+          "d": 2853
+        },
+        "memory": {
+          "log2_native_mem": null,
+          "log2_native_vector_count_N": null,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "unreported or not validated for this family",
+          "inside_declared_storage_cap": null
+        },
+        "MATZOV_fit_beyond_1024": true,
+        "historical_M05_counterpart_log2_operations": 402.8225566803057,
+        "historical_jobs_counted_as_new": 0,
+        "new_minus_historical_same_family_log2_cost": 0.0
+      },
+      "reference": {
+        "job": {
+          "index": 0,
+          "profile": "ML-KEM-1024",
+          "degree": 256,
+          "rank": 4,
+          "q": 3329,
+          "eta": 2,
+          "dimension": 1024,
+          "sample_game": "key",
+          "samples": 1024,
+          "abstract_matrix_block_shape": [
+            4,
+            4
+          ],
+          "targets": 1,
+          "leakage_oracle": "none",
+          "memory_cap": null,
+          "shape_model": "GSA where applicable",
+          "cost_model": "MATZOV-classical",
+          "family": "usvp",
+          "success_contract": "GSA geometric predicate; not a certified global recovery probability",
+          "estimator_commit": "7d59f866655362ea8eab803dbc833710c2bc362a",
+          "real_ciphertext_rows_claimed_independent": false,
+          "real_MLWE_claimed_IID_LWE": false
+        },
+        "result_status": "returned",
+        "process_exit_code": 0,
+        "expired": false,
+        "finite_cost_available": true,
+        "log2_operations": 275.1043604571838,
+        "dimensions": {
+          "beta": 874,
+          "d": 1867
+        },
+        "memory": {
+          "log2_native_mem": null,
+          "log2_native_vector_count_N": null,
+          "N_is_not_RAM": true,
+          "physical_peak_RAM_validated": false,
+          "constrained_RAM_optimum_recomputed": false,
+          "native_mem_unit": "unreported or not validated for this family",
+          "inside_declared_storage_cap": null
+        },
+        "MATZOV_fit_beyond_1024": false,
+        "historical_M05_counterpart_log2_operations": 275.1043604571838,
+        "historical_jobs_counted_as_new": 0,
+        "new_minus_historical_same_family_log2_cost": 0.0
+      },
+      "conditional_log2_cost_difference": 127.71819622312188,
+      "R1_proxy_at_least_reference": true,
+      "global_security_gain_bits": null
+    }
+  ],
+  "unfavorable_R1_pair_count": 0,
+  "monotonicity_diagnostics": [
+    {
+      "profile": "R1",
+      "cost_model": "BCSS23-quantum-reduction-sensitivity",
+      "family": "bdd",
+      "more_samples_minus_key_log2_operations": 0.0,
+      "optimizer_increase_observed": false,
+      "interpretation": "larger finite LWE sample budget may ignore extra rows; an increase is an optimization diagnostic, not stronger security"
+    },
+    {
+      "profile": "R1",
+      "cost_model": "BCSS23-quantum-reduction-sensitivity",
+      "family": "dual",
+      "more_samples_minus_key_log2_operations": 0.0,
+      "optimizer_increase_observed": false,
+      "interpretation": "larger finite LWE sample budget may ignore extra rows; an increase is an optimization diagnostic, not stronger security"
+    },
+    {
+      "profile": "R1",
+      "cost_model": "BCSS23-quantum-reduction-sensitivity",
+      "family": "dual_hybrid_matzov",
+      "more_samples_minus_key_log2_operations": 0.0,
+      "optimizer_increase_observed": false,
+      "interpretation": "larger finite LWE sample budget may ignore extra rows; an increase is an optimization diagnostic, not stronger security"
+    },
+    {
+      "profile": "R1",
+      "cost_model": "BCSS23-quantum-reduction-sensitivity",
+      "family": "primal_hybrid_mitm",
+      "more_samples_minus_key_log2_operations": 0.0,
+      "optimizer_increase_observed": false,
+      "interpretation": "larger finite LWE sample budget may ignore extra rows; an increase is an optimization diagnostic, not stronger security"
+    },
+    {
+      "profile": "R1",
+      "cost_model": "BCSS23-quantum-reduction-sensitivity",
+      "family": "usvp",
+      "more_samples_minus_key_log2_operations": 0.0,
+      "optimizer_increase_observed": false,
+      "interpretation": "larger finite LWE sample budget may ignore extra rows; an increase is an optimization diagnostic, not stronger security"
+    },
+    {
+      "profile": "R1",
+      "cost_model": "MATZOV-classical",
+      "family": "bdd",
+      "more_samples_minus_key_log2_operations": 0.0,
+      "optimizer_increase_observed": false,
+      "interpretation": "larger finite LWE sample budget may ignore extra rows; an increase is an optimization diagnostic, not stronger security"
+    },
+    {
+      "profile": "R1",
+      "cost_model": "MATZOV-classical",
+      "family": "dual",
+      "more_samples_minus_key_log2_operations": 0.0,
+      "optimizer_increase_observed": false,
+      "interpretation": "larger finite LWE sample budget may ignore extra rows; an increase is an optimization diagnostic, not stronger security"
+    },
+    {
+      "profile": "R1",
+      "cost_model": "MATZOV-classical",
+      "family": "dual_hybrid_matzov",
+      "more_samples_minus_key_log2_operations": 0.0,
+      "optimizer_increase_observed": false,
+      "interpretation": "larger finite LWE sample budget may ignore extra rows; an increase is an optimization diagnostic, not stronger security"
+    },
+    {
+      "profile": "R1",
+      "cost_model": "MATZOV-classical",
+      "family": "primal_hybrid_mitm",
+      "more_samples_minus_key_log2_operations": 0.0,
+      "optimizer_increase_observed": false,
+      "interpretation": "larger finite LWE sample budget may ignore extra rows; an increase is an optimization diagnostic, not stronger security"
+    },
+    {
+      "profile": "R1",
+      "cost_model": "MATZOV-classical",
+      "family": "usvp",
+      "more_samples_minus_key_log2_operations": 0.0,
+      "optimizer_increase_observed": false,
+      "interpretation": "larger finite LWE sample budget may ignore extra rows; an increase is an optimization diagnostic, not stronger security"
+    },
+    {
+      "profile": "ML-KEM-1024",
+      "cost_model": "BCSS23-quantum-reduction-sensitivity",
+      "family": "bdd",
+      "more_samples_minus_key_log2_operations": 0.0,
+      "optimizer_increase_observed": false,
+      "interpretation": "larger finite LWE sample budget may ignore extra rows; an increase is an optimization diagnostic, not stronger security"
+    },
+    {
+      "profile": "ML-KEM-1024",
+      "cost_model": "BCSS23-quantum-reduction-sensitivity",
+      "family": "dual",
+      "more_samples_minus_key_log2_operations": 0.0,
+      "optimizer_increase_observed": false,
+      "interpretation": "larger finite LWE sample budget may ignore extra rows; an increase is an optimization diagnostic, not stronger security"
+    },
+    {
+      "profile": "ML-KEM-1024",
+      "cost_model": "BCSS23-quantum-reduction-sensitivity",
+      "family": "dual_hybrid_matzov",
+      "more_samples_minus_key_log2_operations": 0.0,
+      "optimizer_increase_observed": false,
+      "interpretation": "larger finite LWE sample budget may ignore extra rows; an increase is an optimization diagnostic, not stronger security"
+    },
+    {
+      "profile": "ML-KEM-1024",
+      "cost_model": "BCSS23-quantum-reduction-sensitivity",
+      "family": "primal_hybrid_mitm",
+      "more_samples_minus_key_log2_operations": 0.0,
+      "optimizer_increase_observed": false,
+      "interpretation": "larger finite LWE sample budget may ignore extra rows; an increase is an optimization diagnostic, not stronger security"
+    },
+    {
+      "profile": "ML-KEM-1024",
+      "cost_model": "BCSS23-quantum-reduction-sensitivity",
+      "family": "usvp",
+      "more_samples_minus_key_log2_operations": 0.0,
+      "optimizer_increase_observed": false,
+      "interpretation": "larger finite LWE sample budget may ignore extra rows; an increase is an optimization diagnostic, not stronger security"
+    },
+    {
+      "profile": "ML-KEM-1024",
+      "cost_model": "MATZOV-classical",
+      "family": "bdd",
+      "more_samples_minus_key_log2_operations": 0.0,
+      "optimizer_increase_observed": false,
+      "interpretation": "larger finite LWE sample budget may ignore extra rows; an increase is an optimization diagnostic, not stronger security"
+    },
+    {
+      "profile": "ML-KEM-1024",
+      "cost_model": "MATZOV-classical",
+      "family": "dual",
+      "more_samples_minus_key_log2_operations": 0.0,
+      "optimizer_increase_observed": false,
+      "interpretation": "larger finite LWE sample budget may ignore extra rows; an increase is an optimization diagnostic, not stronger security"
+    },
+    {
+      "profile": "ML-KEM-1024",
+      "cost_model": "MATZOV-classical",
+      "family": "dual_hybrid_matzov",
+      "more_samples_minus_key_log2_operations": 0.0,
+      "optimizer_increase_observed": false,
+      "interpretation": "larger finite LWE sample budget may ignore extra rows; an increase is an optimization diagnostic, not stronger security"
+    },
+    {
+      "profile": "ML-KEM-1024",
+      "cost_model": "MATZOV-classical",
+      "family": "primal_hybrid_mitm",
+      "more_samples_minus_key_log2_operations": 0.0,
+      "optimizer_increase_observed": false,
+      "interpretation": "larger finite LWE sample budget may ignore extra rows; an increase is an optimization diagnostic, not stronger security"
+    },
+    {
+      "profile": "ML-KEM-1024",
+      "cost_model": "MATZOV-classical",
+      "family": "usvp",
+      "more_samples_minus_key_log2_operations": 0.0,
+      "optimizer_increase_observed": false,
+      "interpretation": "larger finite LWE sample budget may ignore extra rows; an increase is an optimization diagnostic, not stronger security"
+    }
+  ],
+  "memory_constrained_optimization_complete": false,
+  "global_security_level_claimed": null,
+  "symmetric_search_models": {
+    "panels": [
+      {
+        "targets": 1,
+        "tested_candidates_or_quantum_queries": 1,
+        "common_mapping": {
+          "objectives": [
+            "key-generation seed across keys",
+            "messages under one fixed public key"
+          ],
+          "classical_iid_targets_exact_formula": "1-(1-q/2^256)^U; q distinct tested candidates",
+          "classical_lower": {
+            "numerator_hex": "1",
+            "denominator_hex": "10000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "classical_upper": {
+            "numerator_hex": "1",
+            "denominator_hex": "10000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "Grover_success_envelope_with_at_most_U_marked_points": {
+            "numerator_hex": "9",
+            "denominator_hex": "10000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "coherent_target_membership_and_U_entry_storage_not_free": true
+        },
+        "different_public_key_message_predicates": {
+          "classical_total_predicate_query_upper": {
+            "numerator_hex": "1",
+            "denominator_hex": "10000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "Grover_uniform_pair_domain_envelope": {
+            "numerator_hex": "9",
+            "denominator_hex": "10000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "search_domain_size": 115792089237316195423570985008687907853269984665640564039457584007913129639936,
+          "marked_pair_count": 1,
+          "automatic_division_of_query_cost_by_target_count": false
+        },
+        "search_bits": 256,
+        "query_cost_is_gate_depth_or_physical_memory": false,
+        "global_KEM_security_claimed": false
+      },
+      {
+        "targets": 1,
+        "tested_candidates_or_quantum_queries": 4294967296,
+        "common_mapping": {
+          "objectives": [
+            "key-generation seed across keys",
+            "messages under one fixed public key"
+          ],
+          "classical_iid_targets_exact_formula": "1-(1-q/2^256)^U; q distinct tested candidates",
+          "classical_lower": {
+            "numerator_hex": "1",
+            "denominator_hex": "100000000000000000000000000000000000000000000000000000000"
+          },
+          "classical_upper": {
+            "numerator_hex": "1",
+            "denominator_hex": "100000000000000000000000000000000000000000000000000000000"
+          },
+          "Grover_success_envelope_with_at_most_U_marked_points": {
+            "numerator_hex": "40000000400000001",
+            "denominator_hex": "10000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "coherent_target_membership_and_U_entry_storage_not_free": true
+        },
+        "different_public_key_message_predicates": {
+          "classical_total_predicate_query_upper": {
+            "numerator_hex": "1",
+            "denominator_hex": "100000000000000000000000000000000000000000000000000000000"
+          },
+          "Grover_uniform_pair_domain_envelope": {
+            "numerator_hex": "40000000400000001",
+            "denominator_hex": "10000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "search_domain_size": 115792089237316195423570985008687907853269984665640564039457584007913129639936,
+          "marked_pair_count": 1,
+          "automatic_division_of_query_cost_by_target_count": false
+        },
+        "search_bits": 256,
+        "query_cost_is_gate_depth_or_physical_memory": false,
+        "global_KEM_security_claimed": false
+      },
+      {
+        "targets": 1,
+        "tested_candidates_or_quantum_queries": 18446744073709551616,
+        "common_mapping": {
+          "objectives": [
+            "key-generation seed across keys",
+            "messages under one fixed public key"
+          ],
+          "classical_iid_targets_exact_formula": "1-(1-q/2^256)^U; q distinct tested candidates",
+          "classical_lower": {
+            "numerator_hex": "1",
+            "denominator_hex": "1000000000000000000000000000000000000000000000000"
+          },
+          "classical_upper": {
+            "numerator_hex": "1",
+            "denominator_hex": "1000000000000000000000000000000000000000000000000"
+          },
+          "Grover_success_envelope_with_at_most_U_marked_points": {
+            "numerator_hex": "400000000000000040000000000000001",
+            "denominator_hex": "10000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "coherent_target_membership_and_U_entry_storage_not_free": true
+        },
+        "different_public_key_message_predicates": {
+          "classical_total_predicate_query_upper": {
+            "numerator_hex": "1",
+            "denominator_hex": "1000000000000000000000000000000000000000000000000"
+          },
+          "Grover_uniform_pair_domain_envelope": {
+            "numerator_hex": "400000000000000040000000000000001",
+            "denominator_hex": "10000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "search_domain_size": 115792089237316195423570985008687907853269984665640564039457584007913129639936,
+          "marked_pair_count": 1,
+          "automatic_division_of_query_cost_by_target_count": false
+        },
+        "search_bits": 256,
+        "query_cost_is_gate_depth_or_physical_memory": false,
+        "global_KEM_security_claimed": false
+      },
+      {
+        "targets": 1,
+        "tested_candidates_or_quantum_queries": 79228162514264337593543950336,
+        "common_mapping": {
+          "objectives": [
+            "key-generation seed across keys",
+            "messages under one fixed public key"
+          ],
+          "classical_iid_targets_exact_formula": "1-(1-q/2^256)^U; q distinct tested candidates",
+          "classical_lower": {
+            "numerator_hex": "1",
+            "denominator_hex": "10000000000000000000000000000000000000000"
+          },
+          "classical_upper": {
+            "numerator_hex": "1",
+            "denominator_hex": "10000000000000000000000000000000000000000"
+          },
+          "Grover_success_envelope_with_at_most_U_marked_points": {
+            "numerator_hex": "4000000000000000000000004000000000000000000000001",
+            "denominator_hex": "10000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "coherent_target_membership_and_U_entry_storage_not_free": true
+        },
+        "different_public_key_message_predicates": {
+          "classical_total_predicate_query_upper": {
+            "numerator_hex": "1",
+            "denominator_hex": "10000000000000000000000000000000000000000"
+          },
+          "Grover_uniform_pair_domain_envelope": {
+            "numerator_hex": "4000000000000000000000004000000000000000000000001",
+            "denominator_hex": "10000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "search_domain_size": 115792089237316195423570985008687907853269984665640564039457584007913129639936,
+          "marked_pair_count": 1,
+          "automatic_division_of_query_cost_by_target_count": false
+        },
+        "search_bits": 256,
+        "query_cost_is_gate_depth_or_physical_memory": false,
+        "global_KEM_security_claimed": false
+      },
+      {
+        "targets": 1,
+        "tested_candidates_or_quantum_queries": 340282366920938463463374607431768211456,
+        "common_mapping": {
+          "objectives": [
+            "key-generation seed across keys",
+            "messages under one fixed public key"
+          ],
+          "classical_iid_targets_exact_formula": "1-(1-q/2^256)^U; q distinct tested candidates",
+          "classical_lower": {
+            "numerator_hex": "1",
+            "denominator_hex": "100000000000000000000000000000000"
+          },
+          "classical_upper": {
+            "numerator_hex": "1",
+            "denominator_hex": "100000000000000000000000000000000"
+          },
+          "Grover_success_envelope_with_at_most_U_marked_points": {
+            "numerator_hex": "1",
+            "denominator_hex": "1"
+          },
+          "coherent_target_membership_and_U_entry_storage_not_free": true
+        },
+        "different_public_key_message_predicates": {
+          "classical_total_predicate_query_upper": {
+            "numerator_hex": "1",
+            "denominator_hex": "100000000000000000000000000000000"
+          },
+          "Grover_uniform_pair_domain_envelope": {
+            "numerator_hex": "1",
+            "denominator_hex": "1"
+          },
+          "search_domain_size": 115792089237316195423570985008687907853269984665640564039457584007913129639936,
+          "marked_pair_count": 1,
+          "automatic_division_of_query_cost_by_target_count": false
+        },
+        "search_bits": 256,
+        "query_cost_is_gate_depth_or_physical_memory": false,
+        "global_KEM_security_claimed": false
+      },
+      {
+        "targets": 1048576,
+        "tested_candidates_or_quantum_queries": 1,
+        "common_mapping": {
+          "objectives": [
+            "key-generation seed across keys",
+            "messages under one fixed public key"
+          ],
+          "classical_iid_targets_exact_formula": "1-(1-q/2^256)^U; q distinct tested candidates",
+          "classical_lower": {
+            "numerator_hex": "1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00001",
+            "denominator_hex": "2000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "classical_upper": {
+            "numerator_hex": "1",
+            "denominator_hex": "100000000000000000000000000000000000000000000000000000000000"
+          },
+          "Grover_success_envelope_with_at_most_U_marked_points": {
+            "numerator_hex": "9",
+            "denominator_hex": "100000000000000000000000000000000000000000000000000000000000"
+          },
+          "coherent_target_membership_and_U_entry_storage_not_free": true
+        },
+        "different_public_key_message_predicates": {
+          "classical_total_predicate_query_upper": {
+            "numerator_hex": "1",
+            "denominator_hex": "10000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "Grover_uniform_pair_domain_envelope": {
+            "numerator_hex": "9",
+            "denominator_hex": "10000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "search_domain_size": 121416805764108066932466369176469931665150427440758720078238275608681517825325531136,
+          "marked_pair_count": 1048576,
+          "automatic_division_of_query_cost_by_target_count": false
+        },
+        "search_bits": 256,
+        "query_cost_is_gate_depth_or_physical_memory": false,
+        "global_KEM_security_claimed": false
+      },
+      {
+        "targets": 1048576,
+        "tested_candidates_or_quantum_queries": 4294967296,
+        "common_mapping": {
+          "objectives": [
+            "key-generation seed across keys",
+            "messages under one fixed public key"
+          ],
+          "classical_iid_targets_exact_formula": "1-(1-q/2^256)^U; q distinct tested candidates",
+          "classical_lower": {
+            "numerator_hex": "1fffffffffffffffffffffffffffffffffffffffffffffffffff00001",
+            "denominator_hex": "200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "classical_upper": {
+            "numerator_hex": "1",
+            "denominator_hex": "1000000000000000000000000000000000000000000000000000"
+          },
+          "Grover_success_envelope_with_at_most_U_marked_points": {
+            "numerator_hex": "40000000400000001",
+            "denominator_hex": "100000000000000000000000000000000000000000000000000000000000"
+          },
+          "coherent_target_membership_and_U_entry_storage_not_free": true
+        },
+        "different_public_key_message_predicates": {
+          "classical_total_predicate_query_upper": {
+            "numerator_hex": "1",
+            "denominator_hex": "100000000000000000000000000000000000000000000000000000000"
+          },
+          "Grover_uniform_pair_domain_envelope": {
+            "numerator_hex": "40000000400000001",
+            "denominator_hex": "10000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "search_domain_size": 121416805764108066932466369176469931665150427440758720078238275608681517825325531136,
+          "marked_pair_count": 1048576,
+          "automatic_division_of_query_cost_by_target_count": false
+        },
+        "search_bits": 256,
+        "query_cost_is_gate_depth_or_physical_memory": false,
+        "global_KEM_security_claimed": false
+      },
+      {
+        "targets": 1048576,
+        "tested_candidates_or_quantum_queries": 18446744073709551616,
+        "common_mapping": {
+          "objectives": [
+            "key-generation seed across keys",
+            "messages under one fixed public key"
+          ],
+          "classical_iid_targets_exact_formula": "1-(1-q/2^256)^U; q distinct tested candidates",
+          "classical_lower": {
+            "numerator_hex": "1fffffffffffffffffffffffffffffffffffffffffff00001",
+            "denominator_hex": "20000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "classical_upper": {
+            "numerator_hex": "1",
+            "denominator_hex": "10000000000000000000000000000000000000000000"
+          },
+          "Grover_success_envelope_with_at_most_U_marked_points": {
+            "numerator_hex": "400000000000000040000000000000001",
+            "denominator_hex": "100000000000000000000000000000000000000000000000000000000000"
+          },
+          "coherent_target_membership_and_U_entry_storage_not_free": true
+        },
+        "different_public_key_message_predicates": {
+          "classical_total_predicate_query_upper": {
+            "numerator_hex": "1",
+            "denominator_hex": "1000000000000000000000000000000000000000000000000"
+          },
+          "Grover_uniform_pair_domain_envelope": {
+            "numerator_hex": "400000000000000040000000000000001",
+            "denominator_hex": "10000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "search_domain_size": 121416805764108066932466369176469931665150427440758720078238275608681517825325531136,
+          "marked_pair_count": 1048576,
+          "automatic_division_of_query_cost_by_target_count": false
+        },
+        "search_bits": 256,
+        "query_cost_is_gate_depth_or_physical_memory": false,
+        "global_KEM_security_claimed": false
+      },
+      {
+        "targets": 1048576,
+        "tested_candidates_or_quantum_queries": 79228162514264337593543950336,
+        "common_mapping": {
+          "objectives": [
+            "key-generation seed across keys",
+            "messages under one fixed public key"
+          ],
+          "classical_iid_targets_exact_formula": "1-(1-q/2^256)^U; q distinct tested candidates",
+          "classical_lower": {
+            "numerator_hex": "1fffffffffffffffffffffffffffffffffff00001",
+            "denominator_hex": "2000000000000000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "classical_upper": {
+            "numerator_hex": "1",
+            "denominator_hex": "100000000000000000000000000000000000"
+          },
+          "Grover_success_envelope_with_at_most_U_marked_points": {
+            "numerator_hex": "4000000000000000000000004000000000000000000000001",
+            "denominator_hex": "100000000000000000000000000000000000000000000000000000000000"
+          },
+          "coherent_target_membership_and_U_entry_storage_not_free": true
+        },
+        "different_public_key_message_predicates": {
+          "classical_total_predicate_query_upper": {
+            "numerator_hex": "1",
+            "denominator_hex": "10000000000000000000000000000000000000000"
+          },
+          "Grover_uniform_pair_domain_envelope": {
+            "numerator_hex": "4000000000000000000000004000000000000000000000001",
+            "denominator_hex": "10000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "search_domain_size": 121416805764108066932466369176469931665150427440758720078238275608681517825325531136,
+          "marked_pair_count": 1048576,
+          "automatic_division_of_query_cost_by_target_count": false
+        },
+        "search_bits": 256,
+        "query_cost_is_gate_depth_or_physical_memory": false,
+        "global_KEM_security_claimed": false
+      },
+      {
+        "targets": 1048576,
+        "tested_candidates_or_quantum_queries": 340282366920938463463374607431768211456,
+        "common_mapping": {
+          "objectives": [
+            "key-generation seed across keys",
+            "messages under one fixed public key"
+          ],
+          "classical_iid_targets_exact_formula": "1-(1-q/2^256)^U; q distinct tested candidates",
+          "classical_lower": {
+            "numerator_hex": "1fffffffffffffffffffffffffff00001",
+            "denominator_hex": "200000000000000000000000000000000000000000000000000000000000"
+          },
+          "classical_upper": {
+            "numerator_hex": "1",
+            "denominator_hex": "1000000000000000000000000000"
+          },
+          "Grover_success_envelope_with_at_most_U_marked_points": {
+            "numerator_hex": "1",
+            "denominator_hex": "1"
+          },
+          "coherent_target_membership_and_U_entry_storage_not_free": true
+        },
+        "different_public_key_message_predicates": {
+          "classical_total_predicate_query_upper": {
+            "numerator_hex": "1",
+            "denominator_hex": "100000000000000000000000000000000"
+          },
+          "Grover_uniform_pair_domain_envelope": {
+            "numerator_hex": "1",
+            "denominator_hex": "1"
+          },
+          "search_domain_size": 121416805764108066932466369176469931665150427440758720078238275608681517825325531136,
+          "marked_pair_count": 1048576,
+          "automatic_division_of_query_cost_by_target_count": false
+        },
+        "search_bits": 256,
+        "query_cost_is_gate_depth_or_physical_memory": false,
+        "global_KEM_security_claimed": false
+      },
+      {
+        "targets": 1099511627776,
+        "tested_candidates_or_quantum_queries": 1,
+        "common_mapping": {
+          "objectives": [
+            "key-generation seed across keys",
+            "messages under one fixed public key"
+          ],
+          "classical_iid_targets_exact_formula": "1-(1-q/2^256)^U; q distinct tested candidates",
+          "classical_lower": {
+            "numerator_hex": "1ffffffffffffffffffffffffffffffffffffffffffffffffffffff0000000001",
+            "denominator_hex": "20000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "classical_upper": {
+            "numerator_hex": "1",
+            "denominator_hex": "1000000000000000000000000000000000000000000000000000000"
+          },
+          "Grover_success_envelope_with_at_most_U_marked_points": {
+            "numerator_hex": "9",
+            "denominator_hex": "1000000000000000000000000000000000000000000000000000000"
+          },
+          "coherent_target_membership_and_U_entry_storage_not_free": true
+        },
+        "different_public_key_message_predicates": {
+          "classical_total_predicate_query_upper": {
+            "numerator_hex": "1",
+            "denominator_hex": "10000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "Grover_uniform_pair_domain_envelope": {
+            "numerator_hex": "9",
+            "denominator_hex": "10000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "search_domain_size": 127314748520905380391777855525586135065716774604121015664758778084648831235208544136462336,
+          "marked_pair_count": 1099511627776,
+          "automatic_division_of_query_cost_by_target_count": false
+        },
+        "search_bits": 256,
+        "query_cost_is_gate_depth_or_physical_memory": false,
+        "global_KEM_security_claimed": false
+      },
+      {
+        "targets": 1099511627776,
+        "tested_candidates_or_quantum_queries": 4294967296,
+        "common_mapping": {
+          "objectives": [
+            "key-generation seed across keys",
+            "messages under one fixed public key"
+          ],
+          "classical_iid_targets_exact_formula": "1-(1-q/2^256)^U; q distinct tested candidates",
+          "classical_lower": {
+            "numerator_hex": "1ffffffffffffffffffffffffffffffffffffffffffffff0000000001",
+            "denominator_hex": "2000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "classical_upper": {
+            "numerator_hex": "1",
+            "denominator_hex": "10000000000000000000000000000000000000000000000"
+          },
+          "Grover_success_envelope_with_at_most_U_marked_points": {
+            "numerator_hex": "40000000400000001",
+            "denominator_hex": "1000000000000000000000000000000000000000000000000000000"
+          },
+          "coherent_target_membership_and_U_entry_storage_not_free": true
+        },
+        "different_public_key_message_predicates": {
+          "classical_total_predicate_query_upper": {
+            "numerator_hex": "1",
+            "denominator_hex": "100000000000000000000000000000000000000000000000000000000"
+          },
+          "Grover_uniform_pair_domain_envelope": {
+            "numerator_hex": "40000000400000001",
+            "denominator_hex": "10000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "search_domain_size": 127314748520905380391777855525586135065716774604121015664758778084648831235208544136462336,
+          "marked_pair_count": 1099511627776,
+          "automatic_division_of_query_cost_by_target_count": false
+        },
+        "search_bits": 256,
+        "query_cost_is_gate_depth_or_physical_memory": false,
+        "global_KEM_security_claimed": false
+      },
+      {
+        "targets": 1099511627776,
+        "tested_candidates_or_quantum_queries": 18446744073709551616,
+        "common_mapping": {
+          "objectives": [
+            "key-generation seed across keys",
+            "messages under one fixed public key"
+          ],
+          "classical_iid_targets_exact_formula": "1-(1-q/2^256)^U; q distinct tested candidates",
+          "classical_lower": {
+            "numerator_hex": "1ffffffffffffffffffffffffffffffffffffff0000000001",
+            "denominator_hex": "200000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "classical_upper": {
+            "numerator_hex": "1",
+            "denominator_hex": "100000000000000000000000000000000000000"
+          },
+          "Grover_success_envelope_with_at_most_U_marked_points": {
+            "numerator_hex": "400000000000000040000000000000001",
+            "denominator_hex": "1000000000000000000000000000000000000000000000000000000"
+          },
+          "coherent_target_membership_and_U_entry_storage_not_free": true
+        },
+        "different_public_key_message_predicates": {
+          "classical_total_predicate_query_upper": {
+            "numerator_hex": "1",
+            "denominator_hex": "1000000000000000000000000000000000000000000000000"
+          },
+          "Grover_uniform_pair_domain_envelope": {
+            "numerator_hex": "400000000000000040000000000000001",
+            "denominator_hex": "10000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "search_domain_size": 127314748520905380391777855525586135065716774604121015664758778084648831235208544136462336,
+          "marked_pair_count": 1099511627776,
+          "automatic_division_of_query_cost_by_target_count": false
+        },
+        "search_bits": 256,
+        "query_cost_is_gate_depth_or_physical_memory": false,
+        "global_KEM_security_claimed": false
+      },
+      {
+        "targets": 1099511627776,
+        "tested_candidates_or_quantum_queries": 79228162514264337593543950336,
+        "common_mapping": {
+          "objectives": [
+            "key-generation seed across keys",
+            "messages under one fixed public key"
+          ],
+          "classical_iid_targets_exact_formula": "1-(1-q/2^256)^U; q distinct tested candidates",
+          "classical_lower": {
+            "numerator_hex": "1ffffffffffffffffffffffffffffff0000000001",
+            "denominator_hex": "20000000000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "classical_upper": {
+            "numerator_hex": "1",
+            "denominator_hex": "1000000000000000000000000000000"
+          },
+          "Grover_success_envelope_with_at_most_U_marked_points": {
+            "numerator_hex": "4000000000000000000000004000000000000000000000001",
+            "denominator_hex": "1000000000000000000000000000000000000000000000000000000"
+          },
+          "coherent_target_membership_and_U_entry_storage_not_free": true
+        },
+        "different_public_key_message_predicates": {
+          "classical_total_predicate_query_upper": {
+            "numerator_hex": "1",
+            "denominator_hex": "10000000000000000000000000000000000000000"
+          },
+          "Grover_uniform_pair_domain_envelope": {
+            "numerator_hex": "4000000000000000000000004000000000000000000000001",
+            "denominator_hex": "10000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "search_domain_size": 127314748520905380391777855525586135065716774604121015664758778084648831235208544136462336,
+          "marked_pair_count": 1099511627776,
+          "automatic_division_of_query_cost_by_target_count": false
+        },
+        "search_bits": 256,
+        "query_cost_is_gate_depth_or_physical_memory": false,
+        "global_KEM_security_claimed": false
+      },
+      {
+        "targets": 1099511627776,
+        "tested_candidates_or_quantum_queries": 340282366920938463463374607431768211456,
+        "common_mapping": {
+          "objectives": [
+            "key-generation seed across keys",
+            "messages under one fixed public key"
+          ],
+          "classical_iid_targets_exact_formula": "1-(1-q/2^256)^U; q distinct tested candidates",
+          "classical_lower": {
+            "numerator_hex": "1ffffffffffffffffffffff0000000001",
+            "denominator_hex": "2000000000000000000000000000000000000000000000000000000"
+          },
+          "classical_upper": {
+            "numerator_hex": "1",
+            "denominator_hex": "10000000000000000000000"
+          },
+          "Grover_success_envelope_with_at_most_U_marked_points": {
+            "numerator_hex": "1",
+            "denominator_hex": "1"
+          },
+          "coherent_target_membership_and_U_entry_storage_not_free": true
+        },
+        "different_public_key_message_predicates": {
+          "classical_total_predicate_query_upper": {
+            "numerator_hex": "1",
+            "denominator_hex": "100000000000000000000000000000000"
+          },
+          "Grover_uniform_pair_domain_envelope": {
+            "numerator_hex": "1",
+            "denominator_hex": "1"
+          },
+          "search_domain_size": 127314748520905380391777855525586135065716774604121015664758778084648831235208544136462336,
+          "marked_pair_count": 1099511627776,
+          "automatic_division_of_query_cost_by_target_count": false
+        },
+        "search_bits": 256,
+        "query_cost_is_gate_depth_or_physical_memory": false,
+        "global_KEM_security_claimed": false
+      }
+    ],
+    "finite_checks": {
+      "common_domain_exact_panels": 108,
+      "cross_key_message_allocations": 286,
+      "exact_Grover_panels": 162,
+      "general_quantum_search_optimality_proved_here": false
+    },
+    "generic_search_space_bits_both_profiles": 256,
+    "Grover_query_scale_bits": 128,
+    "queries_are_not_reversible_gate_or_depth_costs": true
+  },
+  "memory_filter_counterexample": {
+    "points_time_memory": {
+      "A": [
+        [
+          1,
+          100
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "B": [
+        [
+          4,
+          1
+        ]
+      ]
+    },
+    "cap": 1,
+    "unconstrained": {
+      "A": [
+        1,
+        100
+      ],
+      "B": [
+        4,
+        1
+      ]
+    },
+    "constrained": {
+      "A": [
+        3,
+        1
+      ],
+      "B": [
+        4,
+        1
+      ]
+    },
+    "filtering_unconstrained_optima_is_not_reoptimization": true
+  },
+  "wire_sizes": {
+    "R1": {
+      "encapsulation_key_bytes": 2528,
+      "expanded_decapsulation_key_bytes": 5088,
+      "ciphertext_bytes": 2656,
+      "shared_secret_bytes": 32,
+      "one_key_and_ciphertext_bytes": 5184
+    },
+    "ML-KEM-1024": {
+      "encapsulation_key_bytes": 1568,
+      "expanded_decapsulation_key_bytes": 3168,
+      "ciphertext_bytes": 1568,
+      "shared_secret_bytes": 32,
+      "one_key_and_ciphertext_bytes": 3136
+    },
+    "difference_R1_minus_reference": {
+      "encapsulation_key_bytes": 960,
+      "expanded_decapsulation_key_bytes": 1920,
+      "ciphertext_bytes": 1088,
+      "shared_secret_bytes": 0,
+      "one_key_and_ciphertext_bytes": 2048
+    },
+    "key_and_ciphertext_ratio": {
+      "numerator_hex": "51",
+      "denominator_hex": "31"
+    }
+  },
+  "correction": {
+    "source": "run-004 exact fraction reused, not a new tail computation",
+    "population": "independent ideal CBD; RO transfer average over oracles/keys, worst message with fresh uniform PKE coins",
+    "log2_certificate_display_reused": -310.08596919852425,
+    "threshold": {
+      "exponent_numerator": -874,
+      "exponent_denominator": 5
+    },
+    "C05_exact_rational_comparison": true,
+    "delta_RO_not_larger_than_certificate": true,
+    "seed_collision_case": "equal key/encryption noise seeds imply r=s and e1=e; residual e2 within +/-3 in commutative ring",
+    "adaptive_failure_search_covered": false,
+    "every_fixed_key_and_concrete_SHAKE_certified": false,
+    "MLKEM1024_reference": {
+      "published_log2_failure_estimate": -174.8,
+      "population": "uniform d,z,m and random-function hash/XOF heuristic, FIPS203Table1",
+      "treated_as_same_kind_of_rational_certificate": false
+    }
+  },
+  "decision": {
+    "continue_R1_engineering": true,
+    "new_profile_selected": false,
+    "final_cryptographic_parameter_freeze": false,
+    "blockers": [
+      "complete C01 incl.QROM and concrete primitives",
+      "RAM-constrained attack optimization and physical resource model",
+      "adaptation of modern covariance/structured attacks and validated score tails",
+      "estimator local optimization and large-beta extrapolation"
+    ],
+    "incomplete_or_unfavorable_panel_blocks_automatic_final_selection": false
+  }
+}

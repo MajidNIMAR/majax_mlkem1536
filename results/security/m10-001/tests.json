@@ -1,0 +1,33 @@
+{
+  "schema": "m10-security-test-receipt-v1",
+  "started_utc": "2026-11-16T12:38:27.801677+00:00",
+  "finished_utc": "2026-11-16T12:38:51.290228+00:00",
+  "exit_code": 0,
+  "test_count": 28,
+  "input_sha256_before": {
+    "research/m10_security.py": "17da5662fd25407004fe74b1ccabca2b87f60ca8009d6a7ae7cb764fb139e1a6",
+    "research/m10_security_sampler.py": "059f26ebf25cb05c552b8320bf94dcbc6ae590fbfac686c5099b14b30beb9bcd",
+    "research/m10_security_bounds.py": "cd5d912e1a2f6cda47776a8c2f0c001f34bd500778093c0736a570622c8e423e",
+    "research/m10_security_quantum.py": "0afbde8da1fe09b1bd604ab3360110953e11435156c55610b3aff0d355ab4136",
+    "research/m10_security_resources.py": "5cfef46866a5c0ddb6da005bbc8315b0e816632d95ed4ce9beeef49ec7a9fe8f",
+    "research/test_m10_security.py": "34fc5e2da015defbd61642e5eaa5e2025934471e4c2d4e8a637d55a45bb7c546",
+    "docs/SECURITE_M10.md": "93e20c88d140326b137afc605627abb38bcd242bea0196f9d2abcd5c661d18a9",
+    "crates/kem1536/src/dev_kem.rs": "7b64b6e1adf18d5a3e0b66e6c95eb392aebb24c20077c74aadd304fcadc43d32",
+    "source-anchors.json": "d90854a2c83eca1ca3517bccde67caa8d136bca69520e459d5689b3d88a669ce"
+  },
+  "input_sha256_after": {
+    "research/m10_security.py": "17da5662fd25407004fe74b1ccabca2b87f60ca8009d6a7ae7cb764fb139e1a6",
+    "research/m10_security_sampler.py": "059f26ebf25cb05c552b8320bf94dcbc6ae590fbfac686c5099b14b30beb9bcd",
+    "research/m10_security_bounds.py": "cd5d912e1a2f6cda47776a8c2f0c001f34bd500778093c0736a570622c8e423e",
+    "research/m10_security_quantum.py": "0afbde8da1fe09b1bd604ab3360110953e11435156c55610b3aff0d355ab4136",
+    "research/m10_security_resources.py": "5cfef46866a5c0ddb6da005bbc8315b0e816632d95ed4ce9beeef49ec7a9fe8f",
+    "research/test_m10_security.py": "34fc5e2da015defbd61642e5eaa5e2025934471e4c2d4e8a637d55a45bb7c546",
+    "docs/SECURITE_M10.md": "93e20c88d140326b137afc605627abb38bcd242bea0196f9d2abcd5c661d18a9",
+    "crates/kem1536/src/dev_kem.rs": "7b64b6e1adf18d5a3e0b66e6c95eb392aebb24c20077c74aadd304fcadc43d32",
+    "source-anchors.json": "d90854a2c83eca1ca3517bccde67caa8d136bca69520e459d5689b3d88a669ce"
+  },
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "2f1a23853a7cbe73e7100f6603f6d3a1bfa1d19984b2b0189f181c6951973f91",
+  "new_engine_builds": 0,
+  "new_fuzz_credit_seconds": 0
+}

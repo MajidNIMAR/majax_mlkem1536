@@ -2,11 +2,15 @@
 
 Version de travail du 16 novembre 2026. Ce document est la base évolutive du futur article. Le [journal](JOURNAL_RECHERCHE.md) conserve les étapes et décisions ; les [résultats figés de J2](../results/j2/run-001/) conservent les calculs et leur provenance. Une modification du rapport doit rester cohérente avec ces données.
 
-La présentation publique comporte un [résumé des résultats et garanties](../README.md#latest-verified-results--m09)
-avec les contrats, le cycle secret et les nouvelles acquisitions M09.
-Les gains antérieurs M06/M07/M08 restent distingués, avec leur portée
-historique. Le bilan M09 relie ses propres mesures et images à la correction
-du candidat rejeté ; la sécurité cryptographique complète demeure conditionnelle.
+Le [bilan courant M10](M10_MOTEUR_ET_QUALIFICATION.md) relie le durcissement
+du cycle secret, les nouvelles analyses conditionnelles et les acquisitions
+du candidat 003. Sa campagne longue a atteint les quatre budgets ; la
+couverture LLVM, le rejeu indépendant, la distribution et le contrôle global
+local sont acquis. La CI et la promotion sont suivies séparément dans ce
+bilan. M09 reste la référence livrée jusqu'à cette clôture.
+Les gains antérieurs M06/M07/M08/M09 gardent leur portée historique ;
+la sécurité cryptographique complète et le gel final des paramètres restent
+ouverts.
 
 La [revue des cibles et contrats M08](REVUE_CRITIQUE_M08_CIBLES_ET_CONTRATS.md)
 confronte les cinq observations reçues au code et à la spécification :
@@ -965,3 +969,98 @@ R1 fonctionne et les améliorations sont mesurées ; **C01 complet, QROM,
 primitives concrètes, temps constant/effacement universels et audit externe
 restent ouverts**. Android et Messenger demeurent différés. Les futurs
 commits de clôture documentaire conservent le code effectivement testé.
+
+## M10 — quatre chantiers autorisés, résultats en cours
+
+16 novembre2026. Le [protocole M10](PROTOCOLE_M10.md), commis1105e7f,
+fixe avant modification les critères de l'argument exact, de la décision
+des paramètres, du durcissement et de la qualification longue. La revue
+extérieure reste différée. C01 et la sélection finale de R1 ne sont pas
+déclarés clos par cette autorisation.
+
+La capture de référence M09 conserve56 fichiers et le manifeste
+`fea4458893be1e7f84e42d58da22c3740363a015103917fb0828603f902925ce` ;
+ses douze builds nouveaux réussissent avec contrôles/source inchangés.
+Les premières corrections concernent les dérivations et expansions
+écrites dans leur propriétaire et la sélection finale du secret.
+La revue étendue portera sur les nouvelles images, sans transférer
+les conclusions ciblées des images historiques.
+
+La [décision des paramètres](DECISION_PARAMETRES_M10.md) est préenregistrée
+au commit c37e9f7 :40 jobs finis, modèle/coût/succès distingués, 300s par
+job, sans réutiliser M05 comme calcul nouveau. Les témoins d'aplatissement
+gardent la limite MLWE structuré/LWE indépendant et la RAM diagnostique
+ne remplace pas une optimisation sous plafond non disponible.
+
+La campagne longue ne commence qu'après validation et acceptation des
+mesures/revues du candidat : quatre budgets nouveaux de1800s CPU après
+INITED, sans crédit d'initialisation ou historique, avec couverture et
+oracle indépendants du corpus récolté. Les observations et les limites
+seront ajoutées au fil de leur acquisition.
+
+### M10 — résultats acquis avant la clôture prolongée
+
+La [revue du cycle secret](REVUE_CYCLE_SECRET_M10.md) conserve deux itérations
+non promouvables : état SHAKE original laissé en pile (préexistant M09),
+puis propriétaire local de sortie32 déplacé sans essuyage. La réalisation003
+retire les deux mécanismes dans les quatre images examinées. Les corpus
+complets Windows/Linux concordent ; le pont comporte78 ancrages, en plus
+des branches historiques75/77 et antérieures. Ce n'est pas une preuve
+universelle d'effacement ni de temps constant.
+
+La comparaison M09→M10 comprend40000 latences et432 observations mémoire
+nouvelles. Tous les budgets passent ; médianes−4,31 à+2,20%, maximum de pile
+touchée Decaps−224 octets par OS et Encaps Windows+16 octets. Les allocations
+demandées n'augmentent pas. Le diagnostic distinct de32000 observations a
+max|t|1,74635/1,35509, zéro franchissement4,5. Les reconstructions CLI sont
+Linux brut exact et Windows hors timestamp COFF/checksum PE, sur les mêmes
+outils/hôte/caches ; aucune reproduction par tiers n'est revendiquée.
+
+Le [volet sécurité M10](SECURITE_M10.md), scellé dans `results/security/m10-001`,
+complète les simulations de matrice et de bruit, le raccord classique FO et
+ses ressources ; il localise les obligations concrètes et quantiques encore
+ouvertes. La [décision des paramètres](DECISION_PARAMETRES_M10.md) conserve
+R1 pour le développement :40 calculs finis,20 paires favorables dans les
+conventions précisées, sans niveau global ni optimum sous plafond RAM.
+La sélection cryptographique finale et C01 restent ouverts.
+
+Le candidat003 est accepté pour une nouvelle campagne longue par19preuves
+liées au manifeste `67084be5ab1cde058661104b16e738138db7993dec001ac39625feb830b2810d`.
+Les quatre harnais sont en cours, chacun devant atteindre1800 secondes CPU
+conservatrices après INITED. Couverture, oracle du nouveau corpus, gel,
+check complet et CI ne sont pas encore déclarés achevés à ce stade.
+## M10 — couverture et oracle du corpus prolongé
+
+Le post-traitement du 16 novembre 2026 conserve l'export LLVM complet,
+les quatre objets et profils, puis leur union sans addition des panneaux
+qui se recouvrent. L'union compte 492/669 lignes, 75/96 fonctions source,
+907/1 155 régions et 18/38 branches couvertes dans les cinq fichiers du
+cœur cartographiés. `dev_kem.rs` compte 384/417 lignes et 14/20 branches.
+Les fonctions et côtés de branche à zéro restent présents. La couverture
+utilise des objets ASan distincts et la bibliothèque standard distribuée ;
+elle ne mesure pas les objets à std reconstruite de la campagne longue.
+
+Les 3 968 fichiers des quatre corpus, dédupliqués séparément par harnais,
+produisent 4 263 requêtes déterministes distinctes. Toutes les sorties du
+binaire Rust Linux concordent avec l'oracle Python/NumPy 2.3.5 : 641 imports
+de clés privées acceptées comprennent une sonde indépendante de
+décapsulation, et 16 rechiffrements sont acceptés. Les 1 887 opérations à
+aléa frais encodées dans ce corpus ne sont pas recréées par l'oracle.
+Le transcript compressé et son empreinte sont conservés. Ces vérifications
+ne démontrent ni temps constant, ni couverture complète, ni sécurité C01.
+
+## M10 — contrôle local complet et scellement du reçu
+
+Le 16 novembre 2026, le contrôle complet `scripts/dev.ps1 check` se termine
+avec une sortie 0. Rust, formatage, Clippy, les 514 tests Python (aucun
+ignoré), tous les rejouages et les essais natifs de fin passent. Les 313
+entrées de source et de contrôle suivies sont identiques avant/après.
+Le reçu [m10-verification-001](../results/engine/m10-verification-001/)
+lie le journal complet, le contrôleur réutilisé et la provenance des
+10 908 membres moteur. Le sceau vérifie également les 37 entrées compilables
+de la capture retenue : 31 appartiennent au suivi avant/après, les six
+fichiers des consommateurs/sondes autonomes sont contrôlés au scellement.
+Ces deux portées restent distinctes. Aucun temps de fuzzing supplémentaire
+n'est crédité par ce contrôle. La CI neuve et la promotion attendent leurs
+propres résultats ; C01 et la sélection cryptographique finale restent ouverts.
+

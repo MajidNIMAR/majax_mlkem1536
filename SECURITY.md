@@ -9,6 +9,42 @@ formal constant-time guarantee or production-security claim is made.
 
 ## Current assurance boundary
 
+M10 is the new internally reviewed candidate on the recorded GNU x86-64
+Windows/Linux PC images. It writes derived material into existing owners,
+uses borrowed SHAKE finalization and keeps the local decapsulation output
+owner alive through copying. The [M10 lifecycle review](docs/REVUE_CYCLE_SECRET_M10.md)
+qualifies removal of the two observed normal-return stack residues. Sensitive
+mask copies, ABI/register/dependency/caller copies and whole-program constant
+time remain outside that bounded result. Its new four-harness sanitizer
+campaign has completed with no observed defect: 8,041.14 total CPU seconds,
+of which 7,408.48 are conservative post-INIT CPU seconds. Each harness
+exceeds its own 1,800-second budget, without historical, compilation or
+initialization credit. Separate LLVM objects cover 492/669 mapped core
+lines and 18/38 branches, retaining zero-count mappings. All 4,263 distinct
+deterministic corpus-derived requests match the independent Python reference,
+including 641 accepted-private-key decapsulation probes. The 1,887 fresh
+operations encoded in the corpus are not recreated by the oracle. OS-entropy
+failure paths, the diagnostic wrapper and other unmapped or unvisited paths
+remain outside this coverage result; its [classification](docs/M10_MOTEUR_ET_QUALIFICATION.md)
+also distinguishes source functions from generic instantiations. These
+results do not establish a global security rating, constant time or complete
+secret erasure. The sealed [evidence capsule](results/engine/m10-001/) passes
+its data-only replay; the file-only mirror correction is retained separately.
+The [complete local Windows check](results/engine/m10-verification-001/)
+passes with all 514 Python tests executed, none skipped, plus Rust tests,
+formatting, strict Clippy and the required evidence replays. The 313 recorded
+source/control inputs are unchanged before and after. This check and its
+seal add no fuzzing, cryptographic, constant-time or erasure guarantee.
+Fresh Windows/Ubuntu hosted CI and canonical promotion remain pending.
+
+The [M10 security argument](docs/SECURITE_M10.md) supplies conditional matrix,
+noise and classical FO compositions with explicit resources. The [parameter
+decision](docs/DECISION_PARAMETRES_M10.md) retains R1 for development after
+forty new finite-sample estimates. C01, concrete advantage/resource calibration,
+the complete quantum resource map and fixed SHA3/SHAKE assumptions remain open.
+External review is deferred by the project owner. M09 remains the previous
+delivered reference while M10 qualification is in progress.
+
 The current delivered engine reference is M09, qualified internally. It preserves R1 bytes,
 uses fixed-size borrowed noise roles and tests operation-level failures
 after every partial entropy prefix. Decapsulation writes its recovered

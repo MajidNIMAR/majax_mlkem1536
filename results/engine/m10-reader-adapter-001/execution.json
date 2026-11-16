@@ -1,0 +1,9 @@
+{
+  "command": [
+    "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\research-venv\\Scripts\\python.exe",
+    "-B",
+    "research/archive_m10.py",
+    "verify"
+  ],
+  "exit_code": 0
+}

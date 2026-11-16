@@ -1,0 +1,22 @@
+{
+  "schema": "m10-security-capsule-v1",
+  "output_sha256": {
+    "correctness-certificate.json": "52b005bd7575b56326730f44ccaeae689e5552c1068f4df201d97e0d16969e06",
+    "dev_kem.rs": "7b64b6e1adf18d5a3e0b66e6c95eb392aebb24c20077c74aadd304fcadc43d32",
+    "m10_security.py": "17da5662fd25407004fe74b1ccabca2b87f60ca8009d6a7ae7cb764fb139e1a6",
+    "m10_security_bounds.py": "cd5d912e1a2f6cda47776a8c2f0c001f34bd500778093c0736a570622c8e423e",
+    "m10_security_quantum.py": "0afbde8da1fe09b1bd604ab3360110953e11435156c55610b3aff0d355ab4136",
+    "m10_security_resources.py": "5cfef46866a5c0ddb6da005bbc8315b0e816632d95ed4ce9beeef49ec7a9fe8f",
+    "m10_security_sampler.py": "059f26ebf25cb05c552b8320bf94dcbc6ae590fbfac686c5099b14b30beb9bcd",
+    "README.md": "d1f00c49783107e232657d1b3aaf88c7efb5021bf32780b11bcabc0ca97710e7",
+    "report.json": "80a07d68129b27e548807a3fea08f970d98765f02a50269e9f815c97d4a5189b",
+    "SECURITE_M10.md": "93e20c88d140326b137afc605627abb38bcd242bea0196f9d2abcd5c661d18a9",
+    "source-anchors.json": "d90854a2c83eca1ca3517bccde67caa8d136bca69520e459d5689b3d88a669ce",
+    "test_m10_security.py": "34fc5e2da015defbd61642e5eaa5e2025934471e4c2d4e8a637d55a45bb7c546",
+    "tests.json": "b8b379b6e6da80c540cd5fd4c523448e368fad7404c914595e0c3cf504396597",
+    "tests.stderr": "2f1a23853a7cbe73e7100f6603f6d3a1bfa1d19984b2b0189f181c6951973f91",
+    "tests.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "C01_closed": false,
+  "external_audit": false
+}

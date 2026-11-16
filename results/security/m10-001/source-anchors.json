@@ -1,0 +1,138 @@
+{
+  "schema": "m10-primary-security-sources-v1",
+  "recorded_utc": "2026-11-16T12:17:46.626118+00:00",
+  "sources": [
+    {
+      "id": "CHIC",
+      "title": "C’est très CHIC: A compact password-authenticated key exchange from lattice-based KEM",
+      "url": "https://orbilu.uni.lu/bitstream/10993/63175/1/2024-308.pdf",
+      "sha256": "d6c018acab073bffd29fa35e4cf5351b31c306f451d419f31837056113ab7386",
+      "bytes": 773846,
+      "read_scope": "Institutional PDF,39pages, AppendixC pp38-39; inverse rejection simulation only",
+      "retrieval": "Windows Invoke-WebRequest with normal TLS after Python trust-store validation failed"
+    },
+    {
+      "id": "BBBV",
+      "title": "Strengths and Weaknesses of Quantum Computing",
+      "url": "https://arxiv.org/abs/quant-ph/9701001",
+      "sha256": "7ade70e376984bcf3ee1770cd3b7670633d02d24afa680039b9058c2e1f8c76e",
+      "bytes": 234713,
+      "read_scope": "Versionv1, Section3.1 pp7-8; norm-hybrid method, M10 constants derived explicitly",
+      "retrieved_copy": "https://arxiv.org/pdf/quant-ph/9701001"
+    },
+    {
+      "id": "HHK-original",
+      "title": "A Modular Analysis of the Fujisaki-Okamoto Transformation",
+      "url": "https://eprint.iacr.org/2017/604",
+      "sha256": "33412e6927c288f40384d594fd21915dce0a755487489a0a5f7c1961a63df290",
+      "bytes": 823684,
+      "read_scope": "Mirror actually returns original26September2017 PDF, pp10-13,19-22 reread; NOT corrected2021PDF",
+      "retrieved_copy": "https://eprint.iacr.asia/2017/604.pdf",
+      "matches_historical_2017_SHA": true
+    },
+    {
+      "id": "GYY25",
+      "title": "Fujisaki-Okamoto Transformation under Average-Case Decryption Error: Tighter and More General Proofs with Applications to PQC",
+      "url": "https://eprint.iacr.org/2025/1641",
+      "sha256": "408b2f6f880658b4026e19393ef2d6cd764255f823b0a5ec28538e40f14d34ff",
+      "bytes": 1170048,
+      "read_scope": "30September2025 version, figure7 pp15-16, theorem22 andremark6 pp96-97; previous cached bytes reread",
+      "new_download": false
+    },
+    {
+      "id": "MRE24",
+      "title": "Measure-Rewind-Extract: Tighter Proofs of One-Way to Hiding and CCA Security in the Quantum Random Oracle Model",
+      "url": "https://eprint.iacr.org/2024/777",
+      "sha256": "6a5954a5c20847c99ce37befe33c415ca2917ee69b370b81fc4bc18500fe1fe1",
+      "bytes": 962753,
+      "read_scope": "Notice primary last revision25May2024; PDF pp23-28,43-54; Corollary1, Remark5, oracle simulation and runtime. pp55-57 explicit rejection path not applied.",
+      "retrieved_copy": "https://eprint.iacr.asia/2024/777.pdf"
+    },
+    {
+      "id": "BHHP19",
+      "title": "Tighter proofs of CCA security in the quantum random oracle model",
+      "url": "https://eprint.iacr.org/2019/590",
+      "sha256": "d9b378b5a3747cd469066db91d0318d41f64f819da04d43b13329383d95bb8ce",
+      "bytes": 507819,
+      "read_scope": "Theorem5 pp15-16 and graph oracle simulation; no claim using all parameter results",
+      "retrieved_copy": "https://eprint.iacr.asia/2019/590.pdf"
+    },
+    {
+      "id": "Chen26",
+      "title": "Tighter Proofs for PKE-to-KEM Transformations under Average-Case Decryption Error and without gamma-Spread",
+      "url": "https://eprint.iacr.org/2026/468",
+      "sha256": "6e7c6c311de264411674c68c5886d60a655de6ef9131557a01ef544019938f5f",
+      "bytes": 871321,
+      "read_scope": "PDF15September2026, figures3-4 pp5, definitions pp10-14 andROM theorem4.1 pp15-16; transformations are not R1",
+      "retrieved_copy": "https://eprint.iacr.asia/2026/468.pdf"
+    },
+    {
+      "id": "AHU-old-copy",
+      "title": "Quantum security proofs using semi-classical oracles",
+      "url": "https://eprint.iacr.org/2018/904",
+      "sha256": "a3b09922553b2138dc022db72035e8378c30cf27cfad312b1a45558bad03d69d",
+      "bytes": 587582,
+      "read_scope": "Mirror18February2019, main O2H theorems1-3 pp9-12, NOT oldFO appendix. Primary2021warning separately observed.",
+      "retrieved_copy": "https://eprint.iacr.asia/2018/904.pdf",
+      "FO_appendix_imported": false
+    },
+    {
+      "id": "Hov21",
+      "title": "Generic Constructions of Quantum-Resistant Cryptosystems",
+      "url": "https://doi.org/10.13154/294-7758",
+      "sha256": "06fd15e5930057285c9c0101b2517b64df03a7e52169475365f7c050ff569ce9",
+      "bytes": 2026024,
+      "read_scope": "Historical M05 cache retained; source identified, M05 scope inherited; no new full thesis review claimed",
+      "new_download": false
+    }
+  ],
+  "primary_indexed_errata": [
+    {
+      "id": "HHK21",
+      "url": "https://eprint.iacr.org/2017/604.pdf",
+      "full_corrected_pdf_retrieved": false,
+      "read_scope": "Indexed primary first-page2November2021 erratum only, rigidity and counting corrections, globalROMtable preserved"
+    },
+    {
+      "id": "AHU21",
+      "url": "https://eprint.iacr.org/2018/904.pdf",
+      "full_corrected_pdf_retrieved": false,
+      "read_scope": "Indexed primary9December2021 first-page warning: FO appendix flaw; mainO2H results unaffected"
+    }
+  ],
+  "failed_retrievals": [
+    {
+      "id": "chic",
+      "url": "https://orbilu.uni.lu/bitstream/10993/63175/1/2024-308.pdf",
+      "retrieved": false,
+      "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+    },
+    {
+      "id": "bbbv",
+      "url": "https://arxiv.org/pdf/quant-ph/9701001",
+      "retrieved": true,
+      "sha256": "7ade70e376984bcf3ee1770cd3b7670633d02d24afa680039b9058c2e1f8c76e",
+      "bytes": 234713
+    },
+    {
+      "id": "ahu",
+      "url": "https://eprint.iacr.org/2018/904.pdf",
+      "retrieved": false,
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "chen",
+      "url": "https://eprint.iacr.org/2026/468.pdf",
+      "retrieved": false,
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "hhk-corrected",
+      "url": "https://eprint.iacr.org/2017/604.pdf",
+      "retrieved": false,
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    }
+  ],
+  "pdf_redistributed": false,
+  "network_required_for_replay": false
+}
