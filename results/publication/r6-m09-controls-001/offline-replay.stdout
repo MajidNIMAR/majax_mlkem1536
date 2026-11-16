@@ -1,0 +1,159 @@
+{
+  "schema": "m09-hosted-integration-v1",
+  "run_id": 43806407492,
+  "run_url": "https://github.com/MajidNIMAR/majax_mlkem1536/actions/runs/43806407492",
+  "public_tested_commit": "fdd323dcf840b0d12fd43a446acffbd0cce83d7b",
+  "source_commit": "d616912fddd1e303c171678d0c6690286b570d38",
+  "runners": {
+    "ubuntu-24.04": {
+      "job_id": 133098105396,
+      "python_tests": 439,
+      "full_log": "0_check (ubuntu-24.04).txt",
+      "full_log_sha256": "a3536a097bb083463c6f65297bcedc61ad6fb41d4b5f7cfc5e316ed2bc6aaf28",
+      "native_smoke": {
+        "schema": "m09-native-smoke-v1",
+        "host": "linux",
+        "finished_utc": "2026-11-16T04:58:25.864171+00:00",
+        "source_manifest_sha256": "0829c8112ce771072c63ae07ae5a7f32cc7a06cf91531950047ddd4685cea3eb",
+        "original_CLI_sha256": "7cc2368a7827c33ee1b1563ef9fa9b155189691d58769e99f68def399f41fd01",
+        "original_default_consumer_sha256": "6f9b46af780c748804a93aba4c22356c8575d787068be6c56eeaf7fb20e0cc60",
+        "checks": [
+          {
+            "operation": "dev-self-test",
+            "exit_code": 0,
+            "stdout_sha256": "823c02214e72878a3199b51c8408dabab46d307fc3b5241c50e05fe1c3745bb5",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "operation": [
+              "dev-vectors",
+              "1"
+            ],
+            "exit_code": 1
+          },
+          {
+            "operation": [
+              "dev-rejection-vectors"
+            ],
+            "exit_code": 1
+          },
+          {
+            "operation": [
+              "dev-hardening"
+            ],
+            "exit_code": 1
+          },
+          {
+            "operation": [
+              "dev-mutations"
+            ],
+            "exit_code": 1
+          },
+          {
+            "operation": [
+              "dev-timing"
+            ],
+            "exit_code": 1
+          },
+          {
+            "operation": "smoke",
+            "exit_code": 0,
+            "stdout_sha256": "b23f3f7694b143b76e67adc9c5ef809eae83cf2160af3dba499b643556a1cdee",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "operation": "exhaustive",
+            "exit_code": 0,
+            "stdout_sha256": "b94a78940de5b35e9f55802747b3176910569dab969abfe032368c7f0da6dcca",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ],
+        "fresh_round_trips": 16,
+        "implicit_rejections": 16,
+        "consumer_cases": 13,
+        "exhaustive_probes": 88576,
+        "new_builds": 0,
+        "fresh_fuzzing_credit_seconds": 0,
+        "constant_time_proved": false,
+        "external_audit": false
+      }
+    },
+    "windows-latest": {
+      "job_id": 133098105175,
+      "python_tests": 439,
+      "full_log": "1_check (windows-latest).txt",
+      "full_log_sha256": "994fc94c8e54879911f46db8b6fa46aad9399cfba7e7594bf2f404dce11cfea4",
+      "native_smoke": {
+        "schema": "m09-native-smoke-v1",
+        "host": "windows",
+        "finished_utc": "2026-11-16T05:01:29.784082+00:00",
+        "source_manifest_sha256": "0829c8112ce771072c63ae07ae5a7f32cc7a06cf91531950047ddd4685cea3eb",
+        "original_CLI_sha256": "9eb95fb2cb9a8531a216012b4cff71d6b10d1a7951285d9d3c666f8186002255",
+        "original_default_consumer_sha256": "8e80df32180529308007b37726e1534a976f390713f2635e483b52f810a032a4",
+        "checks": [
+          {
+            "operation": "dev-self-test",
+            "exit_code": 0,
+            "stdout_sha256": "8ae4a2513604c5debef932f5a72eee7b13fed0e11fe9700a8f4e8d6a16800047",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "operation": [
+              "dev-vectors",
+              "1"
+            ],
+            "exit_code": 1
+          },
+          {
+            "operation": [
+              "dev-rejection-vectors"
+            ],
+            "exit_code": 1
+          },
+          {
+            "operation": [
+              "dev-hardening"
+            ],
+            "exit_code": 1
+          },
+          {
+            "operation": [
+              "dev-mutations"
+            ],
+            "exit_code": 1
+          },
+          {
+            "operation": [
+              "dev-timing"
+            ],
+            "exit_code": 1
+          },
+          {
+            "operation": "smoke",
+            "exit_code": 0,
+            "stdout_sha256": "a2f2a42c44a7ed455d00d18e1142e99ff959a18ea0a02449f1916382929ca78a",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "operation": "exhaustive",
+            "exit_code": 0,
+            "stdout_sha256": "b94a78940de5b35e9f55802747b3176910569dab969abfe032368c7f0da6dcca",
+            "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ],
+        "fresh_round_trips": 16,
+        "implicit_rejections": 16,
+        "consumer_cases": 13,
+        "exhaustive_probes": 88576,
+        "new_builds": 0,
+        "fresh_fuzzing_credit_seconds": 0,
+        "constant_time_proved": false,
+        "external_audit": false
+      }
+    }
+  },
+  "qualified_compilation_inputs_equal_tested_public_source": 37,
+  "historical_fuzz_time_recredited": false,
+  "external_audit": false,
+  "global_security_or_CT_or_erasure_proved": false
+}

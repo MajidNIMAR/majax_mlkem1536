@@ -1,0 +1,28 @@
+{
+  "schema": "m09-initial-ci-skip-v1",
+  "run_id": 43804190038,
+  "jobs_green": true,
+  "all_439_tests_executed": false,
+  "jobs": {
+    "0_check (windows-latest).txt": {
+      "python_tests_collected": 439,
+      "executed": 438,
+      "skipped": 1,
+      "status": "OK (skipped=1)",
+      "full_log_sha256": "ff4c9eac312de94d88c2964a6b48734639476b0915b50db7d6920f68804dc9b4"
+    },
+    "1_check (ubuntu-24.04).txt": {
+      "python_tests_collected": 439,
+      "executed": 438,
+      "skipped": 1,
+      "status": "OK (skipped=1)",
+      "full_log_sha256": "1c50a797f50264cf6a1c04413b1ea00007eecc5679cf3c8bd00a13571270dcbb"
+    }
+  },
+  "collector_accepted_complete_test_claim": false,
+  "collector_failure": "ValueError: hosted Python suite failed",
+  "correction": "Test-only d616912/fdd323d replays rejected distribution from public frozen archive",
+  "new_engine_builds": 0,
+  "scientific_evidence_changed": false,
+  "recorded_utc": "2026-11-16T04:51:09.558444+00:00"
+}

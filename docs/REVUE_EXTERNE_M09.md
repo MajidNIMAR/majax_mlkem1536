@@ -28,15 +28,21 @@ transport ne font pas partie de cette tranche.
 | Pont de correction | `research/verify_r1_certificate_bridge.py`, branches historiques et nouvelle réalisation M09 | Vérifier les identités et leur correspondance au code précis |
 | Attaques | `docs/COMPARAISON_EXPERIMENTALE_M05.md`, résultats de sécurité figés | Contrôler budgets temps/mémoire, compression, distributions et extrapolations |
 | Owners et erreurs | `docs/REVUE_CYCLE_SECRET_M09.md`, tests Rust du moteur | Examiner les chemins valides, invalides, entropie partielle et propriétaires |
-| Arithmétique | `crates/kem1536/src/engine_poly.rs`, `docs/OPTIMISATION_M09.md` | Vérifier bornes intermédiaires, NTT, canonicalité et absence de changement des sorties |
+| Arithmétique | `crates/kem1536/src/engine_poly.rs`, `docs/ADDENDUM_M09_SCALAIRE.md`, bilan M09 ; `docs/OPTIMISATION_M09.md` pour l'étude initiale rejetée | Vérifier bornes intermédiaires, NTT, canonicalité et absence de changement des sorties |
 | Référence indépendante | `research/kem_r1_reference.py`, fixtures et archives moteur | Rejouer sorties exactes ; ne pas créditer de temps de fuzz historique à M09 |
-| Exécutables | Paquets et reçus M09 après qualification | Reproduire depuis source figée et comparer les octets selon la convention annoncée |
+| Exécutables | `docs/DISTRIBUTION_M09.md`, `results/engine/m09-001`, reçus locaux et suivi du lecteur | Reproduire depuis source figée et comparer les octets selon la convention annoncée |
 | Preuves historiques | `results/engine/m08-001` et `results/publication/r6-m08-001` | Rejouer les archives figées, sans les assimiler à des mesures M09 |
 
-Le commit local et le commit public, les empreintes source, vecteurs, images,
-outils et reçus de validation doivent être fournis avec la référence M09
-finale. Les chemins de cette table qui décrivent une acquisition nouvelle
-n'attestent pas de son achèvement : les reçus finaux en donnent la portée.
+Le commit soumis à la vérification publique est
+[`fdd323dcf840b0d12fd43a446acffbd0cce83d7b`](https://github.com/MajidNIMAR/majax_mlkem1536/commit/fdd323dcf840b0d12fd43a446acffbd0cce83d7b),
+exporté de la source locale `d616912fddd1e303c171678d0c6690286b570d38`.
+Les empreintes source, vecteurs, images et outils sont conservées dans les
+recueils liés ci-dessus. Les récépissés distinguent les acquisitions, le
+check local et le suivi ultérieur du lecteur. Le [reçu public final](../results/publication/r6-m09-001/)
+constate le succès de la CI 43806407492 sur Windows et Ubuntu : 439 tests
+Python exécutés par OS, aucun ignoré, et smokes natifs des originaux M09.
+Le commit effectivement testé reste la référence de remise même si une
+clôture documentaire et ses reçus sont publiés ensuite.
 
 Un résultat négatif de M09 doit faire partie de la remise : la première
 variante à tables NTT vectorisées est rejetée après identification, dans les
@@ -102,7 +108,13 @@ CLI Windows : `9eb95fb2cb9a8531a216012b4cff71d6b10d1a7951285d9d3c666f8186002255`
 CLI Linux : `7cc2368a7827c33ee1b1563ef9fa9b155189691d58769e99f68def399f41fd01`.
 Les paquets et toutes les étapes sont dans `results/engine/m09-001` ; la
 provenance moteur est `0e785d177c8814d4cf0ae04696049dbe3d273620ed1d4a57c4bfb4819e064397`.
-Le contrôle complet local et le suivi du lecteur sont scellés séparément.
-Le bilan M09 expose les limites et les incidents ; la CI publique sera reliée
-au commit testé, aux cartes d'export et aux 37 entrées compilables exactes.
+Le [contrôle complet local](../results/engine/m09-verification-001/) et le
+[suivi du lecteur](../results/engine/m09-reader-review-001/) sont scellés
+séparément : respectivement 438 tests Python avec Rust/Clippy/fmt/rejeux,
+puis la suite de 439 tests Python du suivi de stockage. Le bilan M09 expose
+les limites et les incidents. [L'exécution 43806407492](https://github.com/MajidNIMAR/majax_mlkem1536/actions/runs/43806407492)
+est vérifiée au commit indiqué ci-dessus ; son reçu relie les cartes
+d'export et les 37 entrées compilables exactes, sans modifier les acquisitions.
+Le [reçu local de promotion](../results/engine/m09-canonical-001/) confirme
+ensuite la copie de l'original Windows qualifié et son contrôle natif frais.
 Cette remise ne crédite aucun tiers d'une approbation qu'il n'a pas fournie.

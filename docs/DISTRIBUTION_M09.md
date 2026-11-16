@@ -1,10 +1,28 @@
 # M09 — distribution et décision de promotion
 
-16 novembre 2026. Le premier jeu d'images M09 (`m09-final-001`) est
+16 novembre 2026. La distribution scalaire **002** est qualifiée en interne
+et ses paquets sont disponibles dans le [recueil public M09](../results/engine/m09-001/distribution.tar.gz).
+Le [check local complet](../results/engine/m09-verification-001/) et le
+[suivi du lecteur de stockage](../results/engine/m09-reader-review-001/)
+sont clos. La [CI neuve 43806407492](https://github.com/MajidNIMAR/majax_mlkem1536/actions/runs/43806407492)
+réussit sur Windows et Ubuntu, au commit testé
+`fdd323dcf840b0d12fd43a446acffbd0cce83d7b`, avec les 439 tests Python
+exécutés sur chaque OS, aucun ignoré. Le [reçu public](../results/publication/r6-m09-001/)
+lie les cartes d'export, 37 entrées compilables et images originales.
+Le [reçu de promotion locale](../results/engine/m09-canonical-001/) constate
+la copie de l'original Windows M09 vers `target/release/kem1536.exe` puis
+16 échanges/rejets frais et cinq refus normaux. Son SHA-256 est
+`9eb95fb2cb9a8531a216012b4cff71d6b10d1a7951285d9d3c666f8186002255`.
+Ce remplacement séparé ne modifie ni les archives 001 rejetées ni M08.
+
+## Préparatifs historiques et rejet de 001
+
+Le premier jeu d'images M09 (`m09-final-001`) est
 **REJECTED_FOR_PROMOTION**. La revue Windows a identifié une nouvelle
 copie de coefficients via les sauvegardes ABI XMM de la transformée
 auto-vectorisée. Les contrôles de construction et de distribution ci-dessous
-ne lèvent pas ce rejet. Le binaire habituel M08 reste en place.
+ne lèvent pas ce rejet. À cette décision de rejet, le binaire habituel
+M08 avait été conservé.
 
 `research/m09_distribution.py` prépare de nouvelles archives à partir
 des seules sources capturées sous `m09-final-001/source`, sans compiler
@@ -87,6 +105,28 @@ Le compact garde l'addendum tel qu'il existait dans le snapshot compilé,
 avant l'ajout rétrospectif de son tableau de résultats. Le reçu de reprise
 du setup conserve cet écart documentaire, sans changer les 57 entrées du
 snapshot. Le gel global M09 conserve les deux décisions de distribution.
+
+## Contrôles locaux et clôture publique
+
+Le check complet local conserve ses versions de contrôle avant le
+durcissement du lecteur : 438 tests Python, fmt, Clippy strict, tests Rust
+par défaut et toutes fonctionnalités, puis les rejeux requis. Le suivi
+distinct du lecteur vérifie notamment les parties même si une archive
+complète existe à côté, avec quatre tests ciblés et la suite de 439 tests
+Python. Les 37 entrées compilables qualifiées et les acquisitions sont
+inchangées ; les récépissés locaux liés en tête de ce document donnent les
+versions exactes et leurs empreintes.
+
+Une première exécution publique verte a laissé un test de distribution
+optionnel non exécuté. Le correctif de test du commit source local
+`d616912fddd1e303c171678d0c6690286b570d38` relit désormais le recueil publié,
+sans dépendre du chantier local ignoré par Git ; ses sept tests ciblés
+passent. La seconde CI utilise le commit public indiqué en tête du document.
+Son [reçu final](../results/publication/r6-m09-001/) relie les résultats
+Windows/Ubuntu, le commit testé, les cartes d'export, les 37 entrées
+compilables et les images originales. La [promotion du binaire habituel](../results/engine/m09-canonical-001/)
+est constatée par sa copie et son contrôle natif, sans attribuer un nouvel
+audit ou une nouvelle campagne à cette opération.
 
 
 ## Accès depuis le dépôt public

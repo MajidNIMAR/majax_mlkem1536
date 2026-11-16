@@ -23,7 +23,7 @@ evidence needed to examine its evolution.
 
 ## Latest verified results — M09
 
-**M09 is the internally qualified engine candidate.** It adds fixed-size
+**M09 is the delivered engine reference, qualified internally.** It adds fixed-size
 borrowed noise roles, operation-level partial-entropy failure checks, direct
 message ownership and a scalar NTT with public precomputed twiddles. R1
 formats, domains and outputs are unchanged. The final M08 → M09 comparison
@@ -60,8 +60,27 @@ negative result, corrected images, raw measurements and acquisition/replay
 incidents. The [classical ROM seeded-noise sub-lemma](docs/SECURITE_M09.md)
 advances a specific security obligation; **C01, QROM and concrete-primitive
 security remain open**. [Independent review is prepared](docs/REVUE_EXTERNE_M09.md),
-with no external audit claimed. Full-check and fresh hosted-CI closure are
-recorded separately from the scientific acquisitions.
+with no external audit claimed. The [complete local check](results/engine/m09-verification-001/)
+passes with 438 Python tests, Rust tests, formatting, strict Clippy and the
+required evidence replays. The [storage-reader follow-up](results/engine/m09-reader-review-001/)
+then passes the 439-test Python suite while preserving all 37 qualified
+compilation inputs. These receipts remain separate from the acquisitions.
+
+[Fresh hosted CI passes on Windows and Ubuntu](https://github.com/MajidNIMAR/majax_mlkem1536/actions/runs/43806407492)
+at public commit [`fdd323dc`](https://github.com/MajidNIMAR/majax_mlkem1536/commit/fdd323dcf840b0d12fd43a446acffbd0cce83d7b),
+with **439 Python tests executed per OS, none skipped**, Rust/fmt/strict
+Clippy, the required archive replays and native checks of the original
+M09 CLI/default consumer. The [publication receipt](results/publication/r6-m09-001/)
+binds 2,138 exported files and canonical Git blobs, the 37 qualified
+compilation inputs and the original image hashes. The [frozen offline reader](results/publication/r6-m09-controls-001/)
+replays that receipt. The [initial green run](results/publication/r6-m09-initial-001/)
+retains one omitted test and the reason a second run was required; its
+test-only correction changed no compiled input or scientific evidence.
+The [qualified packages](docs/DISTRIBUTION_M09.md) are available. The local
+Windows canonical CLI now contains the original M09 image, copied and
+[checked natively after promotion](results/engine/m09-canonical-001/), with
+16 fresh exchanges/rejections and five normal research-command refusals.
+These integrations are separate from the frozen measurements and campaigns.
 
 <a id="latest-verified-results--m08"></a>
 
@@ -103,10 +122,10 @@ scope and raw results.
 | Assurance area | Current published status |
 |---|---|
 | Functional engine and compatibility | Implemented and exercised on Windows/Linux; complete reference corpora match and R1 formats remain compatible |
-| Implementation hardening | Validated encodings, zeroizing secret owners and a bounded machine-code review qualifying removal of targeted import spills; register/ABI/all-PKE erasure and formal constant time remain outside that result |
+| Implementation hardening | Validated encodings and zeroizing owners; M08 qualifies removal of targeted import spills in its images, while M09 has typed entropy/noise contracts, message-owner checks and its own targeted scalar correction review; register/ABI/all-PKE erasure and formal constant time remain open |
 | Cryptographic security argument | Exact correctness certificates and conditional ROM/QROM analyses under stated assumptions; the full concrete R1 argument **C01 remains open** |
 | External assurance and security rating | A certified global bit rating, NIST category or external cryptographic audit is not established by these artifacts; **1536 denotes the coefficient count** |
-| Target qualification | Published M08 image reviews concern GNU x86-64 Windows/Linux; Android/ARM timing and register/ABI behavior require their own qualification |
+| Target qualification | M09 CLI/default-consumer reviews and historical M08 reviews concern GNU x86-64 Windows/Linux; Android/ARM timing and register/ABI behavior require their own qualification |
 
 The [security status](SECURITY.md) separates the M09 and M08 corrections,
 historical findings and the remaining cryptographic obligations.
@@ -129,7 +148,7 @@ The work connects three areas:
 |---|---|---|
 | KEM construction | R1 key generation, encapsulation, decapsulation and implicit rejection | [KEM implementation](crates/kem1536/src/dev_kem.rs) |
 | Polynomial arithmetic | Scalar negacyclic NTT in `Z_7681[X]/(X^256 + 1)`, reused transforms and accumulated products | [Arithmetic implementation](crates/kem1536/src/engine_poly.rs) |
-| Secret ownership | Typed keys and shared secrets, bounded buffers and explicit zeroizing owners | [Secret storage](crates/kem1536/src/secret_box.rs), [implementation review](docs/M06_REVUE_INDEPENDANTE.md) |
+| Secret ownership | Typed keys and shared secrets, bounded buffers and explicit zeroizing owners | [Secret storage](crates/kem1536/src/secret_box.rs), [M09 secret-lifecycle review](docs/REVUE_CYCLE_SECRET_M09.md) |
 | Independent reference | Separate Python implementation and generic convolution checks | [Python reference](research/kem_r1_reference.py), [certificate/program bridge](docs/LIEN_CERTIFICAT_PROGRAMME_R1.md) |
 | Integration | Rust library API, command-line diagnostics and a KEM/HKDF/AEAD consumer example | [Engine guide](docs/MOTEUR_KEM_R1.md), [channel example](examples/r1-channel-demo/README.md) |
 

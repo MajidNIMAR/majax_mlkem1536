@@ -249,3 +249,9 @@ Le [bilan M09](M09_MOTEUR_CONTRATS_ET_QUALIFICATION.md) donne mesures, rejet
 de la première vectorisation, correction ciblée, paquets et preuves.
 Le moteur fonctionne sur les PC qualifiés ; C01 et l'audit extérieur restent
 ouverts. Les images Android/Messenger ne sont pas incluses dans ce périmètre.
+
+La [référence livrée M09](M09_MOTEUR_CONTRATS_ET_QUALIFICATION.md)
+est liée à la CI neuve Windows/Ubuntu 43806407492 (439 tests Python
+exécutés par OS, sans test ignoré), à ses paquets originaux et au contrôle
+de copie locale. Ce sont des vérifications d'intégration distinctes des
+mesures et campagnes figées ; la construction et les octets R1 sont inchangés.

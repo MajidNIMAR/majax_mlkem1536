@@ -12,8 +12,9 @@ ROM précis, optimisation NTT mesurée et distribution/dossier de revue.
 Le [bilan M09](M09_MOTEUR_CONTRATS_ET_QUALIFICATION.md) conserve le rejet du
 candidat vectorisé et les résultats du candidat scalaire corrigé. Les formats
 R1 sont inchangés ; C01 et l'audit extérieur restent ouverts. La clôture
-du check complet et de la CI est suivie séparément, sans transférer les
-campagnes historiques. Android et Messenger demeurent différés.
+du check complet et de la CI est acquise dans des reçus distincts :
+439 tests Python exécutés par OS, sans test ignoré, CI 43806407492 ; aucun
+temps des campagnes historiques n'est transféré. Android et Messenger demeurent différés.
 
 Le [programme M04](PROGRAMME_AMELIORATION_M04.md) a été exécuté selon
 l'ordre confirmé : trois travaux scientifiques, puis mémoire, NTT,
@@ -53,9 +54,9 @@ pas un candidat final et ne valide aucun jalon encore ouvert.
 | Arithmétique polynomiale de référence | Première brique Rust disponible | Convolution indépendante, lois de l'anneau et signe X^256=−1 |
 | Profil de développement du rang 6 | R1 spécifié comme base d'essai | Domaines/formats propres, sans sélection finale |
 | KeyGen / Encaps / Decaps du rang 6 | Rust et référence Python disponibles | 1000 vecteurs concordants, 10000 échanges frais et rejets appariés |
-| Durcissement et performances | M07 réduit la mémoire observée ; M08 contrôle directement les encodages et sa revue ciblée est scellée ; J4 ouvert | Corpus intégraux inchangés et 210 budgets M08 satisfaits ; ni pile universelle, ni CT ou effacement global prouvés |
+| Durcissement et performances | M09 : contrats d'entropie, propriétaire final du message, NTT scalaire et revue ciblée des quatre images ; J4 ouvert | Corpus R1 inchangés, budgets finaux satisfaits et médianes 13,13–16,82 % plus basses contre M08 ; ni pile universelle, ni CT ou effacement global prouvés |
 | Import de clés | M08 : quatre consommateurs API par défaut, 88576 sondes chacun | Formats/ordre des erreurs conservés ; les sondes ne couvrent pas tous les vecteurs et l'import ne certifie pas l'entropie |
-| Distribution | Deux paquets M08 vérifiés, originaux inventoriés, une répétition par hôte ; gel, check Windows et CI neuve Windows/Ubuntu acquis | Sources et licences ; Linux identique brut, Windows comparé hors timestamp COFF/checksum PE ; aucune reproduction par tiers revendiquée |
+| Distribution | Deux paquets M09 scalaires qualifiés en interne, originaux inventoriés, une répétition par hôte ; gel, check Windows, CI neuve Windows/Ubuntu et copie locale contrôlée acquis | Sources et licences ; Linux identique brut, Windows comparé hors timestamp COFF/checksum PE ; aucune reproduction par tiers revendiquée |
 
 L'oracle générique dans Z_q[X]/(X^256+1) reste distinct du moteur.
 Le cœur R1 emploie depuis [M02](DURCISSEMENT_MOTEUR_M02.md) une convolution

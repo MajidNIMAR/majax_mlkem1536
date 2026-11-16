@@ -1929,3 +1929,56 @@ et licences. Le dossier externe est concret et prêt pour une remise, sans
 contact tiers ni audit déclaré. La publication normale sur GitHub et sa CI
 neuve Windows/Ubuntu constituent la dernière vérification de cette clôture ;
 leurs identifiants et leur résultat seront ajoutés après constat effectif.
+
+## M09 — premier passage public et correction de portabilité d'un test
+
+La première CI publique `43804190038`, sur `987da9e` (source locale
+`0944d34`), est verte sur Windows et Ubuntu. La lecture des journaux révèle
+cependant un test ignoré parmi les 439 collectés : le test négatif de
+distribution attendait une acquisition locale non exportée. Le collecteur
+strict refuse donc de certifier l'exécution complète de la suite.
+`results/publication/r6-m09-initial-001` conserve les réponses API,
+journaux et portée exacte : 438 exécutés et un ignoré par OS.
+
+La correction `d616912` / public `fdd323d` fait lire à ce test la distribution
+rejetée depuis l'archive publique figée. Les sept tests ciblés passent. Le
+code compilé, les images et les données scientifiques ne changent pas :
+37 entrées compilables et 11 inclusions littérales sont identiques entre
+le snapshot qualifié et ces deux commits. Les 2138 blobs et fichiers
+exportés correspondent aux deux cartes de provenance. La nouvelle CI
+`43806407492` est lancée pour exécuter tous les contrôles sur deux machines
+neuves ; son résultat sera consigné séparément après constat.
+
+## M09 — référence publiée et contrôle final
+
+La [CI neuve 43806407492](https://github.com/MajidNIMAR/majax_mlkem1536/actions/runs/43806407492)
+réussit sur Windows et Ubuntu au commit public `fdd323dcf840b0d12fd43a446acffbd0cce83d7b`,
+exporté de la source locale `d616912fddd1e303c171678d0c6690286b570d38`.
+Les **439 tests Python s'exécutent sur chaque OS, aucun n'est ignoré** ;
+Rust par défaut/toutes fonctionnalités, fmt, Clippy strict, certificats et
+rejeux requis passent. Chaque machine exécute les originaux M09 : 16
+échanges/rejets et cinq refus normaux CLI ; 13 cas, un échange/rejet frais
+et 88576 sondes pour le consommateur API par défaut.
+
+Le reçu `results/publication/r6-m09-001` relie les journaux complets et
+réponses API à 2138 blobs Git/fichiers exportés, aux 37 entrées compilables
+du snapshot qualifié et aux empreintes originales. Le lecteur autonome
+figé `r6-m09-controls-001` rejoue ce reçu hors ligne ; ses quatre tests
+purs passent. La première CI verte `43804190038` conserve séparément un
+test ignoré (`r6-m09-initial-001`) ; le collecteur strict l'avait refusée
+pour une revendication de suite complète. La correction Python lit le
+résultat négatif dans l'archive publique ; aucun code compilé, binaire ou
+résultat scientifique ne change entre ces passages.
+
+Après ce succès constaté, l'original Windows M09
+`9eb95fb2cb9a8531a216012b4cff71d6b10d1a7951285d9d3c666f8186002255`
+est copié vers `target/release/kem1536.exe`. Son empreinte reste exacte
+avant/après le profil, 16 échanges/rejets frais et cinq refus normaux,
+conservés dans `results/engine/m09-canonical-001`. Aucune reconstruction,
+nouvelle mesure ou nouvelle campagne n'est attribuée à cette copie.
+
+Les cinq chantiers M09 sont livrés dans le périmètre annoncé. Le moteur
+R1 fonctionne et les améliorations sont mesurées ; **C01 complet, QROM,
+primitives concrètes, temps constant/effacement universels et audit externe
+restent ouverts**. Android et Messenger demeurent différés. Les futurs
+commits de clôture documentaire conservent le code effectivement testé.

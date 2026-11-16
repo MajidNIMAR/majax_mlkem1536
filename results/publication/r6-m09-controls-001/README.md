@@ -1,0 +1,3 @@
+# M09 frozen offline publication reader
+
+This 37-file static local-import closure preserves the tested publisher and its four pure tests. All copied bytes match the exact tested public Git blobs in source-map.json. The copied reader replays results/publication/r6-m09-001 offline and its four tests pass. From the repository root, run `.tools/research-venv/Scripts/python.exe -B results/publication/r6-m09-controls-001/research/m09_publication.py verify --output results/publication/r6-m09-001` (use the corresponding Python path on Linux). Network capture/status from this mini-root are not qualified. This replay runs no engine, compiler, objdump, benchmark or fuzzer and gives no external-audit credit.

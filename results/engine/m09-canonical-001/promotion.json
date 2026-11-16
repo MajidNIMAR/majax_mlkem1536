@@ -1,0 +1,77 @@
+{
+  "schema": "m09-canonical-promotion-v1",
+  "finished_utc": "2026-11-16T05:02:07.435125+00:00",
+  "target": "target/release/kem1536.exe",
+  "previous_sha256": "d3fb7537face2cd4b7e295ec829b6a282a711d005f4535ff99dddce90a98dde1",
+  "original_and_promoted_sha256": "9eb95fb2cb9a8531a216012b4cff71d6b10d1a7951285d9d3c666f8186002255",
+  "source_manifest_sha256": "0829c8112ce771072c63ae07ae5a7f32cc7a06cf91531950047ddd4685cea3eb",
+  "public_tested_commit": "fdd323dcf840b0d12fd43a446acffbd0cce83d7b",
+  "source_commit": "d616912fddd1e303c171678d0c6690286b570d38",
+  "final_CI_run": 43806407492,
+  "original_plan_strengthened": "Require second CI with all439 executed and no skip, not merely first green jobs",
+  "checks": [
+    {
+      "arguments": [
+        "dev-profile"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "5e063e616b21cc97cb76694751444ac09078b9d39c0d142157a18a699277738c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "arguments": [
+        "dev-self-test"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "f833392e8c077fd93267037d899e8eda8623f241e5b050505bc0be219dc4d5b2",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "arguments": [
+        "dev-vectors",
+        "1"
+      ],
+      "exit_code": 1,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "7756eec1ee17c16764107f4a8c02404e40c70f04594483ea0c63d8716db5767e"
+    },
+    {
+      "arguments": [
+        "dev-rejection-vectors"
+      ],
+      "exit_code": 1,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "ca26c0b1f4de0bb7922cb8407fa04f8e4c4d506620b004569fbcfe1ebb2b1388"
+    },
+    {
+      "arguments": [
+        "dev-hardening"
+      ],
+      "exit_code": 1,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "ca26c0b1f4de0bb7922cb8407fa04f8e4c4d506620b004569fbcfe1ebb2b1388"
+    },
+    {
+      "arguments": [
+        "dev-mutations"
+      ],
+      "exit_code": 1,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "ca26c0b1f4de0bb7922cb8407fa04f8e4c4d506620b004569fbcfe1ebb2b1388"
+    },
+    {
+      "arguments": [
+        "dev-timing"
+      ],
+      "exit_code": 1,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "ca26c0b1f4de0bb7922cb8407fa04f8e4c4d506620b004569fbcfe1ebb2b1388"
+    }
+  ],
+  "new_builds": 0,
+  "fresh_round_trips": 16,
+  "implicit_rejections": 16,
+  "new_fuzzing_credit_seconds": 0,
+  "external_audit": false,
+  "global_security_proved": false
+}

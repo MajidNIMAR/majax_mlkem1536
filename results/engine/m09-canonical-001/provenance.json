@@ -1,0 +1,24 @@
+{
+  "schema": "m09-canonical-evidence-v1",
+  "output_sha256": {
+    "original-plan.json": "e0919ac2830960aad5abe81dc88b2ed41774989d3cab94ac1ac7c99d4c2ccb6e",
+    "profile.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "profile.stdout": "5e063e616b21cc97cb76694751444ac09078b9d39c0d142157a18a699277738c",
+    "promotion-controller.py": "22a805184e2a385cc3fdeec27aad13eb27e93c0abc96e30c54fd4cf5b2d00e38",
+    "promotion.json": "6d360edd3000dcce7788b2ea3edbc152705b51a0f8ddfcc7c6924ce36e15af19",
+    "README.md": "a6bb812604e7153544861146ea253447bf3034920964a913cf1b6ca2c64427a4",
+    "refuse-hardening.stderr": "ca26c0b1f4de0bb7922cb8407fa04f8e4c4d506620b004569fbcfe1ebb2b1388",
+    "refuse-hardening.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "refuse-mutations.stderr": "ca26c0b1f4de0bb7922cb8407fa04f8e4c4d506620b004569fbcfe1ebb2b1388",
+    "refuse-mutations.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "refuse-rejections.stderr": "ca26c0b1f4de0bb7922cb8407fa04f8e4c4d506620b004569fbcfe1ebb2b1388",
+    "refuse-rejections.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "refuse-timing.stderr": "ca26c0b1f4de0bb7922cb8407fa04f8e4c4d506620b004569fbcfe1ebb2b1388",
+    "refuse-timing.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "refuse-vectors.stderr": "7756eec1ee17c16764107f4a8c02404e40c70f04594483ea0c63d8716db5767e",
+    "refuse-vectors.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "self-test.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "self-test.stdout": "f833392e8c077fd93267037d899e8eda8623f241e5b050505bc0be219dc4d5b2"
+  },
+  "script_sha256": "22a805184e2a385cc3fdeec27aad13eb27e93c0abc96e30c54fd4cf5b2d00e38"
+}

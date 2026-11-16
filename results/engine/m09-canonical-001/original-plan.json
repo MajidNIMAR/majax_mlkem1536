@@ -1,0 +1,10 @@
+{
+  "target": "target/release/kem1536.exe",
+  "previous_sha256": "d3fb7537face2cd4b7e295ec829b6a282a711d005f4535ff99dddce90a98dde1",
+  "original_M09_sha256": "9eb95fb2cb9a8531a216012b4cff71d6b10d1a7951285d9d3c666f8186002255",
+  "original_path": "artifacts/generated/m09-final-002/windows/bin/delivered.exe",
+  "requires_successful_CI_run": 43804190038,
+  "public_tested_commit": "987da9e737fa5723aa2f19ad5f2f9e1436f51278",
+  "source_manifest_sha256": "0829c8112ce771072c63ae07ae5a7f32cc7a06cf91531950047ddd4685cea3eb",
+  "copied": false
+}

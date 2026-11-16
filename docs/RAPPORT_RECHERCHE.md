@@ -15,6 +15,15 @@ spécifiés et test combinant secret non canonique/hash incohérent déjà prés
 Le test Rust et les 13 cas du consommateur Windows sont revérifiés avec
 succès ; aucune propriété Android ni modification de R1 n'en découle.
 
+**M09 livré et publié — contrats, cycle secret et NTT scalaire.** Les cinq
+chantiers sont réalisés et leur [bilan](M09_MOTEUR_CONTRATS_ET_QUALIFICATION.md)
+consigne les gains médians de 13,13 à 16,82 % contre M08 sur les deux OS,
+les contrôles de correction et la revue ciblée des quatre images. La CI
+43806407492 passe avec 439 tests Python exécutés par OS, sans test ignoré,
+et les originaux CLI/API. Le rapport conserve ci-dessous les étapes, le
+rejet du premier candidat et les limites C01/audit ; la clôture publique
+est détaillée en fin de document.
+
 **M08 livré et publié — import direct des clés et validation élargie.** Le
 [protocole M08](PROTOCOLE_M08_IMPORTS.md) est fixé avant modification du
 moteur : référence M07, contrôle direct des encodages, consommateur API
@@ -895,7 +904,7 @@ corpus de fuzz n'est revendiqué.
 Le sous-lemme ROM classique et la veille primaire de [SECURITE_M09](SECURITE_M09.md)
 progressent sans fermer C01/QROM/Keccak concret. Deux paquets qualifiés en
 interne et leurs répétitions sont disponibles ; les contrôles complets,
-le gel principal et la CI neuve poursuivent la clôture. Le dossier externe
+le gel principal et la CI neuve sont clos. Le dossier externe
 est préparé ; aucun audit par un tiers ou déploiement Android/Messenger.
 
 
@@ -920,6 +929,39 @@ et la suite entière de 439 tests Python passent. Ce suivi distinct est dans
 
 Les deux paquets originaux sont qualifiés en interne, avec sources compactes
 et licences. Le dossier externe est concret et prêt pour une remise, sans
-contact tiers ni audit déclaré. La publication normale sur GitHub et sa CI
-neuve Windows/Ubuntu constituent la dernière vérification de cette clôture ;
-leurs identifiants et leur résultat seront ajoutés après constat effectif.
+contact tiers ni audit déclaré. La publication et la CI sont maintenant
+closes dans leur périmètre d'intégration, détaillé ci-dessous.
+
+## M09 — référence publiée et contrôle final
+
+La [CI neuve 43806407492](https://github.com/MajidNIMAR/majax_mlkem1536/actions/runs/43806407492)
+réussit sur Windows et Ubuntu au commit public `fdd323dcf840b0d12fd43a446acffbd0cce83d7b`,
+exporté de la source locale `d616912fddd1e303c171678d0c6690286b570d38`.
+Les **439 tests Python s'exécutent sur chaque OS, aucun n'est ignoré** ;
+Rust par défaut/toutes fonctionnalités, fmt, Clippy strict, certificats et
+rejeux requis passent. Chaque machine exécute les originaux M09 : 16
+échanges/rejets et cinq refus normaux CLI ; 13 cas, un échange/rejet frais
+et 88576 sondes pour le consommateur API par défaut.
+
+Le reçu `results/publication/r6-m09-001` relie les journaux complets et
+réponses API à 2138 blobs Git/fichiers exportés, aux 37 entrées compilables
+du snapshot qualifié et aux empreintes originales. Le lecteur autonome
+figé `r6-m09-controls-001` rejoue ce reçu hors ligne ; ses quatre tests
+purs passent. La première CI verte `43804190038` conserve séparément un
+test ignoré (`r6-m09-initial-001`) ; le collecteur strict l'avait refusée
+pour une revendication de suite complète. La correction Python lit le
+résultat négatif dans l'archive publique ; aucun code compilé, binaire ou
+résultat scientifique ne change entre ces passages.
+
+Après ce succès constaté, l'original Windows M09
+`9eb95fb2cb9a8531a216012b4cff71d6b10d1a7951285d9d3c666f8186002255`
+est copié vers `target/release/kem1536.exe`. Son empreinte reste exacte
+avant/après le profil, 16 échanges/rejets frais et cinq refus normaux,
+conservés dans `results/engine/m09-canonical-001`. Aucune reconstruction,
+nouvelle mesure ou nouvelle campagne n'est attribuée à cette copie.
+
+Les cinq chantiers M09 sont livrés dans le périmètre annoncé. Le moteur
+R1 fonctionne et les améliorations sont mesurées ; **C01 complet, QROM,
+primitives concrètes, temps constant/effacement universels et audit externe
+restent ouverts**. Android et Messenger demeurent différés. Les futurs
+commits de clôture documentaire conservent le code effectivement testé.

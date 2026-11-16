@@ -9,13 +9,23 @@ formal constant-time guarantee or production-security claim is made.
 
 ## Current assurance boundary
 
-The internally qualified current candidate is M09. It preserves R1 bytes,
+The current delivered engine reference is M09, qualified internally. It preserves R1 bytes,
 uses fixed-size borrowed noise roles and tests operation-level failures
 after every partial entropy prefix. Decapsulation writes its recovered
 message into its final zeroizing owner. A scalar public-twiddle NTT improves
 the recorded PC KEM medians with no increase in observed KEM stack maxima
 or requested allocation counts. The [M09 study](docs/M09_MOTEUR_CONTRATS_ET_QUALIFICATION.md)
-gives the finite scope, costs and pending full-check/hosted-CI closure.
+gives the finite scope and costs. The [complete local check](results/engine/m09-verification-001/)
+is closed with 438 Python tests plus Rust/formatting/Clippy and evidence
+replays. The [storage-reader follow-up](results/engine/m09-reader-review-001/)
+passes the 439-test Python suite without changing the 37 qualified
+compilation inputs. [Fresh hosted run 43806407492](https://github.com/MajidNIMAR/majax_mlkem1536/actions/runs/43806407492)
+passes on Windows and Ubuntu at `fdd323dcf840b0d12fd43a446acffbd0cce83d7b`,
+with all 439 Python tests executed per OS and none skipped. The
+[publication receipt](results/publication/r6-m09-001/) binds the exact
+source maps, compiled inputs and original CLI/consumer images. The original
+Windows CLI is [promoted locally and checked after copying](results/engine/m09-canonical-001/).
+This closure grants no new cryptographic, constant-time or global-erasure assurance.
 
 The first M09 vectorized candidate is rejected: a Windows ABI save copied
 16 bytes derived from e2+Encode(m) outside its wiping owner. The four final
@@ -31,8 +41,8 @@ qualifies removal of the targeted decoded-coefficient stack copies on the
 examined invalid-secret paths of the default-feature API consumers.
 This finding is specific to the preserved images and paths.
 
-Published M08 image reviews cover GNU x86-64 Windows and Linux/WSL.
-Android/ARM is not qualified by those results. Arithmetic instruction timing
+M09's four-image review and the historical M08 image reviews cover GNU
+x86-64 Windows and Linux/WSL. Android/ARM is not qualified by those results. Arithmetic instruction timing
 and secret-copy behavior require the actual target ABI, compiler/link flags
 and CPU to be examined. The [target and contract review](docs/REVUE_CRITIQUE_M08_CIBLES_ET_CONTRATS.md)
 records this boundary, the already specified noise domains and the combined
