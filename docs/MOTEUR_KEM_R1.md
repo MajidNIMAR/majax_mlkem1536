@@ -237,3 +237,15 @@ instrumentées du cœur ; 3156 requêtes déterministes concordent avec Python.
 Les deux paquets M08 livrent les originaux inventoriés après comparaison
 d'une répétition par hôte. Les paquets M07 gardent leurs
 exécutables et leur portée historiques.
+
+
+## Réalisation M09
+
+Les API publiques et formats R1 restent compatibles. Le moteur utilise
+les vues internes de graines à rôle/taille fixes, un remplissage d'entropie
+qui propage et efface les échecs partiels avant calcul, un message décapsulé
+écrit dans son propriétaire final et une NTT scalaire à tables publiques.
+Le [bilan M09](M09_MOTEUR_CONTRATS_ET_QUALIFICATION.md) donne mesures, rejet
+de la première vectorisation, correction ciblée, paquets et preuves.
+Le moteur fonctionne sur les PC qualifiés ; C01 et l'audit extérieur restent
+ouverts. Les images Android/Messenger ne sont pas incluses dans ce périmètre.

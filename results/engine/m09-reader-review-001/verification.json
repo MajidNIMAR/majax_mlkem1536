@@ -1,0 +1,35 @@
+{
+  "schema": "m09-storage-reader-followup-v1",
+  "command": [
+    "C:\\Users\\majax\\Documents\\Codex\\NIST\\.tools\\research-venv\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "research",
+    "-p",
+    "test_*.py"
+  ],
+  "exit_code": 0,
+  "started_utc": "2026-11-16T04:10:33.262606+00:00",
+  "finished_utc": "2026-11-16T04:11:08.310456+00:00",
+  "reason": "Verify declared parts directly even when a correct full archive is also present",
+  "full_local_check_preceded_this_storage_only_change": true,
+  "full_local_check_python_tests": 438,
+  "source_before_sha256": {
+    "research/m09_chunks.py": "edc056bd5c2b15ed6ff70f448fec4423402359200131d8adcf7879ec048a7f65",
+    "research/test_m09_chunks.py": "7e0ee0c90c59b89003bab06ed33e579d7d95e8792da90478b99ef9251c193293"
+  },
+  "source_after_sha256": {
+    "research/m09_chunks.py": "204f856ab7f44bf65f5f8ee1038d6f0fb8d4a3c2d488044f31487886d151d530",
+    "research/test_m09_chunks.py": "ec33b8812583c31c19a34ec9bb0d754ba90cab030fb0ebedf4541a7adcb1778f"
+  },
+  "qualified_compilation_inputs_unchanged": 37,
+  "engine_provenance_sha256": "0e785d177c8814d4cf0ae04696049dbe3d273620ed1d4a57c4bfb4819e064397",
+  "prior_chunk_controls_sha256": "ba0ed54d763bfae60064c4acce0d7586b804e28df8596fd3032cb709881d5112",
+  "new_engine_builds": 0,
+  "new_acquisitions": 0,
+  "new_native_tests": false,
+  "test_log_sha256": "6c555941f23fc21ed94168b7e3b881ce78ccca301f2eac172ca937e9fc852147"
+}

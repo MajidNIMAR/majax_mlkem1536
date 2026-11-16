@@ -2,7 +2,8 @@
 use std::ops::{Deref, DerefMut};
 use zeroize::Zeroize;
 
-#[derive(Clone)]
+// Deliberately not Clone: duplicating a private owner must be an explicit,
+// reviewed operation. Public ciphertexts implement their own copy operation.
 pub(crate) struct SecretBox<const N: usize>(Box<[u8; N]>);
 impl<const N: usize> SecretBox<N> {
     pub(crate) fn zero() -> Self {

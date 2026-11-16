@@ -132,9 +132,10 @@ pub fn mutations() -> impl Iterator<Item = Mutation> {
         let c = Ciphertext::from_bytes(&raw).unwrap();
         let secret = decapsulate(&dk, &c);
         // Independent acceptance tracing stays inside this synthetic research build.
-        let message = pke_decrypt(&dk.0[..VECTOR_BYTES], &c);
+        let mut message = Zeroizing::new([0; 32]);
+        pke_decrypt_into(&dk.0[..VECTOR_BYTES], &c, &mut message);
         let coins = derive(b"G\0", &[&message[..], &hash_public(ek.as_bytes())]);
-        let expected = pke_encrypt(&ek, &message, &coins[32..]);
+        let expected = pke_encrypt(&ek, &message, &EncryptionCoins(seed_tail(&coins)));
         let accepted = expected.as_bytes() == c.as_bytes();
         if !accepted {
             assert_eq!(

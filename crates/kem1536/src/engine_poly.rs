@@ -37,19 +37,29 @@ const fn public_powers(root: u16, scale: u16) -> [u16; N] {
     }
     values
 }
-const fn stage_roots(root: u16) -> [u16; 8] {
-    let mut roots = [0; 8];
+const fn stage_twiddles(root: u16) -> [u16; N - 1] {
+    let mut twiddles = [0; N - 1];
     let mut stage = 0;
-    while stage < roots.len() {
-        roots[stage] = public_power(root, N >> (stage + 1));
+    while stage < 8 {
+        let half = 1 << stage;
+        let stage_root = public_power(root, N >> (stage + 1));
+        let mut value = 1;
+        let mut offset = 0;
+        while offset < half {
+            twiddles[half - 1 + offset] = value;
+            value = (value as u32 * stage_root as u32 % Q as u32) as u16;
+            offset += 1;
+        }
         stage += 1;
     }
-    roots
+    twiddles
 }
 const TWIST: [u16; N] = public_powers(PSI, 1);
 const UNTWIST_SCALED: [u16; N] = public_powers(PSI_INVERSE, N_INVERSE);
-const FORWARD_ROOTS: [u16; 8] = stage_roots(OMEGA);
-const INVERSE_ROOTS: [u16; 8] = stage_roots(OMEGA_INVERSE);
+// Public compile-time tables: 255 entries per direction, 1020 bytes total.
+// Entry half-1+offset is root^(offset*N/(2*half)) modulo Q.
+const FORWARD_TWIDDLES: [u16; N - 1] = stage_twiddles(OMEGA);
+const INVERSE_TWIDDLES: [u16; N - 1] = stage_twiddles(OMEGA_INVERSE);
 
 #[cfg(test)]
 std::thread_local! {
@@ -102,7 +112,7 @@ fn product(a: u16, b: u16) -> u16 {
 /// In-place cyclic radix-2 DIT, unnormalised in either direction.
 /// All permutations, table addresses and loop bounds are public.
 #[inline(never)]
-fn transform(values: &mut [u16; N], roots: &[u16; 8]) {
+fn transform(values: &mut [u16; N], twiddles: &[u16; N - 1]) {
     #[cfg(test)]
     TRANSFORM_CALLS.with(|calls| calls.set(calls.get() + 1));
     for i in 0..N {
@@ -111,19 +121,22 @@ fn transform(values: &mut [u16; N], roots: &[u16; 8]) {
             values.swap(i, j);
         }
     }
-    for (stage, &root) in roots.iter().enumerate() {
+    for stage in 0..8 {
         let length = 2 << stage;
         let half = length >> 1;
+        let stage_twiddles = &twiddles[half - 1..length - 1];
         let mut start = 0;
         while start < N {
-            let mut twiddle = 1;
-            for offset in 0..half {
+            for (offset, &twiddle) in stage_twiddles.iter().enumerate() {
                 let low = values[start + offset];
-                let high = product(values[start + offset + half], twiddle);
+                // Public-only optimisation barrier: the vectorised M09 variant
+                // introduced secret-bearing Windows callee-save XMM spills.
+                // This choice is qualified on the captured target images;
+                // black_box alone is not a universal machine-code guarantee.
+                let high = product(values[start + offset + half], std::hint::black_box(twiddle));
                 values[start + offset] = reduce_once(u32::from(low) + u32::from(high));
                 values[start + offset + half] =
                     reduce_once(u32::from(low) + u32::from(Q) - u32::from(high));
-                twiddle = product(twiddle, root);
             }
             start += length;
         }
@@ -179,7 +192,7 @@ impl Polynomial {
         for (i, &twist) in TWIST.iter().enumerate() {
             out.values[i] = product(self.coefficients[i], twist);
         }
-        transform(&mut out.values, &FORWARD_ROOTS);
+        transform(&mut out.values, &FORWARD_TWIDDLES);
     }
 
     /// Write into a caller-owned result, avoiding a secret Polynomial return.
@@ -194,12 +207,12 @@ impl Polynomial {
             left[i] = product(self.coefficients[i], TWIST[i]);
             right[i] = product(other.coefficients[i], TWIST[i]);
         }
-        transform(&mut left, &FORWARD_ROOTS);
-        transform(&mut right, &FORWARD_ROOTS);
+        transform(&mut left, &FORWARD_TWIDDLES);
+        transform(&mut right, &FORWARD_TWIDDLES);
         for i in 0..N {
             left[i] = product(left[i], right[i]);
         }
-        transform(&mut left, &INVERSE_ROOTS);
+        transform(&mut left, &INVERSE_TWIDDLES);
         for i in 0..N {
             // The inverse normalisation and untwist are precombined modulo Q.
             out.coefficients[i] = product(left[i], UNTWIST_SCALED[i]);
@@ -240,7 +253,7 @@ impl NttPolynomial {
     #[inline(never)]
     pub(crate) fn inverse_into(&self, out: &mut Polynomial) {
         out.coefficients.copy_from_slice(&self.values[..]);
-        transform(&mut out.coefficients, &INVERSE_ROOTS);
+        transform(&mut out.coefficients, &INVERSE_TWIDDLES);
         for (value, &untwist) in out.coefficients.iter_mut().zip(&UNTWIST_SCALED) {
             *value = product(*value, untwist);
         }
@@ -251,6 +264,24 @@ impl NttPolynomial {
 mod tests {
     use super::*;
     use crate::reference_ring::ReferencePolynomial;
+
+    #[test]
+    fn public_twiddles_match_independent_exponents() {
+        for (root, table) in [(OMEGA, FORWARD_TWIDDLES), (OMEGA_INVERSE, INVERSE_TWIDDLES)] {
+            for stage in 0..8 {
+                let half = 1 << stage;
+                for offset in 0..half {
+                    let exponent = offset * N / (2 * half);
+                    // Repeated multiplication, independent of the staged recurrence.
+                    let mut expected = 1_u32;
+                    for _ in 0..exponent {
+                        expected = expected * u32::from(root) % u32::from(Q);
+                    }
+                    assert_eq!(table[half - 1 + offset], expected as u16);
+                }
+            }
+        }
+    }
 
     #[test]
     fn reciprocal_reduction_and_quotient_boundaries() {
@@ -307,9 +338,9 @@ mod tests {
             let initial =
                 std::array::from_fn(|i| ((i * i * 73 + i * 19 + case * 3571) % Q as usize) as u16);
             let mut values = initial;
-            transform(&mut values, &FORWARD_ROOTS);
+            transform(&mut values, &FORWARD_TWIDDLES);
             assert!(values.iter().all(|&x| x < Q));
-            transform(&mut values, &INVERSE_ROOTS);
+            transform(&mut values, &INVERSE_TWIDDLES);
             for value in &mut values {
                 *value = product(*value, N_INVERSE);
             }

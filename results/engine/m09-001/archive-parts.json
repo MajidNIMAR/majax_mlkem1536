@@ -1,0 +1,24 @@
+{
+  "schema": "m09-byte-identical-parts-v1",
+  "engine_provenance_sha256": "0e785d177c8814d4cf0ae04696049dbe3d273620ed1d4a57c4bfb4819e064397",
+  "part_limit_bytes": 94371840,
+  "archives": {
+    "rejected.tar.gz": {
+      "bytes": 138098991,
+      "sha256": "fc57303cf414fa28beb86d79398943f2a2808cd531a7825b63d011793a1a2a86",
+      "parts": [
+        {
+          "name": "rejected.tar.gz.part-001",
+          "bytes": 94371840,
+          "sha256": "eadcf5f07fadb62eda6816eff6f0e185e8c5ddb4f46d82592c95782bbbaae3fd"
+        },
+        {
+          "name": "rejected.tar.gz.part-002",
+          "bytes": 43727151,
+          "sha256": "5b1489546598c93914bd9dede68ba1dd9b7e72b3a829418e9a8a19500539f390"
+        }
+      ]
+    }
+  },
+  "new_acquisitions": 0
+}

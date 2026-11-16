@@ -1,0 +1,17 @@
+{
+  "schema": "m09-local-check-receipt-v1",
+  "engine_provenance_sha256": "0e785d177c8814d4cf0ae04696049dbe3d273620ed1d4a57c4bfb4819e064397",
+  "output_sha256": {
+    "engine-provenance.json": "0e785d177c8814d4cf0ae04696049dbe3d273620ed1d4a57c4bfb4819e064397",
+    "full-check.log": "64d14d136a6c62568bea20288b2a59befb11868308919c674e48d72405f31330",
+    "inputs-before.json": "e9bb068235d3bde1821092449768144764be900a2d960b378701eb06f5f1264c",
+    "qualified-source.json": "0829c8112ce771072c63ae07ae5a7f32cc7a06cf91531950047ddd4685cea3eb",
+    "README.md": "73d79c8c4d8dd315e37fea1bb317bb11eee047bb1684bc83fa183a760aa97994",
+    "receipt.json": "22121eda3cfaa6afee6980d2428d219d8461ced2c1a7c3257f780395319ac2c4",
+    "verification.json": "8fa4ed8d4de0760b129823da9f6bd31efd9d909ffd32510329af03b90caadd35",
+    "controls/research/run_m09_check.py": "2b77c228f320eef2a8fc0e616ae0c43efb211c931c238babb48dfd0fa5564da4",
+    "controls/scripts/dev.ps1": "5f9398b7bd0cf023b7670c914af98e0a050a74548cc30f4ca581146c78c34180",
+    "controls/scripts/dev.sh": "68789a6054f145e480a9f413a85829ce4199e933aa44941e7ee0b0e55d14fc0e",
+    "controls/.github/workflows/ci.yml": "f4267bbcec8d4982bdd00e6a398676eaa1ec195273f045a6db407284d90c8141"
+  }
+}

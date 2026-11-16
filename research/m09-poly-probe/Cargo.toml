@@ -1,0 +1,17 @@
+[workspace]
+
+[package]
+name = "m09-poly-probe"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+zeroize = "=1.9.1"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[profile.release]
+debug = 1
+

@@ -1,0 +1,233 @@
+{
+  "advantage": "absolute CPA bias |Pr[win]-1/2|; difference between games <= bad-event probability",
+  "all_auxiliary_oracles_independent_of_hidden_labels_in_fresh_game": true,
+  "complete_C01_closed": false,
+  "finite_checks": {
+    "all_equal": true,
+    "alphabets": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "count_panels": 380,
+    "enumerated_label_triples": 153512,
+    "scope": "counting the bad event, not enumerating R1 or general adversaries"
+  },
+  "fixed_sampler_support_diagnostic": {
+    "coefficients": 3072,
+    "complement_upper_recipe": "2^256*(5/16)^3072",
+    "distance_lower_exceeds_one_minus_2_pow_minus_4898": true,
+    "efficient_distinguisher_constructed": false,
+    "maximum_cbd3_mass": "5/16",
+    "polynomials": 12
+  },
+  "formula": "1-(1-min(q_KG,M)/M)*(M-min(q_N,M))*(M-min(q_N,M)-1)/M^2; M=2^256",
+  "fresh_pke": "same rho-seeded public matrix and compression; independent ideal CBD(3) noise",
+  "hybrid_only_symmetric_query_limits": [
+    {
+      "coefficient": 6,
+      "cpa_reduction_query_limit": 18904575940052136859076367079542678413,
+      "other_terms_budgeted": false,
+      "target_bias": {
+        "denominator": "340282366920938463463374607431768211456",
+        "numerator": "1"
+      }
+    },
+    {
+      "coefficient": 6,
+      "cpa_reduction_query_limit": 1024819115206086200,
+      "other_terms_budgeted": false,
+      "target_bias": {
+        "denominator": "6277101735386680763835789423207666416102355444464034512896",
+        "numerator": "1"
+      }
+    },
+    {
+      "coefficient": 6,
+      "cpa_reduction_query_limit": 238609293,
+      "other_terms_budgeted": false,
+      "target_bias": {
+        "denominator": "26959946667150639794667015087019630673637144422540572481103610249216",
+        "numerator": "1"
+      }
+    },
+    {
+      "coefficient": 6,
+      "cpa_reduction_query_limit": null,
+      "other_terms_budgeted": false,
+      "target_bias": {
+        "denominator": "115792089237316195423570985008687907853269984665640564039457584007913129639936",
+        "numerator": "1"
+      }
+    }
+  ],
+  "ideal_KG_and_N_independent": true,
+  "kg_bytes": 64,
+  "labels_unrevealed": true,
+  "noise_bytes": 4800,
+  "noise_output_count": 25,
+  "one_classical_pke_challenge": true,
+  "oracle_work": "lazy public tables plus at most 25 192-byte N outputs and one 64-byte KG output in coupling",
+  "panels": [
+    {
+      "distinct_kg_inputs_upper": 0,
+      "distinct_noise_seed_labels_upper": 0,
+      "hybrid_gap": {
+        "denominator": "115792089237316195423570985008687907853269984665640564039457584007913129639936",
+        "numerator": "1"
+      },
+      "query_exponent": null,
+      "six_times_hybrid_gap": {
+        "denominator": "57896044618658097711785492504343953926634992332820282019728792003956564819968",
+        "numerator": "3"
+      },
+      "union_upper": {
+        "denominator": "115792089237316195423570985008687907853269984665640564039457584007913129639936",
+        "numerator": "1"
+      }
+    },
+    {
+      "distinct_kg_inputs_upper": 4294967296,
+      "distinct_noise_seed_labels_upper": 4294967296,
+      "hybrid_gap": {
+        "denominator": "84162174424773976115855838126082058648805436845170781751972494449099714468753293153818664580441415219631727501698851483408310916002940861810045036330430093599283578738055113571066620126149163476340692027772502016",
+        "numerator": "9365245651674815418440398579928822725133798962348554813264788939157258039372170279994711218282051566439510509709638194311646651074413515233034241"
+      },
+      "query_exponent": 32,
+      "six_times_hybrid_gap": {
+        "denominator": "42081087212386988057927919063041029324402718422585390875986247224549857234376646576909332290220707609815863750849425741704155458001470430905022518165215046799641789369027556785533310063074581738170346013886251008",
+        "numerator": "28095736955024446255321195739786468175401396887045664439794366817471774118116510839984133654846154699318531529128914582934939953223240545699102723"
+      },
+      "union_upper": {
+        "denominator": "115792089237316195423570985008687907853269984665640564039457584007913129639936",
+        "numerator": "12884901889"
+      }
+    },
+    {
+      "distinct_kg_inputs_upper": 18446744073709551616,
+      "distinct_noise_seed_labels_upper": 18446744073709551616,
+      "hybrid_gap": {
+        "denominator": "4562440617622195218641171605700291324893228507248559930579192517899275167208677386505912811317371399778642309573594407310688704721375437998252661319722214188251994674360264950082874192246603776",
+        "numerator": "2180516172886820671687373429860408082273203122162097794649202960544671362421858796224322036827700425760858494048732890425241839127756801"
+      },
+      "query_exponent": 64,
+      "six_times_hybrid_gap": {
+        "denominator": "2281220308811097609320585802850145662446614253624279965289596258949637583604338693252956405658685699889321154786797203655344352360687718999126330659861107094125997337180132475041437096123301888",
+        "numerator": "6541548518660462015062120289581224246819609366486293383947608881634014087265576388672966110483101277282575482146198671275725517383270403"
+      },
+      "union_upper": {
+        "denominator": "115792089237316195423570985008687907853269984665640564039457584007913129639936",
+        "numerator": "55340232221128654849"
+      }
+    },
+    {
+      "distinct_kg_inputs_upper": 79228162514264337593543950336,
+      "distinct_noise_seed_labels_upper": 79228162514264337593543950336,
+      "hybrid_gap": {
+        "denominator": "247330401473104534060502521019647190035131349101211839914063056092897225106531867170316401061243044989597671426016139339351365034306751209967546155101893167916606772148699136",
+        "numerator": "507690984030910923995070956571304145624135706598615621849067878299075639236814779636857883465690308655109400331515443554549761"
+      },
+      "query_exponent": 96,
+      "six_times_hybrid_gap": {
+        "denominator": "123665200736552267030251260509823595017565674550605919957031528046448612553265933585158200530621522494798835713008069669675682517153375604983773077550946583958303386074349568",
+        "numerator": "1523072952092732771985212869713912436872407119795846865547203634897226917710444338910573650397070925965328200994546330663649283"
+      },
+      "union_upper": {
+        "denominator": "115792089237316195423570985008687907853269984665640564039457584007913129639936",
+        "numerator": "237684487542793012780631851009"
+      }
+    },
+    {
+      "distinct_kg_inputs_upper": 340282366920938463463374607431768211456,
+      "distinct_noise_seed_labels_upper": 340282366920938463463374607431768211456,
+      "hybrid_gap": {
+        "denominator": "13407807929942597099574024998205846127479365820592393377723561443721764030073546976801874298166903427690031858186486050853753882811946569946433649006084096",
+        "numerator": "118206018589183437636837120300430841415007633632921707612997738242719789498784751582544596698112368379796625943429121"
+      },
+      "query_exponent": 128,
+      "six_times_hybrid_gap": {
+        "denominator": "6703903964971298549787012499102923063739682910296196688861780721860882015036773488400937149083451713845015929093243025426876941405973284973216824503042048",
+        "numerator": "354618055767550312910511360901292524245022900898765122838993214728159368496354254747633790094337105139389877830287363"
+      },
+      "union_upper": {
+        "denominator": "115792089237316195423570985008687907853269984665640564039457584007913129639936",
+        "numerator": "1020847100762815390390123822295304634369"
+      }
+    },
+    {
+      "distinct_kg_inputs_upper": 6277101735386680763835789423207666416102355444464034512896,
+      "distinct_noise_seed_labels_upper": 6277101735386680763835789423207666416102355444464034512896,
+      "hybrid_gap": {
+        "denominator": "39402006196394479212279040100143613805079739270465446667948293404245721771497210611414266254884915640806627990306816",
+        "numerator": "6407961107762730246837688850796707757543677713779281267045490941259866090103077734608895255511041"
+      },
+      "query_exponent": 192,
+      "six_times_hybrid_gap": {
+        "denominator": "19701003098197239606139520050071806902539869635232723333974146702122860885748605305707133127442457820403313995153408",
+        "numerator": "19223883323288190740513066552390123272631033141337843801136472823779598270309233203826685766533123"
+      },
+      "union_upper": {
+        "denominator": "115792089237316195423570985008687907853269984665640564039457584007913129639936",
+        "numerator": "18831305206160042291507368269622999248307066333392103538689"
+      }
+    },
+    {
+      "distinct_kg_inputs_upper": 115792089237316195423570985008687907853269984665640564039457584007913129639936,
+      "distinct_noise_seed_labels_upper": 115792089237316195423570985008687907853269984665640564039457584007913129639936,
+      "hybrid_gap": {
+        "denominator": "1",
+        "numerator": "1"
+      },
+      "query_exponent": 256,
+      "six_times_hybrid_gap": {
+        "denominator": "1",
+        "numerator": "6"
+      },
+      "union_upper": {
+        "denominator": "1",
+        "numerator": "1"
+      }
+    },
+    {
+      "distinct_kg_inputs_upper": 2037035976334486086268445688409378161051468393665936250636140449354381299763336706183397376,
+      "distinct_noise_seed_labels_upper": 2037035976334486086268445688409378161051468393665936250636140449354381299763336706183397376,
+      "hybrid_gap": {
+        "denominator": "1",
+        "numerator": "1"
+      },
+      "query_exponent": 300,
+      "six_times_hybrid_gap": {
+        "denominator": "1",
+        "numerator": "6"
+      },
+      "union_upper": {
+        "denominator": "1",
+        "numerator": "1"
+      }
+    }
+  ],
+  "profile": "KEM1536-DEV-Q7681-R1",
+  "quantum_bound_provided": false,
+  "queries_are_of_pke_reduction_not_original_cca_adversary": true,
+  "remaining": [
+    "fresh-CBD PKE with rho-seeded public matrix CPA advantage and resources",
+    "classical CPA reduction query/resource map inside full FO proof",
+    "QROM seeded-PKE OW advantage and quantum hidden-point argument",
+    "replacement of all ideal oracles by concrete Keccak",
+    "independent review of the whole proof and final normalization constants"
+  ],
+  "schema": "m09-r1-classical-hidden-noise-v1",
+  "seed_bits": 256,
+  "source_contract": {
+    "literal_anchors": 12,
+    "new_implementation_certified": false,
+    "scope": "M08 baseline byte contract; a later realization needs its own bridge",
+    "sha256": "b39c2fdfcdd7c22634162a2c451213a6c4309b27524a82069f37903653e12334"
+  },
+  "study_date": "2026-11-16"
+}

@@ -1,0 +1,10 @@
+{
+  "schema": "m09-local-full-check-v1",
+  "exit_code": 0,
+  "qualified_compilation_inputs": 31,
+  "source_and_control_input_count": 279,
+  "source_and_controls_unchanged": true,
+  "python_tests": 438,
+  "fresh_long_fuzz_credit": 0,
+  "external_audit": false
+}

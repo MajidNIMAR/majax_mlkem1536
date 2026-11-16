@@ -15,14 +15,59 @@ evidence needed to examine its evolution.
 [Specification](docs/SPECIFICATION_DEV_Q7681_R1.md) ·
 [Engine and API guide](docs/MOTEUR_KEM_R1.md) ·
 [Research report](docs/RAPPORT_RECHERCHE.md) ·
+[M09 engine and qualification](docs/M09_MOTEUR_CONTRATS_ET_QUALIFICATION.md) ·
 [M08 import study and delivery](docs/M08_IMPORTS_ET_VALIDATION.md) ·
 [M07 memory and delivery study](docs/M07_MEMOIRE_ET_VALIDATION.md)
 
 [![Main-branch checks](https://github.com/MajidNIMAR/majax_mlkem1536/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/MajidNIMAR/majax_mlkem1536/actions/workflows/ci.yml)
 
-## Latest verified results — M08
+## Latest verified results — M09
 
-**M08 is the current delivered engineering milestone.** The Rust engine
+**M09 is the internally qualified engine candidate.** It adds fixed-size
+borrowed noise roles, operation-level partial-entropy failure checks, direct
+message ownership and a scalar NTT with public precomputed twiddles. R1
+formats, domains and outputs are unchanged. The final M08 → M09 comparison
+contains **40,000 latency observations** across five alternating series:
+
+| Operation | Windows median µs | Linux/WSL median µs |
+|---|---:|---:|
+| KeyGen | 488.800 → **419.500** (14.18% lower) | 501.062 → **435.257** (13.13% lower) |
+| Encaps | 537.750 → **458.900** (14.66% lower) | 553.481 → **475.742** (14.05% lower) |
+| Valid Decaps | 663.700 → **564.800** (14.90% lower) | 678.690 → **581.109** (14.38% lower) |
+| Rejected Decaps | 662.100 → **564.400** (14.76% lower) | 697.092 → **579.844** (16.82% lower) |
+
+All predefined final KEM latency and observed-memory budgets pass. The
+memory panel retains 216 reference observations and adds 216 candidate
+observations; KEM touched-stack maxima and requested allocation counters
+do not increase. Tables cost 1,020 public bytes and the reviewed transform
+frame grows by 16 bytes; these are different memory metrics.
+
+The first vectorized candidate was **rejected for delivery** after a
+confirmed Windows ABI secret-copy finding. The corrected scalar candidate
+has its own four-image review; removal of that mechanism is bounded to
+those images and functions. `black_box` supplies no cryptographic guarantee.
+
+Each host replays 1,000 full vectors, 10,000 rejections, 10,000 independently
+checked mutations and 20,000 format inputs; its default-feature consumer
+checks 88,576 finite import probes. The new ASan/std-rebuilt-image smoke
+records **194.64 CPU seconds**, four post-INIT budgets and no observed defect.
+It does not supply new LLVM source coverage or independent replay of its
+harvested fuzz corpus. A separate 32,000-observation timing diagnostic has
+zero threshold crossings, without proving constant time.
+
+The [M09 study](docs/M09_MOTEUR_CONTRATS_ET_QUALIFICATION.md) preserves the
+negative result, corrected images, raw measurements and acquisition/replay
+incidents. The [classical ROM seeded-noise sub-lemma](docs/SECURITE_M09.md)
+advances a specific security obligation; **C01, QROM and concrete-primitive
+security remain open**. [Independent review is prepared](docs/REVUE_EXTERNE_M09.md),
+with no external audit claimed. Full-check and fresh hosted-CI closure are
+recorded separately from the scientific acquisitions.
+
+<a id="latest-verified-results--m08"></a>
+
+## Historical delivered results — M08
+
+**M08 remains the immutable previous delivered milestone.** The Rust engine
 implements KeyGen, Encaps, Decaps and implicit rejection for the specified
 R1 profile. M08 strengthens key import while preserving R1 formats and
 outputs. Its measured import medians are:
@@ -45,7 +90,7 @@ and **23,336 to 12,696 bytes** on Linux; M08 retains those maxima. These
 stage-specific results are not combined into a cumulative speedup or a
 universal memory bound.
 
-The current validation includes **352 Python tests per OS**, Rust tests and
+The M08 validation included **352 Python tests per OS**, Rust tests and
 fresh Windows/Ubuntu CI; complete regression replay on both measured hosts;
 **7,256.67 new CPU seconds of ASan/std-rebuilt fuzzing** without an observed
 defect; and **3,156 deterministic requests** matched to the independent Python
@@ -63,7 +108,7 @@ scope and raw results.
 | External assurance and security rating | A certified global bit rating, NIST category or external cryptographic audit is not established by these artifacts; **1536 denotes the coefficient count** |
 | Target qualification | Published M08 image reviews concern GNU x86-64 Windows/Linux; Android/ARM timing and register/ABI behavior require their own qualification |
 
-The [security status](SECURITY.md) separates the current M08 correction,
+The [security status](SECURITY.md) separates the M09 and M08 corrections,
 historical findings and the remaining cryptographic obligations.
 The [five-point technical review](docs/REVUE_CRITIQUE_M08_CIBLES_ET_CONTRATS.md)
 records the Android boundary, noise-domain framing and existing error-order tests.
@@ -111,7 +156,9 @@ arithmetic and KEM operations are implemented in this repository. The
 project is developed independently from Majax Messenger's operational
 architecture.
 
-## Current engineering milestone: M08
+<a id="current-engineering-milestone-m08"></a>
+
+## Previous engineering milestone: M08
 
 M08 replaces polynomial reconstruction during key import with a direct scan
 of the canonical 13-bit encoding. It checks all **1,536 coefficients** before

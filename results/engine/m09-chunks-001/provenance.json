@@ -1,0 +1,12 @@
+{
+  "schema": "m09-chunk-controls-v1",
+  "engine_provenance_sha256": "0e785d177c8814d4cf0ae04696049dbe3d273620ed1d4a57c4bfb4819e064397",
+  "output_sha256": {
+    "archive-parts.json": "c465174410f7675e0b34a87aba482054a3859b52510cd0ed79f8753584bc7708",
+    "archive_m09.py": "f1b538387460a67b048c514b23ac6db434f142749abc81381e9ed5051ec780ab",
+    "m09_chunks.py": "edc056bd5c2b15ed6ff70f448fec4423402359200131d8adcf7879ec048a7f65",
+    "README.md": "5e92a65efea515ef82cc25a58f2754705ac1292e1caa0fb3dfb671ebca72b6c9"
+  },
+  "scientific_payload_bytes_changed": false,
+  "new_acquisitions": 0
+}

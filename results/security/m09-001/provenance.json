@@ -1,0 +1,29 @@
+{
+  "files": {
+    "README.md": {
+      "bytes": 501,
+      "sha256": "b61ea392514c88e52a4d2cb780a5b770c1d4152679420dfd873d6c42bb035aa4"
+    },
+    "report.json": {
+      "bytes": 10941,
+      "sha256": "9a758cbe16ae0b3dc1ac000941e7f7eea206cc812003308ec507e771dfa5d461"
+    },
+    "sources/SECURITE_M09.md": {
+      "bytes": 12181,
+      "sha256": "0a544b07a8ec252f9854cc0fac7afb1a810eb1b37b9eba68a9fd7e4ed9826263"
+    },
+    "sources/dev_kem.rs": {
+      "bytes": 29262,
+      "sha256": "b39c2fdfcdd7c22634162a2c451213a6c4309b27524a82069f37903653e12334"
+    },
+    "sources/m09_security_noise.py": {
+      "bytes": 13390,
+      "sha256": "6d8480c544de324d7eba6aa5e8fd30737dbb8041592da54b2d8f1bafd10e80a6"
+    },
+    "sources/test_m09_security_noise.py": {
+      "bytes": 9681,
+      "sha256": "37f91709d623bc5792e6be461166cdf90e94b5846d363ccda37299e9d7326850"
+    }
+  },
+  "schema": "m09-security-capsule-v1"
+}

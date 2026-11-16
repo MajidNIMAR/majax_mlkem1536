@@ -168,9 +168,10 @@ class RejectionSideInfoTests(unittest.TestCase):
     def snapshot_fixture(self, destination):
         (destination / "sources").mkdir()
         for name in SOURCE_NAMES:
-            category = ("docs" if name.endswith(".md") else
-                        "crates/kem1536/src" if name == "dev_kem.rs" else "research")
-            shutil.copyfile(ROOT / category / name, destination / "sources" / name)
+            # This fixture tests the frozen M08 model, whose reviewed source
+            # includes its historical entropy helper. Never substitute M09.
+            shutil.copyfile(ROOT / "results/security/m08-rejection-001/sources" / name,
+                            destination / "sources" / name)
         (destination / "bounds.json").write_text(json.dumps(make_report(destination / "sources/dev_kem.rs")), encoding="utf-8")
         provenance = dict(schema="m08-j-side-info-provenance-v1", new_fuzz_or_benchmark_performed=False,
                           output_sha256={path.relative_to(destination).as_posix(): sha(path)

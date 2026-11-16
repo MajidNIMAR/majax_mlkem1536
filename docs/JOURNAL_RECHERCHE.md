@@ -1823,3 +1823,109 @@ cas combiné NoncanonicalEncoding. Reçus locaux dans m08-review-001.
 Les sources du moteur, la spécification et toutes les archives sont
 inchangées. La qualification Android reste un travail prospectif dépendant
 d'une cible matérielle précise ; C01 demeure ouvert.
+
+
+## 16 novembre 2026 — M09, cinq chantiers du moteur
+
+Les cinq chantiers sont engagés suivant les protocoles
+[de développement](PROTOCOLE_M09_MOTEUR.md) et
+[de qualification](PROTOCOLE_M09_QUALIFICATION.md), préenregistrés dans Git.
+Android et l'intégration applicative sont différés ; M08 reste la référence
+immuable. Le code actif ajoute des vues de graines à rôle et taille fixes,
+les tests d'échec partiel d'entropie au niveau des opérations et l'écriture
+du message décapsulé dans son propriétaire final. Les nonces, domaines et
+formats de R1 sont conservés. Le pont reconnaît la réalisation M09 et
+conserve les contrats historiques jusqu'à M08.
+
+Le chantier C01 produit un sous-lemme ROM classique de remplacement des
+bruits expansés par des CBD frais avec perte rationnelle et matrice toujours
+à graine publique : [argument M09](SECURITE_M09.md). Les 380 panneaux finis
+et 512 transcripts adaptatifs vérifient le comptage ; ils ne prouvent pas
+la sécurité globale du KEM. QROM, primitives concrètes et sécurité du PKE
+à matrice semée restent ouverts.
+
+L'optimisation des facteurs publics NTT a une comparaison isolée propre.
+Les premiers gains KEM sont mesurés, mais le témoin multiply_add Linux
+échoue au budget de médiane : cette variante n'est pas intégralement
+acceptée. Le candidat complet, avec les nouveaux contrats, fait l'objet
+d'une qualification distincte et de budgets mémoire fixés avant ses mesures.
+Les preuves M08 ne deviennent pas des preuves ou du temps de fuzzing M09.
+Le bilan définitif sera ajouté après les contrôles des images nouvelles.
+
+
+### M09 — rejet de la première optimisation pour la livraison
+
+La revue compilée a confirmé un nouveau résidu Windows dans le candidat
+vectorisé `engine_poly.rs c22f53f5…` : e2+Encode(m) traverse XMM8 puis une
+sauvegarde ABI de transform hors propriétaire effacé. Les images et
+collections de `m09-final-001` restent figées. Les paquets préparés sont
+marqués REJECTED_FOR_PROMOTION ; le binaire canonique demeure M08. Aucun
+résidu ainsi observé ne démontre à lui seul une fuite du protocole.
+Le gain de vitesse ne compense pas ce recul de durcissement. Une seconde
+variante gardera les tables publiques en inhibant cette vectorisation,
+avec nouveaux builds, revue et mesures. Les données001 ne sont pas réécrites.
+
+Le premier check global a aussi détecté deux fixtures M08 qui copiaient
+la source courante pour rejouer leur ancien modèle. Les fixtures lisent
+maintenant la source de la capsule M08 elle-même ; ses données/contrôles
+figés restent inchangés. Les douze tests ciblés passent. L'échec initial
+et son reçu sont conservés sous m09-check-001 avant un nouveau check.
+
+
+## M09 — candidat scalaire complet qualifié en interne
+
+Le [bilan des cinq chantiers](M09_MOTEUR_CONTRATS_ET_QUALIFICATION.md) est
+à jour. Les vues de graines, erreurs partielles d'entropie et propriétaires
+secrets sont développés ; les formats et domaines restent R1. Le candidat
+vectorisé001 est rejeté pour son résidu ABI Windows. Le scalaire002 supprime
+le mécanisme ciblé dans quatre images propres, sans preuve globale d'effacement.
+
+Le panneau final de 40 000 latences donne des réductions de médianes de
+13,13 à 16,82 % selon opération/OS contre M08. Les budgets de latence/mémoire
+passent, avec 216 observations de mémoire référence réutilisées et 216 nouvelles
+pour le candidat. La frame transform augmente de 16 octets, alors que les
+maxima KEM de pile peinte et les allocations demandées n'augmentent pas.
+Le diagnostic temporel neuf de 32000 observations ne franchit pas 4,5
+(maximum|t| 2,11069986 Windows / 1,11651668 Linux), sans preuve CT.
+
+Chaque OS vérifie 1000 vecteurs, 10000 rejets, 10000 mutations et 20000 formats ;
+les consommateurs par défaut passent 88576 sondes chacun. Le smoke ASan
+à std reconstruite utilise les images M09 du build 002 dans la nouvelle
+acquisition 003 : 194,64 s CPU, borne post-INIT 175,90 s, quatre budgets atteints,
+1 046 348 exécutions après INITED répétitions comprises et aucun défaut observé.
+Les incidents et reprises sont conservés, y compris le segment API limité
+à l'initialisation et la correction de l'agrégation flottante. Aucun temps
+antérieur n'est transféré, aucune couverture LLVM ou oracle du nouveau
+corpus de fuzz n'est revendiqué.
+
+Le sous-lemme ROM classique et la veille primaire de [SECURITE_M09](SECURITE_M09.md)
+progressent sans fermer C01/QROM/Keccak concret. Deux paquets qualifiés en
+interne et leurs répétitions sont disponibles ; les contrôles complets,
+le gel principal et la CI neuve poursuivent la clôture. Le dossier externe
+est préparé ; aucun audit par un tiers ou déploiement Android/Messenger.
+
+
+## Clôture locale M09 avant publication
+
+La capsule moteur `results/engine/m09-001` est gelée et rejouée : 5618
+membres, neuf groupes, provenance SHA-256
+`0e785d177c8814d4cf0ae04696049dbe3d273620ed1d4a57c4bfb4819e064397`.
+Le grand recueil des résultats rejetés est fractionné en deux parties ;
+sa concaténation retrouve exactement l'archive originale et sa somme.
+`m09-chunks-001` fige les adaptateurs de stockage, sans modifier les données
+scientifiques, les images ou le manifeste moteur.
+
+Le contrôle complet Windows réussit en 16 min 28 s : fmt, Clippy strict,
+Rust par défaut/toutes fonctionnalités, 438 tests Python et tous les rejeux
+requis. Les 279 entrées de sources/contrôles restent identiques avant/après.
+`results/engine/m09-verification-001` conserve le reçu et le journal.
+Un durcissement ultérieur du seul lecteur de stockage vérifie explicitement
+les parties même si le tar complet est aussi présent ; quatre tests ciblés
+et la suite entière de 439 tests Python passent. Ce suivi distinct est dans
+`m09-reader-review-001`. Les 37 entrées compilables qualifiées sont inchangées.
+
+Les deux paquets originaux sont qualifiés en interne, avec sources compactes
+et licences. Le dossier externe est concret et prêt pour une remise, sans
+contact tiers ni audit déclaré. La publication normale sur GitHub et sa CI
+neuve Windows/Ubuntu constituent la dernière vérification de cette clôture ;
+leurs identifiants et leur résultat seront ajoutés après constat effectif.

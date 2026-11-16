@@ -9,7 +9,22 @@ formal constant-time guarantee or production-security claim is made.
 
 ## Current assurance boundary
 
-The current delivered engineering milestone is M08. Functional agreement,
+The internally qualified current candidate is M09. It preserves R1 bytes,
+uses fixed-size borrowed noise roles and tests operation-level failures
+after every partial entropy prefix. Decapsulation writes its recovered
+message into its final zeroizing owner. A scalar public-twiddle NTT improves
+the recorded PC KEM medians with no increase in observed KEM stack maxima
+or requested allocation counts. The [M09 study](docs/M09_MOTEUR_CONTRATS_ET_QUALIFICATION.md)
+gives the finite scope, costs and pending full-check/hosted-CI closure.
+
+The first M09 vectorized candidate is rejected: a Windows ABI save copied
+16 bytes derived from e2+Encode(m) outside its wiping owner. The four final
+scalar images have a separate [targeted review](docs/REVUE_CYCLE_SECRET_M09.md)
+showing removal of this mechanism and normal-return message-owner wipes.
+Neither this review nor the public-data black_box hint proves whole-program
+constant time or erasure of every ABI/register/PKE/caller copy.
+
+M08 is the immutable previous delivered engineering milestone. Functional agreement,
 format compatibility, finite malformed-input tests, sanitizer fuzzing and
 fresh Windows/Ubuntu integration are documented. Its [import review](docs/M08_IMPORTS_ET_VALIDATION.md)
 qualifies removal of the targeted decoded-coefficient stack copies on the
@@ -22,6 +37,12 @@ and secret-copy behavior require the actual target ABI, compiler/link flags
 and CPU to be examined. The [target and contract review](docs/REVUE_CRITIQUE_M08_CIBLES_ET_CONTRATS.md)
 records this boundary, the already specified noise domains and the combined
 invalid-secret/invalid-hash test that is already covered.
+
+The [M09 classical ROM hybrid](docs/SECURITE_M09.md) bounds one seeded-noise
+replacement term while retaining a public seeded matrix. It is not a full
+PKE proof, a QROM transfer or a guarantee for concrete SHAKE. The
+[external review dossier](docs/REVUE_EXTERNE_M09.md) is prepared; no third
+party has been contacted or credited as an auditor.
 
 The mathematical support includes exact correctness certificates linked to
 source and conditional ROM/QROM security arguments. **C01, the complete

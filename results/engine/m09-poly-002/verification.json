@@ -1,0 +1,254 @@
+{
+  "observations": 40000,
+  "KEM_latency_budgets_passed": true,
+  "failed_KEM_panels": [],
+  "five_percent_gain_per_host": {
+    "windows": true,
+    "linux": true
+  },
+  "summary": {
+    "windows": {
+      "forward": {
+        "baseline": {
+          "count": 2000,
+          "median_ns": 6421.875,
+          "p95_ns": 7846.875
+        },
+        "candidate": {
+          "count": 2000,
+          "median_ns": 4981.25,
+          "p95_ns": 5250.0
+        },
+        "ratios": {
+          "median_ns": 0.775669099756691,
+          "p95_ns": 0.6690561529271206
+        },
+        "kem_budget_passed": null
+      },
+      "inverse": {
+        "baseline": {
+          "count": 2000,
+          "median_ns": 6434.375,
+          "p95_ns": 6931.25
+        },
+        "candidate": {
+          "count": 2000,
+          "median_ns": 5003.125,
+          "p95_ns": 5218.75
+        },
+        "ratios": {
+          "median_ns": 0.7775619232637202,
+          "p95_ns": 0.7529305680793508
+        },
+        "kem_budget_passed": null
+      },
+      "multiply_add": {
+        "baseline": {
+          "count": 2000,
+          "median_ns": 250.0,
+          "p95_ns": 250.0
+        },
+        "candidate": {
+          "count": 2000,
+          "median_ns": 250.0,
+          "p95_ns": 250.0
+        },
+        "ratios": {
+          "median_ns": 1.0,
+          "p95_ns": 1.0
+        },
+        "kem_budget_passed": null
+      },
+      "keygen": {
+        "baseline": {
+          "count": 1000,
+          "median_ns": 488800.0,
+          "p95_ns": 517500.0
+        },
+        "candidate": {
+          "count": 1000,
+          "median_ns": 420500.0,
+          "p95_ns": 519800.0
+        },
+        "ratios": {
+          "median_ns": 0.8602700490998363,
+          "p95_ns": 1.0044444444444445
+        },
+        "kem_budget_passed": true
+      },
+      "encaps": {
+        "baseline": {
+          "count": 1000,
+          "median_ns": 538900.0,
+          "p95_ns": 647600.0
+        },
+        "candidate": {
+          "count": 1000,
+          "median_ns": 458200.0,
+          "p95_ns": 494800.0
+        },
+        "ratios": {
+          "median_ns": 0.8502505102987568,
+          "p95_ns": 0.7640518838789376
+        },
+        "kem_budget_passed": true
+      },
+      "decaps_valid": {
+        "baseline": {
+          "count": 1000,
+          "median_ns": 663700.0,
+          "p95_ns": 705800.0
+        },
+        "candidate": {
+          "count": 1000,
+          "median_ns": 565600.0,
+          "p95_ns": 625200.0
+        },
+        "ratios": {
+          "median_ns": 0.8521922555371403,
+          "p95_ns": 0.8858033437234344
+        },
+        "kem_budget_passed": true
+      },
+      "decaps_rejected": {
+        "baseline": {
+          "count": 1000,
+          "median_ns": 666200.0,
+          "p95_ns": 896000.0
+        },
+        "candidate": {
+          "count": 1000,
+          "median_ns": 565300.0,
+          "p95_ns": 606500.0
+        },
+        "ratios": {
+          "median_ns": 0.8485439807865506,
+          "p95_ns": 0.6768973214285714
+        },
+        "kem_budget_passed": true
+      }
+    },
+    "linux": {
+      "forward": {
+        "baseline": {
+          "count": 2000,
+          "median_ns": 6439.40625,
+          "p95_ns": 8166.625
+        },
+        "candidate": {
+          "count": 2000,
+          "median_ns": 5168.796875,
+          "p95_ns": 7384.90625
+        },
+        "ratios": {
+          "median_ns": 0.8026822154604705,
+          "p95_ns": 0.9042788483614712
+        },
+        "kem_budget_passed": null
+      },
+      "inverse": {
+        "baseline": {
+          "count": 2000,
+          "median_ns": 6484.421875,
+          "p95_ns": 8097.9375
+        },
+        "candidate": {
+          "count": 2000,
+          "median_ns": 5097.265625,
+          "p95_ns": 6268.25
+        },
+        "ratios": {
+          "median_ns": 0.7860786548530975,
+          "p95_ns": 0.7740551220604012
+        },
+        "kem_budget_passed": null
+      },
+      "multiply_add": {
+        "baseline": {
+          "count": 2000,
+          "median_ns": 273.40625,
+          "p95_ns": 281.5
+        },
+        "candidate": {
+          "count": 2000,
+          "median_ns": 275.9375,
+          "p95_ns": 283.625
+        },
+        "ratios": {
+          "median_ns": 1.00925820093725,
+          "p95_ns": 1.0075488454706927
+        },
+        "kem_budget_passed": null
+      },
+      "keygen": {
+        "baseline": {
+          "count": 1000,
+          "median_ns": 505590.0,
+          "p95_ns": 582565.0
+        },
+        "candidate": {
+          "count": 1000,
+          "median_ns": 438939.0,
+          "p95_ns": 667534.0
+        },
+        "ratios": {
+          "median_ns": 0.8681718388417492,
+          "p95_ns": 1.1458532524267677
+        },
+        "kem_budget_passed": true
+      },
+      "encaps": {
+        "baseline": {
+          "count": 1000,
+          "median_ns": 554766.0,
+          "p95_ns": 741942.0
+        },
+        "candidate": {
+          "count": 1000,
+          "median_ns": 477964.0,
+          "p95_ns": 672016.0
+        },
+        "ratios": {
+          "median_ns": 0.8615596485725513,
+          "p95_ns": 0.9057527407802767
+        },
+        "kem_budget_passed": true
+      },
+      "decaps_valid": {
+        "baseline": {
+          "count": 1000,
+          "median_ns": 692072.5,
+          "p95_ns": 823704.0
+        },
+        "candidate": {
+          "count": 1000,
+          "median_ns": 621525.5,
+          "p95_ns": 967858.0
+        },
+        "ratios": {
+          "median_ns": 0.8980641479035795,
+          "p95_ns": 1.1750070413643736
+        },
+        "kem_budget_passed": true
+      },
+      "decaps_rejected": {
+        "baseline": {
+          "count": 1000,
+          "median_ns": 691784.5,
+          "p95_ns": 794193.0
+        },
+        "candidate": {
+          "count": 1000,
+          "median_ns": 605431.5,
+          "p95_ns": 730845.0
+        },
+        "ratios": {
+          "median_ns": 0.8751735547703078,
+          "p95_ns": 0.9202360131605289
+        },
+        "kem_budget_passed": true
+      }
+    }
+  },
+  "scope": "scalar prototype finite latency and micro image checks; final full images and erasure qualification separate"
+}

@@ -1,0 +1,252 @@
+{
+  "observations": 50000,
+  "baseline_memory_observations": 216,
+  "all_latency_budgets_passed": false,
+  "failed_panels": [
+    "linux/multiply_add"
+  ],
+  "summary": {
+    "windows": {
+      "forward": {
+        "baseline": {
+          "count": 2500,
+          "median_ns": 6428.125,
+          "p95_ns": 8196.875
+        },
+        "candidate": {
+          "count": 2500,
+          "median_ns": 4240.625,
+          "p95_ns": 7162.5
+        },
+        "ratios": {
+          "median_ns": 0.6596985901798736,
+          "p95_ns": 0.8738086160884483
+        },
+        "budget_passed": true
+      },
+      "inverse": {
+        "baseline": {
+          "count": 2500,
+          "median_ns": 6446.875,
+          "p95_ns": 6937.5
+        },
+        "candidate": {
+          "count": 2500,
+          "median_ns": 4265.625,
+          "p95_ns": 7800.0
+        },
+        "ratios": {
+          "median_ns": 0.6616577799321377,
+          "p95_ns": 1.1243243243243244
+        },
+        "budget_passed": true
+      },
+      "multiply_add": {
+        "baseline": {
+          "count": 2500,
+          "median_ns": 250.0,
+          "p95_ns": 306.25
+        },
+        "candidate": {
+          "count": 2500,
+          "median_ns": 250.0,
+          "p95_ns": 287.5
+        },
+        "ratios": {
+          "median_ns": 1.0,
+          "p95_ns": 0.9387755102040817
+        },
+        "budget_passed": true
+      },
+      "keygen": {
+        "baseline": {
+          "count": 1250,
+          "median_ns": 488800.0,
+          "p95_ns": 531300.0
+        },
+        "candidate": {
+          "count": 1250,
+          "median_ns": 384600.0,
+          "p95_ns": 441900.0
+        },
+        "ratios": {
+          "median_ns": 0.7868248772504092,
+          "p95_ns": 0.831733483907397
+        },
+        "budget_passed": true
+      },
+      "encaps": {
+        "baseline": {
+          "count": 1250,
+          "median_ns": 539400.0,
+          "p95_ns": 659400.0
+        },
+        "candidate": {
+          "count": 1250,
+          "median_ns": 419100.0,
+          "p95_ns": 510700.0
+        },
+        "ratios": {
+          "median_ns": 0.7769744160177976,
+          "p95_ns": 0.7744919623900516
+        },
+        "budget_passed": true
+      },
+      "decaps_valid": {
+        "baseline": {
+          "count": 1250,
+          "median_ns": 664100.0,
+          "p95_ns": 868800.0
+        },
+        "candidate": {
+          "count": 1250,
+          "median_ns": 518600.0,
+          "p95_ns": 786700.0
+        },
+        "ratios": {
+          "median_ns": 0.7809064899864478,
+          "p95_ns": 0.9055018416206262
+        },
+        "budget_passed": true
+      },
+      "decaps_rejected": {
+        "baseline": {
+          "count": 1250,
+          "median_ns": 664350.0,
+          "p95_ns": 759500.0
+        },
+        "candidate": {
+          "count": 1250,
+          "median_ns": 516400.0,
+          "p95_ns": 713100.0
+        },
+        "ratios": {
+          "median_ns": 0.777301121396854,
+          "p95_ns": 0.9389071757735352
+        },
+        "budget_passed": true
+      }
+    },
+    "linux": {
+      "forward": {
+        "baseline": {
+          "count": 2500,
+          "median_ns": 6426.65625,
+          "p95_ns": 8006.125
+        },
+        "candidate": {
+          "count": 2500,
+          "median_ns": 4317.296875,
+          "p95_ns": 6573.34375
+        },
+        "ratios": {
+          "median_ns": 0.6717796482424278,
+          "p95_ns": 0.8210393604896251
+        },
+        "budget_passed": true
+      },
+      "inverse": {
+        "baseline": {
+          "count": 2500,
+          "median_ns": 6422.671875,
+          "p95_ns": 7581.25
+        },
+        "candidate": {
+          "count": 2500,
+          "median_ns": 4322.84375,
+          "p95_ns": 6661.65625
+        },
+        "ratios": {
+          "median_ns": 0.6730600339130668,
+          "p95_ns": 0.8787015663643858
+        },
+        "budget_passed": true
+      },
+      "multiply_add": {
+        "baseline": {
+          "count": 2500,
+          "median_ns": 247.59375,
+          "p95_ns": 317.96875
+        },
+        "candidate": {
+          "count": 2500,
+          "median_ns": 277.21875,
+          "p95_ns": 358.09375
+        },
+        "ratios": {
+          "median_ns": 1.11965164710337,
+          "p95_ns": 1.1261916461916461
+        },
+        "budget_passed": false
+      },
+      "keygen": {
+        "baseline": {
+          "count": 1250,
+          "median_ns": 504070.5,
+          "p95_ns": 600977.0
+        },
+        "candidate": {
+          "count": 1250,
+          "median_ns": 403993.5,
+          "p95_ns": 592582.0
+        },
+        "ratios": {
+          "median_ns": 0.8014622954527194,
+          "p95_ns": 0.9860310793923894
+        },
+        "budget_passed": true
+      },
+      "encaps": {
+        "baseline": {
+          "count": 1250,
+          "median_ns": 550270.5,
+          "p95_ns": 634183.0
+        },
+        "candidate": {
+          "count": 1250,
+          "median_ns": 440717.0,
+          "p95_ns": 531733.0
+        },
+        "ratios": {
+          "median_ns": 0.800909734394266,
+          "p95_ns": 0.8384535693955846
+        },
+        "budget_passed": true
+      },
+      "decaps_valid": {
+        "baseline": {
+          "count": 1250,
+          "median_ns": 680359.0,
+          "p95_ns": 861082.0
+        },
+        "candidate": {
+          "count": 1250,
+          "median_ns": 535385.5,
+          "p95_ns": 842169.0
+        },
+        "ratios": {
+          "median_ns": 0.7869161721973252,
+          "p95_ns": 0.9780357735964751
+        },
+        "budget_passed": true
+      },
+      "decaps_rejected": {
+        "baseline": {
+          "count": 1250,
+          "median_ns": 680490.5,
+          "p95_ns": 881202.0
+        },
+        "candidate": {
+          "count": 1250,
+          "median_ns": 530102.0,
+          "p95_ns": 680018.0
+        },
+        "ratios": {
+          "median_ns": 0.7789998537819411,
+          "p95_ns": 0.7716936638818341
+        },
+        "budget_passed": true
+      }
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "schema": "m09-engine-verification-v1",
+  "physical_members": 5618,
+  "groups": {
+    "qualification": {
+      "contract": {
+        "reviewed_source_anchors": 62,
+        "realization": "M09-typed-noise-destination-message-1",
+        "formal_program_verification": false
+      },
+      "counts": {
+        "windows": {
+          "vectors": 1000,
+          "rejections": 10000,
+          "mutations": 10000,
+          "formats": 20000,
+          "timing_observations": 16000,
+          "memory_observations": 108
+        },
+        "linux": {
+          "vectors": 1000,
+          "rejections": 10000,
+          "mutations": 10000,
+          "formats": 20000,
+          "timing_observations": 16000,
+          "memory_observations": 108
+        }
+      },
+      "performance_memory_budgets_passed": true,
+      "timing_threshold_crossings": {
+        "windows": 0,
+        "linux": 0
+      }
+    },
+    "distribution": {
+      "verified": true,
+      "hosts": [
+        "linux",
+        "windows"
+      ],
+      "source_manifest_sha256": "0829c8112ce771072c63ae07ae5a7f32cc7a06cf91531950047ddd4685cea3eb",
+      "promotion_status": "QUALIFIED_INTERNAL",
+      "scope": "distribution only; external audit and full M09 qualification separate"
+    },
+    "cli-review": {
+      "images": {
+        "windows": {
+          "physical_functions": 4949,
+          "engine_roots": 36,
+          "reachable_functions": 193,
+          "division_sites": 5,
+          "literal_zero_store_witnesses": 1964
+        },
+        "linux": {
+          "physical_functions": 1443,
+          "engine_roots": 18,
+          "reachable_functions": 146,
+          "division_sites": 0,
+          "literal_zero_store_witnesses": 1934
+        }
+      },
+      "new_objdump_on_verify": false,
+      "external_review": false,
+      "complete_erasure_proved": false,
+      "constant_time_proved": false
+    },
+    "consumer-review": {
+      "images": {
+        "windows": {
+          "physical_functions": 4623,
+          "engine_roots": 36,
+          "reachable_functions": 154,
+          "division_sites": 5,
+          "literal_zero_store_witnesses": 1942
+        },
+        "linux": {
+          "physical_functions": 698,
+          "engine_roots": 21,
+          "reachable_functions": 109,
+          "division_sites": 0,
+          "literal_zero_store_witnesses": 1598
+        }
+      },
+      "new_objdump_on_verify": false,
+      "external_review": false,
+      "complete_erasure_proved": false,
+      "constant_time_proved": false
+    },
+    "scalar-review": {
+      "scalar_image_reviews_replayed": 4,
+      "prior_XMM8_save_mechanism_removed_in_reviewed_functions": true,
+      "message_owner_normal_return_byte_wipes": 128,
+      "new_objdump_on_verify": false,
+      "global_erasure_or_CT_proved": false
+    },
+    "fuzz": {
+      "status": "PASS",
+      "total_CPU_seconds": 194.64000000000001,
+      "total_post_INITED_CPU_lower_seconds": 175.9,
+      "executions_after_INITED_including_repetitions": 1046348,
+      "workers": 4,
+      "LLVM_source_coverage_measured": false,
+      "independent_oracle_replayed": false,
+      "historical_CPU_credited": 0
+    },
+    "fuzz-postprocess": {
+      "new_fuzzer_runs": 0,
+      "new_builds": 0,
+      "original_acquisition_unchanged": true
+    },
+    "controls": {
+      "source_controls_and_documents": 259
+    },
+    "rejected": {
+      "literal_image_reviews_replayed": 4,
+      "candidate_rejected": true,
+      "Windows_confirmed_copy_bytes_per_image": 16,
+      "all_144_bytes_classified_secret": false,
+      "new_objdump_on_verify": false,
+      "global_erasure_or_CT_proved": false
+    }
+  },
+  "new_binary_or_compiler_executed": false,
+  "external_audit": false,
+  "C01_closed": false
+}

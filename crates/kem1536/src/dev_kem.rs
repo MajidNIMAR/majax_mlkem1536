@@ -1,5 +1,5 @@
 //! Experimental R1 rank-six KEM. See docs/SPECIFICATION_DEV_Q7681_R1.md.
-//! Functional reference, not a hardened or externally reviewed implementation.
+//! Functional research engine with scoped internal hardening; no external audit.
 
 use crate::engine_poly::{
     quotient, reduce_once, NttPolynomial as NttPoly, Polynomial as Poly, N as DEGREE,
@@ -34,8 +34,47 @@ pub enum Error {
 pub struct EncapsulationKey(Box<[u8; PUBLIC_KEY_BYTES]>);
 pub struct DecapsulationKey(SecretBox<PRIVATE_KEY_BYTES>);
 pub struct SharedSecret(Zeroizing<[u8; SHARED_SECRET_BYTES]>);
-#[derive(Clone)]
 pub struct Ciphertext(SecretBox<CIPHERTEXT_BYTES>);
+
+// These are borrowed views, never filled secret values returned by value.
+// The two roles deliberately keep R1's existing N domain and nonce schedule.
+struct KeygenNoise<'a>(&'a [u8; 32]);
+struct EncryptionCoins<'a>(&'a [u8; 32]);
+
+fn seed_tail(material: &[u8; 64]) -> &[u8; 32] {
+    material[32..].try_into().expect("fixed 32-byte seed view")
+}
+fn row_nonce(row: usize, offset: u8) -> u8 {
+    assert!(row < RANK, "noise row outside the fixed rank");
+    offset + row as u8
+}
+impl KeygenNoise<'_> {
+    fn secret_row_into(&self, row: usize, out: &mut Poly) {
+        noise_into(self.0, row_nonce(row, 0), out);
+    }
+    fn error_row_into(&self, row: usize, out: &mut Poly) {
+        noise_into(self.0, row_nonce(row, RANK as u8), out);
+    }
+}
+impl EncryptionCoins<'_> {
+    fn random_row_into(&self, row: usize, out: &mut Poly) {
+        noise_into(self.0, row_nonce(row, 0), out);
+    }
+    fn error_row_into(&self, row: usize, out: &mut Poly) {
+        noise_into(self.0, row_nonce(row, RANK as u8), out);
+    }
+    fn scalar_error_into(&self, out: &mut Poly) {
+        noise_into(self.0, (2 * RANK) as u8, out);
+    }
+}
+
+impl Clone for Ciphertext {
+    fn clone(&self) -> Self {
+        let mut out = SecretBox::zero();
+        out.copy_from_slice(&self.0[..]);
+        Self(out)
+    }
+}
 
 impl EncapsulationKey {
     pub fn from_bytes(bytes: &[u8]) -> Result<Self, Error> {
@@ -149,7 +188,7 @@ fn uniform(rho: &[u8], i: u8, j: u8) -> Poly {
     });
     result // Public matrix coefficients only.
 }
-fn noise_into(seed: &[u8], nonce: u8, out: &mut Poly) {
+fn noise_into(seed: &[u8; 32], nonce: u8, out: &mut Poly) {
     let bytes = xof::<192>(b"N\0", &[seed, &[nonce]]);
     out.fill_with(|j| {
         let bit = |k: usize| i32::from((bytes[k / 8] >> (k % 8)) & 1);
@@ -234,21 +273,21 @@ fn decompress(x: u16, width: usize) -> u16 {
 fn message_poly_into(message: &[u8; 32], out: &mut Poly) {
     out.fill_with(|i| decompress(u16::from((message[i / 8] >> (i % 8)) & 1), 1));
 }
-fn recover_message(p: &Poly) -> Zeroizing<[u8; 32]> {
-    let mut m = Zeroizing::new([0; 32]);
+fn recover_message_into(p: &Poly, m: &mut [u8; 32]) {
+    m.fill(0);
     for (i, &x) in p.coefficients().iter().enumerate() {
         m[i / 8] |= (compress(x, 1) as u8) << (i % 8);
     }
-    m
 }
 fn pke_keygen_into(d: &[u8; 32], encoded_s: &mut [u8]) -> EncapsulationKey {
     debug_assert_eq!(encoded_s.len(), VECTOR_BYTES);
     let expanded = derive(b"KG\0", &[d, &[6]]);
-    let (rho, sigma) = expanded.split_at(32);
+    let rho = &expanded[..32];
+    let sigma = KeygenNoise(seed_tail(&expanded));
     let mut transformed_s: [NttPoly; RANK] = std::array::from_fn(|_| NttPoly::zero());
     let mut coefficient = Poly::zero();
     for (i, transformed) in transformed_s.iter_mut().enumerate() {
-        noise_into(sigma, i as u8, &mut coefficient);
+        sigma.secret_row_into(i, &mut coefficient);
         pack_into(
             coefficient.coefficients(),
             13,
@@ -261,7 +300,7 @@ fn pke_keygen_into(d: &[u8; 32], encoded_s: &mut [u8]) -> EncapsulationKey {
     let mut sum = NttPoly::zero();
     let mut product = Poly::zero();
     for i in 0..RANK {
-        noise_into(sigma, 6 + i as u8, &mut coefficient);
+        sigma.error_row_into(i, &mut coefficient);
         sum.clear();
         for (j, secret) in transformed_s.iter().enumerate() {
             uniform(rho, i as u8, j as u8).forward_into(&mut matrix_entry);
@@ -278,20 +317,25 @@ fn pke_keygen_into(d: &[u8; 32], encoded_s: &mut [u8]) -> EncapsulationKey {
     ek[VECTOR_BYTES..].copy_from_slice(rho);
     EncapsulationKey(ek)
 }
-fn pke_encrypt_into(ek: &[u8], m: &[u8; 32], seed: &[u8], out: &mut [u8; CIPHERTEXT_BYTES]) {
+fn pke_encrypt_into(
+    ek: &[u8],
+    m: &[u8; 32],
+    seed: &EncryptionCoins<'_>,
+    out: &mut [u8; CIPHERTEXT_BYTES],
+) {
     let rho = &ek[VECTOR_BYTES..];
     let mut transformed_r: [NttPoly; RANK] = std::array::from_fn(|_| NttPoly::zero());
     // Each phase overwrites this complete owner: r_i, u_i, then v.
     let mut coefficient = Poly::zero();
     for (i, transformed) in transformed_r.iter_mut().enumerate() {
-        noise_into(seed, i as u8, &mut coefficient);
+        seed.random_row_into(i, &mut coefficient);
         coefficient.forward_into(transformed);
     }
     let mut matrix_entry = NttPoly::zero();
     let mut sum = NttPoly::zero();
     let mut product = Poly::zero();
     for i in 0..RANK {
-        noise_into(seed, 6 + i as u8, &mut coefficient);
+        seed.error_row_into(i, &mut coefficient);
         sum.clear();
         for (j, transformed) in transformed_r.iter().enumerate() {
             uniform(rho, j as u8, i as u8).forward_into(&mut matrix_entry);
@@ -305,7 +349,7 @@ fn pke_encrypt_into(ek: &[u8], m: &[u8; 32], seed: &[u8], out: &mut [u8; CIPHERT
             &mut out[i * POLY_BYTES..(i + 1) * POLY_BYTES],
         );
     }
-    noise_into(seed, 12, &mut coefficient);
+    seed.scalar_error_into(&mut coefficient);
     message_poly_into(m, &mut product);
     coefficient.add_assign(&product);
     sum.clear();
@@ -320,12 +364,12 @@ fn pke_encrypt_into(ek: &[u8], m: &[u8; 32], seed: &[u8], out: &mut [u8; CIPHERT
     product.fill_with(|i| compress(coefficient.coefficients()[i], 5));
     pack_into(product.coefficients(), 5, &mut out[VECTOR_BYTES..]);
 }
-fn pke_encrypt(ek: &EncapsulationKey, m: &[u8; 32], seed: &[u8]) -> Ciphertext {
+fn pke_encrypt(ek: &EncapsulationKey, m: &[u8; 32], seed: &EncryptionCoins<'_>) -> Ciphertext {
     let mut out = SecretBox::zero();
     pke_encrypt_into(ek.as_bytes(), m, seed, &mut out);
     Ciphertext(out)
 }
-fn pke_decrypt(sk: &[u8], c: &Ciphertext) -> Zeroizing<[u8; 32]> {
+fn pke_decrypt_into(sk: &[u8], c: &Ciphertext, message: &mut [u8; 32]) {
     debug_assert_eq!(sk.len(), VECTOR_BYTES);
     // Noncanonical ciphertext coefficients are reduced internally; re-encryption
     // remains canonical and will force the implicit rejection path.
@@ -346,7 +390,7 @@ fn pke_decrypt(sk: &[u8], c: &Ciphertext) -> Zeroizing<[u8; 32]> {
     // The secret coefficient row is no longer needed; reuse its existing owner.
     sum.inverse_into(&mut secret);
     v.subtract_assign(&secret);
-    recover_message(&v)
+    recover_message_into(&v, message);
 }
 fn keygen_internal(d: &[u8; 32], z: &[u8; 32]) -> (EncapsulationKey, DecapsulationKey) {
     let mut sk = SecretBox::zero();
@@ -359,40 +403,58 @@ fn keygen_internal(d: &[u8; 32], z: &[u8; 32]) -> (EncapsulationKey, Decapsulati
 }
 fn encaps_internal(ek: &EncapsulationKey, m: &[u8; 32]) -> (Ciphertext, SharedSecret) {
     let material = derive(b"G\0", &[m, &hash_public(ek.as_bytes())]);
-    let c = pke_encrypt(ek, m, &material[32..]);
+    let c = pke_encrypt(ek, m, &EncryptionCoins(seed_tail(&material)));
     let mut key = Zeroizing::new([0; 32]);
     key.copy_from_slice(&material[..32]);
     (c, SharedSecret(key))
 }
 
 /// OS randomness only. The deterministic test interface is disabled by default.
-fn random_bytes<const N: usize>(
+fn fill_entropy_into<const N: usize>(
+    bytes: &mut [u8; N],
     fill: impl FnOnce(&mut [u8]) -> Result<(), Error>,
-) -> Result<Zeroizing<[u8; N]>, Error> {
-    let mut bytes = Zeroizing::new([0; N]);
-    fill(bytes.as_mut())?;
-    Ok(bytes)
+) -> Result<(), Error> {
+    // Wipe even partial writes before propagating the provider's error.
+    if let Err(error) = fill(bytes.as_mut()) {
+        bytes.zeroize();
+        return Err(error);
+    }
+    Ok(())
 }
 pub fn keygen() -> Result<(EncapsulationKey, DecapsulationKey), Error> {
-    let seeds =
-        random_bytes::<64>(|out| getrandom::fill(out).map_err(|_| Error::RandomnessUnavailable))?;
+    keygen_with_entropy(|out| getrandom::fill(out).map_err(|_| Error::RandomnessUnavailable))
+}
+fn keygen_with_entropy(
+    fill: impl FnOnce(&mut [u8]) -> Result<(), Error>,
+) -> Result<(EncapsulationKey, DecapsulationKey), Error> {
+    let mut seeds = Zeroizing::new([0; 64]);
+    fill_entropy_into(&mut seeds, fill)?;
     Ok(keygen_internal(
         seeds[..32].try_into().expect("32 bytes"),
         seeds[32..].try_into().expect("32 bytes"),
     ))
 }
 pub fn encapsulate(ek: &EncapsulationKey) -> Result<(Ciphertext, SharedSecret), Error> {
-    let m =
-        random_bytes::<32>(|out| getrandom::fill(out).map_err(|_| Error::RandomnessUnavailable))?;
+    encapsulate_with_entropy(ek, |out| {
+        getrandom::fill(out).map_err(|_| Error::RandomnessUnavailable)
+    })
+}
+fn encapsulate_with_entropy(
+    ek: &EncapsulationKey,
+    fill: impl FnOnce(&mut [u8]) -> Result<(), Error>,
+) -> Result<(Ciphertext, SharedSecret), Error> {
+    let mut m = Zeroizing::new([0; 32]);
+    fill_entropy_into(&mut m, fill)?;
     Ok(encaps_internal(ek, &m))
 }
 pub fn decapsulate(dk: &DecapsulationKey, c: &Ciphertext) -> SharedSecret {
     let ek = &dk.0[VECTOR_BYTES..VECTOR_BYTES + PUBLIC_KEY_BYTES];
     let offset = VECTOR_BYTES + PUBLIC_KEY_BYTES;
-    let m = pke_decrypt(&dk.0[..VECTOR_BYTES], c);
+    let mut m = Zeroizing::new([0; 32]);
+    pke_decrypt_into(&dk.0[..VECTOR_BYTES], c, &mut m);
     let material = derive(b"G\0", &[&m[..], &dk.0[offset..offset + 32]]);
     let mut cp = Zeroizing::new([0; CIPHERTEXT_BYTES]);
-    pke_encrypt_into(ek, &m, &material[32..], &mut cp);
+    pke_encrypt_into(ek, &m, &EncryptionCoins(seed_tail(&material)), &mut cp);
     let fallback = xof::<32>(b"J\0", &[&dk.0[offset + 32..], c.as_bytes()]);
     let mut good = Zeroizing::new([0; 32]);
     good.copy_from_slice(&material[..32]);
@@ -581,10 +643,110 @@ mod tests {
     }
     #[test]
     fn entropy_failure_is_propagated() {
+        let mut bytes = [0xa5; 64];
         assert!(matches!(
-            random_bytes::<64>(|_| Err(Error::RandomnessUnavailable)),
+            fill_entropy_into(&mut bytes, |out| {
+                out[..17].fill(0x5a);
+                Err(Error::RandomnessUnavailable)
+            }),
             Err(Error::RandomnessUnavailable)
         ));
+        assert_eq!(bytes, [0; 64]);
+    }
+    #[test]
+    fn partially_filled_entropy_aborts_whole_operations_before_ntt_work() {
+        use crate::engine_poly::count_transforms;
+        let (ek, _) = keygen_internal(&[1; 32], &[2; 32]);
+        for prefix in 0..=64 {
+            let mut calls = 0;
+            let (result, transforms) = count_transforms(|| {
+                keygen_with_entropy(|out| {
+                    calls += 1;
+                    assert_eq!(out.len(), 64);
+                    out[..prefix].fill(0xa5);
+                    Err(Error::RandomnessUnavailable)
+                })
+            });
+            assert!(matches!(result, Err(Error::RandomnessUnavailable)));
+            assert_eq!((calls, transforms), (1, 0));
+        }
+        for prefix in 0..=32 {
+            let mut calls = 0;
+            let (result, transforms) = count_transforms(|| {
+                encapsulate_with_entropy(&ek, |out| {
+                    calls += 1;
+                    assert_eq!(out.len(), 32);
+                    out[..prefix].fill(0x5a);
+                    Err(Error::RandomnessUnavailable)
+                })
+            });
+            assert!(matches!(result, Err(Error::RandomnessUnavailable)));
+            assert_eq!((calls, transforms), (1, 0));
+        }
+    }
+    #[test]
+    fn injected_success_uses_exact_entropy_bytes_once() {
+        let mut keygen_calls = 0;
+        let (ek, dk) = keygen_with_entropy(|out| {
+            keygen_calls += 1;
+            out[..32].fill(7);
+            out[32..].fill(9);
+            Ok(())
+        })
+        .unwrap();
+        let (expected_ek, expected_dk) = keygen_internal(&[7; 32], &[9; 32]);
+        assert_eq!(keygen_calls, 1);
+        assert_eq!(ek.as_bytes(), expected_ek.as_bytes());
+        assert_eq!(&dk.0[..], &expected_dk.0[..]);
+        let mut encaps_calls = 0;
+        let (c, k) = encapsulate_with_entropy(&ek, |out| {
+            encaps_calls += 1;
+            out.fill(11);
+            Ok(())
+        })
+        .unwrap();
+        let (expected_c, expected_k) = encaps_internal(&ek, &[11; 32]);
+        assert_eq!(encaps_calls, 1);
+        assert_eq!(c.as_bytes(), expected_c.as_bytes());
+        assert!(k.matches(&expected_k));
+        assert!(decapsulate(&dk, &c).matches(&k));
+    }
+    #[test]
+    fn role_views_preserve_all_r1_noise_addresses_and_message_overwrite() {
+        let material = Zeroizing::new([0x39; 64]);
+        let seed = seed_tail(&material);
+        assert_eq!(seed.as_ptr(), material[32..].as_ptr());
+        let kg = KeygenNoise(seed);
+        let coins = EncryptionCoins(seed);
+        let mut actual = Poly::zero();
+        let mut expected = Poly::zero();
+        for row in 0..RANK {
+            noise_into(seed, row as u8, &mut expected);
+            kg.secret_row_into(row, &mut actual);
+            assert_eq!(actual.coefficients(), expected.coefficients());
+            coins.random_row_into(row, &mut actual);
+            assert_eq!(actual.coefficients(), expected.coefficients());
+            noise_into(seed, (RANK + row) as u8, &mut expected);
+            kg.error_row_into(row, &mut actual);
+            assert_eq!(actual.coefficients(), expected.coefficients());
+            coins.error_row_into(row, &mut actual);
+            assert_eq!(actual.coefficients(), expected.coefficients());
+        }
+        noise_into(seed, 12, &mut expected);
+        coins.scalar_error_into(&mut actual);
+        assert_eq!(actual.coefficients(), expected.coefficients());
+        let mut message = [0xff; 32];
+        actual.fill_with(|_| 0);
+        recover_message_into(&actual, &mut message);
+        assert_eq!(message, [0; 32]);
+    }
+    #[test]
+    fn ciphertext_clone_has_independent_storage() {
+        let original = Ciphertext::from_bytes(&[3; CIPHERTEXT_BYTES]).unwrap();
+        let mut cloned = original.clone();
+        assert_ne!(original.0.as_ptr(), cloned.0.as_ptr());
+        cloned.0[0] = 4;
+        assert_eq!(original.0[0], 3);
     }
     #[test]
     fn full_deterministic_roundtrip_and_rejection() {
@@ -720,10 +882,11 @@ mod tests {
     fn canonical_bad_ciphertext_and_last_noncanonical_coefficient_reject() {
         let (ek, dk) = keygen_internal(&[31; 32], &[41; 32]);
         let empty = Ciphertext::from_bytes(&vec![0; CIPHERTEXT_BYTES]).unwrap();
-        let m = pke_decrypt(&dk.0[..VECTOR_BYTES], &empty);
+        let mut m = Zeroizing::new([0; 32]);
+        pke_decrypt_into(&dk.0[..VECTOR_BYTES], &empty, &mut m);
         let coins = derive(b"G\0", &[&m[..], &hash_public(ek.as_bytes())]);
         assert_ne!(
-            pke_encrypt(&ek, &m, &coins[32..]).as_bytes(),
+            pke_encrypt(&ek, &m, &EncryptionCoins(seed_tail(&coins))).as_bytes(),
             empty.as_bytes()
         );
         assert_eq!(

@@ -223,6 +223,10 @@ def verify_vector(row):
 def verify_static_contract(source):
     """Fail closed on changed reviewed call sites; not a Rust semantics proof."""
     flat = re.sub(r"\s+", "", source)
+    m09_anchors = 0
+    if "structKeygenNoise<" in flat:
+        from m09_source_contract import correspondence
+        flat, m09_anchors = correspondence(source)
     anchors = ["pubconstQ:u16=7681;", "pubconstRANK:usize=6;",
                "constPOLY_BYTES:usize=416;", "constTAG:&[u8]=b\"KEM1536-DEV-Q7681-R1\\0\";",
                "xof::<192>(b\"N\\0\",&[seed,&[nonce]])", "bit(6*j)+bit(6*j+1)+bit(6*j+2)",
@@ -422,7 +426,9 @@ def verify_static_contract(source):
     for anchor in anchors:
         require(anchor in flat, f"reviewed R1 source contract changed; review required: {anchor}")
     require('letvalue=u16::from_le_bytes(pair)&8191;ifvalue<Q{' in flat, "matrix rejection changed")
-    return {"reviewed_source_anchors": len(anchors) + 1, "realization": realization,
+    if m09_anchors:
+        realization = "M09-typed-noise-destination-message-1"
+    return {"reviewed_source_anchors": len(anchors) + 1 + m09_anchors, "realization": realization,
             "formal_program_verification": False}
 
 

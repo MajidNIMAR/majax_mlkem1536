@@ -70,6 +70,8 @@ try {
             if ($LASTEXITCODE -ne 0) { throw 'M06 implicit rejection model verification failed.' }
             & $taskCheckResearchPython research/rejection_side_info_m08.py --verify results/security/m08-rejection-001
             if ($LASTEXITCODE -ne 0) { throw 'M08 classical-side-information rejection model verification failed.' }
+            & $taskCheckResearchPython research/m09_security_noise.py verify --output results/security/m09-001
+            if ($LASTEXITCODE -ne 0) { throw 'M09 classical seeded-noise hybrid verification failed.' }
             & $taskCheckResearchPython research/run_m06_measurements.py verify --output results/engine/m06-measurements-001
             if ($LASTEXITCODE -ne 0) { throw 'M06 measurement evidence verification failed.' }
             & $taskCheckResearchPython research/verify_m06.py
@@ -80,6 +82,8 @@ try {
             if ($LASTEXITCODE -ne 0) { throw 'M07 memory, binary, fuzz and delivery evidence verification failed.' }
             & $taskCheckResearchPython research/archive_m08.py verify --output results/engine/m08-001
             if ($LASTEXITCODE -ne 0) { throw 'M08 import, extended fuzz, coverage and delivery evidence verification failed.' }
+            & $taskCheckResearchPython research/archive_m09.py verify --output results/engine/m09-001
+            if ($LASTEXITCODE -ne 0) { throw 'M09 engine, scalar review, finite sanitizer smoke and delivery evidence verification failed.' }
             python research/verify_results.py
             if ($LASTEXITCODE -ne 0) { throw 'Frozen research result verification failed.' }
             python research/verify_modern_results.py

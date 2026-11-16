@@ -4,6 +4,7 @@ from collections import Counter
 from copy import deepcopy
 from fractions import Fraction
 import hashlib
+import gzip
 import itertools
 import json
 import re
@@ -19,14 +20,19 @@ class CertificateBridgeTests(unittest.TestCase):
     def frozen_source(self, milestone):
         relative = "crates/kem1536/src/dev_kem.rs"
         folder = ROOT / "results/engine" / {
-            "M02": "hardening-001", "M04": "m04-001", "M06": "m06-001", "M07": "m07-001",
+            "M02": "hardening-001", "M04": "m04-001", "M06": "m06-001", "M07": "m07-001", "M08": "m08-001",
         }[milestone]
         manifest = json.loads((folder / "provenance.json").read_text("utf-8"))
-        if milestone == "M07":
+        if milestone in ("M07", "M08"):
             member = "candidate-source/" + relative
             with tarfile.open(folder / "measurements.tar.gz") as archive:
                 raw = archive.extractfile(member).read()
-            checksum = manifest["stages"]["measurements"]["files"][member]["sha256"]
+            if milestone == "M08":
+                with gzip.open(folder / "measurements.inventory.json.gz", "rt") as stream:
+                    inventory = json.load(stream)
+                checksum = inventory["files"][member]["sha256"]
+            else:
+                checksum = manifest["stages"]["measurements"]["files"][member]["sha256"]
         elif milestone == "M04":
             with tarfile.open(folder / "sources.tar.gz") as archive:
                 raw = archive.extractfile(relative).read()
@@ -56,6 +62,7 @@ class CertificateBridgeTests(unittest.TestCase):
             ("M04", "M04-destination-owned-NTT-scalar-1", 24),
             ("M06", "M06-destination-owned-NTT-accumulated-1", 31),
             ("M07", "M07-destination-owned-NTT-streamed-1", 35),
+            ("M08", "M08-direct-encoding-NTT-streamed-1", 36),
         ):
             with self.subTest(milestone=milestone):
                 contract = verify_static_contract(self.frozen_source(milestone))
@@ -121,9 +128,9 @@ class CertificateBridgeTests(unittest.TestCase):
     def test_source_contract_rejects_sampler_and_rounding_regression(self):
         source = (ROOT / "crates/kem1536/src/dev_kem.rs").read_text()
         verify_static_contract(source)
-        call = "noise_into(seed, 12" if "fn noise_into(" in source else "noise(seed, 12"
+        call = "noise_into(self.0, (2 * RANK)"
         for before, after in (("xof::<192>", "xof::<191>"),
-                              (call, call.replace("12", "11")),
+                              (call, call.replace("2 * RANK", "2 * RANK - 1")),
                               ("Q / 2", "Q / 2 + 1")):
             self.assertIn(before, source)
             with self.assertRaises(ValueError):
@@ -199,8 +206,8 @@ class CertificateBridgeTests(unittest.TestCase):
     def test_direct_import_contract_checks_each_encoded_group_component(self):
         source = (ROOT / "crates/kem1536/src/dev_kem.rs").read_text(encoding="utf-8")
         contract = verify_static_contract(source)
-        self.assertEqual(contract["realization"], "M08-direct-encoding-NTT-streamed-1")
-        self.assertEqual(contract["reviewed_source_anchors"], 36)
+        self.assertEqual(contract["realization"], "M09-typed-noise-destination-message-1")
+        self.assertEqual(contract["reviewed_source_anchors"], 62)
         self.assertFalse(contract["formal_program_verification"])
         flat = re.sub(r"\s+", "", source)
         for before, after in (
@@ -243,22 +250,43 @@ class CertificateBridgeTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "reviewed R1 source contract changed"):
             verify_static_contract(flat.replace(helper, "", 1))
 
+    def test_m09_contract_rejects_role_entropy_and_destination_changes(self):
+        source = (ROOT / "crates/kem1536/src/dev_kem.rs").read_text(encoding="utf-8")
+        flat = re.sub(r"\s+", "", source)
+        for before, after in (
+            ("structKeygenNoise<'a>(&'a[u8;32]);", "structKeygenNoise<'a>(&'a[u8]);"),
+            ("material[32..].try_into()", "material[..32].try_into()"),
+            ("assert!(row<RANK,", "assert!(row<=RANK,"),
+            ("offset+rowasu8", "offset+1+rowasu8"),
+            ("noise_into(self.0,row_nonce(row,0),out)", "noise_into(self.0,row_nonce(row,1),out)"),
+            ("noise_into(self.0,row_nonce(row,RANKasu8),out)", "noise_into(self.0,row_nonce(row,5),out)"),
+            ("noise_into(self.0,(2*RANK)asu8,out)", "noise_into(self.0,11,out)"),
+            ("fnnoise_into(seed:&[u8;32]", "fnnoise_into(seed:&[u8]"),
+            ("m.fill(0);", ""),
+            ("bytes.zeroize();returnErr(error);", "returnErr(error);"),
+            ("fill_entropy_into(&mutseeds,fill)?;", ""),
+            ("fill_entropy_into(&mutm,fill)?;", ""),
+            ("pke_decrypt_into(&dk.0[..VECTOR_BYTES],c,&mutm);", ""),
+            ("&EncryptionCoins(seed_tail(&material)),&mutcp", "&EncryptionCoins(seed_tail(&material)),&mutother"),
+        ):
+            self.assert_contract_mutation_rejected(flat, before, after)
+
     def test_streamed_contract_rejects_sampler_orientation_and_row_packing_faults(self):
         source = (ROOT / "crates/kem1536/src/dev_kem.rs").read_text()
         verify_static_contract(source)
         flat = re.sub(r"\s+", "", source)
         for before, after in (
             ("debug_assert_eq!(encoded_s.len(),VECTOR_BYTES);", ""),
-            ("noise_into(sigma,iasu8,&mutcoefficient)",
-             "noise_into(sigma,1+iasu8,&mutcoefficient)"),
-            ("noise_into(sigma,6+iasu8,&mutcoefficient)",
-             "noise_into(sigma,5+iasu8,&mutcoefficient)"),
-            ("noise_into(seed,iasu8,&mutcoefficient)",
-             "noise_into(seed,1+iasu8,&mutcoefficient)"),
-            ("noise_into(seed,6+iasu8,&mutcoefficient)",
-             "noise_into(seed,5+iasu8,&mutcoefficient)"),
-            ("noise_into(seed,12,&mutcoefficient)",
-             "noise_into(seed,11,&mutcoefficient)"),
+            ("sigma.secret_row_into(i,&mutcoefficient)",
+             "sigma.secret_row_into(1+i,&mutcoefficient)"),
+            ("sigma.error_row_into(i,&mutcoefficient)",
+             "sigma.error_row_into(i+1,&mutcoefficient)"),
+            ("seed.random_row_into(i,&mutcoefficient)",
+             "seed.random_row_into(i+1,&mutcoefficient)"),
+            ("seed.error_row_into(i,&mutcoefficient)",
+             "seed.error_row_into(i+1,&mutcoefficient)"),
+            ("seed.scalar_error_into(&mutcoefficient)",
+             "seed.error_row_into(5,&mutcoefficient)"),
             ("uniform(rho,iasu8,jasu8)", "uniform(rho,jasu8,iasu8)"),
             ("uniform(rho,jasu8,iasu8)", "uniform(rho,iasu8,jasu8)"),
             ("&mutencoded_s[i*POLY_BYTES..(i+1)*POLY_BYTES]", "&mutencoded_s[..POLY_BYTES]"),

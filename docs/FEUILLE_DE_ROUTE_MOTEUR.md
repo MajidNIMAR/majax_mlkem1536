@@ -6,6 +6,15 @@ coefficients. Chaque étude doit servir une décision pour sa construction.
 Le futur article décrit ce travail et ses limites ; son écriture ne
 remplace pas le développement du moteur.
 
+**M09, 16 novembre 2026.** Les cinq chantiers sont exécutés dans le moteur :
+contrats de graines et d'entropie, cycle des propriétaires secrets, sous-lemme
+ROM précis, optimisation NTT mesurée et distribution/dossier de revue.
+Le [bilan M09](M09_MOTEUR_CONTRATS_ET_QUALIFICATION.md) conserve le rejet du
+candidat vectorisé et les résultats du candidat scalaire corrigé. Les formats
+R1 sont inchangés ; C01 et l'audit extérieur restent ouverts. La clôture
+du check complet et de la CI est suivie séparément, sans transférer les
+campagnes historiques. Android et Messenger demeurent différés.
+
 Le [programme M04](PROGRAMME_AMELIORATION_M04.md) a été exécuté selon
 l'ordre confirmé : trois travaux scientifiques, puis mémoire, NTT,
 contrôles, distribution et comparaison directe. Le

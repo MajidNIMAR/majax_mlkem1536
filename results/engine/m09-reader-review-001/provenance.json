@@ -1,0 +1,10 @@
+{
+  "schema": "m09-reader-followup-receipt-v1",
+  "output_sha256": {
+    "m09_chunks.py": "204f856ab7f44bf65f5f8ee1038d6f0fb8d4a3c2d488044f31487886d151d530",
+    "README.md": "b2982fedbd80b97125c5a4d8ba7a3acc2d74095dd10e6c2773d43e68195ec7ae",
+    "tests.log": "6c555941f23fc21ed94168b7e3b881ce78ccca301f2eac172ca937e9fc852147",
+    "test_m09_chunks.py": "ec33b8812583c31c19a34ec9bb0d754ba90cab030fb0ebedf4541a7adcb1778f",
+    "verification.json": "1b923df2375ae457d57319a84d247027c4c28ccfdaab9dedeb7a9074842fd8fb"
+  }
+}
