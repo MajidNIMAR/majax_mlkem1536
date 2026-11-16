@@ -3,7 +3,7 @@ from pathlib import Path
 import struct
 import unittest
 
-from m09_distribution import OUT, PROFILE, check_promotion_acceptance, compare, safe_evidence_name, verify
+from m09_distribution import ROOT, PROFILE, check_promotion_acceptance, compare, safe_evidence_name, verify
 
 
 def pe():
@@ -50,12 +50,18 @@ class ComparisonTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             compare(bytes(changed), bytes(changed), "windows")
 
-    def test_actual_distribution_when_available(self):
-        # The complete workflow creates result.json only after both platforms.
-        # Tests do not treat a partially acquired distribution as accepted.
-        if not (OUT / "result.json").is_file():
-            self.skipTest("distribution acquisition has not finished")
-        result = verify(OUT)
+    def test_frozen_rejected_distribution_is_portable_without_local_acquisition(self):
+        # Use the shipped negative evidence, including on clean hosted runners.
+        # The accepted distribution is replayed separately by archive_m09.
+        from archive_m09 import members, read, sha, data_reader
+        capsule = ROOT / "results/engine/m09-001"
+        record = read(capsule / "provenance.json")["groups"]["rejected"]
+        archive = capsule / record["archive"]
+        self.assertEqual(sha(archive), record["archive_sha256"])
+        prefix = "m09-distribution-001/"
+        raw = {name.removeprefix(prefix): value for name, value in members(archive).items()
+               if name.startswith(prefix)}
+        result = data_reader(raw, verify)
         self.assertTrue(result["verified"])
         self.assertEqual(result["hosts"], ["linux", "windows"])
         self.assertEqual(result["promotion_status"], "REJECTED_FOR_PROMOTION")

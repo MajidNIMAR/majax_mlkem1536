@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "local_source_commit": "0944d3444955941e70f54ffb7b03f4aaafe874a4",
+  "local_source_commit": "d616912fddd1e303c171678d0c6690286b570d38",
   "profile": "KEM1536-DEV-Q7681-R1",
   "excluded_paths": [
     "AGENTS.md",
@@ -341,7 +341,7 @@
     "research/test_m08_fuzz_postprocess.py": "bed1ccb79f75dbe71b3af6e9892af509232ae2a5b0b07613b62722df23cb78e4",
     "research/test_m09_check_evidence.py": "a4e912ff5e8be7200da5a6dd59204c144f965e224f1805c3ed113e46def09c7c",
     "research/test_m09_chunks.py": "ec33b8812583c31c19a34ec9bb0d754ba90cab030fb0ebedf4541a7adcb1778f",
-    "research/test_m09_distribution.py": "24a04b6aa5889f1b7afc811bbeb3f1d7bbb105a977d932f843060574464ba82c",
+    "research/test_m09_distribution.py": "355696ac8ab4e291fbda2e646f1e72d05d236741a5aa02f04469949fcf89e412",
     "research/test_m09_final_measure.py": "f581e609dfa60438eecdf2cca434c00675d16140f4cd4b9d73d890a8184e5616",
     "research/test_m09_fuzz_smoke.py": "b96fb12312ad1b26d9ff77f077e0a81a59e3b52c271926f45dfecb924aba47aa",
     "research/test_m09_lifecycle_inventory.py": "04047fd463974fbb2316d668c0bf052d43200c665405d5e3c5320e51e47558b3",
@@ -2481,7 +2481,7 @@
     "research/test_m08_fuzz_postprocess.py": "bed1ccb79f75dbe71b3af6e9892af509232ae2a5b0b07613b62722df23cb78e4",
     "research/test_m09_check_evidence.py": "a4e912ff5e8be7200da5a6dd59204c144f965e224f1805c3ed113e46def09c7c",
     "research/test_m09_chunks.py": "ec33b8812583c31c19a34ec9bb0d754ba90cab030fb0ebedf4541a7adcb1778f",
-    "research/test_m09_distribution.py": "24a04b6aa5889f1b7afc811bbeb3f1d7bbb105a977d932f843060574464ba82c",
+    "research/test_m09_distribution.py": "355696ac8ab4e291fbda2e646f1e72d05d236741a5aa02f04469949fcf89e412",
     "research/test_m09_final_measure.py": "f581e609dfa60438eecdf2cca434c00675d16140f4cd4b9d73d890a8184e5616",
     "research/test_m09_fuzz_smoke.py": "b96fb12312ad1b26d9ff77f077e0a81a59e3b52c271926f45dfecb924aba47aa",
     "research/test_m09_lifecycle_inventory.py": "04047fd463974fbb2316d668c0bf052d43200c665405d5e3c5320e51e47558b3",
@@ -4296,5 +4296,5 @@
     "vectors/nist-acvp/ML-KEM-keyGen-FIPS203/prompt.json": "3f9ce34f6c836c77958bad2729e837c3b213f44ac36c3065976e7acca6389523",
     "vectors/nist-acvp/NIST-NOTICE.txt": "5cf49b45a3eb4bee05d9491dbd05af1ceae4adf5f0ca59890e633469cb1f8156"
   },
-  "previous_public_commit": "d05f50c24660609111e5ea486870888ae6b416cb"
+  "previous_public_commit": "987da9e737fa5723aa2f19ad5f2f9e1436f51278"
 }
