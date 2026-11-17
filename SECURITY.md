@@ -1,6 +1,6 @@
 # Security and research status
 
-MAJAX R6 develops the experimental profile `KEM1536-DEV-Q7681-R1`.
+MLKEM-1536 Core develops the experimental profile `KEM1536-DEV-Q7681-R1`.
 R1 is a specified and implemented profile intended for research,
 reproducibility and independent review. Its suitability for production and
 standardization remains to be established through further cryptanalysis
@@ -8,6 +8,22 @@ and review. No NIST certification,
 formal constant-time guarantee or production-security claim is made.
 
 ## Current assurance boundary
+
+Research has advanced through M15. It adds internally reviewed quantitative
+and correctness arguments, constructive fixed-primitive resource accounting
+and source-linked arithmetic/NTT certificates. A sufficient margin is
+available for a declared working checkpoint under explicit assumptions.
+Those results do not establish the concrete fixed-primitive transfers,
+the required quantitative hardness bounds, full-KEM formal verification
+or a global security rating. **C01 remains open and R1 is not authorized
+for production in MAJAX Messenger.** External review remains deferred.
+
+The [M15 progress note](docs/ETAT_RECHERCHE_M15.md) distinguishes the scoped
+internal results from published, independently replayable evidence. The
+M11–M15 detailed research artifacts and tests are retained privately. They
+are not part of the public CI suite. The delivered engine remains M10;
+the following M10 measurements and image qualifications keep their original
+scope and are not new M15 campaigns.
 
 M10 is the delivered engine reference, qualified internally on the recorded
 GNU x86-64 Windows/Linux PC images. It writes derived material into existing owners,

@@ -2171,3 +2171,136 @@ de temps constant/effacement restent ouverts. La revue externe, chantier 5,
 reste différée ; aucun tiers n'a été contacté. La clôture documentaire et ses
 reçus sont publiés avec le code actif testé inchangé.
 
+
+## M11 — premier cycle interne de développement de sécurité, 17 novembre 2026
+
+Les quatre travaux sont engagés à la demande de l'utilisateur, en conservant
+les informations détaillées dans le dossier local interne M11. Les sorties
+comprennent une carte de composition interne exécutable, une construction
+réversible de son arithmétique de référence, huit jobs d'estimation sous
+contraintes avec 13 188 évaluations de candidats, une décision motivée R1
+et des contrôles sémantiques reliés au programme. Les sources, protocoles,
+reprises, tests, oracles et contre-vérifications sont conservés par empreintes.
+Le rapport et la feuille de route sont actualisés ; les résultats détaillés
+ne sont pas exportés ni publiés.
+
+Le moteur courant, le binaire canonique et les capsules historiques sont
+inchangés. Les études nouvelles ne réutilisent aucun crédit de campagne
+historique. La décision conserve R1 pour la recherche, sans gel final ou
+sélection automatique de R2. C01 reste ouvert et interdit la production
+Messenger. La contre-revue interne ne remplace pas la revue extérieure
+différée. Un erratum documentaire et les tentatives initiales restent
+conservés dans le dossier privé ; un cache reconstructible exclu des preuves
+est maintenu après refus automatique de suppression.
+
+## M12 — contrat, composition et hypothèses, 17 novembre 2026
+
+À la demande de l'utilisateur, les quatre périmètres sont exécutés dans
+un nouveau dossier interne local, après M11. Le contrat RC1 précise le
+jeu, les ressources et une cible bornée sans modifier l'objectif final
+du cahier des charges. Les versions retenues construisent le mécanisme
+extérieur et ses ressources, ajoutent le raccord aux hypothèses PKE et
+conservent les conditions de calibration. Les analyses de structure et
+les modèles réduits sont vérifiés indépendamment dans leurs populations.
+
+Les corrections d'instruments, de comptage et d'énoncés sont versionnées ;
+les acquisitions initiales restent intactes. Les versions finales sont
+outer-final-002, seeded-final-002 et structure/acquisition-002, avec des
+contre-calculs complémentaires. Les détails scientifiques, sources,
+journaux et résultats restent hors export dans le dossier interne M12.
+
+Le moteur, le binaire canonique et les capsules historiques sont inchangés.
+R1 demeure la référence de recherche, sans sélection automatique de R2.
+Le jalon borné, les implications conditionnelles et C01 sont des conclusions
+distinctes ; C01 demeure ouvert et la production Messenger reste interdite.
+La revue interne ne constitue pas l'évaluation extérieure différée ; aucune
+publication ni prise de contact extérieure n'a été effectuée.
+
+## M13 — étude quantitative des hypothèses de travail, 17 novembre 2026
+
+L'utilisateur demande un ensemble suffisant d'hypothèses pour orienter le
+développement, sans clore C01. Le dossier privé M13 conserve 270 cartes,
+16 paires ordonnées et 12 960 comparaisons de cibles. Les équivalences sont
+identifiées : 20 familles scalaires et 240 expressions factorisées. Les
+calculs exacts partagent le grand certificat et comparent des entiers ;
+les premières tentatives lentes et leurs reprises sont conservées.
+
+La sensibilité comprend 90 cas, 630 seuils et 12 960 couples contrefactuels.
+Les contrôles de cohérence couvrent 6 540 scénarios, 65 400 verdicts et
+720 plafonds de coût. Dix-huit frontières entières et 42 cas d'implication
+entre hypothèses complètent la synthèse. Ces dénombrements décrivent des
+familles de calculs conditionnels, pas des observations de sécurité
+indépendantes ni des poids de plausibilité.
+
+La synthèse de décision et les tableaux restent locaux. Les hypothèses ne
+sont pas adoptées comme vraies, aucun facteur de preuve n'est appliqué au
+moteur et aucun scénario favorable ne qualifie R1. C01 reste ouvert, le
+contrat RC1 et l'objectif final sont conservés. Le moteur, son binaire et
+les archives M12/M11 gardent leurs octets. Aucun contact extérieur ni
+publication GitHub n'a été effectué.
+
+## M14 — resserrement de preuve et cas intégré, 17 novembre 2026
+
+L'utilisateur autorise les quatre travaux après le diagnostic quantitatif
+M13. Le nouveau dossier privé conserve deux dérivations du lemme candidat,
+la construction explicite de simulation et ses coûts, les contrôles finis
+de ces constructions, puis leur calibration et leur raccord aux sources
+exactes R1. Les acquisitions initiales restent conservées et la sélection
+finale est liée aux sources et à une revue interne distincte.
+
+La comparaison finale comporte quatre variantes et 48 lignes conditionnelles.
+Une reconstruction séparée vérifie les expressions et leurs décisions.
+Le repère étudié a maintenant une marge suffisante sous les hypothèses de
+travail déclarées. Ce résultat remplace une amélioration simplement posée
+en contrefactuel par un lemme dans son modèle et une construction moins
+coûteuse dans le sien ; les hypothèses cryptographiques restent explicites
+et non adoptées comme crédibles.
+
+La revue finale porte sur les données intégrées sans réécrire le premier
+avis. Les détails, sources, journaux et empreintes restent locaux. Le moteur,
+le binaire canonique et les archives M13/M12/M11 sont inchangés. Aucun gain
+de performance du KEM, niveau global de sécurité ou avantage sur le témoin
+n'est déduit des coûts de réduction. C01 reste ouvert, la production
+Messenger interdite et la revue extérieure différée. Aucun export ou
+contact extérieur n'est effectué.
+
+## M15 — cinq chantiers de fond et conformité sémantique, 17 novembre 2026
+
+L'utilisateur autorise les cinq périmètres après M14. Les travaux nouveaux
+comprennent des acquisitions cryptanalytiques ciblées sur les deux profils,
+un argument exact pour des sondes sur matrices structurées, des constructions
+de circuits à fonctions fixes, des certificats conditionnels de correction
+par clé et un rapprochement équitable des modèles. La vérification du code
+ajoute des obligations sémantiques générales et un certificat algébrique NTT,
+avec une base de confiance explicitement délimitée.
+
+Les trois revues croisées internes couvrent les cinq volets. Les corrections
+des instruments de traduction et de rejeu sont versionnées ; les premières
+tentatives demeurent conservées. Une clarification de population ajuste
+conservativement le registre commun sans modifier ou invalider les archives
+historiques. Le partage de la marge et les objectifs de correction restent
+distincts. Les calculs, sources, contrôles et conclusions détaillées sont
+conservés dans le dossier privé M15, hors export public.
+
+Les hypothèses de dureté et d'instanciation ne sont pas adoptées comme vraies.
+Les résultats heuristiques, preuves conditionnelles et certificats ciblés ne
+qualifient pas automatiquement le moteur entier. C01 reste ouvert, avec les
+transferts et populations concrets ainsi que la comparaison CCA finale à
+compléter. Aucun constat acquis ne requiert une nouvelle construction ; R1,
+ses paramètres, ses formats, ses sources et son binaire sont inchangés.
+Aucune production Messenger, publication ou prise de contact extérieure.
+
+## 17 novembre 2026 — Actualisation documentaire publique demandée après M15
+
+Le propriétaire demande de publier sur la branche habituelle `main`, sans
+changement de branche, et de vérifier le commit distant et ses contrôles.
+La présentation actuelle emploie MLKEM-1536 Core, avec les adresses courantes
+du dépôt et du moteur compagnon. Le README, le statut de sécurité et le guide
+distinguent la référence exécutable M10 des travaux internes allant jusqu'à M15.
+
+Un état public précise la portée des nouveaux résultats et l'absence de paquet
+de rejeu public de ces études. Les instruments, résultats détaillés et revues
+privés restent hors export. Les 82 tests ciblés du cycle interne ne sont pas
+attribués à la CI publique. Les sources du moteur, formats, paramètres et
+binaire restent inchangés ; C01 demeure ouvert. L'état courant de publication
+et de CI est vérifié sur le dépôt public, séparément des reçus historiques.

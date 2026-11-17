@@ -1,8 +1,8 @@
-# MAJAX R6
+# MLKEM-1536 Core
 
 **Post-quantum KEM research and cryptographic engineering**
 
-MAJAX R6 is an open research and engineering project built around a working
+MLKEM-1536 Core is an open research and engineering project built around a working
 Rust key encapsulation mechanism. It brings together a specified cryptographic
 construction, polynomial arithmetic, key and secret management, independent
 reference implementations, cryptanalysis and reproducible experiments.
@@ -15,14 +15,44 @@ evidence needed to examine its evolution.
 [Specification](docs/SPECIFICATION_DEV_Q7681_R1.md) ·
 [Engine and API guide](docs/MOTEUR_KEM_R1.md) ·
 [Research report](docs/RAPPORT_RECHERCHE.md) ·
+[Research progress through M15](docs/ETAT_RECHERCHE_M15.md) ·
 [M10 engine and qualification](docs/M10_MOTEUR_ET_QUALIFICATION.md) ·
 [M09 engine and qualification](docs/M09_MOTEUR_CONTRATS_ET_QUALIFICATION.md) ·
 [M08 import study and delivery](docs/M08_IMPORTS_ET_VALIDATION.md) ·
 [M07 memory and delivery study](docs/M07_MEMOIRE_ET_VALIDATION.md)
 
-[![Main-branch checks](https://github.com/MajidNIMAR/majax_mlkem1536/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/MajidNIMAR/majax_mlkem1536/actions/workflows/ci.yml)
+[![Main-branch checks](https://github.com/MajidNIMAR/mlkem-1536-core/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/MajidNIMAR/mlkem-1536-core/actions/workflows/ci.yml)
 
-## Latest verified results — M10
+## Latest research progress — M15, 17 November 2026
+
+The research program has advanced through M11–M15 while **M10 remains the
+delivered engine reference**. The latest cycle adds targeted cryptanalysis,
+constructive accounting for fixed SHA3/SHAKE computations, conditional
+per-key correctness certificates, matched comparisons with ML-KEM-1024 and
+source-linked arithmetic verification.
+
+M15 records **16 new analysis jobs, 28,484 cost evaluations and 32 matched
+profile comparisons**. Its scoped verification includes **31 universal
+arithmetic obligations checked with SMT** and an algebraic NTT certificate.
+The final local integration passes **27 checks and 82 targeted tests**,
+with cross-reviews by other internal reviewers. These counts describe
+specific instruments and models, not a global security level.
+
+A sufficient margin is available at the declared working checkpoint under
+explicit ideal-model and quantitative assumptions. **The full concrete R1
+security argument, C01, remains open.** The required hardness assumptions,
+fixed-primitive transfers and final CCA comparison are not established by
+these results. The scoped proofs do not formally verify the whole KEM or
+its compiler, and the internal reviews are not an external audit.
+
+The [public progress note](docs/ETAT_RECHERCHE_M15.md) explains these boundaries.
+The new research programs, raw artifacts and detailed reviews are retained
+privately; **this repository does not supply their public replay bundle**.
+The 82 research tests are distinct from the public engine CI suite.
+The engine source, R1 parameters, wire formats and canonical binary are
+unchanged by these studies.
+
+## Delivered engine and public evidence — M10
 
 **M10 is the delivered engine reference, qualified internally on the recorded
 PC targets.** It preserves the R1 construction, wire formats and deterministic outputs. SHA3/SHAKE material
@@ -194,6 +224,7 @@ scope and raw results.
 | Functional engine and compatibility | Implemented and exercised on Windows/Linux; complete reference corpora match and R1 formats remain compatible |
 | Implementation hardening | M10 qualifies removal of two observed stack residues in its four reviewed PC images and completes its new long sanitizer campaign; earlier M08/M09 findings retain their own image scope. Register/ABI/all-PKE erasure and formal constant time remain open |
 | Cryptographic security argument | Exact correctness certificates and conditional ROM/QROM analyses under stated assumptions; the full concrete R1 argument **C01 remains open** |
+| Research progress through M15 | Scoped internal results include a conditional working margin, per-key correctness work and arithmetic/NTT certificates; the new detailed artifacts and 82 research tests are private and are not a public replay or hosted-CI claim |
 | External assurance and security rating | A certified global bit rating, NIST category or external cryptographic audit is not established by these artifacts; **1536 denotes the coefficient count** |
 | Target qualification | M10 CLI/default-consumer reviews and hosted native checks concern the recorded GNU x86-64 Windows/Linux PC images; M08/M09 retain their own historical scope. Android/ARM requires its own qualification |
 
@@ -239,7 +270,7 @@ parameter sets and does not interoperate with them. These names do not
 represent a security-bit rating.
 
 This is a separate research project by the author of
-[MAJAX ML-KEM](https://github.com/MajidNIMAR/majax-mlkem),
+[ML-KEM-1024 Forge](https://github.com/MajidNIMAR/mlkem-1024-forge),
 the companion repository for standardized ML-KEM parameter sets. R6's
 arithmetic and KEM operations are implemented in this repository. The
 project is developed independently from Majax Messenger's operational
@@ -450,7 +481,7 @@ and [logs](results/publication/portability-001/)
 preserve that historical result. The M04–M06 evidence above records
 subsequent development and validation; each snapshot retains its own scope.
 Current public workflow results for the revision under test are available
-in the [repository's Actions tab](https://github.com/MajidNIMAR/majax_mlkem1536/actions).
+in the [repository's Actions tab](https://github.com/MajidNIMAR/mlkem-1536-core/actions).
 
 The **M07** source passed the complete checks on fresh Windows and Ubuntu
 runners at commit `97d776c`, with **227 Python tests per platform**, Rust
@@ -478,13 +509,13 @@ evidence only.
 
 ## Security and research status
 
-R6 is an **experimental research implementation** intended for analysis,
+MLKEM-1536 Core is an **experimental research implementation** intended for analysis,
 reproducibility and independent review. Parameter selection and cryptanalysis
 continue. The correctness certificates and conditional ROM/QROM arguments
-retain their stated assumptions; the seeded-PKE obligations, concrete
-SHAKE-based security argument and final reduction margins remain open.
-The loose quantum rejection bound does not certify the earlier illustrative
-allocation. Formal constant-time execution, complete erasure of secret
+retain their stated assumptions. Research through M15 provides a sufficient
+conditional margin for its declared working checkpoint, while the exact
+fixed-primitive argument, quantitative assumption qualification and final
+comparison remain open. Formal constant-time execution, complete erasure of secret
 copies, an external security audit and standardization remain future work.
 The available evidence does not establish a global security-bit rating or
 production-security guarantee. See [SECURITY.md](SECURITY.md).
@@ -499,9 +530,10 @@ production-security guarantee. See [SECURITY.md](SECURITY.md).
 
 Research notes are currently maintained in French. The historical P0
 candidate and twenty J2 snapshots preserve the original hypotheses,
-negative results and decisions. Current work continues on memory usage,
-implementation guarantees, portable delivery and the remaining security
-arguments.
+negative results and decisions. Current work focuses on the quantitative
+security assumptions, concrete-primitive and correctness populations,
+matched security comparisons and stronger implementation guarantees.
+See the [M15 progress and evidence boundary](docs/ETAT_RECHERCHE_M15.md).
 
 ## License and attribution
 

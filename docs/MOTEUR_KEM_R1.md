@@ -1,5 +1,13 @@
 # Moteur KEM1536-DEV-Q7681-R1
 
+Le dépôt **MLKEM-1536 Core** conserve M10 comme référence exécutable livrée.
+Les cycles de recherche suivants vont jusqu'à M15 : leur
+[bilan public de portée](ETAT_RECHERCHE_M15.md) présente les avancées de
+sécurité et de conformité, ainsi que la séparation entre preuves publiques
+rejouables et résultats internes dont les artefacts restent privés. Ces
+travaux n'ont pas modifié le code, les paramètres, les formats ou le binaire
+canonique du moteur. C01 reste ouvert et Messenger n'est pas autorisé.
+
 Le moteur expérimental réalise **KeyGen, Encaps et Decaps** en Rust,
 avec une réalisation Python développée séparément pour les contrôles.
 Sa [spécification](SPECIFICATION_DEV_Q7681_R1.md) a été enregistrée avant

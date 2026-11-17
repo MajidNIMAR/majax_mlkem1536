@@ -6,6 +6,53 @@ coefficients. Chaque étude doit servir une décision pour sa construction.
 Le futur article décrit ce travail et ses limites ; son écriture ne
 remplace pas le développement du moteur.
 
+**M15, 17 novembre 2026 — cinq périmètres approfondis.** La cryptanalyse
+ciblée, le traitement des primitives fixes, la correction par clé, la
+comparaison commune et la conformité sémantique disposent de nouveaux
+livrables exécutables et d'arguments relus. Les preuves et calculs détaillés
+restent privés. Les résultats sont acquis dans leurs périmètres déclarés ;
+la crédibilité quantitative et le passage au moteur concret restent des
+travaux scientifiques ouverts. Aucun changement de construction n'est retenu
+sans besoin établi. C01 et le gel final restent ouverts, sans autorisation
+Messenger ; les sources et le binaire de référence conservent leurs octets.
+
+**M14, 17 novembre 2026 — marge conditionnelle et ressources construites.**
+Un nouveau lemme et une construction de simulation explicite remplacent
+deux pistes contrefactuelles M13 dans leur portée déclarée. Leur comparaison
+intégrée est acquise et revue localement ; le repère retenu présente une
+marge sous hypothèses de travail. Le moteur livré reste inchangé. La suite
+prioritaire porte sur la crédibilité des hypothèses aux ressources exactes,
+le raccord aux primitives concrètes et la couverture de l'objectif final.
+Ces trois obligations sont séparées du contrôle numérique déjà obtenu.
+C01 reste ouvert ; aucune activation Messenger ni publication des détails.
+
+**M13, 17 novembre 2026 — recul quantitatif.** Une grille d'hypothèses
+indexées aux ressources, des inversions exactes et une analyse des
+interactions fournissent une synthèse de décision interne. Les cas
+équivalents et les conditions des scénarios sont conservés explicitement.
+Cette étude oriente le travail sur les pertes de preuve, les ressources
+des réductions et les hypothèses à évaluer ; elle ne sélectionne aucun
+profil ni gain global de sécurité. C01 reste ouvert conformément à
+l'objectif de ce cycle, sans changement du moteur livré.
+
+**M12, 17 novembre 2026 — contrat et réduction extérieure.** Le nouveau
+cycle relie une cible bornée déclarée, les ressources d'une construction
+quantique extérieure, les hypothèses exactes du PKE et des analyses de
+structure. Les versions finales conservent leurs corrections et les
+acquisitions initiales. Le moteur R1 reste inchangé. La suite porte sur
+la marge quantitative et la pertinence des hypothèses dans le cadre commun,
+sans déduire une modification de paramètres d'une seule limite de preuve.
+C01 et le gel final demeurent ouverts ; détails dans le dossier local M12.
+
+**M11, 17 novembre 2026 — développement de sécurité interne.** Un premier
+cycle des quatre travaux est exécuté : cartes de composition, recherche
+contrainte, décision R1 et contrôles des obligations du programme. Les
+preuves instrumentales, résultats et vérificateurs restent dans le dossier
+local interne ; le rapport de recherche est actualisé. R1 demeure la
+référence de développement. La suite scientifique porte sur la composition
+complète et sa calibration aux ressources déclarées ; les résultats bornés
+de ce cycle ne ferment pas C01 et n'autorisent pas la production Messenger.
+
 **M10, 16 novembre 2026 — chantiers 1 à 4.** Le
 [bilan courant](M10_MOTEUR_ET_QUALIFICATION.md) rassemble les raccords de
 sécurité conditionnels, les 40 estimations nouvelles et la décision de

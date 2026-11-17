@@ -1,6 +1,100 @@
-# Rapport de recherche — MAJAX R6, KEM à six blocs de 256 coefficients
+# Rapport de recherche — MLKEM-1536 Core, KEM à six blocs de 256 coefficients
 
-Version de travail du 16 novembre 2026. Ce document est la base évolutive du futur article. Le [journal](JOURNAL_RECHERCHE.md) conserve les étapes et décisions ; les [résultats figés de J2](../results/j2/run-001/) conservent les calculs et leur provenance. Une modification du rapport doit rester cohérente avec ces données.
+Version de travail du 17 novembre 2026. Ce document est la base évolutive du futur article. Le [journal](JOURNAL_RECHERCHE.md) conserve les étapes et décisions ; les [résultats figés de J2](../results/j2/run-001/) conservent les calculs et leur provenance. Une modification du rapport doit rester cohérente avec ces données.
+
+**M15 — cinq chantiers de sécurité approfondis.** Le cycle suivant fournit
+de nouvelles acquisitions cryptanalytiques, des arguments sur les distributions
+structurées, une construction calculable des primitives fixes dans les jeux
+étudiés et des certificats conditionnels de correction par clé. Une comparaison
+commune conserve les hypothèses propres à chaque famille. La conformité du code
+est renforcée par des obligations sémantiques universelles sur des composants
+délimités et un certificat algébrique du réseau NTT.
+
+Les revues croisées ont demandé des durcissements des instruments privés et
+une clarification de populations ; les versions initiales restent conservées.
+Les versions retenues et le registre de composition sont vérifiés dans leurs
+périmètres. Les coûts heuristiques ne deviennent pas des bornes universelles
+d'avantage. Les théorèmes conditionnels n'établissent pas les écarts concrets
+des fonctions fixes, et les preuves ciblées ne couvrent pas tout le KEM ni sa
+compilation. Le dossier détaillé demeure local et privé.
+
+C01 reste ouvert : la justification des hypothèses quantitatives, les
+transferts et populations concrets ainsi que la comparaison CCA finale ne sont
+pas entièrement acquis. Aucun résultat n'impose de modifier la construction
+actuelle. Les paramètres, formats, sources et binaire de R1 sont inchangés.
+La production Messenger reste interdite et la revue extérieure différée.
+
+**M14 — avancée de l'argument conditionnel de sécurité.** Le cycle suivant
+M13 fournit un lemme plus serré dans le modèle déclaré, une construction
+de simulation moins coûteuse et leur intégration dans le cas candidat R1.
+La comparaison de quatre variantes isole leurs effets sur 48 lignes
+conditionnelles. Le repère étudié dispose désormais d'une marge suffisante
+sous des hypothèses quantitatives explicites, là où l'ancienne borne ne
+permettait pas de conclure. Les calculs exacts, reconstructions distinctes
+et revues internes sont conservés dans le dossier privé M14.
+
+Cette avancée ne repose pas sur l'adoption d'un facteur contrefactuel.
+Sa portée reste conditionnelle : la crédibilité des hypothèses aux
+ressources construites, le passage aux primitives exactes et la comparaison
+au cahier des charges final restent à établir. Les contrôles finis ne
+remplacent pas les preuves générales ; les revues internes ne constituent
+pas l'audit extérieur différé. C01 demeure ouvert et la production
+Messenger reste interdite. Le moteur, ses paramètres, son binaire et les
+capsules historiques sont inchangés. Les détails ne sont pas exportés.
+
+**M13 — hypothèses quantitatives pour orienter la recherche.** À la demande
+de l'utilisateur, C01 est maintenu ouvert et une étude locale élargit les
+hypothèses de travail. Elle comprend 270 cartes de ressources, 16 paires
+d'avantages supposés et trois cibles, avec regroupement des cas
+algébriquement équivalents. Des inversions, des scénarios d'amélioration
+de preuve, des contrôles de cohérence et des frontières entières exactes
+complètent la grille. La synthèse interne distingue les pistes qui changent
+le registre numérique de celles qui modifient la force des hypothèses
+requises aux ressources construites.
+
+Les hypothèses ne sont pas adoptées comme vérités et les facteurs
+contrefactuels ne constituent pas de nouveaux théorèmes ou paramètres.
+Les verdicts restent conditionnels ; leurs fréquences ne mesurent aucune
+probabilité de sécurité. Le rapport détaillé, les tableaux de décision,
+les reprises et les vérificateurs restent dans le dossier interne M13.
+R1, son binaire, le contrat RC1 et l'objectif comparatif final restent
+inchangés. C01 demeure ouvert et la production Messenger reste interdite.
+
+**M12 — contrat quantifié et composition de sécurité.** Le cycle local
+du 17 novembre fixe un contrat de recherche borné, construit la carte de
+ressources du mécanisme quantique extérieur et la relie aux hypothèses du
+chiffrement interne. Les versions retenues comprennent des corrections
+explicites d'instruments et de comptages, avec conservation des acquisitions
+initiales. Les nouvelles analyses de structure combinent des contrôles à
+taille réelle sur des données synthétiques et des populations réduites
+exactes. Les propositions conditionnelles, exigences numériques et limites
+sont consignées dans le dossier interne M12, hors export public.
+
+La portée du contrat local reste distincte de l'objectif comparatif final.
+Le cycle n'attribue aucun niveau global de sécurité à partir d'un coût
+heuristique, d'un compteur de tests ou d'une hypothèse non évaluée. R1
+reste la référence de recherche, avec sources et binaire inchangés. C01
+reste ouvert et la production Messenger demeure interdite. Le rapport
+historique et les capsules M10/M11 conservent leurs versions ; les
+instruments repris dans M12 font autorité pour les nouveaux calculs.
+
+**M11 — cycle interne de développement de sécurité.** Les quatre travaux
+autorisés le 17 novembre sont engagés dans un dossier local distinct :
+composition et ressources, recherche d'attaques sous contraintes, décision
+de construction et liaison des obligations au programme. Ce premier cycle
+comprend une carte réversible interne exécutable, une synthèse constructive
+de son arithmétique de référence, huit travaux d'estimation avec 13 188
+évaluations de candidats et des contrôles sémantiques sur des copies privées
+du code. Les calculs, tests, contre-vérifications, incidents et limites sont
+conservés avec leurs sources et empreintes. Les résultats détaillés demeurent
+locaux conformément à l'instruction de confidentialité de l'utilisateur.
+
+La décision M11 conserve R1 comme moteur de recherche ; aucune nouvelle
+version cryptographique ni sélection finale des paramètres n'est déduite
+automatiquement de ce cycle. C01 reste ouvert et bloque la production dans
+Messenger. La revue croisée interne est distincte de la revue extérieure
+différée. Le moteur livré, son binaire canonique et les capsules historiques
+conservent leurs octets ; M11 n'ajoute aucun crédit aux campagnes M10.
 
 Le [bilan courant M10](M10_MOTEUR_ET_QUALIFICATION.md) relie le durcissement
 du cycle secret, les nouvelles analyses conditionnelles et les acquisitions

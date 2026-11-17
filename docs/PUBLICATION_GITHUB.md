@@ -1,13 +1,15 @@
 # Publication du moteur sur GitHub
 
-Le projet est présenté sous le nom **MAJAX R6 — recherche et ingénierie
-cryptographique**. R6 désigne le rang six de la construction ; le profil
+Le dépôt est présenté sous le nom **MLKEM-1536 Core — recherche et ingénierie
+cryptographique**. Le nom historique MAJAX R6 et R6 dans les résultats
+désignent le rang six de la construction ; le profil
 technique `KEM1536-DEV-Q7681-R1`, les formats et les domaines de hachage
 conservent leur identité. Les noms techniques et les archives historiques
 gardent leur nomenclature d'origine.
 
-Le dépôt public est `MajidNIMAR/majax_mlkem1536`, distinct de
-`MajidNIMAR/majax-mlkem` (MAJAX ML-KEM, ancien nom :
+Le dépôt public est [`MajidNIMAR/mlkem-1536-core`](https://github.com/MajidNIMAR/mlkem-1536-core), distinct de
+[`MajidNIMAR/mlkem-1024-forge`](https://github.com/MajidNIMAR/mlkem-1024-forge)
+(ML-KEM-1024 Forge, anciens noms : `majax-mlkem`,
 `majax-mlkem1024-demo`). Il présente le développement expérimental
 du moteur `KEM1536-DEV-Q7681-R1`, ses sources, sa spécification et les
 résultats conservés. Il ne partage pas l'architecture opérationnelle de
@@ -64,8 +66,14 @@ publiées. Le script n'exécute pas ces fichiers de référence.
 Les notes d'entretien du poste `docs/NETTOYAGE_ET_ORGANISATION.md` et
 `docs/maintenance/cleanup-001.json` restent locales et sont également
 exclues de l'export. Elles ne constituent pas des preuves cryptographiques.
-Les rapports scientifiques, sources, spécifications et instantanés utiles
-à la reproductibilité restent publiés avec leurs empreintes.
+Les rapports scientifiques, sources, spécifications et instantanés déjà
+publiés conservent leurs empreintes. Les cycles internes M11–M15 sont
+résumés dans un [état public de portée](ETAT_RECHERCHE_M15.md) ; leurs
+programmes nouveaux, résultats détaillés et revues restent privés et hors
+export. Aucun paquet de rejeu public de ces cycles n'est annoncé. Les
+contrôles internes de recherche ne doivent pas être attribués à la CI
+publique du moteur. L'actualisation documentaire se publie sur `main` en
+conservant l'historique public et la branche actuelle.
 
 La copie durable du dépôt public est sous `publication/majax_mlkem1536/`.
 Elle conserve son propre historique Git, distinct de celui du dossier
