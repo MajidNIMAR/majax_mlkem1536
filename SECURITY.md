@@ -20,10 +20,24 @@ for production in MAJAX Messenger.** External review remains deferred.
 
 The [M15 progress note](docs/ETAT_RECHERCHE_M15.md) distinguishes the scoped
 internal results from published, independently replayable evidence. The
-M11–M15 detailed research artifacts and tests are retained privately. They
-are not part of the public CI suite. The delivered engine remains M10;
-the following M10 measurements and image qualifications keep their original
-scope and are not new M15 campaigns.
+[public Windows arithmetic/NTT lot](research/reproducibility/m15/implementation/README.md)
+supplies 31 source-linked SMT obligations, a certificate checking 131,072
+linear coefficients and 21 component tests. Its 18 packaging-tool tests
+check the surrounding installation and replay tools. A dedicated Windows
+CI job runs this lot; its result must be checked at the revision under review.
+The full 82-test internal M11–M15 suite and detailed artifacts from the other
+workstreams remain private and are not made public by this subset.
+
+The pinned solver, restricted source translator and checked NTT template
+mapping remain trust dependencies. The stored Z3 proof objects are not
+checked by an independent proof kernel. These results do not formally
+verify the whole PKE/KEM, Rust/LLVM or a final compiled image, and add no
+constant-time or universal-erasure guarantee. The lot was exercised in a
+fresh local clone on the same recorded Windows/CPython host; this does not
+qualify every platform or a clean system installation.
+
+The delivered engine remains M10; the following M10 measurements and image
+qualifications keep their original scope and are not new M15 campaigns.
 
 M10 is the delivered engine reference, qualified internally on the recorded
 GNU x86-64 Windows/Linux PC images. It writes derived material into existing owners,

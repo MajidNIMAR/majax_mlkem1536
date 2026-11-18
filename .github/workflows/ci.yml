@@ -77,3 +77,91 @@ jobs:
         if: runner.os == 'Linux'
         shell: bash
         run: .tools/research-venv/bin/python -B research/smoke_m10_package.py
+
+  m15-reproducibility-windows:
+    name: M15 reproducibility (Windows)
+    runs-on: windows-latest
+    timeout-minutes: 30
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c # v6
+        with:
+          python-version: '3.13'
+          architecture: x64
+      - name: Check M15 inputs before installing the solver
+        run: |
+          if (Test-Path -LiteralPath '.tools/m15-proof') {
+            throw 'The M15 solver cache must be absent at the start of this job.'
+          }
+          New-Item -ItemType Directory -Path '.tools/m15-proof/ci-logs' -Force | Out-Null
+          python -I -S -B research/reproducibility/m15/implementation/verify.py --check-only 1> .tools/m15-proof/ci-logs/integrity-before.stdout.txt 2> .tools/m15-proof/ci-logs/integrity-before.stderr.txt
+          if ($LASTEXITCODE -ne 0) { throw 'M15 input integrity failed.' }
+          Get-Content -LiteralPath '.tools/m15-proof/ci-logs/integrity-before.stdout.txt'
+      - name: Download and install the pinned M15 solver
+        run: |
+          python -I -S -B research/reproducibility/m15/implementation/setup_windows.py 1> .tools/m15-proof/ci-logs/setup.stdout.txt 2> .tools/m15-proof/ci-logs/setup.stderr.txt
+          if ($LASTEXITCODE -ne 0) { throw 'M15 pinned solver installation failed.' }
+          $setupResult = Get-Content -LiteralPath '.tools/m15-proof/ci-logs/setup.stdout.txt' -Raw | ConvertFrom-Json
+          if (-not $setupResult.downloaded -or -not $setupResult.installed -or $setupResult.validated_package_files -ne 34) {
+            throw 'This job must exercise a complete M15 download and installation.'
+          }
+          $setupReceipt = Get-Content -LiteralPath $setupResult.receipt -Raw | ConvertFrom-Json
+          if ($setupReceipt.global_environment_modified -ne $false -or $setupReceipt.scientific_payload_modified -ne $false) {
+            throw 'M15 setup must preserve the global Python environment and scientific inputs.'
+          }
+          Get-Content -LiteralPath '.tools/m15-proof/ci-logs/setup.stdout.txt'
+      - name: Replay M15 arithmetic, NTT and component checks
+        run: |
+          python -I -S -B research/reproducibility/m15/implementation/verify.py 1> .tools/m15-proof/ci-logs/replay.stdout.txt 2> .tools/m15-proof/ci-logs/replay.stderr.txt
+          if ($LASTEXITCODE -ne 0) { throw 'M15 scientific replay failed.' }
+          Get-Content -LiteralPath '.tools/m15-proof/ci-logs/replay.stdout.txt'
+      - name: Test M15 packaging tools
+        run: |
+          python -I -S -B research/reproducibility/m15/implementation/test_tools.py 1> .tools/m15-proof/ci-logs/tools.stdout.txt 2> .tools/m15-proof/ci-logs/tools.stderr.txt
+          if ($LASTEXITCODE -ne 0) { throw 'M15 packaging tool tests failed.' }
+          $testLog = Get-Content -LiteralPath '.tools/m15-proof/ci-logs/tools.stderr.txt' -Raw
+          if ($testLog -notmatch 'Ran 18 tests' -or $testLog.TrimEnd() -notmatch '\bOK$' -or $testLog -match 'skipped=') {
+            throw 'Expected 18 successful M15 packaging tool tests with no skips.'
+          }
+          Get-Content -LiteralPath '.tools/m15-proof/ci-logs/tools.stderr.txt'
+      - name: Validate M15 solver reuse offline
+        run: |
+          python -I -S -B research/reproducibility/m15/implementation/setup_windows.py --offline 1> .tools/m15-proof/ci-logs/setup-offline.stdout.txt 2> .tools/m15-proof/ci-logs/setup-offline.stderr.txt
+          if ($LASTEXITCODE -ne 0) { throw 'M15 offline solver validation failed.' }
+          $setupResult = Get-Content -LiteralPath '.tools/m15-proof/ci-logs/setup-offline.stdout.txt' -Raw | ConvertFrom-Json
+          if ($setupResult.downloaded -or $setupResult.installed -or $setupResult.validated_package_files -ne 34) {
+            throw 'M15 offline setup must reuse the exact installed solver.'
+          }
+          $setupReceipt = Get-Content -LiteralPath $setupResult.receipt -Raw | ConvertFrom-Json
+          if ($setupReceipt.global_environment_modified -ne $false -or $setupReceipt.scientific_payload_modified -ne $false) {
+            throw 'M15 offline setup must preserve the global Python environment and scientific inputs.'
+          }
+          Get-Content -LiteralPath '.tools/m15-proof/ci-logs/setup-offline.stdout.txt'
+      - name: Repeat M15 replay without downloads
+        run: |
+          python -I -S -B research/reproducibility/m15/implementation/verify.py 1> .tools/m15-proof/ci-logs/replay-offline.stdout.txt 2> .tools/m15-proof/ci-logs/replay-offline.stderr.txt
+          if ($LASTEXITCODE -ne 0) { throw 'M15 offline scientific replay failed.' }
+          Get-Content -LiteralPath '.tools/m15-proof/ci-logs/replay-offline.stdout.txt'
+      - name: Recheck M15 inputs after replay
+        run: |
+          python -I -S -B research/reproducibility/m15/implementation/verify.py --check-only 1> .tools/m15-proof/ci-logs/integrity-after.stdout.txt 2> .tools/m15-proof/ci-logs/integrity-after.stderr.txt
+          if ($LASTEXITCODE -ne 0) { throw 'M15 final input integrity failed.' }
+          if ((Get-Content -LiteralPath '.tools/m15-proof/ci-logs/integrity-before.stdout.txt' -Raw) -cne (Get-Content -LiteralPath '.tools/m15-proof/ci-logs/integrity-after.stdout.txt' -Raw)) {
+            throw 'M15 input integrity changed during replay.'
+          }
+          Get-Content -LiteralPath '.tools/m15-proof/ci-logs/integrity-after.stdout.txt'
+      - name: Preserve M15 replay receipts and logs
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: m15-lot1-windows-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            .tools/m15-proof/ci-logs/
+            .tools/m15-proof/setup-receipts/
+            .tools/m15-proof/replay-receipts/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30

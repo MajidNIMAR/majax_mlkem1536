@@ -1,6 +1,6 @@
 # Research progress through M15
 
-Public scope statement, 17 November 2026. **MLKEM-1536 Core** develops
+Public scope statement, 18 November 2026. **MLKEM-1536 Core** develops
 `KEM1536-DEV-Q7681-R1`, an experimental module-lattice KEM with six
 polynomials of 256 coefficients. The number 1536 is a coefficient count,
 not a security-bit rating or a standardized ML-KEM parameter set.
@@ -38,11 +38,43 @@ The public repository supplies the engine, specification, reference
 implementation and the published historical evidence linked from the
 [README](../README.md). Its CI checks those public sources and artifacts.
 
-The detailed M11–M15 research programs, acquisitions and reviews are retained
-privately. This update publishes their scope and research status, **not a
-public replay bundle for those studies**. Readers cannot independently
-reproduce those new internal studies solely from this public snapshot.
-Internal test counts must not be presented as hosted-CI test counts.
+The first [M15 Windows replay lot](../research/reproducibility/m15/implementation/README.md)
+adds a bounded, source-linked arithmetic/NTT subset:
+
+| Public check | Supplied inputs and expected result |
+|---|---|
+| Arithmetic | 31 SMT-LIB queries, stored Z3 proof objects, acquisition receipt and restricted translator; reconstruct the source-derived obligations, compare the captured assertions and re-establish 31 UNSAT results |
+| NTT algebra | Selected certificate and reconstruction instrument; check 131,072 linear coefficients and the declared schedule identities |
+| Component tests | 21 tests of the scoped scientific instruments, including domain and synthetic-mutation controls |
+| Packaging tools | 18 separate tests of input-integrity refusals, local extraction and Python isolation |
+
+The lot includes its file manifest, solver lock, installer, verifier and
+notices. It reads the two existing Rust source files and fetches the exact
+official Windows Z3 wheel separately. It needs neither a Rust compiler nor
+the engine binary or private M11–M14 archives. The guide gives the commands,
+offline and integrity-only modes, receipt locations and trust assumptions.
+A dedicated Windows job in the [CI workflow](../.github/workflows/ci.yml)
+runs these checks and preserves their logs; its hosted result is the result
+of the specific commit's workflow run, not a consequence of this scope note.
+
+Local preparation exercised a complete independent fresh clone, a real
+download into an absent solver cache, the first scientific replay and a
+second offline replay. The recorded host is Windows x86-64 with CPython
+3.13.7; this is a fresh clone and local solver installation on that host,
+not a new-machine or clean-system experiment.
+
+The 78 selected scientific inputs retain their original bytes. The context
+of README/PROOF is adapted for public use. Revision notes preserve the
+lineage; superseded acquisitions are outside this selected lot. The
+restricted translator, reviewed NTT schedule mapping and pinned Z3 solver
+remain part of its trust base. Stored proof objects do not constitute a
+second independent proof-kernel check.
+
+The detailed programs, acquisitions and reviews for the other M11–M15
+workstreams remain private. This first lot does not make the entire internal
+study reproducible. The 82 internal research tests are not interchangeable
+with the 21 public component tests, the 18 packaging-tool tests or the
+existing public engine CI suite.
 
 ## Remaining security boundary
 

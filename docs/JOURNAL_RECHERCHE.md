@@ -2304,3 +2304,105 @@ privés restent hors export. Les 82 tests ciblés du cycle interne ne sont pas
 attribués à la CI publique. Les sources du moteur, formats, paramètres et
 binaire restent inchangés ; C01 demeure ouvert. L'état courant de publication
 et de CI est vérifié sur le dépôt public, séparément des reçus historiques.
+
+## 18 novembre 2026 — Premier lot reproductible, sélection des fichiers
+
+L'utilisateur demande une progression étape par étape et autorise d'abord
+la seule sélection. Le périmètre retenu couvre les 31 obligations SMT,
+le certificat NTT et les 21 tests de composants sur Windows. L'inventaire
+local donne 80 fichiers sources, leurs rôles, leurs tailles et leurs
+empreintes ; deux sources Rust déjà publiques seront réutilisées.
+
+Les programmes et résultats scientifiques sélectionnés conservent leurs
+octets ; le contexte de deux documents devra être adapté à l'étape suivante.
+Les outils binaires, caches, anciennes acquisitions et autres volets ne
+sont pas inclus dans ce premier lot. L'installation, le rejeu depuis une
+copie neuve, la CI et la publication ne sont pas engagés à cette étape.
+Les archives originales restent intactes. La reprise de l'utilisateur est
+attendue avant la préparation de l'installation et du point d'entrée.
+
+## 18 novembre 2026 — Premier lot reproductible, préparation locale de l'étape 2
+
+L'utilisateur autorise la deuxième étape après acceptation de la sélection.
+Les 80 sources sont rassemblées dans le chemin prévu ; 78 restent identiques
+aux originaux et deux documents sont adaptés à leur contexte futur. Le lot
+comprend un manifeste, un verrou de solveur Windows, un installateur local,
+un point d'entrée unique, les notices et des tests des outils d'empaquetage.
+Les commandes isolées évitent les dépendances Python ambiantes et contrôlent
+les origines des composants Z3 employés. Les archives scientifiques originales
+et les sources du moteur restent inchangées.
+
+La validation locale réutilise le cache Windows exact, sans téléchargement,
+installation globale ni modification de l'ancien paquet du solveur. Les
+34 membres du solveur sont contrôlés ; les 31 obligations SMT, les 131 072
+coefficients du certificat NTT et les 21 tests scientifiques passent. Les
+18 tests propres aux outils passent sans omission. L'extraction est testée
+sur des petites fixtures synthétiques, ce qui ne remplace pas une installation
+complète sur une copie neuve. Une revue distincte contrôle les limites du lot
+et l'isolation ; ses essais initiaux et les corrections sont conservés.
+
+Les 88 fichiers du paquet, manifeste inclus, conservent les octets attendus
+par les filtres Git effectifs, sans modification de l'index. L'inventaire
+initial et les 756 fichiers scellés M15 sont revérifiés. Les reçus de cette
+étape sont dans `artifacts/retained/repro-m15-lot1-step2-001/` et
+`.tools/m15-proof/`. Le dépôt public durable reste à 8b21a05.
+
+L'étape 2 s'arrête ici : aucun rejeu depuis une copie neuve, changement de CI,
+commit ou publication GitHub n'a été effectué. La prochaine reprise de
+l'utilisateur pourra autoriser l'étape 3. C01 reste ouvert ; les résultats
+ne prouvent ni tout le KEM ni le programme compilé ou ses canaux auxiliaires.
+
+## 18 novembre 2026 — Premier lot reproductible, étape 3 depuis une copie neuve
+
+L'utilisateur autorise l'étape 3. Un seul clone complet indépendant est
+préparé depuis la référence publique 8b21a05, sans objets partagés ni liens.
+Les 88 fichiers du lot figé sont ajoutés dans un commit local sur main,
+puis rematérialisés depuis l'index identique à HEAD. Aucun dépôt distant
+n'est conservé dans le clone d'essai. Le contrôle indépendant préalable
+confirme l'absence réelle de .tools, de target et d'archives privées.
+
+Le premier contrôle intégral a refusé les conversions CRLF normales de sept
+scripts PowerShell. L'instrument et le constat initial sont conservés ; la
+correction compare ces sept scripts au checkout défini par Git, en distinguant
+blob stocké et octets de travail. Aucune exception n'est appliquée au paquet
+ou aux deux sources Rust. Les 2 578 fichiers suivis sont ensuite validés.
+
+L'installation complète télécharge le wheel officiel, vérifie taille et
+SHA-256, extrait et contrôle les 34 membres Z3 dans le nouveau cache.
+Le premier rejeu réussit : 31 obligations SMT, 131 072 coefficients NTT,
+21 tests scientifiques sans omission. Les 18 tests des outils réussissent.
+La configuration hors ligne réutilise cette installation et un second rejeu
+scientifique réussit, avec les mêmes populations. Le manifeste et les entrées
+suivies restent inchangés. Les reçus génériques sont conservés tels quels ;
+la provenance du contexte neuf est attestée séparément par les contrôles
+étape 3 dans artifacts/retained/repro-m15-lot1-step3-001/.
+
+Il s'agit d'une copie neuve sur le même PC et le même Python/Windows, pas
+d'une machine vierge. Le moteur, son binaire, le clone public habituel et
+les archives des étapes précédentes restent intacts. Aucun push, changement
+de CI, publication GitHub ou modification des métadonnées n'a été effectué.
+Le rapport du PC est actualisé ; l'étape 4 attend la prochaine reprise de
+l'utilisateur. C01 conserve son statut ouvert et sa portée distincte.
+
+## 18 novembre 2026 — Premier lot reproductible, intégration CI et distribution
+
+L'utilisateur autorise la quatrième étape. Le paquet figé est adapté au
+contexte de distribution publique, avec conservation des 78 entrées
+scientifiques et des instruments. Le manifeste conserve la référence du lot
+testé depuis la copie neuve ; sa nouvelle version décrit la présentation de
+publication et renvoie au statut du commit pour la CI hébergée.
+
+Un job Windows dédié vérifie cache initialement absent, téléchargement et
+installation épinglés, rejeu scientifique, 18 tests des outils, réutilisation
+et rejeu hors ligne, ainsi que l'intégrité finale. Il conserve ses reçus et
+journaux dans un artefact, y compris en cas d'échec ; wheel, DLL et fixtures
+sont exclus. Les jobs historiques du moteur Windows et Ubuntu sont conservés.
+
+Le README, le statut de sécurité, le guide et l'état M15 décrivent le lot
+public31/131072/21 et les18 tests d'outils, en le distinguant des autres volets
+privés et des82 tests internes. L'export ne porte que sur des octets commis,
+avec contrôle de la carte des fichiers/blobs et des exclusions privées avant
+publication sur main. Le résultat de la nouvelle CI n'est pas déduit de sa
+préparation : son observation et les journaux du commit publié sont rattachés
+aux reçus locaux de publication. Le moteur et les archives historiques restent
+inchangés ; C01 conserve son statut ouvert.

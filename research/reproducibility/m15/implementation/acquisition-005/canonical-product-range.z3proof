@@ -1,0 +1,87 @@
+(let ((a!1 (th-lemma (or (<= (* coefficient_a coefficient_b) 58982400)
+                         (not (>= coefficient_b 0))
+                         (not (<= coefficient_b 0)))))
+      (a!2 (asserted (and (and (>= coefficient_a 0) (<= coefficient_a 7680))
+                          (and (>= coefficient_b 0) (<= coefficient_b 7680)))))
+      (a!5 (th-lemma (or (>= coefficient_a 7681)
+                         (<= coefficient_b 0)
+                         (<= (* coefficient_a coefficient_b) 58982400)
+                         (not (<= coefficient_b 7680)))))
+      (a!8 (not (and (>= (* coefficient_a coefficient_b) 0)
+                     (<= (* coefficient_a coefficient_b) 58982400))))
+      (a!9 (or (= coefficient_b 0)
+               (= coefficient_a 0)
+               (= (>= coefficient_a 0) (>= coefficient_b 0))))
+      (a!21 (def-axiom (or (= (>= coefficient_a 0) (>= coefficient_b 0))
+                           (not (>= coefficient_a 0))
+                           (not (>= coefficient_b 0)))))
+      (a!26 (th-lemma (or (not (>= coefficient_a 7681))
+                          (not (<= coefficient_a 7680))))))
+(let ((a!3 (and-elim (and-elim a!2
+                               (and (>= coefficient_b 0)
+                                    (<= coefficient_b 7680)))
+                     (>= coefficient_b 0)))
+      (a!6 (and-elim (and-elim a!2
+                               (and (>= coefficient_b 0)
+                                    (<= coefficient_b 7680)))
+                     (<= coefficient_b 7680)))
+      (a!10 (not (and a!9 (<= (* coefficient_a coefficient_b) 58982400))))
+      (a!11 (= (and a!9 (<= (* coefficient_a coefficient_b) 58982400))
+               (and a!9 (<= (* coefficient_a coefficient_b) 58982400))))
+      (a!15 (or (not a!9) (not (<= (* coefficient_a coefficient_b) 58982400))))
+      (a!20 (or a!9 (not (= (>= coefficient_a 0) (>= coefficient_b 0)))))
+      (a!22 (and-elim (and-elim a!2
+                                (and (>= coefficient_a 0)
+                                     (<= coefficient_a 7680)))
+                      (>= coefficient_a 0)))
+      (a!27 (and-elim (and-elim a!2
+                                (and (>= coefficient_a 0)
+                                     (<= coefficient_a 7680)))
+                      (<= coefficient_a 7680))))
+(let ((a!4 (mp a!3
+               (rewrite (= (>= coefficient_b 0) (>= coefficient_b 0)))
+               (>= coefficient_b 0)))
+      (a!7 (mp a!6
+               (rewrite (= (<= coefficient_b 7680) (<= coefficient_b 7680)))
+               (<= coefficient_b 7680)))
+      (a!12 (mp (mp (asserted a!8) (rewrite (= a!8 a!10)) a!10)
+                (monotonicity (rewrite a!11) (= a!10 a!10))
+                a!10))
+      (a!16 (= (and a!9 (<= (* coefficient_a coefficient_b) 58982400))
+               (not a!15)))
+      (a!19 (rewrite (= (not (not a!15)) a!15)))
+      (a!23 (mp a!22
+                (rewrite (= (>= coefficient_a 0) (>= coefficient_a 0)))
+                (>= coefficient_a 0)))
+      (a!28 (mp a!27
+                (rewrite (= (<= coefficient_a 7680) (<= coefficient_a 7680)))
+                (<= coefficient_a 7680))))
+(let ((a!13 (mp (mp a!12 (rewrite (= a!10 a!10)) a!10)
+                (monotonicity (rewrite a!11) (= a!10 a!10))
+                a!10))
+      (a!17 (trans (monotonicity (rewrite (= a!9 a!9)) a!11)
+                   (rewrite a!16)
+                   a!16))
+      (a!24 (unit-resolution (def-axiom a!20)
+                             (unit-resolution a!21
+                                              a!23
+                                              a!4
+                                              (= (>= coefficient_a 0)
+                                                 (>= coefficient_b 0)))
+                             a!9)))
+(let ((a!14 (mp (mp a!13 (monotonicity (rewrite a!11) (= a!10 a!10)) a!10)
+                (monotonicity (rewrite a!11) (= a!10 a!10))
+                a!10))
+      (a!18 (monotonicity a!17 (= a!10 (not (not a!15))))))
+(let ((a!25 (unit-resolution (mp a!14 (trans a!18 a!19 (= a!10 a!15)) a!15)
+                             a!24
+                             (not (<= (* coefficient_a coefficient_b) 58982400)))))
+(let ((a!29 (unit-resolution a!5
+                             a!7
+                             (hypothesis (not (<= coefficient_b 0)))
+                             a!25
+                             (unit-resolution a!26
+                                              a!28
+                                              (not (>= coefficient_a 7681)))
+                             false)))
+  (unit-resolution a!1 a!4 (lemma a!29 (<= coefficient_b 0)) a!25 false))))))))

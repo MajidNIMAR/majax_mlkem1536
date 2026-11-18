@@ -1,0 +1,137 @@
+(let ((a!1 (div (div (+ 16 (* 7681 input_x)) 32) 65536))
+      (a!2 (mod (div (+ 16 (* 7681 input_x)) 32) 65536))
+      (a!4 (* (- 1) (div (+ 16 (* 7681 input_x)) 32)))
+      (a!7 (>= (+ (* input_x 7681) (mod (* 1 16) 4294967296)) 0))
+      (a!8 (< (+ (* input_x 7681) (mod (* 1 16) 4294967296)) 4294967296))
+      (a!9 (div (+ (* input_x 7681) (mod (* 1 16) 4294967296)) 32))
+      (a!28 (and-elim (asserted (and (>= input_x 0) (<= input_x 31)))
+                      (>= input_x 0)))
+      (a!31 (th-lemma (or (not (<= input_x 31)) (not (>= input_x 559168)))))
+      (a!32 (and-elim (asserted (and (>= input_x 0) (<= input_x 31)))
+                      (<= input_x 31)))
+      (a!35 (* 32 (div (+ 16 (* 7681 input_x)) 32)))
+      (a!42 (>= (mod (+ 16 (* 7681 input_x)) 32) 0))
+      (a!51 (<= (mod (+ 16 (* 7681 input_x)) 32) 31)))
+(let ((a!3 (= (+ (* 65536 a!1) a!2) (div (+ 16 (* 7681 input_x)) 32)))
+      (a!5 (<= (+ (+ (* 65536 a!1) a!2) a!4) 0))
+      (a!10 (= (mod a!9 65536) (div (+ (* input_x 7681) 16) 32)))
+      (a!12 (= a!2 (div (+ 16 (* 7681 input_x)) 32)))
+      (a!15 (+ (div (+ 16 (* 7681 input_x)) 32) (* (- 1) a!2)))
+      (a!29 (mp a!28 (rewrite (= (>= input_x 0) (>= input_x 0))) (>= input_x 0)))
+      (a!33 (mp a!32
+                (rewrite (= (<= input_x 31) (<= input_x 31)))
+                (<= input_x 31)))
+      (a!36 (+ a!35 (mod (+ 16 (* 7681 input_x)) 32)))
+      (a!43 (>= (+ (+ (* 65536 a!1) a!2) a!4) 0))
+      (a!45 (unit-resolution (th-lemma (or false (>= a!2 0)))
+                             (true-axiom true)
+                             (>= a!2 0)))
+      (a!52 (unit-resolution (th-lemma (or false (<= a!2 65535)))
+                             (true-axiom true)
+                             (<= a!2 65535))))
+(let ((a!6 (unit-resolution (th-lemma (or (not a!3) a!5))
+                            (unit-resolution (th-lemma (or false a!3))
+                                             (true-axiom true)
+                                             a!3)
+                            a!5))
+      (a!11 (not (and (>= (* input_x 7681) 0)
+                      (< (* input_x 7681) 4294967296)
+                      (>= (- 5 1) 0)
+                      (< (- 5 1) 18446744073709551616)
+                      true
+                      a!7
+                      a!8
+                      true
+                      a!10
+                      (>= (mod a!9 65536) 0)
+                      (<= (mod a!9 65536) 7680))))
+      (a!13 (not (and (>= input_x 0)
+                      (not (>= input_x 559168))
+                      a!12
+                      (<= a!2 7680))))
+      (a!16 (and (>= input_x 0)
+                 (not (>= input_x 559168))
+                 (= a!15 0)
+                 (<= a!2 7680)))
+      (a!18 (rewrite (= (= a!15 0) (and (<= a!15 0) (>= a!15 0)))))
+      (a!19 (not (or (not (<= a!15 0)) (not (>= a!15 0)))))
+      (a!23 (or (not (<= a!2 7680))
+                (not (>= a!15 0))
+                (not (<= a!15 0))
+                (not (>= input_x 0))
+                (>= input_x 559168)))
+      (a!37 (not (= a!36 (+ 16 (* 7681 input_x)))))
+      (a!38 (+ a!36 (* (- 1) (+ 16 (* 7681 input_x)))))
+      (a!39 (or false (= a!36 (+ 16 (* 7681 input_x)))))
+      (a!44 (unit-resolution (th-lemma (or (not a!3) a!43))
+                             (unit-resolution (th-lemma (or false a!3))
+                                              (true-axiom true)
+                                              a!3)
+                             a!43)))
+(let ((a!14 (mp (mp (asserted a!11) (rewrite (= a!11 a!13)) a!13)
+                (rewrite (= a!13 a!13))
+                a!13))
+      (a!20 (rewrite (= (and (<= a!15 0) (>= a!15 0)) a!19)))
+      (a!21 (and (>= input_x 0) (not (>= input_x 559168)) a!19 (<= a!2 7680)))
+      (a!26 (rewrite (= (not (not a!23)) a!23)))
+      (a!40 (unit-resolution (th-lemma a!39)
+                             (true-axiom true)
+                             (= a!36 (+ 16 (* 7681 input_x))))))
+(let ((a!17 (mp a!14 (rewrite (= a!13 (not a!16))) (not a!16)))
+      (a!22 (monotonicity (trans a!18 a!20 (= (= a!15 0) a!19)) (= a!16 a!21)))
+      (a!41 (unit-resolution (th-lemma (or a!37 (<= a!38 0))) a!40 (<= a!38 0)))
+      (a!50 (unit-resolution (th-lemma (or a!37 (>= a!38 0))) a!40 (>= a!38 0))))
+(let ((a!24 (trans a!22 (rewrite (= a!21 (not a!23))) (= a!16 (not a!23))))
+      (a!46 (th-lemma a!41
+                      (unit-resolution (th-lemma (or false a!42))
+                                       (true-axiom true)
+                                       a!42)
+                      (hypothesis (not (<= a!15 0)))
+                      a!33
+                      a!6
+                      a!44
+                      a!45
+                      false))
+      (a!48 (th-lemma a!41
+                      (unit-resolution (th-lemma (or false a!42))
+                                       (true-axiom true)
+                                       a!42)
+                      a!33
+                      (hypothesis (>= a!1 0))
+                      a!6
+                      (hypothesis (not (<= a!2 7680)))
+                      false))
+      (a!53 (th-lemma a!50
+                      (unit-resolution (th-lemma (or false a!51))
+                                       (true-axiom true)
+                                       a!51)
+                      a!29
+                      (hypothesis (not (>= a!1 0)))
+                      a!44
+                      a!52
+                      false)))
+(let ((a!25 (monotonicity a!24 (= (not a!16) (not (not a!23)))))
+      (a!49 (lemma a!48 (or (not (>= a!1 0)) (<= a!2 7680)))))
+(let ((a!27 (mp a!17 (trans a!25 a!26 (= (not a!16) a!23)) a!23)))
+(let ((a!30 (unit-resolution a!27
+                             a!29
+                             (or (not (<= a!2 7680))
+                                 (not (>= a!15 0))
+                                 (not (<= a!15 0))
+                                 (>= input_x 559168)))))
+(let ((a!34 (unit-resolution a!30
+                             (unit-resolution a!31
+                                              a!33
+                                              (not (>= input_x 559168)))
+                             (or (not (<= a!2 7680))
+                                 (not (>= a!15 0))
+                                 (not (<= a!15 0))))))
+(let ((a!47 (unit-resolution a!34
+                             (lemma a!46 (<= a!15 0))
+                             (or (not (<= a!2 7680)) (not (>= a!15 0))))))
+(let ((a!54 (unit-resolution a!47
+                             (unit-resolution a!49
+                                              (lemma a!53 (>= a!1 0))
+                                              (<= a!2 7680))
+                             (not (>= a!15 0)))))
+  (th-lemma a!6 a!54 (lemma a!53 (>= a!1 0)) false)))))))))))))

@@ -3,8 +3,10 @@
 Le dépôt **MLKEM-1536 Core** conserve M10 comme référence exécutable livrée.
 Les cycles de recherche suivants vont jusqu'à M15 : leur
 [bilan public de portée](ETAT_RECHERCHE_M15.md) présente les avancées de
-sécurité et de conformité, ainsi que la séparation entre preuves publiques
-rejouables et résultats internes dont les artefacts restent privés. Ces
+sécurité et de conformité. Le premier
+[lot M15 reproductible sous Windows](../research/reproducibility/m15/implementation/README.md)
+fournit les instruments et entrées d'un périmètre arithmétique/NTT ; les autres
+volets internes gardent leurs acquisitions et revues privées. Ces
 travaux n'ont pas modifié le code, les paramètres, les formats ou le binaire
 canonique du moteur. C01 reste ouvert et Messenger n'est pas autorisé.
 
@@ -65,6 +67,24 @@ Ces tailles diffèrent de P0 et de ML-KEM-1024. Les types R1 ne doivent
 pas servir à interpréter automatiquement les formats d'un autre profil.
 
 ## Utilisation locale
+
+Le lot M15 se rejoue séparément du moteur, depuis la racine d'une copie du
+dépôt qui le contient, sous Windows x64 avec CPython 3.13 x64 :
+
+```powershell
+python -I -S -B research/reproducibility/m15/implementation/setup_windows.py
+python -I -S -B research/reproducibility/m15/implementation/verify.py
+python -I -S -B research/reproducibility/m15/implementation/test_tools.py
+```
+
+Les résultats attendus sont 31 obligations SMT, 131 072 coefficients du
+certificat NTT et 21 tests scientifiques, puis 18 tests distincts des outils.
+L'installateur télécharge le solveur exact dans un cache local ; le vérificateur
+n'installe rien. Le [guide du lot](../research/reproducibility/m15/implementation/README.md)
+décrit le mode hors ligne, le contrôle d'intégrité seul et les reçus. Aucun
+compilateur Rust, exécutable du moteur ou autre archive privée n'est requis
+pour ces contrôles. Ils ne ferment pas C01 et ne prouvent ni tout le KEM,
+ni la compilation, le temps constant ou l'effacement universels.
 
 Depuis la racine NIST, sous Windows :
 

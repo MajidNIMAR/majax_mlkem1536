@@ -1,6 +1,72 @@
 # Rapport de recherche — MLKEM-1536 Core, KEM à six blocs de 256 coefficients
 
-Version de travail du 17 novembre 2026. Ce document est la base évolutive du futur article. Le [journal](JOURNAL_RECHERCHE.md) conserve les étapes et décisions ; les [résultats figés de J2](../results/j2/run-001/) conservent les calculs et leur provenance. Une modification du rapport doit rester cohérente avec ces données.
+Version de travail du 18 novembre 2026. Ce document est la base évolutive du futur article. Le [journal](JOURNAL_RECHERCHE.md) conserve les étapes et décisions ; les [résultats figés de J2](../results/j2/run-001/) conservent les calculs et leur provenance. Une modification du rapport doit rester cohérente avec ces données.
+
+**Reproductibilité M15 — premier lot distribué avec CI dédiée.** Le dépôt
+livre désormais le lot Windows délimité : instruments, 31 requêtes SMT et
+objets de preuve, certificat NTT, tests, manifeste et installation épinglée.
+Le guide public fournit les commandes d'installation, de rejeu et de contrôle
+hors ligne. Les 78 entrées scientifiques sélectionnées restent identiques ;
+les adaptations de présentation et d'attributs Git préservent leurs octets.
+
+Un job Windows indépendant installe réellement le solveur puis vérifie les
+31 obligations arithmétiques, 131 072 coefficients NTT, 21 tests scientifiques
+et 18 tests d'empaquetage ; il répète la configuration et le rejeu hors ligne.
+Les reçus et journaux sont conservés dans les artefacts de la CI, sans wheel
+ou bibliothèque native. Les contrôles habituels du moteur Windows/Ubuntu
+restent séparés et inchangés. Le statut hébergé doit être lu pour le commit
+examiné dans les exécutions GitHub Actions ; la seule présence du workflow
+ne constitue pas un succès de CI.
+
+Cette distribution ne publie pas les autres acquisitions détaillées M11–M15
+ni leurs 82 tests internes complets. Elle rend une partie précise du travail
+rejouable à partir des sources publiques. Le moteur et son binaire restent
+inchangés. C01 demeure ouvert et les dépendances de confiance du lot sont
+explicites. La publication suit la branche habituelle main, sans changement
+de titre, description ou paramètres du dépôt.
+
+**Reproductibilité M15 — étape 3 depuis une copie neuve.** Le lot figé
+à l'étape 2 passe le rejeu dans un clone complet indépendant de la référence
+publique, préparé avec un commit local sur `main` contenant les 88 fichiers
+du paquet. Le paquet est relu depuis l'index Git identique au commit, puis
+vérifié. Le contrôle indépendant préalable confirme l'absence de cache de
+solveur, d'archives privées, de binaire de compilation et de liens partagés.
+
+La première installation télécharge réellement le wheel officiel épinglé et
+installe ses 34 membres Z3 dans le nouveau clone. Les 31 obligations SMT,
+131 072 coefficients NTT et 21 tests scientifiques passent ; les 18 tests
+d'empaquetage passent également. Une seconde configuration hors ligne et
+un second rejeu réussissent sans modification des entrées suivies. L'arbre
+complet de 2 578 fichiers est contrôlé ; les seules conversions de checkout
+concernent sept scripts PowerShell suivant leurs règles Git CRLF déclarées.
+Les 88 fichiers du lot et les deux sources Rust conservent strictement leurs
+octets. Les reçus génériques bruts sont complétés par la provenance externe
+de cette copie neuve, sans réécrire les archives historiques.
+
+La revue indépendante finale accepte cette étape dans son périmètre, sans
+correction restante. Le travail utilise le même PC, Windows et CPython 3.13.7 : il établit une
+copie neuve autonome vis-à-vis des caches et archives privés, pas une machine
+ou un système neuf. Le commit de préparation est uniquement local au clone
+d'essai, sans dépôt distant configuré. La CI hébergée et la publication du
+lot restent à faire à l'étape suivante. Les sources et le binaire du moteur
+sont inchangés ; C01 reste ouvert.
+
+**Reproductibilité M15 — premier lot, étape 2 locale.** Le paquet de
+rejeu Windows est préparé sous
+`research/reproducibility/m15/implementation/`, avec installation du solveur
+épinglée par taille et SHA-256, manifeste des entrées et commande unique de
+vérification hors ligne. Les 78 entrées scientifiques sélectionnées conservent
+leurs octets ; le contexte de deux documents est adapté. Les deux sources
+Rust liées et le binaire du moteur sont inchangés.
+
+Le contrôle local valide les 34 fichiers du solveur, rejoue les 31 obligations
+SMT, reconstruit les 131 072 coefficients du certificat NTT et réussit les
+21 tests scientifiques sans omission. Les 18 tests distincts des outils
+d'empaquetage passent également. Les reçus et journaux sont conservés, sans
+modifier les archives historiques. Le cache existant a été vérifié et réutilisé ;
+une nouvelle installation complète dans une copie neuve reste à effectuer.
+Le rejeu depuis une copie neuve, la CI hébergée et la publication de ce lot
+ne sont pas réalisés par cette étape. C01 conserve sa portée ouverte.
 
 **M15 — cinq chantiers de sécurité approfondis.** Le cycle suivant fournit
 de nouvelles acquisitions cryptanalytiques, des arguments sur les distributions

@@ -1,0 +1,23 @@
+; benchmark generated from python API
+(set-info :status unknown)
+(declare-fun input_x () Int)
+(assert
+ (let (($x1114 (<= input_x 1023)))
+ (let (($x408 (>= input_x 0)))
+ (and $x408 $x1114))))
+(assert
+ (let ((?x866 (mod (div (+ (* input_x 7681) (mod (* 1 512) 4294967296)) 1024) 65536)))
+(let (($x671 (<= ?x866 7680)))
+(let (($x710 (>= ?x866 0)))
+(let (($x70 (and $x710 $x671)))
+(let ((?x189 (div (+ (* input_x 7681) 512) 1024)))
+(let (($x1118 (= ?x866 ?x189)))
+(let (($x205 (and (>= (+ (* input_x 7681) (mod (* 1 512) 4294967296)) 0) (< (+ (* input_x 7681) (mod (* 1 512) 4294967296)) 4294967296))))
+(let ((?x220 (- 10 1)))
+(let (($x65 (< ?x220 18446744073709551616)))
+(let (($x448 (>= ?x220 0)))
+(let (($x645 (and $x448 $x65)))
+(let (($x1113 (and (>= (* input_x 7681) 0) (< (* input_x 7681) 4294967296))))
+(let (($x1397 (and $x1113 $x645 true $x205 true $x1118 $x70)))
+(not $x1397)))))))))))))))
+(check-sat)

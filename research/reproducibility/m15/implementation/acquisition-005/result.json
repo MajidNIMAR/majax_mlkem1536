@@ -1,0 +1,375 @@
+{
+  "C01_closed": false,
+  "compiled_binary_semantics_proved": false,
+  "constant_time_or_erasure_proved": false,
+  "independent_proof_checker_used": false,
+  "instrument_sha256": "ecd8ee26c6754d8db5c387d75a4f0e031526280eb34b2b6345003ed3ea749a05",
+  "obligations": [
+    {
+      "name": "reduce-once",
+      "result": "unsat",
+      "scope": {
+        "dependencies": [],
+        "scope": "all u32 inputs below 2q"
+      },
+      "seconds": 0.030929000000469387,
+      "smt2_sha256": "f1ee188dceb7979264eed3d7607773977e185abd607c65ccce0c8f9e3cd5435c",
+      "trusted_solver_proof_sha256": "83247f62246d8454fc4454d0667301b1ebf71258408c18b3414aadca9c04adca"
+    },
+    {
+      "name": "quotient",
+      "result": "unsat",
+      "scope": {
+        "dependencies": [],
+        "scope": "all u32 inputs"
+      },
+      "seconds": 0.012919900007545948,
+      "smt2_sha256": "4ff975719f00c69aa28cf41fd00c8e213d525fa51a90d4b5bc42716d6a7b60b9",
+      "trusted_solver_proof_sha256": "640480320779b8703fec92a06612fc09473f791a922a121e7ac09e31b9ce9d88"
+    },
+    {
+      "name": "reduce-wide",
+      "result": "unsat",
+      "scope": {
+        "dependencies": [],
+        "scope": "all u64 inputs; research/test feature only"
+      },
+      "seconds": 0.08916089998092502,
+      "smt2_sha256": "d2d13fe07e8b2b264d8922bbe8f6f589813c2c4503e221a745e7dbeca92d8e4e",
+      "trusted_solver_proof_sha256": "30af8853faeb4bb10430d90fe4fc8536e143024cfe47cbd3459084158a72bfbe"
+    },
+    {
+      "name": "canonical-product-range",
+      "result": "unsat",
+      "scope": {
+        "dependencies": [],
+        "scope": "all canonical coefficient pairs"
+      },
+      "seconds": 0.004078300029505044,
+      "smt2_sha256": "c2d8c71090232f48f2a0ce8dbb1b9db18eccfefd1e7ace3f708b00b3adb53e04",
+      "trusted_solver_proof_sha256": "2df818af78c17d881a98ea2757705ef5b28ed9d4ba3b5ba615350bc9f94e0946"
+    },
+    {
+      "name": "source-product-reduction",
+      "result": "unsat",
+      "scope": {
+        "dependencies": [
+          "canonical-product-range"
+        ],
+        "scope": "parsed source tail, all x up to (q-1)^2; composition gives every canonical pair",
+        "substitution": "source a*b -> x, all occurrences"
+      },
+      "seconds": 0.12843529996462166,
+      "smt2_sha256": "3d1b3d42ed4d14bbffa99a597aa0221026c415d47cea6d1f7f28c1e09160743c",
+      "trusted_solver_proof_sha256": "fae5ebc0c54c7a466a7118b63de0453e654c68a5130a3a3c8527946845445423"
+    },
+    {
+      "name": "compress-1",
+      "result": "unsat",
+      "scope": {
+        "dependencies": [],
+        "scope": "all canonical coefficients; fixed width 1"
+      },
+      "seconds": 0.10909809998702258,
+      "smt2_sha256": "3d77b3a465222c8c3d65c2da625a289b76963e1ee2e277a07ca6c2d197c349c4",
+      "trusted_solver_proof_sha256": "af2626dd2546ecd5025d6877c556618d182728bf2265823aca0d7445b65e0fcc"
+    },
+    {
+      "name": "decompress-1",
+      "result": "unsat",
+      "scope": {
+        "dependencies": [],
+        "scope": "all encoded coefficients; fixed width 1"
+      },
+      "seconds": 0.0020927999867126346,
+      "smt2_sha256": "190775cb3a194c45bc3f12de7453682f1e0676a1d10b86a582345f6df1d415e8",
+      "trusted_solver_proof_sha256": "987b9bec9a6eb97ad1a399203fe64b5cbfba69dc0f6ea20f72086d3eee31f3f6"
+    },
+    {
+      "name": "compress-2",
+      "result": "unsat",
+      "scope": {
+        "dependencies": [],
+        "scope": "all canonical coefficients; fixed width 2"
+      },
+      "seconds": 0.14359009999316186,
+      "smt2_sha256": "9ad8e93b1c1b1a4124307c9a5690c747f78b3c2faeb21e2d9b7437ab2f6d392f",
+      "trusted_solver_proof_sha256": "bcfa955644d794a104e3bda8328f82696ab68a8b57f1223a8a6d6c1ed8ec8561"
+    },
+    {
+      "name": "decompress-2",
+      "result": "unsat",
+      "scope": {
+        "dependencies": [],
+        "scope": "all encoded coefficients; fixed width 2"
+      },
+      "seconds": 0.002155299996957183,
+      "smt2_sha256": "ce00e82dc4114605143d97edaa34056e031c70163ecd8ccf0e0065eee688447e",
+      "trusted_solver_proof_sha256": "f5baed0044b77966c7646a65560df5f522f0416c5748f45bd10e2f373098283e"
+    },
+    {
+      "name": "compress-3",
+      "result": "unsat",
+      "scope": {
+        "dependencies": [],
+        "scope": "all canonical coefficients; fixed width 3"
+      },
+      "seconds": 0.15672410000115633,
+      "smt2_sha256": "dda211ad1f456b3ec99a775c57d5c9ef09eb231275611081c3d88b64869d06e4",
+      "trusted_solver_proof_sha256": "061ce662bd889b44519d902c578434c2f5acc23b6719c2343987cb178e672cff"
+    },
+    {
+      "name": "decompress-3",
+      "result": "unsat",
+      "scope": {
+        "dependencies": [],
+        "scope": "all encoded coefficients; fixed width 3"
+      },
+      "seconds": 0.0017945999861694872,
+      "smt2_sha256": "e6589afdf2ac36a438788cf60e19cde74f62c5cd32e2c8792823a3e8b515a5c6",
+      "trusted_solver_proof_sha256": "dc90aeb429c01dea3b7191609db4a02f1b3747c5dfc62fe2ea7d21dd8a6133d3"
+    },
+    {
+      "name": "compress-4",
+      "result": "unsat",
+      "scope": {
+        "dependencies": [],
+        "scope": "all canonical coefficients; fixed width 4"
+      },
+      "seconds": 0.17968379997182637,
+      "smt2_sha256": "bddf809e86c0da12954d5ea5e8657b1a7d84d1cc8520e2b553467eba922be57f",
+      "trusted_solver_proof_sha256": "178322d1cf9774615ab2f9166b5ed6c96277bad38490f505a87020e523befd60"
+    },
+    {
+      "name": "decompress-4",
+      "result": "unsat",
+      "scope": {
+        "dependencies": [],
+        "scope": "all encoded coefficients; fixed width 4"
+      },
+      "seconds": 0.00245049997465685,
+      "smt2_sha256": "d8a547ef4a3a869c7e75dfd954ab0e236f715066381cc8384a4541f2c1a5e944",
+      "trusted_solver_proof_sha256": "894eb9b79a0edc4e5a7601fe9a6e642d688aef0856c71850c42e4d8cd8efb08f"
+    },
+    {
+      "name": "compress-5",
+      "result": "unsat",
+      "scope": {
+        "dependencies": [],
+        "scope": "all canonical coefficients; fixed width 5"
+      },
+      "seconds": 0.3379075000411831,
+      "smt2_sha256": "2821caf0f5c0479ea35cc8a8f410619ac48d7ee9ac08531fa29159523ba6ac74",
+      "trusted_solver_proof_sha256": "06a32ed0d561875cdfc58f51e734450a78cb1eecbcd44de8996575eb391a3035"
+    },
+    {
+      "name": "decompress-5",
+      "result": "unsat",
+      "scope": {
+        "dependencies": [],
+        "scope": "all encoded coefficients; fixed width 5"
+      },
+      "seconds": 0.0019480999908410013,
+      "smt2_sha256": "68316c4ecd374dd848fba6367858e488131df27b455c17b1c3bafd189a5ec765",
+      "trusted_solver_proof_sha256": "8050112ac173abf7ce4a9f3398271241edbf781fadb1e00d2413b583a2945d0e"
+    },
+    {
+      "name": "compress-6",
+      "result": "unsat",
+      "scope": {
+        "dependencies": [],
+        "scope": "all canonical coefficients; fixed width 6"
+      },
+      "seconds": 0.25451360002625734,
+      "smt2_sha256": "cd6bd7b44f29f65776d53f7c0b54a203643e19e6190b7ad555a500192e17ec99",
+      "trusted_solver_proof_sha256": "b424c2b46345d9439728ed574c9df2498157351f82ac940057f3509658fa86d3"
+    },
+    {
+      "name": "decompress-6",
+      "result": "unsat",
+      "scope": {
+        "dependencies": [],
+        "scope": "all encoded coefficients; fixed width 6"
+      },
+      "seconds": 0.0023266999633051455,
+      "smt2_sha256": "de62adaf1ae82122758006ec0676cc1c2900c0f18a7d4f498b8991d05ca3aad0",
+      "trusted_solver_proof_sha256": "b02342782f9b0455706fb74f9c6703f328955ba7faf5df54a39b6252328bfb33"
+    },
+    {
+      "name": "compress-7",
+      "result": "unsat",
+      "scope": {
+        "dependencies": [],
+        "scope": "all canonical coefficients; fixed width 7"
+      },
+      "seconds": 0.344688999990467,
+      "smt2_sha256": "66e3355fffb122114e73b557497a50f8eb1238389c8214914fb44af8e787e289",
+      "trusted_solver_proof_sha256": "e2e54e3431439df5582d4cc8570a644d12e7ed88b27c9986c952b1786fcf1767"
+    },
+    {
+      "name": "decompress-7",
+      "result": "unsat",
+      "scope": {
+        "dependencies": [],
+        "scope": "all encoded coefficients; fixed width 7"
+      },
+      "seconds": 0.001567699946463108,
+      "smt2_sha256": "3aa0759dc494cd185fa7fd9a1de90952ffd607fde37c61f1c76d951f0e189251",
+      "trusted_solver_proof_sha256": "dd2b1559ce1d448c6493e7785597545947c999005874d3efeaf1a1423675a087"
+    },
+    {
+      "name": "compress-8",
+      "result": "unsat",
+      "scope": {
+        "dependencies": [],
+        "scope": "all canonical coefficients; fixed width 8"
+      },
+      "seconds": 0.16953800001647323,
+      "smt2_sha256": "99a95055ba2eede51790c06d3f5652c362c06dc9f99ad24f3f3f7a1379d52374",
+      "trusted_solver_proof_sha256": "67013d5c7547dcdf644273a43eef85944e11073e37e1e7074d6df634f9ebfc7e"
+    },
+    {
+      "name": "decompress-8",
+      "result": "unsat",
+      "scope": {
+        "dependencies": [],
+        "scope": "all encoded coefficients; fixed width 8"
+      },
+      "seconds": 0.0017935000360012054,
+      "smt2_sha256": "963c5327ab568e636e1f528fbcc3873e43620734ee0dd4960906eed72c50d1dd",
+      "trusted_solver_proof_sha256": "0b8dbf12fee7c82f07ffb474a6ca199e54a74c956b01d11f6c8f04d817922bb2"
+    },
+    {
+      "name": "compress-9",
+      "result": "unsat",
+      "scope": {
+        "dependencies": [],
+        "scope": "all canonical coefficients; fixed width 9"
+      },
+      "seconds": 0.21963439998216927,
+      "smt2_sha256": "bb0addfc2cf7edcbe80c98f524b31a9c4e115b3908c15e925dae2fc35000b888",
+      "trusted_solver_proof_sha256": "74109d107bb22b080cbfe883cd1aa5abd845c0c9c85d931fd0d6e7e05249ec8a"
+    },
+    {
+      "name": "decompress-9",
+      "result": "unsat",
+      "scope": {
+        "dependencies": [],
+        "scope": "all encoded coefficients; fixed width 9"
+      },
+      "seconds": 0.0025078999460674822,
+      "smt2_sha256": "330f05e526d55ac5a9729b3fa3a57790ac9df4f7f961338287617bae47616534",
+      "trusted_solver_proof_sha256": "ecd7c1f23a24177ba50da50b3bb26298fb7c9c1c97bd734d47d127bfdcfb989e"
+    },
+    {
+      "name": "compress-10",
+      "result": "unsat",
+      "scope": {
+        "dependencies": [],
+        "scope": "all canonical coefficients; fixed width 10"
+      },
+      "seconds": 0.4798265999997966,
+      "smt2_sha256": "777b012de0d5a4bfff0634c06788d4654045f033b78394ddd08d46de7507d385",
+      "trusted_solver_proof_sha256": "352882f3e080ec473e8219016d3539486b1ba2f945650cf5a08b99a7eb35372c"
+    },
+    {
+      "name": "decompress-10",
+      "result": "unsat",
+      "scope": {
+        "dependencies": [],
+        "scope": "all encoded coefficients; fixed width 10"
+      },
+      "seconds": 0.0019388000364415348,
+      "smt2_sha256": "982694519da44ad161aa7b0ec50d973dd560ac3bc44e909239786bafbfc714aa",
+      "trusted_solver_proof_sha256": "9063ba7a934ab03ad3f3c6c06cc0c5e073ea346a762eb6cd702f1bcbe9d929fc"
+    },
+    {
+      "name": "compress-11",
+      "result": "unsat",
+      "scope": {
+        "dependencies": [],
+        "scope": "all canonical coefficients; fixed width 11"
+      },
+      "seconds": 0.36633440002333373,
+      "smt2_sha256": "169991e6a24885506af5bd7ea8265e8e91006faf9286b21b3399f31ace8490c0",
+      "trusted_solver_proof_sha256": "2d191a9f9f9497c9eefb6da9b783007a7b4544ddbb7b3c8053bac63f54db26cd"
+    },
+    {
+      "name": "decompress-11",
+      "result": "unsat",
+      "scope": {
+        "dependencies": [],
+        "scope": "all encoded coefficients; fixed width 11"
+      },
+      "seconds": 0.0017793999868445098,
+      "smt2_sha256": "a1a36351452262487c462cce6b067937cd345bdc1fae34854f3f7cc805bdd641",
+      "trusted_solver_proof_sha256": "6ceedbfec24ea8eae800d92b66b4ae82fc85e522c67e082f8946933551fd93e7"
+    },
+    {
+      "name": "compress-12",
+      "result": "unsat",
+      "scope": {
+        "dependencies": [],
+        "scope": "all canonical coefficients; fixed width 12"
+      },
+      "seconds": 0.18674950004788116,
+      "smt2_sha256": "4a2f710faf4067254e8134cc12a1c253df126f3887f153112936999de7eb1968",
+      "trusted_solver_proof_sha256": "c19c6291a0b270df29a517b0f691c0f66999e1c9e7a90e564275ba0e8be05f46"
+    },
+    {
+      "name": "decompress-12",
+      "result": "unsat",
+      "scope": {
+        "dependencies": [],
+        "scope": "all encoded coefficients; fixed width 12"
+      },
+      "seconds": 0.001691300014499575,
+      "smt2_sha256": "b63c986467cbce3a8988585fb057421c56fa15dca0b81c7e0a588a266cd95264",
+      "trusted_solver_proof_sha256": "c9fc025b5a2fca1ab51c379b5cc4bacf889b4dc2b4f0b35600542d74b310d615"
+    },
+    {
+      "name": "compress-13",
+      "result": "unsat",
+      "scope": {
+        "dependencies": [],
+        "scope": "all canonical coefficients; fixed width 13"
+      },
+      "seconds": 0.30513469997094944,
+      "smt2_sha256": "5070c8e17b5716177c3e08c21d34821dc4d9686f86d8e3be96038ed7770d6782",
+      "trusted_solver_proof_sha256": "d159bbb7426e8c143791c4969dcd976f43425fec744ca0c9acb51244d2162b74"
+    },
+    {
+      "name": "decompress-13",
+      "result": "unsat",
+      "scope": {
+        "dependencies": [],
+        "scope": "all encoded coefficients; fixed width 13"
+      },
+      "seconds": 0.0018917000270448625,
+      "smt2_sha256": "37232cd38e81a460700287fb913c52ce615004794b9f04688c89bd1c2923ef82",
+      "trusted_solver_proof_sha256": "d9c4b71851dbf36eba6a80946432f368595a583e577d8f028b1330e2982ce3f8"
+    }
+  ],
+  "parser_is_restricted_trusted_translation": true,
+  "schema": "m15-source-arithmetic-universal-obligations-v1",
+  "solver": {
+    "files": {
+      "z3/lib/libz3.dll": "88b20513993816cf71e29969c5232a8eb03dda05deefce71879ecc1e3519b2aa",
+      "z3/z3.py": "928428b680721433616cd2ca6662c1ada979f4f322ccdd3825b09b5237dc7f26",
+      "z3/z3core.py": "7395deff066f6b8cbeaf92432c2b652f541aad28ffd4e19ad3787732fa14636a"
+    },
+    "version": "4.15.4"
+  },
+  "source_after": {
+    "crates/kem1536/src/dev_kem.rs": "7b64b6e1adf18d5a3e0b66e6c95eb392aebb24c20077c74aadd304fcadc43d32",
+    "crates/kem1536/src/engine_poly.rs": "3de875c98b9dfd2d511d3774d263da24fdcfe03e917a90bbb6bcadd540a175b0"
+  },
+  "source_before": {
+    "crates/kem1536/src/dev_kem.rs": "7b64b6e1adf18d5a3e0b66e6c95eb392aebb24c20077c74aadd304fcadc43d32",
+    "crates/kem1536/src/engine_poly.rs": "3de875c98b9dfd2d511d3774d263da24fdcfe03e917a90bbb6bcadd540a175b0"
+  },
+  "sources_unchanged": true,
+  "status": "PASS_SCOPED",
+  "translator_sha256": "ae54144c7a7c964a9697ec2101924eb675a23e40ac9542a43910ad1347e8f704",
+  "whole_KEM_formally_verified": false
+}

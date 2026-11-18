@@ -1,0 +1,30 @@
+{
+  "C01_closed": false,
+  "Rust_or_compiler_semantics_formally_proved": false,
+  "constant_time_or_erasure_proved": false,
+  "evaluation_roots": 256,
+  "formal_linear_coefficients_checked": 131072,
+  "forward_matrix_sha256": "78fe706163d7167ccc12b6c607ac67ce94773236f25cafdaeda4816bef9b38e1",
+  "instrument_sha256": "c8dc634eb7e7e039f5acc7fd75a39d347e6cdfa9331d75c49e10f43d6a2ec82b",
+  "inverse_matrix_sha256": "b31a816effdd75d71cae49de2c340a53763019ee938957202b4531c4d6d2d194",
+  "linearity_induction_required_and_documented": true,
+  "orthogonality_classes": 256,
+  "schedule_templates_sha256": {
+    "forward_into": "574fa542cd60180a9dae978586f2f8b904b8394ac3f061af18b425319d8f9b32",
+    "inverse_into": "eb881d9ddb519d990be66b455003dac32b7862793e21b720504fe3b68b86a403",
+    "multiply_add_assign": "987c4b95394c10dde5efb793b5c8693abab35477700141a661702692206e0530",
+    "public_power": "b2dc6a931195838c385d77aee0343ff3b8ca1ff8566c6c0bde5a893b00f0ca55",
+    "public_powers": "20368728cb32c8585b819742d8f17efa4b11f0815073cefdf64a11aa4a366a49",
+    "stage_twiddles": "612444e393283bf5a9e7669029dd8c5ed8f2b2e36cb29d1f61470080241c61e4",
+    "transform": "10459e21c7db26cbbba0774b58f223cfd65f1dd9aea64e79f58101fd6eaf1d99"
+  },
+  "schema": "m15-checked-schedule-ntt-algebra-certificate-v1",
+  "source_schedule_mapping_is_trusted_reviewed_template": true,
+  "source_sha256": {
+    "crates/kem1536/src/dev_kem.rs": "7b64b6e1adf18d5a3e0b66e6c95eb392aebb24c20077c74aadd304fcadc43d32",
+    "crates/kem1536/src/engine_poly.rs": "3de875c98b9dfd2d511d3774d263da24fdcfe03e917a90bbb6bcadd540a175b0"
+  },
+  "status": "PASS_SCOPED",
+  "translator_sha256": "ae54144c7a7c964a9697ec2101924eb675a23e40ac9542a43910ad1347e8f704",
+  "universal_extension": "all canonical polynomial inputs by linearity, inverse orthogonality and evaluation homomorphism"
+}

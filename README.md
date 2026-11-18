@@ -16,6 +16,7 @@ evidence needed to examine its evolution.
 [Engine and API guide](docs/MOTEUR_KEM_R1.md) ·
 [Research report](docs/RAPPORT_RECHERCHE.md) ·
 [Research progress through M15](docs/ETAT_RECHERCHE_M15.md) ·
+[M15 Windows replay lot](research/reproducibility/m15/implementation/README.md) ·
 [M10 engine and qualification](docs/M10_MOTEUR_ET_QUALIFICATION.md) ·
 [M09 engine and qualification](docs/M09_MOTEUR_CONTRATS_ET_QUALIFICATION.md) ·
 [M08 import study and delivery](docs/M08_IMPORTS_ET_VALIDATION.md) ·
@@ -23,7 +24,51 @@ evidence needed to examine its evolution.
 
 [![Main-branch checks](https://github.com/MajidNIMAR/mlkem-1536-core/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/MajidNIMAR/mlkem-1536-core/actions/workflows/ci.yml)
 
-## Latest research progress — M15, 17 November 2026
+## Current engine and reproducible research — 18 November 2026
+
+**M10 remains the delivered Rust engine.** It implements KeyGen, Encaps,
+Decaps and implicit rejection for the specified R1 construction. Subsequent
+M11–M15 work develops the security argument without changing the engine's
+sources, parameters, formats or canonical binary.
+
+The first [public M15 replay lot](research/reproducibility/m15/implementation/README.md)
+now supplies **31 source-linked arithmetic SMT obligations**, an algebraic
+NTT certificate with **131,072 checked linear coefficients** and **21
+component tests**. Its **18 packaging-tool tests** are a separate suite.
+The remaining M11–M15 workstreams are described in the
+[progress note](docs/ETAT_RECHERCHE_M15.md); their detailed acquisitions and
+reviews remain private.
+
+**C01, the complete concrete R1 security argument, remains open.** This
+replay lot makes a bounded part of the research independently examinable;
+it does not establish whole-KEM or compiler verification, constant time,
+universal erasure, an external audit or production suitability.
+
+### Replaying the public M15 lot
+
+From a checkout containing the lot, on Windows x64 with CPython 3.13 x64:
+
+```powershell
+python -I -S -B research/reproducibility/m15/implementation/setup_windows.py
+python -I -S -B research/reproducibility/m15/implementation/verify.py
+python -I -S -B research/reproducibility/m15/implementation/test_tools.py
+```
+
+The installer downloads the pinned official Z3 wheel into a local cache;
+the verifier does not download or install dependencies. The
+[lot guide](research/reproducibility/m15/implementation/README.md) documents
+the offline mode, integrity-only mode, receipts and trust dependencies.
+No Rust compiler, engine binary or private research archive is needed for
+these checks.
+
+These commands have been exercised from an independent fresh local clone,
+including a new solver download and a second offline replay. That is a
+recorded same-host Windows/CPython check, not a new-machine experiment.
+A dedicated Windows job in the [CI workflow](.github/workflows/ci.yml)
+runs the lot and preserves its receipts and logs. Hosted success must be
+checked on the workflow run for the revision being examined.
+
+## Broader research progress — M11–M15
 
 The research program has advanced through M11–M15 while **M10 remains the
 delivered engine reference**. The latest cycle adds targeted cryptanalysis,
@@ -46,9 +91,11 @@ these results. The scoped proofs do not formally verify the whole KEM or
 its compiler, and the internal reviews are not an external audit.
 
 The [public progress note](docs/ETAT_RECHERCHE_M15.md) explains these boundaries.
-The new research programs, raw artifacts and detailed reviews are retained
-privately; **this repository does not supply their public replay bundle**.
-The 82 research tests are distinct from the public engine CI suite.
+The arithmetic/NTT lot above publishes one delimited subset of these results.
+The other research programs, raw artifacts and detailed reviews remain
+private; this is not a replay bundle for all M11–M15 studies. The **82
+internal research tests** are distinct from the 21 public component tests,
+the 18 packaging-tool tests and the public engine CI suite.
 The engine source, R1 parameters, wire formats and canonical binary are
 unchanged by these studies.
 
@@ -224,7 +271,7 @@ scope and raw results.
 | Functional engine and compatibility | Implemented and exercised on Windows/Linux; complete reference corpora match and R1 formats remain compatible |
 | Implementation hardening | M10 qualifies removal of two observed stack residues in its four reviewed PC images and completes its new long sanitizer campaign; earlier M08/M09 findings retain their own image scope. Register/ABI/all-PKE erasure and formal constant time remain open |
 | Cryptographic security argument | Exact correctness certificates and conditional ROM/QROM analyses under stated assumptions; the full concrete R1 argument **C01 remains open** |
-| Research progress through M15 | Scoped internal results include a conditional working margin, per-key correctness work and arithmetic/NTT certificates; the new detailed artifacts and 82 research tests are private and are not a public replay or hosted-CI claim |
+| Research progress through M15 | A public Windows arithmetic/NTT lot supplies 31 SMT obligations, 131,072 checked coefficients and 21 component tests; the broader conditional-margin and per-key research, detailed acquisitions and full 82-test internal suite are not supplied by that lot |
 | External assurance and security rating | A certified global bit rating, NIST category or external cryptographic audit is not established by these artifacts; **1536 denotes the coefficient count** |
 | Target qualification | M10 CLI/default-consumer reviews and hosted native checks concern the recorded GNU x86-64 Windows/Linux PC images; M08/M09 retain their own historical scope. Android/ARM requires its own qualification |
 

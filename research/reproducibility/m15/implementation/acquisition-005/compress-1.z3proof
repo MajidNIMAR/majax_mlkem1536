@@ -1,0 +1,771 @@
+(let ((a!1 (th-lemma (or false (>= (mod input_x 2147483648) 0))))
+      (a!2 (and-elim (asserted (and (>= input_x 0) (<= input_x 7680)))
+                     (<= input_x 7680)))
+      (a!4 (= input_x
+              (+ (* 2147483648 (div input_x 2147483648))
+                 (mod input_x 2147483648))))
+      (a!5 (* (- 1)
+              (+ (* 2147483648 (div input_x 2147483648))
+                 (mod input_x 2147483648))))
+      (a!10 (div (+ 2147201280 (* 1118334 (mod input_x 2147483648))) 4294967296))
+      (a!14 (mod (+ 2147201280 (* 1118334 (mod input_x 2147483648))) 4294967296))
+      (a!16 (* (- 1) (+ 2147201280 (* 1118334 (mod input_x 2147483648)))))
+      (a!22 (and-elim (asserted (and (>= input_x 0) (<= input_x 7680)))
+                      (>= input_x 0)))
+      (a!25 (th-lemma (or false (<= (mod input_x 2147483648) 2147483647))))
+      (a!46 (mod (div (+ 3840 (* 2 input_x)) 7681) 2))
+      (a!48 (>= (+ (mod (* input_x 2) 4294967296) (div 7681 2)) 0))
+      (a!49 (< (+ (mod (* input_x 2) 4294967296) (div 7681 2)) 4294967296))
+      (a!50 (* (+ (mod (* input_x 2) 4294967296) (div 7681 2)) 559167))
+      (a!57 (>= (- (mod (* 1 2) 4294967296) 1) 0))
+      (a!58 (< (- (mod (* 1 2) 4294967296) 1) 4294967296))
+      (a!59 (mod (div (+ (* input_x 2) 3840) 7681) 2))
+      (a!105 (div (div (+ 3840 (* 2 input_x)) 7681) 2))
+      (a!106 (<= (mod (+ 3840 (* 2 input_x)) 7681) 7680))
+      (a!107 (* 7681 (div (+ 3840 (* 2 input_x)) 7681)))
+      (a!115 (* (- 1) (div (+ 3840 (* 2 input_x)) 7681)))
+      (a!133 (>= (mod (+ 3840 (* 2 input_x)) 7681) 0))
+      (a!138 (hypothesis (not (<= (div input_x 2147483648) (- 1)))))
+      (a!175 (<= (div (+ 3840 (* 2 input_x)) 7681) 1)))
+(let ((a!3 (mp a!2
+               (rewrite (= (<= input_x 7680) (<= input_x 7680)))
+               (<= input_x 7680)))
+      (a!6 (th-lemma (or (not a!4) (>= (+ input_x a!5) 0))))
+      (a!11 (= (+ (* 4294967296 (div a!10 4294967296)) (mod a!10 4294967296))
+               a!10))
+      (a!12 (+ (+ (* 4294967296 (div a!10 4294967296)) (mod a!10 4294967296))
+               (* (- 1) a!10)))
+      (a!15 (= (+ (* 4294967296 a!10) a!14)
+               (+ 2147201280 (* 1118334 (mod input_x 2147483648)))))
+      (a!17 (<= (+ (+ (* 4294967296 a!10) a!14) a!16) 0))
+      (a!19 (th-lemma (or (not a!4) (<= (+ input_x a!5) 0))))
+      (a!21 (unit-resolution (th-lemma (or false (>= a!14 0)))
+                             (true-axiom true)
+                             (>= a!14 0)))
+      (a!23 (mp a!22 (rewrite (= (>= input_x 0) (>= input_x 0))) (>= input_x 0)))
+      (a!24 (th-lemma (or false (>= (mod a!10 4294967296) 0))))
+      (a!26 (hypothesis (not (<= (div a!10 4294967296) 0))))
+      (a!28 (+ 4294963455
+               (* 2 (mod input_x 2147483648))
+               (* (- 7681) (mod a!10 4294967296))))
+      (a!47 (unit-resolution (th-lemma (or false (>= a!46 0)))
+                             (true-axiom true)
+                             (>= a!46 0)))
+      (a!51 (>= (* (mod (div a!50 4294967296) 4294967296) 7681) 0))
+      (a!52 (< (* (mod (div a!50 4294967296) 4294967296) 7681) 4294967296))
+      (a!53 (- (+ (mod (* input_x 2) 4294967296) (div 7681 2))
+               (* (mod (div a!50 4294967296) 4294967296) 7681)))
+      (a!54 (>= (+ (mod (div a!50 4294967296) 4294967296) 1) 0))
+      (a!55 (< (+ (mod (div a!50 4294967296) 4294967296) 1) 4294967296))
+      (a!61 (+ (* 2 (mod input_x 2147483648))
+               (* (- 7681) (mod a!10 4294967296))))
+      (a!91 (unit-resolution (th-lemma (or false (<= a!14 4294967295)))
+                             (true-axiom true)
+                             (<= a!14 4294967295)))
+      (a!92 (>= (+ (+ (* 4294967296 a!10) a!14) a!16) 0))
+      (a!94 (hypothesis (not (>= (div a!10 4294967296) 0))))
+      (a!96 (th-lemma (or false (<= (mod a!10 4294967296) 4294967295))))
+      (a!104 (unit-resolution (th-lemma (or false (<= a!46 1)))
+                              (true-axiom true)
+                              (<= a!46 1)))
+      (a!108 (+ a!107 (mod (+ 3840 (* 2 input_x)) 7681)))
+      (a!114 (= (+ (* 2 a!105) a!46) (div (+ 3840 (* 2 input_x)) 7681)))
+      (a!116 (>= (+ (+ (* 2 a!105) a!46) a!115) 0))
+      (a!129 (th-lemma (or (not (>= a!105 1)) (not (<= a!105 0)))))
+      (a!134 (<= (+ (+ (* 2 a!105) a!46) a!115) 0))
+      (a!174 (>= (+ (mod a!10 4294967296) (* 4294967296 (div a!10 4294967296)))
+                 2))
+      (a!177 (hypothesis (not (>= (mod a!10 4294967296) 1))))
+      (a!181 (>= (+ (* 7681 (mod a!10 4294967296))
+                    (* (- 2) (mod input_x 2147483648)))
+                 3840)))
+(let ((a!7 (unit-resolution a!6
+                            (unit-resolution (th-lemma (or false a!4))
+                                             (true-axiom true)
+                                             a!4)
+                            (>= (+ input_x a!5) 0)))
+      (a!13 (unit-resolution (th-lemma (or (not a!11) (<= a!12 0)))
+                             (unit-resolution (th-lemma (or false a!11))
+                                              (true-axiom true)
+                                              a!11)
+                             (<= a!12 0)))
+      (a!18 (unit-resolution (th-lemma (or (not a!15) a!17))
+                             (unit-resolution (th-lemma (or false a!15))
+                                              (true-axiom true)
+                                              a!15)
+                             a!17))
+      (a!20 (unit-resolution a!19
+                             (unit-resolution (th-lemma (or false a!4))
+                                              (true-axiom true)
+                                              a!4)
+                             (<= (+ input_x a!5) 0)))
+      (a!29 (or false (<= (mod (mod a!28 4294967296) 2147483648) 2147483647)))
+      (a!31 (+ 1 (mod a!10 4294967296) (div (mod a!28 4294967296) 2147483648)))
+      (a!56 (- (+ (mod (div a!50 4294967296) 4294967296) 1)
+               (div (mod (- a!53 7681) 4294967296) 2147483648)))
+      (a!62 (+ (mod a!10 4294967296)
+               (* (- 1) (div (mod a!28 4294967296) 2147483648))))
+      (a!82 (th-lemma (or false (<= (mod a!28 4294967296) 4294967295))))
+      (a!83 (or false (>= (mod (mod a!28 4294967296) 2147483648) 0)))
+      (a!85 (+ (* 2147483648 (div (mod a!28 4294967296) 2147483648))
+               (mod (mod a!28 4294967296) 2147483648)))
+      (a!93 (unit-resolution (th-lemma (or (not a!15) a!92))
+                             (unit-resolution (th-lemma (or false a!15))
+                                              (true-axiom true)
+                                              a!15)
+                             a!92))
+      (a!95 (unit-resolution (th-lemma (or (not a!11) (>= a!12 0)))
+                             (unit-resolution (th-lemma (or false a!11))
+                                              (true-axiom true)
+                                              a!11)
+                             (>= a!12 0)))
+      (a!109 (not (= a!108 (+ 3840 (* 2 input_x)))))
+      (a!110 (+ a!108 (* (- 1) (+ 3840 (* 2 input_x)))))
+      (a!111 (or false (= a!108 (+ 3840 (* 2 input_x)))))
+      (a!117 (unit-resolution (th-lemma (or (not a!114) a!116))
+                              (unit-resolution (th-lemma (or false a!114))
+                                               (true-axiom true)
+                                               a!114)
+                              a!116))
+      (a!120 (= (+ (* 4294967296 (div a!28 4294967296)) (mod a!28 4294967296))
+                a!28))
+      (a!121 (+ (+ (* 4294967296 (div a!28 4294967296)) (mod a!28 4294967296))
+                (* (- 1) a!28)))
+      (a!126 (<= (+ (div (mod a!28 4294967296) 2147483648)
+                    (* (- 1) (mod a!10 4294967296)))
+                 (- 1)))
+      (a!135 (unit-resolution (th-lemma (or (not a!114) a!134))
+                              (unit-resolution (th-lemma (or false a!114))
+                                               (true-axiom true)
+                                               a!114)
+                              a!134))
+      (a!139 (th-lemma (or false (>= (mod a!28 4294967296) 0))))
+      (a!140 (hypothesis (not (<= (div a!28 4294967296) 0))))
+      (a!168 (hypothesis (not (<= (mod a!28 4294967296) 0)))))
+(let ((a!8 (th-lemma (unit-resolution a!1
+                                      (true-axiom true)
+                                      (>= (mod input_x 2147483648) 0))
+                     a!3
+                     a!7
+                     (hypothesis (>= (div input_x 2147483648) 1))
+                     false))
+      (a!27 (th-lemma (unit-resolution a!24
+                                       (true-axiom true)
+                                       (>= (mod a!10 4294967296) 0))
+                      a!13
+                      a!18
+                      (unit-resolution a!25
+                                       (true-axiom true)
+                                       (<= (mod input_x 2147483648) 2147483647))
+                      a!21
+                      a!26
+                      false))
+      (a!30 (unit-resolution (th-lemma a!29)
+                             (true-axiom true)
+                             (<= (mod (mod a!28 4294967296) 2147483648)
+                                 2147483647)))
+      (a!32 (th-lemma (or false (>= (mod a!31 2) 0))))
+      (a!33 (or false (<= (mod (mod a!31 2) 65536) 65535)))
+      (a!35 (+ (* 65536 (div (mod a!31 2) 65536)) (mod (mod a!31 2) 65536)))
+      (a!40 (not (>= (div (mod a!31 2) 65536) 0)))
+      (a!60 (and true
+                 (> 2 0)
+                 a!48
+                 a!49
+                 (>= a!50 0)
+                 (< a!50 18446744073709551616)
+                 true
+                 a!51
+                 a!52
+                 (>= a!53 0)
+                 (< a!53 4294967296)
+                 a!54
+                 a!55
+                 true
+                 (>= a!56 0)
+                 (< a!56 4294967296)
+                 true
+                 a!57
+                 a!58
+                 (= (mod (mod a!56 2) 65536) a!59)
+                 (>= (mod (mod a!56 2) 65536) 0)
+                 (<= (mod (mod a!56 2) 65536) 1)))
+      (a!63 (and (>= (mod input_x 2147483648) (- 1920))
+                 (not (>= (mod input_x 2147483648) 2147481728))
+                 (not (>= (mod input_x 2147483648) 16494843286141))
+                 (>= (mod a!10 4294967296) 0)
+                 (not (>= (mod a!10 4294967296) 559168))
+                 (>= a!61 (- 3840))
+                 (not (<= 4294963456 a!61))
+                 (not (<= 4294967295 (mod a!10 4294967296)))
+                 (>= a!62 (- 1))
+                 (not (<= 4294967295 a!62))
+                 (= (mod (mod a!31 2) 65536) a!46)
+                 (<= (mod (mod a!31 2) 65536) 1)))
+      (a!65 (and (not (>= (mod input_x 2147483648) 2147481728))
+                 (not (>= (mod a!10 4294967296) 559168))
+                 (>= a!61 (- 3840))
+                 (not (<= 4294963456 a!61))
+                 (not (<= 4294967295 (mod a!10 4294967296)))
+                 (>= a!62 (- 1))
+                 (not (<= 4294967295 a!62))
+                 (= (mod (mod a!31 2) 65536) a!46)
+                 (<= (mod (mod a!31 2) 65536) 1)))
+      (a!68 (+ a!46 (* (- 1) (mod (mod a!31 2) 65536))))
+      (a!76 (not (<= (mod (mod a!31 2) 65536) 1)))
+      (a!84 (unit-resolution (th-lemma a!83)
+                             (true-axiom true)
+                             (>= (mod (mod a!28 4294967296) 2147483648) 0)))
+      (a!86 (<= (+ a!85 (* (- 1) (mod a!28 4294967296))) 0))
+      (a!88 (th-lemma (or false (= a!85 (mod a!28 4294967296)))))
+      (a!97 (th-lemma a!91
+                      a!93
+                      (unit-resolution a!1
+                                       (true-axiom true)
+                                       (>= (mod input_x 2147483648) 0))
+                      a!94
+                      a!95
+                      (unit-resolution a!96
+                                       (true-axiom true)
+                                       (<= (mod a!10 4294967296) 4294967295))
+                      false))
+      (a!101 (th-lemma (or false (<= (mod a!31 2) 1))))
+      (a!112 (unit-resolution (th-lemma a!111)
+                              (true-axiom true)
+                              (= a!108 (+ 3840 (* 2 input_x)))))
+      (a!118 (th-lemma a!20
+                       a!23
+                       (hypothesis (<= (div input_x 2147483648) (- 1)))
+                       (unit-resolution a!25
+                                        (true-axiom true)
+                                        (<= (mod input_x 2147483648) 2147483647))
+                       false))
+      (a!122 (unit-resolution (th-lemma (or (not a!120) (>= a!121 0)))
+                              (unit-resolution (th-lemma (or false a!120))
+                                               (true-axiom true)
+                                               a!120)
+                              (>= a!121 0)))
+      (a!123 (>= (+ a!85 (* (- 1) (mod a!28 4294967296))) 0))
+      (a!128 (or (>= a!105 1) (not (<= (div a!28 4294967296) 0)) (not a!126)))
+      (a!130 (or false (>= (mod (mod a!31 2) 65536) 0)))
+      (a!141 (unit-resolution (th-lemma (or (not a!120) (<= a!121 0)))
+                              (unit-resolution (th-lemma (or false a!120))
+                                               (true-axiom true)
+                                               a!120)
+                              (<= a!121 0)))
+      (a!149 (= (+ (* 2 (div a!31 2)) (mod a!31 2)) a!31))
+      (a!150 (+ (+ (* 2 (div a!31 2)) (mod a!31 2)) (* (- 1) a!31)))
+      (a!178 (hypothesis (not (>= (div a!31 2) 1)))))
+(let ((a!9 (lemma a!8 (not (>= (div input_x 2147483648) 1))))
+      (a!34 (unit-resolution (th-lemma a!33)
+                             (true-axiom true)
+                             (<= (mod (mod a!31 2) 65536) 65535)))
+      (a!36 (>= (+ a!35 (* (- 1) (mod a!31 2))) 0))
+      (a!38 (th-lemma (or false (= a!35 (mod a!31 2)))))
+      (a!43 (<= (+ a!35 (* (- 1) (mod a!31 2))) 0))
+      (a!64 (mp (asserted (not a!60))
+                (rewrite (= (not a!60) (not a!63)))
+                (not a!63)))
+      (a!69 (and (not (>= (mod input_x 2147483648) 2147481728))
+                 (not (>= (mod a!10 4294967296) 559168))
+                 (>= a!61 (- 3840))
+                 (not (>= a!61 4294963456))
+                 (not (>= (mod a!10 4294967296) 4294967295))
+                 (>= a!62 (- 1))
+                 (not (>= a!62 4294967295))
+                 (= a!68 0)
+                 (<= (mod (mod a!31 2) 65536) 1)))
+      (a!71 (rewrite (= (= a!68 0) (and (<= a!68 0) (>= a!68 0)))))
+      (a!72 (not (or (not (<= a!68 0)) (not (>= a!68 0)))))
+      (a!77 (or (not (>= a!68 0))
+                (not (<= a!68 0))
+                (>= (mod a!10 4294967296) 559168)
+                (>= a!61 4294963456)
+                (>= (mod input_x 2147483648) 2147481728)
+                (not (>= a!62 (- 1)))
+                a!76
+                (not (>= a!61 (- 3840)))
+                (>= (mod a!10 4294967296) 4294967295)
+                (>= a!62 4294967295)))
+      (a!87 (or (not (= a!85 (mod a!28 4294967296))) a!86))
+      (a!98 (th-lemma a!18
+                      a!21
+                      (unit-resolution a!1
+                                       (true-axiom true)
+                                       (>= (mod input_x 2147483648) 0))
+                      (hypothesis (not (>= a!61 (- 3840))))
+                      (lemma a!97 (>= (div a!10 4294967296) 0))
+                      a!13
+                      false))
+      (a!113 (unit-resolution (th-lemma (or a!109 (>= a!110 0)))
+                              a!112
+                              (>= a!110 0)))
+      (a!119 (lemma a!118 (not (<= (div input_x 2147483648) (- 1)))))
+      (a!124 (or (not (= a!85 (mod a!28 4294967296))) a!123))
+      (a!131 (unit-resolution (th-lemma a!130)
+                              (true-axiom true)
+                              (>= (mod (mod a!31 2) 65536) 0)))
+      (a!132 (unit-resolution (th-lemma (or a!109 (<= a!110 0)))
+                              a!112
+                              (<= a!110 0)))
+      (a!147 (or (not (<= (mod a!10 4294967296) 0)) (<= a!68 0)))
+      (a!151 (unit-resolution (th-lemma (or (not a!149) (>= a!150 0)))
+                              (unit-resolution (th-lemma (or false a!149))
+                                               (true-axiom true)
+                                               a!149)
+                              (>= a!150 0)))
+      (a!152 (unit-resolution (th-lemma (or (not a!149) (<= a!150 0)))
+                              (unit-resolution (th-lemma (or false a!149))
+                                               (true-axiom true)
+                                               a!149)
+                              (<= a!150 0)))
+      (a!166 (or (not (>= (div a!31 2) 1))
+                 (<= (div a!28 4294967296) 0)
+                 (>= a!68 0))))
+(let ((a!37 (or (not (= a!35 (mod a!31 2))) a!36))
+      (a!44 (or (not (= a!35 (mod a!31 2))) a!43))
+      (a!66 (mp a!64 (rewrite (= (not a!63) (not a!65))) (not a!65)))
+      (a!73 (rewrite (= (and (<= a!68 0) (>= a!68 0)) a!72)))
+      (a!74 (and (not (>= (mod input_x 2147483648) 2147481728))
+                 (not (>= (mod a!10 4294967296) 559168))
+                 (>= a!61 (- 3840))
+                 (not (>= a!61 4294963456))
+                 (not (>= (mod a!10 4294967296) 4294967295))
+                 (>= a!62 (- 1))
+                 (not (>= a!62 4294967295))
+                 a!72
+                 (<= (mod (mod a!31 2) 65536) 1)))
+      (a!80 (rewrite (= (not (not a!77)) a!77)))
+      (a!89 (unit-resolution (th-lemma a!87)
+                             (unit-resolution a!88
+                                              (true-axiom true)
+                                              (= a!85 (mod a!28 4294967296)))
+                             a!86))
+      (a!99 (th-lemma (unit-resolution a!25
+                                       (true-axiom true)
+                                       (<= (mod input_x 2147483648) 2147483647))
+                      (lemma a!98 (>= a!61 (- 3840)))
+                      (not (>= (mod a!10 4294967296) 4294967295))))
+      (a!125 (unit-resolution (th-lemma a!124)
+                              (unit-resolution a!88
+                                               (true-axiom true)
+                                               (= a!85 (mod a!28 4294967296)))
+                              a!123))
+      (a!136 (th-lemma (hypothesis (not (<= a!68 0)))
+                       a!131
+                       a!3
+                       a!132
+                       (unit-resolution (th-lemma (or false a!133))
+                                        (true-axiom true)
+                                        a!133)
+                       (hypothesis (not (<= a!105 0)))
+                       a!135
+                       false))
+      (a!142 (th-lemma (unit-resolution (th-lemma (or false a!106))
+                                        (true-axiom true)
+                                        a!106)
+                       a!113
+                       a!104
+                       a!117
+                       (hypothesis (<= a!105 0))
+                       a!7
+                       a!138
+                       a!91
+                       a!95
+                       a!93
+                       (lemma a!27 (<= (div a!10 4294967296) 0))
+                       a!117
+                       a!9
+                       a!135
+                       (hypothesis (<= a!105 0))
+                       (unit-resolution a!24
+                                        (true-axiom true)
+                                        (>= (mod a!10 4294967296) 0))
+                       (unit-resolution a!139
+                                        (true-axiom true)
+                                        (>= (mod a!28 4294967296) 0))
+                       a!138
+                       a!122
+                       a!140
+                       a!141
+                       (unit-resolution (th-lemma (or false a!106))
+                                        (true-axiom true)
+                                        a!106)
+                       a!113
+                       a!7
+                       a!132
+                       a!20
+                       a!104
+                       false))
+      (a!145 (th-lemma (hypothesis (not (>= a!105 0)))
+                       a!117
+                       a!104
+                       a!23
+                       (unit-resolution (th-lemma (or false a!106))
+                                        (true-axiom true)
+                                        a!106)
+                       a!113
+                       false))
+      (a!157 (th-lemma (hypothesis (>= (mod input_x 2147483648) 2147481728))
+                       a!3
+                       a!119
+                       a!7
+                       false))
+      (a!160 (th-lemma a!7
+                       a!3
+                       (unit-resolution a!24
+                                        (true-axiom true)
+                                        (>= (mod a!10 4294967296) 0))
+                       a!119
+                       (hypothesis (>= a!61 4294963456))
+                       false))
+      (a!162 (th-lemma a!7
+                       a!3
+                       (hypothesis (>= (mod a!10 4294967296) 559168))
+                       a!119
+                       a!21
+                       a!18
+                       (lemma a!97 (>= (div a!10 4294967296) 0))
+                       a!13
+                       false))
+      (a!169 (th-lemma a!95
+                       (lemma a!27 (<= (div a!10 4294967296) 0))
+                       a!3
+                       a!91
+                       a!93
+                       a!119
+                       a!141
+                       a!168
+                       a!7
+                       a!140
+                       false))
+      (a!171 (th-lemma (unit-resolution a!139
+                                        (true-axiom true)
+                                        (>= (mod a!28 4294967296) 0))
+                       a!91
+                       a!93
+                       a!95
+                       (lemma a!27 (<= (div a!10 4294967296) 0))
+                       a!141
+                       a!3
+                       (hypothesis (>= (div a!28 4294967296) 2))
+                       a!7
+                       a!119
+                       false)))
+(let ((a!39 (unit-resolution (th-lemma a!37)
+                             (unit-resolution a!38
+                                              (true-axiom true)
+                                              (= a!35 (mod a!31 2)))
+                             a!36))
+      (a!45 (unit-resolution (th-lemma a!44)
+                             (unit-resolution a!38
+                                              (true-axiom true)
+                                              (= a!35 (mod a!31 2)))
+                             a!43))
+      (a!67 (mp a!66 (rewrite (= (not a!65) (not a!65))) (not a!65)))
+      (a!75 (monotonicity (trans a!71 a!73 (= (= a!68 0) a!72)) (= a!69 a!74)))
+      (a!90 (th-lemma (unit-resolution a!24
+                                       (true-axiom true)
+                                       (>= (mod a!10 4294967296) 0))
+                      (hypothesis (not (>= a!62 (- 1))))
+                      (unit-resolution a!82
+                                       (true-axiom true)
+                                       (<= (mod a!28 4294967296) 4294967295))
+                      a!84
+                      a!89
+                      false))
+      (a!127 (th-lemma a!104
+                       (hypothesis (not (>= a!105 1)))
+                       (unit-resolution (th-lemma (or false a!106))
+                                        (true-axiom true)
+                                        a!106)
+                       a!113
+                       a!117
+                       a!18
+                       a!13
+                       (lemma a!97 (>= (div a!10 4294967296) 0))
+                       a!21
+                       a!7
+                       a!119
+                       (hypothesis (<= (div a!28 4294967296) 0))
+                       a!122
+                       a!125
+                       a!30
+                       (hypothesis a!126)
+                       false))
+      (a!137 (unit-resolution (lemma a!136 (or (<= a!105 0) (<= a!68 0)))
+                              (hypothesis (not (<= a!68 0)))
+                              (<= a!105 0)))
+      (a!143 (lemma a!142
+                    (or (<= (div input_x 2147483648) (- 1))
+                        (not (<= a!105 0))
+                        (<= (div a!28 4294967296) 0))))
+      (a!158 (lemma a!157 (not (>= (mod input_x 2147483648) 2147481728))))
+      (a!161 (th-lemma a!7
+                       (lemma a!98 (>= a!61 (- 3840)))
+                       a!125
+                       a!30
+                       a!3
+                       a!119
+                       (hypothesis (>= a!62 4294967295))
+                       (unit-resolution a!139
+                                        (true-axiom true)
+                                        (>= (mod a!28 4294967296) 0))
+                       false))
+      (a!163 (lemma a!162 (not (>= (mod a!10 4294967296) 559168))))
+      (a!170 (lemma a!169
+                    (or (<= (mod a!28 4294967296) 0)
+                        (<= (div a!28 4294967296) 0))))
+      (a!172 (lemma a!171 (not (>= (div a!28 4294967296) 2)))))
+(let ((a!41 (th-lemma (unit-resolution a!32
+                                       (true-axiom true)
+                                       (>= (mod a!31 2) 0))
+                      a!34
+                      a!39
+                      (hypothesis a!40)
+                      false))
+      (a!70 (mp a!67 (rewrite (= (not a!65) (not a!69))) (not a!69)))
+      (a!78 (trans a!75 (rewrite (= a!74 (not a!77))) (= a!69 (not a!77))))
+      (a!144 (unit-resolution a!143
+                              a!119
+                              (or (not (<= a!105 0))
+                                  (<= (div a!28 4294967296) 0)))))
+(let ((a!42 (lemma a!41 (>= (div (mod a!31 2) 65536) 0)))
+      (a!79 (monotonicity a!78 (= (not a!69) (not (not a!77)))))
+      (a!146 (th-lemma (unit-resolution a!82
+                                        (true-axiom true)
+                                        (<= (mod a!28 4294967296) 4294967295))
+                       a!122
+                       a!9
+                       (lemma a!145 (>= a!105 0))
+                       (unit-resolution (th-lemma (or false a!133))
+                                        (true-axiom true)
+                                        a!133)
+                       (hypothesis (not (<= a!68 0)))
+                       a!113
+                       a!132
+                       a!117
+                       a!135
+                       a!131
+                       a!20
+                       (hypothesis (<= (mod a!10 4294967296) 0))
+                       (unit-resolution a!144
+                                        a!137
+                                        (<= (div a!28 4294967296) 0))
+                       false)))
+(let ((a!81 (mp a!70 (trans a!79 a!80 (= (not a!69) a!77)) a!77))
+      (a!102 (th-lemma a!45
+                       (unit-resolution a!101
+                                        (true-axiom true)
+                                        (<= (mod a!31 2) 1))
+                       a!42
+                       (<= (mod (mod a!31 2) 65536) 1)))
+      (a!148 (unit-resolution (lemma a!146 a!147)
+                              (hypothesis (not (<= a!68 0)))
+                              (not (<= (mod a!10 4294967296) 0))))
+      (a!165 (th-lemma a!7
+                       a!3
+                       a!119
+                       (unit-resolution a!139
+                                        (true-axiom true)
+                                        (>= (mod a!28 4294967296) 0))
+                       a!141
+                       a!140
+                       a!84
+                       a!89
+                       (hypothesis (>= (div a!31 2) 1))
+                       (hypothesis (not (>= a!68 0)))
+                       a!47
+                       a!45
+                       a!42
+                       a!152
+                       false)))
+(let ((a!100 (unit-resolution a!81
+                              (lemma a!90 (>= a!62 (- 1)))
+                              (lemma a!98 (>= a!61 (- 3840)))
+                              a!99
+                              (or (not (>= a!68 0))
+                                  (not (<= a!68 0))
+                                  (>= (mod a!10 4294967296) 559168)
+                                  (>= a!61 4294963456)
+                                  (>= (mod input_x 2147483648) 2147481728)
+                                  a!76
+                                  (>= a!62 4294967295))))
+      (a!153 (th-lemma a!104
+                       (hypothesis (not (<= a!68 0)))
+                       a!148
+                       (unit-resolution a!82
+                                        (true-axiom true)
+                                        (<= (mod a!28 4294967296) 4294967295))
+                       a!45
+                       a!151
+                       a!152
+                       (hypothesis (not a!126))
+                       a!131
+                       a!39
+                       a!89
+                       a!84
+                       false)))
+(let ((a!103 (unit-resolution a!100
+                              a!102
+                              (or (not (>= a!68 0))
+                                  (not (<= a!68 0))
+                                  (>= (mod a!10 4294967296) 559168)
+                                  (>= a!61 4294963456)
+                                  (>= (mod input_x 2147483648) 2147481728)
+                                  (>= a!62 4294967295))))
+      (a!154 (unit-resolution (lemma a!153 (or a!126 (<= a!68 0)))
+                              (hypothesis (not (<= a!68 0)))
+                              a!126)))
+(let ((a!155 (unit-resolution (lemma a!127 a!128)
+                              (unit-resolution a!129 a!137 (not (>= a!105 1)))
+                              (unit-resolution a!144
+                                               a!137
+                                               (<= (div a!28 4294967296) 0))
+                              a!154
+                              false)))
+(let ((a!156 (unit-resolution a!103
+                              (lemma a!155 (<= a!68 0))
+                              (or (not (>= a!68 0))
+                                  (>= (mod a!10 4294967296) 559168)
+                                  (>= a!61 4294963456)
+                                  (>= (mod input_x 2147483648) 2147481728)
+                                  (>= a!62 4294967295)))))
+(let ((a!159 (unit-resolution a!156
+                              a!158
+                              (or (not (>= a!68 0))
+                                  (>= (mod a!10 4294967296) 559168)
+                                  (>= a!61 4294963456)
+                                  (>= a!62 4294967295)))))
+(let ((a!164 (unit-resolution a!159
+                              (lemma a!160 (not (>= a!61 4294963456)))
+                              (lemma a!161 (not (>= a!62 4294967295)))
+                              a!163
+                              (not (>= a!68 0)))))
+(let ((a!167 (unit-resolution (lemma a!165 a!166)
+                              a!140
+                              a!164
+                              (not (>= (div a!31 2) 1)))))
+(let ((a!173 (th-lemma a!30
+                       a!167
+                       a!151
+                       (unit-resolution a!101
+                                        (true-axiom true)
+                                        (<= (mod a!31 2) 1))
+                       (unit-resolution a!170
+                                        a!140
+                                        (<= (mod a!28 4294967296) 0))
+                       a!125
+                       a!47
+                       a!135
+                       (unit-resolution (th-lemma (or false a!133))
+                                        (true-axiom true)
+                                        a!133)
+                       a!132
+                       (unit-resolution a!144 a!140 (not (<= a!105 0)))
+                       a!122
+                       a!20
+                       a!9
+                       a!172
+                       false)))
+(let ((a!176 (th-lemma (lemma a!173 (<= (div a!28 4294967296) 0))
+                       a!122
+                       (unit-resolution a!82
+                                        (true-axiom true)
+                                        (<= (mod a!28 4294967296) 4294967295))
+                       a!20
+                       a!132
+                       a!9
+                       (lemma a!97 (>= (div a!10 4294967296) 0))
+                       (hypothesis (not a!174))
+                       (hypothesis (not a!175))
+                       (unit-resolution (th-lemma (or false a!133))
+                                        (true-axiom true)
+                                        a!133)
+                       false))
+      (a!179 (th-lemma a!23
+                       (unit-resolution a!24
+                                        (true-axiom true)
+                                        (>= (mod a!10 4294967296) 0))
+                       a!20
+                       (lemma a!173 (<= (div a!28 4294967296) 0))
+                       a!9
+                       a!122
+                       a!30
+                       a!125
+                       (unit-resolution a!101
+                                        (true-axiom true)
+                                        (<= (mod a!31 2) 1))
+                       a!178
+                       a!151
+                       false)))
+(let ((a!180 (th-lemma a!42
+                       a!45
+                       a!47
+                       a!164
+                       (lemma a!90 (>= a!62 (- 1)))
+                       a!177
+                       (lemma a!179 (>= (div a!31 2) 1))
+                       a!152
+                       false)))
+(let ((a!182 (th-lemma (hypothesis a!175)
+                       a!47
+                       a!117
+                       a!135
+                       a!117
+                       (lemma a!180 (>= (mod a!10 4294967296) 1))
+                       a!42
+                       a!45
+                       (unit-resolution a!101
+                                        (true-axiom true)
+                                        (<= (mod a!31 2) 1))
+                       a!164
+                       a!113
+                       (hypothesis (not a!181))
+                       (unit-resolution (th-lemma (or false a!106))
+                                        (true-axiom true)
+                                        a!106)
+                       a!7
+                       a!119
+                       false)))
+(let ((a!183 (unit-resolution (lemma a!182 (or (not a!175) a!181))
+                              (hypothesis (not a!181))
+                              (not a!175))))
+(let ((a!184 (th-lemma (lemma a!27 (<= (div a!10 4294967296) 0))
+                       a!30
+                       a!42
+                       a!45
+                       a!47
+                       a!164
+                       (unit-resolution (lemma a!176 (or a!174 a!175))
+                                        a!183
+                                        a!174)
+                       a!119
+                       a!7
+                       a!3
+                       a!84
+                       a!125
+                       a!89
+                       (lemma a!97 (>= (div a!10 4294967296) 0))
+                       a!122
+                       (unit-resolution a!101
+                                        (true-axiom true)
+                                        (<= (mod a!31 2) 1))
+                       a!141
+                       (unit-resolution (lemma a!176 (or a!174 a!175))
+                                        a!183
+                                        a!174)
+                       (hypothesis (not a!181))
+                       a!151
+                       a!152
+                       (lemma a!27 (<= (div a!10 4294967296) 0))
+                       false)))
+  (th-lemma a!9
+            a!13
+            a!18
+            a!20
+            a!21
+            a!23
+            (lemma a!184 a!181)
+            (lemma a!97 (>= (div a!10 4294967296) 0))
+            false))))))))))))))))))))))))

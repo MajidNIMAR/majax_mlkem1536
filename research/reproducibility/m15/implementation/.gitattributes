@@ -1,0 +1,2 @@
+# Scientific receipts and proof objects must preserve their exact original bytes.
+* -text whitespace=cr-at-eol,-blank-at-eof
