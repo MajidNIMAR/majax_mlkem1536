@@ -1,6 +1,77 @@
 # Rapport de recherche — MLKEM-1536 Core, KEM à six blocs de 256 coefficients
 
+**Présentation publique M17 et C01.** Le README, la [note de portée
+actualisée](ETAT_RECHERCHE_C01.md) et SECURITY décrivent les nouveaux résultats
+et distinguent l'argument conditionnel QROM/RC1 de la qualification concrète
+encore ouverte. R1 reste expérimental. Cette mise à jour documentaire conserve
+le moteur, ses paramètres, ses formats, les workflows et le lot reproductible
+M15. Les programmes, acquisitions et revues détaillés M17/C01 restent privés.
+Les comptes de validation locaux ne sont pas une nouvelle suite CI publique.
+La référence du code testé demeure le commit53d501de et la CI44223949348.
+
+**C01 — argument conditionnel IND-CCA consolidé et vérifié dans sa portée.**
+Le travail ciblé réunit désormais l'énoncé exact de R1, les raccords de
+réduction, la correction, les oracles et leurs ressources dans un dossier
+unique. La relecture interne n'identifie pas de lemme supplémentaire manquant
+pour le modèle quantique idéalisé précisément déclaré. Les deux hypothèses
+natives peuvent se ramener à une seule hypothèse MLWE, dans un budget augmenté
+dont le coût complet est payé. Le repère numérique conservé est satisfait
+conditionnellement ; la condition suffisante est moins forte que le choix
+historique. Ce repère ne revendique pas un niveau global en bits.
+
+Le dossier explicatif demandé par le C01 original est constitué comme
+argument sous hypothèses. La vérité numérique de l'hypothèse de dureté et la
+qualification des fonctions SHA3/SHAKE fixes restent non établies. Le statut
+plus fort de qualification entièrement concrète de R1 demeure donc ouvert.
+Cette distinction est explicite ; les anciens états et archives ne sont pas
+réécrits. Les garanties de programme, temps constant, effacement, audit et
+production restent des sujets séparés.
+
+La sélection finale réussit neuf contrôles ciblés et 42 tests distincts,
+sans omission ; les reprises de revue ne gonflent pas ce compte. R1 reste
+expérimental. Aucun changement du cœur, des paramètres ou du binaire n'est
+retenu par ce travail ; les détails restent privés dans NIST, les rapports
+PC sont à jour et la publication GitHub précédente est préservée.
+
+**M17 — dix périmètres développés et relus dans leurs portées.** Le cycle
+local ajoute des décisions avec matrice visible, des sondes adaptatives, des
+filtres quantitatifs pour les deux jeux natifs, un traitement conjoint des
+fonctions fixes et des populations, des cartes de ressources, une lecture
+sémantique de fonctions Rust, des contrôles d'images PC et une composition
+reproductible. La validation sélectionnée comporte **18 travaux réussis et
+217 tests ciblés sans omission** ; les reprises de revue ne gonflent pas ce
+compte. Les versions initiales et corrections d'instruments sont conservées.
+
+Ces résultats restent propres aux classes, modèles et images déclarés. Ils
+ne qualifient ni toute la classe adversariale du KEM concret, ni toutes les
+fonctions compilées. Les hypothèses natives, le transfert de famille fixe et
+les obligations générales de C01 restent ouverts ou conditionnels. R1 est
+conservé pour la recherche, avec gel final différé. Aucun résultat retenu ne
+justifie actuellement de modifier ses paramètres ou son moteur ; les sources,
+le binaire canonique et les archives antérieures gardent leurs octets.
+
+Le rapport, le journal et la feuille de route sont actualisés sur le PC.
+Les détails M17 demeurent locaux et privés ; la publication M16 et le lot
+reproductible public M15 sont préservés. Ces validations ne constituent ni
+une nouvelle CI GitHub, ni un audit extérieur, ni une qualification NIST ou
+une autorisation de production Messenger.
+
+
 Version de travail du 18 novembre 2026. Ce document est la base évolutive du futur article. Le [journal](JOURNAL_RECHERCHE.md) conserve les étapes et décisions ; les [résultats figés de J2](../results/j2/run-001/) conservent les calculs et leur provenance. Une modification du rapport doit rester cohérente avec ces données.
+
+**Présentation M16 publiée et vérifiée.** Le commit
+[`cee88267`](https://github.com/MajidNIMAR/mlkem-1536-core/commit/cee8826724d0c3579b2b51700c9bce70c12f557d)
+est publié sur main. Le README, la note de portée et le statut de sécurité
+présentent M16 ; la description courte indique explicitement R1 expérimental,
+C01 ouvert et l'absence de qualification de production. Les autres réglages
+du dépôt sont inchangés. Les accès anonymes retrouvent la description exacte
+et les octets commis des quatre documents examinés.
+
+L'export contrôle 2 578 fichiers/blobs plus la provenance. Les inputs non
+documentaires restent ceux du53d501de testé ; cette publication documentaire
+ne revendique aucune nouvelle CI ou exécution des 113 tests M16 sur GitHub.
+Les détails scientifiques restent privés et les archives, le moteur et son
+binaire sont inchangés. Les reçus de publication sont conservés localement.
 
 **Présentation publique M16.** La [synthèse de portée](ETAT_RECHERCHE_M16.md)
 et le README présentent les cinq volets, leurs validations internes et leurs

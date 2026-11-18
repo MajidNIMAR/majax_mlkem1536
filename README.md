@@ -15,7 +15,8 @@ evidence needed to examine its evolution.
 [Specification](docs/SPECIFICATION_DEV_Q7681_R1.md) ·
 [Engine and API guide](docs/MOTEUR_KEM_R1.md) ·
 [Research report](docs/RAPPORT_RECHERCHE.md) ·
-[Latest research progress — M16](docs/ETAT_RECHERCHE_M16.md) ·
+[Latest research progress — M17 and conditional C01](docs/ETAT_RECHERCHE_C01.md) ·
+[M16 scope note](docs/ETAT_RECHERCHE_M16.md) ·
 [Research progress through M15](docs/ETAT_RECHERCHE_M15.md) ·
 [M15 Windows replay lot](research/reproducibility/m15/implementation/README.md) ·
 [M10 engine and qualification](docs/M10_MOTEUR_ET_QUALIFICATION.md) ·
@@ -25,7 +26,42 @@ evidence needed to examine its evolution.
 
 [![Main-branch checks](https://github.com/MajidNIMAR/mlkem-1536-core/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/MajidNIMAR/mlkem-1536-core/actions/workflows/ci.yml)
 
-## Latest research milestone — M16, 18 November 2026
+## Latest research — M17 and the conditional C01 argument, 18 November 2026
+
+**R1 remains experimental. Its conditional IND-CCA argument has been
+consolidated and internally reviewed in the declared QROM/RC1 model.
+The complete concrete security qualification of R1, tracked as C01 in that
+stronger sense, remains open.**
+
+The [current scope note](docs/ETAT_RECHERCHE_C01.md) distinguishes the completed
+conditional argument from the remaining confidence and instantiation work.
+The argument covers a single honestly generated key, classical adaptive
+decapsulation requests and the stated quantum oracle interface. It uses an
+explicit resource-indexed MLWE assumption. Its numerical truth and the
+transfer to fixed SHA3/SHAKE functions are not established by the conditional
+theorem. The note records the oracle and preprocessing boundaries.
+
+M17 extends the scoped resistance, population, resource, program and PC-image
+studies. The targeted C01 work then consolidates the reduction, correctness,
+implicit rejection and resource accounting into one conditional argument.
+The two native MLWE premises can be covered by one hypothesis with an
+explicitly enlarged resource budget. The retained working checkpoint is
+satisfied under that hypothesis; it is not a global security-bit rating.
+
+Selected local validation passed **18 jobs and 217 targeted tests for M17**,
+and **nine jobs and 42 targeted tests for the C01 work**, with no skipped
+tests in either selection. These are distinct internal research validations,
+not new public CI suites. Detailed instruments, acquisitions and reviews
+remain private. The public reproducible research lot remains the M15
+arithmetic/NTT subset described below.
+
+M10 remains the delivered Rust engine. These studies preserve its sources,
+parameters, wire formats and canonical binary. The final profile freeze is
+deferred; no global superiority over ML-KEM-1024, NIST certification, external
+audit or production suitability is claimed. Earlier milestone sections below
+retain the scope of their recorded results.
+
+## Earlier research milestone — M16, 18 November 2026
 
 **R1 remains experimental. C01, the complete concrete R1 security argument,
 remains open, and the final cryptographic profile freeze is deferred.**
@@ -57,8 +93,8 @@ available below.
 
 **M10 remains the delivered Rust engine.** It implements KeyGen, Encaps,
 Decaps and implicit rejection for the specified R1 construction. Subsequent
-M11–M16 work develops the security argument without changing the engine's
-sources, parameters, formats or canonical binary.
+M11–M17 and the targeted C01 work develop the security argument without
+changing the engine's sources, parameters, formats or canonical binary.
 
 The first [public M15 replay lot](research/reproducibility/m15/implementation/README.md)
 now supplies **31 source-linked arithmetic SMT obligations**, an algebraic
@@ -299,7 +335,7 @@ scope and raw results.
 |---|---|
 | Functional engine and compatibility | Implemented and exercised on Windows/Linux; complete reference corpora match and R1 formats remain compatible |
 | Implementation hardening | M10 qualifies removal of two observed stack residues in its four reviewed PC images and completes its new long sanitizer campaign; earlier M08/M09 findings retain their own image scope. Register/ABI/all-PKE erasure and formal constant time remain open |
-| Cryptographic security argument | Exact correctness certificates and conditional ROM/QROM analyses under stated assumptions; the full concrete R1 argument **C01 remains open** |
+| Cryptographic security argument | Consolidated conditional IND-CCA argument in the declared QROM/RC1 model, under an explicit MLWE premise; the complete concrete R1 qualification **C01 remains open** |
 | Research progress through M15 | A public Windows arithmetic/NTT lot supplies 31 SMT obligations, 131,072 checked coefficients and 21 component tests; the broader conditional-margin and per-key research, detailed acquisitions and full 82-test internal suite are not supplied by that lot |
 | External assurance and security rating | A certified global bit rating, NIST category or external cryptographic audit is not established by these artifacts; **1536 denotes the coefficient count** |
 | Target qualification | M10 CLI/default-consumer reviews and hosted native checks concern the recorded GNU x86-64 Windows/Linux PC images; M08/M09 retain their own historical scope. Android/ARM requires its own qualification |

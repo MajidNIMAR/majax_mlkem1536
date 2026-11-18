@@ -2481,3 +2481,90 @@ porte une instruction skipci pour éviter de répéter ces jobs inchangés ;
 aucune CI nouvelle n'est revendiquée. Les vérifications de publication et du
 seul champ description sont conservées dans artifacts/retained/m16-publication-001/.
 Les archives scientifiques et le moteur restent immuables.
+
+## 18 novembre 2026 — Présentation M16 et description vérifiées sur GitHub
+
+Le commit public cee8826724d0c3579b2b51700c9bce70c12f557d est poussé sur main,
+avec sourceexport6e0f5e4. La revue des cartes vérifie 2 578 fichiers et blobs
+plus la provenance, soit 2 579 fichiers publics. Les seules différences
+sont documentaires. Le cœur, le workflow et le lotM15 sont identiques au
+53d501de validé par les trois jobs du run44223949348. Aucune nouvelle CI
+n'est créditée à cette mise à jour [skipci].
+
+Le seul champ description est actualisé. L'API confirme le nouveau texte,
+avec R1 expérimental et C01 ouvert, et l'identité des autres champs contrôlés.
+Les lectures anonymes confirment le dépôt public, le SHA distant, la description
+et les quatre fichiers examinés aux octets exacts. Les détails M16 restent
+privés ; les113 tests sont explicitement internes. Les preuves de clôture
+sont sous artifacts/retained/m16-publication-001/. Le rapport du PC est mis
+à jour après ces observations ; aucune publication supplémentaire ne reste
+à faire pour cette demande. Le statut de sécurité R1 demeure inchangé.
+
+
+## 18 novembre 2026 — M17, dix périmètres autorisés
+
+**M17 — dix périmètres développés et relus dans leurs portées.** Le cycle
+local ajoute des décisions avec matrice visible, des sondes adaptatives, des
+filtres quantitatifs pour les deux jeux natifs, un traitement conjoint des
+fonctions fixes et des populations, des cartes de ressources, une lecture
+sémantique de fonctions Rust, des contrôles d'images PC et une composition
+reproductible. La validation sélectionnée comporte **18 travaux réussis et
+217 tests ciblés sans omission** ; les reprises de revue ne gonflent pas ce
+compte. Les versions initiales et corrections d'instruments sont conservées.
+
+Ces résultats restent propres aux classes, modèles et images déclarés. Ils
+ne qualifient ni toute la classe adversariale du KEM concret, ni toutes les
+fonctions compilées. Les hypothèses natives, le transfert de famille fixe et
+les obligations générales de C01 restent ouverts ou conditionnels. R1 est
+conservé pour la recherche, avec gel final différé. Aucun résultat retenu ne
+justifie actuellement de modifier ses paramètres ou son moteur ; les sources,
+le binaire canonique et les archives antérieures gardent leurs octets.
+
+Le rapport, le journal et la feuille de route sont actualisés sur le PC.
+Les détails M17 demeurent locaux et privés ; la publication M16 et le lot
+reproductible public M15 sont préservés. Ces validations ne constituent ni
+une nouvelle CI GitHub, ni un audit extérieur, ni une qualification NIST ou
+une autorisation de production Messenger.
+
+
+
+
+## 18 novembre 2026 — C01, argument conditionnel et qualification concrète distingués
+
+**C01 — argument conditionnel IND-CCA consolidé et vérifié dans sa portée.**
+Le travail ciblé réunit désormais l'énoncé exact de R1, les raccords de
+réduction, la correction, les oracles et leurs ressources dans un dossier
+unique. La relecture interne n'identifie pas de lemme supplémentaire manquant
+pour le modèle quantique idéalisé précisément déclaré. Les deux hypothèses
+natives peuvent se ramener à une seule hypothèse MLWE, dans un budget augmenté
+dont le coût complet est payé. Le repère numérique conservé est satisfait
+conditionnellement ; la condition suffisante est moins forte que le choix
+historique. Ce repère ne revendique pas un niveau global en bits.
+
+Le dossier explicatif demandé par le C01 original est constitué comme
+argument sous hypothèses. La vérité numérique de l'hypothèse de dureté et la
+qualification des fonctions SHA3/SHAKE fixes restent non établies. Le statut
+plus fort de qualification entièrement concrète de R1 demeure donc ouvert.
+Cette distinction est explicite ; les anciens états et archives ne sont pas
+réécrits. Les garanties de programme, temps constant, effacement, audit et
+production restent des sujets séparés.
+
+La sélection finale réussit neuf contrôles ciblés et 42 tests distincts,
+sans omission ; les reprises de revue ne gonflent pas ce compte. R1 reste
+expérimental. Aucun changement du cœur, des paramètres ou du binaire n'est
+retenu par ce travail ; les détails restent privés dans NIST, les rapports
+PC sont à jour et la publication GitHub précédente est préservée.
+
+
+
+## 18 novembre 2026 — Présentation publique M17 et argument conditionnel C01
+
+**Présentation publique M17 et C01.** Le README, la [note de portée
+actualisée](ETAT_RECHERCHE_C01.md) et SECURITY décrivent les nouveaux résultats
+et distinguent l'argument conditionnel QROM/RC1 de la qualification concrète
+encore ouverte. R1 reste expérimental. Cette mise à jour documentaire conserve
+le moteur, ses paramètres, ses formats, les workflows et le lot reproductible
+M15. Les programmes, acquisitions et revues détaillés M17/C01 restent privés.
+Les comptes de validation locaux ne sont pas une nouvelle suite CI publique.
+La référence du code testé demeure le commit53d501de et la CI44223949348.
+

@@ -9,20 +9,36 @@ formal constant-time guarantee or production-security claim is made.
 
 ## Current assurance boundary
 
-Research has advanced through M16. The [M16 public scope note](docs/ETAT_RECHERCHE_M16.md)
-summarizes restricted resistance calibration, seeded-correction constructions,
-additional source-linked functional contracts, bounded compiled-path checks
-and the candidate decision. Its nine local validation jobs and 113 targeted
-tests are internal research results; their detailed instruments and records
-remain private and are not a new public CI suite.
+Research has advanced through M17 and a targeted consolidation of C01. The
+[current public scope note](docs/ETAT_RECHERCHE_C01.md) records a completed,
+internally reviewed conditional IND-CCA argument for the R1 construction in
+the declared QROM/RC1 model. This satisfies the explanatory conditional
+dossier sought by the original C01 criterion within that announced scope.
+It does not close the stronger qualification of the fully concrete R1 KEM.
 
-The M14/M15 working margin retains its original explicit ideal-model and
-quantitative assumptions. The later results do not establish the required
-full-adversary hardness bounds, fixed-primitive transfers, complete adaptive
-correctness argument, whole-KEM/compiler verification or a global security
-rating. **R1 remains experimental, C01 remains open, and the final profile
-freeze is deferred. R1 is not authorized for production in MAJAX Messenger.**
-External cryptographic review remains deferred.
+The conditional statement concerns a single honestly generated key,
+classical adaptive decapsulation requests and typed, framed-role quantum
+oracles with consistent responses and XOF prefixes. It excludes
+oracle-correlated preprocessing before matrix setup and does not claim a
+free equivalence to unrestricted raw Keccak or permutation-oracle access.
+One resource-indexed MLWE hypothesis can cover the two native games when
+the complete adapter cost is paid. The retained numerical checkpoint is
+verified under that premise. The premise's numerical truth and a transfer
+to the fixed SHA3/SHAKE family are not established by this implication.
+
+M17 passed 18 local validation jobs and 217 targeted tests; the targeted
+C01 work passed nine jobs and 42 targeted tests. Neither selection skipped
+tests. These are internal research results, with detailed instruments,
+acquisitions and reviews kept private, rather than new public CI suites.
+The [M16 note](docs/ETAT_RECHERCHE_M16.md) retains the scope of the previous
+milestone; historical sections below keep their recorded assurance boundaries.
+
+**R1 remains experimental. C01 in the stronger sense of complete concrete
+security qualification remains open, and the final profile freeze is
+deferred. R1 is not authorized for production in MAJAX Messenger.** No global
+security-bit rating, superiority over ML-KEM-1024, whole-KEM/compiler proof,
+physical constant-time guarantee or universal erasure is established by this
+update. External cryptographic review remains deferred.
 
 The [M15 progress note](docs/ETAT_RECHERCHE_M15.md) distinguishes the scoped
 internal results from published, independently replayable evidence. The
