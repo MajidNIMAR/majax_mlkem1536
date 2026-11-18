@@ -1,5 +1,51 @@
 # Rapport de recherche — MLKEM-1536 Core, KEM à six blocs de 256 coefficients
 
+**Présentation publique actualisée de l'étude ciblée.** Le README, SECURITY
+et la note de portée présentent une synthèse des expériences exécutables,
+du rejeu indépendant et des extensions du modèle idéal. Les 66 tests ciblés
+de composants sont identifiés comme vérifications locales privées, distinctes
+du lot public M15 et de la CI hébergée. Les données, programmes et résultats
+détaillés restent privés. Cette présentation ne change ni le moteur, ni ses
+paramètres, ni les budgets historiques, ni le statut expérimental de R1 ou
+l'ouverture de sa qualification concrète C01. La publication documentaire
+ne crédite aucune nouvelle exécution de tests hébergée.
+
+**Cryptanalyse exécutable et extension du modèle idéal — cycle privé achevé
+dans sa portée.** Une chaîne complète construit ses sondes depuis les seules
+données publiques et décide sur les vecteurs effectivement calculés. Le
+protocole, les coûts observés, les limites de budget et les contrôles
+indépendants sont conservés ; le rejeu reconstruit intégralement les données.
+Les calibrations réduites et témoins natifs restent distincts, sans déduction
+de dureté générale à partir d'une absence de succès.
+
+Le volet mathématique ajoute un transport cohérent d'interface et un
+corollaire pour un prétraitement préclé dont toute la préparation est comptée.
+Une autre comparaison, où l'oracle change réellement, conserve sa perte et
+ses conditions propres. Les revues sont internes ; les budgets antérieurs
+ne sont pas étendus gratuitement et aucune équivalence générale des fonctions
+fixes avec des oracles idéaux n'est affirmée. Les résultats détaillés restent
+privés dans NIST, conformément à la demande de confidentialité.
+
+Aucun résultat retenu ne justifie de modifier le moteur ou ses paramètres.
+R1 demeure expérimental et sa qualification concrète C01 reste ouverte.
+Le cœur, le binaire, les archives précédentes et le clone public sont
+préservés. Ce cycle local ne constitue ni une nouvelle CI ni une publication
+GitHub. La feuille de route précise le prochain critère de décision.
+Le dossier interne est scellé et vérifié. Les diagnostics de validation
+restent conservés ; la sélection finale réussit ses contrôles ciblés.
+
+**Publication M17/C01 vérifiée.** Le commit
+[`4d3e1b5`](https://github.com/MajidNIMAR/mlkem-1536-core/commit/4d3e1b5b45d9be5b7b55c35b1dacb97d016c3ffe)
+est publié sur main. Le README, SECURITY, la note de portée et les synthèses
+du rapport présentent les résultats et leurs limites. La référence distante,
+l'API et les octets de quatre documents accessibles anonymement sont contrôlés.
+Le nom, le titre, la description courte et les autres réglages du dépôt sont
+inchangés. Les archives privées et les entrées exécutables restent préservées.
+Cette publication documentaire ne crédite aucune nouvelle CI ; le code reste
+celui du53d501de testé dans le run44223949348. R1 demeure expérimental,
+avec argument conditionnel établi dans son modèle et qualification concrète
+encore ouverte.
+
 **Présentation publique M17 et C01.** Le README, la [note de portée
 actualisée](ETAT_RECHERCHE_C01.md) et SECURITY décrivent les nouveaux résultats
 et distinguent l'argument conditionnel QROM/RC1 de la qualification concrète

@@ -1,5 +1,39 @@
 # Du dossier de faisabilité au moteur KEM
 
+**Synthèse publique de l'étude ciblée.** La présentation du dépôt et la note
+C01 exposent les nouveaux périmètres exécutables et idéalisés, avec leurs
+limites. Les vérifications locales restent séparées de la CI publique et du
+lot reproductible M15. Les instruments et résultats détaillés sont privés.
+R1 demeure expérimental ; la qualification concrète C01 reste ouverte.
+
+**Cycle ciblé de cryptanalyse et modèle idéal achevé en privé.** La chaîne
+exécutable, les acquisitions, les ressources et les revues sont conservées
+dans NIST. Les contrôles réduits ne sont pas extrapolés aux paramètres natifs
+et les limites de calcul sont des résultats conservés. Le modèle couvre
+désormais un transport cohérent d'interface et une préparation préclé
+entièrement comptée, dans les hypothèses et ressources explicitement fixées.
+Les anciennes capsules et leurs budgets restent historiques.
+
+**Critère pour la suite.** Un progrès sur la qualification de dureté doit
+venir d'un résultat natif de cryptanalyse effectivement obtenu et qualifié,
+ou d'une composition de ressources plus large entièrement facturée et
+vérifiée. Ajouter des petits tests ou répéter une grille d'estimateur ne
+remplace pas ce résultat. Les détails de décision restent dans le rapport
+privé du cycle. Aucun changement du moteur n'est retenu à ce stade ; R1
+reste expérimental, sans clôture concrète C01, ni nouvelle CI/publication.
+
+**Publication M17/C01 vérifiée.** Le commit
+[`4d3e1b5`](https://github.com/MajidNIMAR/mlkem-1536-core/commit/4d3e1b5b45d9be5b7b55c35b1dacb97d016c3ffe)
+est publié sur main. Le README, SECURITY, la note de portée et les synthèses
+du rapport présentent les résultats et leurs limites. La référence distante,
+l'API et les octets de quatre documents accessibles anonymement sont contrôlés.
+Le nom, le titre, la description courte et les autres réglages du dépôt sont
+inchangés. Les archives privées et les entrées exécutables restent préservées.
+Cette publication documentaire ne crédite aucune nouvelle CI ; le code reste
+celui du53d501de testé dans le run44223949348. R1 demeure expérimental,
+avec argument conditionnel établi dans son modèle et qualification concrète
+encore ouverte.
+
 **Présentation publique M17 et C01.** Le README, la [note de portée
 actualisée](ETAT_RECHERCHE_C01.md) et SECURITY décrivent les nouveaux résultats
 et distinguent l'argument conditionnel QROM/RC1 de la qualification concrète

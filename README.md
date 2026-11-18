@@ -15,7 +15,7 @@ evidence needed to examine its evolution.
 [Specification](docs/SPECIFICATION_DEV_Q7681_R1.md) ·
 [Engine and API guide](docs/MOTEUR_KEM_R1.md) ·
 [Research report](docs/RAPPORT_RECHERCHE.md) ·
-[Latest research progress — M17 and conditional C01](docs/ETAT_RECHERCHE_C01.md) ·
+[Current research scope and conditional C01](docs/ETAT_RECHERCHE_C01.md) ·
 [M16 scope note](docs/ETAT_RECHERCHE_M16.md) ·
 [Research progress through M15](docs/ETAT_RECHERCHE_M15.md) ·
 [M15 Windows replay lot](research/reproducibility/m15/implementation/README.md) ·
@@ -26,7 +26,33 @@ evidence needed to examine its evolution.
 
 [![Main-branch checks](https://github.com/MajidNIMAR/mlkem-1536-core/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/MajidNIMAR/mlkem-1536-core/actions/workflows/ci.yml)
 
-## Latest research — M17 and the conditional C01 argument, 18 November 2026
+## Latest research — executable studies and ideal-model interfaces
+
+**R1 remains experimental. Its complete concrete security qualification,
+tracked as C01, remains open.**
+
+The latest private research cycle adds an executable resistance-study pipeline,
+independent replay of the retained acquisitions, and explicit resource
+accounting. Reduced-model calibration and native-parameter observations keep
+their separate scopes; recorded budget limits are retained and do not become
+claims of general hardness.
+
+The mathematical work also develops a bounded coherent ideal-interface
+transport and a resource-parametric treatment of fully charged pre-key
+processing. These internally reviewed results have explicit model and resource
+conditions. They do not establish a security transfer to fixed SHA3/SHAKE
+functions or extend earlier numerical budgets without accounting for the cost.
+
+Selected local component verification passed **66 distinct targeted tests in
+five suites**. These are private research checks, not a new public CI suite or
+a newly published replay package. Detailed instruments, experimental records
+and reviews remain private. M10 remains the delivered engine; its sources,
+parameters, formats and canonical binary are preserved.
+
+Read the [updated scope note](docs/ETAT_RECHERCHE_C01.md) for the relationship
+to the earlier conditional argument and the public M15 replay lot.
+
+## Earlier research — M17 and the conditional C01 argument, 18 November 2026
 
 **R1 remains experimental. Its conditional IND-CCA argument has been
 consolidated and internally reviewed in the declared QROM/RC1 model.
@@ -93,7 +119,7 @@ available below.
 
 **M10 remains the delivered Rust engine.** It implements KeyGen, Encaps,
 Decaps and implicit rejection for the specified R1 construction. Subsequent
-M11–M17 and the targeted C01 work develop the security argument without
+M11–M17, the targeted C01 work and the latest scoped studies develop the security argument without
 changing the engine's sources, parameters, formats or canonical binary.
 
 The first [public M15 replay lot](research/reproducibility/m15/implementation/README.md)

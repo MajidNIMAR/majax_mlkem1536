@@ -9,6 +9,19 @@ formal constant-time guarantee or production-security claim is made.
 
 ## Current assurance boundary
 
+The latest private cycle adds executable resistance studies, independently
+replayed records and explicit resource accounting, together with internally
+reviewed extensions of the ideal oracle interface and fully charged pre-key
+processing. Their model and resource conditions remain explicit. Selected
+local component verification passed **66 distinct targeted tests in five
+suites**; these are private research checks, not a new hosted CI suite or
+public replay package. The [current scope note](docs/ETAT_RECHERCHE_C01.md)
+distinguishes these extensions from the earlier consolidated theorem and
+its unchanged historical numerical budgets. No general native hardness
+bound or transfer to fixed SHA3/SHAKE is established by these studies.
+
+### Earlier consolidated conditional argument
+
 Research has advanced through M17 and a targeted consolidation of C01. The
 [current public scope note](docs/ETAT_RECHERCHE_C01.md) records a completed,
 internally reviewed conditional IND-CCA argument for the R1 construction in
@@ -26,7 +39,7 @@ the complete adapter cost is paid. The retained numerical checkpoint is
 verified under that premise. The premise's numerical truth and a transfer
 to the fixed SHA3/SHAKE family are not established by this implication.
 
-M17 passed 18 local validation jobs and 217 targeted tests; the targeted
+The earlier M17 selection passed 18 local validation jobs and 217 targeted tests; the targeted
 C01 work passed nine jobs and 42 targeted tests. Neither selection skipped
 tests. These are internal research results, with detailed instruments,
 acquisitions and reviews kept private, rather than new public CI suites.

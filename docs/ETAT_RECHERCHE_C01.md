@@ -1,4 +1,4 @@
-# Research progress — M17 and the conditional C01 argument
+# Current research scope and the conditional C01 argument
 
 Public scope statement, 18 November 2026. **MLKEM-1536 Core** develops the
 working experimental profile `KEM1536-DEV-Q7681-R1`, with six polynomials
@@ -10,7 +10,37 @@ consolidated and internally reviewed in the declared QROM/RC1 model.
 The complete concrete qualification of R1 remains open. R1 is experimental,
 its final cryptographic freeze is deferred, and it is not production-qualified.**
 
-## What has advanced since M16
+## Latest bounded studies and interface work
+
+The recent private cycle strengthens the examination process around the
+central computational premise. It executes a complete public-input decision
+pipeline, keeps its acquisition and resource records, and reconstructs the
+retained data with separately implemented local readers. Calibration cases,
+native-parameter observations and their budget limits are reported within
+their own populations and models. A finite experiment, an observed cost or
+an absence of success is not a universal advantage bound.
+
+The ideal-model work adds two resource-parametric results: a coherent
+transport for a bounded ideal primitive interface, and a corollary covering
+pre-key processing whose entire preparation and retained state are charged.
+They have explicit interface, independence, circuit and resource premises.
+The earlier C01 consolidation below retains its originally declared scope;
+these extensions do not silently enlarge its recorded numerical budgets.
+They also do not identify fixed SHA3/SHAKE functions with ideal random
+oracles, qualify arbitrary advice or change the concrete C01 status.
+
+The selected local component suites passed **66 distinct targeted tests across
+five suites**. Internal replays are not counted again as new tests or statistical
+acquisitions. The detailed instruments, raw records and review files remain
+private; this page publishes a scope summary rather than their reproduction
+package. The separate public M15 arithmetic/NTT lot remains available.
+
+R1 stays experimental and is not production-qualified. M10's Rust sources,
+parameters, wire formats and canonical binary are unchanged by this cycle.
+No new performance gain, hosted CI result, external audit, certification or
+global superiority over ML-KEM-1024 is claimed.
+
+## Earlier consolidation — what advanced after M16
 
 M17 extends the earlier research through ten scoped workstreams, followed
 by a targeted consolidation of the central C01 argument. Their results
@@ -39,7 +69,7 @@ MLWE premises can be covered by a single resource-indexed hypothesis when
 the enlarged budget includes the adapter's complete cost. A retained
 quantitative working checkpoint is satisfied under that hypothesis.
 
-The announced experiment has the following scope:
+The earlier consolidated theorem has the following originally declared scope:
 
 - a single honestly generated key and a single-user IND-CCA game;
 - classical adaptive decapsulation requests excluding the exact challenge;
@@ -80,8 +110,8 @@ by the conditional theorem.
 
 ## Delivered engine, public evidence and CI
 
-M10 remains the delivered executable reference. M17 and the targeted C01
-work preserve the engine's Rust sources, parameters, wire formats and
+M10 remains the delivered executable reference. M17, the targeted C01 work
+and the latest scoped studies preserve the engine's Rust sources, parameters, wire formats and
 canonical binary. No new performance, fuzzing, platform qualification or
 production result is credited to this research summary.
 

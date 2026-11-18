@@ -2568,3 +2568,53 @@ M15. Les programmes, acquisitions et revues détaillés M17/C01 restent privés.
 Les comptes de validation locaux ne sont pas une nouvelle suite CI publique.
 La référence du code testé demeure le commit53d501de et la CI44223949348.
 
+
+
+## 18 novembre 2026 — Publication M17/C01 confirmée sur main
+
+**Publication M17/C01 vérifiée.** Le commit
+[`4d3e1b5`](https://github.com/MajidNIMAR/mlkem-1536-core/commit/4d3e1b5b45d9be5b7b55c35b1dacb97d016c3ffe)
+est publié sur main. Le README, SECURITY, la note de portée et les synthèses
+du rapport présentent les résultats et leurs limites. La référence distante,
+l'API et les octets de quatre documents accessibles anonymement sont contrôlés.
+Le nom, le titre, la description courte et les autres réglages du dépôt sont
+inchangés. Les archives privées et les entrées exécutables restent préservées.
+Cette publication documentaire ne crédite aucune nouvelle CI ; le code reste
+celui du53d501de testé dans le run44223949348. R1 demeure expérimental,
+avec argument conditionnel établi dans son modèle et qualification concrète
+encore ouverte.
+
+## 18 novembre 2026 — Cryptanalyse exécutable et extension du modèle idéal
+
+**Travail.** Cycle privé autorisé pour confronter l'hypothèse centrale à une
+chaîne effectivement exécutée, depuis les données publiques jusqu'à la
+décision. Protocole préalable, populations distinguées, ressources mesurées,
+tirages et limites de budget conservés. Rejeu indépendant complet des données,
+sans réexécuter les réductions ni compter les relectures comme acquisitions.
+
+**Modèle.** Transport cohérent d'interface et traitement d'une préparation
+préclé entièrement comptée, avec coûts et conditions explicites. Une
+comparaison où l'oracle change effectivement reste séparée du réordonnancement
+d'une création de clé honnête. Arguments et instruments relus en interne ;
+aucun budget historique ni hypothèse quantitative n'est élargi gratuitement.
+
+**Décision.** Résultats détaillés et revues privés dans NIST. Aucun résultat
+retenu ne justifie de modifier le moteur. Pas de déduction de dureté générale
+depuis les petits cas ou une absence de succès. R1 reste expérimental et C01
+concret ouvert. Sources, binaire, archives et clone public préservés ; rapport
+et feuille de route actualisés. Aucune nouvelle publication ou CI créditée.
+
+## 18 novembre 2026 — Présentation publique de l'étude ciblée autorisée
+
+**Publication documentaire.** À la demande de l'utilisateur, mise à jour du
+README, de SECURITY, de la note C01 et des synthèses du rapport/feuille de
+route. La présentation décrit les expériences exécutables, leur rejeu
+indépendant et les extensions idéalisées, dans leurs portées respectives.
+Les 66 tests ciblés de composants restent des vérifications locales privées,
+sans nouveau crédit de CI publique ou de paquet reproductible publié.
+
+**Portée.** Les détails, programmes et archives scientifiques restent privés.
+Le moteur, ses paramètres, ses formats et son binaire sont préservés. Les
+budgets historiques ne sont pas élargis gratuitement. R1 reste expérimental
+et C01 concret ouvert. Le titre et les réglages du dépôt sont conservés.
+
