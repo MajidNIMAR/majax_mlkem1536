@@ -2406,3 +2406,78 @@ publication sur main. Le résultat de la nouvelle CI n'est pas déduit de sa
 préparation : son observation et les journaux du commit publié sont rattachés
 aux reçus locaux de publication. Le moteur et les archives historiques restent
 inchangés ; C01 conserve son statut ouvert.
+
+## 18 novembre 2026 — Clôture vérifiée de la publication du lot M15
+
+Le commit public 53d501de898ec6ba024cc05a3f7373563c6a2ef4 est poussé normalement sur main et son SHA distant
+est vérifié par Git et l'API. Les cartes d'export et de blobs canoniques
+contrôlent les 2 577 fichiers du snapshot, plus sa provenance. Le lot contient
+88 fichiers, dont 78 entrées scientifiques conservées octet pour octet.
+L'accès anonyme renvoie200 pour le dépôt et les quatre fichiers examinés,
+avec égalité aux blobs commis. Les métadonnées GitHub sont inchangées.
+
+La CI 44223949348 est terminée avec succès : 514 tests Python par OS sans
+omission, contrôles natifs originaux M10 et job M15 Windows. Celui-ci
+télécharge et installe réellement le solveur, rejoue deux fois les mêmes
+31 obligations/131072 coefficients/21 tests et réussit les18 tests d'outils.
+Le digest API de l'artefact et ses34 fichiers de reçus/journaux sont vérifiés.
+Les captures brutes, validations et revues internes sont conservées dans
+artifacts/retained/repro-m15-lot1-publication-001/. Les archives des étapes
+précédentes et le moteur sont inchangés. Aucune nouvelle campagne de fuzzing,
+mesure de performance, revue extérieure ou clôture C01 n'est créditée.
+
+Le README et la présentation ont été publiés avec le commit testé. Le
+présent constat met les rapports du PC à jour après observation de la CI ;
+il n'impose pas un deuxième push documentaire. Aucune publication ne reste
+à faire pour ce lot. Workflow vérifié : https://github.com/MajidNIMAR/mlkem-1536-core/actions/runs/44223949348
+
+## 18 novembre 2026 — M16, cinq paliers de développement de sécurité
+
+L'utilisateur autorise les cinq paliers proposés après publication du premier
+lot M15. Un protocole préalable et un socle d'empreintes fixent la portée du
+cycle privé. Trois volets scientifiques sont développés séparément, avec
+complément de qualification des images PC puis composition et décision.
+Les archives historiques restent immuables et les détails sensibles restent
+hors conversation, GitHub et contacts extérieurs.
+
+Les nouveaux instruments acquièrent une loi marginale exacte et sa calibration
+dans une classe de décisions déclarée, des coûts constructifs et raccords de
+correction semée, des contrats de bits/échantillonnage/PKE/FO source-liés et
+des obligations de stores sur les chemins normaux des quatre images PC.
+Une composition typée refuse les importations entre populations, statistiques,
+conditions ou classes d'adversaires différentes et conserve les prémisses.
+Les premières acquisitions, corrections d'outils et diagnostics sont versionnés.
+
+Les cinq sélections sont rejouées par le coordinateur ; neuf travaux passent
+et 113 tests ciblés réussissent sans omission. Les revues internes croisées
+couvrent chaque volet ; leurs corrections et clarifications sont traitées.
+Cette validation ne prouve ni tout Rust/LLVM, ni l'effacement ou le temps
+constant universels ; les résultats statistiques et restreints ne deviennent
+pas un avantage adversarial global. Les détails et preuves sont conservés
+sous artifacts/retained/m16-security-001/ avec lecteur d'archive distinct de
+la comparaison au moteur vivant.
+
+La décision est de conserver R1 pour la recherche et de différer son gel
+final. C01 reste ouvert pour des obligations scientifiques explicites. Aucun
+constat nouveau ne justifie un changement de paramètres, formats ou moteur.
+Les sources et le binaire canonique restent identiques, le lot public reste
+au commit53d501de. Ce cycle ne fait ni push, ni CI hébergée, nouveau benchmark,
+fuzzing global, audit extérieur ou intégration Messenger. Le rapport et la
+feuille de route du PC sont actualisés avec un état de portée uniquement.
+
+## 18 novembre 2026 — Publication demandée de la présentation M16
+
+L'utilisateur demande explicitement la publication de la synthèse M16 et
+l'actualisation de la description GitHub, avec R1 expérimental et C01 ouvert.
+Le README, une nouvelle note de portée et le statut de sécurité sont préparés
+à partir des résultats sélectionnés et des résumés sanitisés. Les neuf travaux
+et 113 tests sont identifiés comme validations internes ; le détail M16 reste
+hors export. Les titres et autres réglages du dépôt ne sont pas concernés.
+
+La publication est documentaire, sur main, avec export d'octets commis et
+contrôle des cartes de fichiers/blobs. Les sources exécutables, le workflow
+et le lot public M15 doivent rester identiques au53d501de déjà testé. Le commit
+porte une instruction skipci pour éviter de répéter ces jobs inchangés ;
+aucune CI nouvelle n'est revendiquée. Les vérifications de publication et du
+seul champ description sont conservées dans artifacts/retained/m16-publication-001/.
+Les archives scientifiques et le moteur restent immuables.

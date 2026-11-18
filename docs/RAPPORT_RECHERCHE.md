@@ -2,6 +2,58 @@
 
 Version de travail du 18 novembre 2026. Ce document est la base évolutive du futur article. Le [journal](JOURNAL_RECHERCHE.md) conserve les étapes et décisions ; les [résultats figés de J2](../results/j2/run-001/) conservent les calculs et leur provenance. Une modification du rapport doit rester cohérente avec ces données.
 
+**Présentation publique M16.** La [synthèse de portée](ETAT_RECHERCHE_M16.md)
+et le README présentent les cinq volets, leurs validations internes et leurs
+limites. Le profil R1 reste explicitement expérimental et C01 ouvert. Cette
+mise à jour documentaire conserve les sources, paramètres, formats et binaire
+du moteur ainsi que les entrées du lot reproductible M15. Elle ne publie pas
+les programmes, données ou revues détaillées M16 et ne transforme pas les
+113 tests locaux en nouvelle CI publique. La référence de validation du code
+reste le commit53d501de et son run44223949348, indiqués ci-dessous.
+
+**M16 — cinq paliers de développement de sécurité, cycle local.**
+Le nouveau cycle traite la résistance du PKE, les graines et fonctions fixes,
+la conformité fonctionnelle, les images PC et la décision de candidat. Il
+fournit une calibration mathématique exacte d'une famille restreinte, des
+constructions quantifiées liées à la correction concrète, de nouveaux contrats
+source-liés pour des composants du PKE/FO et une analyse de chemins compilés.
+Un registre de composition conserve les conditions de chaque contribution.
+
+Les résultats sélectionnés sont rejoués dans neuf travaux de validation,
+avec 113 tests ciblés sans omission. Les revues internes croisées ont renforcé
+les instruments et clarifié leurs conditions d'emploi ; les premiers essais
+et diagnostics sont conservés dans le dossier local M16. Les propriétés de
+programme et d'images gardent leurs bases de confiance et leurs limites.
+Ce cycle ne constitue pas une nouvelle CI publique ou une revue extérieure.
+
+La nouvelle calibration restreinte n'est pas une borne pour tout adversaire
+du PKE ; les observations statistiques ne certifient pas une probabilité
+cryptographique rare. Les transferts concrets, populations adversariales et
+ressources complètes de la réduction restent à qualifier. C01 et le gel final
+restent ouverts. La décision conserve R1 pour la recherche : aucun résultat
+acquis ne justifie de modifier sa construction, ses formats ou son moteur.
+Les sources, le binaire canonique, les archives antérieures et le lot public
+M15 vérifié demeurent inchangés ; aucune production Messenger n'est autorisée.
+
+**Publication M15 vérifiée le 18 novembre 2026.** Le premier lot
+reproductible est publié sur la branche `main` au commit
+[`53d501de`](https://github.com/MajidNIMAR/mlkem-1536-core/commit/53d501de898ec6ba024cc05a3f7373563c6a2ef4).
+La [CI 44223949348](https://github.com/MajidNIMAR/mlkem-1536-core/actions/runs/44223949348) est terminée avec succès sur ses trois jobs :
+514 tests Python sans omission par OS et contrôles natifs M10 sous Windows
+et Ubuntu ; installation complète du solveur et deux rejeux M15 sous Windows,
+avec 31 obligations SMT, 131 072 coefficients NTT, 21 tests scientifiques
+et 18 tests d'outils. Les 34 fichiers de l'artefact de reçus/journaux sont
+contrôlés, avec vérification du digest publié par l'API et des empreintes
+de leurs composants. Les revues internes confirment la portée de ces résultats.
+
+Les accès anonymes au dépôt, au README, au guide du lot, au manifeste et
+au workflow correspondent aux octets commis. Les cartes d'export portent
+sur 2 577 fichiers et leurs blobs, plus la provenance. Les titres, descriptions
+et paramètres GitHub sont inchangés. Les archives scientifiques, les sources
+et le binaire du moteur restent intacts. Les autres volets privés ne sont pas
+crédités à cette CI ; C01 demeure ouvert. Les reçus détaillés de clôture sont
+conservés localement dans le dossier de publication du lot.
+
 **Reproductibilité M15 — premier lot distribué avec CI dédiée.** Le dépôt
 livre désormais le lot Windows délimité : instruments, 31 requêtes SMT et
 objets de preuve, certificat NTT, tests, manifeste et installation épinglée.

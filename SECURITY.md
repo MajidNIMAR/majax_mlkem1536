@@ -9,14 +9,20 @@ formal constant-time guarantee or production-security claim is made.
 
 ## Current assurance boundary
 
-Research has advanced through M15. It adds internally reviewed quantitative
-and correctness arguments, constructive fixed-primitive resource accounting
-and source-linked arithmetic/NTT certificates. A sufficient margin is
-available for a declared working checkpoint under explicit assumptions.
-Those results do not establish the concrete fixed-primitive transfers,
-the required quantitative hardness bounds, full-KEM formal verification
-or a global security rating. **C01 remains open and R1 is not authorized
-for production in MAJAX Messenger.** External review remains deferred.
+Research has advanced through M16. The [M16 public scope note](docs/ETAT_RECHERCHE_M16.md)
+summarizes restricted resistance calibration, seeded-correction constructions,
+additional source-linked functional contracts, bounded compiled-path checks
+and the candidate decision. Its nine local validation jobs and 113 targeted
+tests are internal research results; their detailed instruments and records
+remain private and are not a new public CI suite.
+
+The M14/M15 working margin retains its original explicit ideal-model and
+quantitative assumptions. The later results do not establish the required
+full-adversary hardness bounds, fixed-primitive transfers, complete adaptive
+correctness argument, whole-KEM/compiler verification or a global security
+rating. **R1 remains experimental, C01 remains open, and the final profile
+freeze is deferred. R1 is not authorized for production in MAJAX Messenger.**
+External cryptographic review remains deferred.
 
 The [M15 progress note](docs/ETAT_RECHERCHE_M15.md) distinguishes the scoped
 internal results from published, independently replayable evidence. The
@@ -36,8 +42,12 @@ constant-time or universal-erasure guarantee. The lot was exercised in a
 fresh local clone on the same recorded Windows/CPython host; this does not
 qualify every platform or a clean system installation.
 
-The delivered engine remains M10; the following M10 measurements and image
-qualifications keep their original scope and are not new M15 campaigns.
+The delivered engine remains M10, with its Rust sources, parameters, wire
+formats and canonical binary unchanged. M16's 40 direct-frame wipe-path
+obligations concern selected normal intraprocedural paths on four recorded
+images. Callee/alias memory effects, exceptions, registers, ABI saves and
+caller copies remain outside that guarantee. The following M10 measurements
+and image qualifications keep their original scope and are not new M16 campaigns.
 
 M10 is the delivered engine reference, qualified internally on the recorded
 GNU x86-64 Windows/Linux PC images. It writes derived material into existing owners,

@@ -6,6 +6,22 @@ coefficients. Chaque étude doit servir une décision pour sa construction.
 Le futur article décrit ce travail et ses limites ; son écriture ne
 remplace pas le développement du moteur.
 
+**M16, 18 novembre 2026 — cinq paliers développés et relus localement.**
+Le cycle ajoute une calibration exacte de famille restreinte, des constructions
+pour les flux semés, des contrats fonctionnels PKE/FO et des obligations de
+chemins sur les images PC. Les cinq volets disposent de sélections rejouées,
+de revues croisées et de 113 tests ciblés sans omission. Leurs conclusions
+restent dans les modèles et populations déclarés ; les détails sont privés.
+Le lot arithmétique M15 demeure public et vérifié dans sa CI dédiée.
+
+La composition M16 conserve explicitement les obligations de classe entière,
+transfert des fonctions fixes, correction adaptative et ressources complètes.
+C01 n'est pas clos, le gel final est différé et R1 reste la base de recherche.
+Aucun résultat ne justifie actuellement un changement du moteur ; ses sources
+et son binaire conservent leurs octets. La suite doit viser les obligations
+scientifiques identifiées, en gardant distincts correction du programme,
+assurance des images et argument de sécurité. Messenger reste interdit.
+
 **M15, 17 novembre 2026 — cinq périmètres approfondis.** La cryptanalyse
 ciblée, le traitement des primitives fixes, la correction par clé, la
 comparaison commune et la conformité sémantique disposent de nouveaux

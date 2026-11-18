@@ -7,7 +7,7 @@ Rust key encapsulation mechanism. It brings together a specified cryptographic
 construction, polynomial arithmetic, key and secret management, independent
 reference implementations, cryptanalysis and reproducible experiments.
 
-The implemented construction is **`KEM1536-DEV-Q7681-R1`**: a module-lattice
+The implemented construction is **`KEM1536-DEV-Q7681-R1`**: an **experimental** module-lattice
 KEM with **six polynomials of 256 coefficients**. The project develops the
 engine itself and preserves the reasoning, measurements and implementation
 evidence needed to examine its evolution.
@@ -15,6 +15,7 @@ evidence needed to examine its evolution.
 [Specification](docs/SPECIFICATION_DEV_Q7681_R1.md) ·
 [Engine and API guide](docs/MOTEUR_KEM_R1.md) ·
 [Research report](docs/RAPPORT_RECHERCHE.md) ·
+[Latest research progress — M16](docs/ETAT_RECHERCHE_M16.md) ·
 [Research progress through M15](docs/ETAT_RECHERCHE_M15.md) ·
 [M15 Windows replay lot](research/reproducibility/m15/implementation/README.md) ·
 [M10 engine and qualification](docs/M10_MOTEUR_ET_QUALIFICATION.md) ·
@@ -24,11 +25,39 @@ evidence needed to examine its evolution.
 
 [![Main-branch checks](https://github.com/MajidNIMAR/mlkem-1536-core/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/MajidNIMAR/mlkem-1536-core/actions/workflows/ci.yml)
 
-## Current engine and reproducible research — 18 November 2026
+## Latest research milestone — M16, 18 November 2026
+
+**R1 remains experimental. C01, the complete concrete R1 security argument,
+remains open, and the final cryptographic profile freeze is deferred.**
+M10 remains the delivered Rust engine; M16 leaves its sources, parameters,
+wire formats and canonical binary unchanged.
+
+The [M16 scope note](docs/ETAT_RECHERCHE_M16.md) summarizes five internally
+reviewed workstreams:
+
+| Workstream | Scoped progress |
+|---|---|
+| PKE resistance | Exact calibration of a restricted decision family for R1 and the reference profile; no full-adversary MLWE bound |
+| Seeds, fixed primitives and correctness | Constructive resource maps and explicit population conditions; statistical assurance remains separate from cryptographic advantage |
+| Program conformity | Additional source-linked encoding, sampling and conditional PKE/FO contracts, with distinct control implementations |
+| PC images | 40 direct-frame wipe-path obligations across four recorded Windows/Linux images, limited to the selected normal paths and modeled writes |
+| Composition and candidate decision | Context and premise checks retain R1 for research while deferring its final freeze |
+
+The selected M16 results passed **nine local validation jobs and 113 targeted
+tests, with no skipped tests**, plus internal cross-reviews. This is a
+published summary of local research. The detailed M16 instruments, acquisitions
+and review records remain private; the 113 tests are not a new public CI suite.
+These results do not establish whole-KEM/compiler verification, universal
+erasure, constant time, an external audit or production suitability.
+
+The separate public M15 arithmetic/NTT replay lot and its commands remain
+available below.
+
+## Delivered engine and public replay evidence — M15
 
 **M10 remains the delivered Rust engine.** It implements KeyGen, Encaps,
 Decaps and implicit rejection for the specified R1 construction. Subsequent
-M11–M15 work develops the security argument without changing the engine's
+M11–M16 work develops the security argument without changing the engine's
 sources, parameters, formats or canonical binary.
 
 The first [public M15 replay lot](research/reproducibility/m15/implementation/README.md)
