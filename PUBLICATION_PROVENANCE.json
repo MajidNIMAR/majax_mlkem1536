@@ -27,8 +27,8 @@
     "Cargo.toml": "ff13a1ad6016fdb1e11376f304b4c3ea7670d1442d8f12cdbf02ebd01577de42",
     "LICENSE": "8ada45cd9f843acf64e4722ae262c622a2b3b3007c7310ef36ac1061a30f6adb",
     "NOTICE": "9a7f74ca48c836c0d34aa8d009c5b573b58812400986aaa5046f7ede9d5d6596",
-    "README.md": "9ce4c02381f0a3648980954a44cbde3a5519e1f050f41d646f26e6686938aa2e",
-    "SECURITY.md": "eb902a986d0dc2a60dcc36320af7fac1f4d2ec3ddf67ff56371d6ca40d6021ae",
+    "README.md": "ec9d07b601703ab43728b773a27df5965d13929c79eb80efbdd383375a8a98c0",
+    "SECURITY.md": "b573ffc1757be4b7106bc23a2de5da1cacd7242bd5a7382a033daffb06dedc66",
     "THIRD_PARTY_NOTICES.md": "0769de1fce4740753fabd61af96e16c4d02ace4728b730a69d68986e1bd09d1f",
     "artifacts/README.md": "1be1dd8df0ee3c3fae262a7ca3c5dca981ff568de5563a5745f7aa7eb9079ab3",
     "comparisons/engine-pair/Cargo.lock": "798a610a194c516067066fa4dfa041c1256ba2cb66859941d1215ff49cf7bac9",
@@ -79,7 +79,7 @@
     "docs/DUAL_CODES_ROTATIONS.md": "a71608f0338a2942e795d982c80a0ec0210dea280f6081a851a85bbe7dc99de3",
     "docs/DURCISSEMENT_MOTEUR_M02.md": "d136b5f49b26b85deaae391f877eeb9c7c27c660409392666cf474f975ec2d3a",
     "docs/ERRATA_FIPS203.md": "6dfee9493e472d6e43539aa1aa40744f1897ec3f2f4eee49a9c8c1d947c418cc",
-    "docs/ETAT_RECHERCHE_C01.md": "273b79c017ee48746a542af19a1cc4220141b66020fd7c621f384d6321f9c6a2",
+    "docs/ETAT_RECHERCHE_C01.md": "b9c5163ac52b86a4dcc14d61d13e86abe718a14d2612867f18cb0e71995a934e",
     "docs/ETAT_RECHERCHE_M15.md": "fc3b6012338dd5b87c4e4393d4ecb8c65b013512ca180bdfb257d08f373cd5ee",
     "docs/ETAT_RECHERCHE_M16.md": "913d912f6f4ed96bfb7f794cde1210fee60b25f7cb913447388c43d292577378",
     "docs/FEUILLE_DE_ROUTE_MOTEUR.md": "e351ce8db54bcf441652731b0d45b0f564160e0bc3d28895fc6f41d7ad0b2f9e",
@@ -2596,7 +2596,7 @@
     "vectors/nist-acvp/ML-KEM-keyGen-FIPS203/expectedResults.json": "a253d0ad91c95ebea5b409673defef0aa49d65d4ed72286399e2e798ddf073a4",
     "vectors/nist-acvp/ML-KEM-keyGen-FIPS203/prompt.json": "3f9ce34f6c836c77958bad2729e837c3b213f44ac36c3065976e7acca6389523",
     "vectors/nist-acvp/NIST-NOTICE.txt": "5cf49b45a3eb4bee05d9491dbd05af1ceae4adf5f0ca59890e633469cb1f8156",
-    "docs/TESTS_AND_EVIDENCE.md": "6ae48499e058474260894823a0531309727f6a684c8b539ef0310e8ed4e09243"
+    "docs/TESTS_AND_EVIDENCE.md": "6332b679b5bcf70f30d0e91eb601d52bbd53e3f2f8553b77466df9f7a1e30a95"
   },
   "git_blob_sha256": {
     ".cargo/config.toml": "6abf4f853edb1217e7b182d65dd5eba16c347eb7bf1826f54377e966451d593b",
@@ -2609,8 +2609,8 @@
     "Cargo.toml": "ff13a1ad6016fdb1e11376f304b4c3ea7670d1442d8f12cdbf02ebd01577de42",
     "LICENSE": "8ada45cd9f843acf64e4722ae262c622a2b3b3007c7310ef36ac1061a30f6adb",
     "NOTICE": "9a7f74ca48c836c0d34aa8d009c5b573b58812400986aaa5046f7ede9d5d6596",
-    "README.md": "9ce4c02381f0a3648980954a44cbde3a5519e1f050f41d646f26e6686938aa2e",
-    "SECURITY.md": "eb902a986d0dc2a60dcc36320af7fac1f4d2ec3ddf67ff56371d6ca40d6021ae",
+    "README.md": "ec9d07b601703ab43728b773a27df5965d13929c79eb80efbdd383375a8a98c0",
+    "SECURITY.md": "b573ffc1757be4b7106bc23a2de5da1cacd7242bd5a7382a033daffb06dedc66",
     "THIRD_PARTY_NOTICES.md": "0769de1fce4740753fabd61af96e16c4d02ace4728b730a69d68986e1bd09d1f",
     "artifacts/README.md": "1be1dd8df0ee3c3fae262a7ca3c5dca981ff568de5563a5745f7aa7eb9079ab3",
     "comparisons/engine-pair/Cargo.lock": "798a610a194c516067066fa4dfa041c1256ba2cb66859941d1215ff49cf7bac9",
@@ -2661,7 +2661,7 @@
     "docs/DUAL_CODES_ROTATIONS.md": "a71608f0338a2942e795d982c80a0ec0210dea280f6081a851a85bbe7dc99de3",
     "docs/DURCISSEMENT_MOTEUR_M02.md": "d136b5f49b26b85deaae391f877eeb9c7c27c660409392666cf474f975ec2d3a",
     "docs/ERRATA_FIPS203.md": "6dfee9493e472d6e43539aa1aa40744f1897ec3f2f4eee49a9c8c1d947c418cc",
-    "docs/ETAT_RECHERCHE_C01.md": "273b79c017ee48746a542af19a1cc4220141b66020fd7c621f384d6321f9c6a2",
+    "docs/ETAT_RECHERCHE_C01.md": "b9c5163ac52b86a4dcc14d61d13e86abe718a14d2612867f18cb0e71995a934e",
     "docs/ETAT_RECHERCHE_M15.md": "fc3b6012338dd5b87c4e4393d4ecb8c65b013512ca180bdfb257d08f373cd5ee",
     "docs/ETAT_RECHERCHE_M16.md": "913d912f6f4ed96bfb7f794cde1210fee60b25f7cb913447388c43d292577378",
     "docs/FEUILLE_DE_ROUTE_MOTEUR.md": "e351ce8db54bcf441652731b0d45b0f564160e0bc3d28895fc6f41d7ad0b2f9e",
@@ -5178,16 +5178,22 @@
     "vectors/nist-acvp/ML-KEM-keyGen-FIPS203/expectedResults.json": "a253d0ad91c95ebea5b409673defef0aa49d65d4ed72286399e2e798ddf073a4",
     "vectors/nist-acvp/ML-KEM-keyGen-FIPS203/prompt.json": "3f9ce34f6c836c77958bad2729e837c3b213f44ac36c3065976e7acca6389523",
     "vectors/nist-acvp/NIST-NOTICE.txt": "5cf49b45a3eb4bee05d9491dbd05af1ceae4adf5f0ca59890e633469cb1f8156",
-    "docs/TESTS_AND_EVIDENCE.md": "6ae48499e058474260894823a0531309727f6a684c8b539ef0310e8ed4e09243"
+    "docs/TESTS_AND_EVIDENCE.md": "6332b679b5bcf70f30d0e91eb601d52bbd53e3f2f8553b77466df9f7a1e30a95"
   },
-  "previous_public_commit": "cc65426a44e0fdbf9647d6a22dbe33baf72d47c0",
+  "previous_public_commit": "d0ed521a2ced9da0661eb4fe2d13de68759d3f6c",
   "publication_kind": "selected_documentation_overlay",
-  "documentation_overlay_source_commit": "f60b0f95933e078546d80f1438d16ce238a27c70",
+  "documentation_overlay_source_commit": "dd6cc064a44de703d262be490c9080861e0262e7",
   "selected_paths": [
     "README.md",
     "SECURITY.md",
     "docs/ETAT_RECHERCHE_C01.md",
     "docs/PUBLICATION_GITHUB.md",
+    "docs/TESTS_AND_EVIDENCE.md"
+  ],
+  "latest_update_paths": [
+    "README.md",
+    "SECURITY.md",
+    "docs/ETAT_RECHERCHE_C01.md",
     "docs/TESTS_AND_EVIDENCE.md"
   ]
 }

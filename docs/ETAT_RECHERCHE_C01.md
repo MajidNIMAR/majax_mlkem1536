@@ -10,6 +10,10 @@ consolidated and internally reviewed in the declared QROM/RC1 model.
 The complete concrete qualification of R1 remains open. R1 is experimental,
 its final cryptographic freeze is deferred, and it is not production-qualified.**
 
+M17 is the latest numbered research milestone. Subsequent C01 and block-3 work
+has no M18 designation. M10 remains the delivered engine reference; the M16
+note below is historical.
+
 ## Current bounded research and verification
 
 Four further work packages examine the unchanged R1 construction. The

@@ -9,6 +9,9 @@ formal constant-time guarantee or production-security claim is made.
 
 ## Current assurance boundary
 
+M17 is the latest numbered research milestone. Subsequent C01 and block-3
+studies have no new M number; M10 remains the delivered engine reference.
+
 As of 19 November 2026, four further research work packages have internally
 cross-checked deliverables in their declared scopes. They connect a
 construction decision, a conditional whole-KEM argument, matching resource

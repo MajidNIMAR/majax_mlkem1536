@@ -15,9 +15,8 @@ evidence needed to examine its evolution.
 [Specification](docs/SPECIFICATION_DEV_Q7681_R1.md) ·
 [Engine and API guide](docs/MOTEUR_KEM_R1.md) ·
 [Research report](docs/RAPPORT_RECHERCHE.md) ·
-[Current research scope and conditional C01](docs/ETAT_RECHERCHE_C01.md) ·
+[Current status — M17 and later research](docs/ETAT_RECHERCHE_C01.md) ·
 [Verification and test record](docs/TESTS_AND_EVIDENCE.md) ·
-[M16 scope note](docs/ETAT_RECHERCHE_M16.md) ·
 [Research progress through M15](docs/ETAT_RECHERCHE_M15.md) ·
 [M15 Windows replay lot](research/reproducibility/m15/implementation/README.md) ·
 [M10 engine and qualification](docs/M10_MOTEUR_ET_QUALIFICATION.md) ·
@@ -27,7 +26,11 @@ evidence needed to examine its evolution.
 
 [![Main-branch checks](https://github.com/MajidNIMAR/mlkem-1536-core/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/MajidNIMAR/mlkem-1536-core/actions/workflows/ci.yml)
 
-## Current research status — 19 November 2026
+## Current research status — M17 and later work, 19 November 2026
+
+**M17 is the latest numbered research milestone.** The subsequent C01 and
+block-3 studies are newer work without an M18 designation. M10 remains the
+delivered engine reference; M16 is an earlier research milestone.
 
 **The Rust R1 engine is executable and remains experimental. Its complete
 concrete security qualification (C01) is open.** The engine sources, parameters,

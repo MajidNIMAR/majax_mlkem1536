@@ -5,6 +5,9 @@ The construction and Rust engine are experimental. Concrete security
 qualification C01 remains open. This page reports what was checked and how
 the evidence can be examined; it does not assign a security level.
 
+M17 is the latest numbered research milestone; the subsequent C01 and block-3
+work has no M18 designation. M10 remains the delivered engine reference.
+
 ## Evidence available in this repository
 
 | Scope | Recorded checks | Availability and limit |
