@@ -1,5 +1,21 @@
 # Publication du moteur sur GitHub
 
+## Actualisation documentaire du 19 novembre 2026
+
+La synthèse de recherche, l'état de sécurité et le registre des vérifications
+publiés à cette date constituent une **sélection documentaire**. Les notes de
+recherche locales postérieures à l'instantané public précédent ne sont pas
+exportées dans leur intégralité. La sélection conserve les sources du moteur,
+les paramètres, les formats, le workflow et les archives publiques existantes.
+Le champ `documentation_overlay_source_commit` de
+`PUBLICATION_PROVENANCE.json` identifie le commit local des documents
+sélectionnés ; `local_source_commit` reste celui de l'instantané de base.
+Les cartes d'empreintes portent sur les fichiers réellement publiés.
+
+La procédure `--sync` décrite plus bas s'applique aux publications complètes
+après examen de tous les changements depuis le dernier instantané. Elle n'est
+pas utilisée pour cette actualisation documentaire sélective.
+
 Le dépôt est présenté sous le nom **MLKEM-1536 Core — recherche et ingénierie
 cryptographique**. Le nom historique MAJAX R6 et R6 dans les résultats
 désignent le rang six de la construction ; le profil

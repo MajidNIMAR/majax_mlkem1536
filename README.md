@@ -16,6 +16,7 @@ evidence needed to examine its evolution.
 [Engine and API guide](docs/MOTEUR_KEM_R1.md) ·
 [Research report](docs/RAPPORT_RECHERCHE.md) ·
 [Current research scope and conditional C01](docs/ETAT_RECHERCHE_C01.md) ·
+[Verification and test record](docs/TESTS_AND_EVIDENCE.md) ·
 [M16 scope note](docs/ETAT_RECHERCHE_M16.md) ·
 [Research progress through M15](docs/ETAT_RECHERCHE_M15.md) ·
 [M15 Windows replay lot](research/reproducibility/m15/implementation/README.md) ·
@@ -26,7 +27,33 @@ evidence needed to examine its evolution.
 
 [![Main-branch checks](https://github.com/MajidNIMAR/mlkem-1536-core/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/MajidNIMAR/mlkem-1536-core/actions/workflows/ci.yml)
 
-## Latest research — executable studies and ideal-model interfaces
+## Current research status — 19 November 2026
+
+**The Rust R1 engine is executable and remains experimental. Its complete
+concrete security qualification (C01) is open.** The engine sources, parameters,
+wire formats and canonical binary have not changed in the recent research
+cycles. There is no NIST certification, external cryptographic audit, global
+security rating or production qualification.
+
+Four recent research work packages now have internally cross-checked deliverables
+within their stated scopes: a construction decision, an audited conditional
+whole-KEM argument, a recalculation with the matching resource budget, and a
+source-to-program link with an aggregate functional check. The ideal-model
+argument does not establish security for the concrete fixed-function KEM.
+
+The latest local qualification selected **90 distinct targeted tests** across
+three scoped suites. A subsequent binary diagnostic completed **16 fresh
+exchanges and 16 rejection checks**. Other recent work reused earlier records
+or checked readers and reasoning; those replays are not counted as new engine
+tests. Resistance studies are reported only as bounded research with their
+limits retained.
+
+The [verification and test record](docs/TESTS_AND_EVIDENCE.md) separates public
+CI and the public M15 replay lot from local research checks. Counts from
+different cycles are not summed into a security score. Detailed recent
+instruments, acquisitions and internal reviews remain unpublished.
+
+## Earlier research — executable studies and ideal-model interfaces
 
 **R1 remains experimental. Its complete concrete security qualification,
 tracked as C01, remains open.**

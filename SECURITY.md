@@ -9,7 +9,18 @@ formal constant-time guarantee or production-security claim is made.
 
 ## Current assurance boundary
 
-The latest private cycle adds executable resistance studies, independently
+As of 19 November 2026, four further research work packages have internally
+cross-checked deliverables in their declared scopes. They connect a
+construction decision, a conditional whole-KEM argument, matching resource
+accounting and a bounded program check. **They do not close concrete C01 or
+qualify R1 for production.** The latest local qualification selected 90
+distinct targeted tests; a later aggregate binary diagnostic completed 16
+fresh exchanges and 16 rejection checks. These are separate from hosted CI
+and the public M15 replay lot. See the
+[verification and test record](docs/TESTS_AND_EVIDENCE.md) for provenance and limits. The engine and its
+canonical binary are unchanged.
+
+The preceding private cycle added executable resistance studies, independently
 replayed records and explicit resource accounting, together with internally
 reviewed extensions of the ideal oracle interface and fully charged pre-key
 processing. Their model and resource conditions remain explicit. Selected

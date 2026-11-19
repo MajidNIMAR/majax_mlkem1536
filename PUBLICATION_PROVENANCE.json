@@ -1,5 +1,5 @@
 {
-  "schema": 2,
+  "schema": 3,
   "local_source_commit": "f1bbe57e8373719433bb8add4141cc7fcd61d654",
   "profile": "KEM1536-DEV-Q7681-R1",
   "excluded_paths": [
@@ -11,10 +11,10 @@
     "references/coded-dual-audit/rot_utilitaries.py.txt",
     "references/coded-dual-audit/utilitaries.py.txt"
   ],
-  "scope": "Committed public source snapshot, not the local Git history. Historical commit IDs in research notes refer to local research history.",
+  "scope": "Base committed public snapshot at local_source_commit, with only selected_paths copied from documentation_overlay_source_commit. Other later local research notes are not exported; this is not a complete snapshot of the overlay source commit.",
   "hash_scope": {
-    "sha256": "SHA-256 of file bytes emitted by git archive, including attribute conversion such as .ps1 CRLF. Checkout bytes can vary with Git attributes.",
-    "git_blob_sha256": "SHA-256 of canonical source Git blob contents before archive or checkout attribute conversion; these are not Git object IDs."
+    "sha256": "SHA-256 of emitted public file bytes for the base snapshot and selected documentation overlay. Checkout conversion may vary.",
+    "git_blob_sha256": "SHA-256 of canonical public Git blob contents, before checkout conversion; these are not Git object IDs."
   },
   "sha256": {
     ".cargo/config.toml": "6abf4f853edb1217e7b182d65dd5eba16c347eb7bf1826f54377e966451d593b",
@@ -27,8 +27,8 @@
     "Cargo.toml": "ff13a1ad6016fdb1e11376f304b4c3ea7670d1442d8f12cdbf02ebd01577de42",
     "LICENSE": "8ada45cd9f843acf64e4722ae262c622a2b3b3007c7310ef36ac1061a30f6adb",
     "NOTICE": "9a7f74ca48c836c0d34aa8d009c5b573b58812400986aaa5046f7ede9d5d6596",
-    "README.md": "d7dace69c774fb3a54eddda0accf8e4de5c2a42c0bcb4fecc898be2a4f67afdb",
-    "SECURITY.md": "754380184a09db9a5e64ba53244a25aa741418890278bc673356d6b7b7f10f0a",
+    "README.md": "9ce4c02381f0a3648980954a44cbde3a5519e1f050f41d646f26e6686938aa2e",
+    "SECURITY.md": "eb902a986d0dc2a60dcc36320af7fac1f4d2ec3ddf67ff56371d6ca40d6021ae",
     "THIRD_PARTY_NOTICES.md": "0769de1fce4740753fabd61af96e16c4d02ace4728b730a69d68986e1bd09d1f",
     "artifacts/README.md": "1be1dd8df0ee3c3fae262a7ca3c5dca981ff568de5563a5745f7aa7eb9079ab3",
     "comparisons/engine-pair/Cargo.lock": "798a610a194c516067066fa4dfa041c1256ba2cb66859941d1215ff49cf7bac9",
@@ -79,7 +79,7 @@
     "docs/DUAL_CODES_ROTATIONS.md": "a71608f0338a2942e795d982c80a0ec0210dea280f6081a851a85bbe7dc99de3",
     "docs/DURCISSEMENT_MOTEUR_M02.md": "d136b5f49b26b85deaae391f877eeb9c7c27c660409392666cf474f975ec2d3a",
     "docs/ERRATA_FIPS203.md": "6dfee9493e472d6e43539aa1aa40744f1897ec3f2f4eee49a9c8c1d947c418cc",
-    "docs/ETAT_RECHERCHE_C01.md": "58268f6a320cf982959a4f03e1409b573c209074dc42f6dd5379216e2f5cdd43",
+    "docs/ETAT_RECHERCHE_C01.md": "273b79c017ee48746a542af19a1cc4220141b66020fd7c621f384d6321f9c6a2",
     "docs/ETAT_RECHERCHE_M15.md": "fc3b6012338dd5b87c4e4393d4ecb8c65b013512ca180bdfb257d08f373cd5ee",
     "docs/ETAT_RECHERCHE_M16.md": "913d912f6f4ed96bfb7f794cde1210fee60b25f7cb913447388c43d292577378",
     "docs/FEUILLE_DE_ROUTE_MOTEUR.md": "e351ce8db54bcf441652731b0d45b0f564160e0bc3d28895fc6f41d7ad0b2f9e",
@@ -118,7 +118,7 @@
     "docs/PROTOCOLE_M09_MOTEUR.md": "e152ef0966be0760a2ae021e75cc3c2e75629d5ab992b2e72618801f3f1f4558",
     "docs/PROTOCOLE_M09_QUALIFICATION.md": "e2e9dd504955960448b9db17f5130489a54334a1b4c57f550570aa897daca908",
     "docs/PROTOCOLE_M10.md": "d138c2c32e35c07ccb1103e20d5cf9e3d3cb8f5176af0fa743fa4c965785574d",
-    "docs/PUBLICATION_GITHUB.md": "4704fef315b1ea6ce0c50e7a4eb34c785f5bbccd7aebe3643c89d4984f1adfac",
+    "docs/PUBLICATION_GITHUB.md": "14f85a8bfd0cfe582a37f130662acb8a89660b7007cfb8aaccd119c50a177248",
     "docs/QUANTIFICATION_PAR_PAIRES.md": "198794c483faf11ce6a692cbd9490d6b1a11a00767ef8ba474c2b5b2dbc6bac3",
     "docs/QUATRIEME_MOMENT_CBD.md": "414ed1ec61e83a658602c26b334019656cf43fceaff93d5796cc03286431b839",
     "docs/RAPPORT_RECHERCHE.md": "171946eca18409fae5ff4b199b1349f4fb249566df48435b1defdbb9f9c333b5",
@@ -2595,7 +2595,8 @@
     "vectors/nist-acvp/ML-KEM-encapDecap-FIPS203/prompt.json": "998e22dfb12efb14ce9fdff911ca634b13612819a1806f25da69adba7e16db91",
     "vectors/nist-acvp/ML-KEM-keyGen-FIPS203/expectedResults.json": "a253d0ad91c95ebea5b409673defef0aa49d65d4ed72286399e2e798ddf073a4",
     "vectors/nist-acvp/ML-KEM-keyGen-FIPS203/prompt.json": "3f9ce34f6c836c77958bad2729e837c3b213f44ac36c3065976e7acca6389523",
-    "vectors/nist-acvp/NIST-NOTICE.txt": "5cf49b45a3eb4bee05d9491dbd05af1ceae4adf5f0ca59890e633469cb1f8156"
+    "vectors/nist-acvp/NIST-NOTICE.txt": "5cf49b45a3eb4bee05d9491dbd05af1ceae4adf5f0ca59890e633469cb1f8156",
+    "docs/TESTS_AND_EVIDENCE.md": "6ae48499e058474260894823a0531309727f6a684c8b539ef0310e8ed4e09243"
   },
   "git_blob_sha256": {
     ".cargo/config.toml": "6abf4f853edb1217e7b182d65dd5eba16c347eb7bf1826f54377e966451d593b",
@@ -2608,8 +2609,8 @@
     "Cargo.toml": "ff13a1ad6016fdb1e11376f304b4c3ea7670d1442d8f12cdbf02ebd01577de42",
     "LICENSE": "8ada45cd9f843acf64e4722ae262c622a2b3b3007c7310ef36ac1061a30f6adb",
     "NOTICE": "9a7f74ca48c836c0d34aa8d009c5b573b58812400986aaa5046f7ede9d5d6596",
-    "README.md": "d7dace69c774fb3a54eddda0accf8e4de5c2a42c0bcb4fecc898be2a4f67afdb",
-    "SECURITY.md": "754380184a09db9a5e64ba53244a25aa741418890278bc673356d6b7b7f10f0a",
+    "README.md": "9ce4c02381f0a3648980954a44cbde3a5519e1f050f41d646f26e6686938aa2e",
+    "SECURITY.md": "eb902a986d0dc2a60dcc36320af7fac1f4d2ec3ddf67ff56371d6ca40d6021ae",
     "THIRD_PARTY_NOTICES.md": "0769de1fce4740753fabd61af96e16c4d02ace4728b730a69d68986e1bd09d1f",
     "artifacts/README.md": "1be1dd8df0ee3c3fae262a7ca3c5dca981ff568de5563a5745f7aa7eb9079ab3",
     "comparisons/engine-pair/Cargo.lock": "798a610a194c516067066fa4dfa041c1256ba2cb66859941d1215ff49cf7bac9",
@@ -2660,7 +2661,7 @@
     "docs/DUAL_CODES_ROTATIONS.md": "a71608f0338a2942e795d982c80a0ec0210dea280f6081a851a85bbe7dc99de3",
     "docs/DURCISSEMENT_MOTEUR_M02.md": "d136b5f49b26b85deaae391f877eeb9c7c27c660409392666cf474f975ec2d3a",
     "docs/ERRATA_FIPS203.md": "6dfee9493e472d6e43539aa1aa40744f1897ec3f2f4eee49a9c8c1d947c418cc",
-    "docs/ETAT_RECHERCHE_C01.md": "58268f6a320cf982959a4f03e1409b573c209074dc42f6dd5379216e2f5cdd43",
+    "docs/ETAT_RECHERCHE_C01.md": "273b79c017ee48746a542af19a1cc4220141b66020fd7c621f384d6321f9c6a2",
     "docs/ETAT_RECHERCHE_M15.md": "fc3b6012338dd5b87c4e4393d4ecb8c65b013512ca180bdfb257d08f373cd5ee",
     "docs/ETAT_RECHERCHE_M16.md": "913d912f6f4ed96bfb7f794cde1210fee60b25f7cb913447388c43d292577378",
     "docs/FEUILLE_DE_ROUTE_MOTEUR.md": "e351ce8db54bcf441652731b0d45b0f564160e0bc3d28895fc6f41d7ad0b2f9e",
@@ -2699,7 +2700,7 @@
     "docs/PROTOCOLE_M09_MOTEUR.md": "e152ef0966be0760a2ae021e75cc3c2e75629d5ab992b2e72618801f3f1f4558",
     "docs/PROTOCOLE_M09_QUALIFICATION.md": "e2e9dd504955960448b9db17f5130489a54334a1b4c57f550570aa897daca908",
     "docs/PROTOCOLE_M10.md": "d138c2c32e35c07ccb1103e20d5cf9e3d3cb8f5176af0fa743fa4c965785574d",
-    "docs/PUBLICATION_GITHUB.md": "4704fef315b1ea6ce0c50e7a4eb34c785f5bbccd7aebe3643c89d4984f1adfac",
+    "docs/PUBLICATION_GITHUB.md": "14f85a8bfd0cfe582a37f130662acb8a89660b7007cfb8aaccd119c50a177248",
     "docs/QUANTIFICATION_PAR_PAIRES.md": "198794c483faf11ce6a692cbd9490d6b1a11a00767ef8ba474c2b5b2dbc6bac3",
     "docs/QUATRIEME_MOMENT_CBD.md": "414ed1ec61e83a658602c26b334019656cf43fceaff93d5796cc03286431b839",
     "docs/RAPPORT_RECHERCHE.md": "171946eca18409fae5ff4b199b1349f4fb249566df48435b1defdbb9f9c333b5",
@@ -5176,7 +5177,17 @@
     "vectors/nist-acvp/ML-KEM-encapDecap-FIPS203/prompt.json": "998e22dfb12efb14ce9fdff911ca634b13612819a1806f25da69adba7e16db91",
     "vectors/nist-acvp/ML-KEM-keyGen-FIPS203/expectedResults.json": "a253d0ad91c95ebea5b409673defef0aa49d65d4ed72286399e2e798ddf073a4",
     "vectors/nist-acvp/ML-KEM-keyGen-FIPS203/prompt.json": "3f9ce34f6c836c77958bad2729e837c3b213f44ac36c3065976e7acca6389523",
-    "vectors/nist-acvp/NIST-NOTICE.txt": "5cf49b45a3eb4bee05d9491dbd05af1ceae4adf5f0ca59890e633469cb1f8156"
+    "vectors/nist-acvp/NIST-NOTICE.txt": "5cf49b45a3eb4bee05d9491dbd05af1ceae4adf5f0ca59890e633469cb1f8156",
+    "docs/TESTS_AND_EVIDENCE.md": "6ae48499e058474260894823a0531309727f6a684c8b539ef0310e8ed4e09243"
   },
-  "previous_public_commit": "4d3e1b5b45d9be5b7b55c35b1dacb97d016c3ffe"
+  "previous_public_commit": "cc65426a44e0fdbf9647d6a22dbe33baf72d47c0",
+  "publication_kind": "selected_documentation_overlay",
+  "documentation_overlay_source_commit": "f60b0f95933e078546d80f1438d16ce238a27c70",
+  "selected_paths": [
+    "README.md",
+    "SECURITY.md",
+    "docs/ETAT_RECHERCHE_C01.md",
+    "docs/PUBLICATION_GITHUB.md",
+    "docs/TESTS_AND_EVIDENCE.md"
+  ]
 }

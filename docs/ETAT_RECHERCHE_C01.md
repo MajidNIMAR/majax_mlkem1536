@@ -1,6 +1,6 @@
 # Current research scope and the conditional C01 argument
 
-Public scope statement, 18 November 2026. **MLKEM-1536 Core** develops the
+Public scope statement, updated 19 November 2026. **MLKEM-1536 Core** develops the
 working experimental profile `KEM1536-DEV-Q7681-R1`, with six polynomials
 of 256 coefficients. The number 1536 counts coefficients; it is not a
 security-bit rating or a standardized ML-KEM parameter set.
@@ -10,7 +10,28 @@ consolidated and internally reviewed in the declared QROM/RC1 model.
 The complete concrete qualification of R1 remains open. R1 is experimental,
 its final cryptographic freeze is deferred, and it is not production-qualified.**
 
-## Latest bounded studies and interface work
+## Current bounded research and verification
+
+Four further work packages examine the unchanged R1 construction. The
+construction decision, conditional whole-KEM argument, corresponding resource
+calculation and source-to-program link have internally cross-checked deliverables
+within their stated scopes. The conditional argument and functional checks do
+not establish the security of the concrete fixed-function KEM. **Concrete C01
+remains open.**
+
+The latest qualification selected 90 distinct local targeted tests in three
+suites. A later diagnostic on the canonical binary completed 16 fresh exchanges
+and 16 rejection checks. Other recent checks replayed retained records or
+validated research tools; these are not additional new engine tests. The
+[verification and test record](TESTS_AND_EVIDENCE.md) separates these local
+results from the public CI and M15 replay lot. Resistance studies retain their
+budget and inference limits without disclosing methods in this overview.
+
+No engine, parameter, format or canonical-binary change, new hosted CI result,
+external audit, certification or production qualification is credited here.
+Detailed recent records remain private.
+
+## Earlier bounded studies and interface work
 
 The recent private cycle strengthens the examination process around the
 central computational premise. It executes a complete public-input decision
