@@ -1,5 +1,190 @@
 # Du dossier de faisabilité au moteur KEM
 
+**20 novembre 2026 — prochaine porte C01.** Les nouveaux raccords du jeu
+classique idéal traitent le saut de clé et Decaps adaptative, puis ramènent
+la résistance restante à deux distributions Module-LWE du PKE R1. Avant
+d'adopter une borne de sécurité, il faut chiffrer ou justifier ces deux
+avantages au budget **après réduction**, avec préparation, requêtes,
+temps et mémoire. Il faut ensuite construire un argument propre aux
+fonctions SHA3/SHAKE et Keccak-f fixées du programme, ou décider d'une
+construction séparée dont cette preuve est possible. Les tests finis
+des fonctions fixées servent au contrôle de conformité, pas à la fermeture
+de cette porte. Le contrôle source/binaire et une revue extérieure restent
+des travaux d'assurance distincts. **C01 concret demeure ouvert ; R1 est
+expérimental.** Voir le rapport et la note d'état C01.
+
+**Blocs 2 à 4 du programme C01 — décisions du 19 novembre 2026.** Le
+calcul quantitatif du profil R1 est livré dans sa portée et le gel de
+sécurité est suspendu (`BLOCK2_PARAMETER_FREEZE_HELD`). L'examen des
+constructions R2 sélectionnées s'arrête avant code
+(`R2_SELECTED_CANDIDATES_NOT_VIABLE_YET`) : preuve, paramètres,
+formats, rattachement au module six par 256 et coût ne sont pas réunis
+pour un moteur choisi. Le contrôle fonctionnel frais du R1 et le mandat
+de revue extérieure sont préparés (`BLOCK4_PREPARED_PARTIAL`) ; la revue
+elle-même et le moteur final restent à faire. Les trois dossiers sont
+locaux sous `artifacts/retained/` ; C01 concret demeure ouvert.
+
+**Porte de reprise :** sélectionner et faire contre-lire une construction
+avec un jeu de sécurité exact, des hypothèses et une réduction chiffrée,
+des paramètres admissibles, une correction démontrée, des formats
+canoniques et un budget temps/mémoire. Ensuite seulement développer ou
+adapter le cœur Rust, la référence indépendante et les images à cette
+construction, puis soumettre le paquet exact à une revue extérieure.
+La piste R1 demande une nouvelle preuve propre au programme fixe ; les
+routes génériques examinées au bloc 1 ne sont pas réutilisables comme
+argument complet.
+
+**Bloc 1 du nouveau programme C01 — décision sur les routes de preuve R1,
+19 novembre 2026.** L'analyse et les contre-lectures ont écarté des
+justifications génériques de la clé défi et une famille de simulations
+adaptatives pour le jeu exact à fonctions fixes. Aucune réduction
+IND-CCA complète n'a été construite. Le verdict borné
+`R1_SELECTED_ROUTES_NO_GO` concerne ces routes seulement ; R1 n'est
+pas déclaré vulnérable. Le dossier détaillé est conservé localement sous
+`artifacts/retained/r1-c01-block1-001/`.
+
+**Décision suivante :** une nouvelle route R1 devra traiter l'interaction
+du programme exact et de ses primitives fixes ainsi que Decaps adaptative,
+avec hypothèses indépendantes et ressources complètes. L'autre piste
+est une construction distincte dont les paramètres, formats et preuves
+seront établis avant implémentation. Aucune optimisation isolée ne ferme
+les raccords de sécurité identifiés. **C01 concret reste ouvert** ; le
+moteur R1, ses formats et ses binaires canoniques sont inchangés.
+
+**M24 à M28 — cinq blocs C01 traités le 19 novembre 2026 dans leurs
+portées.** M24 a fixé le jeu R1 à fonctions fixes et les transitions de
+preuve manquantes. M25 a recomposé une famille de coûts ciblée à dimensions
+natives sous un modèle simplifié, sans borne du PKE réel. M26 a établi un
+saut conditionnel pour le rejet et la carte de six rôles. M27 a composé les
+résultats avec inconnues explicites. M28 conserve R1 expérimental et ouvre
+une fiche de construction R2 séparée, sans code R2 ni preuve de R1. Les
+capsules sont locales sous `artifacts/retained/m24-concrete-game-001/` à
+`m28-architecture-decision-001/` ; **C01 concret reste ouvert**.
+
+**Cible scientifique R1 conservée :** construire une réduction indépendante
+du défi à fonctions fixes et une route de réponses adaptatives ne dépendant
+pas de la possession du secret PKE, avec leurs budgets complets. Le bloc 1
+ci-dessus a arrêté les routes génériques sélectionnées, pas cet objectif.
+Une nouvelle estimation ou optimisation du moteur seule ne ferme pas cette obligation.
+La voie R2 nécessite d'abord paramètres, preuve quantique et formats propres
+avant toute implémentation ou revendication « 1536 ».
+
+**M20 à M23 — quatre briques exécutées et contre-vérifiées le 19 novembre
+2026.** M20 établit `M20_COMPLETE_SCOPED_DEFAULT` : deux chemins source et
+deux constructions propres donnent des images Windows GNU identiques sur le
+même PC. M21 établit `M21_COMPLETE_SCOPED` : 176 entrées synthétiques sont
+mesurées dans une seule image Linux instrumentée, avec 18 issues exercées sur
+24 issues LLVM mappées dans les fichiers R1 actifs. M22 établit
+`M22_COMPLETE_SCOPED` : des témoins binaires et diagnostics sont liés aux
+images PE et ELF PC exactes. M23 établit `M23_COMPLETE_SCOPED` : une image
+release Linux AArch64 est construite et passe son profil et ses diagnostics
+sous QEMU utilisateur. Les capsules et revues locales sont dans
+`artifacts/retained/m20-source-root-repro-001/` à
+`artifacts/retained/m23-aarch64-port-001/`, avec M21 et M22 sous leurs noms
+propres. Elles ne sont pas publiées dans le dépôt Git.
+
+**Prochains travaux distincts :** tester la reproductibilité entre machines ;
+étudier les chemins non exercés sous des protocoles séparés ; qualifier des
+images sur les cibles physiques retenues ; poursuivre l'argument de sécurité
+concret C01 avec une revue cryptographique extérieure. Les progrès M20–M23
+ne valent ni preuve générale de temps constant ou d'effacement, ni validation
+Android, ni sécurité concrète fermée. R1 reste expérimental, C01 ouvert.
+Le cœur, les paramètres, formats et API sont inchangés ; aucune nouvelle CI
+ou publication GitHub n'est créditée.
+
+**M19 — deux objectifs PC acquis dans leur portée, `M19_COMPLETE_SCOPED`,
+19 novembre 2026.** Le
+réglage suivi de l'édition de liens Windows GNU rend les deux nouvelles
+paires CLI et banc identiques octet à octet sur la même machine et la chaîne
+épinglée. Les contrôles fonctionnels et Rust passent après intégration.
+Quatre harnais Linux livrent des compteurs de branches LLVM authentiques et
+recomptables, avec couverture partielle dans leurs images instrumentées.
+Les reçus et erreurs de méthode sont conservés dans
+`artifacts/retained/m19-engine-next-001/`. Ces résultats ont motivé les
+cycles M20–M23 sur les constructions, les chemins instrumentés, les images
+finales et la première cible Linux AArch64 émulée.
+Ces résultats ne ferment pas C01 concret et ne donnent pas de garantie
+générale de temps constant ou d'effacement ; R1 reste expérimental.
+
+**M18 — six étapes PC exécutées, résultat partiel, 19 novembre 2026.** La
+référence R1, les contrats fonctionnels, les images Windows/Ubuntu, la
+décision de correction, les régressions/mesures et la contre-revue disposent
+de reçus vérifiables dans `artifacts/retained/m18-engine-qualification-001/`.
+Les contrôles fonctionnels et Rust passent ; quatre campagnes ASan atteignent
+leurs budgets. Les lignes LLVM sont mesurées par harnais. L'égalité brute des
+constructions Windows échoue et les branches LLVM ne sont pas acquises, d'où
+`M18_PARTIAL`. La décision `NO_CORE_CHANGE_JUSTIFIED` conserve le moteur,
+les paramètres et formats sans crédit de durcissement. Les prochains travaux
+logiciels sont la reproductibilité brute Windows, la couverture de branches
+sur une chaîne adaptée et une revue d'images plus complète des chemins et
+propriétés sensibles. Ces progrès demeurent distincts de l'argument de
+sécurité concret C01, toujours ouvert ; R1 demeure expérimental.
+
+**Parties 3.2–3.5 — résultats sélectionnés, 19 novembre 2026.** Les quatre
+sous-livrables sont constitués dans leurs portées : cible et construction R1
+inchangée, chaîne IND-CCA conditionnelle du modèle QROM/RC1, calcul exact de
+ce modèle et liaison contrôlée au code/binaire. Les vérifications fonctionnelles
+et la contre-revue ne transforment pas cet argument en preuve pour les fonctions
+SHA3/SHAKE fixes. Le bloc 3 reste ouvert quant à son objectif scientifique,
+C01 concret ouvert et R1 expérimental. Le prochain progrès décisif exige
+un raccord cryptographique indépendant pour le jeu fixe, ou une construction
+R2 spécifiée séparément si ce niveau de preuve devient le critère retenu.
+Les détails sont dans `artifacts/retained/r1-block3-completion-001/`.
+
+**Bloc 3.1 — faisabilité du raccord IND-CCA aux fonctions fixes, 19 novembre
+2026.** Le cycle privé `artifacts/retained/r1-fo-feasibility-001/` examine
+trois familles de preuve pour le R1 inchangé. Le protocole, la carte complète
+des appels du programme, un lemme de simulation conditionnel, des contrôles
+logiques et une confrontation aux constructions publiées sont constitués.
+Aucune route complète non circulaire n'est acceptée dans ce périmètre ; il
+ne s'agit ni d'une impossibilité générale ni d'un constat d'attaque.
+**Prochain point de décision :** fixer le niveau de preuve recherché pour R1
+et, si une preuve en modèle standard est exigée, spécifier séparément une
+construction candidate avant tout changement du moteur. C01 concret reste
+ouvert et R1 expérimental. Le résultat du bloc 2 reste conditionnel dans
+son modèle déclaré ; aucune nouvelle CI ou publication n'est créditée.
+
+**État courant des quatre blocs — 19 novembre 2026.**
+
+| Bloc | Statut | Conclusion actuelle |
+|---|---|---|
+| 1 — Résistance aux paramètres réels | Livrable natif ciblé achevé | Calculs globaux et certificats exacts obtenus ; comparaison conditionnelle inconclusive, recherche plus large à poursuivre |
+| 2 — Calcul de sécurité dans le modèle élargi | Clos dans le modèle conditionnel déclaré | Composition et borne finale contrôlées ; cible satisfaite sous les hypothèses déclarées |
+| 3 — Raccord au KEM concret | Sous-livrables 3.1–3.5 traités ; objectif scientifique ouvert | Argument QROM/RC1 conditionnel et programme reliés dans leurs portées ; aucune preuve IND-CCA aux fonctions fixes retenue |
+| 4 — Qualification du programme et des images | Partiel | Garanties obtenues dans les périmètres examinés ; qualification plus large à poursuivre |
+
+Le nouveau lot privé du bloc 3 apporte un contrat du programme entier, une
+relecture indépendante des traces KEM conservées et un sous-argument de
+correction pour les fonctions fixes. La contre-revue le valide dans ce
+périmètre, après clarification de la population des clés. La composition
+de sécurité du KEM concret, ses hypothèses numériques et C01 restent ouverts.
+Le moteur et le clone public sont inchangés.
+
+La clôture du bloc 2 formalise un résultat déjà acquis. Elle n'adopte pas
+la vérité numérique des hypothèses et n'établit pas le transfert aux
+primitives fixes. Les capsules historiques restent inchangées. R1 demeure
+expérimental et C01 concret ouvert ; aucun nouveau test ou résultat de CI
+n'est crédité à cette décision.
+
+**Quatre blocs mis en œuvre et vérifiés dans leurs portées.** Les nouveaux
+calculs natifs, la composition chiffrée élargie, la branche PKE concrète et la
+qualification source/binaire ont leurs livrables exécutables, acquisitions,
+rejeux et revues. Les limites numériques, hypothèses primitives, contrats du
+modèle et frontières des images restent explicites. L'achèvement de ce cycle
+ne ferme pas tous les sujets scientifiques de chaque bloc.
+
+La suite doit s'appuyer sur ces résultats précis et traiter les frontières
+encore ouvertes, sans répéter les acquisitions déjà conservées. R1 reste
+expérimental et C01 concret ouvert ; aucun changement de construction ou
+du moteur n'est justifié par les contrôles retenus. Le travail détaillé est
+privé dans NIST et la publication cc65426 est préservée.
+
+**Publication vérifiée.** La synthèse ciblée est accessible sur main au commit
+[`cc65426`](https://github.com/MajidNIMAR/mlkem-1536-core/commit/cc65426a44e0fdbf9647d6a22dbe33baf72d47c0).
+Lecture anonyme exacte des documents, parent et référence distante contrôlés.
+Publication documentaire uniquement ; données privées et moteur préservés,
+aucune nouvelle CI créditée, R1 expérimental et C01 concret ouvert.
+
 **Synthèse publique de l'étude ciblée.** La présentation du dépôt et la note
 C01 exposent les nouveaux périmètres exécutables et idéalisés, avec leurs
 limites. Les vérifications locales restent séparées de la CI publique et du

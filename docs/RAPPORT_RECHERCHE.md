@@ -1,5 +1,611 @@
 # Rapport de recherche — MLKEM-1536 Core, KEM à six blocs de 256 coefficients
 
+**20 novembre 2026 — saut de clé dans le jeu complet classique idéal et
+fonctions fixées.** Une nouvelle réduction traite ensemble le défi et la
+décapsulation adaptative du R1 exact dans un jeu à six oracles aléatoires
+indépendants, typés et consultés classiquement. Elle simule les réponses
+Decaps à partir des consultations publiques de G, avec une erreur
+explicitement bornée par la correction, la rencontre de graines déjà
+touchées et la distribution exacte des 1 536 coefficients non comprimés de
+la partie `u`. Une seconde réduction rattache le terme restant à deux
+problèmes décisionnels Module-LWE aux dimensions `(6,6)` et `(7,6)`, avec
+les coûts de préparation, de programmation des rôles et de requêtes
+comptés. Les contre-lectures internes n'ont pas relevé d'objection
+bloquante **dans ce modèle déclaré**. Les avantages Module-LWE au budget
+composé ne disposent pas de borne supérieure démontrée par ce travail ;
+le résidu arithmétique seul ne donne aucun niveau de sécurité du KEM.
+Une composition séparée vérifie, sous huit plafonds illustratifs de
+`2^32` requêtes ou graines chacun, un résidu **hors** avantages
+Module-LWE `<2^-189`. Ce nombre ne borne pas l'avantage total. Un
+corollaire à permutation aléatoire partagée est seulement conditionnel
+à l'absence d'accès direct à la permutation et à un plafond global
+supplémentaire sur les appels ; il ne concerne pas Keccak-f fixé.
+
+Le passage à SHA3/SHAKE et Keccak-f **fixés** reste une obligation
+distincte. Les six rôles et le lien entre la queue de G et les coins
+d'encapsulation ont été contrôlés sur huit vecteurs synthétiques. Un banc
+séparé a exécuté 464 parties du jeu à fonctions fixées, avec adversaire
+dans un processus distinct, budgets et rejeu, ainsi qu'un contrôle sur
+16 vecteurs Rust historiques. Ces contrôles confirment l'interface et
+les traces dans leur périmètre fini ; ils ne bornent pas le meilleur
+adversaire. Une substitution générale des fonctions publiques fixées par
+des oracles aléatoires n'a pas de petit coût de distinction : une preuve
+pour R1 fixé devra être propre à la construction ou changer de cadre.
+Les dossiers détaillés et contre-lectures restent locaux sous
+`artifacts/retained/c01-full-game-extract-002/`,
+`c01-pke-ow-mlwe-001/`, `c01-fixed-function-scope-001/` et
+`c01-fixed-game-harness-001/`, avec composition dans
+`c01-classical-composition-001/`. **C01 concret demeure ouvert ; R1 reste
+expérimental.** Le cœur, ses paramètres et ses formats n'ont pas changé.
+
+**19 novembre 2026 — raccord multidébit classique, avec interfaces
+distinctes.** Les [théorèmes 9 et 10 de Bertoni et al.](https://keccak.team/files/CSF-0.1.pdf)
+permettent de comparer les six domaines idéalisés de R1 à une permutation
+aléatoire partagée lorsque tous les appels pertinents ont un plafond
+déterministe. Le méta-jeu peut exécuter lui-même KeyGen et Decaps avec la
+clé secrète. En revanche, avec accès direct à la permutation et à son
+inverse, le simulateur du monde idéal peut consulter une entrée de G
+pertinente pour le défi. Le saut de tête exige alors un événement de
+rencontre élargi ; sa probabilité après défi reste ouverte. Le coût de
+comparaison de deux mondes est au plus `2Δ_IP(N)`, mais l'ajouter au
+seul événement de consultation G adverse serait injustifié.
+
+Un second raccord concerne **un jeu restreint sans accès direct à la
+permutation**, avec une clé honnête, uniquement les encapsulations sous
+cette clé effectivement surveillées et un plafond chemin par chemin
+`N≤2^32` sur tous les appels. Le moniteur vérifie la correction des
+chiffrés qu'il a réellement évalués, sans nouvelles consultations pour
+des graines seulement latentes. La borne idéale `<2^-195` reçoit ici une
+seule pénalité multidébit `Δ_IP(2^32)≤2^-193+2^-225` : le résultat est
+**strictement inférieur à `2^-192`** pour l'événement de correction et de
+cap retenu. Ce nombre n'est ni un niveau de résistance du KEM ni une
+borne pour Keccak-f fixé. Les sorties XOF et les appels du moteur doivent
+tous être comptés ; une exécution non plafonnée exigerait son propre
+terme de dépassement. L'interface complète, le QROM et C01 concret
+restent ouverts. Les capsules locales `c01-head-ip-transfer-001` et
+`c01-sponge-correction-restricted-001` sont scellées et rejouées ; une
+contre-lecture séparée a examiné le second raccord. Les modèles finis
+et contrôles de portée vérifient les équations et les hypothèses de
+transfert annoncées, pas la sécurité du moteur à fonctions fixées.
+Le lecteur scellé `c01-ip-integration-001` rejoue ces résultats et le
+reçu historique du pont multidébit sans modifier ses archives.
+
+**19 novembre 2026 — correction adaptative dans un jeu idéal, portée de la
+preuve A.** Une route d'extraction statistique sélectionnée a été confrontée
+aux tailles exactes du message et de la clé du défi. Sa condition suffisante
+d'entropie ne peut pas être satisfaite par le R1 inchangé ; cette conclusion
+ne vaut que pour cette route et ne constitue ni attaque ni impossibilité
+générale. La condition utilisée vient du
+[lemme 2.3 de Peikert–Waters](https://sites.cc.gatech.edu/fac/cpeikert/pubs/lossy_tdf.pdf).
+Une revue de sources primaires ne fournit pas non plus de théorème
+transférable directement aux fonctions fixées du moteur. Les preuves,
+lecteurs finis et contre-exemples de portée sont conservés localement.
+
+Un saut A plus étroit a ensuite été établi et contre-lu dans le jeu
+classique à oracles idéaux typés. Le remplacement de la tête du défi par
+une valeur indépendante coûte la probabilité d'une évaluation adverse de
+l'entrée G cible, plus au plus `q_pre_dec/2^256` si Decaps était accessible
+avant le défi. Les requêtes Decaps postérieures au défi sont traitées
+séparément ; les chiffrés de défi y sont interdits. Le contrôle fini
+vérifie la nécessité du terme pré-défi et l'égalité des réponses dans les
+cas post-défi autorisés. **La probabilité d'évaluation cible après le
+défi n'est pas bornée** : le saut n'est donc ni une réduction IND-CCA
+complète ni une preuve pour SHA3/SHAKE fixés.
+
+Pour la branche B, un nouveau lemme traite les mêmes adresses de bruit
+partagées par génération et chiffrement, puis la loi CBD indépendante quand
+les graines sont distinctes. Dans le jeu déclaré à rôles aléatoires typés,
+avec une clé honnête, le certificat J2 borne par moins de `2^-54` la
+probabilité qu'au moins un message du domaine entier échoue à la correction
+dans la version à matrice capée. La somme sur `2^256` messages est large et
+ne démontre pas l'objectif C05. Le résultat retire un terme de décodage du
+couplage Decaps adaptatif conditionnel, **pas** le besoin d'un extracteur
+efficace. La contre-lecture interne n'a pas trouvé d'objection bloquante
+dans ce jeu. Un test Rust supplémentaire vérifie le cas de graines
+coïncidentes ; le cœur de production, les paramètres et les formats sont
+inchangés. Aucun transfert à Keccak fixé, au modèle quantique ou à une borne
+IND-CCA complète n'est acquis. **C01 concret reste ouvert.**
+
+Une analyse complémentaire traite l'adaptativité avec un budget explicite
+de graines de bruit distinctes réellement touchées. Elle utilise une borne
+de norme pour la clé, une fonction génératrice du CBD(3), puis une union
+sur les nouvelles graines, sans supposer que les décisions de l'adversaire
+sont indépendantes. Pour une seule clé et au plus `2^32` graines autres
+que celle de génération, deux lecteurs en arithmétique exacte vérifient
+une borne d'événement de correction inférieure à `2^-195` dans le même
+jeu idéal classique. Le budget doit comprendre les appels directs,
+ceux du moteur et les vérifications de tout simulateur des deux mondes.
+La borne ne s'applique pas aux chiffrés forgés en général et ne donne ni
+extraction, ni transfert automatique au modèle de permutation partagée,
+ni sécurité des fonctions SHA3/SHAKE fixées. C01 reste ouvert.
+
+Un lecteur d'intégration `c01-cycle-integration-001` rejoue les sceaux
+des cinq dossiers sélectionnés, la borne rationnelle et le contrôle fini,
+puis vérifie que les termes de sécurité non établis restent marqués
+ouverts. Il passe localement ; cette capsule reste hors Git et ne vaut
+pas audit externe.
+
+**19 novembre 2026 — raccords du défi, Decaps adaptative et modèle des
+primitives.** Une nouvelle étude privée a repris le jeu R1 inchangé et
+traité trois questions séparées. Pour la clé du défi, une commutation
+exacte vers une loi auxiliaire de clé publique a été démontrée, avec son
+coût de réduction ; l'avantage de ce jeu et la borne computationnelle
+restante ne sont pas établis. Un lemme de collision conditionnel tient
+compte du hachage public corrélé sans supposer son indépendance. Il
+écarte une route de remplacement statistique **si** le terme auxiliaire
+de collision est petit, condition qui n'est pas établie pour R1, sans
+constituer une attaque ni une preuve de sécurité du R1.
+
+Pour Decaps, un candidat avec trace classique a un lemme de couplage
+adaptatif exact sous deux événements distincts : extraction d'un témoin
+pour les chiffrés acceptés et accord avec le message effectivement
+décodé. Le rejet fixe peut être calculé exactement avec une seule graine
+indépendante dans cette simulation **si** ces conditions sont satisfaites.
+Dans cette première étude, ni extracteur efficace pour tout adversaire du
+jeu, ni borne de correction adaptative n'avaient été démontrés ; la classe
+quantique n'était pas couverte. La nouvelle borne idéale et bornée en
+graines figure dans la mise à jour en tête de ce rapport.
+
+Un troisième dossier applique les [théorèmes 9 et 10 de Bertoni et al.](https://keccak.team/files/CSF-0.1.pdf)
+aux débits du [FIPS 202](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf).
+Il obtient, **en permutation aléatoire et avec accès classiques seulement**,
+une enveloppe commune `N(N+1)/2^257` pour `N<2^256`, où `N` comprend
+les appels pertinents à la permutation et à son inverse. Un prédicat
+borné du tirage de matrice a un coût marginal explicite dans ce modèle.
+Cette expression n'est pas une borne pour Keccak-f fixé. Le
+[théorème quantique d'Alagic et al.](https://arxiv.org/html/2504.16887v2)
+sur une éponge unique ne donne pas ici de transfert multidébit ni
+d'avantage numérique pour le moteur concret.
+
+Les trois capsules locales, `c01-lossy-key-001`, `c01-decaps-trace-001`
+et `c01-sponge-multirate-001`, sont liées par une contre-lecture et un
+lecteur d'intégration dans `c01-ab-integration-001`. Deux lecteurs
+indépendants vérifient la première, deux modèles finis la deuxième ;
+un lecteur et une mutation contrôlent la troisième. Les anciens lecteurs
+de référence C01 ont été rejoués séparément. Ces tests vérifient les
+identités et leurs limites, **pas** la résistance du R1 réel. Aucun
+changement du moteur, de ses formats ou de ses paramètres ; aucune
+nouvelle CI ou revue externe créditée. **C01 concret reste ouvert** :
+il manque les bornes efficaces A et B et le transfert aux fonctions
+fixées avant toute composition IND-CCA chiffrée.
+
+**19 novembre 2026 — tentative de fermeture de C01 sur le R1 concret.**
+Une nouvelle étude a confronté le même jeu à trois périmètres : preuve du
+KEM inchangé, fonctions SHA3/SHAKE fixées et calculs de correction et de
+résistance à la dimension réelle. Les capsules locales scellées apportent
+trois résultats nouveaux et limités. Une preuve relie les collisions
+d'encapsulation à la probabilité moyenne d'erreur PKE, sans supposer
+l'injectivité globale. Un certificat arithmétique fixe à **1799** le rayon
+entier qui garantit le décodage de tout bit malgré la compression. Un
+raccord de jeux démontre alors une **borne conditionnelle de correction
+honnête** : borne CBD idéale plus probabilité de dépassement du sampler
+de matrice et quatre avantages des fonctions fixées. Ces cinq derniers
+termes n'ont pas de borne numérique adoptée. L'audit des six rôles de
+primitives les rattache aux octets du source, sans attribuer de propriété
+cryptographique à leurs seuls domaines séparés.
+
+La capsule quantitative démontre un **plafond générique** sur le coût de
+recherche publique et vérifie les deux coefficients de son lemme par
+énumération finie. Un plafond de coût n'est pas une minoration de toutes
+les attaques ; les estimations Module-LWE antérieures gardent leur modèle
+et ne deviennent pas un niveau de sécurité du KEM. Une recette matricielle
+publiée a été écartée pour le scénario précis de dimension matricielle
+1536 et objectif 256 ; ce filtrage ne porte ni sur une impossibilité
+générale ni sur le module six par 256 du R1.
+
+Une seconde route de preuve reproduit exactement la distribution des
+réponses Decaps adaptatives pour un KeyGen **capé et conditionné à sa
+terminaison**, mais son calcul énumère toutes les graines possibles et
+son passage au source non capé dépend d'une probabilité inconnue. Il
+établit l'existence d'une simulation abstraite, pas une réduction
+efficace ou une borne de sécurité. Le raccord de clé défi reste ouvert.
+Une candidate de découplage entre la tête et les coins de G a aussi été
+formalisée : sous les auxiliaires nécessaires, son avantage est
+équivalent au défi à une perte explicite ; elle ne constitue donc pas
+une hypothèse indépendante plus faible. Ce diagnostic est vérifié par
+des jeux finis dans `c01-joint-decoupling-001/` et ne conclut pas à
+une impossibilité générale.
+
+Les dossiers de preuve, rayon, primitives, calcul quantitatif et route
+alternative sont conservés sous `artifacts/retained/c01-proof-next-001/`,
+`c01-correction-bridge-001/`, `c01-primitives-next-001/`,
+`c01-quant-next-001/`, `c01-alternative-route-001/`,
+`c01-proof-route2-001/`, `c01-joint-decoupling-001/`,
+`c01-fixed-route-search-001/` et `c01-r2-bil20-feasibility-001/`.
+Leurs sceaux, lecteurs disponibles et
+contre-lectures internes passent dans leurs portées. Le cœur
+Rust inchangé repasse Clippy strict et **46 tests** avec toutes les
+fonctionnalités via `scripts/engine.ps1 -Task check` sur le PC. Aucun
+nouveau test fonctionnel ne démontre la sécurité IND-CCA.
+
+**Décision actuelle : C01 concret reste ouvert.** La preuve manque
+toujours d'un raccord indépendant pour la clé du défi corrélée à son
+chiffré, d'un traitement efficace de Decaps adaptative, de bornes pour
+les fonctions fixées et la PKE semée, puis d'une composition numérique
+dans un budget adversaire commun. Une comparaison avec la preuve
+machine vérifiée publiée pour ML-KEM
+([Almeida et al., ePrint 2024/843](https://eprint.iacr.org/2024/843.pdf),
+§5–6) rappelle la frontière de modèle : son argument FO est en oracle
+aléatoire et certaines fonctions SHAKE sont traitées par des hypothèses
+PRF distinctes. Il ne prouve pas le R1 aux SHA3/SHAKE fixés. Le moteur,
+ses paramètres et ses formats restent inchangés ; R1 demeure
+expérimental, sans gel cryptographique, sélection R2 ou qualification
+de production.
+
+La lecture intégrale de [Luck, Mao et O'Neill, ePrint
+2026/2365](https://eprint.iacr.org/2026/2365) clarifie la route à
+fonctions fixées : leur résultat négatif concerne une TDF construite
+pour chaque fonction G, **pas** la PKE R1 ; leur résultat positif
+concerne un chiffrement hybride, avec des hypothèses supplémentaires,
+**pas** le KEM R1. Les auteurs laissent ouverte une instanciation
+standard de la propriété d'extractabilité qu'ils emploient. Les autres
+constructions primaires comparées changent également le schéma et ne
+fournissent pas de preuve transférable au source inchangé. La lecture et
+ses conditions sont conservées dans `c01-fixed-route-search-001/` ;
+elle réduit les raccourcis de preuve admissibles, sans établir ni
+attaque contre R1 ni impossibilité de toute preuve future.
+Un amendement à l'écran R2 précédent confirme que le q=7681 de R1
+ne satisfait pas, à dimension **matricielle** 1536, une condition de
+raccord à LWE de la construction directe corrigée en 2025
+([Nguyen, Duong et Pham](https://www.mdpi.com/2410-387X/9/4/79),
+§2.4 et §3.1). Les tailles de cette route figuraient déjà dans le
+dossier R2 antérieur et ne sont pas comptées comme résultat nouveau.
+L'amendement ne prouve rien pour le module R1 et ne fixe aucun niveau
+de résistance concret à 256 bits.
+
+**19 novembre 2026 — bilan des blocs 2 à 4 du programme C01.** Trois
+dossiers locaux ont traité la décision de paramètres R1, le choix d'une
+construction R2 et la préparation du moteur à une revue indépendante.
+Leurs résultats sont bornés par le bloc 1 : aucune preuve complète du R1
+à fonctions fixes n'a été obtenue. **C01 concret reste ouvert ; R1 est
+expérimental.**
+
+Le **bloc 2** recalcule les tailles réelles, la borne de correction dans
+son modèle et plusieurs coûts d'attaques dans les conventions de leurs
+modèles, avec ML-KEM-1024 comme témoin de taille et de calcul. Les coûts
+de modèles ne sont ni une borne IND-CCA du KEM exécuté, ni une comparaison
+globale de résistance. Le verdict `BLOCK2_PARAMETER_FREEZE_HELD` maintient
+le gel de sécurité des paramètres en attente. Le rapport, les reçus et les
+lecteurs sont conservés dans `artifacts/retained/r1-c01-block2-001/`.
+
+Le **bloc 3** examine quatre routes de construction distinctes et fixe
+avant code les conditions de preuve, paramètres, formats et coût. Des
+comptes de taille reproductibles d'une route matricielle montrent les
+conséquences d'un encodage dense, sans constituer un jeu de paramètres
+valide ni un transfert au module six par 256. Le verdict limité
+`R2_SELECTED_CANDIDATES_NOT_VIABLE_YET` ne sélectionne aucun R2 « 1536 ».
+Il ne signifie ni impossibilité générale ni faiblesse de R1. La fiche
+M28 reste une réduction abstraite et non une spécification de moteur.
+Le dossier est `artifacts/retained/r2-block3-001/`.
+
+Le **bloc 4** contrôle à nouveau le moteur R1 actuel sur les octets de
+ses images locales : suite Rust et Clippy strict, 64 comparaisons à la
+référence Python indépendante, puis 256 échanges frais et 256 rejets.
+Les reçus lient source, images et résultats ; un mandat de revue
+cryptographique extérieure est préparé dans
+`artifacts/retained/r1-c01-block4-001/`. Le statut
+`BLOCK4_PREPARED_PARTIAL` signifie que ni moteur R2, ni qualification
+binaire complète, ni avis extérieur reçu ne peuvent être crédités.
+Un moteur final attend une construction sélectionnée et la revue effective.
+Les trois dossiers ont été scellés, relus dans leurs portées et leurs
+lecteurs rejoués. Ils restent locaux, hors du dépôt public ; aucune nouvelle
+CI hébergée ou publication GitHub n'est revendiquée pour ce cycle.
+
+**19 novembre 2026 — bloc 1 du nouveau programme C01, décision sur les
+routes de preuve du R1 exact.** Le protocole a figé le jeu du KEM R1 à
+fonctions publiques SHA3/SHAKE fixes, les deux raccords absents de M27 et
+les critères de succès ou d'arrêt avant l'examen. Trois familles ont été
+traitées : la justification indépendante de la clé défi, la simulation
+adaptative de Decaps et le transfert de théorèmes primaires sélectionnés.
+Le dossier privé `artifacts/retained/r1-c01-block1-001/` conserve
+protocoles, amendements, preuves bornées, contrôles finis, lecteurs et
+contre-lectures. Les identités et leurs limites ont été rejouées ; ce
+travail ne constitue pas une revue cryptographique extérieure.
+
+**Décision `R1_SELECTED_ROUTES_NO_GO` dans la portée examinée.** Les
+propriétés séparées de la PKE et d'une primitive ordinaire ne suffisent
+pas comme argument générique de la clé du défi lorsque la construction
+exacte corrèle ses choix internes. Une famille de simulations externes
+de Decaps est également contrainte. Les sources primaires étudiées
+n'apportent pas les deux raccords au R1 inchangé. Ces résultats éliminent
+des routes de preuve précises ; ils ne montrent pas de faille dans R1,
+n'excluent pas une preuve spécifique future et ne donnent aucune borne
+IND-CCA du programme exécuté. Les termes de défi, d'adaptation et de
+primitives fixes restent `OPEN` ; **C01 concret reste ouvert**.
+
+Le moteur, ses paramètres, formats, API et binaires canoniques sont
+inchangés. Aucune CI hébergée, publication GitHub, qualification de
+production ou certification n'est créditée. La prochaine décision
+scientifique doit choisir entre une nouvelle preuve spécifique au R1
+exact, avec hypothèses et coûts indépendants, et une construction
+distincte entièrement spécifiée avant implémentation.
+
+**19 novembre 2026 — M24 à M28, cinq blocs de recherche ciblés sur C01.**
+Les protocoles et critères ont précédé les nouveaux calculs ; les capsules
+locales `artifacts/retained/m24-concrete-game-001/` à
+`m28-architecture-decision-001/` conservent les résultats sélectionnés,
+premiers essais, lecteurs, contre-revues et sceaux. Les dossiers complets
+restent hors du dépôt public. Le code, les paramètres, formats, API et images
+canoniques R1 sont inchangés.
+
+**M24 — `M24_CUT_CERTIFIED_SCOPED`.** Le jeu R1 aux fonctions publiques
+fixes est formalisé et deux transitions indispensables sont isolées. Une
+contre-lecture et des contrôles finis écartent les raccourcis circulaires.
+Cela délimite une route de preuve sans établir une faiblesse du moteur.
+
+**M25 — `M25_COMPLETE_SCOPED`.** Quatre coûts d'une famille d'estimation
+ont été acquis sous budgets préfixés avec un témoin commun, puis recomposés
+séparément. Un certificat de distribution vérifie le PKE semé exact dans
+sa portée. Les premiers échecs d'outillage et la reprise sont conservés.
+Les valeurs numériques reposent sur un modèle scalaire simplifié, avec
+extrapolation pour R1 ; elles ne majorent pas l'avantage du PKE semé ni du
+KEM complet. La veille de littérature n'a pas été convertie en revendication
+de rupture ou de résistance.
+
+**M26 — `M26_SCOPED_PRF_HOP_ESTABLISHED`.** Un saut de jeu conditionnel
+pour la fonction de rejet est démontré avec son coût en requêtes, et les six
+rôles SHA3/SHAKE sont liés à la source et à la spécification. La prémisse
+quantitative correspondante n'a pas de borne adoptée. Le réducteur de ce
+saut possède une capacité qui ne se transfère pas à la réduction adaptative
+encore manquante.
+
+**M27 — `M27_GAP_IDENTIFIED`.** Une composition rejouable relie les trois
+capsules précédentes au même commit source. Son lecteur recalcule les
+liaisons, l'algèbre et les contrôles négatifs. Les termes indispensables
+pour le défi fixe et la décapsulation adaptative restent explicitement
+ouverts ; aucune borne numérique IND-CCA du jeu exécuté ne résulte de cette
+composition.
+
+**M28 — `M28_ROUTE_SELECTED_SCOPED`, décision architecturale bornée.**
+R1 est conservé comme moteur expérimental. Une fiche séparée définit un
+candidat R2 fondé sur une PKE
+matricielle CCA2 en modèle standard et une réduction abstraite classique
+PKE→KEM, sous hypothèses. Les paramètres, coûts, formats, implémentation et
+portée quantique de R2 restent à établir ; aucun théorème de cette fiche
+ne prouve R1. La version publiée de la source primaire est conservée dans
+la capsule locale, distincte de la version ePrint à comparer plus tard.
+
+**Décision C01 : ouvert pour le R1 à fonctions fixes.** Le travail avance
+en isolant les obligations mathématiques exactes et en éliminant des
+conclusions non justifiées. Les prochaines dépenses de recherche doivent
+porter sur une réduction indépendante du défi et une route adaptative sans
+secret PKE, ou sur une architecture R2 réellement spécifiée et qualifiée.
+Aucun audit extérieur, nouvelle CI hébergée, publication GitHub, certification
+NIST ou qualification de production n'est crédité à M24–M28.
+
+**19 novembre 2026 — M20 à M23, quatre qualifications bornées du moteur,
+achevées dans leurs portées.** Les protocoles, critères et références ont été
+fixés avant les acquisitions. Les dossiers locaux
+`artifacts/retained/m20-source-root-repro-001/`,
+`m21-path-coverage-001/`, `m22-image-link-001/` et
+`m23-aarch64-port-001/` conservent les images, journaux, premiers essais,
+reçus, contre-revues et manifestes scellés. Ces éléments détaillés ne font
+pas partie du dépôt public.
+
+**M20 — `M20_COMPLETE_SCOPED_DEFAULT`.** Deux extractions vérifiées d'une
+même archive Git, sous des chemins source différents sur le même PC, et deux
+cibles Cargo neuves produisent des exécutables Windows GNU CLI et banc
+identiques octet à octet. Les images correspondent aussi aux images M19 du
+même programme. Chaque CLI passe 16 échanges frais et 16 contrôles de rejet ;
+le banc fournit 30 000 observations contrôlées structurellement. Cela vérifie
+l'invariance au chemin source pour cette chaîne locale, sans démontrer une
+reproductibilité entre machines.
+
+**M21 — `M21_COMPLETE_SCOPED`.** Un pilote unique exécute 176 entrées
+synthétiques de quatre familles dans une seule image Linux instrumentée.
+Le profil et l'export LLVM retenus indiquent 18 issues exercées sur 24 issues
+mappées dans les fichiers R1 actifs ; le code historique P0 est compté
+séparément. Le premier essai, les amendements et les lectures écartées restent
+tracés. Le dénominateur dépend de cette image et de cette toolchain : il ne
+décrit ni tous les chemins sémantiques ni les exécutables release.
+
+**M22 — `M22_COMPLETE_SCOPED`.** Les sources R1 concernées, les témoins
+binaires antérieurs et les images PC exactes sont reliés par empreintes et
+contrôles de lecture bornés. Le PE Windows et l'ELF Linux x86-64 donnent le
+même profil R1 et passent chacun 16 échanges frais et 16 contrôles de rejet.
+La contre-revue accepte la liaison dans ces deux images, sans équivalence
+complète entre source et binaire, ni garantie générale de temps constant ou
+d'effacement.
+
+**M23 — `M23_COMPLETE_SCOPED`.** Une compilation croisée épinglée produit
+une image release ELF64 Linux AArch64, inspectée et retenue hors cache. Sous
+QEMU utilisateur, son profil correspond au témoin PC et elle passe 16 échanges
+frais et 16 contrôles de rejet. Les premières tentatives d'outillage et de
+lecture ont été conservées et corrigées par amendements avant les reprises ;
+une contre-revue accepte l'image et les diagnostics exacts. Ce résultat vaut
+pour Linux AArch64 émulé avec cette chaîne, sans qualification Android ni
+sur un SoC réel.
+
+Le cœur R1, ses paramètres, formats et API sont inchangés depuis M19.
+**R1 reste expérimental et C01 concret ouvert.** Ces cycles ne démontrent ni
+résistance cryptographique générale, ni temps constant, ni effacement global,
+ni aptitude à la production. Aucune nouvelle CI hébergée, publication GitHub,
+revue extérieure ou certification NIST n'est créditée.
+
+**19 novembre 2026 — M19, reproductibilité Windows et branches LLVM dans une
+portée PC définie, verdict `M19_COMPLETE_SCOPED`.** Le nouveau cycle local
+`artifacts/retained/m19-engine-next-001/` a figé 28 entrées de source et de
+preuve, les outils, les critères et le témoin négatif M18 avant les nouvelles
+acquisitions. Un premier essai Windows a été interrompu par le harnais avant
+toute image release ; il est conservé avec l'amendement préalable à la reprise.
+Le changement de configuration Windows GNU, limité à une ligne de l'éditeur
+de liens, est ensuite validé par deux constructions propres et indépendantes
+du CLI et du banc. Les deux paires PE sont identiques octet à octet, avec
+horodatage nul. Chaque CLI conserve le profil R1 et passe 16 échanges frais
+et 16 contrôles de rejet ; le banc exécute 30 000 observations comme contrôle
+fonctionnel. Formatage, Clippy strict et tests Rust du workspace passent
+après le changement.
+
+Quatre harnais Linux instrumentés ont des profils et exports LLVM de branches
+authentiques, liés aux images, sources et corpus par empreinte. Le lecteur
+indépendant retrouve les compteurs à partir des enregistrements de fonctions
+et confronte les résumés LLVM. Le dénominateur est non nul pour chaque image,
+avec une couverture partielle propre à chaque corpus. Il s'agit des issues
+exposées par la toolchain dans ces images instrumentées, pas de tous les
+chemins du moteur ni des binaires release. Les premières erreurs d'outillage
+et de lecture sont enregistrées séparément. La contre-revue interne a
+recompté les images Windows et les quatre exports Linux. Le cœur, les
+paramètres, formats, API et binaire canonique R1 archivé sont préservés ; seul le
+réglage de construction Windows GNU change. **R1 reste expérimental, C01
+concret ouvert.** Ces résultats ne prouvent ni reproductibilité entre hôtes,
+ni temps constant, effacement ou sécurité cryptographique générale. Aucune
+nouvelle CI hébergée ni publication GitHub n'est créditée à M19.
+
+**19 novembre 2026 — M18, six étapes de qualification PC exécutées, résultat
+`M18_PARTIAL`.** Le dossier privé
+`artifacts/retained/m18-engine-qualification-001/` fixe quatorze entrées de
+référence, les cibles Windows et Ubuntu/WSL x86-64 et les critères avant les
+acquisitions. Le nouveau contrôle fonctionnel passe avec huit paires de clés
+fraîches, seize comparaisons Rust/référence Python et trente-deux décisions
+de régression. Chaque image PC passe seize échanges frais et seize contrôles
+de rejet agrégés. La chaîne source du KEM et les images PE/ELF ont été lues
+dans une portée bornée, avec un addendum de liaison Linux contre-vérifié.
+
+Le formatage, Clippy strict et les tests Rust du workspace passent sur les
+deux systèmes. Chaque système a livré 30 000 observations organisées en
+séries appariées avec le témoin ML-KEM-1024 ; R1 est environ cinq à six fois
+plus lent pour les trois opérations dans ces mesures locales. Deux
+compilations Ubuntu sont identiques octet à octet ; celles de Windows ne le
+sont pas, la différence observée
+étant limitée aux champs PE examinés. Quatre campagnes ASan nouvelles passent
+un budget supérieur à 120 secondes CPU chacune. La couverture LLVM des lignes
+est acquise par harnais ; celle des branches est `NOT_ACQUIRED`. Le diagnostic
+temporel a 16 000 mesures par OS, sans signal au seuil fixé, mais ne prouve
+pas le temps constant. Les deux essais préliminaires de couverture et les
+limites des outils sont conservés séparément ; leurs métriques ne sont pas
+créditées.
+
+L'étape de correction conclut `NO_CORE_CHANGE_JUSTIFIED` pour les preuves
+sélectionnées : aucun défaut nouveau du cœur n'a été établi et aucun
+durcissement du code n'est revendiqué. La contre-revue interne accepte ces
+résultats dans leurs portées et recommande `M18_PARTIAL`, car l'égalité brute
+Windows a échoué, les branches LLVM ne sont pas acquises et les garanties
+globales du programme restent ouvertes. Les images, corpus, profils,
+instruments et reçus nécessaires sont retenus localement hors des caches.
+**R1 reste expérimental, C01 concret ouvert ; aucune certification NIST,
+revue cryptographique extérieure, qualification de production, nouvelle CI
+ou publication GitHub n'est déduite.**
+
+**19 novembre 2026 — Parties 3.2 à 3.5, quatre livrables traités dans leur
+portée ; bloc 3 scientifique encore ouvert.** Le cycle privé
+`artifacts/retained/r1-block3-completion-001/` fixe la construction R1
+inchangée et distingue deux jeux : l'argument IND-CCA conditionnel du modèle
+quantique déclaré et le KEM aux fonctions SHA3/SHAKE fixes. La chaîne du
+premier est reconstruite et son calcul exact rejoué ; le second conserve
+une obligation de sécurité non résolue. Les comptes du programme sont liés
+aux sources. Le contrat précédent est revérifié et un diagnostic agrégé
+supplémentaire sur le binaire canonique passe dans sa portée fonctionnelle.
+Une contre-revue indépendante examine la sélection et ses limites.
+Elle a conduit à sélectionner une révision du registre qui rattache
+explicitement le calcul conditionnel au budget élargi correspondant ; les
+premières versions sont conservées.
+
+Les travaux 3.2–3.5 produisent des décisions et reçus vérifiables, sans
+constituer une nouvelle preuve de sécurité pour les fonctions fixes.
+**C01 concret et le but scientifique du bloc 3 restent ouverts ; R1 reste
+expérimental.** Le moteur, ses paramètres et formats, le binaire, les
+archives antérieures et le clone public sont préservés. Le dossier technique
+demeure privé dans NIST ; aucune nouvelle CI, publication GitHub, certification
+ou intégration de production n'est créditée.
+
+**19 novembre 2026 — Bloc 3.1, décision de faisabilité de la preuve R1 à
+fonctions fixes.** Un protocole préalable, les identités du moteur et des
+archives, trois familles de parcours de preuve, une carte des ressources du
+programme entier et des contrôles logiques indépendants sont conservés dans
+`artifacts/retained/r1-fo-feasibility-001/`. Aucun des trois parcours examinés
+n'a fourni une chaîne IND-CCA complète, indépendante et entièrement chiffrée
+pour le R1 inchangé. Un lemme de simulation conditionnel est retenu comme
+résultat structurel, avec ses conditions et coûts encore ouverts. La revue
+des constructions publiées ne fournit aucun théorème directement applicable
+aux fonctions et formats actuels ; elle ne démontre aucune impossibilité
+générale.
+
+Cette décision borne le prochain travail de recherche : choisir explicitement
+le niveau de preuve visé avant de prolonger la calibration numérique, puis
+construire et contrôler le parcours correspondant. Elle ne constate aucune
+attaque contre le moteur. Le bloc 3 reste partiel, C01 concret ouvert et R1
+expérimental. Le résultat conditionnel du bloc 2 conserve son propre modèle.
+Le cœur, les paramètres, le binaire canonique, les capsules antérieures et
+le clone public restent inchangés. Les détails et reçus demeurent privés
+dans NIST ; aucune CI, publication ou intégration de production n'est créditée.
+
+**19 novembre 2026 — Bloc 3, raccord ciblé au KEM concret livré.** Le dossier
+privé `artifacts/retained/r1-concrete-link-001/` relie la chaîne entière du
+programme R1 à ses sources, contrôles d'octets et imports. Il établit une
+nouvelle borne **conditionnelle** de correction d'un échange honnête avec les
+fonctions fixes, en séparant les hypothèses supplémentaires. Les traces
+conservées ont été rejouées et une contre-revue interne a accepté ce résultat
+dans sa portée après correction d'un quantificateur sur les clés honnêtes.
+
+Le raccord ne constitue pas encore la preuve IND-CCA du KEM à fonctions
+fixes : les écarts computationnels requis ne sont pas qualifiés numériquement
+et la composition FO entière reste à établir. Le bloc 3 demeure partiel pour
+cet objectif, C01 concret ouvert et R1 expérimental. Le bloc 2 conserve sa
+clôture dans son modèle conditionnel déclaré. Le cœur, les paramètres, le
+binaire canonique, les anciennes capsules et le dépôt public sont inchangés.
+Le rapport détaillé et les reçus restent privés dans NIST.
+
+**19 novembre 2026 — Livrable natif ciblé du bloc 1 achevé.** Les calculs
+globaux de R1 et du témoin ont terminé, avec certificats exacts du réseau
+initial complet et rejeux indépendants. La comparaison est exécutée et
+rejouable selon les mêmes conventions. Les deux matrices conservées gardent
+leur identité historique ; aucune nouvelle cohorte n'est créditée.
+
+Les résultats renforcent le dossier expérimental et sa vérifiabilité. Les
+intervalles de comparaison se recouvrent et ne démontrent ni gain strict
+d'avantage ni supériorité globale. Les qualifications complémentaires et les
+limites de mesure sont consignées séparément, avec les tentatives et reprises.
+Ce lot ne ferme pas la recherche générale de résistance. R1 reste expérimental,
+C01 concret ouvert. Les détails sont privés dans NIST ; le moteur, les
+archives antérieures et la publication sont préservés.
+
+**19 novembre 2026 — Bloc 2 formellement clos dans le modèle conditionnel
+déclaré.** Le calcul de bout en bout du modèle élargi, les ressources
+transmises à l'hypothèse de résistance et la borne finale sont constitués
+et contrôlés. Le verdict reste celui déjà acquis : cible retenue satisfaite
+sous les hypothèses explicitement déclarées. Cette décision formalise la
+clôture du livrable de calcul ; elle ne constitue pas une nouvelle avancée
+scientifique ou une nouvelle série de tests.
+
+Les blocs 1, 3 et 4 restent partiellement réalisés au regard des livrables
+généraux demandés. Le dossier privé lie la décision aux résultats sélectionnés
+et aux revues postérieures, sans réécrire les archives. Les hypothèses de
+résistance et le passage aux primitives fixes restent distincts du calcul
+conditionnel. R1 reste expérimental et C01 concret ouvert. Aucune modification
+du moteur ou nouvelle publication GitHub n'est effectuée par cette clôture.
+
+**Quatre blocs de qualification mis en œuvre dans leurs portées.** Le cycle
+privé fournit de nouveaux calculs natifs avec certificats et limites
+conservés, une composition quantitative du modèle idéal élargi, une branche
+conditionnelle pour la population PKE concrète et une qualification plus
+large du cycle source/binaire. Les acquisitions et leurs rejeux indépendants
+sont conservés ; les résultats négatifs ne sont pas effacés.
+
+La sélection comporte 90 tests ciblés distincts pour les volets réduction,
+population concrète et programme ; les témoins numériques et relectures
+restent comptés séparément. Les hypothèses de résistance ne sont pas adoptées
+sur la seule base des expériences. Les conclusions idéalisées, concrètes et
+logicielles conservent leurs conditions respectives et ne sont pas fusionnées
+en une garantie du KEM complet. Les limites de provenance sont consignées.
+
+R1 reste expérimental et C01 concret ouvert. Les sources, paramètres,
+formats et binaire canonique sont préservés ; aucun résultat ne justifie un
+correctif de production dans ce cycle. Les rapports PC sont actualisés et
+les détails restent privés. Le dépôt public reste au commit cc65426 ; aucun
+nouveau push, résultat de CI hébergée ou déploiement n'est crédité.
+Le dossier interne est scellé et son intégration indépendante acceptée.
+Les archives précédentes et les entrées protégées ont été contrôlées ; les
+diagnostics et leurs corrections d'instruments restent conservés.
+
+**Publication de la synthèse ciblée vérifiée.** Le commit
+[`cc65426`](https://github.com/MajidNIMAR/mlkem-1536-core/commit/cc65426a44e0fdbf9647d6a22dbe33baf72d47c0)
+est publié sur main. La présentation et les synthèses documentaires ont été
+relues ; les six documents publics sont accessibles anonymement et leurs
+octets correspondent au commit. Le moteur, les archives et les réglages du
+dépôt sont préservés. Les détails scientifiques restent privés. Cette
+publication ne crédite aucune nouvelle CI ; R1 reste expérimental et sa
+qualification concrète C01 ouverte.
+
 **Présentation publique actualisée de l'étude ciblée.** Le README, SECURITY
 et la note de portée présentent une synthèse des expériences exécutables,
 du rejeu indépendant et des extensions du modèle idéal. Les 66 tests ciblés

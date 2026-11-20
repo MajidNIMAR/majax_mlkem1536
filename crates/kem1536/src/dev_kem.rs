@@ -816,6 +816,20 @@ mod tests {
         assert_eq!(message, [0; 32]);
     }
     #[test]
+    fn pke_decrypts_when_encryption_coins_match_keygen_noise() {
+        let d = [0x42; 32];
+        let (ek, dk) = keygen_internal(&d, &[0x24; 32]);
+        let mut expanded = Zeroizing::new([0; 64]);
+        derive_into(b"KG\0", &[&d, &[6]], &mut expanded);
+        let coins = EncryptionCoins(seed_tail(&expanded));
+        for message in [[0; 32], [0xff; 32], [0x5a; 32]] {
+            let ciphertext = pke_encrypt(&ek, &message, &coins);
+            let mut recovered = [0; 32];
+            pke_decrypt_into(&dk.0[..VECTOR_BYTES], &ciphertext, &mut recovered);
+            assert_eq!(recovered, message);
+        }
+    }
+    #[test]
     fn ciphertext_clone_has_independent_storage() {
         let original = Ciphertext::from_bytes(&[3; CIPHERTEXT_BYTES]).unwrap();
         let mut cloned = original.clone();

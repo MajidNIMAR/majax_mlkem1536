@@ -15,7 +15,7 @@ evidence needed to examine its evolution.
 [Specification](docs/SPECIFICATION_DEV_Q7681_R1.md) ·
 [Engine and API guide](docs/MOTEUR_KEM_R1.md) ·
 [Research report](docs/RAPPORT_RECHERCHE.md) ·
-[Current status — M17 and later research](docs/ETAT_RECHERCHE_C01.md) ·
+[Current status — C01 construction gates](docs/ETAT_RECHERCHE_C01.md) ·
 [Verification and test record](docs/TESTS_AND_EVIDENCE.md) ·
 [Research progress through M15](docs/ETAT_RECHERCHE_M15.md) ·
 [M15 Windows replay lot](research/reproducibility/m15/implementation/README.md) ·
@@ -26,30 +26,225 @@ evidence needed to examine its evolution.
 
 [![Main-branch checks](https://github.com/MajidNIMAR/mlkem-1536-core/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/MajidNIMAR/mlkem-1536-core/actions/workflows/ci.yml)
 
-## Current research status — M17 and later work, 19 November 2026
+## Current research status — C01 construction gates, 20 November 2026
 
-**M17 is the latest numbered research milestone.** The subsequent C01 and
-block-3 studies are newer work without an M18 designation. M10 remains the
-delivered engine reference; M16 is an earlier research milestone.
+The latest local research gives a conditional reduction for the **full
+classical IND-CCA game with six independent typed random oracles**. It
+accounts for adaptive decapsulation and links the remaining challenge
+problem to two decision Module-LWE distributions at the exact R1
+dimensions. Their hardness at the reduction's enlarged resource budget
+has not been proved. A replayable fixed SHA3/SHAKE game harness and
+independent role checks validate bounded execution paths, but they do
+not transfer that ideal-model proof to the implemented fixed functions.
+**Concrete C01 remains open; R1 is experimental and is not qualified for
+production.** The detailed new proof and acquisition capsules remain
+local and outside Git. See the [research report](docs/RAPPORT_RECHERCHE.md),
+[C01 scope](docs/ETAT_RECHERCHE_C01.md) and
+[verification record](docs/TESTS_AND_EVIDENCE.md).
+
+### Earlier 19 November classical shared-permutation work
+
+**Classical shared-permutation follow-up:** the ideal challenge-key hop
+can be related to a common random permutation only after accounting for
+oracle work performed by its simulator; the remaining target-query event
+has no adopted bound. A separate, restricted game without direct
+permutation access transfers the adaptive correction estimate under a
+deterministic total budget of `2^32` permutation calls: its bound is below
+`2^-192` for monitored honest-key encryptions. This is an ideal-permutation
+result, not a claim for fixed Keccak-f, quantum queries or the full
+IND-CCA game. **Concrete C01 remains open.** Detailed records stay local.
+
+**Earlier local C01 work:** a selected generic extraction route was checked
+against R1's exact message and key sizes and does not supply the missing
+challenge-key proof. A narrow ideal-oracle challenge-key hop isolates a
+still-unbounded target-query event and an explicit pre-challenge Decaps
+term. An internally reviewed lemma bounds honest decapsulation errors for
+one key and every message in the same typed ideal-oracle game. It also
+removes one conditional decoding-error term from the adaptive trace
+argument. These results do not construct the required witness extractor,
+bound the target-query event, or transfer to fixed SHA3/SHAKE. One new
+Rust regression test checks a source-level noise-coincidence identity; the
+production engine, parameters and wire formats are unchanged. Detailed
+proof and review capsules remain local, outside Git. **Concrete C01 is open;
+R1 is experimental.** See the [current C01 scope](docs/ETAT_RECHERCHE_C01.md)
+and [verification record](docs/TESTS_AND_EVIDENCE.md).
+
+An additional classical ideal-oracle calculation covers adaptively chosen
+evaluations under a budget of at most `2^32` distinct noise seeds, including
+direct oracle calls and any simulator work. Its exact rational upper bound
+on the stated correction event is below `2^-195`. This is a scoped
+correctness result, not an IND-CCA security level or a claim about the fixed
+primitives.
+
+**An earlier local proof-route cycle** checked a public-key distribution
+switch, a conditional adaptive-decapsulation coupling and a quantitative
+classical ideal-permutation bound for the six SHA3/SHAKE roles. Independent
+finite readers and scope checks passed. These results do not supply an
+efficient challenge-key or Decaps reduction for the exact fixed-function
+R1 KEM; the quantum and fixed-function transfers remain open. The engine
+and wire formats did not change. **Concrete C01 remains open and R1 remains
+experimental.** The detailed capsules are retained locally, outside Git.
+
+**A further closure attempt has verified new scoped lemmas, a decoding
+certificate and an honest-correction game bridge for the exact R1 profile.**
+The bridge still contains fixed-function terms without adopted numerical
+bounds; the challenge-key and adaptive-decapsulation reductions are unresolved. A generic search
+result is an upper cost bound, not proof of resistance. The Rust workspace
+was rechecked locally (strict Clippy, 46 tests with all features). Detailed
+research capsules remain local. **R1 is experimental and concrete C01 is
+open.** See the [current C01 scope](docs/ETAT_RECHERCHE_C01.md),
+[research report](docs/RAPPORT_RECHERCHE.md) and
+[verification record](docs/TESTS_AND_EVIDENCE.md).
+
+**Blocks 2–4 have scoped local results.** R1's actual sizes, correction
+model and selected resistance estimates have been recomputed, but the
+security parameter freeze is held because no fixed-function IND-CCA bound
+has been established. A source and size review of selected R2 routes did
+not identify a viable rank-six-by-256 construction with verified proof,
+parameters, formats and cost. The current R1 engine passed fresh local
+Rust checks, 64 comparisons to the independent Python reference and 256
+exchanges with 256 rejection checks; a preparatory external review packet
+has been drafted, but no external review has been received. These detailed records remain
+local, outside the public repository. **R1 remains experimental and C01
+remains open.** See the [research report](docs/RAPPORT_RECHERCHE.md),
+[C01 status](docs/ETAT_RECHERCHE_C01.md) and
+[verification record](docs/TESTS_AND_EVIDENCE.md).
+
+### Earlier Block 1 proof-route decision
+
+The post-M28 **Block 1** examined whether the missing fixed-function
+challenge-key and adaptive-decapsulation arguments can be supplied by the
+selected proof routes for unchanged R1. New formal counterexamples and a
+bounded simulation result reject those routes as complete justifications;
+an independent internal reading checked their stated scope. A review of
+selected primary literature found no theorem that supplies the missing
+transitions for the executed construction. This is a decision about the
+**proof routes examined**, not a cryptanalytic break or a general
+impossibility theorem. The detailed capsule is retained locally, outside
+the public repository.
+
+**Concrete C01 remains open.** There is no fixed-function IND-CCA bound,
+new security rating, engine change, hosted CI run or external audit from
+this block. The next research decision is whether to develop a
+construction-specific R1 argument or a separately specified construction.
+See the [research status](docs/ETAT_RECHERCHE_C01.md) and
+[verification record](docs/TESTS_AND_EVIDENCE.md).
+
+## Earlier research — M24–M28 C01 work, 19 November 2026
+
+Five further **local research blocks** examine the complete security argument
+for the unchanged R1 KEM. M24 fixes the exact public-function challenge game
+and rules out circular proof shortcuts. M25 checks seeded-PKE distribution and
+recomputes a bounded, common-model cost panel; those estimates are not bounds
+for the real seeded KEM. M26 establishes one conditional game hop for the
+rejection function and links all six primitive roles to the source. M27
+composes the selected results and identifies the independent challenge-key
+argument and adaptive-decapsulation reduction still needed. M28 retains R1 as
+experimental and records a separate, unimplemented construction candidate for
+further study. The scoped M24–M28 records and internal reviews are retained
+locally, outside this public repository.
+
+**Concrete C01 remains open.** These blocks do not prove fixed-function
+IND-CCA security for R1, assign it a security level, qualify a quantum-secure
+R2, or change the engine's parameters, source, formats or API. No new hosted
+CI run, external cryptographic audit, public replay package or production
+qualification is credited. See the [research status](docs/ETAT_RECHERCHE_C01.md)
+and [test record](docs/TESTS_AND_EVIDENCE.md) for scope and provenance.
+
+## Earlier research — M20–M23 scoped engine qualification, 19 November 2026
+
+**M20–M23 are four locally retained and internally reviewed cycles on the
+unchanged experimental R1 engine.** They add bounded build, coverage, image
+and portability evidence. M10 remains the delivered engine reference.
+
+M20 produced byte-identical Windows GNU CLI and benchmark images from two
+independently extracted source locations on the same PC. Both CLI images
+passed 16 fresh exchanges and 16 rejection checks. This establishes source
+path invariance for the declared build chain, not reproducibility between
+machines.
+
+M21 ran 176 synthetic inputs from four API families in **one** Linux LLVM-
+instrumented image. The retained profile and export show 18 exercised outcomes
+among 24 mapped branch outcomes in the active R1 source files. These counts
+are specific to this image, toolchain and corpus; they are not an inventory of
+all program paths or a measurement of the release executable. Historical P0
+code is counted separately.
+
+M22 linked bounded binary witnesses and functional diagnostics to the exact
+retained Windows PE and Linux x86-64 ELF images. Both images reported the same
+R1 profile and each passed 16 fresh exchanges and 16 rejection checks. This
+does not establish whole-program source-to-binary equivalence.
+
+M23 built and examined a Linux AArch64 release ELF with the pinned cross-build
+chain. Under QEMU user emulation, that image reported the same R1 profile as
+the PC witness and passed 16 fresh exchanges and 16 rejection checks. This
+qualifies the stated emulated Linux execution, not Android or a real device.
+
+The source, parameters, wire formats and API of R1 did not change in these
+cycles. **R1 remains experimental and concrete C01 remains open.** None of
+these results proves general constant time, erasure or cryptographic security.
+The detailed M20–M23 evidence is retained locally, not included in this
+repository. There is no new hosted CI result, public replay package, external
+audit, NIST certification or production qualification.
+
+## Earlier research — M19 scoped build and coverage qualification, 19 November 2026
+
+**M19 was a numbered engine qualification cycle; its result was
+`M19_COMPLETE_SCOPED`.** M10 remains the
+delivered engine reference. The C01 and
+block-3 studies address a separate cryptographic security obligation.
 
 **The Rust R1 engine is executable and remains experimental. Its complete
 concrete security qualification (C01) is open.** The engine sources, parameters,
-wire formats and canonical binary have not changed in the recent research
+wire formats and archived canonical binary have not changed in the recent research
 cycles. There is no NIST certification, external cryptographic audit, global
 security rating or production qualification.
 
-Four recent research work packages now have internally cross-checked deliverables
-within their stated scopes: a construction decision, an audited conditional
-whole-KEM argument, a recalculation with the matching resource budget, and a
-source-to-program link with an aggregate functional check. The ideal-model
-argument does not establish security for the concrete fixed-function KEM.
+M19 resolved two specific M18 measurement gaps on the declared PC targets.
+A one-line Windows GNU linker configuration change gave **raw, byte-identical
+CLI and benchmark executables from two new clean builds** on the same host.
+Both CLI images kept the R1 profile and passed 16 fresh exchanges and 16
+rejection checks; a benchmark image emitted 30,000 structurally valid
+observations as an execution check. Rust workspace tests, formatting and
+strict Clippy passed after the configuration change. Separately, four Linux
+LLVM-instrumented harnesses produced authentic, nonzero branch counters
+linked to their retained images and corpus. This is partial branch coverage
+of the instrumented source, not a measure of the release executables or an
+exhaustive path inventory. Internal cross-review checked both results.
 
-The latest local qualification selected **90 distinct targeted tests** across
-three scoped suites. A subsequent binary diagnostic completed **16 fresh
-exchanges and 16 rejection checks**. Other recent work reused earlier records
-or checked readers and reasoning; those replays are not counted as new engine
-tests. Resistance studies are reported only as bounded research with their
-limits retained.
+M19 changed no cryptographic core code, parameters, formats or API. Its
+same-host reproducibility and instrumented coverage results do not establish
+cross-host reproducibility, constant time, erasure or concrete security.
+There is no new hosted CI run or public replay package for M19. Concrete C01
+remains open.
+
+**M18, the preceding PC qualification cycle, remained partial.** Its
+negative Windows reproducibility and missing branch measurement were the
+starting points for M19.
+
+M18 fixed the source and two PC targets before acquisition. A new Windows API
+check passed **16 Rust/Python reference comparisons** and 32 regression
+decisions. Both selected Windows and Ubuntu executables passed aggregate
+diagnostics of **16 fresh exchanges and 16 rejection checks**. Formatting,
+strict Clippy and Rust workspace tests passed on both systems. Four fresh
+ASan campaigns met their predeclared CPU budget. Each OS also produced 30,000
+benchmark observations in paired series against an ML-KEM-1024 implementation. In these
+local measurements R1 is approximately **five to six times slower** across
+the three measured operations; the figures do not compare security levels.
+
+Two clean Ubuntu builds were byte-identical. The two Windows builds differed
+in PE header metadata, so raw binary reproducibility on Windows **failed**
+the stated criterion. LLVM line coverage was measured per harness; branch
+coverage was **not acquired**. A finite PC timing diagnostic found no signal
+at its predeclared triage threshold, which is not proof of constant time.
+No new core defect was established in the selected checks, so M18 made no
+cryptographic code or format change. The full binary, memory and concrete C01
+obligations remain open. M18 has an internal cross-review and retained local
+evidence; it is not an external audit or a new public replay package.
+
+The preceding research work packages remain described below and in the
+[C01 scope note](docs/ETAT_RECHERCHE_C01.md). Their earlier test counts are
+not added to M18 as new acquisitions.
 
 The [verification and test record](docs/TESTS_AND_EVIDENCE.md) separates public
 CI and the public M15 replay lot from local research checks. Counts from

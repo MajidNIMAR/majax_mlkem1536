@@ -1,5 +1,367 @@
 # Journal de recherche — KEM 1536
 
+## 20 novembre 2026 — saut de clé complet idéal et examen des fonctions fixées
+
+Une preuve privée, relue en deux passes, construit un simulateur de
+Decaps dans le jeu R1 classique à rôles aléatoires typés. Elle traite
+séparément les appels avant le défi, les graines déjà touchées, la
+correction des chiffrés honnêtes et la première acceptation sans témoin
+public. La réduction obtenue relie l'avantage IND-CCA à l'inversion du
+PKE ensemencé ; un second dossier relie cette inversion aux distributions
+Module-LWE `(6,6)` et `(7,6)` sous le même modèle idéal. Les budgets
+des distinguteurs sont élargis en conséquence ; aucune valeur de
+difficulté Module-LWE n'est certifiée. Les capsules scellées conservent
+protocole, preuve, vérificateurs, contre-lectures et limites.
+Le lecteur de composition confirme par fractions exactes un résidu
+hors avantages Module-LWE `<2^-189` sous les plafonds illustratifs
+déclarés, sans le confondre avec une résistance du KEM. Le transfert
+possible à une permutation aléatoire partagée reste un corollaire de
+jeu arrêté sans accès direct à cette permutation, et non un résultat
+pour Keccak-f fixé.
+
+Un audit fonctionnel de huit vecteurs contrôle les rôles SHA3/SHAKE
+fixés. Un banc de 464 parties et 16 vecteurs Rust historiques contrôle
+la surface du jeu, ses plafonds et son rejeu ; les résultats restent
+des observations de stratégies finies. Le transfert général du modèle
+idéal aux fonctions publiques fixées n'est pas justifié, et aucune borne
+IND-CCA du programme fixé n'est adoptée. **C01 concret reste ouvert.**
+Le moteur de production, les paramètres et les formats sont inchangés.
+
+## 19 novembre 2026 — composition multidébit classique, portée bornée
+
+Après le commit `d10f733`, les deux nouveaux lemmes idéaux ont été
+confrontés au théorème multidébit déjà étudié. La contre-lecture des
+sources primaires confirme le coût total déterministe et l'applicabilité
+au méta-jeu qui exécute Decaps, mais révèle que l'interface directe de
+permutation fait intervenir des consultations cachées du simulateur.
+Le saut de tête conserve donc un événement résiduel non chiffré.
+
+Une version restreinte sans cette interface directe permet de transporter
+la borne de correction à la permutation aléatoire partagée pour un jeu
+plafonné et des chiffrés effectivement surveillés. Le majorant est
+inférieur à `2^-192` sous `N≤2^32`. Cette acquisition est distincte
+de l'argument IND-CCA complet et ne porte ni sur Keccak-f fixé ni sur
+les requêtes quantiques. Les dossiers détaillés restent locaux et
+ignorés par Git ; C01 concret demeure ouvert.
+Le lecteur d'intégration privé et son sceau passent après vérification
+des capsules nouvelles et du reçu multidébit historique.
+
+## 19 novembre 2026 — correction adaptative idéale et piste de preuve A
+
+Le protocole a gelé la source R1 et les hypothèses de deux nouvelles
+études. La première a écarté une route d'extraction statistique précise
+pour la clé du défi, sans inférer de faiblesse du KEM. La seconde a établi
+et fait contre-lire une borne de correction simultanée pour tous les
+messages d'une clé honnête dans un jeu à rôles idéaux typés. Cette borne
+réduit un événement du couplage Decaps conditionnel, mais ne fournit ni
+extracteur ni réduction du défi. Les capsules et leurs lecteurs restent
+locaux et exclus de Git. Un test Rust a été ajouté sous `#[cfg(test)]` pour
+vérifier la cohérence du bruit lorsque les graines coïncident ; le code de
+production et les formats n'ont pas été modifiés. C01 concret reste ouvert.
+Une troisième note, contre-lue séparément, isole dans le jeu idéal un
+saut de la tête du défi et le coût des réponses Decaps antérieures au
+défi. Un contrôle fini rejette une version qui omettrait ce coût.
+La probabilité de consultation de l'entrée cible après le défi n'a pas
+été bornée ; le résultat reste conditionnel.
+
+Un calcul à budget borné a ensuite traité les graines de bruit choisies
+adaptativement dans le même jeu classique idéal. Deux vérificateurs
+recomposent une borne inférieure à `2^-195` pour au plus `2^32` graines
+distinctes effectivement touchées par clé, moteur et éventuel simulateur.
+La correction des chiffrés honnêtes est seule visée ; le raccord à une
+permutation partagée et aux fonctions fixées reste à démontrer.
+Le lecteur d'intégration et son sceau passent après contre-lecture des
+deux nouveaux lemmes ; les termes non chiffrés sont conservés comme ouverts.
+
+## 19 novembre 2026 — nouvelle tentative de fermeture de C01 concret
+
+Le programme C01 reprend avec trois analyses parallèles : réduction
+IND-CCA du KEM à fonctions fixes, hypothèses et domaines des primitives,
+et panneau quantitatif à la dimension et aux distributions réelles.
+Chaque résultat sera confronté au même jeu et aux octets du moteur.
+Les nouveaux articles pertinents pour les rangs élevés et les attaques
+physiques sont lus dans leurs modèles respectifs ; aucun résultat d'un
+autre schéma ou d'un autre modèle ne sera transféré automatiquement à R1.
+À ce stade, la décision du bloc 1 et les portes des blocs 2 à 4 restent
+en vigueur : R1 expérimental, C01 concret ouvert.
+La preuve de collision sans injectivité et le certificat du rayon
+uniforme de décodage ont été contre-lus, scellés et rejoués. Le raccord
+conditionnel de correction honnête, l'audit des six rôles fixés, le
+plafond quantitatif de recherche et le filtrage d'une route alternative
+ont ensuite été contre-lus et conservés séparément. Tous les lecteurs
+et sceaux sélectionnés passent. Le contrôle Rust/Clippy du programme
+inchangé passe aussi avec 46 tests dans les groupes non vides.
+Ces résultats traitent la correction et des limites de coût ; la
+réduction IND-CCA du jeu fixe, ses avantages chiffrés et le raccord
+source-vers-binaire complet restent ouverts. Aucun résultat n'est
+compté comme un avis cryptographique extérieur ou un niveau de sécurité.
+La lecture intégrale de trois voies primaires à fonctions fixées ne
+fournit aucun transfert direct au KEM R1 inchangé. Le résultat négatif
+le plus récent est générique et ne montre aucune faille R1 ; son
+théorème positif vise un autre objet cryptographique. Les conditions
+de cette décision sont conservées dans `c01-fixed-route-search-001/`.
+Une simulation conditionnelle des réponses Decaps adaptatives a été
+établie pour une variante de KeyGen capée, puis contre-lue. Son coût
+exhaustif et la probabilité non chiffrée de dépassement empêchent de
+l'utiliser comme réduction C01 du programme inchangé. Le dossier
+`c01-proof-route2-001/` conserve la tentative initiale, son amendement
+et les contrôles finis ; le raccord de clé défi demeure indépendant.
+La candidate de découplage conjoint de G a été rejetée comme hypothèse
+indépendante plus faible après démonstration de son lien au défi ; son
+diagnostic borné est conservé dans `c01-joint-decoupling-001/`.
+Un amendement R2 ne recalcule pas les tailles déjà acquises, mais vérifie
+qu'une condition de la route matricielle corrigée de 2025 échoue avec
+`n=1536,q=7681`. Il ne se transporte pas au module R1 et n'établit pas
+la sécurité d'un autre profil.
+
+## 19 novembre 2026 — décisions des blocs 2, 3 et 4 du programme C01
+
+Les protocoles ont été fixés avant les nouveaux calculs. Le bloc 2 a
+recomposé les tailles, la correction et les panneaux d'attaque du vrai
+profil R1 avec un témoin ML-KEM-1024. Les lecteurs et contrôles négatifs
+passent ; `BLOCK2_PARAMETER_FREEZE_HELD` évite de transformer ces modèles
+en garantie du KEM à fonctions fixes. Le bloc 3 a contrôlé des sources
+primaires et calculé le coût dimensionnel d'une route matricielle, puis
+retenu `R2_SELECTED_CANDIDATES_NOT_VIABLE_YET` pour les candidats
+examinés : aucun R2 à six blocs de 256 coefficients n'est prêt à coder.
+Le bloc 4 a produit deux images R1 retenues, 64 comparaisons à la
+référence indépendante, 256 échanges et 256 rejets frais, ainsi qu'un
+mandat de revue extérieure. Son résultat `BLOCK4_PREPARED_PARTIAL` ne
+compte aucune revue reçue ni nouveau moteur. Les dossiers sont conservés
+localement sous `artifacts/retained/r1-c01-block2-001/`,
+`r2-block3-001/` et `r1-c01-block4-001/`. R1 reste expérimental et C01
+concret ouvert ; aucun code ni format cryptographique n'a été modifié.
+Les trois sceaux et les lecteurs sélectionnés ont été vérifiés avant le
+commit documentaire.
+
+## 19 novembre 2026 — bloc 1 C01 : décision sur les routes de preuve R1
+
+Le protocole a fixé avant analyse les deux raccords manquants de M27,
+les fonctions fixes du programme R1 et les conditions de sélection. La
+branche « clé défi » a établi des contre-exemples génériques bornés à
+des prémisses de preuve ; la branche « Decaps adaptative » a établi un
+obstacle pour une classe de simulateurs externes ; la lecture des sources
+primaires a contrôlé la transférabilité à la construction inchangée.
+Des contrôles finis et lecteurs indépendants rejouent les identités ; des
+contre-lectures internes ont vérifié les quantificateurs et les limites.
+
+Le verdict sélectionné est `R1_SELECTED_ROUTES_NO_GO` **pour les routes
+examinées**. Aucun argument complet du R1 fixe n'en résulte, sans pour
+autant conclure à une attaque ou à une impossibilité générale. La capsule
+`artifacts/retained/r1-c01-block1-001/` garde les détails localement.
+R1 demeure expérimental, C01 concret ouvert ; le cœur et les formats
+restent inchangés. Aucune publication GitHub ou CI nouvelle n'est créditée.
+
+## 19 novembre 2026 — M24 à M28, décision scientifique C01
+
+Après M23, cinq blocs ont été engagés sur l'argument de sécurité du R1
+exécuté. M24 a figé le jeu à fonctions fixes et éliminé deux raccourcis
+circulaires ; M25 a acquis et recomposé quatre coûts ciblés dans un modèle
+commun, en gardant ses limites de distribution et d'extrapolation ; M26 a
+démontré un saut conditionnel borné pour le rejet et relié six rôles de
+primitives au code ; M27 a composé les résultats en conservant explicitement
+les termes inconnus. M28 a confronté le résultat à une construction R2
+distincte, avec réduction abstraite classique et obligations ouvertes.
+
+Les protocoles, amendements, premiers échecs, résultats sélectionnés,
+lecteurs, revues et sceaux sont conservés dans les cinq dossiers locaux
+`artifacts/retained/m24-concrete-game-001/` à
+`m28-architecture-decision-001/`. Aucun coût modèle ne devient une borne
+du KEM concret. Le cœur R1, ses paramètres et formats restent inchangés ;
+**C01 concret reste ouvert** et R1 expérimental. Le candidat R2 ne constitue
+ni une implémentation ni une preuve du R1. Les résultats détaillés demeurent
+hors du dépôt public ; aucune CI hébergée ou publication GitHub nouvelle
+n'est créditée.
+
+## 19 novembre 2026 — M23, premier port Linux AArch64 sous émulation
+
+Le protocole, la cible et les critères précèdent l'acquisition des outils et
+la compilation croisée. Le premier essai d'installation, puis deux limites
+de harnais de diagnostic et de lecture, sont conservés avec leurs amendements
+et reprises. Une image release ELF64 AArch64 est retenue hors cache ; son
+profil R1 est égal au témoin PC et son autotest sous QEMU utilisateur passe
+16 échanges frais et 16 contrôles de rejet. Le lecteur sélectionné se rejoue
+et une contre-revue interne accepte `M23_COMPLETE_SCOPED`. Cette exécution
+émulée ne qualifie ni Android ni un appareil réel.
+
+## 19 novembre 2026 — M22, liaison bornée des images PC exactes
+
+La sélection préenregistrée conserve les images historiques Windows PE et
+Linux ELF x86-64. Un lecteur et une contre-revue relient les sources R1
+concernées, les témoins binaires et les diagnostics aux images par empreintes.
+Leur profil concorde ; chaque image passe 16 échanges frais et 16 contrôles
+de rejet. Le verdict `M22_COMPLETE_SCOPED` porte sur ces images et ces témoins,
+sans preuve d'équivalence de tout le programme source et binaire.
+
+## 19 novembre 2026 — M21, mesure de branches réunie dans une image
+
+Les quatre corpus synthétiques sont exécutés par un pilote unique dans la
+même image Linux instrumentée. Le premier essai et une lecture initiale
+écartés restent consignés avec leurs amendements ; la sélection finale couvre
+176 entrées. Le profil et l'export LLVM montrent 18 issues exercées sur 24
+issues mappées dans les fichiers R1 actifs, le code historique étant séparé.
+Le lecteur indépendant, le re-export et la contre-revue acceptent
+`M21_COMPLETE_SCOPED`. Le compte dépend de cette image et ne devient pas un
+taux de couverture de tous les chemins ni des images release.
+
+## 19 novembre 2026 — M20, invariance au chemin source sur le même PC
+
+Une archive Git figée est vérifiée après extraction dans deux emplacements
+source distincts. Deux constructions Windows GNU propres donnent des CLI et
+bancs identiques octet à octet, également identiques aux images M19
+correspondantes. Les CLI passent les diagnostics R1 de 16 échanges et 16
+rejets chacun ; le banc fournit 30 000 observations contrôlées. Lecteur et
+contre-revue acceptent `M20_COMPLETE_SCOPED_DEFAULT` pour cette chaîne sur
+un seul PC. La reproductibilité entre machines reste à démontrer.
+Après vérification des chemins cibles, la tentative de suppression des copies
+reconstructibles `work/` et `cache/` a été refusée automatiquement par l'outil
+(`blocked by policy`). Aucune suppression ni voie de contournement n'a été
+tentée ; ces copies restent dans NIST, hors du manifeste des preuves.
+
+Les quatre cycles ne modifient ni cœur, ni paramètres, ni formats, ni API R1.
+Leurs dossiers détaillés sont conservés localement sous `artifacts/retained/`,
+hors du dépôt public. R1 demeure expérimental, C01 concret ouvert ; aucune
+nouvelle CI, publication GitHub, certification ou qualification de production
+n'est créditée.
+
+## 19 novembre 2026 — M19, deux limites M18 traitées dans leur portée
+
+Le protocole M19 et les critères de sortie ont précédé les essais. Une
+référence initiale de 26 entrées, complétée par un addendum de deux fichiers
+avant les compilations, garde l'identité source et le témoin M18. Le premier
+lancement Windows s'arrête dans l'outillage de capture avant tout binaire ;
+l'essai et son amendement sont conservés. Deux builds propres avec un réglage
+Windows GNU ciblé donnent des CLI et bancs bruts égaux par paire. Après
+application de cette seule ligne suivie, deux nouveaux builds propres
+reproduisent cette égalité et les contrôles fonctionnels ; formatage, Clippy
+strict et tests Rust passent.
+
+Un témoin LLVM a établi la capacité de l'outil à produire de vrais compteurs
+de branches. Quatre harnais Linux R1 disposent ensuite d'images, profils et
+exports retenus ; un lecteur indépendant retrouve les compteurs et une
+contre-revue vérifie leur liaison aux sources et corpus. La première lecture
+inadéquate des exports reste enregistrée. Les mesures sont partielles,
+propres à ces images instrumentées et corpus, sans conclusion pour les
+exécutables release. Le changement suivi concerne seulement la configuration
+Windows GNU ; le cœur R1 et ses formats sont inchangés. C01 concret reste
+ouvert, R1 expérimental. Aucune CI ou publication GitHub nouvelle n'est
+créditée.
+
+La contre-revue interne accepte les deux volets et la compatibilité dans les
+critères fixés à l'avance : verdict `M19_COMPLETE_SCOPED`. Ce statut ne qualifie pas
+la sécurité globale du KEM ni une exploitation en production.
+
+## 19 novembre 2026 — M18, six étapes PC et décision partielle
+
+Le protocole, la baseline et la grille des six étapes ont précédé les
+acquisitions dans `artifacts/retained/m18-engine-qualification-001/`. La
+qualification fonctionnelle nouvelle, les diagnostics des deux images PC,
+les régressions Rust et les deux séries de 30 000 mesures passent dans leurs
+portées. Les quatre campagnes ASan atteignent chacune le budget CPU direct
+préfixé. Les images, corpus et profils utiles sont conservés hors cache.
+
+Le contraste des constructions répétées est conservé : égalité brute Ubuntu,
+inégalité brute Windows limitée aux champs PE examinés. Les exports LLVM
+permettent de mesurer les lignes par harnais, sans compteur de branches.
+Le diagnostic temporel ne montre aucun signal au seuil interne, sans preuve
+générale de temps constant. Les tentatives d'outillage et de couverture
+écartées, y compris leur séquence de correction, restent dans le dossier
+privé. Une contre-revue interne a recompté les résultats et leurs limites.
+
+La décision de l'étape 4 est `NO_CORE_CHANGE_JUSTIFIED` : aucun défaut
+nouveau du cœur n'est démontré, aucun patch ou gain de durcissement n'est
+crédité. Le verdict global recommandé est `M18_PARTIAL`. Le moteur, ses
+paramètres et formats sont inchangés ; R1 expérimental, C01 concret ouvert.
+Les détails restent locaux et aucune nouvelle CI ou publication GitHub n'est
+créditée.
+
+## 19 novembre 2026 — Raccord ciblé du bloc 3 accepté en interne
+
+Le contrat complet KeyGen–Encaps–Decaps, ses primitives et ses imports sont
+rattachés à la source R1. Une sonde privée et un oracle indépendant concordent
+sur les contrôles ciblés ; les anciennes traces KEM sont rejouées pour le lien
+de correction. Une nouvelle chaîne d'hybrides donne une borne conditionnelle
+pour les échanges honnêtes avec les fonctions fixes, avec les termes de
+sampler et de primitives conservés séparément.
+
+La contre-revue a exigé puis vérifié une restriction explicite aux clés
+générées honnêtement. Sept lecteurs passent en lecture seule. Aucun tirage
+supplémentaire, nouvelle mesure de taux rare, qualification binaire générale
+ou audit extérieur n'est crédité. Le bloc 3 progresse sans fermer la sécurité
+IND-CCA du KEM concret : C01 reste ouvert, R1 expérimental. La clôture
+conditionnelle du bloc 2, le moteur et le clone public sont préservés. Détails
+et reçus : `artifacts/retained/r1-concrete-link-001/`.
+
+## 19 novembre 2026 — Ouverture préenregistrée du bloc 3
+
+Le contrat de travail et le plan sont déposés dans
+`artifacts/retained/r1-concrete-link-001/` avant acquisition. Les empreintes
+du cœur, du binaire, du clone public et des résultats antérieurs sont prises.
+Trois volets distincts commencent : programme exact, correction des coins du
+KEM, argument de sécurité avec coûts et hypothèses explicites. Les capsules
+précédentes restent scellées ; aucun résultat ni clôture C01 n'est anticipé.
+
+## 19 novembre 2026 — Continuation native ciblée du bloc 1 achevée
+
+Les routines globales de R1 et du témoin ont terminé. Le réseau original,
+les transformations entières complètes et les lignes sélectionnées ont leurs
+certificats exacts ; les résultats ont été rejoués et comparés dans le cadre
+commun fixé. Les matrices historiques sont des continuations, sans nouvel
+échantillon indépendant. Les reprises et limites de mesure sont conservées.
+
+La comparaison d'intervalles reste inconclusive et ne classe pas la sécurité
+globale. Le livrable numérique visé est achevé, la recherche de résistance
+plus large se poursuit. Les rapports et éléments privés sont dans NIST ;
+archives, moteur et publication sont préservés. R1 expérimental, C01 concret
+ouvert, bloc2 toujours clos dans son modèle conditionnel déclaré.
+
+## 19 novembre 2026 — Clôture formelle du bloc 2
+
+**Décision.** À la demande de l'utilisateur, le bloc « calcul de sécurité dans
+le modèle élargi » est clos dans son périmètre conditionnel déclaré. La
+composition des ressources et la borne finale ont déjà été calculées et
+contre-vérifiées ; la cible retenue est satisfaite sous les hypothèses
+explicites de ce modèle.
+
+**Traçabilité.** Une décision privée lie la sélection scientifique et ses
+revues. Les archives restent inchangées. La clôture ne crée aucun nouveau
+test ou résultat de résistance ; les 11 tests ciblés du volet ne sont pas
+recomptés. Les blocs 1, 3 et 4 restent partiels. R1 expérimental, C01 concret
+ouvert, moteur et publication précédente préservés. Aucun élément sensible
+n'est exposé dans le compte rendu.
+
+## 18 novembre 2026 — Quatre blocs de qualification autorisés et lancés
+
+Protocole et baseline enregistrés pour les calculs natifs, la composition
+quantitative élargie, la population concrète et la qualification du cycle
+source/binaire. Travail privé dans NIST, archives antérieures préservées,
+publication cc65426 inchangée. Aucun résultat scientifique n'est présumé ;
+les conclusions seront consignées avec leurs vérifications et limites.
+
+## 18 novembre 2026 — Quatre blocs mis en œuvre, résultats privés vérifiés
+
+**Résultats.** Nouveaux calculs natifs bornés et certifiés, composition
+conditionnelle chiffrée dans le modèle élargi, branche PKE aux primitives
+fixes et contrôles sur le programme réel, qualification étendue des corps
+source et images PC. Les résultats incomplets ou négatifs sont conservés.
+
+**Vérification.** Rejeux indépendants des données et du cycle sémantique,
+revues des ressources et arguments mathématiques, 90 tests ciblés distincts
+dans les volets sélectionnés. Les reprises ne gonflent pas les comptes. Un
+erratum de provenance distingue les captures principales des contrôles
+supplémentaires ; les traces initiales et leurs limites restent visibles.
+
+**Décision.** Hypothèses, populations et contrats séparés ; aucune clôture
+concrète C01, garantie générale de programme ou supériorité globale déduite.
+R1 expérimental, sources et binaire préservés. Rapport et feuille de route
+actualisés en privé ; aucune nouvelle publication ou CI hébergée créditée.
+
+**Clôture.** Dossier privé scellé après acceptation de l'intégration et du
+rejeu sémantique complet. Les anciennes archives et entrées protégées sont
+vérifiées. Les diagnostics initiaux et leurs limites restent visibles ;
+aucune nouvelle acquisition n'est créditée aux relectures. La demande de
+confidentialité et de silence dans la conversation est maintenue.
+
 Journal créé le 24 octobre 2026 à la demande de l’utilisateur pour préparer un futur article et le dépôt des sources. Les étapes antérieures sont reconstituées à partir des fichiers et comptes rendus existants ; aucune heure d’exécution non enregistrée n’est inventée. Le [rapport courant](RAPPORT_RECHERCHE.md) présente les méthodes et conclusions consolidées.
 
 ## 24 octobre 2026 — Mise en place locale, rappel des étapes déjà réalisées
@@ -2617,4 +2979,100 @@ sans nouveau crédit de CI publique ou de paquet reproductible publié.
 Le moteur, ses paramètres, ses formats et son binaire sont préservés. Les
 budgets historiques ne sont pas élargis gratuitement. R1 reste expérimental
 et C01 concret ouvert. Le titre et les réglages du dépôt sont conservés.
+
+## 18 novembre 2026 — Publication de la synthèse ciblée vérifiée
+
+Le commit public
+[`cc65426`](https://github.com/MajidNIMAR/mlkem-1536-core/commit/cc65426a44e0fdbf9647d6a22dbe33baf72d47c0)
+est poussé normalement sur main, avec son parent attendu. La revue des cartes
+d'export, l'API GitHub et les six lectures anonymes exactes confirment la
+publication documentaire. Les réglages et entrées exécutables sont préservés.
+Les validations locales restent distinctes du lot public M15 et de la CI
+hébergée ; aucune nouvelle exécution n'est créditée. Les détails scientifiques
+restent privés, R1 expérimental et C01 concret ouvert. Le rapport et la feuille
+de route PC enregistrent cette clôture, sans nouvelle republication des reçus.
+
+## 19 novembre 2026 — Bloc 3.1, décision de faisabilité
+
+Le protocole privé fixe le jeu R1 exact, trois familles de parcours vers une
+preuve IND-CCA à fonctions publiques fixes, les critères d'admission et les
+identités des sources avant l'examen. La carte des appels et formats du moteur
+est reconstruite et vérifiée. Les contrôles logiques, la confrontation des
+parcours et une recherche ciblée de théorèmes applicables sont conservés avec
+leurs limites. Une objection de contre-revue sur la portée d'un écart a conduit à
+une révision sélectionnée ; le premier texte reste conservé.
+
+Le livrable est une décision négative bornée : aucune route complète retenue
+parmi les trois examinées. Le lemme conditionnel et les comptes du programme
+restent utiles, mais ne constituent pas un argument complet du KEM concret.
+Il n'y a ni attaque constatée ni impossibilité générale démontrée. Le bloc 3
+reste partiel, C01 concret ouvert, R1 expérimental. Le prochain travail doit
+choisir le niveau de preuve visé avant de prolonger les hypothèses numériques
+ou de décider d'une construction distincte. Aucun changement du cœur, des
+paramètres, du binaire, des archives ou du clone public ; pas de CI ni push.
+
+## 19 novembre 2026 — Parties 3.2 à 3.5, intégration vérifiée dans sa portée
+
+La décision 3.2 conserve le moteur R1 inchangé comme construction étudiée et
+fixe deux jeux distincts : modèle quantique idéalisé déclaré et fonctions
+SHA3/SHAKE publiques fixes. La partie 3.3 reconstruit la chaîne de sécurité
+du KEM entier dans le premier jeu et identifie précisément la condition qui
+empêche son transfert au second. La partie 3.4 recalcule les expressions et
+ressources conditionnelles existantes en arithmétique exacte, puis sépare les
+appels du programme fixe des coûts encore inconnus d'une réduction complète.
+
+La partie 3.5 reprend la carte antérieure de 26 fonctions et les contrôles
+conservés, puis exécute un seul nouveau lot agrégé de 16 échanges et 16
+contrôles de rejet sur le binaire canonique, sans stocker de secrets. Une
+révision de l'instrument de liaison garantit l'ordre d'un futur contrôle
+préalable ; l'instrument initial, ses sorties et le résultat sont préservés.
+La revue indépendante vérifie les sélections, refait les calculs et relit les
+frontières source/binaire et modèle idéal/fonctions fixes.
+
+La contre-revue relève une attribution initiale du calcul scalaire à un
+ancien budget de ressources. Les premières versions sont conservées et les
+sélections 002 de l'argument et du registre rattachent le calcul et son
+budget élargi à la même source. Le seuil conditionnel est recalculé dans ce
+périmètre corrigé ; aucun résultat initial n'est présenté comme acquis pour
+le budget élargi sans ce nouveau contrôle.
+
+Les quatre sous-livrables ont des résultats vérifiables dans leur portée.
+Le bloc 3 reste ouvert pour l'objectif de sécurité du KEM aux fonctions fixes,
+C01 concret ouvert et R1 expérimental. Aucun changement du cœur, des
+paramètres, des formats, du binaire ou du clone public ; aucune nouvelle CI,
+publication GitHub ou intégration de production n'est créditée.
+
+## 19 novembre 2026 — C01, raccords A/B et borne classique multidébit
+
+Le cycle privé reprend la source R1 inchangée avec un protocole séparant
+clé du défi, Decaps adaptative et primitives. Une réduction exacte de
+commutation de clé publique est obtenue ; sa branche restante ne possède
+pas de borne computationnelle. Un lemme conditionnel de collision tient
+compte du hachage public corrélé et écarte seulement une route
+statistique sous une condition auxiliaire encore ouverte. Deux lecteurs
+indépendants contrôlent les classes de compression, les identités de jeu
+et les contre-modèles finis.
+
+Un couplage de Decaps à trace classique calcule conditionnellement le
+rejet fixe avec une graine indépendante, mais laisse ouvertes
+l'extraction efficace et la correction sous requêtes adaptatives. Sept
+scénarios dirigés, 77 760 cas finis et 46 656 séquences à deux requêtes
+ont été contrôlés par deux programmes distincts. Le modèle ne couvre
+pas le calcul quantique local.
+
+Les théorèmes primaires sur les éponges à plusieurs débits donnent une
+borne chiffrée en permutation aléatoire classique, capacité minimale
+256 bits, après comptage des appels pertinents. Le lecteur vérifie les
+six domaines, les coûts et les expressions exactes ; une mutation
+attribuant la mauvaise capacité est rejetée. Le sous-jeu de cap matrice
+est chiffré seulement dans ce modèle. Aucune borne pour Keccak-f fixé,
+ni transfert quantique multidébit, n'est déduite.
+
+Les anciens lecteurs C01 de référence passent à nouveau ; un lecteur
+d'intégration vérifie les trois décisions et rejette cinq suraffirmations.
+Les capsules restent privées hors Git. Rapport, note C01, test record,
+README et consignes locales sont actualisés. Aucun code, paramètre,
+format ni binaire moteur n'a changé ; aucune CI hébergée, publication
+GitHub ou revue extérieure créditée. **C01 concret reste ouvert, R1
+expérimental.**
 

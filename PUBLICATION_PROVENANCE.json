@@ -1,6 +1,6 @@
 {
-  "schema": 3,
-  "local_source_commit": "f1bbe57e8373719433bb8add4141cc7fcd61d654",
+  "schema": 2,
+  "local_source_commit": "10601418632a2effaf1ebb3232bea1a600d604c6",
   "profile": "KEM1536-DEV-Q7681-R1",
   "excluded_paths": [
     "AGENTS.md",
@@ -11,13 +11,13 @@
     "references/coded-dual-audit/rot_utilitaries.py.txt",
     "references/coded-dual-audit/utilitaries.py.txt"
   ],
-  "scope": "Base committed public snapshot at local_source_commit, with only selected_paths copied from documentation_overlay_source_commit. Other later local research notes are not exported; this is not a complete snapshot of the overlay source commit.",
+  "scope": "Committed public source snapshot, not the local Git history. Historical commit IDs in research notes refer to local research history.",
   "hash_scope": {
-    "sha256": "SHA-256 of emitted public file bytes for the base snapshot and selected documentation overlay. Checkout conversion may vary.",
-    "git_blob_sha256": "SHA-256 of canonical public Git blob contents, before checkout conversion; these are not Git object IDs."
+    "sha256": "SHA-256 of file bytes emitted by git archive, including attribute conversion such as .ps1 CRLF. Checkout bytes can vary with Git attributes.",
+    "git_blob_sha256": "SHA-256 of canonical source Git blob contents before archive or checkout attribute conversion; these are not Git object IDs."
   },
   "sha256": {
-    ".cargo/config.toml": "6abf4f853edb1217e7b182d65dd5eba16c347eb7bf1826f54377e966451d593b",
+    ".cargo/config.toml": "8905db131a9b6e84144ee45d86898a89ce1c8ecd678cb15e74be138174afb725",
     ".editorconfig": "2d8ef9ac927250a534788786a5b30850984510a73b7fe276dfebdad680bed7dd",
     ".gitattributes": "c5f40671a45879f4ac011e46ea057681a63a45e7bd595221a376b81be922c574",
     ".github/workflows/ci.yml": "9d8a6f14d2f8b53425143f68776a4a087a0d68dfb3b329d2899f8e500c7dcbbe",
@@ -27,7 +27,7 @@
     "Cargo.toml": "ff13a1ad6016fdb1e11376f304b4c3ea7670d1442d8f12cdbf02ebd01577de42",
     "LICENSE": "8ada45cd9f843acf64e4722ae262c622a2b3b3007c7310ef36ac1061a30f6adb",
     "NOTICE": "9a7f74ca48c836c0d34aa8d009c5b573b58812400986aaa5046f7ede9d5d6596",
-    "README.md": "ec9d07b601703ab43728b773a27df5965d13929c79eb80efbdd383375a8a98c0",
+    "README.md": "85ce8d98e4065cc27016596daf197b25ba7e9cc317c7e20b8e8feab7350ed89f",
     "SECURITY.md": "b573ffc1757be4b7106bc23a2de5da1cacd7242bd5a7382a033daffb06dedc66",
     "THIRD_PARTY_NOTICES.md": "0769de1fce4740753fabd61af96e16c4d02ace4728b730a69d68986e1bd09d1f",
     "artifacts/README.md": "1be1dd8df0ee3c3fae262a7ca3c5dca981ff568de5563a5745f7aa7eb9079ab3",
@@ -49,7 +49,7 @@
     "crates/kem1536-cli/tests/commands.rs": "02483131e88c5fb97badc6e2fd686094d3771769f8c5ba9464ef12f4b9534905",
     "crates/kem1536/Cargo.toml": "201a6e832bbc6cec754a6de609f0b503cc1c98c7458f676ad2077a2a73823e47",
     "crates/kem1536/src/dev_hardening.rs": "90b824c2b118ef314d765ca386187720260341b19f07b92ea26ec635dc314882",
-    "crates/kem1536/src/dev_kem.rs": "7b64b6e1adf18d5a3e0b66e6c95eb392aebb24c20077c74aadd304fcadc43d32",
+    "crates/kem1536/src/dev_kem.rs": "8c4a307103bb1338344986e2426c1ae5d8b04a5bcd614a2842b99dec495c0a28",
     "crates/kem1536/src/engine_poly.rs": "3de875c98b9dfd2d511d3774d263da24fdcfe03e917a90bbb6bcadd540a175b0",
     "crates/kem1536/src/lib.rs": "76f654cc20fa27475c7cd66fdace8913878ba6d9c034cbcd59b59c6c4d5ec033",
     "crates/kem1536/src/reference_ring.rs": "f94a48f7a35d74487fcdf50937f48c3f7502c6053418e941201bf1014cce125b",
@@ -79,11 +79,11 @@
     "docs/DUAL_CODES_ROTATIONS.md": "a71608f0338a2942e795d982c80a0ec0210dea280f6081a851a85bbe7dc99de3",
     "docs/DURCISSEMENT_MOTEUR_M02.md": "d136b5f49b26b85deaae391f877eeb9c7c27c660409392666cf474f975ec2d3a",
     "docs/ERRATA_FIPS203.md": "6dfee9493e472d6e43539aa1aa40744f1897ec3f2f4eee49a9c8c1d947c418cc",
-    "docs/ETAT_RECHERCHE_C01.md": "b9c5163ac52b86a4dcc14d61d13e86abe718a14d2612867f18cb0e71995a934e",
+    "docs/ETAT_RECHERCHE_C01.md": "cbe8b8e0bbcb8da34c5996fa2874c6fd7004f3c692793a427aaae0274ed84422",
     "docs/ETAT_RECHERCHE_M15.md": "fc3b6012338dd5b87c4e4393d4ecb8c65b013512ca180bdfb257d08f373cd5ee",
     "docs/ETAT_RECHERCHE_M16.md": "913d912f6f4ed96bfb7f794cde1210fee60b25f7cb913447388c43d292577378",
-    "docs/FEUILLE_DE_ROUTE_MOTEUR.md": "e351ce8db54bcf441652731b0d45b0f564160e0bc3d28895fc6f41d7ad0b2f9e",
-    "docs/JOURNAL_RECHERCHE.md": "a9cb86112d8dc14c31258103faccb75f672abcb8db7b392d2100631729487d1e",
+    "docs/FEUILLE_DE_ROUTE_MOTEUR.md": "92cd41a413bdb2aceeefaa83a1ac6fbb525c25f916621f1681eb14a47da38b05",
+    "docs/JOURNAL_RECHERCHE.md": "f32c894f58a294eceb0baf8ea30517abb33e6e4b1f60cd8c731fe6cf1858dd7c",
     "docs/LIEN_CERTIFICAT_PROGRAMME_R1.md": "f4c2d5b723d96460d877b939eef58ad7f6cf901ec4b140cc321ee4f5110190ac",
     "docs/LISTES_DUALES_Q7681.md": "8fdc3ec12f0060e6b6f0b9f69f3496f5b3363aa376fb56ca530c75a3e27960c4",
     "docs/LLL_ET_FAMILLE_ELARGIE.md": "4bd0636a6cb717db6ec2397216d03382cf5297181f2873f24fe6284b79bc2c67",
@@ -121,7 +121,7 @@
     "docs/PUBLICATION_GITHUB.md": "14f85a8bfd0cfe582a37f130662acb8a89660b7007cfb8aaccd119c50a177248",
     "docs/QUANTIFICATION_PAR_PAIRES.md": "198794c483faf11ce6a692cbd9490d6b1a11a00767ef8ba474c2b5b2dbc6bac3",
     "docs/QUATRIEME_MOMENT_CBD.md": "414ed1ec61e83a658602c26b334019656cf43fceaff93d5796cc03286431b839",
-    "docs/RAPPORT_RECHERCHE.md": "171946eca18409fae5ff4b199b1349f4fb249566df48435b1defdbb9f9c333b5",
+    "docs/RAPPORT_RECHERCHE.md": "ec50c29384160f586a3f38aabef933fcf883faee965f6dad873dea80c1104368",
     "docs/REGISTRE_HYPOTHESES.md": "e640886dcf365ce84097e0ac45517069c246a934b2ce811a9c245b9535823cbd",
     "docs/REJET_ET_INFORMATION_LATERALE_M08.md": "33323826ac73e6577de923e8bb29e3f477fb77fcefaeff0a67b0cd6192d5b858",
     "docs/REJET_IMPLICITE_R1_M06.md": "42092055920bd320538670dcd5e383629b90608d9da619429eb5c1dede24f43a",
@@ -137,6 +137,7 @@
     "docs/SELECTION_ET_MOMENTS_SUPERIEURS.md": "bac237c123712ef7cdc5d7dcd5994eddd05ce8f5bcb90b2ebb19a508d00b2e05",
     "docs/SPECIFICATION_DEV_Q7681_R1.md": "f9174d6daa5fc8e06513579c366279970c775d79cf85d9d8ed2e6b16cb89d47a",
     "docs/STABILISATION_DUAL.md": "908d1dd367f2e0464866706a6d8ee1050b6f07e507fffa8300711c68f2bd7846",
+    "docs/TESTS_AND_EVIDENCE.md": "f06353bace23673fb61ebf4d8c49e7265d4d57141d9e4bf3575dfdbe3b3724a9",
     "docs/TRANSFERT_SCORE_Q7681.md": "64df703a4f83c41dcc81babf3521b44075c4d55b1fcc7e231c473fa778d252c8",
     "docs/UTILITE_COMPRESSION.md": "ee39cc3a66b09e975ce0d4e260559deefcfd01bcd9db9a34507bd08b1b73e08e",
     "docs/VEILLE_ATTAQUES_2026.md": "4a1daae5ca57227854e3ed441f7a420c6a7ff84953d8025efc1bcf4786100011",
@@ -2595,11 +2596,10 @@
     "vectors/nist-acvp/ML-KEM-encapDecap-FIPS203/prompt.json": "998e22dfb12efb14ce9fdff911ca634b13612819a1806f25da69adba7e16db91",
     "vectors/nist-acvp/ML-KEM-keyGen-FIPS203/expectedResults.json": "a253d0ad91c95ebea5b409673defef0aa49d65d4ed72286399e2e798ddf073a4",
     "vectors/nist-acvp/ML-KEM-keyGen-FIPS203/prompt.json": "3f9ce34f6c836c77958bad2729e837c3b213f44ac36c3065976e7acca6389523",
-    "vectors/nist-acvp/NIST-NOTICE.txt": "5cf49b45a3eb4bee05d9491dbd05af1ceae4adf5f0ca59890e633469cb1f8156",
-    "docs/TESTS_AND_EVIDENCE.md": "6332b679b5bcf70f30d0e91eb601d52bbd53e3f2f8553b77466df9f7a1e30a95"
+    "vectors/nist-acvp/NIST-NOTICE.txt": "5cf49b45a3eb4bee05d9491dbd05af1ceae4adf5f0ca59890e633469cb1f8156"
   },
   "git_blob_sha256": {
-    ".cargo/config.toml": "6abf4f853edb1217e7b182d65dd5eba16c347eb7bf1826f54377e966451d593b",
+    ".cargo/config.toml": "8905db131a9b6e84144ee45d86898a89ce1c8ecd678cb15e74be138174afb725",
     ".editorconfig": "2d8ef9ac927250a534788786a5b30850984510a73b7fe276dfebdad680bed7dd",
     ".gitattributes": "c5f40671a45879f4ac011e46ea057681a63a45e7bd595221a376b81be922c574",
     ".github/workflows/ci.yml": "9d8a6f14d2f8b53425143f68776a4a087a0d68dfb3b329d2899f8e500c7dcbbe",
@@ -2609,7 +2609,7 @@
     "Cargo.toml": "ff13a1ad6016fdb1e11376f304b4c3ea7670d1442d8f12cdbf02ebd01577de42",
     "LICENSE": "8ada45cd9f843acf64e4722ae262c622a2b3b3007c7310ef36ac1061a30f6adb",
     "NOTICE": "9a7f74ca48c836c0d34aa8d009c5b573b58812400986aaa5046f7ede9d5d6596",
-    "README.md": "ec9d07b601703ab43728b773a27df5965d13929c79eb80efbdd383375a8a98c0",
+    "README.md": "85ce8d98e4065cc27016596daf197b25ba7e9cc317c7e20b8e8feab7350ed89f",
     "SECURITY.md": "b573ffc1757be4b7106bc23a2de5da1cacd7242bd5a7382a033daffb06dedc66",
     "THIRD_PARTY_NOTICES.md": "0769de1fce4740753fabd61af96e16c4d02ace4728b730a69d68986e1bd09d1f",
     "artifacts/README.md": "1be1dd8df0ee3c3fae262a7ca3c5dca981ff568de5563a5745f7aa7eb9079ab3",
@@ -2631,7 +2631,7 @@
     "crates/kem1536-cli/tests/commands.rs": "02483131e88c5fb97badc6e2fd686094d3771769f8c5ba9464ef12f4b9534905",
     "crates/kem1536/Cargo.toml": "201a6e832bbc6cec754a6de609f0b503cc1c98c7458f676ad2077a2a73823e47",
     "crates/kem1536/src/dev_hardening.rs": "90b824c2b118ef314d765ca386187720260341b19f07b92ea26ec635dc314882",
-    "crates/kem1536/src/dev_kem.rs": "7b64b6e1adf18d5a3e0b66e6c95eb392aebb24c20077c74aadd304fcadc43d32",
+    "crates/kem1536/src/dev_kem.rs": "8c4a307103bb1338344986e2426c1ae5d8b04a5bcd614a2842b99dec495c0a28",
     "crates/kem1536/src/engine_poly.rs": "3de875c98b9dfd2d511d3774d263da24fdcfe03e917a90bbb6bcadd540a175b0",
     "crates/kem1536/src/lib.rs": "76f654cc20fa27475c7cd66fdace8913878ba6d9c034cbcd59b59c6c4d5ec033",
     "crates/kem1536/src/reference_ring.rs": "f94a48f7a35d74487fcdf50937f48c3f7502c6053418e941201bf1014cce125b",
@@ -2661,11 +2661,11 @@
     "docs/DUAL_CODES_ROTATIONS.md": "a71608f0338a2942e795d982c80a0ec0210dea280f6081a851a85bbe7dc99de3",
     "docs/DURCISSEMENT_MOTEUR_M02.md": "d136b5f49b26b85deaae391f877eeb9c7c27c660409392666cf474f975ec2d3a",
     "docs/ERRATA_FIPS203.md": "6dfee9493e472d6e43539aa1aa40744f1897ec3f2f4eee49a9c8c1d947c418cc",
-    "docs/ETAT_RECHERCHE_C01.md": "b9c5163ac52b86a4dcc14d61d13e86abe718a14d2612867f18cb0e71995a934e",
+    "docs/ETAT_RECHERCHE_C01.md": "cbe8b8e0bbcb8da34c5996fa2874c6fd7004f3c692793a427aaae0274ed84422",
     "docs/ETAT_RECHERCHE_M15.md": "fc3b6012338dd5b87c4e4393d4ecb8c65b013512ca180bdfb257d08f373cd5ee",
     "docs/ETAT_RECHERCHE_M16.md": "913d912f6f4ed96bfb7f794cde1210fee60b25f7cb913447388c43d292577378",
-    "docs/FEUILLE_DE_ROUTE_MOTEUR.md": "e351ce8db54bcf441652731b0d45b0f564160e0bc3d28895fc6f41d7ad0b2f9e",
-    "docs/JOURNAL_RECHERCHE.md": "a9cb86112d8dc14c31258103faccb75f672abcb8db7b392d2100631729487d1e",
+    "docs/FEUILLE_DE_ROUTE_MOTEUR.md": "92cd41a413bdb2aceeefaa83a1ac6fbb525c25f916621f1681eb14a47da38b05",
+    "docs/JOURNAL_RECHERCHE.md": "f32c894f58a294eceb0baf8ea30517abb33e6e4b1f60cd8c731fe6cf1858dd7c",
     "docs/LIEN_CERTIFICAT_PROGRAMME_R1.md": "f4c2d5b723d96460d877b939eef58ad7f6cf901ec4b140cc321ee4f5110190ac",
     "docs/LISTES_DUALES_Q7681.md": "8fdc3ec12f0060e6b6f0b9f69f3496f5b3363aa376fb56ca530c75a3e27960c4",
     "docs/LLL_ET_FAMILLE_ELARGIE.md": "4bd0636a6cb717db6ec2397216d03382cf5297181f2873f24fe6284b79bc2c67",
@@ -2703,7 +2703,7 @@
     "docs/PUBLICATION_GITHUB.md": "14f85a8bfd0cfe582a37f130662acb8a89660b7007cfb8aaccd119c50a177248",
     "docs/QUANTIFICATION_PAR_PAIRES.md": "198794c483faf11ce6a692cbd9490d6b1a11a00767ef8ba474c2b5b2dbc6bac3",
     "docs/QUATRIEME_MOMENT_CBD.md": "414ed1ec61e83a658602c26b334019656cf43fceaff93d5796cc03286431b839",
-    "docs/RAPPORT_RECHERCHE.md": "171946eca18409fae5ff4b199b1349f4fb249566df48435b1defdbb9f9c333b5",
+    "docs/RAPPORT_RECHERCHE.md": "ec50c29384160f586a3f38aabef933fcf883faee965f6dad873dea80c1104368",
     "docs/REGISTRE_HYPOTHESES.md": "e640886dcf365ce84097e0ac45517069c246a934b2ce811a9c245b9535823cbd",
     "docs/REJET_ET_INFORMATION_LATERALE_M08.md": "33323826ac73e6577de923e8bb29e3f477fb77fcefaeff0a67b0cd6192d5b858",
     "docs/REJET_IMPLICITE_R1_M06.md": "42092055920bd320538670dcd5e383629b90608d9da619429eb5c1dede24f43a",
@@ -2719,6 +2719,7 @@
     "docs/SELECTION_ET_MOMENTS_SUPERIEURS.md": "bac237c123712ef7cdc5d7dcd5994eddd05ce8f5bcb90b2ebb19a508d00b2e05",
     "docs/SPECIFICATION_DEV_Q7681_R1.md": "f9174d6daa5fc8e06513579c366279970c775d79cf85d9d8ed2e6b16cb89d47a",
     "docs/STABILISATION_DUAL.md": "908d1dd367f2e0464866706a6d8ee1050b6f07e507fffa8300711c68f2bd7846",
+    "docs/TESTS_AND_EVIDENCE.md": "f06353bace23673fb61ebf4d8c49e7265d4d57141d9e4bf3575dfdbe3b3724a9",
     "docs/TRANSFERT_SCORE_Q7681.md": "64df703a4f83c41dcc81babf3521b44075c4d55b1fcc7e231c473fa778d252c8",
     "docs/UTILITE_COMPRESSION.md": "ee39cc3a66b09e975ce0d4e260559deefcfd01bcd9db9a34507bd08b1b73e08e",
     "docs/VEILLE_ATTAQUES_2026.md": "4a1daae5ca57227854e3ed441f7a420c6a7ff84953d8025efc1bcf4786100011",
@@ -5177,23 +5178,7 @@
     "vectors/nist-acvp/ML-KEM-encapDecap-FIPS203/prompt.json": "998e22dfb12efb14ce9fdff911ca634b13612819a1806f25da69adba7e16db91",
     "vectors/nist-acvp/ML-KEM-keyGen-FIPS203/expectedResults.json": "a253d0ad91c95ebea5b409673defef0aa49d65d4ed72286399e2e798ddf073a4",
     "vectors/nist-acvp/ML-KEM-keyGen-FIPS203/prompt.json": "3f9ce34f6c836c77958bad2729e837c3b213f44ac36c3065976e7acca6389523",
-    "vectors/nist-acvp/NIST-NOTICE.txt": "5cf49b45a3eb4bee05d9491dbd05af1ceae4adf5f0ca59890e633469cb1f8156",
-    "docs/TESTS_AND_EVIDENCE.md": "6332b679b5bcf70f30d0e91eb601d52bbd53e3f2f8553b77466df9f7a1e30a95"
+    "vectors/nist-acvp/NIST-NOTICE.txt": "5cf49b45a3eb4bee05d9491dbd05af1ceae4adf5f0ca59890e633469cb1f8156"
   },
-  "previous_public_commit": "d0ed521a2ced9da0661eb4fe2d13de68759d3f6c",
-  "publication_kind": "selected_documentation_overlay",
-  "documentation_overlay_source_commit": "dd6cc064a44de703d262be490c9080861e0262e7",
-  "selected_paths": [
-    "README.md",
-    "SECURITY.md",
-    "docs/ETAT_RECHERCHE_C01.md",
-    "docs/PUBLICATION_GITHUB.md",
-    "docs/TESTS_AND_EVIDENCE.md"
-  ],
-  "latest_update_paths": [
-    "README.md",
-    "SECURITY.md",
-    "docs/ETAT_RECHERCHE_C01.md",
-    "docs/TESTS_AND_EVIDENCE.md"
-  ]
+  "previous_public_commit": "36f9e2aa67166a628f9cf66da4f6db738b3a94aa"
 }
