@@ -44,8 +44,9 @@ integrity check after a later test-only addition to `dev_kem.rs`; an M15
 success does not retest that later source. The first hosted run of the
 20 November publication failed at the M15 input gate before solver setup;
 the correction is the explicit historical checkout, not a change to the
-frozen manifest or scientific inputs. A green replacement run must be
-observed before crediting hosted validation of this publication.
+frozen manifest or scientific inputs. The [replacement workflow #18](https://github.com/MajidNIMAR/mlkem-1536-core/actions/runs/44652862478)
+on public commit `5740d322e655f40c5cb6cfac35d7a59f6c1fb686` completed
+successfully: Windows engine, Ubuntu engine and frozen M15 replay all passed.
 
 A classical multi-rate follow-up compared the new ideal lemmas with the
 previous sponge theorem. A source-level review confirmed the total-query

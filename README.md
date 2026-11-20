@@ -45,6 +45,8 @@ local and outside Git. See the [research report](docs/RAPPORT_RECHERCHE.md),
 The CI engine jobs test the current `main` source. The separate M15 replay
 job checks out its frozen publication commit, whose source bytes are pinned
 by the M15 manifest; it verifies that historical evidence independently.
+The [20 November verification run](https://github.com/MajidNIMAR/mlkem-1536-core/actions/runs/44652862478)
+passed on Windows, Ubuntu and the frozen M15 replay.
 
 ### Earlier 19 November classical shared-permutation work
 

@@ -31,8 +31,11 @@ contrôle d'entrée M15 : ce lot exige les octets source de son commit
 historique, alors que `main` inclut depuis un test Rust supplémentaire.
 Le job M15 est corrigé pour rejouer le commit public figé du lot ; les
 deux jobs moteur continuent de vérifier le `main` actuel. Le manifeste
-M15 et ses résultats scientifiques ne sont pas modifiés. La nouvelle
-CI doit encore être observée avant toute revendication de succès.
+M15 et ses résultats scientifiques ne sont pas modifiés. Le
+[run public #18](https://github.com/MajidNIMAR/mlkem-1536-core/actions/runs/44652862478)
+du commit `5740d32` est terminé avec succès : moteur Windows, moteur Ubuntu
+et rejeu M15 ont tous trois passé. Ce succès valide ces contrôles hébergés,
+pas la qualification cryptographique C01.
 
 ## 19 novembre 2026 — composition multidébit classique, portée bornée
 
