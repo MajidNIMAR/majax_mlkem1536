@@ -17,14 +17,34 @@ evidence needed to examine its evolution.
 [Research report](docs/RAPPORT_RECHERCHE.md) ·
 [Current status — C01 construction gates](docs/ETAT_RECHERCHE_C01.md) ·
 [Verification and test record](docs/TESTS_AND_EVIDENCE.md) ·
-[Research progress through M15](docs/ETAT_RECHERCHE_M15.md) ·
-[M15 Windows replay lot](research/reproducibility/m15/implementation/README.md) ·
+[Historical M15 research archive](docs/ETAT_RECHERCHE_M15.md) ·
+[Frozen M15 Windows replay lot](research/reproducibility/m15/implementation/README.md) ·
 [M10 engine and qualification](docs/M10_MOTEUR_ET_QUALIFICATION.md) ·
 [M09 engine and qualification](docs/M09_MOTEUR_CONTRATS_ET_QUALIFICATION.md) ·
 [M08 import study and delivery](docs/M08_IMPORTS_ET_VALIDATION.md) ·
 [M07 memory and delivery study](docs/M07_MEMOIRE_ET_VALIDATION.md)
 
 [![Main-branch checks](https://github.com/MajidNIMAR/mlkem-1536-core/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/MajidNIMAR/mlkem-1536-core/actions/workflows/ci.yml)
+
+## Project checkpoint — 20 November 2026
+
+The `M` numbers identify **work packages, not releases or engine versions**.
+They have not gone back to M15:
+
+| Track | Last numbered work | Meaning today |
+|---|---|---|
+| Delivered Rust engine | M10 | Working R1 KeyGen, Encaps, Decaps and rejection; experimental, not production-qualified |
+| Public reproducibility | M15 | Historical arithmetic/NTT replay lot pinned to its original source commit; this is why CI still shows M15 |
+| Engine qualification | M23 | Latest numbered, scoped PC/AArch64 qualification work; detailed later records are local |
+| C01 security research | M28 | Latest numbered, scoped C01 work; subsequent Blocks 1–4 and the 20 November studies are unnumbered |
+
+The **latest work** is the 20 November C01 analysis described below. It
+advances conditional arguments for the exact R1 construction, while the
+concrete security argument **C01 remains open**. Later M numbers do not
+certify security or change the experimental status of R1. The two engine CI
+jobs check current `main`; the separate M15 job replays its historical
+snapshot. See the [C01 scope](docs/ETAT_RECHERCHE_C01.md) and
+[verification record](docs/TESTS_AND_EVIDENCE.md).
 
 ## Current research status — C01 construction gates, 20 November 2026
 
@@ -50,8 +70,10 @@ local and outside Git. See the [research report](docs/RAPPORT_RECHERCHE.md),
 The CI engine jobs test the current `main` source. The separate M15 replay
 job checks out its frozen publication commit, whose source bytes are pinned
 by the M15 manifest; it verifies that historical evidence independently.
-The [20 November verification run](https://github.com/MajidNIMAR/mlkem-1536-core/actions/runs/44652862478)
-passed on Windows, Ubuntu and the frozen M15 replay.
+The [most recently verified run before this checkpoint](https://github.com/MajidNIMAR/mlkem-1536-core/actions/runs/44660698822)
+passed on Windows, Ubuntu and the frozen M15 replay. The
+[workflow page](https://github.com/MajidNIMAR/mlkem-1536-core/actions/workflows/ci.yml)
+shows the status of subsequent commits.
 
 ### Earlier 19 November classical shared-permutation work
 
@@ -351,12 +373,14 @@ erasure, constant time, an external audit or production suitability.
 The separate public M15 arithmetic/NTT replay lot and its commands remain
 available below.
 
-## Delivered engine and public replay evidence — M15
+## Delivered engine and historical public M15 replay evidence
 
 **M10 remains the delivered Rust engine.** It implements KeyGen, Encaps,
 Decaps and implicit rejection for the specified R1 construction. Subsequent
-M11–M17, the targeted C01 work and the latest scoped studies develop the security argument without
-changing the engine's sources, parameters, formats or canonical binary.
+security work, through M28 and the unnumbered C01 studies, develops the
+argument while retaining the R1 cryptographic operations, parameters and
+formats. Later test-only source changes are checked by the current engine
+CI jobs.
 
 The first [public M15 replay lot](research/reproducibility/m15/implementation/README.md)
 now supplies **31 source-linked arithmetic SMT obligations**, an algebraic
@@ -395,10 +419,10 @@ A dedicated Windows job in the [CI workflow](.github/workflows/ci.yml)
 runs the lot and preserves its receipts and logs. Hosted success must be
 checked on the workflow run for the revision being examined.
 
-## Broader research progress — M11–M15
+## Historical research progress — M11–M15
 
-The research program has advanced through M11–M15 while **M10 remains the
-delivered engine reference**. The latest cycle adds targeted cryptanalysis,
+At this historical checkpoint, the research program had advanced through
+M11–M15 while **M10 remained the delivered engine reference**. M15 added targeted cryptanalysis,
 constructive accounting for fixed SHA3/SHAKE computations, conditional
 per-key correctness certificates, matched comparisons with ML-KEM-1024 and
 source-linked arithmetic verification.
@@ -598,7 +622,7 @@ scope and raw results.
 | Functional engine and compatibility | Implemented and exercised on Windows/Linux; complete reference corpora match and R1 formats remain compatible |
 | Implementation hardening | M10 qualifies removal of two observed stack residues in its four reviewed PC images and completes its new long sanitizer campaign; earlier M08/M09 findings retain their own image scope. Register/ABI/all-PKE erasure and formal constant time remain open |
 | Cryptographic security argument | Consolidated conditional IND-CCA argument in the declared QROM/RC1 model, under an explicit MLWE premise; the complete concrete R1 qualification **C01 remains open** |
-| Research progress through M15 | A public Windows arithmetic/NTT lot supplies 31 SMT obligations, 131,072 checked coefficients and 21 component tests; the broader conditional-margin and per-key research, detailed acquisitions and full 82-test internal suite are not supplied by that lot |
+| Historical M15 evidence | A public Windows arithmetic/NTT lot supplies 31 SMT obligations, 131,072 checked coefficients and 21 component tests; it is not the latest research milestone, and the broader internal studies are not supplied by that lot |
 | External assurance and security rating | A certified global bit rating, NIST category or external cryptographic audit is not established by these artifacts; **1536 denotes the coefficient count** |
 | Target qualification | M10 CLI/default-consumer reviews and hosted native checks concern the recorded GNU x86-64 Windows/Linux PC images; M08/M09 retain their own historical scope. Android/ARM requires its own qualification |
 
@@ -886,10 +910,11 @@ evidence only.
 MLKEM-1536 Core is an **experimental research implementation** intended for analysis,
 reproducibility and independent review. Parameter selection and cryptanalysis
 continue. The correctness certificates and conditional ROM/QROM arguments
-retain their stated assumptions. Research through M15 provides a sufficient
-conditional margin for its declared working checkpoint, while the exact
-fixed-primitive argument, quantitative assumption qualification and final
-comparison remain open. Formal constant-time execution, complete erasure of secret
+retain their stated assumptions. At the historical M15 checkpoint, a
+sufficient conditional margin was recorded under its declared assumptions.
+Later work through M28 and the unnumbered C01 studies has not established
+the exact fixed-function security argument, final quantitative assumptions
+or complete comparison. Formal constant-time execution, complete erasure of secret
 copies, an external security audit and standardization remain future work.
 The available evidence does not establish a global security-bit rating or
 production-security guarantee. See [SECURITY.md](SECURITY.md).
@@ -907,7 +932,8 @@ candidate and twenty J2 snapshots preserve the original hypotheses,
 negative results and decisions. Current work focuses on the quantitative
 security assumptions, concrete-primitive and correctness populations,
 matched security comparisons and stronger implementation guarantees.
-See the [M15 progress and evidence boundary](docs/ETAT_RECHERCHE_M15.md).
+See the [current C01 status](docs/ETAT_RECHERCHE_C01.md) and the
+[historical M15 evidence boundary](docs/ETAT_RECHERCHE_M15.md).
 
 ## License and attribution
 

@@ -9,8 +9,12 @@ formal constant-time guarantee or production-security claim is made.
 
 ## Current assurance boundary
 
-M17 is the latest numbered research milestone. Subsequent C01 and block-3
-studies have no new M number; M10 remains the delivered engine reference.
+The `M` numbers identify work packages, not versions or certification levels.
+M10 remains the delivered engine reference. M15 is the historical public
+replay lot pinned to its original source commit. M23 is the latest numbered
+engine qualification cycle; M28 is the latest numbered C01 research cycle.
+Post-M28 blocks and the 20 November 2026 C01 studies are unnumbered and are
+the most recent work. **Concrete C01 is still open; R1 is experimental.**
 
 As of 19 November 2026, four further research work packages have internally
 cross-checked deliverables in their declared scopes. They connect a
@@ -36,7 +40,7 @@ bound or transfer to fixed SHA3/SHAKE is established by these studies.
 
 ### Earlier consolidated conditional argument
 
-Research has advanced through M17 and a targeted consolidation of C01. The
+At the M17 stage, research included a targeted consolidation of C01. The
 [current public scope note](docs/ETAT_RECHERCHE_C01.md) records a completed,
 internally reviewed conditional IND-CCA argument for the R1 construction in
 the declared QROM/RC1 model. This satisfies the explanatory conditional

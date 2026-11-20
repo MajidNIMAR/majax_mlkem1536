@@ -5,12 +5,12 @@ The construction and Rust engine are experimental. Concrete security
 qualification C01 remains open. This page reports what was checked and how
 the evidence can be examined; it does not assign a security level.
 
-The post-M28 C01 Blocks 1–4 are the latest local research program. M24–M28
-are the latest numbered scoped C01 research blocks. M20–M23 are the
-latest numbered scoped engine qualification cycles, each with
-an internally reviewed result. M18 and M19 retain their historical outcomes.
-M10 remains the delivered engine reference. The C01 and block-3 studies remain
-separate cryptographic research.
+The most recent work is the unnumbered C01 study of 20 November. M24–M28
+are the latest numbered scoped C01 research blocks; M20–M23 are the latest
+numbered scoped engine qualification cycles. Post-M28 Blocks 1–4 and the
+later C01 studies are separate research work. M10 remains the delivered
+engine reference. M15 is the historical public replay lot, not the current
+project milestone. M18 and M19 retain their historical outcomes.
 
 Two new private fixed-function capsules passed their source-hash checks,
 internal independent reviews and seals. The structural verifier exhaustively checked
@@ -61,8 +61,12 @@ successfully: Windows engine, Ubuntu engine and frozen M15 replay all passed.
 The following documentation-only workflow #19 hit a Windows `rustc`
 stack-overflow exit while compiling a dependency during `cargo test`; the
 same source had passed workflow #18. The CI now limits parallel compiler
-processes for the Windows check step, and the subsequent run must be observed
-before crediting that change. No engine or frozen M15 input was modified.
+processes for the Windows check step. The subsequent
+[20 November run #21](https://github.com/MajidNIMAR/mlkem-1536-core/actions/runs/44660698822)
+completed successfully for the current-source Windows and Ubuntu engine jobs
+and the historical M15 replay. This verifies those hosted checks on public
+commit `8545a605a7d8d9765a7931fb32b218bc15c4d760`; it does not close C01.
+No engine or frozen M15 input was modified.
 
 A classical multi-rate follow-up compared the new ideal lemmas with the
 previous sponge theorem. A source-level review confirmed the total-query

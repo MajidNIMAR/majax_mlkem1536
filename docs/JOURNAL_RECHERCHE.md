@@ -1,5 +1,20 @@
 # Journal de recherche — KEM 1536
 
+## 20 novembre 2026 — point d'état et chronologie des jalons
+
+Le dernier état de recherche avait déjà été commité et publié. Un contrôle
+des deux dépôts et de la CI confirme cette publication ; la nouvelle entrée
+clarifie une ambiguïté de présentation. Les numéros `M` désignent des
+chantiers : M10 est la référence du moteur livré, M15 le lot public de
+reproductibilité figé, M23 le dernier cycle numéroté de qualification du
+moteur, M28 le dernier cycle numéroté de recherche C01. Les travaux C01
+du 20 novembre suivent M28 sans numéro `M`. Le job M15 reste présent en
+CI pour rejouer ses preuves historiques et ne signifie aucun retour du
+projet à ce jalon. La CI publique précédente a passé les trois jobs.
+Cette correction documentaire ne change ni le moteur, ni les paramètres,
+ni les résultats scientifiques. **C01 concret reste ouvert ; R1 est
+expérimental.**
+
 ## 20 novembre 2026 — structure du jeu R1 aux fonctions fixées
 
 Deux capsules privées et scellées prolongent le travail sur le saut de

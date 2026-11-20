@@ -82,7 +82,7 @@ jobs:
         run: .tools/research-venv/bin/python -B research/smoke_m10_package.py
 
   m15-reproducibility-windows:
-    name: M15 reproducibility (Windows)
+    name: Historical M15 replay (Windows)
     runs-on: windows-latest
     timeout-minutes: 30
     defaults:

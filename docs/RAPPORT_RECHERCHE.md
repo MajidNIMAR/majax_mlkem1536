@@ -1,5 +1,19 @@
 # Rapport de recherche — MLKEM-1536 Core, KEM à six blocs de 256 coefficients
 
+**Point d'état du 20 novembre 2026 — lecture des jalons.** Les numéros `M`
+désignent des chantiers, pas des versions du moteur ni des niveaux de sécurité.
+M10 reste la référence du moteur Rust livré. M15 est le lot historique de
+preuves arithmétiques rendu reproductible publiquement : son job CI relit
+un commit source figé, d'où sa présence dans les vérifications actuelles.
+M23 est le dernier chantier numéroté de qualification du moteur ; M28 est le
+dernier chantier numéroté de recherche C01. Les blocs post-M28 et les
+études C01 du 20 novembre sont plus récents, sans nouveau numéro `M`.
+L'état scientifique reste : R1 fonctionnel et expérimental, argument
+conditionnel dans ses modèles déclarés, **C01 concret ouvert**. Le dernier
+[run CI vérifié avant ce point d'état](https://github.com/MajidNIMAR/mlkem-1536-core/actions/runs/44660698822)
+a réussi les contrôles moteur Windows/Ubuntu et le rejeu M15 figé. Cela
+n'attribue aucun niveau de sécurité au moteur.
+
 **20 novembre 2026 — raccord structurel au R1 à fonctions fixées.** Pour
 une clé honnête dont la génération s'est terminée, la source Rust réalise
 exactement la règle « déchiffrer, dériver G, réencapsuler, comparer le

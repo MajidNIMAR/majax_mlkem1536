@@ -13,8 +13,11 @@ its final cryptographic freeze is deferred, and it is not production-qualified.*
 M24–M28 are the latest numbered, scoped **C01 research** blocks. M23 remains
 the latest numbered engine qualification cycle, following M20–M22. Neither
 kind of result closes concrete C01.
-The intervening C01 and block-3 studies remain separate research work. M10
-remains the delivered engine reference; the M16 note below is historical.
+Later post-M28 blocks and the 20 November C01 studies are unnumbered; they
+are the newest research. M10 remains the delivered engine reference. M15 is
+the frozen public replay lot, not the project's current milestone. These
+numbers label work packages rather than engine versions or security levels.
+The M16 note below is historical.
 
 ## Fixed-function structural step and CCA accounting — 20 November
 

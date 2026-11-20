@@ -1,9 +1,12 @@
-# Research progress through M15
+# Historical M15 research and public evidence
 
 Public scope statement, 18 November 2026. **MLKEM-1536 Core** develops
 `KEM1536-DEV-Q7681-R1`, an experimental module-lattice KEM with six
 polynomials of 256 coefficients. The number 1536 is a coefficient count,
 not a security-bit rating or a standardized ML-KEM parameter set.
+This note records the M15 stage and its frozen public replay lot. Later
+numbered work reached M23 for engine qualification and M28 for C01 research;
+the latest C01 studies are unnumbered. See the [current status](ETAT_RECHERCHE_C01.md).
 
 ## Delivered engine and subsequent research
 

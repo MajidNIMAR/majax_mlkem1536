@@ -1,5 +1,12 @@
 # Du dossier de faisabilité au moteur KEM
 
+**Repères au 20 novembre 2026.** `M` numérote des chantiers : M10 est la
+référence du moteur livré, M15 le lot historique de preuves publiques
+rejoué en CI, M23 la dernière qualification numérotée du moteur et M28 la
+dernière recherche C01 numérotée. Les études C01 ci-dessous suivent M28
+sans nouveau numéro. Elles ne ferment pas C01 et ne changent pas le statut
+expérimental de R1.
+
 **20 novembre 2026 — trois obligations du R1 fixé.** Le nouveau lemme
 structurel et la décomposition conditionnelle CCA → CPA précisent la
 suite du travail : (1) borner le jeu passif de clé de défi du R1 exact
