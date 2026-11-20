@@ -32,6 +32,9 @@ jobs:
       - name: Check Windows
         if: runner.os == 'Windows'
         shell: pwsh
+        # Bound concurrent rustc processes on hosted Windows runners.
+        env:
+          CARGO_BUILD_JOBS: '1'
         run: ./scripts/dev.ps1 check
       - name: Bootstrap Ubuntu
         if: runner.os == 'Linux'

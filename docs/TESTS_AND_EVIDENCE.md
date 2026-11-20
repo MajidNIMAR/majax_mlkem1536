@@ -47,6 +47,11 @@ the correction is the explicit historical checkout, not a change to the
 frozen manifest or scientific inputs. The [replacement workflow #18](https://github.com/MajidNIMAR/mlkem-1536-core/actions/runs/44652862478)
 on public commit `5740d322e655f40c5cb6cfac35d7a59f6c1fb686` completed
 successfully: Windows engine, Ubuntu engine and frozen M15 replay all passed.
+The following documentation-only workflow #19 hit a Windows `rustc`
+stack-overflow exit while compiling a dependency during `cargo test`; the
+same source had passed workflow #18. The CI now limits parallel compiler
+processes for the Windows check step, and the subsequent run must be observed
+before crediting that change. No engine or frozen M15 input was modified.
 
 A classical multi-rate follow-up compared the new ideal lemmas with the
 previous sponge theorem. A source-level review confirmed the total-query

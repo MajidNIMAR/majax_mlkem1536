@@ -36,6 +36,11 @@ M15 et ses résultats scientifiques ne sont pas modifiés. Le
 du commit `5740d32` est terminé avec succès : moteur Windows, moteur Ubuntu
 et rejeu M15 ont tous trois passé. Ce succès valide ces contrôles hébergés,
 pas la qualification cryptographique C01.
+Le push documentaire suivant a déclenché un arrêt du compilateur Windows
+pendant `cargo test`, avant les tests du moteur. Le même code avait réussi
+dans le run #18. Le job Windows limite désormais les processus `rustc`
+concurrents ; la nouvelle CI reste à observer. Aucun code cryptographique
+ni fichier scellé M15 n'a changé.
 
 ## 19 novembre 2026 — composition multidébit classique, portée bornée
 
