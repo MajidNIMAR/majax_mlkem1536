@@ -1,5 +1,21 @@
 # Journal de recherche — KEM 1536
 
+## 20 novembre 2026 — structure du jeu R1 aux fonctions fixées
+
+Deux capsules privées et scellées prolongent le travail sur le saut de
+clé. La première rattache la réencapsulation de Decaps à la source Rust
+figée et prouve des bornes pré-défi avec un terme de correction concret
+laissé explicite ; elle exclut une acceptation post-défi sous un autre
+chiffré avec le message du défi. La seconde reprend le couplage de
+décapsulation antérieur et le compose avec un jeu passif du R1 fixé,
+en séparant ses deux erreurs adaptatives dans chaque monde du défi.
+Les deux vérificateurs, contrôles négatifs et sceaux passent ; deux
+contre-lectures internes n'ont pas trouvé d'objection bloquante dans la
+portée classique et source déclarée. Les avantages passifs, les erreurs
+adaptatives et les ressources d'un extracteur utile restent à établir.
+La sécurité CCA des fonctions fixées, le QROM et **C01 concret restent
+ouverts**. Le moteur, ses formats et ses paramètres n'ont pas changé.
+
 ## 20 novembre 2026 — saut de clé complet idéal et examen des fonctions fixées
 
 Une preuve privée, relue en deux passes, construit un simulateur de

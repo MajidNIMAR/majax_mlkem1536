@@ -1,5 +1,18 @@
 # Du dossier de faisabilité au moteur KEM
 
+**20 novembre 2026 — trois obligations du R1 fixé.** Le nouveau lemme
+structurel et la décomposition conditionnelle CCA → CPA précisent la
+suite du travail : (1) borner le jeu passif de clé de défi du R1 exact
+avec ses fonctions fixées, à partir de prémisses indépendantes ;
+(2) construire et analyser un extracteur en ligne efficace pour les
+chiffrés acceptés après choix adaptatif ; (3) borner la correction des
+témoins ainsi produits sous les distributions réelles. Le coût de la
+réduction, la terminaison de KeyGen et le cas quantique doivent être
+intégrés avant tout chiffre global. Les deux erreurs adaptatives et
+l'avantage passif sont aujourd'hui **symboliques** ; la décomposition
+ne ferme pas C01. Une voie de construction distincte restera à examiner
+si ces obligations ne reçoivent pas d'argument indépendant applicable.
+
 **20 novembre 2026 — prochaine porte C01.** Les nouveaux raccords du jeu
 classique idéal traitent le saut de clé et Decaps adaptative, puis ramènent
 la résistance restante à deux distributions Module-LWE du PKE R1. Avant

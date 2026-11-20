@@ -36,6 +36,11 @@ dimensions. Their hardness at the reduction's enlarged resource budget
 has not been proved. A replayable fixed SHA3/SHAKE game harness and
 independent role checks validate bounded execution paths, but they do
 not transfer that ideal-model proof to the implemented fixed functions.
+An exact source-level fixed-function lemma now controls prechallenge
+coincidences and excludes accepted postchallenge recovery of the challenge
+message through a different ciphertext. A conditional CCA-to-CPA
+decomposition names the remaining challenge-key, adaptive extraction and
+adaptive correctness terms; none has a numerical fixed-function bound.
 **Concrete C01 remains open; R1 is experimental and is not qualified for
 production.** The detailed new proof and acquisition capsules remain
 local and outside Git. See the [research report](docs/RAPPORT_RECHERCHE.md),

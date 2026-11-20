@@ -16,6 +16,41 @@ kind of result closes concrete C01.
 The intervening C01 and block-3 studies remain separate research work. M10
 remains the delivered engine reference; the M16 note below is historical.
 
+## Fixed-function structural step and CCA accounting — 20 November
+
+Two locally sealed and independently read capsules now attach an exact
+decapsulation invariant to the frozen Rust source and compose the earlier
+conditional trace-aware coupling with a passive `CPA-F` challenge game.
+For a completed honest KeyGen and a fresh uniform challenge message drawn
+after prechallenge queries, an accepted postchallenge Decaps query on a
+different ciphertext cannot decode to that challenge message. With at most
+`q_pre` earlier Decaps queries, the probability of a decoded-message match
+is at most `q_pre/2^256`; a prior ciphertext matching the later challenge
+has probability at most `q_pre/2^256 + epsilon_corr_fixed`. The latter
+term is the **actual fixed-function average correctness error** and has
+no adopted numerical bound. Completed honest KeyGen traverses all 36
+matrix streams reused by later encryption; its own termination remains
+a separate condition.
+
+For an executable online extractor `E`, the classical single-key game
+satisfies the conditional decomposition
+
+```
+Adv_CCA(A) <= Adv_CPA-F(B_E) + delta_0 + delta_1.
+```
+
+Each `delta_b` is an error measured on the simulated bit-`b` transcript:
+an adaptively produced verified witness may decode differently, or a
+ciphertext may be accepted without a verified witness. The simulator's
+public-function evaluations, extractor, time and memory are accounted
+for symbolically; no concrete resource caps are established here.
+This refines and composes the earlier trace-aware conditional lemma; it
+does **not** prove any of the three needed small terms. `CPA-F` is the
+passive challenge-key obligation of the exact fixed R1 construction,
+not an independent SHA3 theorem. The finite verifiers check source
+anchors and small logical models, not a security level. **Concrete C01,
+quantum treatment and binary qualification remain open.**
+
 ## Classical full-game reduction and fixed-function boundary — 20 November
 
 A locally retained, internally counter-read proof now covers the **classical,

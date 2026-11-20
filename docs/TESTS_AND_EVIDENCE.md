@@ -12,6 +12,17 @@ an internally reviewed result. M18 and M19 retain their historical outcomes.
 M10 remains the delivered engine reference. The C01 and block-3 studies remain
 separate cryptographic research.
 
+Two new private fixed-function capsules passed their source-hash checks,
+internal independent reviews and seals. The structural verifier exhaustively checked
+9,477 small deterministic `F,D`/prior-query cases and a control showing
+why the concrete correctness term is necessary. The CCA-to-CPA logic
+verifier checked 18,432 finite scenarios and both omitted-error controls.
+These checks support the stated source-level implications and conditional
+coupling only; they neither measure the fixed R1 IND-CCA advantage nor
+bound its passive challenge, adaptive extraction or adaptive correction
+terms. The retained capsules are `c01-fixed-structural-001` and
+`c01-fixed-cca-decomposition-001`, both excluded from Git.
+
 The latest private classical ideal-game reduction passed its source-anchor,
 exact CBD(3) atom, rational residual and negative-scope controls. A separate
 internal counter-reading required a correction to the treatment of hidden

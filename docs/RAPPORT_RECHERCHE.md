@@ -1,5 +1,41 @@
 # Rapport de recherche — MLKEM-1536 Core, KEM à six blocs de 256 coefficients
 
+**20 novembre 2026 — raccord structurel au R1 à fonctions fixées.** Pour
+une clé honnête dont la génération s'est terminée, la source Rust réalise
+exactement la règle « déchiffrer, dériver G, réencapsuler, comparer le
+chiffré entier, puis choisir la clé ou le rejet ». Il en résulte qu'une
+requête Decaps postérieure au défi, distincte du chiffré défi, ne peut
+être acceptée avec le message de ce défi. Si `q_pre` requêtes ont précédé
+le tirage uniforme du message défi, la rencontre d'un message décodé
+est au plus `q_pre/2^256`. La coïncidence avec l'un des chiffrés déjà
+soumis est au plus `q_pre/2^256 + epsilon_corr_fixed`, où
+`epsilon_corr_fixed` est l'erreur de correction moyenne du **programme
+fixé** ; aucune borne numérique de ce terme n'est établie ici.
+La génération terminée a parcouru les 36 flots de matrice déterministes
+réutilisés par le chiffrement, ce qui évite de conditionner après coup
+sur la terminaison de requêtes choisies adaptativement. Le risque de
+non-terminaison de la génération elle-même reste séparé.
+
+Une seconde capsule compose le couplage conditionnel de Decaps déjà
+étudié avec un jeu passif `CPA-F` du **R1 exact** : pour un extracteur
+en ligne exécutable `E`, l'avantage CCA est au plus l'avantage CPA-F du
+simulateur, plus une erreur `delta_0 + delta_1` facturée séparément dans
+les deux mondes du défi. Chaque `delta` réunit un événement de correction
+adaptative et un événement de chiffré accepté sans témoin vérifié ; les
+coûts de `E`, des fonctions publiques et de la mémoire sont comptés
+symboliquement, sans plafond concret acquis.
+Cette formule n'est **pas** une borne de sécurité : ni l'avantage CPA-F,
+ni l'existence d'un extracteur efficace avec petites erreurs, ni la
+correction adaptative sous SHA3/SHAKE fixés ne sont établis. Elle précise
+les trois travaux mathématiques à mener, sans emprunter un transfert
+générique des oracles idéaux. Les dossiers locaux scellés sont
+`artifacts/retained/c01-fixed-structural-001/` et
+`c01-fixed-cca-decomposition-001/`. Leurs vérificateurs et deux
+contre-lectures internes passent dans la portée source et classique
+déclarée. L'équivalence de toutes les images binaires avec cette règle
+source reste à qualifier. **C01 concret reste ouvert ; R1 demeure expérimental.**
+Le moteur, ses paramètres et ses formats sont inchangés.
+
 **20 novembre 2026 — saut de clé dans le jeu complet classique idéal et
 fonctions fixées.** Une nouvelle réduction traite ensemble le défi et la
 décapsulation adaptative du R1 exact dans un jeu à six oracles aléatoires
