@@ -56,6 +56,16 @@ dimensions. Their hardness at the reduction's enlarged resource budget
 has not been proved. A replayable fixed SHA3/SHAKE game harness and
 independent role checks validate bounded execution paths, but they do
 not transfer that ideal-model proof to the implemented fixed functions.
+The latest **unnumbered five-block follow-up** separates the remaining
+fixed-function obligations. It gives a scoped passive challenge-key game
+decomposition, rules out the selected public-view Decaps extraction route
+as a small-error certificate under its stated premises, and rules out a
+global statistical transfer of the ideal correction certificate. It also
+recalculates the numerical premises of the classical ideal-game bound.
+The fifth block integrates these results and keeps the concrete closure
+gate open. These are decisions about specific proof routes, not findings
+of a break or a new security level; the local acquisition capsules are not
+replayable from the public repository alone.
 An exact source-level fixed-function lemma now controls prechallenge
 coincidences and excludes accepted postchallenge recovery of the challenge
 message through a different ciphertext. A conditional CCA-to-CPA

@@ -7,6 +7,29 @@ dernière recherche C01 numérotée. Les études C01 ci-dessous suivent M28
 sans nouveau numéro. Elles ne ferment pas C01 et ne changent pas le statut
 expérimental de R1.
 
+**Premier cycle des cinq blocs C01, 20 novembre 2026.** Le défi passif a
+une décomposition exacte, mais ses termes propres au R1 fixé ne sont pas
+bornés. Une route Decaps externe précise et deux raccourcis de transfert
+pour la correction et les sorties corrélées ont été écartés dans leur
+portée. Le calcul idéal classique donne des exigences chiffrées sur les
+avantages Module-LWE ; les archives d'estimation ne les établissent pas.
+La porte d'intégration rejoue les quatre dossiers et maintient
+`C01_CONCRETE_OPEN`. Ces résultats sont des décisions de recherche,
+pas une qualification du moteur ; les cinq objectifs finaux restent
+ouverts. Les capsules scellées demeurent locales et le programme Rust
+est inchangé.
+
+**Prochain passage décisif.** Formaliser une propriété jointe des
+fonctions fixées et des coins du défi avec une hypothèse indépendante,
+puis une simulation Decaps distincte de la route externe écartée ;
+prouver la correction sur l'événement exact ; établir les ressources et
+les exigences quantitatives pour la construction composée, y compris
+une analyse native et le cas quantique ; enfin faire relire l'ensemble
+par un cryptographe extérieur sur la source et les binaires retenus.
+Si les premières obligations n'admettent pas de preuve crédible pour R1,
+sélectionner et spécifier une construction distincte avant toute
+modification du moteur. **C01 concret reste ouvert ; R1 est expérimental.**
+
 **20 novembre 2026 — trois obligations du R1 fixé.** Le nouveau lemme
 structurel et la décomposition conditionnelle CCA → CPA précisent la
 suite du travail : (1) borner le jeu passif de clé de défi du R1 exact

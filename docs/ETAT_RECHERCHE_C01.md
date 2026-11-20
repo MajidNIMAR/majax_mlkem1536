@@ -19,6 +19,31 @@ the frozen public replay lot, not the project's current milestone. These
 numbers label work packages rather than engine versions or security levels.
 The M16 note below is historical.
 
+## Latest unnumbered five-block C01 follow-up — 20 November
+
+Four locally retained research acquisitions and one integration gate refine
+the obligations of the **unchanged** R1 construction. The passive
+challenge-key game has a scoped decomposition, but its construction-specific
+terms and component advantages have no adopted numerical bounds. The
+selected public-view extraction route cannot certify a small error for
+adaptive Decaps under its stated premises; this does not exclude a
+different simulation. A global statistical transfer
+from independent CBD(3) samples to the fixed seeded noise law is inapplicable;
+the actual fixed-function correction probability remains unbounded here.
+The quantitative reader recalculates sufficient assumptions for the two
+native Module-LWE games under illustrative ideal-game caps and checks the
+archived attack-cost panels. Those panels do not supply native-game
+advantage bounds or complete post-reduction resources. The integration gate
+therefore returns **`C01_CONCRETE_OPEN`**. The conclusion concerns only the
+routes and models examined; it neither establishes a weakness in R1 nor
+a concrete security level. Quantum fixed-function security and external
+cryptographic review remain open.
+
+The detailed proofs, readers, results and internal checks are in ignored
+local capsules, absent from GitHub. They cannot be independently replayed
+from this repository alone. No engine source, parameters, formats or API
+changed in this cycle; R1 remains experimental and not production-qualified.
+
 ## Fixed-function structural step and CCA accounting — 20 November
 
 Two locally sealed and independently read capsules now attach an exact

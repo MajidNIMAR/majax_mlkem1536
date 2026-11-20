@@ -1,5 +1,32 @@
 # Journal de recherche — KEM 1536
 
+## 20 novembre 2026 — premier cycle des cinq blocs C01
+
+Le programme de fermeture demandé a été engagé sur cinq blocs distincts,
+sans nouveau numéro `M`. Quatre capsules privées traitent respectivement
+la clé du défi passive, la décapsulation adaptative, la correction du
+programme fixé et les exigences quantitatives du théorème classique
+idéal. Une cinquième capsule d'intégration vérifie onze commandes de
+lecture et de scellement, ainsi que l'identité de la source du moteur.
+Les contre-lectures internes n'ont pas trouvé d'objection bloquante dans
+les portées annoncées ; elles ne remplacent pas une revue extérieure.
+
+Le cycle a obtenu une décomposition exacte du jeu passif et des exigences
+arithmétiques explicites pour les deux hypothèses Module-LWE. Il a aussi
+écarté, chacune dans sa portée, une route d'extraction Decaps externe,
+un transfert statistique global pour la correction et l'argument fondé
+seulement sur des marginales de sorties. Ces constats éliminent des
+justifications insuffisantes ; ils ne montrent aucune faiblesse du
+moteur. Les archives d'estimation ont été recontrôlées, sans nouvelle
+campagne native et sans borne d'avantage adoptée. La porte d'intégration
+enregistre `C01_CONCRETE_OPEN` : les cinq blocs restent ouverts pour
+leurs objectifs de sécurité complète. Le prochain travail doit produire
+une propriété jointe et une simulation Decaps propres au R1 fixé, puis
+une correction ciblée, les budgets complets et la revue indépendante ;
+une construction distincte reste envisagée si nécessaire. Aucun code,
+paramètre, format ni API du moteur n'a changé. Les cinq capsules restent
+locales hors Git ; le rapport public expose leur portée et leurs limites.
+
 ## 20 novembre 2026 — point d'état et chronologie des jalons
 
 Le dernier état de recherche avait déjà été commité et publié. Un contrôle

@@ -12,6 +12,18 @@ later C01 studies are separate research work. M10 remains the delivered
 engine reference. M15 is the historical public replay lot, not the current
 project milestone. M18 and M19 retain their historical outcomes.
 
+The latest unnumbered five-block C01 follow-up retained four scoped research
+acquisitions and an integration gate. Source fingerprints, finite algebra checks,
+exact arithmetic, negative controls and local seals passed for the declared
+models; the integration check left concrete C01 open. The quantitative
+reader rechecked 120 archived J2 receipts and four M25 cost rows, but ran
+no new attack estimator. These checks establish the reported proof-route
+and bookkeeping decisions only: they do not measure R1 security, bound its
+fixed-function correction or native Module-LWE advantages, qualify a
+binary, or replace an outside audit. The acquisition capsules remain
+ignored by Git and cannot be replayed from this public repository alone.
+The engine, parameters, formats and API were unchanged.
+
 Two new private fixed-function capsules passed their source-hash checks,
 internal independent reviews and seals. The structural verifier exhaustively checked
 9,477 small deterministic `F,D`/prior-query cases and a control showing

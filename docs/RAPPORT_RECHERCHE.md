@@ -1,5 +1,46 @@
 # Rapport de recherche — MLKEM-1536 Core, KEM à six blocs de 256 coefficients
 
+**20 novembre 2026 — premier cycle du programme de fermeture C01 en cinq
+blocs.** Quatre dossiers d'analyse distincts et une porte d'intégration
+ont été constitués et scellés localement :
+`c01-next-challenge-001`, `c01-next-decaps-001`,
+`c01-next-correction-001`, `c01-next-quant-001` et
+`c01-next-integration-001` sous `artifacts/retained/`. Le lecteur final
+rejoue onze commandes de vérification et de scellement, contrôle leur
+source R1 commune et enregistre `C01_CONCRETE_OPEN`. Les contre-lectures
+internes sont limitées aux énoncés examinés ; aucune revue extérieure
+n'est acquise. Ces dossiers restent hors du dépôt public.
+
+| Bloc | Résultat de ce cycle | Porte restant à franchir |
+|---|---|---|
+| Clé du défi passive | Décomposition exacte du jeu R1 fixé ; les seules marginales de ses sorties ne justifient pas les termes de corrélation. | Borner ces termes pour la construction réelle, avec des hypothèses indépendantes, ou revoir la construction. |
+| Décapsulation adaptative | Une route précise d'extraction externe à partir de la vue publique est écartée dans sa portée. | Établir une autre simulation ou réduction efficace, aux ressources et erreurs entièrement comptées. |
+| Correction du programme fixé | Le transfert par proximité statistique globale avec le bruit indépendant est écarté ; les marginales seules ne contrôlent pas l'événement étudié. | Prouver une propriété jointe ciblée sur la correction réelle, ou adapter la construction. |
+| Résistance quantitative | Calcul rationnel exact des exigences de deux avantages Module-LWE dans le théorème classique idéal antérieur ; archives de coûts recontrôlées. | Acquérir une analyse native aux ressources après réduction et justifier les hypothèses d'avantage ; traiter séparément fonctions fixées et quantum. |
+| Composition C01 | Les quatre entrées sont rejouées et les obligations ouvertes consignées. | Fournir une chaîne non circulaire complète, la contre-lecture indépendante et la qualification du programme exact. |
+
+Le calcul quantitatif utilise des plafonds **illustratifs**. Pour huit
+plafonds `2^32`, l'expression résiduelle conservatrice du modèle classique
+idéal est proche de `2^-189,642`. Cette **majoration choisie** ne peut pas
+certifier une cible illustrative `2^-192`, même avec des avantages
+Module-LWE nuls ; elle ne constitue ni une attaque, ni une borne inférieure
+sur la sécurité réelle. Le cahier C01 initial ne fixe pas cette cible,
+et le point de contrôle RC1/QROM relève d'un autre modèle. Les anciennes
+estimations d'attaques ne donnent pas de borne supérieure sur les deux
+avantages natifs au budget composé. Aucune nouvelle campagne native
+d'attaques n'est créditée dans ce cycle.
+
+**Décision :** les cinq blocs ne sont pas fermés. Trois raccourcis de
+preuve sélectionnés ont été écartés avec une portée explicite ; les
+nouveaux lemmes et calculs orientent la prochaine acquisition, mais ne
+chiffrent pas l'avantage IND-CCA du R1 à SHA3/SHAKE fixés. Le chemin
+prioritaire consiste à définir une propriété jointe propre au programme,
+une autre route Decaps et une preuve de correction ciblée, puis à chiffrer
+les ressources et hypothèses du théorème composé. Une construction
+distincte reste une option si ce chemin n'aboutit pas. Le cœur Rust,
+les paramètres, les formats et l'API sont inchangés. **R1 reste
+expérimental ; C01 concret reste ouvert.**
+
 **Point d'état du 20 novembre 2026 — lecture des jalons.** Les numéros `M`
 désignent des chantiers, pas des versions du moteur ni des niveaux de sécurité.
 M10 reste la référence du moteur Rust livré. M15 est le lot historique de

@@ -16,6 +16,15 @@ engine qualification cycle; M28 is the latest numbered C01 research cycle.
 Post-M28 blocks and the 20 November 2026 C01 studies are unnumbered and are
 the most recent work. **Concrete C01 is still open; R1 is experimental.**
 
+The latest five-block local follow-up narrowed the fixed-function proof
+routes for challenge-key secrecy, adaptive Decaps and correction, and
+recomputed the assumptions needed by the classical ideal-game bound. Its
+integration gate found no complete, independently justified numerical
+chain for the executed R1 KEM. This is a scoped research decision, not a
+cryptanalytic break or a security rating. Detailed capsules remain private
+and are not reproducible from this repository alone. The engine, parameters,
+wire formats and API did not change; no production qualification follows.
+
 As of 19 November 2026, four further research work packages have internally
 cross-checked deliverables in their declared scopes. They connect a
 construction decision, a conditional whole-KEM argument, matching resource
