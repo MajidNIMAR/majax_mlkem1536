@@ -42,6 +42,10 @@ local and outside Git. See the [research report](docs/RAPPORT_RECHERCHE.md),
 [C01 scope](docs/ETAT_RECHERCHE_C01.md) and
 [verification record](docs/TESTS_AND_EVIDENCE.md).
 
+The CI engine jobs test the current `main` source. The separate M15 replay
+job checks out its frozen publication commit, whose source bytes are pinned
+by the M15 manifest; it verifies that historical evidence independently.
+
 ### Earlier 19 November classical shared-permutation work
 
 **Classical shared-permutation follow-up:** the ideal challenge-key hop

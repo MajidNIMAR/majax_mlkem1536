@@ -36,6 +36,17 @@ and budgets tested; they give no statistical security level. No source,
 parameter, wire-format, canonical-binary or hosted-CI change is credited.
 **Concrete C01 stays open.**
 
+The M15 Windows replay job uses the frozen publication commit
+`53d501de898ec6ba024cc05a3f7373563c6a2ef4`, because its manifest
+pins the exact Rust input bytes from that lot. The current `main` source
+is checked by the two engine CI jobs. This preserves the historical M15
+integrity check after a later test-only addition to `dev_kem.rs`; an M15
+success does not retest that later source. The first hosted run of the
+20 November publication failed at the M15 input gate before solver setup;
+the correction is the explicit historical checkout, not a change to the
+frozen manifest or scientific inputs. A green replacement run must be
+observed before crediting hosted validation of this publication.
+
 A classical multi-rate follow-up compared the new ideal lemmas with the
 previous sponge theorem. A source-level review confirmed the total-query
 accounting and identified a simulator-contact event that remains unbounded

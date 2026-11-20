@@ -86,7 +86,12 @@ jobs:
       run:
         shell: pwsh
     steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      # M15 pins the exact source bytes published in this historical commit.
+      # The engine jobs above still test the triggering main commit.
+      - name: Check out frozen M15 evidence snapshot
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: 53d501de898ec6ba024cc05a3f7373563c6a2ef4
       - uses: actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c # v6
         with:
           python-version: '3.13'

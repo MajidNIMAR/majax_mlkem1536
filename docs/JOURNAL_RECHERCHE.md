@@ -26,6 +26,13 @@ des observations de stratégies finies. Le transfert général du modèle
 idéal aux fonctions publiques fixées n'est pas justifié, et aucune borne
 IND-CCA du programme fixé n'est adoptée. **C01 concret reste ouvert.**
 Le moteur de production, les paramètres et les formats sont inchangés.
+Après publication documentaire, la CI du premier commit a échoué au
+contrôle d'entrée M15 : ce lot exige les octets source de son commit
+historique, alors que `main` inclut depuis un test Rust supplémentaire.
+Le job M15 est corrigé pour rejouer le commit public figé du lot ; les
+deux jobs moteur continuent de vérifier le `main` actuel. Le manifeste
+M15 et ses résultats scientifiques ne sont pas modifiés. La nouvelle
+CI doit encore être observée avant toute revendication de succès.
 
 ## 19 novembre 2026 — composition multidébit classique, portée bornée
 
