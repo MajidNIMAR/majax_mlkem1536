@@ -1,5 +1,80 @@
 # Rapport de recherche — MLKEM-1536 Core, KEM à six blocs de 256 coefficients
 
+**21 novembre 2026 — argument composé pour le R1 exact à fonctions
+fixées, sans clôture C01.** Quatre nouveaux dossiers locaux scellés
+prolongent le cycle précédent : `c01-r1-exact-challenge-002`,
+`c01-r1-exact-decaps-002`, `c01-r1-exact-correction-002` et
+`c01-r1-fixed-composition-002`, tous sous `artifacts/retained/` et
+hors Git. La composition combine le jeu du défi passif, le couplage
+de Decaps et la correction des témoins dans une inégalité classique à
+**neuf termes** pour la sémantique source du R1 à SHA3/SHAKE fixés.
+Elle garde séparés les deux mondes du défi, les budgets après réduction
+et la loi des clés honnêtes dont KeyGen s'est terminée. Son lecteur
+vérifie l'arithmétique et les ancres de source, sans prouver les
+prémisses cryptographiques. **Aucun des neuf termes n'a une borne
+numérique adoptée pour le R1 fixé ; C01 concret reste ouvert.**
+
+Le dossier de défi établit une identité exacte de distance statistique
+pour la paire chiffré/clé dérivée. Sous une forte correction du programme
+fixé, cette distance est très grande même si la construction peut
+rester sûre contre des adversaires bornés : la voie d'une proximité
+*statistique* globale ne peut donc pas justifier le jeu du défi dans
+ce régime. Cette conclusion ne donne aucun distingueur réalisable, ni
+mesure de SHA3 ou de la correction réelle. Elle indique que la
+prémisse utile doit être **computationnelle, propre à la construction
+et liée à un budget explicite**.
+
+Le dossier Decaps établit une relation exacte entre correction honnête,
+confidentialité passive et écart de simulation pour une réponse qui ne
+voit que les données publiques. Il écarte **cette route de simulation**
+dans sa portée, avant comme après le défi, sous des prémisses de
+confidentialité et de correction fortes mais encore non chiffrées.
+Une variante qui conserve les vraies réponses avant le défi retire
+l'erreur de cette phase ; elle exige toutefois un jeu intermédiaire
+plus fort, dont la sécurité n'est pas établie ici. Aucune de ces
+observations ne constitue une attaque contre R1 ou une impossibilité
+générale de preuve CCA.
+
+La correction adaptative reçoit désormais un jeu autonome `CorrList` :
+un programme public choisit des messages à ressources bornées, puis le
+moniteur vérifie si l'un des chiffrés complets construits pour eux se
+déchiffre mal. Chacune des deux erreurs de décodage du couplage CCA est
+majorée par l'avantage de ce jeu au budget composé. Cette prémisse est
+distincte de la confidentialité du défi, mais sa valeur numérique
+reste inconnue. La levée universelle de la correction *moyenne* vers
+des messages choisis peut perdre un facteur `2^256` ; le certificat
+historique sous bruits CBD indépendants donne seulement une expression
+majorante après cette levée, inférieure à `2^-54` dans **ce modèle
+idéal**, avant les termes des primitives fixées. Cela ne borne pas la
+correction réelle du R1 et ne révèle aucun échec : c'est une limite
+de la méthode de majoration. De plus, le raccord antérieur totalise
+l'échec de génération tandis que le présent jeu conditionne sur une
+KeyGen terminée ; sa conversion exige un facteur `1/p_complete` sans
+valeur fixée. Un taux calculé pour `rho` uniforme ne remplace pas le
+taux réel lorsque `rho` vient de `KG(d)`.
+
+À titre de **diagnostic arithmétique**, neuf bornes chacune au plus
+`2^-132` suffiraient à une somme inférieure à `2^-128` dans l'inégalité
+classique composée. Aucune de ces neuf bornes n'est acquise, et
+`2^-128` n'est pas un seuil du C01 initial. Les anciennes estimations
+de coût d'attaque, les tests finis et les théorèmes à oracles idéaux
+ne peuvent pas remplir ces cases sans justification indépendante.
+Le cas quantique, la complétion et le coût de KeyGen, l'équivalence
+binaire et la revue cryptographique extérieure restent ouverts.
+Un plafond public à 512 candidats par flot de matrice permet de compter
+le travail **ajouté** par le simulateur : au plus
+`18 432(q_D+2)` paires candidates et `13(q_D+1)` sorties de bruit,
+en plus des coûts de l'adversaire, de l'extracteur et des autres
+opérations. Le retour au jeu sans plafond ajoute l'événement
+`tau_512`, encore sans borne pour `rho=KG(d)` fixé ; ce compte ne donne
+pas un temps machine ni une sécurité chiffrée.
+Le lecteur d'intégration `c01-r1-integration-002` rejoue onze commandes
+des quatre dossiers, leurs contrôles et sceaux, et maintient
+`C01_CONCRETE_OPEN`. Les contre-lectures internes
+restent limitées à ces énoncés ;
+les détails ne sont pas rejouables depuis le dépôt public. Aucun code
+Rust, paramètre, format ou API n'a changé. **R1 demeure expérimental.**
+
 **20 novembre 2026 — premier cycle du programme de fermeture C01 en cinq
 blocs.** Quatre dossiers d'analyse distincts et une porte d'intégration
 ont été constitués et scellés localement :

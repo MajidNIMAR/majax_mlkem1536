@@ -26,7 +26,7 @@ evidence needed to examine its evolution.
 
 [![Main-branch checks](https://github.com/MajidNIMAR/mlkem-1536-core/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/MajidNIMAR/mlkem-1536-core/actions/workflows/ci.yml)
 
-## Project checkpoint — 20 November 2026
+## Project checkpoint — 21 November 2026
 
 The `M` numbers identify **work packages, not releases or engine versions**.
 They have not gone back to M15:
@@ -36,9 +36,9 @@ They have not gone back to M15:
 | Delivered Rust engine | M10 | Working R1 KeyGen, Encaps, Decaps and rejection; experimental, not production-qualified |
 | Public reproducibility | M15 | Historical arithmetic/NTT replay lot pinned to its original source commit; this is why CI still shows M15 |
 | Engine qualification | M23 | Latest numbered, scoped PC/AArch64 qualification work; detailed later records are local |
-| C01 security research | M28 | Latest numbered, scoped C01 work; subsequent Blocks 1–4 and the 20 November studies are unnumbered |
+| C01 security research | M28 | Latest numbered, scoped C01 work; subsequent Blocks 1–4 and the 20–21 November studies are unnumbered |
 
-The **latest work** is the 20 November C01 analysis described below. It
+The **latest work** is the 21 November C01 analysis described below. It
 advances conditional arguments for the exact R1 construction, while the
 concrete security argument **C01 remains open**. Later M numbers do not
 certify security or change the experimental status of R1. The two engine CI
@@ -46,9 +46,24 @@ jobs check current `main`; the separate M15 job replays its historical
 snapshot. See the [C01 scope](docs/ETAT_RECHERCHE_C01.md) and
 [verification record](docs/TESTS_AND_EVIDENCE.md).
 
-## Current research status — C01 construction gates, 20 November 2026
+## Current research status — C01 construction gates, 21 November 2026
 
-The latest local research gives a conditional reduction for the **full
+The newest source-level R1 work composes the exact classical challenge,
+Decaps and correction games into a **conditional nine-term inequality**.
+The terms have no adopted numerical upper bounds at the induced resources.
+For a well-correcting profile, the selected statistical challenge route
+cannot provide a small security gap; a computational property of the
+fixed G/PKE coupling is needed. A Decaps simulator limited to public
+information encounters an obstacle before and after the challenge.
+Answering prechallenge queries through a real oracle moves the remaining
+proof to a stronger CCA1 game. A separate adaptive-correction game makes
+the needed premise explicit, but its illustrative quantitative allocation
+is not established by the earlier mean-error certificate. The four new
+local capsules are outside GitHub and cannot be replayed from this public
+repository alone. No engine code, parameters, formats or API changed.
+**Concrete C01 remains open; R1 is experimental.**
+
+The preceding local research gives a conditional reduction for the **full
 classical IND-CCA game with six independent typed random oracles**. It
 accounts for adaptive decapsulation and links the remaining challenge
 problem to two decision Module-LWE distributions at the exact R1
@@ -56,7 +71,7 @@ dimensions. Their hardness at the reduction's enlarged resource budget
 has not been proved. A replayable fixed SHA3/SHAKE game harness and
 independent role checks validate bounded execution paths, but they do
 not transfer that ideal-model proof to the implemented fixed functions.
-The latest **unnumbered five-block follow-up** separates the remaining
+The 20 November **unnumbered five-block follow-up** separates the remaining
 fixed-function obligations. It gives a scoped passive challenge-key game
 decomposition, rules out the selected public-view Decaps extraction route
 as a small-error certificate under its stated premises, and rules out a
@@ -80,7 +95,7 @@ local and outside Git. See the [research report](docs/RAPPORT_RECHERCHE.md),
 The CI engine jobs test the current `main` source. The separate M15 replay
 job checks out its frozen publication commit, whose source bytes are pinned
 by the M15 manifest; it verifies that historical evidence independently.
-The [most recently verified run before this checkpoint](https://github.com/MajidNIMAR/mlkem-1536-core/actions/runs/44660698822)
+The [most recently verified run before this checkpoint](https://github.com/MajidNIMAR/mlkem-1536-core/actions/runs/44728299795)
 passed on Windows, Ubuntu and the frozen M15 replay. The
 [workflow page](https://github.com/MajidNIMAR/mlkem-1536-core/actions/workflows/ci.yml)
 shows the status of subsequent commits.

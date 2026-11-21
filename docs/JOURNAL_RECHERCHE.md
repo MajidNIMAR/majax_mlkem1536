@@ -1,5 +1,43 @@
 # Journal de recherche — KEM 1536
 
+## 21 novembre 2026 — raccord du défi, de Decaps et de la correction du R1 fixé
+
+Quatre capsules locales distinctes composent les preuves conditionnelles
+déjà acquises sur la même source R1 et vérifient la portée des raccourcis
+envisagés. Une inégalité classique à neuf termes relie le défi passif,
+les deux erreurs de Decaps et les deux erreurs de correction adaptative ;
+aucun terme ne reçoit une borne numérique adoptée pour le programme
+SHA3/SHAKE fixé. Les ressources et la population de KeyGen doivent
+rester communes à toute application de cette formule.
+
+Le défi possède une identité exacte de distance statistique qui
+écarte une justification par proximité globale si la correction réelle
+est forte, sans fournir de distingueur praticable. Une relation de jeu
+montre la limite d'une réponse Decaps fondée uniquement sur la vue
+publique ; conserver les vraies réponses avant le défi déplace la
+question vers un jeu intermédiaire plus fort et ne règle pas les
+réponses post-défi. La correction des témoins vérifiés est ramenée à
+un jeu autonome de recherche adaptative, distinct du défi. La moyenne
+honnête et les certificats sous bruit indépendant ne donnent pas, par
+une simple union, la petite borne qui serait nécessaire ; le passage
+aux clés dont KeyGen s'est terminée ajoute un dénominateur explicite.
+Les résultats sont des limites de routes de preuve, **pas des attaques
+constatées sur R1**.
+
+Le lecteur d'intégration `c01-r1-integration-002` rejoue onze commandes
+et maintient `C01_CONCRETE_OPEN`. Un plafond explicite sur le sampler
+public donne un compte structurel du travail supplémentaire de la
+simulation ; sa probabilité d'arrêt sous les fonctions fixées reste
+ouverte. Les quatre dossiers `c01-r1-exact-challenge-002`,
+`c01-r1-exact-decaps-002`, `c01-r1-exact-correction-002` et
+`c01-r1-fixed-composition-002` restent ignorés par Git. Leurs lecteurs
+arithmétiques, contrôles négatifs et sceaux passent ; les contre-lectures
+internes ont fait corriger deux erreurs de portée dans le dossier de
+correction avant scellement. Aucune preuve extérieure, borne globale,
+qualification binaire ni mesure native d'attaque n'est créditée. Le
+moteur, ses paramètres, formats et API sont inchangés. **C01 concret
+reste ouvert et R1 expérimental.**
+
 ## 20 novembre 2026 — premier cycle des cinq blocs C01
 
 Le programme de fermeture demandé a été engagé sur cinq blocs distincts,

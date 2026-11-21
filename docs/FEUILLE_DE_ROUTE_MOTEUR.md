@@ -1,5 +1,22 @@
 # Du dossier de faisabilité au moteur KEM
 
+**21 novembre 2026 — nouvelle porte du R1 exécuté.** L'argument
+classique à fonctions fixées possède maintenant une composition
+conditionnelle explicite du défi, de Decaps et de la correction, mais
+aucune borne de sécurité complète. Les prochaines tâches décisives
+sont : (1) établir une propriété computationnelle, propre à la paire
+réelle G/PKE et aux ressources induites, sans supposer directement
+la conclusion passive ; (2) construire une simulation Decaps qui
+traite les requêtes connues de l'adversaire sans le raccourci de vue
+publique écarté, ou une preuve par couplage des deux bits ; (3) borner
+le jeu autonome de correction adaptative sous la loi des clés du
+programme fixé, avec la complétion de KeyGen et les coûts de primitive ;
+(4) composer ces résultats avec une analyse native quantitative,
+un traitement quantique et une contre-lecture extérieure. Si ces
+prémisses ne peuvent être justifiées pour R1, spécifier une construction
+révisée avant tout changement du cœur. **C01 reste ouvert ; R1 est
+expérimental.** Les résultats du cycle sont détaillés dans le rapport.
+
 **Repères au 20 novembre 2026.** `M` numérote des chantiers : M10 est la
 référence du moteur livré, M15 le lot historique de preuves publiques
 rejoué en CI, M23 la dernière qualification numérotée du moteur et M28 la

@@ -13,12 +13,23 @@ The `M` numbers identify work packages, not versions or certification levels.
 M10 remains the delivered engine reference. M15 is the historical public
 replay lot pinned to its original source commit. M23 is the latest numbered
 engine qualification cycle; M28 is the latest numbered C01 research cycle.
-Post-M28 blocks and the 20 November 2026 C01 studies are unnumbered and are
+Post-M28 blocks and the 20–21 November 2026 C01 studies are unnumbered and are
 the most recent work. **Concrete C01 is still open; R1 is experimental.**
 
-The latest five-block local follow-up narrowed the fixed-function proof
-routes for challenge-key secrecy, adaptive Decaps and correction, and
-recomputed the assumptions needed by the classical ideal-game bound. Its
+The 21 November source-level R1 studies combine the classical challenge,
+Decaps and correction obligations in a conditional nine-term inequality.
+They identify limits of the examined statistical and public-view
+simulation routes and an unresolved quantitative gap for adaptive
+correction. No term has an adopted fixed-function numerical security
+bound at the required resources. A real prechallenge Decaps oracle moves
+the problem to a stronger CCA1 game; it does not complete the proof.
+The detailed capsules stay local and cannot be replayed from GitHub
+alone. No engine code, parameters, formats or API changed, and no new
+production qualification is claimed.
+
+The preceding 20 November five-block local follow-up narrowed the
+fixed-function proof routes for challenge-key secrecy, adaptive Decaps and
+correction, and recomputed the assumptions needed by the classical ideal-game bound. Its
 integration gate found no complete, independently justified numerical
 chain for the executed R1 KEM. This is a scoped research decision, not a
 cryptanalytic break or a security rating. Detailed capsules remain private

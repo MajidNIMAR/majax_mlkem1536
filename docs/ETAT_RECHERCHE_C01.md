@@ -1,6 +1,6 @@
 # Current research scope and the conditional C01 argument
 
-Scope statement updated 20 November 2026. **MLKEM-1536 Core** develops the
+Scope statement updated 21 November 2026. **MLKEM-1536 Core** develops the
 working experimental profile `KEM1536-DEV-Q7681-R1`, with six polynomials
 of 256 coefficients. The number 1536 counts coefficients; it is not a
 security-bit rating or a standardized ML-KEM parameter set.
@@ -13,13 +13,45 @@ its final cryptographic freeze is deferred, and it is not production-qualified.*
 M24–M28 are the latest numbered, scoped **C01 research** blocks. M23 remains
 the latest numbered engine qualification cycle, following M20–M22. Neither
 kind of result closes concrete C01.
-Later post-M28 blocks and the 20 November C01 studies are unnumbered; they
+Later post-M28 blocks and the 20–21 November C01 studies are unnumbered; they
 are the newest research. M10 remains the delivered engine reference. M15 is
 the frozen public replay lot, not the project's current milestone. These
 numbers label work packages rather than engine versions or security levels.
 The M16 note below is historical.
 
-## Latest unnumbered five-block C01 follow-up — 20 November
+## Exact R1 source-level composition — 21 November
+
+Four further local studies link the passive challenge, adaptive Decaps and
+correction on the **executed fixed-function R1 source**, conditional on an
+honestly completed KeyGen. The classical CCA advantage has a nine-term
+upper expression: two encryption-coin switches, two uniform-coin PKE
+games, a head-output game, and two each of adaptive decoding and witness
+knowledge events. This is an exact composition of conditional game
+inequalities, **not a numerical security bound**. None of its nine terms
+has an adopted, resource-matched upper bound for fixed R1.
+
+The challenge study shows that the selected *statistical* replacement is
+unsuited to a well-correcting profile; any useful argument must justify
+a computational property of the actual fixed G/PKE coupling. A simulator
+seeing only public information cannot obtain a small universal Decaps
+response gap from the examined route, either before or after the challenge.
+Forwarding prechallenge Decaps to a real oracle removes that part of the
+simulation error but requires security of a stronger `CCA1-F` game; the
+earlier passive five-term argument does not automatically cover it.
+These results rule on proof routes, not on R1's practical resistance.
+
+An independent `CorrList` game states the adaptive-correction premise
+needed for verified witnesses. A generic lift from honest mean correction
+loses a factor `2^256`; the upper expression obtained from the earlier
+ideal-model certificate lies between `2^-55` and `2^-54`, above an
+illustrative `2^-130` allocation. This is a gap in that **proof route**,
+not a measured fixed-R1 failure probability. Fixed-function primitive
+assumptions, postreduction resources, the quantum case and external review
+remain open. Detailed readers and proofs are retained locally outside Git
+and cannot be replayed from GitHub alone. The engine, parameters, formats
+and API did not change. **Concrete C01 remains open; R1 is experimental.**
+
+## Earlier unnumbered five-block C01 follow-up — 20 November
 
 Four locally retained research acquisitions and one integration gate refine
 the obligations of the **unchanged** R1 construction. The passive

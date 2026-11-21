@@ -1,19 +1,37 @@
 # Selected verification and test record
 
-Documentation updated 20 November 2026 for `KEM1536-DEV-Q7681-R1`.
+Documentation updated 21 November 2026 for `KEM1536-DEV-Q7681-R1`.
 The construction and Rust engine are experimental. Concrete security
 qualification C01 remains open. This page reports what was checked and how
 the evidence can be examined; it does not assign a security level.
 
-The most recent work is the unnumbered C01 study of 20 November. M24–M28
+The most recent work is the unnumbered C01 study of 21 November. M24–M28
 are the latest numbered scoped C01 research blocks; M20–M23 are the latest
 numbered scoped engine qualification cycles. Post-M28 Blocks 1–4 and the
 later C01 studies are separate research work. M10 remains the delivered
 engine reference. M15 is the historical public replay lot, not the current
 project milestone. M18 and M19 retain their historical outcomes.
 
-The latest unnumbered five-block C01 follow-up retained four scoped research
-acquisitions and an integration gate. Source fingerprints, finite algebra checks,
+The 21 November local cycle joined the exact source-level classical R1
+games in a conditional nine-term inequality, checked the limits of a
+statistical challenge route and public-view Decaps simulation, and defined
+the separate adaptive-correction `CorrList` game. Its illustrative
+quantitative lift from mean correction remains too loose for the stated
+allocation; it is not a measured fixed-function error rate. Source-hash
+checks, exact arithmetic, finite model readers and negative controls pass
+within their declared scopes. They do not supply numeric bounds on the
+nine induced advantages/events, qualify compiled binaries or close C01.
+The four detailed capsules are ignored by Git and cannot be reproduced
+from the public repository alone. Engine code, parameters, formats and
+API remain unchanged.
+An additional local integration reader replays eleven reader/seal commands
+across these four capsules, checks their common source identity and keeps
+the verdict `C01_CONCRETE_OPEN`. The stopped matrix-sampler accounting
+is structural; its fixed-function over-cap probability is unbounded here.
+The integration reader is also local and excluded from the public export.
+
+The preceding 20 November five-block C01 follow-up retained four scoped
+research acquisitions and an integration gate. Source fingerprints, finite algebra checks,
 exact arithmetic, negative controls and local seals passed for the declared
 models; the integration check left concrete C01 open. The quantitative
 reader rechecked 120 archived J2 receipts and four M25 cost rows, but ran
