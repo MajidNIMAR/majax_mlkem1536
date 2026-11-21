@@ -1,5 +1,79 @@
 # Rapport de recherche — MLKEM-1536 Core, KEM à six blocs de 256 coefficients
 
+**21 novembre 2026 — audit numérique des neuf termes du R1 fixé.**
+Nous avons repris les neuf avantages et événements de l'inégalité classique
+`R1-CHAIN`, sous la même loi de KeyGen honnête terminée, et cherché pour
+chacun une borne applicable aux fonctions SHA3/SHAKE **réelles** et aux
+ressources après réduction. Trois dossiers locaux scellés et relus
+séparément conservent les calculs, contrôles négatifs et sources :
+`c01-nine-bounds-{challenge,decaps,correction}-001` dans
+`artifacts/retained/`. Ils restent exclus de Git ; leurs lecteurs détaillés
+ne sont donc pas rejouables depuis le dépôt public.
+
+| Terme de `R1-CHAIN` | Plafond numérique établi ici pour R1 fixé | Utile au budget induit ? |
+|---|---:|---|
+| `coin_1(B_E)` | `1−2^-256` | Non |
+| `INDCPA_1` | `1−2^-256` | Non |
+| `HEAD` | `1−2^-256` | Non |
+| `INDCPA_0` | `1−2^-256` | Non |
+| `coin_0(B_E)` | `1−2^-256` | Non |
+| `alpha_corr(R_0,q_D)` | `1` | Non |
+| `kappa_0` | `1` pour un extracteur public efficace non spécifié | Non |
+| `alpha_corr(R_1,q_D)` | `1` | Non |
+| `kappa_1` | `1` dans la même portée | Non |
+
+Les cinq plafonds `1−2^-256` viennent de couplages finis exacts ; ils ne
+sont **pas** des estimations de résistance. Les formules exactes de distance
+statistique pour ces jeux sont établies, mais leur évaluation pour les
+fonctions fixées du programme demanderait de maîtriser les lois complètes
+sur les messages, graines et clés. Les deux termes de correction adaptative
+restent au plafond trivial. Pour les deux termes `kappa`, un extracteur qui
+essaie **tous** les `2^256` messages les annule, mais son coût d'au plus
+`q_D·2^256` évaluations complètes de l'encapsulation est incompatible
+avec l'enveloppe pratique envisagée ; il ne règle pas la correction.
+Insérer les neuf plafonds disponibles dans l'inégalité ne donne que
+`Adv_CCA≤1`.
+
+La contre-lecture a vérifié une contrainte plus décisive sur la **route
+de preuve choisie**. Pour un extracteur limité à la vue publique, un
+adversaire passif auxiliaire `B_{S_E}` — **distinct** du `B_E` de
+`R1-CHAIN` — et chaque monde `b`, la relation conditionnelle est
+`kappa_b ≥ p_corr−2^-256−Adv_CPA-F(B_{S_E})−alpha_corr(R_b,q_D)`.
+Si la correction, la sécurité passive de **cet** adversaire et la
+correction adaptative sont toutes fortes aux mêmes budgets, les termes
+`kappa_b` deviennent presque `1`. Cette observation empêche de faire des
+**neuf petites cases séparées** un certificat efficace avec cette
+simulation publique. Elle ne découle pas de la seule inégalité
+`R1-CHAIN`, n'est pas une attaque contre R1 et ne ferme pas la possibilité
+d'une réduction différente ou d'une analyse des erreurs couplées.
+
+Le traitement des coûts a également établi un témoin déterministe pour le
+programme fixé : `p_complete≥2^-256` et, pour le plafond public de 512
+candidats par flot, `tau_512≤1−2^-256`. Cela définit le conditionnement,
+sans plafonner utilement les ressources. La queue `2^-540<I<2^-539`
+est calculée **uniquement** pour 36 flots uniformes indépendants ; aucun
+transfert numérique vers SHAKE fixé n'est établi. Les archives de tests
+et les estimations d'attaques ne remplissent aucune des neuf cases de
+sécurité à leur budget composé.
+
+La recherche dans les sources primaires confirme la frontière de modèle :
+[FIPS 202](https://csrc.nist.gov/pubs/fips/202/final) spécifie SHA3/SHAKE ;
+[FIPS 203](https://csrc.nist.gov/pubs/fips/203/final) spécifie les trois
+profils ML-KEM normalisés ; les analyses de
+[Fujisaki–Okamoto](https://eprint.iacr.org/2017/604) et la
+[preuve EasyCrypt de ML-KEM](https://eprint.iacr.org/2024/843) emploient
+un modèle d'oracle aléatoire. Ces textes ne donnent pas les neuf bornes
+pour le R1 à fonctions fixées. L'étude
+[d'instanciabilité des transformations](https://eprint.iacr.org/2022/1584)
+porte sur d'autres constructions et hypothèses ; elle n'instancie pas R1
+avec SHA3. **Décision : suspendre la recherche de neuf petites bornes
+indépendantes dans la simulation publique actuelle.** La prochaine
+avancée de preuve doit changer l'argument Decaps ou la construction,
+puis établir des prémisses computationnelles indépendantes aux ressources
+réellement induites. C01 concret reste ouvert ; R1 expérimental et non
+qualifié pour la production. Le cœur Rust, les paramètres, formats et API
+sont inchangés.
+
 **21 novembre 2026 — argument composé pour le R1 exact à fonctions
 fixées, sans clôture C01.** Quatre nouveaux dossiers locaux scellés
 prolongent le cycle précédent : `c01-r1-exact-challenge-002`,
@@ -11,8 +85,8 @@ de Decaps et la correction des témoins dans une inégalité classique à
 Elle garde séparés les deux mondes du défi, les budgets après réduction
 et la loi des clés honnêtes dont KeyGen s'est terminée. Son lecteur
 vérifie l'arithmétique et les ancres de source, sans prouver les
-prémisses cryptographiques. **Aucun des neuf termes n'a une borne
-numérique adoptée pour le R1 fixé ; C01 concret reste ouvert.**
+prémisses cryptographiques. **Aucun des neuf termes n'a de borne
+numérique utile à la sécurité pour le R1 fixé ; C01 concret reste ouvert.**
 
 Le dossier de défi établit une identité exacte de distance statistique
 pour la paire chiffré/clé dérivée. Sous une forte correction du programme

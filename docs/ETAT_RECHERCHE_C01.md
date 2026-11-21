@@ -19,6 +19,32 @@ the frozen public replay lot, not the project's current milestone. These
 numbers label work packages rather than engine versions or security levels.
 The M16 note below is historical.
 
+## Numerical audit of all nine fixed-R1 terms — 21 November
+
+The latest study examined every term of the exact classical `R1-CHAIN`
+with the completed honest-KeyGen law and the induced resource budgets.
+For each of the five passive terms it proves a universal ceiling of
+`1−2^-256`, almost one. The two adaptive-correction terms retain only
+the trivial ceiling `1`. The two knowledge terms have no small upper
+bound for the selected efficient public-view simulation; exhaustive
+extraction makes them zero only after up to `q_D·2^256` complete public
+encapsulation evaluations. The resulting nine-term CCA ceiling remains
+the vacuous `1`, not a security level.
+
+A separate conditional lower constraint on those knowledge terms, using
+an auxiliary passive adversary **different from** the one in `R1-CHAIN`,
+shows why nine individually small bounds cannot certify the selected
+public-view simulation if passive secrecy and correction are strong at
+the matched budgets. This is a limit of that proof route, not a claim
+that R1 is insecure or unprovable by another argument. A deterministic
+fixed-source witness proves only `p_complete≥2^-256` and
+`tau_512≤1−2^-256`; an ideal-stream cap calculation does not transfer
+to fixed SHAKE. The three detailed proof capsules and their independent
+review remain local and excluded from Git. **The current additive
+public-view nine-term route is held; concrete C01 remains open and R1
+experimental.** See the [research report](RAPPORT_RECHERCHE.md) and
+[verification record](TESTS_AND_EVIDENCE.md).
+
 ## Exact R1 source-level composition — 21 November
 
 Four further local studies link the passive challenge, adaptive Decaps and
@@ -28,7 +54,7 @@ upper expression: two encryption-coin switches, two uniform-coin PKE
 games, a head-output game, and two each of adaptive decoding and witness
 knowledge events. This is an exact composition of conditional game
 inequalities, **not a numerical security bound**. None of its nine terms
-has an adopted, resource-matched upper bound for fixed R1.
+has an adopted, security-useful resource-matched upper bound for fixed R1.
 
 The challenge study shows that the selected *statistical* replacement is
 unsuited to a well-correcting profile; any useful argument must justify
@@ -56,8 +82,9 @@ and API did not change. **Concrete C01 remains open; R1 is experimental.**
 Four locally retained research acquisitions and one integration gate refine
 the obligations of the **unchanged** R1 construction. The passive
 challenge-key game has a scoped decomposition, but its construction-specific
-terms and component advantages have no adopted numerical bounds. The
-selected public-view extraction route cannot certify a small error for
+terms and component advantages have no adopted security-useful numerical
+bounds. The selected public-view extraction route cannot certify a small
+error for
 adaptive Decaps under its stated premises; this does not exclude a
 different simulation. A global statistical transfer
 from independent CBD(3) samples to the fixed seeded noise law is inapplicable;

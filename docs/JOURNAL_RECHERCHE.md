@@ -1,12 +1,35 @@
 # Journal de recherche — KEM 1536
 
+## 21 novembre 2026 — audit quantitatif des neuf termes, décision de preuve
+
+Les neuf termes de la chaîne classique du R1 fixé ont été examinés
+ensemble, avec la loi de KeyGen terminée et les coûts des adversaires
+induits. Cinq plafonds universels exacts valent `1−2^-256`, les deux
+termes de correction adaptative n'ont que `≤1`, et les deux événements de
+connaissance n'ont pas de petite borne au budget pratique. Une extraction
+exhaustive les annule seulement au coût d'au plus `q_D·2^256` calculs
+complets. L'inégalité composée reste donc vacante numériquement.
+
+La revue indépendante a confirmé une contrainte conditionnelle sur la
+simulation publique de Decaps : si une sécurité passive **distincte** et
+la correction sont fortes aux budgets correspondants, ses événements de
+connaissance ne peuvent pas tous être petits. Cela arrête la poursuite
+des neuf petites bornes dans cette route additive particulière, sans
+impliquer de faiblesse du KEM. Un témoin déterministe fixe donne
+`p_complete≥2^-256` et `tau_512≤1−2^-256`; l'estimation idéale de la
+queue des flots ne se transfère pas à SHAKE fixé. Les trois capsules
+`c01-nine-bounds-{challenge,decaps,correction}-001` sont conservées hors
+Git et leurs lecteurs/sceaux passent. Voir le rapport pour les neuf
+cases, les hypothèses et les sources. C01 concret reste ouvert ; R1 est
+expérimental. Aucun changement du moteur.
+
 ## 21 novembre 2026 — raccord du défi, de Decaps et de la correction du R1 fixé
 
 Quatre capsules locales distinctes composent les preuves conditionnelles
 déjà acquises sur la même source R1 et vérifient la portée des raccourcis
 envisagés. Une inégalité classique à neuf termes relie le défi passif,
 les deux erreurs de Decaps et les deux erreurs de correction adaptative ;
-aucun terme ne reçoit une borne numérique adoptée pour le programme
+aucun terme ne reçoit alors de borne numérique utile pour le programme
 SHA3/SHAKE fixé. Les ressources et la population de KeyGen doivent
 rester communes à toute application de cette formule.
 

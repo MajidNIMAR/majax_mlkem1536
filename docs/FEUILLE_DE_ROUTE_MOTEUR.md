@@ -1,5 +1,20 @@
 # Du dossier de faisabilité au moteur KEM
 
+**21 novembre 2026 — décision après l'audit des neuf termes.** Les cinq
+termes passifs n'ont reçu que des plafonds presque égaux à `1`, les deux
+termes de correction des plafonds triviaux, et la simulation publique
+de Decaps actuelle ne permet pas de rendre ses deux événements petits
+sous les fortes prémisses de sécurité et de correction envisagées.
+Poursuivre l'allocation de neuf petites bornes dans cette même route
+ne ferait pas avancer C01. Le prochain **bloc de fond** est une autre
+réduction CCA, avec une gestion différente de Decaps et une analyse
+de ses erreurs *entre les deux mondes*, ou une construction révisée
+spécifiée avant changement du cœur. Toute nouvelle réduction devra
+ensuite recevoir des bornes indépendantes pour les fonctions fixées,
+la correction adaptative et les coûts composés. Le résultat détaillé
+et ses limites sont dans le rapport. **C01 reste ouvert ; R1 est
+expérimental.**
+
 **21 novembre 2026 — nouvelle porte du R1 exécuté.** L'argument
 classique à fonctions fixées possède maintenant une composition
 conditionnelle explicite du défi, de Decaps et de la correction, mais

@@ -16,6 +16,14 @@ engine qualification cycle; M28 is the latest numbered C01 research cycle.
 Post-M28 blocks and the 20–21 November 2026 C01 studies are unnumbered and are
 the most recent work. **Concrete C01 is still open; R1 is experimental.**
 
+The latest numerical audit covers all nine terms of the fixed-source
+classical C01 inequality. Its exact universal ceilings are too weak for a
+security claim. A conditional obstruction applies to the selected
+public-view Decaps proof route, not to R1 security itself; a different
+reduction remains possible. The local proof and verification capsules
+are not included in the public repository. No fixed-function CCA
+security level, production qualification or new engine change follows.
+
 The 21 November source-level R1 studies combine the classical challenge,
 Decaps and correction obligations in a conditional nine-term inequality.
 They identify limits of the examined statistical and public-view

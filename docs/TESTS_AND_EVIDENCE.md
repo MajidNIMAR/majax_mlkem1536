@@ -12,6 +12,21 @@ later C01 studies are separate research work. M10 remains the delivered
 engine reference. M15 is the historical public replay lot, not the current
 project milestone. M18 and M19 retain their historical outcomes.
 
+The latest numerical audit checked all nine terms of the exact classical
+fixed-R1 chain. The passive reader verified exact formulas and ceilings
+in 4,096 finite toy models; the Decaps reader checked 31,680 finite
+models and 332 negative controls; the correction reader checked exact
+integer arithmetic, one deterministic fixed-source completion witness,
+three quantifier controls and a pinned Rust vector. Each local capsule's
+source pins and seal passed, followed by a separate cross-reading. These
+are **logic and provenance checks**; the toy frequencies are not R1
+security measurements. The five passive ceilings are nearly one, the
+adaptive correction ceilings trivial, and the ideal-stream cap tail is
+not a fixed-SHAKE bound. The nine-term result remains vacuous for C01.
+All three detailed capsules are ignored by Git and cannot be replayed
+from the public repository alone. No new Rust, binary or hosted CI result
+is attributed to this audit.
+
 The 21 November local cycle joined the exact source-level classical R1
 games in a conditional nine-term inequality, checked the limits of a
 statistical challenge route and public-view Decaps simulation, and defined

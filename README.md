@@ -38,8 +38,8 @@ They have not gone back to M15:
 | Engine qualification | M23 | Latest numbered, scoped PC/AArch64 qualification work; detailed later records are local |
 | C01 security research | M28 | Latest numbered, scoped C01 work; subsequent Blocks 1–4 and the 20–21 November studies are unnumbered |
 
-The **latest work** is the 21 November C01 analysis described below. It
-advances conditional arguments for the exact R1 construction, while the
+The **latest work** is the 21 November C01 nine-term numerical audit described
+below. It makes a decision about the current proof route, while the
 concrete security argument **C01 remains open**. Later M numbers do not
 certify security or change the experimental status of R1. The two engine CI
 jobs check current `main`; the separate M15 job replays its historical
@@ -48,9 +48,23 @@ snapshot. See the [C01 scope](docs/ETAT_RECHERCHE_C01.md) and
 
 ## Current research status — C01 construction gates, 21 November 2026
 
-The newest source-level R1 work composes the exact classical challenge,
+The nine terms of the classical fixed-function R1 argument have now been
+examined together. Five have exact universal ceilings of `1−2^-256`;
+the other four have only trivial ceilings at practical induced resources.
+These figures yield no CCA security bound. A conditional constraint shows
+that the selected public-view Decaps simulation cannot make all nine
+terms small under matched passive-secrecy, honest-correction and adaptive-
+correction premises.
+This limits that **proof route**, not the engine's measured functionality or
+R1's unknown resistance. We have held this additive route and recorded the
+next decision in the [research report](docs/RAPPORT_RECHERCHE.md). Three
+local evidence capsules are outside GitHub; no code or parameter changed.
+**Concrete C01 remains open; R1 is experimental.**
+
+The preceding source-level R1 work composes the exact classical challenge,
 Decaps and correction games into a **conditional nine-term inequality**.
-The terms have no adopted numerical upper bounds at the induced resources.
+The terms have no adopted **security-useful** numerical bounds at the
+induced resources; the universal ceilings above do not change that.
 For a well-correcting profile, the selected statistical challenge route
 cannot provide a small security gap; a computational property of the
 fixed G/PKE coupling is needed. A Decaps simulator limited to public
@@ -58,7 +72,7 @@ information encounters an obstacle before and after the challenge.
 Answering prechallenge queries through a real oracle moves the remaining
 proof to a stronger CCA1 game. A separate adaptive-correction game makes
 the needed premise explicit, but its illustrative quantitative allocation
-is not established by the earlier mean-error certificate. The four new
+is not established by the earlier mean-error certificate. Those four
 local capsules are outside GitHub and cannot be replayed from this public
 repository alone. No engine code, parameters, formats or API changed.
 **Concrete C01 remains open; R1 is experimental.**
@@ -85,7 +99,8 @@ An exact source-level fixed-function lemma now controls prechallenge
 coincidences and excludes accepted postchallenge recovery of the challenge
 message through a different ciphertext. A conditional CCA-to-CPA
 decomposition names the remaining challenge-key, adaptive extraction and
-adaptive correctness terms; none has a numerical fixed-function bound.
+adaptive correctness terms; none has a security-useful numerical
+fixed-function bound.
 **Concrete C01 remains open; R1 is experimental and is not qualified for
 production.** The detailed new proof and acquisition capsules remain
 local and outside Git. See the [research report](docs/RAPPORT_RECHERCHE.md),
